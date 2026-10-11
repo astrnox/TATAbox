@@ -209,7 +209,7 @@ MPL-2.0 为弱 copyleft 协议：允许修改与商用，但修改过的文件�
 
 遇到 Bug、有功能想法或发现题目错误，欢迎反馈：
 
-- **GitHub Issues**：[https://github.com/astrnox/BioQuest/issues](https://github.com/astrnox/BioQuest/issues)
+- **GitHub Issues**：[https://github.com/astrnox/TATAbox/issues](https://github.com/astrnox/TATAbox/issues)
   - 点击「New Issue」后选择对应模板，按模板填写最为高效：
     - Bug 报告：复现步骤 + 浏览器 / 设备信息 + 截图
     - 功能建议：想解决的问题 + 期望的解决方案
