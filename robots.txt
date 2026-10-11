@@ -19,5 +19,5 @@ Disallow: /tools/
 Disallow: /sql/
 Disallow: /docs/
 
-# 站点地图：供 Bing / Google / Yandex 等发现全部可收录页面
+# 站点地图：供 Bing / Google / Yandex / Baiduspider 等发现全部可收录页面
 Sitemap: https://tatabox.cc.cd/sitemap.xml

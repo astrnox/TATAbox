@@ -14,7 +14,9 @@
     "build:css": "node scripts/build-css-bundle.js",
     "build:min": "node scripts/minify-assets.js",
     "indexnow": "node scripts/submit-indexnow.js",
-    "indexnow:dry": "node scripts/submit-indexnow.js --dry-run"
+    "indexnow:dry": "node scripts/submit-indexnow.js --dry-run",
+    "baidu": "node scripts/submit-baidu.js",
+    "baidu:dry": "node scripts/submit-baidu.js --dry-run"
   },
   "repository": {
     "type": "git",
