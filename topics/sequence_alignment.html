@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>序列比对真题与解析 — 生物信息学题库专题 | TATABOX</title>
+  <meta name="description" content="TATABOX 序列比对专题收录1道联赛真题与逐条解析，考点覆盖序列比对与打分矩阵等，属生物信息学题库，附正确答案、判断依据与相关主题练习。">
+  <meta name="keywords" content="序列比对,生物信息学,序列比对与打分矩阵,生物竞赛真题,TATABOX">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tatabox.cc.cd/topics/sequence_alignment.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>@font-face{font-family:'LXGW WenKai';src:url('../fonts/lxgw-wenkai.woff2?v=1.522') format('woff2');font-weight:100 900;font-display:swap;}</style>
+  <link rel="stylesheet" href="../css/globals.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/topics.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://tatabox.cc.cd/"},{"@type":"ListItem","position":2,"name":"题库专题","item":"https://tatabox.cc.cd/topics.html"},{"@type":"ListItem","position":3,"name":"序列比对"}]}</script>
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="header-brand">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="26" height="26" rx="7.6" stroke="#d4a87e" stroke-width="2.6"/>
+        <path d="M16 10.2v11.8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M11.2 10.2h9.6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      TATABOX
+    </a>
+    <div class="header-right">
+      <button class="hamburger" id="hamburgerBtn" aria-label="菜单">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-head">
+      <a href="../index.html" class="mobile-nav-brand">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="7.6" stroke="#d4a87e" stroke-width="2.6"/>
+          <path d="M16 10.2v11.8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M11.2 10.2h9.6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-nav-title">TATABOX</span>
+      </a>
+      <button id="mobileNavClose" class="mobile-nav-close" aria-label="关闭菜单">&times;</button>
+    </div>
+    <div class="mobile-nav-scroll">
+      <a href="../index.html">首页</a>
+      <a href="../index.html#/practice" class="nav-highlight">练习</a>
+      <a href="../index.html#/exam" class="nav-highlight">模考</a>
+      <a href="../study.html">学习</a>
+      <a href="../biology-history.html">生物学史</a>
+      <a href="../cards.html">卡片</a>
+      <a href="../quiz.html" class="active">试题</a>
+      <a href="../topics.html">题库专题</a>
+      <a href="../resources.html">资源</a>
+      <a href="../wiki.html">百科</a>
+      <a href="../index.html#/knowledge-graph">图谱</a>
+      <a href="../index.html#/diagnosis">诊断</a>
+      <a href="../index.html#/pomodoro">专注</a>
+      <a href="../index.html#/habits">习惯</a>
+      <a href="../index.html#/review">复习</a>
+      <a href="../index.html#/bounties">悬赏</a>
+      <a href="../index.html#/community">社区</a>
+      <a href="../index.html#/analytics">分析</a>
+      <a href="../index.html#/user">我的</a>
+    </div>
+  </nav>
+
+  <main class="tp-main">
+    <section class="section">
+      <div class="container">
+        <!-- 本文件由 scripts/generate-topic-pages.js 自动生成，勿手改；修改请编辑生成器后重跑 npm run gen:topics -->
+        <nav class="tp-crumb" aria-label="面包屑">
+          <a href="../index.html">首页</a><span class="tp-crumb-sep">/</span>
+          <a href="../topics.html">题库专题</a><span class="tp-crumb-sep">/</span>
+          <span aria-current="page">生物信息学</span>
+        </nav>
+        <h1 class="tp-title">序列比对</h1>
+        <p class="tp-meta">生物信息学 · 模块四 · 遗传与进化 · 1 道真题</p>
+        <p class="tp-intro">序列比对是 TATABOX 生物题库中的生物信息学主题，本页静态展示该主题全部真题：每题给出题干、逐条判断项的对错结论与依据解析，方便搜索引擎收录与考生直接复习。做完题可前往<a href="../quiz.html">模拟试题</a>在线组卷检验。</p>
+
+        <h2 class="tp-h2">覆盖考点</h2>
+        <ul class="tp-tags"><li>序列比对与打分矩阵</li></ul>
+
+        <h2 class="tp-h2">真题与解析（共 1 题）</h2>
+      <article class="tp-q">
+        <h3 class="tp-q-stem"><span class="tp-q-no">第 1 题</span>研究者将新测定的蛋白序列与数据库序列进行比对以推测功能。根据以上信息，判断以下陈述的正误。</h3>
+        <ul class="tp-q-opts">
+          <li>
+            <span class="tp-opt-label">A</span>
+            <span class="tp-opt-text">BLAST 是一种常用的快速局部序列比对工具</span>
+            <span class="tp-ans tp-ans-yes">正确</span>
+          </li>
+          <li>
+            <span class="tp-opt-label">B</span>
+            <span class="tp-opt-text">BLOSUM/PAM 矩阵用于评估氨基酸替换的得分</span>
+            <span class="tp-ans tp-ans-yes">正确</span>
+          </li>
+          <li>
+            <span class="tp-opt-label">C</span>
+            <span class="tp-opt-text">比对得分越高，两条序列亲缘关系或功能相似性越可能接近</span>
+            <span class="tp-ans tp-ans-yes">正确</span>
+          </li>
+          <li>
+            <span class="tp-opt-label">D</span>
+            <span class="tp-opt-text">序列比对结果不受空位罚分设置的影响</span>
+            <span class="tp-ans tp-ans-no">错误</span>
+          </li>
+        </ul>
+        <details class="tp-q-exp">
+          <summary>查看答案与解析（联赛难度）</summary>
+          <div class="tp-exp-body">A【对】依据：BLAST 通过短词匹配延伸实现高速局部比对，是功能注释的基础工具。
+B【对】依据：替换矩阵基于氨基酸理化性质与观测频率，给不同替换赋予得分。
+C【对】依据：显著比对提示同源性，可作为功能与进化关系推断的证据。
+D【错】错因：空位开放与延伸罚分直接影响比对方式与结果，是重要参数。</div>
+        </details>
+      </article>
+
+        <h2 class="tp-h2">相关主题</h2>
+        <ul class="tp-rel">
+<li><a href="mendel.html">孟德尔遗传定律</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="linkage.html">连锁与交换</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="sex_linkage.html">伴性遗传与性别决定</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="gene_mutation.html">基因突变</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="chromosome_var.html">染色体变异</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="population_gen.html">群体遗传学</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="quantitative_gen.html">数量遗传学</a><span class="tp-rel-cat">遗传学</span></li>
+<li><a href="natural_selection.html">自然选择与适应</a><span class="tp-rel-cat">演化生物学</span></li>
+        </ul>
+
+        <p class="tp-cta">
+          <a class="tp-btn" href="../quiz.html">去在线组卷做题</a>
+          <a class="tp-btn tp-btn-ghost" href="../topics.html">返回题库专题</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">TATABOX — 高中生物学习平台</div>
+      <div class="footer-links">
+        <a href="../topics.html">题库专题</a>
+        <a href="../cards.html">知识卡片</a>
+        <a href="../quiz.html">模拟试题</a>
+        <a href="../resources.html">学习资源</a>
+        <a href="../wiki.html">生物百科</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/core/utils.js?v=20260814b"></script>
+  <script src="../js/core/hamburger.js?v=20260814b"></script>
+  <script>
+    if (window.BioQuestHamburger) {
+      window.BioQuestHamburger.render();
+      window.BioQuestHamburger.init();
+    }
+  </script>
+</body>
+</html>

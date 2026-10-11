@@ -19,6 +19,7 @@ on:
       - 'robots.txt'
       - 'index.html'
       - '*.html'
+      - 'topics/**'
       - 'scripts/submit-baidu.js'
   workflow_dispatch: {}
 

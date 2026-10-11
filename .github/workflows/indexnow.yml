@@ -25,6 +25,7 @@ on:
       - 'robots.txt'
       - 'index.html'
       - '*.html'
+      - 'topics/**'
       - 'scripts/submit-indexnow.js'
   workflow_dispatch: {}
 

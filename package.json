@@ -13,6 +13,7 @@
     "bump:sw": "node scripts/bump-sw.js",
     "build:css": "node scripts/build-css-bundle.js",
     "build:min": "node scripts/minify-assets.js",
+    "gen:topics": "node scripts/generate-topic-pages.js",
     "indexnow": "node scripts/submit-indexnow.js",
     "indexnow:dry": "node scripts/submit-indexnow.js --dry-run",
     "baidu": "node scripts/submit-baidu.js",
