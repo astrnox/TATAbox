@@ -1,0 +1,56 @@
+# TATABOX — IndexNow 即时收录（Bing / Yandex / Naver）
+# ============================================================
+# 目标：站点内容变更后，把 sitemap 中的 URL 主动推给 IndexNow 端点，
+#       让 Bing 通常在数分钟内开始抓取，而不是等 bingbot 自然发现（数周）。
+#
+# 与 ci.yml 的分工：
+#   - ci.yml 是只读的纯静态校验，不联网（verify-* 脚本均无网络请求）；
+#   - 本 workflow 是唯一会出网的流程，故与 CI 解耦，失败也不会影响构建产物。
+#
+# 触发时机：只在 main/master 上、且 SEO 相关文件变更时提交后运行 ——
+#   避免每次 push 都打一次端点（IndexNow 对同一 key 有频率与配额限制）。
+#
+# 注意：IndexNow 要求「密钥文件已在线上可访问」。首次接入时需先让
+#   <key>.txt 随部署上线，再触发本流程（已用 workflow_dispatch 兜底）。
+#   若密钥尚未部署，端点会返回 400 keyInvalid —— 此时本 job 标记为
+#   warning 而非 fail，不阻断流水线。
+
+name: IndexNow
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - 'index.html'
+      - '*.html'
+      - 'scripts/submit-indexnow.js'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    name: submit URLs to IndexNow
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # 出网调用第三方端点，不应因网络抖动让整条流水线变红
+    continue-on-error: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Preflight（密钥文件 + sitemap 可解析）
+        # 先离线自检，把「配置问题」和「网络问题」区分开
+        run: node scripts/submit-indexnow.js --dry-run
+
+      - name: Submit to IndexNow
+        run: node scripts/submit-indexnow.js

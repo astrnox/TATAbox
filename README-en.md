@@ -6,7 +6,7 @@
 
 **From biology-league prep to Gaokao mock exams — practice biology with one website.**
 
-[🇨🇳 中文版](./README.md) · [🌐 Live Demo](https://gagabox.cc.cd/) · [📝 Start Practicing](https://gagabox.cc.cd/#/practice) · [💬 Report an Issue](https://github.com/astrnox/BioQuest/issues)
+[🇨🇳 中文版](./README.md) · [🌐 Live Demo](https://tatabox.cc.cd/) · [📝 Start Practicing](https://tatabox.cc.cd/#/practice) · [💬 Report an Issue](https://github.com/astrnox/BioQuest/issues)
 
 [![Platform](https://img.shields.io/badge/platform-Web-blue?style=flat-square)]()
 [![License: MPL 2.0](https://img.shields.io/badge/license-MPL--2.0-green?style=flat-square)](./LICENSE)
@@ -28,7 +28,7 @@ TATABOX is a biology learning website built specifically for high school student
 
 ### 👉 Just want to use it (students / teachers)
 
-Open the online version directly: **[https://gagabox.cc.cd/](https://gagabox.cc.cd/)**
+Open the online version directly: **[https://tatabox.cc.cd/](https://tatabox.cc.cd/)**
 
 - You can practice without registering; registering lets you sync your wrong-answer book and learning progress.
 - Features like the AI tutor and photo-based question search require you to configure your own API Key (they all use the free tiers of various providers — no cost, tutorial included).

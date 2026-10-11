@@ -12,7 +12,11 @@
     "audit:design": "node scripts/audit-design.js",
     "bump:sw": "node scripts/bump-sw.js",
     "build:css": "node scripts/build-css-bundle.js",
-    "build:min": "node scripts/minify-assets.js"
+    "build:min": "node scripts/minify-assets.js",
+    "indexnow": "node scripts/submit-indexnow.js",
+    "indexnow:dry": "node scripts/submit-indexnow.js --dry-run",
+    "baidu": "node scripts/submit-baidu.js",
+    "baidu:dry": "node scripts/submit-baidu.js --dry-run"
   },
   "repository": {
     "type": "git",

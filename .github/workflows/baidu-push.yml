@@ -1,0 +1,61 @@
+# TATABOX — 百度普通收录 API 提交
+# ============================================================
+# 与 indexnow.yml（Bing/Yandex）平行：百度不支持 IndexNow，
+# 只能走自家的「普通收录 → API 提交」接口。
+#
+# 前置条件：在仓库 Settings → Secrets 配置 BAIDU_TOKEN
+#   （ziyuan.baidu.com → 普通收录 → API 提交）。未配置时本流程
+#   自动跳过，不报错 —— 避免未接入百度的 fork/环境出现红叉。
+#
+# continue-on-error：出网调用第三方端点，网络抖动不应让流水线变红。
+
+name: Baidu Push
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - 'index.html'
+      - '*.html'
+      - 'scripts/submit-baidu.js'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    name: submit URLs to Baidu
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    continue-on-error: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Skip when BAIDU_TOKEN is not configured
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+        run: |
+          if [ -z "$BAIDU_TOKEN" ]; then
+            echo "未配置 secret BAIDU_TOKEN，跳过百度推送（配置方法见 workflow 头部注释）"
+            echo "SKIP=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Preflight（sitemap 可解析 + URL 归属校验）
+        if: env.SKIP != 'true'
+        run: node scripts/submit-baidu.js --dry-run
+
+      - name: Submit to Baidu
+        if: env.SKIP != 'true'
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+        run: node scripts/submit-baidu.js
