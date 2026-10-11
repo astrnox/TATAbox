@@ -1,0 +1,44 @@
+{
+ "id": "M4-58-c37f38e69323",
+ "type": "single",
+ "question": "大约在70 个表型正常的人中有一个白化基因杂合子。一个表型正常、其双亲也正常、但有一白化弟弟的女人，与一无亲缘关系的正常男人婚配。问他们所生的孩子患白化病的概率是多少？",
+ "options": {
+  "A": "l/140",
+  "B": "l/280",
+  "C": "l/420",
+  "D": "l/560"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 58 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-71-518de97d6dd3",
+ "type": "single",
+ "question": "由单细胞引导的电位是：",
+ "options": {
+  "A": "神经干动作电位",
+  "B": "运动终板电位",
+  "C": "微音器电位",
+  "D": "心电图"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 70 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

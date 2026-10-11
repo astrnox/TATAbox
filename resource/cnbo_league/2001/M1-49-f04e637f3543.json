@@ -1,0 +1,44 @@
+{
+ "id": "M1-49-f04e637f3543",
+ "type": "single",
+ "question": "下面哪种提法是对的？",
+ "options": {
+  "A": "人的身高在早晨略高于晚上，而体温略低于晚上",
+  "B": "人的身高在早晨略低于晚上，而体温略高于晚上",
+  "C": "人的身高和体温早晨与晚上相同",
+  "D": "中午时人的身高和体温最高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 49 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

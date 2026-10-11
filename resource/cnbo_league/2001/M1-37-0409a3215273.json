@@ -1,0 +1,44 @@
+{
+ "id": "M1-37-0409a3215273",
+ "type": "single",
+ "question": "对于细胞周期时间相差很大的不同种类的两种细胞来说，通常它们的差别最明显的时期是＿。",
+ "options": {
+  "A": "G1 期",
+  "B": "S 期",
+  "C": "G2 期",
+  "D": "M 期"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 37 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

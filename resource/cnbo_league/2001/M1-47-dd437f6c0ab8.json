@@ -1,0 +1,44 @@
+{
+ "id": "M1-47-dd437f6c0ab8",
+ "type": "single",
+ "question": "在经以下处理一小时后，滴加碘液会使哪一支试管的内容物变成蓝色？",
+ "options": {
+  "A": "米汤与一定量的冷汗水充分混合后，并将试管保存在37℃水中",
+  "B": "米汤与一定量的唾液充分混合后，并将试管保存在37℃水中",
+  "C": "人体必需的氨基酸与一定量的唾液混合后，并将试管保存在37℃水中",
+  "D": "脂肪微滴与一定量的唾液混合后，并将试管保存在37℃水中"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 47 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

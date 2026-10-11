@@ -1,0 +1,44 @@
+{
+ "id": "M1-106-034df0707569",
+ "type": "mtf",
+ "question": "下列有关氨基酸密码子的描述，哪些项是正确的？",
+ "options": {
+  "A": "密码子有种属特异性，所以不同生物合成不同的蛋白质",
+  "B": "一种氨基酸可以有一组以上密码子",
+  "C": "密码子阅读有方向性，从3’端起始，5’端终止",
+  "D": "密码子第三位碱基在决定掺入的氨基酸特异性方面重要性较小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "105.A（ ）B（√）C（ ）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 105 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

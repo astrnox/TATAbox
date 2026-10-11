@@ -1,0 +1,44 @@
+{
+ "id": "M1-64-e0ce9b325bf1",
+ "type": "single",
+ "question": "随着刺激强度的增大，复合动作电位将表现为:",
+ "options": {
+  "A": "“全或无”出现",
+  "B": "复合动作电位的振幅可随刺激强度的增加而增大",
+  "C": "复合动作电位的频率可随刺激强度的增加而增大，后期不变化",
+  "D": "复合动作电位的振幅可随刺激强度的增加而增大，后期不变化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 63 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

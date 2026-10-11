@@ -1,0 +1,44 @@
+{
+ "id": "M2-39-8c5a0e149f27",
+ "type": "single",
+ "question": "从某种病毒中提取出核酸，经测定，其碱基的组成中A 与T 含量相等，C 与G 的含量相等。以下有关这种病毒核酸种类的结论哪个正确？",
+ "options": {
+  "A": "RNA",
+  "B": "单链DNA",
+  "C": "双链DNA",
+  "D": "环状DNA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 39 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

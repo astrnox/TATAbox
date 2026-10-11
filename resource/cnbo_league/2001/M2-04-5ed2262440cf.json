@@ -1,0 +1,44 @@
+{
+ "id": "M2-04-5ed2262440cf",
+ "type": "single",
+ "question": "在下述4 种关于种子植物特征的描述中哪组是正确的？",
+ "options": {
+  "A": "由于花粉管的产生，种子植物的双受精彻底摆脱了水的限制",
+  "B": "均以导管和管胞输送水和无机盐，以筛管和伴胞输送有机物",
+  "C": "种子植物的世代交替中孢子体占绝对优势，配子体寄生在孢子体上",
+  "D": "种子是双受精的产物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 4 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}
