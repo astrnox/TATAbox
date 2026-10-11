@@ -1,0 +1,46 @@
+{
+ "id": "M1-08-83ea79e321cb",
+ "type": "single",
+ "question": "真核细胞及其细胞器在用超声波处理破裂以后，经离心得到可溶性的和不溶性的部分。蛋白质X 被发现在不溶性部分，将这不溶性部分再用0. 5 mol/L NaCl 处理以后再进行离心，发现蛋白质X 出现在可溶性部分之中。你认为蛋白质X 最有可能是一种",
+ "options": {
+  "A": "细胞质膜的内在膜蛋白",
+  "B": "细胞器膜的内在膜蛋白",
+  "C": "外在膜蛋白",
+  "D": "可溶性的细胞质基质蛋白",
+  "E": "可溶性的核蛋白"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 8 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

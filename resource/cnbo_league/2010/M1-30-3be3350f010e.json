@@ -1,0 +1,44 @@
+{
+ "id": "M1-30-3be3350f010e",
+ "type": "single",
+ "question": "蕨类植物进行减数分裂后形成的第一个结构是",
+ "options": {
+  "A": "孢子",
+  "B": "精子",
+  "C": "孢子体",
+  "D": "配子体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 30 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-63-f5fcb94a3d6b",
+ "type": "single",
+ "question": "设椎实螺的螺壳向右旋是由显性基因D 控制，螺壳向左旋是隐性基因d 控制。若以两种椎实螺进行杂交(雌dd×雄DD)，则以下有关F1 和F2 表现型的叙述正确的是：",
+ "options": {
+  "A": "均为左旋",
+  "B": "F1 右旋，F2 左旋、右旋都有",
+  "C": "F1 左旋，F2 右旋",
+  "D": "F1 左旋，F2 左旋、右旋都有"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 63 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-42-cd778ac88e26",
+ "type": "single",
+ "question": "下列有关光合产物分配方向的论述中，错误的是：",
+ "options": {
+  "A": "在小麦的乳熟期，光合产物的分配中心只是穗",
+  "B": "在小麦拔节期之前，下部叶子的光合产物主要供应根部",
+  "C": "叶片产生的光合产物都要向外输出，供给根、茎或生殖器官的生长发育",
+  "D": "大豆开花结荚时，叶片的光合产物主要供给本节的花荚"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 42 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

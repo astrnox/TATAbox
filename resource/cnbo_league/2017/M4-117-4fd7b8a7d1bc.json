@@ -1,0 +1,44 @@
+{
+ "id": "M4-117-4fd7b8a7d1bc",
+ "type": "multiple",
+ "question": "关于一个二倍体平衡群体，以下说法正确的是：",
+ "options": {
+  "A": "常染色体上的基因在群体上下代之间基因频率和基因型频率均保持不变",
+  "B": "性染色体上的基因在上下代之间以波动式方式逐渐接近平衡时频率",
+  "C": "复等位基因存在时，杂合子的频率可以大于0.5",
+  "D": "群体点位于2DR-H2=0 的抛物线上"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 117 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 117,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

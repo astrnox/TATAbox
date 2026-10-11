@@ -1,0 +1,44 @@
+{
+ "id": "M1-42-42fc5beb9930",
+ "type": "single",
+ "question": "细胞膜脂质双分子层中，镶嵌蛋白质分子分布在",
+ "options": {
+  "A": "仅在内表面",
+  "B": "仅在两层之间",
+  "C": "仅在内表面与外表面",
+  "D": "两层之间、内表面与外表面都有"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 42 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

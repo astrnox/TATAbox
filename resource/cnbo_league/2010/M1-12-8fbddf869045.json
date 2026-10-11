@@ -1,0 +1,44 @@
+{
+ "id": "M1-12-8fbddf869045",
+ "type": "single",
+ "question": "α-D-葡萄糖和β-D-葡萄糖的主要区别是下列哪一个？",
+ "options": {
+  "A": "第1位碳原子上的羟基",
+  "B": "第2位碳原子上的羟基",
+  "C": "第5位碳原子上的羟基",
+  "D": "第4位碳原子上的羟基"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 12 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

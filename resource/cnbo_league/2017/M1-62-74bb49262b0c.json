@@ -1,0 +1,44 @@
+{
+ "id": "M1-62-74bb49262b0c",
+ "type": "multiple",
+ "question": "以下关于局部电位的阐述正确的是：",
+ "options": {
+  "A": "不具备“全或无”特性",
+  "B": "不能够远距离传播",
+  "C": "不能发生叠加",
+  "D": "不出现不应期"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 62 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

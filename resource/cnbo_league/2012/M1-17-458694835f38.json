@@ -1,0 +1,44 @@
+{
+ "id": "M1-17-458694835f38",
+ "type": "single",
+ "question": "草履虫、水螅、乌贼、蟾蜍受到刺激后，均可从体内发出一些物质以攻击或防御敌害，在他们身体上，发出这些物质的结构是",
+ "options": {
+  "A": "刺丝泡、刺细胞、墨囊、耳后腺",
+  "B": "刺丝泡、刺丝囊、外套腔、唾液腺",
+  "C": "表膜泡、刺丝囊、墨囊、唾液腺",
+  "D": "表膜泡、刺细胞、外套腔、耳后腺"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 17 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-30-02f6276bcd89",
+ "type": "single",
+ "question": "下述有关植物细胞质壁分离的论述中，哪一项是不正确的？",
+ "options": {
+  "A": "初生质壁分离时，细胞的压力势等于零",
+  "B": "在质壁分离现象中，与细胞壁分离的质并不是原生质",
+  "C": "蚕豆根的分生细胞放在20%的蔗糖溶液中，能够发生质壁分离",
+  "D": "将洋葱表皮细胞放入一定浓度的硝酸钾溶液中，其细胞发生质壁分离后又发生质壁分离复原。其原因是钾离子和硝酸根离子都进入了细胞 Ⅰ Ⅱ Ⅲ Ⅳ 光强度光合速率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 30 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

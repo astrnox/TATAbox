@@ -1,0 +1,44 @@
+{
+ "id": "M1-42-cf84bfaba759",
+ "type": "single",
+ "question": "青霉素对人体无毒性是因为：",
+ "options": {
+  "A": "细胞膜表面无青霉素受体",
+  "B": "细胞能产生分解青霉素的酶",
+  "C": "青霉素不能通过细胞膜",
+  "D": "细胞无细胞壁结构"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 42 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

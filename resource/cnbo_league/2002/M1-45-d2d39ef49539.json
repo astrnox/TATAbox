@@ -1,0 +1,44 @@
+{
+ "id": "M1-45-d2d39ef49539",
+ "type": "single",
+ "question": "当达到K 离子平衡电位时",
+ "options": {
+  "A": "细胞膜两侧的K 离子浓度梯度为零",
+  "B": "细胞膜外的K 离子浓度大于膜内的K 离子浓度",
+  "C": "细胞膜两侧的电位梯度为零",
+  "D": "细胞膜内侧的K 离子不再外流"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 45 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

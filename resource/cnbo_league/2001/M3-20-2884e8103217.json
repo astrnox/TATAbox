@@ -1,0 +1,46 @@
+{
+ "id": "M3-20-2884e8103217",
+ "type": "single",
+ "question": "下列关于脊索动物的叙述哪个是正确的？",
+ "options": {
+  "A": "脊索动物门的种类终生都具有脊索，因此而得名",
+  "B": "尾索动物的幼体在尾部具有发达的脊索",
+  "C": "头索动物的脊索在其头部最发达",
+  "D": "文昌鱼属典形的尾索动物",
+  "E": "脊索动物门的三大特征是具有脊索、腹神经索和咽裂"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 20 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-66-7b36e8764396",
+ "type": "single",
+ "question": "在玉米中，AB/ab 与AB/ab 杂交后代中双隐性类型的数目为全部子代的16%，这两个基因间的遗传图距是：",
+ "options": {
+  "A": "10",
+  "B": "20",
+  "C": "40",
+  "D": "60"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 66 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

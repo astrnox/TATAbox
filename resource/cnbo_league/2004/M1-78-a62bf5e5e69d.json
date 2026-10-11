@@ -1,0 +1,80 @@
+{
+ "id": "M1-78-a62bf5e5e69d",
+ "type": "single",
+ "question": "图中D 代表",
+ "options": {
+  "A": "引物的3’末端",
+  "B": "模板的3’末端",
+  "C": "引物的5’末端",
+  "D": "模板的5’末端"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 78 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "77-79",
+  "stimulus": "见下图(表明为DNA 聚合酶作用的底物)"
+ },
+ "image": {
+  "file": "assets/questions/M1-78-a62bf5e5e69d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 53,
+  "bbox": [
+   90.0,
+   357.3,
+   361.5,
+   426.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-78-a62bf5e5e69d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 53,
+   "bbox": [
+    90.0,
+    357.3,
+    361.5,
+    426.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

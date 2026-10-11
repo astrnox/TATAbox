@@ -1,0 +1,44 @@
+{
+ "id": "M2-78-dac065f4cbc4",
+ "type": "single",
+ "question": "病毒的基因组可以由 组成。",
+ "options": {
+  "A": "蛋白质",
+  "B": "多糖",
+  "C": "同一病毒中既有DNA,又有RNA",
+  "D": "或DNA 或RNA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 78 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

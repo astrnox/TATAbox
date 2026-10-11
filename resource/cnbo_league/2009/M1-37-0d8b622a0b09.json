@@ -1,0 +1,44 @@
+{
+ "id": "M1-37-0d8b622a0b09",
+ "type": "single",
+ "question": "下列哪些反应的主要进行部位不是线粒体？ ①糖酵解；②Krebs 循环；③氧化磷酸化；④乙醛酸循环；⑤脂肪酸合成；⑥酮体合成",
+ "options": {
+  "A": "①④⑤",
+  "B": "②⑤⑥",
+  "C": "①③⑤",
+  "D": "③④⑤"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 37 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

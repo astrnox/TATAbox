@@ -1,0 +1,44 @@
+{
+ "id": "M1-29-cac6752be4bb",
+ "type": "single",
+ "question": "以下有关光合色素性质的论述中，哪一项是正确的？",
+ "options": {
+  "A": "完整叶绿体提取液的荧光比叶绿体色素提取液的荧光强",
+  "B": "只有少数叶绿素b 具有光能转换的功能",
+  "C": "溶解度法分离叶绿素和类胡萝卜素的机理是类胡萝卜素发生皂化反应后转移至上层水中",
+  "D": "醋酸-醋酸铜溶液使植物叶片保绿的原因是它可促使叶绿素转变为稳定的亮绿色的去镁叶绿素"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 29 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

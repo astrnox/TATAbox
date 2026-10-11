@@ -1,0 +1,44 @@
+{
+ "id": "M1-15-1f3c1720dd40",
+ "type": "single",
+ "question": "三羧酸循环中草酰乙酸的最主要来源是：",
+ "options": {
+  "A": "丙酮酸羧化",
+  "B": "丙酮酸氧化脱羧",
+  "C": "苹果酸酶催化产物",
+  "D": "谷氨酰胺脱氨基"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 15 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

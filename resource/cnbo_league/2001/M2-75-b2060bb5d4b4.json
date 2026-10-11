@@ -1,0 +1,46 @@
+{
+ "id": "M2-75-b2060bb5d4b4",
+ "type": "mtf",
+ "question": "以下被子植物的花中更适应虫媒传粉的是：",
+ "options": {
+  "A": "花小，密集成圆锥花序，杯状花托内有蜜腺",
+  "B": "花小，无花被，单性花，无蜜腺，花粉粒小干燥",
+  "C": "花白色，无蜜腺，有气囊，花大，花粉粒较小",
+  "D": "花小，花被绿色，花粉粒轻而干燥",
+  "E": "花两恻对称，雌雄蕊愈合成合蕊柱，花粉粒形成花粉块"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "2．A（√）B（×）C（×）D（×）E（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 2 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

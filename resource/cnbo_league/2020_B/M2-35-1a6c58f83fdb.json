@@ -1,0 +1,44 @@
+{
+ "id": "M2-35-1a6c58f83fdb",
+ "type": "single",
+ "question": "苔藓植物和真蕨类植物所共有的特征是：",
+ "options": {
+  "A": "孢子体和配子体均能独立生活",
+  "B": "卵式生殖方式",
+  "C": "异型孢子",
+  "D": "原生中柱"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 35 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

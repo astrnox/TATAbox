@@ -1,0 +1,48 @@
+{
+ "id": "M1-04-f844717aa3b9",
+ "type": "mtf",
+ "question": "环肽比序列相同的线性肽膜透性好、靶点结合力强。环孢素A（CsA）是环状11 肽，能与细胞内的 CypA 结合形成稳定的CsA–CypA 复合物，发挥免疫抑制作用。判断下列陈述的正误：",
+ "options": {
+  "A": "相比序列相同的线性肽，CsA 没有游离的末端，因此在体内存在时间更长；",
+  "B": "CsA 有多个氨基酸存在甲基化，导致其极性增强，可更好地穿透细胞膜；",
+  "C": "与CsA 相比，其序列相同的线性肽具有更强的免疫抑制功能；",
+  "D": "CsA 与序列相同的线性肽的等电点相同。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TFFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 4 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。环肽没有游离的N端与C端，不易被外肽酶降解，体内半衰期更长。B．错误。多个氨基酸的N-甲基化降低极性与氢键供体数量，从而提高膜透性；'极性增强'的说法与事实相反。C．错误。题干已给出环肽膜透性与靶点结合力更强，其免疫抑制功能强于同序列线性肽。D．错误。环化消除了游离氨基与羧基，可解离基团改变，等电点与同序列线性肽不同。\n【易错易混】易错：'甲基化→极性增强'是反的——N-甲基化屏蔽氢键、降低极性，正是环孢素等天然环肽膜透性好的化学基础。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

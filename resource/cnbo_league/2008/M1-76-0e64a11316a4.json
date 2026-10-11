@@ -1,0 +1,44 @@
+{
+ "id": "M1-76-0e64a11316a4",
+ "type": "single",
+ "question": "乙酰-CoA 是代谢中的关键分子，下列哪种物质不是由乙酰-CoA 转化而来",
+ "options": {
+  "A": "半胱氨酸",
+  "B": "胆固醇",
+  "C": "酮体",
+  "D": "脂肪酸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 76 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

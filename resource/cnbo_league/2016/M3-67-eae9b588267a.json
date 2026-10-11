@@ -1,0 +1,44 @@
+{
+ "id": "M3-67-eae9b588267a",
+ "type": "multiple",
+ "question": "一些动物中存在杀婴行为，即幼年的个体被同物种成年个体杀死的现象。以下哪些说法是正确的。",
+ "options": {
+  "A": "杀婴现象有时是因为资源的短缺",
+  "B": "杀婴现象有助于雄性增加直系后代",
+  "C": "杀婴行为只出现在同类相食的物种里",
+  "D": "杀婴都针对非直系后代"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 67 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

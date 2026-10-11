@@ -1,0 +1,44 @@
+{
+ "id": "M1-34-2d53f0e9b929",
+ "type": "single",
+ "question": "光合作用过程中在叶绿体类囊体腔中完成的反应步骤有：",
+ "options": {
+  "A": "三碳化合物的形成",
+  "B": "水的光解和氧的释放",
+  "C": "NADP 的还原",
+  "D": "ATP 的生成"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 34 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

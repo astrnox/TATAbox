@@ -1,0 +1,44 @@
+{
+ "id": "M1-16-02828da07648",
+ "type": "single",
+ "question": "一对夫妻生了一个儿子（名字叫“OK”），小“OK”不仅色盲，且性染色体也比别的男孩多一条：XXY。体检表明，“OK”父母视觉正常，没有遗传病或其它疾病。请问小“OK”是怎么得的这遗传病？",
+ "options": {
+  "A": "问题出在“OK”父亲身上。在精母细胞减数第一次分裂时XY 染色体没有分开就直接进入同一个子细胞中",
+  "B": "问题出在“OK”父亲身上。在精母细胞减数第二次分裂时XY 染色体没有分开就直接进入同一个子细胞中",
+  "C": "问题出在“OK”母亲身上。在卵母细胞减数第一次分裂时XX 染色体没分开就直接进入同一个子细胞中",
+  "D": "问题出在“OK”母亲身上。在卵母细胞减数第二次分裂时XX 染色体没分开就直接进入同一个子细胞中"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 16 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

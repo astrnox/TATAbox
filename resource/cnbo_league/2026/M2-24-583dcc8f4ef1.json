@@ -1,0 +1,80 @@
+{
+ "id": "M2-24-583dcc8f4ef1",
+ "type": "mtf",
+ "question": "叶绿素及其他光合色素的吸收光谱如图所示。对以下陈述进行正误判断：",
+ "options": {
+  "A": "叶绿素a 与叶绿素b 因化学结构的差异而呈现不同的吸收光谱；",
+  "B": "叶绿素在蓝光和红光范围的吸收较强，而对绿色光吸收较弱，从而叶片呈现绿色；",
+  "C": "类胡萝卜素在保护光合器官以防止光氧化损伤方面具有重要功能；",
+  "D": "一些藻类能在深海生存是因为藻红素可高效吸收穿透至较深海域的紫光。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 24 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-24-583dcc8f4ef1/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 4,
+  "bbox": [
+   61.8,
+   600.2,
+   424.4,
+   723.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-24-583dcc8f4ef1/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    61.8,
+    600.2,
+    424.4,
+    723.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。叶绿素a与b仅在卟啉环取代基上不同（−CH₃ vs −CHO），吸收光谱因此不同。B．正确。叶绿素主要吸收蓝紫光和红光，反射/透射绿光，故叶片呈绿色。C．正确。类胡萝卜素可淬灭单线态氧、耗散过剩光能，防止光氧化损伤。D．错误。藻红素主要吸收绿光和黄绿光（约480–570 nm），这些光在海水中穿透较深，深海藻类借此进行光合作用；'吸收紫光'说法错误。\n【点睛】点睛：海水对光的吸收是波长选择性的——红光表层即被吸收，蓝绿光穿透最深；深海藻类的辅助色素（藻红素、藻蓝蛋白）正是'追光'演化的结果。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-44-e207d1b1f9a7",
+ "type": "multiple",
+ "question": "下列关于激素的描述中，正确的是：",
+ "options": {
+  "A": "胰岛素是目前已知的唯一一个直接促进合成代谢并降低血糖的激素",
+  "B": "胰高血糖素只能促进分解代谢",
+  "C": "激素都需要通过结合细胞膜蛋白受体行使功能",
+  "D": "除了胰腺、甲状腺等腺体外，肝脏、肌肉等组织也可以分泌激素"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 44 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

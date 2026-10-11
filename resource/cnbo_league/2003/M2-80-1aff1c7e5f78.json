@@ -1,0 +1,44 @@
+{
+ "id": "M2-80-1aff1c7e5f78",
+ "type": "single",
+ "question": "一般认为，植物和动物的共同祖先是：",
+ "options": {
+  "A": "细菌",
+  "B": "原始绿色鞭毛生物",
+  "C": "原始单核变形虫",
+  "D": "蓝藻"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 80 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

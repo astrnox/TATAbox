@@ -1,0 +1,46 @@
+{
+ "id": "M2-49-a5edd54f8bf9",
+ "type": "multiple",
+ "question": "下列五大类传统的植物激素中哪些在组织培养中常被用来诱导芽或根的形成？",
+ "options": {
+  "A": "赤霉素",
+  "B": "细胞分裂素",
+  "C": "脱落酸",
+  "D": "乙烯",
+  "E": "生长素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 49 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选 1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

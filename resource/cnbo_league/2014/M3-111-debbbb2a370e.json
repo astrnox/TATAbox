@@ -1,0 +1,44 @@
+{
+ "id": "M3-111-debbbb2a370e",
+ "type": "multiple",
+ "question": "地球上生物得以生存繁衍的基本能量来源包括哪些？",
+ "options": {
+  "A": "地热",
+  "B": "化学能",
+  "C": "光能",
+  "D": "势能"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 111 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "第三部分 动物行为学、生态学（7 道题8 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-74-f6efe83d22e2",
+ "type": "single",
+ "question": "根据阿伦规律（Allen's rule），随着气候变暖，北极狐的外耳可能会发生下列哪种变化？",
+ "options": {
+  "A": "变大",
+  "B": "变小",
+  "C": "不变",
+  "D": "无规律"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 74 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

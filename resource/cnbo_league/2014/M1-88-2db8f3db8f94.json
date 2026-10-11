@@ -1,0 +1,44 @@
+{
+ "id": "M1-88-2db8f3db8f94",
+ "type": "multiple",
+ "question": "微管相关的细胞结构包括",
+ "options": {
+  "A": "中心粒",
+  "B": "鞭毛",
+  "C": "纺锤体",
+  "D": "细肌丝"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 88 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

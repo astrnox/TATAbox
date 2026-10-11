@@ -1,0 +1,80 @@
+{
+ "id": "M1-32-1769726d8967",
+ "type": "multiple",
+ "question": "下列有关图片中①到③细胞结构变化的描述正确的有：",
+ "options": {
+  "A": "两个细胞核中的一个发生了细胞程序性死亡；",
+  "B": "质体移动到细胞上侧；",
+  "C": "细胞核移动到下侧；",
+  "D": "细胞出现极性。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 32 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二. 植物的解制、植物生理、植物演化（共19 题，34 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "32-35",
+  "stimulus": "下图是木贼孢子在光照下进行细胞分裂的过程，观察图片，回答下列问题："
+ },
+ "image": {
+  "file": "assets/questions/M1-32-1769726d8967/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 456,
+  "bbox": [
+   119.1,
+   566.6,
+   475.5,
+   679.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-32-1769726d8967/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 456,
+   "bbox": [
+    119.1,
+    566.6,
+    475.5,
+    679.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

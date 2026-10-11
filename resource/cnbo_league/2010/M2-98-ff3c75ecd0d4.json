@@ -1,0 +1,50 @@
+{
+ "id": "M2-98-ff3c75ecd0d4",
+ "type": "single",
+ "question": "如果花的颜色由一个基因座的状态决定。将带有白斑的粉红色花植株与正常的纯白色花植株杂交，那么后代的表型有：",
+ "options": {
+  "A": "后代都是粉红色，个别白色",
+  "B": "后代一半粉红色，一半白色",
+  "C": "开粉红花的后代总会比开白花的后代稍多一些",
+  "D": "后代1/3白色",
+  "E": "开粉红色花的后代，花朵上都会带有白斑"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 98 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "92-99",
+  "stimulus": "关于野茉莉花的表型，花的颜色是由核基因编码的制造色素的酶所决定："
+ }
+}

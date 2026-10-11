@@ -1,0 +1,48 @@
+{
+ "id": "M4-70-7efa75073fdf",
+ "type": "mtf",
+ "question": "重复序列是指在基因组同一区域或不同区域重复出现的相同或相似的序列，可分为串联重复序列和散在重复序列。其中散在重复序列又可分为长散在重复序列（LINEs）、短散在重复序列（SINEs）、长末端重复序列（LTR）、以及DNA 转座子等。对以下关于基因组重复序列的陈述进行正误判断：",
+ "options": {
+  "A": "哺乳动物LINE-1 属于自主转座子，在基因组中呈散在分布，它能够编码自身转座所必需的蛋白和酶",
+  "B": "DNA 转座子在哺乳动物基因组中占比通常高于LINEs，且主要通过RNA 介导的逆转录转座扩增",
+  "C": "SINEs（如Alu 元件）依赖LINE 编码的逆转录酶进行转座，多集中在基因富集区域",
+  "D": "LTR 反转录转座子在哺乳动物基因组中已基本失去转座能力，因此它们的存在对基因表达调控和基因组结构稳定性没有显著影响"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 70 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。LINE-1是自主型散在重复元件，自身编码逆转录酶/内切酶等转座所需蛋白。B．错误。哺乳动物基因组中DNA转座子占比远低于LINEs，且DNA转座子以'剪切-粘贴'方式转座，不经逆转录。C．正确。SINEs（如Alu）自身不编码转座酶，依赖LINE的逆转录机器；Alu在GC较高、基因较富集的区域密度更高。D．错误。LTR元件虽多已失活，但仍可提供启动子/增强子、介导重组，显著影响基因表达调控与基因组稳定性。\n【易错易混】易混：自主（LINE）vs 非自主（SINE、DNA转座子截短型）；'剪切-粘贴'（DNA转座子）vs '复制-粘贴'（逆转录转座子）。占比排序：LINEs＞SINEs＞LTR＞DNA转座子。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

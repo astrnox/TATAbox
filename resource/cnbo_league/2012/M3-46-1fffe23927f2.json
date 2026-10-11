@@ -1,0 +1,44 @@
+{
+ "id": "M3-46-1fffe23927f2",
+ "type": "single",
+ "question": "地松鼠的雄性个体在每年很短的一段时间内在广大的范围内到处跑动去寻找发情的雌鼠，并和多个雌鼠交配。在交配期内，雄鼠的搜寻速度可达5000m2／小时，是平时的5 倍。雄鼠的这种交配模式属于",
+ "options": {
+  "A": "保卫资源的一雄多雌制",
+  "B": "保卫妻妾的一雄多雌制",
+  "C": "争夺竞争式的一雄多雌制",
+  "D": "求偶场式的一雄多雌制"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 46 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

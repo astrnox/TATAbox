@@ -1,0 +1,20 @@
+{
+ "id": "M1-30-e5ad3c9e9887",
+ "figures": [
+  {
+   "file": "assets/questions/M1-30-e5ad3c9e9887/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 364,
+   "bbox": [
+    121.4,
+    527.7,
+    473.1,
+    691.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

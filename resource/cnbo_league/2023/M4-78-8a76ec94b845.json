@@ -1,0 +1,44 @@
+{
+ "id": "M4-78-8a76ec94b845",
+ "type": "single",
+ "question": "果蝇某一条染色体上有P、Q、R、S、T、U 6 个基因。这几个基因位置很接近，但是不知道它们的顺序。查了一下果蝇的缺失突变体，结果发现：（1）缺失突变体1 表现p， q，s 三种隐性性状：（2）缺失突变体2 表现p，s，r，u 四种隐性性状；（3）缺失突变体3 表现t、u：（4）缺失突变体4 表现q、s。请问这6 个基因在染色体上的排列顺序是：",
+ "options": {
+  "A": "PQSRUT",
+  "B": "PQRSTU",
+  "C": "QSPRUT",
+  "D": "PQSTUR"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 78 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

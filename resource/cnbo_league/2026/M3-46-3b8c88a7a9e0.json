@@ -1,0 +1,80 @@
+{
+ "id": "M3-46-3b8c88a7a9e0",
+ "type": "mtf",
+ "question": "在经典的肌丝滑行模型中，肌肉收缩由肌球蛋白头部与细肌丝之间ATP 驱动的横桥循环产生主动张力。后来发现，肌小节中还存在被动弹性元件，在肌肉受力过程中可以储存和释放弹性势能。下图通过消化titin 蛋白破坏肌小节中的弹性元件（左图），在不同肌小节长度下测定弹性变化（右图，箭头上方的数字是弹性变化的百分比）。图中未标对照和实验组别，请自行判断。判断下列陈述的正误：",
+ "options": {
+  "A": "因为消化titin 蛋白降低了收缩力，所以titin 参与横桥产生力的过程；",
+  "B": "消化titin 蛋白后，肌小节在受到拉伸后恢复原长度的能力降低；",
+  "C": "消化titin 蛋白减少了横桥做功的阻力，所以等长收缩的最大主动张力会上升；",
+  "D": "消化titin 蛋白后，粗肌丝上能与细肌丝结合的横桥数量变得参差不齐。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 46 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-46-3b8c88a7a9e0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 8,
+  "bbox": [
+   61.8,
+   448.3,
+   378.7,
+   584.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-46-3b8c88a7a9e0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 8,
+   "bbox": [
+    61.8,
+    448.3,
+    378.7,
+    584.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。titin是被动弹性元件，消化titin降低的是被动回弹力，与横桥主动产力无关。B．正确。titin提供肌小节被动弹性，消化后肌小节受拉伸后恢复原长的能力下降。C．错误。消化titin减少的是被动张力，横桥做功的'阻力'概念不成立，等长收缩最大主动张力不会因此上升。D．正确。titin消化后粗肌丝失去弹性牵拉定位，可与细肌丝结合的横桥数量变得参差不齐。\n【点睛】点睛：肌小节＝主动元件（横桥）＋被动弹性元件（titin）。实验'消化titin'只动被动项——凡把结果归给横桥的选项都偷换了元件。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

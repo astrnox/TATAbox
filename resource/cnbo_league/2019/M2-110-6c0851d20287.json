@@ -1,0 +1,44 @@
+{
+ "id": "M2-110-6c0851d20287",
+ "type": "multiple",
+ "question": "蕨类植物是介于石松类和种子植物之间的一群植物，它既是 ，又是 ；其生活史中 发达并占优势。",
+ "options": {
+  "A": "颈卵器植物，维管植物：孢子体",
+  "B": "孢子植物，维管植物：孢子体",
+  "C": "孢子植物，高等植物：配子体",
+  "D": "孢子植物，有胚植物；配子体"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 110 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

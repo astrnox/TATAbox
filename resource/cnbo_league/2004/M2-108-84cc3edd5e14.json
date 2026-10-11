@@ -1,0 +1,44 @@
+{
+ "id": "M2-108-84cc3edd5e14",
+ "type": "multiple",
+ "question": "下列有关浮游植物的说法不正确的有",
+ "options": {
+  "A": "海洋中数量最大的浮游植物是蓝藻",
+  "B": "深海中的浮游植物都可以异养生长",
+  "C": "有些浮游植物可以产生对人有害的毒素",
+  "D": "水华形成是因为富营养化导致浮游植物的种类和数量迅速上升而造成的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "B D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 108 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-86-7de4d1d0883c",
+ "type": "multiple",
+ "question": "下列哪种真核细胞物质运输方式需要消耗能量",
+ "options": {
+  "A": "协助扩散",
+  "B": "信号介导的核输入",
+  "C": "信号介导的核输出",
+  "D": "水跨膜通道"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 86 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

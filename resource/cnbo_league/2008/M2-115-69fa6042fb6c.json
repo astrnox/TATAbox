@@ -1,0 +1,46 @@
+{
+ "id": "M2-115-69fa6042fb6c",
+ "type": "mtf",
+ "question": "以下有关地衣的描述，正确的是",
+ "options": {
+  "A": "是真菌和藻类的共生体",
+  "B": "可进行无性生殖",
+  "C": "极端条件下可进入休眠状态",
+  "D": "生长在湿润的土壤中",
+  "E": "是一种对环境有广泛适应性的物种"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A,B,C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 115 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 115,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

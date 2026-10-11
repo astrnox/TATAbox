@@ -1,0 +1,46 @@
+{
+ "id": "M2-104-6e0298aa8345",
+ "type": "single",
+ "question": "以下哪种方法不是种子植物经典分类中常用的属性：",
+ "options": {
+  "A": "花的颜色",
+  "B": "子房位置",
+  "C": "叶缘特征",
+  "D": "叶脉细胞形态",
+  "E": "种子形态"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 104 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

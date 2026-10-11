@@ -1,0 +1,44 @@
+{
+ "id": "M3-106-8210352bfcd9",
+ "type": "multiple",
+ "question": "乙酰胆碱可以产生下列哪些现象？",
+ "options": {
+  "A": "骨骼肌收缩",
+  "B": "心跳减慢",
+  "C": "小肠蠕动增强",
+  "D": "血压升高"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 106 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

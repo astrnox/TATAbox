@@ -1,0 +1,44 @@
+{
+ "id": "M3-111-096484909491",
+ "type": "single",
+ "question": "初始全颌鱼（Entelognathus primordialis）发现于距今4.15 亿年的地层中，属于软骨鱼的祖先盾皮鱼类，该物种被认为是软骨鱼和硬骨鱼进化链条上的中间环节，主要因为：",
+ "options": {
+  "A": "出现了颌弓",
+  "B": "具有真皮来源的硬骨化颌骨",
+  "C": "出现于志留纪",
+  "D": "具有发达的软骨脑颅"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 111 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-120-0f7554c7b358",
+ "type": "mtf",
+ "question": "下面是四个不同群体中的基因型频率，哪些是平衡群体？",
+ "options": {
+  "A": "0.36 A1A1 ：0.48 A1A2 ：0.16 A2A2",
+  "B": "0.25 A1A1 ：0.50 A1A2 ：0.25 A2A2",
+  "C": "0.04 A1A1 ：0.32 A1A2 ：0.64 A2A2",
+  "D": "0.09 A1A1 ：0.49 A1A2 ：0.42 A2A2"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "120.A（√）B（√）C（√）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 120 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

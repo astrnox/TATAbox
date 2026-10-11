@@ -1,0 +1,44 @@
+{
+ "id": "M2-54-0dcdaf9f333c",
+ "type": "multiple",
+ "question": "随着工业革命的发展，人类大量燃烧煤、石油和天然气等，导致大气中CO2 浓度迅速升高，如果不采取有效措施减少CO2 的排放量，未来百年中大气CO2 的浓度可能会高达 600-750μM。高浓度的CO2 将会对植物的生命代谢过程产生巨大的影响，下列变化过程的描述中，正确的是：",
+ "options": {
+  "A": "随着大气CO2 浓度的升高，若只考虑碳代谢的特征，C3 植物的生长速度会明显升高，而C4 植物的生长速度升高的不明显",
+  "B": "随着大气CO2 浓度的升高，气温会升高，植物可能会遭受高温和干旱胁迫",
+  "C": "随着大气CO2 浓度的升高，气孔打开，蒸腾散失水量增加",
+  "D": "随着大气CO2 浓度的不断升高，养分有效性可能会成为限制植物光合作用的因子之一"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 54 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

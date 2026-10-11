@@ -1,0 +1,44 @@
+{
+ "id": "M1-82-44e1ee868db7",
+ "type": "single",
+ "question": "色觉由三个基因决定，其中R 基因和G 基因位于X 染色体上，B 基因位于常染色体上。每个基因座上至少要有一个显性的野生型等位基因才会拥有正常的视觉，而这三个基因座中的任何一个发生隐性纯合突变都会导致色盲。有一对色盲的夫妇，他们的孩子（4 个儿子和2 个女儿）都拥有正常的视力。那么，这位丈夫常染色体上的基因最有可能的基因型是：",
+ "options": {
+  "A": "BB",
+  "B": "Bb",
+  "C": "bb",
+  "D": "无法确定。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 82 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

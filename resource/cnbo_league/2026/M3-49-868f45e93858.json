@@ -1,0 +1,80 @@
+{
+ "id": "M3-49-868f45e93858",
+ "type": "mtf",
+ "question": "右图是血红蛋白（Hb）氧解离曲线。判断下列陈述正确与否：",
+ "options": {
+  "A": "跟正常人比，呼吸性碱中毒者Hb 的氧解离曲线右移；",
+  "B": "长跑比赛中骨骼肌血管中Hb 的氧解离曲线发生左移；",
+  "C": "从成都刚到拉萨时，Hb 的氧解离程度增加；",
+  "D": "低体温的情况下，Hb 的氧解离曲线发生左移。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 49 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-49-868f45e93858/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   359.2,
+   145.6,
+   506.6,
+   277.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-49-868f45e93858/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    359.2,
+    145.6,
+    506.6,
+    277.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。呼吸性碱中毒（过度通气、pH升高）增强Hb对氧的亲和力，曲线左移而非右移。B．错误。长跑时骨骼肌血管中CO₂、H⁺、温度升高，曲线右移以利放氧，不是左移。C．正确。初到拉萨低氧，红细胞2,3-BPG升高使曲线右移，氧解离程度增加，有利于组织供氧。D．正确。低体温下Hb与氧亲和力增强，曲线左移。\n【通法】通法（氧解离曲线）：'右移＝放氧多'。均使其右移的因素：pH低、CO₂高、温度高、2,3-BPG高；反之左移。背 Bohr 效应方向不如记'运动/组织处右移、肺里左移'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

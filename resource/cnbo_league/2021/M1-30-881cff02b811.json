@@ -1,0 +1,46 @@
+{
+ "id": "M1-30-881cff02b811",
+ "type": "multiple",
+ "question": "由于缺乏维生素硫胺素，过量饮酒会导致韦尼克-科尔萨科夫综合征。在没有硫胺素的情况下，下列哪些项代谢转化不能发生?",
+ "options": {
+  "A": "丙酮酸+CO2→草酰乙酸",
+  "B": "丙酮酸→乙酰CoA+CO2",
+  "C": "α-酮戊二酸→琥珀酰CoA+CO2",
+  "D": "磷酸烯醇丙酮酸+CO2→草酰乙酸",
+  "E": "丙酮酸→乳酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 30 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

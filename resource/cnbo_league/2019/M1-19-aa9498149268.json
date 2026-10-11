@@ -1,0 +1,44 @@
+{
+ "id": "M1-19-aa9498149268",
+ "type": "multiple",
+ "question": "聚丙烯酰氨凝胶电泳分离蛋白质的依据是",
+ "options": {
+  "A": "蛋白质所带电荷数量",
+  "B": "蛋白质的分子形状",
+  "C": "蛋白质的分子大小",
+  "D": "蛋白质的亲水性"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 19 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

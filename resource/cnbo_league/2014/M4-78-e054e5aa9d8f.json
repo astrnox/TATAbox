@@ -1,0 +1,46 @@
+{
+ "id": "M4-78-e054e5aa9d8f",
+ "type": "single",
+ "question": "哈迪-温伯格定律（p2+2pq+q2）中pq 表示的是群体中",
+ "options": {
+  "A": "两个等位基因的频率",
+  "B": "50%纯合基因型的频率",
+  "C": "纯合基因型的频率",
+  "D": "50%杂合基因型的频率",
+  "E": "杂合基因型的频率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 78 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

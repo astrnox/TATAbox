@@ -1,0 +1,44 @@
+{
+ "id": "M1-25-6e5e367fcf57",
+ "type": "single",
+ "question": "下列关于常染色质和异染色质的陈述中，正确的是哪一项？",
+ "options": {
+  "A": "用碱性染料染间期细胞核,着色浅的部位是常染色质",
+  "B": "常染色质的DNA 都是可转录的",
+  "C": "异染色质中的DNA 是不能转录的",
+  "D": "异染色质除复制之外，无论间期或分裂期都呈聚缩状态"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 25 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

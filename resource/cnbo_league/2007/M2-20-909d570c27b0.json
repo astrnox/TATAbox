@@ -1,0 +1,44 @@
+{
+ "id": "M2-20-909d570c27b0",
+ "type": "single",
+ "question": "玉米和高粱的穗状花序组成及分类单位为：",
+ "options": {
+  "A": "花",
+  "B": "小穗",
+  "C": "雄花",
+  "D": "雌花"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 20 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

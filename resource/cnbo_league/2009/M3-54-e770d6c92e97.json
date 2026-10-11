@@ -1,0 +1,44 @@
+{
+ "id": "M3-54-e770d6c92e97",
+ "type": "single",
+ "question": "有关种群进化，下列说法哪项是不正确的？",
+ "options": {
+  "A": "种群中适合度高的个体越多，进化越快",
+  "B": "小种群进化速度比大种群快",
+  "C": "种群内个体间适合度差异越大，进化越快",
+  "D": "种群内基因突变发生越频繁，进化越快"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 54 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

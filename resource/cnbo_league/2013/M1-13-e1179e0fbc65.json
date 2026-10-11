@@ -1,0 +1,44 @@
+{
+ "id": "M1-13-e1179e0fbc65",
+ "type": "single",
+ "question": "下列有关酶及其辅因子的叙述，正确的是",
+ "options": {
+  "A": "一个辅因子只能是一个酶的辅因子",
+  "B": "酶蛋白就是蛋白酶",
+  "C": "酶蛋白与辅因子组成全酶",
+  "D": "与酶蛋白结合紧密，不能通过透析分离的辅因子是辅酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 13 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

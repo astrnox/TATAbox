@@ -1,0 +1,44 @@
+{
+ "id": "M1-65-cd4516e44eac",
+ "type": "single",
+ "question": "以有机物为基质的生物氧化反应中，主要以外源无机氧化物作为最终电子受体，称为",
+ "options": {
+  "A": "好氧呼吸",
+  "B": "无氧呼吸",
+  "C": "发酵",
+  "D": "分子内呼吸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 65 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

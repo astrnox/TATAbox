@@ -1,0 +1,44 @@
+{
+ "id": "M4-101-972ed0e716ae",
+ "type": "multiple",
+ "question": "转座子的活动可能造成遗传变异，包括下列哪些项？",
+ "options": {
+  "A": "插入失活",
+  "B": "非同源染色体间重组",
+  "C": "易位",
+  "D": "倒位"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 101 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

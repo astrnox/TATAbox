@@ -1,0 +1,44 @@
+{
+ "id": "M3-46-b5aebff0eb04",
+ "type": "single",
+ "question": "一位喜欢钓鱼的学生，一次从湖中钓到二条无鳞的草鱼，她想确定一下这种特殊的表型是否有遗传基础，于是做了一系列实验。她首先应该做的是",
+ "options": {
+  "A": "培养大量的野生型鱼",
+  "B": "确定野生型鱼有鳞表型能够真实遗传",
+  "C": "培养大量无鳞鱼，研究表型特征",
+  "D": "用无鳞鱼和有鳞鱼杂交"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 46 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

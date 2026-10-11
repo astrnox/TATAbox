@@ -1,0 +1,81 @@
+{
+ "id": "M2-50-85a21eae4234",
+ "type": "mtf",
+ "question": "请根据其特征与生长环境，对以下陈述进行正误判断:",
+ "options": {
+  "A": "植物B 常见于有水的环境中",
+  "B": "植物A 是中生植物",
+  "C": "植物A 更耐旱",
+  "D": "植物B 通气系统更发达"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 50 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "50-51",
+  "stimulus": "下图分别展示了两种植物A（图A）和植物B（图B）的形态特征。请仔细观察图示信息，判断下"
+ },
+ "image": {
+  "file": "assets/questions/M2-50-85a21eae4234/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   303.6,
+   101.8,
+   551.8,
+   346.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-50-85a21eae4234/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    303.6,
+    101.8,
+    551.8,
+    346.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。由图，植物B具发达通气组织等水生适应特征，常见于有水环境。B．错误。植物A具发达根系、耐旱特征，属旱生植物而非中生植物。C．正确。旱生结构（厚角质、深根等）使植物A更耐旱。D．正确。植物B的通气组织更发达，利于气体交换和浮力支持。"
+}

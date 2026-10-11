@@ -1,0 +1,39 @@
+{
+ "id": "M2-03-9e08eccd4a4b",
+ "type": "single",
+ "question": "在光合作用中最先形成的三碳糖是：",
+ "options": {
+  "A": "磷酸甘油酸",
+  "B": "磷酸甘油",
+  "C": "磷酸甘油醛",
+  "D": "磷酸丙酮酸"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 3 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

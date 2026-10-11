@@ -1,0 +1,44 @@
+{
+ "id": "M1-06-8c9a709bc5d0",
+ "type": "single",
+ "question": "植物细胞没有动物细胞间的间隙连接，主要通过胞间连丝完成细胞间的交流和通讯。胞间连丝可以允许分子量小于1000 道尔顿的分子自由通过，一些小分子量的蛋白质和信号分子可以通过胞间连丝从一个细胞进入另一个细胞。胞间连丝的物质运输具有可调节性和选择性，以下哪种分子不能通过胞间连丝进行运输",
+ "options": {
+  "A": "某些RNA 分子",
+  "B": "环腺苷酸",
+  "C": "钙离子",
+  "D": "G 蛋白"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 6 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

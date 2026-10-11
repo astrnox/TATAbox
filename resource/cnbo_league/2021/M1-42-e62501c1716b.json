@@ -1,0 +1,44 @@
+{
+ "id": "M1-42-e62501c1716b",
+ "type": "multiple",
+ "question": "海葵毒素（PLTX）由海葵等海洋腔肠动物产生，被认为是已知毒性最大的非蛋白类物质之一。研究发现，其主要作用靶点是细胞膜上的钠钾泵，使钠钾泵转换为非选择性的阳离子通道，对Na+、K+等通透，但Ca2+除外。下列关于PLTX 毒性效应描述中，正确的是：",
+ "options": {
+  "A": "可导致细胞膜超极化",
+  "B": "可导致红细胞溶血",
+  "C": "可继发引起细胞膜上电压门控Ca2+通道开放",
+  "D": "可继发改变细胞膜上钠钙交换和氢钠交换的转运方向"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 42 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

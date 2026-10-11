@@ -1,0 +1,44 @@
+{
+ "id": "M1-30-cf9d12df41e3",
+ "type": "multiple",
+ "question": "关于膜脂的描述正确的有：",
+ "options": {
+  "A": "细胞膜中的磷脂分子可以围绕其长轴旋转，并在其所在单层中变换位置；",
+  "B": "细胞膜中的磷脂分子很容易自动从脂双层的一侧翻转到另一侧；",
+  "C": "糖脂在合成及转运过程中，需要在不同的膜泡之间移动，但总是位于脂双层的某一侧；",
+  "D": "与其它生物的质膜相比，一些古菌的脂双层中含有更多的饱和脂肪酸，所以能在高温条件下生活。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 30 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

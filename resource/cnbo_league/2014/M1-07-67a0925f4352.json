@@ -1,0 +1,40 @@
+{
+ "id": "M1-07-67a0925f4352",
+ "type": "multiple",
+ "question": "溶酶体的功能包括",
+ "options": {
+  "A": "降解由胞外环境进入胞内的物质",
+  "B": "清除无用生物大分子及衰老细胞器",
+  "C": "吞噬和自噬",
+  "D": "胞吐"
+ },
+ "answer": null,
+ "answer_key": "ABC/ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 7 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "标答为复合/可选答案，见 answer_key"
+}

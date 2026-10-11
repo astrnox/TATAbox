@@ -1,0 +1,44 @@
+{
+ "id": "M3-79-854d6da7d5ff",
+ "type": "single",
+ "question": "有三种食果鸠同以某种植物的果实为生，但它们取食该种植物不同位置的果实，这种现象最合理的解释是：",
+ "options": {
+  "A": "栖息地分化",
+  "B": "生态位分化",
+  "C": "食物分化",
+  "D": "相互干涉竞争"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 79 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

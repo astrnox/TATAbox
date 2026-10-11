@@ -1,0 +1,44 @@
+{
+ "id": "M2-97-c92791356d11",
+ "type": "multiple",
+ "question": "植物光合作用可分为两个光系统，光系统I 和光系统II，通过这两个系统能产生：",
+ "options": {
+  "A": "抑制剂",
+  "B": "酸碱物质",
+  "C": "还原剂",
+  "D": "氧化剂"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 97 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

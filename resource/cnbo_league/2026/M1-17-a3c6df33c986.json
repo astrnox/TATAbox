@@ -1,0 +1,45 @@
+{
+ "id": "M1-17-a3c6df33c986",
+ "type": "mtf",
+ "question": "对下列有关真核细胞内质网功能与蛋白分选的陈述进行正误判断：",
+ "options": {
+  "A": "内质网是磷脂合成的核心场所，新合成的磷脂会进入内质网膜的胞质侧小叶；",
+  "B": "内质网驻留蛋白被输送到高尔基体后，通过COPII 包被的囊泡被运回内质网；",
+  "C": "溶酶体酶可通过甘露糖-6-磷酸信号被分选到溶酶体；",
+  "D": "内质网识别并降解错误折叠蛋白的过程，需要泛素-蛋白酶体参与。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 17 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。内质网是磷脂合成核心场所，新合成磷脂先插入胞质侧小叶，再经转位酶/翻转酶重新分布。B．错误。内质网驻留蛋白（如KDEL序列）从高尔基体返回内质网依赖COPI包被囊泡；COPII负责顺向运输（ER→高尔基体）。C．正确。溶酶体酶在高尔基体被加上甘露糖-6-磷酸（M6P）标记，被M6P受体识别分选到溶酶体。D．正确。内质网相关降解（ERAD）将错误折叠蛋白逆向转位到胞质，经泛素化后由蛋白酶体降解。"
+}

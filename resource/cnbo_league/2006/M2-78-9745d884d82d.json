@@ -1,0 +1,44 @@
+{
+ "id": "M2-78-9745d884d82d",
+ "type": "single",
+ "question": "以下哪些病是由病毒引起的？",
+ "options": {
+  "A": "结核，脚气",
+  "B": "禽流感，乙型肝炎",
+  "C": "地中海贫血，流感",
+  "D": "艾滋病，梅毒"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 78 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

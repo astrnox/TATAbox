@@ -1,0 +1,71 @@
+{
+ "id": "M3-72-7f15b0cee95e",
+ "type": "single",
+ "question": "空间分离造成大熊猫行为上的差别，对秦岭佛坪（Foping）和邛崃山卧龙（Wolong）两个自然保护区的野生大熊猫进行无线电追踪，得到两个自然保护区的大熊猫在一年中的活动海拔（如下图，图中纵坐标为海拔高度，Sep-May：9-5 月June-Aug：6-8 月；Apr- June：4-6 月，July-March：7-3 月），下列结论哪一个是正确的：",
+ "options": {
+  "A": "佛坪大熊猫一年中的大多数时候都生活在低海拔区域",
+  "B": "温度是导致两个地区的大熊猫产生差异的重要因素",
+  "C": "在佛坪，大熊猫为避免气温升高选择移动到高海拔地区",
+  "D": "两个地区的大熊猫具有相同的季节性运动模式"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 72 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-72-7f15b0cee95e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 256,
+  "bbox": [
+   202.4,
+   76.8,
+   392.5,
+   238.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-72-7f15b0cee95e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 256,
+   "bbox": [
+    202.4,
+    76.8,
+    392.5,
+    238.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

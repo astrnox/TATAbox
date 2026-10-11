@@ -1,0 +1,44 @@
+{
+ "id": "M3-57-70ce309c12d9",
+ "type": "single",
+ "question": "根据动物行为的定义，你认为下列哪项不是动物行为：",
+ "options": {
+  "A": "黑猩猩为另一只黑猩猩梳理毛发",
+  "B": "雄螽斯在交配时，给雌螽斯提供食物",
+  "C": "地松鼠在洞穴附近直立，观察周围环境",
+  "D": "郊狼盘算如何阻止同伴来争夺猎物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 57 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M4-93-4bb42efdfe40",
+ "type": "single",
+ "question": "FCHL 模型鼠CO2 产生量下降，血浆中酮体浓度上升。由此推测Txnip 基因产物的功能最可能是：",
+ "options": {
+  "A": "抑制糖酵解",
+  "B": "抑制脂肪酸氧化",
+  "C": "促进三羧酸循环",
+  "D": "促进糖异生作用"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 93 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-93",
+  "stimulus": "家族性混合型高脂血症(Familial combined hyperlipidemia，FCHL)是一种人类单基因"
+ }
+}

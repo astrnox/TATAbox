@@ -1,0 +1,39 @@
+{
+ "id": "M1-20-f136a616f681",
+ "type": "multiple",
+ "question": "维持蛋白质分子高级结构的化学键是：",
+ "options": {
+  "A": "氢键",
+  "B": "盐键",
+  "C": "羧基与羟基之间形成的酯键",
+  "D": "肽键"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 2.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 20 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

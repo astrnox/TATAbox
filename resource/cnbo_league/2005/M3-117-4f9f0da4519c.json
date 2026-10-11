@@ -1,0 +1,46 @@
+{
+ "id": "M3-117-4f9f0da4519c",
+ "type": "mtf",
+ "question": "植物群落的形成，可以从裸地上开始，也可以从已有的另一个群落中开始。但是任何一个群落在其形成过程中，至少需要经过_______阶段。",
+ "options": {
+  "A": "繁殖体的传播",
+  "B": "植物地上部分郁闭",
+  "C": "植物地下部分相互交织",
+  "D": "植物体的定居",
+  "E": "植物体之间的竞争"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "27.A（√）B（×）C（×）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 27 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

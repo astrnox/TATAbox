@@ -1,0 +1,44 @@
+{
+ "id": "M1-75-4e0818dcab45",
+ "type": "multiple",
+ "question": "下面的亚细胞结构或组分中含RNA 的是",
+ "options": {
+  "A": "核糖体",
+  "B": "剪接体",
+  "C": "信号识别颗粒",
+  "D": "核仁"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 75 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-14-f6b693501ab7",
+ "type": "single",
+ "question": "巴斯德设计的曲颈瓶实验，可以",
+ "options": {
+  "A": "证明酒是酵母菌发酵获得",
+  "B": "否定自然发生学说的论点",
+  "C": "说明培养基灭菌后的作用",
+  "D": "验证某细菌是不能培养的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 14 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-25-62cacd07ca16",
+ "type": "multiple",
+ "question": "绝大多数两栖动物生活在淡水环境，也有少数种类生活于海滨潮间带的海水中。为了探究这些两栖类对环境的适应性，研究人员提出了下列假设。这些假设中合理的有",
+ "options": {
+  "A": "它可能会有肾外排盐的结构",
+  "B": "它的皮肤可能会有大量的单细胞粘液腺",
+  "C": "它的肾脏内可能会有大量的肾小球",
+  "D": "它的体液可能会有较高的渗透压"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 25 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

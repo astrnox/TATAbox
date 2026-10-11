@@ -1,0 +1,44 @@
+{
+ "id": "M2-53-71ad042dad5a",
+ "type": "single",
+ "question": "下列有关植物激素乙烯描述，错误的是：",
+ "options": {
+  "A": "乙烯合成是一个色氨酸的代谢循环，被命名为“杨氏循环”",
+  "B": "乙烯促进果实成熟",
+  "C": "在植物体的不同发育阶段，乙烯合成的速率不同",
+  "D": "逆境诱导植物体内乙烯合成增强"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 53 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

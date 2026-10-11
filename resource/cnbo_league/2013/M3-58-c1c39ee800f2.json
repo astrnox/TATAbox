@@ -1,0 +1,44 @@
+{
+ "id": "M3-58-c1c39ee800f2",
+ "type": "multiple",
+ "question": "绿色植物的光合作用为生态系统提供了绝大部分的能量。对于光合作用，下列叙述正确的有",
+ "options": {
+  "A": "不同植物可以有不同的色素，可以吸收光谱中不同波段的光，如叶绿素可以吸收红光和蓝紫光，类胡萝卜素可以吸收蓝紫光",
+  "B": "在光补偿点以下，植物不能积累干物质",
+  "C": "在光饱和点以上，增加光强，光合产物不再增加或增加非常少",
+  "D": "在同一株植物生长的各个阶段，光饱和点保持稳定不变"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 58 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

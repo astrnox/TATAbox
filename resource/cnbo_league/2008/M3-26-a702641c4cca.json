@@ -1,0 +1,39 @@
+{
+ "id": "M3-26-a702641c4cca",
+ "type": "single",
+ "question": "昆虫纲与其它节肢动物类群共同的特征是",
+ "options": {
+  "A": "发育过程有变态",
+  "B": "气管呼吸",
+  "C": "有三对步足",
+  "D": "适宜陆生"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 26 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

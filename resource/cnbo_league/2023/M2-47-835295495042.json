@@ -1,0 +1,44 @@
+{
+ "id": "M2-47-835295495042",
+ "type": "multiple",
+ "question": "根尖的结构来源于根端分生组织的原始细胞。在拟南芥的研究中发现下列哪些结构来自于同一个原始细胞？",
+ "options": {
+  "A": "根冠",
+  "B": "表皮",
+  "C": "皮层",
+  "D": "维管组织"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 47 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

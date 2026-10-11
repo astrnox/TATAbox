@@ -1,0 +1,44 @@
+{
+ "id": "M2-80-7a87b253608d",
+ "type": "multiple",
+ "question": "下列关于多倍化和多倍体的表述中，正确的是：",
+ "options": {
+  "A": "多倍化是快速物种形成的一种方式",
+  "B": "多倍体在维管植物中很常见",
+  "C": "在中性演化理论框架下，多数的多倍化事件都不成功",
+  "D": "多倍体的保存数量与多倍化事件发生的频率相吻合"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 80 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

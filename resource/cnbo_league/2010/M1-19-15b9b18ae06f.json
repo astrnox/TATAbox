@@ -1,0 +1,44 @@
+{
+ "id": "M1-19-15b9b18ae06f",
+ "type": "multiple",
+ "question": "以下关于酶的描述，哪些是不正确的？",
+ "options": {
+  "A": "大多数酶的化学本质是蛋白质",
+  "B": "所有的酶都必须结合辅基或辅酶才能发挥催化作用",
+  "C": "都具有立体异构专一性",
+  "D": "能显著地改变化学反应速率"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 19 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

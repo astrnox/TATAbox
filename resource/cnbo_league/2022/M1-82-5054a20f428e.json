@@ -1,0 +1,44 @@
+{
+ "id": "M1-82-5054a20f428e",
+ "type": "single",
+ "question": "果蝇的性别由性指数（即X 染色体的条数和常染色体的套数之比值）决定，XXY 的果蝇是可育雌雄，而X0 的果蝇是不育雄性，XYY 是可育雄性。据此判断下列说法错误的是：",
+ "options": {
+  "A": "染色体组成为3A+3X 的果蝇表现为雌性，但可能不育；",
+  "B": "染色体组成为3A+X+Y 的果蝇表现为雌性，但不能生育；",
+  "C": "果蝇的Y 染色体对其性别无决定作用；",
+  "D": "Y 染色体上可能携带有保证雄蝇生殖力所必需的基因。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 82 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

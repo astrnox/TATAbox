@@ -1,0 +1,44 @@
+{
+ "id": "M3-103-54227a6c7239",
+ "type": "mtf",
+ "question": "间日疟原虫的生活史中出现的繁殖方式有：",
+ "options": {
+  "A": "二分裂",
+  "B": "孢子生殖",
+  "C": "有性生殖",
+  "D": "裂体生殖"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "13.A（×）B（√）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 13 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

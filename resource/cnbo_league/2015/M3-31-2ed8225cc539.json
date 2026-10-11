@@ -1,0 +1,44 @@
+{
+ "id": "M3-31-2ed8225cc539",
+ "type": "multiple",
+ "question": "宏基因组学（Metagenome）是大数据时代生物学向前迈出的又一大步，它直接研究检测特定环境中的所有遗传物质。它最有可能将推动哪些领域的发展：",
+ "options": {
+  "A": "消化、免疫等疾病研究",
+  "B": "生物多样性调查",
+  "C": "环境污染的治理",
+  "D": "外星生命探索"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 31 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "M3-57-e783fb7b032b",
+ "type": "single",
+ "question": "上题图中l、2、3、4所指示的分别是",
+ "options": {
+  "A": "腹血管、后肠、储精囊、精巢囊",
+  "B": "背血管、砂囊、前列腺、受精囊",
+  "C": "腹神经素、砂囊、储精囊、受精囊",
+  "D": "背神经素、嗉囊、前列腺、精巢囊"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 57 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "56-59",
+  "stimulus": "参状环毛蚓（Phere tima aspergillum）是我国南方最常见的一种蚯蚓，也是环节动物"
+ },
+ "image": {
+  "file": "assets/questions/M3-57-e783fb7b032b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 134,
+  "bbox": [
+   250.1,
+   324.3,
+   345.2,
+   536.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-57-e783fb7b032b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 134,
+   "bbox": [
+    250.1,
+    324.3,
+    345.2,
+    536.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "M2-92-723e9f4c4636",
+ "type": "single",
+ "question": "苔藓植物可以分为苔类、藓类和角苔类三个类群，但这三个类群之间的相互关系以及苔藓植物是否是一个自然类群一直以来都存在着争议。2020 年，科研人员成功解析了角苔的全基因组，并通过与其它两类植物进行比较，阐明了苔类、藓类和角苔类之间的关系，并首次确认了苔藓植物本身是一个单系类群。请根据上述信息推测，下面4 个系统发育树简图中哪一个与2020 年这项研究结果相符： A. B. C. D.",
+ "options": null,
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 92 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-92-723e9f4c4636/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 405,
+  "bbox": [
+   105.5,
+   199.3,
+   219.0,
+   316.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-92-723e9f4c4636/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 405,
+   "bbox": [
+    105.5,
+    199.3,
+    219.0,
+    316.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M2-92-723e9f4c4636/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 405,
+   "bbox": [
+    104.9,
+    327.1,
+    221.9,
+    438.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M2-92-723e9f4c4636/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 405,
+   "bbox": [
+    104.9,
+    452.9,
+    231.6,
+    562.1
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M2-92-723e9f4c4636/fig4.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 405,
+   "bbox": [
+    105.5,
+    573.0,
+    229.6,
+    691.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

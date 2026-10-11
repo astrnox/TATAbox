@@ -1,0 +1,44 @@
+{
+ "id": "M1-15-3a4b2d4e9fb7",
+ "type": "multiple",
+ "question": "下述关于启动子的叙述，错误的是",
+ "options": {
+  "A": "能专一地与阻遏蛋白结合",
+  "B": "是DNA 聚合酶作用的部位",
+  "C": "没有基因产物",
+  "D": "是RNA 聚合酶作用的部位"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 15 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

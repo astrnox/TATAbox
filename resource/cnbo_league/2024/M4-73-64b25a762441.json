@@ -1,0 +1,44 @@
+{
+ "id": "M4-73-64b25a762441",
+ "type": "multiple",
+ "question": "大脑的视觉系统在初级视皮层之后分成两条通路，背侧通路处理关于空间和运动的视觉信息，腹侧通路处理关于形状、颜色和物体识别的视觉信息。我们对此的认识很大程度上来自于临床医生对视觉失认患者和失调症患者的研究。若患者腹侧通路受损，可能会导致其：",
+ "options": {
+  "A": "动作协调障得；",
+  "B": "无法注视一个目标；",
+  "C": "能描述物品的颜色，但不能说出物品的名称；",
+  "D": "能说出物品的名称，但不能描述物品的颜色。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 73 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

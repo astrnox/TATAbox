@@ -1,0 +1,46 @@
+{
+ "id": "M4-101-28775e93ffe7",
+ "type": "single",
+ "question": "果蝇的黄色体色是由一个性连锁的隐性基因控制，野生型颜色由显性的等位基因产生。在一个 Hardy-Weinberg 群体的样本中包括1021 只野生型雄蝇、997 只野生型雌蝇和3 只黄色雄蝇。基因库中黄色等位基因的频率估计为：",
+ "options": {
+  "A": "1.98 %",
+  "B": "1.67 %",
+  "C": "2.04 %",
+  "D": "2.76 %",
+  "E": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 101 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

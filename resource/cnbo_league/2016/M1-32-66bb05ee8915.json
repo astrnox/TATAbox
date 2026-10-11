@@ -1,0 +1,44 @@
+{
+ "id": "M1-32-66bb05ee8915",
+ "type": "single",
+ "question": "关于电压门控离子通道，下列描述正确的是",
+ "options": {
+  "A": "这类通道都是由细胞膜去极化激活的",
+  "B": "这通道是产生可兴奋细胞动作电位的基础",
+  "C": "这类通道可以逆电化学梯度转运离子",
+  "D": "这类通道都是ATP 酶"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 32 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

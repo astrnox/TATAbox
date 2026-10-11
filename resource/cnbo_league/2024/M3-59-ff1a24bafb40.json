@@ -1,0 +1,44 @@
+{
+ "id": "M3-59-ff1a24bafb40",
+ "type": "multiple",
+ "question": "下列有关鱼类皮肤及衍生物的说法中正确的有：",
+ "options": {
+  "A": "皮肤由表皮和真皮组成，表皮为上皮组织，真皮为结缔组织，均由外胚层发育而来；",
+  "B": "真皮层内有大量的单细胞腺，真皮与肌肉的联系很紧密；",
+  "C": "鲨鱼的盾鳞外层为釉质，由表皮形成，内层为齿质，由真皮形成；",
+  "D": "中华鲟体侧由5 条纵列骨片，这些骨片不是硬鳞。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 59 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

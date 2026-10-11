@@ -1,0 +1,44 @@
+{
+ "id": "M1-12-8a69fea442be",
+ "type": "single",
+ "question": "关于母性遗传，下面表述哪项是正确的？",
+ "options": {
+  "A": "是母亲将遗传物质传递给子女而父亲不向子女传递遗传物质的现象",
+  "B": "是细胞质遗传的同义语，又称核外遗传",
+  "C": "是母亲的基因产物在卵细胞质之中积累而影响下一代表型的现象",
+  "D": "是细胞质基因仅由母亲传递给后代的遗传方式"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 12 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

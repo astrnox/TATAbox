@@ -1,0 +1,44 @@
+{
+ "id": "M1-29-8b0076685aeb",
+ "type": "multiple",
+ "question": "关于底物浓度对酶促反应速度影响的叙述，正确的是：",
+ "options": {
+  "A": "测定酶促反应速度时的初速度与底物浓度无关",
+  "B": "当底物处于使酶饱和的浓度时，酶促反应速度与酶的浓度成正比",
+  "C": "当底物处于限速浓度时，酶促反应速度将随时间延长而降低",
+  "D": "当底物处于使酶饱和的浓度时，酶促反应速度达到最大"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 29 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-86-316d3f136815",
+ "type": "single",
+ "question": "在印尼苏门答腊群岛火山爆发灾难中，有个人被困在一个岛上，岛上除充足的可饮用水外，很难找到可吃的食物。还好他身边尚有3 公斤谷物和一只1 公斤重的母鸭。请问要维持最长生存时间，以获得救援，他应该怎样做：",
+ "options": {
+  "A": "用3 公斤谷物喂鸭，吃鸭蛋，然后吃鸭",
+  "B": "先吃母鸭，再吃谷物",
+  "C": "吃2 公斤谷物，用1 公斤谷物喂鸭，吃鸭蛋，然后吃鸭",
+  "D": "先吃谷物，再吃母鸭"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 86 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

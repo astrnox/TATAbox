@@ -1,0 +1,44 @@
+{
+ "id": "M1-19-4c9e8b7c2931",
+ "type": "single",
+ "question": "以下对根冠细胞的描述，不正确的是",
+ "options": {
+  "A": "根冠细胞的壁仅具中胶层和初生壁",
+  "B": "根冠中央的细胞常含有淀粉粒",
+  "C": "根冠周围的细胞会不断死亡脱落",
+  "D": "根冠细胞持续分裂以保持根冠细胞数目大致不变"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 19 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

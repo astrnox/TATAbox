@@ -1,0 +1,76 @@
+{
+ "id": "M2-116-119e3c836b6a",
+ "type": "multiple",
+ "question": "某昆虫的附肢如下图所示，可以分为三节，按其距身体的远近，我们分别称它们为基节，中节与梢节，基节端与身体相连。这三节中有数量不等的刚毛。现研究发现，有a、 b、c 三个基因与不同节段的发育有关。下图显示当这三个基因发生突变的时候，这三个节段的表现型，最上排显示的是野生型。我们可以将这个表现型看成是对应体节发育的一个阶段。根据此图，我们可以得出：",
+ "options": {
+  "A": "c ＋影响基节的发育",
+  "B": "c ＋影响中节的发育",
+  "C": "c ＋与a ＋的互作影响中节的发育",
+  "D": "b ＋影响基节的发育"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 116 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-116-119e3c836b6a/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 241,
+  "bbox": [
+   126.6,
+   297.9,
+   468.6,
+   438.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-116-119e3c836b6a/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 241,
+   "bbox": [
+    126.6,
+    297.9,
+    468.6,
+    438.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

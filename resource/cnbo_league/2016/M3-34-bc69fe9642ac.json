@@ -1,0 +1,44 @@
+{
+ "id": "M3-34-bc69fe9642ac",
+ "type": "multiple",
+ "question": "下面会引起人体尿量增加的因素是",
+ "options": {
+  "A": "血压上升",
+  "B": "血糖浓度增加",
+  "C": "大量饮用清水",
+  "D": "注射肾上腺素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 34 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

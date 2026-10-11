@@ -1,0 +1,78 @@
+{
+ "id": "M3-50-f18fc19f3bd1",
+ "type": "multiple",
+ "question": "视网膜双极细胞接收来自视杆和视锥光感受器的直接输入，并与视网膜内侧无长突细胞和神经节细胞形成突触。在低等脊椎动物中，它们一般接受视杆细胞和视锥细胞的混合输入。在研究七鳃鳗视网膜的实验中，研究者测定了视锥、视杆、双极细胞对照射光强的敏感性与照射光波长的关系。由图中的结果可知：",
+ "options": {
+  "A": "X 细胞是视锥细胞，Y 细胞是视杆细胞；",
+  "B": "X 细胞是视杆细胞，Y 细胞是视锥细胞；",
+  "C": "双极细胞主要接受X 细胞输入；",
+  "D": "双极细胞主要接受Y 细胞输入；",
+  "E": "双极细胞主要接受X 细胞和Y 细胞均衡输入。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 50 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-50-f18fc19f3bd1/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 418,
+  "bbox": [
+   226.9,
+   187.6,
+   368.4,
+   314.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-50-f18fc19f3bd1/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 418,
+   "bbox": [
+    226.9,
+    187.6,
+    368.4,
+    314.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

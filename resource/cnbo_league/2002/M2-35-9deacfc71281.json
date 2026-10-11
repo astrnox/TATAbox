@@ -1,0 +1,44 @@
+{
+ "id": "M2-35-9deacfc71281",
+ "type": "single",
+ "question": "根压的大小",
+ "options": {
+  "A": "当大气湿度高而蒸腾作用弱时减小",
+  "B": "取决于木质部导管与土壤的水势差",
+  "C": "与土壤水分经扩散作用进入木质部导管有关",
+  "D": "通常为2MPa 左右"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 35 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

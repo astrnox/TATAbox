@@ -1,0 +1,44 @@
+{
+ "id": "M2-10-366f771f56f3",
+ "type": "single",
+ "question": "除了光周期、温度和营养3 个因素外，控制植物开花反应的另一个重要因素是",
+ "options": {
+  "A": "光合磷酸化的反应速率",
+  "B": "有机物在体内的运输速率",
+  "C": "植物的年龄",
+  "D": "土壤溶液的酸碱度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 10 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-51-d9fb4af9e554",
+ "type": "single",
+ "question": "气孔是植物叶片上保卫细胞之间形成的小孔，在植物碳同化、蒸腾和呼吸作用等过程中发挥重要作用。以下有关气孔的描述中，错误的是：",
+ "options": {
+  "A": "光照可诱导气孔张开，黑暗下气孔关闭",
+  "B": "植物激素脱落酸浓度升高促进气孔张开",
+  "C": "低浓度CO2 促进气孔张开，高浓度CO2 促进气孔关闭",
+  "D": "保卫细胞水势下降时，保卫细胞吸水膨胀，气孔张开"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 51 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

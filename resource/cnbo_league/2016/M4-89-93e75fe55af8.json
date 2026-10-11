@@ -1,0 +1,44 @@
+{
+ "id": "M4-89-93e75fe55af8",
+ "type": "single",
+ "question": "若某外星生物Schmoo 很类似于地球的二倍体生物。在Schmoo 中，具有基因G 的个体长相漂亮，而其隐性突变基因g 则决定丑陋外貌。一个漂亮的雌性嫁给一个难看的雄性，它们的后代全都是由漂亮的儿子和难看的女儿组成。由此可知：",
+ "options": {
+  "A": "它们的儿子与漂亮异性婚配，生的女儿都会漂亮",
+  "B": "它们的儿子与漂亮异性婚配，生的儿子都会漂亮",
+  "C": "它们的女儿嫁给漂亮异性，所生子女有50%的可能性会丑陋",
+  "D": "它们的女儿嫁给漂亮异性，所生儿子有50%的可能性会丑陋，女儿都会漂亮"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 89 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-99-dbedabc95761",
+ "type": "single",
+ "question": "在一个小型鸟类种群中，一场严重的风暴将种群数量从500 只减少到50 只，一个基因的等位基因频率从0.9 变为0.1。这种等位基因频率的变化可能是：",
+ "options": {
+  "A": "基因流；",
+  "B": "遗传漂变；",
+  "C": "正选择；",
+  "D": "基因突变。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "群体遗传",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 99 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

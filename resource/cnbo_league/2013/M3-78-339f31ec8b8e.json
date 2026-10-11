@@ -1,0 +1,44 @@
+{
+ "id": "M3-78-339f31ec8b8e",
+ "type": "single",
+ "question": "鸟纲是陆生脊椎动物种类最多的一个类群，而鸟纲中种类最多的一个目是：",
+ "options": {
+  "A": "鹦形目",
+  "B": "雀形目",
+  "C": "隼形目",
+  "D": "鸽形目"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 78 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分，修正为2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-59-f7d386264c7f",
+ "type": "single",
+ "question": "现有甲(AABBCC)和乙(aabbcc)两个品系的果蝇杂交，然后对其F1 代进行测交，结果各表现型的个数如下： ABC121 只、AbC24 只、aBc25 只、abc120 只，由此推知F1 代的基因型是。",
+ "options": {
+  "A": "ABCabc",
+  "B": "ACBacb",
+  "C": "AbabCc",
+  "D": "AcacBb"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 59 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

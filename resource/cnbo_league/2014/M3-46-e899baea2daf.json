@@ -1,0 +1,44 @@
+{
+ "id": "M3-46-e899baea2daf",
+ "type": "multiple",
+ "question": "集群行为的有利之处包括哪些？",
+ "options": {
+  "A": "易于获取食物或其他资源",
+  "B": "利于繁殖",
+  "C": "利于防御自然界中危险和天敌",
+  "D": "易于控制流行病"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 46 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

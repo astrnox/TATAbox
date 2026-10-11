@@ -1,0 +1,44 @@
+{
+ "id": "M3-41-b2b2a8b8e0d6",
+ "type": "single",
+ "question": "运动机能调节的主要部位是",
+ "options": {
+  "A": "小脑",
+  "B": "大脑左侧",
+  "C": "大脑右侧",
+  "D": "脑垂体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 41 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

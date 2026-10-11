@@ -1,0 +1,91 @@
+{
+ "id": "M1-59-c2def214c2b7",
+ "type": "multiple",
+ "question": "高温会导致植物热形态建成，最典型的热形态建成是高温下植物幼苗的下胚轴伸长加剧，因此下胚轴长度常常作为植物热形态建成的指标。通过测量在高温下突变体的下胚轴长度，科学家确定了转录因子PIF4 和BZR1 在调控植物热形态建成中起重要作用。图中 BL 是植物激素油菜素内酯，pif4-2 和bzr1-1D 分别是PIF4 和BZR1 的功能缺失和功能获得性突变体，Col-0 是拟南芥哥伦比亚生态型。下列叙述中错误的是：",
+ "options": {
+  "A": "PIF4 促进植物热形态建成，而BZR1 抑制植物热形态建成",
+  "B": "油菜素内酯处理可以拯救pif4-2 对高温不敏感的短下胚轴的表型",
+  "C": "在植物热形态建成调控过程中，由实验数据可以判断油菜内酯信号途径的作用位于 PIF4 转录因子的上游",
+  "D": "植物热形态建成受到多种环境条件和多种激素途径的精细调控"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 59 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-59-c2def214c2b7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 442,
+  "bbox": [
+   302.9,
+   99.2,
+   390.5,
+   278.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-59-c2def214c2b7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 442,
+   "bbox": [
+    302.9,
+    99.2,
+    390.5,
+    278.1
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M1-59-c2def214c2b7/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 442,
+   "bbox": [
+    204.8,
+    127.7,
+    302.9,
+    278.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

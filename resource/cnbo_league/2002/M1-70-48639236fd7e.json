@@ -1,0 +1,44 @@
+{
+ "id": "M1-70-48639236fd7e",
+ "type": "single",
+ "question": "固氮酶中含有的金属元素为",
+ "options": {
+  "A": "Co 与Fe",
+  "B": "Pd 与Fe",
+  "C": "Pt 与Fe",
+  "D": "Mo 与Fe"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 70 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

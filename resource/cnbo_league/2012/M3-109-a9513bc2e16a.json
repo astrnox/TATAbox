@@ -1,0 +1,44 @@
+{
+ "id": "M3-109-a9513bc2e16a",
+ "type": "single",
+ "question": "下列哪个方法不能用于测定陆生生态系统的初级生产力",
+ "options": {
+  "A": "收获量测定法",
+  "B": "pH 值测定法",
+  "C": "CO2 测定法",
+  "D": "原料消耗量测定法"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 109 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "第三部分 （9 道题10 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

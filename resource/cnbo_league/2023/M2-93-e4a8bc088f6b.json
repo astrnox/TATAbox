@@ -1,0 +1,39 @@
+{
+ "id": "M2-93-e4a8bc088f6b",
+ "type": "single",
+ "question": "单子叶植物是被子植物中最古老的谱系之一，以下哪个特征不属于单子叶植物的共衍征？",
+ "options": {
+  "A": "平行叶脉",
+  "B": "不定根系",
+  "C": "茎中维管束分散",
+  "D": "三基数花"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 93 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

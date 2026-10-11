@@ -1,0 +1,44 @@
+{
+ "id": "M2-27-204b16fbfbff",
+ "type": "single",
+ "question": "营寄生生活的吸虫与自由生活的涡虫的体壁有很大的差别，以下描述正确的是",
+ "options": {
+  "A": "吸虫的体表没有纤毛，但密布微小的微绒毛",
+  "B": "吸虫的表皮层没有成杆状体细胞",
+  "C": "吸虫的表皮是一层合胞体，有一些结晶蛋白所形成的棘钳",
+  "D": "吸虫由于较少运动，环肌和纵肌退化"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 27 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

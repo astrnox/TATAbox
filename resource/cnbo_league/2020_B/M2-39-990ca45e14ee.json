@@ -1,0 +1,44 @@
+{
+ "id": "M2-39-990ca45e14ee",
+ "type": "multiple",
+ "question": "关于木质素，下面陈述正确的是：",
+ "options": {
+  "A": "木质素是自然界中最丰富的有机物质；",
+  "B": "木质素的主要功能之一是对植物的支撑作用;",
+  "C": "木质素与花青素的生物合成途径完全不同；",
+  "D": "木质素具有防御功能。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 39 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

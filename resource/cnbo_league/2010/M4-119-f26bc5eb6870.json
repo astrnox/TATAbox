@@ -1,0 +1,44 @@
+{
+ "id": "M4-119-f26bc5eb6870",
+ "type": "single",
+ "question": "请根据以下特征判断此动物属于哪一类群：身体纺锤形，左右侧扁，分头、躯干和尾。胸鳍、腹鳍各一对，正尾型。心脏较小，位置靠前，包括一心房、一心室、动脉球和静脉窦。排泄系统包括一对肾、一对输尿管和膀胱，肾小球数目很少。鳃壁上有泌氯腺。",
+ "options": {
+  "A": "海水软骨鱼",
+  "B": "海水硬骨鱼",
+  "C": "淡水软骨鱼",
+  "D": "淡水硬骨鱼"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 119 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 119,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

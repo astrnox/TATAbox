@@ -1,0 +1,44 @@
+{
+ "id": "M3-52-871b4be16762",
+ "type": "single",
+ "question": "节肢动物的附肢有单肢型和双肢型，节肢动物有许多结构是由这些类型的附肢发育而来。下列哪一结构不是由附肢发育来的？",
+ "options": {
+  "A": "蝗虫的触角",
+  "B": "对虾的额剑",
+  "C": "蜘蛛的纺绩突",
+  "D": "蝗虫的产卵瓣"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 52 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

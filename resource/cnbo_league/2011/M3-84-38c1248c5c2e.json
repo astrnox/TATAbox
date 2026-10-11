@@ -1,0 +1,46 @@
+{
+ "id": "M3-84-38c1248c5c2e",
+ "type": "multiple",
+ "question": "下列有关激素与动物行为表达关系的叙述，哪些是正确的？",
+ "options": {
+  "A": "一种激素只调节一种行为",
+  "B": "与神经调节行为相比，激素启动行为的过程较慢",
+  "C": "激素的水平有时也受行为的影响",
+  "D": "激素对行为的调节作用与遗传因素和神经系统无关",
+  "E": "有些激素与动物的行为没有直接联系"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 84 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

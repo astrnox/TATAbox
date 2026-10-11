@@ -1,0 +1,44 @@
+{
+ "id": "M3-47-f82a526fa7dc",
+ "type": "single",
+ "question": "关于动物对高低温的耐受极限，下列哪些特征不属于高温致死的原因？",
+ "options": {
+  "A": "酶活性被破坏",
+  "B": "脱水使蛋白质沉淀",
+  "C": "氧供不足，排泄功能失调",
+  "D": "神经系统麻痹"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 47 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

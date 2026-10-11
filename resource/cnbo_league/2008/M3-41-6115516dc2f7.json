@@ -1,0 +1,44 @@
+{
+ "id": "M3-41-6115516dc2f7",
+ "type": "single",
+ "question": "对某种雀类的研究发现，在越冬地其面临的主要风险是饥饿和被捕食。因此，这种雀把活动时间分配给3 种行为：监视捕食者，取食和为争夺食物而进行的种内战斗。结群的大小会影响上述3 类行为的时间分配比例。在以下哪种情况下，最优种群的大小会变大。",
+ "options": {
+  "A": "日平均温度增加",
+  "B": "生境中的隐蔽场所增加",
+  "C": "增加捕食风险",
+  "D": "食物供应量增加"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 41 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

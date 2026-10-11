@@ -1,0 +1,44 @@
+{
+ "id": "M2-11-b40b69b197ee",
+ "type": "single",
+ "question": "反刍动物瘤胃内的微生物能降解植物饲料为小分子物质并经厌氧发酵后产生一种气体，它还能造成温室效应，这种气体是哪一项：",
+ "options": {
+  "A": "空气",
+  "B": "氧气",
+  "C": "CO2",
+  "D": "甲烷"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 11 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

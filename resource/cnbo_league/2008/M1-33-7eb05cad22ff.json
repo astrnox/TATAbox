@@ -1,0 +1,44 @@
+{
+ "id": "M1-33-7eb05cad22ff",
+ "type": "single",
+ "question": "CO2 分压由高至低的顺序通常是",
+ "options": {
+  "A": "组织液、肺动脉、肺泡气、呼出气",
+  "B": "肺动脉、组织液、肺泡气、呼出气",
+  "C": "组织液、肺动脉、呼出气、肺泡气",
+  "D": "呼出气、肺泡气、肺动脉、组织液"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 33 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

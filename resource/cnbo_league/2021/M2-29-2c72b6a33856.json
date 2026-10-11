@@ -1,0 +1,44 @@
+{
+ "id": "M2-29-2c72b6a33856",
+ "type": "multiple",
+ "question": "小鼠模型在生物医学研究中具有重要地位。新型冠状病毒 SARS-CoV-2 不能感染野生型小鼠，因此野生型小鼠不能作为研究病毒感染的动物模型。SARS-CoV-2 利用ACE2 作为细胞受体进入细胞，实验发现人的ACE 转基因小鼠则可以支持病毒感染，并导致小鼠死亡。通过此实验可直接得到的结论有:",
+ "options": {
+  "A": "小鼠ACE2 可以抑制 SARS-CoV-2 病毒的感染",
+  "B": "人的ACE2 基因可以引起小鼠死亡",
+  "C": "小鼠ACE2 不具有 SARS-CoV-2 病毒细胞受体功能",
+  "D": "ACE2 是决定 SARS-CoV-2 易感宿主范围的重要决定因素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 29 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

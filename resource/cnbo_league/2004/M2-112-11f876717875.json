@@ -1,0 +1,44 @@
+{
+ "id": "M2-112-11f876717875",
+ "type": "multiple",
+ "question": "C4 植物同C3 植物相比",
+ "options": {
+  "A": "C4 植物能在弱光下生长更好",
+  "B": "C4 植物能在低CO2 浓度下生长更好",
+  "C": "C4 植物利用高光合速率补偿高光呼吸带来的损失",
+  "D": "C4 植物光合速率受高温抑制相对较小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "B D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 112 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 112,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M1-10-0ec83272a96f",
+ "type": "single",
+ "question": "将葡萄糖加入富含磷酸戊糖途径酶的小鼠肝组织粗提物中，当葡萄糖分子中哪个碳原子被14C 标记时，下列哪项能最快产生14CO2？",
+ "options": {
+  "A": "C-1",
+  "B": "C-3",
+  "C": "C-4",
+  "D": "C-5",
+  "E": "C-6"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 10 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

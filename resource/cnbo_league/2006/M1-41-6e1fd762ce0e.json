@@ -1,0 +1,44 @@
+{
+ "id": "M1-41-6e1fd762ce0e",
+ "type": "single",
+ "question": "三联密码子中的哪一个碱基突变对蛋白质功能的改变可能最小：",
+ "options": {
+  "A": "第一个",
+  "B": "第二个",
+  "C": "第三个",
+  "D": "都一样"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 41 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M3-82-4b1232fc44de",
+ "type": "single",
+ "question": "如图为波兰Białorowieża 地区貉利用欧洲獾的洞穴情况。J-A 表示7-8 月，J-F 表示1-2 月。欧洲獾有冬眠行为，从11 月中旬持续至2 月中旬；貉在冬季亦有长时间睡眠现象，称为半冬眠，期间会醒来活动。由此图可知：",
+ "options": {
+  "A": "貉利用欧洲獾洞穴主要发生在后者冬眠期间；",
+  "B": "欧洲獾的冬眠行为诱导貉利用欧洲獾的洞穴；",
+  "C": "貉与欧洲獾的关系为互利共栖；",
+  "D": "貉与欧洲獾之间主要是竞争关系。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 82 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "三. 动物行为学、生态学 19 题 24 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-82-4b1232fc44de/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 377,
+  "bbox": [
+   110.9,
+   74.8,
+   483.8,
+   256.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-82-4b1232fc44de/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 377,
+   "bbox": [
+    110.9,
+    74.8,
+    483.8,
+    256.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

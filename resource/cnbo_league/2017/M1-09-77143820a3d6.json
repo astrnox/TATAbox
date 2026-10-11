@@ -1,0 +1,46 @@
+{
+ "id": "M1-09-77143820a3d6",
+ "type": "single",
+ "question": "在真核细胞中，三羧酸循环发生在：",
+ "options": {
+  "A": "线粒体外膜",
+  "B": "线粒体内膜",
+  "C": "线粒体基质",
+  "D": "内质网",
+  "E": "高尔基体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 9 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

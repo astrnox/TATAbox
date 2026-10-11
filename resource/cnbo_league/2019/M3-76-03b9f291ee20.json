@@ -1,0 +1,44 @@
+{
+ "id": "M3-76-03b9f291ee20",
+ "type": "single",
+ "question": "相比内温动物，以下哪项不是外温动物的主要特点",
+ "options": {
+  "A": "体温调节能力弱",
+  "B": "热传导效率低",
+  "C": "代谢产热水平低",
+  "D": "热源主要依赖外部环境"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 76 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-67-ae21563ee8b6",
+ "type": "single",
+ "question": "下列有关环节动物发育的说法中正确的是：",
+ "options": {
+  "A": "受精卵经辐射卵裂发育为囊胚，通过内陷或外包的方式形成原肠胚；",
+  "B": "水生种类胚胎发育形成担轮幼虫，陆生种类直接发育为成体；",
+  "C": "担轮幼虫的口前纤毛区发育为成体的口前叶及触手等；",
+  "D": "担轮幼虫的生长带区发育为围口节以外的身体其余部分。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 67 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

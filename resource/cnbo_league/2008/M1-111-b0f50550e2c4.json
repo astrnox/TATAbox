@@ -1,0 +1,46 @@
+{
+ "id": "M1-111-b0f50550e2c4",
+ "type": "mtf",
+ "question": "下列关于细胞衰老的描述，哪些是正确的",
+ "options": {
+  "A": "细胞不再分裂了",
+  "B": "细胞能够一直分裂，只是周期变长了",
+  "C": "细胞快要癌变了",
+  "D": "细胞衰老过程中，端粒越来越短",
+  "E": "细胞衰老过程中，端粒越来越长"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "A,D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 111 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

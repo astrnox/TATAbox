@@ -1,0 +1,44 @@
+{
+ "id": "M3-115-f2fddd5f84c0",
+ "type": "mtf",
+ "question": "生态系统发展过程中其结构和功能特征会发生明显变化，其中：",
+ "options": {
+  "A": "发展期的生态系统，P/R（总生产量/总呼吸量）>1；而在成熟稳定期P/R<1。",
+  "B": "生态系统从幼年期向成熟期的发展过程中，矿质营养循环由相对开放趋向于更加封闭",
+  "C": "生态系统从幼年期向成熟期的发展过程中，有机化合物多样性逐渐增加，群落代谢过程中向环境中排出的产物增加。",
+  "D": "发展期系统内部的熵值明显较成熟期为高"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "25.A（×）B（√）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 25 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

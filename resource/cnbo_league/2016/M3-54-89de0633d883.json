@@ -1,0 +1,44 @@
+{
+ "id": "M3-54-89de0633d883",
+ "type": "multiple",
+ "question": "蝶类与蛾类均属于鳞翅目昆虫。以下关于这两类昆虫的描述哪些是错误的：",
+ "options": {
+  "A": "蝶类多白天活动，蛾类多夜晚活动",
+  "B": "蝶类为虹吸式口器，蛾类为刺吸式口器",
+  "C": "蝶类幼虫都无毒，蛾类幼虫多数有毒",
+  "D": "蝶类物种数比蛾类物种数少"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 54 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

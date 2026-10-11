@@ -1,0 +1,44 @@
+{
+ "id": "M3-56-19e1053b938d",
+ "type": "multiple",
+ "question": "河蚌属于软体动物门，双壳纲，下列有关其肌肉的说法中正确的有：",
+ "options": {
+  "A": "具有一个粗大的闭壳肌，位于身体前部，两端与两壳相连，收缩可使壳关闭；",
+  "B": "具有两个缩足肌，前后各一，连在足上，收缩可使足缩回壳内；",
+  "C": "具有一个伸足肌，可以控制足向外伸；",
+  "D": "在空贝壳上，可以看到闭壳肌的肌痕，看不到缩足肌和伸足肌的肌痕。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 56 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

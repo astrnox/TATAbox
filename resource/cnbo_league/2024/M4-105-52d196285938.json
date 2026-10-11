@@ -1,0 +1,80 @@
+{
+ "id": "M4-105-52d196285938",
+ "type": "multiple",
+ "question": "基因1 和基因2 可能的关系是：",
+ "options": {
+  "A": "协同作用；",
+  "B": "合成致死；",
+  "C": "拮抗作用；",
+  "D": "连锁。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 105 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "105-106",
+  "stimulus": "下图展示了4 个基因在癌症患者中变异的分布，每一行代表一个基因，每一列代"
+ },
+ "image": {
+  "file": "assets/questions/M4-105-52d196285938/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 470,
+  "bbox": [
+   90.0,
+   72.0,
+   505.3,
+   133.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-105-52d196285938/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 470,
+   "bbox": [
+    90.0,
+    72.0,
+    505.3,
+    133.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

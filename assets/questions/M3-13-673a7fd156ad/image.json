@@ -1,0 +1,20 @@
+{
+ "id": "M3-13-673a7fd156ad",
+ "figures": [
+  {
+   "file": "assets/questions/M3-13-673a7fd156ad/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 245,
+   "bbox": [
+    90.0,
+    110.0,
+    504.9,
+    221.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

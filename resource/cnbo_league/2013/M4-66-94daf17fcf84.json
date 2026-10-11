@@ -1,0 +1,44 @@
+{
+ "id": "M4-66-94daf17fcf84",
+ "type": "multiple",
+ "question": "进化革新事件是指高级分类群中所有成员共有的特征的起源，这些特征使该类群区别于其他高级分类单元。以下哪些属于进化革新事件？",
+ "options": {
+  "A": "真核生物细胞核与细胞器的起源",
+  "B": "脊索动物脊索的起源",
+  "C": "两栖动物呼吸器官起源",
+  "D": "哺乳动物的乳腺、胎盘的起源"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 66 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-112-d2a696aa4a1a",
+ "type": "mtf",
+ "question": "哪些特征使得景天科植物适应在炎热荒漠环境生长？",
+ "options": {
+  "A": "维管束的排列方式特异",
+  "B": "具有C4 代谢途径",
+  "C": "白天气体交换少",
+  "D": "储存酸性物质可以抗虫。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 12 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

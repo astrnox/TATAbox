@@ -1,0 +1,44 @@
+{
+ "id": "M3-84-c38f14d34e09",
+ "type": "single",
+ "question": "被子植物的叶绿体基因大多是母系遗传，而核基因是母系和父系双亲遗传。对石竹科蝇子草属一种植物基因流的研究表明，根据叶绿体基因遗传变异计算的该物种种群间遗传分化系数是0.674，而根据核基因遗传变异计算的种群间遗传分化系数是0.134。请据此推断，该物种种群间基因流模式为：",
+ "options": {
+  "A": "通过种子扩散介导的基因流为主",
+  "B": "通过花粉扩散介导的基因流为主",
+  "C": "种子和花粉扩散对基因流贡献等同",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "群体遗传",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 84 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-109-1099fd3bec97",
+ "type": "mtf",
+ "question": "1960 年，法国科学家发现达乌耳黄鼠的黄色皮毛无法真实遗传。黄毛老鼠自交，总产生黄毛老鼠和黑毛老鼠。由此可以得出",
+ "options": {
+  "A": "黄毛鼠永远是杂合体",
+  "B": "决定黄毛的基因还有别的功能",
+  "C": "黄毛是由多个基因决定的",
+  "D": "纯合的黄毛基因可能致死"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "A,B,D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 109 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

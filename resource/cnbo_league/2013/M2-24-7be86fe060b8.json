@@ -1,0 +1,44 @@
+{
+ "id": "M2-24-7be86fe060b8",
+ "type": "multiple",
+ "question": "黑暗条件下生长的幼苗与正常光照条件下生长的幼苗相比，具有下列哪些特征？",
+ "options": {
+  "A": "根系更发达",
+  "B": "胚轴伸长更显著",
+  "C": "节间明显伸长",
+  "D": "叶呈现黄白色"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 24 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

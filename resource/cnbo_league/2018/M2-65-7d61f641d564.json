@@ -1,0 +1,39 @@
+{
+ "id": "M2-65-7d61f641d564",
+ "type": "single",
+ "question": "下列有关西红柿生长发育各阶段细胞内质体的描述正确的是：",
+ "options": {
+  "A": "种子不含有质体",
+  "B": "黄化苗含有白色体",
+  "C": "花粉不含质体",
+  "D": "上列各项均含质体"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 65 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

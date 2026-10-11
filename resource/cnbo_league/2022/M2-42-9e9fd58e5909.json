@@ -1,0 +1,44 @@
+{
+ "id": "M2-42-9e9fd58e5909",
+ "type": "single",
+ "question": "裸子植物大、小孢子叶球及小孢子叶球序在被子植物中的同源结构分别是：",
+ "options": {
+  "A": "雌蕊、雄蕊、雄花",
+  "B": "雌花、雄花、雄花序",
+  "C": "心皮、花药、雄花",
+  "D": "雌蕊，雄蕊、雄花序"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 42 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-87-44fe8cf182a1",
+ "type": "multiple",
+ "question": "下面说法正确的是：",
+ "options": {
+  "A": "生物对某种生态因子的生态幅可随生长而变化",
+  "B": "生物的分布受其生态幅最窄的因子的影响最大",
+  "C": "生物的分布范围完全由生态幅决定",
+  "D": "当生物对一种生态因子处于最适状态下时，对其他生态因子的耐受范围会变宽"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 87 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

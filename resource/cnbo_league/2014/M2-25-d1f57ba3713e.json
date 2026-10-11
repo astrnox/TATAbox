@@ -1,0 +1,44 @@
+{
+ "id": "M2-25-d1f57ba3713e",
+ "type": "single",
+ "question": "下列有关松树花粉传播与萌发的描述正确的是",
+ "options": {
+  "A": "花粉借助风的作用通过珠孔进入胚珠，在贮粉室内萌发形成花粉管并进入雌配子体",
+  "B": "花粉借助传粉滴的作用通过珠孔进入胚珠，在贮粉室内萌发形成花粉管并进入雌配子体",
+  "C": "花粉借助风的作用通过珠孔进入胚珠，并萌发形成花粉管通过珠孔进入胚珠和雌配子体",
+  "D": "花粉借助传粉滴的作用通过珠孔进入胚珠，并萌发形成花粉管通过珠孔进入胚珠和雌配子体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 25 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

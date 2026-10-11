@@ -1,0 +1,44 @@
+{
+ "id": "M3-49-64dfa00d482c",
+ "type": "single",
+ "question": "草原田鼠新受孕的雌性若移离原配对的雄鼠，而与其他陌生雄鼠共同生活24 小时以上，会导致孕鼠的妊娠中断。大多数雌鼠会在1 周内恢复性周期，与新雄鼠交配，所产仔鼠为第二次所配雄鼠的后代。该实验说明",
+ "options": {
+  "A": "雌鼠以此行为保证其生殖成功最大化",
+  "B": "草原田鼠的交配制度属于一雌多雄制",
+  "C": "多次受精可能是增加基因变化和后代适应性的对策之一",
+  "D": "在生殖过程中，雌性的投资大于雄性"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 49 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

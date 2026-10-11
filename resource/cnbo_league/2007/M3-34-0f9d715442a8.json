@@ -1,0 +1,46 @@
+{
+ "id": "M3-34-0f9d715442a8",
+ "type": "single",
+ "question": "下列哪种说法是正确的：",
+ "options": {
+  "A": "喝水越多，尿越多",
+  "B": "血压越高，尿越多",
+  "C": "越是兴奋，尿越多",
+  "D": "运动越剧烈，尿越多",
+  "E": "体温越高，尿越多"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 34 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

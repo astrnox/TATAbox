@@ -1,0 +1,44 @@
+{
+ "id": "M1-11-7edf78b66186",
+ "type": "single",
+ "question": "内质网是细胞“钙库”之一，以下正确的是",
+ "options": {
+  "A": "钙离子从胞质扩散到内质网中",
+  "B": "内质网上钙泵将钙离子从胞质主动运输到内质网",
+  "C": "钙离子通过内质网上钙离子通道主动运输到内质网",
+  "D": "钙离子通过钠钾泵协同转运到内质网"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 11 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

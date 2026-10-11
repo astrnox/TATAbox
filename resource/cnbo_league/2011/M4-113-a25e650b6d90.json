@@ -1,0 +1,44 @@
+{
+ "id": "M4-113-a25e650b6d90",
+ "type": "single",
+ "question": "生活在加拉帕戈斯群岛上的达尔文雀，体型非常相似，但形态结构、生活方式等有很多差异，这种进化方式称为：",
+ "options": {
+  "A": "趋同进化",
+  "B": "适应辐射",
+  "C": "协同进化",
+  "D": "渐变式进化"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 113 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

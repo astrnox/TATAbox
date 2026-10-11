@@ -1,0 +1,44 @@
+{
+ "id": "M3-110-4ce0280d6535",
+ "type": "multiple",
+ "question": "森林里的松鼠数量暴增，将威胁树木增长。下列何种做法符合生态保育原则？",
+ "options": {
+  "A": "在某些地点架设陷阱，适度减少松鼠数量",
+  "B": "无论松鼠数量再多，都要加以保护",
+  "C": "适量增加猫头鹰等松鼠的天敌",
+  "D": "适度开发狩猎，适量捕捉森林里的松鼠"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 110 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（多选 2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

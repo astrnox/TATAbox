@@ -1,0 +1,44 @@
+{
+ "id": "M1-04-c0ab84e8cbc6",
+ "type": "multiple",
+ "question": "三羧酸循环由8 步反应组成，其中不可逆的反应是：",
+ "options": {
+  "A": "柠檬酸经顺乌头酸转变为异柠檬酸；",
+  "B": "异柠檬酸氧化脱羧转变为α-酮戊二酸；",
+  "C": "α-酮戊二酸氧化脱羧生成琥珀酰辅酶A；",
+  "D": "琥珀酰辅酶A 经底物水平磷酸化形成琥珀酸。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 4 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

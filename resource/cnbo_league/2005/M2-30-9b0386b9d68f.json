@@ -1,0 +1,44 @@
+{
+ "id": "M2-30-9b0386b9d68f",
+ "type": "single",
+ "question": "生长在岩石上的一片干地衣和生长在地里的一株萎蔫的棉花，一场阵雨后，两者的吸水方式________。",
+ "options": {
+  "A": "都是吸胀作用",
+  "B": "分别是吸胀作用和渗透作用",
+  "C": "都是渗透作用",
+  "D": "分别是渗透作用和吸胀作用"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 30 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

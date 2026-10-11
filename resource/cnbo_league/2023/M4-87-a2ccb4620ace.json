@@ -1,0 +1,46 @@
+{
+ "id": "M4-87-a2ccb4620ace",
+ "type": "single",
+ "question": "表型可塑性是指生物为响应不同的环境变化而产生不同表型的现象，是生物对环境的一种适应。下面现象不属于表型可塑性的是：",
+ "options": {
+  "A": "一种植物在光照环境下生长，其叶片较厚且表面积较小；但在阴凉环境下，其叶片较薄且表面积较大",
+  "B": "一种叫尺蠖的昆虫，其春天出生的个体长得像花序一样，而夏天出生的个体长得像树枝一样",
+  "C": "秦岭山系大熊猫种群既生活有黑白色的大熊猫，也生活有棕白色的大熊猫",
+  "D": "一种鹿角珊瑚在深水区会长得高而伸展，而在浅水区长得矮而粗壮",
+  "E": "东亚飞蝗当群居生活时，外表呈黑色和棕色；而当散居生活时，外表呈绿色"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 87 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-52-538d1d2dd68c",
+ "type": "multiple",
+ "question": "向血管中注射颜料是一种观察动物循环系统的方法，颜料中颜色颗粒无法通过毛细血管。一次实验中由蟾蜍的腹静脉注射红色颜料，会显现红色的血管有：",
+ "options": {
+  "A": "肝静脉；",
+  "B": "肝门静脉；",
+  "C": "股静脉；",
+  "D": "后腔静脉。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 52 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

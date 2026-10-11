@@ -1,0 +1,46 @@
+{
+ "id": "M1-29-ff8134ca6ca4",
+ "type": "multiple",
+ "question": "分子伴侣蛋白能够：",
+ "options": {
+  "A": "使变性的蛋白质复性",
+  "B": "消耗ATP 以帮助新生肽链的折叠",
+  "C": "与其他蛋白质结合成复合物，协助蛋白质发挥功能",
+  "D": "促进蛋白质多聚体组装",
+  "E": "标记变性的蛋白质以便被蛋白酶体识别并降解"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 29 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

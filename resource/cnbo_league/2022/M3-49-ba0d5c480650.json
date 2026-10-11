@@ -1,0 +1,78 @@
+{
+ "id": "M3-49-ba0d5c480650",
+ "type": "single",
+ "question": "通过膈肌收缩记录家兔呼吸活动，实验得到下面的结果。在这个记录中的05 号时间点最可能进行的实验操作是：",
+ "options": {
+  "A": "向肺内吹气；",
+  "B": "从肺内抽气；",
+  "C": "夹闭气管窒息；",
+  "D": "剪断迷走神经；",
+  "E": "剪断膈神经。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 49 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-49-ba0d5c480650/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 417,
+  "bbox": [
+   90.0,
+   619.0,
+   505.1,
+   710.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-49-ba0d5c480650/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 417,
+   "bbox": [
+    90.0,
+    619.0,
+    505.1,
+    710.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

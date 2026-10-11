@@ -1,0 +1,44 @@
+{
+ "id": "M1-29-990171abb142",
+ "type": "single",
+ "question": "如果用匀浆法破碎肝脏细胞，通过离心技术可以分离成主要含有颗粒状的细胞膜组分和可溶性的细胞质基质部分（上清组分），在上清液中加入肾上腺激素，根据肾上腺素作为信号分子引起肝脏细胞糖原分解的信号通路进行判断将会产生以下哪个现象？",
+ "options": {
+  "A": "产生cAMP",
+  "B": "肾上腺素与其受体结合",
+  "C": "激活腺苷酸环化酶",
+  "D": "以上均不会发生。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 29 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

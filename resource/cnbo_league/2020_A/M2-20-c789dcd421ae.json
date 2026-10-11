@@ -1,0 +1,44 @@
+{
+ "id": "M2-20-c789dcd421ae",
+ "type": "multiple",
+ "question": "类病毒是一种比病毒更小的侵染因子，对于类病毒，以下描述是正确的是",
+ "options": {
+  "A": "单链环状DNA 分子",
+  "B": "单联环状RNA 分子",
+  "C": "不能编码蛋白质",
+  "D": "无mRNA 活性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 20 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

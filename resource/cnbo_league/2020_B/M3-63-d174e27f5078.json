@@ -1,0 +1,76 @@
+{
+ "id": "M3-63-d174e27f5078",
+ "type": "single",
+ "question": "下图为研究神经肌肉接头神经递质的量子释放时得到的实验结果。横轴代表释放的量子数，即微终板电位（MEPP）的倍数，纵轴是电镜下观察到的与突触前膜融合的囊泡数。钾离子通道阻断剂4-AP 用以改变神经末梢递质释放量，图中concentration：浓度。根据下图结果，下述说法中错误的是：",
+ "options": {
+  "A": "图中释放的量子数与融合的囊泡数几乎为1：1 的关系，证明1 个量子就是一个囊泡的所有递质分子；",
+  "B": "4-AP 促进动作电位的去极化过程，致使动作电位延长；",
+  "C": "动作电位时程变长，可增大神经末梢处Ca2+内流量，增大递质释放量；",
+  "D": "4-AP 阻碍动作电位的复极化过程，致使动作电位延长。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 63 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-63-d174e27f5078/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 371,
+  "bbox": [
+   180.6,
+   469.5,
+   414.6,
+   687.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-63-d174e27f5078/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 371,
+   "bbox": [
+    180.6,
+    469.5,
+    414.6,
+    687.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

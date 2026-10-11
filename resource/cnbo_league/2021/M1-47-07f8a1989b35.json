@@ -1,0 +1,48 @@
+{
+ "id": "M1-47-07f8a1989b35",
+ "type": "single",
+ "question": "根据图b 中细胞壁的结构特征可以判断出图b 显示的细胞壁可能来自图a 中的哪个位置：",
+ "options": {
+  "A": "“co”",
+  "B": "“en”",
+  "C": "“mx”",
+  "D": "“sc”"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 47 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "46-48",
+  "stimulus": "题干。一种植物根的横切切片置于显微镜下观察，结果见下图a：取该植物根进行"
+ }
+}

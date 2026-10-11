@@ -1,0 +1,44 @@
+{
+ "id": "M2-16-ce21c09bdf04",
+ "type": "single",
+ "question": "病毒是非细胞形态的生命体，下面的说法正确的是",
+ "options": {
+  "A": "病毒很小，必须用高倍的光学显微镜才能看清楚它的结构",
+  "B": "在自然条件下，病毒的复制只能在活细胞内进行",
+  "C": "病毒粒子包裹的遗传物质，或为DNA，或为RNA，如冠状病毒的遗传物质是DNA",
+  "D": "在电子显微镜下可见冠状病毒的衣壳蛋白向外侧延伸形成日冕状结构，冠状病毒因此得名"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 16 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

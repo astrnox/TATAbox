@@ -1,0 +1,44 @@
+{
+ "id": "M1-31-2ceea309b896",
+ "type": "multiple",
+ "question": "以下哪种高通量实验技术主要被用来研究生物的基因表达情况？",
+ "options": {
+  "A": "全基因组重测序",
+  "B": "转录组测序",
+  "C": "外显子组测序",
+  "D": "基因芯片（Microarray）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 31 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

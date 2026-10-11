@@ -1,0 +1,44 @@
+{
+ "id": "M2-108-2b65983dfeb0",
+ "type": "multiple",
+ "question": "杜鹃将卵产在柳莺等多种鸟的巢中，与寄主的卵颜色很相似，且小杜娟孵出后也类似寄主的雏鸟，使寄主无法分辨，进而抚养这些冒牌的幼鸟。这种现象称为：",
+ "options": {
+  "A": "贝茨拟态",
+  "B": "韦斯曼氏拟态",
+  "C": "巢寄生",
+  "D": "类寄生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 108 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-87-8927c24843f5",
+ "type": "multiple",
+ "question": "高海拔蜥蜴为了适应高海拔严酷环境进化出多种生存策略，下列各种策略中有助于适应高海拔环境的是",
+ "options": {
+  "A": "从卵生繁殖方式进化成胎生繁殖方式",
+  "B": "降低自身的温度喜好，减少能量支出",
+  "C": "腹部皮肤黑色斑块，吸收地表反射热",
+  "D": "降低血液氧的结合能力"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 87 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

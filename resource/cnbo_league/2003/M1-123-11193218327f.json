@@ -1,0 +1,44 @@
+{
+ "id": "M1-123-11193218327f",
+ "type": "mtf",
+ "question": "关于细胞膜的物质交换，下列哪种说法正确？",
+ "options": {
+  "A": "自由扩散是不需能的",
+  "B": "大分子进出细胞主要通过被动运输",
+  "C": "主动运输须有载体蛋白协助",
+  "D": "任何离子和小分子都能进出细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "8.A（ √ ）B（ × ）C（ √ ） D（ × ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 8 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

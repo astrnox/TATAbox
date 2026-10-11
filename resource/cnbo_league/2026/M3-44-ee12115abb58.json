@@ -1,0 +1,45 @@
+{
+ "id": "M3-44-ee12115abb58",
+ "type": "mtf",
+ "question": "愈合尾综骨的出现对于鸟类飞行具有促进作用。请对以下相关描述判断正误：",
+ "options": {
+  "A": "尾综骨的出现使得鸟类身体重心前移；",
+  "B": "尾综骨的出现有利于加快排泄物排出；",
+  "C": "尾综骨的出现有利于产更大型的卵；",
+  "D": "尾综骨的出现可以加强对尾羽的操控。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 44 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。尾综骨的形成使尾部骨骼愈合缩短，身体重心相对前移，利于飞行平衡。B．错误。尾综骨与排泄物排出无关。C．错误。尾综骨与卵的大小无直接关系，产大型卵主要与骨盆宽度和输卵管结构相关。D．正确。尾综骨为尾羽提供附着与操控支点，增强飞行转向与平衡能力。"
+}

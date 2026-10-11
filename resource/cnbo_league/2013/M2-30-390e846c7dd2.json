@@ -1,0 +1,44 @@
+{
+ "id": "M2-30-390e846c7dd2",
+ "type": "single",
+ "question": "植物叶子呈现的颜色是叶子各种色素的综合表现，主要包含两大类，叶绿素和类胡萝卜素（包含叶黄素和胡萝卜素）。一般来说高等植物的正常叶子的叶绿素和类胡萝卜素分子比例为_____，其中叶黄素和胡萝卜素的分子比为",
+ "options": {
+  "A": "1:3，1:2",
+  "B": "3:1，2:1",
+  "C": "2:1，3:1",
+  "D": "1:2，1:3"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 30 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

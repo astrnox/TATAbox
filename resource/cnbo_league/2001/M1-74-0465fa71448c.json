@@ -1,0 +1,46 @@
+{
+ "id": "M1-74-0465fa71448c",
+ "type": "mtf",
+ "question": "植物在正常次生生长过程中细胞会发生活动是：",
+ "options": {
+  "A": "细胞分裂",
+  "B": "细胞的分化",
+  "C": "细胞的程序性死亡",
+  "D": "细胞的脱分化",
+  "E": "细胞的质壁分离"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "1．A（√）B（√）C（√）D（√）E（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 1 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-70-b5e28591296d",
+ "type": "single",
+ "question": "下列细胞织成成分与其功能的关系，哪个是正确的？",
+ "options": {
+  "A": "粗糙内质网——细胞组装核糖体亚单位",
+  "B": "高尔基体——蛋白质及脂类的内部运输及传递",
+  "C": "核仁——细胞内的消化",
+  "D": "胞骨架——多肽链的修饰"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 70 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

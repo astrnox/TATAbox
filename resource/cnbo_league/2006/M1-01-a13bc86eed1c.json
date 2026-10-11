@@ -1,0 +1,44 @@
+{
+ "id": "M1-01-a13bc86eed1c",
+ "type": "single",
+ "question": "叶绿体不具有下面哪一项功能：",
+ "options": {
+  "A": "氮同化",
+  "B": "DNA 复制",
+  "C": "合成组蛋白",
+  "D": "产生ATP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 1 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

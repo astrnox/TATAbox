@@ -1,0 +1,44 @@
+{
+ "id": "M3-66-88016761ce62",
+ "type": "multiple",
+ "question": "非洲狮是一种群居的动物，以下选项中哪些是合作行为。",
+ "options": {
+  "A": "捕猎",
+  "B": "营巢",
+  "C": "育幼",
+  "D": "领地防卫"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 66 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-27-df5a1df1e99a",
+ "type": "single",
+ "question": "在植物叶片的提取液中没有测出某种酶的活性，下列说法哪一种是错误的？",
+ "options": {
+  "A": "酶可能被液泡中存在的丹宁变性",
+  "B": "酶可能被蛋白酶降解",
+  "C": "酶还是以酶原形式存在，没有成为成熟的酶",
+  "D": "不是酶活测定的最适条件"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 27 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

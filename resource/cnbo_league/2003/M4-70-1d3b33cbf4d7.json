@@ -1,0 +1,44 @@
+{
+ "id": "M4-70-1d3b33cbf4d7",
+ "type": "single",
+ "question": "在水稻中，A 对a、B 对b 为完全显性，Ab/aB 基因型的植株自交，在其后代中数目最少的类型占子代总数的0.16%，则A-a 和B-b 两个基因座之间的距离为＿个图距单位。",
+ "options": {
+  "A": "0.16",
+  "B": "0.32",
+  "C": "8",
+  "D": "4"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 70 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

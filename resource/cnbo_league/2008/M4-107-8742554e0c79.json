@@ -1,0 +1,44 @@
+{
+ "id": "M4-107-8742554e0c79",
+ "type": "mtf",
+ "question": "单基因遗传病一般是基因突变引起的，突变一般是隐性的，但有些突变是显性的。下列遗传病中，属于显性遗传病的有",
+ "options": {
+  "A": "白化病",
+  "B": "亨廷顿(Huntington)舞蹈症",
+  "C": "家族性高胆固醇血症",
+  "D": "血友病"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "B,C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 107 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

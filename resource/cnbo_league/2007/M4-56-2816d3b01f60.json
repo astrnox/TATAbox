@@ -1,0 +1,44 @@
+{
+ "id": "M4-56-2816d3b01f60",
+ "type": "single",
+ "question": "平衡致死系统。",
+ "options": {
+  "A": "用来平衡保留显性纯合致死基因的特殊品系",
+  "B": "为永久纯合基因型品系",
+  "C": "的特点之一是：两个隐性致死基因位于一对同源染色体的不同染色体上，为相斥相",
+  "D": "的特点之一是：两个显性致死基因位于一对同源染色体的不同染色体上，致死基因间无有效的交换产生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 56 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

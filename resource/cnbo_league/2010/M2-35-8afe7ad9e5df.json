@@ -1,0 +1,44 @@
+{
+ "id": "M2-35-8afe7ad9e5df",
+ "type": "single",
+ "question": "植物组织培养中细胞分裂素与生长素比值低时诱导",
+ "options": {
+  "A": "芽的分化",
+  "B": "根的分化",
+  "C": "叶的分化",
+  "D": "芽的休眠"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 35 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

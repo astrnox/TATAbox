@@ -1,0 +1,46 @@
+{
+ "id": "M1-28-8b0d0ffb22bf",
+ "type": "multiple",
+ "question": "下列关于正常的温和噬菌体感染其宿主而使宿主细胞发生溶源化现象的阐述，正确的是",
+ "options": {
+  "A": "噬菌体基因整合至宿主的基因组上",
+  "B": "该噬菌体并没有携带任何外源基因",
+  "C": "该噬菌体的基因为宿主提供新性状",
+  "D": "该噬菌体的基因在宿主中不能表达",
+  "E": "宿主的新性状随噬菌体消失而消失"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 28 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-2236ad3a1b6d",
+ "type": "single",
+ "question": "以下关于蛋白质变性后所产生现象的描述不正确的是：",
+ "options": {
+  "A": "溶解度降低",
+  "B": "疏水侧链基团被包裹在分子内部",
+  "C": "形成沉淀",
+  "D": "失去结晶能力"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 7 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

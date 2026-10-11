@@ -1,0 +1,44 @@
+{
+ "id": "M2-82-2dfa7e880fd1",
+ "type": "single",
+ "question": "下面哪种有关生物圈碳循环的说法是错误的？",
+ "options": {
+  "A": "海洋储存的碳比大气储存的碳多很多",
+  "B": "植物光合作用固定的碳同植物呼吸作用释放的碳大致相等",
+  "C": "植物光合作用固定的碳同人类排放的碳大致相等",
+  "D": "人类排出的二氧化碳大部分被海洋和陆地植物吸收"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 82 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

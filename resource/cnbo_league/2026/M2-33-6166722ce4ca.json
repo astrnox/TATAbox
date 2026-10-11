@@ -1,0 +1,84 @@
+{
+ "id": "M2-33-6166722ce4ca",
+ "type": "mtf",
+ "question": "苔藓植物拥有一系列有别于其它类群的显著特征，这些特征也显示苔藓植物是最早登陆的现生陆生植物类群。判断以下表述正确与否：",
+ "options": {
+  "A": "苔藓植物是一单系类群",
+  "B": "轮藻类是苔藓植物的姐妹群",
+  "C": "苔类与角苔类是并系类群",
+  "D": "胚的形成是苔藓植物的共有衍征"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 33 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "33-34",
+  "stimulus": "苔藓植物包括苔类、藓类和角苔类三大分支，是现存起源"
+ },
+ "image": {
+  "file": "assets/questions/M2-33-6166722ce4ca/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   61.8,
+   517.3,
+   417.6,
+   696.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-33-6166722ce4ca/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    61.8,
+    517.3,
+    417.6,
+    696.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。苔类、藓类和角苔类构成一个单系群（苔藓植物），含其最近共同祖先的全部后代。B．错误。苔藓植物的姐妹群是维管植物（二者共组陆生植物）；轮藻类是整个陆生植物的姐妹群。C．正确。按苔藓内部系统关系，'苔类＋角苔类'的组合不含全部后代，属并系类群。D．错误。胚的形成是陆生植物（苔藓植物＋维管植物）的共有衍征，而非苔藓植物独有。\n【易错易混】易错：共有衍征的'共'字看范围——胚是陆生植物共有，不是苔藓植物共有；问'某类群的共有衍征'必须是该类群独有且共有的衍征。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

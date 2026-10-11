@@ -1,0 +1,72 @@
+{
+ "id": "M3-68-298c2b1cfabf",
+ "type": "single",
+ "question": "下图中①②③分别代表三种不同类型动物的的种群变化情况，哪种关系是正确的？ ①果蝇②猴③蛙",
+ "options": null,
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 68 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-68-298c2b1cfabf/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 52,
+  "bbox": [
+   90.0,
+   247.6,
+   490.1,
+   488.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-68-298c2b1cfabf/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 52,
+   "bbox": [
+    90.0,
+    247.6,
+    490.1,
+    488.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

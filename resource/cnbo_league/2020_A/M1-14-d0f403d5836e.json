@@ -1,0 +1,80 @@
+{
+ "id": "M1-14-d0f403d5836e",
+ "type": "multiple",
+ "question": "根据实验结果，对Scc1 功能可以得出的合理推测有",
+ "options": {
+  "A": "Scc1 必须有功能，以便在S 期形成粘连蛋白复合体",
+  "B": "Scc1 只对细胞的S 期是必需的",
+  "C": "Scc1 对于细胞的S 期、G2 期直到细胞分裂是必需的",
+  "D": "由于Scc1 是粘连蛋白复合体的组分，因此，无功能的Scc1 将导致姊妹染色单体之间不能粘连"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 14 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "12-15",
+  "stimulus": "Scc1，Scc3，Smc1 和Smc3 是酵母细胞中染色体粘连复合体的亚基，对于保持有丝"
+ },
+ "image": {
+  "file": "assets/questions/M1-14-d0f403d5836e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 334,
+  "bbox": [
+   148.8,
+   376.2,
+   446.5,
+   532.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-14-d0f403d5836e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 334,
+   "bbox": [
+    148.8,
+    376.2,
+    446.5,
+    532.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

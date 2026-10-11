@@ -1,0 +1,78 @@
+{
+ "id": "M4-94-057588e9febd",
+ "type": "single",
+ "question": "请根据下图选择最合适的选项：",
+ "options": {
+  "A": "此图表明了RNAi 现象中小RNA 分子在基因中的空间构象",
+  "B": "此图中从A 到G 的字母标注的是外显子部分",
+  "C": "这一个图是某种蛋白的cDNA 同其基因的杂交结果",
+  "D": "这一图是PCR 反应时探针和模板DNA 的普遍退火结果",
+  "E": "这是Northern blot 的分子结合情况"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 94 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-94-057588e9febd/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2011 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 160,
+  "bbox": [
+   237.6,
+   77.0,
+   357.8,
+   176.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-94-057588e9febd/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2011 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 160,
+   "bbox": [
+    237.6,
+    77.0,
+    357.8,
+    176.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-86-fc00c91dff62",
+ "type": "multiple",
+ "question": "气候变暖将对动物产生诸多影响，譬如",
+ "options": {
+  "A": "栖息地丧失",
+  "B": "降雨分布的格局变化导致动物水获取压力改变",
+  "C": "提升热带动物的繁殖产出和存活",
+  "D": "温带动物种群密度必然增加"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 86 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

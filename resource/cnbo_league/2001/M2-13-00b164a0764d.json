@@ -1,0 +1,44 @@
+{
+ "id": "M2-13-00b164a0764d",
+ "type": "single",
+ "question": "将一根柳条枝分成四段，A 和B 分别表示枝条的形态学上端和下端，悬挂在潮湿的环境中。若干天后只有＿的枝条不是在形态学的上端长出芽来。",
+ "options": {
+  "A": "A 端朝上，B 端朝下",
+  "B": "B 端朝上，A 端朝下",
+  "C": "将柳条技切段水平放置",
+  "D": "在B 端上涂上IAA 羊毛脂"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 13 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

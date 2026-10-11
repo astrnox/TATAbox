@@ -1,0 +1,80 @@
+{
+ "id": "M1-14-29ecedccb4f9",
+ "type": "mtf",
+ "question": "下图显示了Apaf1 缺陷与Caspase 9 缺陷两组新生小鼠的趾发育表型，结合所学，判断下列关于二者凋亡通路功能描述的正误：",
+ "options": {
+  "A": "由图可知Apaf1 在Caspase 9 的上游发挥作用；",
+  "B": "趾间蹼的清除过程中，Apaf1 是凋亡能正常进行的必需分子；",
+  "C": "Caspase 9 缺陷小鼠趾间发育正常，说明趾间细胞的凋亡不依赖线粒体介导的凋亡通路；",
+  "D": "Apaf1-/-小鼠无法清除趾间蹼，说明Apaf1 可直接切割效应Caspase 从而诱导细胞凋亡。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 14 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-14-29ecedccb4f9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 3,
+  "bbox": [
+   324.0,
+   490.6,
+   542.0,
+   556.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-14-29ecedccb4f9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 3,
+   "bbox": [
+    324.0,
+    490.6,
+    542.0,
+    556.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。仅凭两组敲除小鼠的表型无法判断Apaf1与Caspase 9的上下游顺序（需生化或双突变实验）。B．正确。Apaf1缺陷小鼠趾间蹼无法清除，说明Apaf1是该凋亡过程正常进行的必需分子。C．错误。Caspase 9缺陷小鼠的表型不能说明趾间凋亡不依赖线粒体通路（可能存在母源蛋白残留、旁路caspase等解释）。D．错误。Apaf1是接头蛋白（形成凋亡体激活Caspase 9），本身没有切割效应Caspase的蛋白酶活性。\n【通法】通法（遗传上位性分析）：单敲除表型只能说明'必需'；要定上下游需双突变/回补/生化激活实验。'由图可知上下游'类选项在只有单突变图时通常不成立。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

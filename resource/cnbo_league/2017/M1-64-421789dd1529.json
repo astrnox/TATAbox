@@ -1,0 +1,44 @@
+{
+ "id": "M1-64-421789dd1529",
+ "type": "multiple",
+ "question": "某人患严重的肺组织纤维化，其动脉血的pH 值7.48、氧分压55 mmHg、二氧化碳分压32 mmHg。下列分析中，正确的是：",
+ "options": {
+  "A": "患者严重缺氧",
+  "B": "动脉血氧分压降低，通过中枢化学感受器，刺激患者过度通气",
+  "C": "过度通气导致患者动脉血二氧化碳分压降低",
+  "D": "动脉血pH 升高，可通过外周和中枢化学感受器，抑制呼吸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 64 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

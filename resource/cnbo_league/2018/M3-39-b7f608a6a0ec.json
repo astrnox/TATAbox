@@ -1,0 +1,44 @@
+{
+ "id": "M3-39-b7f608a6a0ec",
+ "type": "single",
+ "question": "下列有关神经元与神经胶质细胞的说法正确的是 。",
+ "options": {
+  "A": "神经胶质细胞和神经元都有突起并有轴突、树突之分",
+  "B": "神经胶质细胞之间不形成化学突触，但普遍存在缝隙连接",
+  "C": "神经元和神经胶质细胞都是终末分化的细胞，不具有分裂增殖的能力",
+  "D": "神经元和神经胶质细胞都可以产生动作电位"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 39 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

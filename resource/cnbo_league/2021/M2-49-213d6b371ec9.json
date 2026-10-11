@@ -1,0 +1,80 @@
+{
+ "id": "M2-49-213d6b371ec9",
+ "type": "single",
+ "question": "图a 中，下列哪个结构的标注是错误的",
+ "options": {
+  "A": "盾片",
+  "B": "胚芽鞘",
+  "C": "子叶",
+  "D": "胚根鞘"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 49 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "49-50",
+  "stimulus": "题干。研究人员对大麦胚进行切片观察，并根据切片观察绘制大麦胚结构图，见"
+ },
+ "image": {
+  "file": "assets/questions/M2-49-213d6b371ec9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 395,
+  "bbox": [
+   189.6,
+   276.1,
+   405.6,
+   460.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-49-213d6b371ec9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 395,
+   "bbox": [
+    189.6,
+    276.1,
+    405.6,
+    460.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

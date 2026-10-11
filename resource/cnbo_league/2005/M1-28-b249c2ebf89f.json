@@ -1,0 +1,44 @@
+{
+ "id": "M1-28-b249c2ebf89f",
+ "type": "single",
+ "question": "鉴定植物细胞后含物，通常。",
+ "options": {
+  "A": "用碘液鉴定蛋白质和脂肪",
+  "B": "用苏丹Ⅲ鉴定蛋白质和脂肪",
+  "C": "用碘液鉴定蛋白质和淀粉",
+  "D": "用苏丹Ⅲ鉴定脂肪和淀粉"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 28 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-39-bb04b1d66423",
+ "type": "single",
+ "question": "心力衰竭引起组织水肿的主要原因是",
+ "options": {
+  "A": "毛细血管压增高",
+  "B": "血浆白蛋白减少",
+  "C": "毛细血管通透性增高",
+  "D": "淋巴液回流受阻"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 39 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

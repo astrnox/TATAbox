@@ -1,0 +1,44 @@
+{
+ "id": "M4-64-413e83ba316d",
+ "type": "single",
+ "question": "如果A/a、B/b、C/c、D/d 和E/e 均各决定一对相对性状，现在进行下列杂交：第一亲本(A/a；B/b；C/c；D/d；E/e) × 第二亲本(a/a；B/b；c/c；D/d；e/e)。所产生的后代中，与第一个亲本表型相同的比例为：",
+ "options": {
+  "A": "1/16",
+  "B": "7/64",
+  "C": "9/128",
+  "D": "1/32"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 64 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

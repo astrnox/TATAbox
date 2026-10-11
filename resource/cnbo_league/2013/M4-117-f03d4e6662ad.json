@@ -1,0 +1,44 @@
+{
+ "id": "M4-117-f03d4e6662ad",
+ "type": "multiple",
+ "question": "杂交后代出现不标准的孟德尔分离比，其原因可能为",
+ "options": {
+  "A": "母性影响",
+  "B": "细胞质遗传",
+  "C": "自由组合",
+  "D": "完全连锁"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "孟德尔遗传",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 117 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 117,
+  "section": "第四部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

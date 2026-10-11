@@ -1,0 +1,44 @@
+{
+ "id": "M1-01-93ef6c45cbd9",
+ "type": "multiple",
+ "question": "DNA 双螺旋模型是在下列哪几个研究的基础上提出的？",
+ "options": {
+  "A": "X-光衍射实验数据表明DNA 是一种规则螺旋结构",
+  "B": "DNA 密度测量说明这种螺旋结构应有两条链",
+  "C": "三个连续的核苷酸代表一个遗传密码",
+  "D": "不论碱基数目多少，G 的含量总是与C 一样，而A 与T 也是一样的"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "DNA结构",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 1 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

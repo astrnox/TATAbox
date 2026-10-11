@@ -1,0 +1,46 @@
+{
+ "id": "M1-65-7245ddbe1003",
+ "type": "single",
+ "question": "某雌雄同株的植物中，决定两种性状的基因H 和L 位于同一染色体，图距l6cm。 HHLL×hhll 的后代F1 与hhLL×HHll 的Fl 相互杂交，后代中hhll 的比例为",
+ "options": {
+  "A": "0.0625",
+  "B": "0.033",
+  "C": "0.134",
+  "D": "0.0256",
+  "E": "0.21"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 65 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

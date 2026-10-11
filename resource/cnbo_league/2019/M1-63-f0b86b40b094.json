@@ -1,0 +1,48 @@
+{
+ "id": "M1-63-f0b86b40b094",
+ "type": "multiple",
+ "question": "基于以上实验结果，下列叙述，正确的是：",
+ "options": {
+  "A": "同一K+通道蛋白上的磷酸化或去磷酸化修饰方式决定了其转运K+的方向",
+  "B": "同一K+通道蛋白上的磷酸化程度决定了其转运K+的速率",
+  "C": "外向K+通道蛋白上的磷酸化修饰可能对于其向细胞外转运K+是至关重要的",
+  "D": "内向K+通道蛋白上的去磷酸化修饰可能和其向内转运K+有关"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 63 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "（61-63 题共用题干）植物在遇到干旱时，叶片表面的气孔会关闭，以减少水分蒸腾，"
+ }
+}

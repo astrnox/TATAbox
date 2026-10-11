@@ -1,0 +1,44 @@
+{
+ "id": "M2-11-c575d6407d68",
+ "type": "single",
+ "question": "自然环境中有不少盐碱土，大部分在地势低洼、地下水位高的地区，以及滨海地区。过高的盐分对植物生长形成盐害，其中主要的阴离子是Cl-，CO32- 和SO42-，而最主要的阳离子则是 。",
+ "options": {
+  "A": "Na+",
+  "B": "Ca++",
+  "C": "Mg++",
+  "D": "K+"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 11 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

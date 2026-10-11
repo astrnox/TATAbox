@@ -1,0 +1,76 @@
+{
+ "id": "M1-35-4aa2b81a202b",
+ "type": "multiple",
+ "question": "蚯蚓属于同律分节，在解剖蚯蚓的时候也会发现蚯蚓体内有许多连接体壁和肠壁的膜。下图为蚯蚓早期发育某一阶段的模式图，a、b、c、d 是个体发育中形成的囊的横切及纵切。以下说法，正确的是",
+ "options": {
+  "A": "图中b 和c 进一步发育后，与系膜形成相关",
+  "B": "图中b 和c 进一步发育后，与隔膜形成相关",
+  "C": "图中a 和d 进一步发育后，与系膜形成相关",
+  "D": "图中a 和d 进一步发育后，与隔膜形成相关"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 35 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-35-4aa2b81a202b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 313,
+  "bbox": [
+   208.8,
+   372.3,
+   386.9,
+   448.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-35-4aa2b81a202b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 313,
+   "bbox": [
+    208.8,
+    372.3,
+    386.9,
+    448.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M2-35-b7aef14a222c",
+ "type": "single",
+ "question": "植物开花受到光照的调节。由图可以得出，调节植物开花机制的关键因素为：",
+ "options": {
+  "A": "连续日照时间的长短；",
+  "B": "连续黑暗时间的长短；",
+  "C": "一天中多次累计日照时间的长短；",
+  "D": "一天中多次累计黑暗时间的长短。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 35 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-35-b7aef14a222c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 415,
+  "bbox": [
+   132.6,
+   75.3,
+   462.2,
+   239.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-35-b7aef14a222c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 415,
+   "bbox": [
+    132.6,
+    75.3,
+    462.2,
+    239.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

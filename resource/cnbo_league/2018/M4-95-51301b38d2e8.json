@@ -1,0 +1,44 @@
+{
+ "id": "M4-95-51301b38d2e8",
+ "type": "single",
+ "question": "人类和黑猩猩大约在6 百万年前分歧，和恒河猴大约在3 千万年前分歧。将这三个物种的全基因组序列排列，发现在基因组某个区域人的序列是ATG，黑猩猩是AAG，恒河猴是AAG，请问在该区域人和黑猩猩的最近共同祖先的序列最可能是：",
+ "options": {
+  "A": "AAG",
+  "B": "ATG",
+  "C": "ACG",
+  "D": "AGG"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 95 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

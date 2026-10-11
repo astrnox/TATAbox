@@ -1,0 +1,44 @@
+{
+ "id": "M2-72-d4449037542d",
+ "type": "multiple",
+ "question": "生态因子影响生物的生存和繁殖，在特定的生物和非生物环境下，生物可能演化出不同的性状以适应所处的环境。植物由于大多固着生长，需要借助媒介完成花粉从雄蕊到雌蕊的传递。在虫媒传粉向风媒传粉的转变过程中，植物性状可能发生的改变包括：",
+ "options": {
+  "A": "花粉数量增加",
+  "B": "花粉变小",
+  "C": "花朵挥发的气味减弱",
+  "D": "花瓣颜色更鲜艳"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 72 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

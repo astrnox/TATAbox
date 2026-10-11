@@ -1,0 +1,44 @@
+{
+ "id": "M4-82-c39e5623db5b",
+ "type": "multiple",
+ "question": "用达尔文的生物演化理论来判断下面的说法哪些是错误的：",
+ "options": {
+  "A": "现代人类的基因组演化时间最短",
+  "B": "地球上的生物来自一个共同祖先",
+  "C": "所有原核生物物种都是很古老的",
+  "D": "自然选择是推动生物演化的动力"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 82 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

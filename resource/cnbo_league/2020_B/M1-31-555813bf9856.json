@@ -1,0 +1,46 @@
+{
+ "id": "M1-31-555813bf9856",
+ "type": "multiple",
+ "question": "下列生物网络中属于有向网络（directed network）的有：",
+ "options": {
+  "A": "蛋白-蛋白相互作用网络",
+  "B": "代谢网络",
+  "C": "转录调控网络",
+  "D": "基因共表达网络",
+  "E": "细胞信号网络"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 31 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

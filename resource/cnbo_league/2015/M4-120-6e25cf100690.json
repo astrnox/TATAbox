@@ -1,0 +1,44 @@
+{
+ "id": "M4-120-6e25cf100690",
+ "type": "multiple",
+ "question": "涡虫目前被发育生物学和神经系统再生研究广泛选为模式动物，主要是因为：",
+ "options": {
+  "A": "涡虫可以在数天内完成身体任何一部分的再生",
+  "B": "涡虫体内有大量的成体干细胞（adult stem cells）",
+  "C": "涡虫在各种水体环境中均能表现出很好的再生能力",
+  "D": "涡虫在各种水体环境都容易采集到"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 120 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

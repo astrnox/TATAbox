@@ -1,0 +1,46 @@
+{
+ "id": "M3-45-4ea18ec36822",
+ "type": "multiple",
+ "question": "颈交感神经受压迫而发生功能障碍时可引起霍纳(Horner)综合征，根据交感神经的解剖走向及生理功能推测，霍纳综合征的临床表现可包括：",
+ "options": {
+  "A": "患侧眼睑下垂",
+  "B": "对侧眼睑下垂",
+  "C": "患侧瞳孔放大",
+  "D": "患侧瞳孔缩小",
+  "E": "患侧额部多汗"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 45 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

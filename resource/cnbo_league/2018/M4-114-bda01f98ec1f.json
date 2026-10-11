@@ -1,0 +1,44 @@
+{
+ "id": "M4-114-bda01f98ec1f",
+ "type": "single",
+ "question": "通常将单倍体细胞中的全套染色体称为基因组（Genome），其大小可以用对应的DNA 碱基对总数描述，以下关于基因组的描述中错误的是：",
+ "options": {
+  "A": "人类基因组与小鼠基因组有大片段的同源区域",
+  "B": "人类基因组中存在大量的重复序列",
+  "C": "一个物种基因组的大小与其复杂性呈正相关",
+  "D": "人类基因组中仅有少部分区域编码蛋白质"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 114 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

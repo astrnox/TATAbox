@@ -1,0 +1,46 @@
+{
+ "id": "M4-115-d70c3b73992d",
+ "type": "multiple",
+ "question": "tRNA 的反密码子为IGC，它可以识别的密码子是：",
+ "options": {
+  "A": "GCU",
+  "B": "CCG",
+  "C": "GCA",
+  "D": "ACG",
+  "E": "GCC"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 115 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 115,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

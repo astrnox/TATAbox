@@ -1,0 +1,46 @@
+{
+ "id": "M4-105-f7a4fc5eaa50",
+ "type": "single",
+ "question": "以下是有关六倍体普通小麦（Triticum aestivum）的叙述：a.六倍体的形成源自天然杂交；b.六倍体的形成源自人工杂交；c.普通小麦与其祖先相比，适合度更高；d.普通小麦与其祖先相比，适合度更低；e.普通小麦自然扩散能力较其祖先种更强；f.普通小麦自然扩散能力较其祖先种更弱；g.普通小麦较其祖先种抗病能力更强；h.普通小麦较其祖先种抗病能力更弱。以下组合中都正确的是：",
+ "options": {
+  "A": "a，d，e，g;",
+  "B": "a，c，f，h;",
+  "C": "b，c，f，h;",
+  "D": "b，c，e，g;",
+  "E": "a，c，e，h;"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 105 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "四. 遗传学、进化生物学、生物系统学 27 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

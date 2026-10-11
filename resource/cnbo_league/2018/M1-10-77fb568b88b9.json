@@ -1,0 +1,44 @@
+{
+ "id": "M1-10-77fb568b88b9",
+ "type": "single",
+ "question": "哺乳动物成熟的红细胞没有细胞核、线粒体及内膜系统，下面对其描述错误的是：",
+ "options": {
+  "A": "成熟的红细胞内没有DNA",
+  "B": "成熟的红细胞内不产生ATP",
+  "C": "成熟的红细胞不会被DNA 病毒侵染",
+  "D": "成熟的红细胞不再合成蛋白质"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 10 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

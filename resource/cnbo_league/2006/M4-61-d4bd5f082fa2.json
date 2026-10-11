@@ -1,0 +1,44 @@
+{
+ "id": "M4-61-d4bd5f082fa2",
+ "type": "single",
+ "question": "物种的遗传变异的程度与物种的“寿命”是相关的，其原因是：",
+ "options": {
+  "A": "遗传变异大的物种适应的潜力大",
+  "B": "遗传变异大的物种进化的速率快",
+  "C": "遗传变异大的物种抗病的能力强",
+  "D": "遗传变异大的物种繁殖的能力强."
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 61 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

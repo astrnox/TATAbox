@@ -1,0 +1,44 @@
+{
+ "id": "M1-06-040b3a745427",
+ "type": "single",
+ "question": "蛋白质的分泌是细胞间信息传递的重要方式。分泌蛋白的新生多肽含有信号肽，在翻译过程中被识别进入内质网进行加工、修饰，之后被运输到高尔基体经过进一步的加工，最终抵达细胞质膜并被释放到细胞外，这一过程被称为蛋白质分泌途径。以下关于分泌机制的表述不正确的是：",
+ "options": {
+  "A": "分泌蛋白的产生过程大部分需要翻译和进入内质网的过程同时进行",
+  "B": "分泌过程中，信号肽序列也可能位于蛋白质N-端以外的其他区段",
+  "C": "内质网和高尔基体之间的运输需要通过膜泡完成",
+  "D": "合成错误的分泌蛋白可以通过质量控制系统去除掉"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 6 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

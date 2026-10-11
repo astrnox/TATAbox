@@ -1,0 +1,44 @@
+{
+ "id": "M1-40-0bf80aac558c",
+ "type": "single",
+ "question": "关于贮精囊（seminal vesicle）和纳精囊(seminal receptacle)的叙述，错误的是：",
+ "options": {
+  "A": "贮精囊是自体精子贮精和发育的器官，纳精囊主要接受异体精子",
+  "B": "纳精囊是自体精子贮精和发育的器官，贮精囊主要接受异体精子",
+  "C": "贮精囊和纳精囊是贮存精子的不同器官的名称",
+  "D": "每条环毛蚓都同时具有这二种器官"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 40 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

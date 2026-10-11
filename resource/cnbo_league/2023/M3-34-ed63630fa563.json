@@ -1,0 +1,44 @@
+{
+ "id": "M3-34-ed63630fa563",
+ "type": "multiple",
+ "question": "下列有关腔上囊的描述中正确的是：",
+ "options": {
+  "A": "腔上囊最早出现在两栖类，在爬行类中已普遍存在，在鸟类中最为发达",
+  "B": "腔上囊是位于泄殖腔背面的一个盲囊",
+  "C": "腔上囊在幼鸟中特别发达，随着性成熟逐渐退化",
+  "D": "腔上囊粘膜形成纵行皱褶，含有大量腺细胞，可以分泌淋巴液"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 34 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-7804ee355754",
+ "type": "single",
+ "question": "糖原磷酸化酶a 和磷酸化酶b 是一种酶的两种不同存在形式，下列说法正确的是：",
+ "options": {
+  "A": "磷酸化酶b 发生二聚化即可转变为磷酸化酶a；",
+  "B": "磷酸化酶b 上的一个丝氨酸被磷酸化即可转变为磷酸化酶a；",
+  "C": "磷酸化酶b 作为酶原，可以被蛋白酶切割从而转变为有活性的磷酸化酶a；",
+  "D": "葡萄糖分子可以结合磷酸化酶b，通过变构调节的方式将其转变为磷酸化酶a。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 9 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

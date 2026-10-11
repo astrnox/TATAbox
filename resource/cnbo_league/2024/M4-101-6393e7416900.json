@@ -1,0 +1,44 @@
+{
+ "id": "M4-101-6393e7416900",
+ "type": "single",
+ "question": "在一个果蝇种群中，科学家发现一个控制翅膀大小的基因位点存在多个等位基因。最初这些等位基因的频率都较低，但当环境发生变化，气温逐渐升高时，其中一个产生较小翅膀的等位基因频率迅速增加，因为较小的翅膀有利于散热。这个等位基因最终在种群中达到了较高的频率。这个过程最符合：",
+ "options": {
+  "A": "一个新的有益突变在种群中迅速固定；",
+  "B": "一个已经存在的等位基因由于环境变化而变得有利；",
+  "C": "一个中性等位基因由于遗传漂变而在种群中固定；",
+  "D": "一个有害等位基因由于自然选择而从种群中消除。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 101 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

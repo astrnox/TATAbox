@@ -1,0 +1,71 @@
+{
+ "id": "M3-59-2711ae22b590",
+ "type": "multiple",
+ "question": "关于中国蝗灾爆发规律的研究发现，蝗灾的爆发频率与降水（precipitation）和气温（temperature）可能存在关联，依据下图给出的信息，以下说法正确的是：",
+ "options": {
+  "A": "在以温暖、湿润为主的12 世纪，蝗虫种群整体水平比较低",
+  "B": "在16-17 世纪，蝗虫整体水平达到历史最高，此时气温较低，降水变化较大",
+  "C": "在19-20 世纪，蝗虫数量和气温均呈上升趋势",
+  "D": "蝗虫数量、气温和降水的变化基本一致"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 2.0,
+ "voided": true,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 59 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-59-2711ae22b590/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 231,
+  "bbox": [
+   182.7,
+   75.4,
+   412.6,
+   364.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-59-2711ae22b590/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 231,
+   "bbox": [
+    182.7,
+    75.4,
+    412.6,
+    364.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

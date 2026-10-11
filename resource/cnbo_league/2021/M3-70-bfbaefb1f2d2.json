@@ -1,0 +1,44 @@
+{
+ "id": "M3-70-bfbaefb1f2d2",
+ "type": "single",
+ "question": "两个生物体通过共同的捕食者产生的竞争也称为似然竞争。原理是某物种密度会通过影响中间捕食者的密度后对另一物种密度产生影响。下面属于似然竞争的是",
+ "options": {
+  "A": "对蚜虫寄主施肥促进蚜虫种群密度增长，造成同株植物上叶螨种群密度降低",
+  "B": "生长在蒲公英附近的苜蓿上的蚜虫种群密度低，是由于蒲公英花粉可为瓢虫提供养分，使得瓢虫种群增加，进而造成附近苜蓿上的蚜虫种群密度降低",
+  "C": "植物出芽滞后造成蚜虫种群下降，进而使得寄生蜂种群降低",
+  "D": "取食同种食物的不同昆虫种群存在着此消彼长的现象"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 70 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

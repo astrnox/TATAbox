@@ -1,0 +1,44 @@
+{
+ "id": "M1-21-d0e1229b420f",
+ "type": "single",
+ "question": "新一代高通量测序技术不适合应用于下列哪个领域：",
+ "options": {
+  "A": "蛋白质组",
+  "B": "DNA 甲基化水平",
+  "C": "转录调控",
+  "D": "单核苷酸多态性（SNP）"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 21 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

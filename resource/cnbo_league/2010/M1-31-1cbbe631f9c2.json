@@ -1,0 +1,44 @@
+{
+ "id": "M1-31-1cbbe631f9c2",
+ "type": "single",
+ "question": "2009年，中国颁发了具有自主知识产权的两个转基因水稻品种的生产应用安全证书。这两个转基因水稻均是哪一类：",
+ "options": {
+  "A": "转抗虫基因水稻",
+  "B": "转植酸酶基因水稻",
+  "C": "转谷氨酸合成酶基因水稻",
+  "D": "转生长素合成酶基因水稻"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 31 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

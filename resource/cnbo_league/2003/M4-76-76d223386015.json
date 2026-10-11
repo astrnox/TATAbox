@@ -1,0 +1,44 @@
+{
+ "id": "M4-76-76d223386015",
+ "type": "single",
+ "question": "从总的趋势上看，",
+ "options": {
+  "A": "愈是高等的生物，DNA 含量愈高，DNA 含量总是跟生物的复杂程度成正比",
+  "B": "进化中要导致复杂生物体的产生，基因组中含有足够数量的不同基因是必需的",
+  "C": "正是进化中形成的基因组中大量的DNA 才导致复杂生物体的产生",
+  "D": "进化中生物的DNA 含量逐渐增加，基因组中含有足够数量的基因是导致复杂生物体的产生所必需的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 76 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

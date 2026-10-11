@@ -1,0 +1,44 @@
+{
+ "id": "M3-33-a24e22595d5f",
+ "type": "multiple",
+ "question": "施万细胞（Schwann cell）又称神经膜细胞，是脊椎动物神经组织的重要组成部分。有关施万细胞的描述中，正确的有哪些？",
+ "options": {
+  "A": "在中枢神经系统中包绕轴突形成髓鞘",
+  "B": "施万细胞对神经元起绝缘，支持，营养等作用",
+  "C": "在施万细胞参与形成髓鞘的神经元细胞中，动作电位在郎飞氏结处跳跃传导",
+  "D": "是一种神经胶质细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 33 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

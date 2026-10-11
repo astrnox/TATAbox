@@ -1,0 +1,44 @@
+{
+ "id": "M3-107-a9144ac95066",
+ "type": "single",
+ "question": "下列对种群大小调节的因素中，属于非密度制约因素影响的是",
+ "options": {
+  "A": "捕食",
+  "B": "竞争",
+  "C": "严寒",
+  "D": "传染病"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 107 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

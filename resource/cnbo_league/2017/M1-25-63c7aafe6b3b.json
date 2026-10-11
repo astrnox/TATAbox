@@ -1,0 +1,44 @@
+{
+ "id": "M1-25-63c7aafe6b3b",
+ "type": "multiple",
+ "question": "遗传病唐氏综合症是由21 号染色体为“三体” 引起的。研究表明，父亲与婴儿21 三体的关系不大，约95%的21 三体都源于母亲卵子形成过程中的异常。请问21 三体产生的可能机制是：",
+ "options": {
+  "A": "初级卵母细胞产生过程中，减数分裂异常导致",
+  "B": "次级卵母细胞产生过程中，减数分裂时同源染色体未正常分离导致",
+  "C": "次级卵母细胞产生过程中，有丝分裂时同源染色体分离异常导致",
+  "D": "卵子产生过程中，减数分裂时姊妹染色单体未正常分离导致"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 25 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

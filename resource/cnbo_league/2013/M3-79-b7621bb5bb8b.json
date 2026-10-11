@@ -1,0 +1,46 @@
+{
+ "id": "M3-79-b7621bb5bb8b",
+ "type": "multiple",
+ "question": "下列关于软骨鱼和硬骨鱼的比较中，错误的是：",
+ "options": {
+  "A": "软骨鱼中动脉圆锥无收缩能力，硬骨鱼的动脉球可主动收缩",
+  "B": "海生软骨鱼类的血液渗透压高于海水，海洋硬骨鱼体液浓度低于海水",
+  "C": "软骨鱼和硬骨鱼都是体外受精",
+  "D": "软骨鱼和硬骨鱼的呼吸器官都是鳃",
+  "E": "软骨鱼有独立的肝脏和胰脏，部分硬骨鱼有肝胰脏"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "AC",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 79 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（多选2 分，修正为1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

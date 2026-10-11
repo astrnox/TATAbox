@@ -1,0 +1,44 @@
+{
+ "id": "M3-69-2a2422cf592c",
+ "type": "single",
+ "question": "李商隐的《霜月》“初闻征雁已无蝉，百尺楼台水接天。青女素娥俱耐冷，月中霜里斗婵娟。”是描写深秋的，其中第一句引用了：",
+ "options": {
+  "A": "雁的集体采食行为",
+  "B": "雁的季节性迁徙行为",
+  "C": "蝉的冬眠行为",
+  "D": "蝉的交配行为"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 69 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

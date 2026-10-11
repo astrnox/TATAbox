@@ -1,0 +1,44 @@
+{
+ "id": "M1-121-440e2437f0e1",
+ "type": "mtf",
+ "question": "哺乳动物体内明显具有增殖能力的细胞为：",
+ "options": {
+  "A": "神经细胞",
+  "B": "部分骨髓细胞",
+  "C": "心肌细胞",
+  "D": "表皮的基底层细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "6.A（ × ）B（ √ ）C（ × ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 6 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

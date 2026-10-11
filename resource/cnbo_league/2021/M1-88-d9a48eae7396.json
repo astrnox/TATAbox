@@ -1,0 +1,76 @@
+{
+ "id": "M1-88-d9a48eae7396",
+ "type": "single",
+ "question": "近交系数指来自共同祖先的同一等位基因在近交后代中相遇的概率。考虑如图的家系，个体a 在常染色体和X 染色体上的近交系数分别为",
+ "options": {
+  "A": "1/16，1/8",
+  "B": "1/16，1/4",
+  "C": "1/32，1/8",
+  "D": "l/32，1/4"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 88 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-88-d9a48eae7396/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 404,
+  "bbox": [
+   208.9,
+   107.5,
+   386.3,
+   223.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-88-d9a48eae7396/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 404,
+   "bbox": [
+    208.9,
+    107.5,
+    386.3,
+    223.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

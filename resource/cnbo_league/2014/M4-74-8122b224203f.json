@@ -1,0 +1,44 @@
+{
+ "id": "M4-74-8122b224203f",
+ "type": "single",
+ "question": "拉马克在达尔文之前系统地提出了生物演化理论，达尔文提出的演化理论在某些方面继承了拉马克的思想，但也有很大的不同，下面哪条是达尔文不同于拉马克的观点？",
+ "options": {
+  "A": "所有生物是在不断变化的",
+  "B": "生物遵循用进废退的原则",
+  "C": "后天获得的性状是可以遗传的",
+  "D": "所有生物起源于一个共同祖先"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 74 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

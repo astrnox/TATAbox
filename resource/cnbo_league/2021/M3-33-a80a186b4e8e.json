@@ -1,0 +1,80 @@
+{
+ "id": "M3-33-a80a186b4e8e",
+ "type": "single",
+ "question": "大多数硬骨鱼类脑颅与咽颅连接的模式是",
+ "options": {
+  "A": "图a",
+  "B": "图b",
+  "C": "图a 和b",
+  "D": "图c"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 33 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "33-34",
+  "stimulus": "题干。脊椎动物头骨中脑颅和咽颅连接的方式有多种，其中1 为上颌，2 为下颌，"
+ },
+ "image": {
+  "file": "assets/questions/M3-33-a80a186b4e8e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 391,
+  "bbox": [
+   93.4,
+   608.4,
+   501.9,
+   752.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-33-a80a186b4e8e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 391,
+   "bbox": [
+    93.4,
+    608.4,
+    501.9,
+    752.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

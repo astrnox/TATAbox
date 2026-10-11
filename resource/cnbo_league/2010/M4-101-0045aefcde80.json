@@ -1,0 +1,46 @@
+{
+ "id": "M4-101-0045aefcde80",
+ "type": "multiple",
+ "question": "对于插入引起的基因突变，下列说法正确的有哪些：",
+ "options": {
+  "A": "可由转座子或反转录病毒引起",
+  "B": "可由化学试剂引起",
+  "C": "一般比点突变容易回复",
+  "D": "只有插入的碱基数不是3的倍数，才可能引发突变",
+  "E": "突变基因的转录正常，翻译异常"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 101 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-101-a8caaf960252",
+ "type": "single",
+ "question": "实验结果显示，BRAFV600E 或BRAFV600K（第600 位的缬氨酸变为谷氨酸或赖氨酸）存在于39%的黑色素瘤中，这说明",
+ "options": {
+  "A": "第600 位疏水性的缬氨酸对BRAF 蛋白保持活性很重要",
+  "B": "第600 位的缬氨酸被带电氨基酸取代，导致BRAF 活性增强",
+  "C": "如果第600 位的氨基酸带电，会影响BRAF 的活性，但难以判断活性增强还是减弱",
+  "D": "第600 位的氨基酸带正电（赖氨酸〕还是带负电（谷氨酸），对BRAF 活性的影响正好相反，但都导致黑色素瘤"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 101 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "99-101",
+  "stimulus": "（99-101 题共用题干）基因突变是造成癌症的原因。为鉴定造成黑色素瘤（melanoma）"
+ }
+}

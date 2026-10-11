@@ -1,0 +1,44 @@
+{
+ "id": "M3-49-a97bb0d969ba",
+ "type": "single",
+ "question": "年龄金字塔是一种分析种群年龄结构的有用方法，下列说法中哪个是正确的？",
+ "options": {
+  "A": "年龄金字塔由一系列横柱组成，横柱位置表示不同年龄组，横柱的高度表示该年龄组个体所占百分比",
+  "B": "增长型年龄金字塔呈钟形，上下宽度大体一致",
+  "C": "稳定型幼年个体与中老年数量大致相等，出生死亡率也大致平衡",
+  "D": "下降型基部较宽阔顶部较狭窄"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 49 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

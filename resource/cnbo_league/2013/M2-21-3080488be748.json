@@ -1,0 +1,44 @@
+{
+ "id": "M2-21-3080488be748",
+ "type": "single",
+ "question": "不同类型的导管分子次生壁加厚的程度不同，下列哪一种排列正确的表明了壁逐渐增厚的程度？",
+ "options": {
+  "A": "环纹导管-螺纹导管-网纹导管-梯纹导管-孔纹导管",
+  "B": "环纹导管-螺纹导管-梯纹导管-网纹导管-孔纹导管",
+  "C": "环纹导管-梯纹导管-螺纹导管-网纹导管-孔纹导管",
+  "D": "环纹导管-梯纹导管-网纹导管-螺纹导管-孔纹导管"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 21 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

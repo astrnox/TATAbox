@@ -1,0 +1,84 @@
+{
+ "id": "M2-29-fb76e81c3420",
+ "type": "mtf",
+ "question": "根据图中结果和已有生物学知识，对以下陈述进行正误判断：",
+ "options": {
+  "A": "在植物转基因过程中，农杆菌介导法是常用方法",
+  "B": "在农杆菌介导的植物遗传转化过程中，T-DNA 定点插入到基因组特定位置",
+  "C": "在进行蛋白杂交实验中，丽春红染色是为了确定在提取植物总蛋白时已将目的蛋白成功提取",
+  "D": "为确定植物中所转化的目的基因的表达量，可以间接检测其所融合的标签蛋白的含量"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 29 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "29-30",
+  "stimulus": "如右图所示，科学家研究了ER 基因在调控种子大小中的作用。Col-0 是哥伦比亚生态型拟南芥，作"
+ },
+ "image": {
+  "file": "assets/questions/M2-29-fb76e81c3420/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 5,
+  "bbox": [
+   321.9,
+   362.1,
+   549.9,
+   560.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-29-fb76e81c3420/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 5,
+   "bbox": [
+    321.9,
+    362.1,
+    549.9,
+    560.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。农杆菌（根癌农杆菌）介导法是双子叶及多数单子叶植物遗传转化的常用方法。B．错误。T-DNA插入基因组的位置是随机的（非定点），只有配合定点整合技术才能定向插入。C．错误。丽春红染色用于检测转印到膜上的总蛋白（转印效率与上样对照），并非用于确认目的蛋白提取成功。D．正确。目的基因常融合标签（如myc、GFP），检测标签蛋白含量可间接反映其表达量。\n【易错易混】易混实验用途：丽春红＝总蛋白转印对照；考马斯亮蓝＝胶上总蛋白；Western条带＝目的蛋白；标签抗体＝间接定量融合蛋白表达。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-44-b5017ff62429",
+ "type": "multiple",
+ "question": "下列关于神经元的陈述中正确的有：",
+ "options": {
+  "A": "突触后神经元表面的局部区域分布了一些突触，它们产生的突触电位无法叠加并诱发出动作电位",
+  "B": "时间上连续的几次突触电位可以产生叠加的效果，并可能诱导出动作电位",
+  "C": "神经元的兴奋性被“易化”是指某种因素导致它的膜电位发生一定程度的去极化",
+  "D": "兴奋性突触不会发生突触疲劳的现象"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 44 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

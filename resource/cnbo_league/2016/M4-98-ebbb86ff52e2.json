@@ -1,0 +1,44 @@
+{
+ "id": "M4-98-ebbb86ff52e2",
+ "type": "single",
+ "question": "某区域地形起伏很大，海拔在1600～4000m 之间，气候和植被都依海拔呈垂直变化。常见物种包括藏马鸡、羚牛、白唇鹿、金丝猴、高原蝮、大鲵等。此区最有可能属于下列哪界",
+ "options": {
+  "A": "澳洲界",
+  "B": "古北界",
+  "C": "旧热带界",
+  "D": "东洋界"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 98 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

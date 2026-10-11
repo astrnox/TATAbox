@@ -1,0 +1,44 @@
+{
+ "id": "M4-63-f6d48746e7c0",
+ "type": "single",
+ "question": "一个患有牙齿珐琅质褐色病症的男人与正常女人结婚后,其所有男性后代均正常，但是所有女性后代都为患病者。当男性后代与正常女性结婚后，子女都正常。而女性后代与正常男性结婚后子女有50%的发病率。这种遗传病属于：",
+ "options": {
+  "A": "常染色体显性遗传病",
+  "B": "X 染色体显性遗传病",
+  "C": "Y 染色体显性遗传病",
+  "D": "X 染色体隐性遗传病"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 63 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

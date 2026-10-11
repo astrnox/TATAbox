@@ -1,0 +1,46 @@
+{
+ "id": "M2-76-e1bcfd769d66",
+ "type": "mtf",
+ "question": "存在于植物顶端分生组织细胞壁的成分是：",
+ "options": {
+  "A": "纤维素",
+  "B": "半纤维素",
+  "C": "木质素",
+  "D": "果胶质",
+  "E": "胼胝质"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "3．A（√）B（√）C（×）D（√）E（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 3 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

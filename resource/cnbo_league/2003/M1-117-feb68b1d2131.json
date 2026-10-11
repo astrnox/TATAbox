@@ -1,0 +1,44 @@
+{
+ "id": "M1-117-feb68b1d2131",
+ "type": "mtf",
+ "question": "Watson-Crick DNA 模型的特点是：",
+ "options": {
+  "A": "两股螺旋结构",
+  "B": "两条链走向相同",
+  "C": "碱基间形成共价键",
+  "D": "磷酸戊糖骨架位于DNA 螺旋外部"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "2.A（ √ ）B（ х ）C（ х ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 2 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

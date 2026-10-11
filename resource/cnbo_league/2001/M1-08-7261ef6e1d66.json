@@ -1,0 +1,44 @@
+{
+ "id": "M1-08-7261ef6e1d66",
+ "type": "single",
+ "question": "植物细胞作为植物有机体的结构和功能的基本单位，区别于动物细胞的结构是＿",
+ "options": {
+  "A": "叶绿体、线粒体、乙醛酸体",
+  "B": "细胞壁、细胞膜、液泡膜",
+  "C": "液泡、质体、叶绿体",
+  "D": "细胞壁、叶绿体、液泡"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 8 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

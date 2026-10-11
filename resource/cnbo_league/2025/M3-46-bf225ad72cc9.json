@@ -1,0 +1,77 @@
+{
+ "id": "M3-46-bf225ad72cc9",
+ "type": "mtf",
+ "question": "城市化往往会增加溪流和河流的水温，并被认为是导致许多淡水鱼类数量下降的原因之一。研究人员揭示了气候变化和城市化对濒危物种红侧鱥鱼的生理造成的挑战。右图展示了红侧鱥鱼成鱼和幼鱼的营养状况（Fulton’s K）与温度耐受上限的关系，灰色三角形表示幼年个体，黑色圆圈表示成年雌性，黑色正方形表示成年雄性，黑线是综合雌雄成年鱼类数据的拟合。根据图和实验结果，对以下陈述进行正误判断：",
+ "options": {
+  "A": "增加摄入的食物营养能够提升成鱼的水温耐受上限",
+  "B": "成鱼比幼鱼能够忍受更高的水温",
+  "C": "图显示，幼鱼的营养状况与其水温耐受上限之间的相关趋势在所有采样季节都相似",
+  "D": "图表数据显示，相较于冬季，红侧鱥鱼在夏季采样时的水温耐受上限普遍更高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 46 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-46-bf225ad72cc9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 8,
+  "bbox": [
+   86.1,
+   211.9,
+   507.8,
+   400.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-46-bf225ad72cc9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 8,
+   "bbox": [
+    86.1,
+    211.9,
+    507.8,
+    400.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。由图可见营养状况（Fulton's K）与温度耐受上限正相关，改善营养可提升成鱼耐受上限。B．错误。图中幼鱼的耐受上限并不低于成鱼，'成鱼比幼鱼更耐高温'不成立。C．错误。由图，幼鱼的营养状况与其耐受上限的相关趋势并非在所有采样季节都一致。D．正确。夏季采样个体的耐受上限普遍高于冬季，反映温度驯化与季节适应。"
+}

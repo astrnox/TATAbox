@@ -1,0 +1,44 @@
+{
+ "id": "M3-77-1a12e9c62ce8",
+ "type": "single",
+ "question": "不同生活习性的哺乳动物，其牙齿的数目、类型有很大变异，以下动物中，无犬齿的一组动物是",
+ "options": {
+  "A": "牛和兔",
+  "B": "猴和马",
+  "C": "野猪和大熊猫",
+  "D": "狐狸和小家鼠"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 77 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

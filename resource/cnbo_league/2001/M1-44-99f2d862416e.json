@@ -1,0 +1,44 @@
+{
+ "id": "M1-44-99f2d862416e",
+ "type": "single",
+ "question": "以RNA 为模板，即按照RNA 中核苷酸顺序合成DNA(称逆转录)此过程中需要的酶是＿。",
+ "options": {
+  "A": "DNA 指导的DNA 聚合酶",
+  "B": "RNA 指导的RNA 聚合酶",
+  "C": "RNA 指导的DNA 聚合酶",
+  "D": "DNA 指导的RNA 聚合酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 44 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

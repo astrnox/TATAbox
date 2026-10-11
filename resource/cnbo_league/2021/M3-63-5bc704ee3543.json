@@ -1,0 +1,76 @@
+{
+ "id": "M3-63-5bc704ee3543",
+ "type": "multiple",
+ "question": "变温动物对环境温度的适应类型影响其微生境的选择，生活于澳大利亚的一种蜥蜴有三种适应型（分别为热适应型、冷适应型和中间温度适应型），这三种类型个体的微生境的选择特征如图所示，下列说法中，正确的是：",
+ "options": {
+  "A": "三种类型个体在植被覆盖区域出现的时间均最长",
+  "B": "中间温度适应型的个体对岩石环境的利用时间显著高于冷适应性个体",
+  "C": "三种类型个体对采伐后的开阔生境的选择利用无显著差别",
+  "D": "热适应型个体最偏好生活于多岩石环境"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 63 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-63-5bc704ee3543/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 398,
+  "bbox": [
+   178.3,
+   356.1,
+   417.0,
+   520.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-63-5bc704ee3543/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 398,
+   "bbox": [
+    178.3,
+    356.1,
+    417.0,
+    520.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-110-cb04d4d16fee",
+ "type": "single",
+ "question": "下列多毛纲的哪个特征是寡毛纲所不具备的：",
+ "options": {
+  "A": "体表具有刚毛",
+  "B": "具有闭管式循环系统",
+  "C": "排泄系统大多数为后肾管，少数为原肾管，或原肾管与体腔管的结合",
+  "D": "中枢神经系统包括脑神经节、围咽神经、咽下神经节及其后的腹神经索"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 110 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

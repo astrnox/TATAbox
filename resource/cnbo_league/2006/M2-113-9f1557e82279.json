@@ -1,0 +1,44 @@
+{
+ "id": "M2-113-9f1557e82279",
+ "type": "mtf",
+ "question": "脱落酸具有下列哪些作用：",
+ "options": {
+  "A": "气孔关闭",
+  "B": "种子休眠",
+  "C": "果实成熟",
+  "D": "抑制顶端优势"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 13 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

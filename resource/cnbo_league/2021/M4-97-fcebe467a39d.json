@@ -1,0 +1,44 @@
+{
+ "id": "M4-97-fcebe467a39d",
+ "type": "single",
+ "question": "有一种鸟的雌性偏好与色彩鲜艳的雄性交配，然而背部色彩鲜艳的雄性更容易被猛禽捕捉。假设该物种具有丰富的遗传多样性，那么最有可能的自然选择结果是",
+ "options": {
+  "A": "雄性具有鲜艳的颜色",
+  "B": "雌性选择色彩黯淡的雄性",
+  "C": "雄性具有鲜艳的胸部和暗淡的背部",
+  "D": "该物种的雄性会有被捕食者捕捉而灭绝的风险"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 97 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

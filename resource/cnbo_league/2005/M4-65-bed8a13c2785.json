@@ -1,0 +1,44 @@
+{
+ "id": "M4-65-bed8a13c2785",
+ "type": "single",
+ "question": "如果F2 的分离比分别为9:7，9:6:1 和15:1, 那么F1 与纯隐性个体间进行测交，得到的分离比将分别为：",
+ "options": {
+  "A": "1:3，1:2:1 和3:1",
+  "B": "3:1，4:1 和1:3",
+  "C": "1:2;1，4:1 和3:1",
+  "D": "3:1，3:1 和1:4"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 65 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-12-6a04fcb79b79",
+ "type": "single",
+ "question": "Mg2+是己糖激酶的激活剂，其所起的作用为",
+ "options": {
+  "A": "亲电催化",
+  "B": "使底物敏感键发生断裂",
+  "C": "转移电子",
+  "D": "静电屏蔽"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 12 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-90-4d76c8eb5b85",
+ "type": "single",
+ "question": "以下组织中不属于结缔组织的是",
+ "options": {
+  "A": "猪的皮下脂肪",
+  "B": "猫气管中间实质",
+  "C": "乌贼的软骨匣",
+  "D": "哺乳动物的肠腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 90 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-102-dee7d2dc9d41",
+ "type": "single",
+ "question": "在脊索动物的静脉系统中，从文昌鱼至哺乳类始终存在的血管是？",
+ "options": {
+  "A": "肾门静脉",
+  "B": "肝门静脉",
+  "C": "肺静脉",
+  "D": "后大（腔）静脉"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 102 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

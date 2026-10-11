@@ -1,0 +1,44 @@
+{
+ "id": "M1-10-7b2f4f80dfc7",
+ "type": "single",
+ "question": "非竞争性抑制剂与竞争性抑制剂的一个共同点是：",
+ "options": {
+  "A": "抑制剂和底物结合酶的相同部位",
+  "B": "两者的Ki 值越小造成的抑制作用越大",
+  "C": "增大底物浓度可解除两者对酶活性的抑制",
+  "D": "两者都造成表观Km 值的增加"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 10 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

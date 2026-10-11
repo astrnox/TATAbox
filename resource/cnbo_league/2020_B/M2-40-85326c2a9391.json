@@ -1,0 +1,44 @@
+{
+ "id": "M2-40-85326c2a9391",
+ "type": "single",
+ "question": "植物生长素可通过激活细胞膜上的H+-ATP 酶，促进H+泵出导致细胞壁酸化，从而促进细胞生长。下列无法验证酸化理论的实验是：",
+ "options": {
+  "A": "用不同酸度的缓冲液处理正在生长的植物组织；",
+  "B": "用不同浓度的生长素处理正在生长的植物组织；",
+  "C": "筛选与质膜H+-ATP 酶活性相关的生长素效应因子；",
+  "D": "在pH 中性缓冲液中，即使含有生长素，细胞伸长也受到抑制。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 40 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

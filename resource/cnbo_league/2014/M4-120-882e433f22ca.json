@@ -1,0 +1,46 @@
+{
+ "id": "M4-120-882e433f22ca",
+ "type": "single",
+ "question": "上世纪七十年代在埃塞俄比亚发现的直立的人科化石“露西”，属于",
+ "options": {
+  "A": "腊玛古猿",
+  "B": "南方古猿",
+  "C": "能人",
+  "D": "直立人",
+  "E": "智人"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 120 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（6 道题9 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "M2-15-b61b7555eaae",
+ "type": "multiple",
+ "question": "根据实验结果，对Eco1 功能可以得出的合理推测有",
+ "options": {
+  "A": "Eco1 的作用与Scc1 不同",
+  "B": "Eco1 在S 期是必需的，但S 期结束后则不是必需的",
+  "C": "Eco1 可能通过某种途径协助建立粘连蛋白复合体",
+  "D": "Eco1 直接参与DNA 复制"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 15 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "12-15",
+  "stimulus": "Scc1，Scc3，Smc1 和Smc3 是酵母细胞中染色体粘连复合体的亚基，对于保持有丝"
+ },
+ "image": {
+  "file": "assets/questions/M2-15-b61b7555eaae/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 334,
+  "bbox": [
+   148.8,
+   376.2,
+   446.5,
+   532.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-15-b61b7555eaae/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 334,
+   "bbox": [
+    148.8,
+    376.2,
+    446.5,
+    532.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M1-94-7670038baad2",
+ "type": "mtf",
+ "question": "在DNA 变性过程中，以下哪些现象会出现？",
+ "options": {
+  "A": "磷脂键的断裂",
+  "B": "双螺旋之间氢键的断裂",
+  "C": "粘度下降",
+  "D": "沉降速度增加",
+  "E": "紫外吸收增加"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "4.A（×）B（√）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "DNA结构",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 4 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

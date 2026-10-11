@@ -1,0 +1,44 @@
+{
+ "id": "M1-38-d5abaf30dee2",
+ "type": "single",
+ "question": "苔藓植物地钱雌雄异体，性别由性染色体决定的，属于XY 型，下列地钱的哪部分细胞含有X 和Y 染色体：",
+ "options": {
+  "A": "胞芽",
+  "B": "朔帽",
+  "C": "朔柄",
+  "D": "孢子"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 38 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

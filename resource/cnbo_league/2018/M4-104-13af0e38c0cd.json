@@ -1,0 +1,44 @@
+{
+ "id": "M4-104-13af0e38c0cd",
+ "type": "single",
+ "question": "一种鹦鹉中羽毛的颜色由两对非等位基因控制，显性等位基因Y 指导黄色素生成，显性等位基因B 指导蓝色素生成，黄色素和蓝色素共存时羽毛显示为绿色，无色素时显示为白色。一只绿色的鹦鹉和一只黄色的鹦鹉杂交后，后代表型比例为12 绿﹕4 蓝﹕13 黄﹕3 白。这两只鹦鹉的基因型为：",
+ "options": {
+  "A": "YYbb 和YyBb",
+  "B": "YyBb 和YyBb",
+  "C": "YyBb 和Yybb",
+  "D": "YyBb 和YyBB"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 104 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

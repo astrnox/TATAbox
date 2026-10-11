@@ -1,0 +1,44 @@
+{
+ "id": "M3-83-a8a68fd1a4b8",
+ "type": "single",
+ "question": "能在深海中潜泳的一些肺呼吸动物的肋骨无胸骨附着，这可能是这类动物对下列哪种条件的适应：",
+ "options": {
+  "A": "海水盐度",
+  "B": "深海高压",
+  "C": "深海低氧",
+  "D": "光照强度"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 83 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

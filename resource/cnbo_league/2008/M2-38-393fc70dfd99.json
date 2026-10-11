@@ -1,0 +1,44 @@
+{
+ "id": "M2-38-393fc70dfd99",
+ "type": "single",
+ "question": "大熊猫是食肉目动物中罕见的素食者，其食物组成的99%以上是竹子。在秦岭地区大量分布的可食竹种有两种：较低海拔的巴山木竹和较高海拔的松花竹。每年的夏末，部分大熊猫个体会从较高海拔的松花竹林下迁到巴山木竹林中开始它们的洞穴生活，它们洞穴生活的意义在于",
+ "options": {
+  "A": "冬眠",
+  "B": "产仔和育幼",
+  "C": "躲避敌害",
+  "D": "便于取食"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 38 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

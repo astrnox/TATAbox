@@ -1,0 +1,44 @@
+{
+ "id": "M3-29-7c9f00e04d03",
+ "type": "single",
+ "question": "下列哪一组腺体或腺细胞没有导管？",
+ "options": {
+  "A": "哈氏腺，前列腺，眶下腺，胸腺",
+  "B": "颌下腺，甲状旁腺，尿道球腺",
+  "C": "泪腺，甲状腺，鱼类精巢，鱼类卵巢",
+  "D": "哺乳类卵巢，睾丸间质细胞，胰岛，甲状腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 29 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

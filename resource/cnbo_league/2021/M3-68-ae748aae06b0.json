@@ -1,0 +1,44 @@
+{
+ "id": "M3-68-ae748aae06b0",
+ "type": "single",
+ "question": "濒危物种保护一般需要先对物种进行遗传风险评价，主要包括种群内遗传多样性水平高低和种群间遗传差别大小两个方面，请问下列哪种情形，迫切需要开展促进种群间基因流动（例如，加强种群间个体迁移）的保护工作？",
+ "options": {
+  "A": "种群内遗传多样性低，种群间基本无遗传分化",
+  "B": "种群内遗传多样性低，种群间遗传差别大",
+  "C": "种群内遗传多样性高，种群间基本无遗传分化",
+  "D": "与种群内遗传多样性和种群间遗传分化无关"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 68 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

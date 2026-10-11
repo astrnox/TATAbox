@@ -1,0 +1,44 @@
+{
+ "id": "M1-11-0a3300601282",
+ "type": "single",
+ "question": "在减数分裂I 的前期中染色体出现配对及交叉互换，此现象：",
+ "options": {
+  "A": "发生在姊妹染色体之间",
+  "B": "发生在同源染色体之间",
+  "C": "在染色体之间随机进行",
+  "D": "在姊妹染色体之间与同源染色体之间均能发生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 11 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

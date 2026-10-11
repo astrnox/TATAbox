@@ -1,0 +1,44 @@
+{
+ "id": "M2-77-1d6f9757f596",
+ "type": "single",
+ "question": "在温带深水湖泊的季节变化中，秋季的初级生产力较夏季高，下列选项中正确的原因是",
+ "options": {
+  "A": "秋季水体产生对流，将水底丰富的营养物质带到浅层",
+  "B": "秋季光照强度更适宜藻类生长",
+  "C": "植物的生长季节在秋季",
+  "D": "夏季气温高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 77 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

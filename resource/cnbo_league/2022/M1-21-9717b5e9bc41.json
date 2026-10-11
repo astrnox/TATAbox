@@ -1,0 +1,44 @@
+{
+ "id": "M1-21-9717b5e9bc41",
+ "type": "single",
+ "question": "从作用原理来看，以下与Piezo 最相近的是：",
+ "options": {
+  "A": "乙酰胆碱N 受体",
+  "B": "肾上腺素受体",
+  "C": "生长因子受体",
+  "D": "一氧化氮受体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 21 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

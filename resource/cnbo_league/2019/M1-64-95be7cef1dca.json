@@ -1,0 +1,44 @@
+{
+ "id": "M1-64-95be7cef1dca",
+ "type": "multiple",
+ "question": "在赤霉素生物合成的最后阶段，GA3 氧化酶（GA3ox）和GA2 氧化酶（GA2ox）是催化合成不同GA 的重要酶，影响着植物组织中有生物活性GA 的含量。一些农艺措施和基因工程手段可以调控编码这两种酶的相关基因的表达。以下描述，正确的是",
+ "options": {
+  "A": "与完整的野生型豌豆相比，打顶使野生型豌豆节间中GA2ox 基因表达上调",
+  "B": "与完整的野生型豌豆相比，打顶使野生型豌豆节间中GA3ox 基因表达上调",
+  "C": "超表达GA2ox 基因可以获得矮生型小麦",
+  "D": "超表达GA3ox 基因可以获得矮生型水稻"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 64 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

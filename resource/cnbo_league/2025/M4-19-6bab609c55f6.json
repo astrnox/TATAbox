@@ -1,0 +1,48 @@
+{
+ "id": "M4-19-6bab609c55f6",
+ "type": "mtf",
+ "question": "华北落叶松的学名被确定为 Larix gmelinii var. principis-rupprechtii (Mayr) Pilger。对以下关于该学名构成及相关国际植物命名法规的陈述进行正误判断：",
+ "options": {
+  "A": "按照命名规则，变种加词 'principis-rupprechtii' 在物种 Larix gmelinii 内必须是唯一的，但该加词允许与同属或其他属中某个物种的种加词完全相同",
+  "B": "变种加词 'principis-rupprechtii' 是构成此完整变种学名的三个主要组成部分之一，并且其分类学等级等同于种加词 'gmelinii'",
+  "C": "若未来研究将此变种提升至物种等级，命名法规允许在满足优先权等条件下，将原变种加词 'principis- rupprechtii' 作为新物种的种加词使用",
+  "D": "学名中原命名人Mayr 姓氏外的括号表明，Pilger 对Mayr 最初描述的分类单元的分类地位或名称组合进行了修订"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 19 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。变种加词只需在该物种内唯一，不要求在全植物界唯一，可与其他属的种加词相同。B．错误。变种加词是种下加词（变种名的组成部分），其分类学等级低于种加词（种名的组成部分），二者并不等同。C．正确。依据保留加词规则，变种升为种时可在满足优先权等条件下沿用原加词作种加词。D．正确。命名人姓氏外加括号表示Mayr最初命名的组合已被修订（分类地位或属的组合改变），Pilger完成了新的组合。\n【点睛】点睛：命名人括号＝'后来被移动过'。括号内是原命名人，括号外是做修订的人——一眼判断分类地位曾被调整。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

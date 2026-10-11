@@ -1,0 +1,44 @@
+{
+ "id": "M1-02-e100dcfb010c",
+ "type": "single",
+ "question": "细胞质膜上具备的钠钾泵每消耗一个ATP分子将会",
+ "options": {
+  "A": "向细胞内转入2个K+向细胞外转出2个Na+",
+  "B": "向细胞内转入2个Na+向细胞外转出2个K+",
+  "C": "向细胞内转入3个K+向细胞外转出2个Na+",
+  "D": "向细胞内转入2个K+向细胞外转出3个Na+"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 2 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

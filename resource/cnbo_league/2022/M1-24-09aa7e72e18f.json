@@ -1,0 +1,44 @@
+{
+ "id": "M1-24-09aa7e72e18f",
+ "type": "single",
+ "question": "植物的胞间连丝在植物细胞的物质运输和信息传递过程中都具有重要的作用。目前已知至少有2 类亚细胞结构是胞间连丝的结构组分，它们是：",
+ "options": {
+  "A": "分泌囊泡和质膜；",
+  "B": "内质网和质膜；",
+  "C": "高尔基体和内质网；",
+  "D": "分祕囊泡和高尔基体。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 24 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

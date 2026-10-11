@@ -1,0 +1,44 @@
+{
+ "id": "M3-110-afe070a02157",
+ "type": "single",
+ "question": "农田生态系统是一种不稳定的生态系统类型，其根本原因在于",
+ "options": {
+  "A": "农田受到较多的人为干扰",
+  "B": "农田当中的生物种类比较单一",
+  "C": "农田徒弟中积累了大量的农药和肥料",
+  "D": "农田当中的非生物因素常常不稳定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 110 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第三部分 动物行为学、生态学（7 道题8 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

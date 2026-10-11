@@ -1,0 +1,76 @@
+{
+ "id": "M3-60-795a8701a437",
+ "type": "multiple",
+ "question": "慈鯛科的萨氏新亮丽鲷是一种合作繁殖的鱼类，营洞穴生活，科学家对萨氏新亮丽鲷种群中繁殖雌性和帮助者的合作行为进行研究，结果如图显示。以下说法正确的是",
+ "options": {
+  "A": "繁殖雌性的体型越小，挖洞的频率越低",
+  "B": "帮助者数量的增加能够降低繁殖雌性的工作量",
+  "C": "当种群中没有幼体时，帮助者依然能够减轻繁殖雌性的工作量，说明在萨氏新亮丽鲷中，洞穴不是繁殖或抚育子代的场所",
+  "D": "幼体的存在会增加繁殖雌性挖洞的工作量"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 60 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-60-795a8701a437/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 345,
+  "bbox": [
+   124.2,
+   202.9,
+   471.0,
+   392.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-60-795a8701a437/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 345,
+   "bbox": [
+    124.2,
+    202.9,
+    471.0,
+    392.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

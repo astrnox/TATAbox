@@ -1,0 +1,44 @@
+{
+ "id": "M3-99-3a50183025d1",
+ "type": "mtf",
+ "question": "指出以下关于动物对温度的适应的说法是正确的，还是错误的。",
+ "options": {
+  "A": "在低温条件下，变温动物的寿命较长，随着温度的增高，其平均寿命缩短",
+  "B": "温暖地区，变温动物完成发育史比在冷的地区为慢",
+  "C": "常温动物在低温下保持恒定的体温，而变温动物的体温随环境温度的升高而有相应的变化",
+  "D": "温度是动物分布的限制因子，最重要的是地区平均温度"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "26．A（√）B（×）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 26 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

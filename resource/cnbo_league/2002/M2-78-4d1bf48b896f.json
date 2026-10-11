@@ -1,0 +1,44 @@
+{
+ "id": "M2-78-4d1bf48b896f",
+ "type": "single",
+ "question": "玉米茎的维管束散生在基本组织中，但维管束鞘内的维管系统排列的顺序是一定的，看下列哪组由茎中心向外排列的顺序正确",
+ "options": {
+  "A": "原生木质部→后生木质部→原生韧皮部→后生韧皮部",
+  "B": "原生木质部→后生木质部→后生韧皮部→原生韧皮部",
+  "C": "后生木质部→原生木质部→后生韧皮部→原生韧皮部",
+  "D": "后生木质部→原生木质部→原生韧皮部→后生韧皮部"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 78 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

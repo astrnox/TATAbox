@@ -1,0 +1,44 @@
+{
+ "id": "M3-68-0867bebe7254",
+ "type": "multiple",
+ "question": "初级纤毛是一个以微管为基础的膜包围的微小细胞结构。大脑中的初级纤毛富含G 蛋白耦联受体(GPCR)，参与神经递质的调控。研究者描述了一种存在于上游神经元的轴突和下游神经元初级纤毛之间的新型突触，并在突触后纤毛上发现5-羟色胺受体和生长抑素受体。据此，下列说法正确的有：",
+ "options": {
+  "A": "初级纤毛作为一种新发现的细胞信号转导装置，可以通过信号改变突触后神经元的功能状态；",
+  "B": "这种突触不依靠化学信号；",
+  "C": "初级纤毛由于体积较小，传递信号效率不如传统化学突触；",
+  "D": "初级纤毛上的GPCR 在信号传递过程发挥作用。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 68 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

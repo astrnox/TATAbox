@@ -1,0 +1,80 @@
+{
+ "id": "M1-81-1ffac0f02c5e",
+ "type": "single",
+ "question": "将129 品系小鼠的XY 型ES 细胞注入Pg-1 小鼠囊胚中，得到嵌合体的概率为38%，配子嵌合的概率为25%。如果将129 品系小鼠突变的XY 型ES 细胞（XΔ5Y）注入Pg-1 小鼠囊胚中，则",
+ "options": {
+  "A": "得到嵌合体的概率与配子嵌合的概率均略低于野生型",
+  "B": "基本无法得到嵌合体",
+  "C": "得到嵌合体的概率略低于野生型，配子嵌合的概率接近0",
+  "D": "嵌合体中突变的ES 细胞只能产生含Y 的配子，不能产生含XΔ5 的配子"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 81 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "77-81",
+  "stimulus": "哺乳动物依靠X 染色体随机失活来实现剂量补偿。为研究X 染色体随机失活的机"
+ },
+ "image": {
+  "file": "assets/questions/M1-81-1ffac0f02c5e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 350,
+  "bbox": [
+   136.9,
+   636.5,
+   458.4,
+   755.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-81-1ffac0f02c5e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 350,
+   "bbox": [
+    136.9,
+    636.5,
+    458.4,
+    755.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

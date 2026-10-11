@@ -1,0 +1,44 @@
+{
+ "id": "M3-70-c50590d16f8d",
+ "type": "multiple",
+ "question": "Andrew Smith 教授等人认为褐背拟地鸦（Pseudopodoces humilis）等鸟类会使用废弃的鼠兔洞作为繁殖育幼的巢穴，是高原鼠兔作为高原生态系统的关键种的原因之一。下面哪些关系不适合描述褐背拟地鸦与鼠兔之间的种间关系：",
+ "options": {
+  "A": "竞争",
+  "B": "捕食",
+  "C": "寄生",
+  "D": "偏利共生"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 70 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

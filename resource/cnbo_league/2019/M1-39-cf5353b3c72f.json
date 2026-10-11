@@ -1,0 +1,46 @@
+{
+ "id": "M1-39-cf5353b3c72f",
+ "type": "single",
+ "question": "钠钾泵每消耗1 个分子的ATP，能够转运Na+和K+的方向和数目为",
+ "options": {
+  "A": "3 个Na+出细胞，2 个K+入细胞",
+  "B": "1 个Na+出细胞，1 个K+入细胞",
+  "C": "2 个Na+出细胞，3 个K+入细胞",
+  "D": "2 个Na+出细胞，2 个K+入细胞",
+  "E": "3 个Na+出细胞，3 个K+入细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 39 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

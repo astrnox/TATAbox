@@ -1,0 +1,44 @@
+{
+ "id": "M3-70-2325bdf623a2",
+ "type": "single",
+ "question": "亲代抚育对于后代生长有重要意义。下面哪项属于亲代抚育行为：",
+ "options": {
+  "A": "鸟类育雏",
+  "B": "猕猴互相梳理体毛",
+  "C": "求偶炫耀",
+  "D": "助亲帮手"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 70 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

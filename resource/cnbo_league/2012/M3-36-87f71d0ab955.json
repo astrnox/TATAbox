@@ -1,0 +1,44 @@
+{
+ "id": "M3-36-87f71d0ab955",
+ "type": "single",
+ "question": "关于高等动物种群中性别比例，下面论述中错误的是",
+ "options": {
+  "A": "大多数种群倾向于使出生性比趋近于l：1",
+  "B": "老年组往往雌性多于雄性",
+  "C": "出生的时候，往往雄性多于雌性",
+  "D": "种群性比与世代长度直接相关"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 36 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

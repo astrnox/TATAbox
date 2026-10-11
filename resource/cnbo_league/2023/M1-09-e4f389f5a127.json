@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-e4f389f5a127",
+ "type": "multiple",
+ "question": "关于线粒体的起源，以下支持“内共生起源学说”的主要论据有：",
+ "options": {
+  "A": "线粒体基因组是单条环状双链DNA",
+  "B": "线粒体缢裂的分裂方式与细菌相似",
+  "C": "线粒体内膜的性质和组分与真核细胞的内膜系统相似",
+  "D": "线粒体外膜的化学成分与细菌质膜相似"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 9 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

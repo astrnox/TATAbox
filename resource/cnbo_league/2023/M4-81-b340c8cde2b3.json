@@ -1,0 +1,48 @@
+{
+ "id": "M4-81-b340c8cde2b3",
+ "type": "single",
+ "question": "除人和果蝇外，一些物种的性别决定，由其他机制决定。以下描述中错误的是：",
+ "options": {
+  "A": "有些物种存在雌雄同体",
+  "B": "温度不会对性别决定造成影响",
+  "C": "有些物种，单倍体和二倍体表现为不同性别",
+  "D": "有些物种，雄性的性染色体组成为ZZ，雌性为ZW"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 81 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "80-81",
+  "stimulus": "组题题干：在人的性别决定中，Y 染色体上SRY 基因的存在是个体发育为男性的必"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-24-72e4f95c1232",
+ "type": "single",
+ "question": "大肠杆菌和水霉的游动孢子都具有鞭毛，分析下列描述，哪一项可以说明两种鞭毛的区别",
+ "options": {
+  "A": "是否仅由蛋白质或糖蛋白组成",
+  "B": "鞭毛基部是否定位于细胞质中",
+  "C": "是否可以感受信号具有游动性",
+  "D": "是否有两种形态并具双游现象"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 24 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

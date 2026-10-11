@@ -1,0 +1,44 @@
+{
+ "id": "M2-39-7809d0b8c117",
+ "type": "single",
+ "question": "在农业生物技术中，可以通过珠心组织培养获得无病毒植株，这是因为",
+ "options": {
+  "A": "珠心组织与维管组织没有直接联系",
+  "B": "珠心组织与分泌组织没有直接联系",
+  "C": "珠心组织与分生组织没有直接联系",
+  "D": "珠心组织与保护组织没有直接联系"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 39 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-37-881e7166a732",
+ "type": "single",
+ "question": "呼吸商是反映能量代谢状态的重要指标，它是指",
+ "options": {
+  "A": "在一定时间内机体呼出的二氧化碳量与氧摄入量的比值",
+  "B": "在一定时间内机体氧摄入量与呼出的二氧化碳量的比值",
+  "C": "呼出气体量与吸入气体量的比值",
+  "D": "机体二氧化碳产生量与吸入气体总量的比值"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 37 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

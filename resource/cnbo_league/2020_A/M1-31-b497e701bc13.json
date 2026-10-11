@@ -1,0 +1,80 @@
+{
+ "id": "M1-31-b497e701bc13",
+ "type": "single",
+ "question": "分别正确对应了野生型、节律缩短型、节律延长型和节律混乱型四种果蝇品系的是",
+ "options": {
+  "A": "IV，III，I，II",
+  "B": "I，II，IV，III",
+  "C": "IV，I，III，II",
+  "D": "I，III，IV，II"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 31 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "31-32",
+  "stimulus": "几乎所有生物都有内在的生物钟，调节代谢、行为等的昼夜节律。果蝇的羽化过程"
+ },
+ "image": {
+  "file": "assets/questions/M1-31-b497e701bc13/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 338,
+  "bbox": [
+   90.0,
+   307.4,
+   501.3,
+   398.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-31-b497e701bc13/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 338,
+   "bbox": [
+    90.0,
+    307.4,
+    501.3,
+    398.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

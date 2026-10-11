@@ -1,0 +1,46 @@
+{
+ "id": "M1-30-3a62d000add4",
+ "type": "multiple",
+ "question": "编码蛋白质的基因首先被转录为信使RNA，然后翻译为蛋白质。一个编码蛋白的基因一定包含下列哪些部分？",
+ "options": {
+  "A": "外显子",
+  "B": "内含子",
+  "C": "转录因子",
+  "D": "激活子",
+  "E": "启动子"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "AE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 30 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

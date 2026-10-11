@@ -1,0 +1,80 @@
+{
+ "id": "M3-26-5d102df9580b",
+ "type": "single",
+ "question": "下列哪种实验可以回答“有结合此DNA 序列功能的蛋白具体识别的是哪一区段”这一问题",
+ "options": {
+  "A": "免疫印迹实验（western blot）",
+  "B": "DNA 足迹实验（DNA footprinting）",
+  "C": "酵母双杂交实验（yeast two-hybrid）",
+  "D": "Northern 杂交实验（northern blot）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 26 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "（25-27 题共用题干）电泳迁移率变动分析（EMSA）是一种研究DNA 结合蛋白和相"
+ },
+ "image": {
+  "file": "assets/questions/M3-26-5d102df9580b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 310,
+  "bbox": [
+   208.9,
+   575.8,
+   386.5,
+   728.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-26-5d102df9580b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 310,
+   "bbox": [
+    208.9,
+    575.8,
+    386.5,
+    728.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-36-59cdfd0a2beb",
+ "type": "single",
+ "question": "用两种不同的荧光素分子分别标记两个细胞质膜中的脂类分子，再将两个细胞融合，经过一定时间后，会发现两种荧光均匀分布在细胞质膜上，这表明了组成质膜的脂分子＿。",
+ "options": {
+  "A": "在双层之间做翻转运动",
+  "B": "做自旋运动",
+  "C": "尾部做摇摆运动",
+  "D": "沿膜平面做侧向运动"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 36 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

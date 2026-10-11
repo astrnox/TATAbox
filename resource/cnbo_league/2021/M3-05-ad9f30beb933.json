@@ -1,0 +1,44 @@
+{
+ "id": "M3-05-ad9f30beb933",
+ "type": "multiple",
+ "question": "下列关于免疫疗法治疗癌症的说法中，合理的有：",
+ "options": {
+  "A": "患者的免疫系统被部分抑制导致对病原体的抵抗能力下降",
+  "B": "患者的免疫系统可能活化过度导致自身免度疾病",
+  "C": "抑制炎症的药物可能对控制副作用有效",
+  "D": "增强免疫力的药物可能对控制副作用有效"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "免疫系统",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 5 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

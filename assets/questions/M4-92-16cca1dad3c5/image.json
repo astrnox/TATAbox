@@ -1,0 +1,80 @@
+{
+ "id": "M4-92-16cca1dad3c5",
+ "figures": [
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    206.1,
+    220.2,
+    388.7,
+    310.9
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    110.1,
+    484.9,
+    297.2,
+    596.5
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    297.6,
+    486.9,
+    484.7,
+    596.5
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig4.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    297.6,
+    596.5,
+    484.7,
+    725.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig5.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    110.1,
+    604.2,
+    297.2,
+    725.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

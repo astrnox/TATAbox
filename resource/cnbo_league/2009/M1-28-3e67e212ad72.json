@@ -1,0 +1,44 @@
+{
+ "id": "M1-28-3e67e212ad72",
+ "type": "single",
+ "question": "如果将一个处于S 期的细胞与一个处于G1 期的细胞融合，那么：",
+ "options": {
+  "A": "S 期细胞核将会进入G1 期",
+  "B": "G1 期细胞核将会进入S 期",
+  "C": "两个核均进入G2 期",
+  "D": "两个细胞核的细胞周期均被抑制"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 28 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

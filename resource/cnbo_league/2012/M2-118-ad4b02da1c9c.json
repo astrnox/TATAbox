@@ -1,0 +1,44 @@
+{
+ "id": "M2-118-ad4b02da1c9c",
+ "type": "multiple",
+ "question": "裸子植物和被子植物所共有的特征",
+ "options": {
+  "A": "单倍体胚乳",
+  "B": "由胚珠发育成种子",
+  "C": "具花粉管",
+  "D": "孢子异型"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 118 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 118,
+  "section": "第四部分 （7 道题9 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

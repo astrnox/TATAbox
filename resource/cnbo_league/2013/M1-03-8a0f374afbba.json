@@ -1,0 +1,44 @@
+{
+ "id": "M1-03-8a0f374afbba",
+ "type": "single",
+ "question": "现代生物学研究多从“全局”出发，研究细胞中整体基因的表达规律即生物组学，按照研究层面可进一步分成不同的组学。下列按照基因表达流程正确排列的组学为：",
+ "options": {
+  "A": "基因组学-蛋白质组学-转录组学-代谢组学",
+  "B": "基因组学-转录组学-蛋白质组学-代谢组学",
+  "C": "代谢组学-蛋白质组学-转录组学-基因组学",
+  "D": "代谢组学-基因组学-蛋白质组学-转录组学"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 3 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

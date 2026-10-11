@@ -1,0 +1,48 @@
+{
+ "id": "M4-93-526193169add",
+ "type": "single",
+ "question": "互补实验常用于确定两个突变是否影响同一个基因。以下可以说明两个隐性突变并不位于同一基因的是：",
+ "options": {
+  "A": "杂交后代表现出正常表型；",
+  "B": "杂交后代表现出突变特征；",
+  "C": "杂交后代表现出中间表型；",
+  "D": "杂交后代表型更严重。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 93 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "93-94",
+  "stimulus": "根据突变表型，将上述3 种不同的节律突变基因分别命名为“无节律”、“长周期”和"
+ }
+}

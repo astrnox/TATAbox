@@ -1,0 +1,44 @@
+{
+ "id": "M2-13-ffe9c6b6448d",
+ "type": "single",
+ "question": "利用酵母菌进行乙醇发酵时若通入氧气，会导致菌株对葡萄糖利用速度降低，甚至停止生成乙醇，这种现象称为",
+ "options": {
+  "A": "呼吸抑制效应",
+  "B": "巴斯德效应",
+  "C": "分子氧效应",
+  "D": "葡萄糖效应"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 13 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

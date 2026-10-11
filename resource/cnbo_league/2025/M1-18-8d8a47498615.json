@@ -1,0 +1,48 @@
+{
+ "id": "M1-18-8d8a47498615",
+ "type": "mtf",
+ "question": "蛋白质翻译后修饰（PTM）如磷酸化、泛素化和糖基化，调控着蛋白质的功能与命运。例如，Tau 蛋白过度磷酸化与阿尔茨海默病的神经纤维缠结有关。此外，利用泛素 –蛋白酶体系统降解靶蛋白的PROTACs 技术已成为药物研发热点。对以下关于PTM 及其相关过程的陈述进行正误判断：",
+ "options": {
+  "A": "蛋白质磷酸化是一种常见的PTM，催化该过程的激酶利用GTP 作为磷酸基团的直接供体",
+  "B": "泛素化修饰的一个主要功能是标记蛋白质，引导其被蛋白酶体识别并降解",
+  "C": "N–连接糖基化修饰起始于内质网，对于许多分泌蛋白和膜蛋白的正确折叠和功能至关重要",
+  "D": "在阿尔茨海默病中，神经纤维缠结的主要成分是异常聚集的过度磷酸化Tau 蛋白，但Tau 蛋白保持正常功能"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 18 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．错误。蛋白激酶的磷酸基团直接供体是ATP（生成ADP），不是GTP。B．正确。多聚泛素链（尤其K48连接）是'降解标签'，引导底物被26S蛋白酶体识别降解。C．正确。N-连接糖基化在内质网中以寡糖转移至Asn-X-Ser/Thr序列起始，随后在高尔基体进一步加工，对分泌蛋白和膜蛋白折叠至关重要。D．错误。阿尔茨海默病中过度磷酸化的Tau失去结合微管的正常功能并聚集成神经纤维缠结。\n【易错易混】易混：激酶磷酸供体＝ATP；GTP用于G蛋白活化与蛋白质合成。'过度修饰＝功能更强'也是常见误区——Tau过度磷酸化恰恰是功能丧失＋聚集。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M3-116-9f8754744906",
+ "type": "mtf",
+ "question": "生态系统发育到成熟阶段时，下列哪些特征是正确的：",
+ "options": {
+  "A": "总生产量大于群落呼吸量",
+  "B": "净生产量高",
+  "C": "食物链以碎屑食物链为主",
+  "D": "物种多样性高",
+  "E": "物种选择压力为K-选择"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "116.A（×）B（×）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 116 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-86-2fbc419eab3d",
+ "type": "single",
+ "question": "用14C 测定年代的原理是",
+ "options": {
+  "A": "14C/12C 在一个标本中是恒定的，这个比值反映了当时大气中的比值",
+  "B": "14C/12C 在一个标本中随时间增加",
+  "C": "14C/12C 在一个标本中随时间恒定减少",
+  "D": "14C 可以恒定的速率衰变成12C。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 86 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

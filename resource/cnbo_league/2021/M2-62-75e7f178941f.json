@@ -1,0 +1,44 @@
+{
+ "id": "M2-62-75e7f178941f",
+ "type": "multiple",
+ "question": "研究表明，真菌的个体大小随纬度表现出了先增加后降低的趋势，体型最大的蘑菇主要出现在四季分明气温适中的区域。导致真菌个体大小表现出纬度地带性的可能原因包括：",
+ "options": {
+  "A": "在温暖潮湿的热带，微生物、病原菌以及捕食压力可能更大，因此，个体小、生长周期短等性状可能更有优势",
+  "B": "不同大小的真菌在陆地上的分布是随机的",
+  "C": "个体更大的蘑菇种类可能是多年生的，寿命长导致个体更大",
+  "D": "个体小，个体表面积相对于体积的比值更大，能更快速地升温和降温，有利于在低纬度和高纬度分布"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 62 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

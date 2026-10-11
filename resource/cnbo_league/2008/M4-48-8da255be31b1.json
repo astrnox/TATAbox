@@ -1,0 +1,44 @@
+{
+ "id": "M4-48-8da255be31b1",
+ "type": "single",
+ "question": "（接上题）这位学生又将单列鳞片的鱼进行互交，后代出现4 种表型：单列鳞、野生型鳞、无鳞和散鳞（鳞片不规则覆盖于一部分表皮上），它们的比例是6:3:2:1。这样，决定鳞片表型的基因有",
+ "options": {
+  "A": "1 个",
+  "B": "2 个",
+  "C": "3 个",
+  "D": "无法确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 48 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

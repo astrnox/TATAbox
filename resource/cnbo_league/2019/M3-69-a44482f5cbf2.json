@@ -1,0 +1,44 @@
+{
+ "id": "M3-69-a44482f5cbf2",
+ "type": "single",
+ "question": "许多动物的行为表达具有昼夜节律或年周期，下列哪项是导致动物表达节律行为的因素",
+ "options": {
+  "A": "动物行为的多样性",
+  "B": "动物的生活史周期",
+  "C": "进化历史上环境的周期波动",
+  "D": "当前生活环境的剧烈变化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 69 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

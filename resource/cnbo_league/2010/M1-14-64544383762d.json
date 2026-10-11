@@ -1,0 +1,44 @@
+{
+ "id": "M1-14-64544383762d",
+ "type": "single",
+ "question": "在氨基酸的分类中，下面哪一个氨基酸属于芳香族氨基酸？",
+ "options": {
+  "A": "丙氨酸",
+  "B": "丝氨酸",
+  "C": "色氨酸",
+  "D": "亮氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 14 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

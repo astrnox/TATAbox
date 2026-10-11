@@ -1,0 +1,44 @@
+{
+ "id": "M3-114-64e7d06f644b",
+ "type": "mtf",
+ "question": "下列选项中能在生态系统食物链中发生生物富集的是：",
+ "options": {
+  "A": "重金属",
+  "B": "热量",
+  "C": "碳水化合物",
+  "D": "氯代烃类杀虫剂"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "24.A（√）B（×）C（×）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 24 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

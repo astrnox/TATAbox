@@ -1,0 +1,44 @@
+{
+ "id": "M3-90-ddbae1e08d78",
+ "type": "single",
+ "question": "在经历很长的时间后，干涸的池塘演变为草地，草地然后演变为灌丛，灌丛然后又演变为由阔叶树组成的森林，最后阔叶树组成的森林演变为针叶树组成的森林，这个变化过程在生态学上被称作：",
+ "options": {
+  "A": "演替",
+  "B": "演化",
+  "C": "进化",
+  "D": "演变"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 90 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

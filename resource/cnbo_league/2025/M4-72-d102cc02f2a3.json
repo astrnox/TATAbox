@@ -1,0 +1,80 @@
+{
+ "id": "M4-72-d102cc02f2a3",
+ "type": "mtf",
+ "question": "以下是人22 号染色体GTF 格式基因组注释文件的一部分，展示了PERM1 基因的转录本NM_001291367.2 的信息。对以下基于该GTF 信息的陈述进行正误判断：",
+ "options": {
+  "A": "GTF 文件第7 列的'–'标记表明，PERM1 基因及其所示转录本位于染色体的负链",
+  "B": "该转录本起始密码子的第一个核苷酸（A）对应于基因组坐标981164",
+  "C": "该转录本包含5 个外显子（exon），但编码序列（CDS）仅覆盖了其中的4 个外显子区域",
+  "D": "成熟的mRNA 分子包含了从基因组坐标976172 到981164 之间的所有核苷酸序列"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 72 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-72-d102cc02f2a3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 12,
+  "bbox": [
+   42.6,
+   441.9,
+   552.8,
+   569.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-72-d102cc02f2a3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 12,
+   "bbox": [
+    42.6,
+    441.9,
+    552.8,
+    569.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。GTF第7列为链信息，'–'表示PERM1基因及该转录本位于负链。B．错误。负链转录方向与基因组坐标增加方向相反，起始密码子第一个核苷酸对应的基因组坐标并非题述的981164。C．正确。注释显示该转录本含5个exon，而CDS只覆盖其中4个（5'端UTR所在外显子未被CDS覆盖）。D．错误。成熟mRNA是外显子拼接产物，不含内含子，并非基因组上976172–981164的连续序列。\n【点睛】点睛：读GTF先看第7列链方向——负链上'坐标大＝转录在前（5'端）'，坐标方向与mRNA方向相反，这是坐标类题最常见的陷阱。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

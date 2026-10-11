@@ -1,0 +1,44 @@
+{
+ "id": "M2-43-5933c6998963",
+ "type": "single",
+ "question": "被子植物在演化中产生了一系列创新性状，极大提高了繁殖成功率，使得被子植物成为地球上种类最多的植物类群。被子植物最关键的创新组合性状是：",
+ "options": {
+  "A": "心皮-双受精-花",
+  "B": "心皮-胚珠-花",
+  "C": "心皮-单珠被-花",
+  "D": "双受精-虫媒传粉-花"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 43 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

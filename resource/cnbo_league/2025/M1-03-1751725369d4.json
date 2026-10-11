@@ -1,0 +1,48 @@
+{
+ "id": "M1-03-1751725369d4",
+ "type": "mtf",
+ "question": "对以下关于真核细胞端粒的陈述进行正误判断：",
+ "options": {
+  "A": "端粒对于维持染色体的独立性和完整性至关重要",
+  "B": "端粒结构仅由DNA 短重复序列组成",
+  "C": "真核细胞线状染色体末端的端粒结构包含DNA 序列和多种蛋白质",
+  "D": "对端粒和端粒酶功能机制的研究曾获得诺贝尔生理学或医学奖"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 3 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。端粒像'帽子'一样保护染色体末端，防止末端被核酸酶降解或发生末端融合，维持染色体的独立性与完整性。B．错误。端粒并非仅由DNA重复序列构成，还结合有专门的蛋白质复合体。C．正确。端粒由端粒DNA（人类为TTAGGG重复）和多种蛋白质（如shelterin复合体）共同组成。D．正确。Blackburn、Greider和Szostak因发现端粒及端粒酶的保护机制获得2009年诺贝尔生理学或医学奖。\n【点睛】一句话点睛：端粒＝端粒DNA＋蛋白复合体；端粒酶＝含RNA模板的逆转录酶。把'端粒'与'端粒酶'分开记忆，概念就不混了。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

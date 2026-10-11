@@ -1,0 +1,44 @@
+{
+ "id": "M2-116-6c5f49f5d2da",
+ "type": "mtf",
+ "question": "抗病毒药物研发较为困难，可能的原因是",
+ "options": {
+  "A": "病毒变异快",
+  "B": "病毒自我复制不受干扰",
+  "C": "病毒借用细胞的代谢装置自我复制",
+  "D": "病毒的外壳蛋白不易变性"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "A,C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 116 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-30-530ab7a25162",
+ "type": "multiple",
+ "question": "正常人若摄取的K+多，则由肾脏排出的K+也增多，推测其中的主要原因是哪些：",
+ "options": {
+  "A": "近曲小管和髓袢重吸收的K+减少",
+  "B": "远曲小管和集合管分泌K+增多",
+  "C": "醛固酮分泌量增加",
+  "D": "醛固酮分泌量减少"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 30 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

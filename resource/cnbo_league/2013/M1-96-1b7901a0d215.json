@@ -1,0 +1,44 @@
+{
+ "id": "M1-96-1b7901a0d215",
+ "type": "single",
+ "question": "水稻、小麦、芝麻、油菜等作物收割后不马上脱粒，与秆堆放在一起，有提高粒重的作用。其原理是：",
+ "options": {
+  "A": "源库中心",
+  "B": "就近供应",
+  "C": "同化物再分配",
+  "D": "同侧运输"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 96 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

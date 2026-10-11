@@ -1,0 +1,44 @@
+{
+ "id": "M3-03-70795cace22c",
+ "type": "single",
+ "question": "褪黑素是人体分泌的一种重要激素，与昼夜节律密切相关。对其化学特性的分析发现：褪黑素是色氨酸的一种衍生物，其内分泌细胞的所在部位是",
+ "options": {
+  "A": "下丘脑",
+  "B": "垂体",
+  "C": "松果体",
+  "D": "胰岛"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 3 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

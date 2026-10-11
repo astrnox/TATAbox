@@ -1,0 +1,44 @@
+{
+ "id": "M1-04-ed19119dc6be",
+ "type": "single",
+ "question": "下列酶中定位于哺乳动物细胞线粒体外膜的是：",
+ "options": {
+  "A": "脂酰CoA 合成酶",
+  "B": "肉碱脂酰移位酶Ⅱ",
+  "C": "ATP 合酶",
+  "D": "柠檬酸合酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 4 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

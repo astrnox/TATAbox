@@ -1,0 +1,46 @@
+{
+ "id": "M3-59-8da678740ae8",
+ "type": "multiple",
+ "question": "切除肾上腺的狗1-2 周就会死亡，主要是由于哪些激素的缺失？",
+ "options": {
+  "A": "去甲肾上腺素和肾上腺素",
+  "B": "醛固酮",
+  "C": "ACTH",
+  "D": "皮质醇",
+  "E": "性激素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 59 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

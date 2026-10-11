@@ -1,0 +1,44 @@
+{
+ "id": "M2-41-82d52931505e",
+ "type": "multiple",
+ "question": "下列说法中哪些是正确的",
+ "options": {
+  "A": "裸子植物具有颈卵器",
+  "B": "双受精是种子植物特有的现象；",
+  "C": "被子植物成熟花粉粒有一个营养细胞和一个精细胞；",
+  "D": "被子植物花的花萼、花瓣、雄蕊和雌蕊都是同源器官"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 41 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

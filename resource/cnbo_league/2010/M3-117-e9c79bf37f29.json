@@ -1,0 +1,44 @@
+{
+ "id": "M3-117-e9c79bf37f29",
+ "type": "single",
+ "question": "多数海产无脊椎动物在个体发育过程中都要经历一些幼虫阶段，与牟勒氏幼虫、浮浪幼虫、担轮幼虫、面盘幼虫分别对应的动物类群是：",
+ "options": {
+  "A": "扁形动物、腔肠动物、环节动物、软体动物",
+  "B": "扁形动物、腔肠动物、软体动物、环节动物",
+  "C": "腔肠动物、扁形动物、软体动物、环节动物",
+  "D": "腔肠动物、扁形动物、环节动物、软体动物"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 117 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 117,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

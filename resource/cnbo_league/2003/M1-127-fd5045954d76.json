@@ -1,0 +1,44 @@
+{
+ "id": "M1-127-fd5045954d76",
+ "type": "mtf",
+ "question": "洋葱根尖的细胞有16 条染色体，下列洋葱细胞染色体的数目是否正确？",
+ "options": {
+  "A": "成熟花粉粒中的营养细胞有16 条染色体",
+  "B": "珠被细胞有8 条染色体",
+  "C": "胚乳细胞有8 条染色体",
+  "D": "胚囊母细胞有16 条染色体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "12.A（ X ）B（ X ） C（ X ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 12 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

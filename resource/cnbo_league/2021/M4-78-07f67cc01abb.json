@@ -1,0 +1,46 @@
+{
+ "id": "M4-78-07f67cc01abb",
+ "type": "single",
+ "question": "镰刀型细胞贫血病，是一种常染色体显性遗传的血红蛋白病。它是由血红蛋白基因发生点突变，导致β-肽链第6 位氨基酸谷氨酸被缬氨酸所代替而引发的。下列检测这个突变的最佳方法的是：",
+ "options": {
+  "A": "从红细胞中提取DNA，然后进行PCR 扩增，再用限制内切酶剪切",
+  "B": "从白细胞中提取DNA，再用Southern 印迹检测血红蛋白基因外显子的大小",
+  "C": "从白细胞中提取DNA，再对血红蛋白基因的内含子进行测序",
+  "D": "用 Westem 印迹分析红细胞提取物",
+  "E": "从白细胞中提取DNA，然后进行PCR 扩增，再用等位基因特异性寡核苷酸杂交分析"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 78 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-79-d2d475d64abd",
+ "type": "single",
+ "question": "以下关于动物栖息地选择的描述最准确的是：",
+ "options": {
+  "A": "动物在它们选择的栖息地里最安全",
+  "B": "栖息地选择可能受多种因素影响，动物的栖息地选择行为具有一定的遗传性和后天获得性",
+  "C": "动物在它们选择的栖息地里感到最舒服",
+  "D": "动物选择的栖息地里食物和水资源最丰富"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 79 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

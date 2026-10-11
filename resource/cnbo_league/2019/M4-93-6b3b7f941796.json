@@ -1,0 +1,46 @@
+{
+ "id": "M4-93-6b3b7f941796",
+ "type": "single",
+ "question": "有两个茄子品种，一个为抗病红色果肉（RRVV），一个为易染病黄色果肉（rrvv）[抗病（R）对易染病（r）为显性，红果肉（V）对黄果肉（v）为显性]。若希望培育出5 株真实遗传的抗病黄色果肉（RRvv）茄子品种，则F2 至少需要有多少株可供选择？",
+ "options": {
+  "A": "10",
+  "B": "20",
+  "C": "40",
+  "D": "80",
+  "E": "160"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 93 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

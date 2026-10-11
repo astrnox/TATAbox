@@ -1,0 +1,45 @@
+{
+ "id": "M1-27-2b24d318a323",
+ "type": "mtf",
+ "question": "比较图",
+ "options": {
+  "A": "图B 和图C，并结合相关知识，判断以下论述正确或错误： A. 三个图中的营养细胞均是孢子体细胞；",
+  "B": "三个图中均显示了有性生殖结构；",
+  "C": "图A 和图B 的结构均可形成雄配子；",
+  "D": "图B 和图C 的结构均可形成雌配子。"
+ },
+ "answer": null,
+ "answer_key": "FNFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 27 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "下图为三种植物生殖结构的切片图。"
+ },
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key B 项官方标答为 N（无法判定）。",
+ "explanation": "【解析】A．错误。三个图中的营养细胞并非都是孢子体细胞（配子体的营养细胞同样存在）。B．官方标答为'N'（无法判定）：图中是否完整显示有性生殖结构取决于切片内容，官方标答记为无法判定，本项留空待人工裁定。C．错误。图A和图B的结构并不都形成雄配子。D．正确。图B和图C的结构均可形成雌配子（卵细胞）。"
+}

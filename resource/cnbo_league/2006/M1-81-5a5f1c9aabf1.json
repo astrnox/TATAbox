@@ -1,0 +1,46 @@
+{
+ "id": "M1-81-5a5f1c9aabf1",
+ "type": "single",
+ "question": "有一株酵母突变株，缺乏一种三羧酸循环中的酶，只有在培养基中加入α-酮戊二酸后才能生长，该酵母缺乏什么酶？",
+ "options": {
+  "A": "α-酮戊二酸脱氢酶",
+  "B": "丙酮酸脱氢酶",
+  "C": "柠檬酸异构酶",
+  "D": "异柠檬酸脱氢酶",
+  "E": "都不是"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 81 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

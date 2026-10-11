@@ -1,0 +1,44 @@
+{
+ "id": "M4-97-eea330208b18",
+ "type": "single",
+ "question": "在哪种条件下可以用限制性片段长度多态性（restriction length polymorphism, RFLP）来检测某种遗传病：",
+ "options": {
+  "A": "限制性片段长度不变，但是电荷改变，限制性片段在电泳时位置发生改变",
+  "B": "通过电泳可以检测到突变基因所表达的蛋白与正常基因所表达的蛋白明显不同",
+  "C": "通过基因组测序检测到突变基因有插入或缺失的片段",
+  "D": "引起疾病的突变基因内限制性酶切位点发生改变，或者是突变基因与一个发生改变的酶切位点紧密连锁"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 97 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

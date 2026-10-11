@@ -1,0 +1,44 @@
+{
+ "id": "M2-32-3289fe87397f",
+ "type": "single",
+ "question": "《农书》总结出水稻田由于早期过度施肥造成“苗茂而果不坚”的恶果，主要反映了如下生理规律：",
+ "options": {
+  "A": "营养生长过旺，会导致生殖生长失调",
+  "B": "过度施肥造成了植物吸水困难",
+  "C": "顶端优势过强，影响了侧枝生长，导致结实率下降",
+  "D": "地上部分和地下部分生长相矛盾，导致结实率下降"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 32 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

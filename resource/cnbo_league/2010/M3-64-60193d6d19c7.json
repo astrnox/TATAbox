@@ -1,0 +1,44 @@
+{
+ "id": "M3-64-60193d6d19c7",
+ "type": "single",
+ "question": "在古生物研究中，骨骼化石是发现和研究最多的部分，请根据以下骨骼描述判断具备此种骨骼的生物和现存生物的哪一类最相似（1）脊柱有颈椎、胸椎、腰椎、荐椎和尾椎的分化（2）胸廓由胸椎、肋骨和胸骨围成（3）头骨每侧有2个颞窝（4）口腔内具有广泛着生的牙齿",
+ "options": {
+  "A": "两栖类",
+  "B": "爬行类",
+  "C": "鸟类",
+  "D": "哺乳类"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 64 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

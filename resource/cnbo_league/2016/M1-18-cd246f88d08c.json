@@ -1,0 +1,39 @@
+{
+ "id": "M1-18-cd246f88d08c",
+ "type": "multiple",
+ "question": "血红蛋白（Mb）和天冬氨酸转氨甲酰酶（ATCase）的相同点有：",
+ "options": {
+  "A": "Mb 的氧结合曲线和ATCase 对天冬氨酸的饱和曲线均为S 型曲线",
+  "B": "均为寡聚体蛋白",
+  "C": "二者的功能均受到别构调节",
+  "D": "均具有同促效应"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.5,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 18 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

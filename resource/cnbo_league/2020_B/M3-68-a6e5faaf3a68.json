@@ -1,0 +1,44 @@
+{
+ "id": "M3-68-a6e5faaf3a68",
+ "type": "single",
+ "question": "有一本著名的书，描写了过度使用化学农药对生态的破坏，被认为是环保事业发展的里程碑，它是：",
+ "options": {
+  "A": "瓦尔登湖",
+  "B": "寂静的春天",
+  "C": "沙乡年鉴",
+  "D": "野性的呼唤"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 68 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "三. 动物行为学、生态学 19 题 24 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

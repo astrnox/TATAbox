@@ -1,0 +1,44 @@
+{
+ "id": "M3-46-d1538bb760ec",
+ "type": "single",
+ "question": "电影《少年Pi 的奇幻漂流》（Life of Pi）讲述了轮船失事后，一只孟加拉虎和少年Pi 一起漂流227 天的生存历险故事。起初孟加拉虎攻击性很强，后来经过少年Pi 的驯服，变得能与他和平共处与狭小的救生艇上，并最终抵达陆地。这个故事最能说明以下哪一点？",
+ "options": {
+  "A": "孟加拉虎生性善良",
+  "B": "动物的行为是可塑的",
+  "C": "少年Pi 比孟加拉虎攻击性强",
+  "D": "大海使动物变得胆小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 46 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-61-44c6a089b10a",
+ "type": "multiple",
+ "question": "下列有关爬行动物中枢神经系统的说法中正确的有：",
+ "options": {
+  "A": "两大脑半球增大，开始有白质构成的大脑皮层，即新脑皮；",
+  "B": "从背面观，间脑几乎看不到，间脑背面发出脑上体和顶器；",
+  "C": "鳄的小脑比石龙子的发达，已有分化出蚓部和小脑卷的趋势；",
+  "D": "第XI 对脑神经称副神经，属于运动神经。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 61 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

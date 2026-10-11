@@ -1,0 +1,44 @@
+{
+ "id": "M2-53-7e200973a222",
+ "type": "single",
+ "question": "在大肠杆菌的遗传学研究中，可以选择适当的培养基挑选出某特殊基因型的突变。为了从表型为Lac- Met- 的大肠杆菌中挑选出表型为Met+ 的细菌，可用的培养基是：",
+ "options": {
+  "A": "基本培养基 + 葡萄糖 + 甲硫氨酸",
+  "B": "基本培养基 + 葡萄糖 - 甲硫氨酸",
+  "C": "完全培养基 + X-Gal",
+  "D": "基本培养基 + 乳糖 + 甲硫氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 53 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

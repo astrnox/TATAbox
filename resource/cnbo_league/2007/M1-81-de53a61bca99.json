@@ -1,0 +1,44 @@
+{
+ "id": "M1-81-de53a61bca99",
+ "type": "single",
+ "question": "生物防治在防治有害生物方面发挥重要作用。例如 1957 年广东从国外引进澳洲瓢虫防治木麻黄上的吹绵介壳虫，长期以来，澳洲瓢虫已在广东省许多地方定居并持续发挥其控制害虫的作用。试问这属生物防治类型中的：",
+ "options": {
+  "A": "输入",
+  "B": "接种",
+  "C": "增补",
+  "D": "大量释放"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 81 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-101-2aea71a165fe",
+ "type": "mtf",
+ "question": "在对陆地进行植物群落的调查时，下面几种样地形状中，哪2 种是理想的样方形，哪 2 种不是？",
+ "options": {
+  "A": "圆形",
+  "B": "长方形",
+  "C": "三角形",
+  "D": "多边形"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "28．A（√）B（√）C（×）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 28 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

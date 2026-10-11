@@ -1,0 +1,44 @@
+{
+ "id": "M3-49-43728f6ce37d",
+ "type": "single",
+ "question": "目前计划生育政策是我国人口国情下的一项基本国策，从种群动态角度讲，决定我国人口增长的两个主要因素是",
+ "options": {
+  "A": "出生率与死亡率",
+  "B": "性别比例与迁出率",
+  "C": "人口密度与年龄结构",
+  "D": "年龄结构与迁入率"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 49 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

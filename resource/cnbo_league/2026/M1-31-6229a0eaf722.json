@@ -1,0 +1,84 @@
+{
+ "id": "M1-31-6229a0eaf722",
+ "type": "mtf",
+ "question": "mee45-1 是MEE45 基因功能缺失突变体。在 mee45-1 中，用其自身启动子驱动表达MEE45 的 3 个转基因株系mM451~3，以及在野生型WT 背景下用其自身启动子驱动表达MEE45 的3 个转基因株系M451~3，与WT 对照的种子重量统计结果如图A 所示。根据已有生物学知识和实验结果，判断下列陈述的正误：",
+ "options": {
+  "A": "MEE45 负调控种子大小；",
+  "B": "在mee45-1 中表达MEE45，种子恢复为野生型表型；",
+  "C": "遗传互补实验可以确定突变体表型是否由某个基因突变造成；",
+  "D": "种子大小与MEE45 的剂量有关。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 31 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "31-32",
+  "stimulus": "为研究种子大小的调控机制，科学家做了"
+ },
+ "image": {
+  "file": "assets/questions/M1-31-6229a0eaf722/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   371.6,
+   227.9,
+   503.1,
+   328.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-31-6229a0eaf722/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    371.6,
+    227.9,
+    503.1,
+    328.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。由图A，mee45-1突变体种子变小、表达MEE45后增大，说明MEE45正调控种子大小。B．正确。在mee45-1中用自身启动子表达MEE45可恢复野生型种子重量，即遗传互补成功。C．正确。遗传互补（突变体中回补该基因恢复表型）是确定'表型由该基因突变造成'的经典判据。D．正确。不同表达水平株系的种子大小随MEE45剂量变化，呈剂量效应。\n【通法】通法（功能基因三件套）：①敲除看表型（必要性）；②回补/互补恢复表型（归因）；③过表达或剂量系列看增强（充分性/剂量效应）。三者对应'必需、归因、剂量'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

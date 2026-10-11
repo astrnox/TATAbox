@@ -1,0 +1,46 @@
+{
+ "id": "M4-102-6f8173e46a7e",
+ "type": "single",
+ "question": "某基因突变，经过诱变剂处理后可以以很低的比例回复突变，突变回复率与诱变剂浓度有剂量相关性，那么下列最可能的是：",
+ "options": {
+  "A": "突变可能是插入突变",
+  "B": "突变可能是点突变",
+  "C": "突变可能是缺失突变",
+  "D": "突变可能是移码突变",
+  "E": "难以判断突变的类型"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 102 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

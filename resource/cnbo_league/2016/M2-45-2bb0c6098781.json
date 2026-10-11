@@ -1,0 +1,46 @@
+{
+ "id": "M2-45-2bb0c6098781",
+ "type": "single",
+ "question": "以下植物器官的变化（或活动）不是分生组织直接活动的结果。",
+ "options": {
+  "A": "杨树茎干增粗生长",
+  "B": "小麦生根",
+  "C": "韭菜割后生长",
+  "D": "银杏落叶",
+  "E": "花芽形成"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 45 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-73-9a30b5a093dc",
+ "type": "single",
+ "question": "经过以下哪个过程，每分子的葡萄糖产生的ATP 最多",
+ "options": {
+  "A": "乳糖发酵",
+  "B": "乙醇发酵",
+  "C": "三羧酸循环和氧化磷酸化",
+  "D": "糖酵解"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 73 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

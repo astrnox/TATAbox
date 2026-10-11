@@ -1,0 +1,44 @@
+{
+ "id": "M1-73-5b62be6577dc",
+ "type": "single",
+ "question": "关于蛋白质变性特征叙述正确的是：",
+ "options": {
+  "A": "由于一级结构的改变，导致蛋白质活性丧失",
+  "B": "由于空间结构的改变，导致蛋白质活性丧失",
+  "C": "由于物理因素的作用，使蛋白质失去必需基团，导致蛋白质活性丧失",
+  "D": "由于化学因素的作用，使蛋白质失去必需基团，导致蛋白质活性丧失"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 73 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

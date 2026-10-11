@@ -1,0 +1,44 @@
+{
+ "id": "M2-105-6189320d8299",
+ "type": "multiple",
+ "question": "下列那组植物的结构为配子体",
+ "options": {
+  "A": "花粉管、颈卵器托",
+  "B": "精子器托、胚囊",
+  "C": "原叶体、原绿体",
+  "D": "蒴帽、蒴柄"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 5 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "二、多项选择题(每小题2 分，答案完全正确才能得分，共16 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

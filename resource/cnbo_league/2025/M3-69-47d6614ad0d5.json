@@ -1,0 +1,45 @@
+{
+ "id": "M3-69-47d6614ad0d5",
+ "type": "mtf",
+ "question": "在社会性动物研究中，科学家观察到工蜂放弃繁殖并保护蜂巢现象。这一现象可以由亲缘选择理论解释，对以下关于符合该理论的陈述进行正误判断：",
+ "options": {
+  "A": "帮助行为在社会性昆虫中可能提升亲缘个体的生殖成功率，从而促进利他演化",
+  "B": "亲缘系数较高通常会提高利他行为在进化中的固定概率",
+  "C": "亲缘选择可能主要在特定物种如蜜蜂中存在，而在其他动物中作用较弱",
+  "D": "亲缘选择可能只在群居动物中发生，独居物种不会表现出类似行为"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 69 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。利他行为提高亲缘个体的繁殖成功，通过共有的等位基因传递（广义适合度）被自然选择保留。B．正确。亲缘系数r越高，满足Hamilton法则（rB＞C）越容易，利他行为固定概率越大。C．错误。亲缘选择广泛存在于社会性与非社会性动物（如地松鼠警报叫声），并非蜜蜂特有。D．错误。独居物种同样可表现亲缘利他（如帮助亲代抚育弟妹），'只在群居动物中发生'错误。"
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M1-10-81e31ab958fb",
+ "type": "multiple",
+ "question": "下列关于细胞膜的说法正确的有：",
+ "options": {
+  "A": "脂双层是细胞膜的基本结构；",
+  "B": "动物细胞膜中的主要脂类分子包括甘油三酯、磷脂、糖脂和胆固醇；",
+  "C": "所有膜脂分子的结构中都含有脂肪酸；",
+  "D": "脂双层两侧的脂类分子可以通过侧向扩散从一层翻转到另外一层；",
+  "E": "红细胞膜上寡糖抗原的不同决定了人体的ABO 血型系统。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "AE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 10 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

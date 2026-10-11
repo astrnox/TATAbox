@@ -1,0 +1,44 @@
+{
+ "id": "M1-21-6a7ede87d591",
+ "type": "single",
+ "question": "关于小麦配子体从珠心原基中的发育开始到胚囊成熟，下列描述错误的是",
+ "options": {
+  "A": "孢原细胞起源于珠心表皮下方",
+  "B": "大孢子母细胞在减数分裂前逐渐积累胼胝质细胞壁",
+  "C": "减数分裂产生的四个大孢子，进一步发育成雌配子体",
+  "D": "卵细胞位于成熟胚囊的珠孔端"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 21 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

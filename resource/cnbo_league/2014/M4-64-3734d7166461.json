@@ -1,0 +1,48 @@
+{
+ "id": "M4-64-3734d7166461",
+ "type": "single",
+ "question": "本题中与氰酸生成有关的基因有",
+ "options": {
+  "A": "只有一对等位基因",
+  "B": "至少两对等位基因",
+  "C": "存在复等位基因",
+  "D": "无法判断"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 64 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "64-66",
+  "stimulus": "氰酸是野生型三叶草天然产生的一种自我保护的化学物质。用两个无法产氰酸"
+ }
+}

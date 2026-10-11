@@ -1,0 +1,76 @@
+{
+ "id": "M4-50-3c2949c6cd8f",
+ "type": "single",
+ "question": "在某生物中有以下代谢途径，且G1、G2 位点分列于不同连锁群上。g1g1、g2g2 中断代谢过程。如果用双因子杂合体进行测交，后代中有多少比例的个体可以产生C 物质：",
+ "options": {
+  "A": "9/16",
+  "B": "3/16",
+  "C": "3/8",
+  "D": "1/4"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 50 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-50-3c2949c6cd8f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 90,
+  "bbox": [
+   154.4,
+   340.5,
+   440.1,
+   427.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-50-3c2949c6cd8f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 90,
+   "bbox": [
+    154.4,
+    340.5,
+    440.1,
+    427.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

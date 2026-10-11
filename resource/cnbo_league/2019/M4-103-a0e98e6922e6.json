@@ -1,0 +1,46 @@
+{
+ "id": "M4-103-a0e98e6922e6",
+ "type": "multiple",
+ "question": "一种植物有两个株系，在研究基因A 和B 之间的距离时发现在一种株系里距离3cM，而在另一种1cM。在两种株系里A 和C 之间的距离都是2cM。现在将两种株系杂交，发现 A 和B 之间变成0.1cM。而A-C 之间距离影响不大，以下论述，哪些较为合理",
+ "options": {
+  "A": "这两个株系A 都在B，C 之间",
+  "B": "这两个株系C 都在中间",
+  "C": "只有一个株系C 在中间",
+  "D": "一个株系在B 附近可能有一个缺失（deletion）",
+  "E": "一个株系在B 附近可能有个倒位（inversion）"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "AE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 103 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

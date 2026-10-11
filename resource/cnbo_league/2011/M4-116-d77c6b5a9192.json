@@ -1,0 +1,44 @@
+{
+ "id": "M4-116-d77c6b5a9192",
+ "type": "single",
+ "question": "根据内共生学说，线粒体和叶绿体都是由生物内共生途径起源的，其中叶绿体来源于：",
+ "options": {
+  "A": "能进行光合作用的真核细胞",
+  "B": "能进行光合作用的动物细胞",
+  "C": "能进行光合作用的原核细胞",
+  "D": "与线粒体相同的原核细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 116 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-19-466d0f12b466",
+ "type": "single",
+ "question": "不同动物类群具有独特的特征，现存棘皮动物、海绵动物、哺乳动物、鸟类所特有的特征依次为",
+ "options": {
+  "A": "水管系、水沟系、下颌为单一齿骨、羽毛",
+  "B": "后口、水沟系、胎生、飞翔",
+  "C": "后口、骨针、胎生、羽毛",
+  "D": "水管系、骨针、下颌为单一齿骨、飞翔"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 19 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

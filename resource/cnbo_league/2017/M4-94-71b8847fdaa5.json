@@ -1,0 +1,46 @@
+{
+ "id": "M4-94-71b8847fdaa5",
+ "type": "single",
+ "question": "某疾病的致病基因位于常染色体上，且该病症是显性性状。现有一对夫妇，自己本身并不表现这种疾病的任何症状，但他们生的两个孩子则均患这种疾病，请问下述哪种遗传机理能够最好地解释这个原因：",
+ "options": {
+  "A": "可变表现度（variable expressivity）",
+  "B": "单亲双体型（uniparental disomy）",
+  "C": "新的突变",
+  "D": "父母某一方的胚胎镶嵌性（germinal mosaicism）",
+  "E": "不完全外显（incomplete penetrance）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 94 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

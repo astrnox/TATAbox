@@ -1,0 +1,44 @@
+{
+ "id": "M1-04-2ad8725d6aa8",
+ "type": "single",
+ "question": "被子植物有性生殖过程中由大孢子发育为胚囊需要经过",
+ "options": {
+  "A": "1 次减数分裂和2 次有丝分裂形成8 个核",
+  "B": "减数分裂形成4 核。",
+  "C": "3 次有丝分裂形成8 个核",
+  "D": "2 次有丝分裂形成4 个核。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 4 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

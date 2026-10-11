@@ -1,0 +1,44 @@
+{
+ "id": "M2-41-487c4e64d6e6",
+ "type": "single",
+ "question": "植物组织成熟后呼吸速率基本保持稳定，但随年龄增加而逐渐减低。由此信息，下面陈述错误的是：",
+ "options": {
+  "A": "苹果和香蕉果实成熟过程中存在呼吸跃变，而离体叶和衰老的花中不存在呼吸跃变现象；",
+  "B": "一般来说成熟果实中呼吸速率大于光合速率，而叶中呼吸速率小于光合速率；",
+  "C": "冰箱低温冷藏储存绿色蔬菜的主要原理是低温下蔬菜呼吸速率降低，衰老变慢；",
+  "D": "冰箱低温冷藏储存绿色蔬菜的部分原因是避光下蔬菜呼吸速率降低，衰老变慢。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 41 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

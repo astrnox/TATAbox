@@ -1,0 +1,46 @@
+{
+ "id": "M1-29-dc4343f29171",
+ "type": "multiple",
+ "question": "下列哪几项组学技术研究，是直接在核苷酸水平开展的",
+ "options": {
+  "A": "基因组",
+  "B": "代谢组",
+  "C": "表观组",
+  "D": "蛋白组",
+  "E": "转录组"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 29 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

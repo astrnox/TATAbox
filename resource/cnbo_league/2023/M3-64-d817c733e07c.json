@@ -1,0 +1,76 @@
+{
+ "id": "M3-64-d817c733e07c",
+ "type": "single",
+ "question": "研究生物多样性通常是直接通过对周围植被的调查而获得，是否可以利用花粉作为植物多样性研究的标志是一个广为关注的问题，有研究者通过悬挂粘板的方法，对温带森林和开阔地的花粉进行了收集，并调查了相应位置的植物多样性。从图中可以看出，区域1 和区域2 表现一致的是：",
+ "options": {
+  "A": "两个区域的生物多样性一样",
+  "B": "两个区域的花粉丰富度一样",
+  "C": "两个区域的开阔地均比森林有更高的生物多样性",
+  "D": "两个区域的开阔地比森林具有更高的花粉丰富度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 64 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "三、动物行为学、生态学（15 题19 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-64-d817c733e07c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 443,
+  "bbox": [
+   209.7,
+   550.5,
+   385.5,
+   726.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-64-d817c733e07c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 443,
+   "bbox": [
+    209.7,
+    550.5,
+    385.5,
+    726.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

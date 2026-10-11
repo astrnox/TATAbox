@@ -1,0 +1,44 @@
+{
+ "id": "M4-11-9218387403b2",
+ "type": "single",
+ "question": "关于罗伯逊易位，以下哪一种陈述是正确的？",
+ "options": {
+  "A": "罗伯逊易位也可以叫做中心粒融合，其结果导致两条(近)端中心粒染色体的近似完全融合",
+  "B": "罗伯逊易位发生在两条只有单臂(或两臂长度比例极其悬殊)的染色体之间，造成（近似的）染色体合并",
+  "C": "罗伯逊易位发生在两条等臂(或两臂长度比例接近1)的染色体之间，造成（近似的）染色体合并",
+  "D": "上述A 和C 都是正确的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 11 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

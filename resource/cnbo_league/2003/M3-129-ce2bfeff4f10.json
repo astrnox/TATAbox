@@ -1,0 +1,44 @@
+{
+ "id": "M3-129-ce2bfeff4f10",
+ "type": "mtf",
+ "question": "某同学设计如下实验：把小白鼠和青蛙从25℃的温室中移至5℃的环境中",
+ "options": {
+  "A": "两种动物的耗氧量都将减少",
+  "B": "两种动物的耗氧量都将增加",
+  "C": "青蛙的耗氧量减少，小白鼠的耗氧量增加",
+  "D": "青蛙的耗氧量增加，小白鼠的耗氧量减少"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "14.A（ × ）B（ × ）C（ √ ） D（ × ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 14 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

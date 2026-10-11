@@ -1,0 +1,39 @@
+{
+ "id": "M2-65-1ce6fa7b8204",
+ "type": "multiple",
+ "question": "决定幼苗出土的最重要因素是：",
+ "options": {
+  "A": "顶端弯钩的形成",
+  "B": "下胚轴伸长",
+  "C": "生根",
+  "D": "大量元素"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 2.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 65 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

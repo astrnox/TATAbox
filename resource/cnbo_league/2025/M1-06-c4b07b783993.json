@@ -1,0 +1,48 @@
+{
+ "id": "M1-06-c4b07b783993",
+ "type": "mtf",
+ "question": "碳酸氢盐缓冲系统 (CO2 + H2O <=> H2CO3 <=> H+ + HCO3–) 是维持血液pH 稳定的关键机制，其中碳酸酐酶催化第一步反应。在一个模拟血液缓冲环境的体外实验体系中，对以下关于改变条件对该系统pH 影响的陈述进行正误判断：",
+ "options": {
+  "A": "提高体系中溶解的CO2 浓度，将导致碳酸浓度增加，进而使氢离子浓度升高",
+  "B": "加入碳酸酐酶抑制剂会显著改变该缓冲体系的最终平衡pH 值",
+  "C": "降低体系中溶解的CO2 浓度，将导致碳酸氢根离子浓度显著下降，从而使pH 降低",
+  "D": "降低体系中溶解的CO2 浓度，将导致反应平衡向左移动，氢离子浓度降低，pH 升高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 6 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。提高溶解CO₂浓度使平衡右移：CO₂＋H₂O→H₂CO₃→H⁺＋HCO₃⁻，碳酸与氢离子浓度升高，pH下降。B．错误。碳酸酐酶只加快反应达到平衡的速率（动力学），不改变平衡常数与平衡组成，最终pH不变。C．错误。降低CO₂使平衡左移，H⁺被消耗，pH升高而非降低；该陈述把因果说反了。D．正确。CO₂降低→平衡左移→H⁺减少→pH升高。\n【通法】通法：缓冲/平衡体系的扰动分析一律用勒夏特列原理判断移动方向；再问'酶改变什么'——催化剂只改速率，不改平衡点。两步分开，这类题就稳。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

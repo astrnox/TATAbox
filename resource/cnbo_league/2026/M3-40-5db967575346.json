@@ -1,0 +1,45 @@
+{
+ "id": "M3-40-5db967575346",
+ "type": "mtf",
+ "question": "判断下列有关鸟类羽毛描述的正确与错误：",
+ "options": {
+  "A": "正羽主要着生在翼及尾上，正羽羽片覆盖区域没有羽毛生长，毛羽着生在正羽之间；",
+  "B": "绒羽的羽柄甚短，其顶端发出细长丝状的羽枝，羽小枝上没有钩；",
+  "C": "在羽毛发生过程中，首先是在真皮层表面积聚的间充质形成隆起；",
+  "D": "羽毛的红色属于化学性色彩，蓝色属于物理性色彩。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 40 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．错误。正羽着生于羽区，其羽片覆盖的皮肤区域并非'没有羽毛生长'（羽区与裸区相间分布，覆盖区仍有羽根着生）。B．正确。绒羽羽柄甚短，顶端发出丝状羽枝，羽小枝上无小钩，不形成羽片，保温。C．正确。羽毛发生始于真皮层间充质聚集形成的表皮隆起（羽芽）。D．正确。红色来自色素（化学色，类胡萝卜素/卟啉），蓝色来自羽小枝微观结构的光散射（物理色/结构色）。"
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-59-92a7c58e7fef",
+ "type": "single",
+ "question": "为建立赛加羚羊的行为谱，研究者按固定的时间间隔对一组羚羊的行为逐个进行观察记录，这是行为学研究的哪一种取样方法？",
+ "options": {
+  "A": "连续取样",
+  "B": "扫描取样",
+  "C": "目标取样",
+  "D": "行为取样"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 59 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

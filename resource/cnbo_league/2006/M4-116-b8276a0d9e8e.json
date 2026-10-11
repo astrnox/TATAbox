@@ -1,0 +1,44 @@
+{
+ "id": "M4-116-b8276a0d9e8e",
+ "type": "mtf",
+ "question": "下面哪些（种）条件可以导致新物种的产生？",
+ "options": {
+  "A": "多倍体化",
+  "B": "地理隔离",
+  "C": "种内杂交",
+  "D": "种间杂交"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 16 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

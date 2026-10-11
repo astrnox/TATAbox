@@ -1,0 +1,44 @@
+{
+ "id": "M3-88-ba33e66e7b92",
+ "type": "single",
+ "question": "Photuris属中某些种类的萤火虫的雌虫是肉食性的，它们会模拟同属其他3种萤火虫雌虫的发光频率对其雄虫作出应答，诱使异种的雄虫靠近，进而捕获、杀死并吃掉它们。对于3 种受害萤火虫的雄虫来说，下列策略哪个可行",
+ "options": {
+  "A": "完全不理会雌虫的应答",
+  "B": "发现应答的雌虫就直接飞去交配",
+  "C": "变换发光频率吸引雌虫",
+  "D": "发现应答的雌虫后缓慢靠近"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 88 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

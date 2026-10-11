@@ -1,0 +1,44 @@
+{
+ "id": "M1-114-81872e0b77f2",
+ "type": "mtf",
+ "question": "人体主要以脂肪而不是糖原为能量储存物质的主要原因是",
+ "options": {
+  "A": "脂肪的疏水性",
+  "B": "脂肪酸氧化比碳水化合物氧化释放的能量多",
+  "C": "碳水化合物氧化比脂肪酸氧化释放的能量多",
+  "D": "脂肪比重轻"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A,B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 114 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

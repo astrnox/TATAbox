@@ -1,0 +1,39 @@
+{
+ "id": "M4-101-4ff970b28bba",
+ "type": "multiple",
+ "question": "下列关于适应性辐射演化的描述正确的有：",
+ "options": {
+  "A": "物种形成的速率比渐进式演化更快；",
+  "B": "物种间可能存在不完全生殖隔离；",
+  "C": "异域种化(allopatric speciation)通常是适应性辐射的主要驱动机制；",
+  "D": "不一定能用二叉分枝的系统发生树来解释。"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 101 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

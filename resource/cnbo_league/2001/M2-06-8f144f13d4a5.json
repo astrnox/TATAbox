@@ -1,0 +1,44 @@
+{
+ "id": "M2-06-8f144f13d4a5",
+ "type": "single",
+ "question": "指出下述4 种描述中，哪种是不正确的？",
+ "options": {
+  "A": "裸子植物中的多胚现象有裂生与简单多胚两种",
+  "B": "苏铁和银杏的精子具纤毛，受精作用仍离不开水",
+  "C": "苔藓和蕨类的配子体均能独立生活",
+  "D": "松树的针叶成束着生于极不发达的短枝顶端"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 6 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

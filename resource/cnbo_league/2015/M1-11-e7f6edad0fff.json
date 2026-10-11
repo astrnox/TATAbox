@@ -1,0 +1,44 @@
+{
+ "id": "M1-11-e7f6edad0fff",
+ "type": "single",
+ "question": "蛋白质组学是：",
+ "options": {
+  "A": "研究一个基因组所表达的全套蛋白质",
+  "B": "研究蛋白质序列以发现新的蛋白质",
+  "C": "研究DNA 与蛋白质的复合物",
+  "D": "研究蛋白质合成过程中的能量消耗"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 11 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

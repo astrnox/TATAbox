@@ -1,0 +1,44 @@
+{
+ "id": "M3-68-d049051108d5",
+ "type": "single",
+ "question": "一般动物的利他行为与亲缘选择有关。这里有3 个例子：（1）蜜蜂的子一代工蜂；（2）鸟类的子一代：（3）鱼类的子二代。如果把子代个体间发生利他行为概率按从大到小排列，以下正确的是",
+ "options": {
+  "A": "（3）>（1）>（2）",
+  "B": "（1）>（2）>（3）",
+  "C": "（3）>（2）>（1）",
+  "D": "（2）>（1）>（3）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 68 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-69-3f8cacac437e",
+ "type": "single",
+ "question": "植食性鸟类多以植物的果实、种子或花蜜为食：在新热带界，由于植物繁殖的季节性和繁殖产量的年际变化，植食性鸟类往往具有更强的扩散能力，因而能促进其种群间基因交流。从食性对新热带界鸟类物种分化的影响角度分析植食性鸟类和以昆虫为食或杂食性的鸟类的遗传分化，下列描述中，正确的是：",
+ "options": {
+  "A": "植食性鸟类遗传分化更低",
+  "B": "以昆虫为食或杂食性的鸟类遗传分化更低",
+  "C": "二者遗传分化水平无显著差异",
+  "D": "新热带界鸟类的遗传分化与食性无关"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 69 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

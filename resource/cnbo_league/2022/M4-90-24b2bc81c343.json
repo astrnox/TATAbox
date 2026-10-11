@@ -1,0 +1,48 @@
+{
+ "id": "M4-90-24b2bc81c343",
+ "type": "multiple",
+ "question": "1998 年人们虽然将FCHL 的致病基因定位于1q21-23，但未能找到致病基因，可能的原因有：",
+ "options": {
+  "A": "测定了这一区域内所有已知基因的序列，未发现突变；",
+  "B": "这一区域内没有任何已知基因与血脂有关；",
+  "C": "这一区域还有未知基因存在；",
+  "D": "这一区域包含很多基因，无法进一步研究。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 90 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-93",
+  "stimulus": "家族性混合型高脂血症(Familial combined hyperlipidemia，FCHL)是一种人类单基因"
+ }
+}

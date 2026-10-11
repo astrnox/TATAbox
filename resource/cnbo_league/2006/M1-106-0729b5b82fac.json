@@ -1,0 +1,46 @@
+{
+ "id": "M1-106-0729b5b82fac",
+ "type": "mtf",
+ "question": "下面哪（种）些蛋白质上的氨基酸残基可能被修饰？",
+ "options": {
+  "A": "丙氨酸",
+  "B": "丝氨酸",
+  "C": "苯丙氨酸",
+  "D": "甘氨酸",
+  "E": "赖氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 6 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

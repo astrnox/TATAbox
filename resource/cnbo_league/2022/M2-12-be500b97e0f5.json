@@ -1,0 +1,44 @@
+{
+ "id": "M2-12-be500b97e0f5",
+ "type": "multiple",
+ "question": "下列有关细菌的论述正确的是：",
+ "options": {
+  "A": "在不同的培养条件下，细菌的个体形态比菌落形态相对稳定；",
+  "B": "抗酸性染色、革兰氏染色及芽胞染色均属于鉴别染色；",
+  "C": "球菌一般不具有鞭毛；",
+  "D": "只有固氮菌才能还原氮元素。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 12 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

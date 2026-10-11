@@ -1,0 +1,48 @@
+{
+ "id": "M4-100-0fe5f1b50d4b",
+ "type": "multiple",
+ "question": "表中所说的失活突变，在本实验中能够检测的主要是",
+ "options": {
+  "A": "错义突变（missense mutation）",
+  "B": "无义突变（nonsense mutation）",
+  "C": "基因启动子缺失",
+  "D": "插入或缺失导致的移码突变（frame shift mutation）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 100 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "99-101",
+  "stimulus": "（99-101 题共用题干）基因突变是造成癌症的原因。为鉴定造成黑色素瘤（melanoma）"
+ }
+}

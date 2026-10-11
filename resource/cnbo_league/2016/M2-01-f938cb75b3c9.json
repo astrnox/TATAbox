@@ -1,0 +1,44 @@
+{
+ "id": "M2-01-f938cb75b3c9",
+ "type": "single",
+ "question": "细菌和真核生物都具鞭毛，二者结构不同，运动方式也不同。以下对细菌鞭毛描述不正确的是：",
+ "options": {
+  "A": "不存在9+2 的微管形式",
+  "B": "可以做360°旋转运动",
+  "C": "由基体、钩型鞘和鞭毛丝构成",
+  "D": "微管对之间利用由动力蛋白组成的“手臂”交互前后移动"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 1 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

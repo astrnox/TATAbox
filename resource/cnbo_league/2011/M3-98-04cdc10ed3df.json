@@ -1,0 +1,44 @@
+{
+ "id": "M3-98-04cdc10ed3df",
+ "type": "single",
+ "question": "2009 年诺贝尔医学奖被授予三位科学家，表彰他们以四膜虫为材料在研究端粒方面的贡献。四膜虫为重要的模式动物，它属于以下哪一类群？",
+ "options": {
+  "A": "假体腔动物",
+  "B": "扁形动物",
+  "C": "原生动物",
+  "D": "环节动物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 98 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

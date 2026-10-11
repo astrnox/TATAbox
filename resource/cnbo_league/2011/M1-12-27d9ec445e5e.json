@@ -1,0 +1,46 @@
+{
+ "id": "M1-12-27d9ec445e5e",
+ "type": "multiple",
+ "question": "双缩脲反应主要用来定性或定量测定下列哪些物质？",
+ "options": {
+  "A": "氨基酸",
+  "B": "多肽",
+  "C": "糖",
+  "D": "脂",
+  "E": "蛋白质"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "B E",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 12 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

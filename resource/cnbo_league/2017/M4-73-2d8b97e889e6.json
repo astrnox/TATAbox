@@ -1,0 +1,44 @@
+{
+ "id": "M4-73-2d8b97e889e6",
+ "type": "single",
+ "question": "某雨林系统中有4 种啮齿动物，其平均个体生物量分别是20、30、40 和50 克，试问在其它所有条件相同情况下，哪个物种的相对多度较高。",
+ "options": {
+  "A": "生物量为20 克的物种",
+  "B": "生物量为30 克的物种",
+  "C": "生物量为40 克的物种",
+  "D": "生物量为50 克的物种"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 73 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

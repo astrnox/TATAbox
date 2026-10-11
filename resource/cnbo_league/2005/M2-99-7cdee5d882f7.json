@@ -1,0 +1,46 @@
+{
+ "id": "M2-99-7cdee5d882f7",
+ "type": "mtf",
+ "question": "病毒的特点是：",
+ "options": {
+  "A": "可采用光学显微镜观察病毒的形态特征",
+  "B": "病毒不能产生ATP，不能独立进行各种生命过程",
+  "C": "病毒毒粒内含有DNA 和RNA",
+  "D": "病毒能通过细菌滤器",
+  "E": "没有细胞结构"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "9.A（×）B（√）C（×）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 9 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

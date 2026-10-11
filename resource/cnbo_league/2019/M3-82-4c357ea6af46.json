@@ -1,0 +1,76 @@
+{
+ "id": "M3-82-4c357ea6af46",
+ "type": "single",
+ "question": "歌带鹀是一种生活在北美温带森林中的雀形目鸟类，幼鸟需要成鸟喂养长大。下图中，横轴表示一个繁殖地中不同年份雌性成鸟的数量，纵轴表示平均每个雌性成鸟可以养育成活出飞的幼鸟数量。根据图中的数量关系，以下判断正确的是 Number of breeding females 繁殖期雌性数量 Young fledged per female 每只雌鸟的幼鸟",
+ "options": {
+  "A": "每年的气温变化影响幼鸟的出飞数量",
+  "B": "幼鸟的出飞取决于幼鸟摄入的食物种类",
+  "C": "成鸟数量增加可导致成鸟和幼鸟间食物竞争，从而导致幼鸟存活数量下降",
+  "D": "歌带鹀每只雌性成体能够抚养成活的后代数量受该栖息地中种群数量的影响"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 82 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-82-4c357ea6af46/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 322,
+  "bbox": [
+   188.1,
+   438.6,
+   407.3,
+   594.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-82-4c357ea6af46/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 322,
+   "bbox": [
+    188.1,
+    438.6,
+    407.3,
+    594.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

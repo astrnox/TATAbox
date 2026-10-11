@@ -1,0 +1,42 @@
+{
+ "id": "M3-50-707f4e6a9658",
+ "type": "single",
+ "question": "在植物组织培养中，理论上下列哪种激素的配方有利于芽的形成：",
+ "options": {
+  "A": "6-BA : IAA=1:1",
+  "B": "6-BA : IAA =3:1",
+  "C": "6-BA : IAA =1:3"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 50 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

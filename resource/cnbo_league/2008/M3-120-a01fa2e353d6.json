@@ -1,0 +1,46 @@
+{
+ "id": "M3-120-a01fa2e353d6",
+ "type": "mtf",
+ "question": "下列有关生物多样性的描述，错误的是",
+ "options": {
+  "A": "大量排放CO2 导致全球变暖和普降酸雨是导致生物多样性下降的主要原因",
+  "B": "生物多样性包括遗传多样性、个体多样性、物种多样性和生态系统多样性几个层次",
+  "C": "全球生物多样性快速下降是人类所面临的又一全球性环境问题",
+  "D": "生物多样性的保护对于保持生态平衡和生态系统稳定性意义重大",
+  "E": "引进外来物种不会对自然界生物多样性造成根本影响"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "A,B,E",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 120 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

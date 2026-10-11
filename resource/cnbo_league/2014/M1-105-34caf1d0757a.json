@@ -1,0 +1,44 @@
+{
+ "id": "M1-105-34caf1d0757a",
+ "type": "single",
+ "question": "采集疟疾患者的血液制作血涂片，在显微镜下观察到大滋养体的细胞核，该细胞核与红细胞外的环境相隔几层红细胞膜？",
+ "options": {
+  "A": "一层",
+  "B": "两层",
+  "C": "三层",
+  "D": "四层"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 105 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

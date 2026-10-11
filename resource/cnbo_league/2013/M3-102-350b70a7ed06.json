@@ -1,0 +1,44 @@
+{
+ "id": "M3-102-350b70a7ed06",
+ "type": "multiple",
+ "question": "男性体内能够合成和分泌雄激素的细胞有",
+ "options": {
+  "A": "睾丸间质细胞",
+  "B": "睾丸支持细胞",
+  "C": "肾上腺皮质细胞",
+  "D": "肾上腺髓质细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 102 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

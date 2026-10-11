@@ -1,0 +1,44 @@
+{
+ "id": "M4-79-6136d9fe1507",
+ "type": "single",
+ "question": "猎豹曾广泛分布于非洲和亚洲，而今天只有东非、南非和伊朗各有一个很小的野生种群存在，且这些种群的遗传变异率与其它哺乳动物种群相比较低，猎豹在进化过程中有可能经历了",
+ "options": {
+  "A": "奠基者效应",
+  "B": "瓶颈效益",
+  "C": "随机效应",
+  "D": "基因流动"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 79 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

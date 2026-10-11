@@ -1,0 +1,44 @@
+{
+ "id": "M4-105-6ce832208a76",
+ "type": "multiple",
+ "question": "全基因组关联研究(GWAS)可以检测和分析人类基因组中的DNA 序列变异，以鉴定人群中常见疾病的遗传风险因素。下列关于GWAS 的说法，正确的有：",
+ "options": {
+  "A": "GWAS 分析与基于家系的定位克隆分析相比，更适用于研究复杂性状；",
+  "B": "通过GWAS 分析能够得出与疾病关联的SNP，这些SNP 导致了疾病的发生；",
+  "C": "用于分类的性状不能作为GWAS 分析的表型；",
+  "D": "可以选择使用逻辑回归对遗传数据进行统计分析。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 105 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

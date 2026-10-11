@@ -1,0 +1,76 @@
+{
+ "id": "M4-96-6ad35fc481fe",
+ "type": "single",
+ "question": "生物系统学中一般会依据一定的原则构建一个合意树或一致树（consensus tree）来展示其研究成果，如果利用五个基因片段（Locus）分别构建的基因树如下图，那么当根据多数原则（majority rule）构建合意树时，洞穴熊（cave bear）的姐妹物种是",
+ "options": {
+  "A": "棕熊（Brown bear）",
+  "B": "大熊猫（Giant panda）",
+  "C": "黑熊（Black bear）",
+  "D": "以上答案都不对"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 96 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-96-6ad35fc481fe/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 450,
+  "bbox": [
+   99.6,
+   419.9,
+   495.6,
+   567.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-96-6ad35fc481fe/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 450,
+   "bbox": [
+    99.6,
+    419.9,
+    495.6,
+    567.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

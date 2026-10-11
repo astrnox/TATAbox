@@ -1,0 +1,77 @@
+{
+ "id": "M3-50-63bcb72fa9ca",
+ "type": "mtf",
+ "question": "健康人肾脏对糖的处理如图。请结合相关知识和图中信息判断下列陈述正确与否：",
+ "options": {
+  "A": "图中的正常血糖是指空腹血糖；",
+  "B": "某糖尿病人血糖水平在正常范围内，说明其肾糖阈右移了；",
+  "C": "无糖尿的健康成人的血糖水平通常不会超过10 mmol/L；",
+  "D": "低血糖情况下，原尿中的糖浓度偏高。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 50 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-50-63bcb72fa9ca/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   313.6,
+   283.6,
+   508.3,
+   399.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-50-63bcb72fa9ca/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    313.6,
+    283.6,
+    508.3,
+    399.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图中'正常血糖'指空腹血糖参考范围。B．错误。血糖在正常范围却出现糖尿，说明肾糖阈降低（左移），而非右移。C．正确。健康成人肾糖阈约为10 mmol/L，无糖尿者血糖一般不超过此值。D．错误。低血糖时原尿（滤过液）中葡萄糖浓度随之偏低。"
+}

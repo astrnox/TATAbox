@@ -1,0 +1,44 @@
+{
+ "id": "M4-84-a711ecbf6942",
+ "type": "single",
+ "question": "在某一种果蝇中，野生型的果蝇眼睛为红色。w 基因的纯合突变的果蝇品系中眼睛颜色为白色。在另一个y 突变纯合的突变品系中眼睛颜色为黄色。让一个纯合的白眼突变果蝇与纯合的黄眼突变果蝇杂交，后代均为红眼。让这些后代再自由交配，他们产生红：黄：白=9：3：4。那么下面描述中正确的是：",
+ "options": {
+  "A": "w 基因对y 基因是上位的",
+  "B": "y 基因对w 基因是上位的",
+  "C": "w 基因对y 基因是显性的",
+  "D": "y 基因对w 基因是显性的"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 84 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

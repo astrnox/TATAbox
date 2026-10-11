@@ -1,0 +1,44 @@
+{
+ "id": "M1-20-54644385aa7b",
+ "type": "single",
+ "question": "以下哪个说法最有可能是错误的：",
+ "options": {
+  "A": "将一个M 期细胞与一个间期细胞融合后培养，发现间期细胞发生染色体聚集，这个实验说明M 期细胞中可能存在一种诱导染色体聚集的因子",
+  "B": "用紫外线照射一个培养中的G1 期细胞，发现G1 期细胞不再走向分裂，这个实验说明细胞中可能存在一种抑制细胞走向分裂的因子",
+  "C": "将一个G1 期细胞与一个S 期细胞融合后培养，发现G1 期细胞发生染色体复制，这个实验说明S 期细胞中可能存在一种促DNA 复制因子",
+  "D": "癌细胞可以无限制的分裂是由于抑制细胞走向分裂的因子丧失了活性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 20 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

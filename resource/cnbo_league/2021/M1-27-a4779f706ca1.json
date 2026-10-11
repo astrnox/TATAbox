@@ -1,0 +1,46 @@
+{
+ "id": "M1-27-a4779f706ca1",
+ "type": "single",
+ "question": "将含有等浓度的6-磷酸葡萄糖和果糖6-磷酸的混合物与磷酸己糖异构酶一起孵育时，最终混合物中的6-磷酸葡萄糖的量是6-磷酸果糖的两倍。[葡萄糖6 磷酸↔果糖6 磷酸（R=8.315J/mol·K 和T=298K）]。下列关于反应的自由能变化叙述中，正确的是：",
+ "options": {
+  "A": "△G°’为-1.7kJ/mol",
+  "B": "△G°’为+1.7 kJ/mol",
+  "C": "△G°’为-17 kJ/mol",
+  "D": "△G°’为+17 kJ/mol",
+  "E": "△G°’为零"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 27 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-59-460c9bad6c32",
+ "type": "single",
+ "question": "下列关于光合色素和光系统的描述，错误的是",
+ "options": {
+  "A": "叶绿素a 和叶绿素b 主要吸收峰在可见光区的红光和蓝紫光部分",
+  "B": "主要存在于蓝藻的叶绿素d 主要吸收峰是710nm，水平面以下的暗环境中也会有光吸收",
+  "C": "蓝藻细胞光系统Ⅱ在715nm 处有吸收峰，远红光激发光系统Ⅱ的QA 还原比白光快，说明蓝藻细胞可以利用暗光线条件下的远红光",
+  "D": "蓝藻细胞利用远红光驱动光系统Ⅰ和光系统Ⅱ中参与电荷分离的叶绿素和高等植物的 P680 及P700 一致"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 59 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

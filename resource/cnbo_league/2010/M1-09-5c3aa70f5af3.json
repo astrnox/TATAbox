@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-5c3aa70f5af3",
+ "type": "multiple",
+ "question": "电子显微镜下的细胞质膜体现出“暗一亮一暗”的结构，一般认为主要原因有哪些：",
+ "options": {
+  "A": "磷脂分子的亲水头易被染色",
+  "B": "外在膜蛋白的存在",
+  "C": "胞外基质和膜下细胞骨架的存在",
+  "D": "跨膜蛋白的存在"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 9 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

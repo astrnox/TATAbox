@@ -1,0 +1,44 @@
+{
+ "id": "M3-70-356ad806f468",
+ "type": "multiple",
+ "question": "下列哪些措施有利于迁地保护的高鼻羚羊对野外环境的适应性",
+ "options": {
+  "A": "为高鼻羚羊提供热量高的食物和充足的水",
+  "B": "增加围栏内地形和植被类型的丰富性",
+  "C": "维持高鼻羚羊一雄一雌配对饲养",
+  "D": "限制圈养区域内人类活动以减少对高鼻羚羊干扰"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 70 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

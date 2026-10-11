@@ -1,0 +1,44 @@
+{
+ "id": "M2-24-0dad115d7d83",
+ "type": "single",
+ "question": "下列有关地钱的叙述哪些是错误的？",
+ "options": {
+  "A": "地钱营养体可产生胞芽，成熟时脱落并在土中萌发成新一代孢子体",
+  "B": "颈卵器精子器分别产卵和精子，受精过程不能脱离水",
+  "C": "孢子体简单仅由基足蒴柄孢蒴组成，必须寄生于配子体上",
+  "D": "卵在颈卵器中完成受精形成胚并进一步发育成孢子体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 24 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

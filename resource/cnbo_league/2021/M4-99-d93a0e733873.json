@@ -1,0 +1,76 @@
+{
+ "id": "M4-99-d93a0e733873",
+ "type": "single",
+ "question": "a b c d 分别代表一个现生物种，假定利用分子遗传标记（如蛋白质编码基因）推得它们之间的物种关系如图所示，并且a 与b 之间的遗传距离是平均每个基因碱基位点存在0.02 个差异，a 与c 之间的遗传距离是平均每个碱基位点存在0.03 个差异，c 与d 之间的遗传距离是平均每个碱基位点发生0.04 个差异。根据化石记录，如果已知a 与b 的最近共同祖先大约在距今3.6~5.3 百万年前，假定物种进化速率恒定的情况下，可推算这4 个物种的共同祖先至少存在于：",
+ "options": {
+  "A": "7.2~10.6 百万年前",
+  "B": "5.4~7.95 百万年前",
+  "C": "3.6~5.3 百万年前",
+  "D": "无法得知"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 99 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-99-d93a0e733873/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 407,
+  "bbox": [
+   209.1,
+   79.3,
+   386.1,
+   220.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-99-d93a0e733873/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 407,
+   "bbox": [
+    209.1,
+    79.3,
+    386.1,
+    220.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

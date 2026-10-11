@@ -1,0 +1,44 @@
+{
+ "id": "M1-11-478288c8880c",
+ "type": "single",
+ "question": "在C4 植物循环中，CO2 进入叶肉细胞被固定的最初产物是",
+ "options": {
+  "A": "甘油酸-3-磷酸",
+  "B": "苹果酸",
+  "C": "草酰乙酸",
+  "D": "丙酮酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 11 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

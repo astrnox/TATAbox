@@ -1,0 +1,76 @@
+{
+ "id": "M2-23-f600de1a8e83",
+ "type": "single",
+ "question": "从海的不同深度采集到4 种类型的浮游植物(Ⅰ、Ⅱ、Ⅲ和Ⅳ)。测定了每种类型的光合作用，如右图所示。在最深处采集到的是哪种类型的浮游植物？",
+ "options": {
+  "A": "Ⅰ",
+  "B": "Ⅱ",
+  "C": "Ⅲ",
+  "D": "Ⅳ"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 23 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-23-f600de1a8e83/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 33,
+  "bbox": [
+   239.9,
+   111.2,
+   372.3,
+   187.8
+  ],
+  "kind": "vector"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-23-f600de1a8e83/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 33,
+   "bbox": [
+    239.9,
+    111.2,
+    372.3,
+    187.8
+   ],
+   "kind": "vector"
+  }
+ ]
+}

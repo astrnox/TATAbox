@@ -1,0 +1,46 @@
+{
+ "id": "M1-109-2772142a58e0",
+ "type": "mtf",
+ "question": "原核生物：",
+ "options": {
+  "A": "具有细胞器，但不具有细胞核",
+  "B": "能产生ATP，能独立进行生命过程",
+  "C": "细胞壁含几丁质",
+  "D": "大多具有环状DNA",
+  "E": "都是厌氧生物"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 9 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

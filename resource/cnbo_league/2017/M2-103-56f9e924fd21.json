@@ -1,0 +1,44 @@
+{
+ "id": "M2-103-56f9e924fd21",
+ "type": "single",
+ "question": "我们日常所见到的苔藓植物多数生长在潮湿的环境中或至少在某一时期有降雨的环境中，你认为与该特征有联系的最重要原因是什么：",
+ "options": {
+  "A": "苔藓植物没有根的分化，只有假根",
+  "B": "苔藓植物体内没有维管组织的分化",
+  "C": "苔藓植物个体小，雌雄异株",
+  "D": "苔藓植物受精作用离不开水"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 103 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

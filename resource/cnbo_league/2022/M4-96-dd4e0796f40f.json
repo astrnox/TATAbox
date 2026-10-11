@@ -1,0 +1,44 @@
+{
+ "id": "M4-96-dd4e0796f40f",
+ "type": "single",
+ "question": "云南澄江发掘出了保存极其完好、多样性极高的寒武纪早期古生物化石，为研究寒武纪生命大爆发提供了佐证。可由澄江化石获得证据的学说最可能是：",
+ "options": {
+  "A": "渐进式演化",
+  "B": "间断平衡学说",
+  "C": "中性理论",
+  "D": "突变理论"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 96 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

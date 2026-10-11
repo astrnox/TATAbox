@@ -1,0 +1,44 @@
+{
+ "id": "M4-89-94c1536cd8f1",
+ "type": "multiple",
+ "question": "若要最终证实F 蛋白通过调控Pax6 的表达来调控视网膜的功能，还需要进行的实验有：",
+ "options": {
+  "A": "检测F 蛋白突变体动物模型中Pax6 的表达量；",
+  "B": "在Pax6 失活突变体中过表达F 蛋白，检测表型是否缓解；",
+  "C": "在野生型中抑制Pax6 表达，检测是否得到F 蛋白功能缺失的表型；",
+  "D": "进行报告基因实验，检测F 蛋白是否激活Pax6 的调控元件。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 89 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M1-37-eb131bff2b93",
+ "type": "single",
+ "question": "溶液的渗透压摩尔浓度（单位：mOsm/L）在数值上等于溶液中溶质粒子的总摩尔浓度，请计算以下溶液的渗透压摩尔浓度，该溶液含有：NaCl（12mM），KCl（4mM）以及CaCl2 （2mM）",
+ "options": {
+  "A": "18",
+  "B": "36",
+  "C": "38",
+  "D": "20",
+  "E": "42"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 37 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

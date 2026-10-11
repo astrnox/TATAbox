@@ -1,0 +1,44 @@
+{
+ "id": "M3-40-a0d82dcaf7d4",
+ "type": "single",
+ "question": "氧气和二氧化碳在血液中主要的运输形式分别是：",
+ "options": {
+  "A": "氧合血红蛋白；碳酸氢盐",
+  "B": "物理溶解；氨基甲酸血红蛋白",
+  "C": "氧合血红蛋白；氨基甲酸血红蛋白",
+  "D": "氧合血红蛋白；物理溶解"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 40 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

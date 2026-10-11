@@ -1,0 +1,76 @@
+{
+ "id": "M1-45-6c3a51fdb91c",
+ "type": "multiple",
+ "question": "科学家利用离体的猫肺进行实验，研究肺的顺应性，绘制了如图所示的压强-容积曲线。离体肺置于与胸膜腔内压相似的负压环境，当增大负压（Negative pressure），肺扩张，容积（Volume）增大，如箭头向上支曲线所示。再减小负压，肺则缩小，容积减小，如箭头向下支曲线所示。以曲线斜率，即单位压强变化所引起的肺容积变化，度量肺的顺应性。图中分别显示了充空气（Air-filled，右）和充生理盐水时（Saline-filled，左）所测得的曲线。下列分析中，正确的有：",
+ "options": {
+  "A": "以生理盐水代替空气时，肺的顺应性降低",
+  "B": "与充生理盐水不同，充空气时，肺内壁形成液-气交界面，而产生表面张力",
+  "C": "由于存在表面张力，肺充气时比充生理盐水时更易于扩张",
+  "D": "肺吸气（Inspiration）和呼气（Expiration）过程所对应的两条曲线并不重叠，这很可能与表面张力有关"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 45 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-45-6c3a51fdb91c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 394,
+  "bbox": [
+   194.1,
+   138.0,
+   400.4,
+   333.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-45-6c3a51fdb91c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 394,
+   "bbox": [
+    194.1,
+    138.0,
+    400.4,
+    333.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

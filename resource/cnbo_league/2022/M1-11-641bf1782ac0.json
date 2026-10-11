@@ -1,0 +1,76 @@
+{
+ "id": "M1-11-641bf1782ac0",
+ "type": "multiple",
+ "question": "科学家研究了p38 抑制剂(p38i)和核糖体翻译功能的抑制剂茴香霉素(ANS)对细胞周期的作用，结果如图。从中得出的正确结论有：",
+ "options": {
+  "A": "茴香霉素能够使细胞阻滞在G2 期；",
+  "B": "茴香霉素对细胞G2/M 期无明显影响；",
+  "C": "p38 能够使细胞阻滞在G2 期；",
+  "D": "p38i 能够拮抗茴香霉素对细胞周期的影响。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 11 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-11-641bf1782ac0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 410,
+  "bbox": [
+   180.6,
+   73.2,
+   414.0,
+   210.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-11-641bf1782ac0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 410,
+   "bbox": [
+    180.6,
+    73.2,
+    414.0,
+    210.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

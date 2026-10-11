@@ -1,0 +1,44 @@
+{
+ "id": "M4-10-afbf2ea3bd24",
+ "type": "single",
+ "question": "同源染色体联会后发生的实际双交换，往往不同于理论双交换的数量。试分析下列选项哪一个正确？",
+ "options": {
+  "A": "若染色体某一区段发生了负干扰时，就意味着这一区段的实际双交换率低于理论双交换率，但却有双交换发生",
+  "B": "这一区段未发生双交换时，由于计算公式失效，显示出负干扰值",
+  "C": "当这一区段发生的双交换率高于理论双交换率时，所获得的并发率大于1",
+  "D": "这一区段的实际双交换率与理论双交换值相等时，由于计算公式中理论双交换值有系数0.5，所获得的并发率就呈现大于1 的数值"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 10 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

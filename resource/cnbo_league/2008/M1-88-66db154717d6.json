@@ -1,0 +1,76 @@
+{
+ "id": "M1-88-66db154717d6",
+ "type": "single",
+ "question": "下图显示两种不同类型的人口年龄结构，以下哪类情况持续一段时间后，不可能使图 ①转变为图②",
+ "options": {
+  "A": "高的出生率",
+  "B": "低的婴儿死亡率",
+  "C": "计划生育政策的推广",
+  "D": "高的老年死亡率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 88 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-88-66db154717d6/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2008 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 108,
+  "bbox": [
+   225.9,
+   73.4,
+   391.2,
+   164.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-88-66db154717d6/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2008 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 108,
+   "bbox": [
+    225.9,
+    73.4,
+    391.2,
+    164.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

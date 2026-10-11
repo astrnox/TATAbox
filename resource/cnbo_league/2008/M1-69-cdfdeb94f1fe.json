@@ -1,0 +1,44 @@
+{
+ "id": "M1-69-cdfdeb94f1fe",
+ "type": "single",
+ "question": "分子识别常表现在受体与配体的相互作用，受体是指位于细胞膜上、细胞质、或细胞核中能与来自细胞外的生物活性分子专一结合，并将其带来的信息传递给效应器，，从而引起相应的生物学效应。这些大分子大多是",
+ "options": {
+  "A": "蛋白质",
+  "B": "核酸",
+  "C": "糖类",
+  "D": "脂质"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 69 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

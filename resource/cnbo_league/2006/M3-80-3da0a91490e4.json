@@ -1,0 +1,44 @@
+{
+ "id": "M3-80-3da0a91490e4",
+ "type": "single",
+ "question": "很多昆虫的发育中存在变态现象, 渐变态昆虫的发育符合",
+ "options": {
+  "A": "无蛹期，生活习性与成虫一样",
+  "B": "有蛹期，生活习性与成虫一样",
+  "C": "有蛹期，生活习性与成虫不一样",
+  "D": "无蛹期，生活习性与成虫不一样"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 80 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

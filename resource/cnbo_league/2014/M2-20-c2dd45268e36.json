@@ -1,0 +1,39 @@
+{
+ "id": "M2-20-c2dd45268e36",
+ "type": "single",
+ "question": "筛管分子下列哪句不符合筛管与筛胞的发育与结构特征",
+ "options": {
+  "A": "执行功能时是生活细胞",
+  "B": "成熟时细胞中缺乏细胞核",
+  "C": "具有来源于同一原始细胞的伴胞",
+  "D": "细胞之间通过联络索沟通"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 20 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

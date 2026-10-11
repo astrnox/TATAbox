@@ -1,0 +1,76 @@
+{
+ "id": "M3-56-eb3af1236ac8",
+ "type": "single",
+ "question": "OPI 是一种置信度指标，正值代表正确尝试时神经活动高，负值代表错误尝试时神经活动高。若该神经元对听觉和嗅觉刺激的OPI 有一致性，则该神经元活动在图中出现的位置可能是：",
+ "options": {
+  "A": "①③",
+  "B": "②④",
+  "C": "①②",
+  "D": "②③"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 56 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-56-eb3af1236ac8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 420,
+  "bbox": [
+   209.6,
+   78.4,
+   385.8,
+   221.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-56-eb3af1236ac8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 420,
+   "bbox": [
+    209.6,
+    78.4,
+    385.8,
+    221.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

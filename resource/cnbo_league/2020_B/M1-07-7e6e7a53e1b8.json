@@ -1,0 +1,76 @@
+{
+ "id": "M1-07-7e6e7a53e1b8",
+ "type": "single",
+ "question": "如图是葡萄糖旁路代谢产物 5-磷酸木酮糖对ChREBP 的调节示意图，图中问号处最可能是：",
+ "options": {
+  "A": "蛋白磷酸酶 2A",
+  "B": "己糖激酶",
+  "C": "葡萄糖-6-磷酸脱氢酶",
+  "D": "AMPK 蛋白激酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 7 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-07-7e6e7a53e1b8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 359,
+  "bbox": [
+   161.1,
+   185.2,
+   433.4,
+   286.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-07-7e6e7a53e1b8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 359,
+   "bbox": [
+    161.1,
+    185.2,
+    433.4,
+    286.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

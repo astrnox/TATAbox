@@ -1,0 +1,44 @@
+{
+ "id": "M3-84-b3a0f35c959c",
+ "type": "single",
+ "question": "海绵等足虫（Paracerceis sculpta）栖息在海生海绵的中央腔中，雌性的外观都一样，而雄性有大、中、小3种形态型，且这3种不同形态的雄性会采取不同的生殖对策：大雄虫倾向于用战斗来保卫海绵中央腔中的多个雌虫；中雄虫会模拟雌虫，与大雄虫共处一室；小雄虫回避大雄虫并埋伏在其周围，伺机与雌虫交配。研究表明，大、中、小雄虫的体型差异主要来自一个单一基因的3个等位基因。以下推论中正确的是",
+ "options": {
+  "A": "大雄虫的平均生殖率最高",
+  "B": "中雄虫的平均生殖率最高",
+  "C": "小雄虫的平均生殖率最高",
+  "D": "3种雄虫的平均生殖率没有显著差异"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 84 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

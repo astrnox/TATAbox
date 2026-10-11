@@ -1,0 +1,39 @@
+{
+ "id": "M3-47-a4812850c4e0",
+ "type": "single",
+ "question": "躯体运动神经通过与骨骼肌形成神经肌肉接头，支配骨骼肌的运动。神经肌肉接头是一种特殊的化学突触，其突触后电位也称为终板电位。下列说法错误的是：",
+ "options": {
+  "A": "终板电位是由离子通道型受体介导的快突触电位；",
+  "B": "单个终板电位足以引起骨骼肌的兴奋；",
+  "C": "终板电位主要由钠离子内流引起，其幅值接近钠离子的平衡电位；",
+  "D": "在距离神经肌肉接头较远的骨骼肌膜处，很可能记录不到终板电位。"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 47 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

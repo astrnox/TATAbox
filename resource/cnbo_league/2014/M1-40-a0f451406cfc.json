@@ -1,0 +1,46 @@
+{
+ "id": "M1-40-a0f451406cfc",
+ "type": "multiple",
+ "question": "钙离子跨过神经元细胞膜的方式包括",
+ "options": {
+  "A": "初级主动运输",
+  "B": "次级主动运输",
+  "C": "电压门控离子通道",
+  "D": "离子通道型受体",
+  "E": "G 蛋白耦合受体"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 40 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

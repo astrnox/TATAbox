@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-525c047b25b7",
+ "type": "single",
+ "question": "核孔复合体在所有真核细胞中普遍存在，镶嵌在内核膜与外核膜融合所形成的核孔上，被认为是跨核膜物质运输的亲水性通道。下列关于核孔复合体的分布和跨核膜运输功能说法中，错误的是",
+ "options": {
+  "A": "通过核孔复合体既可以进行被动扩散，也可以进行主动运输",
+  "B": "核孔复合体在功能上具有双向性表现：既能将一些需要的蛋白质转运入核，也能将核糖体亚基等转运出核",
+  "C": "核孔复合体具有固定的功能直径，一般不可调节",
+  "D": "不同物种之间的核膜上核孔复合体的密度可能存在较大差异"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 7 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

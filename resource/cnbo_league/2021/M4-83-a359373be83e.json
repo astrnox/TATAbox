@@ -1,0 +1,44 @@
+{
+ "id": "M4-83-a359373be83e",
+ "type": "multiple",
+ "question": "MCPH1 编码一个835 氨基酸的蛋白，MCPH1 功能缺失的雌性果蝇突变体不育，其后代在胚胎期停止有丝分裂，而Chk2 的突变可以抑制这一不育表型。Chk2 是一个细胞周期检查点激酶，当DNA 受到损伤时，Chk2 被激活抑制细胞有丝分裂。下列结果的描述中，正确的有",
+ "options": {
+  "A": "果蝇MCPH1 缺失可能导致DNA 损伤",
+  "B": "果蝇MCPH1 有母体效应",
+  "C": "dMCPH1 突变雌性果蝇的雄性杂合子后代应该没有问题",
+  "D": "Chk2 缺失虽然可以抑制果蝇MCPH1 缺失，重启有丝分裂，但同时应该伴随有高得多的 DNA 或染色体变异"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 83 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

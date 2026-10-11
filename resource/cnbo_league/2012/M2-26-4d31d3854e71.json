@@ -1,0 +1,39 @@
+{
+ "id": "M2-26-4d31d3854e71",
+ "type": "multiple",
+ "question": "盐胁迫条件下，较耐盐的禾本科植物大麦可以通过将盐分局域于以下部位来缓解盐分对植物生长造成的危害",
+ "options": {
+  "A": "根系",
+  "B": "幼叶",
+  "C": "叶鞘",
+  "D": "老叶"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 26 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

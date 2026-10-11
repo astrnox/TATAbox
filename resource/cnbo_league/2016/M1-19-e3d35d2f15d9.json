@@ -1,0 +1,39 @@
+{
+ "id": "M1-19-e3d35d2f15d9",
+ "type": "single",
+ "question": "在核仁中存在着一类小的RNA，称为snoRNA, 它们在下列哪个生理过程中起作用",
+ "options": {
+  "A": "在rRNA 的加工中起作用",
+  "B": "在mRNA 的加工中起作用",
+  "C": "在tRNA 的加工中起作用",
+  "D": "以上都不对"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 19 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-51-f623566de143",
+ "type": "single",
+ "question": "分生组织的原始细胞通常认为是自我永续的细胞，即一个原始细胞分裂形成2 个细胞， 1 个保留在原位保持原始细胞的状态，另1 个进一步分裂分化后形成植物的成熟组织。按照该定义，下列哪一组的分生组织没有原始细胞",
+ "options": {
+  "A": "原分生组织和初生分生组织",
+  "B": "基本分生组织和居间分生组织",
+  "C": "原形成层和侧生分生组织",
+  "D": "维管形成层和木栓形成层"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 51 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": "M1-01-e3046c045cef",
+ "type": "single",
+ "question": "（删除）以下植物细胞中无膜结构、具有单层膜结构以及具有双层膜结构的细胞器的描述，正确的是",
+ "options": {
+  "A": "纺锤体、液泡和高尔基体、叶绿体",
+  "B": "核糖体、叶绿体、线粒体",
+  "C": "核糖体、内质网和高尔基体、叶绿体",
+  "D": "纺锤体、内质网和液泡、线粒体"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 1 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

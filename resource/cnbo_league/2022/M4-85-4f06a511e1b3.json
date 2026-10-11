@@ -1,0 +1,80 @@
+{
+ "id": "M4-85-4f06a511e1b3",
+ "type": "single",
+ "question": "为验证是否获得了打靶成功的胚胎干细胞，应该采用的方式是：",
+ "options": {
+  "A": "分别在外显子1 和neo 上设计引物，进行PCR 扩增，检测有没有阳性条带；",
+  "B": "分别在外显子1 和外显子3 上设计引物，进行PCR 扩增，检测条带的大小；",
+  "C": "用BamHI 酶切后，以外显子4 附近的序列为探针进行Southern 杂交检测；",
+  "D": "用SalI 酶切后，以neo 附近的序列为探针进行Southern 杂交检测。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 85 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "83-89",
+  "stimulus": "维生素A 在体内转化为11-顺视黄醛后，与视网膜特定细胞中的视蛋白结合成视紫红"
+ },
+ "image": {
+  "file": "assets/questions/M4-85-4f06a511e1b3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 426,
+  "bbox": [
+   90.0,
+   343.5,
+   504.3,
+   549.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-85-4f06a511e1b3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 426,
+   "bbox": [
+    90.0,
+    343.5,
+    504.3,
+    549.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

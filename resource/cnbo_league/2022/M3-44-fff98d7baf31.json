@@ -1,0 +1,44 @@
+{
+ "id": "M3-44-fff98d7baf31",
+ "type": "single",
+ "question": "某一植物种群/居群中，基因型为AA 的红花个体占16%，白花个体aa 占36%。该居群植物在随机交配或自交两种情况下，后代个体中AA 基因型的比例和A 等位基因频率的变化分别是：",
+ "options": {
+  "A": "增大、不变；不变、不变",
+  "B": "不变、增大；增大、不变",
+  "C": "不变、不变；增大、不变",
+  "D": "不变、不变；不变、增大"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 44 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

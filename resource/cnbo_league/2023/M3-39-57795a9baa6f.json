@@ -1,0 +1,44 @@
+{
+ "id": "M3-39-57795a9baa6f",
+ "type": "single",
+ "question": "下列关于抑制性快突触信号传递的陈述中，正确的是：",
+ "options": {
+  "A": "某种神经递质选择性地打开突触后膜上配体门控的氯离子通道",
+  "B": "因为氯离子的平衡电位大约为-70mV，所以氯离子倾向于向胞外移动",
+  "C": "某种神经递质选择性的打开突触后膜上的钾离子通道使得钾离子内流",
+  "D": "胞外的钠离子浓度升高常常直接达到突触后抑制的效果"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 39 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

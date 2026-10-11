@@ -1,0 +1,44 @@
+{
+ "id": "M2-70-4f2b5b329982",
+ "type": "single",
+ "question": "植物中很多果实具有翅状附属物，如元宝枫翅状附属物对于植物传播种子具有什么作用？",
+ "options": {
+  "A": "拟态，模拟一些昆虫等的样式，吸引其他鸟等动物过来吃它，从而达到传播种子的目的",
+  "B": "用于滑翔，植物通过翅可以滑翔很远，并将种子带过去",
+  "C": "增加阻力，从而增加种子或果实的滞空时间，提供更多的机会被风吹走",
+  "D": "没有明显的作用，只是物种的装饰而已"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 70 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

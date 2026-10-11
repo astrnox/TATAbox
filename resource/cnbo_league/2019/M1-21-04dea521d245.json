@@ -1,0 +1,46 @@
+{
+ "id": "M1-21-04dea521d245",
+ "type": "multiple",
+ "question": "假设在有氧条件下，给葡萄糖氧化的肝细胞中加入了一种非常有效的特异性线粒体ATP 合酶抑制剂，完全抑制这种酶。下列关于该抑制剂效果的陈述，哪些是错误的：",
+ "options": {
+  "A": "细胞中的ATP 产量将迅速降至零",
+  "B": "该细胞的葡萄糖消耗率将急剧下降",
+  "C": "氧气消耗率将增加",
+  "D": "柠檬酸循环将加速补偿",
+  "E": "细胞将转换为脂肪酸氧化作为葡萄糖氧化的替代物，因此抑制剂对ATP 产生没有影响"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ACDE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 21 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

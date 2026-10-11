@@ -1,0 +1,44 @@
+{
+ "id": "M2-40-b5586b3f7ca6",
+ "type": "single",
+ "question": "在大豆和烟草试验中，W．W．Garner 和H．",
+ "options": {
+  "A": "Allard 观察到不论何时播种，同一品种的植株几乎同时开花，他们断定对开花起决定性作用的因素是 A．昼夜间黑暗与光照时间的长短",
+  "B": "昼夜间黑暗与光照时间的长短比例",
+  "C": "昼夜间温度差异",
+  "D": "品种的原产地纬度高低"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 40 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

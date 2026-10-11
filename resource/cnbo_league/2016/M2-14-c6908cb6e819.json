@@ -1,0 +1,39 @@
+{
+ "id": "M2-14-c6908cb6e819",
+ "type": "multiple",
+ "question": "大剂量STZ 使胰岛β 细胞受到破坏，胰岛素分泌显著下降，最终导致糖尿病的发生。这一小鼠模型不适合用于以下哪些研究：",
+ "options": {
+  "A": "I 型（遗传）糖尿病的分子机理",
+  "B": "胰岛β 细胞死亡的分子机制",
+  "C": "病毒感染诱发的糖尿病",
+  "D": "开发新的胰岛素类似物"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.5,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 14 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

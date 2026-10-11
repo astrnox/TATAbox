@@ -1,0 +1,44 @@
+{
+ "id": "M3-109-580a59c920e7",
+ "type": "single",
+ "question": "鸵鸟是适应于奔走生活的鸟类，下列关于其适应性特征描述中，哪个是错的？",
+ "options": {
+  "A": "翼退化，胸骨无龙骨突",
+  "B": "无羽区和裸区之分",
+  "C": "不具羽小钩，不形成羽片",
+  "D": "足具 4 趾，皆粗壮有力，适应奔走"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 109 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}
