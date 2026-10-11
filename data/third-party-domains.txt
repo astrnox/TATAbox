@@ -21,11 +21,11 @@ unpkg.com
 
 # ---- 本站部署域名（GitHub Pages 宿主 + 自定义域名 CNAME，非第三方）----
 # astrnox.github.io：GitHub Pages 默认域名
-# gagabox.cc.cd   ：CNAME 指向的自定义域名；index.html 的 canonical / og:url /
-#                   og:image 现已指向该域名（<link rel="canonical"> 会被
-#                   scripts/verify-third-party.js 扫描，故必须在此登记）
+# tatabox.cc.cd    ：CNAME 指向的自定义域名；index.html 的 canonical / og:url /
+#                    og:image 现已指向该域名（<link rel="canonical"> 会被
+#                    scripts/verify-third-party.js 扫描，故必须在此登记）
 astrnox.github.io
-gagabox.cc.cd
+tatabox.cc.cd
 
 # ---- 外链导航链接（footer 外部站外链接，非加载的静态资源，无需 SRI）----
 github.com

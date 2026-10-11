@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TATABOX 站点地图
+  范围：仅收录 7 个 canonical 内容页。
+  排除项及原因：
+    · study.html                   —— 0 秒跳板（meta refresh → index.html#/study），
+      其 canonical 指向首页，按 sitemap 协议"只收录 canonical URL"不纳入；
+      且 hash 路由（#/xxx）本身不可被搜索引擎索引，这是纯前端 SPA 的固有限制；
+    · 400/401/403/404/500/502/503.html、_loader-test.html
+                                   —— 已在页内声明 meta noindex，无索引价值；
+    · microscope-3d/index.html     —— 独立原型，未被主站任何内链引用；
+    · data/ *.json、archive/、tests/ —— 非 HTML 资源，不在 sitemap 协议范围。
+  lastmod：与本次 SEO 修复同步（2026-10-11）。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tatabox.cc.cd/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/quiz.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/wiki.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/cards.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/ebook.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/resources.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tatabox.cc.cd/biology-history.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

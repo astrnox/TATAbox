@@ -1,0 +1,23 @@
+# TATABOX robots.txt
+# 说明：GitHub Pages 无服务端逻辑，本文件为纯静态声明。
+# 规则：放开全部抓取，仅屏蔽非内容目录。
+#
+# 重要：4xx/5xx 错误页与 _loader-test.html **不在此处 Disallow**，而是在各自
+#       HTML 内使用 <meta name="robots" content="noindex">。原因：
+#       robots.txt 一旦 Disallow，爬虫便无法抓取该页、也就读不到 noindex，
+#       该 URL 仍可能以「无摘要」形式出现在搜索结果中。meta noindex 必须
+#       配合"允许抓取"才生效，故这里对这些页面保持 Allow。
+
+User-agent: *
+Allow: /
+
+# 非内容目录（归档、测试、截图等），无索引价值且会稀释抓取预算
+Disallow: /archive/
+Disallow: /tests/
+Disallow: /screenshots/
+Disallow: /tools/
+Disallow: /sql/
+Disallow: /docs/
+
+# 站点地图：供 Bing / Google / Yandex 等发现全部可收录页面
+Sitemap: https://tatabox.cc.cd/sitemap.xml

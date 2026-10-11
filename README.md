@@ -8,7 +8,7 @@
 
 **从联赛备考到高考模拟，一个网站搞定你的生物练习**
 
-[在线 Demo](https://gagabox.cc.cd/) · [开始刷题](https://gagabox.cc.cd/#/practice) · [出题/讨论](https://github.com/astrnox/BioQuest/discussions) · [反馈问题](https://github.com/astrnox/BioQuest/issues)
+[在线 Demo](https://tatabox.cc.cd/) · [开始刷题](https://tatabox.cc.cd/#/practice) · [出题/讨论](https://github.com/astrnox/BioQuest/discussions) · [反馈问题](https://github.com/astrnox/BioQuest/issues)
 
 [![Platform](https://img.shields.io/badge/platform-Web-blue?style=flat-square)]()
 [![License](https://img.shields.io/badge/license-MPL--2.0%20%2F%20CC%20BY--NC--SA%204.0-green?style=flat-square)]()
@@ -35,7 +35,7 @@ TATABOX 是一个面向高中生的生物学习网站。无论是备战全国中
 
 ### 直接使用（学生 / 教师）
 
-打开在线版本即可：**[https://gagabox.cc.cd/](https://gagabox.cc.cd/)**
+打开在线版本即可：**[https://tatabox.cc.cd/](https://tatabox.cc.cd/)**
 
 - 无需注册即可刷题；注册后可同步错题本与学习进度
 - AI 导师、拍照搜题等功能需自行配置 API Key（均使用各大模型的免费额度，站内有教程）
