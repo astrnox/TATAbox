@@ -1,0 +1,46 @@
+{
+ "id": "M1-28-ea799c3f9dd4",
+ "type": "multiple",
+ "question": "在一项研究中，猫被禁食过夜，然后给含有除精氨酸外的所有氨基酸的食物。在2 小时内，血氨水平从正常水平18mg/L 增加到140mg/L，并且猫表现出氨中毒的临床症状。饲喂完全氨基酸饮食或其中精氨酸被鸟氨酸替代的氨基酸饮食的对照组没有显示异常的临床症状。下列说法中正确的有:",
+ "options": {
+  "A": "禁食是为了在实验开始前将体内的氨基酸水平降到最低",
+  "B": "氨基酸的氧化脱氨导致氨水平升高",
+  "C": "精氨酸缺乏导致氨中毒是因为参与氨代谢的酶合成受阻",
+  "D": "除了鸟氨酸外，瓜氨酸也可以替代精氨酸",
+  "E": "这项实验表明精氨酸对猫来说是必需氨基酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "BDE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 28 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

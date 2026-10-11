@@ -1,0 +1,20 @@
+{
+ "id": "M1-33-0db0b3c4a001",
+ "figures": [
+  {
+   "file": "assets/questions/M1-33-0db0b3c4a001/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 456,
+   "bbox": [
+    119.1,
+    566.6,
+    475.5,
+    679.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-43-875fa417b396",
+ "type": "single",
+ "question": "全球气候变暖可以对动物生理及生态产生很大的影响，已知的最明显的直接效应是",
+ "options": {
+  "A": "影响鸟类生殖节律",
+  "B": "影响哺乳动物共生菌组成",
+  "C": "促进动物分布区向北扩展",
+  "D": "影响到昆虫的生殖和发生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 43 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

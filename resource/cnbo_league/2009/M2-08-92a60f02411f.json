@@ -1,0 +1,44 @@
+{
+ "id": "M2-08-92a60f02411f",
+ "type": "single",
+ "question": "下列关于植物生长素生理作用叙述选项，哪个是不正确的？",
+ "options": {
+  "A": "生长素维持植物的顶端生长优势",
+  "B": "生长素既能促进坐果又能用于疏花疏果",
+  "C": "生长素能促进细胞伸长，但不能促进细胞分裂",
+  "D": "生长素可以促进不定根发生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 8 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

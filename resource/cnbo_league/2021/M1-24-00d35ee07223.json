@@ -1,0 +1,44 @@
+{
+ "id": "M1-24-00d35ee07223",
+ "type": "multiple",
+ "question": "中间纤维是细胞内重要细胞骨架组分，能够帮助细胞应对机械压力。但是并不是所有类型的细胞中都存在这种组分。下列各类细胞中，不含中间纤维的有",
+ "options": {
+  "A": "植物细胞",
+  "B": "大肠杆菌",
+  "C": "人的神经细胞",
+  "D": "人的肌肉细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 24 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

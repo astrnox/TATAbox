@@ -1,0 +1,76 @@
+{
+ "id": "M1-14-96768235aba1",
+ "type": "mtf",
+ "question": "鞘磷脂是哺乳动物中含量最丰富的鞘脂，对于细胞的生长和存活至关重要。鞘磷脂由神经酰胺和磷脂酰胆碱的磷酸胆碱头部基团合成得到，被水解后会产生神经酰胺。研究人员发现了一个与鞘磷脂合成或水解相关的代谢酶，在对照和表达该酶的细胞中分别检测了鞘磷脂（A 图）和神经酰胺（B 图）的含量，并在不同条件下对其生化活性进行了分析（C 图，其中EDTA 为金属离子螯合剂；GSH 为还原型谷胱甘肽），请对以下陈述进行正误判断：",
+ "options": {
+  "A": "该酶为鞘磷脂水解酶",
+  "B": "该酶在中性条件下活性高于酸性或碱性条件",
+  "C": "该酶的活性不依赖金属离子",
+  "D": "该酶的活性依赖二硫键的形成"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 14 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-14-96768235aba1/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   238.9,
+   555.0,
+   547.8,
+   680.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-14-96768235aba1/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    238.9,
+    555.0,
+    547.8,
+    680.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

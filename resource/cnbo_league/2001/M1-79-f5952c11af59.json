@@ -1,0 +1,46 @@
+{
+ "id": "M1-79-f5952c11af59",
+ "type": "mtf",
+ "question": "判断下列有关减数分裂说法的正误。",
+ "options": {
+  "A": "高等植物的孢子体可以发生减数分裂",
+  "B": "高等植物的配子体可以发生减数分裂",
+  "C": "低等植物减数分裂一般直接产生配子",
+  "D": "高等植物减数分裂的产物是配子",
+  "E": "高等植物减数分裂的产物是大孢子及小孢子"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "6．A（√）B（×）C（×）D（×）E（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 6 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

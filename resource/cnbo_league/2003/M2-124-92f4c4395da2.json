@@ -1,0 +1,44 @@
+{
+ "id": "M2-124-92f4c4395da2",
+ "type": "mtf",
+ "question": "下列哪些符合油菜花的特征？",
+ "options": {
+  "A": "二强雄蕊，花药横裂",
+  "B": "四强雄蕊，花药纵裂",
+  "C": "单雌蕊，边缘胎座",
+  "D": "合生雌蕊，侧膜胎座"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "9.A（ × ）B（ √ ）C（ × ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 9 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-68-8d1e9dceffdf",
+ "type": "multiple",
+ "question": "下列生殖方式属于有性生殖的是：",
+ "options": {
+  "A": "水绵的结合生殖",
+  "B": "酵母的出芽生殖",
+  "C": "蘑菇的锁状联合",
+  "D": "黑根霉的结合孢子生殖"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 68 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

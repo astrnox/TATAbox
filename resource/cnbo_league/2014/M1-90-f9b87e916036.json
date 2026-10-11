@@ -1,0 +1,44 @@
+{
+ "id": "M1-90-f9b87e916036",
+ "type": "single",
+ "question": "下面哪种细胞中的线粒体所占总体积与细胞体积之比最大？",
+ "options": {
+  "A": "肝细胞",
+  "B": "心肌细胞",
+  "C": "神经细胞",
+  "D": "胰腺细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 90 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

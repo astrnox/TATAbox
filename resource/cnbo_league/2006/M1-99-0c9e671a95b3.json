@@ -1,0 +1,44 @@
+{
+ "id": "M1-99-0c9e671a95b3",
+ "type": "single",
+ "question": "第98 题中，这2 套呼吸器官和排泄器官分别是",
+ "options": {
+  "A": "鳃、书肺、马氏管、绿腺",
+  "B": "书鳃、书肺、绿腺、基节腺",
+  "C": "气管、书肺、马氏管、基节腺",
+  "D": "书肺、气管、马氏管、绿腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 99 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

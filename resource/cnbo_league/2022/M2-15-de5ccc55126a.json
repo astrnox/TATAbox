@@ -1,0 +1,44 @@
+{
+ "id": "M2-15-de5ccc55126a",
+ "type": "single",
+ "question": "微生物生长受多种环境因子的影响，其中环境中水对微生物的影响通常用水活度表示（aw=P/P0，P：溶液的蒸汽压，P0：纯水的蒸汽压）。环境水活度越大，说明环境中：",
+ "options": {
+  "A": "溶质越少，水越容易被微生物利用；",
+  "B": "溶质越少，水越不易被微生物利用；",
+  "C": "溶质越多，水越容易被微生物利用；",
+  "D": "溶质越多，水越不易被微生物利用。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 15 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

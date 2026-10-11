@@ -1,0 +1,44 @@
+{
+ "id": "M1-02-0edc9bf45be4",
+ "type": "mtf",
+ "question": "减数分裂和有丝分裂是真核细胞的两种重要分裂方式。对以下关于两者比较的陈述进行正误判断：",
+ "options": {
+  "A": "减数分裂通常发生在体细胞中，而有丝分裂发生在生殖细胞形成过程中",
+  "B": "两种分裂方式在分裂期开始前，染色体都只复制一次",
+  "C": "减数分裂包含两次连续的细胞分裂，而有丝分裂只有一次",
+  "D": "减数分裂结束后产生的子细胞染色体数目是亲代细胞的一半"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 2 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

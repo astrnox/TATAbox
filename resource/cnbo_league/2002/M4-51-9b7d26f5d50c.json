@@ -1,0 +1,44 @@
+{
+ "id": "M4-51-9b7d26f5d50c",
+ "type": "single",
+ "question": "果蝇中隐性基因a、b 和c 是性连锁的。两个亲本杂交产生的F1 是++ +/abc 和abc/Y。若将这两个F1 个体杂交，则正确的结果是：",
+ "options": {
+  "A": "交换值不能根据产生的F2 估算",
+  "B": "仅按F2 中的雄果蝇就可以测定交换值",
+  "C": "可以按产生的所有子代估计交换值",
+  "D": "等位基因a 和b 在雌性F1 是反式排列的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 51 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

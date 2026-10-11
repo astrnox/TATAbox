@@ -1,0 +1,44 @@
+{
+ "id": "M1-04-c97280de7e64",
+ "type": "single",
+ "question": "形成蒴果的雌蕊具有的胎座类型是：",
+ "options": {
+  "A": "边缘胎座、中轴胎座与特立中央胎座",
+  "B": "顶生胎座、侧膜胎座与特立中央胎座",
+  "C": "中轴胎座、特立中央胎座与侧膜胎座",
+  "D": "边缘胎座、侧膜胎座与基生胎座"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 4 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-28-50c07d95b0d7",
+ "type": "single",
+ "question": "有关被子植物花的叙述，下列哪一个是错误的",
+ "options": {
+  "A": "花是适应于繁殖功能的变态短枝",
+  "B": "花托、花萼和花冠被认为是叶的变态",
+  "C": "雄蕊和雌蕊也被认为是叶的变态",
+  "D": "花托、花被、雄蕊和雌蕊均有茎的顶端分生组织产生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 28 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

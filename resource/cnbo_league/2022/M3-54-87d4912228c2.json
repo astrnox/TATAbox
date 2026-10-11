@@ -1,0 +1,44 @@
+{
+ "id": "M3-54-87d4912228c2",
+ "type": "multiple",
+ "question": "以下关于鸟类双重呼吸的说法错误的有：",
+ "options": {
+  "A": "一次吸入的空气两次经过肺部，保障充分的气体交换；",
+  "B": "一次吸入的空气两次进入气囊，保证气体贮存；",
+  "C": "鸟类呼气和吸气时均能在肺部进行气体交换；",
+  "D": "气囊和肺均能进行气体交换。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 54 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

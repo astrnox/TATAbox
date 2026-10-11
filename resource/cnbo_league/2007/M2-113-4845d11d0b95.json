@@ -1,0 +1,44 @@
+{
+ "id": "M2-113-4845d11d0b95",
+ "type": "mtf",
+ "question": "关于赤霉素的生理作用，以下描述中哪些项是正确的：",
+ "options": {
+  "A": "促进插条生根",
+  "B": "可部分代替低温和长日照的作用而诱导某些植物开花",
+  "C": "诱导α-淀粉酶形成",
+  "D": "促进果实成熟"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "113.A（×）B（√）C（√）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 113 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

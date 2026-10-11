@@ -1,0 +1,44 @@
+{
+ "id": "M1-110-fba2e6d3f444",
+ "type": "mtf",
+ "question": "碳水化合物被称为人体营养金字塔的塔基，是因为：",
+ "options": {
+  "A": "生命物质主体均为碳骨架",
+  "B": "葡萄糖是体内物质与能量代谢的直接供体",
+  "C": "葡萄糖是血红细胞能量来源的唯一供体",
+  "D": "葡萄糖是大脑正常供能的唯一供体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "110.A（×）B（√）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 110 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

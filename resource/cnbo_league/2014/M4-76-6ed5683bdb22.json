@@ -1,0 +1,44 @@
+{
+ "id": "M4-76-6ed5683bdb22",
+ "type": "single",
+ "question": "对用于生物学中evolution 一词的正确理解为",
+ "options": {
+  "A": "生物不断完善和进步的过程",
+  "B": "生物拥有的一种自我完善的愿望",
+  "C": "生物世代之间发生的可以遗传的变化",
+  "D": "生物从简单到复杂、从低等到高等的发展过程"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 76 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M3-63-e7f3f25cc076",
+ "type": "multiple",
+ "question": "对一种群居狐猴的研究发现，群体中只有少数个体可以进行繁殖，而没有机会进行繁殖的个体，当年可以帮助照顾新生的幼仔。将不参与繁殖的个体年龄（age）分成4 个段，幼年（Juv）、少年（SubAd）、青年（Year）和成年（Adult）。记录它们在群内帮助照顾新生幼仔的比例如下图，纵坐标是参与照顾幼仔的时间比例，females：雌性，males：雄性。根据下图，以下表述正确的有哪些",
+ "options": {
+  "A": "雌性比雄性帮助者花费更多时间照顾新生幼仔；",
+  "B": "在整体趋势上年龄大的个体比年龄小的个体提供更多的帮助；",
+  "C": "成年帮助者提供照顾显著高于青年帮助者提供的照顾；",
+  "D": "幼年个体提供更多帮助"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 63 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-63-e7f3f25cc076/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 253,
+  "bbox": [
+   203.0,
+   493.5,
+   392.3,
+   664.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-63-e7f3f25cc076/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 253,
+   "bbox": [
+    203.0,
+    493.5,
+    392.3,
+    664.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

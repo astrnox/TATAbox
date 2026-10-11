@@ -1,0 +1,44 @@
+{
+ "id": "M2-69-dac4197d0970",
+ "type": "single",
+ "question": "有下列4 种蔷薇科植物的果实，进一步观察做出子房上下位和所属亚科的判断，哪一个出现了失误",
+ "options": {
+  "A": "珍珠梅——蓇葖果——子房上位——绣线菊亚科",
+  "B": "草莓——瘦果——子房下位——蔷薇亚科",
+  "C": "桃——核果——子房上位——李亚科",
+  "D": "月季——瘦果——子房上位——蔷薇亚科"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 69 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

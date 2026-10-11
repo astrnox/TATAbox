@@ -1,0 +1,44 @@
+{
+ "id": "M3-44-a020c18648c8",
+ "type": "single",
+ "question": "在动物行为学研究中，严格定义行为类型是研究工作的基础。现有一只在黑暗中完全不动的昆虫，当受到微弱光刺激时便开始微动，光强度逐渐增加并达到一定阈值时，昆虫便活跃起来，光强度进一步增加，昆虫的活动性也随之增加，当光强度达到上限阈值时，昆虫活动便停止。这一行为可以严格定义为",
+ "options": {
+  "A": "反射",
+  "B": "趋性",
+  "C": "动性",
+  "D": "趋光性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 44 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

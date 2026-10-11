@@ -1,0 +1,76 @@
+{
+ "id": "M4-57-2a3855d32d5f",
+ "type": "mtf",
+ "question": "为研究黑腹果蝇基因A 的功能，研究者利用P 元件转座，将一个包含GAL4 基因、GFP 报告基因及 FRT 位点的突变元件插入到基因A 的外显子2 中（结构如图所示，图例Poly A 即多聚腺苷酸化信号）。该策略旨在结合UAS-GAL4 和FRT-FLP 系统进行后续分析。对以下关于该基因修饰及其应用的陈述进行正误判断：",
+ "options": {
+  "A": "该突变元件插入外显子2 的主要影响是直接阻断基因A 启动子的转录起始活性",
+  "B": "该元件中包含的GFP 基因可作为分子标记，用于初步筛选携带此插入突变的果蝇个体",
+  "C": "若与表达FLP 重组酶的果蝇品系杂交，可在子代特定细胞中通过FRT 位点介导的重组移除GFP 基因",
+  "D": "该设计通过将GFP 序列插入外显子2，能够稳定表达基因A 蛋白与GFP 蛋白的融合蛋白"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 57 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-57-2a3855d32d5f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 10,
+  "bbox": [
+   289.7,
+   349.8,
+   547.6,
+   464.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-57-2a3855d32d5f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 10,
+   "bbox": [
+    289.7,
+    349.8,
+    547.6,
+    464.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-110-5d4fd8487bfd",
+ "type": "mtf",
+ "question": "关于克隆羊“多莉”诞生的科学意义，以下描述正确的是",
+ "options": {
+  "A": "“多莉”与生出它的母羊一模一样",
+  "B": "证明动物成体细胞的细胞核能够去分化",
+  "C": "证明动物已分化细胞需要经过重编程才能重现其全能性",
+  "D": "证明受精卵具有发育全能性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "B,C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 110 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

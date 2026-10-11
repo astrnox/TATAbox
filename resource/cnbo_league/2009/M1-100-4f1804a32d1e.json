@@ -1,0 +1,46 @@
+{
+ "id": "M1-100-4f1804a32d1e",
+ "type": "mtf",
+ "question": "下列关于生物膜的描述，哪些项是正确的？",
+ "options": {
+  "A": "磷脂分子是组成生物膜的基本结构成分",
+  "B": "膜蛋白是赋予生物膜功能的主要决定者",
+  "C": "膜蛋白在生物膜结构中起组织作用",
+  "D": "膜脂和膜蛋白在生物膜上的分布是不对称的",
+  "E": "膜蛋白是可以运动的，运动方式与膜脂的运动方式完全相同"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "100. A（√）B（√）C（ ）D（√）E（ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 100 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

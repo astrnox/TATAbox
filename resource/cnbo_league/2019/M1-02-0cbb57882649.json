@@ -1,0 +1,44 @@
+{
+ "id": "M1-02-0cbb57882649",
+ "type": "single",
+ "question": "构成生物体的细胞大小差异很大，大部分细胞直径10-100 微米，一般肉眼看不到，必须借助显微镜才能进行观察。但有些细胞则特别大，肉眼可见，下面哪些细胞需要用显微镜才能观察到",
+ "options": {
+  "A": "鸟类卵细胞",
+  "B": "棉花纤维",
+  "C": "苎麻茎的韧皮纤维细胞",
+  "D": "人的精细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 2 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

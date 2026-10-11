@@ -1,0 +1,44 @@
+{
+ "id": "M2-17-36a4707e524f",
+ "type": "single",
+ "question": "在较强光照强度下，降低CO2 浓度，下列作物中的哪两种光合速率下降的更快？答 (1)棉花 (2)玉米 (3)高梁 (4)小麦",
+ "options": {
+  "A": "(l)和(3)",
+  "B": "(1)和(4)",
+  "C": "(2)和(3)",
+  "D": "(2)和(4)"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 17 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

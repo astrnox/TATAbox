@@ -1,0 +1,44 @@
+{
+ "id": "M3-51-3562d54b16aa",
+ "type": "single",
+ "question": "在生产力的研究中，估计各个环节间的能量传递效率十分重要，下面相关说法中哪个是错误的？",
+ "options": {
+  "A": "入射到植物上而被光合作用利用的那部分光能，或被动物摄食的能量中被同化了的能量的比例，称为同化效率",
+  "B": "形成新生物量的生产能量占同化能量的百分比，称为生长效率",
+  "C": "某营养级所消费的能量占该营养级的净生产能量的百分比，称为消费效率",
+  "D": "n+1 营养级所获得的能量占n 营养级获得能量的比例，称为生态效率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 51 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

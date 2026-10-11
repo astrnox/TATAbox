@@ -1,0 +1,140 @@
+{
+ "id": "M4-92-16cca1dad3c5",
+ "type": "multiple",
+ "question": "所得突变体的羽化规律分别出现了如图所示的变化。由此可以得出：",
+ "options": {
+  "A": "正常果蝇会在光照的时间段达到羽化高峰期；",
+  "B": "和对照组相比，突变体1 的羽化周期变长；",
+  "C": "突变体2 的羽化已经不再受有无光照的影响；",
+  "D": "和对照组相比，突变体3 的羽化周期变短。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 92 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-92",
+  "stimulus": "黑腹果蝇具有明显的生物钟节律，如其羽化行为受到光照的影响，因此羽化可作为"
+ },
+ "image": {
+  "file": "assets/questions/M4-92-16cca1dad3c5/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 467,
+  "bbox": [
+   206.1,
+   220.2,
+   388.7,
+   310.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    206.1,
+    220.2,
+    388.7,
+    310.9
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    110.1,
+    484.9,
+    297.2,
+    596.5
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    297.6,
+    486.9,
+    484.7,
+    596.5
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig4.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    297.6,
+    596.5,
+    484.7,
+    725.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-92-16cca1dad3c5/fig5.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 467,
+   "bbox": [
+    110.1,
+    604.2,
+    297.2,
+    725.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

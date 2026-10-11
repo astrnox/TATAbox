@@ -1,0 +1,44 @@
+{
+ "id": "M2-51-281266ef2b96",
+ "type": "single",
+ "question": "关于拟南芥根端分生组织（RAM,root apicalmeristem）研究，下列叙述中错误的是：",
+ "options": {
+  "A": "RAM 由静止中心、围绕着静止中心的一圈干细胞和干细胞分裂的子细胞组成",
+  "B": "静止中心细胞决定周围的细胞具有干细胞的身份",
+  "C": "破坏静止中心的细胞，其下方的干细胞分裂形成新的静止中心",
+  "D": "干细胞通过不对称分裂保持自我更新和产生干细胞后裔"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 51 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

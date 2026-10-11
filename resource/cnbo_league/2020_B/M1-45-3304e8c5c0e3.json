@@ -1,0 +1,44 @@
+{
+ "id": "M1-45-3304e8c5c0e3",
+ "type": "multiple",
+ "question": "虾类有19 对附肢，下列有关描述中正确的有：",
+ "options": {
+  "A": "第2 触角比第1 触角长，长度可超过身体的2 倍；",
+  "B": "大颚由原肢特化而来，粗短而坚硬；",
+  "C": "步足5 对，有的末端呈钳状；",
+  "D": "腹肢内外肢均不分节。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 45 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

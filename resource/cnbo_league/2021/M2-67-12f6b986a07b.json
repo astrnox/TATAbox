@@ -1,0 +1,44 @@
+{
+ "id": "M2-67-12f6b986a07b",
+ "type": "multiple",
+ "question": "植物产生花蜜是为了吸引传粉者，但是花蜜和花粉可能被其他植食动物或肉食动物消耗。这样花蜜和花粉就成为了非传粉者的替代食物。下列关于替代食物的描述中，正确的是：",
+ "options": {
+  "A": "替代食物现象的出现单纯增加了植物的负担",
+  "B": "捕食者可利用替代食物作为诱饵进行捕食",
+  "C": "替代食物吸引捕食者，可以有效减少非传粉植食者的破坏，也可能有间接防御作用",
+  "D": "替代食物对植物的影响需综合评定，考虑消耗和收益的平衡"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 67 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

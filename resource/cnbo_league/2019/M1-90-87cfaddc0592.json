@@ -1,0 +1,46 @@
+{
+ "id": "M1-90-87cfaddc0592",
+ "type": "single",
+ "question": "后代染色体异常和母亲年龄关系最大，原因最可能是",
+ "options": {
+  "A": "女性细胞分裂时容易发生染色体异常，男性不容易",
+  "B": "女性卵子前体出生前即产生，常年没有细胞分裂，年龄大了状态不好",
+  "C": "男性染色体异常精子在受精竞争过程中被淘汰",
+  "D": "女性35 岁以后身体状况下降加速，导致染色体容易发生异常",
+  "E": "卵子需要较多营养，高龄产妇代谢相对不强"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 90 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

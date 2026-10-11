@@ -1,0 +1,44 @@
+{
+ "id": "M3-46-49a29ad25673",
+ "type": "single",
+ "question": "下列有关鲨鱼脑神经的描述中错误的是：",
+ "options": {
+  "A": "第IV 对为滑车神经，连接中脑和眼球，为混合神经；",
+  "B": "第VI 对为外展神经，连接延脑和眼球，为运动神经；",
+  "C": "第VII 对为面神经，分为3 支；",
+  "D": "第VIII 对为听神经，连接延脑和内耳，为感觉神经。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 46 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

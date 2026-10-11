@@ -1,0 +1,44 @@
+{
+ "id": "M1-42-6c716aca34a5",
+ "type": "single",
+ "question": "细胞内信息传递中，以下哪一项不能作为第二信使：",
+ "options": {
+  "A": "TPK",
+  "B": "cGMP",
+  "C": "钙离子",
+  "D": "1,4,5-肌醇三磷酸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 42 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

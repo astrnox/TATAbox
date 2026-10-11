@@ -1,0 +1,76 @@
+{
+ "id": "M3-73-69ac4831a86e",
+ "type": "single",
+ "question": "动物的昼夜活动节律作为一种复杂的生物学现象，是动物自身在长期的进化过程中对各种环境条件昼夜变化的综合性适应，其中包括对光、温度等非生物因素的适应，通过采用内置记录活动水平传感器的项圈研究了卧龙自然保护区3 只野生大熊猫春季取食竹笋期间的昼夜活动节律与光照强度之间的关系（如下图），从图中不能得出哪个结论：",
+ "options": {
+  "A": "光照强度在一定程度上影响大熊猫活动强度与节律",
+  "B": "温度与大熊猫的活动强度之间也存在相关性",
+  "C": "大熊猫在午夜前后还有行走、摄食等活动, 具有夜行性动物的特点",
+  "D": "光线较强的中午前后是大熊猫最主要的休息时段"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 73 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-73-69ac4831a86e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 256,
+  "bbox": [
+   158.1,
+   402.9,
+   436.7,
+   567.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-73-69ac4831a86e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 256,
+   "bbox": [
+    158.1,
+    402.9,
+    436.7,
+    567.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-77-39b09d9b4a2f",
+ "type": "single",
+ "question": "根据射线的细胞排列的形状，判断哪个是切向切面",
+ "options": {
+  "A": "多个射线细胞排成直线，多个直射线成放射状",
+  "B": "多个射线细胞排成纺锤型(或梭形)",
+  "C": "射线细胞为多列长方形，多个细胞横叠着颇似砖墙",
+  "D": "射线细胞无规律排列"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 77 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

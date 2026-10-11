@@ -1,0 +1,76 @@
+{
+ "id": "M4-58-c659b9a88e08",
+ "type": "single",
+ "question": "由于曲线依然呈上升趋势，所以无法估算该地区灯蛾的物种总数：",
+ "options": {
+  "A": "正确",
+  "B": "错误"
+ },
+ "answer": {
+  "A": false,
+  "B": true
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 58 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "58-61",
+  "stimulus": "下图所示是一项在巴西利用灯诱研究灯蛾科物种多样性的主要结果。横坐标是所"
+ },
+ "image": {
+  "file": "assets/questions/M4-58-c659b9a88e08/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 252,
+  "bbox": [
+   204.5,
+   545.0,
+   389.1,
+   691.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-58-c659b9a88e08/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 252,
+   "bbox": [
+    204.5,
+    545.0,
+    389.1,
+    691.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

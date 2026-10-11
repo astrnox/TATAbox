@@ -1,0 +1,44 @@
+{
+ "id": "M1-36-f847406d62b8",
+ "type": "single",
+ "question": "下面关于肾小管重吸收和分泌的叙述中，哪一项是错误的？",
+ "options": {
+  "A": "Na+既有主动重吸收，又有被动重吸收",
+  "B": "近曲小管重吸收能力最强",
+  "C": "葡萄糖、氨基酸等几乎被全部重吸收",
+  "D": "某些药物分子可被分泌到管腔中"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 36 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

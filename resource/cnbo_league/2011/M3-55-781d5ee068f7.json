@@ -1,0 +1,44 @@
+{
+ "id": "M3-55-781d5ee068f7",
+ "type": "single",
+ "question": "扁形动物是两侧对称，适于爬行的类群。下列哪种动物不属于扁形动物门？",
+ "options": {
+  "A": "布氏姜片虫",
+  "B": "日本血吸虫",
+  "C": "美洲钩虫",
+  "D": "平角涡虫"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 55 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

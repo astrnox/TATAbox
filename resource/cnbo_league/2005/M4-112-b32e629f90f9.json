@@ -1,0 +1,44 @@
+{
+ "id": "M4-112-b32e629f90f9",
+ "type": "mtf",
+ "question": "达尔文创立的以自然选择为核心的进化论给神创论以致命的打击，使进化论摆脱了神学的羁绊。达尔文进化思想的产生与下述哪些影响有关：",
+ "options": {
+  "A": "马尔萨斯的《人口论》",
+  "B": "赖尔的地质学进化原理",
+  "C": "孟德尔的遗传学原理",
+  "D": "环球旅行中观察到的动、植物化石"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "22.A（√）B（√）C（×）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "孟德尔遗传",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 22 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

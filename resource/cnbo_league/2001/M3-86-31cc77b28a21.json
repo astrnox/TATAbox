@@ -1,0 +1,44 @@
+{
+ "id": "M3-86-31cc77b28a21",
+ "type": "mtf",
+ "question": "判断下列关于鱼鳔叙述的正误。",
+ "options": {
+  "A": "鱼鳔是鱼类的沉浮器官，可以随时调节身体比重",
+  "B": "鱼鳔在发生上来自于消化器官",
+  "C": "所有有鳔类的鳔都有一根鳔管与消化管通连",
+  "D": "肺鱼可在夏眠时用鳔进行呼吸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "13．A（×）B（√）C（×）D（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 13 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

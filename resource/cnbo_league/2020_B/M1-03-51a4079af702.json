@@ -1,0 +1,44 @@
+{
+ "id": "M1-03-51a4079af702",
+ "type": "single",
+ "question": "关于RNA 酶，以下描述正确的是：",
+ "options": {
+  "A": "离体之后容易失活；",
+  "B": "二硫键影响其热稳定性；",
+  "C": "热稳定性主要受肽键影响；",
+  "D": "巴氏消毒法能使其失活。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 3 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-71-3c8dee262bd3",
+ "type": "single",
+ "question": "小明在公园见到一种常见植物，该植物正在开花，花冠4 裂，辐射对称，冠生2 枚雄蕊，这种植物最可能属于下列哪个科？",
+ "options": {
+  "A": "十字花科",
+  "B": "木犀科",
+  "C": "唇形科",
+  "D": "木兰科"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 71 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

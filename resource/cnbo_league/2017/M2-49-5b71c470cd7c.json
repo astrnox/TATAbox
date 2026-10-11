@@ -1,0 +1,44 @@
+{
+ "id": "M2-49-5b71c470cd7c",
+ "type": "single",
+ "question": "从竹笋节间的基部取材，制作横切永久制片，在显微镜下可以观察到的结构是：",
+ "options": {
+  "A": "原表皮、皮层、维管束",
+  "B": "表皮、基本分生组织、维管束",
+  "C": "原表皮、基本组织、原形成层",
+  "D": "原表皮、基本分生组织、原形成层"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 49 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

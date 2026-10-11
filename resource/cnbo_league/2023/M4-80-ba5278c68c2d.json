@@ -1,0 +1,48 @@
+{
+ "id": "M4-80-ba5278c68c2d",
+ "type": "single",
+ "question": "研究人员为筛选X 染色体上的突变，对XY 雄蝇进行了诱变处理，随后将其与未经诱变处理的X-XY 雌蝇相交。（X-XY 雌蝇中两条X 染色体相连，减数分裂时两条X 染色体会进入同一个配子；X-XY 果蝇通常会产生包含X-X 或Y 的两种配子。）在得到的子一代果蝇中，为进一步追踪经诱变处理后可能包含突变的X 染色体，应重点关注子一代中的：",
+ "options": {
+  "A": "雄蝇",
+  "B": "雌蝇",
+  "C": "A 和B 都对",
+  "D": "无法判断"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 80 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "80-81",
+  "stimulus": "组题题干：在人的性别决定中，Y 染色体上SRY 基因的存在是个体发育为男性的必"
+ }
+}

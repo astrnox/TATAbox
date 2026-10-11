@@ -1,0 +1,44 @@
+{
+ "id": "M4-108-51a0f9e5da28",
+ "type": "multiple",
+ "question": "可以根据人类ABO 血型系统的遗传规律帮助判断亲子关系。若父母一方为A 型，另一方为B 型，则子女可能的血型为：",
+ "options": {
+  "A": "A 型",
+  "B": "B 型",
+  "C": "O 型",
+  "D": "AB 型"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 108 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

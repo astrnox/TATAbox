@@ -1,0 +1,44 @@
+{
+ "id": "M3-79-35de359a4d30",
+ "type": "single",
+ "question": "瑙鲁是位于太平洋中部的小岛国，全岛约70%的面积由鸟粪形成的磷酸盐矿所覆盖，出口鸟粪一度成为该国的主要经济来源。下列关于鸟粪中磷酸盐可能的来源和去向判断，不正确的是",
+ "options": {
+  "A": "鸟粪中的磷酸盐可能来自大气",
+  "B": "鸟粪中的磷酸盐可能来自岩石的侵蚀",
+  "C": "鸟粪中的磷酸盐可能进入人体循环",
+  "D": "鸟粪中的磷酸盐可能沉积在深海"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 79 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

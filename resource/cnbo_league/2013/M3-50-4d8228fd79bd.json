@@ -1,0 +1,44 @@
+{
+ "id": "M3-50-4d8228fd79bd",
+ "type": "single",
+ "question": "科学家经过对土壤的检测，发现某块地中营养物质对于某种作物的产量的作用，其中氮可维持400kg 产量，钾可维持270kg 产量，磷可维持550kg 产量，则实际产量一般会在",
+ "options": {
+  "A": "400kg 左右",
+  "B": "270kg 左右",
+  "C": "550kg 左右",
+  "D": "1620kg 左右"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 50 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

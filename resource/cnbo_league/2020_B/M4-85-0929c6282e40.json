@@ -1,0 +1,82 @@
+{
+ "id": "M4-85-0929c6282e40",
+ "type": "single",
+ "question": "III-2 生的第一个儿子患有血友病的概率是：（2 分）",
+ "options": {
+  "A": "0",
+  "B": "1/36",
+  "C": "1/9",
+  "D": "1/4",
+  "E": "难以确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 85 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "四. 遗传学、进化生物学、生物系统学 27 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "85-86",
+  "stimulus": "如图是一个血友病患者的家系图，箭头所示为先证者。"
+ },
+ "image": {
+  "file": "assets/questions/M4-85-0929c6282e40/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 378,
+  "bbox": [
+   185.8,
+   151.4,
+   409.5,
+   273.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-85-0929c6282e40/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 378,
+   "bbox": [
+    185.8,
+    151.4,
+    409.5,
+    273.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

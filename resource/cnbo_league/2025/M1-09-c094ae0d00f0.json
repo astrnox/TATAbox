@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-c094ae0d00f0",
+ "type": "mtf",
+ "question": "溶酶体膜结构的完整性对于溶酶体功能至关重要。对以下溶酶体膜结构特性的相关描述进行正误判断：",
+ "options": {
+  "A": "溶酶体膜含有质子泵，能利用水解ATP 产生的能量将H+泵入溶酶体，使其H+浓度比细胞质中高出数倍甚至百倍，以形成和维持酸性的内环境",
+  "B": "溶酶体膜上的膜脂几乎不具有流动性，有利于维持溶酶体内部的酸性环境",
+  "C": "溶酶体膜蛋白高度糖基化，有利于维持膜蛋白的稳定",
+  "D": "溶酶体的双层膜结构能更有效地将其内部酸性环境与细胞质环境进行隔离"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 9 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

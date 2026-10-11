@@ -1,0 +1,48 @@
+{
+ "id": "M3-77-c00b4f1d7769",
+ "type": "single",
+ "question": "钠钾泵活动所产生的净跨膜离子流会影响静息电位，这个过程产生的静息电位变化的绝对值约为：",
+ "options": {
+  "A": "0mV",
+  "B": "5mV",
+  "C": "25mV",
+  "D": "50mV"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 77 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "76-77",
+  "stimulus": "可兴奋细胞内外的离子浓度差是产生静息电位的原因，某实验的细胞外液中K+浓度"
+ }
+}

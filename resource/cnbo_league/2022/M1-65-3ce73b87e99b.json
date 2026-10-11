@@ -1,0 +1,44 @@
+{
+ "id": "M1-65-3ce73b87e99b",
+ "type": "multiple",
+ "question": "海绵动物的发育过程会经历逆转过程，下列有关钙质海绵发育的说法中正确的有：",
+ "options": {
+  "A": "囊胚形成初期，动物极小细胞向囊胚腔内生有鞭毛；",
+  "B": "囊胚会发生内外翻转，形成外侧有鞭毛的两囊幼虫；",
+  "C": "两囊幼虫流出母体后继续发育，植物极大细胞内陷形成内层细胞；",
+  "D": "细胞内陷的开口形成后来的出水口，与出水口相对的一端固着。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 65 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-92-ac4313b75789",
+ "type": "single",
+ "question": "一株生长旺盛的老树，可以在生长季节形成叶，正常情况下叶的发生时____活动产生的？",
+ "options": {
+  "A": "维管形成层",
+  "B": "茎尖顶端分生组织",
+  "C": "根尖顶端分生组织",
+  "D": "木栓形成层"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 92 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-58-f5df7b999c5d",
+ "type": "single",
+ "question": "下列有关动物细胞中ATP 合成的说法哪一个正确？",
+ "options": {
+  "A": "ATP 都是在线粒体中合成",
+  "B": "ATP 在线粒体和细胞质中都可以合成",
+  "C": "ATP 在细胞质中合成",
+  "D": "ATP 在高尔基体中合成"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 58 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

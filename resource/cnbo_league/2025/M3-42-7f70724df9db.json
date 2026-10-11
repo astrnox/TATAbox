@@ -1,0 +1,44 @@
+{
+ "id": "M3-42-7f70724df9db",
+ "type": "mtf",
+ "question": "某人进行了葡萄糖耐受测试，结果显示他的血糖水平增高，并且高于肾的最大转运极限，据此对以下陈述进行正误判断：",
+ "options": {
+  "A": "肾对葡萄糖的排出率与滤过率相等",
+  "B": "肾对葡萄糖的重吸收率与滤过率相等",
+  "C": "肾对葡萄糖的排出率随血糖水平的增高而增大",
+  "D": "肾静脉与肾动脉的血浆葡萄糖浓度相等"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 42 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

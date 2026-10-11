@@ -1,0 +1,48 @@
+{
+ "id": "M4-82-330ef1249f09",
+ "type": "multiple",
+ "question": "在人群中，很偶然地会发现血型均表现为O 型的父母，其亲生子女的血型表现为A 型或B 型。以下可能造成这种现象的父母基因型组合是：",
+ "options": {
+  "A": "iiHh 和iiHh",
+  "B": "IAIAhh 和iiHH",
+  "C": "iiHh 和IBihh",
+  "D": "IAIBhh 和iihh"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 82 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "82-83",
+  "stimulus": "组题题干：在人的ABO 血型决定中，IA 和IB 等位基因的存在，分别会在红细胞表面"
+ }
+}

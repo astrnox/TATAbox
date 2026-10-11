@@ -1,0 +1,44 @@
+{
+ "id": "M4-83-a15eb30ed85e",
+ "type": "mtf",
+ "question": "判断下列说法的正误。",
+ "options": {
+  "A": "海绵通过水沟系获得食物、氧气并排出废物",
+  "B": "河蚌通过水流系统只能完成呼吸和摄食两项功能",
+  "C": "海星主要通过水管系统完成呼吸和排泄",
+  "D": "水母通过口、胃壁和辐管及环管完成消化循环过程"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "10．A（√）B（×）C（×）D（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 10 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

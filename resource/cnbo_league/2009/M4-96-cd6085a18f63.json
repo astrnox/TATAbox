@@ -1,0 +1,44 @@
+{
+ "id": "M4-96-cd6085a18f63",
+ "type": "mtf",
+ "question": "当某基因位点有突变影响一个二倍体群体的遗传结构时，达到遗传平衡状态时，群体的等位基因频率与以下哪些因素相关？",
+ "options": {
+  "A": "初始频率",
+  "B": "正突变率",
+  "C": "逆突变率",
+  "D": "杂合度"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "96.A（ ）B（√）C（√）D（ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 96 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

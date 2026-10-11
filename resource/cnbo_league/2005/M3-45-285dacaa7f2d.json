@@ -1,0 +1,44 @@
+{
+ "id": "M3-45-285dacaa7f2d",
+ "type": "single",
+ "question": "棉红蜘蛛是我国重要的农业害虫之一，危害许多作物、果树和森林，尤其是对棉花，可使树木生病、死亡或者使作物减产。关于棉红蜘蛛，以下说法正确的是：",
+ "options": {
+  "A": "棉红蜘蛛实际上不是蜘蛛．它是一些蛾子的幼虫",
+  "B": "棉红蜘蛛实际上不是蜘蛛．在分类阶元上．它与蝎子的关系较与蜈蚣的关系近",
+  "C": "棉红蜘蛛身体前端的头部主要由附肢组成．只有眼而无脑．称之为“假头”",
+  "D": "棉红蜘蛛也常常吸食一些鸟类或哺乳动物的血液"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 45 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

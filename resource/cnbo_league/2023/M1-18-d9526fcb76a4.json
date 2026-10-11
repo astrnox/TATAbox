@@ -1,0 +1,76 @@
+{
+ "id": "M1-18-d9526fcb76a4",
+ "type": "single",
+ "question": "CL31 是一种新型减肥药，为了研究该药物作用机制，某生物学习小组利用体外培养的小鼠脂肪细胞进行了实验，结果如图所示（各组对应的处理方式标注于条形图下方。）下列有关说法哪个是错误的？",
+ "options": {
+  "A": "本实验的组1 和组2 为对照组，组3 和组4 为实验组",
+  "B": "小鼠脂肪细胞存在肾上腺素受体，使其对肾上腺素产生响应",
+  "C": "组3 和组4 的结果证明CL31 可以阻断肾上腺素与受体的结合",
+  "D": "CL31 具有肾上腺素样作用，通过增强脂肪细胞的分解代谢达到减肥的目的"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 18 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-18-d9526fcb76a4/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 435,
+  "bbox": [
+   214.4,
+   300.4,
+   380.6,
+   467.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-18-d9526fcb76a4/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 435,
+   "bbox": [
+    214.4,
+    300.4,
+    380.6,
+    467.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M4-47-5b50b2d20cd2",
+ "type": "single",
+ "question": "下面的家系是人类一种严重的遗传疾病（如图）。通过分析该病的遗传方式，若图中X 个体与Y 个体婚配，那么第一个孩子患这种遗传病的概率是多少？",
+ "options": {
+  "A": "1/2",
+  "B": "1/4",
+  "C": "3/4",
+  "D": "无法确定"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 47 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-47-5b50b2d20cd2/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 89,
+  "bbox": [
+   90.0,
+   576.1,
+   504.8,
+   706.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-47-5b50b2d20cd2/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 89,
+   "bbox": [
+    90.0,
+    576.1,
+    504.8,
+    706.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

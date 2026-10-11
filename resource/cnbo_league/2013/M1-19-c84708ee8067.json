@@ -1,0 +1,44 @@
+{
+ "id": "M1-19-c84708ee8067",
+ "type": "single",
+ "question": "在大肠杆菌溶原性细胞中，原噬菌体以______状态存在于宿主细胞内。",
+ "options": {
+  "A": "游离于细胞质",
+  "B": "缺陷噬菌体",
+  "C": "插入寄住染色体",
+  "D": "游离在周质空间"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 19 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

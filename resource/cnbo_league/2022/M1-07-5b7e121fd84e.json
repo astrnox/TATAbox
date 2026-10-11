@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-5b7e121fd84e",
+ "type": "single",
+ "question": "临床研究发现谷氨酰胺对肝硬化患者肝功能具有保护作用，对此的解释合理的是：",
+ "options": {
+  "A": "谷氨酰胺在谷氨酰胺酶的作用下，其产物与尿素循环中的鸟氨酸结合；",
+  "B": "谷氨酰胺在谷氨酰胺酶的作用下，其产物与尿素循环中的瓜氨酸结合；",
+  "C": "患者体内谷氨酰胺合成酶活性增加；",
+  "D": "患者体内谷氨酰胺酶活性增加。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 7 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

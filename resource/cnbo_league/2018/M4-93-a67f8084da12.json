@@ -1,0 +1,44 @@
+{
+ "id": "M4-93-a67f8084da12",
+ "type": "single",
+ "question": "请选择关于遗传漂变的错误说法：",
+ "options": {
+  "A": "认为DNA 突变在群体中的频率主要受随机因素影响，自然选择不起主要作用",
+  "B": "种群的生物个体的数量越少，种群中基因就越容易发生遗传漂变",
+  "C": "奠基者效应主要通过遗传漂变来实现的",
+  "D": "能够增加群体的遗传多样性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "群体遗传",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 93 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

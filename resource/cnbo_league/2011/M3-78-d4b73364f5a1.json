@@ -1,0 +1,44 @@
+{
+ "id": "M3-78-d4b73364f5a1",
+ "type": "single",
+ "question": "如果有境外有害生物流入境内，下列有关其以后命运的说法不正确的是：",
+ "options": {
+  "A": "境内一般会缺少其天敌",
+  "B": "对境内生物多样性造成威胁",
+  "C": "都不适应新环境，很快灭亡",
+  "D": "在相当长一段时间内，有害生物种群数量将呈指数性增长"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 78 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

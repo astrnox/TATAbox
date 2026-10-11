@@ -1,0 +1,44 @@
+{
+ "id": "M3-44-b60037783a90",
+ "type": "single",
+ "question": "当蟾蜍离体腓肠肌标本受到适当的连续电刺激时，当刺激的时间间隔大于肌肉单收缩的收缩期，而小于其舒张期，则肌肉发生：",
+ "options": {
+  "A": "一次单收缩",
+  "B": "一串单收缩",
+  "C": "不完全强直收缩",
+  "D": "完全强直收缩"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 44 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

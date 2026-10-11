@@ -1,0 +1,44 @@
+{
+ "id": "M3-85-7f95d56a9499",
+ "type": "multiple",
+ "question": "夏季是青海湖鸟岛上鸬鹚的繁殖季节，这时的鸟巢密集而均匀分布，那么与维持鸟巢的密集而均匀分布有关的行为有哪些：",
+ "options": {
+  "A": "领域行为",
+  "B": "育幼行为",
+  "C": "攻击行为",
+  "D": "休息行为"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 85 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

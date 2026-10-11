@@ -1,0 +1,44 @@
+{
+ "id": "M1-108-d443276f6954",
+ "type": "multiple",
+ "question": "指出下列正确叙述植物减数分裂的是",
+ "options": {
+  "A": "石纯的孢子体进行减数分裂",
+  "B": "水绵的合子进行减数分裂",
+  "C": "海松减数分裂直接产生配子",
+  "D": "葫芦藓减数分裂产生配子"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 8 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "二、多项选择题(每小题2 分，答案完全正确才能得分，共16 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

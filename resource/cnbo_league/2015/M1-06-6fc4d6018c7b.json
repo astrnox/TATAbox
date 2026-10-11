@@ -1,0 +1,44 @@
+{
+ "id": "M1-06-6fc4d6018c7b",
+ "type": "single",
+ "question": "受体是细胞膜上或细胞内能识别生物活性分子并与之结合的物质，能与受体结合的生物活性物质统称为配体。下列有关受体的描述中，不正确的是：",
+ "options": {
+  "A": "一般为糖蛋白",
+  "B": "与配体的结合具有特异性和亲和性",
+  "C": "通过共价键与配体结合",
+  "D": "具有饱和效应"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 6 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

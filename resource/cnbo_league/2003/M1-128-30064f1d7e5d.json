@@ -1,0 +1,44 @@
+{
+ "id": "M1-128-30064f1d7e5d",
+ "type": "mtf",
+ "question": "人体下列生理活动中，需要消耗能量的是：",
+ "options": {
+  "A": "小肠绒毛上皮细胞吸收K+、Na+",
+  "B": "葡萄糖由肾小球过滤到肾小囊腔内",
+  "C": "肾小管对葡萄糖的重吸收",
+  "D": "小肠绒毛上皮细胞吸收氨基酸、葡萄糖"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "13.A（ √ ）B（ X ）C（ √ ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 13 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-03-e587f0b43a0e",
+ "type": "single",
+ "question": "干细胞是一种能够不断自我更新的细胞类群，在特定条件下能够发生定向分化，产生一种或多种类型的子代细胞。如果将从一个小鼠胚胎中分离得到的一个细胞进行离体培养后，此细胞在培养皿中能够自主分化为心肌细胞，那么将这个细胞移植到小肠上皮组织后，会出现下列哪种现象？",
+ "options": {
+  "A": "此细胞会分化为心肌细胞",
+  "B": "此细胞会分化为小肠上皮细胞",
+  "C": "此细胞不会发生分化",
+  "D": "无法确定"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 3 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

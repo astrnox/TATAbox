@@ -1,0 +1,44 @@
+{
+ "id": "M1-68-350d854b50e4",
+ "type": "single",
+ "question": "糖蛋白和糖脂中的寡糖链，序列多变，结构信息丰富，甚至超过核酸和蛋白质。糖蛋白质中寡糖链的还原端残基与多肽链氨基酸残基之间的连接方式主要为",
+ "options": {
+  "A": "N-糖肽键",
+  "B": "O-糖肽键",
+  "C": "S-糖肽键",
+  "D": "C-糖肽键"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 68 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

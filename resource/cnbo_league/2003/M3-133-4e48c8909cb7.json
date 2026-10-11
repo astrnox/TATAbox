@@ -1,0 +1,76 @@
+{
+ "id": "M3-133-4e48c8909cb7",
+ "type": "mtf",
+ "question": "某地人口普查得到年龄结构如下图，由图反映出：",
+ "options": {
+  "A": "该地区人口数量将下降",
+  "B": "该地区人口数量将增加",
+  "C": "人口种群的性比约等于1",
+  "D": "可以断定30 年后该地区将进入老龄社会"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "18.A（ × ）B（ √ ）C（ √ ） D（ × ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 18 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-133-4e48c8909cb7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 44,
+  "bbox": [
+   130.4,
+   259.2,
+   464.1,
+   477.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-133-4e48c8909cb7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 44,
+   "bbox": [
+    130.4,
+    259.2,
+    464.1,
+    477.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-89-9b9cbe29c847",
+ "type": "multiple",
+ "question": "在研究蛋白质功能时，常需要知道所研究蛋白在细胞中的定位，比如目的蛋白是否定位于细胞核、细胞质、线粒体等，可以用哪些方法来确定。",
+ "options": {
+  "A": "免疫荧光标记",
+  "B": "GFP 标记",
+  "C": "原位杂交",
+  "D": "免疫电镜"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 89 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

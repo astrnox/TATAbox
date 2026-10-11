@@ -1,0 +1,40 @@
+{
+ "id": "M1-59-fd4b3c17a2d3",
+ "type": "single",
+ "question": "无毒的拟斑蝶外观酷似色彩鲜艳、身体有毒的王斑蝶，这一现象属于：",
+ "options": {
+  "A": "贝茨拟态",
+  "B": "缪勒拟态",
+  "C": "警戒色",
+  "D": "保护色"
+ },
+ "answer": null,
+ "answer_key": "AC",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 59 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "官方标答为多字母（AC），与原卷单选标注矛盾，待人工裁定"
+}

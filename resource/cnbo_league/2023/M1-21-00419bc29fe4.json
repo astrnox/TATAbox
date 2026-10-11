@@ -1,0 +1,46 @@
+{
+ "id": "M1-21-00419bc29fe4",
+ "type": "multiple",
+ "question": "苍术苷是一种有毒的植物糖苷，能专一地抑制ADP/ATP 转运载体。当用苍术苷处理呼吸活跃的细胞时，下列哪些现象将会发生？",
+ "options": {
+  "A": "线粒体基质中的ATP/ADP 比值保持不变",
+  "B": "胞质中的ATP/ADP 比值显著下降",
+  "C": "呼吸作用将停止",
+  "D": "电子传递正常进行",
+  "E": "氧不能被还原生成水"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 21 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

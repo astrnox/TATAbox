@@ -1,0 +1,44 @@
+{
+ "id": "M1-16-cc7d7cba2d37",
+ "type": "single",
+ "question": "离子通道一般都具有选择性，K+通道允许：",
+ "options": {
+  "A": "K+通过，Na+、Ca2+不通过",
+  "B": "K+、Na+通过，Ca2+不通过",
+  "C": "K+、Ca2+通过，N+不通过",
+  "D": "K+、Na+、Ca2+通过，Cl-不通过；"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 16 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

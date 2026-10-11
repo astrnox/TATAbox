@@ -1,0 +1,44 @@
+{
+ "id": "M1-32-db6680f3318d",
+ "type": "single",
+ "question": "促进气孔打开的主要因素是：",
+ "options": {
+  "A": "保卫细胞外高渗；",
+  "B": "保卫细胞外高水势；",
+  "C": "K+和阴离子流出保卫细胞；",
+  "D": "保卫细胞蔗糖合成减少。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 32 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-80-f8df338e9ece",
+ "type": "single",
+ "question": "以下关于生态位的术语哪个是不正确的：",
+ "options": {
+  "A": "生物在生物群落中的地位和作用",
+  "B": "用来表示栖息地再划分的空间单位",
+  "C": "是一个多维的超体积空间",
+  "D": "是一组生物所占有的环境"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 80 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M2-56-86f63511dec6",
+ "type": "multiple",
+ "question": "病原微生物可以侵染植物造成病害。病原细菌是一类常见的植物病原微生物，侵染植物后可以抑制植物免疫反应，帮助病原菌繁殖和扩散。下列对病原细菌致病机理的描述中，正确的是：",
+ "options": {
+  "A": "病原细菌可以进入到植物细胞内抑制植物免疫反应",
+  "B": "病原细菌可以分泌毒性蛋白到植物细胞内抑制植物免疫反应",
+  "C": "病原细菌可以分泌毒性蛋白到外质体中抑制植物免疫反应",
+  "D": "病原细菌可以将DNA 片段转移到植物细胞内使植物致病",
+  "E": "病原细菌可以分泌 microRNA 到植物细胞内抑制植物免疫反应"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 56 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

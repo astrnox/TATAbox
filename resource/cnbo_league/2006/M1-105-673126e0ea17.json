@@ -1,0 +1,44 @@
+{
+ "id": "M1-105-673126e0ea17",
+ "type": "mtf",
+ "question": "以下哪些是错误的 .",
+ "options": {
+  "A": "脊椎动物的胃液pH 1.5～2.5, 含胃蛋白酶,无脊椎动物胃蛋白酶存在碱性环境下",
+  "B": "脊椎动物的胃液pH3.5～4.5, 含胃蛋白酶,无脊椎动物胃蛋白酶存在酸性环境下",
+  "C": "脊椎动物的胃液pH 1.5～2.5, 哺乳动物含凝乳酶,无脊椎动物消化液中也存在凝乳酶",
+  "D": "脊椎动物的胃液pH3.5～4.5, 含凝乳酶，无脊椎动物没有凝乳酶"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 5 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

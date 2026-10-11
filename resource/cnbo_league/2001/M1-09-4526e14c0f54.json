@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-4526e14c0f54",
+ "type": "single",
+ "question": "某学生将2.5%的脲滴加在载玻片上的蚕豆表皮上，观察到植物细胞的质壁分离。2 小时后企图再次观察时却发现理想的视野找不到了。原因是＿答",
+ "options": {
+  "A": "错拿了对照样品",
+  "B": "时间过长，细胞壁也收缩了",
+  "C": "溶质颗粒被缓慢吸收，使水分再度进入细胞",
+  "D": "2 小时前观察到的现象是假象"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 9 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

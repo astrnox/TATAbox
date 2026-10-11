@@ -1,0 +1,44 @@
+{
+ "id": "M2-24-b411bb0e7fb6",
+ "type": "single",
+ "question": "超级细菌又称作多重耐药性细菌，近些年超级细菌的出现严重危害了人类健康。以下应对超级细菌策略描述中不正确的是：",
+ "options": {
+  "A": "积极开发噬菌体疗法应对超级细菌",
+  "B": "积极开发新的抗生素应对超级细菌",
+  "C": "合理使用抗生素，防止抗生素滥用",
+  "D": "积极开发对付超级细菌的干扰素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 24 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

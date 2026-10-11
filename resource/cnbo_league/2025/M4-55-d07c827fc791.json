@@ -1,0 +1,44 @@
+{
+ "id": "M4-55-d07c827fc791",
+ "type": "mtf",
+ "question": "长链非编码RNA (lncRNA) 可通过多种机制调节基因表达，并在多种生物学过程中发挥重要作用。对以下关于长链非编码RNA (lncRNA) 的陈述进行正误判断：",
+ "options": {
+  "A": "lncRNA 在细胞中主要作为信使RNA 发挥作用，指导蛋白质合成",
+  "B": "lncRNA 可以结合特定的蛋白质分子，这是其发挥调控作用的一种方式",
+  "C": "lncRNA 在细胞中的分布位置（如细胞核或细胞质）通常与其具体功能有",
+  "D": "所有的lncRNA 都通过与DNA 序列互补配对来抑制基因转录"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 55 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

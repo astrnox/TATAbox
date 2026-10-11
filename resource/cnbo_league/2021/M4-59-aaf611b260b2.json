@@ -1,0 +1,44 @@
+{
+ "id": "M4-59-aaf611b260b2",
+ "type": "multiple",
+ "question": "钾离子是植物所必须的矿质营养元素。钾离子从根系吸收的主要途径是通过通道蛋白 A，A 蛋白发挥功能需要B 蛋白的活化，B 在活化A 的过程中依赖于C1 蛋白或C2 蛋白的相互作用，C1 和C2 功能部分冗余，这些蛋白所对应的基因分别是A、B、C1 和C2，相关突变体植株表示为a、b、c1 和c2。当A 基因发生突变或被敲除后，植物表现出严重的缺钾症状。根据上述描述，下列关于其他突变体表型的预测中，正确的有：",
+ "options": {
+  "A": "突变体c1c2 转入C1 一个基因不能恢复表型",
+  "B": "双突变体c1c2 和突变体b 的表型类似",
+  "C": "双突变体c1c2 在缺钾条件下的缺素表型比c1 严重",
+  "D": "突变体b 在缺钾条件下的缺素表型比c1 严重"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 59 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

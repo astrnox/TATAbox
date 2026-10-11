@@ -1,0 +1,44 @@
+{
+ "id": "M1-03-28b2410c19bd",
+ "type": "single",
+ "question": "以下对高能键和高能化合物的理解错误的是：",
+ "options": {
+  "A": "键能是指断裂1 摩尔的化学键所需能量，键能越大说明化学键越不容易断裂；",
+  "B": "含有高能键的化合物称为高能化合物；",
+  "C": "高能磷酸键断裂吸收大量的能量；",
+  "D": "腺苷二磷酸(ADP)的分子结构比ATP 更稳定。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 3 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "M1-13-1fcad2d79690",
+ "type": "multiple",
+ "question": "在25℃下，S 期在2 小时时间点结束，那么Scc1 和Eco1 对细胞生存力的影响是",
+ "options": {
+  "A": "S 期结束以后，Scc1 是必需的，Eco1 不是",
+  "B": "S 期结束以后，Eco1 是必需的，Scc1 不是",
+  "C": "S 期结束以后，Eco1 和Scc1 都是必需的",
+  "D": "Eco1ts 突变体在完成S 期后从25℃转移至37℃以后仍然可以生长并增殖"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 13 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "12-15",
+  "stimulus": "Scc1，Scc3，Smc1 和Smc3 是酵母细胞中染色体粘连复合体的亚基，对于保持有丝"
+ },
+ "image": {
+  "file": "assets/questions/M1-13-1fcad2d79690/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 334,
+  "bbox": [
+   148.8,
+   376.2,
+   446.5,
+   532.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-13-1fcad2d79690/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 334,
+   "bbox": [
+    148.8,
+    376.2,
+    446.5,
+    532.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

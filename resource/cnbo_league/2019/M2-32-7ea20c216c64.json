@@ -1,0 +1,44 @@
+{
+ "id": "M2-32-7ea20c216c64",
+ "type": "single",
+ "question": "哺乳动物的淋巴系统极为发达，下列有关叙述，错误的是",
+ "options": {
+  "A": "组织液通过渗透方式进入先端为盲端的微淋巴管",
+  "B": "淋巴管内有瓣膜防止淋巴液逆流",
+  "C": "微淋巴管逐渐汇集为较大的淋巴管，最后主要经胸导管注入后腔静脉回心",
+  "D": "淋巴结遍布于淋巴系统的通路上，可过滤异物，并分泌淋巴细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 32 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

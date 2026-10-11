@@ -1,0 +1,44 @@
+{
+ "id": "M4-106-0654b5a96bf2",
+ "type": "single",
+ "question": "通常情况下构建基因树是重建物种间关系的必要途径。对于一群近缘物种的系统发生分析，通常需要使用变异速率较 的DNA 序列；对于高等级分类阶元上的若干类群，通常变异速率较 的DNA 序列能更准确的反映它们之间的谱系关系。",
+ "options": {
+  "A": "快，慢",
+  "B": "快，快",
+  "C": "慢，快",
+  "D": "慢，慢"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 106 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

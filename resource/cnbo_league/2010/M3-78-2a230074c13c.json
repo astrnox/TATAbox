@@ -1,0 +1,44 @@
+{
+ "id": "M3-78-2a230074c13c",
+ "type": "single",
+ "question": "某动物种群的年龄结构组成图的基部比较狭窄而顶部较宽，下列哪个特征是错误的",
+ "options": {
+  "A": "这是一个下降型的种群",
+  "B": "幼体比例较大，而老年个体比例较小",
+  "C": "种群的死亡率较大",
+  "D": "种群的出生率较小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 78 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

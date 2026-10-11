@@ -1,0 +1,44 @@
+{
+ "id": "M3-69-6dd16c9ad27f",
+ "type": "multiple",
+ "question": "以往我国许多粮食产区秋冬季作物收割后将秸秆焚烧，但出于降低环境污染等思考，今年南方许多地区稻田采取翻耕掩埋秸秆还田措施，但由于在操作过程中没能充分粉碎，且深翻耕掩埋腐化，导致很多水稻害虫虫卵和低龄幼虫存活大发生，如果后续采取大面积高强度的化学农药灭杀，以下结果可能出现的是：",
+ "options": {
+  "A": "该地区某些鸟类数量减少",
+  "B": "害虫彻底消灭",
+  "C": "抗药性害虫的比例增加",
+  "D": "稻田里的生物多样性降低"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 69 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "三、动物行为学、生态学（15 题19 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

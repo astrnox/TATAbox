@@ -1,0 +1,80 @@
+{
+ "id": "M1-12-434124439607",
+ "type": "mtf",
+ "question": "对以下陈述进行正误判断：",
+ "options": {
+  "A": "CHX 破坏了SPR1 蛋白的结构稳定性",
+  "B": "MG132 使得SPR1 蛋白的稳定性增强",
+  "C": "CHX 和MG132 的同时处理会协同增强SPR1 蛋白的稳定性",
+  "D": "SPR1 蛋白可以通过蛋白酶体依赖的途径发生降解"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 12 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "12-13",
+  "stimulus": "为了检测SPR1 蛋白的稳定性，分别使用环己亚胺（CHX）和/或 MG132 处理拟南芥幼苗16 小时"
+ },
+ "image": {
+  "file": "assets/questions/M1-12-434124439607/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   435.2,
+   374.6,
+   547.9,
+   485.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-12-434124439607/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    435.2,
+    374.6,
+    547.9,
+    485.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

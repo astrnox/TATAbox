@@ -1,0 +1,44 @@
+{
+ "id": "M1-15-d372bc2f66a6",
+ "type": "mtf",
+ "question": "p53 蛋白是防止癌症发生和发展的主要蛋白。研究发现超过半数的人类肿瘤中存在p53 基因的突变，故此恢复肿瘤细胞中p53 的功能常被作为一种癌症治疗的策略。对以下关于p53 的陈述进行正误判断：",
+ "options": {
+  "A": "p53 蛋白主要通过直接结合并降解癌蛋白来抑制肿瘤发生",
+  "B": "在正常细胞应激反应中，p53 蛋白水平升高可诱导细胞周期阻滞或细胞凋亡",
+  "C": "p53 基因的突变仅发生在编码DNA 结合域的外显子中",
+  "D": "MDM2 蛋白是一种泛素连接酶，主要功能是负调控p53 蛋白，在癌症中过表达可抑制肿瘤发生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 15 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

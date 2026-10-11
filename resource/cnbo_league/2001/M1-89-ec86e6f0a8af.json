@@ -1,0 +1,44 @@
+{
+ "id": "M1-89-ec86e6f0a8af",
+ "type": "mtf",
+ "question": "线粒体与叶绿体所具有的共同特征是：",
+ "options": {
+  "A": "双层膜围绕的细胞器",
+  "B": "可行氧化磷酸化反应合成ATP",
+  "C": "含有DNA",
+  "D": "可进行三羧酸循环反应"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "16．A（√）B（×）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 16 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

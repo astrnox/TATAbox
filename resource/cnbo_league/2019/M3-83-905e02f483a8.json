@@ -1,0 +1,76 @@
+{
+ "id": "M3-83-905e02f483a8",
+ "type": "single",
+ "question": "上图是两种不同的种群增长模式，N 表示种群数量，t 表示种群增长的时间，d 为微分符号，下列选项判断正确的是",
+ "options": {
+  "A": "左图是有资源限制的增长模式，右图是无资源限制的增长模式",
+  "B": "dN/dt 表示种群在一段时间中的增长量",
+  "C": "右图说明种群增长受到资源条件限制，抛物线的顶点是种群的最大增长率",
+  "D": "右图中，抛物线顶点左侧部分表示种群数量增长，顶点右侧部分表示种群数量下降"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 83 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-83-905e02f483a8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 323,
+  "bbox": [
+   171.5,
+   73.4,
+   423.8,
+   164.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-83-905e02f483a8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 323,
+   "bbox": [
+    171.5,
+    73.4,
+    423.8,
+    164.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

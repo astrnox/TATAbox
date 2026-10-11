@@ -1,0 +1,44 @@
+{
+ "id": "M3-55-523ffaa50308",
+ "type": "single",
+ "question": "鸟类部分骨骼愈合以形成稳定的身体结构，是对飞行的适应。下列说法正确的是：",
+ "options": {
+  "A": "最后一节颈椎与前五节胸椎愈合在一起；",
+  "B": "最后一节胸椎、6 节腰椎、1 节荐椎和约4 节尾椎愈合在一起；",
+  "C": "前肢全部的腕骨和掌骨愈合在一起；",
+  "D": "后肢胫骨与近心端的跗骨愈合在一起。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 55 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

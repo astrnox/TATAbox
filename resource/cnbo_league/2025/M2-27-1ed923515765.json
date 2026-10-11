@@ -1,0 +1,76 @@
+{
+ "id": "M2-27-1ed923515765",
+ "type": "mtf",
+ "question": "土壤中可溶性盐类（如Na+、Cl-等）含量过高时会对植物生长和发育造成严重危害。植物中转运钠离子的转运蛋白在维持离子稳态和耐盐性中起关键作用。如右图中所示，HKT2 是HKT（High-Affinity K+ Transporter）家族的一个亚型，参与K+和Na+的转运。Nax1 和Nax2 转运蛋白是植物中一类重要的钠离子转运蛋白，主要存在于某些植物（如小麦）中。盐胁迫条件下，当Nax1 和Nax2 转运蛋白水平或活性增高时，请对以下实验结果的描述进行正误判断：",
+ "options": {
+  "A": "运到叶片的钠离子的量减少",
+  "B": "从根到地上部的钠离子长距离运输效率下降",
+  "C": "钠离子在根系中积累的量减少",
+  "D": "钠离子在木质部周围的细胞中积累的量减少"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 27 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-27-1ed923515765/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 5,
+  "bbox": [
+   390.2,
+   85.5,
+   549.7,
+   254.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-27-1ed923515765/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 5,
+   "bbox": [
+    390.2,
+    85.5,
+    549.7,
+    254.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

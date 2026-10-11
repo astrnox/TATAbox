@@ -1,0 +1,46 @@
+{
+ "id": "M3-94-d871a35609a7",
+ "type": "mtf",
+ "question": "顺浓度差和电位差流动的离子有：",
+ "options": {
+  "A": "肠道中 Na+的吸收",
+  "B": "复极化初期的 K ＋",
+  "C": "肾小管对 Na+的重吸收",
+  "D": "超极化时的K+",
+  "E": "去极化时的Na+"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "21．A（×）B（√）C（×）D（×）E（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 21 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

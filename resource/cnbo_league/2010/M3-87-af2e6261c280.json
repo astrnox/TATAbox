@@ -1,0 +1,44 @@
+{
+ "id": "M3-87-af2e6261c280",
+ "type": "multiple",
+ "question": "家燕、欧洲燕和沙燕每年在古北区的西部和非洲之间进行迁徙，1972年R.E.Moreau 估计，每年秋天飞往非洲的家燕约为9000万只，欧洲燕约2.2亿只，沙燕约3.75亿只。这3种鸟的数量比非洲大陆上的31种不迁徙的燕子的总数还多。下列说法哪些是对的",
+ "options": {
+  "A": "这3种迁飞燕的祖先以前是在非洲大陆进行繁殖的",
+  "B": "在古北区的西部这3种燕所遇到的食物竞争者更少",
+  "C": "古北区的话部夏季白天较长，可以增加捕虫时间，这有利于其繁殖",
+  "D": "长距离的迁徙可以增强体质，提高繁殖成功率"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 87 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

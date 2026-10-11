@@ -1,0 +1,46 @@
+{
+ "id": "M4-110-8400340931c5",
+ "type": "mtf",
+ "question": "下面哪些生物的全基因组序列已经测定：",
+ "options": {
+  "A": "拟南芥",
+  "B": "水稻",
+  "C": "酵母",
+  "D": "小鼠",
+  "E": "人"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ABCDE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 10 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

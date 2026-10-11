@@ -1,0 +1,44 @@
+{
+ "id": "M1-17-898e2fc03a57",
+ "type": "multiple",
+ "question": "在脊椎动物发育过程中，一部分细胞会发生程序性细胞死亡。下面说法正确的有",
+ "options": {
+  "A": "程序性细胞死亡都是通过细胞凋亡的形式进行的，所以这两个概念是等同的",
+  "B": "凋亡是一种特殊的程序性死亡方式",
+  "C": "在凋亡过程中，细胞变得皱缩，质膜出泡，染色质凝集，而且常常会引起炎症反应",
+  "D": "凋亡细胞的形态学及生化特征是由效应caspases 作用于他们的底物而引起的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 17 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

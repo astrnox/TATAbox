@@ -1,0 +1,40 @@
+{
+ "id": "M3-57-b6719d2372f3",
+ "type": "single",
+ "question": "城市中喜鹊的巢与巢之间离得很近，远小于市郊野外种群的巢间距离，其可能的原因是：",
+ "options": {
+  "A": "合适的巢址分布密集",
+  "B": "食物充足",
+  "C": "利于繁殖",
+  "D": "喜鹊喜欢群居"
+ },
+ "answer": null,
+ "answer_key": "AB",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 57 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "官方标答为多字母（AB），与原卷单选标注矛盾，待人工裁定"
+}

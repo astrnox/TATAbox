@@ -1,0 +1,44 @@
+{
+ "id": "M1-31-31b6f2839f03",
+ "type": "single",
+ "question": "以腺上皮为主要组成成分的器官称为腺体。在人体中，外分泌腺的腺细胞有一种常见的分泌方式：分泌颗粒被界膜包围，释放时分泌颗粒的界膜与质膜融合，从而将分泌物排出，不损伤细胞的完整性。以上描述的是",
+ "options": {
+  "A": "全浆分泌",
+  "B": "局部分泌",
+  "C": "融合分泌",
+  "D": "无损分泌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 31 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

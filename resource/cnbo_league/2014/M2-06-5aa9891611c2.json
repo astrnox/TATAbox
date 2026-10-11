@@ -1,0 +1,44 @@
+{
+ "id": "M2-06-5aa9891611c2",
+ "type": "multiple",
+ "question": "以下有关光学显微镜和电子显微镜分辨率的描述，正确的是",
+ "options": {
+  "A": "光学显微镜的分辨率能达到1nm",
+  "B": "光学显微镜能观察到多数病毒",
+  "C": "电子显微镜的分辨率能达到0.1 nm",
+  "D": "电子显微镜能观察到蛋白和核酸分子"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 6 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-81-c39f4bd6c940",
+ "type": "multiple",
+ "question": "下列关于生态系统中能量流动的说法中错误的有哪些",
+ "options": {
+  "A": "生态系统中能量流动是单方向的和不可逆的",
+  "B": "能量在流动过程中会急剧减少，主要是因为每个营养级都会储存下不少能量",
+  "C": "生态系统能量流动的源头主要是太阳能",
+  "D": "如果断绝对一个生态系统的能量输入，这个生态系统就会立即消亡"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 81 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

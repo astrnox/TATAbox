@@ -1,0 +1,76 @@
+{
+ "id": "M3-88-21ac2ef8f83b",
+ "type": "multiple",
+ "question": "对照下图人口结构和模型拟合结果，指出下列推断中，哪些项正确：",
+ "options": {
+  "A": "从预测人口数随时间变动关系看该模型应是logistic 增长模型",
+  "B": "模型预测值与实际人口数间的缺口递增趋势暗示该模型是指数增长模型",
+  "C": "模型预测值与实际人口数间的缺口递增趋势表明计划生育有正反馈效应",
+  "D": "模型预测值和实际人口数间的缺口过大说明模型选择不当、预测精度不高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 88 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-88-21ac2ef8f83b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2017 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 276,
+  "bbox": [
+   199.8,
+   638.5,
+   395.5,
+   768.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-88-21ac2ef8f83b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2017 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 276,
+   "bbox": [
+    199.8,
+    638.5,
+    395.5,
+    768.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

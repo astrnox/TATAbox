@@ -1,0 +1,44 @@
+{
+ "id": "M3-84-86010aa3c0e7",
+ "type": "multiple",
+ "question": "杜鹃是巢寄生的高手，巢寄生成功的一个重要条件是杜鹃的幼鸟比寄主的幼鸟（比如，东方大苇莺）先破壳孵出。下列哪些策略可以保证杜鹃幼鸟比东方大苇莺的幼鸟先破壳孵出？",
+ "options": {
+  "A": "杜鹃幼鸟胚胎在其母体内先发育一段时间再将蛋产出",
+  "B": "杜鹃幼鸟胚胎比东方大苇莺的幼鸟胚胎大",
+  "C": "杜鹃幼鸟胚胎孵化过程中的发育速率快于东方大苇莺幼鸟胚胎发育速率",
+  "D": "杜鹃的卵外形与东方大苇莺的卵相似"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 84 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

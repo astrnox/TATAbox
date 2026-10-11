@@ -1,0 +1,76 @@
+{
+ "id": "M1-59-c7f2263ba6d3",
+ "type": "single",
+ "question": "将枪乌贼巨大轴突浸泡在海水中记录到的动作电位如下图中1 所示；当把海水换成 33%的海水加67%的葡萄糖的等渗溶液时，记录到的动作电位为2；把溶液换回海水时，记录到的动作电位为3。下列说法正确的是：",
+ "options": {
+  "A": "轴突的磷脂膜在33%海水加67% 葡萄糖溶液中受到损伤，导致动作电位的幅度变小；",
+  "B": "葡萄糖分子结合并抑制了轴突膜上的离子通道，使得内向电流变小，导致动作电位的幅度变小；",
+  "C": "轴突外氯离子浓度降低是影响动作电位的幅度的关键原因；",
+  "D": "轴突外钠离子浓度降低是影响动作电位的幅度的关键原因。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 59 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-59-c7f2263ba6d3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 370,
+  "bbox": [
+   194.1,
+   416.6,
+   400.4,
+   538.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-59-c7f2263ba6d3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 370,
+   "bbox": [
+    194.1,
+    416.6,
+    400.4,
+    538.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

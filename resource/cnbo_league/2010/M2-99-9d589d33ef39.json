@@ -1,0 +1,50 @@
+{
+ "id": "M2-99-9d589d33ef39",
+ "type": "multiple",
+ "question": "将题6所说的带红斑的白花植株自交，那么可能的表型有哪些：",
+ "options": {
+  "A": "后代都开纯白花",
+  "B": "少数后代开红花",
+  "C": "后代开的白花，大多数也带红斑",
+  "D": "后代只开粉红花和白花",
+  "E": "后代可能包含白花、粉红花和深红花等各种表型"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 99 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "92-99",
+  "stimulus": "关于野茉莉花的表型，花的颜色是由核基因编码的制造色素的酶所决定："
+ }
+}

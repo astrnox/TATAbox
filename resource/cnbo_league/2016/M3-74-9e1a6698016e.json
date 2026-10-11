@@ -1,0 +1,76 @@
+{
+ "id": "M3-74-9e1a6698016e",
+ "type": "multiple",
+ "question": "大型哺乳动物的迁移是一种水平或垂直方向上季节运动的生物学现象。从2006 到2009 年，使用来自9 个GPS 项圈和22 个跟踪事件记录器的数据来描述四川羚牛的迁移模式，得到了月份与生活海拔的关系（如下图）。由此我们可以得到结论：（图中横轴为月份，纵轴为海拔。n 代表样本量，白色矩形框中部的粗线代表中位数）",
+ "options": {
+  "A": "羚牛是一种进行季节迁移的食草动物",
+  "B": "羚牛在夏季的生活海拔最高",
+  "C": "羚牛在冬季的生活海拔最低",
+  "D": "羚牛大多时间生活在海拔2200m 以上的地区"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 74 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-74-9e1a6698016e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 257,
+  "bbox": [
+   168.6,
+   72.8,
+   425.4,
+   274.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-74-9e1a6698016e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 257,
+   "bbox": [
+    168.6,
+    72.8,
+    425.4,
+    274.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

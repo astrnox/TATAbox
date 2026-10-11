@@ -1,0 +1,44 @@
+{
+ "id": "M4-77-1858d4ddf9bb",
+ "type": "single",
+ "question": "一种基因型为AAaa 的同源四倍体植物，若只考虑减数分裂时同源染色体的两两配对形成配子，该植物自交后，产生aaaa 后代的比例是：",
+ "options": {
+  "A": "1/36",
+  "B": "1/18",
+  "C": "1/16",
+  "D": "1/8"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 77 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

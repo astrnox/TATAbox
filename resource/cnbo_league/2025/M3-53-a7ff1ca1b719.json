@@ -1,0 +1,116 @@
+{
+ "id": "M3-53-a7ff1ca1b719",
+ "type": "mtf",
+ "question": "对一个野生鸟类种群的研究发现，在一个繁殖季中繁殖的雌性个体数量与每只雌性能够养育成功的幼鸟数量呈反比关系。这种关系直接影响了单位个体的增长贡献。右图展示了不同种群增长模型的特征。图中，横坐标 N 代表种群数量，纵坐标为种群增长率 (dN/dt) 或单位个体增长率 ((1/N)×(dN/dt))。请判断每个图所代表的种群增长模型或模型特征是否与题干所描述的密度制约现象相符。在相符的图对应选项后标注T，不相符的标注F。 A B C D",
+ "options": null,
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 53 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-53-a7ff1ca1b719/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   207.0,
+   685.3,
+   305.7,
+   775.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-53-a7ff1ca1b719/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    207.0,
+    685.3,
+    305.7,
+    775.8
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-53-a7ff1ca1b719/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    111.7,
+    686.4,
+    207.1,
+    774.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-53-a7ff1ca1b719/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    396.8,
+    686.4,
+    485.0,
+    771.7
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-53-a7ff1ca1b719/fig4.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    302.2,
+    686.6,
+    394.2,
+    775.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-80-13e06301cddf",
+ "type": "single",
+ "question": "广泛分布的动物物种，为了适应不同分布区的环境特征会进化出特定的形态和功能，譬如，与栖息于土壤柔软环境的种群相比，生存于土壤坚硬的荒漠区域的荒漠沙蜥物种，应该具有",
+ "options": {
+  "A": "更长的前肢，便于奔跑和打洞",
+  "B": "更大的体型，便于收集提供能量",
+  "C": "更短的尾部，避免被天敌发现",
+  "D": "更宽的头部，便于捕捉食物"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 80 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-23-4bbcbc877b9d",
+ "type": "multiple",
+ "question": "苔藓植物是现存最古老的陆生植物之一，限制其适应陆生环境的主要特征是",
+ "options": {
+  "A": "植物体组织分化程度不高，体内无维管组织，输导能力不强",
+  "B": "没有真根，只能靠假根或其它表皮细胞来行使吸收功能",
+  "C": "有性生殖过程必须借助于水才能完成",
+  "D": "性器官外围有不育细胞为之保护"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 23 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

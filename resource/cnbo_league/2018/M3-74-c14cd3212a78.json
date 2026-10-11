@@ -1,0 +1,80 @@
+{
+ "id": "M3-74-c14cd3212a78",
+ "type": "single",
+ "question": "在单只训练阶段，小鼠的学习行为属于",
+ "options": {
+  "A": "I 型条件反射",
+  "B": "潜在学习",
+  "C": "操作条件反射",
+  "D": "顿悟学习"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 74 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "74-75",
+  "stimulus": "为了研究小鼠能否自发建立社会规则来实现小团体所得奖励的最大化，研究者们设"
+ },
+ "image": {
+  "file": "assets/questions/M3-74-c14cd3212a78/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 296,
+  "bbox": [
+   121.4,
+   359.9,
+   473.7,
+   532.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-74-c14cd3212a78/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 296,
+   "bbox": [
+    121.4,
+    359.9,
+    473.7,
+    532.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

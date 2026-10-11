@@ -1,0 +1,46 @@
+{
+ "id": "M1-103-635222c79846",
+ "type": "mtf",
+ "question": "请对下列有关细胞质基因与细胞核基因描述的正误做出判断：",
+ "options": {
+  "A": "细胞质基因与细胞核基因的DNA 都具有双螺旋结构，按半保留方式复制，但遵循中心法则的程度明显不同。",
+  "B": "能引起细胞核基因突变的因素都能引起细胞质基因突变。",
+  "C": "在人工诱变条件下，细胞核DNA 的突变率常比细胞质DNA 的突变率显著地高。",
+  "D": "在所有生物中，细胞质基因表现为母系遗传，而细胞核基因表现为两性遗传。",
+  "E": "细胞质基因中的个别遗传密码子不同于细胞核基因。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "103.A（×）B（√）C（×）D（×） E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 103 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

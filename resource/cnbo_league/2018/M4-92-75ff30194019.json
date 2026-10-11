@@ -1,0 +1,44 @@
+{
+ "id": "M4-92-75ff30194019",
+ "type": "multiple",
+ "question": "请选择符合达尔文理论的内容：",
+ "options": {
+  "A": "自然界中所有物种来自于一个共同祖先",
+  "B": "自然选择是驱动物种进化的主要力量",
+  "C": "物种的表型进化是一个间断的、跳跃的过程",
+  "D": "物种的进化主要是通过获得性遗传的方式实现"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 92 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-110-6a9a5c38d378",
+ "type": "mtf",
+ "question": "有一种人类中罕见的常染色体显性致病基因导致的疾病，在某海岛的人群中有很高的发病率。人类遗传学家在探讨该先天性疾病的高发病率成因时可能涉及到如下的哪种因素：",
+ "options": {
+  "A": "该基因的突变率很高",
+  "B": "该海岛可能曾经发生过导致人类灾难的事件",
+  "C": "最初开发该海岛的少数移民",
+  "D": "该基因不受自然选择的作用"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "20.A（×）B（√）C（√）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 20 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

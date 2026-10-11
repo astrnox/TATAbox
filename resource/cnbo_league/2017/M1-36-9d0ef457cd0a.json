@@ -1,0 +1,44 @@
+{
+ "id": "M1-36-9d0ef457cd0a",
+ "type": "single",
+ "question": "有A 和B 两种溶液，渗透压相等，分别含有100 mM 和2 mM KCl。两溶液以膜相隔，膜对氯离子有通透性，而不能透过钾离子。下列分析中，正确的是：",
+ "options": {
+  "A": "氯离子由A 向B 液扩散，两溶液氯离子浓度将达到51 mM",
+  "B": "氯离子由A 向B 液扩散，将产生膜电位，A 液高于B 液",
+  "C": "氯离子由A 向B 液扩散，将产生膜电位，A 液低于B 液",
+  "D": "如果膜允许钾离子通透，钾离子将由B 向A 液扩散"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 36 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

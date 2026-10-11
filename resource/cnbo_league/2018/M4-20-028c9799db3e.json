@@ -1,0 +1,76 @@
+{
+ "id": "M4-20-028c9799db3e",
+ "type": "single",
+ "question": "SnailP2A 突变体可以与Suz12 相互作用。",
+ "options": {
+  "A": "正确",
+  "B": "错误"
+ },
+ "answer": {
+  "A": false,
+  "B": true
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 20 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "14-20",
+  "stimulus": "转录因子Snail 属于上皮向间充质转化过程中所需的转录阻遏物家族。而suz12"
+ },
+ "image": {
+  "file": "assets/questions/M4-20-028c9799db3e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 286,
+  "bbox": [
+   90.0,
+   76.3,
+   505.2,
+   410.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-20-028c9799db3e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 286,
+   "bbox": [
+    90.0,
+    76.3,
+    505.2,
+    410.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

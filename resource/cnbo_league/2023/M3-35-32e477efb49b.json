@@ -1,0 +1,76 @@
+{
+ "id": "M3-35-32e477efb49b",
+ "type": "single",
+ "question": "鸟类的气囊和各级气管组成了独特的呼吸系统，气囊由前气囊（颈气囊、锁间气囊和前胸气囊）和后气囊（后胸气囊和腹气囊）组成，气囊是辅助呼吸器官。通过图判断：在鸟类呼吸的过程中，从体外吸入的气体（气团X）主要进入了后气囊，再经过一次呼气和吸气后，气团X 可能存在于：",
+ "options": {
+  "A": "结构a 和b",
+  "B": "结构b 和d",
+  "C": "结构c",
+  "D": "结构d"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 35 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-35-32e477efb49b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 438,
+  "bbox": [
+   230.9,
+   326.1,
+   364.1,
+   467.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-35-32e477efb49b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 438,
+   "bbox": [
+    230.9,
+    326.1,
+    364.1,
+    467.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

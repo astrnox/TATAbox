@@ -1,0 +1,44 @@
+{
+ "id": "M3-85-624e4ddd79a6",
+ "type": "single",
+ "question": "麝鼠原产于北美，1905 年一个捷克人把5 只麝鼠从北美带到欧洲，后来又有更多人在欧洲放养并取其皮毛，并分布到前苏联，成为前苏联重要的皮毛动物之一。现在欧洲的麝鼠已不少于数百万，但同时它也危害河堤，破坏灌溉系统。这种现象称为：",
+ "options": {
+  "A": "种群平衡",
+  "B": "季节消长",
+  "C": "种群数量规则性波动",
+  "D": "生态入侵"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 85 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

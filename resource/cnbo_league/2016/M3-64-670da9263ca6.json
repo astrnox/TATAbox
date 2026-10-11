@@ -1,0 +1,39 @@
+{
+ "id": "M3-64-670da9263ca6",
+ "type": "multiple",
+ "question": "四声杜鹃对灰喜鹊有巢寄生现象，哪些描述灰喜鹊为避免繁殖失败产生的对策不正确：",
+ "options": {
+  "A": "对四声杜鹃进行驱赶",
+  "B": "停止孵化，弃巢",
+  "C": "产多枚大小、颜色等形态一致的卵",
+  "D": "训练本物种幼鸟特殊叫声来识别"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.5,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 64 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

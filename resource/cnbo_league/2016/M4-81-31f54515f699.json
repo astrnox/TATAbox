@@ -1,0 +1,44 @@
+{
+ "id": "M4-81-31f54515f699",
+ "type": "single",
+ "question": "年龄结构是种群的重要特征，影响着种群的未来发展趋势。如果一个种群内，幼年个体数量最多，成年个体数量居中，老年最少，这个种群的年龄结构为",
+ "options": {
+  "A": "稳定型",
+  "B": "增长型",
+  "C": "衰退型",
+  "D": "混合型"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 81 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

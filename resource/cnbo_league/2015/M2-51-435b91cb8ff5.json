@@ -1,0 +1,44 @@
+{
+ "id": "M2-51-435b91cb8ff5",
+ "type": "single",
+ "question": "以下关于玉米与大豆间种的叙述中，错误的是：",
+ "options": {
+  "A": "提高复种指数",
+  "B": "玉米的二氧化碳补偿点低，大豆的二氧化碳补偿点高",
+  "C": "大豆丰富的根系分泌物为玉米的生长提供良好的环境",
+  "D": "夏季午后高温，玉米比大豆更易出现“午休现象”"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 51 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

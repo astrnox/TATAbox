@@ -1,0 +1,80 @@
+{
+ "id": "M4-69-12cbe508bf1d",
+ "type": "multiple",
+ "question": "右图为所研究的50 个物种在发生率为0.95 时所对应的栖息地斑块面积，图中每个实心黑点都代表一个物种，横轴为该物种的体长的对数，纵轴为栖息地斑块面积的对数，根据这两张图，下面的哪些说法是正确的：",
+ "options": {
+  "A": "体长小的物种只出现在面积小的斑块中",
+  "B": "面积大的栖息地斑块中可能观测到更多的物种",
+  "C": "在0.95 发生率下，物种所需的栖息地斑块面积与物种体长呈线性关系",
+  "D": "体形大的动物在面积小的斑块中的发生率低"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 69 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "68-69",
+  "stimulus": "种群生态学家们通常都认可动物种群没有办法在面积过小的栖息地斑块中长期存"
+ },
+ "image": {
+  "file": "assets/questions/M4-69-12cbe508bf1d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 254,
+  "bbox": [
+   90.0,
+   594.6,
+   504.9,
+   750.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-69-12cbe508bf1d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 254,
+   "bbox": [
+    90.0,
+    594.6,
+    504.9,
+    750.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

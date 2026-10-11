@@ -1,0 +1,44 @@
+{
+ "id": "M3-109-185a4fb673cf",
+ "type": "multiple",
+ "question": "热带雨林生态系统与高寒草甸生态系统比较，下列叙述正确的是：",
+ "options": {
+  "A": "热带雨林抵抗力稳定性高于高寒草甸生态系统",
+  "B": "热带雨林恢复力稳定性高于高寒草甸生态系统",
+  "C": "热带雨林抵抗力稳定性与高寒草甸生态系统没有差别",
+  "D": "热带雨林恢复力稳定性低于高寒草甸生态系统"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 109 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

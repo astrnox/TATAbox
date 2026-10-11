@@ -1,0 +1,46 @@
+{
+ "id": "M1-16-b5800bd65e78",
+ "type": "multiple",
+ "question": "以下哪类化合物属于微生物的次生代谢产物",
+ "options": {
+  "A": "脂肪",
+  "B": "色素",
+  "C": "抗生素",
+  "D": "蛋白质",
+  "E": "毒素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 16 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

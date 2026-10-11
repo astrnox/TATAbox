@@ -1,0 +1,46 @@
+{
+ "id": "M3-104-f2cecb7da6c3",
+ "type": "multiple",
+ "question": "1922 年，英国遗传学家J.B.S.Haldane 研究发现：若不同物种的动物相互交配产生的杂种中，有某一性别的个体不育，那么该性别一定是异配性别。据此，以下动物类群中雌性会发生杂种不育的有：",
+ "options": {
+  "A": "松鼠",
+  "B": "鹦鹉",
+  "C": "蝴蝶",
+  "D": "猴",
+  "E": "蛾"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 104 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

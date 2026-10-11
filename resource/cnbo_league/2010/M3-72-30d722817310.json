@@ -1,0 +1,80 @@
+{
+ "id": "M3-72-30d722817310",
+ "type": "single",
+ "question": "下面哪一种叙述是正确的",
+ "options": {
+  "A": "在实验最开始时计数草履虫密度，必然是0.67只/ml",
+  "B": "此次实验中草履虫的增长符合logistic增长",
+  "C": "此次实验中该培养液中最多可容纳约800只草履虫",
+  "D": "草履虫之所以不能无限制增长是由于空间不足"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 72 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "71-72",
+  "stimulus": "草履虫（Paramoecium caudaturn）是一种常用的生物实验材料。现将100只草履虫移"
+ },
+ "image": {
+  "file": "assets/questions/M3-72-30d722817310/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 137,
+  "bbox": [
+   193.1,
+   540.0,
+   402.2,
+   664.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-72-30d722817310/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 137,
+   "bbox": [
+    193.1,
+    540.0,
+    402.2,
+    664.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

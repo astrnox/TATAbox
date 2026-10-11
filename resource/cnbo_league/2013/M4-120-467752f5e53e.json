@@ -1,0 +1,44 @@
+{
+ "id": "M4-120-467752f5e53e",
+ "type": "multiple",
+ "question": "对于化学或物理学方法诱变而造成的突变体，需要进行突变基因的定位克隆，下列与定位克隆有关的有",
+ "options": {
+  "A": "重组值",
+  "B": "DNA 多态性",
+  "C": "杂交与表型分析",
+  "D": "染色体显带技术"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 120 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "第四部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

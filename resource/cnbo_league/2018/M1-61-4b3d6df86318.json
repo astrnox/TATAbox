@@ -1,0 +1,44 @@
+{
+ "id": "M1-61-4b3d6df86318",
+ "type": "multiple",
+ "question": "对于圆柱形器官而言，细胞分裂面与圆柱体表面垂直的分裂为垂周分裂。下列哪些分裂属于垂周分裂？",
+ "options": {
+  "A": "径向分裂",
+  "B": "切向分裂",
+  "C": "纵分裂",
+  "D": "横分裂"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 61 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

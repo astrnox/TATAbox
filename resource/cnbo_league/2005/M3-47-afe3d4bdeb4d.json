@@ -1,0 +1,44 @@
+{
+ "id": "M3-47-afe3d4bdeb4d",
+ "type": "single",
+ "question": "下列哪一组动物均有内鼻孔？",
+ "options": {
+  "A": "蛙、龟、鸵鸟、肺鱼",
+  "B": "七鳃鳗、狗、猫、石龙子",
+  "C": "草鱼、陆龟、鸭嘴兽、文鸟",
+  "D": "文昌鱼、蟾蜍、肺鱼、鲤鱼"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 47 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

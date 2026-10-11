@@ -1,0 +1,44 @@
+{
+ "id": "M4-61-a14d296d7bd2",
+ "type": "multiple",
+ "question": "下列有关鸟类呼吸过程的描述中，哪些是正确的：",
+ "options": {
+  "A": "吸气时，所吸进来的大部分空气进入微支气管处进行气体交换",
+  "B": "吸气时，前气囊扩张接受从肺来的气体",
+  "C": "呼气时，后气囊的气体进入肺，在微支气管处进行气体交换",
+  "D": "呼气时，前气囊的气体排出"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 61 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M2-16-6c3aeeadd7c6",
+ "type": "single",
+ "question": "在人类防范病毒感染引起疾病的措施中，接种疫苗是一种有效的手段，疫苗是通过激发和训练人体的免疫系统来起作用的，以下关于疫苗及其作用的叙述，错误的是：",
+ "options": {
+  "A": "疫苗不改变病毒的感染周期和降低患者与其他人接触的频率",
+  "B": "疫苗可有效地降低接触过程中传播疾病的概率实现群体免疫",
+  "C": "为防止病毒感染机体而患病，接种疫苗，属于获得性免疫",
+  "D": "接种灭活疫苗，体内IgG 会在被感染时识别抗原而激活IgM",
+  "E": "接种mRNA 疫苗可表达蛋白并刺激机体产生特异性免疫反应"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 16 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

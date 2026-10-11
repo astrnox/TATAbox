@@ -1,0 +1,44 @@
+{
+ "id": "M1-05-91fed196170a",
+ "type": "single",
+ "question": "蛋白质合成后，需要进行复杂的分选，以下描述正确的是：",
+ "options": {
+  "A": "分选都是由高尔基体开始的",
+  "B": "分选信号是蛋白质中的特定序列",
+  "C": "分选信号只蕴藏在蛋白质高级结构中",
+  "D": "参加分选的蛋白质只能依靠膜泡在细胞质内运输"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 5 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

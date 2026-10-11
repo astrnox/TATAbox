@@ -1,0 +1,44 @@
+{
+ "id": "M4-34-779b12e891e2",
+ "type": "mtf",
+ "question": "某长日照植物在以下4 种处理中开花时间如下（所有处理均重复三次，结果具有显著性差异（p<0.05））：处理1：16 小时光照/8 小时黑暗（正常长日照）→ 开花所需天数：25 天；处理2：8 小时光照/16 小时黑暗（短日照）→ 不开花；处理3：8 小时光照+8 小时远红光脉冲/8 小时黑暗→ 开花所需天数：40 天；处理4：16 小时光照+连续蓝光补充/8 小时黑暗→ 开花所需天数：18 天。根据以上实验结果，对以下陈述进行正误判断：",
+ "options": {
+  "A": "远红光脉冲可以改变光周期信号，导致开花延迟",
+  "B": "处理4 的结果表明，增加蓝光照射是该植物感受长日照信号并启动开花程序的前提",
+  "C": "处理3 的结果表明光周期感知主要依赖于暗期的持续长度",
+  "D": "对比处理1 和处理4，在长日照条件下额外补充蓝光有助于提前开花"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 34 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

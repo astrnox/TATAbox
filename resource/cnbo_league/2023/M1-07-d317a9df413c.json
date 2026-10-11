@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-d317a9df413c",
+ "type": "single",
+ "question": "检测药物阿霉素对HeLa 细胞凋亡的影响，以下实验设计不恰当的是：",
+ "options": {
+  "A": "罗丹明123 染色检测线粒体膜通透性改变",
+  "B": "DAPI 染色观察细胞核DNA 的变化",
+  "C": "通过对细胞膜的染色观察细胞体积和形态的变化",
+  "D": "检测细胞内含物泄露到胞外的情况"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 7 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

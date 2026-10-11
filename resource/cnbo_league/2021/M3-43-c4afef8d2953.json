@@ -1,0 +1,46 @@
+{
+ "id": "M3-43-c4afef8d2953",
+ "type": "multiple",
+ "question": "下列有关消化道平滑肌电生理活性的描述中，错误的是：",
+ "options": {
+  "A": "常见的消化道平滑肌电生理现象（膜电位的状态）包括静息电位，慢波和动作电位",
+  "B": "慢波是由消化道中具有自发电活性的神经细胞起始的",
+  "C": "慢波和动作电位可以同时发生",
+  "D": "动作电位的频率与消化道收缩的强度相关",
+  "E": "慢波的时程是决定消化道平滑肌收缩力的大小的主要因素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 43 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

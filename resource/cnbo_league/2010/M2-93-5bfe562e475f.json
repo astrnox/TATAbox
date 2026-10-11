@@ -1,0 +1,48 @@
+{
+ "id": "M2-93-5bfe562e475f",
+ "type": "multiple",
+ "question": "如果白色花对任何有色花都是隐性性状，那么以下哪些是正确的：",
+ "options": {
+  "A": "白色花之间杂交，只会得到白色花的后代",
+  "B": "有色花间杂交，可能会得到白色花",
+  "C": "粉红花之间杂交，总是得到红花、粉红花和白花",
+  "D": "粉红花间杂交，有可能只得到粉红花"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 93 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "92-99",
+  "stimulus": "关于野茉莉花的表型，花的颜色是由核基因编码的制造色素的酶所决定："
+ }
+}

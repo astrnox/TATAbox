@@ -1,0 +1,44 @@
+{
+ "id": "M4-67-dff23b3c0166",
+ "type": "single",
+ "question": "一雄蜂和一雌蜂交配后产生的F1 中，雄蜂的基因型有AB、Ab、aB、ab 四种；雌蜂的基因型有AaBb、Aabb、aaBb 和aabb 四种。则亲本的基因型是：",
+ "options": {
+  "A": "aaBb×Ab",
+  "B": "AaBb×Ab",
+  "C": "AAbb×aB",
+  "D": "AaBb×ab"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 67 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

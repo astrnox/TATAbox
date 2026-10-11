@@ -1,0 +1,44 @@
+{
+ "id": "M2-57-71ade9665a2f",
+ "type": "multiple",
+ "question": "植物导水率（K）是指单位压力梯度（Mpa）下植物传导水分的通量（kg·s-1）。植物根、茎和叶的导水率分别用Kroot，Kstem 和Kleaf 表示。请结合植物形态解剖学和植物生理学的相关知识，判断以下哪些因素会影响植物导水率？",
+ "options": {
+  "A": "水通道蛋白的表达和活性",
+  "B": "木质部导管的数量和直径",
+  "C": "从叶脉到气孔的路径长度",
+  "D": "气孔密度和气孔导度"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 57 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

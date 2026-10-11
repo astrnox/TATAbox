@@ -1,0 +1,44 @@
+{
+ "id": "M1-26-80d38f990fee",
+ "type": "single",
+ "question": "下列关于四足类锁骨的哪一个说法是正确的：",
+ "options": {
+  "A": "锁骨是前肢骨的一部分，把肩胛骨连到胸骨上",
+  "B": "锁骨是肩带的一部分，与胸椎直接关节",
+  "C": "锁骨是前肢骨的一部分，把前肢骨连到肩胛骨上",
+  "D": "锁骨是肩带的一部分，不与脊柱直接相关节"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 26 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

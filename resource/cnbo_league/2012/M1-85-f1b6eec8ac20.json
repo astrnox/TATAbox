@@ -1,0 +1,46 @@
+{
+ "id": "M1-85-f1b6eec8ac20",
+ "type": "single",
+ "question": "兼可抑制真核和原核生物蛋白质生物合成的抗生素是",
+ "options": {
+  "A": "放线菌酮",
+  "B": "四环素",
+  "C": "链霉素",
+  "D": "氯霉素",
+  "E": "嘌呤霉素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 85 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

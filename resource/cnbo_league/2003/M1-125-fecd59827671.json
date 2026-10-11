@@ -1,0 +1,44 @@
+{
+ "id": "M1-125-fecd59827671",
+ "type": "mtf",
+ "question": "水稻对于土壤通气不良具有较强的忍耐力，这个特性与以下哪些特点有关？",
+ "options": {
+  "A": "水稻无氧呼吸不会产生酒精，不易烂根",
+  "B": "水稻幼苗在缺氧情况下，细胞色素氧化酶仍保持一定的活性",
+  "C": "水稻根部具有较强的乙醇酸氧化能力，该途径放出的氧可供根系呼吸用",
+  "D": "水稻根部具有较发达的细胞间隙和气道，并与茎叶的气道相通"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "10.A（ × ）B（ √ ）C（ √ ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 10 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

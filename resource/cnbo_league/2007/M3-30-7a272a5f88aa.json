@@ -1,0 +1,44 @@
+{
+ "id": "M3-30-7a272a5f88aa",
+ "type": "single",
+ "question": "下列哪一组结构和机能是鸟类所特有的？",
+ "options": {
+  "A": "嗉囊、上纹状体和叉骨",
+  "B": "羽毛、恒温和端生齿",
+  "C": "气囊、双重呼吸和枢椎",
+  "D": "异凹型椎体、肌胃和产羊膜卵"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 30 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-55-069a64842607",
+ "type": "single",
+ "question": "植物活细胞的水势是由渗透势（Ψs）和压力势（Ψp）组成。植物细胞体积的变化会引起膨压的变化，ε 表示细胞单位体积的变化所引起的压力势改变的量。已知两种植物细胞壁的刚性差异很大，细胞1 的细胞壁刚性强，细胞2 的细胞壁刚性弱。当植物细胞失水，体积每变化一个单位时，这两种细胞的Ψp 变化情况是：",
+ "options": {
+  "A": "Ψp（1）= Ψp（2）",
+  "B": "Ψp（1）> Ψp（2）",
+  "C": "Ψp（1）< Ψp（2）",
+  "D": "条件不足，无法判定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 55 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

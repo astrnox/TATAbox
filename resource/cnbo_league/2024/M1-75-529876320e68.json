@@ -1,0 +1,80 @@
+{
+ "id": "M1-75-529876320e68",
+ "type": "single",
+ "question": "如果该动物的体重是小鼠体重的10 倍，你估计小鼠在20℃环境下的60 分钟代谢率最接近（单位：千卡/平方米体表面积）：",
+ "options": {
+  "A": "5",
+  "B": "45",
+  "C": "500",
+  "D": "1000"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 75 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "74-75",
+  "stimulus": "实验测定了某种动物24 小时代谢率（单位：千卡/平方米体表面积）随环境温度的"
+ },
+ "image": {
+  "file": "assets/questions/M1-75-529876320e68/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 464,
+  "bbox": [
+   198.5,
+   554.5,
+   397.1,
+   733.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-75-529876320e68/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 464,
+   "bbox": [
+    198.5,
+    554.5,
+    397.1,
+    733.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M3-64-0f668769a115",
+ "type": "single",
+ "question": "植物养分重吸收是指在植物部分器官凋落前将部分养分保护起来为植物生长所用的过程。以下对养分重吸收描述不正确的是：",
+ "options": {
+  "A": "植物养分重吸收可减少植物对吸收土壤养分的依赖",
+  "B": "木本植物中叶片氮元素重吸收率一般高于其他组织",
+  "C": "幼林多年生木本植物比老龄多年生木本植物对氮的重吸收需求更高",
+  "D": "在同一群落中，不同生活型影响植物养分重吸收率是一样的",
+  "E": "环境的变化（如气候变化）会影响植物养分重吸收率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 64 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

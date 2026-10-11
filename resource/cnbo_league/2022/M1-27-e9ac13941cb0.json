@@ -1,0 +1,80 @@
+{
+ "id": "M1-27-e9ac13941cb0",
+ "type": "multiple",
+ "question": "下列有关图B 的描述错误的有：",
+ "options": {
+  "A": "大部分细胞次生壁明显增厚，其机械支撑力增加；",
+  "B": "大部分细胞次生壁明显增厚，其拉伸力增加；",
+  "C": "大部分细胞细胞腔减小，其水分输导能力下降；",
+  "D": "大部分细胞细胞腔减小，其水分输导能力提高。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 27 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "26-28",
+  "stimulus": "树木受到斜坡、风吹等外界因素的影响，导致原本直立生长的树干发生倾斜或者弯"
+ },
+ "image": {
+  "file": "assets/questions/M1-27-e9ac13941cb0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 412,
+  "bbox": [
+   90.0,
+   618.2,
+   505.0,
+   758.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-27-e9ac13941cb0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 412,
+   "bbox": [
+    90.0,
+    618.2,
+    505.0,
+    758.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

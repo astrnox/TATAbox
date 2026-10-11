@@ -1,0 +1,44 @@
+{
+ "id": "M3-76-ae9121975cba",
+ "type": "single",
+ "question": "哪种类型的群落具有这样的特征①降雨量少，水分蒸发量大②优势植物包括蒿属植物、藜属灌木和肉质旱生植物③动物通常会采取冬眠或夏眠的方式来渡过不利季节",
+ "options": {
+  "A": "寒带针叶林",
+  "B": "热带稀树草原",
+  "C": "苔原",
+  "D": "荒漠"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 76 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

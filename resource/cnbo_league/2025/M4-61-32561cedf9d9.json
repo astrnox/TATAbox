@@ -1,0 +1,76 @@
+{
+ "id": "M4-61-32561cedf9d9",
+ "type": "mtf",
+ "question": "可变数目串联重复序列(VNTR)因其在个体间的重复次数多态性而被广泛应用。右图展示了利用某一VNTR 位点对四对潜在父母(泳道1–8)及其四个孩子(泳道A–D)进行基因分型的凝胶电泳结果。对以下关于此VNTR 多态性分析结果的陈述进行正误判断：",
+ "options": {
+  "A": "检测的所有12 个个体在该VNTR 位点上均表现为杂合子",
+  "B": "根据条带匹配推断，A 的父母是7 号和5 号个体，B 的父母是4 号和1 号个体",
+  "C": "该VNTR 位点的等位基因在分子水平上表现为共显性",
+  "D": "扩增该VNTR 所用的一对引物在不同个体中均相同"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 61 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-61-32561cedf9d9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 11,
+  "bbox": [
+   365.2,
+   44.6,
+   554.4,
+   177.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-61-32561cedf9d9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 11,
+   "bbox": [
+    365.2,
+    44.6,
+    554.4,
+    177.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

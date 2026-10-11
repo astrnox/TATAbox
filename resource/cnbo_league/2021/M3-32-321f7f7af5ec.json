@@ -1,0 +1,44 @@
+{
+ "id": "M3-32-321f7f7af5ec",
+ "type": "single",
+ "question": "解剖鲤鱼时，可以看到鲤鱼的肠管被一大团红色组织所包裹。下列叙述中，错误的是",
+ "options": {
+  "A": "这团组织包括肝和胰，肉眼不易区分二者，称为肝胰脏",
+  "B": "通过组织切片是可以区分出肝细胞和胰组织的",
+  "C": "肝脏分泌的胆汁，由肝管通入胆囊储存，再以胆总管通入小肠",
+  "D": "胰脏分泌的胰液，由胰管通入胆囊储存，再以胆总管通入小肠"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 32 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

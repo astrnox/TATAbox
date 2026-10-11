@@ -1,0 +1,44 @@
+{
+ "id": "M3-66-1887ee74ef0a",
+ "type": "single",
+ "question": "研究人员解剖了一批来自同一个广布种的啮齿类动物的肾脏样本，结果发现该种动物的4 个地理种群的肾脏结构之间具有显著差异。地理种群①、②、③、④的肾脏髓质部与皮质部的厚度之比分别为0.52：1，0.40：1，0.45：1 和0.62：1。据此判断这四个地理种群中最适应沙漠缺水环境的是：",
+ "options": {
+  "A": "④",
+  "B": "③",
+  "C": "①",
+  "D": "②"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 66 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "三、动物行为学、生态学（15 题19 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

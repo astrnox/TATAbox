@@ -1,0 +1,44 @@
+{
+ "id": "M4-64-4dfd273b3194",
+ "type": "single",
+ "question": "指出下列群体中哪些处于遗传平衡之中？ (1)100%AA (2)100%Aa (3)1%AA、98%Aa、1%aa (4)32%AA、64%Aa、4%aa (5)4%AA、32%Aa、64%aa",
+ "options": {
+  "A": "(1)和(5)",
+  "B": "(1)和(4)",
+  "C": "(1)、(2)和(3)",
+  "D": "(2)和(5)"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 64 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

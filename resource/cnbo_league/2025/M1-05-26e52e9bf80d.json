@@ -1,0 +1,44 @@
+{
+ "id": "M1-05-26e52e9bf80d",
+ "type": "mtf",
+ "question": "溶菌酶活性中心的谷氨酸35(Glu35)和天冬氨酸52(Asp52)对其催化活性至关重要。pKa 值是描述氨基酸质子化和去质子化平衡的重要参数。已知在特定条件下，Glu35 羧基侧链的pKa 约为5.9，Asp52 羧基侧链的pKa 约为4.5。对以下关于当环境pH 为5.2 时这两个氨基酸残基侧链主要电离状态的陈述，进行正误判断：",
+ "options": {
+  "A": "在pH 5.2 时，Glu35 的羧基侧链主要处于质子化状态(COOH)",
+  "B": "在pH 5.2 时，Asp52 的羧基侧链主要处于质子化状态(COOH)",
+  "C": "在pH 5.2 时，Glu35 的羧基侧链主要处于去质子化状态(COO–)",
+  "D": "在pH 5.2 时，Asp52 的羧基侧链主要处于去质子化状态(COO–)"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 5 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

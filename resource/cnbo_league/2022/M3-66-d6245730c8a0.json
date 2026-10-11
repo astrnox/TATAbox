@@ -1,0 +1,44 @@
+{
+ "id": "M3-66-d6245730c8a0",
+ "type": "multiple",
+ "question": "吸虫纲和绦虫纲是扁形动物中两个寄生类群，下列描述中属于两个纲共同特征的有：",
+ "options": {
+  "A": "体壁是皮肌囊结构，表皮是一层合胞体；",
+  "B": "消化系统高度退化，仅为一不分支管道；",
+  "C": "排泄系统属原肾管系统，具有焰细胞；",
+  "D": "神经系统不发达，仅有2 条纵行神经。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 66 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

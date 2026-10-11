@@ -1,0 +1,46 @@
+{
+ "id": "M1-28-4bf77ef6c54f",
+ "type": "multiple",
+ "question": "在生物体内，6-磷酸葡萄糖处于各种代谢途径的重要交点。下列反应中，哪些是 6-磷酸葡萄糖直接参与的反应？",
+ "options": {
+  "A": "糖酵解途径中，由6-磷酸葡萄糖生成6-磷酸果糖",
+  "B": "磷酸戊糖途径中，由6-磷酸葡萄糖生成6-磷酸葡萄糖酸内酯",
+  "C": "由6-磷酸葡萄糖异构化生成1-磷酸葡萄糖，后者用于多糖的合成",
+  "D": "1 分子6-磷酸葡萄糖直接生成2 分子3-磷酸甘油，后者进入脂代谢",
+  "E": "肝脏中6-磷酸葡萄糖生成葡萄糖，后者被转运到血液中维持血糖浓度"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ABCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 28 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

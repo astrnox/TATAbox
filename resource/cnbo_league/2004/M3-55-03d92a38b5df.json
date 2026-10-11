@@ -1,0 +1,44 @@
+{
+ "id": "M3-55-03d92a38b5df",
+ "type": "single",
+ "question": "鱼、鸟和哺乳动物三类动物中，视力好坏的关系是",
+ "options": {
+  "A": "鱼>鸟>哺乳动物",
+  "B": "鸟>哺乳动物>鱼",
+  "C": "哺乳动物>鱼>鸟",
+  "D": "鸟>鱼>哺乳动物"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 55 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

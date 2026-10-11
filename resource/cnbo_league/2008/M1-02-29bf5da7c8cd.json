@@ -1,0 +1,44 @@
+{
+ "id": "M1-02-29bf5da7c8cd",
+ "type": "single",
+ "question": "以下有关凯氏带的叙述哪些是不正确的",
+ "options": {
+  "A": "凯氏带是仅在根的内皮层细胞中存在的结构。",
+  "B": "凯氏带控制着皮层和维管柱之间的物质运输.",
+  "C": "凯氏带是内皮层细胞径向壁和横向壁上具栓质化和木质化增厚的结构。",
+  "D": "如果将内皮层细胞放入高渗溶液中，使其发生质壁分离，凯氏带处的质膜不会与细胞壁分离。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 2 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-50-580efb850b87",
+ "type": "single",
+ "question": "在研究中枢兴奋药尼可刹米的作用机制实验中,研究人员发现在大鼠延髓的A 区（第4 脑室底端）施加1 微升尼可刹米引起呼吸频率明显增加。为了进一步确认尼可刹米的中枢作用部位在A 区,下面哪个实验是在大鼠脑内没有必要做的：",
+ "options": {
+  "A": "在脑内A 区施加1 微升生理盐水",
+  "B": "在脑内A 区施加与尼可刹米溶液等渗透压的1 微升溶媒",
+  "C": "在脑内A 区施加1 微升蒸馏水",
+  "D": "在脑内与呼吸调节无关的B 区（大脑皮层）施加1 微升尼可刹米溶液"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 50 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

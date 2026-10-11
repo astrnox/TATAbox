@@ -1,0 +1,44 @@
+{
+ "id": "M1-80-3959dabd40c6",
+ "type": "single",
+ "question": "囊性纤维化(CF)是一种常染色体隐性遗传病。一对夫妇有共同的曾祖母（祖父的母亲），该曾祖母是CF 基因的杂合子。他们的第一个孩子患CF 的概率是：",
+ "options": {
+  "A": "1/256",
+  "B": "1/64",
+  "C": "1/32",
+  "D": "1/16"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 80 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

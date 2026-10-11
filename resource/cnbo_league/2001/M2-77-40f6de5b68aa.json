@@ -1,0 +1,48 @@
+{
+ "id": "M2-77-40f6de5b68aa",
+ "type": "mtf",
+ "question": "具有大液泡的植物细胞是：",
+ "options": {
+  "A": "根尖的分生细胞",
+  "B": "成熟的叶肉细胞",
+  "C": "成熟的导管分子",
+  "D": "成熟的筛管分子",
+  "E": "成熟的花粉中的营养细胞",
+  "F": "胚囊的中央细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false,
+  "F": true
+ },
+ "answer_key": "4．A（×）B（√）C（×）D（×）E（×）F（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 4 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

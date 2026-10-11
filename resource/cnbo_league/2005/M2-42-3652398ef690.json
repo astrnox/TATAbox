@@ -1,0 +1,76 @@
+{
+ "id": "M2-42-3652398ef690",
+ "type": "single",
+ "question": "下图为沙蚕身体前部的示意图。",
+ "options": {
+  "A": "B 和C 部分结构的名称分别是： A．围口节，口前叶，口前叶",
+  "B": "围口节，吻，口前叶",
+  "C": "口前叶，口前叶，口前叶",
+  "D": "口前叶，口前叶，吻"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 42 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-42-3652398ef690/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 63,
+  "bbox": [
+   209.9,
+   248.4,
+   385.4,
+   409.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-42-3652398ef690/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 63,
+   "bbox": [
+    209.9,
+    248.4,
+    385.4,
+    409.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

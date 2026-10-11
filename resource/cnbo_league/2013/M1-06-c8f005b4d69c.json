@@ -1,0 +1,44 @@
+{
+ "id": "M1-06-c8f005b4d69c",
+ "type": "single",
+ "question": "人的ABO 血型抗原位于红细胞质膜上，它们在胞内合成、修饰和转运的路线可能是",
+ "options": {
+  "A": "核糖体-内质网-高尔基体-质膜",
+  "B": "内质网-高尔基体-质膜",
+  "C": "核糖体-内质网-质膜",
+  "D": "细胞核-核糖体-内质网-高尔基体-质膜"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 6 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

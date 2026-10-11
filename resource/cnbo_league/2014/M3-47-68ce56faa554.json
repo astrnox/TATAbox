@@ -1,0 +1,44 @@
+{
+ "id": "M3-47-68ce56faa554",
+ "type": "single",
+ "question": "标志重捕法常被用来估计种群数量，先捕获一部分个体进行标记，然后放回，经一定时间后进行重捕，根据重捕中标记个体的比例，可以估计种群的数量，这就是Lincoln 指数法。使用该方法无需遵守下列哪条假设？",
+ "options": {
+  "A": "种群在调查区域内是均匀分布的",
+  "B": "调查期间没有新的出生和死亡，也没有迁入和迁出；或即使有，但可以计数",
+  "C": "标记方法不能影响动物的被捕机会",
+  "D": "标记需维持足够时间，至少在重捕期间不能脱落"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 47 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

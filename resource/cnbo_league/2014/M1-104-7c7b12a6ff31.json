@@ -1,0 +1,46 @@
+{
+ "id": "M1-104-7c7b12a6ff31",
+ "type": "single",
+ "question": "引起肌肉兴奋-收缩耦联的最关键因素是",
+ "options": {
+  "A": "ATP 酶的活性",
+  "B": "肌钙蛋白的状态",
+  "C": "Na+内流的速度",
+  "D": "横桥的运动",
+  "E": "胞浆内Ca2+的浓度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 104 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

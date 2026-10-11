@@ -1,0 +1,44 @@
+{
+ "id": "M1-38-6f4d93f57fec",
+ "type": "single",
+ "question": "下列关于人体能量代谢的描述，正确的是",
+ "options": {
+  "A": "人体内营养物质经过生物氧化后的产物是水和二氧化碳",
+  "B": "通过氧化过程营养物质的能量都转化为化学能",
+  "C": "氧化释放的化学能储存在ATP 的高能磷酸键中",
+  "D": "葡萄糖的热价是营养物质中最高的"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 38 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

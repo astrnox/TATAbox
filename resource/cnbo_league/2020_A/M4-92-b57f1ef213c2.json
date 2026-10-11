@@ -1,0 +1,44 @@
+{
+ "id": "M4-92-b57f1ef213c2",
+ "type": "multiple",
+ "question": "物种之间通过模仿而获益的现象称为拟态。无毒物种通过模仿有毒物种来欺骗捕食者，称为贝氏拟态；有毒物种通过互相模仿来警告捕食者，称为穆氏拟态。对两种拟态现象的描述正确的是",
+ "options": {
+  "A": "模仿者和被模仿者的适合度无关",
+  "B": "拟态现象是自然选择的结果",
+  "C": "贝氏拟态物种受到频率依赖的正选择，穆氏拟态物种受到频率依赖的负选择",
+  "D": "贝氏拟态物种受到频率依赖的负选择，穆氏拟态物种受到频率依赖的正选择"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 92 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

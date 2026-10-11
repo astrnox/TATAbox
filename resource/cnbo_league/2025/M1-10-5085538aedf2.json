@@ -1,0 +1,44 @@
+{
+ "id": "M1-10-5085538aedf2",
+ "type": "mtf",
+ "question": "对以下关于细胞中的信号分子的描述进行正误判断：",
+ "options": {
+  "A": "第二信使不包含蛋白质，其通过胞内浓度变化来应答胞外信号，参与调控信号转导过程",
+  "B": "蛋白激酶和磷酸酶介导的蛋白质磷酸化和去磷酸化是细胞信号转导的一种“分子开关”机制",
+  "C": "在缺氧条件下，亲水性信号分子可通过特异性通道蛋白如水孔变体直接进入细胞，并优先激活细胞内信号通路，而不依赖传统的受体–效应器级联",
+  "D": "气体类信号分子可以通过自由扩散进入细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 10 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

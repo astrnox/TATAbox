@@ -1,0 +1,44 @@
+{
+ "id": "M2-120-67273dc520ba",
+ "type": "multiple",
+ "question": "有人将两株植物杂交，获得了100 颗种子。他将种子种了下去，结果37 株上结红果叶片上有短毛，19 株结红果叶片无毛；18 株红果叶片上有长毛；13 株黄果叶片短毛，7 株黄果，叶片上有长毛；6 株黄果叶片无毛。请问下列说法中哪些是正确的？",
+ "options": {
+  "A": "两株亲本植株都是杂合体",
+  "B": "两亲本的表现型是红果短毛",
+  "C": "两亲本的表型是黄果长毛",
+  "D": "就叶毛来说，无毛与长毛都是纯合体"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 3.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 120 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（多选3 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

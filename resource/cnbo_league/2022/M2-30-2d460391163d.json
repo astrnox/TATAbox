@@ -1,0 +1,48 @@
+{
+ "id": "M2-30-2d460391163d",
+ "type": "single",
+ "question": "进一步实验发现，在BRC1b 敲低的马铃薯株系中，腋芽位置脱落酸浓度降低，胞间连丝数量增加，蔗糖含量升高。由此可知：",
+ "options": {
+  "A": "正常株系中叶片同化物以葡萄糖形式在筛管中自上而下运输；",
+  "B": "在敲低株系中，胞间连丝的主要作用是将糖从腋芽运输至地下块茎；",
+  "C": "在脱落酸信号转导障碍的马铃薯中敲低BRC1b 的表达，腋芽处不会产生气生块茎；",
+  "D": "脱落酸信号转导障碍的马铃薯地上茎腋芽处也有可能出现气生块茎。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 30 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "29-30",
+  "stimulus": "马铃薯的两个基因BRC1a 和BRC1b 源自基因重复事件，他们都调控块茎的形成过"
+ }
+}

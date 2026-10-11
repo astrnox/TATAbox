@@ -1,0 +1,44 @@
+{
+ "id": "M2-114-2d8db058ebbd",
+ "type": "single",
+ "question": "取油菜花、槐树花、薄荷花和百合花各一朵解剖，对应的雄蕊数分别是多少",
+ "options": {
+  "A": "4，l0，4，6",
+  "B": "6，10，4，4",
+  "C": "6，10，4，6",
+  "D": "6，9，2，6"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 114 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 （7 道题9 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

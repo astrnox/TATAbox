@@ -1,0 +1,44 @@
+{
+ "id": "M4-96-a24926da43b9",
+ "type": "multiple",
+ "question": "在玉米杂交实验中，用基因型为AABb 的玉米（不连锁）作母本，基因型为aabb 玉米作父本进行杂交，关于F1 果实基因型判断正确的是：",
+ "options": {
+  "A": "F1 果实果皮的基因型为AABb",
+  "B": "F1 胚的基因型为AaBb 或Aabb",
+  "C": "F1 胚乳的基因型为AaaBbb 或Aaabbb",
+  "D": "玉米果实果皮的颜色由合子基因型决定"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 96 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

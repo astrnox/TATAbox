@@ -1,0 +1,76 @@
+{
+ "id": "M1-16-5262fb4a31d0",
+ "type": "mtf",
+ "question": "细胞在饥饿条件下会产生自噬小体包裹自身的部分物质用于分解提供能量。在酿酒酵母中，自噬小体在细胞质中产生后被运输到液泡进行分解（见右侧A 图），野生型细胞中这一分解过程会较快完成，然而一些突变体会产生B 图所示表型，请对以下陈述进行正误判断：",
+ "options": {
+  "A": "该突变体是由于自噬小体形成过程出现障碍而导致",
+  "B": "该突变体是由于自噬小体不能和液泡融合而导致",
+  "C": "该突变体是由于液泡分解功能障碍而导致",
+  "D": "使用蛋白酶抑制剂处理野生型酵母细胞可能会得到类似的表型"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 16 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-16-5262fb4a31d0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 3,
+  "bbox": [
+   236.3,
+   73.4,
+   550.3,
+   193.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-16-5262fb4a31d0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 3,
+   "bbox": [
+    236.3,
+    73.4,
+    550.3,
+    193.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

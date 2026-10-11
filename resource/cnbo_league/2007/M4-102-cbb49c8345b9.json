@@ -1,0 +1,78 @@
+{
+ "id": "M4-102-cbb49c8345b9",
+ "type": "mtf",
+ "question": "下图是患有肌营养不良个体的一个家系，是一个女人和两个不同的男人在两次不同的婚姻中产生的。你认为可能的遗传方式有：",
+ "options": {
+  "A": "X 性连锁隐性基因引起的",
+  "B": "这女人很可能是杂合体",
+  "C": "常染色体显性遗传病",
+  "D": "X 染色体显性遗传病",
+  "E": "该致病基因的遗传方式是Y-连锁限性遗传"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "102.A（√）B（√）C（×）D（×）E（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 102 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-102-cbb49c8345b9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 96,
+  "bbox": [
+   154.9,
+   107.2,
+   440.3,
+   192.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-102-cbb49c8345b9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 96,
+   "bbox": [
+    154.9,
+    107.2,
+    440.3,
+    192.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-43-f5f6dcd87bdb",
+ "type": "single",
+ "question": "某健康成年女性在跑步机上做健步走运动时，动脉血压由运动前的110mm Hg（收缩压）/70mm Hg（舒张压）变化至145mm Hg（收缩压）/60mm Hg（舒张压），心率和搏出量分别由每分钟75 次和大约80mL 变化至每分钟130 次和大约110mL。下列分析中，合理的是：",
+ "options": {
+  "A": "与运动前相比，运动时平均动脉压升高超过10mm Hg；",
+  "B": "运动时，收缩压升高可由搏出量增大来解释，舒张压降低则表明总外周阻力可能下降；",
+  "C": "运动时，对于心输出量的增大，搏出量比心率有更大的贡献；",
+  "D": "如果服用一种β-肾上腺素能受体拮抗药（心得安），其运动耐量将提高。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 43 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-89-62fa1bf57e79",
+ "type": "multiple",
+ "question": "在金丝猴行为研究的实验中，观察者选定了一群有6 只个体的金丝猴作为观察对象，并做到个体识别。然后，每天从6:00 至18:00，每小时内顺序观察猴群中每个个体，每个体观察10 分钟，并记录全部行为。这种取样方法包括了：",
+ "options": {
+  "A": "目标取样",
+  "B": "扫描取样",
+  "C": "随意取样",
+  "D": "点取样"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 89 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-54-eb76014c6334",
+ "type": "single",
+ "question": "以下关于生长素的极性运输的叙述中，错误的是：",
+ "options": {
+  "A": "在苔藓和蕨类植物中存在着生长素的极性运输",
+  "B": "生长素极性运输的方向受重力影响",
+  "C": "在植物的幼茎、幼叶和幼根中，生长素的极性运输发生在维管束薄壁细胞组织",
+  "D": "生长素的极性运输是耗能过程"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 54 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

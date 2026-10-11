@@ -1,0 +1,44 @@
+{
+ "id": "M2-73-064bb8eac774",
+ "type": "single",
+ "question": "农业公司仅依赖于少数高度近交的精华品系用于育种，于是农业群体最终可能达到选育的极限。继续改良品种的有效方法是：",
+ "options": {
+  "A": "每年留下部分种子供来年的种植",
+  "B": "与具有不同等位基因的新群体进行杂交",
+  "C": "将优良品系不断自交以保持纯系",
+  "D": "淘汰老品种，更新到最新品种并长期保持最新品种"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 73 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

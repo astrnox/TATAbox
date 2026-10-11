@@ -1,0 +1,44 @@
+{
+ "id": "M2-94-2a6813ca2869",
+ "type": "single",
+ "question": "植物学家在曼青冈林下捡到一个约10cm 长的椭球形果实，检查发现其果实类型为蒴果，随后用望远镜观察到树上还有很多附生植物，叶片为长条带状。该果实最有可能是下列哪种植物的？",
+ "options": {
+  "A": "曼青冈",
+  "B": "西藏剑蕨",
+  "C": "虎头兰",
+  "D": "黄果冷杉"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 94 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

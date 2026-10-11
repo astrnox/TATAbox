@@ -1,0 +1,46 @@
+{
+ "id": "M4-89-121c02b70630",
+ "type": "single",
+ "question": "血缘的远近由亲属之间DNA 的共享程度决定，有别于DNA 序列相似度，严格地说是有多少比例来源于一个近期（比如几百年）的共同的祖先，比如父母和子女有50%左右的 DNA 共享，父母之间一般是0%。兄弟姐妹之间DNA 共享度（血缘的远近）大概是",
+ "options": {
+  "A": "1/4",
+  "B": "1/3",
+  "C": "l/2",
+  "D": "2/3",
+  "E": "3/8"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 89 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

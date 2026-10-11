@@ -1,0 +1,110 @@
+{
+ "id": "M1-24-75efd09ed411",
+ "type": "mtf",
+ "question": "请根据左图所示的木材显微结构特征以及维管形成层的季节性活动规律，对以下关于生长轮（年轮）的陈述进行正误判断：",
+ "options": {
+  "A": "在温带地区，一个生长季节内形成的早材和晚材共同构成一个清晰可见的生长轮（年轮）",
+  "B": "左图中清晰可见，年轮的界限位于上一生长季节形成的晚材与本生长季节形成的早材之间",
+  "C": "在同一生长轮内，从早材到晚材的细胞形态过渡通常是突变的，形成明显的内部界限",
+  "D": "左图显示晚材区域细胞排列紧密、腔小壁厚，因此通常比结构疏松、腔大壁薄的早材更为致密"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 24 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "23-24",
+  "stimulus": "由维管形成层分化为次生木质部和次生韧皮部，产生了庞大的次生维管组织，支撑了高大树体而且"
+ },
+ "image": {
+  "file": "assets/questions/M1-24-75efd09ed411/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 4,
+  "bbox": [
+   42.9,
+   367.6,
+   286.8,
+   519.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-24-75efd09ed411/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    42.9,
+    367.6,
+    286.8,
+    519.0
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M1-24-75efd09ed411/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    288.5,
+    371.3,
+    576.0,
+    513.8
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M1-24-75efd09ed411/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    310.3,
+    628.6,
+    627.5,
+    796.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

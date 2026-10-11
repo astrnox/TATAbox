@@ -1,0 +1,76 @@
+{
+ "id": "M3-52-1a27749b0e24",
+ "type": "mtf",
+ "question": "恐惧是为了应对感知到的危险或威胁而出现的一种心理状态，通常基于逃避和回避等行为进行量化。为探究非营养级种间互动的恐惧反应，研究人员使用自动行为反应(ABR)系统，测试非洲稀树草原有蹄类动物对不同声音（豹、大象尖锐声音、大象低沉声音、大象混合声音、对照组红胸杜鹃）的行为响应。图示显示了逃跑概率和警戒比例的平均值及其变异。根据所给信息，请对以下陈述进行正误判断：",
+ "options": {
+  "A": "根据图可知，相较于对照组，巨型动物非洲草原象的声音会引发有蹄类食草动物显著的恐惧反应",
+  "B": "研究中涉及到的有蹄类动物的逃跑和警戒行为实际上属于动物行为分类中的反捕食/防御行为",
+  "C": "有蹄类动物对大象声音的恐惧可能源于新奇刺激或体型因素，且这种反应完全依赖于个体学习而非遗传基础",
+  "D": "大象的攻击行为可能与特定鸣叫声相关联，从而驱动有蹄类动物产生恐惧反应，这种机制是基于生态互作的演化适应"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 52 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-52-1a27749b0e24/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   172.8,
+   376.9,
+   551.3,
+   524.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-52-1a27749b0e24/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    172.8,
+    376.9,
+    551.3,
+    524.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

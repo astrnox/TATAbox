@@ -1,0 +1,80 @@
+{
+ "id": "M2-75-1277f57f79bb",
+ "type": "single",
+ "question": "根据题干描述的实验过程和下图的实验结果判断以下说法中正确的是",
+ "options": {
+  "A": "Food 是生存必需，同组小鼠获取它的原则始终是先到先得",
+  "B": "WBS 有利于在同组小鼠之间建立起等级体系，使优势个体获得更多的奖励",
+  "C": "随着实验次数的增加，Food 和WBS 都可以成为小鼠自发建立社会规则的有效奖励物",
+  "D": "在WBS 作为奖励物时，更有利于社会规则的建立"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 75 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "74-75",
+  "stimulus": "为了研究小鼠能否自发建立社会规则来实现小团体所得奖励的最大化，研究者们设"
+ },
+ "image": {
+  "file": "assets/questions/M2-75-1277f57f79bb/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 296,
+  "bbox": [
+   121.4,
+   359.9,
+   473.7,
+   532.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-75-1277f57f79bb/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 296,
+   "bbox": [
+    121.4,
+    359.9,
+    473.7,
+    532.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

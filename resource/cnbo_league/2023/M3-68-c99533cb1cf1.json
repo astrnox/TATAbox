@@ -1,0 +1,46 @@
+{
+ "id": "M3-68-c99533cb1cf1",
+ "type": "single",
+ "question": "回声定位（echolocation）是指动物通过发出声波和接收回声来获得空间环境信息，进而实现目标定位、躲避障碍物、导航、觅食等活动的一种定向行为。回声定位行为涉及发声、听觉、神经等多感官系统，是动物的一种适应性的复杂性状。以下哪类动物不具有回声定位行为？",
+ "options": {
+  "A": "齿鲸类",
+  "B": "菊头蝠",
+  "C": "猪尾鼠",
+  "D": "马岛猬",
+  "E": "褐家鼠"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 68 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "三、动物行为学、生态学（15 题19 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

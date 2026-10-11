@@ -1,0 +1,44 @@
+{
+ "id": "M4-83-5e9faa6fcc64",
+ "type": "multiple",
+ "question": "一种甲壳虫有两个真实遗传的无斑点品系，这两个品系相互杂交得到的F1 均无斑点。 F1 杂交得到的F2 中，无斑点和有斑点的比率为13:3。如果将F2 中有斑点的个体两两之间随机杂交，则一对有斑点的F2 杂交的后代中有可能出现的表型和比率为：",
+ "options": {
+  "A": "有斑点和无斑点，比率3:1；",
+  "B": "有斑点和无斑点，比率1:1；",
+  "C": "均有斑点；",
+  "D": "均无斑点。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 83 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

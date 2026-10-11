@@ -1,0 +1,44 @@
+{
+ "id": "M4-06-fd4e2d79fa99",
+ "type": "single",
+ "question": "溶菌酶是一个碱性蛋白质，其相对分子质量约为14kDa。用以下方法从蛋清中得到溶菌酶，纯度最高的方法是：",
+ "options": {
+  "A": "硫酸铵沉淀，然后有机溶剂沉淀；",
+  "B": "硫酸铵沉淀，然后离子交换层析；",
+  "C": "等电点沉淀，然后离子交换层析；",
+  "D": "有机溶剂沉淀，然后凝胶过滤层析。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 6 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-34-d1d8dc70e2ca",
+ "type": "single",
+ "question": "神经细胞受到刺激后细胞膜上的钠离子通道打开。下面说法正确的是",
+ "options": {
+  "A": "Na+内流是自由扩散，引起细胞膜电位去极化",
+  "B": "Na+内流是协助转运，引起细胞膜电位去极化",
+  "C": "Na+内流是主动转运，引起细胞膜电位去极化",
+  "D": "Na+内流是主动转运，引起细胞电位超极化"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 34 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

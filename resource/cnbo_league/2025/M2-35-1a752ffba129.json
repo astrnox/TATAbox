@@ -1,0 +1,76 @@
+{
+ "id": "M2-35-1a752ffba129",
+ "type": "mtf",
+ "question": "噬菌体是侵染细菌、真菌等微生物的病毒，在环境中广泛存在。对大肠杆菌具有特异性侵染能力的噬菌体DY1 属于短尾噬菌体科，其侵染能力可以用噬菌体滴度表示（PFU/mL）。右图为该噬菌体的生长曲线。根据题干和图示信息，对以下陈述进行正误判断：",
+ "options": {
+  "A": "噬菌体DY1 通过二分裂的方式进行繁殖",
+  "B": "噬菌体DY1 的生长曲线为一步生长曲线",
+  "C": "该噬菌体为溶原性噬菌体",
+  "D": "潜伏期大约为20 分钟"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 35 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-35-1a752ffba129/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   373.2,
+   394.8,
+   840.7,
+   522.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-35-1a752ffba129/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    373.2,
+    394.8,
+    840.7,
+    522.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

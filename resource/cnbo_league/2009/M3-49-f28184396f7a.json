@@ -1,0 +1,44 @@
+{
+ "id": "M3-49-f28184396f7a",
+ "type": "single",
+ "question": "下列哪几组动物在自然条件具有“Ⅲ”型(凹型)的存活率曲线图？ ①牛、马、菜粉蝶②牡蛎、海洋鱼类、血吸虫 ③藤壶、蛔虫、乌贼④野鸡、老鼠、鸵鸟",
+ "options": {
+  "A": "①②",
+  "B": "③②",
+  "C": "④③",
+  "D": "①③"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 49 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

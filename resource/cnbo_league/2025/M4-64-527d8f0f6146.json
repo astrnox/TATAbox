@@ -1,0 +1,44 @@
+{
+ "id": "M4-64-527d8f0f6146",
+ "type": "mtf",
+ "question": "非编码保守元件（CNEs）是基因组中不编码蛋白质但在物种间显示出高度序列保守性的区域。对以下关于 CNEs 的陈述进行正误判断：",
+ "options": {
+  "A": "许多CNEs 已被证实位于基因的调控区域（如启动子、增强子），参与调控基因的时空表达",
+  "B": "CNEs 在物种间的高度保守性，主要是由于它们受到了强烈的正选择作用以适应不同环境",
+  "C": "由于其高度保守性，CNEs 区域的碱基替换速率较低，但插入和缺失等结构变异的发生和固定则基本不受选择压力影响",
+  "D": "CNEs 的保守性主要体现在核苷酸序列本身，其在基因组中相对于邻近基因的位置关系在远缘物种间通常不保守"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 64 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

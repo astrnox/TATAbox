@@ -1,0 +1,44 @@
+{
+ "id": "M4-91-161374b134ca",
+ "type": "single",
+ "question": "大气中二氧化碳的浓度在距今4 亿年前的泥盆纪末期急剧地减少。从大气中分离出的碳去了哪里",
+ "options": {
+  "A": "沉积成为煤和碳酸盐的岩石",
+  "B": "储存在极地冰盖的二氧化碳气泡中",
+  "C": "储存在海洋溶解的二氧化碳中",
+  "D": "逐渐发散到太空中"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 91 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

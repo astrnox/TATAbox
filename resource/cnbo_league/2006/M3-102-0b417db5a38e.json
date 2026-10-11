@@ -1,0 +1,44 @@
+{
+ "id": "M3-102-0b417db5a38e",
+ "type": "mtf",
+ "question": "以下哪些描述的是动物内分泌腺的特点？",
+ "options": {
+  "A": "没有导管，分泌物通过体液运输到靶器官",
+  "B": "由排列成团、索或囊泡的腺细胞构成，极少分布毛细血管或毛细淋巴管",
+  "C": "其分泌物对动物体的代谢、生长发育、生殖等重要生理机能具有调节作用",
+  "D": "是信息的存储处，在某些动物中是思维活动的物质基础"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 2 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-72-a41155c97630",
+ "type": "single",
+ "question": "如果一个平衡的群体中有4％个体表现出由单基因控制的隐性性状，那么两个没有表现出这个性状的个体的后代出现该隐性性状的比例为：",
+ "options": {
+  "A": "2.56×10-2",
+  "B": "4×10-2",
+  "C": "1.024×10-1",
+  "D": "1.6×10-2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 72 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

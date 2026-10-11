@@ -1,0 +1,44 @@
+{
+ "id": "M3-28-d23e27a27ab3",
+ "type": "single",
+ "question": "下列哪一组器官均为中胚层衍生物？",
+ "options": {
+  "A": "脑下垂体前叶，脊髓，小肠，肺",
+  "B": "脊索，腹直肌，红血细胞，睾丸",
+  "C": "耳咽管，甲状腺，消化道内壁黏膜，胰脏",
+  "D": "胆囊，直肠末端，肝脏，消化道表面浆膜"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 28 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-25-7d44b0aa35b9",
+ "type": "multiple",
+ "question": "植物细胞含有一个充满液体的中央大液泡，它具有溶酶体的性质，还具有其他多种功能。下列关于其在植物细胞中功能的描述中，正确的有：",
+ "options": {
+  "A": "液泡中积累的花色素苷给植物的花瓣和果实带来了丰富的色彩",
+  "B": "植物细胞的液泡可以储存一些次生代谢产物以抵御动物和病菌的侵害",
+  "C": "高盐胁迫使植物细胞液泡将水分储存起来，从而导致细胞发生质壁分离",
+  "D": "液泡是植物细胞重要的胞内钙库，对活细胞内的钙稳态维持及细胞信号转导至关重要"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 25 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-22-90748a59ca76",
+ "type": "single",
+ "question": "以下哪一技术不能一次实验同时检测成千上万个基因的表达？",
+ "options": {
+  "A": "逆转录 PCR（Reverse transcription PCR）",
+  "B": "基因芯片技术（Gene chip）",
+  "C": "第二代测序技术（Next-Generation Sequencing）",
+  "D": "单分子测序（Single molecule sequencing）"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 22 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

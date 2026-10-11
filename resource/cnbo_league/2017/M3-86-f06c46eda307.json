@@ -1,0 +1,46 @@
+{
+ "id": "M3-86-f06c46eda307",
+ "type": "multiple",
+ "question": "2013 年以来，我们四分之一国土出现雾霾，受影响人口约6 亿人。雾霾中的PM2.5 成为最新的健康杀手。其中霾的主要组成物质包括：",
+ "options": {
+  "A": "二氧化硫",
+  "B": "二氧化碳",
+  "C": "可吸入颗粒物",
+  "D": "氮氧化物",
+  "E": "水蒸汽"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 86 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

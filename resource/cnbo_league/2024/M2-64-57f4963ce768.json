@@ -1,0 +1,80 @@
+{
+ "id": "M2-64-57f4963ce768",
+ "type": "multiple",
+ "question": "根据图中模型的估计，下列说法不正确的有：",
+ "options": {
+  "A": "夜宿地在小城市的雌性在冬季比雄性有更长的觅食距离，其他季节则不然；",
+  "B": "在同一季节不同夜宿地类型中，夜宿在大城市的雄性的觅食距离最短；",
+  "C": "在秋季，夜宿地在同一类区域的雌性和雄性相比，后者的觅食距离总是短于前者；",
+  "D": "春季夜宿在小城市的雌性有最长的觅食距离。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 64 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "63-64",
+  "stimulus": "灰头狐蝠是生活于澳大利亚的一种以植物为主要食物的大型蝙蝠。随着当地的城市"
+ },
+ "image": {
+  "file": "assets/questions/M2-64-57f4963ce768/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 462,
+  "bbox": [
+   194.9,
+   535.1,
+   400.4,
+   739.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-64-57f4963ce768/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 462,
+   "bbox": [
+    194.9,
+    535.1,
+    400.4,
+    739.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

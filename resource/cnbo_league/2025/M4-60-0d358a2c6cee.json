@@ -1,0 +1,44 @@
+{
+ "id": "M4-60-0d358a2c6cee",
+ "type": "mtf",
+ "question": "对以下关于细菌中遗传物质传递方式及其应用的陈述进行正误判断：",
+ "options": {
+  "A": "噬菌体能参与细菌之间的遗传物质传递",
+  "B": "细菌无法从其周围环境中直接摄入外源DNA",
+  "C": "细菌间的遗传物质传递需要细菌之间直接接触",
+  "D": "细菌之间遗传物质的传递可以用于推断细菌基因间的距离实验开始实验结束实验结束有蝙蝠 隔离蝙蝠有蝙蝠 隔离蝙蝠有蝙蝠 隔离蝙蝠每株幼苗上的昆 ⾍ 数量叶 ⾯ 积损失百分 ⽐"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 60 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

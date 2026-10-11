@@ -1,0 +1,76 @@
+{
+ "id": "M1-08-cc4a905bd6f7",
+ "type": "multiple",
+ "question": "在小鼠饱食8 天的条件下，研究者测定了野生型小鼠与突变小鼠肝脏中丙二酰辅酶A 的含量，结果如图，这说明突变体：",
+ "options": {
+  "A": "脂肪酸氧化显著减低",
+  "B": "脂防酸氧化显著升高",
+  "C": "脂肪酸从头合成显著增加",
+  "D": "脂肪酸从头合成显著降低"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 8 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-08-cc4a905bd6f7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 409,
+  "bbox": [
+   90.0,
+   245.1,
+   165.8,
+   413.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-08-cc4a905bd6f7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 409,
+   "bbox": [
+    90.0,
+    245.1,
+    165.8,
+    413.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

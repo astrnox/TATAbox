@@ -1,0 +1,44 @@
+{
+ "id": "M4-88-7d5b166b1a8d",
+ "type": "single",
+ "question": "研究者发现F 蛋白突变(p.C339R)会引起视网膜退行性病变，他们做了突变型F 蛋白的染色质免疫沉淀实验，该实验所基于的假设是：",
+ "options": {
+  "A": "突变位点位于该蛋白的DNA 结合结构域；",
+  "B": "突变阻碍了F 蛋白与DNA 靶序列的结合；",
+  "C": "突变阻碍了F 蛋白对靶基因的激活作用；",
+  "D": "突变阻碍了F 蛋白与靶蛋白形成复合体。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 88 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

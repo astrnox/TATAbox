@@ -1,0 +1,44 @@
+{
+ "id": "M4-62-3f0231c3974e",
+ "type": "single",
+ "question": "小麦种皮的颜色由多拷贝基因决定，等位基因R 越多，种皮越红，r 越多，种皮越白。真实遗传的红色种皮小麦和真实遗传的白色种皮小麦杂交，F2 代红色种皮和白色种皮小麦的比例为63:1，那么杂交中产生分离的R 基因座有",
+ "options": {
+  "A": "2 个",
+  "B": "3 个",
+  "C": "4 个",
+  "D": "5 个"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 62 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-3e36984fb11d",
+ "type": "single",
+ "question": "动物细胞培养工作始于20 世纪初，其后得到广泛的发展。Hayflick 和Moorhead 的实验发现在体外培养的细胞经过40-60 次群体倍增后便不再分裂了。这一发现源于下列何种生理现象？",
+ "options": {
+  "A": "细胞衰老",
+  "B": "细胞凋亡",
+  "C": "细胞自噬",
+  "D": "细胞坏死"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 7 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-42-ea493107750c",
+ "type": "single",
+ "question": "下列有关水生群落演替的说法中哪个是错误的",
+ "options": {
+  "A": "水生群落的演替一般会依次经历裸底期、浮水植物期、沉水植物期、挺水植物期、湿生草本植物期等阶段",
+  "B": "在这一演替过程中池底逐渐变浅，最终向陆地变化",
+  "C": "挺水植物根系往往较发达，可以使水底迅速增高",
+  "D": "浮水植物的叶子漂浮在水面，影响到水下光照，不利于沉水植物生长"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 42 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

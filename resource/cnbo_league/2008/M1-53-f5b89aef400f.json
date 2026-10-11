@@ -1,0 +1,44 @@
+{
+ "id": "M1-53-f5b89aef400f",
+ "type": "single",
+ "question": "（接上题）没有DMD 病史的家族中出现一位患病男士(先证者)，如果该男士和他的表妹结婚，他们两个的母亲是亲姐妹,那么，这对夫妇的第一个孩子是患病男孩的概率为",
+ "options": {
+  "A": "0",
+  "B": "1/4",
+  "C": "1/8",
+  "D": "1/16"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 53 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

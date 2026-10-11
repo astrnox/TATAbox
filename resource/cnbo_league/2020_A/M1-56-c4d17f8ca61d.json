@@ -1,0 +1,44 @@
+{
+ "id": "M1-56-c4d17f8ca61d",
+ "type": "multiple",
+ "question": "同化物在叶绿体合成后需要在细胞内进行分配并在器官间进行运输，下面陈述正确的是",
+ "options": {
+  "A": "在叶绿体中经光合碳同化形成的磷酸己糖在细胞质中转化为蔗糖，在叶绿体中转化为淀粉",
+  "B": "在夏天高光强、长日照下，叶绿体中有较多淀粉积累",
+  "C": "在夜间，叶绿体中的淀粉被淀粉酶水解，产生的己糖由叶绿体输出到细胞质",
+  "D": "同化物向叶外器官的运输和分配符合源库理论"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 56 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

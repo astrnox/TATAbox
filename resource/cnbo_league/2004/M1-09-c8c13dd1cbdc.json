@@ -1,0 +1,44 @@
+{
+ "id": "M1-09-c8c13dd1cbdc",
+ "type": "single",
+ "question": "一学生将唾液加入淀粉溶液中，然后置于以下各条件处理，希望将淀粉转变为单糖和双糖，试问在他的实验中哪个条件最好",
+ "options": {
+  "A": "将混合物置于4℃冰箱内",
+  "B": "将混合物置于30℃温箱内",
+  "C": "将混合物煮沸后置于30℃温箱内",
+  "D": "将混合物置于70℃温箱内"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 9 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

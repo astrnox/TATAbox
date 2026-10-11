@@ -1,0 +1,80 @@
+{
+ "id": "M4-76-a0dd682679e0",
+ "type": "multiple",
+ "question": "从图可以看出，由食叶物种数据做出的实线位于由食性特化（食虫和食果）物种数据做出的虚线下方，以下说法不正确的是",
+ "options": {
+  "A": "食性特化与食叶两类物种中，家域范围随群中个体总重量变化的趋势是一致的",
+  "B": "同样的家域范围，食性特化物种的群中个体总重量更大",
+  "C": "对群中个体总重量相同的两个物种，食叶物种的家域范围更大",
+  "D": "同样的家域范围，食性特化物种的群中个体总重量更小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 76 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "75-76",
+  "stimulus": "Clutton- Brock 等对几种灵长类动物在食性和活动范围之间的关系做了研究，结果如"
+ },
+ "image": {
+  "file": "assets/questions/M4-76-a0dd682679e0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 350,
+  "bbox": [
+   103.9,
+   77.7,
+   491.3,
+   284.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-76-a0dd682679e0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 350,
+   "bbox": [
+    103.9,
+    77.7,
+    491.3,
+    284.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

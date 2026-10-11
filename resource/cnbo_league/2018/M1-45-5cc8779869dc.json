@@ -1,0 +1,44 @@
+{
+ "id": "M1-45-5cc8779869dc",
+ "type": "single",
+ "question": "协助扩散是物质的跨膜转运的一种方式，有关协助扩散说法正确的是",
+ "options": {
+  "A": "协助扩散：即不需要载体蛋白，也不需要细胞消耗能量",
+  "B": "协助扩散：需要载体蛋白，不需要细胞消耗能量",
+  "C": "协助扩散：不需要载体蛋白，需要细胞消耗能量",
+  "D": "协助扩散：需要载体蛋白，也需要细胞消耗能量"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 45 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

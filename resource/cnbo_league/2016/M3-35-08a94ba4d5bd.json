@@ -1,0 +1,50 @@
+{
+ "id": "M3-35-08a94ba4d5bd",
+ "type": "single",
+ "question": "幼虫期与成虫期形态上变化不大，只是翅未长出，生殖器官发育不全。此时期的幼虫也称为若虫，经过几次脱皮，渐渐成长为成虫。",
+ "options": {
+  "A": "表变态",
+  "B": "渐变态",
+  "C": "全变态",
+  "D": "原变态",
+  "E": "半变态"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 35 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "35-36",
+  "stimulus": "变态是昆虫发育中普遍存在的现象，形式多样，请判断："
+ }
+}

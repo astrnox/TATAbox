@@ -1,0 +1,39 @@
+{
+ "id": "M2-26-5e73fd0f3555",
+ "type": "single",
+ "question": "溶源性细菌的染色体上整合下列哪些项？",
+ "options": {
+  "A": "温和噬菌体DNA",
+  "B": "烈性噬菌体DNA",
+  "C": "温和噬菌体粒子",
+  "D": "烈性噬菌体粒子"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 2.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 26 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

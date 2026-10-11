@@ -1,0 +1,46 @@
+{
+ "id": "M2-116-9cfb34fb1737",
+ "type": "mtf",
+ "question": "以下哪些在植物体中属于初生分生组织？",
+ "options": {
+  "A": "原形成层",
+  "B": "维管形成层",
+  "C": "束中形成层",
+  "D": "束间形成层",
+  "E": "木栓形成层"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "116.A（√）B（ ）C（√）D（ ）E （ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 116 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

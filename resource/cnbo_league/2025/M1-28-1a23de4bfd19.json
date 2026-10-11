@@ -1,0 +1,44 @@
+{
+ "id": "M1-28-1a23de4bfd19",
+ "type": "mtf",
+ "question": "植物细胞壁作为包裹在原生质体外围的特殊结构，其结构和成分是植物学研究的重点。Lamport 和Epsteirn 提出的“经纬模型”是描述初生细胞壁结构的模型之一。请对下面关于该模型的陈述进行正误判断：",
+ "options": {
+  "A": "纤维素微纤丝作为“经线”，构成细胞壁的主要骨架",
+  "B": "半纤维素作为“纬线”，垂直于纤维素微纤丝排列，并通过氢键与之连接",
+  "C": "果胶填充在纤维素和半纤维素网络中，其状态变化可以影响细胞壁的柔韧性或硬度",
+  "D": "木质素是初生细胞壁“经纬模型”中的重要组成部分，显著增强细胞壁的弹性"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 28 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

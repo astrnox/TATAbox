@@ -1,0 +1,44 @@
+{
+ "id": "M3-69-1566d2ce68c4",
+ "type": "multiple",
+ "question": "从2008 年至今，青岛的海滨在7-8 月份会发生浒苔大面积爆发而不是海带，为什么？",
+ "options": {
+  "A": "青岛的水域不适合海带的生长",
+  "B": "海带生活史更长，不易受环境变化影响",
+  "C": "浒苔主要通过无性繁殖",
+  "D": "浒苔的配子体和孢子体都能独立存活"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 69 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

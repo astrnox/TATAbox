@@ -1,0 +1,80 @@
+{
+ "id": "M4-88-c4d813ea6309",
+ "type": "single",
+ "question": "与物种树相比，图中哪些基因树是不完全谱系分选造成的？",
+ "options": {
+  "A": "图（2）和图（3）",
+  "B": "图（2）和图（4）",
+  "C": "图（3）和图（4）",
+  "D": "图（2）、图（3）和图（4）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 88 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "88-89",
+  "stimulus": "组题题干：由一个基因或者一个DNA 片段构建的进化树并不一定能够正确地反映出"
+ },
+ "image": {
+  "file": "assets/questions/M4-88-c4d813ea6309/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 449,
+  "bbox": [
+   181.9,
+   193.0,
+   413.5,
+   374.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-88-c4d813ea6309/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 449,
+   "bbox": [
+    181.9,
+    193.0,
+    413.5,
+    374.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

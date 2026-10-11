@@ -1,0 +1,95 @@
+{
+ "id": "M3-73-eea13df6606c",
+ "type": "single",
+ "question": "若研究者们想知道雌性对于领先雄性和跟随雄性的喜好度有无差别，则最好选择的实验设计是：",
+ "options": {
+  "A": "挥螯时间I+场地A",
+  "B": "挥螯时间I+场地B-1",
+  "C": "挥螯时间I+场地B-2",
+  "D": "挥螯时间III+场地C"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 73 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "73-74",
+  "stimulus": "Austruca mjoebergi 是一种招潮蟹，雄性会同步挥动螯肢来求偶。研究者们利用野生"
+ },
+ "image": {
+  "file": "assets/questions/M3-73-eea13df6606c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 424,
+  "bbox": [
+   286.5,
+   76.4,
+   502.9,
+   270.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-73-eea13df6606c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 424,
+   "bbox": [
+    286.5,
+    76.4,
+    502.9,
+    270.4
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-73-eea13df6606c/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 424,
+   "bbox": [
+    90.0,
+    79.9,
+    285.8,
+    269.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M3-118-3a1bb1389085",
+ "type": "mtf",
+ "question": "兴趣小组设计了以下实验来验证生态系统的一些相关问题：取4 个密闭、透明的生态瓶，各瓶内的组成和条件见下表，图中“1”表示有，“0”表示无。经过一段时间的培养后，下面判断正确的是：生态瓶编号生态系统组成光照水草藻类浮游动物小鱼泥沙甲乙丙丁",
+ "options": {
+  "A": "甲瓶是最稳定的",
+  "B": "乙瓶中，浮游动物的种群密度降维持恒定",
+  "C": "丙瓶比甲瓶有较多的有机物",
+  "D": "甲瓶的氧含量比丁瓶的高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "118.A（√）B（×）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 118 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 118,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-118-3a1bb1389085/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 98,
+  "bbox": [
+   90.0,
+   306.0,
+   505.3,
+   432.6
+  ],
+  "kind": "vector"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-118-3a1bb1389085/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2007 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 98,
+   "bbox": [
+    90.0,
+    306.0,
+    505.3,
+    432.6
+   ],
+   "kind": "vector"
+  }
+ ]
+}

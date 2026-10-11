@@ -1,0 +1,44 @@
+{
+ "id": "M4-76-7abc38dde787",
+ "type": "single",
+ "question": "有些动物的性别不是取决于是否有Y 染色体的存在，而是取决于其携带的X 染色体的数目。这类动物的雌性有两条X 染色体，而雄性只有一条。雄性进行减数分裂可形成含有 0 个X 或1 个X 的配子。而雌性进行减数分裂一般形成含有1 个X 染色体的配子，但有时可生成含有0 个X 或2 个X 的配子。以下导致雌性生成含有2 个X 配子的原因是：（1）两条同源的X 染色体没有在减数分裂I 中分离（2）X 染色体的两条染色单体没有在减数分裂Ⅱ中分离（3）X 染色体的两条染色单体没有在卵原细胞的有丝分裂中分离",
+ "options": {
+  "A": "只有（1）",
+  "B": "只有（1）和（2）",
+  "C": "只有（2）和（3）",
+  "D": "（1）、（2）和（3）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 76 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-107-b983f9d2cc37",
+ "type": "mtf",
+ "question": "下列有关DNA 和mRNA 的描述中正确的是：",
+ "options": {
+  "A": "mRNA 易被水解，DNA 则较稳定",
+  "B": "DNA 可以配对形成双链结构，而mRNA 则不能",
+  "C": "在一定条件下，DNA 和mRNA 都可以形成双链结构",
+  "D": "细菌的mRNA 与其DNA 一样稳定"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "107.A（√）B（×）C（√）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 107 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

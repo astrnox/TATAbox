@@ -1,0 +1,76 @@
+{
+ "id": "M4-65-f5fe2d89d0c2",
+ "type": "mtf",
+ "question": "图示为一个假设的系统发生树，展示了8 个分类单元（a–h）的演化关系。其中，分类单元a, b, c, d 被定义为研究的内群，其余分类单元（e, f, g, h）构成外群，且该树已使用外群进行定根（根位于连接内群分支与外群分支处）。对以下关于该系统发生树解读的陈述进行正误判断：",
+ "options": {
+  "A": "分类单元a, b, c 共同构成一个单系群",
+  "B": "分类单元g 和h 互为姐妹群",
+  "C": "分类单元e 是和内群亲缘关系最近的外群",
+  "D": "分类单元d 是包含分类单元a, b, c 的分支的姐妹群"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 65 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-65-f5fe2d89d0c2/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 11,
+  "bbox": [
+   420.0,
+   553.8,
+   547.2,
+   617.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-65-f5fe2d89d0c2/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 11,
+   "bbox": [
+    420.0,
+    553.8,
+    547.2,
+    617.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

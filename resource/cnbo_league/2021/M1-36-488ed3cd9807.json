@@ -1,0 +1,44 @@
+{
+ "id": "M1-36-488ed3cd9807",
+ "type": "single",
+ "question": "“恶性高热”是一种潜在的致命性遗传疾病，病人对吸入的麻醉剂表现出过高的响应，出现骨骼肌僵直、体温升高和乳酸酸中毒。上述临床表现可能基于下述哪种分子机制。",
+ "options": {
+  "A": "肌肉细胞中二氢吡啶对膜电位变化的敏感性异常下降",
+  "B": "肌肉细胞中肌浆网钙泵的钙转运活性异常上调",
+  "C": "肌肉细胞中 Ryanodine（雷诺丁）受体开放时程异常增加",
+  "D": "肌肉细胞中横管（T tubule）膜上电压敏感离子通道密度异常下降"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 36 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

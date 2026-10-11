@@ -1,0 +1,44 @@
+{
+ "id": "M1-31-73afe3f42310",
+ "type": "multiple",
+ "question": "在观察细胞结构时需要借助显微镜，下列与此相关的叙述正确的有：",
+ "options": {
+  "A": "人眼的分辨率一般为0.02 毫米；",
+  "B": "普通光学显微镜的极限分辨率是0.2 微米；",
+  "C": "用电子显微镜观察超薄切片生物样品，分辨率可达0.14 纳米；",
+  "D": "基于受激发射损耗(STED)原理，显微镜的分辨率可以突破阿贝极限。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 31 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

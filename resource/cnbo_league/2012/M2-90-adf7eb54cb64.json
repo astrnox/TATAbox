@@ -1,0 +1,44 @@
+{
+ "id": "M2-90-adf7eb54cb64",
+ "type": "multiple",
+ "question": "酸性土壤中生长的植物容易出现哪些元素毒害现象",
+ "options": {
+  "A": "铁",
+  "B": "锰",
+  "C": "镁",
+  "D": "钙"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 90 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

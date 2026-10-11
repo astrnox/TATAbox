@@ -1,0 +1,44 @@
+{
+ "id": "M2-51-974e189ad43f",
+ "type": "single",
+ "question": "日本血吸虫是人的重要寄生虫．寄生虫的中间寄主有①钉螺 ②猪，寄生虫的侵入方式有③食入④皮肤钻入。日本血吸虫的中间寄主和侵入方式是",
+ "options": {
+  "A": "①③",
+  "B": "①④",
+  "C": "②③",
+  "D": "②④"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 51 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

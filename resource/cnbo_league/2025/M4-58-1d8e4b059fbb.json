@@ -1,0 +1,44 @@
+{
+ "id": "M4-58-1d8e4b059fbb",
+ "type": "mtf",
+ "question": "某基因座A 有n 个等位基因（n≥4）。个体基因型可分为纯合子（如AiAi）和杂合子（如AiAj）。若要对亲代婚配类型进行分类，使得每种类型都能产生独特的子代基因型组合模式。分类时，需考虑亲本的纯合/杂合状态以及两个亲本总体涉及的等位基因种类数和这些等位基因在亲本间的具体关系。不区分具体的等位基因种类（如 AiAi×AiAi 与AjAj×AjAj 视为同类）及正反交。对以下关于这些婚配类型及其遗传后果的陈述进行正误判断：",
+ "options": {
+  "A": "在所有可能的婚配类型中，仅当亲本双方基因型完全相同时，其子代才可能出现纯合子",
+  "B": "存在这样一种婚配类型：亲本双方均为杂合子，且其所有子代个体也必定是杂合子",
+  "C": "亲代共有7 种不同的婚配类型",
+  "D": "若该基因座n=2，则根据此分类标准，可能的婚配类型将减少至两种"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 58 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

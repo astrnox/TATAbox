@@ -1,0 +1,39 @@
+{
+ "id": "M4-68-fb31a178505b",
+ "type": "single",
+ "question": "如果该昆虫为果蝇，与上述亲本雌性个体的基因型相同的雄果蝇与三隐性雌果蝇杂交，在其后代中",
+ "options": {
+  "A": "仍然有6 种表型，但比例有所不同",
+  "B": "仍然有6 种表型，比例也相似",
+  "C": "只有纹身和黑体一玻璃眼两种表型",
+  "D": "只有黑体和纹身一玻璃眼两种表型"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 68 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

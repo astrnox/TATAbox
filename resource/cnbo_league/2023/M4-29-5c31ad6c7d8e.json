@@ -1,0 +1,78 @@
+{
+ "id": "M4-29-5c31ad6c7d8e",
+ "type": "multiple",
+ "question": "BLAST 全称Basic Local Alignment Search Tool，即“基于局部比对算法的搜索工具”，是生物信息学常用的工具软件。其中最常用的BLASTN 方法是将用户提供的核酸序列与 NCBI 数据库中的核酸序列进行比对。下图是BLASTN 方法输出的序列比对结果。请依据此图，判断以下说法哪些是错误的？",
+ "options": {
+  "A": "用户输入的DNA 序列与比对得到的匹配序列之间序列一致性为95%",
+  "B": "“Query”和“Sbjct”DNA 序列变异涉及碱基转换4 个，颠换2 个",
+  "C": "与比对得到的匹配序列相比，用户输入的DNA 序列中有2 个缺失突变",
+  "D": "用户输入的DNA 序列与比对得到的序列是互补配对关系",
+  "E": "Expect 值表示序列随机匹配的可能性；Expect 值越小，表示随机匹配的可能性越大"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "CE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 29 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-29-5c31ad6c7d8e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 437,
+  "bbox": [
+   95.9,
+   72.0,
+   499.1,
+   230.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-29-5c31ad6c7d8e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 437,
+   "bbox": [
+    95.9,
+    72.0,
+    499.1,
+    230.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-02-fc626f5c494b",
+ "type": "single",
+ "question": "细胞的信号转导，涉及信号分子、受体、转导蛋白和效应分子等复杂体系，下列受体中，属于多次跨膜的蛋白质的是：",
+ "options": {
+  "A": "肾上腺皮质激素受体",
+  "B": "G 蛋白耦联受体",
+  "C": "维甲酸（视黄酸，RA）受体",
+  "D": "胰岛素样受体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 2 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

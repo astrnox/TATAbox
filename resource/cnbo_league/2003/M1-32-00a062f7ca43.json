@@ -1,0 +1,44 @@
+{
+ "id": "M1-32-00a062f7ca43",
+ "type": "single",
+ "question": "以下对于阴生植物和阳生植物的讨论，哪一项是不正确的？",
+ "options": {
+  "A": "阴生植物叶片的输导组织比阳生植物稀疏，所以当光照强度很大时，它的光合速率便不再增加",
+  "B": "阴生植物的叶绿体中基粒较大，基粒片层多，所以阴生植物在较低的光强度下能充分地吸收光能",
+  "C": "阴生植物的叶绿素b 和叶绿素a 的比值小，所以阴生植物能强烈地利用蓝光，适应于遮阴处生长",
+  "D": "阴生植物的叶绿素含量较高，所以阴生植物在较低的光强度下能充分地吸收光能"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 32 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

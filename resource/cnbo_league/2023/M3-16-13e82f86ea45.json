@@ -1,0 +1,46 @@
+{
+ "id": "M3-16-13e82f86ea45",
+ "type": "single",
+ "question": "一个健康的人在休息时有意识地开始呼吸过快，下列哪一项描述了这种过度换气所引起的人的血液变化？",
+ "options": {
+  "A": "二氧化碳分压增加，氢离子浓度增加",
+  "B": "二氧化碳分压增加，氢离子浓度降低",
+  "C": "二氧化碳分压降低，氢离子浓度增加",
+  "D": "二氧化碳分压降低，氢离子浓度降低",
+  "E": "二氧化碳分压降低，氢离子浓度不变"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 16 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

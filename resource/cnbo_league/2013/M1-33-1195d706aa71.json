@@ -1,0 +1,39 @@
+{
+ "id": "M1-33-1195d706aa71",
+ "type": "single",
+ "question": "（删除）以下关于神经冲动的描述，错误的是",
+ "options": {
+  "A": "是细胞膜产生的电信号",
+  "B": "其沿轴突的转导，具有不衰减的特点",
+  "C": "动作电位的绝对不应期特性决定了其转导的单向性",
+  "D": "在有髓神经纤维上的传导是从一个郎飞结跳到下一个郎飞结，因此在比无髓神经纤维上的传导更为快速"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 33 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

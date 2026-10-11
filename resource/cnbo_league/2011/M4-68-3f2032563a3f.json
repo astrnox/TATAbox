@@ -1,0 +1,46 @@
+{
+ "id": "M4-68-3f2032563a3f",
+ "type": "multiple",
+ "question": "下列哪些离子交换机制是在机体中存在的？",
+ "options": {
+  "A": "Na+－K+交换",
+  "B": "K+－H+交换",
+  "C": "Na+－H+交换",
+  "D": "K+－Ca2+交换",
+  "E": "Ca2+－Na+交换"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ABCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 68 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

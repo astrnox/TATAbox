@@ -1,0 +1,48 @@
+{
+ "id": "M2-61-68e0c45581db",
+ "type": "single",
+ "question": "基于以上实验结果，下列叙述，正确的是：",
+ "options": {
+  "A": "保卫细胞内脱落酸含量的增加是气孔关闭的唯一原因",
+  "B": "保卫细胞内脱落酸含量的增加可能是气孔关闭的原因",
+  "C": "保卫细胞内脱落酸含量的增加不是气孔关闭的原因",
+  "D": "保卫细胞内脱落酸和活性氧二者同时增加是气孔关闭的原因"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 61 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "（61-63 题共用题干）植物在遇到干旱时，叶片表面的气孔会关闭，以减少水分蒸腾，"
+ }
+}

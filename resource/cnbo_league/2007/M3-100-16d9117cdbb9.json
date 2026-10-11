@@ -1,0 +1,44 @@
+{
+ "id": "M3-100-16d9117cdbb9",
+ "type": "mtf",
+ "question": "许多动物具有领域行为，新来的入侵者必须战胜领域原来的主人才能占有这块领地。然而在夺取领域的争斗中，胜利的一方多是领域原来的主人。你认为造成这种结果的可能原因有：",
+ "options": {
+  "A": "领域原来的主人更加熟悉领域的情况和价值",
+  "B": "入侵者既得利益不大，因此斗志不高",
+  "C": "领域原来的主人和入侵者之间的仪式化格斗不能决定胜负",
+  "D": "入侵者在格斗时总是拼个你死我活，失败了就以撤退告终"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "100.A（√）B（√）C（×）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 100 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

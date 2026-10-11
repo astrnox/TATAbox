@@ -1,0 +1,44 @@
+{
+ "id": "M1-100-7da8622d480b",
+ "type": "single",
+ "question": "两种DNA 分子(①和②)有相同的碱基对(1000bp)，但它的碱基组成不同，①含有 44%的G+C，②含有66%的G+C．在DNA 的①和②中各有多少T",
+ "options": {
+  "A": "340 560",
+  "B": "240 480",
+  "C": "560 340",
+  "D": "480 240"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 100 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

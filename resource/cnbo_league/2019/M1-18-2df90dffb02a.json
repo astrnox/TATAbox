@@ -1,0 +1,44 @@
+{
+ "id": "M1-18-2df90dffb02a",
+ "type": "single",
+ "question": "研究人员分离线粒体电子传递链的各组分，包括电子传递复合物Ⅰ、Ⅱ、Ⅲ和Ⅳ等。如果试管中放入琥珀酸、CoQ、细胞色素c、复合物Ⅱ和复合物Ⅲ各组分，并提供氧气：或者在同样的体系中再加入抗霉素A，最终电子受体将分别是",
+ "options": {
+  "A": "细胞色素c，CoQ",
+  "B": "细胞色素c，氧气",
+  "C": "复合物Ⅲ，CoQ",
+  "D": "复合物Ⅲ，氧气"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 18 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

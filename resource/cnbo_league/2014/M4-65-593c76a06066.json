@@ -1,0 +1,48 @@
+{
+ "id": "M4-65-593c76a06066",
+ "type": "single",
+ "question": "下列说法正确的有",
+ "options": {
+  "A": "突变株1 是合成氰酸的基因发生隐性突变的纯合体",
+  "B": "突变株1 是合成氰酸的基因发生显性突变的杂合体",
+  "C": "突变株2 是合成氰酸的基因发生隐性突变的纯合体",
+  "D": "突变株2 是合成氰酸的基因发生显性突变的杂合体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 65 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "64-66",
+  "stimulus": "氰酸是野生型三叶草天然产生的一种自我保护的化学物质。用两个无法产氰酸"
+ }
+}

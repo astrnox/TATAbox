@@ -1,0 +1,76 @@
+{
+ "id": "M1-30-e5ad3c9e9887",
+ "type": "single",
+ "question": "图a 和图b 中的qRT-PCR 结果显示，与正常膀胱组织相比，miR-130b 和miR-494 在膀胱癌组织中表达上调（每组的样本量都是30）。据此，下列陈述正确的是：",
+ "options": {
+  "A": "图a 中肿瘤组的数据样本方差较大，因此可以利用方差分析的检验方法对图a 中的数据进行分析；",
+  "B": "在图a 和图b 的正常组织数据中，存在随机误差；",
+  "C": "与图b 比较，图a 中的P 值更大，表明只有图a 的统计结果更可信；",
+  "D": "可以利用χ 2检验方法对四组数据一起进行分析，以便得到具有统计学意义的结论。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 30 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-30-e5ad3c9e9887/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 364,
+  "bbox": [
+   121.4,
+   527.7,
+   473.1,
+   691.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-30-e5ad3c9e9887/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 364,
+   "bbox": [
+    121.4,
+    527.7,
+    473.1,
+    691.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

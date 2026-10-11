@@ -1,0 +1,44 @@
+{
+ "id": "M3-90-c805fe742081",
+ "type": "multiple",
+ "question": "南水北调工程实施后，可能随水入京并成为北京地区鱼类入侵种的有：",
+ "options": {
+  "A": "江海洄游性鱼类",
+  "B": "肉食性鱼类",
+  "C": "湖泊定居性鱼类",
+  "D": "草食性鱼类"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 90 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

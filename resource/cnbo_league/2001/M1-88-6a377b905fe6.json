@@ -1,0 +1,44 @@
+{
+ "id": "M1-88-6a377b905fe6",
+ "type": "mtf",
+ "question": "真核细胞质膜的主要功能是：",
+ "options": {
+  "A": "负责细胞内外的物质运输",
+  "B": "为细胞活动提供相对稳定的内环境",
+  "C": "进行氧化磷酸化的场所",
+  "D": "介导细胞与细胞间的连接"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "15．A（√）B（√）C（×）D（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 15 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

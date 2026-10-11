@@ -1,0 +1,44 @@
+{
+ "id": "M3-85-0de6306c708c",
+ "type": "multiple",
+ "question": "在繁殖季节，雄性麋鹿会把尿喷洒在身体和地面上，并引起其他雄性或雌性个体的嗅闻行为，据此，尿喷洒行为的作用可能是：",
+ "options": {
+  "A": "除虫防暑",
+  "B": "传递发情状态的信号",
+  "C": "对抗捕食者",
+  "D": "领地标记"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 85 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

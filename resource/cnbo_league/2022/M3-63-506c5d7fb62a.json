@@ -1,0 +1,44 @@
+{
+ "id": "M3-63-506c5d7fb62a",
+ "type": "multiple",
+ "question": "下列有关七鳃鳗呼吸系统的说法中正确的有：",
+ "options": {
+  "A": "咽部分背腹两管，背面为食道，腹面为呼吸管；",
+  "B": "呼吸管后瑞为盲端，呼吸管左右两侧各有7 个内鳃孔，各与一个鳃囊相通；",
+  "C": "鳃囊壁有外胚层来源的褶皱状鳃丝，其上毛细血管丰富，气体交换在此进行；",
+  "D": "每一鳃囊经一个外鳃孔通体外。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 63 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

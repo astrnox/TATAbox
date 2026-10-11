@@ -1,0 +1,76 @@
+{
+ "id": "M3-84-d4fa4a05a9c8",
+ "type": "single",
+ "question": "下面是某生态系统食物网的示意图。请分析后回答上图中出现最高营养级的食物链是：",
+ "options": {
+  "A": "A→B→C→E",
+  "B": "A→B→E",
+  "C": "A→D",
+  "D": "A→B→C"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 84 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-84-d4fa4a05a9c8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 68,
+  "bbox": [
+   195.6,
+   483.9,
+   399.6,
+   564.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-84-d4fa4a05a9c8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 68,
+   "bbox": [
+    195.6,
+    483.9,
+    399.6,
+    564.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

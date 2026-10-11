@@ -1,0 +1,40 @@
+{
+ "id": "M1-82-325ea751c134",
+ "type": "single",
+ "question": "膜蛋白与膜脂双分子层之间的主要作用力是：",
+ "options": {
+  "A": "氢键",
+  "B": "范德华力",
+  "C": "疏水作用",
+  "D": "离子键"
+ },
+ "answer": null,
+ "answer_key": "B/C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 82 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "标答为复合/可选答案，见 answer_key"
+}

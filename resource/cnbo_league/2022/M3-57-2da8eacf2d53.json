@@ -1,0 +1,44 @@
+{
+ "id": "M3-57-2da8eacf2d53",
+ "type": "single",
+ "question": "秀丽隐杆线虫是生命科学研究中的一种模式动物，属于假体腔动物。对它的形态特征描述错误的是：",
+ "options": {
+  "A": "消化管结构包括内、外胚层来源的细胞；",
+  "B": "体壁肌肉连接背、腹神经，依靠环行、纵行肌肉的交替收缩运动；",
+  "C": "体腔液可以起到循环系统和流体静力骨骼的作用；",
+  "D": "没有呼吸系统。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 57 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

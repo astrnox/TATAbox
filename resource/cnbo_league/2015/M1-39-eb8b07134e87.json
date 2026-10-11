@@ -1,0 +1,44 @@
+{
+ "id": "M1-39-eb8b07134e87",
+ "type": "single",
+ "question": "在正常生理情况下，神经元细胞膜钠泵每一个活动周期可使",
+ "options": {
+  "A": "2 个Na+移出膜外，消耗1 个ATP",
+  "B": "2 个K+移入膜内，消耗1 个ATP",
+  "C": "3 个Na+移出膜外，同时2 个K+移入膜内，消耗1 个ATP",
+  "D": "2 个Na+移出膜外，同时3 个K+移入膜内，不消耗ATP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 39 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

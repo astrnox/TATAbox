@@ -1,0 +1,44 @@
+{
+ "id": "M2-01-9f6d07b7dc64",
+ "type": "mtf",
+ "question": "灭菌是生物技术中的重要环节，不同的灭菌方法适用于不同的场景。对以下关于常见灭菌方法及其应用的陈述进行正误判断：",
+ "options": {
+  "A": "过滤杀菌法主要适用于对固体培养基进行灭菌",
+  "B": "电磁波射线杀菌法（如紫外线）可用于实验室操作台表面和空气的杀菌",
+  "C": "使用化学药剂（如甲醛熏蒸）是空间杀菌的有效方法",
+  "D": "干热灭菌法因穿透力强，常用于液体的快速灭菌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 1 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

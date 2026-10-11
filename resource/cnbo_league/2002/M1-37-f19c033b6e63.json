@@ -1,0 +1,44 @@
+{
+ "id": "M1-37-f19c033b6e63",
+ "type": "single",
+ "question": "正常出现肽链终止，是因为",
+ "options": {
+  "A": "一个与链终止三联体相应的tRNA 不能带氨基酸;",
+  "B": "不具有与链终止三联体相应的反密码子tRNA",
+  "C": "mRNA 在链终止三联体处停止合成",
+  "D": "由于tRNA 上出现终上密码"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 37 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "M3-118-3d3b81c80341",
+ "type": "mtf",
+ "question": "下列关于种群中个体分布型的说法正确的有",
+ "options": {
+  "A": "生境条件是否均匀直接影响分布格局的类型",
+  "B": "动物对食物资源的利用、对生境的选择和种群内的社会关系会影响分布型",
+  "C": "种群内个体间的竞争往往会导致随机分布",
+  "D": "种群内个体间的协作关系往往会导致集群分布",
+  "E": "该种群物种行为与种群分布型无关"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "B,D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 118 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 118,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

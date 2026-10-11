@@ -1,0 +1,44 @@
+{
+ "id": "M4-66-3151746f0fe5",
+ "type": "mtf",
+ "question": "基于分子演化中性理论进行推断，对以下陈述进行正误判断：",
+ "options": {
+  "A": "人类和黑猩猩在假基因DNA 序列上的差异通常比在功能基因编码区大",
+  "B": "人类和黑猩猩在功能基因编码区DNA 序列上的差异可能比假基因大",
+  "C": "人类某些DNA 序列的演化速度可能因中性突变而快于黑猩猩",
+  "D": "最晚形成的物种一般具有更多功能基因变异"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 66 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

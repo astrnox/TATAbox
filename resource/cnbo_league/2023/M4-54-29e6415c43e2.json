@@ -1,0 +1,44 @@
+{
+ "id": "M4-54-29e6415c43e2",
+ "type": "single",
+ "question": "极端的环境条件如高温和干旱会引起植物细胞死亡，导致细胞内的电解质渗漏。下表所示为热激不同的时间后，拟南芥幼苗所浸泡的水溶液的电导率。请判断三种基因型的细胞对热激的敏感程度： 0 小时 1.0 小时 2.0 小时 4.0 小时基因型A 17.99 20.15 27.53 38.23 基因型B 20.44 22.32 23.56 27.19 基因型C 15.82 19.85 29.54 45.11",
+ "options": {
+  "A": "C>A>B",
+  "B": "C>B<A",
+  "C": "A>B>C",
+  "D": "B>A>C"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 54 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

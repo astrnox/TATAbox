@@ -1,0 +1,40 @@
+{
+ "id": "M1-48-4e83d6783bbe",
+ "type": "mtf",
+ "question": "对以下关于哺乳类动物细胞静息膜电位的计算的陈述进行正误判断：离子细胞内浓度 (mM) 细胞外浓度 (mM) 静息膜通透性 K+ 100% Na+ 5% Cl- 10% Ca2+ 0.0001",
+ "options": {
+  "A": "钾离子（K+）对静息膜电位的贡献最大，因为它的通透性最高",
+  "B": "钠离子（Na+）的细胞外浓度远高于细胞内浓度，但其对静息膜电位的贡献较小，因为它的通透性较低",
+  "C": "根据给定的离子浓度和通透性，计算得到的静息膜电位约为 -90 mV",
+  "D": "钙离子（Ca2+）对静息膜电位没有贡献，因为它的通透性为零"
+ },
+ "answer": null,
+ "answer_key": "TTNT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 48 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key"
+}

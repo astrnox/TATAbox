@@ -1,0 +1,46 @@
+{
+ "id": "M1-108-b0bc74c81704",
+ "type": "mtf",
+ "question": "淀粉同纤维素的差别：",
+ "options": {
+  "A": "淀粉由葡萄糖和果糖组成，纤维素仅含葡萄糖",
+  "B": "淀粉可能分支，纤维素没有分支",
+  "C": "淀粉比较稳定",
+  "D": "淀粉可以被降解，纤维素不能被降解",
+  "E": "淀粉溶于水，纤维素不溶于水"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 8 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

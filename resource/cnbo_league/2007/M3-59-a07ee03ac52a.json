@@ -1,0 +1,44 @@
+{
+ "id": "M3-59-a07ee03ac52a",
+ "type": "single",
+ "question": "下面哪一个实验的观察现象（有些是真实的，有些是编造的）不符合我们所学到的有关胞质分裂的知识。",
+ "options": {
+  "A": "抗肌球蛋白抗体（anti-myosin）注射到分裂的细胞，导致胞质分裂的停止",
+  "B": "当肌球蛋白II（myosin-II）基因突变时，细胞进行细胞核分裂，但不能胞质分裂",
+  "C": "抗肌动蛋白抗体（anti-actin）注射到分裂细胞对胞质分裂没有影响",
+  "D": "显微镜观察的肌动蛋白纤维F-actin 是平行的排列于分裂沟处"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "免疫系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 59 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

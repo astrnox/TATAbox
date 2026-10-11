@@ -1,0 +1,44 @@
+{
+ "id": "M2-63-60deb7c78204",
+ "type": "multiple",
+ "question": "用红光（R）和远红光（FR）交替照射处理莴苣种子，观察对种子萌发率的影响，结果见下表。从以下实验数据可以得出：照射处理种子萌发率（%）黑暗 R R+FR R+FR+R R+FR+R+FR R+FR+R+FR+R R+FR+R+FR+R+FR R+FR+R+FR+R+FR+R",
+ "options": {
+  "A": "红光促进莴苣种子萌发",
+  "B": "莴苣种子萌发需红光和远红光交替照射",
+  "C": "远红光促进莴苣种子的萌发",
+  "D": "红光的促进作用可以被随后照射的远红光降低"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 63 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

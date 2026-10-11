@@ -1,0 +1,44 @@
+{
+ "id": "M3-56-e3a8177a926d",
+ "type": "single",
+ "question": "哺乳动物行走时脚着地的情况各不相同，下列说法中正确的是：",
+ "options": {
+  "A": "猿猴以整个脚掌着地，称为跖行性；",
+  "B": "猫以脚趾和脚掌前半部着地，称为趾行性；",
+  "C": "狗以脚趾和爪着地，称为爪行性；",
+  "D": "马以蹄（第三、四趾的趾端）着地，称为蹄行性。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 56 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

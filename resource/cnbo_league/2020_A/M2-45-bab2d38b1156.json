@@ -1,0 +1,44 @@
+{
+ "id": "M2-45-bab2d38b1156",
+ "type": "single",
+ "question": "在成熟的孔纹导管分子之间的纹孔对中，有一个纹孔膜的结构。关于这个纹孔膜的结构组成，下列正确的是",
+ "options": {
+  "A": "中胶层、初生壁",
+  "B": "中胶层、初生壁、质膜",
+  "C": "中胶层、初生壁、次生壁",
+  "D": "初生壁、质膜"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 45 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

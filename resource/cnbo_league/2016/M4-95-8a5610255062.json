@@ -1,0 +1,76 @@
+{
+ "id": "M4-95-8a5610255062",
+ "type": "multiple",
+ "question": "一名女子同时与两名男子保持密切关系，并生育了3 个孩子。两名男子为争夺3 个孩子而诉诸法律，都声称是3 个孩子的亲生父亲。两名男子、3 个孩子及其母亲的血型（ABO 血型、MN 血型和Rh 血型）如下表所示。由此可知：",
+ "options": {
+  "A": "男子1 是孩子1 的生父",
+  "B": "ABO 血型系统在本案例中对鉴定亲子关系基本无效",
+  "C": "男子2 是孩子2 和3 的生父",
+  "D": "Rh 血型系统在本案例中对鉴定亲子关系基本无效"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 95 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-95-8a5610255062/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 261,
+  "bbox": [
+   209.8,
+   197.4,
+   385.5,
+   305.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-95-8a5610255062/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 261,
+   "bbox": [
+    209.8,
+    197.4,
+    385.5,
+    305.1
+   ],
+   "kind": "raster"
+  }
+ ]
+}

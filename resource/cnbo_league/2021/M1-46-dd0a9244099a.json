@@ -1,0 +1,80 @@
+{
+ "id": "M1-46-dd0a9244099a",
+ "type": "single",
+ "question": "图a 中“co”、“en”、“px”和“mx”分别表示的结构是",
+ "options": {
+  "A": "皮层、内皮层、原生木质部和后生木质部",
+  "B": "皮层、内皮层、初生木质部和后生木质部",
+  "C": "皮层、中柱鞘、初生木质部和后生木质部",
+  "D": "皮层、中柱鞘、韧皮部和木质部"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 46 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "46-48",
+  "stimulus": "题干。一种植物根的横切切片置于显微镜下观察，结果见下图a：取该植物根进行"
+ },
+ "image": {
+  "file": "assets/questions/M1-46-dd0a9244099a/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 394,
+  "bbox": [
+   90.0,
+   497.2,
+   505.1,
+   629.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-46-dd0a9244099a/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 394,
+   "bbox": [
+    90.0,
+    497.2,
+    505.1,
+    629.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

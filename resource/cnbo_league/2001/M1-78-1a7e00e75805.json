@@ -1,0 +1,46 @@
+{
+ "id": "M1-78-1a7e00e75805",
+ "type": "mtf",
+ "question": "在有丝分裂中，不直接参与细胞壁形成的细胞器是：",
+ "options": {
+  "A": "叶绿体",
+  "B": "高尔基体",
+  "C": "微管",
+  "D": "核糖体",
+  "E": "微丝"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "5．A（√）B（×）C（×）D（√）E（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 5 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

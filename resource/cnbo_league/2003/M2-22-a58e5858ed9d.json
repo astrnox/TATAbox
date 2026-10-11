@@ -1,0 +1,44 @@
+{
+ "id": "M2-22-a58e5858ed9d",
+ "type": "single",
+ "question": "关于“先锋植物”—地衣的叙述中不正确的是：",
+ "options": {
+  "A": "地衣能附着在云杉、冷杉等植物上，帮助这些植物进行光合作用",
+  "B": "地衣可以分泌地衣酸",
+  "C": "地衣可以用于制造香料",
+  "D": "地衣有进行有性生殖的类型"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 22 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

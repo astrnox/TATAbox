@@ -1,0 +1,80 @@
+{
+ "id": "M1-30-c7660dd11cf3",
+ "type": "mtf",
+ "question": "根据图中所展示的结果，对以下陈述进行正误判断：",
+ "options": {
+  "A": "ER 蛋白在种子发育过程中抑制种子生长",
+  "B": "ER 自身启动子也可导致ER 基因过量表达",
+  "C": "ER 蛋白含量与种子大小呈正比",
+  "D": "将同一种ERpro:ER-4myc 载体转入野生型拟南芥中，所获得的不同转基因植物中ER 表达量相同"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 30 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "29-30",
+  "stimulus": "如右图所示，科学家研究了ER 基因在调控种子大小中的作用。Col-0 是哥伦比亚生态型拟南芥，作"
+ },
+ "image": {
+  "file": "assets/questions/M1-30-c7660dd11cf3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 5,
+  "bbox": [
+   321.9,
+   362.1,
+   549.9,
+   560.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-30-c7660dd11cf3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 5,
+   "bbox": [
+    321.9,
+    362.1,
+    549.9,
+    560.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

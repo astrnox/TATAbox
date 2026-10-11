@@ -1,0 +1,44 @@
+{
+ "id": "M4-68-b3b35f9656fd",
+ "type": "mtf",
+ "question": "不等交换（unequal crossover）是一种在同源染色体配对过程中发生的重组异常，导致基因重复或缺失。例如，果蝇的Bar 突变就是由于 X 染色体上的不等交换，导致Bar 基因重复，从而引起眼睛缩小。关于不等交换在进化中的后果，判断以下陈述的正确性：",
+ "options": {
+  "A": "不等交换可导致某些基因家族成员减少",
+  "B": "不等交换是基因家族扩大的潜在机制",
+  "C": "不等交换通常发生在减数分裂中，但也有可能在有丝分裂中出现",
+  "D": "不等交换可能促进新基因功能的演化"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 68 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

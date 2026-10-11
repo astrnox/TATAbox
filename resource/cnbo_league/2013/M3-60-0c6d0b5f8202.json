@@ -1,0 +1,44 @@
+{
+ "id": "M3-60-0c6d0b5f8202",
+ "type": "single",
+ "question": "高等生物具有比低等生物更复杂的生命活动。因此，从理论上说，它们的遗传物质应该比低等生物更多。但事实上，一些低等生物，如蝾螈和某些原始的鱼类，甚至原生动物，一个细胞中DNA 的碱基对数量，远远超过大多数的哺乳动物。这种现象称为：",
+ "options": {
+  "A": "中性进化",
+  "B": "C 值悖论",
+  "C": "综合进化",
+  "D": "间断平衡"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 60 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-45-5287dd031d24",
+ "type": "multiple",
+ "question": "从遗传和进化的角度来考虑，利他行为（altruistic behavior）提高了动物的广义适合度（inclusive fitness）。以下的利他行为可以提高其广义适合度的包括哪些",
+ "options": {
+  "A": "母鸟假装受伤引开捕食者以保护雏鸟",
+  "B": "白蚁社会中的兵蚁全力以赴帮助喂养幼虫",
+  "C": "哺乳类中一些个体在面临危险时发出尖锐刺耳的报警声",
+  "D": "工蜂用蛰刺攻击入侵者"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 45 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

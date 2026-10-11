@@ -1,0 +1,46 @@
+{
+ "id": "M2-60-94fc6869e0fa",
+ "type": "multiple",
+ "question": "请根据已有的生长素和细胞分裂素知识，判断下列推论中合理的有：",
+ "options": {
+  "A": "生长素在组织培养中利于生根",
+  "B": "细胞分裂素在组织培养中利于生芽",
+  "C": "生长素和细胞分裂素具有完全独立的生物学作用，二者互不干扰",
+  "D": "生长素和细胞分裂素的作用完全互为拮抗",
+  "E": "生长素和细胞分裂素在植物发育中有时协同作用"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ABE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 60 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-66-673cf5b67110",
+ "type": "single",
+ "question": "甲种植物根系特别发达，生长速度快，叶面多绒毛，气孔下陷形成气孔腔，气孔腔内有许多细长的毛。乙种植物具浅根，无根毛，体内通气组织发达。假定(1)为湿生植物，(2)为中生植物，(3)为旱生植物。请指出下面哪项判断是正确的？",
+ "options": {
+  "A": "甲(1)，乙(2)",
+  "B": "甲(3)，乙(1)",
+  "C": "甲(2)，乙(1)",
+  "D": "甲(l)，乙(3)"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 66 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

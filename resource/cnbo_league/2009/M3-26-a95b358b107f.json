@@ -1,0 +1,44 @@
+{
+ "id": "M3-26-a95b358b107f",
+ "type": "single",
+ "question": "人通过接种疫苗，可以获得免疫力。目前使用的大多数疫苗是通过刺激下列哪类细胞产生抗体的？",
+ "options": {
+  "A": "T 淋巴细胞",
+  "B": "红细胞",
+  "C": "B 淋巴细胞",
+  "D": "中性粒白细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "免疫系统",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 26 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

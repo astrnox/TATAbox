@@ -1,0 +1,44 @@
+{
+ "id": "M4-65-f21f216c9d3d",
+ "type": "single",
+ "question": "群体中某一基因座有3 个等位基因形式，分别为a1、a2 和a3，且有a1 对a2 对a3 位显性，若3 基因的基因频率相等，则在群体中表现出a1 所控制的形状的比例：",
+ "options": {
+  "A": "1/3",
+  "B": "1/9",
+  "C": "4/9",
+  "D": "5/9"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 65 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-80-81b779c0fb7a",
+ "type": "single",
+ "question": "大陆岛屿模型中，用于预测岛屿上物种数的环境参数有： ①岛屿面积②大陆面积③陆-岛距离④岛-岛距离⑤岛屿数量",
+ "options": {
+  "A": "①③",
+  "B": "②④",
+  "C": "③⑤",
+  "D": "①④"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 80 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

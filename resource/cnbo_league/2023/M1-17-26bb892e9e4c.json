@@ -1,0 +1,44 @@
+{
+ "id": "M1-17-26bb892e9e4c",
+ "type": "single",
+ "question": "在进化过程中，现代家猪的祖先在2000 万年前丢失了解偶联蛋白1（UCP1）基因， 2017 年。中国科学家应用CRISPR/Ca9 技术，构建UCP1 基因定点敲入猪，实现UCP1 基因在白色脂肪组织中的特异表达。下列哪个说法是正确的？",
+ "options": {
+  "A": "UCP1 转基因猪在急性冷刺激情况下的体温维持能力低于野生型猪",
+  "B": "UCP1 转基因猪体内的电子传递链被抑制",
+  "C": "与野生型猪相比，UCP1 转基因猪的脂肪率会降低",
+  "D": "UCP1 直接抑制ATP 合酶的活性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 17 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-79-c181ed184c69",
+ "type": "multiple",
+ "question": "以下关于重组率和连锁的描述中正确的是：",
+ "options": {
+  "A": "位于同一条染色体上的基因可能表现为不连锁",
+  "B": "位于不同（非同源）染色体上的基因可能连锁",
+  "C": "位于同一条染色体上的两个基因重组率可能为50%",
+  "D": "位于不同（非同源）染色体上的两个基因重组率不可能为50%"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 79 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

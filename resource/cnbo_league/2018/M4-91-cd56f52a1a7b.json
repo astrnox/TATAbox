@@ -1,0 +1,44 @@
+{
+ "id": "M4-91-cd56f52a1a7b",
+ "type": "multiple",
+ "question": "中性进化是分子进化的重要理论之一。请标记出关于中性进化不正确的观点：",
+ "options": {
+  "A": "大部分对种群的遗传结构与进化有贡献的DNA 分子突变在自然选择的意义上都是中性或近中性的",
+  "B": "中性突变的进化是通过随机漂移或在种群中固定或消失",
+  "C": "生物体发生的绝大部分突变是中性的，不受自然选择力量所影响",
+  "D": "中性进化理论可以解释生物体的绝大部分表型演化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 91 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选 1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

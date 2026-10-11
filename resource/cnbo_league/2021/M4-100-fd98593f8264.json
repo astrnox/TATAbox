@@ -1,0 +1,44 @@
+{
+ "id": "M4-100-fd98593f8264",
+ "type": "single",
+ "question": "已知某调控低温耐受力的基因X 的等位基因x0 相比该位点其他等位基因更能提高一种植物对寒冷的耐受力，在这种植物的一个种群中最初不具有x0，偶然有人将一株携带x0 的植株引入该种群，以下哪种情况不利于x0 在该种群中频率上升：",
+ "options": {
+  "A": "该种群与其他种群间缺乏基因交流",
+  "B": "种群规模很大，连续分布区十分广泛",
+  "C": "冬季寒潮频繁发生",
+  "D": "种子小而轻，在该种群分布范围内都能有效传播"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 100 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

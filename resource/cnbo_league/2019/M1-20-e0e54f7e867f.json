@@ -1,0 +1,39 @@
+{
+ "id": "M1-20-e0e54f7e867f",
+ "type": "single",
+ "question": "（删除）阿尔茨海默症是一种主要与衰老相关的神经退行性疾病，与健康脑相比，阿尔茨海默症患者大脑中存在类淀粉样蛋白质堆积以及Tau 蛋白质过度磷酸化，最新的研究发现，向阿尔茨海默症模型小鼠施加40Hz 的闪光或者声音刺激会使小鼠的认知能力提高。基于这项工作，以下说法不正确的是",
+ "options": {
+  "A": "脑部类淀粉样蛋白质大量堆积往往伴随着脑电波异常现象",
+  "B": "电磁波的异常可能是导致阿尔茨海默症的原因",
+  "C": "阿尔茨海默症会引起患者大脑电磁波异常",
+  "D": "施加40Hz 的闪光或者声音刺激，可以降低小鼠脑部类淀粉样蛋白质堆积"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 20 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-100-374d81207a95",
+ "type": "single",
+ "question": "研究人员将人类和小鼠基因组的同源区域进行比较分析，计算了不同类型区域的碱基一致性，下表中I、II、III、IV 分别代表全基因组、蛋白编码区、UTR（非翻译区）以及一种同源古老重复序列。基因组区域 I II III IV 碱基相似度（%） 84.7 75.9 69.1 66.7 最可能是蛋白编码区的是：",
+ "options": {
+  "A": "I",
+  "B": "Ⅱ",
+  "C": "III",
+  "D": "IV"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 100 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

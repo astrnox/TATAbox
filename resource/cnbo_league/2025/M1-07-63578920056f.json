@@ -1,0 +1,44 @@
+{
+ "id": "M1-07-63578920056f",
+ "type": "mtf",
+ "question": "mRNA 疫苗递送常使用脂质纳米颗粒（LNP），其通常包含可电离阳离子脂质、胆固醇、辅助磷脂和聚乙二醇（PEG）修饰脂质。LNP 能保护mRNA，促进其进入细胞，并且其pH 敏感特性对于mRNA 从被细胞吞入形成的囊泡中释放到细胞质内这一关键步骤至关重要。对以下关于LNP 结构与功能的陈述进行正误判断：",
+ "options": {
+  "A": "LNP 中的可电离阳离子脂质在生理血液pH（约7.4）条件下带有显著正电荷，用于结合mRNA",
+  "B": "PEG 修饰的脂质分布在LNP 表面，形成亲水层，有助于延长LNP 在血液中的循环时间",
+  "C": "LNP 进入细胞后，主要依靠胆固醇组分直接破坏内体膜结构，从而释放mRNA 至细胞质",
+  "D": "若将LNP 中的辅助磷脂替换为分子链更饱和、刚性更强的脂质，可能会因降低膜的柔韧性而影响mRNA 递送效率"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 7 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

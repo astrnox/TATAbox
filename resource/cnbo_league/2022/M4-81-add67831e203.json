@@ -1,0 +1,44 @@
+{
+ "id": "M4-81-add67831e203",
+ "type": "single",
+ "question": "一种蠕虫有的身体黏滑，有的则不黏。黏滑雌虫与不黏雄虫杂交后，后代雄虫均为黏滑的，雌虫均不黏；不黏雌虫与黏滑雄虫杂交后，后代均黏滑。由此可推断显性等位基因和异配性别分别是：",
+ "options": {
+  "A": "黏滑，雌性",
+  "B": "黏滑，雄性",
+  "C": "不黏，雌性",
+  "D": "不黏，雄性"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 81 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

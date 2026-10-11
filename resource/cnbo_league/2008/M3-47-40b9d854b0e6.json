@@ -1,0 +1,44 @@
+{
+ "id": "M3-47-40b9d854b0e6",
+ "type": "single",
+ "question": "(接上题)当她将无鳞鱼和纯合体野生型鱼杂交，F1 代有两种表型,有鳞鱼占50%，另 50％的鱼在两侧各有一列鳞片，由此可知",
+ "options": {
+  "A": "决定鳞片这一性状的基因肯定不只一个",
+  "B": "决定鳞片这一性状的基因可能只有一个",
+  "C": "有鳞片是显性性状",
+  "D": "有鳞片是隐性性状"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 47 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

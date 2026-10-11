@@ -1,0 +1,39 @@
+{
+ "id": "M1-27-362453d7c4df",
+ "type": "single",
+ "question": "关于植物细胞的程序性死亡过程，以下描述错误的是：",
+ "options": {
+  "A": "植物细胞程序性死亡是植物应对缺氧、高盐等环境胁迫的反应；",
+  "B": "植物细胞液泡可通过释放水解酶参与调控细胞程序性死亡；",
+  "C": "在病原体侵染部位发生细胞程序性死亡，能阻止病原体侵染范围扩大；",
+  "D": "液泡可通过吞噬作用清除各类生物大分子。"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 27 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

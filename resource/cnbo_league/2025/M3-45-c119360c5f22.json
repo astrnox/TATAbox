@@ -1,0 +1,44 @@
+{
+ "id": "M3-45-c119360c5f22",
+ "type": "mtf",
+ "question": "温度是影响生物系统稳定性和功能的关键物理因素。无论是高温还是低温，都会对分子结构、生理过程和生物体的适应能力产生深远影响。比较高温和低温对分子、细胞、组织和生物体的影响，请对以下关于温度生理效应的陈述进行正误判断：",
+ "options": {
+  "A": "高温总是可以增强蛋白质的结构稳定性，提高酶的活性",
+  "B": "低温环境会普遍促使哺乳动物皮肤血管扩张，以增加组织血液供应，防止冻伤",
+  "C": "处于高温环境时，哺乳动物主要通过减少流向皮肤的血液来降低核心体温",
+  "D": "大多数哺乳动物在遭遇极端低温胁迫时，都会启动冬眠机制以保护重要器官"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FFFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 45 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

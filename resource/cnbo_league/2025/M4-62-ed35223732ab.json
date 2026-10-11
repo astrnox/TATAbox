@@ -1,0 +1,44 @@
+{
+ "id": "M4-62-ed35223732ab",
+ "type": "mtf",
+ "question": "沃纳综合征（Werner Syndrome）是由WRN 基因突变导致的成人早老症。WRN 蛋白是一种DNA 解旋酶，在 DNA 复制、修复、转录和端粒维持中发挥作用。沃纳综合征患者常表现出身高低于正常人。研究人员利用斑马鱼模型探究其机制：敲除斑马鱼wrn 基因（WRN 同源基因）导致斑马鱼身长缩短和软骨发育异常；RNA 测序显示，敲除个体中SHOX 基因表达量显著下调；在敲除个体中过表达SHOX 能部分缓解软骨发育异常。对以下基于这些研究信息的陈述进行正误判断：",
+ "options": {
+  "A": "实验结果表明，SHOX 基因的表达水平直接调控WRN 蛋白的活性",
+  "B": "实验结果支持WRN 基因的功能对于维持正常的SHOX 基因表达是必需的",
+  "C": "这些发现说明，SHOX 基因发生突变是引发沃纳综合征中WRN 蛋白功能异常的根本原因",
+  "D": "利用抗WRN 蛋白的抗体进行染色质免疫共沉淀（ChIP）是研究WRN 蛋白直接调控靶基因的可行方法"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 62 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

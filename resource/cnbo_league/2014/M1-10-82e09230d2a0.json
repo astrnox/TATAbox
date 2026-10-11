@@ -1,0 +1,44 @@
+{
+ "id": "M1-10-82e09230d2a0",
+ "type": "single",
+ "question": "如果线粒体内膜的不通透性被破坏，会导致以下那种结果？",
+ "options": {
+  "A": "氢离子梯度无法形成，ATP 无法产生",
+  "B": "糖酵解无法进行",
+  "C": "三羧酸循环无法生成ATP",
+  "D": "电子传递链无法将NADH 的电子传到O2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 10 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-104-5a1c4a8fa01f",
+ "type": "multiple",
+ "question": "下面有关基因组的说法正确的是",
+ "options": {
+  "A": "叶绿体基因组大小相对恒定",
+  "B": "叶绿体基因组同蓝藻基因组大小相似，这提示叶绿体内共生起源",
+  "C": "目前己发现一些线粒体的基因组由双链RNA 构成",
+  "D": "目前已有多种真核生物的全基因序列被基本测定"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "A D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 104 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

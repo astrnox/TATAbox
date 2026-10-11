@@ -1,0 +1,44 @@
+{
+ "id": "M3-29-f82db04256b9",
+ "type": "single",
+ "question": "一般硬骨鱼尾椎具备椎弓、脉弓和椎体。文昌鱼只有脊索，没有脊椎骨。鲟鱼的脊索仍很发达，已有椎弓和脉弓，但无椎体。七鳃鳗仍以脊索为主要支持结构，但脊索背面每体节出现两对小软骨。根据以上描述推断椎体、椎弓和脉弓的系统发生顺序是",
+ "options": {
+  "A": "椎体、椎弓、脉弓",
+  "B": "椎弓、椎体、脉弓",
+  "C": "椎弓、脉弓、椎体",
+  "D": "脉弓、椎弓、椎体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 29 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

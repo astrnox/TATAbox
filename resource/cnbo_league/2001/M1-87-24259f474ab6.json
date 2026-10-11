@@ -1,0 +1,44 @@
+{
+ "id": "M1-87-24259f474ab6",
+ "type": "mtf",
+ "question": "细胞有丝分裂中纺锤体的主要作用为：",
+ "options": {
+  "A": "使染色体排列到赤道面上",
+  "B": "使姐妹染色单体在后期时分离",
+  "C": "使染色体进入分裂期后发生凝集",
+  "D": "使染色体进入分裂末期后去凝集"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "14．A（√）B（√）C（×）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 14 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

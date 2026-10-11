@@ -1,0 +1,44 @@
+{
+ "id": "M2-47-6903df3119c3",
+ "type": "multiple",
+ "question": "根据国际植物命名法规，下列说法正确的有",
+ "options": {
+  "A": "每种植物可以有一个英文名和一个拉丁学名",
+  "B": "每种植物只能有一个合法的拉丁学名",
+  "C": "植物新物种命名时的拉丁学名包括：属名、种加词和定名人",
+  "D": "一种植物如存在两个或两个以上的拉丁学名，应按“法规”选择一个最早发表且为合格发表 的名称为合法名称，其它为晚出同名，应予以废弃"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 47 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

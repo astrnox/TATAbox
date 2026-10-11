@@ -1,0 +1,48 @@
+{
+ "id": "M4-96-896309c49ea4",
+ "type": "multiple",
+ "question": "科学家利用经典的基因敲除技术，对小鼠的端粒酶中RNA 的编码基因进行定向突变。下列有关这项技术的叙述正确的有：",
+ "options": {
+  "A": "依赖胚胎干细胞",
+  "B": "只能在小鼠中进行",
+  "C": "一般只能敲除等位基因中的一个",
+  "D": "携带突变的第一代个体为嵌合体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 96 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "96-99",
+  "stimulus": "端粒酶（Telomerase）是细胞中负责端粒延长的一种酶，其活性在哺乳动物终末分化"
+ }
+}

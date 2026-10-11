@@ -1,0 +1,44 @@
+{
+ "id": "M4-57-c8d3b3dc460f",
+ "type": "single",
+ "question": "已知某一腺嘌呤缺陷型的粗糙脉胞菌受到离原突变25 个图距单位的一个抑制基因的作用后回复为原养型，假如将这一菌株与野生型杂交，那么后代中腺嘌呤缺陷型所占的百分数为：",
+ "options": {
+  "A": "0",
+  "B": "12.5%",
+  "C": "25%",
+  "D": "50%"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 57 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

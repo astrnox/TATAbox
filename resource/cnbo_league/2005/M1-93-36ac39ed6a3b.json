@@ -1,0 +1,46 @@
+{
+ "id": "M1-93-36ac39ed6a3b",
+ "type": "mtf",
+ "question": "mRNA 翻译成蛋白质的过程需要有以下哪些物质的参与？",
+ "options": {
+  "A": "mRNA",
+  "B": "DNA",
+  "C": "核糖体",
+  "D": "多种氨基酸",
+  "E": "多种酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "3.A（√）B（×）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 3 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M2-104-4f771f042742",
+ "type": "single",
+ "question": "在我国民间有“大灾之后有大疫”的说法，指在洪涝灾害之后往往会有大面积的传染病发生，你认为下列的解释中最正确的是：",
+ "options": {
+  "A": "洪涝灾害后，因为有大面积积水，人们经常赤足下地，可能被血吸虫幼虫感染",
+  "B": "洪涝灾害后，由于地面多沼泽，为寄生虫寄主的大量繁殖提供了很好的条件",
+  "C": "洪水可以把原来分布于某处的寄生虫或其寄主扩散到更大面积",
+  "D": "洪水过后，人们的抵抗力降低，变成易感人群"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 104 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

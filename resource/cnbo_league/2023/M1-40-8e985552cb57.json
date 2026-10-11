@@ -1,0 +1,44 @@
+{
+ "id": "M1-40-8e985552cb57",
+ "type": "single",
+ "question": "考虑简单扩散和易化扩散的机制，思考它们共同具有的特征是：",
+ "options": {
+  "A": "它们都能够被某种特异性的化合物所抑制",
+  "B": "都不需要消耗ATP",
+  "C": "都需要细胞膜上的载体蛋白",
+  "D": "随着扩散物质浓度的增加，扩散速率会达到饱和值"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 40 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

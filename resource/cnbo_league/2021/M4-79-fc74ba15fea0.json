@@ -1,0 +1,46 @@
+{
+ "id": "M4-79-fc74ba15fea0",
+ "type": "single",
+ "question": "A 蛋白由100 个氨基酸组成。编码A 蛋白的基因序列只含有一个99bp 的内含子，该内含子插在编码第70 个氨基酸的密码子之后。A 基因mRNA 的5’UTR 和3’UTR 长度分别为 70bp 和30bp。有研究人员在培养的细胞中表达某一来源的A 基因，结果没有得到预期肽链长度的蛋白，而是得到了具有133 个氨基酸的多肽。进一步的研究发现，该多肽能与A 蛋白的抗体发生结合反应，那么，A 蛋白不能在培养细胞中正确表达的原因，最可能是：",
+ "options": {
+  "A": "在二号密码子上发生了移码突变",
+  "B": "在二号密码子上发生点突变",
+  "C": "发生了剪切突变，使得在形成成熟mRNA 的时候，内含子没有剪切",
+  "D": "在5’UTR 发生点突变，使得翻译开始的位点发生改变",
+  "E": "第一个外显子被错误地剪切掉，而内含子没有剪切"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 79 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

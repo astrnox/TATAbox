@@ -1,0 +1,44 @@
+{
+ "id": "M3-100-6a540c375d54",
+ "type": "multiple",
+ "question": "李·范·瓦伦在1973 年提出的红皇后(Red Queen)假说，以下可能体现红皇后假说现象的有：",
+ "options": {
+  "A": "一种捕食者的速度随时间的推移逐渐变快，适应跑得更快的猎物；",
+  "B": "一种植物产生更有毒的化学物质，以抵御吃草动物的进化；",
+  "C": "某些病原体为了感染宿主而不断变异，宿主为了防御病原体而进化出新的免疫机制；",
+  "D": "长期缓慢的地质变化使某物种逐渐适应了新的生活环境。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 100 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

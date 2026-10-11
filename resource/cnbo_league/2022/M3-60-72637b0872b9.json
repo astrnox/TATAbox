@@ -1,0 +1,44 @@
+{
+ "id": "M3-60-72637b0872b9",
+ "type": "multiple",
+ "question": "大部分哺乳纲动物在胎儿与母体之间会形成胎盘。下列有关胎盘的说法正确的有：",
+ "options": {
+  "A": "胎儿的羊膜、尿囊膜和绒毛膜与母体的子宫壁连接在一起形成胎盘；",
+  "B": "胎儿有血管在胎盘处与母体毛细血管连通，从而完成营养物质与代谢废物的交换；",
+  "C": "胎盘可以产生绒毛膜促性腺激素，保证妊娠过程的正常进行；",
+  "D": "有些物种胎盘绒毛与子宫联系不紧密，在生产时不会造成子宫出血。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 60 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

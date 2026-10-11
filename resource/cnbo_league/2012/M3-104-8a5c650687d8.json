@@ -1,0 +1,44 @@
+{
+ "id": "M3-104-8a5c650687d8",
+ "type": "multiple",
+ "question": "哺乳动物的胸廓具有保护内脏、辅助完成呼吸等作用，胸廓由以下那些骨骼构成",
+ "options": {
+  "A": "胸椎",
+  "B": "肋骨",
+  "C": "胸骨",
+  "D": "锁骨"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 104 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

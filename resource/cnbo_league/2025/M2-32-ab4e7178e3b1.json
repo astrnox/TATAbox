@@ -1,0 +1,44 @@
+{
+ "id": "M2-32-ab4e7178e3b1",
+ "type": "mtf",
+ "question": "对以下关于植物根系吸收和运输水分机制的陈述进行正误判断：",
+ "options": {
+  "A": "凯氏带迫使水分和离子通过内皮层的共质体途径进入维管柱",
+  "B": "根压是蒸腾作用强烈时水分上升的主要动力",
+  "C": "蒸腾拉力依赖导管内水柱的连续性和内聚力维持",
+  "D": "质外体途径是水分跨过内皮层的主要运输方式"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 32 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

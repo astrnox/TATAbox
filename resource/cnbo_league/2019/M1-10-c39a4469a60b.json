@@ -1,0 +1,44 @@
+{
+ "id": "M1-10-c39a4469a60b",
+ "type": "single",
+ "question": "细胞自噬是真核细胞对细胞内成分进行降解和周转的重要过程。日本科学家大隅良典因发现细胞自噬的机制获得2016 诺贝尔生理学或医学奖。在细胞自噬过程中，细胞组分的降解发生在",
+ "options": {
+  "A": "溶酶体",
+  "B": "内质网",
+  "C": "高尔基体",
+  "D": "自噬体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 10 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

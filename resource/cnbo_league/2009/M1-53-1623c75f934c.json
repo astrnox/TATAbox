@@ -1,0 +1,44 @@
+{
+ "id": "M1-53-1623c75f934c",
+ "type": "single",
+ "question": "由于太平洋赤道带大范围内海洋和大气相互作用失去平衡，使南美赤道附近海面水温异常升高，海水水位上涨，并形成一股暖流向南流动的异常气候现象是：",
+ "options": {
+  "A": "温室效应",
+  "B": "气候变暖",
+  "C": "拉尼娜",
+  "D": "厄尔尼诺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 53 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M3-27-d551aac637f8",
+ "type": "single",
+ "question": "通过对一个琥珀内保存的来自白垩纪的头骨化石进行分析。研究者认为它是一种小型鸟类——眼齿鸟，并提出眼齿鸟是仅次于始祖鸟的原始鸟类。但其他多位学者认为这一标本属于爬行类。请观察图，始祖鸟具有但眼齿鸟不具备的特征是",
+ "options": {
+  "A": "眶前孔",
+  "B": "齿",
+  "C": "鼻孔",
+  "D": "巩膜骨"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 27 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-27-d551aac637f8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 337,
+  "bbox": [
+   140.1,
+   198.2,
+   455.2,
+   288.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-27-d551aac637f8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 337,
+   "bbox": [
+    140.1,
+    198.2,
+    455.2,
+    288.9
+   ],
+   "kind": "raster"
+  }
+ ]
+}

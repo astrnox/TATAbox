@@ -1,0 +1,44 @@
+{
+ "id": "M4-97-f968fa830898",
+ "type": "single",
+ "question": "分子钟假说认为DNA 或蛋白质序列的演化速率保持恒定。下列关于分子钟的描述错误的是：",
+ "options": {
+  "A": "如果两个物种分歧时间特别久远，会降低分子钟估算的准确性；",
+  "B": "分子钟假说认为不同基因演化速率相同；",
+  "C": "可以通过第三个物种（外类群）来检验两个物种是否以相同的速率演化；",
+  "D": "分子钟在种间的速率差异与世代时间以及DNA 修复机制有关。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 97 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

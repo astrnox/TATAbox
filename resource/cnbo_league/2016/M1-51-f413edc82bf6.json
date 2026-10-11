@@ -1,0 +1,46 @@
+{
+ "id": "M1-51-f413edc82bf6",
+ "type": "multiple",
+ "question": "有关韧皮部运输机制的压力流动学说，下列哪些描述是正确的。",
+ "options": {
+  "A": "维持筛管中液流靠源端和库端间的膨压差推动；",
+  "B": "该机制无关渗透势的变化",
+  "C": "韧皮部运输机制完全不耗能",
+  "D": "源库端的装载是耗能的主动运输过程",
+  "E": "源库端的卸出是不耗能的被动运输过程"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 51 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

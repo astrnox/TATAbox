@@ -1,0 +1,46 @@
+{
+ "id": "M3-47-21e30f40b5ff",
+ "type": "multiple",
+ "question": "以下属于互惠共生（mutualism）的两种生物是",
+ "options": {
+  "A": "蓝细菌与蕨类植物",
+  "B": "土壤杆菌与杨树",
+  "C": "墨鱼与费氏弧菌",
+  "D": "弗氏放线菌与沙棘",
+  "E": "根瘤菌与豆科植物"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ACDE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 47 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M1-28-ea32ad75c849",
+ "type": "multiple",
+ "question": "细胞是完美的能量转换器，能够将化学的、电磁的、机械的及渗透形式的能量有效地进行转换。下列关于生物能量转换器的正确理解是：",
+ "options": {
+  "A": "生物能量转化与蒸汽机的能量转化从本质上是相同的",
+  "B": "叶绿体是植物细胞中的能量转换器",
+  "C": "遵循热力学第一定律（能量守恒原理）",
+  "D": "线粒体是动物细胞中的能量转换器"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 28 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

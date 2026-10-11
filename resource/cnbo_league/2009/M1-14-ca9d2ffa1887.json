@@ -1,0 +1,44 @@
+{
+ "id": "M1-14-ca9d2ffa1887",
+ "type": "single",
+ "question": "苯丙酮尿症的隐性纯合个体是一种严重的代谢缺陷患者。如果双亲表现正常，却生了一个患病的女儿，一个正常表现的儿子，那么这对夫妇再生一个正常的儿子并且不携带致病基因的概率是：",
+ "options": {
+  "A": "3/4",
+  "B": "1/3",
+  "C": "1/8",
+  "D": "1/4"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 14 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

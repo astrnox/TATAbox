@@ -1,0 +1,44 @@
+{
+ "id": "M4-95-5a2b8571ff93",
+ "type": "single",
+ "question": "果蝇全部基因组含有1.65×108bp(碱基对)，如果DNA 是一长线状分子，每秒复制 30bp，共有2000 个双向复制起点，全部基因组要复制多少分钟",
+ "options": {
+  "A": "23 分钟",
+  "B": "32 分钟",
+  "C": "56 分钟",
+  "D": "44 分钟"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 95 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

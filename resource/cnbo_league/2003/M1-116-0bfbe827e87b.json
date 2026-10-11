@@ -1,0 +1,44 @@
+{
+ "id": "M1-116-0bfbe827e87b",
+ "type": "mtf",
+ "question": "细菌DNA 复制的特点是：",
+ "options": {
+  "A": "只在细胞周期的特定阶段(S 期)进行",
+  "B": "不受细胞分裂周期的限制，可以连续进行",
+  "C": "DNA 复制完毕，然后进行RNA 转录和蛋白质翻译",
+  "D": "细菌DNA 复制、RNA 转录和蛋白质合成同时进行"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "1.A（ х ）B（ √ ）C（ х ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 1 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M4-86-af7927e94e71",
+ "type": "single",
+ "question": "岛屿生物地理学理论被广泛接受的一个重要原因是该理论能够简单地用一个变量来表述岛屿的生物学特征，这个变量是：",
+ "options": {
+  "A": "岛屿面积",
+  "B": "物种数量",
+  "C": "岛屿距大陆的距离",
+  "D": "物种的灭绝速率"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 86 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

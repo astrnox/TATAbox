@@ -1,0 +1,76 @@
+{
+ "id": "M1-11-d7e471cdcc2e",
+ "type": "mtf",
+ "question": "右图展示了利用酵母提取物进行葡萄糖酒精发酵时，通过监测二氧化碳 (CO2)释放量来追踪发酵进程的实验结果，图中还包含了添加可溶性磷酸盐（以提供无机磷酸，Pi）对发酵速率影响的信息。对以下关于该实验及相关代谢过程的陈述进行正误判断：",
+ "options": {
+  "A": "由于二氧化碳是酵母酒精发酵的化学计量产物，因此监测其释放量可用于追踪发酵进程",
+  "B": "在糖酵解途径中，无机磷酸(Pi)是丙酮酸激酶催化反应的直接底物之一",
+  "C": "若实验观察到添加无机磷酸(Pi)能显著提高CO2 释放速率，则表明初始酵母提取物中的Pi 浓度是限制发酵速率的因素之一",
+  "D": "酵母酒精发酵过程中，每产生1 摩尔的二氧化碳(CO2)，必然伴随着1 摩尔无机磷酸(Pi)的净消耗"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 11 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-11-d7e471cdcc2e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   389.3,
+   173.3,
+   565.5,
+   342.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-11-d7e471cdcc2e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    389.3,
+    173.3,
+    565.5,
+    342.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

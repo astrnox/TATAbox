@@ -1,0 +1,48 @@
+{
+ "id": "M4-91-57c8f6564a9c",
+ "type": "multiple",
+ "question": "定位FCHL 致病基因时，研究者没有检测到相关分子标记的连锁不平衡，可能原因有：",
+ "options": {
+  "A": "相关分子标记与致病基因不连锁；",
+  "B": "不止一个祖先个体发生同一个基因的突变；",
+  "C": "FCHL 是显性突变导致的遗传病；",
+  "D": "突变发生于远古时期的人类群体中。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 91 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-93",
+  "stimulus": "家族性混合型高脂血症(Familial combined hyperlipidemia，FCHL)是一种人类单基因"
+ }
+}

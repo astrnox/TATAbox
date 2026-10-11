@@ -1,0 +1,39 @@
+{
+ "id": "M1-84-76a33b66f0dd",
+ "type": "multiple",
+ "question": "ATP 在以下的哪些过程中被直接作为能量来源使用：",
+ "options": {
+  "A": "葡萄糖被运输至肌肉细胞内",
+  "B": "微管的自组装聚合过程",
+  "C": "胃壁细胞向胃腔内转运氢离子",
+  "D": "肌动蛋白沿着微丝的运动"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.5,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 84 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

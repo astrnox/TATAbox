@@ -1,0 +1,44 @@
+{
+ "id": "M2-79-bcf8356ce0e9",
+ "type": "single",
+ "question": "在2015 年某期的《植物研究》杂志中出现了一个植物的名称：Aconitum hezuoense W. T. Wang, sp. nov.下列说法错误的是：",
+ "options": {
+  "A": "这是一个新组合的植物名称",
+  "B": "这个植物的属名是Aconitum",
+  "C": "这个植物是由W. T. Wang 命名的",
+  "D": "这个植物的种加词是hezuoense"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 79 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

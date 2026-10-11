@@ -1,0 +1,44 @@
+{
+ "id": "M2-27-0f6a535b1ad9",
+ "type": "single",
+ "question": "过去啤酒生产都以大麦芽为原料，借用大麦发芽后产生的淀粉酶，使淀粉糖化。现在只要加上一种植物激素就可使糊粉层中形成淀粉酶，完成糖化过程，不需要种子萌发。该种植物激素是",
+ "options": {
+  "A": "生长素",
+  "B": "细胞分裂素",
+  "C": "赤霉素",
+  "D": "油菜素内酯"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 27 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

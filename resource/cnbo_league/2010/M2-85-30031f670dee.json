@@ -1,0 +1,44 @@
+{
+ "id": "M2-85-30031f670dee",
+ "type": "single",
+ "question": "星鸦（Nucifraga CoJumbiana）、松果松鸦（Gymnoz'binus cyanocephalus）和蓝松鸦（Cyanocitta sti]leri）是同一科的近缘种。星鸦生活在高海拔地区，冬季和春季的食物几乎完全是秋天储存的种子，它们每只每年储存种子约33000粒。松果松鸦分布于海拔稍低的区域，全年营群体生活，每只每年储存种子20000粒，构成其冬季食物的70一90％。蓝松鸦生活于低海拔地区，体型最小，每只每年储存种子6000粒，占冬季食物的60％。若将上述3种鸟放置于同一小面积的实验区域中，让它们分别储存和发掘种子，其记忆能力从强至弱的排序是",
+ "options": {
+  "A": "星鸦>松果松鸦>蓝松鸦",
+  "B": "蓝松鸦>松果松鸦>星鸦",
+  "C": "松果松鸦>星鸦>蓝松鸦",
+  "D": "3种相同"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 85 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

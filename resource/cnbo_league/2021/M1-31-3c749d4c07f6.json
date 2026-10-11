@@ -1,0 +1,76 @@
+{
+ "id": "M1-31-3c749d4c07f6",
+ "type": "single",
+ "question": "一个来自印度成年男性因发作癫痫到医院治疗。经检查发现右眼肿，皮下有颗粒状异物。如图是脑部核磁扫描图片。以下关于图中的白色小点，最可能的是",
+ "options": {
+  "A": "丝虫卵",
+  "B": "囊尾蚴",
+  "C": "华枝睾吸虫",
+  "D": "蛔虫卵"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 31 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-31-3c749d4c07f6/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 391,
+  "bbox": [
+   209.9,
+   244.4,
+   385.3,
+   445.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-31-3c749d4c07f6/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 391,
+   "bbox": [
+    209.9,
+    244.4,
+    385.3,
+    445.6
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "M3-73-2d59cfd2b8ad",
+ "type": "single",
+ "question": "Morris 水迷宫实验是强迫实验动物（大鼠、小鼠）进行游泳，学习寻找隐藏在水中平台的一种实验，主要用于测试实验动物对空间位置感和空间定位的学习与记忆能力。水迷宫经过多年的发展和优化，现在在神经生物学研究中已经成为一个被广泛应用的实验。下图是甲、乙组小鼠经过训练后，测试其在到达隐藏平台时间的散点图以及统计数据。以下说法正确的是",
+ "options": {
+  "A": "水迷宫实验发现甲组小鼠和乙组小鼠相比学习和记忆能力更强",
+  "B": "甲组小鼠到达平台时间的离散程度比乙组到达平台时间的离散程度更大",
+  "C": "通过对甲、乙两组进行方差分析，两组到达平台时间无显著性差异",
+  "D": "以上说法均不正确"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 73 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-73-2d59cfd2b8ad/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 296,
+  "bbox": [
+   127.3,
+   73.8,
+   468.0,
+   163.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-73-2d59cfd2b8ad/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 296,
+   "bbox": [
+    127.3,
+    73.8,
+    468.0,
+    163.4
+   ],
+   "kind": "raster"
+  }
+ ]
+}

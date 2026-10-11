@@ -1,0 +1,46 @@
+{
+ "id": "M3-117-37390f1d90ca",
+ "type": "mtf",
+ "question": "种群具有个体所不具备的各种群体特征，这些特征多为统计指标，常被称为初级种群参数的是：",
+ "options": {
+  "A": "增长率",
+  "B": "出生率",
+  "C": "死亡率",
+  "D": "迁入率",
+  "E": "迁出率"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "117.A（×）B（√）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 117 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 117,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "id": "M4-97-4a301350ad2f",
+ "type": "single",
+ "question": "根据下图中三点测交子二代果蝇后代表型的统计数据，下面判断正确的是：",
+ "options": {
+  "A": "a + c 基因型和+ b c 基因型果蝇是双交换的结果",
+  "B": "a b +基因型和+ + c 基因型果蝇为亲本型果蝇",
+  "C": "基因连锁的相对顺序为a-c-b",
+  "D": "a 基因和c 基因的遗传距离是30.9 cM"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 97 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-97-4a301350ad2f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 261,
+  "bbox": [
+   196.3,
+   525.1,
+   399.0,
+   570.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-97-4a301350ad2f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 261,
+   "bbox": [
+    196.3,
+    525.1,
+    399.0,
+    570.5
+   ],
+   "kind": "raster"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "M3-87-c37c1b413aae",
+ "type": "multiple",
+ "question": "两种近缘柳莺分布于同一区域，但其性成熟季节不同，且其中一种的求偶鸣叫短而高亢，另一种则长而婉转，从生殖隔离角度讲属：",
+ "options": {
+  "A": "合子后隔离",
+  "B": "时间隔离",
+  "C": "行为隔离",
+  "D": "合子前隔离"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 87 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

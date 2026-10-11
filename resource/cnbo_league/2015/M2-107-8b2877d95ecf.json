@@ -1,0 +1,44 @@
+{
+ "id": "M2-107-8b2877d95ecf",
+ "type": "single",
+ "question": "研究发现联苯环辛烯类木脂素（I）被认为是五味子科植物的特征性化学成分，具有保肝作用、抗氧化、抗肿瘤和抗HIV 活性。按照克朗奎斯特分类系统，该科植物隶属双子叶植物门下的哪个亚纲：",
+ "options": {
+  "A": "木兰亚纲",
+  "B": "五桠果亚纲",
+  "C": "金缕梅亚纲",
+  "D": "蔷薇亚纲"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 107 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

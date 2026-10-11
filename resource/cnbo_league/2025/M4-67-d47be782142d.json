@@ -1,0 +1,44 @@
+{
+ "id": "M4-67-d47be782142d",
+ "type": "mtf",
+ "question": "协同进化是指两个或多个相互作用的物种，因彼此施加的选择压力而导致相互适应性演化的过程。对以下关于演化场景是否属于协同进化的陈述进行正误判断：",
+ "options": {
+  "A": "羚羊奔跑速度的提高对其捕食者（如猎豹）施加选择压力，可能促使猎豹也演化出更快的速度，反之亦然，这体现了协同进化",
+  "B": "某长距兰花与其唯一的传粉天蛾之间，兰花花距的增长和天蛾喙的相应变长是典型的协同进化关系",
+  "C": "某群岛上不同岛屿的几种地雀，因食物资源不同演化出不同形态的喙，这是它们之间协同进化的结果",
+  "D": "北极熊演化出厚厚的脂肪层和白色皮毛以适应寒冷和冰雪环境，这是它与环境协同进化的范例"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 67 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ }
+}

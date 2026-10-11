@@ -1,0 +1,44 @@
+{
+ "id": "M3-34-0b2091887fef",
+ "type": "single",
+ "question": "下列关于爬行动物排泄系统的描述中，正确的是：",
+ "options": {
+  "A": "爬行动物肾脏在系统发生上属于后肾，在胚胎期不经过前肾和中肾阶段",
+  "B": "爬行动物的肾脏基本结构与两栖类没有本质区别，但肾单位的数目大大增加",
+  "C": "大多数爬行动物肾脏产生的尿液由输尿管送至膀胱储存，经重吸收后由尿道排出",
+  "D": "大多数爬行动物排泄的含氮废物主要是尿素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 34 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

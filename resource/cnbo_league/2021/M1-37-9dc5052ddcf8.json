@@ -1,0 +1,44 @@
+{
+ "id": "M1-37-9dc5052ddcf8",
+ "type": "single",
+ "question": "下列关于机械力敏感离子通道说法中，错误的是：",
+ "options": {
+  "A": "机械力敏感离子通道不仅存在于真核细胞中，也存在于原核细胞中",
+  "B": "机械力敏感离子通道可以对细胞膜上张力的变化做出响应",
+  "C": "机械力敏感离子通道必须与细胞内的骨架结构直接相互作用才能正常工作",
+  "D": "机械力敏感离子通道参与消化系统的反馈调节"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 37 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

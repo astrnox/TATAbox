@@ -1,0 +1,95 @@
+{
+ "id": "M2-23-8fade19eb124",
+ "type": "mtf",
+ "question": "根据上述两图植物维管形成层活动特征的描述，对下列陈述进行正误判断：",
+ "options": {
+  "A": "在生长季节早期（春夏季），维管形成层活动旺盛，主要产生管腔直径较大的早材导管",
+  "B": "在生长季节晚期（秋季），维管形成层活动减弱，主要产生管腔直径较小、细胞壁较厚的晚材导管",
+  "C": "维管形成层向内分裂产生次生木质部、向外分裂产生次生韧皮部，通常产生前者的细胞数量远多于后者",
+  "D": "右图所示的次生木质部中，所有细胞（包括导管、纤维、薄壁细胞等）在成熟后均失去生理活性"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 23 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "23-24",
+  "stimulus": "由维管形成层分化为次生木质部和次生韧皮部，产生了庞大的次生维管组织，支撑了高大树体而且"
+ },
+ "image": {
+  "file": "assets/questions/M2-23-8fade19eb124/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 4,
+  "bbox": [
+   42.9,
+   367.6,
+   286.8,
+   519.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-23-8fade19eb124/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    42.9,
+    367.6,
+    286.8,
+    519.0
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M2-23-8fade19eb124/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    288.5,
+    371.3,
+    576.0,
+    513.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

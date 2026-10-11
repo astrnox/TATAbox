@@ -1,0 +1,44 @@
+{
+ "id": "M1-34-e65a425ea712",
+ "type": "single",
+ "question": "以下关于海绵动物的说法，不正确的是",
+ "options": {
+  "A": "没有消化腔，只有细胞消化",
+  "B": "体壁由三层组成，外层为皮层，内层为胃层，中间是中胶层",
+  "C": "骨骼是由造骨细胞分泌形成的，而造骨细胞是由中胶层的变形细胞形成的",
+  "D": "双沟型水沟系统中的流入管内为扁平细胞，辐射管内为领鞭毛细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 34 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

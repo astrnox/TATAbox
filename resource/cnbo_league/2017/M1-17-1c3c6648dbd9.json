@@ -1,0 +1,44 @@
+{
+ "id": "M1-17-1c3c6648dbd9",
+ "type": "single",
+ "question": "辅因子对于酶的活性是非常重要的。通常作为羧化酶的辅因子；而则作为脱羧酶的辅因子。",
+ "options": {
+  "A": "烟酰胺；四氢叶酸",
+  "B": "生物素；焦磷酸硫胺素（TPP）",
+  "C": "磷酸吡多醛（PLP）；泛酸",
+  "D": "硫辛酸；钴胺素（维生素B12）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 17 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

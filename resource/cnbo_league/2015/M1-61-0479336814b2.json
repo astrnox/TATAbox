@@ -1,0 +1,44 @@
+{
+ "id": "M1-61-0479336814b2",
+ "type": "multiple",
+ "question": "下列有关肺表面活性物质的叙述，哪些是正确的：",
+ "options": {
+  "A": "由肺泡上皮细胞合成并分泌",
+  "B": "可增加肺泡表面张力，有利于减少吸气阻力",
+  "C": "可维持大小肺泡容量的稳定",
+  "D": "含量不足可造成新生儿呼吸窘迫综合征"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 61 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

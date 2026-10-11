@@ -1,0 +1,71 @@
+{
+ "id": "M4-05-1860fea9b987",
+ "type": "single",
+ "question": "LRX 是一种参与细胞壁形成的蛋白，LRX 基因突变导致花粉管生长缺陷，并影响种子结实。为了分析lrx 突变体花粉管的生长表型，分别对体外萌发的野生型、lrx8/9 双突变体和 lrx8/9/11 三突变体花粉管的生长情况进行分析，结果如图所示。以下说法错误的是：",
+ "options": {
+  "A": "lrx8/9 和lrx8/9/11 的花粉管生长速率始终慢于野生型",
+  "B": "lrx8/9 和lrx8/9/11 的花粉管要先经历一个缓慢的甚至几乎停止生长的阶段再继续恢复生长",
+  "C": "lrx8/9/11 的花粉管到恢复生长的阶段可以达到与野生型花粉管同样的生长速率",
+  "D": "在观察时间范围内，lrx8/9 和lrx8/9/11 的花粉管不能达到与野生型花粉管同样的长度"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 5 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-05-1860fea9b987/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 432,
+  "bbox": [
+   187.4,
+   643.4,
+   407.3,
+   765.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-05-1860fea9b987/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 432,
+   "bbox": [
+    187.4,
+    643.4,
+    407.3,
+    765.7
+   ],
+   "kind": "raster"
+  }
+ ]
+}

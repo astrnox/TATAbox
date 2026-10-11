@@ -1,0 +1,80 @@
+{
+ "id": "M1-89-82ab2d9e1835",
+ "type": "single",
+ "question": "RGR 的发现可以解释的现象是：",
+ "options": {
+  "A": "人体需要补充维生素A；",
+  "B": "在白天，RPE65 的催化效率低于全反视黄醛的转化效率；",
+  "C": "视网膜色素细胞变性导致夜盲；",
+  "D": "有些夜盲症患者白天也视物不清。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 89 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "83-89",
+  "stimulus": "维生素A 在体内转化为11-顺视黄醛后，与视网膜特定细胞中的视蛋白结合成视紫红"
+ },
+ "image": {
+  "file": "assets/questions/M1-89-82ab2d9e1835/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 426,
+  "bbox": [
+   90.0,
+   343.5,
+   504.3,
+   549.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-89-82ab2d9e1835/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 426,
+   "bbox": [
+    90.0,
+    343.5,
+    504.3,
+    549.2
+   ],
+   "kind": "raster"
+  }
+ ]
+}

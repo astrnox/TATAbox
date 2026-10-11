@@ -1,0 +1,46 @@
+{
+ "id": "M3-71-289b1308bb8f",
+ "type": "single",
+ "question": "菌根是高等植物根系与菌根真菌形成的互惠共生体，其中丛枝菌根是分布最为广泛宿主植物种类最多的菌根类型。它有诸多有益的生理和生态效应。以下哪些方面与菌根真菌作用无关。",
+ "options": {
+  "A": "增强宿主植物对各种逆境胁迫的抵抗力",
+  "B": "提高植物的竞争力和成活率",
+  "C": "参与生态系统物质循环",
+  "D": "促进土壤团聚体形成",
+  "E": "促进大多数种子萌发"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 71 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

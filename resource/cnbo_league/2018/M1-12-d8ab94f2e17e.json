@@ -1,0 +1,44 @@
+{
+ "id": "M1-12-d8ab94f2e17e",
+ "type": "multiple",
+ "question": "纤毛的外部包裹的纤毛膜是质膜的特化部分，内部是有微管及其附属蛋白构成的轴丝。轴丝微管主要有3 种排列方式：（1）9+2 型（2）9+0 型（3）9+4 型，下面对纤毛特征描述正确的是：",
+ "options": {
+  "A": "9+0 型的纤毛一般是不动纤毛",
+  "B": "9+2 型的纤毛大多为动纤毛",
+  "C": "存在于细胞感受器上的不动纤毛通常被称为原生纤毛",
+  "D": "蛙嗅觉上皮细胞上的9+2 型纤毛为不动纤毛"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 12 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}
