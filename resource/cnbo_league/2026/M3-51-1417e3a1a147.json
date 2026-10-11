@@ -1,0 +1,73 @@
+{
+ "id": "M3-51-1417e3a1a147",
+ "type": "mtf",
+ "question": "右图展示了两种不同生理条件下（两个实验组）肾小管液渗透压在肾单位不同取样部位的相对变化。请判断下列陈述的正误：",
+ "options": {
+  "A": "本图有误，髓袢液处的两条曲线中，下面那条应为虚线；",
+  "B": "实线代表正常生理状态；",
+  "C": "原尿经过近曲小管和髓袢的水盐重吸收和逆流倍增，形成高渗的小管液进入远曲小管；",
+  "D": "虚线所示条件下，心房钠尿肽分泌量较正常生理状态高。"
+ },
+ "answer": null,
+ "answer_key": "TNFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 51 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key B 项官方标答为 N（无法判定）。",
+ "image": {
+  "file": "assets/questions/M3-51-1417e3a1a147/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   352.3,
+   417.0,
+   505.0,
+   507.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-51-1417e3a1a147/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    352.3,
+    417.0,
+    505.0,
+    507.4
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图中髓袢液处两条曲线的线型标注有误，下面那条应为虚线。B．官方标答为'N'（无法判定）：实线是否代表正常生理状态官方记为无法判定，本项留空待人工裁定。C．错误。原尿经近曲小管水盐重吸收与髓袢逆流倍增后，进入远曲小管的是低渗小管液（稀释段），'高渗'错误。D．正确。虚线条件下（血容量偏高状态）心房钠尿肽分泌较正常生理状态高。"
+}

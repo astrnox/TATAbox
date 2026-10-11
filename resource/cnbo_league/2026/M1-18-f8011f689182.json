@@ -1,0 +1,77 @@
+{
+ "id": "M1-18-f8011f689182",
+ "type": "mtf",
+ "question": "基因组DNA 的琼脂糖电泳呈现梯状条带是细胞凋亡的核心特征之一。血清饥饿处理不同培养条件的细胞后，提取细胞内可溶性DNA 进行电泳，结果如下图，其中PE 为PKC 通路激活剂。判断下列有关陈述的正误：",
+ "options": {
+  "A": "血清饥饿可诱导细胞凋亡，凋亡过程本身不依赖Ras 蛋白的功能；",
+  "B": "EGF、Insulin 和NGF 能显著抑制血清饥饿诱导的凋亡；",
+  "C": "NGF 和EGF 的抗凋亡作用均依赖于Ras 蛋白；",
+  "D": "细胞坏死同样会具有DNA 梯状条带的特征。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 18 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-18-f8011f689182/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 4,
+  "bbox": [
+   379.4,
+   144.1,
+   505.8,
+   283.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-18-f8011f689182/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    379.4,
+    144.1,
+    505.8,
+    283.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。血清饥饿可诱导凋亡（DNA ladder出现），且该过程在Ras缺失背景下仍发生，说明不依赖Ras功能。B．正确。EGF、胰岛素、NGF处理均显著减弱血清饥饿诱导的DNA ladder。C．错误。NGF与EGF的抗凋亡作用并非都依赖Ras（图中至少有一种在Ras缺失时仍起作用）。D．错误。坏死时DNA随机降解呈弥散涂抹状（smear），不出现凋亡特征性的梯状条带（ladder）。"
+}

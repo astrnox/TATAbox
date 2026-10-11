@@ -40,5 +40,9 @@
   "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
- }
+ },
+ "explanation": "【解析】判断依据是环境pH与侧链pKa的相对大小：pH＜pKa时质子化（COOH）占优，pH＞pKa时去质子化（COO⁻）占优。A．正确。pH 5.2＜Glu35的pKa 5.9，Glu35以质子化COOH为主。B．错误。pH 5.2＞Asp52的pKa 4.5，Asp52以去质子化COO⁻为主。C．错误，与A相反。D．正确，与B的正确判断一致：Asp52主要为COO⁻。\n【通法】通法：Henderson–Hasselbalch关系的定性用法——只需比较pH与pKa：pH低一侧'抱紧质子'。溶菌酶催化中正是Glu35（质子供体）与Asp52（亲核的COO⁻）协同完成广义酸碱催化。",
+ "explanation_tags": [
+  "通法"
+ ]
 }

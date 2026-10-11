@@ -1,0 +1,80 @@
+{
+ "id": "M4-58-8b87bd234ac4",
+ "type": "mtf",
+ "question": "酵母有4 个ade-1 基因区域的短片段缺失品系1-4（不影响生长），将其相互杂交后产生的孢子接种到基本培养基上，检测该杂交是否产生了野生型（原养型）重组后代。结果如表所示（＋表示可在基本培养基上生长，空白表示不能）。判断下列对4 个突变在染色体上排列顺序论述的正误：",
+ "options": {
+  "A": "顺序是3-2-1-4；",
+  "B": "顺序是2-4-1-3；",
+  "C": "顺序是1-3-4-2；",
+  "D": "顺序是4-1-3-2。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TFFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 58 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第四部分：遗传学 演化生物学 生物信息学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-58-8b87bd234ac4/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 10,
+  "bbox": [
+   299.8,
+   383.8,
+   511.2,
+   462.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-58-8b87bd234ac4/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 10,
+   "bbox": [
+    299.8,
+    383.8,
+    511.2,
+    462.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。按缺失区互补结果（'＋'＝缺失区不重叠），4个缺失在染色体上的排列顺序为3-2-1-4。B．错误。该顺序与表中互补结果矛盾。C．错误。该顺序与表中互补结果矛盾。D．错误。该顺序与表中互补结果矛盾。\n【通法】通法（缺失定位）：互补测验读表法——'＋'＝两缺失不重叠（可以排开），'空白'＝重叠（相邻/同段）。把重叠关系连成链即得排列顺序。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

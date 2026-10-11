@@ -1,0 +1,84 @@
+{
+ "id": "M1-09-206ebeb6b36d",
+ "type": "mtf",
+ "question": "根据图B 及相关原理，判断陈述的正误：",
+ "options": {
+  "A": "TLR3、7 和8 均能响应未修饰的RNA，对不同修饰的敏感性存在差异；",
+  "B": "RNA 中掺入Ψ 或m5C 可以完全抑制TLR3 的激活，但不能抑制TLR7 的激活；",
+  "C": "m6A 和s2U 修饰能够抑制TLR3、TLR7 和 TLR8 的信号转导；",
+  "D": "Ψ 对TLR7 和TLR8 介导的免疫激活具有显著抑制作用，但对TLR3 的抑制效果有限。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 9 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "8-9",
+  "stimulus": "体外合成的未修饰mRNA 会诱导树突状细胞（DCs）产生高水平的细胞因子（如TNF-α、IL-8），而"
+ },
+ "image": {
+  "file": "assets/questions/M1-09-206ebeb6b36d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   284.9,
+   587.7,
+   522.1,
+   702.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-09-206ebeb6b36d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    284.9,
+    587.7,
+    522.1,
+    702.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。TLR3、TLR7、TLR8均可识别RNA，但对不同修饰的敏感性存在差异。B．错误。'完全抑制TLR3但不抑制TLR7'过于绝对，且与D项所示的Ψ效应方向不符。C．正确。m6A、s2U等修饰可抑制TLR3、TLR7、TLR8的信号转导（这也是修饰核苷降低mRNA免疫原性的原理）。D．正确。Ψ显著抑制TLR7、TLR8介导的免疫激活，但对TLR3的抑制效果有限。\n【点睛】点睛：修饰核苷（Ψ、m5C、m6A、s2U）降低mRNA免疫原性的知识直接支撑mRNA疫苗设计——'为什么mRNA疫苗要修饰'就考在这。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

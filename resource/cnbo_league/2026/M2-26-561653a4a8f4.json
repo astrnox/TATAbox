@@ -1,0 +1,45 @@
+{
+ "id": "M2-26-561653a4a8f4",
+ "type": "mtf",
+ "question": "观察图C，并结合相关知识，判断以下论述正确或错误：",
+ "options": {
+  "A": "图中可以观察到两种形态的孢子叶；",
+  "B": "图中的结构可产生大孢子囊和小孢子囊；",
+  "C": "图中的生殖结构只能产生大孢子，进而形成颈卵器和卵细胞；",
+  "D": "该植物的大孢子叶基部近轴面应着生一枚胚珠。"
+ },
+ "answer": null,
+ "answer_key": "NFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 26 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "下图为三种植物生殖结构的切片图。"
+ },
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key A 项官方标答为 N（无法判定）。",
+ "explanation": "【解析】A．官方标答为'N'（无法判定）：图C中能否观察到两种形态的孢子叶取决于切片观察角度，官方标答记为无法判定，本项留空待人工裁定。B．错误。图C的结构并不同时产生大孢子囊和小孢子囊。C．正确。图C的生殖结构只产生大孢子，进而发育为雌配子体，形成颈卵器和卵细胞。D．错误。大孢子叶基部近轴面着生一枚胚珠是苏铁类等的特征，与图C所示类群不符。"
+}

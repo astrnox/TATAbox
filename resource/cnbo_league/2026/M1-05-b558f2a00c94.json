@@ -1,0 +1,80 @@
+{
+ "id": "M1-05-b558f2a00c94",
+ "type": "mtf",
+ "question": "将培养的小鼠细胞与14C 标记的Leu 进行孵育，经过漂洗和裂解后，在NaCl 溶液中高速离心，得到可溶性组分（含有RNA 和蛋白质）和主要含有核糖体的沉淀（如图）。判断下列陈述的正误：",
+ "options": {
+  "A": "沉淀组分中蛋白质曲线说明，核糖体在20 分钟内持续不断掺入氨基酸；",
+  "B": "可溶组分中蛋白质曲线说明，有一些蛋白质在核糖体外合成；",
+  "C": "沉淀组分中RNA 曲线说明，核糖体RNA 很快被氨基酸标记；",
+  "D": "右图支持氨基酸先与可溶组分中的RNA 结合，之后转移到核糖体上。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 5 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-05-b558f2a00c94/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 1,
+  "bbox": [
+   359.8,
+   651.7,
+   539.9,
+   744.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-05-b558f2a00c94/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 1,
+   "bbox": [
+    359.8,
+    651.7,
+    539.9,
+    744.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。沉淀（核糖体）组分蛋白放射性在20分钟内持续上升，说明核糖体持续掺入标记氨基酸进行翻译。B．错误。可溶组分中的标记蛋白来自核糖体合成后释放的产物（或仍在延伸的肽链），不能据此说'蛋白质在核糖体外合成'——翻译均在核糖体上进行。C．错误。能被氨基酸标记的是氨酰-tRNA等，rRNA本身不会被氨基酸标记；沉淀RNA的快速标记反映的是核糖体上结合的氨酰-tRNA等组分。D．正确。该经典脉冲实验支持氨基酸先与可溶组分中的tRNA（氨酰-tRNA）结合，再转移到核糖体参与翻译。\n【点睛】点睛：脉冲标记＋差速离心的读法——先看哪组分'先'有放射性：可溶tRNA先标记→沉淀核糖体后标记，顺序即'氨酰化→翻译'的时间线。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

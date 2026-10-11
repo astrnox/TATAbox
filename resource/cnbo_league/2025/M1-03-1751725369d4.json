@@ -40,5 +40,9 @@
   "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
- }
+ },
+ "explanation": "【解析】A．正确。端粒像'帽子'一样保护染色体末端，防止末端被核酸酶降解或发生末端融合，维持染色体的独立性与完整性。B．错误。端粒并非仅由DNA重复序列构成，还结合有专门的蛋白质复合体。C．正确。端粒由端粒DNA（人类为TTAGGG重复）和多种蛋白质（如shelterin复合体）共同组成。D．正确。Blackburn、Greider和Szostak因发现端粒及端粒酶的保护机制获得2009年诺贝尔生理学或医学奖。\n【点睛】一句话点睛：端粒＝端粒DNA＋蛋白复合体；端粒酶＝含RNA模板的逆转录酶。把'端粒'与'端粒酶'分开记忆，概念就不混了。",
+ "explanation_tags": [
+  "点睛"
+ ]
 }

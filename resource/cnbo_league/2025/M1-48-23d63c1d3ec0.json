@@ -36,5 +36,9 @@
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
  },
- "answer_note": "官方标答含无法判定字符（N），见 answer_key"
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key",
+ "explanation": "【解析】A．正确。K⁺静息通透性最高（设为100%），静息膜电位接近K⁺平衡电位，故贡献最大。B．正确。Na⁺胞外浓度虽高，但静息通透性仅约5%，对静息电位贡献小。C．官方标答为'N'（无法判定）：按Goldman方程代入表中浓度与通透性，室温下估算约−89至−92 mV，'约−90 mV'在工程近似上可接受，但官方标答记为无法判定（可能因未给定温度常数），本项按官方标答留空待人工裁定。D．正确。Ca²⁺静息通透性为零，对静息膜电位无贡献。\n【通法】通法（静息电位计算）：Goldman方程 Vm≈61·lg[(P_K[K⁺]ₒ+P_Na[Na⁺]ₒ+P_Cl[Cl⁻]ᵢ)/(P_K[K⁺]ᵢ+P_Na[Na⁺]ᵢ+P_Cl[Cl⁻]ₒ)]（mV，室温）。通透性最大的离子决定电位走向——K⁺高则接近E_K（约−90 mV）。",
+ "explanation_tags": [
+  "通法"
+ ]
 }

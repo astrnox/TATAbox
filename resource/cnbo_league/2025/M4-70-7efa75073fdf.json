@@ -40,5 +40,9 @@
   "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
- }
+ },
+ "explanation": "【解析】A．正确。LINE-1是自主型散在重复元件，自身编码逆转录酶/内切酶等转座所需蛋白。B．错误。哺乳动物基因组中DNA转座子占比远低于LINEs，且DNA转座子以'剪切-粘贴'方式转座，不经逆转录。C．正确。SINEs（如Alu）自身不编码转座酶，依赖LINE的逆转录机器；Alu在GC较高、基因较富集的区域密度更高。D．错误。LTR元件虽多已失活，但仍可提供启动子/增强子、介导重组，显著影响基因表达调控与基因组稳定性。\n【易错易混】易混：自主（LINE）vs 非自主（SINE、DNA转座子截短型）；'剪切-粘贴'（DNA转座子）vs '复制-粘贴'（逆转录转座子）。占比排序：LINEs＞SINEs＞LTR＞DNA转座子。",
+ "explanation_tags": [
+  "易错易混"
+ ]
 }

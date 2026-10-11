@@ -2,7 +2,7 @@
  "_meta": {
   "generated_at": "2026-10-11",
   "schema_version": 1,
-  "total": 2939,
+  "total": 3011,
   "competition": "CnBO",
   "event": "全国中学生生物学联赛",
   "id_format": "M{module}-{卷内流水号}-{12位hex}",
@@ -451,6 +451,23 @@
      1,
      1
     ]
+   },
+   {
+    "key": "2026",
+    "year": 2026,
+    "title": "2026 年全国中学生生物学联赛试题",
+    "variant": null,
+    "questions": 72,
+    "dropped": 0,
+    "voided": 0,
+    "pdf_pages": [
+     1,
+     12
+    ],
+    "answer_pages": [
+     1,
+     1
+    ]
    }
   ],
   "image_note": "图片为原卷原图抽取（不生成）；image/images 字段含溯源（page/bbox/credit/license）"
@@ -742,6 +759,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-02-131f65856d2e": {
+   "file": "cnbo_league/2026/M1-02-131f65856d2e.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 2,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-02-1557da075c36": {
    "file": "cnbo_league/2020_B/M1-02-1557da075c36.json",
    "paper": "2020_B",
@@ -1006,6 +1034,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-03-e5dd626f7f15": {
+   "file": "cnbo_league/2026/M1-03-e5dd626f7f15.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 3,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M1-03-e864711a8171": {
    "file": "cnbo_league/2008/M1-03-e864711a8171.json",
    "paper": "2008",
@@ -1215,6 +1254,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-04-f844717aa3b9": {
+   "file": "cnbo_league/2026/M1-04-f844717aa3b9.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 4,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-05-09a92702c050": {
    "file": "cnbo_league/2014/M1-05-09a92702c050.json",
    "paper": "2014",
@@ -1379,6 +1429,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-05-b558f2a00c94": {
+   "file": "cnbo_league/2026/M1-05-b558f2a00c94.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 5,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-05-b5976c25fa3d": {
    "file": "cnbo_league/2020_B/M1-05-b5976c25fa3d.json",
@@ -1610,6 +1671,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-06-cd3b91760ae0": {
+   "file": "cnbo_league/2026/M1-06-cd3b91760ae0.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 6,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-06-ea92595ccfad": {
    "file": "cnbo_league/2020_B/M1-06-ea92595ccfad.json",
@@ -2040,6 +2112,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-09-206ebeb6b36d": {
+   "file": "cnbo_league/2026/M1-09-206ebeb6b36d.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 9,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M1-09-497ef60b324d": {
    "file": "cnbo_league/2003/M1-09-497ef60b324d.json",
    "paper": "2003",
@@ -2468,6 +2551,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-10-d603e4355bf8": {
+   "file": "cnbo_league/2026/M1-10-d603e4355bf8.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 10,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-100-07b94f5241b9": {
    "file": "cnbo_league/2011/M1-100-07b94f5241b9.json",
@@ -3041,6 +3135,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-11-9c5fdc9626b7": {
+   "file": "cnbo_league/2026/M1-11-9c5fdc9626b7.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 11,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M1-11-a58f56e9001a": {
    "file": "cnbo_league/2018/M1-11-a58f56e9001a.json",
    "paper": "2018",
@@ -3448,6 +3553,17 @@
    "figures": 1,
    "has_figure": true
   },
+  "M1-12-692131d824b1": {
+   "file": "cnbo_league/2026/M1-12-692131d824b1.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 12,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-12-6a04fcb79b79": {
    "file": "cnbo_league/2013/M1-12-6a04fcb79b79.json",
    "paper": "2013",
@@ -3811,6 +3927,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-13-799a703e0f4f": {
+   "file": "cnbo_league/2026/M1-13-799a703e0f4f.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 13,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-13-83c40cc9d0c6": {
    "file": "cnbo_league/2023/M1-13-83c40cc9d0c6.json",
    "paper": "2023",
@@ -3909,6 +4036,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-14-29ecedccb4f9": {
+   "file": "cnbo_league/2026/M1-14-29ecedccb4f9.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 14,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-14-3a98057567e3": {
    "file": "cnbo_league/2017/M1-14-3a98057567e3.json",
@@ -4185,6 +4323,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-15-affde3726080": {
+   "file": "cnbo_league/2026/M1-15-affde3726080.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 15,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-15-bdd26f91eb46": {
    "file": "cnbo_league/2024/M1-15-bdd26f91eb46.json",
    "paper": "2024",
@@ -4279,6 +4428,17 @@
    "year": 2003,
    "question_no": 16,
    "type": "single",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M1-16-3635469461c4": {
+   "file": "cnbo_league/2026/M1-16-3635469461c4.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 16,
+   "type": "mtf",
    "module": "module_1",
    "voided": false,
    "figures": 0,
@@ -4537,6 +4697,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-17-a3c6df33c986": {
+   "file": "cnbo_league/2026/M1-17-a3c6df33c986.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 17,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-17-a7e60cb0c7db": {
    "file": "cnbo_league/2014/M1-17-a7e60cb0c7db.json",
    "paper": "2014",
@@ -4785,6 +4956,17 @@
    "year": 2023,
    "question_no": 18,
    "type": "single",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
+  "M1-18-f8011f689182": {
+   "file": "cnbo_league/2026/M1-18-f8011f689182.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 18,
+   "type": "mtf",
    "module": "module_1",
    "voided": false,
    "figures": 1,
@@ -5428,6 +5610,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M1-23-b2af88d93e2c": {
+   "file": "cnbo_league/2026/M1-23-b2af88d93e2c.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 23,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M1-23-c23aacf157f5": {
    "file": "cnbo_league/2009/M1-23-c23aacf157f5.json",
    "paper": "2009",
@@ -5896,6 +6089,17 @@
    "year": 2015,
    "question_no": 27,
    "type": "multiple",
+   "module": "module_1",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M1-27-2b24d318a323": {
+   "file": "cnbo_league/2026/M1-27-2b24d318a323.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 27,
+   "type": "mtf",
    "module": "module_1",
    "voided": false,
    "figures": 0,
@@ -6527,6 +6731,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-31-6229a0eaf722": {
+   "file": "cnbo_league/2026/M1-31-6229a0eaf722.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 31,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-31-73afe3f42310": {
    "file": "cnbo_league/2024/M1-31-73afe3f42310.json",
@@ -8133,6 +8348,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M1-45-f01a767006a2": {
+   "file": "cnbo_league/2026/M1-45-f01a767006a2.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 45,
+   "type": "mtf",
+   "module": "module_1",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M1-46-043573984aab": {
    "file": "cnbo_league/2016/M1-46-043573984aab.json",
@@ -12215,6 +12441,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-08-27a6af48ca40": {
+   "file": "cnbo_league/2026/M2-08-27a6af48ca40.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 8,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-08-36159264ed41": {
    "file": "cnbo_league/2020_B/M2-08-36159264ed41.json",
    "paper": "2020_B",
@@ -13535,6 +13772,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-19-4c05dfb57925": {
+   "file": "cnbo_league/2026/M2-19-4c05dfb57925.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 19,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M2-19-6fcf4d44d516": {
    "file": "cnbo_league/2003/M2-19-6fcf4d44d516.json",
    "paper": "2003",
@@ -13567,6 +13815,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M2-20-8c8523c81a3c": {
+   "file": "cnbo_league/2026/M2-20-8c8523c81a3c.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 20,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M2-20-909d570c27b0": {
    "file": "cnbo_league/2007/M2-20-909d570c27b0.json",
@@ -13700,6 +13959,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-21-5796fc748e1b": {
+   "file": "cnbo_league/2026/M2-21-5796fc748e1b.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 21,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M2-21-7858e9ff6f2a": {
    "file": "cnbo_league/2020_A/M2-21-7858e9ff6f2a.json",
    "paper": "2020_A",
@@ -13805,6 +14075,17 @@
    "year": 2005,
    "question_no": 22,
    "type": "single",
+   "module": "module_2",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M2-22-e793413bf435": {
+   "file": "cnbo_league/2026/M2-22-e793413bf435.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 22,
+   "type": "mtf",
    "module": "module_2",
    "voided": false,
    "figures": 0,
@@ -13931,6 +14212,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-24-583dcc8f4ef1": {
+   "file": "cnbo_league/2026/M2-24-583dcc8f4ef1.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 24,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-24-7be86fe060b8": {
    "file": "cnbo_league/2013/M2-24-7be86fe060b8.json",
    "paper": "2013",
@@ -14038,6 +14330,17 @@
    "type": "multiple",
    "module": "module_2",
    "voided": true,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M2-26-561653a4a8f4": {
+   "file": "cnbo_league/2026/M2-26-561653a4a8f4.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 26,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
    "figures": 0,
    "has_figure": false
   },
@@ -14250,6 +14553,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-28-0e5d8c3c62dd": {
+   "file": "cnbo_league/2026/M2-28-0e5d8c3c62dd.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 28,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-28-387945626900": {
    "file": "cnbo_league/2002/M2-28-387945626900.json",
    "paper": "2002",
@@ -14382,6 +14696,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-29-d807fe539620": {
+   "file": "cnbo_league/2026/M2-29-d807fe539620.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 29,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-29-f2941e3e3c70": {
    "file": "cnbo_league/2011/M2-29-f2941e3e3c70.json",
    "paper": "2011",
@@ -14447,6 +14772,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M2-30-90a3aad0dc04": {
+   "file": "cnbo_league/2026/M2-30-90a3aad0dc04.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 30,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M2-30-9b0386b9d68f": {
    "file": "cnbo_league/2005/M2-30-9b0386b9d68f.json",
@@ -14514,6 +14850,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-32-5c440ec92bdf": {
+   "file": "cnbo_league/2026/M2-32-5c440ec92bdf.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 32,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-32-7ea20c216c64": {
    "file": "cnbo_league/2019/M2-32-7ea20c216c64.json",
    "paper": "2019",
@@ -14569,6 +14916,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M2-33-6166722ce4ca": {
+   "file": "cnbo_league/2026/M2-33-6166722ce4ca.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 33,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M2-33-66c2a5fa091e": {
    "file": "cnbo_league/2010/M2-33-66c2a5fa091e.json",
    "paper": "2010",
@@ -14612,6 +14970,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M2-34-16ac8f1f4e56": {
+   "file": "cnbo_league/2026/M2-34-16ac8f1f4e56.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 34,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M2-34-605f54e8af39": {
    "file": "cnbo_league/2002/M2-34-605f54e8af39.json",
@@ -14689,6 +15058,17 @@
    "voided": false,
    "figures": 1,
    "has_figure": true
+  },
+  "M2-35-4f02fab393f4": {
+   "file": "cnbo_league/2026/M2-35-4f02fab393f4.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 35,
+   "type": "mtf",
+   "module": "module_2",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
   },
   "M2-35-5d160300f1fc": {
    "file": "cnbo_league/2005/M2-35-5d160300f1fc.json",
@@ -17836,6 +18216,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-01-6e8b8e4ab298": {
+   "file": "cnbo_league/2026/M3-01-6e8b8e4ab298.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 1,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-02-6d6a6abb7e95": {
    "file": "cnbo_league/2016/M3-02-6d6a6abb7e95.json",
    "paper": "2016",
@@ -19959,6 +20350,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-25-3dd150eaebe5": {
+   "file": "cnbo_league/2026/M3-25-3dd150eaebe5.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 25,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M3-25-62cacd07ca16": {
    "file": "cnbo_league/2020_A/M3-25-62cacd07ca16.json",
    "paper": "2020_A",
@@ -20806,6 +21208,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-36-d714d4f37b00": {
+   "file": "cnbo_league/2026/M3-36-d714d4f37b00.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 36,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-36-f16ec91465ee": {
    "file": "cnbo_league/2007/M3-36-f16ec91465ee.json",
    "paper": "2007",
@@ -20856,6 +21269,17 @@
    "year": 2023,
    "question_no": 37,
    "type": "single",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-37-560311366355": {
+   "file": "cnbo_league/2026/M3-37-560311366355.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 37,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 0,
@@ -20922,6 +21346,17 @@
    "year": 2019,
    "question_no": 38,
    "type": "multiple",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-38-1c79d501384d": {
+   "file": "cnbo_league/2026/M3-38-1c79d501384d.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 38,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 0,
@@ -21114,6 +21549,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-39-7ed0d5b63246": {
+   "file": "cnbo_league/2026/M3-39-7ed0d5b63246.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 39,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-39-9e5e58b8752a": {
    "file": "cnbo_league/2025/M3-39-9e5e58b8752a.json",
    "paper": "2025",
@@ -21197,6 +21643,17 @@
    "year": 2017,
    "question_no": 40,
    "type": "single",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-40-5db967575346": {
+   "file": "cnbo_league/2026/M3-40-5db967575346.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 40,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 0,
@@ -21345,6 +21802,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-41-df52cc0a8f2a": {
+   "file": "cnbo_league/2026/M3-41-df52cc0a8f2a.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 41,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-41-fd10b36ce798": {
    "file": "cnbo_league/2025/M3-41-fd10b36ce798.json",
    "paper": "2025",
@@ -21393,6 +21861,17 @@
    "file": "cnbo_league/2025/M3-42-7f70724df9db.json",
    "paper": "2025",
    "year": 2025,
+   "question_no": 42,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-42-adb024b0270e": {
+   "file": "cnbo_league/2026/M3-42-adb024b0270e.json",
+   "paper": "2026",
+   "year": 2026,
    "question_no": 42,
    "type": "mtf",
    "module": "module_3",
@@ -21521,6 +22000,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-43-f69ad573627f": {
+   "file": "cnbo_league/2026/M3-43-f69ad573627f.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 43,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-44-07b37f0bc62d": {
    "file": "cnbo_league/2018/M3-44-07b37f0bc62d.json",
    "paper": "2018",
@@ -21637,6 +22127,17 @@
    "year": 2021,
    "question_no": 44,
    "type": "multiple",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-44-ee12115abb58": {
+   "file": "cnbo_league/2026/M3-44-ee12115abb58.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 44,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 0,
@@ -21784,6 +22285,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M3-46-3b8c88a7a9e0": {
+   "file": "cnbo_league/2026/M3-46-3b8c88a7a9e0.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 46,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M3-46-49a29ad25673": {
    "file": "cnbo_league/2020_B/M3-46-49a29ad25673.json",
@@ -21972,6 +22484,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-47-f7ad7ed77569": {
+   "file": "cnbo_league/2026/M3-47-f7ad7ed77569.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 47,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M3-47-f82a526fa7dc": {
    "file": "cnbo_league/2009/M3-47-f82a526fa7dc.json",
    "paper": "2009",
@@ -22044,6 +22567,17 @@
    "year": 2013,
    "question_no": 48,
    "type": "single",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M3-48-bb22ca4d4ded": {
+   "file": "cnbo_league/2026/M3-48-bb22ca4d4ded.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 48,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 0,
@@ -22136,6 +22670,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M3-49-868f45e93858": {
+   "file": "cnbo_league/2026/M3-49-868f45e93858.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 49,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M3-49-a7f14c5cc0c3": {
    "file": "cnbo_league/2008/M3-49-a7f14c5cc0c3.json",
@@ -22236,6 +22781,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-50-63bcb72fa9ca": {
+   "file": "cnbo_league/2026/M3-50-63bcb72fa9ca.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 50,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M3-50-707f4e6a9658": {
    "file": "cnbo_league/2017/M3-50-707f4e6a9658.json",
    "paper": "2017",
@@ -22275,6 +22831,17 @@
    "year": 2022,
    "question_no": 51,
    "type": "multiple",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
+  "M3-51-1417e3a1a147": {
+   "file": "cnbo_league/2026/M3-51-1417e3a1a147.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 51,
+   "type": "mtf",
    "module": "module_3",
    "voided": false,
    "figures": 1,
@@ -22445,6 +23012,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M3-52-a87ba4f41578": {
+   "file": "cnbo_league/2026/M3-52-a87ba4f41578.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 52,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M3-52-b493bed09879": {
    "file": "cnbo_league/2016/M3-52-b493bed09879.json",
    "paper": "2016",
@@ -22610,6 +23188,17 @@
    "figures": 4,
    "has_figure": true
   },
+  "M3-53-fe31e8b2b3d8": {
+   "file": "cnbo_league/2026/M3-53-fe31e8b2b3d8.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 53,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M3-54-0cb0efc14e66": {
    "file": "cnbo_league/2020_B/M3-54-0cb0efc14e66.json",
    "paper": "2020_B",
@@ -22686,6 +23275,17 @@
    "voided": false,
    "figures": 1,
    "has_figure": true
+  },
+  "M3-54-bfd6db979998": {
+   "file": "cnbo_league/2026/M3-54-bfd6db979998.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 54,
+   "type": "mtf",
+   "module": "module_3",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
   },
   "M3-54-c0494f9f16f2": {
    "file": "cnbo_league/2010/M3-54-c0494f9f16f2.json",
@@ -27329,6 +27929,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-07-252921dcb8f3": {
+   "file": "cnbo_league/2026/M4-07-252921dcb8f3.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 7,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M4-10-afbf2ea3bd24": {
    "file": "cnbo_league/2009/M4-10-afbf2ea3bd24.json",
    "paper": "2009",
@@ -29452,6 +30063,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-55-3e8def9c62a4": {
+   "file": "cnbo_league/2026/M4-55-3e8def9c62a4.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 55,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-55-868247c8ee54": {
    "file": "cnbo_league/2012/M4-55-868247c8ee54.json",
    "paper": "2012",
@@ -29502,6 +30124,17 @@
    "year": 2007,
    "question_no": 56,
    "type": "single",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-56-a70d239e96f7": {
+   "file": "cnbo_league/2026/M4-56-a70d239e96f7.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 56,
+   "type": "mtf",
    "module": "module_4",
    "voided": false,
    "figures": 0,
@@ -29562,6 +30195,17 @@
    "figures": 1,
    "has_figure": true
   },
+  "M4-57-490d543def49": {
+   "file": "cnbo_league/2026/M4-57-490d543def49.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 57,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-57-5ec77d0e70c1": {
    "file": "cnbo_league/2008/M4-57-5ec77d0e70c1.json",
    "paper": "2008",
@@ -29617,6 +30261,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-58-8b87bd234ac4": {
+   "file": "cnbo_league/2026/M4-58-8b87bd234ac4.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 58,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M4-58-c37f38e69323": {
    "file": "cnbo_league/2001/M4-58-c37f38e69323.json",
    "paper": "2001",
@@ -29656,6 +30311,17 @@
    "year": 2006,
    "question_no": 59,
    "type": "single",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-59-4d0c8eb90f88": {
+   "file": "cnbo_league/2026/M4-59-4d0c8eb90f88.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 59,
+   "type": "mtf",
    "module": "module_4",
    "voided": false,
    "figures": 0,
@@ -29760,6 +30426,17 @@
    "figures": 1,
    "has_figure": true
   },
+  "M4-60-732fa828af6e": {
+   "file": "cnbo_league/2026/M4-60-732fa828af6e.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 60,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-60-baef0d32d136": {
    "file": "cnbo_league/2014/M4-60-baef0d32d136.json",
    "paper": "2014",
@@ -29814,6 +30491,17 @@
    "voided": false,
    "figures": 1,
    "has_figure": true
+  },
+  "M4-61-7ed2ec7feaab": {
+   "file": "cnbo_league/2026/M4-61-7ed2ec7feaab.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 61,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
   },
   "M4-61-8cbfedb0f754": {
    "file": "cnbo_league/2003/M4-61-8cbfedb0f754.json",
@@ -29892,6 +30580,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-62-c2d4c749e3c3": {
+   "file": "cnbo_league/2026/M4-62-c2d4c749e3c3.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 62,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M4-62-ed35223732ab": {
    "file": "cnbo_league/2025/M4-62-ed35223732ab.json",
    "paper": "2025",
@@ -29902,6 +30601,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M4-63-1968e126a877": {
+   "file": "cnbo_league/2026/M4-63-1968e126a877.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 63,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M4-63-3cd0d52d30b9": {
    "file": "cnbo_league/2012/M4-63-3cd0d52d30b9.json",
@@ -29953,6 +30663,17 @@
    "year": 2005,
    "question_no": 63,
    "type": "single",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-64-061cfff2bf16": {
+   "file": "cnbo_league/2026/M4-64-061cfff2bf16.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 64,
+   "type": "mtf",
    "module": "module_4",
    "voided": false,
    "figures": 0,
@@ -30068,6 +30789,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-65-bce1ebab6edc": {
+   "file": "cnbo_league/2026/M4-65-bce1ebab6edc.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 65,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-65-bed8a13c2785": {
    "file": "cnbo_league/2005/M4-65-bed8a13c2785.json",
    "paper": "2005",
@@ -30145,6 +30877,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-66-524772422eff": {
+   "file": "cnbo_league/2026/M4-66-524772422eff.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 66,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-66-7b36e8764396": {
    "file": "cnbo_league/2003/M4-66-7b36e8764396.json",
    "paper": "2003",
@@ -30195,6 +30938,17 @@
    "year": 2011,
    "question_no": 66,
    "type": "single",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-67-0fe66198cc3b": {
+   "file": "cnbo_league/2026/M4-67-0fe66198cc3b.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 67,
+   "type": "mtf",
    "module": "module_4",
    "voided": false,
    "figures": 0,
@@ -30277,6 +31031,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-68-64d6d6b93f07": {
+   "file": "cnbo_league/2026/M4-68-64d6d6b93f07.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 68,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
   "M4-68-9570883e9336": {
    "file": "cnbo_league/2003/M4-68-9570883e9336.json",
    "paper": "2003",
@@ -30329,6 +31094,17 @@
    "type": "single",
    "module": "module_4",
    "voided": true,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-69-015c05a3c247": {
+   "file": "cnbo_league/2026/M4-69-015c05a3c247.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 69,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
    "figures": 0,
    "has_figure": false
   },
@@ -30431,6 +31207,17 @@
    "figures": 0,
    "has_figure": false
   },
+  "M4-70-fb54b4c6f003": {
+   "file": "cnbo_league/2026/M4-70-fb54b4c6f003.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 70,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
+  },
   "M4-71-05be1d84fd5e": {
    "file": "cnbo_league/2020_A/M4-71-05be1d84fd5e.json",
    "paper": "2020_A",
@@ -30463,6 +31250,17 @@
    "voided": false,
    "figures": 0,
    "has_figure": false
+  },
+  "M4-71-a9ec518b4836": {
+   "file": "cnbo_league/2026/M4-71-a9ec518b4836.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 71,
+   "type": "mtf",
+   "module": "module_4",
+   "voided": false,
+   "figures": 1,
+   "has_figure": true
   },
   "M4-71-b9c95b8ca2fc": {
    "file": "cnbo_league/2006/M4-71-b9c95b8ca2fc.json",
@@ -30503,6 +31301,17 @@
    "year": 2014,
    "question_no": 72,
    "type": "single",
+   "module": "module_4",
+   "voided": false,
+   "figures": 0,
+   "has_figure": false
+  },
+  "M4-72-ac58ce62cff8": {
+   "file": "cnbo_league/2026/M4-72-ac58ce62cff8.json",
+   "paper": "2026",
+   "year": 2026,
+   "question_no": 72,
+   "type": "mtf",
    "module": "module_4",
    "voided": false,
    "figures": 0,

@@ -40,5 +40,9 @@
   "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
- }
+ },
+ "explanation": "【解析】A．错误。lncRNA不编码蛋白质，不发挥信使RNA功能。B．正确。lncRNA可结合蛋白（如染色质修饰复合物、RNA结合蛋白）形成复合物调控基因表达。C．正确。定位在核内（如染色质重塑、转录调控）或细胞质（如miRNA海绵、mRNA稳定性调控）与其功能对应。D．错误。lncRNA机制多样（顺式/反式转录调控、染色质修饰、充当支架/海绵等），并非'都'通过与DNA互补抑制转录。\n【易错易混】易错：把lncRNA默认为'反义RNA'是常见误区——互补配对只是其机制之一；'所有/都'类绝对化表述在RNA生物学里几乎必错。",
+ "explanation_tags": [
+  "易错易混"
+ ]
 }

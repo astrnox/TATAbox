@@ -1,0 +1,45 @@
+{
+ "id": "M3-53-fe31e8b2b3d8",
+ "type": "mtf",
+ "question": "婚配系统是动物种群社群结构与繁殖体系的关键特征，常见的婚配系统包括单配制、多配制、混交制等。请对以下关于鸟类和兽类婚配系统的描述判断正误：",
+ "options": {
+  "A": "鸟类中，单配制是物种数占比最高的婚配系统；",
+  "B": "兽类中，一雌多雄婚配系统的物种数远少于一雄多雌系统的物种数；",
+  "C": "兽类中，采用单配制与多配制的物种比例大体相当；",
+  "D": "在采用单配制的鸟类中，配偶外交配行为也会经常发生。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 53 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。鸟类中单配制（一夫一妻）是占比最高的婚配系统。B．正确。兽类中一雌多雄的物种数远少于一雄多雌。C．错误。兽类以多配制为主，单配制比例低，两者并不相当。D．正确。即使单配制鸟类，配偶外交配（extra-pair copulation）也相当常见，'单配'不等于'绝对忠贞'。"
+}

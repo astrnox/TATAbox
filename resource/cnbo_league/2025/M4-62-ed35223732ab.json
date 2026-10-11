@@ -40,5 +40,6 @@
   "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
   "type_mark": null,
   "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
- }
+ },
+ "explanation": "【解析】A．错误。证据链方向是WRN缺失→SHOX表达下调，而非SHOX调控WRN活性，选项把因果说反。B．正确。敲除wrn后SHOX显著下调，说明WRN功能是维持正常SHOX表达所必需。C．错误。沃纳综合征的根本原因是WRN基因突变；SHOX过表达只部分缓解表型，不能倒因为果。D．正确。ChIP利用抗WRN抗体富集其结合的DNA片段，可鉴定WRN直接结合的靶基因区域。"
 }

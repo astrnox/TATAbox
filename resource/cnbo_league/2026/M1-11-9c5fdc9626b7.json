@@ -1,0 +1,77 @@
+{
+ "id": "M1-11-9c5fdc9626b7",
+ "type": "mtf",
+ "question": "E-钙黏蛋白介导的细胞连接对维持上皮组织的稳态起关键作用，上皮来源的肿瘤获得侵袭性表型时常常伴随E-钙黏蛋白下调或缺失。为探讨E-钙黏蛋白与转录因子Snail 之间的关系，研究者在一组人类癌细胞系中分析了二者的表达，RT-PCR 实验结果如右图。判断下列陈述的正误：",
+ "options": {
+  "A": "不同癌细胞系中E-钙黏蛋白和Snail 的表达呈正相关；",
+  "B": "Snail 在高侵袭性癌细胞系中高表达；",
+  "C": "此图说明T24 中E-钙黏蛋白启动子发生了高度甲基化；",
+  "D": "Snail 可作为肿瘤侵袭性/转移性的候选标志物。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 11 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-11-9c5fdc9626b7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 3,
+  "bbox": [
+   358.0,
+   208.1,
+   515.0,
+   315.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-11-9c5fdc9626b7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 3,
+   "bbox": [
+    358.0,
+    208.1,
+    515.0,
+    315.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。RT-PCR结果显示二者呈负相关：Snail高表达的细胞系E-钙黏蛋白表达低。B．正确。高侵袭性癌细胞系中Snail表达更高。C．错误。RT-PCR只反映mRNA表达水平，不能判断启动子是否发生甲基化（需亚硫酸氢盐测序或甲基化特异PCR）。D．正确。Snail高表达与侵袭/转移表型相关，可作为候选标志物。"
+}
