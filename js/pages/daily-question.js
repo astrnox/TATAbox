@@ -462,6 +462,7 @@
         </div>
       </div>
       <div class="dq-question">${escapeHtml(q.question)}</div>
+      ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '每日一题配图' }) : ''}
       <div class="dq-options" id="dqOptions">
         ${optionsHtml}
       </div>

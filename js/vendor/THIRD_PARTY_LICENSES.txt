@@ -41,6 +41,7 @@
 | 23 | marked | 18.0.7 |
 | 24 | igv.js | 快照 2026-07-23 |
 | 25 | d3 | 7.9.0 |
+| 27 | Viewer.js | 1.15.2（MIT，题目图片查看器/标注，2026-10-12 购入）|
 
 CVE 巡检：每半年（1 月 / 7 月）对照 jsdelivr/GitHub Release 核对上表版本，
 发现安全公告后升级并更新本表「下载日期」。
@@ -219,9 +220,19 @@ CVE 巡检：每半年（1 月 / 7 月）对照 jsdelivr/GitHub Release 核对�
    集成方式：路由级懒加载，访问 #/genome 时动态注入，
              不阻塞首屏；js/integrations/genome-browser.js 为本仓库自实现封装层
 
+------------------------------------------------------------
+27. Viewer.js (MIT License)
+   文件：viewer.min.js, viewer.css, LICENSE-viewerjs.txt
+   来源：https://github.com/fengyuanchen/viewerjs
+   用途：题目图片点击放大查看（缩放/平移/旋转/全屏/下载），
+         叠加自研标注层（js/core/figure-viewer.js）
+   版权：Copyright 2015-present Chen Fengyuan
+   集成方式：index.html / quiz.html 静态引入，标注与合成下载为自研代码，
+             标注结果仅存在于前端 canvas，不回写、不覆盖原始图片文件
+
 
 ============================================================
- 已移除的库（精简优化）
+已移除的库（精简优化）
 ============================================================
 以下库已从项目中移除（详见 2026-07-23 依赖精简）：
 - canvas-confetti (ISC) — 测验庆祝动画，纯装饰，已删除

@@ -2058,7 +2058,7 @@ function renderQuestionHTML(qIndex) {
         </button>
       </div>
       <div class="exam-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
-      ${renderChart(q.chart)}
+      ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
       <div class="exam-q-hint">请对以下 4 个子选项分别判断正误（每题2分，按2025联赛标准阶梯赋分：对2个得0.2分，对3个得1分，全对得2分）</div>
       <div class="exam-subquestions">
   `;
@@ -2579,6 +2579,7 @@ function renderResultPage(target) {
                 <div class="exam-wrong-item">
                   <div class="exam-wrong-num">第 ${item.index + 1} 题 · ${mod.name}</div>
                   <div class="exam-wrong-stem">${q.question}</div>
+                  ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : ''}
                   <div class="exam-wrong-score">${result.correct}/4 正确 (${result.score.toFixed(1)}分)</div>
                 </div>
               `;
@@ -2677,7 +2678,7 @@ function renderReviewMode(target) {
           ${markTag}
         </div>
         <div class="exam-review-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
-        ${renderChart(q.chart)}
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
         <div class="exam-review-subs">
     `;
 

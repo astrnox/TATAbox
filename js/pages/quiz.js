@@ -436,6 +436,7 @@ function renderPaper() {
           ${_examVoteHtml(i)}
         </div>
         <div class="pq-text">${escapeHtml(q.question).replace(/\n/g, '<br>')}</div>
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '第 ' + (i + 1) + ' 题配图' }) : ''}
         ${isMultiple ? '<div class="pq-multi-hint">此题为多选题，请选择所有正确答案</div>' : ''}
         ${isMtf ? '<div class="pq-multi-hint">此题为多重判断题，请对每条陈述判断「正确」或「错误」</div>' : ''}
         <div class="pq-options">

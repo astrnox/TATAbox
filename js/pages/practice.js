@@ -2337,7 +2337,7 @@ function renderQuiz() {
         <div class="practice-question-text">
           ${escapeHtml(q.question)}
         </div>
-        ${renderChart(q.chart)}
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
 
         <div class="practice-options-list">
           ${subQuestionsHtml}

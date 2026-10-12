@@ -359,7 +359,7 @@ function renderExplanationWithImages(text) {
     const p = stashed[Number(i)];
     if (!p) return m;
     return '<figure class="exp-figure">' +
-      '<img class="exp-annotated" src="' + p + '" alt="带批注的期刊原图解析" loading="lazy">' +
+      '<img class="exp-annotated" src="' + p + '" alt="带批注的期刊原图解析" loading="lazy" data-bq-zoom="1">' +
       '<figcaption>图注解析：图中彩色框与引线为本题解析批注，对应题干/选项中的关键结构与因果链</figcaption>' +
       '</figure>';
   });
@@ -1146,8 +1146,8 @@ function renderChart(chart) {
   if (isChartImageSrc(s)) {
     const src = s.split(/\s+/)[0];
     return `<div class="question-chart-wrapper" style="margin:14px auto;text-align:center;">
-      <img src="${escapeHtml(src)}" alt="题目图表" loading="lazy" decoding="async" data-chart-fallback="1"
-        style="max-width:100%;max-height:min(60vh,560px);width:auto;height:auto;object-fit:contain;box-sizing:border-box;border-radius:12px;border:1px solid var(--border-light);background:var(--surface-tertiary);padding:8px;box-shadow:var(--shadow-md);display:block;margin:0 auto;">
+      <img src="${escapeHtml(src)}" alt="题目图表" loading="lazy" decoding="async" data-chart-fallback="1" data-bq-zoom="1"
+        style="max-width:100%;max-height:min(60vh,560px);width:auto;height:auto;object-fit:contain;box-sizing:border-box;border-radius:12px;border:1px solid var(--border-light);background:var(--surface-tertiary);padding:8px;box-shadow:var(--shadow-md);display:block;margin:0 auto;cursor:zoom-in;">
     </div>`;
   }
 
@@ -1198,6 +1198,9 @@ function _ensureChartImgFallback() {
     var t = e && e.target;
     if (!t || t.tagName !== 'IMG') return;
     if (t.getAttribute('data-chart-fallback') !== '1') return;
+    if (t.getAttribute('data-bq-zoom') === '1' && typeof window !== 'undefined' && window.BioQuestFigure) {
+      return; // 统一图片管线（figure-viewer.js）接管；未加载该脚本时仍走本兜底
+    }
     if (t.dataset && t.dataset.retried) return; // 已处理过，避免重复插入
     if (t.dataset) t.dataset.retried = '1';
     try { t.style.display = 'none'; } catch (err) {}

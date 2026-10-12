@@ -449,6 +449,9 @@
     html += '</div>';
 
     html += '<div class="db-question-text">' + escapeHtml(q.question) + '</div>';
+    if (typeof window !== 'undefined' && window.BioQuestFigure) {
+      html += window.BioQuestFigure.render(q, { alt: '题目配图' });
+    }
 
     html += '<div class="db-sub-list">';
     for (var i = 0; i < q.subQuestions.length; i++) {
@@ -549,6 +552,9 @@
     html += '</div>';
 
     html += '<div class="db-report-question">' + escapeHtml(q.question) + '</div>';
+    if (typeof window !== 'undefined' && window.BioQuestFigure) {
+      html += window.BioQuestFigure.render(q, { alt: '题目配图' });
+    }
 
     html += '<div class="db-report-subs">';
     for (var k = 0; k < r.items.length; k++) {
