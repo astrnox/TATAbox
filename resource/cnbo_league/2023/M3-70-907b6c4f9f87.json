@@ -40,5 +40,9 @@
   "section": "三、动物行为学、生态学（15 题19 分）",
   "type_mark": null,
   "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
- }
+ },
+ "explanation": "【解析】Form. 表示群系（formation），是以建群种命名的分类单位。A．错误。前缀 Form. 指群系而非群丛，且厚壳桂在此并非伴生种层面的表述。B．错误。'优势层优势种'是群丛的命名依据，与 Form. 前缀不符。C．错误。该选项把群系与'单一建群种加伴生种'组合，与题给两个共优种的写法不符。D．正确。Form.Castanopsis chinensis+Cryptocary chinensis 表示建群种为栲栗与厚壳桂两个共优势种的群系。故答案为D。\n【易错易混】易混：Form.＝群系（建群种层面，可为共优势种），Assoc.＝群丛（优势层优势种层面），见前缀先定阶元再判断。",
+ "explanation_tags": [
+  "易错易混"
+ ]
 }
