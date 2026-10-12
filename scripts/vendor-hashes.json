@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T13:02:48.679Z",
+  "updated": "2026-10-12T14:12:31.411Z",
   "files": {
     "3Dmol-min.js": "f7cc78921ae72e7623e89cdd111434f58c2efddd2ffda1cd212644b406fb8016",
     "cal-heatmap.css": "2d70c33309b23ec708d1667cbb4bc1c4763b096154ec1d012eddcdca3850f76e",
@@ -19,6 +19,7 @@
     "LICENSE-igv.txt": "fd69572836ffc3e7e17d19177bcd55c62c74c5c8a3db0d7a5f867759d7f9d443",
     "LICENSE-lz-string.txt": "433fc9dfe659dbfb1e91eed8351f13651e97bfa3ac6d03394c3d63f61d4bbc80",
     "LICENSE-ts-fsrs.txt": "53538a9f2ebebb0962ef2aec57dd6d2216b1a8525c08e570f8001aabfd0eab20",
+    "LICENSE-viewerjs.txt": "eb917650781dcf06a60b97cba9b05bf583931ec2d311d8a5548a8dca90a57e0f",
     "lz-string.min.js": "95f4d1cbf099f57161b664bc048426ec3df92637801a4c79116e83315aa787e7",
     "mammoth.browser.min.js": "5d4c0e7c9165d70b78f789c5274a2c7846d9e1c06ec19b69afa6ef45f789a3b9",
     "marked.umd.js": "7a1f8c5e7226b75ff16644bdb2c0130d2ae7371e7ea3106c2d6dac77ab0ff7b6",
@@ -33,8 +34,10 @@
     "react-dom.production.min.js": "35f4f974f4b2bcd44da73963347f8952e341f83909e4498227d4e26b98f66f0d",
     "react-jsx-runtime-polyfill.js": "47ac1dbb2fb000b5647aafd23a94f8f496d781f11a5bba1d0d368c23871b0cc4",
     "react.production.min.js": "d949f1c3687aedadcedac85261865f29b17cd273997e7f6b2bfc53b2f9d4c4dd",
-    "THIRD_PARTY_LICENSES.txt": "6056e30f888f5b36b6bdd32f1ffa385d40685734b7e074a802fd58943f86d3c0",
+    "THIRD_PARTY_LICENSES.txt": "7a6e21cc9592c443e51e20b96d08fd2c5a4775f47f95166e5873380764e08be1",
     "three.min.js": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
-    "ts-fsrs.umd.min.js": "f03ac8b053711ec7211d01674083082b21e75612ce7fb4b9e39f2bb9533210ed"
+    "ts-fsrs.umd.min.js": "f03ac8b053711ec7211d01674083082b21e75612ce7fb4b9e39f2bb9533210ed",
+    "viewer.css": "b34600d437f65b10c28ccfc23654839d49c6f1c17e9cf41d773264cca2d7eb2e",
+    "viewer.min.js": "490580be4988dff2e05cd9c81c4161b82ce0c3715d268fadf8f7193853f40031"
   }
 }

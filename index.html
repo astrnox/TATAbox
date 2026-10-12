@@ -290,6 +290,8 @@
   <link rel="stylesheet" href="css/bundle-core.css?v=20260917lg2">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
+  <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
+  <link rel="stylesheet" href="css/figure-viewer.css?v=20261012a">
   <!-- 非首屏关键 CSS：异步加载，不阻塞首次渲染 -->
   <link rel="preload" href="css/countdown.css" as="style" data-css-async>
   <noscript><link rel="stylesheet" href="css/countdown.css"></noscript>
@@ -755,6 +757,8 @@
   <!-- supabase-client.js / supabase.js / storage.js 已从 HTML 移除，节省 ~140KB 首屏加载 -->
 
   <script src="js/core/utils.js?v=20260828a" defer></script>
+  <!-- 全站统一题图入口：window.BioQuestFigure（渲染 + 查看器 + 标注 + 下载） -->
+  <script src="js/core/figure-viewer.js?v=20261012a" defer></script>
   <!-- Issue #105/#123/#130/#128：事件集中管理 / 离线队列 / 离线提示 / 生物彩蛋 -->
   <script src="js/core/offline-queue.js?v=20260828a" defer></script>
   <script src="js/core/offline-status.js?v=20260828a" defer></script>
