@@ -44,5 +44,6 @@
  "group": {
   "range": "82-83",
   "stimulus": "组题题干：在人的ABO 血型决定中，IA 和IB 等位基因的存在，分别会在红细胞表面"
- }
+ },
+ "explanation": "【解析】O 型父母生出 A 或 B 型子女，关键在于父母携带 IA/IB 却因 hh 不能表达（孟买型），或后代同时获得抗原基因与 H 基因。A．错误。iiHh×iiHh 双亲均只含 i 基因，后代不可能获得 IA 或 IB。B．正确。IAIAhh 因 hh 表现 O 型，iiHH 表现 O 型，后代基因型 IAiHh，有 H 则 IA 得以表达呈 A 型。C．正确。iiHh 表现 O 型，IBihh 因 hh 表现 O 型，后代可为 IBiHh，表达为 B 型。D．错误。双亲均 iihh，后代无论获得 IA 还是 IB 均为 hh，A、B 抗原无法表达，仍为 O 型。故答案为BC。"
 }

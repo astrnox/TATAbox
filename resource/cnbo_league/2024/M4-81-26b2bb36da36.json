@@ -40,5 +40,6 @@
   "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
   "type_mark": "（多选）",
   "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
- }
+ },
+ "explanation": "【解析】A 型男士可为 IAIA 或 IAi，B 型女士可为 IBIB 或 IBi，二人可产生含 IA、IB、i 的配子组合。A．正确。IAIA×IBi 等组合可产生 IAi（A 型）。B．正确。IBIB×IAi 等组合可产生 IBi（B 型）。C．正确。IAi×IBi 可产生 IAIB（AB 型）。D．正确。IAi×IBi 可产生 ii（O 型）。故答案为ABCD。"
 }

@@ -40,5 +40,9 @@
   "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
   "type_mark": null,
   "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
- }
+ },
+ "explanation": "【解析】A．错误。DNA指导的DNA聚合酶以DNA为模板合成DNA，参与DNA复制，与逆转录无关。B．错误。RNA指导的RNA聚合酶以RNA为模板合成RNA，见于RNA病毒的基因组复制。C．正确。逆转录酶的本质是RNA指导的DNA聚合酶，即依赖RNA的DNA聚合酶，以RNA为模板合成互补DNA链，兼具RNase H活性。D．错误。DNA指导的RNA聚合酶即转录所用的RNA聚合酶，以DNA为模板合成RNA，方向与逆转录相反。故答案为C。\n【通法】通法（聚合酶命名）：'X指导的Y聚合酶'＝以X为模板合成Y——RNA指导的DNA聚合酶就是逆转录酶，DNA指导的RNA聚合酶就是转录酶，按模板到产物对应即可秒判。",
+ "explanation_tags": [
+  "通法"
+ ]
 }

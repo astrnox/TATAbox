@@ -40,5 +40,9 @@
   "section": "第一部分 （14 道题16 分）",
   "type_mark": "（多选l 分）",
   "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
- }
+ },
+ "explanation": "【解析】A．正确。核糖体由rRNA和蛋白质组成，含RNA。B．正确。剪接体由多种snRNA与蛋白质组成，含RNA。C．正确。信号识别颗粒SRP含7SL RNA和蛋白质，含RNA。D．正确。核仁是rRNA转录加工和核糖体亚基装配的场所，富含RNA。故答案为ABCD。\n【易错易混】易混：SRP常被误认作纯蛋白颗粒，其实含7SL RNA；剪接体的核心是snRNA；核仁无膜却是RNA富集的结构。",
+ "explanation_tags": [
+  "易错易混"
+ ]
 }

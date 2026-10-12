@@ -40,5 +40,6 @@
   "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
   "type_mark": "（单选1 分）",
   "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
- }
+ },
+ "explanation": "【解析】A．错误。RNA聚合酶I转录28S、18S、5.8S rRNA，不转录5S rRNA。B．错误。RNA聚合酶II负责mRNA、部分snRNA等的转录。C．正确。5S核糖体RNA由RNA聚合酶III在核仁外转录。D．错误。DNA聚合酶负责DNA复制，不合成RNA。故答案为C。"
 }
