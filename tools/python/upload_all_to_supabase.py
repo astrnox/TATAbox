@@ -99,6 +99,10 @@ def build_question_record(qid, q):
     target = q.get("target", "competition")
     if target and target not in tags:
         tags = tags + [target]
+    # 单选题（type=single）：answer 为 'A'~'D'、options 为 4 个选项文本；
+    # 判断题（mtf）保持 answer='' / options=[]，选项在 sub_questions。
+    answer = q.get("answer")
+    options = q.get("options")
     return {
         "id": qid,
         "module": q.get("module", "module_1"),
@@ -108,9 +112,9 @@ def build_question_record(qid, q):
         "concept": q.get("concept", ""),
         "difficulty": q.get("difficulty", "medium"),
         "target": target,
-        "answer": "",
+        "answer": str(answer) if isinstance(answer, str) and answer else "",
         "explanation": q.get("explanation", q.get("analysis", "")),
-        "options": [],
+        "options": list(options) if isinstance(options, list) else [],
         "sub_questions": sub_questions,
         "tags": tags,
         "chart": q.get("chart"),
