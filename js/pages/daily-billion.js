@@ -1,7 +1,8 @@
 /**
  * 每日亿题 — 随机刷题 · TikTok风格
- * v5: 专属题库重构（100 道联赛级送分/易错判断题，纯文字）——
+ * v6: 专属题库重构（100 道判断题 + 300 道基础单选题，纯文字）——
  *     云端按 daily-league 标签过滤，本地按主题分片异步加载
+ *     单选题结构：{type:'single', options:[...4项], answer:'A'~'D', explanation}
  */
 (function() {
   'use strict';
@@ -9,20 +10,20 @@
   var SUPABASE_URL = 'https://qxehkfucvmxuojjkdaqy.supabase.co';
   var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4ZWhrZnVjdm14dW9qamtkYXF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MjU2ODUsImV4cCI6MjEwMjIwMTY4NX0.lbiJxhFvy0t_J4qSeoP6K0r53M4KaEDSKkRlZu03ze8';
 
-  // 每日亿题专属题库 v2（2026 联赛送分池）
-  // 100 道纯文字判断题（MTF，对应 2025 联赛「4 选项判断题」题型）：
+  // 每日亿题专属题库 v3（2026 联赛送分池）
+  // 100 道纯文字判断题（MTF）+ 300 道基础知识点单选题（single）：
   //   - 题干简洁、纯文字、无图
-  //   - 难度对齐联赛「送分题 / 简单想一想就出来」区间
-  //   - 解析逐项说明对错依据（考点定位 + 依据/错因 + 易错提醒）
+  //   - 难度对齐联赛「送分题 / 简单想一想就出来」区间，只考基础知识点
+  //   - 判断题解析逐项说明对错依据；单选题解析说明正确选项依据 + 其余选项错因
   // 通用上传脚本会把这 6 个分片带 daily-league 标签写入 questions 表，
   // 云端查询按该标签过滤；本地直接读取分片文件（与云端内容同源）。
   var LOCAL_BANK_FILES = [
-    'data/bank/daily_league_cellbio.json',            // 细胞生物学 12
-    'data/bank/daily_league_biochem_microbe.json',    // 生物化学+微生物学 13
-    'data/bank/daily_league_plant.json',              // 植物解剖与生理 15
-    'data/bank/daily_league_animal.json',             // 动物解剖与生理 15
-    'data/bank/daily_league_behavior_ecology.json',   // 动物行为+生态学 20
-    'data/bank/daily_league_genetics_evolution.json'  // 遗传+进化+系统学 25
+    'data/bank/daily_league_cellbio.json',            // 细胞生物学（判断12 + 单选50）
+    'data/bank/daily_league_biochem_microbe.json',    // 生物化学+微生物学（判断13 + 单选50）
+    'data/bank/daily_league_plant.json',              // 植物解剖与生理（判断15 + 单选50）
+    'data/bank/daily_league_animal.json',             // 动物解剖与生理（判断15 + 单选50）
+    'data/bank/daily_league_behavior_ecology.json',   // 动物行为+生态学（判断20 + 单选50）
+    'data/bank/daily_league_genetics_evolution.json'  // 遗传+进化+系统学（判断25 + 单选50）
   ];
 
   var _localBankPromise = null;
@@ -96,7 +97,11 @@
     return null;
   }
 
+  // 判断题/单选题统一判定
+  function isSingleQ(q) { return !!q && q.type === 'single'; }
+
   // 异步加载并合并本地专属题库（6 个主题分片 + 超长讲义过滤），带缓存
+  // 同时兼容两种题型：mtf 判断题（subQuestions）与 single 单选题（options + answer）
   function loadLocalBank() {
     if (!_localBankPromise) {
       _localBankPromise = Promise.all(LOCAL_BANK_FILES.map(function(file) {
@@ -109,7 +114,22 @@
           if (!f) return;
           Object.keys(f).forEach(function(id) {
             var q = f[id];
-            if (!q || !Array.isArray(q.subQuestions)) return;
+            if (!q) return;
+            // 单选题：4 个选项 + 单一答案（'A'~'D' 或数字下标）
+            if (q.type === 'single' && Array.isArray(q.options) && q.options.length >= 2 && q.answer !== undefined && q.answer !== null && q.answer !== '') {
+              pool.push({
+                id: id,
+                type: 'single',
+                question: q.question || '',
+                subject: q.subject || '',
+                explanation: q.explanation || '',
+                options: q.options.map(function(t) { return String(t); }),
+                answer: (typeof q.answer === 'number') ? String.fromCharCode(65 + q.answer) : String(q.answer).trim().toUpperCase()
+              });
+              return;
+            }
+            // 判断题（MTF）
+            if (!Array.isArray(q.subQuestions)) return;
             pool.push({
               id: id,
               question: q.question || '',
@@ -271,22 +291,19 @@
 
     var newQuestions = null;
 
-    if (state.usingLocalQuestions) {
-      newQuestions = await loadQuestionsFromLocal(limit);
-    } else {
+    // 本地分片优先（含判断题 + 单选题，与云端 mtf 内容同源）；
+    // 本地分片全部失败时才回退云端（云端只有 mtf，且弱网下有 8s 超时）。
+    newQuestions = await loadQuestionsFromLocal(limit);
+
+    if (!newQuestions || newQuestions.length === 0) {
+      console.log('[每日亿题] 本地分片不可用，尝试云端题库');
       if (!getSupabaseClient() && _supabaseRetryCount < _supabaseMaxRetries) {
         _supabaseRetryCount++;
         await waitForSupabaseSDK(5000);
       }
-
       newQuestions = await loadQuestionsFromSupabase(limit);
-
-      if (newQuestions === null || (newQuestions.length === 0 && state.questions.length === 0)) {
-        console.log('[每日亿题] 使用本地题库模式');
-        newQuestions = await loadQuestionsFromLocal(limit);
-        if (state.questions.length === 0 && newQuestions.length > 0) {
-          showToast('已切换到本地题库模式');
-        }
+      if (newQuestions && newQuestions.length > 0 && state.questions.length === 0) {
+        showToast('已切换到云端题库模式');
       }
     }
 
@@ -433,8 +450,14 @@
   function renderQuestionCard(q, index) {
     var submitted = state.submittedMap[q.id];
     var answers = state.answeredMap[q.id] || {};
-    // 无子选项的题目不允许提交（防御脏数据）
-    var allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
+    var single = isSingleQ(q);
+    // 脏数据防御：无选项/无子题的题目不允许提交
+    var allAnswered;
+    if (single) {
+      allAnswered = Array.isArray(q.options) && q.options.length > 0 && answers[0] !== undefined;
+    } else {
+      allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
+    }
 
     var html = '';
     html += '<div class="db-card" data-question-id="' + escapeHtml(q.id) + '" data-index="' + index + '">';
@@ -443,6 +466,8 @@
     html += '<div class="db-card-header">';
     html += '<span class="db-card-num">' + (index + 1) + '</span>';
     if (q.subject) html += '<span class="db-card-subject">' + escapeHtml(q.subject) + '</span>';
+    // 题型标签（判断/单选）
+    html += '<span class="db-card-type">' + (single ? '单选' : '判断') + '</span>';
     // 题目ID（紧贴标签，供管理员后台按ID调题）
     html += '<span class="db-card-qid" title="题目ID（管理员可据此调出本题）">#' + escapeHtml(String(q.id)) + '</span>';
     if (submitted) html += '<span class="db-done-chip" title="已完成本题，结束时统一判卷">已作答 ✓</span>';
@@ -453,28 +478,44 @@
       html += window.BioQuestFigure.render(q, { alt: '题目配图' });
     }
 
-    html += '<div class="db-sub-list">';
-    for (var i = 0; i < q.subQuestions.length; i++) {
-      var sq = q.subQuestions[i];
-      var userAnswer = answers[i];
-      var itemCls = 'db-sub-item' + (submitted ? ' submitted' : '');
-      html += '<div class="' + itemCls + '" data-sub-idx="' + i + '">';
-      html += '<div class="db-sub-head">';
-      html += '<span class="db-sub-label">' + escapeHtml(sq.label) + '</span>';
-      html += '<span class="db-sub-text">' + escapeHtml(sq.text) + '</span>';
+    if (single) {
+      // 单选题：A~D 选项按钮，单选互斥
+      html += '<div class="db-opt-list">';
+      for (var o = 0; o < q.options.length; o++) {
+        var optLabel = String.fromCharCode(65 + o);
+        var optSelected = answers[0] === optLabel;
+        html += '<button class="db-opt-btn' + (optSelected ? ' selected' : '') + '" data-value="' + optLabel + '" data-sub-idx="0"' + (submitted ? ' disabled' : '') + '>';
+        html += '<span class="db-opt-label">' + optLabel + '</span>';
+        html += '<span class="db-opt-text">' + escapeHtml(q.options[o]) + '</span>';
+        html += '</button>';
+      }
       html += '</div>';
-      html += '<div class="db-sub-toggle">';
-      html += '<button class="db-tf-btn' + (userAnswer === true ? ' selected' : '') + '" data-value="true" data-sub-idx="' + i + '"' + (submitted ? ' disabled' : '') + '>正确</button>';
-      html += '<button class="db-tf-btn' + (userAnswer === false ? ' selected' : '') + '" data-value="false" data-sub-idx="' + i + '"' + (submitted ? ' disabled' : '') + '>错误</button>';
-      html += '</div></div>';
+    } else {
+      html += '<div class="db-sub-list">';
+      for (var i = 0; i < q.subQuestions.length; i++) {
+        var sq = q.subQuestions[i];
+        var userAnswer = answers[i];
+        var itemCls = 'db-sub-item' + (submitted ? ' submitted' : '');
+        html += '<div class="' + itemCls + '" data-sub-idx="' + i + '">';
+        html += '<div class="db-sub-head">';
+        html += '<span class="db-sub-label">' + escapeHtml(sq.label) + '</span>';
+        html += '<span class="db-sub-text">' + escapeHtml(sq.text) + '</span>';
+        html += '</div>';
+        html += '<div class="db-sub-toggle">';
+        html += '<button class="db-tf-btn' + (userAnswer === true ? ' selected' : '') + '" data-value="true" data-sub-idx="' + i + '"' + (submitted ? ' disabled' : '') + '>正确</button>';
+        html += '<button class="db-tf-btn' + (userAnswer === false ? ' selected' : '') + '" data-value="false" data-sub-idx="' + i + '"' + (submitted ? ' disabled' : '') + '>错误</button>';
+        html += '</div></div>';
+      }
+      html += '</div>';
     }
-    html += '</div>';
 
     // 作答阶段提示：明确告知"结束时统一判卷"，避免用户误以为没有记录答案
     if (submitted) {
       html += '<div class="db-done-hint">本题已作答 ✓ 上滑继续刷题；点击右上角「结束并判卷」统一查看得分与解析</div>';
     } else if (allAnswered) {
-      html += '<div class="db-hint">已选完所有小题，点击「完成本题」记录答案（对错与解析在结束时统一判卷）</div>';
+      html += single
+        ? '<div class="db-hint">已选择答案，点击「完成本题」记录答案（对错与解析在结束时统一判卷）</div>'
+        : '<div class="db-hint">已选完所有小题，点击「完成本题」记录答案（对错与解析在结束时统一判卷）</div>';
     }
 
     var submitCls = 'db-submit-btn' + (submitted ? ' db-submit-btn--done' : '');
@@ -510,6 +551,27 @@
   function buildQuestionReport(q) {
     var answers = state.answeredMap[q.id] || {};
     var submitted = !!state.submittedMap[q.id];
+
+    // 单选题：整题 1 个计分项
+    if (isSingleQ(q)) {
+      var user = answers[0];
+      var answered = submitted && user !== undefined;
+      var ok = answered && user === q.answer;
+      return {
+        submitted: submitted,
+        single: true,
+        correctCount: ok ? 1 : 0,
+        totalSub: 1,
+        items: [],
+        options: q.options || [],
+        userChoice: user,
+        correctChoice: q.answer,
+        isAnswered: answered,
+        allCorrect: submitted && ok,
+        allWrong: submitted && answered && !ok
+      };
+    }
+
     var items = q.subQuestions.map(function(sq, i) {
       var user = answers[i];
       var isAnswered = submitted && user !== undefined;
@@ -540,7 +602,10 @@
     else if (r.allWrong) cls += ' db-report-item--wrong';
     else cls += ' db-report-item--partial';
     var statusCls = !r.submitted ? 'none' : (r.allCorrect ? 'ok' : (r.allWrong ? 'bad' : 'mid'));
-    var statusTxt = !r.submitted ? '未作答' : (r.allCorrect ? '全部正确' : (r.allWrong ? '全部错误' : '部分正确'));
+    var statusTxt;
+    if (!r.submitted) statusTxt = '未作答';
+    else if (r.single) statusTxt = r.allCorrect ? '回答正确' : '回答错误';
+    else statusTxt = r.allCorrect ? '全部正确' : (r.allWrong ? '全部错误' : '部分正确');
 
     var html = '';
     html += '<div class="' + cls + '" data-action="report-jump" data-idx="' + idx + '" title="回到本题">';
@@ -557,34 +622,67 @@
     }
 
     html += '<div class="db-report-subs">';
-    for (var k = 0; k < r.items.length; k++) {
-      var it = r.items[k];
-      var subCls = 'db-report-sub';
-      var userTxt = '';
-      var mark = '';
-      var correctTxt = '';
-      if (!r.submitted || !it.isAnswered) {
-        subCls += ' db-report-sub--na';
-        userTxt = '未作答';
-        // 未作答不泄题：回到本题作答后再评判，避免"继续作答"失去意义
-        correctTxt = '作答后再评判 · 不剧透答案';
-      } else {
-        var ok = it.userAnswer === it.correct;
-        subCls += ok ? ' db-report-sub--ok' : ' db-report-sub--bad';
-        userTxt = '你判「' + (it.userAnswer ? '正确' : '错误') + '」';
-        mark = ok ? '&#10003;' : '&#10007;';
-        correctTxt = '正确答案：' + (it.correct ? '正确' : '错误');
+    if (r.single) {
+      // 单选题：逐选项展示 —— 正确答案高亮、你的选择标对错；未作答不泄题
+      for (var k = 0; k < r.options.length; k++) {
+        var optLabel = String.fromCharCode(65 + k);
+        var isUser = !!(r.isAnswered && r.userChoice === optLabel);
+        var isRight = !!(r.isAnswered && r.correctChoice === optLabel);
+        var subCls = 'db-report-sub';
+        if (!r.submitted || !r.isAnswered) subCls += ' db-report-sub--na';
+        else if (isRight) subCls += ' db-report-sub--ok';
+        else if (isUser) subCls += ' db-report-sub--bad';
+        else subCls += ' db-report-sub--na';
+        html += '<div class="' + subCls + '">';
+        html += '<div class="db-report-sub-row">';
+        html += '<span class="db-report-sub-label">' + optLabel + '</span>';
+        html += '<span class="db-report-sub-text">' + escapeHtml(r.options[k]) + '</span>';
+        html += '</div>';
+        if (r.submitted && r.isAnswered && (isUser || isRight)) {
+          html += '<div class="db-report-sub-meta">';
+          if (isUser) html += '<span class="db-report-user">你的选择</span>';
+          if (isRight) html += '<span class="db-report-correct">正确答案</span>';
+          html += '<span class="db-report-mark ' + (isRight ? 'ok' : 'bad') + '">' + (isRight ? '&#10003;' : '&#10007;') + '</span>';
+          html += '</div>';
+        }
+        html += '</div>';
       }
-      html += '<div class="' + subCls + '">';
-      html += '<div class="db-report-sub-row">';
-      html += '<span class="db-report-sub-label">' + escapeHtml(it.label) + '</span>';
-      html += '<span class="db-report-sub-text">' + escapeHtml(it.text) + '</span>';
-      html += '</div>';
-      html += '<div class="db-report-sub-meta">';
-      html += '<span class="db-report-user">' + userTxt + '</span>';
-      html += '<span class="db-report-correct">' + correctTxt + '</span>';
-      if (r.submitted && it.isAnswered) html += '<span class="db-report-mark ' + (it.userAnswer === it.correct ? 'ok' : 'bad') + '">' + mark + '</span>';
-      html += '</div></div>';
+      if (!r.submitted || !r.isAnswered) {
+        html += '<div class="db-report-sub db-report-sub--na"><div class="db-report-sub-meta">' +
+          '<span class="db-report-user">未作答</span>' +
+          '<span class="db-report-correct">作答后再评判 · 不剧透答案</span>' +
+          '</div></div>';
+      }
+    } else {
+      for (var k2 = 0; k2 < r.items.length; k2++) {
+        var it = r.items[k2];
+        var subCls2 = 'db-report-sub';
+        var userTxt = '';
+        var mark = '';
+        var correctTxt = '';
+        if (!r.submitted || !it.isAnswered) {
+          subCls2 += ' db-report-sub--na';
+          userTxt = '未作答';
+          // 未作答不泄题：回到本题作答后再评判，避免"继续作答"失去意义
+          correctTxt = '作答后再评判 · 不剧透答案';
+        } else {
+          var ok = it.userAnswer === it.correct;
+          subCls2 += ok ? ' db-report-sub--ok' : ' db-report-sub--bad';
+          userTxt = '你判「' + (it.userAnswer ? '正确' : '错误') + '」';
+          mark = ok ? '&#10003;' : '&#10007;';
+          correctTxt = '正确答案：' + (it.correct ? '正确' : '错误');
+        }
+        html += '<div class="' + subCls2 + '">';
+        html += '<div class="db-report-sub-row">';
+        html += '<span class="db-report-sub-label">' + escapeHtml(it.label) + '</span>';
+        html += '<span class="db-report-sub-text">' + escapeHtml(it.text) + '</span>';
+        html += '</div>';
+        html += '<div class="db-report-sub-meta">';
+        html += '<span class="db-report-user">' + userTxt + '</span>';
+        html += '<span class="db-report-correct">' + correctTxt + '</span>';
+        if (r.submitted && it.isAnswered) html += '<span class="db-report-mark ' + (it.userAnswer === it.correct ? 'ok' : 'bad') + '">' + mark + '</span>';
+        html += '</div></div>';
+      }
     }
     html += '</div>';
 
@@ -625,7 +723,7 @@
     html += '<div class="db-report-acc"><span class="db-report-acc-val">' + accuracy + '%</span><span class="db-report-acc-lbl">正确率</span></div>';
     html += '<div class="db-report-stats">';
     html += '<div class="db-report-stat"><span class="db-report-stat-val">' + submittedCount + '</span><span class="db-report-stat-lbl">已刷</span></div>';
-    html += '<div class="db-report-stat"><span class="db-report-stat-val">' + totalSub + '</span><span class="db-report-stat-lbl">判断项</span></div>';
+    html += '<div class="db-report-stat"><span class="db-report-stat-val">' + totalSub + '</span><span class="db-report-stat-lbl">计分项</span></div>';
     html += '<div class="db-report-stat"><span class="db-report-stat-val ' + (wrongSubs ? 'bad' : 'ok') + '">' + wrongSubs + '</span><span class="db-report-stat-lbl">错项</span></div>';
     if (unanswered) html += '<div class="db-report-stat"><span class="db-report-stat-val na">' + unanswered + '</span><span class="db-report-stat-lbl">未作答</span></div>';
     html += '</div></div>';
@@ -734,6 +832,9 @@
     var target = e.target;
     var tfBtn = target.closest ? target.closest('.db-tf-btn') : (target.classList && target.classList.contains('db-tf-btn') ? target : null);
     if (tfBtn) { handleTFClickDelegated(tfBtn); return; }
+    // 单选题选项按钮
+    var optBtn = target.closest ? target.closest('.db-opt-btn') : (target.classList && target.classList.contains('db-opt-btn') ? target : null);
+    if (optBtn) { handleOptionClick(optBtn); return; }
     var actionEl = target.closest ? target.closest('[data-action]') : (target.hasAttribute && target.hasAttribute('data-action') ? target : null);
     if (actionEl) {
       var action = actionEl.getAttribute('data-action');
@@ -784,6 +885,32 @@
     saveState();
   }
 
+  // 单选题选项点击：互斥单选，答案记录在 answeredMap[qid][0] = 'A'~'D'
+  function handleOptionClick(btn) {
+    if (btn.disabled) return;
+    var cardEl = btn.closest('.db-card');
+    if (!cardEl) return;
+    var questionId = cardEl.dataset.questionId;
+    var cardIdx = parseInt(cardEl.dataset.index, 10);
+    var q = state.questions[cardIdx];
+    if (!q || q.id !== questionId || !isSingleQ(q)) return;
+    if (state.submittedMap[q.id]) return;
+
+    if (!state.answeredMap[q.id]) state.answeredMap[q.id] = {};
+    state.answeredMap[q.id][0] = btn.dataset.value;
+
+    var list = btn.closest('.db-opt-list');
+    if (list) {
+      var prev = list.querySelectorAll('.db-opt-btn.selected');
+      for (var i = 0; i < prev.length; i++) prev[i].classList.remove('selected');
+    }
+    btn.classList.add('selected');
+
+    var submitBtn = cardEl.querySelector('.db-submit-btn');
+    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '完成本题'; }
+    saveState();
+  }
+
   function handleSubmitDelegated(btn) {
     var cardIdx = parseInt(btn.dataset.cardIdx, 10);
     var q = state.questions[cardIdx];
@@ -792,7 +919,13 @@
     if (!cardEl) return;
 
     var answers = state.answeredMap[q.id] || {};
-    var allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
+    var single = isSingleQ(q);
+    var allAnswered;
+    if (single) {
+      allAnswered = Array.isArray(q.options) && q.options.length > 0 && answers[0] !== undefined;
+    } else {
+      allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
+    }
     if (!allAnswered) return;
     if (state.submittedMap[q.id]) return;
 
@@ -803,11 +936,16 @@
 
     // 统一判卷：提交时只累计统计，不要在作答阶段渲染对错/解析
     var correctCount = 0;
-    for (var i = 0; i < q.subQuestions.length; i++) {
-      if (answers[i] === q.subQuestions[i].answer) correctCount++;
+    if (single) {
+      if (answers[0] === q.answer) correctCount = 1;
+      state.totalSubQuestions += 1;
+    } else {
+      for (var i = 0; i < q.subQuestions.length; i++) {
+        if (answers[i] === q.subQuestions[i].answer) correctCount++;
+      }
+      state.totalSubQuestions += q.subQuestions.length;
     }
     state.totalCorrect += correctCount;
-    state.totalSubQuestions += q.subQuestions.length;
 
     saveState();
     updateCounter();
@@ -1006,7 +1144,9 @@
 
   async function lazyLoadMore() {
     if (state.isLoading || _destroyed) return;
-    state.isLoading = true; // 先设为 loading（防止上面 fallback 重复触发）
+    // 注意：不要在这里提前把 state.isLoading 置 true —— loadQuestions() 开头有
+    // `if (state.isLoading) return;`，提前置位会让它直接空返回，导致永远加载不出
+    // 新题（表现为刷到第 3 张就卡住）。loadQuestions 的同步首段会立即置位，防重入已足够。
     if (scrollObserver) { scrollObserver.disconnect(); scrollObserver = null; }
     var oldLen = state.questions.length;
     try {
@@ -1084,7 +1224,7 @@
     var dt = Date.now() - _touchStartTime;
     _touchStartY = 0;
     var isGesture = dt <= 500 && Math.abs(dy) >= 50 &&
-      !e.target.closest('.db-tf-btn') && !e.target.closest('.db-submit-btn') && !e.target.closest('.db-action-btn');
+      !e.target.closest('.db-tf-btn') && !e.target.closest('.db-opt-btn') && !e.target.closest('.db-submit-btn') && !e.target.closest('.db-action-btn');
     if (isGesture) {
       if (dy < 0) scrollToNextCard();
       else scrollToPrevCard();
