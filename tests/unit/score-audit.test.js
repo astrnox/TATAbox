@@ -62,9 +62,10 @@ function extractFunctions(src, names) {
     fns[name] = m[1];
   }
   // 直接求值拼接包并返回闭包对象（避免包形参与函数声明同名导致的遮蔽）
+  // QuestionModel（判卷内核）作为参数注入：practice.js 薄封装引用该全局
   const body = names.map((n) => fns[n]).join('\n')
     + '\n;return {' + names.map((n) => n + ':' + n).join(',') + '};';
-  return new Function(body)();
+  return new Function('QuestionModel', body)(require('../../js/core/question-model.js'));
 }
 
 /* 加载 bkt-engine.js，返回 window.BKTEngine（真实暴露名） */

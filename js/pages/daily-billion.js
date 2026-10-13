@@ -97,8 +97,8 @@
     return null;
   }
 
-  // 判断题/单选题统一判定
-  function isSingleQ(q) { return !!q && q.type === 'single'; }
+  // 判断题/单选题统一判定 —— 题型归一唯一实现在 js/core/question-model.js
+  function isSingleQ(q) { return QuestionModel.isChoiceQuestion(q); }
 
   // 异步加载并合并本地专属题库（6 个主题分片 + 超长讲义过滤），带缓存
   // 同时兼容两种题型：mtf 判断题（subQuestions）与 single 单选题（options + answer）
@@ -116,7 +116,7 @@
             var q = f[id];
             if (!q) return;
             // 单选题：4 个选项 + 单一答案（'A'~'D' 或数字下标）
-            if (q.type === 'single' && Array.isArray(q.options) && q.options.length >= 2 && q.answer !== undefined && q.answer !== null && q.answer !== '') {
+            if (QuestionModel.isSingle(q) && Array.isArray(q.options) && q.options.length >= 2 && q.answer !== undefined && q.answer !== null && q.answer !== '') {
               pool.push({
                 id: id,
                 type: 'single',
@@ -451,13 +451,8 @@
     var submitted = state.submittedMap[q.id];
     var answers = state.answeredMap[q.id] || {};
     var single = isSingleQ(q);
-    // 脏数据防御：无选项/无子题的题目不允许提交
-    var allAnswered;
-    if (single) {
-      allAnswered = Array.isArray(q.options) && q.options.length > 0 && answers[0] !== undefined;
-    } else {
-      allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
-    }
+    // 脏数据防御：无选项/无子题的题目不允许提交（已答判定统一走内核）
+    var allAnswered = QuestionModel.isAllAnswered(q, answers);
 
     var html = '';
     html += '<div class="db-card" data-question-id="' + escapeHtml(q.id) + '" data-index="' + index + '">';
@@ -547,21 +542,23 @@
   //   3. 未作答不计入正确率，但显式展示并支持"返回继续"
   //   4. 空状态（一题没做）只轻确认退出，不弹空成绩单
 
-  // 单题成绩计算
+  // 单题成绩计算 —— 判卷/计分唯一实现在 js/core/question-model.js（daily 档：每计分项 1 分）。
+  // 页面只叠加「作答阶段不判卷」的口径：未提交一律按未作答展示，不泄题。
   function buildQuestionReport(q) {
     var answers = state.answeredMap[q.id] || {};
     var submitted = !!state.submittedMap[q.id];
+    var g = QuestionModel.gradeQuestion(q, answers, 'daily');
 
     // 单选题：整题 1 个计分项
-    if (isSingleQ(q)) {
+    if (g.isChoice) {
       var user = answers[0];
-      var answered = submitted && user !== undefined;
-      var ok = answered && user === q.answer;
+      var answered = submitted && g.answered;
+      var ok = submitted && g.correct === 1;
       return {
         submitted: submitted,
         single: true,
         correctCount: ok ? 1 : 0,
-        totalSub: 1,
+        totalSub: g.total,
         items: [],
         options: q.options || [],
         userChoice: user,
@@ -572,24 +569,24 @@
       };
     }
 
-    var items = q.subQuestions.map(function(sq, i) {
-      var user = answers[i];
-      var isAnswered = submitted && user !== undefined;
+    var subs = QuestionModel.getEffectiveSubQuestions(q);
+    var items = subs.map(function(sq, i) {
+      var d = g.details[i] || {};
       return {
         label: sq.label,
         text: sq.text,
-        userAnswer: user,
+        userAnswer: answers[i],
         correct: !!sq.answer,
-        isAnswered: isAnswered
+        isAnswered: submitted && !!d.answered
       };
     });
-    var correctCount = items.filter(function(it) { return it.isAnswered && it.userAnswer === it.correct; }).length;
+    var correctCount = submitted ? g.correct : 0;
     return {
       submitted: submitted,
       correctCount: correctCount,
-      totalSub: q.subQuestions.length,
+      totalSub: g.total,
       items: items,
-      allCorrect: submitted && correctCount === q.subQuestions.length,
+      allCorrect: submitted && g.total > 0 && correctCount === g.total,
       allWrong: submitted && correctCount === 0
     };
   }
@@ -879,7 +876,7 @@
     btn.classList.add('selected');
 
     var answers = state.answeredMap[q.id];
-    var allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, k) { return answers[k] !== undefined; });
+    var allAnswered = QuestionModel.isAllAnswered(q, answers);
     var submitBtn = cardEl.querySelector('.db-submit-btn');
     if (submitBtn && allAnswered) { submitBtn.disabled = false; submitBtn.textContent = '完成本题'; }
     saveState();
@@ -919,13 +916,7 @@
     if (!cardEl) return;
 
     var answers = state.answeredMap[q.id] || {};
-    var single = isSingleQ(q);
-    var allAnswered;
-    if (single) {
-      allAnswered = Array.isArray(q.options) && q.options.length > 0 && answers[0] !== undefined;
-    } else {
-      allAnswered = q.subQuestions.length > 0 && q.subQuestions.every(function(_, i) { return answers[i] !== undefined; });
-    }
+    var allAnswered = QuestionModel.isAllAnswered(q, answers);
     if (!allAnswered) return;
     if (state.submittedMap[q.id]) return;
 
@@ -934,18 +925,10 @@
     state.submittedMap[q.id] = true;
     state.totalAnswered++;
 
-    // 统一判卷：提交时只累计统计，不要在作答阶段渲染对错/解析
-    var correctCount = 0;
-    if (single) {
-      if (answers[0] === q.answer) correctCount = 1;
-      state.totalSubQuestions += 1;
-    } else {
-      for (var i = 0; i < q.subQuestions.length; i++) {
-        if (answers[i] === q.subQuestions[i].answer) correctCount++;
-      }
-      state.totalSubQuestions += q.subQuestions.length;
-    }
-    state.totalCorrect += correctCount;
+    // 统一判卷：提交时只累计统计，不要在作答阶段渲染对错/解析（计分内核统一）
+    var g = QuestionModel.gradeQuestion(q, answers, 'daily');
+    state.totalSubQuestions += g.total;
+    state.totalCorrect += g.correct;
 
     saveState();
     updateCounter();
