@@ -938,31 +938,14 @@ function preparePracticeQuestion(q) {
 }
 
 /**
- * 逻辑题 MTF 化的「有效子题」：
+ * 逻辑题 MTF 化的「有效子题」—— 已抽至全局内核 js/core/question-model.js：
  * - 已有 subQuestions（基础知识 MTF）直接返回；
- * - 逻辑题 type==='mtf' 且为 options 数组 + answer 索引时，不改题干和选项文本，
- *   仅把每个选项转换为一条判断题陈述：原正确答案的选项 → 正确(true)，其余 → 错误(false)。
- * 转换不写入题库本体（不参与 preparePracticeQuestion 的洗牌，选项顺序 A/B/C/D 保持不变，
- * 使解析中「选项A/选项B」等字母引用始终与渲染一致）。
+ * - 逻辑题 type==='mtf' 且为 options 数组时，以 mtfTruth（缺省按原单选语义）
+ *   把每个选项转换为一条判断题陈述；转换不写入题库本体（不参与洗牌）。
+ * 此处保留同名薄封装，供页面内既有调用点与回归测试使用（唯一实现在内核）。
  */
 function getEffectiveSubQuestions(q) {
-  if (!q || typeof q !== 'object') return [];
-  if (Array.isArray(q.subQuestions)) return q.subQuestions;
-  if (q.type === 'mtf' && Array.isArray(q.options)) {
-    // mtfTruth（负向提问题「最不合理的是」等）显式给出每条陈述的真假；
-    // 缺省时按原单选题语义：原正确答案的选项 → 正确(true)，其余 → 错误(false)。
-    const truth = (Array.isArray(q.mtfTruth) && q.mtfTruth.length === q.options.length)
-      ? q.mtfTruth
-      : q.options.map(function (_, idx) { return idx === q.answer; });
-    return q.options.map(function (text, idx) {
-      return {
-        label: 'ABCDEFGH'.charAt(idx),
-        text: String(text),
-        answer: !!truth[idx]
-      };
-    });
-  }
-  return [];
+  return QuestionModel.getEffectiveSubQuestions(q);
 }
 
 function initNewSession() {
@@ -985,78 +968,14 @@ function initNewSession() {
   );
 }
 
+/**
+ * 单题判卷（练习档 2.0 分制）—— 薄封装：
+ * 唯一权威实现在 js/core/question-model.js 的 gradeQuestion(q, ua, 'practice')。
+ * 返回形状 { correct, total, score, details } 与页面/records 消费方保持一致。
+ */
 function calculateQuestionScore(q, userAnswers) {
-  // 标准单选题（题库格式：options 为对象 {A:..,B:..}, answer 为 'C'）
-  if (q.options && typeof q.options === 'object' && !Array.isArray(q.options) && q.answer) {
-    const userAns = userAnswers[0]; // 'A'/'B'/'C'/'D'
-    const isCorrect = userAns === q.answer;
-    return {
-      correct: isCorrect ? 1 : 0,
-      total: 1,
-      score: isCorrect ? 2.0 : 0,
-      details: [{
-        label: '答案',
-        userAnswer: userAns,
-        correctAnswer: q.answer,
-        isCorrect: isCorrect
-      }]
-    };
-  }
-
-  // 逻辑推理题（单选题格式：options 为数组, answer 为索引 0-4；type==='mtf' 时走下方 MTF 评分）
-  if (q.category === 'logic' && Array.isArray(q.options) && q.type !== 'mtf') {
-    const userAns = userAnswers[0];
-    const isCorrect = userAns === q.answer;
-    return {
-      correct: isCorrect ? 1 : 0,
-      total: 1,
-      score: isCorrect ? 2.0 : 0,
-      details: [{
-        label: '答案',
-        userAnswer: userAns,
-        correctAnswer: q.answer,
-        isCorrect: isCorrect
-      }]
-    };
-  }
-
-  // MTF 题型（subQuestions 格式，或逻辑题 mtf 的选项转换子题）
-  const subQuestions = getEffectiveSubQuestions(q);
-  if (subQuestions.length === 0) return { correct: 0, total: 1, score: 0 };
-
-  const total = subQuestions.length;
-  let correct = 0;
-  const details = [];
-
-  subQuestions.forEach((sq, idx) => {
-    const userAns = userAnswers[idx];
-    const isCorrect = userAns === sq.answer;
-    if (isCorrect) correct++;
-    details.push({
-      label: sq.label,
-      userAnswer: userAns,
-      correctAnswer: sq.answer,
-      isCorrect: isCorrect
-    });
-  });
-
-  /* MTF 计分：每题满分恒为 2.0（与练习总账「满分 = 题数 × 2」一致）
-   * - 4 子题：2025 CBO 联赛标准（4/4 → 2.0，3/4 → 1.0，2/4 → 0.2，其余 0）
-   * - 非 4 子题（1/2/3 子题等判断/简式题）：按比例归一化，避免「全对不得分」。
-   *   全对 → 满分 2.0；全错 → 0；部分对 → 按比例四舍五入到 0.1。 */
-  let score = 0;
-  if (total === 4) {
-    if (correct === 4) score = 2.0;
-    else if (correct === 3) score = 1.0;
-    else if (correct === 2) score = 0.2;
-  } else if (correct === total) {
-    score = 2.0; // 全对得满分（任意子题数）
-  } else if (correct > 0) {
-    score = Math.round((2.0 * correct / total) * 10) / 10; // 尽量不超过满分
-    if (score > 2.0) score = 2.0;
-  }
-
-  return { correct, total, score, details };
+  const g = QuestionModel.gradeQuestion(q, userAnswers, 'practice');
+  return { correct: g.correct, total: g.total, score: g.score, details: g.details };
 }
 
 function getModuleIdFromQuestion(q) {
@@ -1169,10 +1088,9 @@ function handleSubmitAnswer() {
   const q = PracticeState.currentSet[PracticeState.currentIndex];
   const userAnswers = PracticeState.userAnswers[PracticeState.currentIndex] || {};
 
-  // 标准单选题（题库格式）
-  const isStandardChoice = q.options && typeof q.options === 'object' && !Array.isArray(q.options) && q.answer;
-  // 逻辑推理题
-  const isLogicQuestion = q.category === 'logic' && Array.isArray(q.options) && q.type !== 'mtf';
+  // 标准单选题（题库格式）/ 逻辑推理题 —— 题型判定统一走内核
+  const isStandardChoice = QuestionModel.isStandardChoice(q);
+  const isLogicQuestion = QuestionModel.isLogicChoice(q);
 
   if (isStandardChoice || isLogicQuestion) {
     if (userAnswers[0] === undefined || userAnswers[0] === null) {
@@ -2146,8 +2064,8 @@ function renderQuiz() {
   const q = PracticeState.currentSet[PracticeState.currentIndex];
   if (!q) return;
 
-  const isLogicQuestion = q.category === 'logic' && Array.isArray(q.options) && q.type !== 'mtf';
-  const isStandardChoice = q.options && typeof q.options === 'object' && !Array.isArray(q.options) && q.answer;
+  const isLogicQuestion = QuestionModel.isLogicChoice(q);
+  const isStandardChoice = QuestionModel.isStandardChoice(q);
   const userAnswers = PracticeState.userAnswers[PracticeState.currentIndex] || {};
 
   let subQuestionsHtml = '';
@@ -2159,7 +2077,8 @@ function renderQuiz() {
     total = result.total;
     score = result.score;
   } else {
-    total = (isLogicQuestion || isStandardChoice) ? 1 : (q.subQuestions || []).length;
+    // 未提交：只展示计分项数（MTF 按有效子题展开，含逻辑题 mtf 化的 4 条）
+    total = (isLogicQuestion || isStandardChoice) ? 1 : getEffectiveSubQuestions(q).length;
   }
 
   const moduleGroup = getModuleGroupBySubject(q.subject);
@@ -3055,8 +2974,8 @@ function startSharePreviewSession(q) {
   );
 
   // 自动填入正确答案，使渲染直接呈现"已作答满分"状态 + 解析
-  var isLogic = q.category === 'logic' && Array.isArray(q.options) && q.type !== 'mtf';
-  var isStd = q.options && typeof q.options === 'object' && !Array.isArray(q.options) && q.answer;
+  var isLogic = QuestionModel.isLogicChoice(q);
+  var isStd = QuestionModel.isStandardChoice(q);
   var y = {};
   if (isLogic || isStd) {
     y[0] = q.answer;
@@ -3329,9 +3248,8 @@ function _practiceInQuiz() {
 function _practiceSelectChoice(numKey) {
   var q = PracticeState.currentSet[PracticeState.currentIndex];
   if (!q) return;
-  var isLogic = q.category === 'logic' && Array.isArray(q.options) && q.type !== 'mtf';
-  var isStd = q.options && typeof q.options === 'object' &&
-              !Array.isArray(q.options) && q.answer;
+  var isLogic = QuestionModel.isLogicChoice(q);
+  var isStd = QuestionModel.isStandardChoice(q);
   if (!isLogic && !isStd) return; // MTF 题型不适用数字键选 A/B/C/D
   var idx = parseInt(numKey, 10) - 1; // 1..4 → 0..3
   if (idx < 0) return;

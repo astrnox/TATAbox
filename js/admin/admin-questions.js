@@ -833,8 +833,8 @@ window.adminSaveLocalOverride = function() {
   const explanation = document.getElementById('local-eq-explanation').value;
   const parsed = _parseTTFFAnswer(ttff, type, lines);
   const patch = { question: question, explanation: explanation };
-  if (type === 'mtf' || type === 'multi_judge') {
-    // MTF：patch 使用 subQuestions（与本地题库/练习/测验读取一致）
+  if (QuestionModel.isMtf(type)) {
+    // MTF（mtf/multi_judge 别名归一，见 question-model.js）：patch 使用 subQuestions（与本地题库/练习/测验读取一致）
     patch.subQuestions = (parsed.subQuestions && parsed.subQuestions.length)
       ? parsed.subQuestions
       : lines.map(function (t, i) { return { label: String.fromCharCode(65 + i), text: t, answer: null }; });
@@ -946,8 +946,8 @@ function _parseTTFFAnswer(ttff, qType, optionLines) {
     return result;
   }
 
-  // MTF：转换为 sub_questions
-  if (qType === 'mtf' || qType === 'multi_judge') {
+  // MTF（mtf/multi_judge 别名归一，见 question-model.js）：转换为 sub_questions
+  if (QuestionModel.isMtf(qType)) {
     var subs = [];
     for (var i = 0; i < n && i < clean.length; i++) {
       subs.push({
@@ -1067,8 +1067,8 @@ window.handleEditQuestion = function(qData) {
     var ttffInput = document.getElementById('eq-answer').value;
     var parsed = _parseTTFFAnswer(ttffInput, qType, lines);
 
-    if (qType === 'mtf' || qType === 'multi_judge') {
-      // MTF：选项为纯文字数组，答案在 sub_questions
+    if (QuestionModel.isMtf(qType)) {
+      // MTF（mtf/multi_judge 别名归一，见 question-model.js）：选项为纯文字数组，答案在 sub_questions
       subQuestions = parsed.subQuestions || lines.map(function(line, i) {
         return { label: String.fromCharCode(65 + i), text: line, answer: null };
       });

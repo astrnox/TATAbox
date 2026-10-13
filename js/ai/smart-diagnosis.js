@@ -826,13 +826,9 @@ function computeTypeAnalysis(records) {
     var questions = rec.questions || [];
     for (var j = 0; j < questions.length; j++) {
       var q = questions[j];
-      /* 判断题型：优先看显式字段，否则根据特征推断 */
-      var qType = q.type || q.category || 'mtf';
-      if (qType === 'logic') qType = 'logic';
-      else if (qType === 'single' || qType === 'single_choice') qType = 'single';
-      else if (qType === 'multiple' || qType === 'multi_choice') qType = 'multiple';
-      else if (qType === 'tf' || qType === 'true_false') qType = 'tf';
-      else qType = 'mtf'; /* 默认 MTF */
+      /* 判断题型 —— 唯一实现在 js/core/question-model.js 的 normalizeStatType
+       * （single/multiple/tf/mtf/logic 统计桶归一，未知类型默认落 MTF） */
+      var qType = QuestionModel.normalizeStatType(q);
 
       if (typeStats[qType]) {
         typeStats[qType].total += 1;

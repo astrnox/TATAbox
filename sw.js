@@ -52,6 +52,7 @@ var SKELETON_ASSETS = [
   './js/core/utils.js',
   './js/core/loader.js',
   './js/core/question-utils.js',
+  './js/core/question-model.js',
   // 必要的小型基础依赖（运行时配置 / 数据压缩）
   './js/core/config.js',
   './js/vendor/lz-string.min.js',

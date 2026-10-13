@@ -1286,7 +1286,8 @@ const EXAM_TOTAL = 72;
 let EXAM_TOTAL_ACTUAL = EXAM_TOTAL;
 const QUESTIONS_PER_MODULE = 18;
 const POINTS_PER_QUESTION = 2;
-const LEAGUE_SCORE_TABLE = { 0: 0, 1: 0, 2: 0.2, 3: 1, 4: 2 };
+// 4 子题联赛阶梯 —— 唯一权威在 js/core/question-model.js（此处引用防漂移）
+const LEAGUE_SCORE_TABLE = QuestionModel.LEAGUE_SCORE_TABLE;
 const TOTAL_SCORE = 144;
 const TOTAL_TIME = 9000;
 const WARNING_TIME = 600;
@@ -1685,25 +1686,19 @@ function getModuleGroup(moduleKey) {
   return MODULE_GROUPS[moduleKey] || { name: `模块${moduleKey}`, desc: '' };
 }
 
+// 单题判卷 —— 薄封装，唯一实现在 js/core/question-model.js 的 gradeQuestion(q, ua, 'exam')
+// （固定 72 题 × 4 子题 × 2 分，阶梯 0/0/0.2/1/2）
 function calcQuestionScore(qIndex) {
   const q = examQuestions[qIndex];
-  if (!q || !q.subQuestions) return { correct: 0, total: 4, score: 0 };
-  const ans = userAnswers[qIndex] || {};
-  let correct = 0;
-  for (let i = 0; i < 4; i++) {
-    if (ans[i] !== undefined && ans[i] !== null && ans[i] === q.subQuestions[i].answer) {
-      correct++;
-    }
-  }
-  return { correct: correct, total: 4, score: LEAGUE_SCORE_TABLE[correct] || 0 };
+  if (!q) return { correct: 0, total: 4, score: 0 };
+  const g = QuestionModel.gradeQuestion(q, userAnswers[qIndex], 'exam');
+  return { correct: g.correct, total: g.total, score: g.score };
 }
 
 function isSubQuestionCorrect(qIndex, subIdx) {
   const q = examQuestions[qIndex];
-  if (!q || !q.subQuestions || !q.subQuestions[subIdx]) return false;
-  const ans = userAnswers[qIndex];
-  if (!ans || ans[subIdx] === undefined || ans[subIdx] === null) return false;
-  return ans[subIdx] === q.subQuestions[subIdx].answer;
+  if (!q) return false;
+  return QuestionModel.isSubCorrect(q, subIdx, userAnswers[qIndex]);
 }
 
 function isQuestionFullyAnswered(qIndex) {
