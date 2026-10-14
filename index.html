@@ -861,6 +861,8 @@
   <script src="js/ai/ai-client.js?v=20260819a" defer></script>
   <!-- v3.4 基础能力：事件总线 + IRT 引擎 + TTS + 白板 + 多智能体 -->
   <script src="js/core/event-bus.js?v=20260712k" defer></script>
+  <!-- 统一会话落盘服务：practice/exam/quiz/每日亿题共用的「刷题→全局体系」入口（纯 typeof 守卫，无加载期依赖） -->
+  <script src="js/core/record-session.js?v=20261013b" defer></script>
   <script src="js/core/csp-events.js?v=20260820a" defer></script>
   <script src="js/algo/irt-engine.js?v=20260712k" defer></script>
   <script src="js/engagement/tts.js?v=20260712k" defer></script>
@@ -876,7 +878,7 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/pages/daily-billion.js?v=20261013a" defer></script>
+  <script src="js/pages/daily-billion.js?v=20261013b" defer></script>
   <script src="js/engagement/points-ui.js?v=20260814a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20260821a" defer></script>
@@ -884,7 +886,7 @@
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
-  <script src="js/core/app.js?v=20260917b" defer></script>
+  <script src="js/core/app.js?v=20261013b" defer></script>
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>

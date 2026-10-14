@@ -23,7 +23,8 @@
   };
 
   /**
-   * 由六维属性合成 Bio Score（同步 analytic.js calcBioScore 的合成规则）
+   * 由六维属性合成 Bio Score（六维均参与，数据不足维度保持中性 50，
+   * 置信度由 computeBioDimensions 输出并交由 UI 标注，不改变分数结构）。
    * @param {Object} comp - { B, I, O, G, C, D } 均为 0-100
    * @returns {{score:number, grade:string, letter:string, raw:number}}
    */
@@ -47,17 +48,17 @@
     var score = Math.max(0, Math.min(100, raw));
 
     var grade = 'D', letter = '需努力';
-    // 阈值对齐历年联赛获奖线（省一 ≈ 68，省二 ≈ 55，省三 ≈ 40），
-    // 避免把「认真刷题的普通学生」压到及格线以下。
-    if (score >= 88) { grade = 'S+'; letter = '顶尖'; }
-    else if (score >= 82) { grade = 'S'; letter = '卓越'; }
-    else if (score >= 76) { grade = 'A+'; letter = '优秀+'; }
-    else if (score >= 68) { grade = 'A'; letter = '优秀'; }
-    else if (score >= 62) { grade = 'B+'; letter = '良好+'; }
-    else if (score >= 55) { grade = 'B'; letter = '良好'; }
-    else if (score >= 48) { grade = 'C+'; letter = '合格+'; }
-    else if (score >= 40) { grade = 'C'; letter = '合格'; }
-    else if (score >= 30) { grade = 'D+'; letter = '待提升'; }
+    // 阈值经画像标定：省一（正确率≈75-80%）≈ 70-76 → A，
+    // 省二 ≈ 58-63 → B/B+，省三 ≈ 46-51 → C/C+，新手 ≈ 40-50 → C/D+
+    if (score >= 86) { grade = 'S+'; letter = '顶尖'; }
+    else if (score >= 81) { grade = 'S'; letter = '卓越'; }
+    else if (score >= 77) { grade = 'A+'; letter = '优秀+'; }
+    else if (score >= 70) { grade = 'A'; letter = '优秀'; }
+    else if (score >= 64) { grade = 'B+'; letter = '良好+'; }
+    else if (score >= 58) { grade = 'B'; letter = '良好'; }
+    else if (score >= 52) { grade = 'C+'; letter = '合格+'; }
+    else if (score >= 46) { grade = 'C'; letter = '合格'; }
+    else if (score >= 36) { grade = 'D+'; letter = '待提升'; }
     return { score: score, grade: grade, letter: letter, raw: raw };
   }
 
@@ -68,25 +69,25 @@
     weights: BIO_WEIGHTS,
     dims: [
       { key: 'B', name: '基础正确率', weight: '25%', desc: '把「正确率」经标准正态累积分布映射：55% → 50 分，67.5% → 69 分，80% → 84 分，40% → 27 分（避免线性映射两端失真）' },
-      { key: 'I', name: '洞察力', weight: '25%', desc: '难度加权的「题级全对率」：优先统计每次练习/考试记录中每题 100% 判对的真实数据；无明细时以 正确率⁴ 估算' },
+      { key: 'I', name: '洞察力', weight: '25%', desc: '难度加权的「题级全对率」：优先统计每次练习/考试记录中每题 100% 判对的真实数据；无明细时以 正确率² 估算（回退值会标注低置信度）' },
       { key: 'O', name: '活跃度', weight: '10%', desc: 'O = log2(练习场次+1)×18 + 最近 7 天连续练习奖励（每活跃一天 +3，封顶 +15）：10 场 ≈ 62 分，30 场 ≈ 88 分' },
-      { key: 'G', name: '成长性', weight: '15%', desc: '按时间升序对每次记录的得分率做双指数平滑(Holt)，提取趋势斜率：每次提升 1% ≈ +5 分（进步加分、退步减分，中性为 50）' },
-      { key: 'C', name: '一致性', weight: '15%', desc: 'C = 0.6×C_cv + 0.4×C_recent，其中 C_cv = 100·e^(−3·CV²)，变异系数越小越稳定；偶尔失常惩罚轻、持续波动惩罚重' },
+      { key: 'G', name: '成长性', weight: '15%', desc: '按时间升序对每次记录的得分率做双指数平滑(Holt)，提取趋势斜率：每次提升 1% ≈ +5 分（进步加分、退步减分，中性为 50；记录<4 场时置信度低）' },
+      { key: 'C', name: '一致性', weight: '15%', desc: 'C = 0.6×C_cv + 0.4×C_recent，其中 C_cv = 100·e^(−3·CV²)，变异系数越小越稳定；偶尔失常惩罚轻、持续波动惩罚重（记录<3 场时置信度低）' },
       { key: 'D', name: '难度突破力', weight: '10%', desc: 'D = Σ(模块正确率×模块难度系数)/Σ(难度系数)×100，区分「只做简单题」与「攻克难题」' }
     ],
     grades: [
-      { min: 88, grade: 'S+', desc: '顶尖（全国前 1%）' },
-      { min: 82, grade: 'S', desc: '卓越（国一水准）' },
-      { min: 76, grade: 'A+', desc: '优秀+（省一头部/冲国奖）' },
-      { min: 68, grade: 'A', desc: '优秀（省一）' },
-      { min: 62, grade: 'B+', desc: '良好+（冲省一）' },
-      { min: 55, grade: 'B', desc: '良好（省二）' },
-      { min: 48, grade: 'C+', desc: '合格+（省三上沿）' },
-      { min: 40, grade: 'C', desc: '合格（省三）' },
-      { min: 30, grade: 'D+', desc: '待提升' },
+      { min: 86, grade: 'S+', desc: '顶尖（全国前 1%）' },
+      { min: 81, grade: 'S', desc: '卓越（国一水准）' },
+      { min: 77, grade: 'A+', desc: '优秀+（省一头部/冲国奖）' },
+      { min: 70, grade: 'A', desc: '优秀（省一）' },
+      { min: 64, grade: 'B+', desc: '良好+（冲省一）' },
+      { min: 58, grade: 'B', desc: '良好（省二）' },
+      { min: 52, grade: 'C+', desc: '合格+（省二冲线）' },
+      { min: 46, grade: 'C', desc: '合格（省三）' },
+      { min: 36, grade: 'D+', desc: '待提升' },
       { min: 0, grade: 'D', desc: '需努力' }
     ],
-    gradeNote: '阈值对齐历年联赛获奖线：省一 ≈ 68 分、省二 ≈ 55 分、省三 ≈ 40 分（参考多省近三年联赛省一线约在满分 62%~73%）。给「认真刷题但还没拿奖」的同学留下了足够的成长空间。'
+    gradeNote: '阈值经画像标定：正确率≈75-80% 的省一选手落在 70-76 分（A），省二 ≈ 58-63（B/B+），省三 ≈ 46-51（C/C+）。低置信度维度（数据不足时显示「置信度低」标注）仍按中性值参与计算，攒够数据后自动转正。'
   };
 
   /* ============================================================
@@ -139,9 +140,12 @@
 
   /**
    * 由 stats（getStats() 结构）与 records（getRecords() 结构）计算六维分量。
+   * 同时输出 confidence（各维置信度 0-1）：数据量不足的维度保持中性值参与
+   * 合成（见 computeBioScoreFromRaw），但置信度偏低，交由 UI 标注
+   * 「置信度低」，避免用户误读为真实水平。
    * @param {Object} stats
    * @param {Array} records
-   * @returns {{B:number,I:number,O:number,G:number,C:number,D:number}|null}
+   * @returns {{B:number,I:number,O:number,G:number,C:number,D:number,confidence:Object}|null}
    */
   function computeBioDimensions(stats, records) {
     if (!stats || typeof stats !== 'object') return null;
@@ -152,10 +156,16 @@
     var totalCorr = stats.totalCorrect || 0;
     var rawAccuracy = totalAns > 0 ? clamp01(totalCorr / totalAns) : 0;
 
+    /* 置信度辅助：样本量 0→0 线性升到阈值→1（封顶） */
+    var confOf = function (n, threshold) {
+      if (!(threshold > 0)) return n > 0 ? 1 : 0;
+      return Math.max(0, Math.min(1, n / threshold));
+    };
+
     /* B — 基础正确率（正态 CDF 映射，μ=0.55，σ=0.25） */
     var B = Math.round(normCDF((rawAccuracy - 0.55) / 0.25) * 100);
 
-    /* I — 洞察力（真实题级全对率，难度加权；无明细回退 正确率⁴） */
+    /* I — 洞察力（真实题级全对率，难度加权；无明细回退 正确率²） */
     var weightedFull = 0, weightTotal = 0, hasReal = false;
     recordsAsc.forEach(function (r) {
       var qs = Array.isArray(r.questions) ? r.questions : null;
@@ -179,7 +189,9 @@
     if (hasReal && weightTotal > 0) {
       I = Math.round((weightedFull / weightTotal) * 100);
     } else if (totalAns > 0) {
-      I = Math.round(Math.pow(rawAccuracy, 4) * 100);
+      // 回退：正确率² 估算（历史⁴幂次过狠，78% 正确率的省一被压到 37 分；
+      // ² 拟合「单题多小题时全对率 ≈ 正确率²」的独立性假设上界）
+      I = Math.round(Math.pow(rawAccuracy, 2) * 100);
     } else {
       I = 0;
     }
@@ -235,13 +247,14 @@
     }
 
     /* D — 难度突破力（模块难度加权正确率） */
-    var D = 50;
+    var D = 50, hasModuleData = false;
     if (stats.modules) {
       var wAcc = 0, wDiff = 0;
       for (var mkey in stats.modules) {
         if (!stats.modules.hasOwnProperty(mkey)) continue;
         var m = stats.modules[mkey];
         if (m && m.totalAnswered > 0) {
+          hasModuleData = true;
           var acc = clamp01((m.totalCorrect || 0) / m.totalAnswered);
           var df = diffOf(mkey);
           wAcc += acc * df;
@@ -251,7 +264,19 @@
       if (wDiff > 0) D = Math.round((wAcc / wDiff) * 100);
     }
 
-    return { B: B, I: I, O: O, G: G, C: C, D: D };
+    /* 各维置信度（0-1）：样本量达到阈值视为充分，不足按比例折算。
+     * I 走回退估算时额外打 0.6 折（估算值天然弱于真实题级统计）。
+     * 阈值口径与 UI「正确率需 30 题」一致；O/G/C 按场次数，D 按有无模块数据。 */
+    var confidence = {
+      B: confOf(totalAns, 30),
+      I: hasReal ? confOf(weightTotal, 30) : confOf(totalAns, 30) * 0.6,
+      O: confOf(records.length, 5),
+      G: confOf(records.length, 4),
+      C: confOf(records.length, 3),
+      D: hasModuleData ? 1 : 0
+    };
+
+    return { B: B, I: I, O: O, G: G, C: C, D: D, confidence: confidence };
   }
 
   g.computeBioScoreFromRaw = computeBioScoreFromRaw;

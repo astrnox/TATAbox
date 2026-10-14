@@ -399,6 +399,16 @@ function injectPracticeStyles() {
 }
 
 function getModuleGroupBySubject(subject) {
+  // 唯一权威映射：QuestionModel.getStatModuleKey（module_1..4，practice/exam/quiz/
+  // 每日亿题共用）。练习页分组 id 为 module1..4，由权威键派生，两边口径永不漂移。
+  if (typeof QuestionModel !== 'undefined' && typeof QuestionModel.getStatModuleKey === 'function') {
+    var key = QuestionModel.getStatModuleKey(subject);
+    if (/^module_[1-4]$/.test(key)) {
+      var id = 'module' + key.slice(-1);
+      var hit = PracticeModuleGroups.find((g) => g.id === id);
+      if (hit) return hit;
+    }
+  }
   return PracticeModuleGroups.find((g) => g.subjects.includes(subject));
 }
 
@@ -1024,15 +1034,8 @@ function updateStatsForQuestion(q, userAnswers) {
     } catch (e) { /* 静默失败，不影响练习流程 */ }
   }
 
-  if (typeof updateStats === 'function') {
-    // 统计 key 统一为 module_1..4（与考试/排行榜/Supabase 同构），
-    // 使 calcBioScore 的模块难度加权与 dashboard 模块卡真正生效。
-    // 历史格式 module1..4 / unknown 保持原样，由读取端兼容。
-    var statKey = /^module(\d)$/.test(moduleId)
-      ? 'module_' + moduleId.replace(/^module/, '')
-      : moduleId;
-    updateStats(statKey, isFullyCorrect);
-  }
+  // 全局模块统计已收敛到 BioQuestSession.question（record-session.js），
+  // 统计键由 QuestionModel.getStatModuleKey 统一映射，此处不再重复写入。
 
   // 触发分数成就检查
   if (typeof checkAchievement === 'function' && typeof getCurrentUser === 'function') {
@@ -1050,40 +1053,24 @@ function updateStatsForQuestion(q, userAnswers) {
     }
   }
 
-  // 记录题目难度统计（用于自动调整难度标签）——Issue #10：改用稳定 bioID 作统计 key
-  if (typeof recordQuestionAnswer === 'function') {
-    var qId = getQuestionBioId(q) || String(q.question).slice(0, 20);
-    try {
-      recordQuestionAnswer(qId, isFullyCorrect, q.difficulty || 3);
-    } catch (e) { /* 静默 */ }
+  // 统一落盘入口（js/core/record-session.js）：模块统计 + 难度自适应 +
+  // 错题本（云端复习卡）+ 信用点（0.5/0.1）+ 打卡 + 首次练习成就。
+  // 科目→模块键由 QuestionModel.getStatModuleKey 自动映射，与考试/排行榜同构。
+  if (window.BioQuestSession && typeof window.BioQuestSession.question === 'function') {
+    window.BioQuestSession.question({
+      module: 'practice',
+      q: q,
+      correct: isFullyCorrect,
+      checkin: true,
+      achievements: [{ type: 'practice', value: 1 }]
+    });
   }
-
-  // 答错时加入复习推送错题本
-  if (!isFullyCorrect && typeof window.recordWrongAnswer === 'function') {
-    try {
-      window.recordWrongAnswer(q).catch(function() {});
-    } catch (e) { /* 静默 */ }
-  }
-
-  // 信用：每次答题"全部正确 +5 / 未全对 +1"奖励（走 user.js 的信用系统）
-  try {
-    if (typeof window.addPoints === 'function') {
-      window.addPoints(isFullyCorrect ? 'ANSWER_CORRECT' : 'ANSWER_WRONG');
-    }
-  } catch (_) { /* 信用挂钩失败不影响练习主流程 */ }
 }
 
 function handleSubmitAnswer() {
   if (PracticeState.submitted) return;
 
-  // 触发每日打卡
-  if (typeof recordDailyCheckIn === 'function') {
-    recordDailyCheckIn();
-  }
-  // 触发首次练习成就
-  if (typeof checkAchievement === 'function') {
-    checkAchievement('practice', 1);
-  }
+  // 每日打卡 / 首次练习成就：已收敛到 BioQuestSession.question（每题提交时触发）
 
   const q = PracticeState.currentSet[PracticeState.currentIndex];
   const userAnswers = PracticeState.userAnswers[PracticeState.currentIndex] || {};
@@ -1228,53 +1215,33 @@ function handleNextQuestion() {
 }
 
 function savePracticeRecord() {
-  if (typeof saveRecord !== 'function') return;
-
   const duration = Math.floor((Date.now() - PracticeState.startTime) / 1000);
 
-  const record = {
-    totalQuestions: PracticeState.totalAnswered,
-    correctCount: PracticeState.currentSet.reduce((sum, q, i) => {
+  // 统一落盘入口（js/core/record-session.js）：练习记录 saveRecord + bio 分
+  // 六维重算与云端同步。模块统计/打卡/成就/错题/信用已由每题的
+  // BioQuestSession.question 写入，此处 stats/checkin 关闭防双计。
+  if (!window.BioQuestSession || typeof window.BioQuestSession.finish !== 'function') return;
+  window.BioQuestSession.finish({
+    module: 'practice',
+    duration,
+    questions: PracticeState.currentSet.map((q, i) => {
       const ua = PracticeState.userAnswers[i] || {};
       const result = calculateQuestionScore(q, ua);
-      // MTF 题型：全部子题正确才算对；逻辑推理题：correct === total 即对
-      return sum + (result.correct === result.total ? 1 : 0);
-    }, 0),
-    score: PracticeState.totalScore,
-    totalScore: PracticeState.currentSet.length * 2,
-    duration,
-    module: 'practice',
-    questions: PracticeState.currentSet.map((q, i) => ({
-      questionId: getQuestionBioId(q),
-      question: q.question,
-      subject: q.subject,
-      concept: q.concept,
-      userAnswers: PracticeState.userAnswers[i] || {},
-      score: calculateQuestionScore(q, PracticeState.userAnswers[i] || {}).score
-    }))
-  };
-
-  saveRecord(record);
-
-  // 更新排行榜分数
-  if (typeof isLoggedIn === 'function' && isLoggedIn()) {
-    try {
-      var stats = typeof getStats === 'function' ? getStats() : null;
-      if (stats && typeof calcBioScore === 'function') {
-        var bioResult = calcBioScore(stats);
-        var records = typeof getRecords === 'function' ? getRecords() : [];
-        // Supabase 直连同步
-        if (typeof window.updateBioScore === 'function' && typeof window.getSupabase === 'function' && window.getSupabase()) {
-          window.updateBioScore(bioResult.score, {
-            practice_count: stats.totalAnswered || 0,
-            total_answered: stats.totalAnswered || 0,
-            total_correct: stats.totalCorrect || 0,
-            accuracy: stats.accuracy || 0
-          }).catch(function() {});
-        }
-      }
-    } catch(e) {}
-  }
+      return {
+        q,
+        questionId: getQuestionBioId(q),
+        userAnswers: ua,
+        score: result.score,
+        totalScore: result.total,
+        correctSubs: result.correct,
+        totalSubs: result.total,
+        // MTF 题型：全部子题正确才算对；逻辑推理题：correct === total 即对
+        correct: result.correct === result.total
+      };
+    }),
+    stats: false,
+    checkin: false
+  });
 }
 
 function renderFilterPanel() {

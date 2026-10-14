@@ -71,6 +71,33 @@ var QuestionModel = (function () {
     logic: '逻辑推理'
   };
 
+  /* ======================= 科目 → 全局统计模块（唯一权威映射） =======================
+   * 所有刷题入口（practice / exam / quiz / 每日亿题 / OCR）统一走这里，
+   * 使 updateStats 的模块键（module_1..4，与考试/排行榜/Supabase 同构）
+   * 与 bio 分六维、dashboard 模块卡、练习页筛选的科目归属完全一致。
+   * 未收录科目返回 'general'，由统计读取端自然兼容。
+   */
+  var SUBJECT_MODULE_KEYS = {
+    '生物化学': 'module_1', '分子生物学': 'module_1', '细胞生物学': 'module_1', '生物技术': 'module_1',
+    '植物学': 'module_2', '植物生理学': 'module_2', '微生物学': 'module_2',
+    '动物学': 'module_3', '动物生理学': 'module_3', '生态学': 'module_3', '动物行为学': 'module_3',
+    '遗传学': 'module_4', '进化生物学': 'module_4', '演化生物学': 'module_4',
+    '生物分类学': 'module_4', '生物信息学': 'module_4', '群体遗传学': 'module_4'
+  };
+
+  /**
+   * 科目 → 全局统计模块键
+   * @param {string|Object} subjectOrQuestion - 科目名，或带 subject 字段的题目对象
+   * @returns {string} 'module_1'..'module_4'，未收录科目返回 'general'
+   */
+  function getStatModuleKey(subjectOrQuestion) {
+    var s = (subjectOrQuestion && typeof subjectOrQuestion === 'object')
+      ? subjectOrQuestion.subject
+      : subjectOrQuestion;
+    if (typeof s !== 'string' || !s) return 'general';
+    return SUBJECT_MODULE_KEYS[s] || 'general';
+  }
+
   /* ======================= 题型归一 ======================= */
 
   /**
@@ -519,7 +546,10 @@ var QuestionModel = (function () {
     getQuizTypeScore: getQuizTypeScore,
     getOptionLabels: getOptionLabels,
     normalizeStatType: normalizeStatType,
-    getStatTypeLabel: getStatTypeLabel
+    getStatTypeLabel: getStatTypeLabel,
+    // 科目 → 全局统计模块（唯一权威映射）
+    SUBJECT_MODULE_KEYS: SUBJECT_MODULE_KEYS,
+    getStatModuleKey: getStatModuleKey
   };
 })();
 

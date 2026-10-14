@@ -552,7 +552,7 @@ function calcBioScore(stats) {
    * 说明：I = 难度加权「题级全对率」× 100。
    *   「全对」比「答对」更严格：一道题所有子项 100% 判对才算。
    *   优先从练习/考试记录（records[].questions）统计真实数据；
-   *   记录无题目级明细（旧数据）时，回退「正确率^4」科学估算。
+   *   记录无题目级明细（旧数据）时，回退「正确率²」估算。
    *   难度加权：难度高的模块全对价值更高（难度系数见 MODULE_DIFFICULTY）。
    * ============================================================ */
   let weightedFull = 0;
@@ -584,8 +584,9 @@ function calcBioScore(stats) {
   if (hasRealFullData && weightTotal > 0) {
     I = Math.round((weightedFull / weightTotal) * 100);
   } else if (totalAns > 0) {
-    // 回退：用正确率的 4 次方估算全对率（4 小问独立同假设的合理上界）
-    var estRate = Math.pow(rawAccuracy, 4);
+    // 回退：用正确率² 估算全对率（² 拟合「多小题独立」上界；
+    // 历史⁴幂次过狠，78% 正确率的省一被压到 37 分，与真实全对率明显脱节）
+    var estRate = Math.pow(rawAccuracy, 2);
     I = Math.round(estRate * 100);
   } else {
     I = 0;
@@ -704,6 +705,7 @@ function calcBioScore(stats) {
    *       难度系数来自 MODULE_DIFFICULTY 表
    * ============================================================ */
   let D = 50;
+  let hasModuleData = false;
   if (stats.modules) {
     var weightedAcc = 0;
     var totalDiff = 0;
@@ -711,6 +713,7 @@ function calcBioScore(stats) {
       var key = entry[0];
       var m = entry[1];
       if (m.totalAnswered > 0) {
+        hasModuleData = true;
         var modAcc = clamp01((m.totalCorrect || 0) / m.totalAnswered);
         var diff = diffOf(key);
         weightedAcc += modAcc * diff;
@@ -721,6 +724,24 @@ function calcBioScore(stats) {
       D = Math.round((weightedAcc / totalDiff) * 100);
     }
   }
+
+  /* ============================================================
+   * 各维置信度（0-1，与 score-engine computeBioDimensions 口径一致）。
+   * 数据不足的维度仍按中性值参与合成，但标注「置信度低」，
+   * 防止用户把「样本太少产生的默认值」误读为真实水平。
+   * ============================================================ */
+  var _confOf = function (n, threshold) {
+    if (!(threshold > 0)) return n > 0 ? 1 : 0;
+    return Math.max(0, Math.min(1, n / threshold));
+  };
+  var confidence = {
+    B: _confOf(totalAns, 30),
+    I: hasRealFullData ? _confOf(weightTotal, 30) : _confOf(totalAns, 30) * 0.6,
+    O: _confOf(records.length, 5),
+    G: _confOf(records.length, 4),
+    C: _confOf(records.length, 3),
+    D: hasModuleData ? 1 : 0
+  };
 
   /* ============================================================
    * 综合评分（合成规则与 js/core/score-engine.js 完全一致；
@@ -743,16 +764,16 @@ function calcBioScore(stats) {
     if (B >= 70 && I >= 70) score += 5;
     if (B < 40 && I < 40) score -= 5;
     grade = 'D'; letter = '需努力';
-    // 阈值对齐历年联赛获奖线（与 score-engine 共享表一致，防漂移）
-    if (score >= 88) { grade = 'S+'; letter = '顶尖'; }
-    else if (score >= 82) { grade = 'S'; letter = '卓越'; }
-    else if (score >= 76) { grade = 'A+'; letter = '优秀+'; }
-    else if (score >= 68) { grade = 'A'; letter = '优秀'; }
-    else if (score >= 62) { grade = 'B+'; letter = '良好+'; }
-    else if (score >= 55) { grade = 'B'; letter = '良好'; }
-    else if (score >= 48) { grade = 'C+'; letter = '合格+'; }
-    else if (score >= 40) { grade = 'C'; letter = '合格'; }
-    else if (score >= 30) { grade = 'D+'; letter = '待提升'; }
+    // 阈值与 score-engine 共享表一致（防漂移）：省一≈70-76 → A
+    if (score >= 86) { grade = 'S+'; letter = '顶尖'; }
+    else if (score >= 81) { grade = 'S'; letter = '卓越'; }
+    else if (score >= 77) { grade = 'A+'; letter = '优秀+'; }
+    else if (score >= 70) { grade = 'A'; letter = '优秀'; }
+    else if (score >= 64) { grade = 'B+'; letter = '良好+'; }
+    else if (score >= 58) { grade = 'B'; letter = '良好'; }
+    else if (score >= 52) { grade = 'C+'; letter = '合格+'; }
+    else if (score >= 46) { grade = 'C'; letter = '合格'; }
+    else if (score >= 36) { grade = 'D+'; letter = '待提升'; }
   }
 
   return {
@@ -767,6 +788,7 @@ function calcBioScore(stats) {
       C: Math.min(100, Math.max(0, C)),
       D: Math.min(100, Math.max(0, D))
     },
+    confidence: confidence,
     breakdown: {
       '基础正确率(B)': B,
       '洞察力(I)': I,
@@ -990,6 +1012,15 @@ function renderStatsSummary(container) {
     { key: 'D', name: '难度突破', full: 'Difficulty Mastery', weight: '10%', formula: 'Σ(模块正确率×难度系数)/Σ(难度系数)×100', desc: '区分"只做简单题"和"能做难题"，高难度模块表现权重更大' }
   ];
 
+  // 低置信度标注：< 0.5 视为「样本不足，该维度为估算/中性值」
+  const confLow = (k) => {
+    const cf = bioScore.confidence ? bioScore.confidence[k] : 1;
+    return (typeof cf === 'number' && cf < 0.5);
+  };
+  const confChip = (k) => confLow(k)
+    ? '<span class="bioscore-conf-low" title="样本量不足，该维度为估算值/中性值，继续练习后自动转正">置信度低</span>'
+    : '';
+
   html += `
     <div class="bioscore-card">
       <div class="bioscore-header">
@@ -1004,7 +1035,7 @@ function renderStatsSummary(container) {
         ${dimInfo.map(function(d) { return `
         <div class="bioscore-metric" data-dim="${d.key}">
           <div class="bioscore-metric-head">
-            <span class="bioscore-metric-label"><strong>${d.key}</strong> ${d.name}</span>
+            <span class="bioscore-metric-label"><strong>${d.key}</strong> ${d.name}${confChip(d.key)}</span>
             <span class="bioscore-metric-val">${c[d.key]}</span>
           </div>
           <div class="bioscore-metric-bar"><div class="bioscore-metric-fill" style="width:${c[d.key]}%"></div></div>
@@ -1017,19 +1048,37 @@ function renderStatsSummary(container) {
       </div>
       <div class="bioscore-criteria">
         <div class="bioscore-criteria-title">评级标准</div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-splus">S+</span><span class="bioscore-criteria-range">95-100</span><span class="bioscore-criteria-desc">顶尖 · 国一稳拿</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-s">S</span><span class="bioscore-criteria-range">90-94</span><span class="bioscore-criteria-desc">卓越 · 全国一等奖</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-aplus">A+</span><span class="bioscore-criteria-range">85-89</span><span class="bioscore-criteria-desc">优秀+ · 省一/国二</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-a">A</span><span class="bioscore-criteria-range">80-84</span><span class="bioscore-criteria-desc">优秀 · 省级一等奖</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-bplus">B+</span><span class="bioscore-criteria-range">75-79</span><span class="bioscore-criteria-desc">良好+ · 省一冲线</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-b">B</span><span class="bioscore-criteria-range">70-74</span><span class="bioscore-criteria-desc">良好 · 省级二等奖</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-cplus">C+</span><span class="bioscore-criteria-range">65-69</span><span class="bioscore-criteria-desc">合格+ · 省二冲线</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-c">C</span><span class="bioscore-criteria-range">60-64</span><span class="bioscore-criteria-desc">合格 · 省级三等奖</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-dplus">D+</span><span class="bioscore-criteria-range">50-59</span><span class="bioscore-criteria-desc">待提升 · 需系统训练</span></div>
-        <div class="bioscore-criteria-row"><span class="bioscore-criteria-grade bioscore-criteria-d">D</span><span class="bioscore-criteria-range">0-49</span><span class="bioscore-criteria-desc">需努力 · 从基础开始</span></div>
+        ${(function() {
+          // 评级表由 score-engine 的 BIO_SCORE_EXPLAIN.grades 驱动（防与实际阈值漂移）
+          var grades = (window.BIO_SCORE_EXPLAIN && Array.isArray(window.BIO_SCORE_EXPLAIN.grades))
+            ? window.BIO_SCORE_EXPLAIN.grades : null;
+          if (!grades) {
+            grades = [
+              { min: 86, grade: 'S+', desc: '顶尖 · 国一稳拿' },
+              { min: 81, grade: 'S', desc: '卓越 · 全国一等奖' },
+              { min: 77, grade: 'A+', desc: '优秀+ · 省一头部/冲国奖' },
+              { min: 70, grade: 'A', desc: '优秀 · 省一' },
+              { min: 64, grade: 'B+', desc: '良好+ · 冲省一' },
+              { min: 58, grade: 'B', desc: '良好 · 省级二等奖' },
+              { min: 52, grade: 'C+', desc: '合格+ · 省二冲线' },
+              { min: 46, grade: 'C', desc: '合格 · 省级三等奖' },
+              { min: 36, grade: 'D+', desc: '待提升 · 需系统训练' },
+              { min: 0, grade: 'D', desc: '需努力 · 从基础开始' }
+            ];
+          }
+          return grades.map(function(g, i) {
+            var upper = i === 0 ? 100 : grades[i - 1].min - 1;
+            var range = g.min === 0 ? ('0-' + upper) : (g.min + '-' + upper);
+            var cls = 'bioscore-criteria-' + g.grade.toLowerCase().replace('+', 'plus');
+            return '<div class="bioscore-criteria-row"><span class="bioscore-criteria-grade ' + cls + '">' +
+              g.grade + '</span><span class="bioscore-criteria-range">' + range +
+              '</span><span class="bioscore-criteria-desc">' + g.desc + '</span></div>';
+          }).join('');
+        })()}
         <div class="bioscore-criteria-weights">
           <span>综合 = B×25% + I×25% + O×10% + G×15% + C×15% + D×10%</span>
           <span>交互修正：B≥70且I≥70 → +5，B&lt;40且I&lt;40 → -5</span>
+          <span>数据不足的维度按中性值参与计算，并标注「置信度低」</span>
         </div>
       </div>
     </div>

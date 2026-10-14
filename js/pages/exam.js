@@ -2734,67 +2734,31 @@ function scrollToReviewQuestion(qIndex, target) {
 }
 
 function saveExamRecord(score, duration) {
-  const moduleScores = {};
-  const moduleCorrects = {};
-  for (let m = 1; m <= 4; m++) {
-    moduleScores[m] = getModuleScore(m);
-    const start = (m - 1) * QUESTIONS_PER_MODULE;
-    const end = start + QUESTIONS_PER_MODULE;
-    let correct = 0;
-    for (let i = start; i < end; i++) {
-      correct += calcQuestionScore(i).correct;
-    }
-    moduleCorrects[m] = correct;
-  }
-
   const totalSubPerQuestion = 4;
-  let totalFullQuestions = 0;
-  for (let i = 0; i < examQuestions.length; i++) {
-    if (calcQuestionScore(i).correct === totalSubPerQuestion) totalFullQuestions++;
-  }
+  const perQuestionTotal = TOTAL_SCORE / EXAM_TOTAL; // 2 分/题
+  const hasSession = typeof window !== 'undefined' &&
+    window.BioQuestSession && typeof window.BioQuestSession.question === 'function';
 
-  if (typeof saveRecord === 'function') {
-    saveRecord({
-      totalQuestions: EXAM_TOTAL,
-      // 统一口径：correctCount = 全对题数（与 practice 纪录一致），
-      // 供 calcBioScore/趋势页正确率（≤100%）消费；错误子题数另存于 questions 明细
-      correctCount: totalFullQuestions,
-      score: score,
-      totalScore: TOTAL_SCORE,
-      duration: duration,
-      module: 'exam',
-      questions: examQuestions.map((q, i) => {
-        const r = calcQuestionScore(i);
-        // Issue #10：用稳定 bioID 引用题目（examQ.id/bioId 由分片加载注入）
-        const examQ = examQuestions[i];
-        const qBio = (examQ && (examQ.id || examQ.bioId)) || '';
-        return {
-          questionId: qBio || `exam_${i}`,
-          qId: qBio || `exam_${i}`,
-          question: q.question,
-          correctSubs: r.correct,
-          totalSubs: totalSubPerQuestion,
-          subject: q.subject,
-          module: getExamModuleKey(i)
-        };
-      })
+  // 统一落盘入口（js/core/record-session.js）：逐题 question —— 模块统计
+  // （module_1..4，与排行榜/考试成绩同构）+ 难度自适应 + 错题本（云端复习卡）。
+  // 考试不给信用点（MODULE_POINTS 无 exam 配置），故 points:false 明确关闭。
+  if (hasSession) {
+    examQuestions.forEach((q, i) => {
+      const r = calcQuestionScore(i);
+      const qBio = (q && (q.id || q.bioId)) || '';
+      // recordWrongAnswer 需要 id/question_id：分片未注入 id 时用稳定 bioID 兜底
+      const qRef = (qBio && !q.id) ? Object.assign({}, q, { id: qBio }) : q;
+      window.BioQuestSession.question({
+        module: 'exam',
+        q: qRef,
+        correct: r.correct === totalSubPerQuestion,
+        moduleKey: 'module_' + getExamModuleKey(i),
+        points: false
+      });
     });
   }
 
-  // 统计写入：每题只计 1 次（updateStats 为「题目级」计数）；
-  // 「正确」判定与 practice 保持一致 = 全对才算对。
-  for (let m = 1; m <= 4; m++) {
-    if (typeof updateStats === 'function') {
-      const modName = 'module_' + m;
-      const start = (m - 1) * QUESTIONS_PER_MODULE;
-      const end = start + QUESTIONS_PER_MODULE;
-      for (let i = start; i < end; i++) {
-        const result = calcQuestionScore(i);
-        updateStats(modName, result.correct === totalSubPerQuestion);
-      }
-    }
-  }
-
+  // 本地错题本（子题级，错题列表页按 bioId#sub 引用，保持历史行为）
   for (let i = 0; i < examQuestions.length; i++) {
     for (let j = 0; j < 4; j++) {
       if (!isSubQuestionCorrect(i, j)) {
@@ -2812,22 +2776,35 @@ function saveExamRecord(score, duration) {
     }
   }
 
-  // 同步分数到 Supabase/服务器
-  if (typeof isLoggedIn === 'function' && isLoggedIn()) {
-    try {
-      var stats = typeof getStats === 'function' ? getStats() : null;
-      if (stats && typeof calcBioScore === 'function') {
-        var bioResult = calcBioScore(stats);
-        if (typeof window.updateBioScore === 'function' && typeof window.getSupabase === 'function' && window.getSupabase()) {
-          window.updateBioScore(bioResult.score, {
-            practice_count: stats.totalAnswered || 0,
-            total_answered: stats.totalAnswered || 0,
-            total_correct: stats.totalCorrect || 0,
-            accuracy: stats.accuracy || 0
-          }).catch(function() {});
-        }
-      }
-    } catch(e) {}
+  // 收尾落盘：练习记录 saveRecord + bio 分六维重算与云端同步。
+  // 模块统计/错题/难度已由上面的 question() 逐题写入，stats:false 防双计。
+  if (hasSession && typeof window.BioQuestSession.finish === 'function') {
+    window.BioQuestSession.finish({
+      module: 'exam',
+      duration,
+      questions: examQuestions.map((q, i) => {
+        const r = calcQuestionScore(i);
+        // Issue #10：用稳定 bioID 引用题目（q.id/bioId 由分片加载注入）
+        const qBio = (q && (q.id || q.bioId)) || '';
+        return {
+          q,
+          questionId: qBio || `exam_${i}`,
+          question: q.question,
+          subject: q.subject,
+          userAnswers: userAnswers[i] || {},
+          // 分值口径：72 题 × 2 分 = 144，逐题分由 gradeQuestion 阶梯给出
+          score: r.score,
+          totalScore: perQuestionTotal,
+          correctSubs: r.correct,
+          totalSubs: totalSubPerQuestion,
+          moduleKey: 'module_' + getExamModuleKey(i),
+          // 统一口径：全对才算对（与 practice 纪录一致）
+          correct: r.correct === totalSubPerQuestion
+        };
+      }),
+      stats: false,
+      checkin: false
+    });
   }
 }
 

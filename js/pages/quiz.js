@@ -9,6 +9,7 @@ let submitted = false;
 let dataLoaded = false;
 let logicLoaded = false;
 let selectedCategory = 'basic'; // 'basic' | 'logic' | 'mixed'
+let paperStartTime = 0;         // 出卷时间，交卷时算本卷时长（练习记录用）
 
 // 分值常量：唯一权威在 js/core/question-model.js（QUIZ_SCORES），此处引用防漂移
 const SCORE_SINGLE = QuestionModel.QUIZ_SCORES.single;
@@ -299,6 +300,7 @@ function generateMixedPaper() {
 function startPaper(title) {
   userAnswers = {};
   submitted = false;
+  paperStartTime = Date.now();
 
   // 管理员对本地题库的覆盖修改（题干/选项/解析等）在出卷时生效
   if (typeof applyQuestionOverride === 'function') {
@@ -909,6 +911,47 @@ function submitPaper() {
       });
     } catch (e) { /* 静默失败 */ }
   }
+
+  // 统一落盘入口（js/core/record-session.js）——quiz 首次接入全局体系：
+  // 逐题 question（模块统计/难度自适应/错题本云端复习卡）+ finish（练习记录
+  // saveRecord / bio 分六维重算与云端同步）。quiz 不给信用点（MODULE_POINTS
+  // 无 quiz 配置），故 points:false；统计已逐题写入，finish 传 stats:false 防双计。
+  if (window.BioQuestSession && typeof window.BioQuestSession.question === 'function') {
+    currentPaper.forEach(function (q, i) {
+      var qBio = getQuestionBioId(q);
+      // recordWrongAnswer 需要 id/question_id：用稳定 bioID 兜底
+      var qRef = (qBio && !q.id) ? Object.assign({}, q, { id: qBio }) : q;
+      window.BioQuestSession.question({
+        module: 'quiz',
+        q: qRef,
+        correct: getSingleQuestionScore(q, i) === 'full',
+        points: false
+      });
+    });
+  }
+  if (window.BioQuestSession && typeof window.BioQuestSession.finish === 'function') {
+    window.BioQuestSession.finish({
+      module: 'quiz',
+      duration: paperStartTime ? Math.floor((Date.now() - paperStartTime) / 1000) : 0,
+      questions: currentPaper.map(function (q, i) {
+        var g = QuestionModel.gradeQuestion(q, userAnswers[i], 'quiz');
+        return {
+          q: q,
+          questionId: getQuestionBioId(q),
+          userAnswers: userAnswers[i] || {},
+          score: g.score,
+          totalScore: g.maxScore,
+          correctSubs: g.correct,
+          totalSubs: g.total,
+          // 统一口径：全对才算对（部分得分的多选/MTF 计错）
+          correct: g.verdict === 'full'
+        };
+      }),
+      stats: false,
+      checkin: false
+    });
+  }
+
   renderPaper();
 }
 

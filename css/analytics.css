@@ -556,6 +556,22 @@
   color: var(--color-sage);
 }
 
+/* 低置信度标注：数据不足维度（如记录<4场的成长性G）仍按中性值展示，
+   但提示用户该值为估算/默认，避免误读为真实水平 */
+.bioscore-conf-low {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 0.62rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-muted, #8a8a8a);
+  background: var(--surface-tertiary, #f0ebe0);
+  border-radius: 3px;
+  cursor: help;
+  vertical-align: 1px;
+}
+
 .bioscore-metric-bar {
   height: 6px;
   background: var(--surface-tertiary, #f0ebe0);
