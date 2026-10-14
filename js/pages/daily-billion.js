@@ -43,6 +43,7 @@
     submittedMap: {},
     favorites: {},           // 收藏 {questionId: true}
     feedback: {},            // 反馈 {questionId: 'like'|'dislike'}
+    recordedQids: {},        // 已写入全局练习记录的题目 {questionId: true}（每题只计一次）
     error: null,
     usingLocalQuestions: false,
     // 刷太快检测
@@ -62,6 +63,7 @@
   var _progressTimer = null;
   var _progressStart = 0;
   var _toastTimer = null;
+  var _sessionStart = 0;    // 本次进入页面的时间（成绩单记录用时长）
 
   var escapeHtml = window.escapeHtml;
 
@@ -99,6 +101,9 @@
 
   // 判断题/单选题统一判定 —— 题型归一唯一实现在 js/core/question-model.js
   function isSingleQ(q) { return QuestionModel.isChoiceQuestion(q); }
+
+  // 科目 → 全局统计模块键：唯一权威映射在 QuestionModel.getStatModuleKey
+  // （record-session.js 落统计时自动使用，此处仅在需要显式传键时引用）
 
   // 异步加载并合并本地专属题库（6 个主题分片 + 超长讲义过滤），带缓存
   // 同时兼容两种题型：mtf 判断题（subQuestions）与 single 单选题（options + answer）
@@ -747,6 +752,48 @@
     return html;
   }
 
+  // 结束刷题（打开成绩单 / 离开页面）时把这段刷题交给统一落盘服务：
+  //   saveRecord 练习记录 + bio 分六维重算与云端同步（js/core/record-session.js）
+  // 每题只计入一次（state.recordedQids，随进度持久化）：关掉成绩单继续刷再开，
+  // 只补记新增题目，避免同一批题反复计入场次/活跃度。
+  function persistSessionRecord() {
+    try {
+      var pending = [];
+      for (var i = 0; i < state.questions.length; i++) {
+        var q = state.questions[i];
+        if (state.submittedMap[q.id] && !state.recordedQids[q.id]) pending.push(q);
+      }
+      if (pending.length === 0) return;
+
+      var items = pending.map(function(q) {
+        var g = QuestionModel.gradeQuestion(q, state.answeredMap[q.id] || {}, 'daily');
+        return {
+          q: q,
+          questionId: (q.bioId != null && q.bioId !== '') ? q.bioId : q.id,
+          userAnswers: state.answeredMap[q.id] || {},
+          score: g.correct,
+          totalScore: g.total,
+          correctSubs: g.correct,
+          totalSubs: g.total
+        };
+      });
+
+      if (window.BioQuestSession && typeof window.BioQuestSession.finish === 'function') {
+        window.BioQuestSession.finish({
+          module: 'daily-billion',
+          duration: _sessionStart ? Math.floor((Date.now() - _sessionStart) / 1000) : 0,
+          questions: items,
+          // 模块统计/打卡/成就已由每题的 question() 写入，这里只落记录与 bio 分
+          stats: false,
+          checkin: false
+        });
+      }
+
+      for (var j = 0; j < pending.length; j++) state.recordedQids[pending[j].id] = true;
+      saveState(true);
+    } catch(e) { /* 落记录失败不影响成绩单展示 */ }
+  }
+
   function openReportPanel() {
     if (_destroyed || !wrapperEl) return;
     var existing = wrapperEl.querySelector('#dbReportOverlay');
@@ -758,6 +805,9 @@
       showConfirmExitOverlay();
       return;
     }
+
+    // 成绩单 = 一段刷题结束：把该段尚未计入的题目写入全局记录并同步 bio 分
+    persistSessionRecord();
 
     var html = renderReportPanel();
     wrapperEl.insertAdjacentHTML('beforeend', html);
@@ -934,8 +984,17 @@
     updateCounter();
     pulseCounter();
 
-    if (typeof window.recordDailyCheckIn === 'function') { try { window.recordDailyCheckIn(); } catch(e) {} }
-    if (typeof window.checkAchievement === 'function') { try { window.checkAchievement('practice', 1); } catch(e) {} }
+    // 统一落盘入口（js/core/record-session.js）：模块统计 + 难度自适应 +
+    // 错题本（云端复习卡）+ 信用点（0.25/0.05，日封顶 5）+ 打卡 + 成就
+    if (window.BioQuestSession && typeof window.BioQuestSession.question === 'function') {
+      window.BioQuestSession.question({
+        module: 'daily-billion',
+        q: q,
+        correct: g.total > 0 && g.correct === g.total,
+        checkin: true,
+        achievements: [{ type: 'practice', value: 1 }]
+      });
+    }
 
     // 作答阶段不判卷：卡片刷新为"已作答"锁定态，并平滑滚动到下一题保持刷题节奏
     cardEl.outerHTML = renderQuestionCard(q, cardIdx);
@@ -1291,6 +1350,9 @@
     if (_saveTimer) { clearTimeout(_saveTimer); _saveTimer = null; }
     if (_progressTimer) { clearInterval(_progressTimer); _progressTimer = null; }
     if (_toastTimer) { clearTimeout(_toastTimer); _toastTimer = null; }
+    // 离开/重启前把这段刷题落进全局记录（在 clearTimeout 之后调用，
+    // 保证 persistSessionRecord 内的 saveState 定时器不会被误清）
+    persistSessionRecord();
     if (wrapperEl) {
       var report = wrapperEl.querySelector('#dbReportOverlay');
       if (report) report.remove();
@@ -1320,6 +1382,7 @@
     state.submittedMap = {};
     state.favorites = {};
     state.feedback = {};
+    state.recordedQids = {};
     state.error = null;
     state.usingLocalQuestions = false;
     state.lastSubmitTime = 0;
@@ -1330,9 +1393,9 @@
   }
 
   var _saveTimer = null;
-  function saveState() {
+  function saveState(immediate) {
     if (_saveTimer) clearTimeout(_saveTimer);
-    _saveTimer = setTimeout(function() {
+    var write = function() {
       _saveTimer = null;
       try {
         var data = {
@@ -1342,11 +1405,15 @@
           answeredMap: state.answeredMap,
           submittedMap: state.submittedMap,
           favorites: state.favorites,
-          feedback: state.feedback
+          feedback: state.feedback,
+          recordedQids: state.recordedQids
         };
         localStorage.setItem('bioquest_billion_v3', JSON.stringify(data));
       } catch(e) {}
-    }, 300);
+    };
+    // immediate=true：同步落盘（离场/成绩单落记录前用，避免 300ms 内关页丢标记）
+    if (immediate) { write(); return; }
+    _saveTimer = setTimeout(write, 300);
   }
 
   function loadPersistedState() {
@@ -1361,6 +1428,7 @@
       if (data.submittedMap) state.submittedMap = data.submittedMap;
       if (data.favorites) state.favorites = data.favorites;
       if (data.feedback) state.feedback = data.feedback;
+      if (data.recordedQids) state.recordedQids = data.recordedQids;
     } catch(e) {}
   }
 
@@ -1412,6 +1480,7 @@
     if (_destroyed) return;
     if (wrapperEl) { cleanupDom(); }
     loadPersistedState();
+    _sessionStart = Date.now();
 
     wrapperEl = document.createElement('div');
     wrapperEl.id = 'dbWrapper';
@@ -1468,7 +1537,8 @@
         answeredMap: state.answeredMap,
         submittedMap: state.submittedMap,
         favorites: state.favorites,
-        feedback: state.feedback
+        feedback: state.feedback,
+        recordedQids: state.recordedQids
       };
       localStorage.setItem('bioquest_billion_v3', JSON.stringify(data));
     } catch(e) {}

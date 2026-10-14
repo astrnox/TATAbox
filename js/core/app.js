@@ -1393,7 +1393,7 @@ var _moduleDeps = {
   'review-deep': ['question-model', 'question-utils', 'loader'],
   'admin': ['rating', 'question-model'],
   'diagnosis': ['question-model'],
-  'daily-billion': ['question-model'],
+  'daily-billion': ['question-model', 'score-engine'],
   'analytics': ['score-engine'],
   'score-calc': ['score-engine', 'credit-metrics'],
   'bio-calc': ['score-engine']
@@ -1480,9 +1480,23 @@ window.loadModule = function(modName, options) {
 
     function loadOnce() {
       // 防御性检查：如果对应 script 标签已经在 head 中，跳过动态加载
+      // 精确匹配模块自身路径（忽略 query 版本号）：裸文件名匹配会被同名后缀的
+      // 核心脚本误命中（如 sb-study.js 匹配 "study.js"），导致 study.js 永远
+      // 不被注入、initStudy 3 秒后被误判为「已加载」而报初始化函数未找到。
       var targetUrl = _resolveModuleUrl(modName);
-      var baseName = modName + '.js';
-      var existing = document.querySelector('script[src*="' + baseName + '"]');
+      // 模块固定路径片段（如 /js/pages/study.js）：绝对/相对 src 都能归一比较
+      var modPath = '/js/' + _moduleDir(modName) + '/' + modName + '.js';
+      var existing = null;
+      var allScripts = document.querySelectorAll('script[src]');
+      for (var si = 0; si < allScripts.length; si++) {
+        var rawSrc = allScripts[si].getAttribute('src') || '';
+        var srcPath = rawSrc.split('?')[0];
+        try { srcPath = new URL(rawSrc, document.baseURI).pathname; } catch (e) { /* 保留原值 */ }
+        if (srcPath.slice(-modPath.length) === modPath) {
+          existing = allScripts[si];
+          break;
+        }
+      }
       if (existing) {
         // 已经在 head 中预加载，等待初始化函数暴露
         var waitStart = Date.now();
@@ -2307,9 +2321,17 @@ async function initSupabase() {
     }
 
     // 动态加载 supabase 相关脚本（按依赖顺序）
-    var v = '20260905a';
+    // sb-* 四件套必须随链加载（与 quiz.html 等子页面顺序一致）：
+    //   sb-gamify  —— 打卡/成就/bio分/信用点；sb-data —— 错题本/复习卡/练习云同步
+    //   sb-social  —— 社区动态；sb-study —— 学习记录
+    // 缺失会让主 SPA 各页面的全局调用点静默失效
+    var v = '20261013a';
     var supabaseScripts = [
       __jsBase + 'js/core/supabase-client.js?v=' + v,
+      __jsBase + 'js/core/sb-gamify.js?v=' + v,
+      __jsBase + 'js/core/sb-social.js?v=' + v,
+      __jsBase + 'js/core/sb-data.js?v=' + v,
+      __jsBase + 'js/core/sb-study.js?v=' + v,
       __jsBase + 'js/core/supabase.js?v=' + v,
       __jsBase + 'js/core/storage.js?v=' + v
     ];
