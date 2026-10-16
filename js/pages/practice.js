@@ -49,6 +49,8 @@ const PracticeState = {
   allQuestions: [],
   logicData: [],           // 逻辑推理题库
   logicLoaded: false,      // 逻辑推理题是否已加载
+  leagueData: [],          // 联赛真题池（resource/all.json，2873 道）
+  leagueLoaded: false,     // 联赛真题是否已加载
   filteredQuestions: [],
   currentSet: [],
   currentIndex: 0,
@@ -602,7 +604,29 @@ async function loadPracticeQuestions() {
   }
 }
 
-/** 加载逻辑推理题库 */
+/**
+ * 加载联赛真题池（resource/all.json）。
+ * 由 scripts/build-league-pool.js 从单题资源聚合，已含判卷格式
+ * （single→options+字母、multiple/mtf→subQuestions）与 concept/年份/来源标签。
+ * 加载失败只告警不阻断（联赛题为增量内容，基础题池不受影响）。
+ */
+async function loadLeagueQuestions() {
+  if (PracticeState.leagueLoaded) return;
+  try {
+    const res = await _fetchLocalJsonWithRetry('resource/all.json');
+    if (!res.ok || !res.data || !Array.isArray(res.data.questions)) return;
+    const items = typeof window.filterQuestionList === 'function'
+      ? window.filterQuestionList(res.data.questions)
+      : res.data.questions;
+    PracticeState.leagueData = items.filter(function (q) { return !_isRecycledQuestion(q); });
+    PracticeState.leagueLoaded = true;
+    applyFilters();
+    updateAvailableCount();
+  } catch (e) {
+    console.warn('[Practice] 联赛真题池加载失败', e);
+  }
+}
+
 async function loadLogicQuestions() {
   if (PracticeState.logicLoaded) return;
   try {
@@ -622,6 +646,20 @@ async function loadLogicQuestions() {
   } catch (e) {
     console.warn('[Practice] 逻辑推理题库加载失败', e);
   }
+}
+
+/**
+ * 模块匹配：优先用题目自带 module 字段（联赛真题 subject 可能是大类「生物学」
+ * 无法按学科分组），无 module 时回退到学科 ∈ 已选模块的学科列表。
+ * @param {Object} q
+ * @param {string[]} activeSubjects 已选模块展开的学科列表
+ * @param {string[]} selectedModules 已选模块 id（module1..4）
+ */
+function _moduleMatches(q, activeSubjects, selectedModules) {
+  if (q && typeof q.module === 'string' && /^module_[1-4]$/.test(q.module)) {
+    return selectedModules.indexOf('module' + q.module.slice(-1)) >= 0;
+  }
+  return activeSubjects.indexOf(q && q.subject) >= 0;
 }
 
 function applyFilters() {
@@ -679,7 +717,7 @@ function applyFilters() {
 
   // 基础知识题（MTF 格式）
   let basicQuestions = PracticeState.allQuestions.filter((q) => {
-    const subjectMatch = allModulesSelected || activeSubjects.includes(q.subject);
+    const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
     const qDiff = diffNormalize(q.difficulty);
     const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
     const qTarget = inferTarget(q);
@@ -712,10 +750,36 @@ function applyFilters() {
   let logicQuestions = [];
   if (PracticeState.selectedCategory === 'all' || PracticeState.selectedCategory === 'logic') {
     logicQuestions = PracticeState.logicData.filter((q) => {
-      const subjectMatch = allModulesSelected || activeSubjects.includes(q.subject);
+      const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
       const qDiff = diffNormalize(q.difficulty);
       const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
       return subjectMatch && diffMatch;
+    });
+  }
+
+  // 联赛真题（single 单选 / multiple、mtf 对错子题；difficulty=league 归 medium）
+  // 仅并入「全部」类别；subject 可能为大类「生物学」，模块匹配优先用 q.module 字段
+  let leagueQuestions = [];
+  if (PracticeState.selectedCategory === 'all') {
+    leagueQuestions = PracticeState.leagueData.filter((q) => {
+      const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
+      const qDiff = diffNormalize(q.difficulty);
+      const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
+      const qTarget = inferTarget(q);
+      const targetMatch = allTargetsSelected || validTargets.includes(qTarget);
+      let conceptMatch = true;
+      if (conceptFilter) {
+        const exactConcept = q.concept === conceptFilter;
+        const inTags = q.tags && q.tags.indexOf(conceptFilter) >= 0;
+        const inQuestion = q.question && q.question.indexOf(conceptFilter) >= 0;
+        const inExplanation = q.explanation && q.explanation.indexOf(conceptFilter) >= 0;
+        conceptMatch = exactConcept || inTags || inQuestion || inExplanation;
+      }
+      let kgCategoryMatch = true;
+      if (PracticeState.kgCategory) {
+        kgCategoryMatch = q.subject === PracticeState.kgCategory;
+      }
+      return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch;
     });
   }
 
@@ -725,7 +789,7 @@ function applyFilters() {
   } else if (PracticeState.selectedCategory === 'logic') {
     PracticeState.filteredQuestions = logicQuestions;
   } else {
-    PracticeState.filteredQuestions = [...basicQuestions, ...logicQuestions];
+    PracticeState.filteredQuestions = [...basicQuestions, ...logicQuestions, ...leagueQuestions];
   }
 }
 
@@ -814,6 +878,28 @@ function _getMyVote(qId) {
     return (v === 1 || v === -1) ? v : 0;
   }
   return 0;
+}
+
+/**
+ * 渲染考试来源 tag（联赛真题带 year/source，按原标签规范复用既有
+ * .tag tag--outline 类目，不新增标签类别）：
+ * - 有 source（如「2001 年全国中学生生物学联赛（CnBO）第 1 题 · 试卷名」）
+ *   → 取「第 N 题」前的考试名短标签，完整信息放 title；
+ * - 无 source 但有 competition → 显示 competition 简称；
+ * - 两者皆无 → 返回空串（旧题库题不受影响）。
+ */
+function _renderExamSourceTag(q) {
+  if (!q) return '';
+  const src = typeof q.source === 'string' ? q.source.trim() : '';
+  if (src) {
+    const label = src.replace(/\s*第\s*\d+\s*题.*$/, '').trim() || src;
+    return '<span class="tag tag--outline" title="' + escapeHtml(src) + '">' +
+      escapeHtml(label.length > 40 ? label.slice(0, 40) + '…' : label) + '</span>';
+  }
+  if (q.competition) {
+    return '<span class="tag tag--outline">' + escapeHtml(String(q.competition)) + ' 真题</span>';
+  }
+  return '';
 }
 
 /**
@@ -2217,6 +2303,8 @@ function renderQuiz() {
           ${q.subject ? '<span class="tag tag--info">' + escapeHtml(q.subject) + '</span>' : ''}
           ${typeof renderDifficultyTag === 'function' ? renderDifficultyTag(qId, q.difficulty || 3) : (q.difficulty ? '<span class="tag ' + getDifficultyClass(q.difficulty) + '">' + getDifficultyLabel(q.difficulty) + '</span>' : '')}
           ${q.concept ? '<span class="tag tag--outline">' + escapeHtml(q.concept) + '</span>' : ''}
+          ${q.year ? '<span class="tag tag--outline">' + escapeHtml(String(q.year)) + ' 年</span>' : ''}
+          ${_renderExamSourceTag(q)}
           ${_renderRatingTag(q, qId)}
         </div>
       </div>
@@ -2503,13 +2591,13 @@ function showFilterPanel() {
   // 否则所有入口（含"本地题库"）初次进入时 allQuestions 为空，
   // 必须等用户点击"拉取题目"，而该按钮在本地模式下原先仍只请求 Supabase。
   if (!PracticeState.allQuestions || PracticeState.allQuestions.length === 0) {
-    Promise.all([loadPracticeQuestions(), loadLogicQuestions()]).then(function () {
+    Promise.all([loadPracticeQuestions(), loadLogicQuestions(), loadLeagueQuestions()]).then(function () {
       if (!document.getElementById('practice-root')) return;
       applyFilters();
       renderFilterPanel(); // 重建面板以显示"共 X 道可用题目"
     }).catch(function () {});
-  } else if (!PracticeState.logicLoaded) {
-    loadLogicQuestions().then(function () {
+  } else if (!PracticeState.logicLoaded || !PracticeState.leagueLoaded) {
+    Promise.all([loadLogicQuestions(), loadLeagueQuestions()]).then(function () {
       applyFilters();
       updateAvailableCount();
     }).catch(function () {});
@@ -2749,6 +2837,9 @@ function handleRedoQuestion(redoData) {
  * 确保题目至少有 4 个 subQuestions
  */
 function ensureMinSubQuestions(q) {
+  // 标准单选题（options+字母答案，如联赛真题 single）走单选渲染分支，
+  // 无需 subQuestions；灌入占位判断项反而会被误当作 MTF 判卷
+  if (QuestionModel.isStandardChoice(q)) return q;
   if (!Array.isArray(q.subQuestions) || q.subQuestions.length < 4) {
     var existing = q.subQuestions || [];
     var baseText = q.question || '';
@@ -2874,6 +2965,9 @@ function findPracticeQuestionByShareKey(shareKey) {
   if (Array.isArray(PracticeState.allQuestions) && PracticeState.allQuestions.length > 0) {
     pools.push(PracticeState.allQuestions);
   }
+  if (Array.isArray(PracticeState.leagueData) && PracticeState.leagueData.length > 0) {
+    pools.push(PracticeState.leagueData);
+  }
   if (Array.isArray(PracticeState.logicData) && PracticeState.logicData.length > 0) {
     pools.push(PracticeState.logicData);
   }
@@ -2908,6 +3002,9 @@ function findPracticeQuestionById(qid) {
   }
   if (Array.isArray(PracticeState.allQuestions) && PracticeState.allQuestions.length > 0) {
     pools.push(PracticeState.allQuestions);
+  }
+  if (Array.isArray(PracticeState.leagueData) && PracticeState.leagueData.length > 0) {
+    pools.push(PracticeState.leagueData);
   }
   if (Array.isArray(PracticeState.logicData) && PracticeState.logicData.length > 0) {
     pools.push(PracticeState.logicData);
@@ -2982,10 +3079,10 @@ async function handleShareQuestionDeepLink(shareKey, shareQid) {
   }
   showSpinner();
 
-  // 题库未加载时先拉取（与正常练习同源，覆盖 MTF 题库 + 逻辑推理题库）
+  // 题库未加载时先拉取（与正常练习同源，覆盖 MTF 题库 + 逻辑推理 + 联赛真题）
   if (!PracticeState.allQuestions || PracticeState.allQuestions.length === 0 || !PracticeState.logicLoaded) {
     try {
-      await Promise.all([loadPracticeQuestions(), loadLogicQuestions()]);
+      await Promise.all([loadPracticeQuestions(), loadLogicQuestions(), loadLeagueQuestions()]);
     } catch (e) {}
   }
 

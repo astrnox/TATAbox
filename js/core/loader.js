@@ -1768,11 +1768,12 @@ window.getQuestionBankCount = function () {
 };
 /**
  * 读取「可练题总数」＝ 模块精编题（manifest.total_questions）
- *                       + 逻辑推理题（data/logic_questions.json）。
+ *                       + 逻辑推理题（data/logic_questions.json）
+ *                       + 联赛真题（resource/count.json 的 playable）。
  * 首页「题库总量」与练习页默认「可用题目」共用同一口径：
- * 练习页默认类别为「全部」，题库 = 基础知识题 + 逻辑推理题，
+ * 练习页默认类别为「全部」，题库 = 基础知识题 + 逻辑推理题 + 联赛真题，
  * 若首页只显示 manifest.total_questions 会与练习页数字对不上。
- * @returns {Promise<number|null>} 无法获取模块题数时返回 null；逻辑题读取失败按 0 计
+ * @returns {Promise<number|null>} 无法获取模块题数时返回 null；逻辑/联赛题读取失败按 0 计
  */
 var _playableCountCache = null;
 window.getPlayableQuestionCount = function () {
@@ -1789,10 +1790,16 @@ window.getPlayableQuestionCount = function () {
       return (arr && arr.length) || 0;
     })
     .catch(function () { return 0; });
-  return Promise.all([moduleCountP, logicCountP]).then(function (r) {
+  // 联赛真题池计数：build-league-pool.js 生成的轻量 count.json（不拉 4.6MB 全量）
+  var leagueCountP = _fetchJSON('resource/count.json', null)
+    .then(function (data) {
+      return (data && (data.playable || 0)) || 0;
+    })
+    .catch(function () { return 0; });
+  return Promise.all([moduleCountP, logicCountP, leagueCountP]).then(function (r) {
     var moduleCount = r[0];
     if (!moduleCount) return null;
-    var total = moduleCount + r[1];
+    var total = moduleCount + r[1] + r[2];
     _playableCountCache = total;
     return total;
   }).catch(function () { return null; });

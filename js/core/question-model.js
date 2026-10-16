@@ -91,11 +91,18 @@ var QuestionModel = (function () {
    * @returns {string} 'module_1'..'module_4'，未收录科目返回 'general'
    */
   function getStatModuleKey(subjectOrQuestion) {
-    var s = (subjectOrQuestion && typeof subjectOrQuestion === 'object')
-      ? subjectOrQuestion.subject
-      : subjectOrQuestion;
-    if (typeof s !== 'string' || !s) return 'general';
-    return SUBJECT_MODULE_KEYS[s] || 'general';
+    var q = (subjectOrQuestion && typeof subjectOrQuestion === 'object')
+      ? subjectOrQuestion : null;
+    var s = q ? q.subject : subjectOrQuestion;
+    if (typeof s === 'string' && s) {
+      var key = SUBJECT_MODULE_KEYS[s];
+      if (key) return key;
+    }
+    // 未收录科目（如联赛真题的 subject 大类「生物学」）按题目自带模块兜底
+    if (q && typeof q.module === 'string' && /^module_[1-4]$/.test(q.module)) {
+      return q.module;
+    }
+    return 'general';
   }
 
   /* ======================= 题型归一 ======================= */
