@@ -1,0 +1,45 @@
+{
+ "id": "M1-33-0c38b7e142c8",
+ "type": "single",
+ "question": "地球上最早的细胞大约出现在＿亿年。",
+ "options": {
+  "A": "4-8",
+  "B": "8-12",
+  "C": "20-23",
+  "D": "36-38"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 33 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。4至8亿年前相当于古生代中期，多细胞生物已相当繁盛，远晚于细胞起源。B．错误。8至12亿年前真核多细胞生物已出现，最早的细胞化石远早于此。C．错误。20至23亿年前生命已进入真核细胞演化阶段，也不是原核细胞起源时间。D．正确。同位素与微体化石证据表明，约36至38亿年前地球上已出现最早的原核细胞，与地球约46亿年前形成后的早期演化相衔接。故答案为D。"
+}

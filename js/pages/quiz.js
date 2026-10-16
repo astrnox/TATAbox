@@ -9,11 +9,13 @@ let submitted = false;
 let dataLoaded = false;
 let logicLoaded = false;
 let selectedCategory = 'basic'; // 'basic' | 'logic' | 'mixed'
+let paperStartTime = 0;         // 出卷时间，交卷时算本卷时长（练习记录用）
 
-const SCORE_SINGLE = 3;
-const SCORE_MULTIPLE_FULL = 5;
-const SCORE_MULTIPLE_PARTIAL = 2;
-const SCORE_JUDGE = 3;
+// 分值常量：唯一权威在 js/core/question-model.js（QUIZ_SCORES），此处引用防漂移
+const SCORE_SINGLE = QuestionModel.QUIZ_SCORES.single;
+const SCORE_MULTIPLE_FULL = QuestionModel.QUIZ_SCORES.multiple;
+const SCORE_MULTIPLE_PARTIAL = QuestionModel.QUIZ_SCORES.multiplePartial;
+const SCORE_JUDGE = QuestionModel.QUIZ_SCORES.judge;
 const COUNT_SINGLE = 20;
 const COUNT_MULTIPLE = 5;
 const COUNT_JUDGE = 5;
@@ -298,6 +300,7 @@ function generateMixedPaper() {
 function startPaper(title) {
   userAnswers = {};
   submitted = false;
+  paperStartTime = Date.now();
 
   // 管理员对本地题库的覆盖修改（题干/选项/解析等）在出卷时生效
   if (typeof applyQuestionOverride === 'function') {
@@ -319,49 +322,25 @@ function startPaper(title) {
   if (label) label.textContent = '进行中';
 }
 
+// 题型标签 / 分值 / 选项标记 —— 唯一实现在 js/core/question-model.js（薄封装）
 function getTypeLabel(type) {
-  if (type === 'multiple') return '多选题';
-  if (type === 'judge') return '判断题';
-  if (type === 'mtf') return '多重判断题';
-  return '单选题';
+  return QuestionModel.getTypeLabel(type);
 }
 
 function getTypeScore(type) {
-  if (type === 'multiple') return SCORE_MULTIPLE_FULL;
-  if (type === 'judge') return SCORE_JUDGE;
-  if (type === 'mtf') return SCORE_SINGLE;
-  return SCORE_SINGLE;
+  return QuestionModel.getQuizTypeScore(type);
 }
 
 function getOptionLabels(type) {
-  if (type === 'judge') return ['正确', '错误'];
-  return ['A', 'B', 'C', 'D', 'E'];
+  return QuestionModel.getOptionLabels(type);
 }
 
 /**
- * 逻辑题 MTF 化的「有效子题」（与 practice.js getEffectiveSubQuestions 同一算法）：
- * - 已有 subQuestions（基础知识 MTF）直接返回；
- * - 逻辑题 type==='mtf' 且为 options 数组时，不改题干和选项文本，
- *   仅把每个选项转换为一条判断题陈述：正确性以 mtfTruth 为准
- *   （负向提问题「最不合理的是」等由 mtfTruth 显式给出每条陈述的真假）；
- *   缺省时按原单选题语义：原正确答案的选项 → 正确(true)，其余 → 错误(false)。
+ * 逻辑题 MTF 化的「有效子题」—— 薄封装，唯一实现在 question-model.js
+ * （原有两份实现曾漂移导致同题两页判分相反，见 PR #165 / mtf-consistency 测试）。
  */
 function getEffectiveSubQuestions(q) {
-  if (!q || typeof q !== 'object') return [];
-  if (Array.isArray(q.subQuestions)) return q.subQuestions;
-  if (q.type === 'mtf' && Array.isArray(q.options)) {
-    var truth = (Array.isArray(q.mtfTruth) && q.mtfTruth.length === q.options.length)
-      ? q.mtfTruth
-      : q.options.map(function (_, idx) { return idx === q.answer; });
-    return q.options.map(function (text, idx) {
-      return {
-        label: 'ABCDEFGH'.charAt(idx),
-        text: String(text),
-        answer: !!truth[idx]
-      };
-    });
-  }
-  return [];
+  return QuestionModel.getEffectiveSubQuestions(q);
 }
 
 function getCategoryLabel(category) {
@@ -436,6 +415,7 @@ function renderPaper() {
           ${_examVoteHtml(i)}
         </div>
         <div class="pq-text">${escapeHtml(q.question).replace(/\n/g, '<br>')}</div>
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '第 ' + (i + 1) + ' 题配图' }) : ''}
         ${isMultiple ? '<div class="pq-multi-hint">此题为多选题，请选择所有正确答案</div>' : ''}
         ${isMtf ? '<div class="pq-multi-hint">此题为多重判断题，请对每条陈述判断「正确」或「错误」</div>' : ''}
         <div class="pq-options">
@@ -831,53 +811,13 @@ function _examHandleVote(qIdx, vote) {
   }
 }
 
+/**
+ * 单题判定（'full' | 'partial' | 'none'）—— 薄封装：
+ * 唯一实现在 question-model.js 的 gradeQuestion(q, ua, 'quiz').verdict
+ * （含「MTF 未全部作答按零分」「多选半对」等口径）。
+ */
 function getSingleQuestionScore(q, i) {
-  const qType = q.type || 'single';
-  const userAns = userAnswers[i];
-
-  if (qType === 'single' || qType === 'judge') {
-    return userAns === q.answer ? 'full' : 'none';
-  }
-
-  if (qType === 'mtf') {
-    const subQuestions = getEffectiveSubQuestions(q);
-    if (subQuestions.length === 0) return 'none';
-    if (!userAns || typeof userAns !== 'object' || Array.isArray(userAns)) return 'none';
-
-    let correctCount = 0;
-    let answeredCount = 0;
-    subQuestions.forEach((sq, idx) => {
-      const ua = userAns[idx];
-      if (ua !== true && ua !== false) return; // 未作答按错误计
-      answeredCount++;
-      if (ua === sq.answer) correctCount++;
-    });
-    if (answeredCount < subQuestions.length) return 'none'; // 未全部作答
-    if (correctCount === subQuestions.length) return 'full';
-    if (correctCount > 0) return 'partial';
-    return 'none';
-  }
-
-  if (qType === 'multiple') {
-    if (!Array.isArray(userAns) || userAns.length === 0) return 'none';
-
-    const correctAns = Array.isArray(q.answer) ? q.answer : [q.answer];
-    const userSet = new Set(userAns);
-    const correctSet = new Set(correctAns);
-
-    const allCorrect = userSet.size === correctSet.size &&
-      [...userSet].every(v => correctSet.has(v));
-    if (allCorrect) return 'full';
-
-    const hasAnyCorrect = [...userSet].some(v => correctSet.has(v));
-    const hasAnyWrong = [...userSet].some(v => !correctSet.has(v));
-
-    if (hasAnyCorrect && !hasAnyWrong) return 'partial';
-
-    return 'none';
-  }
-
-  return 'none';
+  return QuestionModel.gradeQuestion(q, userAnswers[i], 'quiz').verdict;
 }
 
 function calculateScore() {
@@ -971,6 +911,47 @@ function submitPaper() {
       });
     } catch (e) { /* 静默失败 */ }
   }
+
+  // 统一落盘入口（js/core/record-session.js）——quiz 首次接入全局体系：
+  // 逐题 question（模块统计/难度自适应/错题本云端复习卡）+ finish（练习记录
+  // saveRecord / bio 分六维重算与云端同步）。quiz 不给信用点（MODULE_POINTS
+  // 无 quiz 配置），故 points:false；统计已逐题写入，finish 传 stats:false 防双计。
+  if (window.BioQuestSession && typeof window.BioQuestSession.question === 'function') {
+    currentPaper.forEach(function (q, i) {
+      var qBio = getQuestionBioId(q);
+      // recordWrongAnswer 需要 id/question_id：用稳定 bioID 兜底
+      var qRef = (qBio && !q.id) ? Object.assign({}, q, { id: qBio }) : q;
+      window.BioQuestSession.question({
+        module: 'quiz',
+        q: qRef,
+        correct: getSingleQuestionScore(q, i) === 'full',
+        points: false
+      });
+    });
+  }
+  if (window.BioQuestSession && typeof window.BioQuestSession.finish === 'function') {
+    window.BioQuestSession.finish({
+      module: 'quiz',
+      duration: paperStartTime ? Math.floor((Date.now() - paperStartTime) / 1000) : 0,
+      questions: currentPaper.map(function (q, i) {
+        var g = QuestionModel.gradeQuestion(q, userAnswers[i], 'quiz');
+        return {
+          q: q,
+          questionId: getQuestionBioId(q),
+          userAnswers: userAnswers[i] || {},
+          score: g.score,
+          totalScore: g.maxScore,
+          correctSubs: g.correct,
+          totalSubs: g.total,
+          // 统一口径：全对才算对（部分得分的多选/MTF 计错）
+          correct: g.verdict === 'full'
+        };
+      }),
+      stats: false,
+      checkin: false
+    });
+  }
+
   renderPaper();
 }
 

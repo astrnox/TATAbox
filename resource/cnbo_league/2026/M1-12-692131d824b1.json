@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-692131d824b1",
+ "type": "mtf",
+ "question": "线粒体在细胞衰老过程中有重要功能，判断下列陈述的正误：",
+ "options": {
+  "A": "线粒体正常能量代谢过程中的产物也会参与细胞衰老进程；",
+  "B": "自噬清除受损的线粒体有利于延缓细胞衰老进程；",
+  "C": "线粒体DNA 会积累突变，从而影响其功能，加速衰老进程；",
+  "D": "衰老细胞的线粒体出现代谢重编程，提高其ATP 的生成效率。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 12 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。线粒体呼吸链副产的活性氧（ROS）等正常代谢产物会损伤细胞组分，参与衰老进程。B．正确。线粒体自噬（mitophagy）及时清除受损线粒体，减少ROS与损伤信号，有利于延缓衰老。C．正确。mtDNA缺乏组蛋白保护且修复能力有限，易积累突变，导致呼吸功能下降、加速衰老。D．错误。衰老细胞线粒体的代谢重编程使氧化磷酸化效率和ATP生成能力下降，而非提高。"
+}

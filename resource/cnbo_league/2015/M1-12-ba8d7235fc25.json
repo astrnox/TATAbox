@@ -1,0 +1,50 @@
+{
+ "id": "M1-12-ba8d7235fc25",
+ "type": "single",
+ "question": "大肠杆菌DNA 复制过程中，下列哪种酶不参加该生物学过程：",
+ "options": {
+  "A": "DNA 聚合酶",
+  "B": "RNA 聚合酶",
+  "C": "DNA 连接酶",
+  "D": "RNA 酶",
+  "E": "端粒酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 12 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。DNA聚合酶催化子链延伸，参与复制。B．错误。RNA聚合酶（引物酶）合成RNA引物，参与复制起始。C．错误。DNA连接酶连接冈崎片段，参与复制。D．错误。RNase等RNA酶切除RNA引物，参与复制过程。E．正确。端粒酶解决的是真核生物线性染色体末端的复制问题，大肠杆菌为原核生物、染色体呈环状，其复制不需端粒酶。故答案为E。\n【易错易混】易混：原核环状染色体复制不涉及端粒酶，端粒酶只与真核线性染色体末端复制有关，见到'原核复制用端粒酶'即错。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

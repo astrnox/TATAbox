@@ -1,0 +1,45 @@
+{
+ "id": "M1-65-7de2c536ad8e",
+ "type": "single",
+ "question": "癌细胞与正常细胞的不同之处在于",
+ "options": {
+  "A": "癌细胞不能合成DNA",
+  "B": "癌细胞被锁定在细胞周期中的S 期",
+  "C": "癌细胞能持续分裂尽管彼此紧密相接",
+  "D": "癌细胞始终处于细胞周期中的分裂期"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 65 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。癌细胞DNA复制旺盛，合成能力并不缺失。B．错误。癌细胞并非锁定在S期，而是细胞周期失控，可持续进入周期。C．正确。正常细胞有接触抑制，长满后停止分裂；癌细胞失去接触抑制，彼此紧密相接时仍持续分裂甚至重叠生长。D．错误。癌细胞并非始终处于分裂期，只是增殖失控、处于G0期的细胞比例减少。故答案为C。"
+}

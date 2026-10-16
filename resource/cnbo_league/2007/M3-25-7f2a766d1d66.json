@@ -1,0 +1,45 @@
+{
+ "id": "M3-25-7f2a766d1d66",
+ "type": "single",
+ "question": "节肢动物是动物界最大的一个门类，其生活方式有游泳、爬行、固着、飞行等。下列节肢动物中，生活方式与上述一一对应的是：",
+ "options": {
+  "A": "水蚤、寄居蟹、卤虫、蜜蜂",
+  "B": "沼虾、龙虾、卤虫、天牛",
+  "C": "水蚤、鲎、藤壶、普通卷甲虫",
+  "D": "磷虾、螯虾、藤壶、蜻蜓"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 25 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。水蚤游泳、寄居蟹爬行可对应，但卤虫是浮游游泳生活，不是固着，蜜蜂才是飞行。B．错误。沼虾游泳、龙虾爬行、天牛飞行可对应，卤虫并非固着生活。C．错误。水蚤游泳、藤壶固着可对应，但鲎为底栖爬行，普通卷甲虫（鼠妇）也是爬行而非飞行。D．正确。磷虾游泳、螯虾爬行、藤壶成体固着、蜻蜓飞行，与游泳、爬行、固着、飞行一一对应。故答案为D。"
+}

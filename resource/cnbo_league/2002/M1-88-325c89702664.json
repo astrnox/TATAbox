@@ -1,0 +1,48 @@
+{
+ "id": "M1-88-325c89702664",
+ "type": "single",
+ "question": "在植物生活周期中，与世代交替相联系并作为它们特征的两种重要过程是：",
+ "options": {
+  "A": "有丝分裂、减数分裂",
+  "B": "减数分裂、受精作用",
+  "C": "有丝分裂、受精作用",
+  "D": "无丝分裂、有丝分裂"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 88 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。有丝分裂是孢子体、配子体各自增殖生长的方式，不改变染色体倍性，不是世代交替的标志性过程。B．正确。世代交替中孢子体（2n）经减数分裂产生孢子（n），配子体产生配子、经受精作用形成合子（2n），染色体数目在两个世代间有规律地交替。C．错误。有丝分裂不涉及世代交替的转折，与受精作用的组合不完整。D．错误。无丝分裂与世代交替无关。故答案为B。\n【易错易混】易混：减数分裂使2n→n、受精作用使n→2n，二者才是世代交替的转折点；有丝分裂只是各世代内部的增殖方式。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

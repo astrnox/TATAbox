@@ -1,0 +1,82 @@
+{
+ "id": "M3-48-a0b0bd3c1bad",
+ "type": "single",
+ "question": "如图描绘了肾单位不同部位水的重吸收，其中错误的是：",
+ "options": {
+  "A": "图中A；",
+  "B": "图中B；",
+  "C": "图中C；",
+  "D": "图中D；",
+  "E": "图中E。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 48 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-48-a0b0bd3c1bad/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 417,
+  "bbox": [
+   219.6,
+   338.7,
+   375.8,
+   491.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-48-a0b0bd3c1bad/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 417,
+   "bbox": [
+    219.6,
+    338.7,
+    375.8,
+    491.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】本题要求选出标注错误的一项，判断词指该选项是否合题意。A．错误（表述成立）。近曲小管重吸收约 65%~70% 的水，与滤过量成比例，标注正确。B．错误（表述成立）。髓袢降支细段对水通透、水被渗透性重吸收，标注正确。D．错误（表述成立）。集合管在抗利尿激素作用下重吸收水，标注正确。E．错误（表述成立）。远曲小管与集合管对水的重吸收受激素调节，标注正确。C．正确（应选）。髓袢升支粗段对水不通透、不重吸收水，图中 C 处却标为重吸收水，标注错误，正是应选项。故答案为C。\n【通法】通法（肾单位水重吸收逐段对号）：近曲与降支等渗重吸收、升支粗段只吸盐不吸水、集合管激素把关，逐段核对图中标注。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

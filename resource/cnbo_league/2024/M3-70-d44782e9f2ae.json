@@ -1,0 +1,45 @@
+{
+ "id": "M3-70-d44782e9f2ae",
+ "type": "multiple",
+ "question": "以下关于突触的表述正确的有：",
+ "options": {
+  "A": "突触由突触前膜、突触间隙和突触后膜三部分构成；",
+  "B": "树突棘与学习和记忆过程有关；",
+  "C": "突触只传递化学信号；",
+  "D": "长时程增强和突触可塑性相关。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 70 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。突触由突触前膜、突触间隙与突触后膜三部分构成。B．正确。树突棘形态与数量的可塑性变化是学习与记忆的结构基础之一。C．错误。突触除化学突触外还有电突触，'只传递化学信号'过于绝对。D．正确。长时程增强（LTP）是突触可塑性的重要形式，与学习记忆密切相关。故答案为ABD。"
+}

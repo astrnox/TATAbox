@@ -1,0 +1,48 @@
+{
+ "id": "M1-46-0d17cd41c4ff",
+ "type": "single",
+ "question": "研究DNA 在细胞中的代谢，常用的同位素标记物为:",
+ "options": {
+  "A": "14C-戊糖",
+  "B": "32P-磷酸",
+  "C": "15N-鸟嘌呤",
+  "D": "3H-胸腺嘧啶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 46 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。14C-戊糖既可进入DNA也可进入RNA，不能专一标记DNA。B．错误。32P-磷酸会掺入DNA、RNA以及ATP、磷脂等含磷分子，特异性差。C．错误。鸟嘌呤同时存在于DNA和RNA中，15N-鸟嘌呤无法区分二者。D．正确。胸腺嘧啶是DNA特有的碱基（RNA中为尿嘧啶），3H标记的胸腺嘧啶核苷专一掺入DNA，是研究DNA代谢的常用示踪剂（严格说标记物应为胸腺嘧啶脱氧核苷，即胸苷）。故答案为D。\n【易错易混】易混：专一标记DNA用3H-胸腺嘧啶核苷，标记RNA用3H-尿嘧啶核苷；32P、14C、15N标记均无核酸种类专一性。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

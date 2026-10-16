@@ -1,0 +1,45 @@
+{
+ "id": "M2-37-f2bb371fca84",
+ "type": "single",
+ "question": "三叶虫繁盛和衰落的时代分别是：",
+ "options": {
+  "A": "元古代和古生代",
+  "B": "古生代和古生代",
+  "C": "古生代和中生代",
+  "D": "中生代和中生代"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 37 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。三叶虫出现于古生代早期而非元古代。B．正确。三叶虫在早古生代（寒武纪、奥陶纪）繁盛，志留纪以后逐渐衰落，至二叠纪末全部灭绝，繁盛和衰落都在古生代。C．错误。三叶虫在古生代末已经灭绝，并未延续到中生代。D．错误。中生代已无三叶虫分布。故答案为B。"
+}

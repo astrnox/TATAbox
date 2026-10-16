@@ -1,0 +1,45 @@
+{
+ "id": "M1-51-54d36c828926",
+ "type": "single",
+ "question": "身体可以敏感地“测量”哪个分子的浓度变化？",
+ "options": {
+  "A": "葡萄糖",
+  "B": "氨基酸",
+  "C": "CO2",
+  "D": "O2"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 51 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。血糖浓度主要由胰岛素和胰高血糖素等激素调节，身体对其变化并无快速灵敏的测量装置。B．错误。氨基酸浓度的变化没有专一的快速感受机制。C．正确。延髓中枢化学感受器和颈动脉体、主动脉体外周化学感受器对CO2分压变化极敏感，CO2升高即反射性地加深加快呼吸。D．错误。对缺氧敏感的只有外周化学感受器，其敏感性远低于对CO2的感受。故答案为C。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M3-82-6f99b3309cd7",
+ "type": "single",
+ "question": "有两种达尔文雀，在同一分布区内它们的喙形状和大小具有明显的不同，但在不同的分布区的两种个体的喙表现出相似的形状和大小，这种现象最合理的理论解释是",
+ "options": {
+  "A": "相互干涉竞争",
+  "B": "似然竞争",
+  "C": "渐变群",
+  "D": "生态位分化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 82 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。相互干涉竞争指通过行为相互干扰，与喙型分化无直接关系。B．错误。似然竞争指共享捕食者的表观竞争，不解释喙型差异。C．错误。渐变群描述性状的地理连续变化，不能解释同域分化、异域趋同的格局。D．正确。同域分布时为减少食物竞争而发生生态位分化，喙型分化；异域时无竞争压力，喙型趋同。故答案为D。"
+}

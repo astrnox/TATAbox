@@ -1,0 +1,45 @@
+{
+ "id": "M1-14-f6e4078050b0",
+ "type": "single",
+ "question": "下列哪一项不是细胞凋亡的特征：",
+ "options": {
+  "A": "细胞凋亡是一种程序化过程",
+  "B": "细胞凋亡不引起炎症",
+  "C": "DNA 降解",
+  "D": "细胞凋亡起源于原核生物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 14 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是细胞凋亡特征的一项，判断词指该选项是否合题意。A．错误。凋亡由基因编程控制、经caspase级联执行，是程序化过程，表述成立。B．错误。凋亡细胞形成凋亡小体并被邻近细胞或巨噬细胞吞噬，内容物不外泄，故不引起炎症，表述成立。C．错误。凋亡时内切核酸酶被激活，DNA在核小体间被切成约180 bp整数倍的片段，电泳呈梯状条带，表述成立。D．正确。该表述不成立：细胞凋亡是真核细胞的程序性死亡方式，原核生物没有以caspase为核心的凋亡机制，不能说起源于原核生物，正是应选项。故答案为D。"
+}

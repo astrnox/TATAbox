@@ -1,0 +1,48 @@
+{
+ "id": "M1-14-1f7264ef1633",
+ "type": "single",
+ "question": "拟南芥叶肉细胞有5 对染色体，下列关于拟南芥细胞染色体数目叙述正确的是",
+ "options": {
+  "A": "成熟花粉粒中的营养细胞有10 条染色体",
+  "B": "珠被细胞有10 条染色体",
+  "C": "胚乳细胞5 条染色体",
+  "D": "胚囊细胞有10 条染色体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 14 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。成熟花粉粒的营养细胞由花粉细胞有丝分裂而来，仍为单倍体n＝5条。B．正确。珠被属母本孢子体组织，为二倍体，染色体10条。C．错误。胚乳由受精极核发育，为三倍体，应为15条而非5条。D．错误。胚囊（雌配子体）为单倍体n＝5条。故答案为B。\n【通法】通法（染色体计数）：先定倍性——孢子体组织2n、配子体与配子n、胚乳3n，再乘以2n＝10即可逐项核对。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

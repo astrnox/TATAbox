@@ -1,0 +1,48 @@
+{
+ "id": "M2-28-d357eaa4397b",
+ "type": "single",
+ "question": "肌丝滑行学说的直接根据是肌肉收缩时的什么变化？",
+ "options": {
+  "A": "肌小节的长度不变",
+  "B": "暗带长度不变，明带和H 带不变",
+  "C": "暗带长度不变，明带和H 带缩短",
+  "D": "明带和暗带缩短"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 28 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。收缩时肌小节长度缩短，并非不变。B．错误。暗带长度不变正确，但明带和 H 带会缩短，说其不变与事实相反。C．正确。肌丝滑行学说的直接依据是：收缩时肌小节缩短而粗肌丝（暗带）长度不变，即明带和 H 带缩短甚至消失，说明是细肌丝向 M 线方向滑行。D．错误。暗带长度由粗肌丝决定，收缩时不变短。故答案为C。\n【通法】通法（肌小节变化判断）：收缩时 A 带不变、I 带与 H 带缩短、Z 线靠拢；抓住暗带不变这一关键判据。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

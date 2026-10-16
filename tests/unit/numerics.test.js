@@ -51,7 +51,8 @@ function loadDiagnosis() {
   const src = fs.readFileSync(DIAG_SRC, 'utf8')
     + '\n;window.__cap={DIAGNOSIS_MODULES:DIAGNOSIS_MODULES,computeModuleRanking:computeModuleRanking,' +
       'computeTypeAnalysis:computeTypeAnalysis,computeWeakPoints:computeWeakPoints,DIAGNOSIS_RULES:DIAGNOSIS_RULES};';
-  new Function('window', src)(win);
+  // QuestionModel（题型归一内核）作为参数注入，与浏览器全局同名
+  new Function('window', 'QuestionModel', src)(win, require('../../js/core/question-model.js'));
   return win.__cap;
 }
 

@@ -1,0 +1,45 @@
+{
+ "id": "M3-23-93acdaa4e5cc",
+ "type": "single",
+ "question": "下列关于鸟类分类中的对趾足的说法哪一个是正确的？",
+ "options": {
+  "A": "对趾足是鸟的第一、第二趾向前，第三、第四趾向后",
+  "B": "对趾足是鸟的第二、第三趾向前，第一、第四趾向后",
+  "C": "对趾足是鸟的第三、第四趾向前，第一、第二趾向后",
+  "D": "对趾足是鸟的第一、第四趾向前，第二、第三趾向后"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 23 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。第一、第二趾向前、第三、第四趾向后不是标准趾型。B．正确。对趾足为第二、第三趾向前，第一、第四趾向后，如啄木鸟、鹦鹉，便于攀援抓握。C．错误。第三、第四趾向前、第一、第二趾向后恰与对趾足相反。D．错误。第一、第四趾向前、第二、第三趾向后也不符合对趾足的排列。故答案为B。"
+}

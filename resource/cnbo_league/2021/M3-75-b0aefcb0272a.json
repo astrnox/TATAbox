@@ -1,0 +1,45 @@
+{
+ "id": "M3-75-b0aefcb0272a",
+ "type": "multiple",
+ "question": "昆虫对寄主植物偏好选择的影响因素包括：",
+ "options": {
+  "A": "植物的生长不同阶段呈现出不同的特征状态",
+  "B": "昆虫的发育存在季节性，如二化性昆虫在不同代的寄主选择具有偏好",
+  "C": "温度变化引起植物化学成分的变化会影响昆虫的寄主偏好选择",
+  "D": "可能的捕食者的存在是昆虫进行寄主选择的一个因素"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 75 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。植物不同生长阶段的物候与化学特征不同，影响昆虫产卵与取食选择。B．正确。二化性等昆虫不同世代的寄主选择存在偏好差异。C．正确。温度变化引起植物化学成分变化，会进而影响昆虫的寄主偏好，该因素成立。D．正确。捕食者存在会改变昆虫的取食地点选择，是寄主选择的影响因素之一。故答案为ABCD。"
+}

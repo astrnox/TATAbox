@@ -1,0 +1,48 @@
+{
+ "id": "M3-69-3d0e05f7b97d",
+ "type": "multiple",
+ "question": "以下关于神经组织的表述，正确的有：",
+ "options": {
+  "A": "成熟的神经元可以不断分裂；",
+  "B": "星形胶质细胞有营养支持的作用；",
+  "C": "星形胶质细胞参与了血脑屏障的形成；",
+  "D": "星形胶质细胞能对一些神经活性物质产生反应。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 69 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "三. 动物生理学、动物学、生态学（共27 题，45 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。成熟神经元高度分化、不再分裂，损伤后多不可再生补充。B．正确。星形胶质细胞为神经元提供营养支持与代谢维护。C．正确。星形胶质细胞的血管周足包绕毛细血管，参与血脑屏障形成。D．正确。星形胶质细胞可摄取并响应谷氨酸等神经活性物质，调节突触微环境。故答案为BCD。\n【易错易混】易混：神经组织三类胶质细胞分工——星形胶质支持+血脑屏障、少突胶质髓鞘化、小胶质吞噬，勿与神经元功能混淆。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

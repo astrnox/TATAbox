@@ -1,0 +1,73 @@
+{
+ "id": "M4-95-3b70e0a530e2",
+ "type": "single",
+ "question": "紫竹梅又名紫鸭拓草，是鸭拓草科的多年生草本植物，紫竹梅体细胞的染色体数目为 24。下图是紫竹梅花粉母细胞减数分裂的观察，终变期是：",
+ "options": null,
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 95 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-95-3b70e0a530e2/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 237,
+  "bbox": [
+   90.0,
+   281.4,
+   512.3,
+   377.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-95-3b70e0a530e2/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2015 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 237,
+   "bbox": [
+    90.0,
+    281.4,
+    512.3,
+    377.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图A所示为减数分裂终变期的分裂相，此时同源染色体高度凝缩、二价体分散于核区内，核仁核膜开始消失。B．错误。图B所示不是终变期的分裂相。C．错误。图C所示不是终变期的分裂相。D．错误。图D所示不是终变期的分裂相。E．错误。图E所示不是终变期的分裂相。故答案为A。"
+}

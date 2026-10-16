@@ -1,0 +1,48 @@
+{
+ "id": "M4-116-8da0f4a9d8c2",
+ "type": "single",
+ "question": "具有如下基因型的雄果蝇A/a，B/b，CDE/cde 产生纯隐性配子的概率是",
+ "options": {
+  "A": "1/2",
+  "B": "1/4",
+  "C": "1/8",
+  "D": "不能确定"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 116 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "第四部分 （9 道题13 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。1/2只考虑了一对基因的分离。B．错误。1/4只相当于两对基因自由组合时的比例。C．正确。雄果蝇不发生交叉互换，A/a产生a配子的概率1/2，B/b产生b的概率1/2，CDE/cde产生cde的概率1/2，三者独立相乘得1/8。D．错误。基因型与交换情况已给定，可以确定。故答案为C。\n【通法】通法（配子概率连乘）：求纯隐性配子概率＝各位点产生隐性等位基因的概率连乘，雄果蝇完全连锁不影响非同源基因间的自由组合。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

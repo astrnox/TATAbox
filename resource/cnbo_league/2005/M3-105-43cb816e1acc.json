@@ -1,0 +1,45 @@
+{
+ "id": "M3-105-43cb816e1acc",
+ "type": "mtf",
+ "question": "下列哪些组合是正确的？",
+ "options": {
+  "A": "鳄—槽生齿，双枕髁，合颞窝",
+  "B": "鸟类—单枕髁，跗间关节，双颞窝",
+  "C": "中轴骨—胸骨，锁骨，肩胛骨",
+  "D": "人类—合颞窝，结肠，双枕髁"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "15.A（×）B（√）C（×）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 15 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。鳄类确为槽生齿，但其头骨为双颞窝型且枕骨只有一个枕髁，后两项皆错，组合不成立。B．正确。鸟类单枕髁，后肢有跗间关节（胫跗骨与跗跖骨之间的关节），头骨由双颞窝型演化而来，组合成立。C．错误。胸骨属中轴骨，但锁骨和肩胛骨属肩带，归附肢骨骼，组合不成立。D．正确。人类属合颞窝型（由合颞窝爬行类演化而来），结肠是大肠的主要部分，且枕骨有两个枕髁，组合成立。"
+}

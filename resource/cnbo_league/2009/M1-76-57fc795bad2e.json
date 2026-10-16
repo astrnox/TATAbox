@@ -1,0 +1,45 @@
+{
+ "id": "M1-76-57fc795bad2e",
+ "type": "single",
+ "question": "花药发育过程中，单核花粉（即小孢子）形成的过程是：",
+ "options": {
+  "A": "造孢细胞→孢原细胞→花粉母细胞→小孢子",
+  "B": "花粉母细胞→孢原细胞→造孢细胞→小孢子",
+  "C": "孢原细胞→花粉母细胞→造孢细胞→小孢子",
+  "D": "孢原细胞→造孢细胞→花粉母细胞→小孢子"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 75 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。造孢细胞由孢原细胞分裂产生，二者顺序颠倒。B．错误。孢原细胞是最先出现的原始细胞，不可能由花粉母细胞产生。C．错误。花粉母细胞由造孢细胞转变而来，二者顺序颠倒。D．正确。孢原细胞平周分裂产生造孢细胞和初生壁细胞，造孢细胞长大成为花粉母细胞（小孢子母细胞），再经减数分裂形成单核花粉即小孢子。故答案为D。"
+}

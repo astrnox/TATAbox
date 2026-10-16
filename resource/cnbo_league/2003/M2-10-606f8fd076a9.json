@@ -1,0 +1,48 @@
+{
+ "id": "M2-10-606f8fd076a9",
+ "type": "single",
+ "question": "自然界最小的细胞是",
+ "options": {
+  "A": "病毒",
+  "B": "支原体",
+  "C": "血小板",
+  "D": "细菌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 10 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。病毒无细胞结构，仅由核酸和蛋白质外壳构成，根本不是细胞。B．正确。支原体无细胞壁，直径仅0.1～0.3微米，是目前已知能独立生活的最小原核细胞。C．错误。血小板是骨髓巨核细胞脱落的细胞质碎片，体积远大于支原体。D．错误。一般细菌细胞明显大于支原体。故答案为B。\n【易错易混】易混：最小的'生物'常被误答为病毒，但病毒无细胞结构；自然界最小的细胞是支原体，两者别混。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": "M4-07-252921dcb8f3",
+ "type": "mtf",
+ "question": "如下图所示，在未处理或辐射（IR）处理的细胞中，检测了第5、83、89、280、387 以及570 位Ser （S）突变为Ala（A）后GCN5 的磷酸化（p-SQ/TQ）（图A），以及野生型GCN5（WT）或突变体与XLF 的相互作用（图B），在敲低GCN5 (shGCN5) 细胞中回补野生型及其突变体后NHEJ 修复效率的差异（图C）。根据实验结果，判断以下陈述的正误：",
+ "options": {
+  "A": "GCN5 的磷酸化修饰受到IR 处理的正调控；",
+  "B": "GCN5 上述丝氨酸位点中第5 位最关键；",
+  "C": "GCN5 第5 位的丝氨酸磷酸化修饰抑制GCN5 与XLF 的相互作用；",
+  "D": "在GCN5 敲低细胞中回补GCN5 S5A 突变体才能挽救NHEJ 的修复效率。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 7 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "6-7",
+  "stimulus": "对XLF 蛋白的乳酸化修饰进行研究。在细胞中分别转染带有HA 的野生型XLF（HA-XLF 或HA-"
+ },
+ "image": {
+  "file": "assets/questions/M4-07-252921dcb8f3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   131.8,
+   267.3,
+   467.5,
+   356.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-07-252921dcb8f3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    131.8,
+    267.3,
+    467.5,
+    356.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。辐射（IR）处理后GCN5的p-SQ/TQ信号增强，说明其磷酸化受IR正调控。B．正确。各Ser→Ala突变体中，S5A的影响最大，表明第5位丝氨酸最关键。C．错误。由图B，S5位磷酸化并未抑制GCN5与XLF的相互作用（突变后互作变化的方向与此相反）。D．错误。S5A回补并非唯一能挽救NHEJ效率的处理，'才能'过于绝对。"
+}

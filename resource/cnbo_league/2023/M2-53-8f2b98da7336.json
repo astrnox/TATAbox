@@ -1,0 +1,48 @@
+{
+ "id": "M2-53-8f2b98da7336",
+ "type": "single",
+ "question": "刚成熟的种子处于休眠状态。请判断种子在成熟过程中，下列两种激素的变化趋势是：",
+ "options": {
+  "A": "脱落酸升高、赤霉素升高",
+  "B": "脱落酸降低、赤霉素升高",
+  "C": "脱落酸升高、赤霉素降低",
+  "D": "脱落酸降低、赤霉素降低"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 53 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。赤霉素升高会打破休眠，与刚成熟种子处于休眠不符。B．错误。脱落酸降低不利于维持休眠。C．正确。种子成熟过程中脱落酸升高以维持休眠，赤霉素降低，二者共同保证休眠状态。D．错误。脱落酸降低无法解释休眠的建立。故答案为C。\n【易错易混】易混：休眠与萌发是激素跷跷板——脱落酸踩刹车、赤霉素踩油门；成熟时升 ABA 降 GA，萌发时倒过来。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

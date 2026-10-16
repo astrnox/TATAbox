@@ -1,0 +1,49 @@
+{
+ "id": "M1-62-86ba1fb59c4f",
+ "type": "single",
+ "question": "基于以上实验结果，下列叙述，正确的是：",
+ "options": {
+  "A": "气孔关闭是因为液泡内的Ca2+流入细胞质而引起的",
+  "B": "气孔关闭是因为细胞质中的K+的外流而引起的",
+  "C": "气孔关闭是因为细胞外的K+停止内流而引起的",
+  "D": "气孔关闭是因为细胞质中的Cl-的外流而引起的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 62 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "（61-63 题共用题干）植物在遇到干旱时，叶片表面的气孔会关闭，以减少水分蒸腾，"
+ },
+ "explanation": "【解析】A．错误。实验显示气孔关闭与液泡Ca2+外流无直接对应，钙信号是上游事件而非直接原因。B．正确。实验结果支持气孔关闭由保卫细胞胞质中K+外流、渗透压下降失水所致。C．错误。K+内流停止影响的是开放而非关闭的直接机制。D．错误。Cl-外流虽参与，但题干结果直接指向K+外流。故答案为B。"
+}

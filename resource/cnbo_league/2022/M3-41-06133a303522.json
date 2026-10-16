@@ -1,0 +1,45 @@
+{
+ "id": "M3-41-06133a303522",
+ "type": "multiple",
+ "question": "兰科是被子植物第二大科，主要分布在热带和亚热带地区。尽管该科植物的形态变异较大，但形态学和分子系统学的研究都表明兰科是一个单系类群。造成兰科物种多样性如此丰富的可能原因有：",
+ "options": {
+  "A": "传粉昆虫的多样性",
+  "B": "生境的多样性",
+  "C": "花为两侧对称",
+  "D": "合蕊柱"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 41 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。热带亚热带传粉昆虫高度多样，与兰科专性传粉关系协同，推动物种分化。B．正确。兰科广布于多种生境，异质生境促进地理隔离与物种形成。C．错误。花为两侧对称是兰科全体共有的共有衍征，不能解释科内物种为何如此丰富。D．错误。合蕊柱同样是全科共有的保守特征，与多样性成因无关。故答案为AB。"
+}

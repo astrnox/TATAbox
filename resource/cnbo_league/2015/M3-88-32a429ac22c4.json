@@ -1,0 +1,48 @@
+{
+ "id": "M3-88-32a429ac22c4",
+ "type": "multiple",
+ "question": "下列现象属于全球气候变化的是：",
+ "options": {
+  "A": "雾霾现象",
+  "B": "厄尔尼诺现象",
+  "C": "拉尼娜现象",
+  "D": "北大西洋涛动现象"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 88 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。雾霾是局地大气污染现象，属区域环境问题，不属于全球气候变化。B．正确。厄尔尼诺是大尺度的全球气候异常现象，属全球气候变化范畴。C．正确。拉尼娜现象与厄尔尼诺相反，同属全球气候变动。D．正确。北大西洋涛动是影响全球气候的重要气候模态，属全球气候变化现象。故答案为BCD。\n【易错易混】易混：全球气候变化指厄尔尼诺、拉尼娜、涛动、全球变暖等大尺度气候变动；雾霾、酸雨、水华属局地或区域环境问题，两者层次不同。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

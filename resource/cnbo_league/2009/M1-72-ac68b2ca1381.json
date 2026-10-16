@@ -1,0 +1,48 @@
+{
+ "id": "M1-72-ac68b2ca1381",
+ "type": "single",
+ "question": "肌丝滑行理论的直接证据是骨骼肌收缩时：",
+ "options": {
+  "A": "明带、暗带和H 带长度均缩短",
+  "B": "明带缩短，暗带和H 带长度不变",
+  "C": "暗带长度缩短，明带和H 带不变",
+  "D": "明带和H 带缩短，暗带长度不变"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 71 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。暗带由粗肌丝构成，长度不缩短。B．错误。明带缩短属实，但细肌丝滑入粗肌丝之间时H带也随之缩短。C．错误。暗带长度不变而非缩短。D．正确。收缩时细肌丝向M线方向滑入，明带和H带缩短、暗带长度不变，肌小节缩短，这正是肌丝滑行理论的直接证据。故答案为D。\n【通法】通法（肌小节变化）：收缩时'明带变窄、H带变窄、暗带不变、Z线靠拢'，四句口诀对应滑行方向与幅度。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

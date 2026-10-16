@@ -1,0 +1,45 @@
+{
+ "id": "M1-58-4bcdb5914c6c",
+ "type": "single",
+ "question": "热变性的DNA 分子，在适当条件下可以复性，条什之一是",
+ "options": {
+  "A": "浓缩",
+  "B": "加入无机盐",
+  "C": "骤然冷却",
+  "D": "缓慢冷却"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 58 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。复性对样品并无'浓缩'要求，浓度过高反而易引起非特异聚集。B．错误。适宜盐浓度虽利于屏蔽磷酸基负电荷，但'加入无机盐'并非复性特有的关键条件。C．错误。骤然冷却使变性链滞留在单链状态，互补链来不及正确配对。D．正确。复性（退火）是互补链逐渐识别配对的缓慢过程，缓慢冷却可给碱基配对充足时间，是复性的条件之一。故答案为D。"
+}

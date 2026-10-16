@@ -1,0 +1,48 @@
+{
+ "id": "M1-73-d3e8bf008f8c",
+ "type": "single",
+ "question": "下面哪项不是叶绿体内共生起源学说的证据：",
+ "options": {
+  "A": "叶绿体靠裂殖方式分裂",
+  "B": "叶绿体DNA 大小在100kb-200kb 之间",
+  "C": "有的叶绿体含有藻胆体",
+  "D": "有的原核光合生物含有叶绿素b"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 73 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是证据的一项，判断词指该选项是否合题意。A．错误。叶绿体以裂殖方式增殖，与细菌的二分裂相似，表述成立，是证据。B．正确。叶绿体基因组仅100~200kb，远小于蓝细菌的数Mb，基因组大小悬殊不能作为内共生的证据，该表述不成立，正是应选项。C．错误。灰胞藻等的叶绿体含藻胆体，与蓝藻的光合结构同源，表述成立。D．错误。原绿藻等原核光合生物含叶绿素b，与叶绿体色素相呼应，表述成立。故答案为B。\n【通法】通法（内共生证据）：抓'像细菌'的特征——二分裂、双层膜、环状DNA、70S核糖体、与蓝细菌系统同源；基因组大小悬殊者不属证据。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-18-3cf3b5a16b95",
+ "type": "single",
+ "question": "白喉棒杆菌的致病因素是：",
+ "options": {
+  "A": "内毒素",
+  "B": "外毒素",
+  "C": "侵袭酶类",
+  "D": "荚膜"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 18 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。内毒素是革兰氏阴性菌细胞壁的脂多糖成分，白喉棒状杆菌是革兰氏阳性菌，不产内毒素。B．正确。白喉棒状杆菌产生白喉外毒素，其A亚基使真核细胞的EF-2失活、抑制蛋白质合成而致病。C．错误。侵袭酶类（如透明质酸酶）帮助细菌在组织中扩散，不是白喉的主要致病因素。D．错误。荚膜与抗吞噬有关（如肺炎链球菌），白喉棒状杆菌致病不依赖荚膜。\n【通法】通法（细菌毒素辨识）：外毒素多为革兰氏阳性菌分泌的蛋白质，毒性强、可制成类毒素；内毒素是阴性菌细胞壁脂多糖，毒性弱、致发热休克，记住阳外阴内。故答案为B。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

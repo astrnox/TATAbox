@@ -1,0 +1,45 @@
+{
+ "id": "M1-45-8276be3ecd9b",
+ "type": "single",
+ "question": "在温度超过体温的高温操作间工作时，体表主要通过方式散热。",
+ "options": {
+  "A": "传导",
+  "B": "对流",
+  "C": "辐射",
+  "D": "蒸发"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 45 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。传导散热要求体表温度高于接触介质，环境温度超过体温时传导反而得热。B．错误。对流同样依赖体表与介质温差，高温环境中对流不能散热。C．错误。辐射散热要求体表温度高于环境温度，高温环境下体表反而吸收辐射热。D．正确。当环境温度超过体温，传导、对流、辐射均不能散热，唯一途径是出汗等蒸发散热。故答案为D。"
+}

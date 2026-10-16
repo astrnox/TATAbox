@@ -1,0 +1,48 @@
+{
+ "id": "M1-44-37173e5eee5f",
+ "type": "single",
+ "question": "实验室常规高压蒸汽灭菌的条件是：",
+ "options": {
+  "A": "140℃，5-15 秒",
+  "B": "72℃，15 分钟",
+  "C": "121℃，20 分钟",
+  "D": "100℃，5 分钟"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 44 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。140℃数秒是超高温瞬时灭菌（UHT）的条件，多用于食品工业。B．错误。72℃15分钟接近巴氏消毒条件，不能杀死细菌芽孢。C．正确。常规高压蒸汽灭菌在121℃（约0.1 MPa表压）下维持15至20分钟以上，可杀死包括芽孢在内的全部微生物。D．错误。100℃5分钟只能杀死营养体，芽孢仍存活。故答案为C。\n【易错易混】易混：高压蒸汽灭菌121℃15至20分钟、干热灭菌160至170℃1至2小时、巴氏消毒63℃30分钟或72℃15秒，温度时间组合勿互相串用。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

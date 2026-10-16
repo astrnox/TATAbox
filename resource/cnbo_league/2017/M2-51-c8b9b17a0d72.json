@@ -1,0 +1,45 @@
+{
+ "id": "M2-51-c8b9b17a0d72",
+ "type": "single",
+ "question": "细胞分裂素的特异效应表现在：",
+ "options": {
+  "A": "促进不定根的形成",
+  "B": "抑制侧芽生长",
+  "C": "延迟开花",
+  "D": "促进愈伤组织分化不定芽（丛芽）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 51 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。促进不定根形成是生长素的效应。B．错误。抑制侧芽生长体现的是顶端优势，与生长素相关。C．错误。延迟开花不是细胞分裂素的特异效应。D．正确。细胞分裂素促进细胞分裂与芽的分化，在组织培养中诱导愈伤组织分化形成不定芽（丛芽）是其特异效应。故答案为D。"
+}

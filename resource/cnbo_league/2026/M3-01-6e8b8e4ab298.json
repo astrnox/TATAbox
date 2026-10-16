@@ -1,0 +1,48 @@
+{
+ "id": "M3-01-6e8b8e4ab298",
+ "type": "mtf",
+ "question": "以下都是关于抗体的论述，判断每个选项的正误：",
+ "options": {
+  "A": "抗体广泛分布于体液和粘膜系统，在适应性免疫中发挥关键作用；",
+  "B": "抗体需要在细胞质基质中进行糖基化修饰，然后分泌至细胞外；",
+  "C": "Western blot 实验第二抗体通常结合第一抗体的Fc 片段从而实现信号放大；",
+  "D": "IgG 通过木瓜蛋白酶水解可以获得Fab 片段，该片段在PAGE 中为25kDa 左右。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "免疫系统",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 1 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。抗体广泛分布于血清等体液和粘膜（分泌型IgA），是适应性免疫体液免疫的核心分子。B．错误。抗体属于分泌蛋白，其糖基化修饰发生在内质网和高尔基体腔面（分泌途径），而非细胞质基质。C．正确。Western blot中二抗识别并结合一抗的Fc片段，一个一抗可被多个二抗结合，从而实现信号放大。D．正确。木瓜蛋白酶将IgG水解为两个Fab和一个Fc；还原条件下Fab的组成链（轻链与Fd）分子量约25 kDa，在PAGE中呈现相应条带。\n【易错易混】易混：木瓜蛋白酶切IgG→2 Fab＋Fc（Fab完整单价）；胃蛋白酶切→F(ab')₂＋pFc'（保留双价）。做Western放大用二抗，认的是一抗Fc。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

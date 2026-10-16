@@ -1,0 +1,45 @@
+{
+ "id": "M1-72-a618a231bbe0",
+ "type": "single",
+ "question": "动物和植物细胞中的丙酮酸在厌氧环境中都会发生酵解反应，下列哪一化合物不是该反应的直接产物",
+ "options": {
+  "A": "乙醇",
+  "B": "NAD+",
+  "C": "乳酸",
+  "D": "CO2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 72 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是直接产物的一项，判断词指该选项是否合题意。A．正确。乙醇不是该反应的直接产物，正是应选项：乙醇由丙酮酸脱羧为乙醛后再还原生成，属酵母及部分植物组织的酒精发酵，而动植物共有的这条无氧酵解是丙酮酸还原为乳酸。B．错误。表述成立，NADH还原丙酮酸的同时再生NAD+，是该反应的直接产物。C．错误。表述成立，乳酸正是该反应的直接产物。D．错误。按官方标答CO2被计入产物（该官方标答存此一说）：若严格按乳酸发酵计量并无CO2生成，官方于此的处理值得商榷。故答案为A。"
+}

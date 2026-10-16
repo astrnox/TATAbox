@@ -1,0 +1,81 @@
+{
+ "id": "M1-27-e3bba01aea5e",
+ "type": "single",
+ "question": "假设基因X 在骨和皮肤这2 个组织中并不转录表达，那么从显影结果得到的具有结合活性的蛋白可能是什么类型的转录因子？有可能和什么蛋白结合？",
+ "options": {
+  "A": "转录激活蛋白；组蛋白乙酰基转移酶",
+  "B": "转录激活蛋白；DNA 甲基转移酶",
+  "C": "转录抑制蛋白；组蛋白去乙酰化酶",
+  "D": "转录抑制蛋白；DNA 去甲基化酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 27 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "（25-27 题共用题干）电泳迁移率变动分析（EMSA）是一种研究DNA 结合蛋白和相"
+ },
+ "image": {
+  "file": "assets/questions/M1-27-e3bba01aea5e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 310,
+  "bbox": [
+   208.9,
+   575.8,
+   386.5,
+   728.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-27-e3bba01aea5e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 310,
+   "bbox": [
+    208.9,
+    575.8,
+    386.5,
+    728.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。若为激活蛋白则基因应表达，与骨和皮肤中不转录矛盾。B．错误。同理，激活蛋白不能解释不表达。C．正确。基因在这两个组织中不转录，说明结合上游序列的是转录抑制蛋白，其常招募组蛋白去乙酰化酶使染色质紧缩。D．错误。去甲基化通常与激活相关，不能解释基因不表达。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-63-3d5d28ee346b",
+ "type": "single",
+ "question": "破伤风抗毒素是以 为抗原注射于马体后得到的可治疗破伤风病的生物制品",
+ "options": {
+  "A": "外毒素",
+  "B": "内毒素",
+  "C": "类毒素",
+  "D": "破伤风杆菌"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 63 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。外毒素毒性强，直接作免疫原风险大，且免疫效果不如类毒素稳定。B．错误。内毒素是革兰阴性菌的脂多糖，破伤风梭菌是革兰阳性菌，抗内毒素血清也中和不了外毒素。C．正确。破伤风抗毒素是用破伤风类毒素（甲醛脱毒、保留抗原性）免疫马，采血清提纯所得的抗体制剂，可紧急预防和治疗破伤风。D．错误。用全菌免疫得到的主要是抗菌抗体，不能中和破伤风痉挛毒素。故答案为C。\n【点睛】点睛：类毒素免疫马得抗毒素、类毒素接种人体防病——脱毒而保免疫原性是类毒素的核心，抗毒素属马源抗体，为被动免疫。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

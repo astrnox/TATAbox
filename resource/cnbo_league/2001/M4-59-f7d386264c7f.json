@@ -1,0 +1,48 @@
+{
+ "id": "M4-59-f7d386264c7f",
+ "type": "single",
+ "question": "现有甲(AABBCC)和乙(aabbcc)两个品系的果蝇杂交，然后对其F1 代进行测交，结果各表现型的个数如下： ABC121 只、AbC24 只、aBc25 只、abc120 只，由此推知F1 代的基因型是。",
+ "options": {
+  "A": "ABCabc",
+  "B": "ACBacb",
+  "C": "AbabCc",
+  "D": "AcacBb"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 59 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。若基因顺序为A-B-C（ABC/abc），A-B或B-C交换应产生Abc、aBC、ABc、abC等重组型，与实测四种表型不符。B．正确。测交后代中ABC（121）和abc（120）为亲本型，AbC（24）和aBc（25）为重组型；A与C始终相伴出现（无Abc、aBC类），说明A、C完全连锁，B与它们之间发生约17%的交换，故基因顺序为A-C-B，相位为ACB/acb。C．错误。该写法相当于A与b连锁、C独立分配，与实测中A、C总是连在一起相矛盾。D．错误。该写法相当于A与c连锁，其亲本型应为AbC和aBc，与实测亲本型ABC、abc正好相反。故答案为B。\n【通法】通法（测交定相位）：先以数量多少区分亲本型（多的两类）与重组型（少的两类），再看哪两个基因从不单独分开——始终同现者即完全连锁，按相位写成同一条染色体的组合。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

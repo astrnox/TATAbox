@@ -1,0 +1,77 @@
+{
+ "id": "M4-33-ad5262b9f21f",
+ "type": "single",
+ "question": "科学家研究了GI 基因在植物对高温反应中的作用，下图中Col-0 为野生型拟南芥，gi- 2 为GI 基因突变体。根据图中的数据分析，下列结论中证据最不充分的是：",
+ "options": {
+  "A": "野生型拟南芥和gi-2 突变体下胚轴的长度在23℃下没有明显差异；",
+  "B": "野生型拟南芥和gi-2 突变体下胚轴的长度在28℃下有明显差异；",
+  "C": "高温更有利于gi-2 突变体下胚轴的生长；",
+  "D": "GI 基因参与拟南芥对高温的反应，"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 33 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-33-ad5262b9f21f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 414,
+  "bbox": [
+   92.9,
+   185.5,
+   502.2,
+   364.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-33-ad5262b9f21f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 414,
+   "bbox": [
+    92.9,
+    185.5,
+    502.2,
+    364.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】本题要求选出证据最不充分的一项，判断词指该选项是否合题意。A．错误（表述成立）。23℃下两组下胚轴长度无明显差异，可直接从图读出。B．错误（表述成立）。28℃下两组差异明显，同样可直接从图读出。C．错误（表述成立）。gi-2 在 28℃下下胚轴更长，说明高温更利于其伸长，可从图读出。D．正确（应选）。仅凭下胚轴表型尚不足以证明 GI 基因参与高温反应，该结论属于功能推论，还需分子层面证据，证据最不充分。故答案为D。"
+}

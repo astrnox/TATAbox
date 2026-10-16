@@ -1,0 +1,80 @@
+{
+ "id": "M3-76-c655c29f4244",
+ "type": "multiple",
+ "question": "家燕（Hirundo rustica）的尾羽上有明显的白斑，雄鸟在求偶时会向雌鸟展示白斑。一般来说，雌鸟若被雄鸟吸引则会在繁殖后代上投入更多的资源。科学家为了探究白斑在家燕繁殖中的作用，用黑色记号笔涂抹雄鸟的白斑后观察雌鸟繁殖后代的情况。实验共有四个处理：涂抹掉白斑尖部（Tipremoval）、涂抹掉白斑侧面（sideremoval）、全部涂抹掉（completeremoval）和对照组（meancontrol）。观察指标包括：第一窝繁殖（firstbrood）的产卵日期（layingdate）、每窝卵数（clutchsize）和每窝雏鸟数（broodsize），第二窝繁殖的发生与不发生之比（presence/absence）、每窝卵数（clutchsize）和每窝雏鸟数（broodsize），产卵总数（totalno. ofeggs），雏鸟总数（total no. of fledglings）。所得数据用广义线性模型进行统计分析，结果如下表，其中χ2 为统计参量，df 为自由度，P 为概率， mean 为平均数，SE 为标准差。请问，下列表述中哪些是正确的？",
+ "options": {
+  "A": "雌鸟和白斑侧面被涂抹掉的雄鸟交配后，进行第二次繁殖的比例显著高于对照组",
+  "B": "雌鸟和白斑尖部被涂抹掉的雄鸟交配后，产卵总数显著低于对照组",
+  "C": "雌鸟第一窝雏鸟数在四种处理间没有显著性差异",
+  "D": "不论怎样，只要雄鸟白斑侧面被涂抹掉，与之交配的雌鸟就会产更多的卵，抚育更多的雏鸟"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 76 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-76-c655c29f4244/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 297,
+  "bbox": [
+   90.0,
+   203.1,
+   506.8,
+   361.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-76-c655c29f4244/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 297,
+   "bbox": [
+    90.0,
+    203.1,
+    506.8,
+    361.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。数据显示白斑侧面被涂抹的雄鸟交配后，雌鸟进行第二次繁殖的比例显著高于对照组，该表述与统计结果相符。B．错误。产卵总数在尖部涂抹组与对照组间无显著差异，'显著低于'不成立。C．正确。第一窝雏鸟数在四种处理间无显著性差异，表述与结果相符。D．错误。'不论怎样……就会产更多的卵'是绝对化表述，数据仅显示部分指标的特定变化。故答案为AC。\n【通法】通法（读统计结果表）：先看P值是否小于0.05判定显著性，再看mean比较方向；凡'显著''更多''不论怎样'等词必须有对应P值支持，否则即错。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

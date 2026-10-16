@@ -1,0 +1,48 @@
+{
+ "id": "M1-55-5056e4bab91f",
+ "type": "single",
+ "question": "蜻蜒的幼体生活于水中，具临时性呼吸器官，称为：",
+ "options": {
+  "A": "幼虫",
+  "B": "稚虫",
+  "C": "若虫",
+  "D": "一龄幼虫"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 55 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。幼虫是完全变态类昆虫幼期的称呼，不是蜻蜓幼体的专名。B．正确。蜻蜓属不完全变态（半变态），幼体水生、以直肠鳃或尾鳃等临时器官呼吸，称为稚虫（俗称水虿）（题干'蜻蜒'应为'蜻蜓'）。C．错误。若虫指陆生不完全变态昆虫的幼期，体态与成虫相近。D．错误。一龄是对龄期的称呼，不是此类幼体的名称。故答案为B。\n【易错易混】易混：水生半变态幼体称稚虫，陆生半变态幼体称若虫，完全变态幼体称幼虫、静止期称蛹。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

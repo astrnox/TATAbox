@@ -1,0 +1,48 @@
+{
+ "id": "M2-29-f2941e3e3c70",
+ "type": "single",
+ "question": "固体培养基使用下列哪种物质作为凝固剂最好？",
+ "options": {
+  "A": "明胶",
+  "B": "琼脂",
+  "C": "果胶",
+  "D": "纤维素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 29 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。明胶虽可作凝固剂，但凝固点仅约 20 至 25 摄氏度，培养时常会融化，且能被多种微生物分解，只用于特殊培养基。B．正确。琼脂从红藻中提取，凝固点高、熔点约 100 摄氏度，一般微生物不能分解，透明且耐高压蒸汽灭菌，是固体培养基最理想的凝固剂。C．错误。果胶是植物细胞壁成分，成胶性能差且易被微生物降解，不宜作凝固剂。D．错误。纤维素不溶于水，不能形成凝胶，仅可用作纤维素分解菌的选择底物。故答案为B。\n【点睛】点睛：选凝固剂看三点——凝固点高、不被微生物分解、耐高压蒸汽灭菌，琼脂三条全占。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

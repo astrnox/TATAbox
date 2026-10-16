@@ -1,0 +1,48 @@
+{
+ "id": "M4-113-6334ed0b78be",
+ "type": "multiple",
+ "question": "紫外线可以引起 DNA 发生哪些变化：",
+ "options": {
+  "A": "缺失",
+  "B": "重复",
+  "C": "移码",
+  "D": "形成嘧啶二聚体"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 113 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。紫外线引起的DNA损伤在修复过程中可导致缺失。B．正确。修复过程同样可发生重复。C．正确。紫外线造成的损伤及修复可引起移码突变。D．正确。紫外线的主要作用是使DNA上相邻的嘧啶形成嘧啶二聚体。故答案为ABCD。\n【通法】通法（紫外线损伤）：直接效应=嘧啶二聚体；修复出错的次级效应=缺失、重复、移码，凡问紫外线引起的DNA变化均可选。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

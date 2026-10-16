@@ -1,0 +1,45 @@
+{
+ "id": "M1-80-e4e79f5a700a",
+ "type": "single",
+ "question": "蘑菇的伞状子实体又称：",
+ "options": {
+  "A": "子座",
+  "B": "子实层",
+  "C": "担子果",
+  "D": "子囊果"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 79 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。子座是菌丝形成的垫状或头状结构，如麦角菌的子座，并非伞状子实体的名称。B．错误。子实层是子实体表面产生担子或子囊的一层组织，只是子实体的一部分。C．正确。蘑菇属担子菌，其伞状子实体由大量菌丝组织构成，特称担子果，是产生担孢子的结构。D．错误。子囊果是子囊菌产生子囊孢子的子实体，如羊肚菌和盘菌。故答案为C。"
+}

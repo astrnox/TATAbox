@@ -1,0 +1,48 @@
+{
+ "id": "M1-114-39f4cb665a4f",
+ "type": "mtf",
+ "question": "下面哪些（种）有关性别决定的说法正确？",
+ "options": {
+  "A": "哺乳类的性别是由XY 染色体决定的",
+  "B": "植物没有性染色体",
+  "C": "染色体数目可能决定性别",
+  "D": "有的动物是雌雄同体的"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 14 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。哺乳类为XY型性别决定，Y染色体上的SRY基因启动雄性发育通路。B．错误。植物同样有性染色体，如女娄菜、菠菜、银杏等雌雄异株植物具有性染色体，故'植物没有性染色体'不成立。C．正确。染色体数目可决定性别，如蜜蜂等膜翅目昆虫单倍体为雄、二倍体为雌，果蝇则由X染色体与常染色体组数之比决定性别。D．正确。不少动物为雌雄同体，如蚯蚓、蜗牛等软体动物和多数扁形动物，同一个体能产生两种配子。\n【点睛】点睛：性别决定机制多样，XY、ZW、XO、单倍-二倍体及环境型并存，'性染色体决定'只是其中一种。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

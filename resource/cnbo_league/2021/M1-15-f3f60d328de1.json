@@ -1,0 +1,80 @@
+{
+ "id": "M1-15-f3f60d328de1",
+ "type": "multiple",
+ "question": "在研究两种可逆抑制剂1 和2 对某种酶的酶促反应速度影响实验中，分别测定了不同底物浓度下酶促反应的速度，通过双倒数作图得出下图结果。在下列相关叙述中，正确的是：",
+ "options": {
+  "A": "抑制剂1 是反竞争性抑制剂，该抑制剂只与酶-底物复合物相结合发挥作用",
+  "B": "抑制剂2 是非竞争性抑制剂，该抑制剂与酶结合位点和底物与酶结合位点不同，不影响酶的Km 值",
+  "C": "1/Vmax 是无抑制剂直线在纵坐标上的截距",
+  "D": "无抑制剂直线在横坐标上的截距是Km 的负倒数"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 15 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-15-f3f60d328de1/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 387,
+  "bbox": [
+   200.9,
+   571.2,
+   393.7,
+   664.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-15-f3f60d328de1/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 387,
+   "bbox": [
+    200.9,
+    571.2,
+    393.7,
+    664.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。由图中直线关系可知抑制剂 1 与无抑制剂直线相交于纵轴，属竞争性抑制（Km 增大、Vmax 不变），并非只与酶-底物复合物结合的反竞争性抑制，A 不成立。B．正确。抑制剂 2 与无抑制剂直线交于横轴同一点，Km 不变、Vmax 降低，为非竞争性抑制，与酶的别构位点结合，不影响 Km。C．正确。双倒数作图中纵坐标截距为 1/Vmax。D．正确。横坐标截距为 Km 的负倒数即 -1/Km。故答案为BCD。\n【通法】通法（双倒数图判抑制型）：交于纵轴为竞争性（Km 变、Vmax 不变），交于横轴为非竞争性（Vmax 变、Km 不变），两线平行为反竞争性（两者同变）；纵截距读 1/Vmax，横截距读 -1/Km。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

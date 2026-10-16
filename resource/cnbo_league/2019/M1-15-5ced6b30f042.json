@@ -1,0 +1,45 @@
+{
+ "id": "M1-15-5ced6b30f042",
+ "type": "single",
+ "question": "染色质重塑是一种重要的生物学现象，指染色质的立体空间结构发生变化从而导致一些转录调控蛋白可以和DNA 序列结合。下列描述，不属于染色质重塑机制的是",
+ "options": {
+  "A": "组蛋白上的氨基酸发生磷酸化",
+  "B": "组蛋白上的氨基酸发生甲基化",
+  "C": "DNA 的C 和G 碱基上添加甲基基团",
+  "D": "DNA 序列中部分碱基发生突变"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 15 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不属于染色质重塑机制的一项，判断词指该选项是否合题意。A．错误。组蛋白磷酸化改变组蛋白与DNA结合状态，属重塑机制，表述成立。B．错误。组蛋白甲基化影响染色质状态与转录因子可及性，表述成立。C．错误。DNA甲基化（C、G碱基上添加甲基）调控染色质结构，表述成立。D．正确。碱基突变改变的是DNA序列本身，不属染色质立体结构的重塑，正是应选项。故答案为D。"
+}

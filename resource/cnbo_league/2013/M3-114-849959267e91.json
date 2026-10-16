@@ -1,0 +1,48 @@
+{
+ "id": "M3-114-849959267e91",
+ "type": "single",
+ "question": "小进化是指种内的个体和种群层次上的进化改变。小进化的基本单位是",
+ "options": {
+  "A": "个体基因型",
+  "B": "生物个体",
+  "C": "种群",
+  "D": "个体表型"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 114 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 （9 道题13 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。个体基因型会随突变与重组改变，但小进化关注的是基因频率在群体中的变化，单位不是个体基因型。B．错误。个体是自然选择作用的对象，却不是进化改变的基本单位。C．正确。小进化发生在种内个体与种群层次，种群既是繁殖单位也是进化的基本单位，进化的实质是种群基因频率的改变。D．错误。个体表型是选择作用的表现，不能作为进化的基本单位。故答案为C。\n【点睛】点睛：进化的单位是种群，选择的对象是个体，两者别混——个体被选择，基因频率在种群中改变。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

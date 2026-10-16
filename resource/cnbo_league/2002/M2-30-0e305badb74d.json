@@ -1,0 +1,48 @@
+{
+ "id": "M2-30-0e305badb74d",
+ "type": "single",
+ "question": "在农业生产实践中，欲打破种子休眠，促进性别分化，促使植物抽苔开花，应选用",
+ "options": {
+  "A": "KT",
+  "B": "2,4-D",
+  "C": "GA3",
+  "D": "ABA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 30 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。KT是激动素（细胞分裂素类），主要促进细胞分裂、延缓衰老，不能有效打破种子休眠和诱导抽苔开花。B．错误。2,4-D是生长素类调节剂，高浓度可作除草剂，主要用于促生根、诱导愈伤组织或除草。C．正确。赤霉素（GA3）可打破种子休眠、显著促进茎伸长而抽苔开花，并影响性别分化（如促进黄瓜等开雄花）。D．错误。ABA是脱落酸，促进休眠、抑制萌发、促进脱落，作用与题意相反。故答案为C。\n【通法】通法（激素功能对号）：促分裂找细胞分裂素，破休眠、促抽苔找赤霉素，促生根防落果找生长素，促休眠脱落找脱落酸，催熟找乙烯。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

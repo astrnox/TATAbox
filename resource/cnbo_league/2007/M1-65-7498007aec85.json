@@ -1,0 +1,47 @@
+{
+ "id": "M1-65-7498007aec85",
+ "type": "single",
+ "question": "处于休眠期的种子，其内部的细胞大都处于：",
+ "options": {
+  "A": "G1 期",
+  "B": "S 期",
+  "C": "M 期",
+  "D": "G2 期",
+  "E": "G0 期"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 65 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。G1 期是DNA 合成前的生长期，休眠细胞代谢极低并不在此生长。B．错误。S 期进行DNA 复制，休眠种子细胞不复制DNA。C．错误。M 期为分裂期，休眠细胞不分裂。D．错误。G2 期是分裂准备期，同样不符合休眠状态。E．正确。休眠种子细胞代谢受抑、不增殖，处于静止的G0 期，吸水萌发后才重返细胞周期。故答案为E。"
+}

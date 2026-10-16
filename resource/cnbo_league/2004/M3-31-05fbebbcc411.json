@@ -1,0 +1,45 @@
+{
+ "id": "M3-31-05fbebbcc411",
+ "type": "single",
+ "question": "湖水表面的冰层对生活在湖泊中鱼类的影响包括 ①缺氧不利于鱼生活 ②降低水温下降的速度 ③增加了水中的氨 ④降低了水温",
+ "options": {
+  "A": "①",
+  "B": "①+②",
+  "C": "①+②+③",
+  "D": "①+③+④"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 31 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。①缺氧确是冰层的影响，但仅此一项不全面，遗漏了保温作用。B．正确。①冰层隔断水气界面使溶解氧补给受阻，越冬鱼易缺氧窒息；②冰是热的不良导体，可减缓湖水继续降温，两者均为冰层的影响。C．错误。③增加水中氨不是冰层的直接影响。D．错误。③不成立，且④降低水温与冰层保温减缓降温的实际作用相反。综上①②正确，故答案为B。"
+}

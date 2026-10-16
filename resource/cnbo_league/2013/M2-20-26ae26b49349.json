@@ -1,0 +1,48 @@
+{
+ "id": "M2-20-26ae26b49349",
+ "type": "single",
+ "question": "某些细菌的细胞壁含有脂多糖成分，它属于",
+ "options": {
+  "A": "外毒素",
+  "B": "内毒素",
+  "C": "类毒素",
+  "D": "抗毒素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 20 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。外毒素是细菌分泌到胞外的蛋白质毒素，而脂多糖位于细胞壁内，不属此类。B．正确。脂多糖是革兰氏阴性菌细胞壁成分，其脂质A部分具毒性，随菌体裂解释放引起发热等反应，即内毒素。C．错误。类毒素是外毒素经甲醛处理后的产物，与脂多糖无关。D．错误。抗毒素是抗毒素抗体，属免疫产物而非细菌成分。故答案为B。\n【通法】通法（外毒素与内毒素）：外毒素＝分泌的蛋白、毒性强、可脱毒成类毒素；内毒素＝革兰氏阴性菌壁的脂多糖、随裂解释放，见'LPS'即想内毒素。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

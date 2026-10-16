@@ -1,0 +1,45 @@
+{
+ "id": "M3-95-1c4241ea26bd",
+ "type": "single",
+ "question": "下列哪一组都是表皮衍生物",
+ "options": {
+  "A": "汗腺鹿角指甲",
+  "B": "圆鳞栉鳞鸟羽",
+  "C": "角质鳞犀角指甲",
+  "D": "乳腺羚羊角盾鳞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 95 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。汗腺属表皮衍生物，但鹿角由真皮骨化而成，属真皮衍生物，组合不全为表皮来源。B．错误。圆鳞、栉鳞是鱼类的真皮骨质鳞，只有鸟羽来自表皮，属混装。C．正确。角质鳞由表皮角质层特化，犀角由表皮角质纤维集结而成，指甲由表皮角质细胞增生角化形成，三者均源自表皮。D．错误。乳腺属表皮衍生物，但羚羊角为骨质的真皮衍生物，盾鳞亦为真皮来源。故答案为C。"
+}

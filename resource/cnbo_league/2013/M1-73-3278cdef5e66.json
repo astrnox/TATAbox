@@ -1,0 +1,45 @@
+{
+ "id": "M1-73-3278cdef5e66",
+ "type": "multiple",
+ "question": "下列组织的细胞中染色体数目与其体细胞染色体数目相等的是",
+ "options": {
+  "A": "甜菜的外胚乳细胞",
+  "B": "荠菜的子叶细胞",
+  "C": "百合的胚乳细胞",
+  "D": "水杉的胚乳细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 73 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。甜菜的外胚乳由珠心组织发育而来，珠心属孢子体二倍体组织，细胞染色体数与体细胞相同。B．正确。荠菜的子叶是胚的一部分，胚由受精卵发育而来，同为二倍体，染色体数与体细胞相等。C．错误。百合的胚乳由受精极核发育而来，为三倍体，染色体数是体细胞的1.5倍。D．错误。水杉为裸子植物，其所谓胚乳由雌配子体发育而来，为单倍体，染色体数只有体细胞的一半。故答案为AB。"
+}

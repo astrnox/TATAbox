@@ -1,0 +1,49 @@
+{
+ "id": "M3-56-77e21f331bb9",
+ "type": "single",
+ "question": "根据科学家们的分析，这种动物的分类系统地位应属于：",
+ "options": {
+  "A": "节肢动物",
+  "B": "头索动物",
+  "C": "尾索动物",
+  "D": "脊椎动物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 56 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "55-56",
+  "stimulus": "人们对美国出土的约3 亿多年前一种奇怪动物的分类系统地位一直存在较大的争"
+ },
+ "explanation": "【解析】A．错误。若该动物具脊索、脊椎等特征，其地位已超出节肢动物。B．错误。头索动物（如文昌鱼）终生具脊索但无真正的脊椎骨。C．错误。尾索动物（如海鞘）成体多退化，与题组描述不符。D．正确。结合本题所属题组的分析，该动物具有脊索与脊椎等脊索、脊椎动物的关键特征，分类地位应属于脊椎动物。故答案为D。"
+}

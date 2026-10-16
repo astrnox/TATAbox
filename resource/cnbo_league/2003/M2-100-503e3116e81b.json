@@ -1,0 +1,45 @@
+{
+ "id": "M2-100-503e3116e81b",
+ "type": "single",
+ "question": "下列四组生物中，都属于真核生物的一组是：",
+ "options": {
+  "A": "噬菌体和根霉",
+  "B": "细菌和草履虫",
+  "C": "蓝藻和酵母菌",
+  "D": "衣藻和变形虫"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 100 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。噬菌体是细菌病毒，无细胞结构，不属真核生物。B．错误。细菌为原核生物，该组只有草履虫是真核。C．错误。蓝藻（蓝细菌）为原核生物，只有酵母菌是真核真菌，该组不全为真核。D．正确。衣藻是具鞭毛和杯状叶绿体的真核绿藻，变形虫是真核原生动物，二者均为真核生物。故答案为D。"
+}

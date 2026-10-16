@@ -1,0 +1,40 @@
+{
+ "id": "M4-117-94a52fb90228",
+ "type": "multiple",
+ "question": "在一个环境条件不变的大种群中，下列哪些因素会改变种群世代之间的基因频率？",
+ "options": {
+  "A": "基因突变",
+  "B": "个体迁移",
+  "C": "遗传漂变",
+  "D": "选择性交配",
+  "E": "随机交配"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 2.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 117 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 117,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（6 道题9 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

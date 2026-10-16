@@ -1,0 +1,45 @@
+{
+ "id": "M1-41-6227eaaaf5fd",
+ "type": "single",
+ "question": "哪种维生素过量摄入后，在体内的积累较少：",
+ "options": {
+  "A": "维生素 A",
+  "B": "维生素 B",
+  "C": "维生素 D",
+  "D": "维生素 E"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 41 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。维生素A为脂溶性，可在肝脏大量储存，过量摄入易蓄积中毒。B．正确。维生素B族为水溶性维生素，多余部分随尿液排出，体内积累较少。C．错误。维生素D为脂溶性，可储存于肝脏与脂肪组织，过量会蓄积。D．错误。维生素E为脂溶性，同样可在体内储存。故答案为B。"
+}

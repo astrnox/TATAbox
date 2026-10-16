@@ -1,0 +1,45 @@
+{
+ "id": "M2-21-f557370f7c3b",
+ "type": "single",
+ "question": "在原生动物中，以下哪个纲的所有种类其生活史中至少有一个时期营寄生生活？",
+ "options": {
+  "A": "孢子虫纲",
+  "B": "变形虫纲",
+  "C": "鞭毛虫纲",
+  "D": "纤毛虫纲"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 21 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。孢子虫纲（现划归顶复门）全部种类营寄生生活，生活史中至少有一个时期寄生于宿主细胞或组织内，如疟原虫、球虫。B．错误。变形虫纲多自由生活，如水体和潮湿土壤中的变形虫。C．错误。鞭毛虫纲既有寄生的锥虫、利什曼原虫，也有自由生活的衣滴虫等。D．错误。纤毛虫纲多数自由生活，如草履虫、四膜虫，仅少数种类寄生。故答案为A。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-128-30064f1d7e5d",
+ "type": "mtf",
+ "question": "人体下列生理活动中，需要消耗能量的是：",
+ "options": {
+  "A": "小肠绒毛上皮细胞吸收K+、Na+",
+  "B": "葡萄糖由肾小球过滤到肾小囊腔内",
+  "C": "肾小管对葡萄糖的重吸收",
+  "D": "小肠绒毛上皮细胞吸收氨基酸、葡萄糖"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "13.A（ √ ）B（ X ）C（ √ ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 13 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。小肠绒毛上皮细胞逆浓度吸收K+、Na+依赖钠钾泵，直接消耗ATP。B．错误。葡萄糖经肾小球滤过靠血压推动，是机械过滤过程，不消耗能量。C．正确。肾小管重吸收葡萄糖属继发性主动运输，与Na+同向协同转运，间接依赖钠钾泵。D．正确。小肠绒毛上皮吸收氨基酸和葡萄糖同样依靠Na+协同转运的继发性主动运输。\n【易错易混】易混：继发性主动运输虽不直接水解ATP，但依赖钠钾泵建立的离子梯度，仍属耗能过程；滤过和自由扩散才是真正不耗能的。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

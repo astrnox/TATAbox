@@ -1,0 +1,45 @@
+{
+ "id": "M1-17-ab86d0e33eff",
+ "type": "single",
+ "question": "rRNA",
+ "options": {
+  "A": "与多种蛋白质形成核蛋白体",
+  "B": "属细胞内含量最少的一种RNA",
+  "C": "是蛋白质生物合成的场所",
+  "D": "不含有修饰碱基"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 17 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。rRNA与数十种核糖体蛋白质装配成核糖体（核蛋白体），这是其主要存在形式。B．错误。rRNA占细胞总RNA的80%以上，是含量最多的一类RNA。C．错误。蛋白质合成的场所是核糖体这一颗粒整体，单独的rRNA分子不能称为场所。D．错误。rRNA含大量修饰碱基，如假尿苷与甲基化碱基。故答案为A。"
+}

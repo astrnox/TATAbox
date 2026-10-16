@@ -1,0 +1,48 @@
+{
+ "id": "M4-108-22e25a93ec6c",
+ "type": "single",
+ "question": "在动物分类系统中，①family ②phylum ③species ④genus 是四个不同的分类阶元，按分类阶元从高到低的层次排列应该是：",
+ "options": {
+  "A": "④①②③",
+  "B": "②①④③",
+  "C": "①②③④",
+  "D": "②①③④"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 108 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。属（④）不应排在科（①）之前。B．正确。分类阶元从高到低为门（②phylum）、科（①family）、属（④genus）、种（③species），即②①④③。C．错误。该排序把科放到了门之前。D．错误。该排序把种放到了属之前。故答案为B。\n【易错易混】易混：分类阶元口诀——界门纲目科属种，phylum是门不是纲，family是科，genus是属，先译对再排序。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-81-e34263bd8e87",
+ "type": "single",
+ "question": "自疏导致的播种密度与生物个体大小之间关系，在双对数图上的典型斜率是：",
+ "options": {
+  "A": "-3/2",
+  "B": "-3/4",
+  "C": "3/2",
+  "D": "3/4"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 81 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。植物种群自疏过程中，密度与个体平均重量在双对数图上的典型斜率为-3/2，即-3/2自疏定律。B．错误。-3/4是代谢尺度标度指数，不是自疏斜率。C．错误。自疏导致密度随个体增大而下降，斜率应为负值。D．错误。3/4为正值，与自疏的负向关系不符。故答案为A。\n【通法】通法（自疏定律）：-3/2自疏——双对数图上密度与个体重量斜率为-3/2；-3/4是代谢标度，两个负分数指数别记混。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

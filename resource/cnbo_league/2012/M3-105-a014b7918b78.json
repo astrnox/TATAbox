@@ -1,0 +1,45 @@
+{
+ "id": "M3-105-a014b7918b78",
+ "type": "single",
+ "question": "一个群落中物种的数目，我们称之为",
+ "options": {
+  "A": "物种的均匀度",
+  "B": "物种多度",
+  "C": "物种丰度",
+  "D": "物种的优势度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 105 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "第三部分 （9 道题10 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。均匀度反映群落中各物种个体数量分配的均匀程度，不是物种数目。B．错误。多度指群落中某物种个体数量的多少。C．正确。物种丰度即群落中物种数目的多少，也称物种丰富度，就是群落中物种的数目。D．错误。优势度反映某物种在群落中占优势的程度，多以盖度、生物量等衡量。故答案为C。"
+}

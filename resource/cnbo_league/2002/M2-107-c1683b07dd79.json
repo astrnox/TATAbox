@@ -1,0 +1,45 @@
+{
+ "id": "M2-107-c1683b07dd79",
+ "type": "multiple",
+ "question": "下列哪组植物的配子体为雌雄同体",
+ "options": {
+  "A": "松叶兰、中华卷柏",
+  "B": "卷柏、石松",
+  "C": "松叶兰、肾蕨",
+  "D": "铁线蕨、石松"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 7 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "二、多项选择题(每小题2 分，答案完全正确才能得分，共16 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。松叶兰的配子体雌雄同体，但中华卷柏属孢子异型植物，大孢子发育成雌配子体、小孢子发育成雄配子体，配子体雌雄异体，该组不全为雌雄同体。B．错误。卷柏（含中华卷柏）配子体单性，虽然石松的配子体多为雌雄同体，该组仍不符。C．正确。松叶兰的配子体生于地下、同株具精子器和颈卵器，肾蕨等真蕨的原叶体腹面同时生精子器和颈卵器，均为雌雄同体。D．正确。铁线蕨的原叶体和石松的配子体都同时具雌雄生殖器官，属雌雄同体。故答案为CD。"
+}

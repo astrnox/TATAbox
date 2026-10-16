@@ -1,0 +1,45 @@
+{
+ "id": "M4-72-3e0befc74c3d",
+ "type": "single",
+ "question": "在ABO 血型遗传中，后代可能出现三种血型的双亲之一血型一定为：",
+ "options": {
+  "A": "O",
+  "B": "A",
+  "C": "B",
+  "D": "AB"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 72 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。双亲之一为 O 型时，O 型与 AB 型婚配后代只有 A、B 两种血型，O 型与 A 型婚配后代只有 A 型或 A、O 两型，都不能凑齐三种血型。B．错误。两个 A 型双亲（IAi×IAi）后代只有 A、O 两型，故 A 型并非必备。C．错误。两个 B 型双亲（IBi×IBi）后代只有 B、O 两型，同理并非必备。D．正确。要恰得三种血型，只能是 AB 型与 AO 型、AB 型与 BO 型或两个 AB 型婚配，后代表型均为 A、B、AB 三型，故双亲之一必为 AB 型。故答案为D。"
+}

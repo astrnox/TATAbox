@@ -1,0 +1,52 @@
+{
+ "id": "M4-90-24b2bc81c343",
+ "type": "multiple",
+ "question": "1998 年人们虽然将FCHL 的致病基因定位于1q21-23，但未能找到致病基因，可能的原因有：",
+ "options": {
+  "A": "测定了这一区域内所有已知基因的序列，未发现突变；",
+  "B": "这一区域内没有任何已知基因与血脂有关；",
+  "C": "这一区域还有未知基因存在；",
+  "D": "这一区域包含很多基因，无法进一步研究。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 90 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-93",
+  "stimulus": "家族性混合型高脂血症(Familial combined hyperlipidemia，FCHL)是一种人类单基因"
+ },
+ "explanation": "【解析】A．正确。若该区已知基因均测过而无突变，自然找不到致病基因。B．正确。区内已知基因均与血脂无关，也会导致定位成功而克隆失败。C．正确。当时注释不全，致病基因可能是尚未被识别的新基因。D．错误。基因数量多只是增加工作量，并不构成无法找到基因的合理原因。故答案为ABC。\n【易错易混】易混：定位到区间不等于克隆到基因——候选区里找不到致病基因的三大来源：测过的基因没突变、已知基因不相关、注释漏掉新基因；别把工作量大当原因。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

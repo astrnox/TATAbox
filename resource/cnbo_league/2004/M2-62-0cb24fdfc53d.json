@@ -1,0 +1,48 @@
+{
+ "id": "M2-62-0cb24fdfc53d",
+ "type": "single",
+ "question": "显微镜是观察动、植物切片和微生物的工具，评价一台显微镜首选的因素是",
+ "options": {
+  "A": "物镜和目镜倍数",
+  "B": "清晰度",
+  "C": "有名厂家",
+  "D": "零件、功能齐全"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 62 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】评价一台显微镜首看成像质量，即分辨率与清晰度。A．错误。目镜物镜倍数之和只是放大率，镜头质量差则放得越大越模糊。B．正确。清晰度决定能否分辨细微结构，是首选因素。C．错误。厂家名气不等于光学性能。D．错误。零件齐全、功能多属附加条件，不是首选。故答案为B。\n【点睛】点睛：显微镜看'分得开'而非'放得大'，分辨率（清晰度）优先于放大倍数。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

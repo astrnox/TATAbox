@@ -1,0 +1,48 @@
+{
+ "id": "M3-40-a0d82dcaf7d4",
+ "type": "single",
+ "question": "氧气和二氧化碳在血液中主要的运输形式分别是：",
+ "options": {
+  "A": "氧合血红蛋白；碳酸氢盐",
+  "B": "物理溶解；氨基甲酸血红蛋白",
+  "C": "氧合血红蛋白；氨基甲酸血红蛋白",
+  "D": "氧合血红蛋白；物理溶解"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 40 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。氧气约98.5%与红细胞内的血红蛋白结合成氧合血红蛋白运输，二氧化碳约70%在红细胞内碳酸酐酶催化下生成碳酸氢盐运输。B．错误。物理溶解的氧仅约1.5%，氨基甲酸血红蛋白只运输约23%的二氧化碳，均非主要形式。C．错误。氨基甲酸血红蛋白不是二氧化碳的主要运输形式。D．错误。二氧化碳以物理溶解形式运输的比例很小。故答案为A。\n【易错易混】易混：氧的主角是氧合血红蛋白、二氧化碳的主角是碳酸氢盐，两者的主要运输形式要分开记；物理溶解虽少，却是气体交换必经的第一步。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

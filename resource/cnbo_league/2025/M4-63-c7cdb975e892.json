@@ -1,0 +1,48 @@
+{
+ "id": "M4-63-c7cdb975e892",
+ "type": "mtf",
+ "question": "Stickler 综合征I 型是由12 号染色体上COL2A1 基因突变引起的遗传病。一个受该病影响的家庭希望通过分子生物学方法进行检测。对以下关于可用于研究COL2A1 基因及其表达产物的分子遗传学检测技术的陈述进行正误判断：",
+ "options": {
+  "A": "Western 印迹法可以通过检测COL2A1 蛋白量的变化来协助推断启动子功能是否异常，但不能确定启动子 DNA 的具体序列改变",
+  "B": "Southern 印迹法检测启动子区域DNA 变异的能力依赖于突变是否改变了限制性内切酶识别位点或导致了较大的结构变化",
+  "C": "定量RT-PCR 技术可用于测量COL2A1 mRNA 的丰度，从而评估mRNA 序列不变时启动子突变对基因转录活性的影响，但不能直接鉴定DNA 序列突变",
+  "D": "利用COL2A1 基因探针进行荧光原位杂交(FISH)，可以通过分析杂交信号强度的细微变化来直接识别启动子区域具体的DNA 序列突变类型"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 63 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。Western检测COL2A1蛋白量变化可间接提示启动子功能异常，但无法给出DNA序列层面的具体改变。B．正确。Southern印迹只有当突变改变限制酶识别位点或造成较大结构变异（缺失/重复/重排）时才能检出。C．正确。定量RT-PCR测mRNA丰度反映转录活性变化（mRNA序列不变时），不能直接鉴定DNA序列突变。D．错误。FISH分辨率有限，用于基因定位与大片段缺失/易位检测，不能识别启动子中的具体序列突变类型。\n【点睛】点睛：检测手段按分辨率排队——Western/qPCR看'量'，Southern看'片段长度/酶切位点'，测序看'碱基'，FISH看'位置与大片段'。问'能不能测某突变'先定位到这四级。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

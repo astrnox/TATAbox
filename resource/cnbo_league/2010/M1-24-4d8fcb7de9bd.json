@@ -1,0 +1,45 @@
+{
+ "id": "M1-24-4d8fcb7de9bd",
+ "type": "single",
+ "question": "接种环的烧灼灭菌应该在何时进行？",
+ "options": {
+  "A": "使用前",
+  "B": "使用后",
+  "C": "使用前及使用后",
+  "D": "储存前"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 24 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。仅使用前灭菌，接种后残留的菌体会污染环境和后续操作。B．错误。仅使用后灭菌会把杂菌带入培养物，造成污染。C．正确。使用前灼烧灭菌保证无菌接种，使用后立即灼烧杀死残留菌体，既防污染又保安全。D．错误。储存前灭菌不能替代使用前后的常规灼烧。故答案为C。"
+}

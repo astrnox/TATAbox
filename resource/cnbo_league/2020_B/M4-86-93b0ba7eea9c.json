@@ -1,0 +1,81 @@
+{
+ "id": "M4-86-93b0ba7eea9c",
+ "type": "single",
+ "question": "如果III-2 已经生了一个正常的女儿，现在又怀了一个男孩，则她腹中的男孩患病的概率：",
+ "options": {
+  "A": "不会发生改变；",
+  "B": "会显著减小；",
+  "C": "会减小约10%；",
+  "D": "难以确定。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 86 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "四. 遗传学、进化生物学、生物系统学 27 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "85-86",
+  "stimulus": "如图是一个血友病患者的家系图，箭头所示为先证者。"
+ },
+ "image": {
+  "file": "assets/questions/M4-86-93b0ba7eea9c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 378,
+  "bbox": [
+   185.8,
+   151.4,
+   409.5,
+   273.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-86-93b0ba7eea9c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 378,
+   "bbox": [
+    185.8,
+    151.4,
+    409.5,
+    273.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。在 X 连锁隐性格局下，携带者母亲所生女儿同样可以完全正常，故已生一个正常女儿不能排除 III-2 为携带者，其为携带者的概率不被下调，腹中男孩患病的概率不会改变。B．错误。该生育史不改变母亲为携带者的概率，男孩患病概率不会显著减小。C．错误。按题设逻辑概率不变，不存在约 10% 的下降。D．错误。系谱已提供足够信息，可以判断。故答案为A。"
+}

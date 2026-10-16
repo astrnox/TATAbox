@@ -1,0 +1,48 @@
+{
+ "id": "M1-116-0bfbe827e87b",
+ "type": "mtf",
+ "question": "细菌DNA 复制的特点是：",
+ "options": {
+  "A": "只在细胞周期的特定阶段(S 期)进行",
+  "B": "不受细胞分裂周期的限制，可以连续进行",
+  "C": "DNA 复制完毕，然后进行RNA 转录和蛋白质翻译",
+  "D": "细菌DNA 复制、RNA 转录和蛋白质合成同时进行"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "1.A（ х ）B（ √ ）C（ х ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 1 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细菌没有真核细胞那样的周期分期，DNA复制不局限于S期。B．正确。细菌DNA复制不受细胞分裂周期的限制，在适宜条件下可以连续进行。C．错误。细菌无核膜分隔，DNA复制尚未完成即可同时进行转录和翻译。D．正确。细菌的DNA复制、RNA转录和蛋白质翻译在细胞质中偶联、同时进行。\n【通法】通法（原核表达特征）：原核细胞三同时——边复制边转录边翻译，无核膜、无S期；判断时抓有无核膜分隔、有无周期分期两个要点。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

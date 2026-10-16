@@ -1,0 +1,45 @@
+{
+ "id": "M1-83-13f97262c148",
+ "type": "single",
+ "question": "硝化作用是指将氨转变成硝酸盐，反硝化作用是指",
+ "options": {
+  "A": "将氨转变成分子氮",
+  "B": "将氨转变成亚硝酸盐",
+  "C": "将硝酸盐转变成分子氮",
+  "D": "将亚硝酸盐转变成硝酸盐"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 83 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。氨转变成分子氮不是反硝化作用，反硝化的底物是氧化态氮。B．错误。氨转变成亚硝酸盐是硝化作用的第一步（亚硝化）。C．正确。反硝化细菌在缺氧条件下把硝酸盐逐步还原为亚硝酸盐、NO、N2O直至分子氮，回归大气。D．错误。亚硝酸盐转变成硝酸盐是硝化作用的第二步。故答案为C。"
+}

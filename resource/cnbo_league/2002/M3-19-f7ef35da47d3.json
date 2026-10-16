@@ -1,0 +1,45 @@
+{
+ "id": "M3-19-f7ef35da47d3",
+ "type": "single",
+ "question": "下列哪一种动物的肩带只有肩胛骨？",
+ "options": {
+  "A": "黑猩猩",
+  "B": "袋鼠",
+  "C": "猎豹",
+  "D": "针鼹"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 19 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。黑猩猩等灵长类具发达锁骨，肩带由肩胛骨和锁骨共同组成。B．错误。袋鼠等有袋类保留锁骨，肩带并非只有肩胛骨。C．正确。猎豹是高度适应快速奔跑的食肉目动物，锁骨退化消失，肩带仅余肩胛骨，前肢借肌群与躯干连接，利于加大步幅。D．错误。针鼹为单孔类，肩带除肩胛骨外还保留锁骨、间锁骨等原始骨块。故答案为C。"
+}

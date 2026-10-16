@@ -1,0 +1,45 @@
+{
+ "id": "M3-44-52e5cce99015",
+ "type": "single",
+ "question": "对于食蜜鸟来说，夏季来临意味着食物更加丰富，它们将开始交配、产卵、孵卵和育雏。据此，你认为从春季到夏季，再到雏鸟出窝，食蜜鸟亲体的取食领域会：",
+ "options": {
+  "A": "先变大，后变小",
+  "B": "先变小，后变大",
+  "C": "不变",
+  "D": "不确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 44 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。先变大意味着夏季食物反而更难获得，与题设食物更丰富相矛盾。B．正确。夏季食物丰富，亲鸟较小的取食范围即可满足自身需要，取食领域先变小；进入孵卵育雏期后能量需求大增，必须扩大觅食范围，领域随之变大。C．错误。食物可得性和需求量随季节及繁殖阶段变化，领域不会一成不变。D．错误。依据食物与能量收支的生态学规律可以给出明确预测，并非不确定。故答案为B。"
+}

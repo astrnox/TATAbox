@@ -1,0 +1,50 @@
+{
+ "id": "M3-104-f2cecb7da6c3",
+ "type": "multiple",
+ "question": "1922 年，英国遗传学家J.B.S.Haldane 研究发现：若不同物种的动物相互交配产生的杂种中，有某一性别的个体不育，那么该性别一定是异配性别。据此，以下动物类群中雌性会发生杂种不育的有：",
+ "options": {
+  "A": "松鼠",
+  "B": "鹦鹉",
+  "C": "蝴蝶",
+  "D": "猴",
+  "E": "蛾"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 104 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】按 Haldane 法则，杂种不育的一方是异配性别，故只需求出哪些类群雌性为异配性别。A．错误。松鼠为 XY 型，雌性是同配性别，不育的应是雄性。B．正确。鸟类为 ZW 型，雌性 ZW 是异配性别。C．正确。蝴蝶属鳞翅目，为 ZW 型，雌性异配。D．错误。猴为 XY 型，雌性同配。E．正确。蛾同属鳞翅目，雌性 ZW 异配。故答案为BCE。\n【通法】通法（Haldane 法则两步）：先按类群定性别决定方式——鸟、蛾蝶是 ZW（雌异配），哺乳、果蝇、松鼠是 XY（雄异配）；再直接选雌性异配的类群。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

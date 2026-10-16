@@ -1,0 +1,48 @@
+{
+ "id": "M2-52-feec47e76db6",
+ "type": "single",
+ "question": "如果将大豆从北纬25°种植区移到北纬45°种植区种植，结果是：",
+ "options": {
+  "A": "大豆的生长期缩短，提前开花，提前结荚",
+  "B": "大豆的结荚率提高，产量增加",
+  "C": "大豆的抗寒性减弱，易受寒害",
+  "D": "大豆的生育期推迟，推迟开花"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 52 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高纬夏季日照更长，短日植物大豆开花被推迟，不会提前开花。B．错误。开花结荚推迟且易遇秋季低温，产量不必然提高。C．错误。高纬生长季内并不更冷，不构成抗寒性减弱的直接原因。D．正确。由低纬移向高纬，长日照使短日植物大豆的生育期推迟、开花延后。故答案为D。\n【通法】通法（纬度与光周期）：低纬到高纬＝夏季日照变长——短日植物推迟开花、长日植物提前开花，先定作物光周期类型再下结论。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

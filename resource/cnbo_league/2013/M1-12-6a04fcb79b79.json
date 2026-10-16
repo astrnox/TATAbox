@@ -1,0 +1,48 @@
+{
+ "id": "M1-12-6a04fcb79b79",
+ "type": "single",
+ "question": "Mg2+是己糖激酶的激活剂，其所起的作用为",
+ "options": {
+  "A": "亲电催化",
+  "B": "使底物敏感键发生断裂",
+  "C": "转移电子",
+  "D": "静电屏蔽"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 12 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。己糖激酶催化的反应中，Mg2+并非以亲电方式直接活化底物。B．错误。底物敏感键的断裂由酶活性中心催化，不是Mg2+的直接作用。C．错误。该反应不涉及电子转移，Mg2+不参与氧化还原。D．正确。Mg2+与ATP的磷酸基结合，中和负电荷、屏蔽静电排斥，使γ磷酸基更易接受葡萄糖羟基的亲核进攻，从而激活己糖激酶。故答案为D。\n【点睛】点睛：Mg2+-ATP是激酶的通用工作形式，'金属离子屏蔽磷酸基负电荷'一句可解同类题。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-93-c034155be3f1",
+ "type": "single",
+ "question": "使用哪种仪器，可以获得三维图象：",
+ "options": {
+  "A": "扫描电子显微镜",
+  "B": "透射电子显微镜",
+  "C": "荧光显微镜",
+  "D": "光学显微镜"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 93 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。扫描电子显微镜以细电子束在样品表面逐点扫描并收集二次电子成像，景深大、立体感强，可获得样品表面的三维图象。B．错误。透射电子显微镜让电子穿透超薄切片成像，显示的是二维超微结构。C．错误。荧光显微镜观察荧光标记的结构，所得仍是二维光学图象。D．错误。光学显微镜景深小，只能得到二维图象。故答案为A。"
+}

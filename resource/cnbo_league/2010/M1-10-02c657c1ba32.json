@@ -1,0 +1,50 @@
+{
+ "id": "M1-10-02c657c1ba32",
+ "type": "multiple",
+ "question": "下面关于组蛋白的说法哪些是正确的：",
+ "options": {
+  "A": "组蛋白普遍存在于真核细胞",
+  "B": "组蛋白在物种间很保守，进化缓慢",
+  "C": "组蛋白富含组氨酸",
+  "D": "组蛋白呈现碱性",
+  "E": "组蛋白的修饰会影响基因的表达"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ABDE",
+ "score": 3.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 10 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选3分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。组蛋白是真核细胞染色质的基本蛋白，原核细胞一般不含组蛋白。B．正确。组蛋白尤其H3、H4在物种间高度保守，进化极慢。C．错误。组蛋白得名与组氨酸无关，其碱性来自富含的赖氨酸和精氨酸，该表述不成立。D．正确。富含赖氨酸、精氨酸使组蛋白带正电，与带负电的DNA紧密结合。E．正确。乙酰化、甲基化、磷酸化等修饰影响染色质状态与基因表达。故答案为ABDE。\n【易错易混】易错点：'组蛋白'与'组氨酸'仅名称相近，组蛋白的碱性源于赖氨酸和精氨酸。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

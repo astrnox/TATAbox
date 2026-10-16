@@ -1,0 +1,50 @@
+{
+ "id": "M4-81-fbe8e1ce390b",
+ "type": "single",
+ "question": "某个蛋白具有120 个氨基酸。编码这个蛋白的基因有3 个内含子，长度分别为100bp， 250bp 和150bp，分别在编码第20、第35 与第56 氨基酸的密码子之后。这个蛋白的 mRNA，5’端与3’端的UTR 区（非翻译区）长度分别为200nt 和150nt。那么，由该蛋白成熟的mRNA 反转录的cDNA，全长应该是：",
+ "options": {
+  "A": "620 bp",
+  "B": "860 bp",
+  "C": "1210 bp",
+  "D": "710 bp",
+  "E": "360 bp"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 81 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。620 bp 与各部分之和不符。B．错误。860 bp 多算了部分序列，与实际长度不符。C．错误。1210 bp 把内含子也算了进去，成熟 mRNA 已剪去内含子。D．正确。成熟 mRNA 长度=5 端 UTR 200+编码区 120×3=360+3 端 UTR 150=710 nt，反转录 cDNA 与之等长，为 710 bp。E．错误。360 bp 只是编码区长度，未计 UTR。故答案为D。\n【通法】通法（成熟 mRNA 与 cDNA 长度）：UTR+编码区（氨基酸数×3），内含子一律剪掉不计入；先排除含内含子的干扰项。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

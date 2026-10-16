@@ -1,0 +1,45 @@
+{
+ "id": "M1-29-78ce9ecd6a4e",
+ "type": "single",
+ "question": "在细菌结合实验中，不同性别的菌株接合后，非常罕见地有受体细胞改变性别的是",
+ "options": {
+  "A": "F+×F-",
+  "B": "F’ ×F-",
+  "C": "F+×F’",
+  "D": "Hfr×F-"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 29 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。F+×F-接合时F质粒整体转移，受体稳定变为F+，比例很高而非罕见。B．错误。F'×F-中F'以高频转移，受体成为F'菌株。C．错误。F+×F'同样高频转移F质粒。D．正确。Hfr的F因子整合在染色体上，接合常在F因子尚未完整转移前中断，受体极少获得完整F因子，改变性别非常罕见。故答案为D。"
+}

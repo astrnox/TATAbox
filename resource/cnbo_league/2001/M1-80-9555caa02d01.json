@@ -1,0 +1,48 @@
+{
+ "id": "M1-80-9555caa02d01",
+ "type": "mtf",
+ "question": "细胞内具有双层膜结构的细胞器是：",
+ "options": {
+  "A": "叶绿体",
+  "B": "线粒体",
+  "C": "高尔基体",
+  "D": "细胞核"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "7．A（√）B（√）C（×）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 7 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。叶绿体具内外两层膜，是双层膜细胞器。B．正确。线粒体具外膜和具内嵴的内膜，是双层膜细胞器。C．错误。高尔基体由单层膜围成的扁平囊和囊泡组成，属单层膜细胞器。D．错误。细胞核虽有双层核膜，但它是细胞的控制中心，不属于细胞器，按题干限定应判错。\n【易错易混】易混：双层膜结构包括线粒体、叶绿体和细胞核的核膜，但题干问'细胞器'时细胞核不入选，审题要盯住限定词。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

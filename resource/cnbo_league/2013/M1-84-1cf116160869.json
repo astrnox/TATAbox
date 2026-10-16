@@ -1,0 +1,48 @@
+{
+ "id": "M1-84-1cf116160869",
+ "type": "single",
+ "question": "已知一个mRNA 中有1200 个核苷酸，那么它的基因双链中G 和T 的总数为",
+ "options": {
+  "A": "600",
+  "B": "1800",
+  "C": "300",
+  "D": "1200"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 84 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。按600计算只相当于碱基总数的四分之一，忽略了另一半。B．错误。1800超过了基因双链碱基总数的一半。C．错误。300仅为mRNA碱基数的四分之一，与双链碱基组成不符。D．正确。mRNA有1200个核苷酸，对应基因一条链1200个碱基，双链共2400个碱基；双链中A＝T、G＝C，故G＋T恰为总数的一半，即1200。故答案为D。\n【通法】通法（双链碱基计数）：双链中嘌呤总数等于嘧啶总数，任意两类不互补碱基之和等于碱基总数一半，先算总数再除以2。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

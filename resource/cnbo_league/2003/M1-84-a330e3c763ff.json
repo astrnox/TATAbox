@@ -1,0 +1,45 @@
+{
+ "id": "M1-84-a330e3c763ff",
+ "type": "single",
+ "question": "连接有机体和无机环境的两个重要环节是：",
+ "options": {
+  "A": "生产者和非生物成分",
+  "B": "消费者和有机物质",
+  "C": "生产者和消费者",
+  "D": "生产者和分解者"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 84 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。非生物成分属于无机环境本身，不是有机体，谈不上连接二者的环节。B．错误。消费者以现成有机物为食，不能把有机物分解归还为无机物，'有机物质'也不是环境组分。C．错误。消费者取食生产者只完成能量和物质在生物群落内部的传递，并未连接无机环境。D．正确。生产者把CO2、水和无机盐合成有机物输入生物群落，分解者把遗体残骸中的有机物矿化归还无机环境，二者是连接有机体与无机环境的两大环节。故答案为D。"
+}

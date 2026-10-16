@@ -1,0 +1,45 @@
+{
+ "id": "M2-93-4162f85c77ab",
+ "type": "mtf",
+ "question": "下列发育过程属于程序性细胞死亡的有：",
+ "options": {
+  "A": "导管形成",
+  "B": "根冠更新",
+  "C": "大孢子形成",
+  "D": "叶片出现病斑"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "92.A（√）B（√）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 92 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。导管分子成熟时细胞内容物自溶、端壁溶解形成穿孔，是典型的程序性细胞死亡。B．正确。根冠外层细胞不断衰老解体脱落、由内侧细胞补充更新，属程序性死亡。C．正确。大孢子母细胞减数分裂形成的四个大孢子通常三个退化死亡、仅一个具功能，属程序性细胞死亡。D．正确。叶片受病原侵染出现的病斑多为过敏性坏死反应，细胞主动启动死亡程序以限制病原扩展，属程序性细胞死亡。"
+}

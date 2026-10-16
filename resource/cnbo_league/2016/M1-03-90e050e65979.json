@@ -1,0 +1,48 @@
+{
+ "id": "M1-03-90e050e65979",
+ "type": "multiple",
+ "question": "染色质纤维上非组蛋白主要功能是：",
+ "options": {
+  "A": "组装核小体",
+  "B": "调控基因表达",
+  "C": "组成异染色质的主要成分",
+  "D": "协助DNA 卷曲成染色体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 3 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。核小体的组装主要由组蛋白H2A、H2B、H3、H4构成八聚体核心完成，H1位于连接处，非组蛋白不承担核小体组装。B．正确。非组蛋白包括RNA聚合酶、转录因子、各类修饰酶等，直接调控基因的表达。C．错误。异染色质的主要成分是高度重复DNA与特定修饰的组蛋白（如H3K9me3），并非以非组蛋白为主。D．正确。拓扑异构酶、SMC蛋白（黏连蛋白、凝聚蛋白）等非组蛋白协助DNA盘绕压缩成染色体。故答案为BD。\n【通法】通法（组蛋白与非组蛋白分工）：组蛋白＝包装（核小体、压缩、异染色质骨架），非组蛋白＝干活（催化、调控、复制、识别）；见'组装、压缩'想组蛋白，见'调控、酶'想非组蛋白。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

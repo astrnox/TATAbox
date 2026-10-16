@@ -1,0 +1,48 @@
+{
+ "id": "M1-38-4d6cf2481ed4",
+ "type": "single",
+ "question": "人类感知外界声音的频率主要取决于：",
+ "options": {
+  "A": "耳蜗神经冲动的频率",
+  "B": "耳蜗神经冲动的幅度",
+  "C": "耳蜗毛细胞顶部听毛弯曲的频率",
+  "D": "耳蜗毛细胞所在基底膜的位置"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 38 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。神经冲动频率主要编码声音强度而非频率。B．错误。动作电位幅度恒定，不随刺激参数变化，不能编码频率。C．错误。听毛虽随声波摆动，但中枢据基底膜位置而非摆动频率辨别音调。D．正确。基底膜底部窄而硬共振于高频、顶部宽而软共振于低频，行波最大振幅处的毛细胞位置决定音调，即频率的部位编码。故答案为D。\n【通法】通法（感觉编码）：听觉频率用部位编码，响度用冲动频率与募集纤维数；凡见'幅度编码'选项多为错，动作电位幅度恒定是通用判据。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

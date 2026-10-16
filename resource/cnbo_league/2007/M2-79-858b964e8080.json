@@ -1,0 +1,45 @@
+{
+ "id": "M2-79-858b964e8080",
+ "type": "single",
+ "question": "溶源性病毒是一种其 的病毒。",
+ "options": {
+  "A": "核酸能够整合在宿主细胞染色体中",
+  "B": "进入细胞后立即复制",
+  "C": "含有复制所需的自己的ATP",
+  "D": "含有复制所需的自己的酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 79 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。溶源性病毒（温和噬菌体等）侵入宿主后，其核酸可整合到宿主染色体上，随宿主基因组复制而传给子代，进入溶源状态。B．错误。进入细胞后立即复制并裂解宿主是烈性病毒的特点。C．错误。病毒没有自己的产能系统，不携带ATP，所需能量由宿主提供。D．错误。多数病毒并不自带完整的复制酶系，'自带酶'也不是溶源性病毒的特征，溶源性的关键是核酸整合。故答案为A。"
+}

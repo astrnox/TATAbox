@@ -1,0 +1,50 @@
+{
+ "id": "M1-21-00419bc29fe4",
+ "type": "multiple",
+ "question": "苍术苷是一种有毒的植物糖苷，能专一地抑制ADP/ATP 转运载体。当用苍术苷处理呼吸活跃的细胞时，下列哪些现象将会发生？",
+ "options": {
+  "A": "线粒体基质中的ATP/ADP 比值保持不变",
+  "B": "胞质中的ATP/ADP 比值显著下降",
+  "C": "呼吸作用将停止",
+  "D": "电子传递正常进行",
+  "E": "氧不能被还原生成水"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 21 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。转运被阻断后 ATP 积于基质、ADP 无法进入，基质 ATP/ADP 比值升高而非不变。B．正确。ATP 运不出、ADP 进不来，胞质 ATP 减少而 ADP 增多，比值显著下降。C．正确。呼吸链缺少胞质 ADP 底物，氧化磷酸化受抑，呼吸作用停止。D．错误。缺乏 ADP 使电子传递受呼吸控制抑制，并非正常进行。E．正确。电子传递停止后氧无法被还原生成水。故答案为BCE。\n【通法】通法（抑制腺苷酸转位酶的连锁反应）：核苷酸出不了线粒体——胞质缺 ATP、ADP 堆积，呼吸因缺 ADP 底物而停，电子传递与氧还原随之中断。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

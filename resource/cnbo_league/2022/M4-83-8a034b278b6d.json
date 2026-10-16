@@ -1,0 +1,84 @@
+{
+ "id": "M4-83-8a034b278b6d",
+ "type": "single",
+ "question": "打靶载体中连接病毒胸腺核苷激酶基因(TK)的目的是：",
+ "options": {
+  "A": "提高同源重组的效率",
+  "B": "协助DNA 复制和细胞分裂",
+  "C": "提高细胞抗病毒感染的能力",
+  "D": "提高打靶成功的细胞克隆所占比例"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 83 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "83-89",
+  "stimulus": "维生素A 在体内转化为11-顺视黄醛后，与视网膜特定细胞中的视蛋白结合成视紫红"
+ },
+ "image": {
+  "file": "assets/questions/M4-83-8a034b278b6d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 426,
+  "bbox": [
+   90.0,
+   343.5,
+   504.3,
+   549.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-83-8a034b278b6d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 426,
+   "bbox": [
+    90.0,
+    343.5,
+    504.3,
+    549.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。TK 基因是负筛选标记，不提高同源重组本身的发生率。B．错误。病毒 TK 与细胞 DNA 复制和分裂无直接关系。C．错误。TK 不参与机体抗病毒免疫。D．正确。随机整合的细胞保留 TK，在培养基中被杀；同源重组的细胞丢失 TK 得以存活，从而提高打靶成功克隆所占比例。故答案为D。\n【点睛】点睛：打靶载体的双标记分工——正筛选 neo 留下转入的细胞，负筛选 TK 淘汰随机整合，最终富集同源重组克隆。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

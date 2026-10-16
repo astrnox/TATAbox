@@ -1,0 +1,45 @@
+{
+ "id": "M1-81-da8c8a0e5690",
+ "type": "mtf",
+ "question": "植物细胞中具有半自主性的细胞器是：",
+ "options": {
+  "A": "高尔基体",
+  "B": "线粒体",
+  "C": "溶酶体",
+  "D": "叶绿体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "8．A（×）B（√）C（×）D（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 8 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高尔基体不含自身DNA和核糖体，无自主复制与表达能力。B．正确。线粒体含自身DNA和核糖体，能自主分裂并表达部分蛋白，其余蛋白由核基因编码，故为半自主性细胞器。C．错误。溶酶体是单层膜消化细胞器，不含核酸和翻译系统。D．正确。叶绿体含自身DNA、核糖体和完整翻译系统，能自主复制并合成部分蛋白质，属半自主性细胞器。"
+}

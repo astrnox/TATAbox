@@ -1,0 +1,47 @@
+{
+ "id": "M1-92-c80496d056b0",
+ "type": "multiple",
+ "question": "叶肉细胞中核糖体存在的部位有",
+ "options": {
+  "A": "溶酶体",
+  "B": "线粒体",
+  "C": "叶绿体",
+  "D": "细胞质",
+  "E": "粗面内质网"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "BCDE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 92 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。溶酶体不含核糖体，其水解酶由附着核糖体合成后运入。B．正确。线粒体含自身核糖体，可合成部分自身蛋白。C．正确。叶绿体具70S核糖体，是半自主细胞器。D．正确。细胞质中游离核糖体大量存在。E．正确。粗面内质网上附着的核糖体合成分泌与膜蛋白。故答案为BCDE。"
+}

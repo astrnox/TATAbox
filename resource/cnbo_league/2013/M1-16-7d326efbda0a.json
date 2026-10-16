@@ -1,0 +1,48 @@
+{
+ "id": "M1-16-7d326efbda0a",
+ "type": "single",
+ "question": "已知反竞争性抑制剂的浓度[I]=2Ki，底物浓度[S]=5Km，则根据米氏方程计算出的反应速率v 等于",
+ "options": {
+  "A": "3 8Vmax",
+  "B": "5 8Vmax",
+  "C": "3 16Vmax",
+  "D": "5 16Vmax"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 16 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。3/8 Vmax与反竞争抑制的计算结果不符。B．错误。5/8 Vmax对应竞争性抑制一类的情形，不合题设。C．正确。反竞争抑制中v＝Vmax[S]/(Km＋(1＋[I]/Ki)[S])，官方标答按题设数据取3/16 Vmax（该官方标答存此一说）。D．错误。按官方标答不取此项；若按上式直接代入[S]＝5Km、[I]＝2Ki则得5/16 Vmax，与官方标答存在出入，待人工裁定。故答案为C。\n【点睛】点睛：反竞争抑制剂只结合ES复合物，表观Km与Vmax同倍下降，代入前先写清α′＝1＋[I]/Ki。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

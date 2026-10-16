@@ -1,0 +1,48 @@
+{
+ "id": "M4-67-dff23b3c0166",
+ "type": "single",
+ "question": "一雄蜂和一雌蜂交配后产生的F1 中，雄蜂的基因型有AB、Ab、aB、ab 四种；雌蜂的基因型有AaBb、Aabb、aaBb 和aabb 四种。则亲本的基因型是：",
+ "options": {
+  "A": "aaBb×Ab",
+  "B": "AaBb×Ab",
+  "C": "AAbb×aB",
+  "D": "AaBb×ab"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 67 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。aaBb 作母本只能产生 aB、ab 两种卵，F1 雄蜂不会有四种基因型。B．错误。若父本为 Ab，其精子全为 Ab，与四种卵结合得 AABB、AAbb、AABb、Aabb 四种雌蜂，与题给四种不符。C．错误。AAbb 作母本只产生 Ab 一种卵，F1 雄蜂仅一种基因型。D．正确。蜜蜂为单倍二倍体：雄蜂由未受精卵发育，其产生的精子均与自身基因型相同，雌蜂由受精卵发育。F1 雄蜂的基因型即母本所产卵的类型，AB、Ab、aB、ab 四种说明母本为 AaBb；F1 雌蜂的 AaBb、Aabb、aaBb、aabb 恰为四种卵与同一种 ab 精子结合的结果，故父本雄蜂为 ab。故答案为D。\n【易错易混】易混：F1 雄蜂的基因型直接等于母本的配子种类，F1 雌蜂才是精卵结合的产物；推亲本时先用雄蜂定母本，再用雌蜂定父本，顺序别颠倒。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

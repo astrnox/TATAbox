@@ -1,0 +1,45 @@
+{
+ "id": "M3-108-7dfa34ed961c",
+ "type": "single",
+ "question": "蛇是一类十分特化的爬行动物，很多骨骼都退化了，下面哪个骨骼消失了？",
+ "options": {
+  "A": "胸骨",
+  "B": "下颌骨",
+  "C": "肋骨",
+  "D": "寰椎"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 108 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。蛇类躯干高度特化、无四肢，胸骨与肩带、前肢骨一并退化消失，使体壁可自由起伏便于吞咽与运动。B．错误。蛇的下颌骨保留且由韧带相连，可张大口吞食。C．错误。蛇保留肋骨并与腹鳞配合完成运动。D．错误。寰椎存在，头部可活动。故答案为A。"
+}

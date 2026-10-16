@@ -1,0 +1,39 @@
+{
+ "id": "M1-06-ea92595ccfad",
+ "type": "single",
+ "question": "在体外培养的正常细胞和相应组织癌细胞的培养液中加入高浓度的游离脂肪酸，一段时间后发现葡萄糖氧化在正常细胞中受到抑制，而癌细胞中却没有。癌细胞中葡萄糖氧化没有受到抑制可能是因为：",
+ "options": {
+  "A": "肉碱脂酰转移酶1 基因失活",
+  "B": "6-磷酸果糖激酶1 基因失活",
+  "C": "延胡索酸酶基因失活",
+  "D": "乙酰-CoA 羧化酶基因失活"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 6 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

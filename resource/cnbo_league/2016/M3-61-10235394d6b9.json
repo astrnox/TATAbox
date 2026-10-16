@@ -1,0 +1,77 @@
+{
+ "id": "M3-61-10235394d6b9",
+ "type": "single",
+ "question": "在研究区域内存在较多的种群数量不大的物种：",
+ "options": {
+  "A": "正确",
+  "B": "错误"
+ },
+ "answer": {
+  "A": true,
+  "B": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 61 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "58-61",
+  "stimulus": "下图所示是一项在巴西利用灯诱研究灯蛾科物种多样性的主要结果。横坐标是所"
+ },
+ "image": {
+  "file": "assets/questions/M3-61-10235394d6b9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 252,
+  "bbox": [
+   204.5,
+   545.0,
+   389.1,
+   691.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-61-10235394d6b9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 252,
+   "bbox": [
+    204.5,
+    545.0,
+    389.1,
+    691.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。依据本题题组的调查数据，研究区域内存在较多的物种，其种群数量并不大，该表述与数据一致。B．错误。题组数据支持'存在较多数量不大的物种'，该判断不成立。故答案为A。"
+}

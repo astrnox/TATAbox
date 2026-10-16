@@ -1,0 +1,45 @@
+{
+ "id": "M1-82-6e14d35a9caf",
+ "type": "mtf",
+ "question": "植物细胞有丝分裂与动物细胞相比其主要特点为：",
+ "options": {
+  "A": "组成纺锤体微管的基本成份不同",
+  "B": "纺锤体不是由中心体产生的",
+  "C": "细胞质分裂是通过在赤道面处形成细胞板",
+  "D": "核仁不消失"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "9．A（×）B（√）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 9 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。植物与动物细胞的纺锤体均由α、β微管蛋白构成，基本成分相同。B．正确。高等植物细胞没有中心体，纺锤体由细胞两极组织形成，而动物细胞由中心体发出星射线形成纺锤体。C．正确。植物细胞质分裂在赤道面处形成细胞板并向四周扩展成细胞壁，动物细胞则通过缢裂沟完成胞质分裂。D．错误。动植物细胞的核仁在前期都消失、末期都重建，这不是植物细胞的特点。"
+}

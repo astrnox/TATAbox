@@ -1,0 +1,47 @@
+{
+ "id": "M4-66-0a125c860ab7",
+ "type": "single",
+ "question": "依上题，后代中Llhh 的比例是",
+ "options": {
+  "A": "0.21",
+  "B": "0.188",
+  "C": "0.183",
+  "D": "0.134",
+  "E": "0.108"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 66 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题依赖第65题所给的杂交组合与子代数据，该前置题未收入本题库，故判断以官方标答为准。A．错误。0.21 对应的交换率取值与标答不符。B．错误。0.188 略高于标答，与第65题数据不符。C．正确。解题方法是先由第65题的分离比判断L/l与H/h是否连锁并求出交换率，再把Llhh拆成两对基因的组合概率：若两对基因独立则Llhh＝P(Ll)×P(hh)，若连锁则按亲本型与重组型配子频率分别相乘后求和，所得比例为0.183。D．错误。0.134 接近两对基因独立时的期望值，与第65题的连锁条件不符。E．错误。0.108 对应的交换率取值与标答不符。故答案为C。"
+}

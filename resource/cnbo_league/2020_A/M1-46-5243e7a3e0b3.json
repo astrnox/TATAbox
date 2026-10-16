@@ -1,0 +1,39 @@
+{
+ "id": "M1-46-5243e7a3e0b3",
+ "type": "single",
+ "question": "大约有70%的被子植物以蓼型胚囊的方式发育。通常认为蓼型胚囊是被子植物雌配子体发育的原始类型，下列关于蓼型胚的大孢子发生和雌配子体发育的描述，可证明蓼型胚囊原始性的是",
+ "options": {
+  "A": "合点端的大孢子是功能大孢子",
+  "B": "大孢子的第一次分裂没有细胞壁形成",
+  "C": "胚囊中核分裂形成的8 个核，4 个在珠孔端，4 个在合点端",
+  "D": "游离核细胞化形成包含有7 个细胞和8 个核的成熟雌配子体"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 46 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

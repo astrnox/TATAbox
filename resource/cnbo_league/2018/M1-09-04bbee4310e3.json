@@ -1,0 +1,45 @@
+{
+ "id": "M1-09-04bbee4310e3",
+ "type": "single",
+ "question": "人体血液中大量的红细胞运送氧气和二氧化碳，氧气和二氧化碳进入细胞的方式是",
+ "options": {
+  "A": "主动运输",
+  "B": "被动运输",
+  "C": "胞吞",
+  "D": "胞吐"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 9 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。O2与CO2为小分子非极性物质，顺浓度梯度扩散，不消耗ATP。B．正确。二者以自由扩散（被动运输）方式跨膜，不需载体也不耗能。C．错误。胞吞用于大分子或颗粒物质，不转运气体分子。D．错误。胞吐用于排出大分子，与气体运输无关。故答案为B。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-114-b7eb690418e5",
+ "type": "multiple",
+ "question": "下列哪些科学研究成果获得了诺贝尔奖",
+ "options": {
+  "A": "发现DNA 双螺旋结构",
+  "B": "双脱氧DNA 序列测定方法",
+  "C": "DNA 聚合酶链式反应",
+  "D": "蛋白质N-末端测序方法"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "A B C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "DNA结构",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 114 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。沃森和克里克提出DNA双螺旋结构模型，获1962年诺贝尔生理学或医学奖。B．正确。桑格建立双脱氧链终止法DNA测序技术，获1980年诺贝尔化学奖。C．正确。穆里斯发明聚合酶链式反应（PCR），获1993年诺贝尔化学奖。D．错误。蛋白质N-末端测序的Edman降解法由埃德曼建立，并未获奖；桑格1958年获奖是因胰岛素全序列测定，而非'蛋白质N-末端测序方法'本身。故答案为ABC。"
+}

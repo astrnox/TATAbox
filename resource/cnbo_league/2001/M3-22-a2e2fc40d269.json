@@ -1,0 +1,48 @@
+{
+ "id": "M3-22-a2e2fc40d269",
+ "type": "single",
+ "question": "半变态昆虫在羽化之前发育的一般特征为＿",
+ "options": {
+  "A": "有蛹期，生活习性与成虫一样",
+  "B": "无蛹期，生活习性与成虫不一样",
+  "C": "有蛹期，生活习性与成虫不一样",
+  "D": "无蛹期，生活习性与成虫一样"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 22 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。有蛹期是完全变态昆虫的特征，半变态无蛹期。B．正确。半变态昆虫经卵、若虫（稚虫）、成虫三个阶段，无蛹期；若虫与成虫生活习性和栖境明显不同，如蜻蜓稚虫水生、成虫陆生。C．错误。半变态没有蛹期。D．错误。生活习性与成虫一致的是渐变态（如蝗虫），与半变态不符。故答案为B。\n【易错易混】易混：不完全变态三亚型——半变态若虫与成虫习性迥异（蜻蜓、蜉蝣）、渐变态习性相似（蝗虫、蝽）、过渐变态（介壳虫）；见蛹期即完全变态。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

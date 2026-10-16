@@ -1,0 +1,45 @@
+{
+ "id": "M3-49-706961914465",
+ "type": "single",
+ "question": "蜂鸟心脏的跳动频率：",
+ "options": {
+  "A": "较鸵鸟心脏的跳动频率高",
+  "B": "较鸵鸟心脏的跳动频率低",
+  "C": "等于鸵鸟心脏的跳动频率",
+  "D": "蜂鸟心脏跳动频率无法测定"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 49 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。蜂鸟体型极小、相对体表散热快、代谢率极高，飞行时心率可达每分钟上千次，远高于鸵鸟。B．错误。鸵鸟是现存最大的鸟类，心率仅每分钟数十次，明显低于蜂鸟。C．错误。二者体型和代谢水平悬殊，心率不可能相等。D．错误。心率可用遥测、心电或听诊测定，蜂鸟心率早已被准确测得。故答案为A。"
+}

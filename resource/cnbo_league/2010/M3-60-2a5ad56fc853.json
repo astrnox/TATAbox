@@ -1,0 +1,84 @@
+{
+ "id": "M3-60-2a5ad56fc853",
+ "type": "single",
+ "question": "判断这种动物属于",
+ "options": {
+  "A": "软骨鱼纲",
+  "B": "硬骨鱼纲",
+  "C": "两栖纲",
+  "D": "爬行纲"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 60 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "60-63",
+  "stimulus": "下图显示的是某种脊椎动物的心脏，请仔细观察。"
+ },
+ "image": {
+  "file": "assets/questions/M3-60-2a5ad56fc853/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 135,
+  "bbox": [
+   96.6,
+   250.8,
+   498.6,
+   454.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-60-2a5ad56fc853/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 135,
+   "bbox": [
+    96.6,
+    250.8,
+    498.6,
+    454.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。软骨鱼心脏为一心房一心室并具动脉圆锥，与图示两心房不符。B．错误。硬骨鱼心脏也只有一心房一心室，并具动脉球，与图示不符。C．正确。图中心脏具左右两个心房和一个心室，静脉血经静脉窦回心，腹侧有动脉圆锥，为两栖类心脏的典型特征。D．错误。爬行类心室已出现不完全隔膜，动脉圆锥退化，与图示不符。故答案为C。\n【点睛】点睛：判脊椎动物心脏看心房数、心室有无隔膜和动脉圆锥有无——鱼类一房一室，两栖类两房一室，爬行类两房一室且心室不完全隔，鸟兽两房两室。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

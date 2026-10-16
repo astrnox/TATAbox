@@ -1,0 +1,48 @@
+{
+ "id": "M2-40-e9d44e46e7e7",
+ "type": "multiple",
+ "question": "下列果实中不是由一朵花发育而成的是：",
+ "options": {
+  "A": "草莓",
+  "B": "菠萝",
+  "C": "八角",
+  "D": "菠萝蜜"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 40 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是由一朵花发育而成的果实，判断词指该选项是否合题意。A．错误。草莓由一朵花中多数离生心皮发育形成的聚合果连同膨大的花托构成，是同一朵花的产物，表述成立。B．正确。菠萝由花序上多朵花与花轴共同发育形成聚花果，正是应选项。C．错误。八角由一朵花的多个蓇葖果组成聚合果，是同一朵花的产物，表述成立。D．正确。菠萝蜜由花序中多数花发育而成，属聚花果，正是应选项。故答案为BD。\n【点睛】点睛：单果、聚合果＝一朵花的产物；聚花果（菠萝、菠萝蜜、无花果）＝整个花序的产物，见'多花集成'即选。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

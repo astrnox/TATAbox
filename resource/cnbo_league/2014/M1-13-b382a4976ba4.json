@@ -1,0 +1,39 @@
+{
+ "id": "M1-13-b382a4976ba4",
+ "type": "single",
+ "question": "癌细胞与正常细胞的不同之处在于",
+ "options": {
+  "A": "癌细胞不能合成DNA",
+  "B": "癌细胞被锁定在细胞周期中的S 期",
+  "C": "癌细胞不受细胞周期检验点的控制",
+  "D": "癌细胞始终处于细胞周期的分裂期"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 13 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

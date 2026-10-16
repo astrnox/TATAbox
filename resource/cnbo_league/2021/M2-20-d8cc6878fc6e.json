@@ -1,0 +1,47 @@
+{
+ "id": "M2-20-d8cc6878fc6e",
+ "type": "single",
+ "question": "新型冠状病毒（COVID-19）是目前已知的第7 种可以感染人的冠状病毒，它与其他6 种不同的关键抗原是 ，也是宿主中和抗体的重要作用位点和疫苗设计的靶点。",
+ "options": {
+  "A": "剌突P 蛋白",
+  "B": "包膜M 蛋白",
+  "C": "刺突M 蛋白",
+  "D": "刺突S 蛋白",
+  "E": "包膜E 蛋白"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 20 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。冠状病毒的结构蛋白为 S、E、M、N，不存在所谓刺突 P 蛋白。B．错误。M 蛋白是含量最高的膜蛋白，但不是中和抗体的主要作用位点。C．错误。概念拼接错误，冠状病毒无刺突 M 蛋白。D．正确。刺突 S 蛋白位于病毒表面，是区分不同冠状病毒的关键抗原，也是中和抗体的重要作用位点与疫苗设计的靶点。E．错误。E 蛋白含量少、功能为膜组装与释放，不是主要抗原位点。故答案为D。"
+}

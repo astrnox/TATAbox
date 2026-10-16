@@ -1,0 +1,45 @@
+{
+ "id": "M1-29-99d8cf13f388",
+ "type": "single",
+ "question": "玉米干旱缺水时叶片的内卷主要是失水造成的",
+ "options": {
+  "A": "叶肉细胞",
+  "B": "叶表皮的毛状体",
+  "C": "位于上表皮的泡状（运动）细胞",
+  "D": "位于下表皮的泡状（运动）细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 29 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。叶肉细胞失水主要影响光合与代谢，不是叶片内卷的直接力学原因。B．错误。毛状体减少蒸腾和反光，与内卷运动无关。C．正确。题干所问即哪种细胞失水引起内卷：玉米等禾本科植物上表皮分布泡状（运动）细胞，干旱时先失水、体积收缩，牵动叶片向上内卷以减少蒸腾。D．错误。泡状细胞位于上表皮而非下表皮。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M4-72-ac58ce62cff8",
+ "type": "mtf",
+ "question": "判断下列关于序列比对陈述的正误：",
+ "options": {
+  "A": "多序列比对可以用来发现远缘的进化保守关系；",
+  "B": "多序列比对可以用来辅助蛋白结构预测；",
+  "C": "为寻找非同源基因中的同源区域，应采用全局比对；",
+  "D": "blast 软件使用全局比对。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 72 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "第四部分：遗传学 演化生物学 生物信息学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。多序列比对可揭示跨物种的保守位点与远缘进化关系。B．正确。多序列比对得到的保守性与共进化信息可辅助蛋白结构预测（如同源建模、共进化接触图）。C．错误。寻找非同源基因中的局部同源区域（motif、结构域）应采用局部比对，全局比对适用于整体同源的序列。D．错误。BLAST基于局部比对（种子扩展算法），不是全局比对。\n【易错易混】易混：全局比对（Needleman-Wunsch，整体相似）vs 局部比对（Smith-Waterman、BLAST，找局部相似）。'找片段/基序/结构域'永远用局部。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

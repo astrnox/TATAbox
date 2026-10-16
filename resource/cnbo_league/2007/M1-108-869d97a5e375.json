@@ -1,0 +1,50 @@
+{
+ "id": "M1-108-869d97a5e375",
+ "type": "mtf",
+ "question": "在下列细胞结构中，质子泵存在于：",
+ "options": {
+  "A": "质膜",
+  "B": "高尔基体",
+  "C": "溶酶体",
+  "D": "过氧化物酶体",
+  "E": "液泡"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "108.A（√）B（×）C（√）D（×）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 108 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。质膜上分布质子泵（如植物细胞质膜H＋－ATP 酶），维持膜内外离子梯度与跨膜电位。B．错误。常规归类中质子泵见于质膜、溶酶体与液泡膜，高尔基体未列其中，然高尔基体膜上实有V 型质子泵（该官方标答存此一说）。C．正确。溶酶体膜上的V 型质子泵泵入H＋，维持腔内约pH 5 的酸性水解环境。D．错误。过氧化物酶体与过氧化氢酶系相关，其膜上无特征性质子泵。E．正确。液泡膜上有V 型质子泵，建立跨膜质子梯度供次级主动转运。\n【点睛】点睛：抓住'酸性区室必有泵'——溶酶体、液泡靠V 型质子泵维持酸性，质膜靠P 型H＋泵，据此逐项对号。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

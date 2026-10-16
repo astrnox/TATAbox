@@ -1,0 +1,45 @@
+{
+ "id": "M4-71-05be1d84fd5e",
+ "type": "single",
+ "question": "根据动植物物种不同的生活史与繁殖对策，可以把它们划分为r 对策和K 对策物种。以下不是K 对策物种典型特点的是",
+ "options": {
+  "A": "个体发育速度快",
+  "B": "体型大",
+  "C": "繁殖周期长",
+  "D": "单次繁殖后代数量少"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 71 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是K对策物种典型特点的一项，判断词指该选项是否合题意。A．正确。个体发育速度快、成熟早是r对策物种的特征，不是K对策的典型特点，正是应选项。B．错误。K对策物种体型大、存活率高，表述成立。C．错误。K对策物种繁殖周期长、世代时间长，表述成立。D．错误。K对策物种单次繁殖后代数量少但亲代抚育强，表述成立。故答案为A。"
+}

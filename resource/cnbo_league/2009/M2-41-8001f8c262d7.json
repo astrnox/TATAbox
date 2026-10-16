@@ -1,0 +1,48 @@
+{
+ "id": "M2-41-8001f8c262d7",
+ "type": "single",
+ "question": "灭活的仙台病毒的抗原性和感染力是：",
+ "options": {
+  "A": "失去抗原性，具有感染力",
+  "B": "具有抗原性，也具有感染力",
+  "C": "失去抗原性，也失去感染力",
+  "D": "具有抗原性，失去感染力"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 41 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。灭活不破坏病毒表面的抗原蛋白，抗原性依然保留。B．错误。灭活后病毒核酸被破坏，失去感染力。C．错误。抗原性与感染力不会同时丧失。D．正确。仙台病毒经紫外线或化学法灭活后，表面抗原性保留、仍能吸附并诱导细胞融合，但不能复制，即具有抗原性而失去感染力。故答案为D。\n【易错易混】易混：灭活针对核酸，抗原性由蛋白质外壳决定，故灭活病毒既有抗原性又无感染性。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

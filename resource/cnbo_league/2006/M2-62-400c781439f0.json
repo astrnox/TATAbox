@@ -1,0 +1,48 @@
+{
+ "id": "M2-62-400c781439f0",
+ "type": "single",
+ "question": "菜豆是自花授粉的植物，其花色中有色花是白色花的显性。一株杂合有色花菜豆Cc 生活在海岛上，如果海岛上没有其他菜豆植株存在，且菜豆为一年生植物，那么三年之后，海岛上开有色花菜豆植株和开无色花菜豆植株的比例是？",
+ "options": {
+  "A": "3：1",
+  "B": "15：7",
+  "C": "9：7",
+  "D": "15：9"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 62 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。3:1只是杂合体自交一代的分离比，未计后续世代。B．错误。15:7是两对基因互作之比，与单基因自交无关。C．正确。菜豆自花授粉，杂合率每代减半，三年后Cc占1/8，CC与cc各占7/16，有色（CC+Cc）比无色（cc）＝9:7。D．错误。15:9也不是单基因连续自交所得的比例。故答案为C。\n【通法】通法（连续自交）：自花授粉n代后杂合率Hn＝(1/2)^n，显性表型占(1+Hn)/2、隐性表型占(1-Hn)/2，代入即得比例。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

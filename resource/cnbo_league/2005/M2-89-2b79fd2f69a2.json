@@ -1,0 +1,50 @@
+{
+ "id": "M2-89-2b79fd2f69a2",
+ "type": "single",
+ "question": "某一种植物生活史中出现种子，但不出现花被，该植物属于：",
+ "options": {
+  "A": "被子植物",
+  "B": "裸子植物",
+  "C": "双子叶植物",
+  "D": "单子叶植物",
+  "E": "以上选择均不可靠"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 89 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。被子植物中确有无花被的类群（如禾本科、杨柳科），但据此不能断定必为被子植物。B．错误。裸子植物无真正的花因而无花被，但有种子而无花被者不限于裸子植物。C．错误。双子叶植物多具花被，凭此性状无法判定。D．错误。单子叶植物同样多具花被，判断依据不足。E．正确。有种子而无花被既可能是裸子植物，也可能是花被退化的被子植物，题给性状不足以定类，故以上选择均不可靠。故答案为E。\n【点睛】点睛：性状重叠时先问唯一性，该性状若不能唯一确定类群，就该选不可靠。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

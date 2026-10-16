@@ -1,0 +1,48 @@
+{
+ "id": "M2-04-2d2bc78923e1",
+ "type": "single",
+ "question": "光合链中数量最多，能同时传递电子、质子的电子传递体是：",
+ "options": {
+  "A": "Fd",
+  "B": "PQ",
+  "C": "PC",
+  "D": "Cyt b"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 4 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。Fd（铁氧还蛋白）是位于类囊体膜基质侧的水溶性载体，只传递电子，含量也不多。B．正确。PQ（质体醌）是脂溶性醌类，在光合链中含量最丰富，既传递电子又能与基质中的质子结合、把质子释放到类囊体腔内，兼有传递电子和质子的功能。C．错误。PC（质体蓝素）是含铜的外周蛋白，只传递电子。D．错误。Cyt b6只传递电子并参与Q循环，数量与运质子能力均不及PQ。故答案为B。\n【通法】通法（光合链）：PQ是唯一既传电子又传质子且含量最多的载体，类囊体腔的质子梯度主要靠PQ和水的光解建立。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

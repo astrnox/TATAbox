@@ -1,0 +1,48 @@
+{
+ "id": "M3-07-dd00fab69faf",
+ "type": "single",
+ "question": "脂肪酶是一种限速酶，具有负调节作用的激素是：",
+ "options": {
+  "A": "肾上腺素",
+  "B": "胰岛素",
+  "C": "胰高血糖素",
+  "D": "肾上腺皮质激素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 7 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】脂肪酶（激素敏感性脂肪酶）催化脂肪水解，是脂解的限速酶。A．错误。肾上腺素激活该脂肪酶，促进脂肪分解，属正调节。B．正确。胰岛素促进脂肪合成、抑制脂肪分解，对脂肪酶起负调节作用，是体内唯一促进贮脂的激素。C．错误。胰高血糖素促进脂肪分解供能，属正调节。D．错误。肾上腺皮质激素（糖皮质激素）促进脂肪分解和糖异生，属正调节。故答案为B。\n【易错易混】易混：胰岛素是'储存'激素，抑制脂解；肾上腺素、胰高血糖素、糖皮质激素都是'动员'激素，促进脂解，别把胰岛素与胰高血糖素的作用记反。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

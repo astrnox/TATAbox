@@ -1,0 +1,45 @@
+{
+ "id": "M3-64-6d6df53cfd0e",
+ "type": "single",
+ "question": "人类史前时代存在着4 个关键性的阶段，人属的出现是其中之一。以下标志着人属出现的是：",
+ "options": {
+  "A": "双足直立行走",
+  "B": "两足行走动物的适应辐射",
+  "C": "脑容量增加",
+  "D": "具有语言、意识、艺术想象力"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 64 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。双足直立行走早于人属，南方古猿已具此特征。B．错误。两足行走动物的适应辐射是更早阶段的事件，不标志人属出现。C．正确。人属（Homo）的出现以脑容量的显著增加为标志，能人脑容量已超过600 mL。D．错误。语言、意识与艺术想象力是晚近人类（智人）的特征，远晚于人属起源。故答案为C。"
+}

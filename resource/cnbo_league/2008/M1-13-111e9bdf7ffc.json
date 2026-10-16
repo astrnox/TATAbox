@@ -1,0 +1,45 @@
+{
+ "id": "M1-13-111e9bdf7ffc",
+ "type": "single",
+ "question": "与植物器官脱落关系最为密切的酶是",
+ "options": {
+  "A": "蛋白酶和肽酶",
+  "B": "纤维素酶和果胶酶",
+  "C": "淀粉酶和转化酶",
+  "D": "IAA 氧化酶和ATP 酶"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 13 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蛋白酶、肽酶主要降解蛋白质，与离层细胞壁的解体无直接关系。B．正确。器官脱落时离层细胞的胞间层被果胶酶降解、细胞壁被纤维素酶分解，细胞彼此分离而脱落。C．错误。淀粉酶水解淀粉、转化酶水解蔗糖，均属糖类代谢酶。D．错误。IAA氧化酶与生长素降解有关，ATP酶参与能量转化，都不是离层解体的直接执行者。故答案为B。"
+}

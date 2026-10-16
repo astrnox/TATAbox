@@ -1,0 +1,48 @@
+{
+ "id": "M1-96-8cefeb24441e",
+ "type": "mtf",
+ "question": "下列哪些周期性活动与生物钟有关？",
+ "options": {
+  "A": "月经周期",
+  "B": "心动周期",
+  "C": "呼吸周期",
+  "D": "睡眠周期"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "23．A（√）B（×）C（×）D（√）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 23 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。月经周期受下丘脑—垂体—卵巢轴的节律性调控，属生物钟参与调节的周期性活动。B．错误。心动周期由心肌自律细胞和心血管中枢的节律性兴奋决定，以秒计，不受生物钟支配。C．错误。呼吸周期由呼吸中枢节律性放电维持，是即时性生理节律，与生物钟无关。D．正确。睡眠—觉醒周期是典型的昼夜节律，由视交叉上核等生物钟系统按光照授时调控。\n【易错易混】易混：生物钟管的是可被光照授时的内源节律（近日、月、年节律），心跳、呼吸这类由中枢直接驱动的短周期往复不属于生物钟范畴。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-48-6f344721c253",
+ "type": "single",
+ "question": "下丘脑是：",
+ "options": {
+  "A": "中脑的一部分",
+  "B": "前脑的一部分",
+  "C": "后脑的一部分",
+  "D": "菱脑的一部分"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 48 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。中脑是独立的脑部，下丘脑不属于中脑。B．正确。下丘脑属于间脑的一部分，间脑由前脑泡发育而来，故下丘脑是前脑的组成部分。C．错误。后脑包括脑桥、小脑和延髓，不含下丘脑。D．错误。菱脑分化为后脑和末脑（延髓），下丘脑不在其中，故答案为B。"
+}

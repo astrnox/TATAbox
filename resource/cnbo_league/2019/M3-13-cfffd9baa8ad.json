@@ -1,0 +1,48 @@
+{
+ "id": "M3-13-cfffd9baa8ad",
+ "type": "single",
+ "question": "人类肝脏组织中储存的糖原是",
+ "options": {
+  "A": "主要的能源物质",
+  "B": "主要的结构物质",
+  "C": "为了维持血糖的稳定",
+  "D": "跟淀粉具有相同的结构，被称为“动物淀粉”"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 13 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。肝脏主要能源物质是脂肪酸等，糖原储存主要用于维持血糖。B．错误。结构物质是蛋白质、几丁质等，糖原是储能物质。C．正确。肝糖原的主要功能是分解补充血糖，维持血糖稳定。D．错误。糖原与淀粉虽均以α-1,4糖苷键为主并具α-1,6分支，但分支更短更密，'结构相同'不严谨，且'动物淀粉'只是俗称。故答案为C。\n【点睛】点睛：肝糖原管血糖、肌糖原管自己——糖原的生理意义先看'谁的糖原'。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-107-20bac95d9176",
+ "type": "single",
+ "question": "在紫荆（Cercis chinensis Bunge）的花结构中，位于最外侧的花瓣是：",
+ "options": {
+  "A": "旗瓣",
+  "B": "翼瓣",
+  "C": "龙骨瓣",
+  "D": "盔瓣"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 107 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。旗瓣是蝶形花冠最外（最上方）的一枚，紫荆属云实亚纲，其花冠为假蝶形，旗瓣反而最小且位于最内。B．错误。翼瓣位于旗瓣与龙骨瓣之间，不是最外侧。C．正确。紫荆为假蝶形花冠，最外轮为龙骨瓣（由两枚花瓣合生而成），故位于最外侧的是龙骨瓣。D．错误。选项中无盔瓣，盔瓣是选项A所指旗瓣的蝶形花冠别称之一，均不在最外侧。故答案为C。"
+}

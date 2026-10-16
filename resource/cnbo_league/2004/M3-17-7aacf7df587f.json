@@ -1,0 +1,48 @@
+{
+ "id": "M3-17-7aacf7df587f",
+ "type": "single",
+ "question": "鸟类呼吸时新鲜空气通过鸟肺的方向是",
+ "options": {
+  "A": "吸气时新鲜空气从头方穿过肺，呼气时是从尾方到头方穿过肺",
+  "B": "吸气和呼气时新鲜空气均从头方到尾方穿过肺",
+  "C": "吸气和呼气时新鲜空气均从尾方到头方穿过肺",
+  "D": "吸气时新鲜空气从头方到尾方穿过肺，呼气时是从尾方到头方不通过肺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 17 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。吸气与呼气时穿过肺的气流方向并不相反。B．错误。气流并非由头方流向尾方。C．正确。鸟类肺内各级支气管彼此连通，吸气和呼气时都有新鲜空气穿过肺内的平行支气管，方向均自尾方流向头方，只是分别来自不同的气囊通路，故吸呼两相都在换气。D．错误。呼气时新鲜空气同样通过肺，而非不通过肺。故答案为C。\n【点睛】点睛：鸟类双重呼吸的要害是气流单向，吸气呼气都过肺。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

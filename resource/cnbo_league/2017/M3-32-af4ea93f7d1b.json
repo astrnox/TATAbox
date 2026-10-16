@@ -1,0 +1,80 @@
+{
+ "id": "M3-32-af4ea93f7d1b",
+ "type": "single",
+ "question": "不同脊椎动物类群的心脏及附近血管存在较大差异，下图中（LA：左体动脉；RA：右体动脉；Aorta：主动脉）分别属于扬子鳄-玳瑁-岩松鼠的一组心脏模式结构是：",
+ "options": {
+  "A": "b-c-b",
+  "B": "b-c-a",
+  "C": "c-b-a",
+  "D": "a-b-c"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 32 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-32-af4ea93f7d1b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2017 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 268,
+  "bbox": [
+   186.5,
+   77.0,
+   408.7,
+   176.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-32-af4ea93f7d1b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2017 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 268,
+   "bbox": [
+    186.5,
+    77.0,
+    408.7,
+    176.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。三者顺序与各类群血管格局不符。B．错误。岩松鼠为哺乳类，应具左体动脉弓单一模式，不应对应c。C．正确。扬子鳄具左右体动脉弓并存的模式（c），玳瑁等龟鳖类以右体动脉弓为主（b），岩松鼠为哺乳类仅保留左体动脉弓（a），故为c-b-a。D．错误。顺序完全错位。故答案为C。\n【通法】通法（脊椎动物体动脉弓演化）：鳄类左右体动脉弓并存，龟鳖类以右体动脉弓为主，哺乳类仅存左体动脉弓，'两弓都存、存右、存左'对应爬行→龟→哺乳。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

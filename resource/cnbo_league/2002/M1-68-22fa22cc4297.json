@@ -1,0 +1,48 @@
+{
+ "id": "M1-68-22fa22cc4297",
+ "type": "single",
+ "question": "下列哪种方法可用于总活菌数计数",
+ "options": {
+  "A": "浊度计比色法",
+  "B": "光电比色法",
+  "C": "血球计算板法",
+  "D": "平板菌落计数法"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 68 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。浊度计比色测菌悬液浑浊度，反映总菌量，死菌活菌都算在内，不能测活菌数。B．错误。光电比色法以吸光度换算菌量，同样死活不分。C．错误。血球计数板（题中'血球计算板'）在显微镜下直接计数，死菌也计入。D．正确。平板菌落计数法将菌液涂布或混入培养基，每个活菌（或活菌团）形成一个菌落，按CFU计数，测得的是活菌数。故答案为D。\n【通法】通法（死活菌计数）：活菌计数用平板菌落计数（CFU），总菌（含死菌）用显微镜直接计数或比浊法；题干见'活菌'二字直接锁定平板法。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

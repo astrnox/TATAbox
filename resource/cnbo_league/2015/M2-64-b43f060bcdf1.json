@@ -1,0 +1,48 @@
+{
+ "id": "M2-64-b43f060bcdf1",
+ "type": "multiple",
+ "question": "下列哪些植物细胞的细胞壁可以被盐酸-间苯三酚染成红色：",
+ "options": {
+  "A": "厚角组织细胞",
+  "B": "根内皮层细胞",
+  "C": "导管",
+  "D": "筛管"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 64 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。厚角组织细胞壁由纤维素和果胶组成，不木质化，不能被盐酸-间苯三酚染红。B．正确。根内皮层细胞的凯氏带发生栓质化，可被盐酸-间苯三酚染成红色。C．正确。导管细胞壁木质化，可被盐酸-间苯三酚染成红色。D．错误。筛管细胞壁为初生壁，不木质化，不能被染红。故答案为BC。\n【点睛】点睛：盐酸-间苯三酚染的是木质化和栓质化的细胞壁（变红），纤维素壁（厚角组织、筛管）不着色，见到'染红'先想木质或栓质。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

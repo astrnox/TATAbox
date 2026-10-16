@@ -1,0 +1,48 @@
+{
+ "id": "M1-35-1652f8755f2d",
+ "type": "multiple",
+ "question": "高等植物细胞壁中广泛存在的多糖有哪些？",
+ "options": {
+  "A": "淀粉",
+  "B": "半纤维素",
+  "C": "纤维素",
+  "D": "果胶物质"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 35 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。淀粉是贮藏多糖，存在于造粉体等质体中，不构成细胞壁。B．正确。半纤维素（木聚糖、葡甘露聚糖等）是初生壁和次生壁中广泛存在的基质多糖。C．正确。纤维素由β-1,4糖苷键连接的葡聚糖链聚合成微纤丝，是细胞壁的骨架成分。D．正确。果胶物质（聚半乳糖醛酸等）填充于初生壁和胞间层中，是细胞壁常见的基质多糖。故答案为BCD。\n【易错易混】易混：细胞壁多糖＝纤维素＋半纤维素＋果胶；淀粉是贮藏物质，只存在于质体中，不出现在细胞壁。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

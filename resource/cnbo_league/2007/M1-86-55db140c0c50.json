@@ -1,0 +1,45 @@
+{
+ "id": "M1-86-55db140c0c50",
+ "type": "single",
+ "question": "北美洲在过去的18000 年中，云杉、白桦向北推移的原因是：",
+ "options": {
+  "A": "潮湿气候的区域已经向南推移了",
+  "B": "飓风发生的频率增加了",
+  "C": "年平均温度升高了",
+  "D": "年均降水量增加了"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 86 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。若潮湿区南移，喜湿的云杉不会向北扩展。B．错误。飓风频率与树种分布北移无直接因果关系。C．正确。末次冰期结束以来北美年均温升高，寒冷适生区随之北移，云杉、白桦等耐寒树种的分布向北推移。D．错误。降水增加不是这18000 年植被带北移的主导因子，热量条件才是。故答案为C。"
+}

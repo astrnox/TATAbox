@@ -1,0 +1,50 @@
+{
+ "id": "M4-90-6bb57066951c",
+ "type": "multiple",
+ "question": "设a、b、c 为果蝇的三个隐性突变。若亲代的基因型为aaBBCC 及AAbbcc，产生的子代测交后，所观察到的1000 个后代的表型及数目如下：ABC 73、abc 77、ABc 76、abC 74、Abc 176、aBC 174、AbC 179、aBc 171，则下列有关此果蝇遗传交配实验的叙述中，正确的有",
+ "options": {
+  "A": "用来测交的个体其基因型为aabbcc",
+  "B": "所观察的基因共位于3 对染色体上",
+  "C": "此交配中基因A 和基因B 连锁",
+  "D": "此交配中基因A 和基因C 连锁",
+  "E": "此交配中基因B 和基因C 连锁"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 90 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。测交是与三隐性纯合子 aabbcc 杂交，用于检验 F1 产生的配子类型。B．错误。高频组显示 A 与 B 连锁于同一对染色体上，三对基因只分布在 2 对染色体上。C．正确。Abc、aBC、AbC、aBc 四类约占七成，A 与 B 处于互斥相连锁。D．错误。A 与 c、A 与 C 在两类个体中比例接近 1:1，二者不连锁。E．错误。B 与 C 的组合在两类个体中同样接近 1:1，二者不连锁。故答案为AC。\n【通法】通法（测交后代定连锁）：先看哪两对基因的组合在后代中明显偏多——偏多的配对即连锁；与 1:1:1:1 的独立分配预期比对，超出预期的部分为重组型。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

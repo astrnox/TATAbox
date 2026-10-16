@@ -1,0 +1,48 @@
+{
+ "id": "M1-17-0c026db29ff9",
+ "type": "single",
+ "question": "同工酶具有以下哪个特性？",
+ "options": {
+  "A": "具有相同的蛋白质分子结构",
+  "B": "理化性质相同",
+  "C": "催化相同的化学反应",
+  "D": "免疫性能相同"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 17 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。同工酶由不同基因编码或不同亚基组成，氨基酸序列与分子结构不同。B．错误。结构不同使电泳迁移率等理化性质不同，这正是同工酶电泳分离的基础。C．正确。同工酶即催化同一化学反应而结构不同的一组酶。D．错误。抗原性（免疫性能）也不同，可用免疫学方法加以区分。故答案为C。\n【点睛】点睛：同工酶的共同点只有一个——催化相同反应，结构、理化与免疫性质均有差异。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

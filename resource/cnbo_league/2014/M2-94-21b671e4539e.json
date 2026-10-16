@@ -1,0 +1,45 @@
+{
+ "id": "M2-94-21b671e4539e",
+ "type": "single",
+ "question": "根中的射线来源于下列哪一个结构？",
+ "options": {
+  "A": "束间形成层",
+  "B": "原形成层",
+  "C": "基本分生组织",
+  "D": "维管形成层"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 94 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。束间形成层产生的是髓射线，将维管束彼此分隔。B．错误。原形成层分化为初生木质部与韧皮部，不形成射线。C．错误。基本分生组织发育成皮层与髓等基本组织。D．正确。根的维管射线由维管形成层中的射线原始细胞分裂产生，属次生结构。故答案为D。"
+}

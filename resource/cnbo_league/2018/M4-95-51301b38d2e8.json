@@ -1,0 +1,48 @@
+{
+ "id": "M4-95-51301b38d2e8",
+ "type": "single",
+ "question": "人类和黑猩猩大约在6 百万年前分歧，和恒河猴大约在3 千万年前分歧。将这三个物种的全基因组序列排列，发现在基因组某个区域人的序列是ATG，黑猩猩是AAG，恒河猴是AAG，请问在该区域人和黑猩猩的最近共同祖先的序列最可能是：",
+ "options": {
+  "A": "AAG",
+  "B": "ATG",
+  "C": "ACG",
+  "D": "AGG"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 95 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。恒河猴与人、黑猩猩的共同祖先更早，其序列AAG代表祖先状态；人与黑猩猩分歧晚，二者中少数（仅人为ATG）提示人发生了一次突变，故最近共同祖先最可能为AAG。B．错误。若祖先为ATG，则黑猩猩与恒河猴需分别独立发生同一突变，概率极低。C．错误。ACG无任何现有序列支持。D．错误。AGG同样缺乏旁证。故答案为A。\n【通法】通法（祖先序列推断）：用外群（恒河猴）定祖先状态，遵循'少数服从多数'——两个近缘物种相同的序列最可能是祖先型，另一不同者为衍生突变。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

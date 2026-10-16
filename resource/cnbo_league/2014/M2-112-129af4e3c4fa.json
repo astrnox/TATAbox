@@ -1,0 +1,45 @@
+{
+ "id": "M2-112-129af4e3c4fa",
+ "type": "single",
+ "question": "昆虫搜寻取食寄主植物的过程中使用到的感官基本顺序是",
+ "options": {
+  "A": "视觉-嗅觉-触觉-味觉",
+  "B": "视觉-触觉-嗅觉-味觉",
+  "C": "嗅觉-触觉-视觉-味觉",
+  "D": "嗅觉-视觉-味觉-触觉"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 112 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 112,
+  "section": "第三部分 动物行为学、生态学（7 道题8 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。昆虫先凭视觉（颜色、轮廓）远距离发现寄主植物，再嗅觉定位挥发物，降落后以触觉探测表面，最后味觉（化学感受器）判断是否取食，顺序为视觉-嗅觉-触觉-味觉。B．错误。触觉在降落后才起作用，不能排在嗅觉之前。C．错误。视觉远距离定位在先，嗅觉不能先于视觉作为首要线索。D．错误。味觉是最后的把关环节，不应前置。故答案为A。"
+}

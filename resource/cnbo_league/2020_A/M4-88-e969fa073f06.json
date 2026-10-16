@@ -1,0 +1,77 @@
+{
+ "id": "M4-88-e969fa073f06",
+ "type": "single",
+ "question": "在分子演化中，推测不同物种的祖先序列常用最大简约法。下图是一个真实的系统发生树，在某同源基因的三个特定位点上，所有物种的核苷酸已给出，枝长与演化速率（每位点预期替换数）成比例。假设各类核苷酸替换的速度相同，那么人类和黑猩猩的最近共同祖先（图中圆点处）的序列最有可能是",
+ "options": {
+  "A": "TAG",
+  "B": "CTG",
+  "C": "TTG",
+  "D": "CAG"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 88 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-88-e969fa073f06/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 353,
+  "bbox": [
+   166.4,
+   576.9,
+   428.7,
+   721.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-88-e969fa073f06/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 353,
+   "bbox": [
+    166.4,
+    576.9,
+    428.7,
+    721.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。按最大简约法逐位点回推，TAG所需替换步数多于CAG。B．错误。CTG在第一位点与人类、黑猩猩现有序列的简约路径不符。C．错误。TTG需要更多平行替换，非最简。D．正确。以最大简约原则逐位点重建，人与黑猩猩最近共同祖先在三个位点上最可能为CAG，其到各方序列的替换总数最少。故答案为D。"
+}

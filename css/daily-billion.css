@@ -277,6 +277,7 @@ html.dark .db-counter-badge {
 /* ===== 父级激活选择器：父卡片 .db-card-inner 有了 --animate 就把所有子动画一起打开 ===== */
 .db-card-inner.db-card--animate .db-question-text,
 .db-card-inner.db-card--animate .db-sub-item,
+.db-card-inner.db-card--animate .db-opt-btn,
 .db-card-inner.db-card--animate .db-submit-btn {
   animation-play-state: running;
 }
@@ -475,6 +476,7 @@ html.dark .db-sub-text {
 
 /* 键盘焦点环 */
 .db-tf-btn:focus-visible,
+.db-opt-btn:focus-visible,
 .db-submit-btn:focus-visible,
 .db-back-btn:focus-visible,
 .db-retry-btn:focus-visible,
@@ -488,6 +490,8 @@ html.dark .db-sub-text {
 }
 [data-theme="dark"] .db-tf-btn:focus-visible,
 html.dark .db-tf-btn:focus-visible,
+[data-theme="dark"] .db-opt-btn:focus-visible,
+html.dark .db-opt-btn:focus-visible,
 [data-theme="dark"] .db-submit-btn:focus-visible,
 html.dark .db-submit-btn:focus-visible,
 [data-theme="dark"] .db-back-btn:focus-visible,
@@ -550,6 +554,131 @@ html.dark .db-tf-btn:not(.selected):hover {
   border-color: #c4956a;
   background: rgba(196, 149, 106, 0.1);
   color: #d4a87e;
+}
+
+/* ----- 题型标签（判断/单选） ----- */
+.db-card-type {
+  font-size: 0.72rem;
+  color: #a9713f;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(196, 149, 106, 0.1);
+  border: 0.5px solid rgba(196, 149, 106, 0.22);
+  font-weight: 600;
+}
+[data-theme="dark"] .db-card-type,
+html.dark .db-card-type {
+  background: rgba(196, 149, 106, 0.14);
+  border-color: rgba(196, 149, 106, 0.28);
+  color: #d4a87e;
+}
+
+/* ----- 单选题选项列表 ----- */
+.db-opt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.db-opt-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1.5px solid #e8e2d8;
+  background: #ffffff;
+  color: #3d4f41;
+  font-family: inherit;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  animation-name: dbSubItemIn;
+  animation-duration: 0.34s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  will-change: transform, opacity;
+}
+.db-opt-btn:nth-child(1) { animation-delay: 0.10s; }
+.db-opt-btn:nth-child(2) { animation-delay: 0.14s; }
+.db-opt-btn:nth-child(n+3) { animation-delay: 0.18s; }
+
+.db-opt-btn:not(.selected):hover {
+  border-color: #c4956a;
+  background: #fdf5ee;
+}
+.db-opt-btn:active { transform: scale(0.985); }
+
+.db-opt-label {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-bg-warm);
+  color: #5a6b5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.db-opt-text { flex: 1; min-width: 0; }
+
+/* 选中态（作答阶段唯一高亮） */
+.db-opt-btn.selected {
+  background: #edf7f0;
+  border-color: #3a8c5c;
+  color: #2d6a45;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+}
+.db-opt-btn.selected .db-opt-label {
+  background: #3a8c5c;
+  color: #ffffff;
+}
+/* 已提交锁定：不再响应悬停 */
+.db-opt-btn:disabled {
+  cursor: default;
+}
+
+[data-theme="dark"] .db-opt-list .db-opt-btn,
+html.dark .db-opt-list .db-opt-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #c5cec8;
+  box-shadow: none;
+}
+[data-theme="dark"] .db-opt-list .db-opt-btn:not(.selected):hover,
+html.dark .db-opt-list .db-opt-btn:not(.selected):hover {
+  border-color: #c4956a;
+  background: rgba(196, 149, 106, 0.1);
+}
+[data-theme="dark"] .db-opt-btn .db-opt-label,
+html.dark .db-opt-btn .db-opt-label {
+  background: rgba(255, 255, 255, 0.08);
+  color: #8db899;
+}
+[data-theme="dark"] .db-opt-btn.selected,
+html.dark .db-opt-btn.selected {
+  background: rgba(58, 140, 92, 0.2);
+  border-color: #4caf70;
+  color: #81c784;
+}
+[data-theme="dark"] .db-opt-btn.selected .db-opt-label,
+html.dark .db-opt-btn.selected .db-opt-label {
+  background: #3a8c5c;
+  color: #ffffff;
 }
 
 /* ----- 提交按钮 ----- */
@@ -1052,6 +1181,16 @@ html.dark .db-error-retry-btn:hover {
     padding: 9px 0;
   }
 
+  .db-opt-btn {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding: 12px 14px;
+    gap: 10px;
+    border-radius: 12px;
+  }
+
+  .db-opt-list { gap: 10px; }
+
   .db-submit-btn {
     padding: 14px;
     font-size: 0.92rem;
@@ -1106,6 +1245,20 @@ html.dark .db-error-retry-btn:hover {
     font-size: 0.78rem;
     min-height: 36px;
     padding: 7px 0;
+  }
+
+  .db-opt-btn {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 9px 12px;
+    gap: 8px;
+    border-radius: 12px;
+  }
+
+  .db-opt-label {
+    width: 22px;
+    height: 22px;
+    font-size: 0.72rem;
   }
 
   .db-submit-btn {
@@ -1207,6 +1360,7 @@ html.dark .db-error-retry-btn:hover {
   .db-card-inner,
   .db-question-text,
   .db-sub-item,
+  .db-opt-btn,
   .db-submit-btn {
     animation: none !important;
   }

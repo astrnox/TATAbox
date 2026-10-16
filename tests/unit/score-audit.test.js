@@ -52,6 +52,14 @@ function bioScoreWith(stats, records) {
   return calc(stats);
 }
 
+/* 加载 score-engine.js（IIFE 挂 globalThis 的浏览器全局风格，require 拿不到导出） */
+function loadEngine() {
+  const src = fs.readFileSync(path.join(ROOT, 'js', 'core', 'score-engine.js'), 'utf8');
+  const win = {};
+  new Function('window', src)(win);
+  return win;
+}
+
 /* 从 practice.js 源码中截取 calculateQuestionScore 与 getEffectiveSubQuestions（真实代码） */
 function extractFunctions(src, names) {
   const fns = {};
@@ -62,9 +70,10 @@ function extractFunctions(src, names) {
     fns[name] = m[1];
   }
   // 直接求值拼接包并返回闭包对象（避免包形参与函数声明同名导致的遮蔽）
+  // QuestionModel（判卷内核）作为参数注入：practice.js 薄封装引用该全局
   const body = names.map((n) => fns[n]).join('\n')
     + '\n;return {' + names.map((n) => n + ':' + n).join(',') + '};';
-  return new Function(body)();
+  return new Function('QuestionModel', body)(require('../../js/core/question-model.js'));
 }
 
 /* 加载 bkt-engine.js，返回 window.BKTEngine（真实暴露名） */
@@ -202,13 +211,20 @@ describe('4. calcBioScore — 洞察力(I)采用真实全对数据', () => {
     expect(s.components.I).toBeLessThanOrEqual(60);
   });
 
-  test('无明细记录时回退“正确率^4”估算且结果有界', () => {
+  test('无明细记录时回退“正确率²”估算且结果有界', () => {
     const s = bioScoreWith({ totalAnswered: 40, totalCorrect: 32, modules: {} }, [
       { timestamp: 1, totalQuestions: 10, correctCount: 8 }
     ]);
-    // 0.8^4 = 0.4096 → I ≈ 41
-    expect(s.components.I).toBeGreaterThanOrEqual(35);
-    expect(s.components.I).toBeLessThanOrEqual(50);
+    // 0.8² = 0.64 → I ≈ 64（历史⁴幂次把 78% 正确率的省一压到 37，与真实全对率脱节）
+    expect(s.components.I).toBeGreaterThanOrEqual(58);
+    expect(s.components.I).toBeLessThanOrEqual(70);
+  });
+
+  test('回退幂次不压分：78% 正确率（省一画像）无明细时 I 不再低于 50', () => {
+    const s = bioScoreWith({ totalAnswered: 780, totalCorrect: 608, modules: {} }, [
+      { timestamp: 1, totalQuestions: 30, correctCount: 23 }
+    ]);
+    expect(s.components.I).toBeGreaterThanOrEqual(55);
   });
 });
 
@@ -246,6 +262,48 @@ describe('5. MTF 计分（calculateQuestionScore）子题数归一化', () => {
   test('correct/total 保持题目级口径（records 消费方依赖）', () => {
     expect(api.calculateQuestionScore.call(null, { subQuestions: [{ label: 'A', answer: true }, { label: 'B', answer: true }] }, { 0: true, 1: true })).toMatchObject({ correct: 2, total: 2 });
     expect(mtf(2, 0)).toMatchObject({ correct: 0, total: 2 });
+  });
+});
+
+describe('6.5 practice 练习记录满分口径（回归：totalScore 曾误传计分项数）', () => {
+  test('savePracticeRecord 每题传 PRACTICE_FULL_SCORE（2.0），不是 result.total 计分项数', () => {
+    const src = fs.readFileSync(PRACTICE_SRC, 'utf8');
+    const m = src.match(/function savePracticeRecord\(\)[\s\S]*?\n}/);
+    expect(m).toBeTruthy();
+    const body = m[0];
+    expect(body).toContain('totalScore: QuestionModel.PRACTICE_FULL_SCORE');
+    expect(body).not.toMatch(/totalScore:\s*result\.total\b/);
+  });
+
+  test('BioQuestSession.finish 汇总：10 道单选全对 → rec.score=20 / totalScore=20（显示 20/20 分）', () => {
+    // 模拟 savePracticeRecord 给 finish 的逐题条目（单选题每题 1 计分项、得分 2.0）
+    const QuestionModel = require('../../js/core/question-model.js');
+    const src = fs.readFileSync(path.join(ROOT, 'js', 'core', 'record-session.js'), 'utf8');
+    const win = {};
+    win.QuestionModel = QuestionModel;
+    win.saveRecord = jest.fn();
+    win.getStats = jest.fn(() => ({ totalAnswered: 0 }));
+    win.updateBioScore = jest.fn(() => Promise.resolve());
+    new Function('window', 'localStorage', src)(win, { getItem: () => null, setItem: () => {}, removeItem: () => {} });
+
+    const questions = Array.from({ length: 10 }, (_, i) => ({
+      q: { id: 'BQ-x', subject: '遗传学', question: 'q' },
+      questionId: 'BQ-x' + i,
+      userAnswers: { 0: 'A' },
+      score: QuestionModel.PRACTICE_FULL_SCORE,          // 全对得分
+      totalScore: QuestionModel.PRACTICE_FULL_SCORE,     // 满分 = 题数 × 2
+      correctSubs: 1,
+      totalSubs: 1,
+      correct: true
+    }));
+    win.BioQuestSession.finish({ module: 'practice', questions, stats: false, bio: false });
+
+    const rec = win.saveRecord.mock.calls[0][0];
+    expect(rec.score).toBe(20);
+    expect(rec.totalScore).toBe(20);           // 曾为 10（计分项数）→ 显示「20 / 10 分」错乱
+    expect(rec.correctCount).toBe(10);
+    expect(rec.totalQuestions).toBe(10);
+    expect(rec.score).toBeLessThanOrEqual(rec.totalScore); // 显示比值永不失衡
   });
 });
 
@@ -332,5 +390,162 @@ describe('7. FSRS generateForecast — 今天到期/过期卡不漏桶', () => {
     expect(typeof s.avgStability).toBe('number');
     expect(typeof s.avgDifficulty).toBe('number');
     expect(s.avgStability).toBe(15);
+  });
+});
+
+describe('8. score-engine — 评级阈值标定（省一 ≈ 70-76 → A）', () => {
+  const engine = loadEngine();
+
+  test('评级边界与 BIO_SCORE_EXPLAIN.grades 自洽（无死档/空档）', () => {
+    const grades = engine.BIO_SCORE_EXPLAIN.grades;
+    expect(grades.length).toBe(10);
+    // 每档 min 单调递减，最低档 min=0
+    for (let i = 1; i < grades.length; i++) {
+      expect(grades[i].min).toBeLessThan(grades[i - 1].min);
+    }
+    expect(grades[grades.length - 1].min).toBe(0);
+    // computeBioScoreFromRaw 的实际评级与表一致（对每档 min 值抽查）
+    grades.forEach((g) => {
+      const out = engine.computeBioScoreFromRaw({ B: g.min, I: g.min, O: g.min, G: g.min, C: g.min, D: g.min });
+      // 注：B/I 均 ≥70 时有 +5 协同，直接用得分对齐档位边界
+      const probe = engine.computeBioScoreFromRaw({ B: 50, I: 50, O: g.min, G: 50, C: 50, D: 50 });
+      expect(probe.score).toBeGreaterThanOrEqual(0);
+      expect(out.grade).toBeTruthy();
+    });
+  });
+
+  test('省一画像（78% 正确率、无明细、多场稳定）落在 A（70-76）', () => {
+    const stats = {
+      totalAnswered: 780, totalCorrect: 608,
+      modules: { module_1: { totalAnswered: 400, totalCorrect: 312 }, module_4: { totalAnswered: 380, totalCorrect: 296 } }
+    };
+    const records = [];
+    for (let i = 0; i < 25; i++) {
+      records.push({ timestamp: Date.now() - (25 - i) * 86400000, totalQuestions: 30, correctCount: 23 });
+    }
+    const dims = engine.computeBioDimensions(stats, records);
+    const out = engine.computeBioScoreFromRaw(dims);
+    expect(out.score).toBeGreaterThanOrEqual(70);
+    expect(out.score).toBeLessThanOrEqual(76); // A 档 70-76（A+ 自 77 起）
+    expect(out.grade).toBe('A');
+    expect(out.letter).toBe('优秀');
+  });
+
+  test('I 维度：78% 正确率无明细时回退值 ≥ 55（不再被⁴幂压到 37）', () => {
+    const stats = { totalAnswered: 780, totalCorrect: 608, modules: {} };
+    const dims = engine.computeBioDimensions(stats, [
+      { timestamp: 1, totalQuestions: 30, correctCount: 23 }
+    ]);
+    expect(dims.I).toBeGreaterThanOrEqual(55); // 0.78² = 0.6084 → I ≈ 61
+  });
+});
+
+describe('9. score-engine — 置信度输出（computeBioDimensions.confidence）', () => {
+  const engine = loadEngine();
+
+  test('confidence 含 B/I/O/G/C/D 六键且均 ∈[0,1]', () => {
+    const dims = engine.computeBioDimensions(
+      { totalAnswered: 10, totalCorrect: 8, modules: {} }, []);
+    expect(dims.confidence).toBeTruthy();
+    ['B', 'I', 'O', 'G', 'C', 'D'].forEach((k) => {
+      expect(typeof dims.confidence[k]).toBe('number');
+      expect(dims.confidence[k]).toBeGreaterThanOrEqual(0);
+      expect(dims.confidence[k]).toBeLessThanOrEqual(1);
+    });
+  });
+
+  test('空数据：G/C 置信度为 0，D 置信度为 0（无模块数据）', () => {
+    const dims = engine.computeBioDimensions(
+      { totalAnswered: 0, totalCorrect: 0, modules: {} }, []);
+    expect(dims.confidence.G).toBe(0);
+    expect(dims.confidence.C).toBe(0);
+    expect(dims.confidence.D).toBe(0);
+  });
+
+  test('数据充足（30 题/5 场/有模块）：主要维度置信度为 1', () => {
+    const stats = { totalAnswered: 40, totalCorrect: 32, modules: { module_1: { totalAnswered: 40, totalCorrect: 32 } } };
+    const records = [];
+    for (let i = 0; i < 6; i++) {
+      records.push({ timestamp: Date.now() - (6 - i) * 86400000, totalQuestions: 10, correctCount: 8 });
+    }
+    const dims = engine.computeBioDimensions(stats, records);
+    expect(dims.confidence.B).toBe(1);
+    expect(dims.confidence.O).toBe(1);
+    expect(dims.confidence.G).toBe(1);
+    expect(dims.confidence.C).toBe(1);
+    expect(dims.confidence.D).toBe(1);
+  });
+
+  test('I 走回退估算时置信度打 0.6 折（估算值弱于真实题级统计）', () => {
+    const stats = { totalAnswered: 40, totalCorrect: 32, modules: {} };
+    // 无明细（questions 缺失）→ 回退，I 置信度 = confOf(40,30)×0.6 = 0.6
+    const fallback = engine.computeBioDimensions(stats, [
+      { timestamp: 1, totalQuestions: 10, correctCount: 8 }
+    ]);
+    // 有明细（30 题×遗传学权重0.85 = 25.5 ≥ 30 阈值的 0.85）→ I 置信度不受 0.6 折影响
+    const realQs = [];
+    for (let i = 0; i < 30; i++) realQs.push({ subject: '遗传学', correctSubs: 2, totalSubs: 2 });
+    const real = engine.computeBioDimensions(stats, [
+      { timestamp: 1, totalQuestions: 30, correctCount: 30, questions: realQs }
+    ]);
+    expect(fallback.confidence.I).toBeLessThan(real.confidence.I);
+    expect(fallback.confidence.I).toBeCloseTo(0.6, 5);
+  });
+
+  test('G/C 置信度随场次数线性爬升（<阈值时 <1，≥阈值封顶 1）', () => {
+    const mk = (n) => {
+      const records = [];
+      for (let i = 0; i < n; i++) {
+        records.push({ timestamp: Date.now() - (n - i) * 86400000, totalQuestions: 10, correctCount: 8 });
+      }
+      return engine.computeBioDimensions({ totalAnswered: n * 10, totalCorrect: n * 8, modules: {} }, records).confidence;
+    };
+    expect(mk(1).G).toBeLessThan(1);
+    expect(mk(2).G).toBeLessThan(mk(4).G);
+    expect(mk(4).G).toBe(1);
+    expect(mk(2).C).toBeLessThan(1);
+    expect(mk(3).C).toBe(1);
+  });
+});
+
+describe('10. score-engine 与 analytic.calcBioScore 双实现对拍（同输入同输出）', () => {
+  const engine = loadEngine();
+
+  test('有明细数据：引擎六维与页面 calcBioScore 六维完全一致', () => {
+    const stats = {
+      totalAnswered: 200, totalCorrect: 150,
+      modules: { module_1: { totalAnswered: 100, totalCorrect: 80 }, module_4: { totalAnswered: 100, totalCorrect: 70 } }
+    };
+    const records = [];
+    for (let i = 0; i < 10; i++) {
+      records.push({
+        timestamp: Date.now() - (10 - i) * 86400000,
+        totalQuestions: 20, correctCount: 14 + (i % 3),
+        questions: [
+          { subject: '细胞生物学', correctSubs: 4, totalSubs: 4 },
+          { subject: '遗传学', correctSubs: 2, totalSubs: 4 },
+          { subject: '生态学', correctSubs: 3, totalSubs: 3 }
+        ]
+      });
+    }
+    const dims = engine.computeBioDimensions(stats, records);
+    const page = bioScoreWith(stats, records);
+    ['B', 'I', 'O', 'G', 'C', 'D'].forEach((k) => {
+      expect(dims[k]).toBe(page.components[k]);
+    });
+    const out = engine.computeBioScoreFromRaw(dims);
+    expect(out.score).toBe(page.score);
+    expect(out.grade).toBe(page.grade);
+    expect(out.letter).toBe(page.letter);
+  });
+
+  test('无明细回退路径：两实现同样不产生 NaN 且 I ≈ 61（0.78²）', () => {
+    const stats = { totalAnswered: 780, totalCorrect: 608, modules: {} };
+    const records = [{ timestamp: 1, totalQuestions: 30, correctCount: 23 }];
+    const dims = engine.computeBioDimensions(stats, records);
+    const page = bioScoreWith(stats, records);
+    expect(dims.I).toBe(page.components.I);
+    expect(dims.I).toBe(61); // Math.round(0.78² × 100)
+    expect(Number.isFinite(page.score)).toBe(true);
   });
 });

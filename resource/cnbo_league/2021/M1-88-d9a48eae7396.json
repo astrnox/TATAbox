@@ -1,0 +1,80 @@
+{
+ "id": "M1-88-d9a48eae7396",
+ "type": "single",
+ "question": "近交系数指来自共同祖先的同一等位基因在近交后代中相遇的概率。考虑如图的家系，个体a 在常染色体和X 染色体上的近交系数分别为",
+ "options": {
+  "A": "1/16，1/8",
+  "B": "1/16，1/4",
+  "C": "1/32，1/8",
+  "D": "l/32，1/4"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 88 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-88-d9a48eae7396/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 404,
+  "bbox": [
+   208.9,
+   107.5,
+   386.3,
+   223.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-88-d9a48eae7396/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 404,
+   "bbox": [
+    208.9,
+    107.5,
+    386.3,
+    223.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。常染色体近交系数算得 1/16 正确，但 X 染色体应为 1/4 而非 1/8。B．正确。沿家系路径计算，个体 a 的常染色体上两份等位基因同出一祖的概率为各步传递概率之积求和，等于 1/16；X 染色体因雄性只将 X 传给女儿、路径传递概率更高，累计得 1/4。C．错误。常染色体 1/32 属路径漏算，X 染色体 1/8 同样偏低。D．错误。常染色体 1/32 漏算路径，X 染色体 1/4 虽对但组合不成立。故答案为B。\n【通法】通法（近交系数计算）：列出使父母双方等位基因同出一祖的全部路径，每条路径概率为各步传递系数之积（常染色体每步 1/2，X 染色体经雄性只计传女儿的 1），再把各路径概率相加即得 F。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-41-d356c2d53c2a",
+ "type": "single",
+ "question": "人体棕色脂肪组织由棕色脂肪细胞等构成，主要用于产热，而白色脂肪组织由白色脂肪细胞等构成，主要用来储存能量。以下关于二者的描述，正确的是：",
+ "options": {
+  "A": "棕色脂肪细胞含有多个细胞核",
+  "B": "棕色脂肪组织比白色脂肪组织储存更多脂肪",
+  "C": "棕色脂肪细胞线粒体更富集",
+  "D": "一般情况下，棕色脂肪细胞比白色脂肪细胞多"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 41 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。棕色脂肪细胞多为单核细胞，多核是骨骼肌纤维的特征。B．错误。白色脂肪组织以储能为主，储存的脂肪远多于棕色脂肪组织。C．正确。棕色脂肪细胞富含线粒体，其内膜表达解偶联蛋白 UCP1，用于产热。D．错误。一般情况下白色脂肪细胞远多于棕色脂肪细胞。故答案为C。"
+}

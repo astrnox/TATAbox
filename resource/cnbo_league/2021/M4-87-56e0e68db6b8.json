@@ -1,0 +1,45 @@
+{
+ "id": "M4-87-56e0e68db6b8",
+ "type": "multiple",
+ "question": "研究人员发现各个物种的基因组大小与物种的复杂程度不一致，称为C 值悖论。例如人类的基因组大小约为30 亿个碱基对，但一种单细胞的阿米巴虫Amoeba dubia 的基因组达到6700 亿个碱基对。下列说法中，正确的是：",
+ "options": {
+  "A": "动物基因组变大通常是由适应性演化驱动造成的",
+  "B": "基因组中存在很多毫无功能的“垃圾DNA ”序列",
+  "C": "基因组中没有功能的DNA 在不同物种中含量不同造成了基因组大小的主要差异",
+  "D": "自私元件如转座子对基因组大小差异贡献很大"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 87 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "四、遗传学、进化生物与生物系统学25 题34 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。基因组增大多由转座子等自私元件的中性扩张驱动，而非适应性演化。B．正确。基因组中含有大量不编码蛋白、无明显功能的垃圾 DNA 序列。C．正确。不同物种无功能 DNA 含量差异悬殊，是基因组大小差异的主要来源。D．正确。转座子等自私元件可不断复制扩增，对基因组大小差异贡献很大。故答案为BCD。"
+}

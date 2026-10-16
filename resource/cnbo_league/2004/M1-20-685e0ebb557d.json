@@ -1,0 +1,48 @@
+{
+ "id": "M1-20-685e0ebb557d",
+ "type": "single",
+ "question": "人类的白化病是一种缺乏合成黑色素的酶所致的先天性代谢病，编码这种酶的基因是",
+ "options": {
+  "A": "微效基因",
+  "B": "假基因",
+  "C": "调节基因",
+  "D": "结构基因"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 20 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。微效基因指控制数量性状、单个效应微小的多个基因，白化病由单个基因座突变决定，不属此类。B．错误。假基因是丧失表达功能的基因拷贝，不能编码有活性的酪氨酸酶。C．错误。调节基因编码阻遏蛋白、转录因子等调控成分，不直接编码代谢酶。D．正确。编码酶等蛋白质产物的基因称结构基因；本例中该基因编码酪氨酸酶，突变后酶缺失，黑色素不能合成而致白化。故答案为D。\n【易错易混】易混：结构基因编码蛋白质产物，调节基因编码调控因子，假基因是失效拷贝；按'产物是什么'归类即可。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

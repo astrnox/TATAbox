@@ -1,0 +1,48 @@
+{
+ "id": "M1-59-b1b417aa1827",
+ "type": "single",
+ "question": "稀有核苷酸碱基主要是在下列哪类核酸中发现",
+ "options": {
+  "A": "rRNA",
+  "B": "mRNA",
+  "C": "tRNA",
+  "D": "核仁DNA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 59 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。rRNA以四种标准碱基为主，修饰程度低。B．错误。mRNA除5'帽和3'尾外主体为四种标准碱基。C．正确。tRNA含大量稀有（修饰）碱基，如假尿嘧啶、二氢尿嘧啶、次黄嘌呤及多种甲基化碱基，集中在反密码环和TΨC环。D．错误。核仁DNA即rRNA基因所在的DNA，由标准脱氧核苷酸组成。故答案为C。\n【易错易混】易混：稀有碱基主要'藏'在tRNA，次黄嘌呤I常见于反密码子第一位，参与摆动配对；别把tRNA的修饰碱基与mRNA的帽子尾巴混为一谈。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

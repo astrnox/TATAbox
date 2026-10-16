@@ -1,0 +1,48 @@
+{
+ "id": "M3-46-e0ef42ec7ec2",
+ "type": "single",
+ "question": "垂体肿瘤常压迫视交叉。根据视觉传导通路推断，若视交叉中部受损，患者视野缺损情况为：",
+ "options": {
+  "A": "双眼鼻侧偏盲",
+  "B": "双眼颞侧偏盲",
+  "C": "双眼对侧视野同向性偏盲",
+  "D": "一眼全盲"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 46 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】来自双眼鼻侧视网膜的纤维在视交叉处交叉至对侧。视交叉中部正是双侧鼻侧视网膜纤维通过之处，中部受损则两眼鼻侧视网膜纤维受损，其对应的是两眼颞侧视野。A．错误。鼻侧视网膜对应颞侧视野，非鼻侧视野。B．正确。视交叉中部受损导致双眼颞侧偏盲。C．错误。同向性偏盲是视束或视放射单侧受损的表现。D．错误。一眼全盲是单侧视神经受损的结果。故答案为B。\n【点睛】点睛：视野与视网膜对应关系是交叉的——鼻侧视网膜管颞侧视野；视交叉中部受损（垂体压迫）→ 双颞侧偏盲，单侧视神经受损 → 一眼全盲。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

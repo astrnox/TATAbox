@@ -1,0 +1,48 @@
+{
+ "id": "M3-112-f76df2a73e28",
+ "type": "single",
+ "question": "下列哪一组动物不是假体腔动物？",
+ "options": {
+  "A": "腹毛动物门和内肛动物门",
+  "B": "腔肠动物门和扁形动物门",
+  "C": "棘头动物门和内肛动物门",
+  "D": "动吻动物门和轮形动物门"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 112 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 112,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。腹毛动物门和内肛动物门都具假体腔，同属假体腔动物，不合题意。B．正确。腔肠动物为二胚层动物，根本没有体腔；扁形动物为三胚层但无体腔，属无体腔动物，二者都不是假体腔动物。C．错误。棘头动物门和内肛动物门均为假体腔动物。D．错误。动吻动物门和轮形动物门均为假体腔动物。故答案为B。\n【通法】通法（体腔类型判断）：二胚层无体腔（腔肠）；三胚层而无体腔（扁形）；假体腔是囊胚腔残留，外侧覆中胚层、内侧衬内胚层（线虫、轮形、腹毛、动吻、棘头、内肛）；真体腔由中胚层完全包被。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-74-e22720da2622",
+ "type": "single",
+ "question": "tRNA 中，假尿嘧啶与核糖以 。",
+ "options": {
+  "A": "C-N 相连",
+  "B": "C-C 相连",
+  "C": "N-N 相连",
+  "D": "C-O 相连"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 74 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】题干'以 。'处有脱字，实问假尿嘧啶与核糖以何种键相连。A．错误。C－N 相连是普通核苷的N－糖苷键，即尿嘧啶N1 与核糖C1′ 相连。B．正确。假尿嘧啶（Ψ）中核糖C1′ 直接与尿嘧啶环的C5 相连，形成C－C 键即C－糖苷键。C．错误。不存在N－N 连接方式。D．错误。C－O 连接不是假尿嘧啶的键型。故答案为B。\n【易错易混】易混：尿嘧啶核苷为N－糖苷键（C－N），假尿嘧啶核苷为C－糖苷键（C－C）；假尿嘧啶是tRNA 中最丰富的修饰碱基，多见于TΨC 环。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

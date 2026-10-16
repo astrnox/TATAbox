@@ -1,0 +1,45 @@
+{
+ "id": "M1-23-a73f9e8c7ea6",
+ "type": "single",
+ "question": "当蛋白质溶液的pH 值与蛋白质等电点相同时，蛋白质的",
+ "options": {
+  "A": "溶解度最大",
+  "B": "溶解度最小",
+  "C": "溶解度与溶液pH 无关",
+  "D": "蛋白质变性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 23 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。pH=pI时蛋白质净电荷为零，分子间静电斥力最小而相互聚集沉淀，溶解度达到最小而非最大。B．正确。等电点处蛋白质净电荷为零，水化膜变薄、分子易聚沉，溶解度最低。C．错误。溶解度明显依赖pH，在pI处最低，偏离pI后因分子带电溶解度回升。D．错误。pH=pI不等于变性，变性是高级结构被破坏，与净电荷为零没有必然联系。故答案为B。"
+}

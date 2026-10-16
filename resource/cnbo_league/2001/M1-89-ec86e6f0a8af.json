@@ -1,0 +1,48 @@
+{
+ "id": "M1-89-ec86e6f0a8af",
+ "type": "mtf",
+ "question": "线粒体与叶绿体所具有的共同特征是：",
+ "options": {
+  "A": "双层膜围绕的细胞器",
+  "B": "可行氧化磷酸化反应合成ATP",
+  "C": "含有DNA",
+  "D": "可进行三羧酸循环反应"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "16．A（√）B（×）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 16 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。线粒体和叶绿体均由内外两层膜包被，内膜分别特化为嵴和类囊体，共同承担能量转换功能。B．错误。氧化磷酸化由线粒体内膜上的呼吸链完成；叶绿体类囊体膜上进行的是光合磷酸化，能量来自光而非底物氧化。C．正确。二者都含环状DNA、核糖体，具有独立的复制转录系统，属半自主性细胞器。D．错误。三羧酸循环在线粒体基质中进行，叶绿体不进行该循环。\n【易错易混】易混：光合磷酸化与氧化磷酸化只差两字，场所与能源皆不同——前者在类囊体膜上用光能，后者在线粒体内膜上用呼吸底物；两细胞器的共同点只在双层膜、含DNA和核糖体。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

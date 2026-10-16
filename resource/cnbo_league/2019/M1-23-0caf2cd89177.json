@@ -1,0 +1,45 @@
+{
+ "id": "M1-23-0caf2cd89177",
+ "type": "single",
+ "question": "以下关于质粒的描述，错误的是",
+ "options": {
+  "A": "多数以双链DNA 的形式存在",
+  "B": "只能随基因组一同复制",
+  "C": "不同类型的质粒在细胞中可能存在不同的拷贝",
+  "D": "多数以环状形式存在"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 23 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出关于质粒描述错误的一项，判断词指该选项是否合题意。A．错误。质粒多数以双链环状DNA形式存在，表述成立。B．正确。质粒含自主复制起点，可独立于基因组复制，'只能随基因组一同复制'不成立，正是应选项。C．错误。不同质粒拷贝数不同（严紧型低拷贝、松弛型高拷贝），表述成立。D．错误。多数质粒为环状形式，表述成立。故答案为B。"
+}

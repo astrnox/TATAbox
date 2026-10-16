@@ -1,0 +1,48 @@
+{
+ "id": "M1-49-70f00c2126c8",
+ "type": "single",
+ "question": "结扎输卵管后的妇女",
+ "options": {
+  "A": "无排卵，有月经",
+  "B": "无排卵，无月经",
+  "C": "有排卵，有月经",
+  "D": "有排卵，无月经"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 49 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。输卵管结扎只阻断精卵相遇，不影响下丘脑—垂体—卵巢轴，排卵照常进行。B．错误。月经由卵巢分泌的雌、孕激素周期性变化决定，结扎不改变这一周期，月经照常。C．正确。结扎仅切断卵子与精子相遇的通道，卵巢功能与子宫内膜周期均不受影响，故有排卵、有月经。D．错误。有排卵而无月经见于宫腔粘连等，与结扎无关。故答案为C。\n【易错易混】易混：绝育不等于绝经——输卵管或输精管结扎只挡精卵相会，卵巢照常排卵、照常来月经；切除卵巢或自然绝经才停排卵、停月经。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

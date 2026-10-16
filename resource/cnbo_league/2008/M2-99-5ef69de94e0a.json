@@ -1,0 +1,45 @@
+{
+ "id": "M2-99-5ef69de94e0a",
+ "type": "mtf",
+ "question": "具有雄蕊多于10 枚、心皮离生这一特征的植物是下列哪一科的植物。",
+ "options": {
+  "A": "木兰科",
+  "B": "毛茛科",
+  "C": "十字花科",
+  "D": "锦葵科"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A,B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 99 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。木兰科雄蕊多数（远多于 10 枚）、心皮多数离生，螺旋排列于伸长的花托上，符合题述特征。B．正确。毛茛科雄蕊多数、心皮多数离生，同样符合。C．错误。十字花科雄蕊 6 枚（四强雄蕊）、心皮 2 枚合生，不符合。D．错误。锦葵科雄蕊虽多但花丝连合成单体雄蕊，心皮 5 枚合生，不符合。"
+}

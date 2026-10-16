@@ -1,0 +1,45 @@
+{
+ "id": "M3-103-274fc4956a78",
+ "type": "single",
+ "question": "Prestin 基因在听觉和回声定位功能中起重要作用。生活于亚热带的啮齿动物猪尾鼠有回声定位的能力，其Prestin 蛋白拥有两个与一些其他回声定位动物相同的氨基酸替换： M568L 和E700D，而猪尾鼠的近缘物种沙鼠则不携带这样的替换。根据上述内容，下列说法最不合理的是：",
+ "options": {
+  "A": "沙鼠丢失了回声定位功能；",
+  "B": "Prestin 蛋白在不同的回声定位动物中存在趋同演化的现象；",
+  "C": "猪尾鼠的Prestin 基因与沙鼠的Prestin 基因是同源基因；",
+  "D": "在沙鼠Prestin 蛋白中引入这两个氨基酸替换，可能会使其获得与猪尾鼠Prestin 类似的功能。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 103 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确（应选）。题干只说明沙鼠不携带这两个替换，并未提供沙鼠祖先曾有回声定位的证据，断定其丢失了回声定位最不合理。B．错误。猪尾鼠与其他回声定位动物在 Prestin 上出现相同替换，是趋同演化的体现，合理。C．错误。同一基因在近缘物种中的拷贝互为同源基因，合理。D．错误。在沙鼠蛋白中引入相同替换可能改变其电生理特性，推测合理。故答案为A。"
+}

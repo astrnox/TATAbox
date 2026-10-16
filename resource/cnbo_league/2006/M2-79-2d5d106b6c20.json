@@ -1,0 +1,48 @@
+{
+ "id": "M2-79-2d5d106b6c20",
+ "type": "single",
+ "question": "你发现一种植物可以在没有固定态氮条件生长，但当你加入一些氯霉素在培养基中后，该植物就不能在无氮源培养基中生长了。这时你如果加入一些硝酸钠，植物恢复生长。这种植物可能是：",
+ "options": {
+  "A": "满江红",
+  "B": "大豆",
+  "C": "小叶苔",
+  "D": "都可能"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 79 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。满江红与固氮蓝藻鱼腥藻共生可自养固氮，合题意但并非唯一。B．错误。大豆与根瘤菌共生固氮，同样合题意。C．错误。小叶苔等苔类与念珠藻共生固氮，也合题意。D．正确。三者固氮都依赖原核共生体，氯霉素抑制70S核糖体使共生体失活，补加硝酸钠即可借外源氮恢复生长，故都可能。故答案为D。\n【点睛】点睛：'氯霉素处理＋补硝酸恢复'直指原核共生固氮，凡具蓝藻或根瘤菌共生的植物都能对号入座。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

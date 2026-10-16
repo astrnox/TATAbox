@@ -1,0 +1,45 @@
+{
+ "id": "M1-19-3acda48c9337",
+ "type": "single",
+ "question": "感受机械力的受体Piezo 在脊椎动物的皮肤、口腔、肺、膀胱和血管内皮等多种组织中表达。以下关于Piezo 功能的推测，不合理的是：",
+ "options": {
+  "A": "感受血流，调节血压；",
+  "B": "感受酸甜苦辣，产生味觉；",
+  "C": "感受气压，调节肺的扩张；",
+  "D": "与触觉的产生密切相关。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 19 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出推测不合理的一项，判断词指该选项是否合题意。A．错误（表述成立）。血管内皮表达 Piezo，可感受血流剪切力进而调节血压，推测合理。B．正确（应选）。味觉由化学感受器介导，感受的是化学分子而非机械力，Piezo 与味觉产生无关，推测不合理，正是应选项。C．错误（表述成立）。肺组织表达 Piezo，可感受气压变化调节肺扩张，推测合理。D．错误（表述成立）。皮肤 Piezo 介导机械刺激转导，与触觉密切相关，推测合理。故答案为B。"
+}

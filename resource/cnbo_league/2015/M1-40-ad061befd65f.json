@@ -1,0 +1,45 @@
+{
+ "id": "M1-40-ad061befd65f",
+ "type": "single",
+ "question": "手术时常用温热盐水纱布压迫创面，促进生理性止血的原因是：",
+ "options": {
+  "A": "降低酶促反应",
+  "B": "抑制纤溶酶原激活",
+  "C": "粗糙面促进凝血因子激活",
+  "D": "降低凝血酶活性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 40 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。温热环境不会降低酶促反应，适度升温反而加快凝血的酶促过程。B．错误。纱布不会抑制纤溶酶原激活，纤溶受抑不利于后期血栓溶解。C．正确。纱布的粗糙表面提供异物表面，激活血小板并促使凝血因子（如因子Ⅻ）激活，从而加速生理性止血。D．错误。温热纱布不会降低凝血酶活性，反而有利于凝血。故答案为C。"
+}

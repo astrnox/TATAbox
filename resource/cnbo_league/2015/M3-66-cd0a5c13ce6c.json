@@ -1,0 +1,50 @@
+{
+ "id": "M3-66-cd0a5c13ce6c",
+ "type": "multiple",
+ "question": "下列有关突触前抑制的叙述，正确的是：",
+ "options": {
+  "A": "引起突触前膜部分的预先去极化",
+  "B": "引起突触前膜动作电位幅度减小",
+  "C": "引起突触前膜释放递质减少",
+  "D": "引起突触后膜产生EPSP（兴奋性突触后电位）幅度减小",
+  "E": "引起突触后膜产生IPSP（抑制性突触后电位）幅度增大"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 66 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。突触前抑制经轴突-轴突突触使突触前膜发生预先的部分去极化。B．正确。预先去极化使到达的Na+内流减少，突触前膜动作电位幅度减小。C．正确。动作电位幅度减小使Ca2+内流减少，突触前膜递质释放量减少。D．正确。递质释放减少使突触后膜EPSP幅度减小，不易达到阈电位，从而表现为抑制。E．错误。突触前抑制不引起IPSP增大，产生IPSP是突触后抑制的机制。故答案为ABCD。\n【易错易混】易混：突触前抑制=前膜预先去极化→递质释放减少→EPSP减小，不产生IPSP；突触后抑制=释放抑制性递质→产生IPSP，两者的电位本质不同。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

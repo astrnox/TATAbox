@@ -1,0 +1,48 @@
+{
+ "id": "M1-13-799a703e0f4f",
+ "type": "mtf",
+ "question": "CAR-T 细胞中主要嵌合了B 细胞受体的抗原识别区和T 细胞受体的胞内信号转导区，使CAR 实现了识别肿瘤细胞并激活T 细胞的功能，提高了免疫系统的肿瘤杀伤能力。判断下列相关陈述的正误：",
+ "options": {
+  "A": "CAR 识别肿瘤表面抗原的过程不依赖主要组织相容性复合体的呈递；",
+  "B": "降低CAR-T 细胞的免疫因子风暴副作用的主要手段是更换CAR 的抗原识别区；",
+  "C": "抗体的抗原识别区能应用于CAR-T 细胞主要因为B 细胞和T 细胞都属于淋巴细胞；",
+  "D": "NK 细胞也属于淋巴细胞，因此CAR 的胞内信号转导区可在NK 细胞中发挥作用。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 13 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。CAR的scFv直接识别肿瘤表面抗原，不依赖MHC呈递（这是CAR区别于TCR的关键）。B．错误。降低细胞因子风暴的主要策略包括引入安全开关、可控启动子、剂量管理、改造共刺激域等，更换抗原识别区并不对症。C．错误。抗体识别区能用于CAR是因为scFv提供高特异性的抗原结合，与'都是淋巴细胞'无关。D．正确。NK细胞含可被CD3ζ/共刺激域激活的信号机器，CAR结构同样可在NK细胞中发挥作用（CAR-NK疗法）。\n【点睛】点睛：CAR＝scFv（识别，MHC非依赖）＋铰链跨膜＋胞内信号域（CD3ζ±共刺激）。只要宿主细胞有对应信号机器（T、NK），CAR就能工作。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "M1-106-9ab1804a8970",
+ "type": "mtf",
+ "question": "在真核细胞中具有半自主性的细胞器为：",
+ "options": {
+  "A": "高尔基体",
+  "B": "内质网",
+  "C": "线粒体",
+  "D": "质体",
+  "E": "溶酶体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "106.A（×）B（×）C（√）D（√）E（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 106 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高尔基体不含自身DNA 与核糖体，不具半自主性。B．错误。内质网蛋白全由核基因编码，无独立遗传装置。C．正确。线粒体含环状DNA 与核糖体，能自主合成部分呼吸链亚基，其余蛋白由核基因编码，属半自主性细胞器。D．正确。质体（如叶绿体）有自己的基因组与核糖体，能自主复制与表达，属半自主性细胞器。E．错误。溶酶体由内质网和高尔基体出芽形成，不含核酸与核糖体。"
+}

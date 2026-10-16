@@ -1,0 +1,48 @@
+{
+ "id": "M2-34-8210ffa5d3cc",
+ "type": "single",
+ "question": "榕树的支柱根又可称为：",
+ "options": {
+  "A": "侧根",
+  "B": "定根",
+  "C": "不定根",
+  "D": "须根"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 34 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。侧根是定根上发生的分枝，由中柱鞘产生，而榕树支柱根直接从茎干上长出。B．错误。定根指由胚根发育成的主根及其侧根，支柱根并非来自胚根。C．正确。支柱根从茎上产生，发生部位不固定，属不定根，入土后兼有支持和吸收作用。D．错误。须根是禾本科等由大量不定根构成的根系类型，不是榕树支柱根的别称。故答案为C。\n【易错易混】易混：定根＝胚根来源的主根和侧根；不定根＝茎、叶等处发生的根，如支柱根、攀援根、气生根。判根看来源而非形态。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

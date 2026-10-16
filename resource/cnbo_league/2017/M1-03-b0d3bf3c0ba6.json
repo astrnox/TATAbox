@@ -1,0 +1,45 @@
+{
+ "id": "M1-03-b0d3bf3c0ba6",
+ "type": "single",
+ "question": "Hox 基因（同源异型基因）与下列哪种功能直接相关：",
+ "options": {
+  "A": "表观遗传",
+  "B": "细胞周期调控",
+  "C": "细胞凋亡",
+  "D": "细胞分化与发育"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 3 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。表观遗传指不改变DNA序列的可遗传基因表达变化，与Hox基因的直接功能无关。B．错误。细胞周期调控由周期蛋白、CDK等执行。C．错误。细胞凋亡由Caspase等凋亡通路执行。D．正确。Hox基因是同源异型基因，编码转录因子，决定胚胎体轴上各体节的分化命运，直接调控细胞分化与个体发育。故答案为D。"
+}

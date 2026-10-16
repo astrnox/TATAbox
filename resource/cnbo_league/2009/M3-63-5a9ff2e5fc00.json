@@ -1,0 +1,45 @@
+{
+ "id": "M3-63-5a9ff2e5fc00",
+ "type": "single",
+ "question": "青春期GH 分泌较多的一个重要因素是由于血中：",
+ "options": {
+  "A": "PRL 浓度增高",
+  "B": "雌激素和睾酮浓度增高",
+  "C": "OXT 浓度降低",
+  "D": "雌激素和睾酮浓度降低"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 62 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。催乳素（PPL）主要调控泌乳，并非促进青春期GH 分泌的主因。B．正确。青春期雌激素与睾酮浓度升高，小剂量性激素可显著促进生长激素的分泌，是青春期GH 分泌增多的重要因素。C．错误。催产素与GH 分泌调控无直接关联。D．错误。浓度降低不能解释分泌增多。故答案为B。"
+}

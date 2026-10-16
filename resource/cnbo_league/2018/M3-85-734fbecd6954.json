@@ -1,0 +1,50 @@
+{
+ "id": "M3-85-734fbecd6954",
+ "type": "multiple",
+ "question": "下列对K+的重吸收和分泌描述正确的是：",
+ "options": {
+  "A": "近曲小管对K+的重吸收是主动转运的过程",
+  "B": "近曲小管对K+的重吸收是与Na+协同转运的",
+  "C": "远曲小管和集合管是分泌K+的主要部位",
+  "D": "K+的分泌与H+的分泌直接偶联",
+  "E": "K+的分泌与Na+的重吸收密切相关，称之为K+-Na+交换"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 85 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。近曲小管对K+的重吸收是逆浓度梯度的主动转运过程。B．错误。近曲小管K+重吸收随Na+与水的重吸收被动跟随，并非特异的Na+协同转运。C．正确。远曲小管和集合管是分泌K+的主要部位，受醛固酮调节。D．错误。K+分泌与H+分泌在同一部位相互竞争（分泌酸时排钾减少），并非直接偶联。E．正确。集合管主细胞分泌K+与Na+重吸收密切关联，称为K+-Na+交换。故答案为ACE。\n【通法】通法（肾小管K+处理）：近曲小管'重吸收为主'（主动），远曲小管与集合管'分泌为主'（Na+-K+交换），分泌酸时K+交换性潴留。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

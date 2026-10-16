@@ -1,0 +1,45 @@
+{
+ "id": "M1-05-fdd64c3948cc",
+ "type": "single",
+ "question": "与花生和小鼠的细胞分裂直接相关的细胞结构是",
+ "options": {
+  "A": "中心体",
+  "B": "纺锤体",
+  "C": "内质网",
+  "D": "线粒体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 5 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。花生是高等植物，其细胞中没有中心体，中心体不是二者的共同结构。B．正确。无论动物细胞还是高等植物细胞，分裂时都由微管装配成纺锤体牵引染色体，纺锤体是与二者细胞分裂直接相关的共同结构。C．错误。内质网参与蛋白质与脂质的合成，不直接参与分裂。D．错误。线粒体只提供能量，不直接参与染色体的移动与分配。故答案为B。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-06-650f1d1730f1",
+ "type": "single",
+ "question": "内质网是细胞中“钙库”之一，以下描述正确的是：",
+ "options": {
+  "A": "钙离子从细胞质扩散到内质网",
+  "B": "内质网上的钙泵将钙离子从细胞质主动运输到内质网",
+  "C": "钙离子通过内质网上的钙离子通道主动运输到内质网",
+  "D": "钙离子通过钠钾泵协同转运到内质网"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 6 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。钙离子顺浓度梯度时是从内质网漏向细胞质，方向与题述相反。B．正确。内质网膜上的钙泵（SERCA）消耗ATP，将细胞质中的Ca2+逆浓度梯度主动运输到内质网腔内储存，使内质网成为钙库。C．错误。钙离子通道介导的是顺梯度的被动外流，不负责主动摄入。D．错误。钠钾泵位于质膜，维持细胞内外Na+/K+梯度，不向内质网转运钙。故答案为B。"
+}

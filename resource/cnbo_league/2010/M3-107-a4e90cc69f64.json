@@ -1,0 +1,45 @@
+{
+ "id": "M3-107-a4e90cc69f64",
+ "type": "multiple",
+ "question": "乙肝（HBV）的传播途径有哪些？",
+ "options": {
+  "A": "HBV可通过血液传播",
+  "B": "HBV可通过精液传播",
+  "C": "HBV可通过乳液传播",
+  "D": "HBV可通过唾液传播"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 107 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。血液传播是HBV主要传播途径之一，如输血、共用注射器和医疗器械等。B．正确。精液中可检出HBV，性接触是重要传播途径。C．正确。乳液（母乳）中可检出HBV，经乳汁传播属母婴传播途径之一。D．错误。HBV不经消化道传播，唾液中病毒含量低，一般不作为传播途径，这与甲肝的粪口传播不同。故答案为ABC。"
+}

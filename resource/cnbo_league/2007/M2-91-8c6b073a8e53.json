@@ -1,0 +1,48 @@
+{
+ "id": "M2-91-8c6b073a8e53",
+ "type": "mtf",
+ "question": "下列哪些元素缺乏时，缺素症状首先表现在老叶：",
+ "options": {
+  "A": "Mn",
+  "B": "K",
+  "C": "P",
+  "D": "Ca"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "91.A（×）B（√）C（√）D（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 91 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。锰在植物体内移动性很差，缺锰时症状先出现在幼叶，表现为脉间失绿和褐斑。B．正确。钾以离子态存在、移动性强，缺钾时老叶中的钾向幼嫩部位转移，老叶边缘先发黄焦枯。C．正确。磷可被再利用，缺磷时老叶的磷优先供应生长中心，老叶先呈暗绿或紫红色。D．错误。钙随蒸腾流运输、在体内几乎不能移动，缺钙先危害幼叶和顶芽。\n【通法】通法（缺素症部位）：按元素移动性定位——移动性大的氮、磷、钾、镁缺素症先见于老叶，移动性小的钙、铁、锰、硼、铜先见于幼叶，口诀'老氮磷钾镁，幼钙铁锰硼'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

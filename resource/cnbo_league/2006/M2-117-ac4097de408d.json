@@ -1,0 +1,45 @@
+{
+ "id": "M2-117-ac4097de408d",
+ "type": "mtf",
+ "question": "下面哪些（种）有关生命起源的说法是正确的？",
+ "options": {
+  "A": "最早出现的具自我复制能力的大分子可能是RNA",
+  "B": "最早的生命形式是病毒",
+  "C": "最早的生命出现在30 亿年前",
+  "D": "古细菌起源早于真细菌"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 17 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。RNA兼具信息储存与催化功能，RNA世界学说认为最早具自我复制能力的大分子是RNA。B．错误。病毒必须寄生于细胞内才能复制，不可能早于细胞型生命出现。C．正确。可靠的早期生命记录（叠层石、微体化石）距今约30亿年以上，生命在30亿年前确已出现。D．错误。古细菌与真细菌同为原核生物，二者分歧古老，无证据表明古细菌必先于真细菌起源。"
+}

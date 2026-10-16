@@ -1,0 +1,48 @@
+{
+ "id": "M2-27-1a395ab53e41",
+ "type": "single",
+ "question": "一个精子和卵结合发育成胚，另一个精子和极核结合发育成胚乳，这种类型的双受精现象是哪类植物所特有的？",
+ "options": {
+  "A": "裸子植物",
+  "B": "蕨类植物",
+  "C": "被子植物",
+  "D": "苔藓植物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 27 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。裸子植物仅一精子与卵结合，另一精子退化，无双受精，其胚乳是雌配子体组织而非受精产物。B．错误。蕨类植物精子游动与卵结合，无双受精。C．正确。双受精是被子植物特有：一精子与卵结合成合子发育为胚，另一精子与两个极核结合发育为胚乳。D．错误。苔藓植物只有精卵结合，无双受精。故答案为C。\n【点睛】点睛：双受精及受精极核发育成胚乳是被子植物独有，可作类群判断的关键性状。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

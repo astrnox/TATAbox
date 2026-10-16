@@ -1,0 +1,45 @@
+{
+ "id": "M3-106-7b710fc9c27a",
+ "type": "mtf",
+ "question": "下列哪些组合是早成鸟？",
+ "options": {
+  "A": "鹳—信天翁",
+  "B": "丹顶鹤—家鸡",
+  "C": "鹰—啄木鸟",
+  "D": "鸿雁—孔雀"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "16.A（×）B（√）C（×）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 16 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。信天翁雏鸟出壳时发育不充分、需亲鸟长期哺育，属晚成（半晚成）类型，该组合并非都为早成鸟。B．正确。丹顶鹤和家鸡的雏鸟出壳即被羽、眼已开、能随亲鸟活动觅食，均为早成鸟。C．错误。鹰和啄木鸟的雏鸟出壳时裸露无羽、眼未开，须留巢哺育，均为晚成鸟。D．正确。鸿雁和孔雀的雏鸟出壳后即能随亲鸟取食，同为早成鸟。"
+}

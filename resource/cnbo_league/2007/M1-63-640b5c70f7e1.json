@@ -1,0 +1,48 @@
+{
+ "id": "M1-63-640b5c70f7e1",
+ "type": "single",
+ "question": "减数分裂时，等位基因的DNA 片段的交换和重组通常发生在：",
+ "options": {
+  "A": "偶线期",
+  "B": "粗线期",
+  "C": "双线期",
+  "D": "终变期"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 63 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。偶线期进行同源染色体联会配对，交换尚未发生。B．正确。粗线期同源染色体的非姐妹染色单体间发生交叉互换，实现DNA 片段的交换与重组。C．错误。双线期同源染色体开始分离、交叉端化，重组已完成。D．错误。终变期染色体高度螺旋化、核膜核仁消失，早已过重组阶段。故答案为B。\n【通法】通法（减Ⅰ前期）：细线期→偶线期（联会）→粗线期（交换重组）→双线期（分离端化）→终变期（浓缩核膜消失），记住'偶联、粗换、双端、终变'即可定位事件。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

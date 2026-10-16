@@ -1,0 +1,45 @@
+{
+ "id": "M1-75-b8eb74f4ca96",
+ "type": "single",
+ "question": "CH3－CH2－CO－COO-→CH3－CH2－CHO+CO2 属于哪种类型的反应",
+ "options": {
+  "A": "氧化反应",
+  "B": "脱羧反应",
+  "C": "磷酸化反应",
+  "D": "水解反应"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 75 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。产物为醛和CO2，碳链缩短，无脱氢加氧，不属氧化反应。B．正确。α-酮丁酸脱去羧基生成丙醛和CO2，放出CO2正是脱羧反应的标志。C．错误。反应中没有磷酸基转移，也无ATP参与。D．错误。水解需水分子参与并把底物裂解为两个产物，此处并无加水裂解。故答案为B。"
+}

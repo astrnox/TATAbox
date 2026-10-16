@@ -1,0 +1,48 @@
+{
+ "id": "M4-91-2e15faf9e48c",
+ "type": "single",
+ "question": "DNA 复制的精确性远高于RNA 的合成，这是因为：",
+ "options": {
+  "A": "新合成的DNA 链与模板链之间形成双螺旋结构，而RNA 链则不能",
+  "B": "DNA 聚合酶有 3’→5’外切酶的活性，而RNA 聚合酶无相应的活性",
+  "C": "脱氧核苷酸之间氢键配对的精确性高于脱氧核苷酸与核苷酸之间配对的精确性",
+  "D": "DNA 聚合酶有5’-3’外切酶的活性，而RNA 聚合酶无此活性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 91 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。能否形成双螺旋不是复制保真性的决定因素，RNA也可与模板形成局部双螺旋。B．正确。DNA聚合酶具有3′→5′外切酶（校对）活性，可切除错配核苷酸，而RNA聚合酶无此校对活性，故DNA复制保真性远高于转录。C．错误。两类核苷酸的碱基配对精确性差异不大，非主因。D．错误。5′→3′外切酶用于切除引物等，与校对保真无关，且RNA聚合酶亦无此说法。故答案为B。\n【点睛】点睛：复制保真三重保障＝碱基选择＋3′→5′校对＋错配修复，其中'校对'是复制比转录精确一个数量级的关键，见外切酶活性先想校对。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

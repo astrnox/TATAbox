@@ -1,0 +1,48 @@
+{
+ "id": "M4-94-09bce2b2b4de",
+ "type": "single",
+ "question": "果蝇全部基因组含有1．65×108bp(碱基对)，如果DNA 是一长线状分子，每秒复制 30bp，只有一个双向复制起点。且起点在中点，全部基因组要复制多少天",
+ "options": {
+  "A": "24 天",
+  "B": "32 天",
+  "C": "28 天",
+  "D": "42 天"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 94 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。24天偏短，未按两个复制叉分摊全长。B．正确。双向复制自起点向两侧推进，两个复制叉各复制8．25×107bp，速率30bp/s，需8．25×107÷30＝2．75×106s，折合2．75×106÷86400≈31．8天，约32天。C．错误。28天与计算结果不符。D．错误。42天偏长。故答案为B。\n【通法】通法（复制时间计算）：复制时间＝基因组长度÷复制叉总数÷叉速；双向起点数的两倍即复制叉数，再换算秒、分、天。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "id": "M4-82-51ef89bc796b",
+ "type": "single",
+ "question": "以上结果说明",
+ "options": {
+  "A": "失活的X 染色体在减数分裂时会恢复活性",
+  "B": "母方X 染色体在特定细胞中的失活，是雌性胚胎正常发育所必需的",
+  "C": "父方X 染色体在特定细胞中的失活，是雌性胚胎正常发育所必需的",
+  "D": "X 染色体保持活性，对精子的形成很重要"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 82 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "82-86",
+  "stimulus": "将小鼠Xist 基因的编码区删除，而保留基因的调控区，携带突变的X 染色体记作"
+ },
+ "explanation": "【解析】A．错误。实验未涉及减数分裂时期的活性恢复，该推断超出结果范围。B．错误。突变来自父方时胚胎异常，说明必需的是父方X的失活，而非母方。C．正确。结果表明父方X染色体在特定细胞（滋养层）中的失活是雌性胚胎正常发育的必需条件，父方X失活缺陷即导致发育异常。D．错误。实验聚焦雌性胚胎发育，未涉及精子形成。故答案为C。\n【点睛】点睛：X失活有'组织分工'——胚胎本体随机失活，滋养层则专门失活父方X，父方X不失活胚胎即异常，抓住'父方'与'滋养层'两个关键词。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

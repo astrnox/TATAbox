@@ -1,0 +1,48 @@
+{
+ "id": "M1-31-2ceea309b896",
+ "type": "multiple",
+ "question": "以下哪种高通量实验技术主要被用来研究生物的基因表达情况？",
+ "options": {
+  "A": "全基因组重测序",
+  "B": "转录组测序",
+  "C": "外显子组测序",
+  "D": "基因芯片（Microarray）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 31 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。全基因组重测序测定的是DNA序列差异，不反映基因表达量。B．正确。转录组测序直接测定mRNA丰度，反映基因表达情况。C．错误。外显子组测序仍属DNA层面的序列分析。D．正确。基因芯片通过杂交信号强度定量mRNA，是经典的表达检测技术。故答案为BD。\n【易错易混】易混：测'表达'看RNA层（转录组测序、基因芯片），测'序列变异'看DNA层（重测序、外显子组测序），分析层次不可搞反。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

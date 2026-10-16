@@ -1,0 +1,48 @@
+{
+ "id": "M3-75-b7b5ad47fbef",
+ "type": "single",
+ "question": "占领新栖息地的驼鹿种群，其种群增长率的变化趋势是：",
+ "options": {
+  "A": "稳定上升",
+  "B": "先升后降",
+  "C": "呈S 型曲线",
+  "D": "不规则震荡"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 75 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。随密度增大和环境阻力增强，增长率不会一直上升。B．正确。占领新栖息地初期资源充裕，增长率先随种群数量增加而升高，在数量约为环境容纳量一半（K/2）时达最大，此后受空间、食物限制而下降，故呈先升后降。C．错误。S 型曲线描述的是种群数量随时间的变化，而非增长率的变化。D．错误。新栖息地中种群增长有规律可循，并非不规则震荡。故答案为B。\n【通法】通法（逻辑斯谛曲线三问）：数量 N 随时间呈 S 型；瞬时增长率 dN/dt 在 K/2 处最大、先升后降；人均增长率随 N 增大而下降，答题先辨明问的是哪个量。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-01-cce7c73453c3",
+ "type": "single",
+ "question": "当种子开始萌发时，其细胞内的自由水与结合水的比值将：",
+ "options": {
+  "A": "升高",
+  "B": "降低",
+  "C": "无变化",
+  "D": "先升后降"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 1 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。种子萌发时代谢活动迅速增强，部分结合水转化为自由水，自由水与结合水的比值升高，有利于生化反应进行和物质运输。B．错误。比值降低意味着代谢减弱、抗逆性增强，与萌发时的活跃状态相反。C．错误。萌发伴随大量吸水和代谢激活，两类水的比例必然改变。D．错误。萌发过程中自由水持续增加，不会先升后降。故答案为A。\n【易错易混】易混：自由水比例越高代谢越旺盛、抗逆性越差；结合水比例越高则休眠抗逆能力越强，两者关系勿颠倒。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

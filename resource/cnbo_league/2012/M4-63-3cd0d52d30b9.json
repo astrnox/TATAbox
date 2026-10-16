@@ -1,0 +1,47 @@
+{
+ "id": "M4-63-3cd0d52d30b9",
+ "type": "single",
+ "question": "与B 基因距离最近的基因是",
+ "options": {
+  "A": "A",
+  "B": "D",
+  "C": "C",
+  "D": "A或C",
+  "E": "A或D"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 63 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A与B的重组值为10%，但D与B的重组值同为10%，A并非唯一最近者。B．错误。D与B的重组值也是10%，单独取D同样不完整。C．错误。C与B的重组值为37%，是相距最远的一个。D．错误。A与C的重组值为30%，远大于10%，不属最近。E．正确。B与A、B与D的重组值均为10%，两者并列最近，故答案为A或D。故答案为E。"
+}

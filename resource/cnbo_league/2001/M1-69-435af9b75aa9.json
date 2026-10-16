@@ -1,0 +1,47 @@
+{
+ "id": "M1-69-435af9b75aa9",
+ "type": "single",
+ "question": "温室效应主要是由于大气中下列哪种气体含量增加所致。",
+ "options": {
+  "A": "二氧化氮",
+  "B": "二氧化硫",
+  "C": "氟利昂",
+  "D": "氮气",
+  "E": "二氧化碳"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 69 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。二氧化氮主要参与光化学烟雾和酸雨的形成，不是温室效应的主因。B．错误。二氧化硫主要导致酸雨，对温室效应贡献甚微。C．错误。氟利昂破坏臭氧层，也有一定温室效应，但其大气含量远低于CO2，不是主因。D．错误。氮气化学性质稳定，不吸收红外辐射，与温室效应无关。E．正确。温室效应主要由大气中二氧化碳含量增加所致，CO2强烈吸收地表长波辐射使热量滞留，化石燃料燃烧和植被破坏使其浓度不断上升。故答案为E。"
+}

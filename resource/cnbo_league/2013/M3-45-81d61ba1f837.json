@@ -1,0 +1,45 @@
+{
+ "id": "M3-45-81d61ba1f837",
+ "type": "multiple",
+ "question": "下列关于雌激素的生理作用的叙述，正确的是",
+ "options": {
+  "A": "维持女性第二性征",
+  "B": "促进雌性生殖器官的发育",
+  "C": "升高血浆胆固醇含量",
+  "D": "促进体毛生长"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 45 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。雌激素维持女性第二性征，如乳房发育、皮下脂肪分布等。B．正确。雌激素促进雌性生殖器官的发育与成熟，使子宫内膜增生。C．错误。雌激素降低血浆胆固醇与低密度脂蛋白含量，而非升高。D．错误。雌激素使体毛细软稀疏，促进体毛生长的是雄激素。故答案为AB。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-04-a24d2cbd7dbc",
+ "type": "single",
+ "question": "肽链生物合成时，信号肽",
+ "options": {
+  "A": "是线粒体的定位信号",
+  "B": "将新生肽链导入内质网",
+  "C": "控制蛋白质分子的最终构象",
+  "D": "处于肽链的C末端"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 4 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。线粒体蛋白的定位信号是N端导肽（前序列），信号肽不负责线粒体定位。B．正确。信号肽位于新生肽链N端，被信号识别颗粒识别后引导核糖体到粗面内质网膜，边翻译边把肽链导入内质网腔。C．错误。信号肽只负责分选转运并常被信号肽酶切除，不决定最终构象；构象由氨基酸序列和分子伴侣决定。D．错误。信号肽位于肽链N末端而非C末端。故答案为B。\n【易错易混】易混：信号肽→粗面内质网（分泌蛋白、膜蛋白、溶酶体蛋白），N端、常被切除；导肽（前序列）→线粒体、叶绿体、过氧化物酶体。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

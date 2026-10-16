@@ -1,0 +1,48 @@
+{
+ "id": "M1-86-b36d85f7f820",
+ "type": "multiple",
+ "question": "下列哪些结构或细胞器具有极性",
+ "options": {
+  "A": "微管",
+  "B": "微丝",
+  "C": "中等纤维",
+  "D": "高尔基体"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 86 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。微管具明确的正极（plus end）与负极（minus end），极性是其动态组装的基础。B．正确。微丝同样具正极（生长快）与负极之分。C．错误。中等纤维由对称单体组装，两端结构相同，不具极性。D．正确。高尔基体有顺面（ cis ）与反面（ trans ）之分，具结构与功能极性。故答案为ABD。\n【通法】通法（细胞骨架极性）：微管、微丝有正负极，中等纤维无极性，细胞器看顺反面，'极性题'按此三类逐一判定。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

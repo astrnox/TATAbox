@@ -1,0 +1,48 @@
+{
+ "id": "M1-90-64f22198d4f3",
+ "type": "single",
+ "question": "在狗的头骨中，由前颌骨、上颌骨和腭骨构成了：",
+ "options": {
+  "A": "初生颌",
+  "B": "次生颌",
+  "C": "初生腭",
+  "D": "次生腭"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 89 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。初生颌由第一对鳃弓的腭方骨和关节骨构成，见于鱼类和两栖类。B．错误。次生颌指由前颌骨、上颌骨和齿骨等构成的上下颌，与口腔顶壁的腭不是一回事。C．错误。初生腭并非由这三块骨构成。D．正确。哺乳动物口腔顶壁的次生腭由前颌骨、上颌骨的腭突和腭骨共同构成，使内鼻孔后移、口鼻腔分开，狗的头骨即如此。故答案为D。\n【点睛】点睛：前颌骨＋上颌骨＋腭骨＝次生腭，其意义在于分隔口鼻腔，是哺乳类的进步特征。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

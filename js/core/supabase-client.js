@@ -13,6 +13,13 @@ var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 var _supabase = null;
 var _currentUser = null;
 
+// 信用点默认值。原始定义在 sb-gamify.js，但本文件里多处注册/登录流程会直接引用；
+// 若 sb-gamify.js 尚未加载（或某些加载链未引入它），会抛 ReferenceError 导致登录失败。
+// 仅在未定义时兜底赋 100，避免两处无条件同名 var 定义、后续只改一边就漂移。
+if (typeof POINTS_DEFAULT === 'undefined') {
+  var POINTS_DEFAULT = 100;
+}
+
 /**
  * 获取本地时区日期字符串 YYYY-MM-DD
  * 统一替代 toISOString().split('T')[0]（UTC），避免跨日边界问题

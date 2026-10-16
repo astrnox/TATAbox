@@ -1,0 +1,81 @@
+{
+ "id": "M2-28-d77a111c66e9",
+ "type": "single",
+ "question": "图A 与图B 在组织结构上的差别主要来自：",
+ "options": {
+  "A": "导管分子",
+  "B": "管胞",
+  "C": "木纤维",
+  "D": "薄壁细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 28 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "26-28",
+  "stimulus": "树木受到斜坡、风吹等外界因素的影响，导致原本直立生长的树干发生倾斜或者弯"
+ },
+ "image": {
+  "file": "assets/questions/M2-28-d77a111c66e9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 412,
+  "bbox": [
+   90.0,
+   618.2,
+   505.0,
+   758.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-28-d77a111c66e9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 412,
+   "bbox": [
+    90.0,
+    618.2,
+    505.0,
+    758.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。两图的导管分子组成相近，不是差别来源。B．错误。管胞在两图中的差别不构成主要差异。C．正确。两图在组织结构上的差别主要来自木纤维的含量与细胞壁增厚程度。D．错误。薄壁细胞不是造成两图结构差异的主要因素。故答案为C。"
+}

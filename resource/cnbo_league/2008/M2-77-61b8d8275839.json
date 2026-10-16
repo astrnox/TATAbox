@@ -1,0 +1,48 @@
+{
+ "id": "M2-77-61b8d8275839",
+ "type": "single",
+ "question": "对于进行C4 光合作用的植物，在叶肉细胞内合成的C4 化合物的主要功能是",
+ "options": {
+  "A": "驱动ATP 合成",
+  "B": "与CO2 结合生成葡萄糖",
+  "C": "降低NADP+",
+  "D": "将CO2 转运至鞘细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 77 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。ATP 由类囊体膜上的光合磷酸化产生，C4 酸不直接驱动 ATP 合成。B．错误。C4 化合物并不与 CO2 结合生成葡萄糖，固定 CO2 的是 PEP 羧化酶，生成草酰乙酸（进而为苹果酸或天冬氨酸）。C．错误。该途径不以降低 NADP+ 为目的，表述含混且不成立。D．正确。叶肉细胞中 PEPC 固定 CO2 生成四碳二羧酸，运至维管束鞘细胞脱羧释放 CO2，使 Rubisco 周围 CO2 浓度升高，再进入 Calvin 循环。故答案为D。\n【点睛】点睛：C4 途径是 CO2 泵，四碳酸只负责把碳运进鞘细胞，真正的同化在鞘细胞完成。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

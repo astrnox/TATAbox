@@ -1,0 +1,48 @@
+{
+ "id": "M3-116-898fc453eb9d",
+ "type": "mtf",
+ "question": "以下哪些因素将影响肾上腺髓质激素的分泌？",
+ "options": {
+  "A": "交感神经活动",
+  "B": "疼痛",
+  "C": "低血糖",
+  "D": "运动"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "115.A（√）B（√）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 115 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 115,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】肾上腺髓质受交感神经节前纤维直接支配，分泌肾上腺素与去甲肾上腺素。A．正确。交感神经兴奋直接促使髓质激素释放。B．正确。疼痛是经典的应激刺激，可引起激素分泌骤增。C．正确。低血糖刺激下丘脑经交感传出促进分泌，属升血糖的反调节机制。D．正确。运动时机体动员需求增加，分泌随之增多。\n【通法】通法（应急激素分泌诱因）：凡交感兴奋与应激状态（痛、饿、动、冷、惊）都促进肾上腺髓质激素释放，多选题按'交感即动力'检索。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

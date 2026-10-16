@@ -1,0 +1,48 @@
+{
+ "id": "M1-25-6becf92f4788",
+ "type": "multiple",
+ "question": "巯基是许多蛋白质和酶活性部位的必需基团，极易被氧化，以下哪些物质可防止巯基的氧化：",
+ "options": {
+  "A": "还原型谷胱甘肽",
+  "B": "二硫苏糖醇",
+  "C": "EDTA",
+  "D": "PMSF"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 25 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。还原型谷胱甘肽可提供巯基，维持蛋白巯基的还原状态。B．正确。二硫苏糖醇（DTT）是强还原剂，能防止并逆转巯基氧化。C．错误。EDTA是金属螯合剂，通过螯合金属离子抑制氧化，本身并不直接保护巯基。D．错误。PMSF是丝氨酸蛋白酶抑制剂，与巯基保护无关。故答案为AB。\n【易错易混】易混：防巯基氧化用还原剂（DTT、巯基乙醇、GSH）；EDTA螯合金属、PMSF抑制丝氨酸蛋白酶，三者用途不可混为一谈。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

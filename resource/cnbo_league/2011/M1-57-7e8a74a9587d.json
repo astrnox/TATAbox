@@ -1,0 +1,48 @@
+{
+ "id": "M1-57-7e8a74a9587d",
+ "type": "single",
+ "question": "局部麻醉病人的感觉是：",
+ "options": {
+  "A": "痛觉和触觉全部存在",
+  "B": "痛觉和触觉全部消失",
+  "C": "触觉存在，痛觉消失",
+  "D": "痛觉存在，触觉消失"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 57 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。局麻药阻滞神经冲动传导，痛觉与触觉不会全部保留。B．错误。局麻并非各种感觉同时全部消失。C．正确。神经纤维越细越易被局麻药阻滞，痛觉、温觉由细的Aδ和C纤维传导，触压觉由粗的Aβ纤维传导，故麻醉初期痛觉先消失而触觉尚存。D．错误。感觉消失的先后取决于传导纤维的粗细，恰与该选项相反。故答案为C。\n【通法】通法（麻醉顺序）：细纤维先被阻滞，故痛觉、温觉先消失，触压觉后消失，记住细先粗后即可判断此类题。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

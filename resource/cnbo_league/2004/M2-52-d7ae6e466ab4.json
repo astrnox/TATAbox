@@ -1,0 +1,48 @@
+{
+ "id": "M2-52-d7ae6e466ab4",
+ "type": "single",
+ "question": "蕨类植物的明显特征是",
+ "options": {
+  "A": "拳卷的幼叶、复叶和根状茎",
+  "B": "拳卷的幼叶、单叶和根状茎",
+  "C": "伸展的幼叶、复叶和葡萄茎",
+  "D": "伸展的幼叶、单叶和根状茎"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 52 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】蕨类植物的识别特征集中在幼叶、叶和根茎三方面。A．正确。幼叶拳卷、成叶多为大型羽状复叶、地下具根状茎，正是蕨类的典型组合特征。B．错误。蕨类叶多为复叶而非单叶。C．错误。幼叶拳卷而非伸展，地下为根状茎而非匍匐茎。D．错误。幼叶应拳卷，叶多为复叶，两项皆错。故答案为A。\n【点睛】点睛：'幼叶拳卷'是蕨类最直观的野外识别点，配上'复叶＋根状茎'即可锁定。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

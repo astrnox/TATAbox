@@ -1,0 +1,48 @@
+{
+ "id": "M1-66-684a79f6af11",
+ "type": "single",
+ "question": "在体外非细胞系统蛋白合成体系中，含有SRP 和SRP 受体，不含有微粒体，则：",
+ "options": {
+  "A": "多肽链根本不能合成",
+  "B": "多肽链仅合成信号肽部分",
+  "C": "多肽链完全合成，含信号肽部分",
+  "D": "多肽链完全合成，不含信号肽部分"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 66 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。SRP 及其受体存在时翻译仍可完成，多肽链并非不能合成。B．错误。SRP 识别信号肽可致延伸暂停，但无微粒体时肽链仍会完整合成，并不止于信号肽。C．正确。无微粒体即缺内质网膜上的转位通道和信号肽酶，多肽链完整合成并保留信号肽。D．错误。信号肽酶位于内质网膜上，无微粒体时无人切除信号肽。故答案为C。\n【通法】通法（分泌蛋白体外合成）：无微粒体＝完整前体含信号肽；共翻译加微粒体＝信号肽被切并入腔；翻译后加微粒体＝不切，据此可判信号肽酶的位置与时相。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

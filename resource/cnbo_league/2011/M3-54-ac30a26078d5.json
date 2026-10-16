@@ -1,0 +1,77 @@
+{
+ "id": "M3-54-ac30a26078d5",
+ "type": "single",
+ "question": "下图为蛔虫横切图，其中abcd 所指结构依次是：",
+ "options": {
+  "A": "卵巢，输卵管，子宫，神经",
+  "B": "卵巢，输卵管，子宫，卵巢",
+  "C": "输卵管，子宫，肠，卵巢",
+  "D": "输卵管，卵巢，肠，神经"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 54 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-54-ac30a26078d5/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2011 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 153,
+  "bbox": [
+   218.6,
+   498.9,
+   376.7,
+   674.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-54-ac30a26078d5/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2011 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 153,
+   "bbox": [
+    218.6,
+    498.9,
+    376.7,
+    674.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。图中 a 断面小而规则，应为输卵管而非卵巢，且四者排列关系与图中不符。B．错误。图中 a 为输卵管，d 才是卵巢，顺序错位。C．正确。蛔虫横切面中，卵巢断面最小而细胞致密，输卵管稍大，子宫腔最大且常含卵，肠为背侧扁平的大腔；据图中 a 至 d 的形态和大小依次为输卵管、子宫、肠、卵巢，符合该图特征。D．错误。c 是背侧扁平的肠而非神经，b 也不是卵巢。故答案为C。"
+}

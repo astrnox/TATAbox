@@ -1,0 +1,48 @@
+{
+ "id": "M1-67-fa90bfe17a91",
+ "type": "single",
+ "question": "在性别决定为XO 类型的某种动物中，以下哪种可能是其体细胞中的正常染色体数目：",
+ "options": {
+  "A": "雄性28",
+  "B": "雌性35",
+  "C": "雄性15",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 67 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "第四部分 遗传与进化生物学、生物系统学（21 道题15 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。XO型中雄性为XO，染色体数比雌性少一条必为奇数，28为偶数不成立。B．错误。雌性为XX，染色体数应为偶数，35为奇数不成立。C．正确。雄性XO染色体数为奇数，15可作为该类型雄性体细胞的正常染色体数目。D．错误。C项合理，'都不对'不成立。故答案为C。\n【通法】通法（XO型性别决定）：雌XX为偶数、雄XO为奇数，先按奇偶筛选项，再看数值是否自洽。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-22-92ac71e82a7b",
+ "type": "multiple",
+ "question": "吃辣椒会引发“热”和“痛”两种感觉，以下解释合理的有：",
+ "options": {
+  "A": "辣椒中含有两种物质，能分别激活神经细胞表面感受“热”和“痛”的受体；",
+  "B": "辣椒中的物质激活了产生“疼痛”感觉的神经细胞；",
+  "C": "辣椒中的物质激活了神经细胞表面响应高温刺激的受体；",
+  "D": "大脑将高温刺激产生的神经信号解读为“痛”。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 22 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。辣椒中只有辣椒素一种活性物质，分别激活两种感觉的说法不成立。B．正确。辣椒素激活的正是传导痛觉的神经细胞。C．正确。辣椒素激活的是 TRPV1，即响应高温刺激的热感受受体。D．正确。该受体产生的信号被大脑解读为热与痛，故吃辣有热痛感。故答案为BCD。\n【点睛】点睛：辣不是味觉是痛温觉——辣椒素劫持 TRPV1 这个高温探测器，大脑照常把信号解读成热和痛，谁都没骗谁。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

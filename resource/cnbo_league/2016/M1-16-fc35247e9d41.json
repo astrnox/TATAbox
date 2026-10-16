@@ -1,0 +1,45 @@
+{
+ "id": "M1-16-fc35247e9d41",
+ "type": "single",
+ "question": "真核生物经转录作用生成的mRNA 是：",
+ "options": {
+  "A": "单顺反子",
+  "B": "多顺反子",
+  "C": "内含子",
+  "D": "插入序列"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 16 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。真核生物一个结构基因转录产生一条mRNA、翻译一条多肽，为单顺反子。B．错误。多顺反子（操纵子式转录）是原核生物的典型特征。C．错误。内含子是转录产物中被剪接去除的间隔序列，不是mRNA本身。D．错误。插入序列是可移动的DNA元件，属于DNA层面的序列。故答案为A。"
+}

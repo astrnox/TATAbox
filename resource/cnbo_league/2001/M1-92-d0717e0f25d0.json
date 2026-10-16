@@ -1,0 +1,45 @@
+{
+ "id": "M1-92-d0717e0f25d0",
+ "type": "mtf",
+ "question": "判断以下关于减数分裂描述的正误",
+ "options": {
+  "A": "减数分裂产生的配子染色体数减半",
+  "B": "减数分裂时不需纺锤体形成",
+  "C": "减数分裂中存在同源染色体的配对",
+  "D": "减数分裂的后期是同源染色体分离"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "19．A（√）B（×）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 19 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。减数分裂中DNA复制一次而细胞连续分裂两次，染色体数目减半，故配子为单倍体。B．错误。减数分裂两次分裂均需纺锤体牵引染色体运动，纺锤体由中心体或纺锤体极组织形成。C．正确。减数第一次分裂前期同源染色体联会形成四分体，可发生非姐妹染色单体交叉互换。D．错误。同源染色体分离发生在减数第一次分裂后期，减数第二次分裂后期是姐妹染色单体分离，笼统说减数分裂的后期并不准确。"
+}

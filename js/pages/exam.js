@@ -1286,7 +1286,8 @@ const EXAM_TOTAL = 72;
 let EXAM_TOTAL_ACTUAL = EXAM_TOTAL;
 const QUESTIONS_PER_MODULE = 18;
 const POINTS_PER_QUESTION = 2;
-const LEAGUE_SCORE_TABLE = { 0: 0, 1: 0, 2: 0.2, 3: 1, 4: 2 };
+// 4 子题联赛阶梯 —— 唯一权威在 js/core/question-model.js（此处引用防漂移）
+const LEAGUE_SCORE_TABLE = QuestionModel.LEAGUE_SCORE_TABLE;
 const TOTAL_SCORE = 144;
 const TOTAL_TIME = 9000;
 const WARNING_TIME = 600;
@@ -1685,25 +1686,19 @@ function getModuleGroup(moduleKey) {
   return MODULE_GROUPS[moduleKey] || { name: `模块${moduleKey}`, desc: '' };
 }
 
+// 单题判卷 —— 薄封装，唯一实现在 js/core/question-model.js 的 gradeQuestion(q, ua, 'exam')
+// （固定 72 题 × 4 子题 × 2 分，阶梯 0/0/0.2/1/2）
 function calcQuestionScore(qIndex) {
   const q = examQuestions[qIndex];
-  if (!q || !q.subQuestions) return { correct: 0, total: 4, score: 0 };
-  const ans = userAnswers[qIndex] || {};
-  let correct = 0;
-  for (let i = 0; i < 4; i++) {
-    if (ans[i] !== undefined && ans[i] !== null && ans[i] === q.subQuestions[i].answer) {
-      correct++;
-    }
-  }
-  return { correct: correct, total: 4, score: LEAGUE_SCORE_TABLE[correct] || 0 };
+  if (!q) return { correct: 0, total: 4, score: 0 };
+  const g = QuestionModel.gradeQuestion(q, userAnswers[qIndex], 'exam');
+  return { correct: g.correct, total: g.total, score: g.score };
 }
 
 function isSubQuestionCorrect(qIndex, subIdx) {
   const q = examQuestions[qIndex];
-  if (!q || !q.subQuestions || !q.subQuestions[subIdx]) return false;
-  const ans = userAnswers[qIndex];
-  if (!ans || ans[subIdx] === undefined || ans[subIdx] === null) return false;
-  return ans[subIdx] === q.subQuestions[subIdx].answer;
+  if (!q) return false;
+  return QuestionModel.isSubCorrect(q, subIdx, userAnswers[qIndex]);
 }
 
 function isQuestionFullyAnswered(qIndex) {
@@ -2058,7 +2053,7 @@ function renderQuestionHTML(qIndex) {
         </button>
       </div>
       <div class="exam-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
-      ${renderChart(q.chart)}
+      ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
       <div class="exam-q-hint">请对以下 4 个子选项分别判断正误（每题2分，按2025联赛标准阶梯赋分：对2个得0.2分，对3个得1分，全对得2分）</div>
       <div class="exam-subquestions">
   `;
@@ -2579,6 +2574,7 @@ function renderResultPage(target) {
                 <div class="exam-wrong-item">
                   <div class="exam-wrong-num">第 ${item.index + 1} 题 · ${mod.name}</div>
                   <div class="exam-wrong-stem">${q.question}</div>
+                  ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : ''}
                   <div class="exam-wrong-score">${result.correct}/4 正确 (${result.score.toFixed(1)}分)</div>
                 </div>
               `;
@@ -2677,7 +2673,7 @@ function renderReviewMode(target) {
           ${markTag}
         </div>
         <div class="exam-review-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
-        ${renderChart(q.chart)}
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
         <div class="exam-review-subs">
     `;
 
@@ -2738,67 +2734,31 @@ function scrollToReviewQuestion(qIndex, target) {
 }
 
 function saveExamRecord(score, duration) {
-  const moduleScores = {};
-  const moduleCorrects = {};
-  for (let m = 1; m <= 4; m++) {
-    moduleScores[m] = getModuleScore(m);
-    const start = (m - 1) * QUESTIONS_PER_MODULE;
-    const end = start + QUESTIONS_PER_MODULE;
-    let correct = 0;
-    for (let i = start; i < end; i++) {
-      correct += calcQuestionScore(i).correct;
-    }
-    moduleCorrects[m] = correct;
-  }
-
   const totalSubPerQuestion = 4;
-  let totalFullQuestions = 0;
-  for (let i = 0; i < examQuestions.length; i++) {
-    if (calcQuestionScore(i).correct === totalSubPerQuestion) totalFullQuestions++;
-  }
+  const perQuestionTotal = TOTAL_SCORE / EXAM_TOTAL; // 2 分/题
+  const hasSession = typeof window !== 'undefined' &&
+    window.BioQuestSession && typeof window.BioQuestSession.question === 'function';
 
-  if (typeof saveRecord === 'function') {
-    saveRecord({
-      totalQuestions: EXAM_TOTAL,
-      // 统一口径：correctCount = 全对题数（与 practice 纪录一致），
-      // 供 calcBioScore/趋势页正确率（≤100%）消费；错误子题数另存于 questions 明细
-      correctCount: totalFullQuestions,
-      score: score,
-      totalScore: TOTAL_SCORE,
-      duration: duration,
-      module: 'exam',
-      questions: examQuestions.map((q, i) => {
-        const r = calcQuestionScore(i);
-        // Issue #10：用稳定 bioID 引用题目（examQ.id/bioId 由分片加载注入）
-        const examQ = examQuestions[i];
-        const qBio = (examQ && (examQ.id || examQ.bioId)) || '';
-        return {
-          questionId: qBio || `exam_${i}`,
-          qId: qBio || `exam_${i}`,
-          question: q.question,
-          correctSubs: r.correct,
-          totalSubs: totalSubPerQuestion,
-          subject: q.subject,
-          module: getExamModuleKey(i)
-        };
-      })
+  // 统一落盘入口（js/core/record-session.js）：逐题 question —— 模块统计
+  // （module_1..4，与排行榜/考试成绩同构）+ 难度自适应 + 错题本（云端复习卡）。
+  // 考试不给信用点（MODULE_POINTS 无 exam 配置），故 points:false 明确关闭。
+  if (hasSession) {
+    examQuestions.forEach((q, i) => {
+      const r = calcQuestionScore(i);
+      const qBio = (q && (q.id || q.bioId)) || '';
+      // recordWrongAnswer 需要 id/question_id：分片未注入 id 时用稳定 bioID 兜底
+      const qRef = (qBio && !q.id) ? Object.assign({}, q, { id: qBio }) : q;
+      window.BioQuestSession.question({
+        module: 'exam',
+        q: qRef,
+        correct: r.correct === totalSubPerQuestion,
+        moduleKey: 'module_' + getExamModuleKey(i),
+        points: false
+      });
     });
   }
 
-  // 统计写入：每题只计 1 次（updateStats 为「题目级」计数）；
-  // 「正确」判定与 practice 保持一致 = 全对才算对。
-  for (let m = 1; m <= 4; m++) {
-    if (typeof updateStats === 'function') {
-      const modName = 'module_' + m;
-      const start = (m - 1) * QUESTIONS_PER_MODULE;
-      const end = start + QUESTIONS_PER_MODULE;
-      for (let i = start; i < end; i++) {
-        const result = calcQuestionScore(i);
-        updateStats(modName, result.correct === totalSubPerQuestion);
-      }
-    }
-  }
-
+  // 本地错题本（子题级，错题列表页按 bioId#sub 引用，保持历史行为）
   for (let i = 0; i < examQuestions.length; i++) {
     for (let j = 0; j < 4; j++) {
       if (!isSubQuestionCorrect(i, j)) {
@@ -2816,22 +2776,35 @@ function saveExamRecord(score, duration) {
     }
   }
 
-  // 同步分数到 Supabase/服务器
-  if (typeof isLoggedIn === 'function' && isLoggedIn()) {
-    try {
-      var stats = typeof getStats === 'function' ? getStats() : null;
-      if (stats && typeof calcBioScore === 'function') {
-        var bioResult = calcBioScore(stats);
-        if (typeof window.updateBioScore === 'function' && typeof window.getSupabase === 'function' && window.getSupabase()) {
-          window.updateBioScore(bioResult.score, {
-            practice_count: stats.totalAnswered || 0,
-            total_answered: stats.totalAnswered || 0,
-            total_correct: stats.totalCorrect || 0,
-            accuracy: stats.accuracy || 0
-          }).catch(function() {});
-        }
-      }
-    } catch(e) {}
+  // 收尾落盘：练习记录 saveRecord + bio 分六维重算与云端同步。
+  // 模块统计/错题/难度已由上面的 question() 逐题写入，stats:false 防双计。
+  if (hasSession && typeof window.BioQuestSession.finish === 'function') {
+    window.BioQuestSession.finish({
+      module: 'exam',
+      duration,
+      questions: examQuestions.map((q, i) => {
+        const r = calcQuestionScore(i);
+        // Issue #10：用稳定 bioID 引用题目（q.id/bioId 由分片加载注入）
+        const qBio = (q && (q.id || q.bioId)) || '';
+        return {
+          q,
+          questionId: qBio || `exam_${i}`,
+          question: q.question,
+          subject: q.subject,
+          userAnswers: userAnswers[i] || {},
+          // 分值口径：72 题 × 2 分 = 144，逐题分由 gradeQuestion 阶梯给出
+          score: r.score,
+          totalScore: perQuestionTotal,
+          correctSubs: r.correct,
+          totalSubs: totalSubPerQuestion,
+          moduleKey: 'module_' + getExamModuleKey(i),
+          // 统一口径：全对才算对（与 practice 纪录一致）
+          correct: r.correct === totalSubPerQuestion
+        };
+      }),
+      stats: false,
+      checkin: false
+    });
   }
 }
 

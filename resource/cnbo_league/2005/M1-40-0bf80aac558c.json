@@ -1,0 +1,48 @@
+{
+ "id": "M1-40-0bf80aac558c",
+ "type": "single",
+ "question": "关于贮精囊（seminal vesicle）和纳精囊(seminal receptacle)的叙述，错误的是：",
+ "options": {
+  "A": "贮精囊是自体精子贮精和发育的器官，纳精囊主要接受异体精子",
+  "B": "纳精囊是自体精子贮精和发育的器官，贮精囊主要接受异体精子",
+  "C": "贮精囊和纳精囊是贮存精子的不同器官的名称",
+  "D": "每条环毛蚓都同时具有这二种器官"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 40 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出错误的一项，判断词指该选项是否合题意。A．错误。贮精囊是贮存和养育自体精子的器官，纳精囊在交配时接受对方输入的精子，表述成立。B．正确。该表述把两器官功能对调，与事实相反：贮精囊存自体精子，纳精囊收异体精子，该表述不成立，正是应选项。C．错误。两者确是贮存精子的不同器官，只是精子来源不同，表述成立。D．错误。环毛蚓雌雄同体，每条个体都同时具有贮精囊和纳精囊，表述成立，故答案为B。\n【易错易混】易混：贮精囊＝自体精子的仓库，纳精囊＝交配时收纳异体精子的仓库；凭'纳'字记住是'收进来的'，即可与贮精囊区分。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

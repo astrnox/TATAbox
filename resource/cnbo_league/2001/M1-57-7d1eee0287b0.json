@@ -1,0 +1,48 @@
+{
+ "id": "M1-57-7d1eee0287b0",
+ "type": "single",
+ "question": "一个二倍体的配子(AA，A 为一个染色体组)与该物种正常的单倍体配子(A)相结合，其后代是＿。",
+ "options": {
+  "A": "异源三倍体",
+  "B": "同源三倍体",
+  "C": "三倍体",
+  "D": "二倍体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 57 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。异源三倍体须含不同物种的染色体组，本题两个配子均来自同一物种。B．正确。二倍体配子（AA）与该物种正常单倍体配子（A）结合，合子含三个来源相同的染色体组（AAA），为同源三倍体。C．错误。'三倍体'只按染色体组数目命名，未反映三个染色体组的来源关系，不如'同源三倍体'准确。D．错误。后代含三个染色体组而非两个，不是二倍体。故答案为B。\n【易错易混】易混：同源三倍体＝染色体组来自同一物种（AAA），异源三倍体＝不同物种基因组组合，先看染色体组来源再定同源或异源。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

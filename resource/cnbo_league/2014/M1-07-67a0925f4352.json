@@ -1,0 +1,41 @@
+{
+ "id": "M1-07-67a0925f4352",
+ "type": "multiple",
+ "question": "溶酶体的功能包括",
+ "options": {
+  "A": "降解由胞外环境进入胞内的物质",
+  "B": "清除无用生物大分子及衰老细胞器",
+  "C": "吞噬和自噬",
+  "D": "胞吐"
+ },
+ "answer": null,
+ "answer_key": "ABC/ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 7 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "标答为复合/可选答案，见 answer_key",
+ "explanation": "【解析】A．正确。溶酶体水解酶可降解经内吞进入胞内的外来物质，属异噬功能。B．正确。溶酶体通过自噬清除衰老、损伤的细胞器与多余大分子，是胞内'清道夫'。C．正确。吞噬体、自噬体与溶酶体融合后被降解，吞噬与自噬均依赖溶酶体。D．官方标答为存疑（ABC/ABCD）：标答把D项胞吐并列为可选之一，溶酶体虽以胞内消化为主，但其水解酶可经分泌型胞吐释放到胞外，该项是否计入存疑，待人工裁定。"
+}

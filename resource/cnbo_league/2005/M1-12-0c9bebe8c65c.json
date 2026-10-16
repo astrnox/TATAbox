@@ -1,0 +1,48 @@
+{
+ "id": "M1-12-0c9bebe8c65c",
+ "type": "single",
+ "question": "组成蛋白质的氨基酸的α-碳原子是不对称的，但除外。",
+ "options": {
+  "A": "丙氨酸",
+  "B": "组氨酸",
+  "C": "甘氨酸",
+  "D": "谷氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 12 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出例外的一项（即α-碳原子并非不对称者），判断词指该选项是否合题意。A．错误。丙氨酸的α-碳连接H、CH3、COOH、NH2四种不同基团，是不对称碳原子，非例外。B．错误。组氨酸α-碳所连R基为咪唑甲基，四种基团互不相同，是不对称碳原子，非例外。C．正确。甘氨酸的α-碳上连接两个氢原子，所连基团有重复，是对称的、无手性的，正是题干所说的例外。D．错误。谷氨酸R基为CH2CH2COOH，α-碳连四种不同基团，是不对称碳原子，故答案为C。\n【通法】通法（手性判断）：α-碳须分别连H、NH2、COOH和R基才具手性；当R＝H（甘氨酸）时出现两个相同基团而对称，它是组成蛋白质的氨基酸中唯一的非手性者。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

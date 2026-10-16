@@ -1,0 +1,48 @@
+{
+ "id": "M1-26-8df99df3ba19",
+ "type": "single",
+ "question": "CRISPR 基因编辑技术的出现和发展极大促进了生命科学研究的突破，在CRISPR/Cas9 系统基础上发展而来的CRISPR/dCas9（dead Cas9）系统更是拓展了CRISPR 技术的应用。下列关于CRISPR/dCas9 系统的叙述中不正确的是：",
+ "options": {
+  "A": "可利用CRISPR/dCas9 系统抑制一个或多个靶基因的转录",
+  "B": "将CRISPR/dCas9 系统与转录激活蛋白结合可用于激活一个或多个靶基因的转录",
+  "C": "可利用CRISPR/dCas9 系统进行基因敲除",
+  "D": "可将CRISPR/dCas9 系统中的dCas9 与脱氨酶融合，完成单碱基突变"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 26 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不正确的叙述，判断词指该选项是否合题意。A．错误（表述成立）。dCas9 失去切割活性但可定位，融合抑制域即能抑制靶基因转录。B．错误（表述成立）。与转录激活蛋白融合可激活靶基因转录。C．正确（应选）。基因敲除需要切断双链并依赖修复引入移码，dCas9 不切割 DNA，无法完成敲除，该叙述不正确。D．错误（表述成立）。dCas9 与脱氨酶融合可实现单碱基编辑。故答案为C。\n【易错易混】易混：Cas9 管切、dCas9 只管坐——dCas9 缺切割活性，可抑制可激活可编辑，但做不了敲除；要敲除得靠野生型 Cas9。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

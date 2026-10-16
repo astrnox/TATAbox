@@ -214,6 +214,13 @@ const Routes = {
     render: 'renderDataLabPage',
     module: 'score-calc'
   },
+  '/bio-calc': {
+    title: 'Bio 分计算器',
+    render: 'renderBioCalcPage',
+    module: 'bio-calc'
+    // 独立页此前缺失（bio-calc.js 文件头宣称的 #/bio-calc 入口不存在），
+    // 访问会被「未知路由」回退到首页 —— 这是"用户看不到 Bio 分计算器"的根因
+  },
   '/reset-password': {
     title: '设置新密码',
     render: 'renderResetPasswordPage'

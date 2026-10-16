@@ -1,0 +1,48 @@
+{
+ "id": "M1-13-78b49b666393",
+ "type": "multiple",
+ "question": "纤毛的形成和解体与细胞周期密切相关，下列陈述正确的是：",
+ "options": {
+  "A": "细胞进入G1 期纤毛形成",
+  "B": "细胞进入G0 期纤毛形成",
+  "C": "细胞进入S 期纤毛形成",
+  "D": "影响纤毛的降解过程将使细胞周期延迟"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 13 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。细胞进入G1期时开始组装纤毛，纤毛形成与G1期相关。B．正确。退出细胞周期的G0期细胞多已形成纤毛，静止细胞常带纤毛。C．错误。S期进行DNA复制，纤毛不在该期组装，反而需先行解体。D．正确。纤毛降解受阻会使细胞无法进入S期，导致细胞周期延迟。故答案为ABD。\n【通法】通法（纤毛与细胞周期）：纤毛组装于G1/G0、解体于S期之前；纤毛是细胞周期的'闸门'，凡涉及纤毛降解影响周期进程的表述多成立。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

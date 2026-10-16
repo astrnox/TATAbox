@@ -1,0 +1,48 @@
+{
+ "id": "M4-61-8cbfedb0f754",
+ "type": "single",
+ "question": "某植物种子胚乳的基因型是AaaBbb，其父本的基因型为AaBb，母本的基因型是：",
+ "options": {
+  "A": "AaBb",
+  "B": "AABB",
+  "C": "aaBb",
+  "D": "aaBB"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 61 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。被子植物胚乳由两个极核与一个精核结合形成（3n），两个极核来自同一功能大孢子的有丝分裂，基因型相同；Aaa 中成对的两个 a 只能来自母方极核、A 来自父方，Bbb 同理为母方 bb 加父方 B，故父本 AaBb 须提供 AB 精子，母本须能产生 ab 的大孢子，即 AaBb。B．错误。AABB 只产生 AB 极核，与 ab 精子结合得 AAaBBb，与题给不符。C．错误。按命题意图母本应含 A、B 显性基因并产生 ab 大孢子；但严格说 aaBb 也能产生 ab 极核、与 AB 精子结合得同样胚乳，本题不具唯一性，单选只能取 AaBb（该官方标答存此一说）。D．错误。aaBB 只产生 aB 极核，与 Ab 精子结合得 AaaBBb，与题给基因型不符。故答案为A。\n【易错易混】易混：拆胚乳基因型时母方两个等位基因必成对相同、父方只有一个，据此先定出母方给哪一对、父方给哪一个，再反推亲本，切勿把母方两个极核当作两种基因。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

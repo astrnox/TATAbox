@@ -1,0 +1,48 @@
+{
+ "id": "M1-10-b35b76ec8d8f",
+ "type": "single",
+ "question": "高等植株S 形的生长曲线中，其纵坐标可以用＿等多种参数来表示。",
+ "options": {
+  "A": "时间、重量、体积",
+  "B": "蛋白质含量、细胞个数、叶面积",
+  "C": "蛋白质含量、叶面积、干重",
+  "D": "高度、鲜重、细胞个数"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 10 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。时间是生长曲线的横坐标，不能作纵坐标的生长量参数。B．错误。蛋白质含量是物质含量指标，随代谢波动，不直接代表生长量，不能与细胞个数、叶面积并列作纵坐标。C．错误。该组合同样含蛋白质含量，不能整体作纵坐标。D．正确。高度、鲜重、细胞个数都随生长进程不可逆增加，属生长量参数，可与干重、体积等一样表示S形生长曲线。故答案为D。\n【点睛】点睛：生长量只认长度、鲜重、干重、体积、数目类指标，时间归横坐标，含量类指标不作生长量纵坐标。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

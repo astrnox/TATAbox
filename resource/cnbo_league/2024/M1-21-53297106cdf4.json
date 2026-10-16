@@ -1,0 +1,48 @@
+{
+ "id": "M1-21-53297106cdf4",
+ "type": "multiple",
+ "question": "关于接受并传递信号的各种类型受体分子，以下描述正确的有：",
+ "options": {
+  "A": "NO 受体具有酶活性；",
+  "B": "类固醇激素受体定位于细胞膜；",
+  "C": "受体酪氨酸激酶能引发共价修饰；",
+  "D": "G 蛋白偶联受体可以通过第二信使cAMP 介导细胞内信号传递。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 21 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。NO 的受体是可溶性鸟苷酸环化酶，本身具有酶活性，催化生成cGMP。B．错误。类固醇激素受体位于细胞内（胞质或核内），属核受体超家族，不在细胞膜上。C．正确。受体酪氨酸激酶被激活后使底物蛋白酪氨酸残基磷酸化，引发共价修饰级联反应。D．正确。G 蛋白偶联受体经 Gs/ Gi 调节腺苷酸环化酶，以第二信使 cAMP 介导胞内信号传递。故答案为ACD。\n【通法】通法（受体类型归纳）：离子通道型、酶联型（RTK、NO 受体）、G 蛋白偶联型、核受体型，按'定位＋是否具酶活性＋第二信使'三问逐项核对。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

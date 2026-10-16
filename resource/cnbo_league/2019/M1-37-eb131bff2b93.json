@@ -1,0 +1,50 @@
+{
+ "id": "M1-37-eb131bff2b93",
+ "type": "single",
+ "question": "溶液的渗透压摩尔浓度（单位：mOsm/L）在数值上等于溶液中溶质粒子的总摩尔浓度，请计算以下溶液的渗透压摩尔浓度，该溶液含有：NaCl（12mM），KCl（4mM）以及CaCl2 （2mM）",
+ "options": {
+  "A": "18",
+  "B": "36",
+  "C": "38",
+  "D": "20",
+  "E": "42"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 37 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。未计入离子解离产生的粒子数。B．错误。把CaCl2按两粒子计算会导致偏低。C．正确。NaCl解离为2粒子贡献12×2=24，KCl贡献4×2=8，CaCl2贡献2×3=6，合计24+8+6=38 mOsm/L。D．错误。18只相当于各物质摩尔浓度之和（12+4+2），未乘解离系数。E．错误。42与实际计算不符。故答案为C。\n【通法】通法（渗透摩尔浓度计算）：总摩尔浓度=Σ（溶质摩尔浓度×解离系数），NaCl、KCl系数2，CaCl2系数3，先解离后求和。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

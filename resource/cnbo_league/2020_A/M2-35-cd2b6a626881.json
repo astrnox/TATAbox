@@ -1,0 +1,48 @@
+{
+ "id": "M2-35-cd2b6a626881",
+ "type": "single",
+ "question": "同时剪断家兔脊神经背根和腹根后，刺激哪个部位可以引起其四肢肌肉收缩",
+ "options": {
+  "A": "背根中枢端",
+  "B": "腹根中枢端",
+  "C": "背根外周端",
+  "D": "腹根外周端"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 35 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。背根为感觉神经进入脊髓的通路，其纤维不直接支配肌肉。B．错误。腹根中枢端已随剪断与脊髓分离，刺激不能经中枢再传至肌肉。C．错误。背根外周端属感觉纤维，刺激不能引起肌肉收缩。D．正确。腹根外周端与脊神经相连通向肌肉，刺激该处可直接激活运动轴突引起四肢肌肉收缩。故答案为D。\n【通法】通法（反射弧切断实验）：背根进感觉、腹根出运动；剪断后能在外周引起效应的只有运动根的外周端，其余各端要么不传运动指令要么已断离中枢。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

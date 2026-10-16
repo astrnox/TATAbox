@@ -1,0 +1,48 @@
+{
+ "id": "M1-58-d686efbdc475",
+ "type": "single",
+ "question": "神经－肌肉细胞膜静息电位的产生主要取决于哪种离子的转移？",
+ "options": {
+  "A": "K+",
+  "B": "Na+",
+  "C": "Ca2+",
+  "D": "Cl －"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 58 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。静息时膜对K+通透性最大，K+顺浓度梯度外流使膜内变负，静息电位接近K+平衡电位，故主要取决于K+的转移。B．错误。Na+内流主要形成动作电位的上升相，静息时膜对Na+通透性极低。C．错误。Ca2+主要参与递质释放、肌肉收缩等胞内信号活动，对静息电位贡献甚微。D．错误。Cl-被动分布对静息电位有一定稳定作用，但不是决定性离子。故答案为A。\n【点睛】点睛：静息电位主要看K+外流（趋近K+平衡电位），动作电位上升相主要看Na+内流，两大离子流分清即得分。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

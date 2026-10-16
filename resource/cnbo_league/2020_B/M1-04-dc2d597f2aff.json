@@ -1,0 +1,50 @@
+{
+ "id": "M1-04-dc2d597f2aff",
+ "type": "multiple",
+ "question": "以下有关PCR 反应的叙述正确的是：",
+ "options": {
+  "A": "PCR 反应必须使用耐高温的DNA 聚合酶；",
+  "B": "PCR 反应必须添加引物；",
+  "C": "PCR 反应必须添加模板；",
+  "D": "PCR 反应必须添加4 种dNTPs；",
+  "E": "PCR 反应必须添加锰离子。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "BCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 4 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。PCR可用耐高温聚合酶循环进行，也可在每轮补加普通DNA聚合酶实现，耐高温酶并非绝对必须。B．正确。DNA聚合酶需要引物提供3-羟基末端，引物是必需组分。C．正确。没有模板则无扩增对象，模板必加。D．正确。四种dNTP是合成新链的原料，必加。E．错误。锰离子可影响聚合酶保真性，但不是PCR的必需组分。故答案为BCD。\n【通法】通法（PCR体系清单）：模板、引物、四种dNTP、耐热DNA聚合酶与缓冲液是标配；酶的耐热性可通过分轮补加替代，锰离子属可选调节物，'必须'二字只留给前三者与酶。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

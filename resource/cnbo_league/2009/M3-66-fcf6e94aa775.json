@@ -1,0 +1,48 @@
+{
+ "id": "M3-66-fcf6e94aa775",
+ "type": "single",
+ "question": "大多数动物血液是红色的，但有些动物的血液会呈现不同的颜色。其原因是：",
+ "options": {
+  "A": "与血液中所含的运输氧的元素有关",
+  "B": "与血液中所含的色素有关",
+  "C": "与血浆的颜色有关",
+  "D": "机制还不清楚"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 65 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。血液颜色取决于携氧蛋白所含的金属元素：含铁血红蛋白呈红色，含铜血蓝蛋白呈蓝色，无脊椎动物还可见绿色等，即与运输氧的元素有关。B．错误。'所含色素'说法宽泛，题干考查的核心正是携氧元素的差异。C．错误。血浆本身近乎无色，不决定血液颜色。D．错误。该机制已研究清楚，并非不清楚。故答案为A。\n【点睛】点睛：血液颜色看携氧蛋白的金属中心——铁基血红蛋白红、铜基血蓝蛋白蓝，血浆本身无色不背锅。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

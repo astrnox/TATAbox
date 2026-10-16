@@ -1,0 +1,48 @@
+{
+ "id": "M1-08-cffa47d1b838",
+ "type": "multiple",
+ "question": "在细胞减数分裂过程中会出现下列哪些现象",
+ "options": {
+  "A": "同源染色体配对",
+  "B": "DNA复制",
+  "C": "同源染色体间交换",
+  "D": "基因发生变异"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 8 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。减数第一次分裂前期同源染色体联会配对形成四分体。B．正确。减数分裂前的间期完成DNA复制，染色体成为含两条姐妹染色单体的结构。C．正确。前期Ⅰ粗线期同源染色体的非姐妹染色单体间发生交换。D．正确。交换与自由组合产生基因组成的变异，广义上属基因发生变异，复制中偶发的突变也可能出现（该官方标答存此一说，若把变异限于基因突变则此项表述不够严谨）。故答案为ABCD。\n【易错易混】易混：DNA复制发生在减数分裂前的间期，联会、交换、同源分离才是减数分裂期的特征事件。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

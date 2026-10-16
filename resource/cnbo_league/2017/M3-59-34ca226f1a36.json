@@ -1,0 +1,50 @@
+{
+ "id": "M3-59-34ca226f1a36",
+ "type": "multiple",
+ "question": "鱼类的鳞片是其皮肤衍生物，在不同的类别中有不同的来源和形态。以下物种与所拥有的鳞片类型匹配正确的有哪些：",
+ "options": {
+  "A": "海鳗-圆鳞",
+  "B": "泥鳅-圆鳞",
+  "C": "鳜鱼-栉鳞",
+  "D": "多鳍鱼-盾鳞",
+  "E": "赤魟-硬鳞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 59 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。海鳗鳞片细小退化、常埋于皮下，与圆鳞不对应。B．正确。泥鳅被覆小圆鳞，匹配正确。C．正确。鳜鱼体被栉鳞，后缘具小棘，匹配正确。D．错误。多鳍鱼具硬鳞（整列鳞），非盾鳞。E．错误。赤魟体表光滑无鳞（或仅具退化的皮齿），不具硬鳞。故答案为BC。\n【易错易混】易混：鱼鳞按类群反查——圆鳞/栉鳞看硬骨鱼（鲤圆、鲈鳜栉），硬鳞见多鳍鱼与鲟，盾鳞只在软骨鱼（鲨），魟类体表光滑，别把盾鳞安到硬骨鱼头上。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

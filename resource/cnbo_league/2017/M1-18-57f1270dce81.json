@@ -1,0 +1,45 @@
+{
+ "id": "M1-18-57f1270dce81",
+ "type": "single",
+ "question": "真核生物蛋白质合成起始时需要模板 mRNA 先与核糖体的小亚基结合，再与大亚基结合形成 80S 起始复合物。",
+ "options": {
+  "A": "30S",
+  "B": "40S",
+  "C": "50S",
+  "D": "60S"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 18 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。30S是原核核糖体小亚基。B．正确。真核起始时mRNA先与40S小亚基结合，再与60S大亚基结合形成80S起始复合物。C．错误。50S是原核核糖体大亚基。D．错误。60S是大亚基，但题干问的是与mRNA先结合的小亚基。故答案为B。"
+}

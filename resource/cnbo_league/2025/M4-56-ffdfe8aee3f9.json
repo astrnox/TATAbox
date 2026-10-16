@@ -1,0 +1,45 @@
+{
+ "id": "M4-56-ffdfe8aee3f9",
+ "type": "mtf",
+ "question": "对以下关于种群近亲繁殖结果的陈述进行正误判断：",
+ "options": {
+  "A": "近亲繁殖通常会导致种群的遗传多样性增加，尤其是在存在外部基因引入的情况下",
+  "B": "近亲繁殖主要导致种群中纯合基因型的频率降低，而杂合基因型的频率增加",
+  "C": "近亲繁殖倾向于降低种群的杂合基因型频率，但这种效应在长期内可能被突变或基因流等其他进化力量所抵消",
+  "D": "近亲繁殖可能导致隐性有害等位基因对应的表型在种群中出现的频率增加"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 56 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "四. 遗传学、演化生物学、生物信息学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．错误。近交使等位基因纯合化，降低遗传多样性（外来基因流才是增加多样性的因素）。B．错误。近交提高纯合基因型频率、降低杂合基因型频率，与陈述相反。C．正确。近交降低杂合度，但突变、基因流可在长期抵消该效应。D．正确。隐性有害等位基因纯合概率上升，相应表型（近交衰退）出现频率增加。"
+}

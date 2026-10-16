@@ -1,0 +1,52 @@
+{
+ "id": "M4-69-ed8af667e2d5",
+ "type": "single",
+ "question": "三个基因的中，位于中间的基因是",
+ "options": {
+  "A": "b",
+  "B": "cn",
+  "C": "wx",
+  "D": "无法确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 69 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 69,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "69-73",
+  "stimulus": "在玉米中，等位基因b 使籽粒胚乳颜色为白色，b+为野生型紫色；另外一个基"
+ },
+ "explanation": "【解析】A．错误。b与cn的图距为10.3、与wx的图距为22.8，b不可能位于中间。B．正确。b与cn相距10.3、wx与cn相距14.7，两段距离之和25.0与wx-b的22.8接近，说明cn位于b与wx之间。C．错误。wx与两端基因距离都较大，不在中间位置。D．错误。由三点测交的两两图距可以确定基因顺序。故答案为B。\n【通法】通法（三点定位）：把三个两两图距排序，最小的两个为相邻区段，其和最大者对应的基因居中，即'两小相邻、夹者居中'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

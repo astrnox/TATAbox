@@ -1,0 +1,48 @@
+{
+ "id": "M2-54-43a75b027b4f",
+ "type": "single",
+ "question": "以下哪个关于C4 植物的描述是正确的？",
+ "options": {
+  "A": "均为单子叶植物",
+  "B": "叶片只进行C4 光合作用途径",
+  "C": "光呼吸中放出的CO2 能被高效利用",
+  "D": "氧气对其CO2 固定影响较小"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 54 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。C4植物既有单子叶（玉米、高粱）也有双子叶（苋、藜、菊科等）。B．错误。C4植物仍进行卡尔文循环（C3途径），只是CO2先由PEP羧化酶在叶肉细胞中固定为四碳酸。C．错误。C4植物的CO2浓缩机制使光呼吸极弱，谈不上利用光呼吸放出的CO2。D．正确。维管束鞘细胞内CO2浓度高，Rubisco周围O2/CO2比值低，氧气对CO2固定影响小。故答案为D。\n【通法】通法（C4与光呼吸）：C4＝叶肉细胞固CO2、维管束鞘细胞放CO2给卡尔文循环，核心是浓缩CO2、抑制光呼吸，故耐高温强光。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

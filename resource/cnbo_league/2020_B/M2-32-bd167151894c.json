@@ -1,0 +1,47 @@
+{
+ "id": "M2-32-bd167151894c",
+ "type": "single",
+ "question": "用甲苯胺蓝对花粉管染色并进行荧光观察，可见花粉管中将后部空管道阻断的结构是：",
+ "options": {
+  "A": "果胶塞",
+  "B": "胼胝质塞",
+  "C": "纤维素塞",
+  "D": "蛋白质塞",
+  "E": "脂肪塞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 32 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。果胶是花粉管壁基质成分，不形成阻断后部空管的塞状结构。B．正确。花粉管生长中由胼胝质（β-1,3-葡聚糖）合成的塞周期性沉积，将后部已空的管道阻断，甲苯胺蓝可将其染出荧光。C．错误。纤维素是花粉管壁主要成分，不构成塞。D．错误。蛋白质塞不是该结构的成分。E．错误。脂肪不参与该塞的形成。故答案为B。"
+}

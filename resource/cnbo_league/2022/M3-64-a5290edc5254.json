@@ -1,0 +1,45 @@
+{
+ "id": "M3-64-a5290edc5254",
+ "type": "multiple",
+ "question": "海鞘幼体自由生活，成体固着生活，幼体到成体的发育经历逆行变态，变态完成后：",
+ "options": {
+  "A": "尾部的脊索消失，仅保留背侧部分脊索；",
+  "B": "背神经管退化，仅残留一个神经节；",
+  "C": "咽部扩大，鳃裂数目大大增加；",
+  "D": "泄殖孔的位置转向与固着端相对的顶端。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 64 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。逆行变态后尾部完全退化，脊索（含背侧部分）全部消失，仅存的描述不成立。B．正确。背神经管退化，仅在体背留存一个神经节。C．正确。咽部扩大形成围鳃腔，鳃裂数目大大增加以适应滤食。D．正确。固着后身体倒转，泄殖孔转向与固着端相对的顶端。故答案为BCD。"
+}

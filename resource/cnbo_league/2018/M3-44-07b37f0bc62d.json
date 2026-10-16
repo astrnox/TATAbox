@@ -1,0 +1,48 @@
+{
+ "id": "M3-44-07b37f0bc62d",
+ "type": "single",
+ "question": "某人剧烈运动后可能不会出现下列哪个现象",
+ "options": {
+  "A": "短时间缺氧",
+  "B": "皮肤血管收缩",
+  "C": "交感神经兴奋",
+  "D": "胃肠道充血"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 44 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出剧烈运动后可能不会出现的现象，判断词指该选项是否合题意。A．错误。剧烈运动时机体相对缺氧（氧亏），会出现短时间缺氧，表述成立。B．错误。交感兴奋使皮肤血管收缩、血流重新分配，表述成立。C．错误。运动时交感神经兴奋占主导，表述成立。D．正确。交感兴奋使胃肠道血管收缩、血流减少，胃肠不会充血，该现象不会出现，正是应选项。故答案为D。\n【点睛】点睛：剧烈运动＝交感兴奋＝皮肤与内脏血管收缩、骨骼肌血管舒张，胃肠'缺血'而非充血。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

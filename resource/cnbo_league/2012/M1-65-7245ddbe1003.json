@@ -1,0 +1,50 @@
+{
+ "id": "M1-65-7245ddbe1003",
+ "type": "single",
+ "question": "某雌雄同株的植物中，决定两种性状的基因H 和L 位于同一染色体，图距l6cm。 HHLL×hhll 的后代F1 与hhLL×HHll 的Fl 相互杂交，后代中hhll 的比例为",
+ "options": {
+  "A": "0.0625",
+  "B": "0.033",
+  "C": "0.134",
+  "D": "0.0256",
+  "E": "0.21"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 65 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。0.0625＝0.25×0.25，是两对基因自由组合时双隐性的比例，未考虑连锁。B．正确。HHLL×hhll的F1为HL/hl（相引），产生hl配子为亲本型，概率（1－0.16）/2＝0.42；hhLL×HHll的F1为Hl/hL（相斥），产生hl配子为重组型，概率0.16/2＝0.08；两F1互交，hhll＝0.42×0.08＝0.0336，约为0.033。C．错误。0.134与任何合理的配子组合都不相符。D．错误。0.0256≈0.16×0.16，是把两亲本重组率直接相乘，混淆了配子类型。E．错误。0.21≈0.42/2，是误取单亲的配子率所致，双亲各出一个配子必须相乘。故答案为B。\n【通法】通法（连锁互换计算）：先判相引相斥写出F1染色体组成；亲本型配子＝（1－r）/2，重组型配子＝r/2；目标基因型所需配子概率由双亲分别查出后相乘。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

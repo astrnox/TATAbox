@@ -1,0 +1,48 @@
+{
+ "id": "M1-95-ad365e2de049",
+ "type": "mtf",
+ "question": "胞间连丝的主要生理功能是",
+ "options": {
+  "A": "物质合成",
+  "B": "物质运输",
+  "C": "信息传递",
+  "D": "能量代谢"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "B,C",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 95 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。物质合成在核糖体、内质网和叶绿体等结构中完成，胞间连丝不具合成功能。B．正确。胞间连丝贯通细胞壁，是细胞间物质运输的通道，可运输小分子、蛋白质乃至 RNA。C．正确。胞间连丝传递化学信号和电信号，实现细胞间的信息交流，协调组织的生长发育。D．错误。能量代谢（呼吸作用等）在细胞自身的线粒体和细胞质基质中进行，不是胞间连丝的功能。\n【点睛】点睛：胞间连丝＝细胞间的运输与通讯通道，与物质合成、能量代谢无关。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

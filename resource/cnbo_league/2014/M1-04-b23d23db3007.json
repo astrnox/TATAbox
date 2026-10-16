@@ -1,0 +1,45 @@
+{
+ "id": "M1-04-b23d23db3007",
+ "type": "multiple",
+ "question": "细胞凋亡和程序性坏死的主要区别包括",
+ "options": {
+  "A": "是否引发炎症反应",
+  "B": "有无信号转导过程",
+  "C": "有无蛋白质合成",
+  "D": "是否随机降解DNA"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 4 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。凋亡由程序严格执行、内容物包裹成凋亡小体，不引发炎症；程序性坏死导致细胞崩解、内容物外泄，引发炎症反应。B．错误。两者均经受体或胞内信号触发，都存在信号转导过程，不构成区别。C．错误。两者均涉及酶与调控蛋白的合成，不是主要区分点。D．正确。凋亡时DNA被核酸内切酶切成规则的片段（梯状条带），程序性坏死则是随机降解。故答案为AD。"
+}

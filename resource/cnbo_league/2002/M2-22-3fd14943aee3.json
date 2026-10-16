@@ -1,0 +1,45 @@
+{
+ "id": "M2-22-3fd14943aee3",
+ "type": "single",
+ "question": "估计现在在中国大陆HIV 病毒的感染者已达：",
+ "options": {
+  "A": "几百万",
+  "B": "1000 万",
+  "C": "几万",
+  "D": "十万"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 22 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。按命题当时（2002年前后）我国的疫情估计，感染者数尚未达到几百万。B．错误。1000万是当时个别高流行国家的疫情量级，与中国大陆的估计相差甚远。C．错误。几万是20世纪90年代初期的流行水平，至2002年估计数已明显超过。D．正确。依命题当时的官方估计，中国大陆HIV感染者约为十万量级，故选十万（本题为时点数据，随流行形势和估计方法不同，各年份数字差异很大）。故答案为D。"
+}

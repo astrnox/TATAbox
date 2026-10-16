@@ -1,0 +1,48 @@
+{
+ "id": "M2-37-f8a2f1395b2b",
+ "type": "multiple",
+ "question": "在木本双子叶植物的维管形成层中，属于次生分生组织的原始细胞通常来源于：",
+ "options": {
+  "A": "皮层",
+  "B": "中柱鞘",
+  "C": "束中形成层",
+  "D": "髓射线"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 37 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。皮层不参与维管形成层原始细胞的形成。B．正确。根的维管形成层由中柱鞘细胞恢复分裂产生，其原始细胞即来源于此。C．错误。束中形成层是初生维管组织间的残留分生组织，是形成层的组成部分而非次生原始细胞的来源。D．正确。茎中髓射线薄壁细胞恢复分裂，与束中形成层连成完整形成层环，贡献原始细胞。故答案为BD。\n【通法】通法（形成层来源分器官）：根的维管形成层＝中柱鞘起源，茎的＝束中形成层＋髓射线细胞恢复分裂连成环，按'根看中柱鞘、茎看髓射线'对号入座。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

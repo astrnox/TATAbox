@@ -1,0 +1,84 @@
+{
+ "id": "M1-61-b84c0ca75503",
+ "type": "single",
+ "question": "图中标注的a、b、c、d分别代表",
+ "options": {
+  "A": "左心房、静脉窦、动脉圆锥、左心室",
+  "B": "右心房、静脉窦、动脉圆锥、右心室",
+  "C": "左心房、动脉圆锥、静脉窦、心室",
+  "D": "右心房、动脉圆锥、静脉窦、心室"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 61 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "60-63",
+  "stimulus": "下图显示的是某种脊椎动物的心脏，请仔细观察。"
+ },
+ "image": {
+  "file": "assets/questions/M1-61-b84c0ca75503/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 135,
+  "bbox": [
+   96.6,
+   250.8,
+   498.6,
+   454.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-61-b84c0ca75503/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 135,
+   "bbox": [
+    96.6,
+    250.8,
+    498.6,
+    454.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。a是右心房而非左心房，b、c也颠倒了（b为动脉圆锥、c为静脉窦），且心室不分左右。B．错误。b、c位置颠倒，b为动脉圆锥、c为静脉窦，两栖类心室亦不分左右。C．错误。a为右心房而非左心房，b、c的对应关系也颠倒了。D．正确。图示为两栖类心脏：a为右心房，b为腹侧的动脉圆锥，c为背侧接受前后主静脉的静脉窦，d为不分隔的单一心室。故答案为D。\n【通法】通法（心脏辨识）：按血流方向记——静脉窦→心房→心室→动脉圆锥；静脉窦居背侧、动脉圆锥居腹侧，是给a至d定位的关键。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

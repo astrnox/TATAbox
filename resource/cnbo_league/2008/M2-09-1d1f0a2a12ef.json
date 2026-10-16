@@ -1,0 +1,45 @@
+{
+ "id": "M2-09-1d1f0a2a12ef",
+ "type": "single",
+ "question": "植物呼吸速率最高的器官是",
+ "options": {
+  "A": "叶片",
+  "B": "根",
+  "C": "茎",
+  "D": "花"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 9 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。叶片虽代谢活跃，但其呼吸作用常被强光合掩盖，整体呼吸速率不及生殖器官。B．错误。根的呼吸速率相对较低，以维持性呼吸为主。C．错误。茎（尤其木质化部分）代谢不活跃，呼吸速率低。D．正确。花是代谢最旺盛的器官之一，花器官的形成与开放、花粉和花蜜的合成都需消耗大量能量，故呼吸速率最高。故答案为D。"
+}

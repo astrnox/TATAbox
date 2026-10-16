@@ -1,0 +1,48 @@
+{
+ "id": "M3-60-0da53af17651",
+ "type": "single",
+ "question": "下列哪项属于动物个体间化学通讯？",
+ "options": {
+  "A": "一只蚂蚁用其触角和前颚轻轻拍打另外一只蚂蚁的尾部",
+  "B": "雄性蜘蛛献给雌性蜘蛛一个猎物",
+  "C": "大熊猫向墙壁上擦蹭其肛周腺的分泌物或者尿液",
+  "D": "蝙蝠通过回声来定位猎物和障碍物的位置"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 60 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。触角与前颚拍打属触觉（机械）通讯。B．错误。献猎物是求偶行为中的礼物馈赠，属行为通讯。C．正确。擦蹭肛周腺分泌物或留下尿液是通过化学物质（信息素）留下标记，属个体间化学通讯。D．错误。回声定位属声学通讯范畴。故答案为C。\n【通法】通法（动物通讯方式归类）：留下化学物质=化学通讯，声音与回声=声学通讯，触角拍打等接触=机械通讯，动作与礼物=行为通讯，按'载体是什么'判定。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

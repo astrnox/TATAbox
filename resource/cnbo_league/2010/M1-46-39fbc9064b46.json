@@ -1,0 +1,45 @@
+{
+ "id": "M1-46-39fbc9064b46",
+ "type": "single",
+ "question": "酵母菌产生的有性孢子是",
+ "options": {
+  "A": "芽孢子",
+  "B": "卵孢子",
+  "C": "分生孢子",
+  "D": "子囊孢子"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 46 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。芽孢子是酵母出芽生殖产生的无性孢子。B．错误。卵孢子是卵菌等的有性孢子，与酵母无关。C．错误。分生孢子是曲霉、青霉等霉菌的无性孢子。D．正确。酵母属子囊菌，有性生殖时两性核融合后经减数分裂产生子囊孢子，包被于子囊中。故答案为D。"
+}

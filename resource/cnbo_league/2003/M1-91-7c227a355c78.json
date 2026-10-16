@@ -1,0 +1,45 @@
+{
+ "id": "M1-91-7c227a355c78",
+ "type": "single",
+ "question": "下列属于生产者和消费者关系的是：",
+ "options": {
+  "A": "老鼠食草籽",
+  "B": "青蛙食害虫",
+  "C": "蛇食青蛙",
+  "D": "鹰食蛇"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 91 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。草籽是植物（生产者）的器官，老鼠取食草籽，正是消费者捕食生产者的关系。B．错误。青蛙和害虫都是消费者，属于消费者之间的捕食关系。C．错误。蛇与青蛙均为消费者，与生产者无关。D．错误。鹰与蛇也都是消费者。故答案为A。"
+}

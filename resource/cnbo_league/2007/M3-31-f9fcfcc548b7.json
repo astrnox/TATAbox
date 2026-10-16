@@ -1,0 +1,45 @@
+{
+ "id": "M3-31-f9fcfcc548b7",
+ "type": "single",
+ "question": "哺乳动物新出现的奇静脉及半奇静脉，相当于低等四足动物退化的后主静脉前段。请问奇静脉和半奇静脉位于胸廓的位置是：",
+ "options": {
+  "A": "奇静脉和半奇静脉都位于胸廓的左侧",
+  "B": "奇静脉和半奇静脉都位于胸廓的右侧",
+  "C": "奇静脉位于胸廓的左侧，半奇静脉位于胸廓的右侧",
+  "D": "奇静脉位于胸廓的右侧，半奇静脉位于胸廓的左侧"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 31 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。奇静脉并不位于胸廓左侧。B．错误。半奇静脉也不在胸廓右侧。C．错误。两项位置恰好说反。D．正确。奇静脉由低等四足动物后主静脉前段演化而来，沿胸椎右侧上行注入上腔静脉；半奇静脉沿胸椎左侧走行、末端汇入奇静脉，左右不对称正是这对血管的特征。故答案为D。"
+}

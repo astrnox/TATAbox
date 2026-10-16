@@ -1,0 +1,45 @@
+{
+ "id": "M3-21-f6429b163d55",
+ "type": "single",
+ "question": "一个被初诊为急性阑尾炎的病人，应化验其：",
+ "options": {
+  "A": "粪便",
+  "B": "尿液",
+  "C": "血液",
+  "D": "唾液"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 21 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。粪便检查主要用于消化道寄生虫、潜血及肠道病变等，不能反映阑尾的急性炎症。B．错误。尿液检查有助于排除泌尿系疾病，但急性阑尾炎并无特征性尿液改变。C．正确。急性阑尾炎是细菌感染引起的化脓性炎症，血常规可见白细胞总数升高、中性粒细胞比例升高，是最简便而直接的化验依据。D．错误。唾液检查不用于炎症性急腹症的诊断。故答案为C。"
+}

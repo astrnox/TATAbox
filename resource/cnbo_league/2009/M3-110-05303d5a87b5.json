@@ -1,0 +1,48 @@
+{
+ "id": "M3-110-05303d5a87b5",
+ "type": "mtf",
+ "question": "下列哪些项与物种多样性研究关系不大?",
+ "options": {
+  "A": "丰富度",
+  "B": "多样性指数",
+  "C": "均匀度",
+  "D": "个体大小"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "109.A（ ）B（ ）C（ ）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 109 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。'丰富度与物种多样性研究关系不大'不成立，物种丰富度是物种多样性最基本的组分。B．错误。多样性指数（如Simpson指数、Shannon指数）正是物种多样性研究的核心指标，该说法不成立。C．错误。均匀度反映各物种个体数分配的均匀程度，是多样性的重要侧面，该说法不成立。D．正确。个体大小属个体或种群的性状，与物种多样性水平的刻画关系不大，该说法成立，正合题意。\n【通法】通法（物种多样性测度）：三要素＝丰富度、均匀度、综合二者的多样性指数，个体大小不入此列。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

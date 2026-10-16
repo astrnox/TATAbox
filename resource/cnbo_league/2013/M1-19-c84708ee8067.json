@@ -1,0 +1,48 @@
+{
+ "id": "M1-19-c84708ee8067",
+ "type": "single",
+ "question": "在大肠杆菌溶原性细胞中，原噬菌体以______状态存在于宿主细胞内。",
+ "options": {
+  "A": "游离于细胞质",
+  "B": "缺陷噬菌体",
+  "C": "插入寄住染色体",
+  "D": "游离在周质空间"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 19 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。溶原状态的原噬菌体并不游离于细胞质，否则会随分裂丢失。B．错误。缺陷噬菌体是丧失部分基因的噬菌体，与溶原状态无关。C．正确。溶原时噬菌体DNA通过位点特异性重组整合进宿主染色体，随宿主复制而复制。D．错误。周质空间位于内外膜之间，不携带原噬菌体。故答案为C。\n【点睛】点睛：溶原＝前噬菌体'插队'进宿主染色体随其复制，裂解期才游离增殖。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

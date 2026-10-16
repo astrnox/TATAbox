@@ -1,0 +1,77 @@
+{
+ "id": "M4-25-2d9964c95487",
+ "type": "single",
+ "question": "植物细胞中的ABCC 型转运体蛋白在镉元素(Cd)的隔离中发挥重要作用。对拟南芥野生型(WT)和缺失突变体(abcc)中Cd 在细胞中的分布进行了统计，结果如图。该数据表明：",
+ "options": {
+  "A": "液泡是正常细胞中储存和隔离Cd 的重要场所；",
+  "B": "与野生型相比，abcc 突变体Cd 含量下降；",
+  "C": "与野生型相比，abcc 突变体Cd 含量上升；",
+  "D": "正常细胞中Cd 信号很弱。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 25 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-25-2d9964c95487/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 412,
+  "bbox": [
+   189.6,
+   280.9,
+   405.6,
+   470.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-25-2d9964c95487/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 412,
+   "bbox": [
+    189.6,
+    280.9,
+    405.6,
+    470.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。野生型中 Cd 信号集中于液泡，说明液泡是正常细胞储存与隔离 Cd 的重要场所。B．错误。图示为细胞内分布而非总量，未显示突变体 Cd 含量下降。C．错误。同样没有总量下降或上升的证据。D．错误。正常细胞中液泡部位 Cd 信号明显，并不弱。故答案为A。"
+}

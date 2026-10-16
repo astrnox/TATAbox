@@ -1,0 +1,45 @@
+{
+ "id": "M3-124-1b0773c18b56",
+ "type": "mtf",
+ "question": "血液在血管内不发生凝固的原因有：",
+ "options": {
+  "A": "血液一直保持流动",
+  "B": "血管内壁光滑完整",
+  "C": "血浆中有抗凝物质",
+  "D": "血液中的溶氧抑制血小板功能"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 24 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。血流不断冲走已启动的凝血因子，使其难以在局部达到有效浓度，是血液在血管内不发生凝固的重要原因。B．正确。完整光滑的内皮既不暴露胶原，也不激活血小板，避免了接触激活与血栓形成。C．正确。血浆中含有抗凝血酶、蛋白C、肝素样物质等天然抗凝成分，可抑制凝血酶等丝氨酸蛋白酶。D．错误。血液凝固与溶氧水平并无直接联系，血小板功能不受溶氧抑制，该说法不成立。"
+}

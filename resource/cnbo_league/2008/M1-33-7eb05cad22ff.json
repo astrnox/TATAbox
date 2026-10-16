@@ -1,0 +1,48 @@
+{
+ "id": "M1-33-7eb05cad22ff",
+ "type": "single",
+ "question": "CO2 分压由高至低的顺序通常是",
+ "options": {
+  "A": "组织液、肺动脉、肺泡气、呼出气",
+  "B": "肺动脉、组织液、肺泡气、呼出气",
+  "C": "组织液、肺动脉、呼出气、肺泡气",
+  "D": "呼出气、肺泡气、肺动脉、组织液"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 33 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。组织细胞不断产生CO2，组织液分压最高；混合静脉血经肺动脉运至肺，分压次之（约46mmHg）；肺泡气经气体交换被稀释（约40mmHg）；呼出气混入解剖死腔的空气，分压最低。B．错误。肺动脉血的CO2分压低于组织液，前两项顺序颠倒。C．错误。呼出气混有死腔气，分压低于肺泡气。D．错误。顺序完全颠倒，CO2顺分压梯度由组织经血液向肺泡扩散。故答案为A。\n【通法】通法（气体分压排序）：沿CO2排出方向分压递减：组织细胞＞组织液＞静脉血（肺动脉）＞肺泡气＞呼出气；O2的梯度方向相反。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "M2-36-e9806a82bdc5",
+ "type": "multiple",
+ "question": "在植物生长发育过程中，有时两种植物激素起相互拮抗的作用。下列成对激素起拮抗作用的有：",
+ "options": {
+  "A": "种子萌发中赤霉素与脱落酸；",
+  "B": "顶端优势机制中生长素与油菜素内酯；",
+  "C": "干旱响应中脱落酸与乙烯；",
+  "D": "植物器官再生中生长素与细胞分裂素。"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 36 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

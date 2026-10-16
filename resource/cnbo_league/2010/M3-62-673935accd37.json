@@ -1,0 +1,84 @@
+{
+ "id": "M3-62-673935accd37",
+ "type": "multiple",
+ "question": "如果将d和b之间用线结扎住，然后向b内注射黄色粗颗粒颜料，那么下列哪些结构会呈现黄色",
+ "options": {
+  "A": "肾门静脉",
+  "B": "肺皮动脉",
+  "C": "锁骨下静脉",
+  "D": "颈外动脉"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 62 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "60-63",
+  "stimulus": "下图显示的是某种脊椎动物的心脏，请仔细观察。"
+ },
+ "image": {
+  "file": "assets/questions/M3-62-673935accd37/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 135,
+  "bbox": [
+   96.6,
+   250.8,
+   498.6,
+   454.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-62-673935accd37/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 135,
+   "bbox": [
+    96.6,
+    250.8,
+    498.6,
+    454.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。肾门静脉属静脉系，粗颗粒颜料不能通过毛细血管进入静脉，故不着色。B．正确。结扎d和b之间后向b（动脉圆锥）注射，颜料只能随血流经各动脉弓输出，肺皮动脉呈现黄色。C．错误。锁骨下静脉属体静脉，颜料不能越过毛细血管到达。D．正确。颈外动脉由动脉弓分出，与肺皮动脉同属动脉输出道，故也呈现黄色。故答案为BD。\n【通法】通法（血流示踪判断）：粗颗粒颜料不能通过毛细血管，结扎加注射的示踪题只追踪注射点所在管道系统及其血流下游分支，动脉注入看动脉、静脉注入看静脉，跨系统一律不着色。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

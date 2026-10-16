@@ -1,0 +1,45 @@
+{
+ "id": "M1-81-8d691346e716",
+ "type": "single",
+ "question": "大肠杆菌细胞中电子传递和氧化磷酸化发生在",
+ "options": {
+  "A": "线粒体内膜上",
+  "B": "类囊体膜上",
+  "C": "细胞基质中",
+  "D": "质膜上"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 81 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。大肠杆菌是原核生物，没有线粒体。B．错误。类囊体膜是叶绿体光反应的场所，大肠杆菌没有。C．错误。细胞基质进行糖酵解，不进行电子传递和氧化磷酸化。D．正确。原核细胞的呼吸链和ATP合酶位于质膜上，电子传递建立的质子梯度驱动ATP合成。故答案为D。"
+}

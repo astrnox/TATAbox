@@ -1,0 +1,45 @@
+{
+ "id": "M3-100-d4c2563ca695",
+ "type": "mtf",
+ "question": "在下列4 种群落类型中，哪些是以一年生植物占优势的群落类型，哪些不是？",
+ "options": {
+  "A": "极地高原",
+  "B": "温带草原",
+  "C": "荒漠半荒漠",
+  "D": "常绿阔叶林"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "27．A（×）B（√）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 27 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。极地高原严寒，植被以地衣、苔藓和少数多年生草本为主，无以一年生植物占优势的群落。B．正确。温带草原生长季明显，一年生植物在群落中占优势（该官方标答存此一说，通说认为温带草原以多年生禾草占优势）。C．正确。荒漠半荒漠降水稀少且不稳定，植物多以种子渡过干旱期，一年生短命类植物占优势。D．错误。常绿阔叶林以多年生常绿木本植物占绝对优势。"
+}

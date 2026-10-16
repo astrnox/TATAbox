@@ -1,0 +1,48 @@
+{
+ "id": "M1-16-382e21fdf7fb",
+ "type": "single",
+ "question": "在原核生物的蛋白质合成过程中，催化形成肽键的是：",
+ "options": {
+  "A": "氨酰 tRNA 合成酶",
+  "B": "移位酶（EF-G）",
+  "C": "23S rRNA",
+  "D": "核糖体小亚基"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 16 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。氨酰tRNA合成酶催化氨基酸与tRNA结合，不催化肽键形成。B．错误。EF-G是移位酶，催化核糖体沿mRNA移动。C．正确。原核核糖体大亚基的23S rRNA具有肽基转移酶活性，是催化肽键形成的核酶。D．错误。小亚基负责mRNA结合与密码子解码，不催化肽键。故答案为C。\n【点睛】点睛：肽键由大亚基rRNA催化——'核酶'概念的经典例证（23S rRNA），不是任何蛋白质酶。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

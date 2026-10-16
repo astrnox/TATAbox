@@ -1,0 +1,52 @@
+{
+ "id": "M4-83-4d3eba57b67d",
+ "type": "single",
+ "question": "基因型为IAiHh 和IBiHh 的父母，生下血型为AB 型的孩子的概率为：",
+ "options": {
+  "A": "3/16",
+  "B": "1/4",
+  "C": "1/8",
+  "D": "0"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 83 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "82-83",
+  "stimulus": "组题题干：在人的ABO 血型决定中，IA 和IB 等位基因的存在，分别会在红细胞表面"
+ },
+ "explanation": "【解析】IAi×IBi 产生 IAIB 的概率为1/4；Hh×Hh 产生 H_（具 H 前体物质）的概率为3/4。孩子为 AB 型需同时满足具 IAIB 基因型且能表达，概率为1/4×3/4＝3/16。A．正确。计算结果即为3/16。B．错误。1/4 未计入 hh 不能表达的情形。C．错误。1/8 忽略了双显性组合的贡献。D．错误。父母均可产生 IA 或 IB 配子，后代可为 AB 型，概率不为0。故答案为A。\n【通法】通法（血型与 H 基因座）：表型表达需'有抗原基因＋有 H 前体'，先按基因座独立算概率再相乘，凡含 hh 者一律按 O 型处理。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

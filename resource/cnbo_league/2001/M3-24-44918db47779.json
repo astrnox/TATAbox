@@ -1,0 +1,45 @@
+{
+ "id": "M3-24-44918db47779",
+ "type": "single",
+ "question": "哺乳类动物中唯一能飞行的类群是＿",
+ "options": {
+  "A": "鼯鼠",
+  "B": "飞狐猴",
+  "C": "蝙蝠",
+  "D": "有袋类"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 24 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。鼯鼠靠皮膜在树间滑翔，属滑翔而非飞行。B．错误。飞狐猴（鼯猴）同样借助皮膜滑翔，不能持续振翅飞行。C．正确。蝙蝠（翼手目）前肢特化为翼，翼膜由极度延长的指骨支撑，是哺乳类中唯一真正能飞行的类群。D．错误。有袋类多陆栖、树栖或掘土生活，无飞行能力。故答案为C。"
+}

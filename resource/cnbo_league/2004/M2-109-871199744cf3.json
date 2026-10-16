@@ -1,0 +1,45 @@
+{
+ "id": "M2-109-871199744cf3",
+ "type": "multiple",
+ "question": "下列哪些属于共生关系",
+ "options": {
+  "A": "猪和蛔虫",
+  "B": "地衣",
+  "C": "寄居蟹和海葵",
+  "D": "满江红的红萍和鱼腥藻"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "B D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 109 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】共生指两种生物紧密结合、彼此互利的种间关系。A．错误。猪与蛔虫是寄生关系，蛔虫夺取宿主营养并危害宿主。B．正确。地衣是真菌与藻类（或蓝藻）的共生体，菌提供水分和矿质、藻提供光合产物。C．错误。寄居蟹与海葵常被归为共栖：海葵借寄居蟹移动并获食屑，结合较松散，不算典型互利共生（该官方标答存此一说：不少文献把二者视作互利共生）。D．正确。满江红（红萍）叶腔中的鱼腥藻固定氮素供给宿主，宿主提供光合产物和庇护，是典型共生。故答案为BD。"
+}

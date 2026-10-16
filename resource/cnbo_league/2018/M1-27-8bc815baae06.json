@@ -1,0 +1,45 @@
+{
+ "id": "M1-27-8bc815baae06",
+ "type": "single",
+ "question": "光学显微镜的分辨率取决于",
+ "options": {
+  "A": "目镜和物镜的放大倍数",
+  "B": "物镜的工作距离",
+  "C": "波长和数值孔径",
+  "D": "聚光镜"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 27 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。放大倍数只影响视角大小，超过分辨极限的放大是空放大，不提高分辨率。B．错误。工作距离由镜头设计决定，与分辨率无直接关系。C．正确。分辨率d=0.61λ/NA，取决于光波长与物镜数值孔径。D．错误。聚光镜影响照明质量，不直接决定物镜的分辨极限。故答案为C。"
+}

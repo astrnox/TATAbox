@@ -1,0 +1,45 @@
+{
+ "id": "M3-79-5130b6ce2eae",
+ "type": "single",
+ "question": "森林生物群落中与鸟类物种多样性关系最密切的要素是：",
+ "options": {
+  "A": "群落的物种组成",
+  "B": "面积大小",
+  "C": "群落的分层结构",
+  "D": "植被的茂盛程度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 79 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。物种组成决定群落性质，但对鸟类多样性最直接的制约因素是栖息空间的分化。B．错误。面积大小影响物种总数（岛屿生物地理学规律），但不是森林群落内部与鸟类多样性关系最密切的要素。C．正确。森林的分层结构（乔木层、灌木层、草本层、地被层及其复杂程度）为鸟类提供多样的栖位、巢址和食物，垂直结构越复杂，鸟类物种多样性一般越高。D．错误。植被茂盛程度只是外观描述，不能像分层结构那样决定生态位数目。故答案为C。"
+}

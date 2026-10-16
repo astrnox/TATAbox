@@ -1,0 +1,48 @@
+{
+ "id": "M2-08-ea5217a3551f",
+ "type": "single",
+ "question": "真菌中的半知菌是指。",
+ "options": {
+  "A": "没有光合作用",
+  "B": "菌丝没有横隔",
+  "C": "没有发现有性生殖阶段",
+  "D": "不能运动"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 8 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。真菌都没有光合作用，营吸收营养，这是真菌的共有特征而非半知菌所特有。B．错误。半知菌的菌丝通常有横隔；无横隔菌丝多见于接合菌等类群。C．正确。半知菌是指有性生殖阶段尚未被发现、只了解其无性繁殖阶段的真菌，一旦发现有性阶段即归入相应类群。D．错误。真菌一般不能运动，这也不能作为半知菌的界定依据。故答案为C。\n【易错易混】易混：半知菌的定义只看有性阶段是否被发现，与营养方式、菌丝有无隔、能否运动无关，勿把真菌的一般特征当成它的专属特征。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

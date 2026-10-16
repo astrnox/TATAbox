@@ -1,0 +1,47 @@
+{
+ "id": "M4-114-6277d15a1fe6",
+ "type": "single",
+ "question": "谱系进化的速率涉及的变量有种形成速率、绝灭速率和种数净增率。用t代表时间，N0 代表初始种数，N代表经时间t后的种数, Ne代表经时间t后灭绝的种数。S的求解公式是：",
+ "options": {
+  "A": "S=（N-N0）/t + lnNe/t",
+  "B": "S=（N-N0）/t + Ne/t",
+  "C": "S=（lnN-lnN0）/t + lnNe/t",
+  "D": "S=（lnN-lnN0）/t + Ne/t",
+  "E": "S=（lnN/lnN0）/t + Ne/t"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 114 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。物种数按指数增长，净增率须取对数形式，且灭绝速率不是lnNe/t。B．错误。（N－N0）/t只是算术平均增量，未体现物种数的指数增长方式。C．错误。灭绝种数Ne是计数量，灭绝速率直接为Ne/t，不应取对数。D．正确。由N＝N0e的（S－E）t次方可知种数净增率为（lnN－lnN0）/t，灭绝速率为Ne/t，故种形成速率S＝（lnN－lnN0）/t＋Ne/t。E．错误。lnN/lnN0不是任何标准的增长率表达式。故答案为D。"
+}

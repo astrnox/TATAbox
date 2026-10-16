@@ -1,0 +1,45 @@
+{
+ "id": "M3-73-a4c913853de5",
+ "type": "single",
+ "question": "物种在自然界的基本存在单元是",
+ "options": {
+  "A": "个体",
+  "B": "社群",
+  "C": "种群",
+  "D": "群落"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 73 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。个体生命周期有限，其生死不改变物种的存在，不是物种的基本存在单元。B．错误。社群是同种个体形成的群体组织，属更高层次的群体结构。C．正确。种群是同一时空内同种个体的总和，物种的繁殖、进化与生态学过程均以种群为基本单元。D．错误。群落由多个物种的种群构成，是跨物种的集合层次。故答案为C。"
+}

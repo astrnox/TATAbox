@@ -1,0 +1,54 @@
+{
+ "id": "M2-36-d78ad2dd3ad1",
+ "type": "single",
+ "question": "均属于半变态昆虫的正确选择是：",
+ "options": {
+  "A": "草蛉、蚁蛉",
+  "B": "叶蝉、蚜虫",
+  "C": "螳螂、蜚蠊",
+  "D": "豆娘、蜻蜓",
+  "E": "猎蝽、圆蝽"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 36 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "35-36",
+  "stimulus": "变态是昆虫发育中普遍存在的现象，形式多样，请判断："
+ },
+ "explanation": "【解析】A．错误。草蛉、蚁蛉属脉翅目，为全变态昆虫，具蛹期。B．错误。叶蝉、蚜虫为渐变态昆虫，若虫与成虫形态、生境相近。C．错误。螳螂、蜚蠊也是渐变态类型。D．正确。蜻蜓、豆娘的稚虫（水虿）水生、与成虫差异显著且不具蛹期，属半变态。E．错误。猎蝽、圆蝽为渐变态昆虫。故答案为D。\n【通法】通法（昆虫变态类型）：不全变态＝卵→若虫→成虫、无蛹，分渐变态（生境形态近，如蝗、螳、蝽）与半变态（稚虫水生差异大，如蜻蜓、蜉蝣）；全变态＝卵、幼虫、蛹、成虫。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

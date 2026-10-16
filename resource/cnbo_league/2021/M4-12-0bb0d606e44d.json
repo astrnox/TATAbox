@@ -1,0 +1,48 @@
+{
+ "id": "M4-12-0bb0d606e44d",
+ "type": "single",
+ "question": "用阳离子交换层析洗脱下列氨基酸，当使用pH6.5 的缓冲液时，哪种氨基酸先被洗脱下来：",
+ "options": {
+  "A": "天冬氨酸",
+  "B": "精氨酸",
+  "C": "天冬酰胺",
+  "D": "甘氨酸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 12 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。pH6.5 时天冬氨酸的 α-羧基与侧链羧基均解离、氨基质子化，净带负电荷，与带负电的阳离子交换剂静电排斥，不被吸附，最先被洗脱。B．错误。精氨酸 pI 约 10.8，pH6.5 时带强正电，结合最牢固，最后洗脱。C．错误。天冬酰胺侧链不解离，pH6.5 时仍带部分正电荷，可被吸附，晚于天冬氨酸洗脱。D．错误。甘氨酸净负电荷少于天冬氨酸，保留强于天冬氨酸，不会最先洗脱。故答案为A。\n【通法】通法（离子交换洗脱顺序）：先用 pH 与 pI 比出净电荷——与树脂同号者不结合先出，反号越强留得越久；净负电荷越多（pH 远高于 pI）越先洗脱。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

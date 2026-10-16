@@ -1,0 +1,45 @@
+{
+ "id": "M3-74-73101aa7c884",
+ "type": "single",
+ "question": "鸟岛上密集而均匀分布着鸬鹚的巢，它们的领域占有和维持是靠哪类行为来实现的？",
+ "options": {
+  "A": "友好行为",
+  "B": "攻击行为",
+  "C": "利他行为",
+  "D": "育幼行为"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 74 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。友好行为用于联结和缓和个体间关系，不能排斥邻居、划定界限。B．正确。领域行为靠攻击（威胁、驱赶、争斗）同种竞争对手来占有和维持，鸬鹚正是以攻击行为守住各自巢区，才形成密集而均匀的巢分布。C．错误。利他行为是牺牲自身适合度以利于其他个体，与领域维持无关。D．错误。育幼行为指向后代，不用于对抗邻居。故答案为B。"
+}

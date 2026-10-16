@@ -1,0 +1,48 @@
+{
+ "id": "M1-02-131f65856d2e",
+ "type": "mtf",
+ "question": "缺氧诱导因子1（HIF-1）在介导细胞对低氧的响应中发挥重要作用。丙酮酸激酶PKM2 受HIF-1 调控。研究者发现PHD3 蛋白可催化PKM2 特定脯氨酸残基的羟化反应，因此提出“PKM2 在PHD3 的作用下，可作为HIF-1 的共激活因子”这一假设。请判断以下实验是否可以为这一假设提供证据：",
+ "options": {
+  "A": "在表达PKM2 细胞与对照细胞中，利用定量RT-PCR 测定HIF-1 表达量的变化；",
+  "B": "在缺氧条件下进行PKM2 蛋白水平的Western blot 实验；",
+  "C": "在过表达HIF-1 的细胞中测定PHD3 与PKM2 表达水平的变化；",
+  "D": "利用免疫共沉淀实验，探究在不同表达水平的PHD3 下，PKM2 与HIF-1 之间的相互作用。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 2 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．错误。HIF-1 mRNA水平变化不能反映其转录共激活功能，也无法证明PKM2参与其中。B．错误。仅在缺氧下检测PKM2蛋白水平，与其是否作为HIF-1共激活因子无关。C．错误。过表达HIF-1后测PHD3、PKM2表达量变化，属于相关性观察，不构成'PKM2共激活HIF-1'的证据。D．正确。免疫共沉淀可直接检测PKM2与HIF-1的相互作用，并验证该互作是否随PHD3水平变化，正是检验假设所需。\n【通法】通法（验证'X是Y的共激活因子'）：①互作证据（Co-IP/pull-down）；②修饰依赖（改变修饰酶后互作或活性变化）；③功能输出（报告基因/靶基因）。只有直接互作＋依赖性才够硬。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

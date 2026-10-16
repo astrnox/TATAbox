@@ -1,0 +1,81 @@
+{
+ "id": "M2-08-27a6af48ca40",
+ "type": "mtf",
+ "question": "根据实验结果图A，判断以下陈述的正误：",
+ "options": {
+  "A": "哺乳动物的总RNA、核RNA 和胞质RNA 诱导TNF-α 的能力均低于体外转录的RNA；",
+  "B": "线粒体RNA 诱导免疫反应的能力极弱，这与其进化起源于内共生细菌有关；",
+  "C": "细菌总RNA 对DCs 的激活作用可被RNase 抑制，说明活性成分是RNA 而非内毒素；",
+  "D": "tRNA 无论是哺乳动物来源还是细菌来源，均不能诱导任何水平的TNF-α 分泌。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 8 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "8-9",
+  "stimulus": "体外合成的未修饰mRNA 会诱导树突状细胞（DCs）产生高水平的细胞因子（如TNF-α、IL-8），而"
+ },
+ "image": {
+  "file": "assets/questions/M2-08-27a6af48ca40/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   350.9,
+   457.3,
+   503.7,
+   593.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-08-27a6af48ca40/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    350.9,
+    457.3,
+    503.7,
+    593.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。由图A，哺乳动物总RNA、核RNA、胞质RNA诱导TNF-α的能力均低于体外转录的未修饰RNA。B．错误。由图A，线粒体RNA诱导免疫反应的能力并不弱——线粒体RNA保留了内共生细菌来源RNA的免疫刺激特征，'极弱'与'内共生起源'的推理方向矛盾。C．正确。RNase处理消除细菌总RNA对DCs的激活，说明活性成分是RNA而非内毒素污染。D．错误。图中tRNA（无论来源）仍能诱导一定水平的TNF-α分泌，'不能诱导任何水平'不成立。"
+}

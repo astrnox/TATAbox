@@ -1,0 +1,45 @@
+{
+ "id": "M3-111-9fdd0960ab50",
+ "type": "multiple",
+ "question": "下列属于自然种群基本特征的是",
+ "options": {
+  "A": "空间特征",
+  "B": "数量特征",
+  "C": "形态特征",
+  "D": "遗传特征"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 111 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。种群总占据一定区域，空间特征（分布型）是种群的基本特征之一。B．正确。种群密度及其相关数量指标是种群最核心的数量特征。C．错误。形态特征描述的是个体的外部形状，属个体层次而非种群层次的特征。D．正确。种群共享基因库，遗传（基因）特征是种群的重要特征，也是进化的原材料。故答案为ABD。"
+}

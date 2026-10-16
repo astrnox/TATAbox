@@ -1,0 +1,45 @@
+{
+ "id": "M3-44-794c4ae58c1d",
+ "type": "mtf",
+ "question": "辣是一种“灼痛”现象，其主要分子机制是辣椒中的辣椒素激活了感觉神经元等细胞表面的特定阳离子通道。请对以下关于该过程涉及的生物学原理的陈述进行正误判断：",
+ "options": {
+  "A": "该阳离子通道被辣椒素激活后开放，允许阳离子流入细胞，通常导致细胞膜发生去极化",
+  "B": "辣椒素作为一种化学物质，其激活的感受器属于化学感受器",
+  "C": "离子通道蛋白在结合辣椒素并开放的过程中，其自身的空间结构会发生改变",
+  "D": "细胞膜去极化达到阈值后，会抑制动作电位的产生，从而阻止痛觉信号传递"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 44 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 44,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．正确。辣椒素激活TRPV1等阳离子通道，阳离子内流引起膜去极化。B．正确。辣椒素是化学分子，其感受器属于化学感受器（伤害性化学感受器）。C．正确。通道蛋白与配体结合后构象改变、孔道开放，是配体门控通道的共同机制。D．错误。去极化达到阈值会触发动作电位并传递痛觉信号，而不是抑制动作电位产生。"
+}

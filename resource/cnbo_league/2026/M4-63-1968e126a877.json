@@ -1,0 +1,81 @@
+{
+ "id": "M4-63-1968e126a877",
+ "type": "mtf",
+ "question": "Walton 研究了有男性DMD 患儿的39 个家庭（每个家庭的孩子都是同父同母），按照每个家庭的男孩数分为甲~庚七类，如下表。根据这些信息，判断下列相关论述的正误：",
+ "options": {
+  "A": "此研究中，男患者数的预期值为43.5；",
+  "B": "表中数据的χ2=5.06，相应的p≈0.03，因此男患者的比例不符合孟德尔分离比；",
+  "C": "至少在两个家庭中，母亲应该是携带者，基因型为XDXd；",
+  "D": "丁类家庭中，母亲的基因型均为XDXD，她们的生殖细胞发生新突变。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "孟德尔遗传",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 63 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "第四部分：遗传学 演化生物学 生物信息学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "1955 年，遗传学家J. Walton 对英国某地居民中杜氏肌营养不良（DMD）的病例进行了研究，"
+ },
+ "image": {
+  "file": "assets/questions/M4-63-1968e126a877/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 11,
+  "bbox": [
+   284.6,
+   244.1,
+   515.3,
+   349.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-63-1968e126a877/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 11,
+   "bbox": [
+    284.6,
+    244.1,
+    515.3,
+    349.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。男患者数的预期值应按各类家庭男孩数与X连锁隐性再发风险计算，43.5与题给数据口径不符。B．错误。χ²＝5.06对应的p≈0.03只是边缘显著，不能据此断定'不符合孟德尔分离比'（且检验需考虑期望值口径）。C．正确。表中至少两个家庭的男孩全为患者，其母亲应为携带者XᴰXᵈ。D．错误。丁类家庭母亲不可能全为XᴰXᴰ且都发生新突变，该解释概率极低。"
+}

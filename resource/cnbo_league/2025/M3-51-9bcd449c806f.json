@@ -1,0 +1,81 @@
+{
+ "id": "M3-51-9bcd449c806f",
+ "type": "mtf",
+ "question": "关于植物A 和B 生理功能与生态适应性的深入分析，请对以下陈述进行正误判断:",
+ "options": {
+  "A": "植物A 庞大的地下根系主要功能是储存光合作用积累的有机物，以应对地上部分可能遭遇的周期性损害（如火灾、啃食）",
+  "B": "植物B 叶片内部发达的通气组织不仅利于气体交换，还能通过提供浮力，帮助叶片在水面或近水面处获得更好的光照条件",
+  "C": "从能量利用效率角度看，植物A所处的典型环境（可能光照强烈）有利于其进化出C4 等高光效光合途径，因此其单位叶面积的光合速率通常显著高于植物B",
+  "D": "与植物B 相比，植物A 的根系表面积更大，这反映了其在水分胁迫环境下，扩大化水分吸收速率是关键的生存策略"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 51 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "group": {
+  "range": "50-51",
+  "stimulus": "下图分别展示了两种植物A（图A）和植物B（图B）的形态特征。请仔细观察图示信息，判断下"
+ },
+ "image": {
+  "file": "assets/questions/M3-51-9bcd449c806f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 9,
+  "bbox": [
+   303.6,
+   101.8,
+   551.8,
+   346.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-51-9bcd449c806f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 9,
+   "bbox": [
+    303.6,
+    101.8,
+    551.8,
+    346.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。植物A庞大的根系主要功能是吸收和运输水分（应对水分胁迫），而非储存光合产物。B．正确。水生植物的通气组织既输送气体，又提供浮力使叶片接近水面获得光照。C．错误。光合途径与环境的对应关系不等于单位叶面积光合速率必然显著更高；水生环境光照充足处植物B的光合速率也可很高。D．正确。植物A根系表面积更大，体现旱生环境下扩大水分吸收面是关键生存策略。"
+}

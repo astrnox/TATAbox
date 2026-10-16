@@ -1,0 +1,48 @@
+{
+ "id": "M2-15-1d2b8361ec20",
+ "type": "single",
+ "question": "蔷薇科里有四个亚科：绣线菊亚科，蔷薇亚科，李亚科，梨亚科。其共同的特征是",
+ "options": {
+  "A": "心皮合生、杯状花托",
+  "B": "雄蕊多个、心皮多个",
+  "C": "杯状花托、雄蕊多个",
+  "D": "心皮多个、心皮离生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 15 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。心皮合生仅见于梨亚科等，绣线菊亚科和蔷薇亚科心皮离生，杯状花托也非各亚科都典型。B．错误。雄蕊多数确为共同特征，但心皮多数不是，李亚科仅一心皮。C．正确。四亚科均具杯状花托（托杯）和雄蕊多数，是蔷薇科稳定的科级共同特征。D．错误。心皮多数且离生仅见于绣线菊亚科和蔷薇亚科，李亚科一心皮、梨亚科心皮合生。故答案为C。\n【通法】通法（求科的共同特征）：把各亚科性状列表逐项对照，只保留全部亚科共有的项；蔷薇科抓花托杯状、雄蕊多数、萼片花瓣各五。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

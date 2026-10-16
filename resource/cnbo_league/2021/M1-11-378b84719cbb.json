@@ -1,0 +1,48 @@
+{
+ "id": "M1-11-378b84719cbb",
+ "type": "single",
+ "question": "下列可为卵磷脂合成提供甲基的是：",
+ "options": {
+  "A": "酪氨酸",
+  "B": "蛋氨酸",
+  "C": "半胱氨酸",
+  "D": "苏氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 11 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。酪氨酸不作为甲基供体参与磷脂合成。B．正确。卵磷脂（磷脂酰胆碱）的甲基依次由 S-腺苷甲硫氨酸（SAM）提供，SAM 由蛋氨酸活化而来，故蛋氨酸可为卵磷脂合成提供甲基。C．错误。半胱氨酸主要提供巯基与硫原子，不供甲基。D．错误。苏氨酸不参与该甲基化反应。故答案为B。\n【易错易混】易混：甲基供体是 SAM（来自蛋氨酸）；半胱氨酸供硫，酪氨酸、苏氨酸既不供甲基也不供硫，别因名称相近误选。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

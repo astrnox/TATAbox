@@ -1,0 +1,103 @@
+{
+ "id": "M3-75-abaf8dbf14f5",
+ "type": "single",
+ "question": "人类活动影响动物行为，研究表明动物行为的改变程度随着人类活动强度的增加，会呈现出如下图（A）的四种响应形式：线型（linear）、阈值型（threshold）、减速型（decelerating）、减弱型（dampening）。下图（B）和下图（C）呈现了山鸦和红嘴山鸦对人类旅游活动的响应，由图可以推断，两种鸟类对人类旅游活动的响应形式为：",
+ "options": {
+  "A": "线型",
+  "B": "阈值型",
+  "C": "减速型",
+  "D": "减弱型"
+ },
+ "answer": null,
+ "answer_key": "B 或D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 75 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "三、动物行为学、生态学（15 题19 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "标答为复合/可选答案，见 answer_key",
+ "image": {
+  "file": "assets/questions/M3-75-abaf8dbf14f5/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 447,
+  "bbox": [
+   296.1,
+   126.5,
+   499.5,
+   268.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-75-abaf8dbf14f5/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 447,
+   "bbox": [
+    296.1,
+    126.5,
+    499.5,
+    268.9
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-75-abaf8dbf14f5/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 447,
+   "bbox": [
+    95.1,
+    148.8,
+    295.5,
+    269.0
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-75-abaf8dbf14f5/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 447,
+   "bbox": [
+    98.9,
+    269.0,
+    495.7,
+    392.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】图A 给出四种响应形式的曲线特征，据此比对图B 与图C。A．错误。两鸟的响应曲线随人类活动强度增加并非呈恒定斜率的直线，与线型不符。B．官方标答为存疑（B 或D）：若曲线在低强度段基本不变、超过一定强度后急剧变化，即属阈值型，符合其一，待人工裁定。C．错误。曲线未表现出先快后缓的减速特征。D．官方标答为存疑（B 或D）：若曲线先变化后趋于平缓、响应随强度增加而减弱，即属减弱型，符合其一，待人工裁定。"
+}

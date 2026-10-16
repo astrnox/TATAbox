@@ -1,0 +1,48 @@
+{
+ "id": "M2-72-8c2c118184be",
+ "type": "single",
+ "question": "下列原核微生物中，靠节肢动物传播引起人类疾病的是",
+ "options": {
+  "A": "砂眼衣原体",
+  "B": "普氏立克次氏体",
+  "C": "肺炎支原体",
+  "D": "梅毒螺旋体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 72 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。砂眼衣原体主要通过眼-眼或眼-手-眼接触及污染物传播，不经节肢动物媒介。B．正确。普氏立克次氏体引起流行性斑疹伤寒，以人虱为传播媒介，是专性细胞内寄生的原核微生物，符合题意。C．错误。肺炎支原体经飞沫或直接接触传播，引起支原体肺炎。D．错误。梅毒螺旋体主要经性接触或母婴传播，与节肢动物无关。故答案为B。\n【通法】通法（传播途径对号）：立克次氏体几乎全靠节肢动物（虱、蜱、螨）叮咬传播；衣原体多经接触或飞沫；支原体经飞沫；螺旋体看种类，梅毒性传播、钩体病接触疫水。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

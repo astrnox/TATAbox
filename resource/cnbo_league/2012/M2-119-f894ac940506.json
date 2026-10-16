@@ -1,0 +1,48 @@
+{
+ "id": "M2-119-f894ac940506",
+ "type": "single",
+ "question": "根据花程式K4，C4，A4+2，G（2:2）判断它属于",
+ "options": {
+  "A": "豌豆",
+  "B": "油菜",
+  "C": "番茄",
+  "D": "石竹"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 119 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 119,
+  "section": "第四部分 （7 道题9 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。豌豆为豆科，蝶形花冠、二体雄蕊（9+1），与花程式中的K4、C4、A4+2不符。B．正确。该花程式表示萼片4、花瓣4、雄蕊4+2（四强雄蕊）、子房上位2心皮2室，正是十字花科的特征，油菜属十字花科。C．错误。番茄为茄科，花萼花冠通常5裂、雄蕊5枚，与之不符。D．错误。石竹为石竹科，雄蕊常10枚、子房上位1室特立中央胎座，与之不符。故答案为B。\n【点睛】点睛：读花程式先抓萼片花瓣数、雄蕊数和心皮数，A4+2的四强雄蕊是十字花科的铁证。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

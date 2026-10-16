@@ -1,0 +1,45 @@
+{
+ "id": "M1-17-91dbe88db713",
+ "type": "single",
+ "question": "在原始生命起源的化学进化过程中，生成氨基酸分子的能量主要来自：",
+ "options": {
+  "A": "可见光",
+  "B": "ATP 放能",
+  "C": "物质氧化放能",
+  "D": "闪电、紫外线等"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 17 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。原始大气缺游离氧、无臭氧层屏蔽，可见光并非驱动无机小分子合成氨基酸的主要能源。B．错误。ATP是生命出现后才有的能量货币，化学进化阶段尚无ATP供能体系。C．错误。物质氧化放能依赖生物氧化酶系，生命起源之前并不存在。D．正确。原始地球的闪电、紫外线、火山高温等强大能量输入，可驱动CH4、NH3、H2O等无机小分子合成氨基酸等有机小分子，米勒实验即以火花放电模拟这一过程。故答案为D。"
+}

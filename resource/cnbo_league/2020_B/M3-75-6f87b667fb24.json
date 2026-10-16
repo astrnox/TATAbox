@@ -1,0 +1,50 @@
+{
+ "id": "M3-75-6f87b667fb24",
+ "type": "multiple",
+ "question": "下列方法中属于统计种群相对密度的方法有：",
+ "options": {
+  "A": "粪堆计数；",
+  "B": "捕鼠夹的捕获率计算；",
+  "C": "鸟类鸣叫计数；",
+  "D": "毛皮收购记录；",
+  "E": "单位捕捞努力的鱼数。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ABCDE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 75 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "三. 动物行为学、生态学 19 题 24 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。粪堆计数以痕迹推算相对密度。B．正确。捕鼠夹的捕获率属相对密度指标。C．正确。鸟类鸣叫计数以鸣叫频次反映相对多度。D．正确。毛皮收购记录是历史常用的相对密度代理数据。E．正确。单位捕捞努力的鱼数即 CPUE，是渔业中的相对密度指标。五者均不给出种群绝对数量，故答案为ABCDE。\n【易错易混】易混：绝对密度（标记重捕、去除法、直接计数）给出个体总数；相对密度（痕迹、捕获率、鸣叫计数、CPUE、收购记录）只给可横向比较的指数。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

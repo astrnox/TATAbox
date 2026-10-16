@@ -1,0 +1,48 @@
+{
+ "id": "M3-63-506c5d7fb62a",
+ "type": "multiple",
+ "question": "下列有关七鳃鳗呼吸系统的说法中正确的有：",
+ "options": {
+  "A": "咽部分背腹两管，背面为食道，腹面为呼吸管；",
+  "B": "呼吸管后瑞为盲端，呼吸管左右两侧各有7 个内鳃孔，各与一个鳃囊相通；",
+  "C": "鳃囊壁有外胚层来源的褶皱状鳃丝，其上毛细血管丰富，气体交换在此进行；",
+  "D": "每一鳃囊经一个外鳃孔通体外。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 63 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。咽部分为背腹两管，背面为食道，腹面为呼吸管。B．正确。呼吸管后端为盲管，左右两侧各具 7 个内鳃孔通向鳃囊。C．错误。鳃囊壁上的鳃丝由内胚层（咽部内陷）形成而非外胚层，来源表述错误。D．正确。每一鳃囊经一个独立的外鳃孔通向体外。故答案为ABD。\n【易错易混】易混：七鳃鳗呼吸记两管七孔——背食道腹呼吸管、两侧各 7 内孔、每囊一外孔；鳃丝是内胚层来源，别套外胚层。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

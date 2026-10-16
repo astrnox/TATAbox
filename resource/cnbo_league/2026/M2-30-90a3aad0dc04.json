@@ -1,0 +1,81 @@
+{
+ "id": "M2-30-90a3aad0dc04",
+ "type": "mtf",
+ "question": "对植株的表型进行观察，结果如图B 和C 所示。根据已有生物学知识和实验结果，判断下列陈述的正误：",
+ "options": {
+  "A": "植物细胞分裂素缺乏会导致分枝增多；",
+  "B": "PUP14 是抑制分枝的重要因子；",
+  "C": "降低PUP14 的功能可导致花原基增多；",
+  "D": "PUP14 影响花的排列方式。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 30 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "29-30",
+  "stimulus": "为研究细胞分裂素的调控机制，科学家进行了下面实验："
+ },
+ "image": {
+  "file": "assets/questions/M2-30-90a3aad0dc04/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   285.4,
+   73.5,
+   501.6,
+   166.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-30-90a3aad0dc04/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    285.4,
+    73.5,
+    501.6,
+    166.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。细胞分裂素促进侧芽萌发生长，缺乏时分枝减少而非增多。B．正确。敲低PUP14后分枝增多，说明PUP14是抑制分枝的重要因子。C．正确。降低PUP14功能导致花原基增多。D．正确。PUP14功能变化还影响花的排列方式。"
+}

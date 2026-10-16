@@ -1,0 +1,48 @@
+{
+ "id": "M2-38-a4832ff11bfc",
+ "type": "single",
+ "question": "在下列哪种条件下贮藏果实的效果好？",
+ "options": {
+  "A": "高二氧化碳浓度、低氧浓度和高乙烯浓度",
+  "B": "低二氧化碳浓度、高氧浓度和无乙烯",
+  "C": "低氧浓度、高二氧化碳浓度和无乙烯",
+  "D": "无氧、无乙烯和高二氧化碳浓度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 38 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高乙烯会加速果实成熟和衰老，与贮藏目的背道而驰。B．错误。高氧促进呼吸作用，加快有机物消耗和成熟，不利于贮藏。C．正确。低氧抑制呼吸和乙烯生成，高二氧化碳进一步抑制呼吸与成熟进程，再排除外源乙烯，是气调贮藏的最佳组合。D．错误。完全无氧会诱发无氧呼吸，产生酒精、乙醛等造成果实生理伤害，反而不耐贮。故答案为C。\n【通法】通法（果实贮藏条件）：低温＋低氧＋高二氧化碳＋排除乙烯；注意低氧不等于无氧，无氧呼吸反而坏果。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

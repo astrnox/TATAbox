@@ -1,0 +1,48 @@
+{
+ "id": "M4-78-96caaed8b77e",
+ "type": "single",
+ "question": "曾经有一个很大的恐龙群体，某基因在该群体中的分布为：4%为AA，32%为Aa， 64%为aa。一场气候剧变导致所有的隐性纯合个体aa 死亡。灾难过后，新出生的下一代中，隐性纯合体占所有新生个体的比例为：",
+ "options": {
+  "A": "4%",
+  "B": "8.5%",
+  "C": "19.7%",
+  "D": "36.8%"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 78 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。4% 是灾前 AA 的比例，不是灾后 aa 合子的比例。B．错误。8.5% 与按新等位基因频率计算的结果不符。C．正确。aa 死亡后幸存者中 AA 占 4/36、Aa 占 32/36，A=(2×4+32)/72=5/9、a=4/9，随机交配子代 aa=(4/9)²≈19.7%。D．错误。36.8% 混淆了死亡前后的频率。故答案为C。\n【通法】通法（选择后的基因频率）：先在幸存者中重算等位基因频率（按个体数×拷贝数归一），再用新频率做哈迪温伯格推下一代基因型比例。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

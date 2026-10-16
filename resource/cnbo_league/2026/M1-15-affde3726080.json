@@ -1,0 +1,45 @@
+{
+ "id": "M1-15-affde3726080",
+ "type": "mtf",
+ "question": "通过表型实验发现基因X 或基因Y 的肝脏特异性敲除小鼠均出现相似的病理特征，通过免疫荧光观察到对应的蛋白X 与蛋白Y 共定位于同一亚细胞结构。为进一步研究这两种蛋白之间是否存在互作，判断以下操作是否有助于达到研究目的：",
+ "options": {
+  "A": "可用AlphaFold预测两种蛋白的结构及互作可能；",
+  "B": "可用凝胶迁移实验检测蛋白与探针是否结合；",
+  "C": "可采用免疫共沉淀联合Western blot；",
+  "D": "可利用染色质免疫共沉淀联合高通量测序"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "TFTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 15 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。AlphaFold可预测两蛋白结构及对接界面，为互作研究提供线索（虽需实验验证）。B．错误。凝胶迁移实验（EMSA）检测的是蛋白与DNA/RNA探针的结合，不用于蛋白-蛋白互作。C．正确。免疫共沉淀富获蛋白复合物后Western检测另一蛋白，是验证体内互作的经典方法。D．错误。ChIP检测的是蛋白与染色质DNA的结合，不能直接验证蛋白-蛋白互作。"
+}

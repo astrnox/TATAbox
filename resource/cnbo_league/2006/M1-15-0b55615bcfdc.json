@@ -1,0 +1,48 @@
+{
+ "id": "M1-15-0b55615bcfdc",
+ "type": "single",
+ "question": "对脂肪和蛋白质的消化，下列哪种的作用最强：",
+ "options": {
+  "A": "唾液",
+  "B": "胆汁",
+  "C": "胰液",
+  "D": "胃液"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 15 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。唾液仅含唾液淀粉酶和少量舌脂肪酶，主要消化淀粉，对蛋白质无作用。B．错误。胆汁不含消化酶，只乳化脂肪、增大脂肪酶的作用面积，不能直接消化蛋白质和脂肪。C．正确。胰液含胰蛋白酶原、糜蛋白酶原、羧肽酶、胰脂肪酶和胰淀粉酶等全套消化酶，对脂肪和蛋白质的消化作用最强。D．错误。胃液中的胃蛋白酶只初步消化蛋白质，几乎不含脂肪酶，对脂肪消化作用很弱。故答案为C。\n【通法】通法（消化液分工）：淀粉由唾液和胰液消化，蛋白质先经胃液初步、再由胰液彻底消化，脂肪以胰液的胰脂肪酶为主、胆汁只乳化不消化。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

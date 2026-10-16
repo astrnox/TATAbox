@@ -1,0 +1,48 @@
+{
+ "id": "M4-89-94c1536cd8f1",
+ "type": "multiple",
+ "question": "若要最终证实F 蛋白通过调控Pax6 的表达来调控视网膜的功能，还需要进行的实验有：",
+ "options": {
+  "A": "检测F 蛋白突变体动物模型中Pax6 的表达量；",
+  "B": "在Pax6 失活突变体中过表达F 蛋白，检测表型是否缓解；",
+  "C": "在野生型中抑制Pax6 表达，检测是否得到F 蛋白功能缺失的表型；",
+  "D": "进行报告基因实验，检测F 蛋白是否激活Pax6 的调控元件。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 89 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】要证实'F 蛋白通过调控Pax6 表达来调控视网膜功能'，需建立F→Pax6→功能的因果链。A．正确。检测突变体模型中Pax6 表达量可确认F 对Pax6 表达的影响。B．错误。Pax6 失活突变体中过表达F 无法缓解表型（下游已缺失），该实验逻辑上不能证实该路径。C．正确。野生型中抑制Pax6 若重现F 缺失表型，支持Pax6 位于F 下游。D．正确。报告基因实验可直接检测F 是否激活Pax6 的调控元件，证明直接调控关系。故答案为ACD。\n【通法】通法（调控关系因果验证）：三板斧——上下游表达量检测、下游失活表型模拟（上位性）、报告基因证明直接作用，注意过表达上游不能挽救下游失活。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-70-5d664bede9f7",
+ "type": "single",
+ "question": "在某一个地区长期观察的数据显示，初级生产量决定着生物群落中更高营养级物种的种群数量大小。这个观察结果说明这个群落结构是",
+ "options": {
+  "A": "下行控制",
+  "B": "上行控制",
+  "C": "并行控制",
+  "D": "随机变化"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 70 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。下行控制指高营养级制约低营养级，题干是生产量自下而上决定高营养级，方向相反。B．正确。初级生产量决定更高营养级的种群大小，说明群落结构由资源自下而上控制，即上行控制。C．错误。题干只呈现自下而上的单一方向证据，不能得出并行控制。D．错误。长期数据呈稳定决定关系，非随机变化。故答案为B。\n【点睛】点睛：上行＝自下而上（生产量→消费者），下行＝自上而下（捕食者→猎物）；题干出现'初级生产量决定'即上行控制。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

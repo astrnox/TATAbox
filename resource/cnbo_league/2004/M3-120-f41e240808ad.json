@@ -1,0 +1,45 @@
+{
+ "id": "M3-120-f41e240808ad",
+ "type": "multiple",
+ "question": "昆虫区别于其它所有节肢动物的特征是",
+ "options": {
+  "A": "多数具翅",
+  "B": "有三对胸足",
+  "C": "气管系统呼吸",
+  "D": "马氏管排泄"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 120 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 120,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。翅是昆虫独有的飞行器官，其它节肢动物类群均无翅。B．正确。三对胸足是昆虫纲区别于其它节肢动物的稳定特征。C．错误。气管系统并非昆虫特有，多足类及部分蛛形类也以气管呼吸。D．错误。马氏管也见于蛛形类和多足类等，不能作为昆虫独有特征。故答案为AB。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-45-56aaee8589b0",
+ "type": "single",
+ "question": "神经调节的特点是：",
+ "options": {
+  "A": "调节幅度小",
+  "B": "作用广泛而持久",
+  "C": "反应速率快，作用时间长",
+  "D": "作用迅速，准确和短暂"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 45 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。神经调节虽作用部位局限、定位准确，但'幅度小'并非其规范表述，一个反射可同步动员众多效应器，幅度并不受限。B．错误。作用广泛而持久是体液调节的特点，激素经血液运输、作用时间长。C．错误。前半句'反应速率快'属神经调节，后半句'作用时间长'属体液调节，前后错配。D．正确。神经冲动传导与突触传递极快，作用定位准确，且随刺激终止迅速解除，即迅速、准确、短暂。故答案为D。\n【易错易混】易混：神经调节＝快、准、短；体液调节＝慢、广、长，命题常用特征交叉错配设陷阱。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

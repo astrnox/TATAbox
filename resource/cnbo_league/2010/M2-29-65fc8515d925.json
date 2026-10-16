@@ -1,0 +1,48 @@
+{
+ "id": "M2-29-65fc8515d925",
+ "type": "multiple",
+ "question": "微生物产生的具有温室效应的气体有哪些？",
+ "options": {
+  "A": "CO2",
+  "B": "H2",
+  "C": "CH4",
+  "D": "N2O"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 29 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。微生物的分解与呼吸作用释放CO2，是碳循环中的主要温室气体来源之一。B．错误。产氢菌和固氮酶等虽可产生H2，但氢气不吸收长波红外辐射，不属于温室气体。C．正确。产甲烷古菌在厌氧环境下产CH4，稻田、湿地和反刍动物瘤胃是重要排放源。D．正确。反硝化细菌等将硝态氮还原为气态氮时可释放N2O，是重要的温室气体。故答案为ACD。\n【通法】通法（温室气体判断）：记住主要温室气体为CO2、CH4、N2O、O3、氟氯烃等；判断某气体是否造成温室效应，看其能否吸收长波红外辐射，与是否由微生物产生无关。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

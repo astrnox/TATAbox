@@ -1,0 +1,48 @@
+{
+ "id": "M3-57-a2c65ee66edc",
+ "type": "single",
+ "question": "在旱季的热带稀树草原上，不时能看到大量食草动物聚集在浅洼周边饮水的情形，这可视作下列种间关系中的",
+ "options": {
+  "A": "分摊式竞争",
+  "B": "资源利用性竞争",
+  "C": "相互干涉型竞争",
+  "D": "似然竞争"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 57 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。分摊式竞争指双方争夺某一离散资源份额，此处水源是可共同利用的连续资源。B．正确。多种食草动物在旱季共同利用同一浅洼水源，各自取用而不直接干扰对方，属资源利用性竞争。C．错误。相互干涉型竞争存在直接的对抗或干扰行为，题干未见此类行为。D．错误。似然竞争是经共享天敌产生的表观竞争，与饮水场景无关。故答案为B。\n【点睛】点睛：竞争三分法——抢同一份资源且互不干扰＝利用性竞争；直接驱赶打斗＝干涉型竞争；因共享天敌而相互抑制＝似然竞争。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-24-2c9f8310bcac",
+ "type": "single",
+ "question": "麦芽糖由哪两个单糖分子连接构成？",
+ "options": {
+  "A": "两个果糖",
+  "B": "一个果糖和一个葡萄糖",
+  "C": "两个葡萄糖",
+  "D": "一个葡萄糖和一个核糖"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 24 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。两分子果糖构成的是果糖二糖等，不是麦芽糖。B．错误。一分子果糖与一分子葡萄糖以α-1,2糖苷键相连构成蔗糖。C．正确。麦芽糖由两分子葡萄糖经α-1,4糖苷键连接，是淀粉水解的中间产物。D．错误。葡萄糖与核糖不构成麦芽糖。故答案为C。"
+}

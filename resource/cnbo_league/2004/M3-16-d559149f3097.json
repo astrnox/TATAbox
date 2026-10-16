@@ -1,0 +1,48 @@
+{
+ "id": "M3-16-d559149f3097",
+ "type": "single",
+ "question": "牛的食物何处进行初步消化后逆呕到口腔中重新咀嚼",
+ "options": {
+  "A": "瘤胃和网胃内",
+  "B": "瘤胃和皱胃内",
+  "C": "瓣胃和网胃内",
+  "D": "瓣胃和皱胃内"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 16 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。反刍动物采食时粗嚼后吞咽入瘤胃和网胃，在其中经微生物发酵初步消化，之后再逆呕回口腔重新细嚼，即反刍。B．错误。皱胃是分泌消化液的腺胃，不承担食团贮存与逆呕。C．错误。瓣胃的功能是压榨食糜、吸收水分，不是发酵逆呕场所。D．错误。瓣胃和皱胃均不参与逆呕食团的形成。故答案为A。\n【易错易混】易混：瘤胃、网胃＝发酵与逆呕；瓣胃＝压榨脱水；皱胃＝腺胃消化，四室分工不可颠倒。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

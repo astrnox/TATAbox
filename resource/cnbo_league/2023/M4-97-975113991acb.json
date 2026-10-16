@@ -1,0 +1,106 @@
+{
+ "id": "M4-97-975113991acb",
+ "type": "single",
+ "question": "术语homoplasy 在生物系统学中用于描述某性状的产生或丢失相对地独立于物种分化过程。如果下图进化树中灰色均代表祖先性状（ancestral trait），黑色均代表衍生性状（derived trait），那么下面哪一项可以展示homoplasy？ A. B. C. D. ABC 均不可以",
+ "options": null,
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 97 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-97-975113991acb/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 450,
+  "bbox": [
+   317.6,
+   647.2,
+   454.3,
+   728.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-97-975113991acb/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 450,
+   "bbox": [
+    317.6,
+    647.2,
+    454.3,
+    728.5
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-97-975113991acb/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 450,
+   "bbox": [
+    105.5,
+    650.5,
+    233.9,
+    727.9
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M4-97-975113991acb/fig3.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 451,
+   "bbox": [
+    104.9,
+    72.0,
+    242.9,
+    155.6
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】homoplasy（同塑性）指性状独立于物种分化之外地产生或丢失，即同一衍生性状在树上多次独立起源（趋同、平行或逆转），而非单次起源后由后代共同继承。A．错误。该图中黑色衍生性状仅在单一分支出现一次并由其后代共同继承，属单次起源，不构成 homoplasy。B．错误。该图中性状分布可由一次获得加共同祖先完整解释。C．正确。该图中同一衍生性状在不同分支上独立出现，或祖先性状逆转后重现，只能用两次以上独立演化解释，展示了 homoplasy。D．错误。C 项已符合，'ABC 均不可以'不成立。E．错误。综合四图判断，homoplasy 可由 C 项展示，该项不成立。故答案为C。\n【通法】通法（同塑性判别）：把衍生性状标注回树上，若能用'一次起源＋共同祖先'解释即同源，必须假设两次以上独立起源或逆转的即 homoplasy。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

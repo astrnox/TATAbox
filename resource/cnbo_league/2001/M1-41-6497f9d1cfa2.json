@@ -1,0 +1,45 @@
+{
+ "id": "M1-41-6497f9d1cfa2",
+ "type": "single",
+ "question": "组成mRNA 分子的4 种单核着酸能组成多少种密码子？",
+ "options": {
+  "A": "16",
+  "B": "32",
+  "C": "46",
+  "D": "64"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 41 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。16是4的平方，相当于双核苷酸组合数，与三联体密码不符。B．错误。32不对应4种碱基的任何完整三联体组合数。C．错误。46是干扰数字，易与人的染色体数目混淆，并非密码子总数。D．正确。每个密码子由3个核苷酸组成，每个位置有4种碱基可能，故密码子共4×4×4＝64种，其中3种为终止密码子，61种编码氨基酸。故答案为D。"
+}

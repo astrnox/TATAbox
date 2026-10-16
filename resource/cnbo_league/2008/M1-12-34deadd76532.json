@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-34deadd76532",
+ "type": "single",
+ "question": "用环割处理证明，光周期诱导产生的开花刺激物质向茎生长点运输的主要途径是",
+ "options": {
+  "A": "木质部",
+  "B": "细胞间隙",
+  "C": "韧皮部",
+  "D": "薄壁细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 12 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。木质部运输水和无机盐，环割剥去韧皮部后水分运输不受影响。B．错误。细胞间隙不是长距离运输通道，无法把成花刺激物送到茎尖。C．正确。环割切去韧皮部后开花刺激物不能运到茎生长点而不能成花，证明该刺激物经韧皮部随同化物流长距离运输。D．错误。薄壁细胞只参与短距离转运，不是长距离运输的主要途径。故答案为C。"
+}

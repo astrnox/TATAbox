@@ -1,0 +1,39 @@
+{
+ "id": "M3-59-b7b3ed4403fd",
+ "type": "single",
+ "question": "（删除）下列有关群落叙述中，正确的是",
+ "options": {
+  "A": "捕食作用必然提高群落的多样性",
+  "B": "群落演替过程中总生产量/总呼吸量（P/R）始终大于1，到演替的顶级阶段P/R 接近或等于1",
+  "C": "群落物种多样性随群落演替进展而增加，故顶级群落阶段，多样性最高",
+  "D": "群落交错区中生物种类和种群密度会有所增加"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 59 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

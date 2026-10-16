@@ -1,0 +1,45 @@
+{
+ "id": "M3-43-1ceabaa887eb",
+ "type": "single",
+ "question": "下列各项中，哺乳动物体内激素和维生素共同具有的特性是：",
+ "options": {
+  "A": "都从食物中摄取",
+  "B": "都是蛋白质",
+  "C": "需要量很小，作用很大",
+  "D": "都是由体内细胞产生的"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 43 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。激素由内分泌细胞合成分泌，不能从食物直接摄取，需从食物获取的是维生素。B．错误。激素有蛋白质类、固醇类和氨基酸衍生物等，维生素多为小分子有机物，二者不都是蛋白质。C．正确。激素和维生素都是需要量极小而生理作用显著的微量高效活性物质。D．错误。维生素体内不能合成或合成不足，需外源供给；激素则由体内细胞产生。故答案为C。"
+}

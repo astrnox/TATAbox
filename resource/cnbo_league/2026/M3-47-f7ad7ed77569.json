@@ -1,0 +1,77 @@
+{
+ "id": "M3-47-f7ad7ed77569",
+ "type": "mtf",
+ "question": "心电图是心脏功能检测的最常用方法之一。该图是一个家族性心律失常病人在安静和剧烈运动半分钟后的代表性心电图。请判断该病人在运动后是否出现了如下现象：",
+ "options": {
+  "A": "窦性早搏",
+  "B": "期前收缩",
+  "C": "代偿间歇",
+  "D": "Q-T 间期延长"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 47 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-47-f7ad7ed77569/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 8,
+  "bbox": [
+   342.7,
+   650.3,
+   505.3,
+   753.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-47-f7ad7ed77569/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 8,
+   "bbox": [
+    342.7,
+    650.3,
+    505.3,
+    753.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。'窦性早搏'不是规范概念：窦性节律是正常节律，早搏起源于异位起搏点。B．正确。图中运动后出现提前的异常QRS波群，即期前收缩。C．正确。期前收缩后出现一段长间歇（代偿间歇），随后恢复正常节律。D．错误。图中运动后Q-T间期并未延长。"
+}

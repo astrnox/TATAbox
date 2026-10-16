@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-8fbddf869045",
+ "type": "single",
+ "question": "α-D-葡萄糖和β-D-葡萄糖的主要区别是下列哪一个？",
+ "options": {
+  "A": "第1位碳原子上的羟基",
+  "B": "第2位碳原子上的羟基",
+  "C": "第5位碳原子上的羟基",
+  "D": "第4位碳原子上的羟基"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 12 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。α-D-葡萄糖与β-D-葡萄糖互为异头物，唯一差别在C1异头碳羟基的取向：α型该羟基与C5的CH2OH处于环的异侧，β型处于同侧。B．错误。C2的构型二者相同。C．错误。C5的构型决定D型，二者一致，且参与形成吡喃环。D．错误。C4羟基取向相同，不构成α、β之别。故答案为A。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-37-4fb6ad3b73e6",
+ "type": "single",
+ "question": "夹竹桃叶不具备的特点是：",
+ "options": {
+  "A": "复表皮；",
+  "B": "气孔下陷；",
+  "C": "具有表皮毛；",
+  "D": "栅栏组织发达。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 37 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "二. 植物的解制、植物生理、植物演化（共19 题，34 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不具备的特点，判断词指该选项是否合题意。A．错误（表述成立）。夹竹桃叶具有复表皮，是其旱生结构之一。B．正确（应选）。夹竹桃的旱生适应主要依靠复表皮、表皮毛与发达栅栏组织，气孔并不下陷，'气孔下陷'这一特点它不具备，正是应选项。C．错误（表述成立）。叶表被有大量表皮毛，特征存在。D．错误（表述成立）。栅栏组织发达，特征存在。故答案为B。"
+}

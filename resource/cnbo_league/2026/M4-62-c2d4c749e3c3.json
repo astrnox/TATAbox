@@ -1,0 +1,84 @@
+{
+ "id": "M4-62-c2d4c749e3c3",
+ "type": "mtf",
+ "question": "研究证明，DMD 是X-染色体连锁的隐性遗传病。表中是对该地1940~46 年出生的138403 名男性中DMD 患者的统计结果，发现群体中d 基因的频率基本维持稳定。已知人类基因组的每个碱基在每一次代际传递时的突变率约为1.1×10-8。根据这些信息，判断下列相关论述的正误：",
+ "options": {
+  "A": "1940~46 年间该群体中基因型频率基本不变；",
+  "B": "每一次代际传递，D 突变为d 的概率约为1.3×10-4；",
+  "C": "D 突变为d 的概率很高，是因为选择压较小；",
+  "D": "由这些信息可以近似计算D 基因编码区的大小。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TFFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 62 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第四部分：遗传学 演化生物学 生物信息学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "1955 年，遗传学家J. Walton 对英国某地居民中杜氏肌营养不良（DMD）的病例进行了研究，"
+ },
+ "image": {
+  "file": "assets/questions/M4-62-c2d4c749e3c3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 11,
+  "bbox": [
+   367.3,
+   118.5,
+   505.3,
+   220.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-62-c2d4c749e3c3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 11,
+   "bbox": [
+    367.3,
+    118.5,
+    505.3,
+    220.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。d基因频率基本维持稳定，说明群体基因型频率基本不变（遗传平衡）。B．错误。按男性发病率估算的DMD基因突变率约为2×10⁻⁴量级（DMD基因约2.2 Mb×1.1×10⁻⁸/碱基），'1.3×10⁻⁴'与题给数据推算不符。C．错误。DMD患者生育机会低，选择压并不小。D．错误。仅凭这些信息难以近似计算编码区大小——需区分新发突变与家系遗传病例、了解突变谱与外显率，直接反推会系统偏差。\n【通法】通法（突变率估算）：X连锁隐性病男性发病率≈基因突变率μ_gene；μ_gene＝基因长度×每碱基突变率。先校验数量级（DMD这类巨基因μ_gene~10⁻⁴）再判选项。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

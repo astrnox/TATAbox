@@ -1,0 +1,48 @@
+{
+ "id": "M1-19-a1773ac5414a",
+ "type": "single",
+ "question": "微生物细胞吸收营养有多种方式，需要载体但不能逆营养物浓度梯度运输的是：",
+ "options": {
+  "A": "主动运输",
+  "B": "促进扩散",
+  "C": "基团转位",
+  "D": "扩散"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 19 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。主动运输需载体并可逆浓度梯度进行。B．正确。促进扩散需载体（或通道）蛋白协助，但物质顺浓度梯度运输、不消耗能量，不能逆梯度。C．错误。基团转位伴随底物磷酸化修饰，属耗能的主动运输范畴。D．错误。单纯扩散既不需要载体，也不能逆梯度。故答案为B。\n【易错易混】易混：四种方式两两搭配记——'需载体＋逆梯度'＝主动运输，'需载体＋顺梯度'＝促进扩散，'都不需＋顺梯度'＝单纯扩散，基团转位＝改头换面的主动运输。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

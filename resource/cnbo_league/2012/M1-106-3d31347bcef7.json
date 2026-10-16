@@ -1,0 +1,48 @@
+{
+ "id": "M1-106-3d31347bcef7",
+ "type": "single",
+ "question": "“第n 营养级的净生产量／第n 营养级同化的能量”定义的是：",
+ "options": {
+  "A": "消费效率",
+  "B": "同化效率",
+  "C": "生产效率",
+  "D": "林德曼效率"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 106 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "第三部分 （9 道题10 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。消费效率指第n+1营养级摄入量占第n营养级净生产量的比例。B．错误。同化效率是同化量与摄入量之比。C．正确。净生产量＝同化量－呼吸消耗，故净生产量与同化量之比即生产效率（组织增长效率），反映同化量中转化为自身生物量的比例。D．错误。林德曼效率是相邻两营养级同化量之比，约为10%～20%。故答案为C。\n【通法】通法（生态效率）：同化效率＝同化/摄入；生产效率＝净生产/同化；消费效率＝下一级摄入/本级净生产；林德曼效率＝下一级同化/本级同化。做题先圈分子分母是'摄入、同化'还是'净生产'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

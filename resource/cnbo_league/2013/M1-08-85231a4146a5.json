@@ -1,0 +1,45 @@
+{
+ "id": "M1-08-85231a4146a5",
+ "type": "single",
+ "question": "指导分泌蛋白质在糙面内质网上合成的决定因素除了信号识别颗粒和停泊蛋白外，还有",
+ "options": {
+  "A": "蛋白质中的内在停止转移锚定序列",
+  "B": "蛋白质N 端的信号肽",
+  "C": "蛋白质C 端的信号肽",
+  "D": "蛋白质中的α 螺旋"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 8 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。停止转移锚定序列用于整合膜蛋白在内质网膜上的停止与锚定，不是指导分泌蛋白起始合成的信号。B．正确。分泌蛋白N端信号肽先被SRP识别，SRP再与内质网停泊蛋白结合，使核糖体停靠并边合成边转入腔内，信号肽是决定因素。C．错误。信号肽位于N端而非C端。D．错误。α螺旋是常见二级结构，与靶向内质网无对应关系。故答案为B。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-24-89ec2ffe6891",
+ "type": "single",
+ "question": "形成层通过径向分裂产生：",
+ "options": {
+  "A": "次生木质部",
+  "B": "次生韧皮部",
+  "C": "次生维管组织",
+  "D": "使层周径扩大"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 24 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。次生木质部由形成层的切向（平周）分裂向内产生。B．错误。次生韧皮部同样由切向分裂向外产生。C．错误。次生维管组织整体源于形成层的切向分裂，而非径向分裂。D．正确。径向（垂周）分裂使形成层细胞数目增多、周径扩大，以适应内部木质部不断增粗。\n【通法】通法（形成层分裂方向）：平周（切向）分裂管内外——内产次生木质部、外产次生韧皮部；垂周（径向）分裂管周径，使形成层环扩大。故答案为D。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

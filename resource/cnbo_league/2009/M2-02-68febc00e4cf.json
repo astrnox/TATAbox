@@ -1,0 +1,48 @@
+{
+ "id": "M2-02-68febc00e4cf",
+ "type": "single",
+ "question": "关于筛管中物质的运输，下列叙述哪项不正确？",
+ "options": {
+  "A": "筛管中没有无机离子",
+  "B": "筛管中有较高浓度钾离子",
+  "C": "筛管中大量运输的主要是蔗糖",
+  "D": "植物激素可在筛管中运输"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 2 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不正确的一项，判断词指该选项是否合题意。A．正确。筛管汁液中除有机物外还含有K+、Cl-等多种无机离子，说'没有无机离子'不成立，正是应选项。B．错误。筛管中K+浓度较高，参与维持膨压与电荷平衡，表述成立。C．错误。筛管中大量运输的主要是蔗糖，棉子糖、水苏糖等也可运输，表述成立。D．错误。生长素等植物激素可在筛管中运输，表述成立。故答案为A。\n【点睛】点睛：筛管汁液＝蔗糖为主＋高K+＋多种无机离子＋激素，'没有无机离子'是典型的绝对化错误表述。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

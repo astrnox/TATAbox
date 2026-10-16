@@ -1,0 +1,80 @@
+{
+ "id": "M1-05-8294af064a29",
+ "type": "multiple",
+ "question": "与胆固醇合成密切相关的HMG-COA 还原酶（H 酶）位于内质网膜。研究者在培养细胞 CHO 中表达了跨膜结构域融合了GFP 的H 酶，即H-GFP。经不同浓度的胆固醇和二氢羊毛甾醇(DHL)处理后，用免疫印迹法检测H 酶的表达。如图所示的实验结果不支持的结论有：",
+ "options": {
+  "A": "H 酶在DHL 缺乏的条件下比较稳定；",
+  "B": "DHL 能够直接与H 酶跨膜结构域结合；",
+  "C": "DHL 对维持胆固醇稳态发挥调控作用；",
+  "D": "DHL 导致H 酶的翻译过程受阻。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 5 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-05-8294af064a29/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 452,
+  "bbox": [
+   178.9,
+   558.5,
+   416.1,
+   703.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-05-8294af064a29/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 452,
+   "bbox": [
+    178.9,
+    558.5,
+    416.1,
+    703.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】本题要求选出实验结果不支持的结论，判断词指该选项是否合题意。A．错误（表述成立）。免疫印迹显示缺乏 DHL 时 H 酶条带稳定，该结论受实验支持。B．正确（应选）。实验只检测了 H 酶总量变化，未涉及跨膜结构域的结合检测，无法推出 DHL 直接与跨膜域结合，正是应选项。C．错误（表述成立）。DHL 处理改变 H 酶水平，说明其参与胆固醇稳态调控，结论受支持。D．正确（应选）。免疫印迹反映蛋白积累量，条带下降可能源于降解加快，不能推出翻译受阻，正是应选项。故答案为BD。\n【点睛】点睛：'总量变化'类实验只能说明丰度改变，机制上究竟是合成减少还是降解增强、是否直接结合，都需要额外实验区分。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

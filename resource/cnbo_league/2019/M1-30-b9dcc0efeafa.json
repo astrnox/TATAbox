@@ -1,0 +1,45 @@
+{
+ "id": "M1-30-b9dcc0efeafa",
+ "type": "single",
+ "question": "克隆猴“中中”和“华华”的产生属于",
+ "options": {
+  "A": "同种异体细胞转移技术",
+  "B": "同种异体细胞核转移技术",
+  "C": "试管内受精",
+  "D": "同种异体细胞转基因技术"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 30 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细胞转移指整个供体细胞的转移，不能获得遗传一致的克隆。B．正确。克隆猴采用体细胞核移植，即将体细胞核移入去核卵母细胞，属同种异体细胞核转移技术。C．错误。核移植不经受精过程，不是试管内受精。D．错误。该技术不涉及外源基因导入，非转基因技术。故答案为B。"
+}

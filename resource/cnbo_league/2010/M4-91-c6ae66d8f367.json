@@ -1,0 +1,45 @@
+{
+ "id": "M4-91-c6ae66d8f367",
+ "type": "single",
+ "question": "1953年Watson和Crick提出的是哪一项。",
+ "options": {
+  "A": "遗传物质是DNA而非RNA",
+  "B": "DNA的复制是半保留的",
+  "C": "三个连续的核苷酸代表一个遗传密码",
+  "D": "多核苷酸DNA链通过氢键连接成一个双螺旋"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "DNA结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 91 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。遗传物质是DNA的证明来自肺炎链球菌转化实验和噬菌体侵染实验（1944、1952年）。B．错误。半保留复制的确证是Meselson和Stahl1958年的密度梯度实验，Watson和Crick当年仅在文末推测过这种可能。C．错误。三联体密码的提出与破译在20世纪60年代初。D．正确。1953年Watson和Crick提出DNA双螺旋模型：两条反向平行的多核苷酸链借氢键连接、碱基互补配对盘绕成双螺旋。故答案为D。"
+}

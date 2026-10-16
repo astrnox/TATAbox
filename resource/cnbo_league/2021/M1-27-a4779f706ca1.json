@@ -1,0 +1,50 @@
+{
+ "id": "M1-27-a4779f706ca1",
+ "type": "single",
+ "question": "将含有等浓度的6-磷酸葡萄糖和果糖6-磷酸的混合物与磷酸己糖异构酶一起孵育时，最终混合物中的6-磷酸葡萄糖的量是6-磷酸果糖的两倍。[葡萄糖6 磷酸↔果糖6 磷酸（R=8.315J/mol·K 和T=298K）]。下列关于反应的自由能变化叙述中，正确的是：",
+ "options": {
+  "A": "△G°’为-1.7kJ/mol",
+  "B": "△G°’为+1.7 kJ/mol",
+  "C": "△G°’为-17 kJ/mol",
+  "D": "△G°’为+17 kJ/mol",
+  "E": "△G°’为零"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 27 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 27,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。平衡时果糖-6-磷酸与葡萄糖-6-磷酸之比为 1/2，K 小于 1，标准自由能变应为正值而非 -1.7 kJ/mol。B．正确。平衡时 ΔG 为零，由 ΔG° 等于 -RT lnK，K＝0.5，得 ΔG°＝RT ln2，代入 R＝8.315 J/mol·K、T＝298 K，约为 +1.7 kJ/mol。C．错误。量级算错，RT ln2 约 1.7 kJ/mol 而非 17 kJ/mol。D．错误。数值应为 1.7 而非 17。E．错误。标准自由能变不为零，为零的是反应达到平衡时的实际 ΔG。故答案为B。\n【通法】通法（由平衡比求 ΔG°）：先写平衡常数 K＝产物比反应物，再用 ΔG°＝-RT lnK；K 小于 1 时 ΔG° 必为正，注意 ln2 乘 RT 约为 1.7 kJ/mol。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

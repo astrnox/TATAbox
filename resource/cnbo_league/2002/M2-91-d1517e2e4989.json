@@ -1,0 +1,45 @@
+{
+ "id": "M2-91-d1517e2e4989",
+ "type": "single",
+ "question": "下列植物中，哪类植物没有发现有性生殖",
+ "options": {
+  "A": "苔藓植物",
+  "B": "蓝藻",
+  "C": "褐藻",
+  "D": "蕨类植物"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 91 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。苔藓植物有明显的世代交替，配子体生精子器和颈卵器，行卵式生殖。B．正确。蓝藻（蓝细菌）是原核生物，仅以分裂、藻殖段断裂等方式繁殖，迄今未发现其有性生殖。C．错误。褐藻有明显的世代交替，如海带的配子体即行有性生殖。D．错误。蕨类植物产生精子器和颈卵器，精子具鞭毛，在水中完成受精。故答案为B。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-38-a2c1154b9ebf",
+ "type": "single",
+ "question": "某人进食后约20 分钟有明显的排便意愿。已知该人身体健康，食物没有安全问题，请问以下哪个神经反射环路最有可能参与上述感受和行为过程？",
+ "options": {
+  "A": "十二指肠结肠反射",
+  "B": "肠胃反射",
+  "C": "胃结肠反射",
+  "D": "小肠小肠反射"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 38 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。十二指肠—结肠反射由食糜进入十二指肠触发，与进食后约20 分钟胃充盈期的典型感受对应性较弱。B．错误。肠胃反射是肠抑制胃运动的反馈，方向与本过程相反。C．正确。胃充盈通过胃—结肠反射使结肠蠕动增强，产生便意，与题述时间窗吻合。D．错误。小肠间的局部反射不直接引起明显的排便意愿。故答案为C。\n【点睛】点睛：'进食后很快想排便'先想胃—结肠反射，抓住胃充盈这一起始刺激。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

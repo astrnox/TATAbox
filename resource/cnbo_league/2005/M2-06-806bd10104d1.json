@@ -1,0 +1,45 @@
+{
+ "id": "M2-06-806bd10104d1",
+ "type": "single",
+ "question": "孢子囊是真菌的_______结构：",
+ "options": {
+  "A": "在其中形成孢子",
+  "B": "用于从培养基中获得营养",
+  "C": "进行光合作用",
+  "D": "合成蛋白质"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 6 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。孢子囊是真菌产生孢子的结构，囊内经分裂形成大量孢子，成熟后散出。B．错误。从培养基吸收营养依靠营养菌丝，与孢子囊无关。C．错误。真菌无叶绿体，不能进行光合作用。D．错误。合成蛋白质是核糖体的功能，不是孢子囊的功能。故答案为A。"
+}

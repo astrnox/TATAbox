@@ -1,0 +1,48 @@
+{
+ "id": "M3-46-1348245bc538",
+ "type": "single",
+ "question": "哺乳类的舌后1/3 味蕾所敏感的味觉是:",
+ "options": {
+  "A": "酸",
+  "B": "苦",
+  "C": "咸",
+  "D": "甜"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 46 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。酸味感受区主要在舌后部两侧，不是舌后1/3的主敏感区。B．正确。按传统味觉分布图，舌后1/3（舌根）的味蕾对苦味最敏感，苦味受体属T2R家族，对有毒物质起警示作用。C．错误。咸味主要由舌尖及舌前部两侧敏感。D．错误。甜味主要由舌尖味蕾敏感。故答案为B。\n【点睛】点睛：味觉分布记为舌尖甜、舌前缘咸、舌后缘酸、舌根苦。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

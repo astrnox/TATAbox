@@ -1,0 +1,48 @@
+{
+ "id": "M2-17-36a4707e524f",
+ "type": "single",
+ "question": "在较强光照强度下，降低CO2 浓度，下列作物中的哪两种光合速率下降的更快？答 (1)棉花 (2)玉米 (3)高梁 (4)小麦",
+ "options": {
+  "A": "(l)和(3)",
+  "B": "(1)和(4)",
+  "C": "(2)和(3)",
+  "D": "(2)和(4)"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 17 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高粱是C4植物，具CO2浓缩机制，低CO2下光合速率下降慢。B．正确。棉花和小麦均为C3植物，缺乏CO2浓缩机制，光合速率直接受CO2浓度限制，降低CO2后下降更快。C．错误。玉米和高粱都是C4植物，对低CO2耐受性强，下降较慢。D．错误。玉米为C4、小麦为C3，组合不符。故答案为B。\n【通法】通法（C3与C4对CO2的响应）：先给作物贴标签——C4（玉米、高粱、甘蔗、谷子）有CO2泵，强光高温低CO2下仍保持高光合；C3（水稻、小麦、棉花、大豆）光呼吸强、对CO2敏感。凡问低CO2或高光效，锁定C4。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

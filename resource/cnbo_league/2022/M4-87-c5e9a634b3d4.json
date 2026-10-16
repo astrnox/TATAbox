@@ -1,0 +1,81 @@
+{
+ "id": "M4-87-c5e9a634b3d4",
+ "type": "single",
+ "question": "由上述结果，对光照条件下RGR 功能的推测最合理的是：",
+ "options": {
+  "A": "通过cAMP 调控视蛋白的表达；",
+  "B": "影响顺视黄醛与视蛋白的结合；",
+  "C": "影响全反式视黄醛向顺视黄醛的转变；",
+  "D": "影响视紫红质在光照下的稳定性。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 87 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "83-89",
+  "stimulus": "维生素A 在体内转化为11-顺视黄醛后，与视网膜特定细胞中的视蛋白结合成视紫红"
+ },
+ "image": {
+  "file": "assets/questions/M4-87-c5e9a634b3d4/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 426,
+  "bbox": [
+   90.0,
+   343.5,
+   504.3,
+   549.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-87-c5e9a634b3d4/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 426,
+   "bbox": [
+    90.0,
+    343.5,
+    504.3,
+    549.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。实验未涉及视蛋白表达量的检测，cAMP 通路缺乏数据支持。B．错误。视蛋白与顺视黄醛的结合不是该实验揭示的限速环节。C．正确。RGR 缺失突变使视黄醛在光照下异常积累，说明其功能是催化全反式视黄醛向顺视黄醛的转变。D．错误。视紫红质稳定性差异不是实验直接指向的机制。故答案为C。"
+}

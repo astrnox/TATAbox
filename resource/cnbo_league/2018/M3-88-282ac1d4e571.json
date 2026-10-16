@@ -1,0 +1,77 @@
+{
+ "id": "M3-88-282ac1d4e571",
+ "type": "single",
+ "question": "下图表示了生物多样性与生态系统功能之间可能的关系。对该图解读正确的是",
+ "options": {
+  "A": "根据Type A，我们应该更多的保护起到重要生态功能的物种",
+  "B": "根据 Type B，我们应该以珍稀度决定野生动植物保护上投入的多少",
+  "C": "生态系统功能与生物多样性普遍正相关",
+  "D": "在各种生态系统中所有物种都有同等重要功能"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 88 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-88-282ac1d4e571/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 300,
+  "bbox": [
+   143.9,
+   75.5,
+   451.3,
+   271.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-88-282ac1d4e571/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 300,
+   "bbox": [
+    143.9,
+    75.5,
+    451.3,
+    271.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。Type A为线性关系，功能随多样性同步变化，推不出只保护少数重要物种。B．错误。Type B是饱和曲线，与'珍稀度决定投入'无对应关系。C．正确。三种模型下生态系统功能均随生物多样性增加而上升，普遍正相关。D．错误。各模型下物种功能贡献并不相同，'所有物种同等重要'不成立。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-28-b566fd8faa83",
+ "type": "single",
+ "question": "一般真菌的生活史同植物的生物史相比有哪种特点。",
+ "options": {
+  "A": "没有有性生殖",
+  "B": "不具有双倍体",
+  "C": "减数分裂罕见",
+  "D": "具有双核期"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 28 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。真菌有有性生殖，如子囊菌的产囊丝配合、担子菌的核配与锁状联合。B．错误。真菌有双倍体阶段，如合子和担子中的双倍体核，酵母还有二倍体时期。C．错误。真菌的减数分裂并不少见，有性生殖后通常立即进行，如子囊菌在子囊中经减数分裂产生子囊孢子。D．正确。真菌普遍具有双核期（n+n），质配后两个单倍体核长期共存于同一菌丝细胞中，如子囊菌的产囊丝、担子菌的双核菌丝，这是与植物生活史相比的显著特点。故答案为D。\n【易错易混】易混：双核（n+n）不等于二倍体（2n）；真菌多为单倍体占优且双核期长，植物则孢子体（2n）世代占优。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

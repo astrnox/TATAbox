@@ -1,0 +1,48 @@
+{
+ "id": "M1-81-9d3e183491e0",
+ "type": "single",
+ "question": "下列无融合生殖现象，属于无配子生殖的是：",
+ "options": {
+  "A": "由珠心直接发育成胚",
+  "B": "由珠被细胞直接发育成胚",
+  "C": "由卵细胞直接发育成胚",
+  "D": "由助细胞直接发育成胚"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 80 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。珠心是母体（孢子体）组织，由其直接发育成胚属无孢子生殖，即不定胚。B．错误。珠被同样是孢子体组织，也属无孢子生殖。C．错误。卵细胞不经受精直接发育成胚称孤雌生殖。D．正确。无配子生殖指胚囊中助细胞、反足细胞等非配子细胞不经受精直接发育成胚，由助细胞发育成胚正属此类。故答案为D。\n【通法】通法（无融合生殖分类）：看发育起点，卵细胞→孤雌生殖；助细胞、反足细胞→无配子生殖；珠心、珠被等孢子体组织→无孢子生殖。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

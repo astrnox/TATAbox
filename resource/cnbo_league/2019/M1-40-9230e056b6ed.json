@@ -1,0 +1,47 @@
+{
+ "id": "M1-40-9230e056b6ed",
+ "type": "single",
+ "question": "视网膜中哪一类细胞能产生动作电位",
+ "options": {
+  "A": "无长突细胞",
+  "B": "双极细胞",
+  "C": "神经节细胞",
+  "D": "水平细胞",
+  "E": "视锥细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 40 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。无长突细胞属中间神经元，以局部电位活动为主。B．错误。双极细胞产生分级电位，不产生动作电位。C．正确。神经节细胞是视网膜中唯一能产生动作电位并沿视神经传导的细胞。D．错误。水平细胞做分级电位的侧向抑制。E．错误。视锥细胞将光信号转为分级电位。故答案为C。"
+}

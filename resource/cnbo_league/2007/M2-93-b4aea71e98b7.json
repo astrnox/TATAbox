@@ -1,0 +1,45 @@
+{
+ "id": "M2-93-b4aea71e98b7",
+ "type": "mtf",
+ "question": "根的中柱鞘可以直接形成下列哪些植物的结构或部位？",
+ "options": {
+  "A": "形成层、木质部",
+  "B": "韧皮部、侧根",
+  "C": "侧根、木栓形成层",
+  "D": "木栓形成层、形成层。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "93.A（×）B（×）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 93 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。中柱鞘可参与形成层的发生，但木质部由形成层向内分裂产生，不由中柱鞘直接形成。B．错误。侧根起源于中柱鞘，但韧皮部由原形成层或形成层产生，不是中柱鞘的直接产物。C．正确。侧根本就由中柱鞘细胞平周分裂产生，木栓形成层也可由中柱鞘恢复分裂形成。D．正确。中柱鞘细胞可形成木栓形成层，并参与维管形成层的建立。"
+}

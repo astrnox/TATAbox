@@ -1,0 +1,48 @@
+{
+ "id": "M4-103-8d8d6f852474",
+ "type": "single",
+ "question": "在一种四倍体中，一个基因型为Bbbb 的个体跟一个基因型为bbbb 的个体杂交，其后代的基因型比例为：",
+ "options": {
+  "A": "1﹕1",
+  "B": "1﹕2",
+  "C": "1﹕4",
+  "D": "1﹕8"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 103 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。Bbbb产生的配子中含B与不含B各占1/2（4条染色体中随机取2条，含B的概率为3/6=1/2），与bbbb（只产生b配子）杂交，后代Bbbb∶bbbb=1∶1。B．错误。1∶2的比例与配子概率不符。C．错误。1∶4不可能由该杂交产生。D．错误。1∶8同样无依据。故答案为A。\n【通法】通法（四倍体测交）：先按染色体随机分离算出亲本产生含显性基因配子的概率，再与隐性纯合亲本的配子组合，测交后代比例即等于该概率。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

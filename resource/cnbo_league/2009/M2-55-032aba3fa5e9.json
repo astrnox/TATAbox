@@ -1,0 +1,48 @@
+{
+ "id": "M2-55-032aba3fa5e9",
+ "type": "single",
+ "question": "粘液瘤病毒引进澳大利亚几年后毒力逐渐减弱，其原因是：",
+ "options": {
+  "A": "驯化",
+  "B": "辐射适应",
+  "C": "协同进化",
+  "D": "他感作用"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "病毒",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 55 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。驯化指人工饲养条件下性状的改变，不是自然界的进化机制。B．错误。辐射适应（适应辐射）指一个祖先种分化占据多种生态位，与毒力演变无关。C．正确。粘液瘤病毒与兔协同进化：毒力过强的毒株使宿主迅速死亡、自身传播机会减少，毒力较弱者传播机会多，加之兔的抗性提高，长期相互选择使病毒毒力逐渐减弱。D．错误。他感作用指植物之间通过化学物质相互影响的现象。故答案为C。\n【通法】通法（宿主-病原进化）：毒力权衡看传播，宿主死得快则传播少，自然选择因而倾向中等毒力，这是协同进化的典型例证。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

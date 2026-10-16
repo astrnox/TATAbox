@@ -1,0 +1,48 @@
+{
+ "id": "M3-38-e6a90edf120f",
+ "type": "single",
+ "question": "香蕉无籽，是因为：",
+ "options": {
+  "A": "香蕉是3 倍体植物",
+  "B": "香蕉种子很小",
+  "C": "香蕉种子不在我们所食部分",
+  "D": "香蕉种植中施加了植物激素"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 38 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。栽培香蕉为三倍体，减数分裂时同源染色体联会紊乱，不能形成正常配子，因而不结种子。B．错误。香蕉并非种子细小，而是胚珠根本未发育成种子。C．错误。食用部分为肥大的花序轴与果皮，由子房壁发育而来，与种子大小无关。D．错误。外源激素可诱导无籽果实，但香蕉的无籽由基因组倍性决定，属稳定遗传特性。故答案为A。\n【易错易混】易混：三倍体无籽（香蕉、无籽西瓜）源于染色体数目异常，激素诱导无籽（无籽番茄）源于外源生长素代替受精刺激，两者机理完全不同。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

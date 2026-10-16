@@ -1,0 +1,92 @@
+{
+ "id": "M3-54-f1c800c3cebc",
+ "type": "mtf",
+ "question": "研究者在森林中设置了隔离蝙蝠的样方和有蝙蝠的样方，三年后得到右图的结果（图中* 表示组间差异显著 (p < 0.05)）。请根据实验结果和图中数据，对以下陈述进行正误判断。",
+ "options": {
+  "A": "蝙蝠、昆虫和植物可能形成食物链，蝙蝠是次级消费者",
+  "B": "蝙蝠主要通过与昆虫竞争植物资源来减少昆虫数量",
+  "C": "蝙蝠缺失可导致该森林生态系统的初级生产力降低",
+  "D": "蝙蝠的存在有助于减轻植物的叶面积损失"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 54 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-54-f1c800c3cebc/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 10,
+  "bbox": [
+   465.8,
+   47.2,
+   549.9,
+   187.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-54-f1c800c3cebc/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 10,
+   "bbox": [
+    465.8,
+    47.2,
+    549.9,
+    187.1
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-54-f1c800c3cebc/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 10,
+   "bbox": [
+    304.9,
+    47.2,
+    466.0,
+    184.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。食物链为植物→昆虫→蝙蝠，蝙蝠捕食昆虫属于次级消费者。B．错误。蝙蝠通过捕食减少昆虫数量，并非与昆虫竞争植物资源。C．正确。蝙蝠缺失→昆虫数量上升→植物叶面积损失增加→群落初级生产力下降。D．正确。有蝙蝠样方的叶面积损失显著低于隔离蝙蝠样方，说明蝙蝠可减轻植食危害。"
+}

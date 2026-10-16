@@ -1,0 +1,48 @@
+{
+ "id": "M1-53-ade4856a2d19",
+ "type": "single",
+ "question": "在20℃条件下，将发生初始质壁分离的细胞（ΨS = -0.732 MPa）分别放入0.1mol/L 的蔗糖溶液和0.1mol/LNaCl 溶液中，当进出细胞的水分达到动态平衡时，用细胞压力探针测定细胞压力势（ΨP），推测一下哪个结果合理（提示：气体常数R（0.0083L·MPa/mol·K））",
+ "options": {
+  "A": "无法确定",
+  "B": "ΨP, 蔗糖= ΨP, NaCl",
+  "C": "ΨP, 蔗糖> ΨP, NaCl",
+  "D": "ΨP, 蔗糖< ΨP, NaCl"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 53 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。可根据渗透平衡关系推算，结果可以确定。B．错误。两种外界溶液的渗透势不同，平衡时细胞压力势必不相等。C．正确。0.1mol/L蔗糖溶液渗透势约为-0.24MPa（Ψs=-iCRT，i=1），0.1mol/L NaCl约为-0.48MPa（i≈2）。平衡时细胞水势等于外界水势，蔗糖组ΨP≈-0.24+0.732=0.49MPa，NaCl组ΨP≈-0.48+0.732=0.25MPa，蔗糖组高于NaCl组。D．错误。与计算结果相反。故答案为C。\n【通法】通法（渗透计算）：先算外界溶液渗透势Ψs=-iCRT（蔗糖i=1、NaCl i≈2），平衡时Ψ细胞=Ψ外界，再用Ψ细胞=Ψs(细胞)+ΨP反推压力势。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

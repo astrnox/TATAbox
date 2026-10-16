@@ -1,0 +1,48 @@
+{
+ "id": "M3-76-b366a985dffe",
+ "type": "single",
+ "question": "在一些多风海岛上，许多昆虫没有翅膀，导致这种无翅现象的最可能原因是：",
+ "options": {
+  "A": "遗传漂变",
+  "B": "人为捕猎",
+  "C": "自然选择导致的保护性适应",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "群体遗传",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 76 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。遗传漂变是种群基因频率的随机波动，海岛昆虫无翅是定向的适应性变化，并非随机漂变所致。B．错误。人为捕猎不构成岛屿昆虫无翅的原因。C．正确。多风海岛上，有翅个体易被风吹入海中死亡，无翅个体反而存活并繁殖，自然选择使无翅基因频率升高，是保护性适应。D．错误。C项已给出正确解释。故答案为C。\n【点睛】点睛：海岛无翅昆虫是自然选择的经典例证（风的选择作用），别误答遗传漂变，漂变是随机的、无方向的。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

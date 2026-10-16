@@ -1,0 +1,48 @@
+{
+ "id": "M2-51-85e119aa1247",
+ "type": "single",
+ "question": "下列定律或法则中描述植物种内竞争随密度增高而影响到植株存活率的是",
+ "options": {
+  "A": "最后产量恒值法则",
+  "B": "阿利氏法则",
+  "C": "贝格曼法则",
+  "D": "Yoda 氏-3/2 自疏法则"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 51 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。最后产量恒值法则说的是高密度下最终总产量趋于恒定，与个体存活率无关。B．错误。阿利氏法则描述种群密度对聚集与社群行为的利弊，不涉及自疏存活率。C．错误。贝格曼法则指恒温动物个体大小随纬度增高的现象，与密度无关。D．正确。Yoda氏-3/2自疏法则指出植株密度增高时为维持资源恒定，平均个体质量与密度呈-3/2斜率关系，密度达到阈值即按比例死亡，直接影响存活率。故答案为D。\n【点睛】点睛：见'密度—存活率—自疏'三词即-3/2自疏法则，见'总产量恒定'才是最后产量恒值法则。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

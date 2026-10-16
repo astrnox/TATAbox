@@ -1,0 +1,77 @@
+{
+ "id": "M2-59-f930c77958ff",
+ "type": "single",
+ "question": "可以根据目前的这些数据进行曲线拟合来推算该地区灯蛾的物种总数：",
+ "options": {
+  "A": "正确",
+  "B": "错误"
+ },
+ "answer": {
+  "A": true,
+  "B": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 59 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "58-61",
+  "stimulus": "下图所示是一项在巴西利用灯诱研究灯蛾科物种多样性的主要结果。横坐标是所"
+ },
+ "image": {
+  "file": "assets/questions/M2-59-f930c77958ff/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 252,
+  "bbox": [
+   204.5,
+   545.0,
+   389.1,
+   691.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-59-f930c77958ff/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 252,
+   "bbox": [
+    204.5,
+    545.0,
+    389.1,
+    691.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。依据已有的物种累积数据，可采用物种累积曲线或稀疏曲线（如Chao1估计量）进行拟合外推，推算该地区灯蛾的物种总数。B．错误。现有数据足以支持曲线拟合与外推估计，该判断不成立。故答案为A。"
+}

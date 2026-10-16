@@ -1,0 +1,48 @@
+{
+ "id": "M4-65-3536ee3c1889",
+ "type": "single",
+ "question": "虫媒花与传粉昆虫的相互适应性是下列哪种方式进化的结果？",
+ "options": {
+  "A": "趋同进化",
+  "B": "平行进化",
+  "C": "协同进化",
+  "D": "重复进化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 65 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。趋同进化是亲缘较远的类群在相似环境下形成相似性状，如鲸与鱼类的流线型体型，不涉及两个物种间的相互适应。B．错误。平行进化是亲缘相近的类群在相似条件下沿相似方向演化，同样不含彼此互为选择压力的含义。C．正确。花的花色、花形、花蜜与传粉昆虫的口器、访花行为互为选择压力、相互塑造、彼此适应，正是协同进化（共进化）的结果。D．错误。重复进化是不同类群独立地重复演化出相似结构，不含物种间相互作用的含义。故答案为C。\n【点睛】点睛：判协同进化的抓手是两个物种互为选择压力、彼此相互适应。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

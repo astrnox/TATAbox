@@ -1,0 +1,48 @@
+{
+ "id": "M3-42-c4f77d9b942a",
+ "type": "single",
+ "question": "输氧时要加入5%的二氧化碳，因为5%二氧化碳是",
+ "options": {
+  "A": "呼吸刺激剂",
+  "B": "人体的需要",
+  "C": "神经兴奋剂",
+  "D": "血管软化剂"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 42 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。CO2是调节呼吸最重要的化学因素，动脉血CO2分压升高可刺激中枢与外周化学感受器，使呼吸加深加快；输氧时混入5%的CO2即用作呼吸刺激剂，防止过度通气引起的呼吸抑制。B．错误。人体代谢不断产生CO2，无需由外界补充。C．错误。CO2不是神经兴奋剂，浓度过高反而抑制呼吸中枢。D．错误。'血管软化剂'没有生理学依据。故答案为A。\n【点睛】点睛：呼吸调节的第一化学因素是CO2，缺氧仅在严重时才兴奋呼吸。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-42-b7272b703bd6",
+ "type": "single",
+ "question": "某小孩儿喜欢晒太阳，但有时却发生抽搐，那么应建议他服用哪种物质防止抽搐发生？",
+ "options": {
+  "A": "维生素A",
+  "B": "生理盐水",
+  "C": "糖水",
+  "D": "钙片"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 42 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。维生素A与暗适应和上皮组织健康有关，缺乏导致夜盲，与抽搐无关。B．错误。生理盐水只能补钠补水，不能纠正低血钙。C．错误。糖水只补充能量，与神经肌肉兴奋性无关。D．正确。血钙偏低使神经肌肉兴奋性升高，引起手足抽搐；患儿常晒太阳，皮肤合成维生素D充足，说明缺的是钙，宜服钙片。\n【通法】通法（抽搐与血钙）：低血钙→神经肌肉兴奋性升高→抽搐；钙还参与凝血与成骨，维生素D促钙吸收，补钙还是补D要看哪一环缺。故答案为D。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

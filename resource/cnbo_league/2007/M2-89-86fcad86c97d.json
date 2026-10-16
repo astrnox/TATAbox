@@ -1,0 +1,48 @@
+{
+ "id": "M2-89-86fcad86c97d",
+ "type": "single",
+ "question": "盐碱地土壤对非盐碱植物的危害主要是因为它导致植物：",
+ "options": {
+  "A": "生理干旱",
+  "B": "同化速度加快",
+  "C": "呼吸作用增强",
+  "D": "水分消耗过快"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 89 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。盐碱土溶液渗透势很低，非盐碱植物根系难以吸水甚至外渗失水，土壤中虽有水却不能被利用，形成生理性干旱。B．错误。盐害下植物吸水不足、气孔关闭，同化速度减慢而非加快。C．错误。呼吸增强不是盐碱危害的主要表现。D．错误。蒸腾过快会导致萎蔫，而盐碱土恰恰使植物吸水受阻、蒸腾受抑。故答案为A。\n【易错易混】易混：盐碱之害是'有水吸不到'（渗透胁迫致生理干旱），与土壤缺水的旱害机理不同，别混为一谈。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

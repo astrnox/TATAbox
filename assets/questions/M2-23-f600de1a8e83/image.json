@@ -1,0 +1,20 @@
+{
+ "id": "M2-23-f600de1a8e83",
+ "figures": [
+  {
+   "file": "assets/questions/M2-23-f600de1a8e83/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 33,
+   "bbox": [
+    239.9,
+    111.2,
+    372.3,
+    187.8
+   ],
+   "kind": "vector"
+  }
+ ]
+}

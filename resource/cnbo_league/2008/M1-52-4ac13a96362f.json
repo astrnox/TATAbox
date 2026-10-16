@@ -1,0 +1,48 @@
+{
+ "id": "M1-52-4ac13a96362f",
+ "type": "single",
+ "question": "（接上题）如果该女士的第一个儿子患DMD,那么她第二个儿子患病的概率为",
+ "options": {
+  "A": "0",
+  "B": "12.5%",
+  "C": "25%",
+  "D": "50%"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 52 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。第一个儿子患病已证明该女士是携带者，其后的儿子仍有患病风险。B．错误。12.5%来自把传递概率与性别概率重复连乘，无依据。C．错误。25%是其兄患病、尚未生育时该女士为携带者（1/2）乘传子概率（1/2）的结果，前提已变。D．正确。X连锁隐性致病基因随X染色体传递，携带者母亲每次生育儿子各有1/2概率得到致病X而患病，故第二个儿子患病概率为50%。故答案为D。\n【点睛】点睛：已出生的患儿把母亲的携带状态由'可能'锁定为'肯定'，此后男孩风险即1/2，各次生育互不影响。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

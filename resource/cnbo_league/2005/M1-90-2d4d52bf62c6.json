@@ -1,0 +1,45 @@
+{
+ "id": "M1-90-2d4d52bf62c6",
+ "type": "single",
+ "question": "从栽培木耳的木头上采摘下的新鲜木耳，其菌丝体是：",
+ "options": {
+  "A": "单核丝状体",
+  "B": "双核丝状体",
+  "C": "多核丝状体",
+  "D": "无隔丝状体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 90 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。单核（初生）菌丝由担孢子萌发形成，存在时间短，随后即进行质配。B．正确。木耳属担子菌，木头基质中生长的菌丝体为双核（次生）菌丝，由两条初生菌丝质配而成，每个细胞含两个遗传型不同的核。C．错误。多核无隔菌丝是毛霉、根霉等低等真菌的特征，木耳菌丝有隔。D．错误。木耳菌丝具隔膜，不属于无隔丝状体，故答案为B。"
+}

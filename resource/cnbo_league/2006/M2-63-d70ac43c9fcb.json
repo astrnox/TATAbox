@@ -1,0 +1,48 @@
+{
+ "id": "M2-63-d70ac43c9fcb",
+ "type": "single",
+ "question": "上题（第62 题）中如果换成自交不育的向日葵，岛上原有2 株杂合体，且它们的后代个体间均可以两两自由杂交，三代后F3 的有色花与无色花的比例为：",
+ "options": {
+  "A": "3：1",
+  "B": "15：7",
+  "C": "9：7",
+  "D": "15：9"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 63 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。向日葵自交不育只能随机杂交，两株Cc杂交得F1为1CC:2Cc:1cc，基因频率p=q=1/2，随机交配一代即达哈迪-温伯格平衡，此后各代恒为1:2:1，有色比无色＝3:1。B．错误。15:7是两对基因互作之比，与本题无关。C．错误。9:7是连续自交使杂合子锐减的结果，随机交配并不降低杂合度。D．错误。15:9同样不是随机交配的分离比。故答案为A。\n【易错易混】易混：随机交配不改变基因型频率（合子即1:2:1并保持），连续自交才使杂合率逐代减半，两套算法勿混用。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-84-00b36c7a80cf",
+ "type": "single",
+ "question": "微管参与组成的结构包括",
+ "options": {
+  "A": "应力纤维",
+  "B": "微绒毛",
+  "C": "伪足",
+  "D": "轴突"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 84 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。应力纤维由微丝（肌动蛋白）与肌球蛋白组装而成。B．错误。微绒毛的核心是微丝束。C．错误。伪足主要由微丝聚合推动膜形成（如片状伪足），胞质微管参与者少。D．正确。轴突内微管平行排列，构成快速轴浆运输的轨道，是微管参与的典型结构。故答案为D。\n【易错易混】易混：'微'字辈别认错——微丝搭应力纤维与微绒毛，微管搭纺锤体、纤毛鞭毛与轴突，中等纤维只管抗机械张力。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

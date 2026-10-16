@@ -1,0 +1,50 @@
+{
+ "id": "M4-109-6ff84ba78eb2",
+ "type": "single",
+ "question": "感染绦虫的猪肉被称为“米粒肉”，这些“米粒”是：",
+ "options": {
+  "A": "绦虫的卵",
+  "B": "六钩蚴",
+  "C": "母胞蚴",
+  "D": "囊尾蚴",
+  "E": "毛蚴"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 109 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 109,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。绦虫的卵不形成米粒状结构。B．错误。六钩蚴是虫卵内的早期幼虫，不在猪肉中聚集成米粒。C．错误。母胞蚴是吸虫生活史中的幼虫期，与本题无关。D．正确。米粒肉中的米粒是猪体内的囊尾蚴（囊虫），即绦虫的幼虫期。E．错误。毛蚴是吸虫的幼虫期，与本题无关。故答案为D。\n【点睛】点睛：绦虫生活史各期别混——卵、六钩蚴、囊尾蚴；米粒肉=猪肉中的囊尾蚴，米猪肉就是囊虫肉。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-28-7f49cc642ffe",
+ "type": "single",
+ "question": "大熊猫的单倍体基因组有多少条染色体，大约有多少bp？",
+ "options": {
+  "A": "46；3,000,000,000bp",
+  "B": "42；2,500,000,000bp",
+  "C": "23；3,000,000,000bp",
+  "D": "21；2,500,000,000bp"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 28 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。46 条是人类等物种的二倍体染色体数，且单倍体应减半。B．错误。42 是大熊猫的二倍体数，单倍体应为 21。C．错误。23 是人类单倍体数，与大熊猫不符。D．正确。大熊猫 2n=42，单倍体为 21 条染色体，基因组大小约 2.5 Gb。故答案为D。\n【易错易混】易混：单倍体与二倍体别搞混——大熊猫 2n=42，单倍体 n=21；基因组大小约 2.5 Gb 是单套基因组的碱基数。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

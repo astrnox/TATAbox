@@ -1,0 +1,50 @@
+{
+ "id": "M1-106-0729b5b82fac",
+ "type": "mtf",
+ "question": "下面哪（种）些蛋白质上的氨基酸残基可能被修饰？",
+ "options": {
+  "A": "丙氨酸",
+  "B": "丝氨酸",
+  "C": "苯丙氨酸",
+  "D": "甘氨酸",
+  "E": "赖氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 6 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。丙氨酸侧链是甲基，一般不发生共价修饰。B．正确。丝氨酸的羟基可被磷酸化，是信号转导中最常见的修饰之一。C．错误。苯丙氨酸为非极性芳香侧链，通常不被修饰。D．错误。甘氨酸侧链只有一个氢，通常无侧链修饰。E．正确。赖氨酸的ε-氨基可被甲基化、乙酰化或泛素化，是组蛋白修饰的核心位点。\n【通法】通法（氨基酸修饰识别）：带羟基的Ser、Thr、Tyr易磷酸化，带氨基的Lys易甲基化、乙酰化和泛素化；侧链为H或烷基的Gly、Ala通常不修饰。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

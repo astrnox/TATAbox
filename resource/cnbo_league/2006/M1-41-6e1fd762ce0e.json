@@ -1,0 +1,45 @@
+{
+ "id": "M1-41-6e1fd762ce0e",
+ "type": "single",
+ "question": "三联密码子中的哪一个碱基突变对蛋白质功能的改变可能最小：",
+ "options": {
+  "A": "第一个",
+  "B": "第二个",
+  "C": "第三个",
+  "D": "都一样"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 41 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。密码子第一位碱基参与反密码子识别，突变常导致氨基酸性质改变，影响较大。B．错误。第二位碱基与氨基酸疏水性质关系最密切，突变最容易改变氨基酸性质。C．正确。遗传密码具有简并性，第三位为摇摆位，突变多为同义突变，仍编码同一氨基酸，对蛋白质功能影响最小。D．错误。三个位置的突变效应并不相同，第三位最不敏感。故答案为C。"
+}

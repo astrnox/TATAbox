@@ -1,0 +1,275 @@
+/* =============================================================
+   TATABOX — 题目配图统一渲染与图片查看器样式
+   配套 js/core/figure-viewer.js（全站唯一图片展示入口）
+   ============================================================= */
+
+/* ---------- 1. 题目配图（列表内嵌图） ---------- */
+
+/* 标注色板 token：figure-viewer.js 通过 getComputedStyle 读取，
+   JS 内不出现硬编码色值（设计审计棘轮要求） */
+:root {
+  --bq-annot-red: #ff3b30;
+  --bq-annot-yellow: #ffd60a;
+  --bq-annot-green: #34c759;
+  --bq-annot-blue: #0a84ff;
+  --bq-annot-white: #ffffff;
+}
+
+.bq-figure {
+  margin: 14px auto;
+  text-align: center;
+}
+
+.bq-figure-img {
+  max-width: 100%;
+  max-height: min(60vh, 560px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid var(--border-light, #e3e8e4);
+  background: var(--surface-tertiary, #f6f8f7);
+  padding: 8px;
+  box-shadow: var(--shadow-md, 0 2px 8px rgba(0, 0, 0, .08));
+  display: block;
+  margin: 0 auto;
+  cursor: zoom-in;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+
+.bq-figure-img:hover {
+  box-shadow: var(--shadow-lg, 0 8px 24px rgba(0, 0, 0, .14));
+}
+
+/* 解析批注图（utils.renderExplanationWithImages 输出）也纳入统一缩放 */
+img.exp-annotated[data-bq-zoom] {
+  cursor: zoom-in;
+}
+
+/* 加载中占位 */
+.bq-figure-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px auto;
+  padding: 10px 16px;
+  border: 1px dashed var(--border-light, #e3e8e4);
+  border-radius: 10px;
+  background: var(--surface-tertiary, #f6f8f7);
+  color: var(--text-muted, #7c8a80);
+  font-size: .85rem;
+}
+
+/* 加载失败占位：可点击重试 */
+.bq-figure-failed {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 14px auto;
+  padding: 16px 22px;
+  border: 1px dashed var(--border-light, #e3e8e4);
+  border-radius: 12px;
+  background: var(--surface-tertiary, #f6f8f7);
+  color: var(--text-muted, #7c8a80);
+  font-size: .85rem;
+  cursor: pointer;
+}
+
+.bq-figure-failed:hover {
+  border-color: var(--color-sage, #5a7d5c);
+  color: var(--color-sage, #5a7d5c);
+}
+
+.bq-figure-failed .bq-figure-failed-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.bq-figure-failed .bq-figure-failed-hint {
+  font-size: .78rem;
+  opacity: .8;
+}
+
+/* ---------- 2. 查看器自定义工具条（叠加在 Viewer.js 容器上） ---------- */
+.bq-iv-toolbar {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  background: rgba(20, 26, 22, .82);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .38);
+  max-width: calc(100vw - 24px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bq-iv-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #f4f7f5;
+  font-size: 13px;
+  line-height: 1;
+  padding: 9px 11px;
+  border-radius: 9px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+
+.bq-iv-btn:hover {
+  background: rgba(255, 255, 255, .16);
+}
+
+.bq-iv-btn[disabled] {
+  opacity: .38;
+  cursor: not-allowed;
+}
+
+.bq-iv-btn.bq-iv-btn-active {
+  background: var(--color-sage, #5a7d5c);
+  color: #fff;
+}
+
+.bq-iv-sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, .22);
+  margin: 0 3px;
+  flex: 0 0 auto;
+}
+
+.bq-iv-title {
+  color: rgba(244, 247, 245, .72);
+  font-size: 12px;
+  max-width: 42vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- 3. 标注层 ---------- */
+.bq-annot-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 16px 92px;
+  background: rgba(10, 14, 12, .96);
+}
+
+.bq-annot-frame {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bq-annot-img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 190px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+.bq-annot-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+  border-radius: 2px;
+}
+
+.bq-annot-toolbar {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  background: rgba(28, 34, 30, .92);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .45);
+  max-width: calc(100vw - 24px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bq-annot-swatches {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bq-annot-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, .45);
+  cursor: pointer;
+  padding: 0;
+}
+
+.bq-annot-swatch.bq-annot-swatch-active {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .3);
+}
+
+.bq-annot-hint {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(28, 34, 30, .88);
+  color: rgba(244, 247, 245, .88);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* ---------- 4. 移动端 ---------- */
+@media (max-width: 640px) {
+  .bq-iv-toolbar,
+  .bq-annot-toolbar {
+    bottom: 10px;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .bq-iv-btn {
+    padding: 10px 9px;
+    font-size: 14px;
+  }
+
+  .bq-iv-title {
+    display: none;
+  }
+
+  .bq-annot-img {
+    max-height: calc(100vh - 170px);
+  }
+}

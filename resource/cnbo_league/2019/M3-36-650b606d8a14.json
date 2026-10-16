@@ -1,0 +1,39 @@
+{
+ "id": "M3-36-650b606d8a14",
+ "type": "single",
+ "question": "（删除）下列关于两栖动物的感觉器官描述，正确的是",
+ "options": {
+  "A": "与鱼类相比，出现了中耳，中耳由中耳腔、鼓膜和耳柱骨组成，耳柱骨是由鱼类舌弓上的舌颌骨演变而来",
+  "B": "出现了内鼻孔和犁鼻器，犁鼻器是鼻腔腹外侧的一对盲囊，能够感知化学物质",
+  "C": "具有哈氏腺，分泌油性物质润滑眼球，且上眼脸可活动",
+  "D": "水生的幼体具有侧线，结构和功能与鱼类相似，变态后在成体中消失"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 36 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

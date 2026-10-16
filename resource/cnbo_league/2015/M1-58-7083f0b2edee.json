@@ -1,0 +1,45 @@
+{
+ "id": "M1-58-7083f0b2edee",
+ "type": "single",
+ "question": "在植物渗透胁迫的研究中，通常使用下列哪项模拟细胞外渗透势的变化：",
+ "options": {
+  "A": "甘露醇",
+  "B": "氯化钠",
+  "C": "乙醇",
+  "D": "二甲基亚砜"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 58 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。甘露醇是不被植物代谢、难以透过细胞膜的惰性渗透剂，加入培养液可单纯降低外界渗透势，是模拟渗透胁迫的常用试剂。B．错误。NaCl除渗透效应外还有离子毒害，不能单纯模拟渗透势变化。C．错误。乙醇可透过细胞膜并具有生物毒性，无法维持稳定的外渗渗透势。D．错误。二甲基亚砜可透过细胞膜并改变膜性质，不是合适的渗透胁迫模拟剂。故答案为A。"
+}

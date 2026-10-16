@@ -1,0 +1,45 @@
+{
+ "id": "M2-09-5ba8c477b8ea",
+ "type": "single",
+ "question": "禾谷类作物的花粉与柱头的生活力时间比较 。",
+ "options": {
+  "A": "相同",
+  "B": "花粉长于柱头",
+  "C": "以上都不对",
+  "D": "柱头长于花粉"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 9 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。花粉与柱头的生活力持续时间明显不同。B．错误。禾谷类花粉寿命较短，一般仅数小时至一两天，并不长于柱头。C．错误。二者长短已有明确比较，'以上都不对'不成立。D．正确。禾谷类作物花粉生活力通常只有数小时至一两天，而柱头在开花前后可保持受精能力数天，故柱头生活力长于花粉，杂交授粉须按花粉寿命来安排。故答案为D。"
+}

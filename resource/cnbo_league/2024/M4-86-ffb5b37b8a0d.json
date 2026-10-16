@@ -1,0 +1,48 @@
+{
+ "id": "M4-86-ffb5b37b8a0d",
+ "type": "multiple",
+ "question": "研究者发现一种新蛋白F，怀疑它是一个转录因子，该蛋白的下列性质能够为此提供证据的有：",
+ "options": {
+  "A": "F 蛋白含有半胱氨酸和组氨酸",
+  "B": "F 蛋白是一个锌指蛋白；",
+  "C": "F 蛋白定位于细胞核中；",
+  "D": "F 蛋白能够识别并结合核小体。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 86 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。半胱氨酸与组氨酸是普通蛋白常见氨基酸，不构成转录因子的特异性证据。B．正确。锌指结构是转录因子常见的DNA 结合结构域。C．正确。转录因子需入核作用于染色质，核定位是其必要条件。D．正确。转录因子识别并结合DNA（核小体上的 DNA），该性质直接支持其转录调控功能。故答案为BCD。\n【点睛】点睛：鉴定转录因子看三条——有DNA 结合结构域（锌指等）、定位于细胞核、能结合染色质/DNA。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

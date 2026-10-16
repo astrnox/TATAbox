@@ -1,0 +1,45 @@
+{
+ "id": "M3-78-6d06ae003858",
+ "type": "single",
+ "question": "享用共同资源的两个物种体重相似，其中高代谢率者与低代谢率者相比，下列叙述正确的是：",
+ "options": {
+  "A": "内禀增长率小",
+  "B": "生长速率慢",
+  "C": "世代周期长",
+  "D": "种群波动大"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 78 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高代谢率者对资源需求与周转更快，内禀增长率通常更大而非更小。B．错误。高代谢率者生长发育更快，生长速率慢与之矛盾。C．错误。高代谢率者生活史节奏快，世代周期更短而非更长。D．正确。高代谢率物种对资源波动更敏感，资源稍有变化即引起种群数量大幅度起落，故种群波动大。故答案为D。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-94-0a224d81213f",
+ "type": "single",
+ "question": "体循环中，当血液流经下列哪类血管时，流速降幅最大：",
+ "options": {
+  "A": "大动脉",
+  "B": "微动脉",
+  "C": "毛细血管",
+  "D": "微静脉"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 94 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。大动脉管壁弹性好，血流速度虽快但压力下降有限。B．正确。微动脉属阻力血管，其平滑肌收缩使外周阻力骤增，是体循环中血压与流速下降最显著的部位。C．错误。毛细血管总截面积最大、流速最慢，但该处以交换为主，单位路程上的压降不如微动脉处显著。D．错误。微静脉汇集毛细血管血流，流速已低，降幅有限。故答案为B。\n【点睛】点睛：体循环的压力与流速'跳水点'在微动脉（阻力血管），毛细血管是'最慢点'，两点别混。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

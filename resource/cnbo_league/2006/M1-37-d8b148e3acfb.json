@@ -1,0 +1,45 @@
+{
+ "id": "M1-37-d8b148e3acfb",
+ "type": "single",
+ "question": "蔗糖在常温下很稳定，这是因为：",
+ "options": {
+  "A": "蔗糖需要较高的活化能",
+  "B": "蔗糖是天然防腐剂",
+  "C": "蔗糖处于一种低能级状态",
+  "D": "葡萄糖不易同其他化合物反应"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 37 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。蔗糖糖苷键水解的活化能较高，室温下反应速率极低，故表现稳定，属动力学稳定。B．错误。蔗糖不是天然防腐剂；浓糖液防腐靠降低水活度，与其化学稳定性无关。C．错误。蔗糖水解产物能量更低，蔗糖并非处于低能级状态，其稳定源于动力学而非热力学因素。D．错误。葡萄糖的醛基可参与美拉德反应等多种反应，与蔗糖的稳定无关。故答案为A。"
+}

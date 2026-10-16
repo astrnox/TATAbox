@@ -1,0 +1,48 @@
+{
+ "id": "M3-81-21bbbfe54f79",
+ "type": "multiple",
+ "question": "人类自工业革命以来的活动对环境的影响可成立一个新的地质时代，即人类世（Anthropocene）。下列哪些属于人类世的代表性特征",
+ "options": {
+  "A": "人类和野生动物疾病传播加剧",
+  "B": "外来物种入侵",
+  "C": "栖息地退化和丧失",
+  "D": "气候变化"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 81 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。人类活动使病原体与携带者随贸易旅行全球扩散，人畜共患病传播加剧。B．正确。全球化贸易使外来物种被有意无意引入并逸生，生物入侵空前加剧。C．正确。农业开垦、城市扩张与采伐造成栖息地大面积退化和丧失。D．正确。化石燃料燃烧改变大气成分，引起全球气候变化。四项均为人类世的代表性特征。故答案为ABCD。\n【通法】通法（人类世识别）：抓住'工业革命以来人类主导'的四条线索——气候、栖息地、物种组成（入侵与疾病），线索各自成立时全选。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

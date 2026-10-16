@@ -1,0 +1,45 @@
+{
+ "id": "M3-33-513256a2735b",
+ "type": "single",
+ "question": "下列哪个器官不具有排泄功能：",
+ "options": {
+  "A": "肝脏",
+  "B": "肾脏",
+  "C": "唾液腺",
+  "D": "皮肤"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 33 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不具有排泄功能的一项，判断词指该选项是否合题意。A．错误。肝脏表述成立，它将血红蛋白分解产生的胆红素、胆固醇等随胆汁排出，有排泄功能。B．错误。肾脏表述成立，是排出尿素、尿酸、水和无机盐的主要排泄器官。C．正确。唾液腺的分泌主要参与消化和湿润口腔，不承担排出代谢终产物的功能，该表述不成立，正是应选项。D．错误。皮肤表述成立，汗腺可排出水、尿素和无机盐。故答案为C。"
+}

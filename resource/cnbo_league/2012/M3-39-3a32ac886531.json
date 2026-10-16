@@ -1,0 +1,48 @@
+{
+ "id": "M3-39-3a32ac886531",
+ "type": "single",
+ "question": "适合度是指",
+ "options": {
+  "A": "动物单一行为的适应性",
+  "B": "动物调整自己的行为以适合于生活在当时的环境",
+  "C": "动物的总体繁殖成功性",
+  "D": "最适合动物生活习性、满足营养需求的食物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 39 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。单一行为的适应性只是局部表现，不能概括适合度。B．错误。调整行为以适应环境属于行为可塑性，是提高适合度的手段而非适合度本身。C．正确。适合度指个体将其基因传递给后代的相对成功度，即总体繁殖成功性，包含存活与繁殖两个方面。D．错误。食物是否合适只影响取食效率，是影响适合度的因素而非定义。故答案为C。\n【通法】通法（适合度的判据）：适合度等于相对繁殖成功（后代数乘以存活率），凡把'行为适应、取食效率、体能强弱'当定义的选项一律排除。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

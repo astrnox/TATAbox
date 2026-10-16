@@ -1,0 +1,45 @@
+{
+ "id": "M1-13-3f29292e0ef3",
+ "type": "single",
+ "question": "真菌与细菌存在一系列的差异，其中差异最不明显的是：",
+ "options": {
+  "A": "有性生殖方式；",
+  "B": "细胞壁结构；",
+  "C": "鞭毛结构；",
+  "D": "细胞膜中磷脂的化学性质。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 13 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。真菌可进行有性生殖形成子囊或担子，细菌无有性生殖，差异明显。B．错误。真菌细胞壁成分为几丁质，细菌为肽聚糖，差异显著。C．错误。真菌鞭毛为 9+2 微管结构，细菌鞭毛由鞭毛蛋白构成，结构完全不同。D．正确。真菌与细菌的细胞膜均以磷脂双分子层为基本骨架，磷脂的化学性质最为接近，差异最不明显。故答案为D。"
+}

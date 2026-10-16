@@ -1,0 +1,45 @@
+{
+ "id": "M1-05-8050351b57a6",
+ "type": "single",
+ "question": "线粒体呼吸链复合物I 位于线粒体内膜，是呼吸链中最重要的蛋白复合体之一，以下关于复合物I 的叙述正确的是：",
+ "options": {
+  "A": "将电子从NADH 传递至细胞色素c；",
+  "B": "将电子从NADH 传递至辅酶Q；",
+  "C": "是线粒体膜中移动的电子载体；",
+  "D": "不含铁硫中心。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 5 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。将电子传至细胞色素 c 的是复合物Ⅳ，复合物Ⅰ不直接作用于细胞色素 c。B．正确。复合物Ⅰ（NADH:辅酶 Q 氧化还原酶）将电子从 NADH 传递给辅酶 Q，生成还原型泛醌。C．错误。复合物Ⅰ是镶嵌在内膜上的大分子复合体，可移动的电子载体是辅酶 Q 与细胞色素 c。D．错误。复合物Ⅰ含黄素单核苷酸与多个铁硫中心，是其传递电子的基础。故答案为B。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-81-efe49b95e423",
+ "type": "single",
+ "question": "绝大多数细菌的直径为：",
+ "options": {
+  "A": "1～10 毫米",
+  "B": "1～10 微米",
+  "C": "1-10 纳米",
+  "D": "10 毫米以上"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 81 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。毫米级肉眼可见，绝大多数细菌远小于此。B．正确。绝大多数细菌直径在 1～10 微米（多为 0.5～5 微米），须用光学显微镜观察。C．错误。纳米级是病毒和生物大分子的尺度，细菌远大于此。D．错误。10 毫米以上属肉眼可见的大型结构，细菌不可能达到。故答案为B。"
+}

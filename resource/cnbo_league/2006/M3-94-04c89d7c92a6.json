@@ -1,0 +1,48 @@
+{
+ "id": "M3-94-04c89d7c92a6",
+ "type": "single",
+ "question": "胎盘是由母体子宫内膜与胎儿的下列哪部分结合而成",
+ "options": {
+  "A": "绒毛膜",
+  "B": "尿囊",
+  "C": "绒毛膜与尿囊",
+  "D": "羊膜"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 94 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。绒毛膜参与胎盘构成，但仅列绒毛膜并不完整，尿囊同样参与其中。B．错误。尿囊单独也不是胎盘的全部组成成分。C．正确。胎儿的绒毛膜绒毛与富含血管的尿囊组织共同与母体子宫内膜紧密结合，构成胎盘，完成母胎物质交换。D．错误。羊膜包被胚胎并围成羊水腔，起保护作用，不参与胎盘形成。故答案为C。\n【通法】通法（胎盘的来源）：母体方＝子宫内膜（蜕膜），胎儿方＝绒毛膜＋尿囊，二者共同构成胎盘，羊膜只负责保护。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

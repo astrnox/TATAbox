@@ -1,0 +1,45 @@
+{
+ "id": "M1-91-1a733131ae3d",
+ "type": "multiple",
+ "question": "真核细胞线粒体内膜电子传递链上的电子传递导致：",
+ "options": {
+  "A": "内膜外侧氢离子浓度比内膜内侧小",
+  "B": "内膜内侧氢离子浓度比内膜外侧小",
+  "C": "内膜外侧带更多负电荷",
+  "D": "内膜外侧带更多正电荷"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 91 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。电子传递释放的能量将质子泵入膜间隙，使内膜外侧氢离子浓度高于内膜内侧，该说法颠倒。B．正确。质子被泵出至膜间隙，故内膜内侧（基质侧）氢离子浓度比外侧小。C．错误。外侧因H+积累带更多正电荷而非负电荷。D．正确。内膜两侧因质子梯度形成膜电位，外侧（膜间隙侧）带更多正电荷。故答案为BD。"
+}

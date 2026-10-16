@@ -1,0 +1,39 @@
+{
+ "id": "M4-01-a4b2e55e3d6d",
+ "type": "single",
+ "question": "下列不属于真核生物基因组DNA 特点的是：",
+ "options": {
+  "A": "大部分为非编码序列；",
+  "B": "含有大量重复序列，例如高度重复的卫星DNA；",
+  "C": "功能相关的基因串联在一起，转录产生一条mRNA 链；",
+  "D": "基因组的完整复制依赖于逆转录。"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 1 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

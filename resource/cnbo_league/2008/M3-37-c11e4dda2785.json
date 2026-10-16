@@ -1,0 +1,45 @@
+{
+ "id": "M3-37-c11e4dda2785",
+ "type": "single",
+ "question": "以下不属于鸟类的求偶行为的是",
+ "options": {
+  "A": "行为炫耀",
+  "B": "释放性信息素",
+  "C": "改造环境",
+  "D": "鸣叫或发出其他声响"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 37 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不属于鸟类求偶行为的一项，判断词指该选项是否合题意。A．错误。行为炫耀（展示羽色、舞姿等）是鸟类典型的求偶炫耀，表述成立。B．正确。鸟类的化学通讯不发达，求偶主要依靠视觉和听觉信号，释放性信息素不是鸟类的求偶方式，正是应选项。C．错误。园丁鸟等修建并装饰求偶亭，属于改造环境的求偶行为，表述成立。D．错误。鸣唱和其他声响是鸟类求偶通讯的重要形式，表述成立。故答案为B。"
+}

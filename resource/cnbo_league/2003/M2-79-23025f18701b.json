@@ -1,0 +1,48 @@
+{
+ "id": "M2-79-23025f18701b",
+ "type": "single",
+ "question": "古生代中期：",
+ "options": {
+  "A": "在动物中，以鱼类为最盛",
+  "B": "在动物中，以爬行类为最盛",
+  "C": "在植物中，以裸子植物为最盛",
+  "D": "在植物中，蕨类植物尚未出现"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 79 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。古生代中期（泥盆纪）鱼类空前繁盛，素有'鱼类时代'之称。B．错误。爬行类在古生代后期才兴起，到中生代才占统治地位。C．错误。裸子植物繁盛于中生代，古生代中期的植物界以蕨类为主。D．错误。蕨类植物在古生代中期已经出现并渐趋繁盛，晚古生代更形成大片蕨类森林。故答案为A。\n【通法】通法（生物演化时序）：古生代早期海生无脊椎、中期鱼类、后期两栖类与蕨类；中生代爬行类与裸子植物；新生代哺乳类与被子植物，按此对号即可。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

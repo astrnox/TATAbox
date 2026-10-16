@@ -1,0 +1,47 @@
+{
+ "id": "M4-53-cda24f4ae86d",
+ "type": "single",
+ "question": "某物种的基因组草图是指",
+ "options": {
+  "A": "高密度连锁图",
+  "B": "物理图",
+  "C": "遗传图",
+  "D": "测定4-5倍基因组所得结果",
+  "E": "测定l0倍基因组所得结果"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 53 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高密度连锁图是遗传图的一种，不等于基因组草图。B．错误。物理图是测序过程的中间产物，不是草图本身的定义。C．错误。遗传图同属作图成果，不构成草图。D．正确。基因组草图是用重叠群拼接覆盖基因组大部分序列、一般达4至5倍覆盖度的初步结果，质量低于完成图。E．错误。10倍覆盖通常用于提高准确度，不是草图的通行定义。故答案为D。"
+}

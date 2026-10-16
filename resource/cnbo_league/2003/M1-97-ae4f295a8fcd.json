@@ -1,0 +1,45 @@
+{
+ "id": "M1-97-ae4f295a8fcd",
+ "type": "single",
+ "question": "温室效应产生的主要原因是：",
+ "options": {
+  "A": "环绕地球大气的CO2 浓度上升",
+  "B": "地球表面的能量反射",
+  "C": "太阳辐射能量增加",
+  "D": "太阳黑子的作用"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 97 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。化石燃料大量燃烧和植被破坏使大气CO2等温室气体浓度上升，强烈吸收地面长波辐射并以逆辐射还给地面，是温室效应增强的主要原因。B．错误。地表反射增强意味着地面获能减少，不会导致升温。C．错误。近代太阳辐射总量并无显著增加。D．错误。太阳黑子活动约11年为一周期，与全球持续增暖无对应关系。故答案为A。"
+}

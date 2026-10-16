@@ -1,0 +1,45 @@
+{
+ "id": "M1-39-e53ac0bf4019",
+ "type": "single",
+ "question": "下列关于SOS 反应的描述，哪项是正确的？",
+ "options": {
+  "A": "专用于碱基切除修复",
+  "B": "可以完全修复DNA 的损伤",
+  "C": "专用于嘧啶二聚体的修复",
+  "D": "是准确性差的修复方式"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 39 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。SOS反应是DNA损伤诱导的应急修复网络，不专用于碱基切除修复。B．错误。SOS修复常引入错配，只能使细胞应急存活而不能完全修复损伤。C．错误。嘧啶二聚体主要由光复活或切除修复处理，SOS并非其专门途径。D．正确。SOS诱导表达易错的DNA聚合酶Ⅳ、Ⅴ等进行跨损伤合成，保真性低，是准确性差的修复方式。故答案为D。"
+}

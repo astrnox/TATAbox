@@ -1,0 +1,50 @@
+{
+ "id": "M3-101-b46e57de2098",
+ "type": "mtf",
+ "question": "下列结构中属于淋巴器官的是",
+ "options": {
+  "A": "头肾",
+  "B": "扁桃体",
+  "C": "甲状旁腺",
+  "D": "脾脏",
+  "E": "红腺"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "A,B,D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 101 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共52 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。头肾是鱼类的淋巴造血器官，含大量淋巴细胞与造血组织，参与免疫。B．正确。扁桃体位于咽部，属外周淋巴器官，是免疫防御的第一道防线。C．错误。甲状旁腺是内分泌腺，分泌甲状旁腺激素调节钙磷代谢，不属淋巴器官。D．正确。脾脏是最大的外周淋巴器官，参与免疫应答并储血、滤血。E．错误。红腺（鱼鳔的气腺）分泌气体调节鳔内气压、控制浮力，与免疫无关。\n【易错易混】易混：判断淋巴器官看有无免疫或造血功能，头肾、扁桃体、脾脏属之；甲状旁腺是内分泌腺，红腺是鳔的分泌结构。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

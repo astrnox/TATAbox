@@ -1,0 +1,47 @@
+{
+ "id": "M3-115-81634ce97e72",
+ "type": "mtf",
+ "question": "从裸岩开始的群落演替会经历的阶段是：",
+ "options": {
+  "A": "地衣植物群落阶段",
+  "B": "苔藓植物群落阶段",
+  "C": "草本植物群落阶段",
+  "D": "灌木植物群落阶段",
+  "E": "乔木植物群落阶段"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "115.A（√）B（√）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 115 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 115,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。裸岩表面首先由地衣定居，地衣酸加速岩石风化并积累少量土壤。B．正确。土壤雏形出现后苔藓取代地衣，进一步积累有机质、保持水分。C．正确。土层增厚后草本植物相继侵入并占优势。D．正确。草本阶段改善生境后灌木出现并逐渐成为优势层片。E．正确。乔木最后侵入成林，群落向森林顶极方向发展，是初生演替的完整阶段序列。"
+}

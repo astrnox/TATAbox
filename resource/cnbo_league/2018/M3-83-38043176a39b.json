@@ -1,0 +1,47 @@
+{
+ "id": "M3-83-38043176a39b",
+ "type": "single",
+ "question": "小茧蜂会把卵产在鳞翅目昆虫的幼虫（毛虫）身上。小茧蜂的幼虫在毛虫体内生活，在其体内化蛹或老熟后钻出在毛虫体表结茧化蛹，同时导致毛虫死亡。这种现象叫做：",
+ "options": {
+  "A": "共生",
+  "B": "捕食",
+  "C": "竞争",
+  "D": "类寄生",
+  "E": "寄生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 83 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。共生强调互利且长期共存，小茧蜂导致宿主死亡，不符。B．错误。捕食是直接取食他个个体，此处幼虫在体内发育。C．错误。竞争是争夺共同资源，不涉及产卵于他体。D．正确。寄生者最终导致宿主死亡的寄生方式称为类寄生（拟寄生），符合题意。E．错误。一般寄生不立即致宿主死亡，与题干不符。故答案为D。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-36-7a11775ea1b1",
+ "type": "single",
+ "question": "真核生物基因常含有内含子，但在成熟的mRNA 上没有内含子。这是因为？",
+ "options": {
+  "A": "转录过程不合成同内含子相应的RNA",
+  "B": "内含子被特殊的蛋白质切除",
+  "C": "RNA 剪切",
+  "D": "RNA 重组"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 36 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。转录以整条基因为模板，内含子同样被转录进hnRNA前体中。B．错误。内含子并非由蛋白质直接切除，而是由剪接体（snRNP与蛋白复合体）经两步转酯反应移除，另有自我剪接的内含子。C．正确。RNA剪接把前体mRNA中内含子对应的序列切除、外显子连接起来，形成不含内含子的成熟mRNA。D．错误。不存在以RNA重组方式去除内含子的机制。故答案为C。"
+}

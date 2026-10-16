@@ -1,0 +1,48 @@
+{
+ "id": "M2-14-770cda8dcb79",
+ "type": "single",
+ "question": "铵盐是微生物重要的营养物，下列可以通过氧化铵盐获得能量，并同化CO2 进行生长的微生物是：",
+ "options": {
+  "A": "蓝细菌",
+  "B": "红螺菌",
+  "C": "亚硝化细菌",
+  "D": "固氮菌"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 14 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蓝细菌靠光能自养，不通过氧化铵盐获能。B．错误。红螺菌为光合细菌，利用光能而非氧化铵盐。C．正确。亚硝化细菌属化能自养菌，氧化铵盐（氨）获取能量，并同化 CO2 生长。D．错误。固氮菌为异养型，靠有机碳源供能。故答案为C。\n【通法】通法（微生物营养型判定）：先看能源——氧化无机物（铵、亚铁、硫）的是化能自养，靠光的是光能型；再看碳源是 CO2 还是有机物定自养或异养。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

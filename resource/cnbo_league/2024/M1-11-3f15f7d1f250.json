@@ -1,0 +1,84 @@
+{
+ "id": "M1-11-3f15f7d1f250",
+ "type": "single",
+ "question": "用32p 放射性标记的dCTP，其标记的位置应该在：",
+ "options": {
+  "A": "α 位的P；",
+  "B": "β 位的P；",
+  "C": "γ 位的P；",
+  "D": "都可以。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 11 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "11-14",
+  "stimulus": "如图显示了DNA 复制时，RNA 引物预先结合到模板上可以开始DNA 合成的位点。"
+ },
+ "image": {
+  "file": "assets/questions/M1-11-3f15f7d1f250/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 453,
+  "bbox": [
+   209.9,
+   513.7,
+   385.5,
+   740.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-11-3f15f7d1f250/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 453,
+   "bbox": [
+    209.9,
+    513.7,
+    385.5,
+    740.4
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】dCTP 参与 DNA 合成时，只有α位磷酸保留进入磷酸二酯键，β、γ位磷酸以焦磷酸形式离去。A．正确。标记位于α位才能随 dCMP 残基掺入新生 DNA 链，故放射性标记应在α位的 P。B．错误。β位磷酸在聚合反应中被切除，无法掺入。C．错误。γ位磷酸同样以焦磷酸形式离去。D．错误。仅α位可行，'都可以'不成立。故答案为A。\n【点睛】点睛：核苷三磷酸掺入核酸只留α位磷酸，标记核苷酸时先想聚合反应的去向。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

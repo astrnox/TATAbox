@@ -1,0 +1,45 @@
+{
+ "id": "M1-03-e864711a8171",
+ "type": "single",
+ "question": "水稻上、下表皮的主要区别",
+ "options": {
+  "A": "气孔数目",
+  "B": "表皮细胞形状",
+  "C": "泡状细胞的有无",
+  "D": "角质层的厚度"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 3 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。水稻上、下表皮均有气孔分布，气孔数目多少并非二者的主要区别。B．错误。上、下表皮细胞形状大同小异，均为规则排列的长细胞，不构成主要区别。C．正确。泡状细胞（运动细胞）成组分布在上表皮的大型表皮细胞之间，下表皮没有，这是禾本科植物叶上、下表皮最典型的区别。D．错误。上、下表皮均有角质层，厚度差异属次要特征。故答案为C。"
+}

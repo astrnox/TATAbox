@@ -1,0 +1,48 @@
+{
+ "id": "M1-93-50dcc4538024",
+ "type": "single",
+ "question": "葡萄糖氧化分解，以下哪个过程产生的ATP 最多？",
+ "options": {
+  "A": "乳糖发酵",
+  "B": "三羧酸循环",
+  "C": "电子传递链和ATP 合成酶",
+  "D": "糖酵解"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 93 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。乳糖发酵（无氧）不产生额外ATP，产能极少且名称上还以底物水平方式为主。B．错误。三羧酸循环仅经底物水平磷酸化生成少量GTP。C．正确。电子传递链传递电子时建立质子梯度，驱动ATP合酶大量合成ATP，是葡萄糖氧化产能最多的环节。D．错误。糖酵解每分子葡萄糖仅净得2 ATP。故答案为C。\n【点睛】点睛：葡萄糖氧化产能排序——氧化磷酸化远大于三羧酸循环（仅GTP）与糖酵解（净2ATP），无氧发酵最差。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

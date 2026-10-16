@@ -1,0 +1,41 @@
+{
+ "id": "M1-41-7d780e27112e",
+ "type": "single",
+ "question": "下列有关视网膜的叙述，正确的是",
+ "options": {
+  "A": "视网膜中心部光敏度较低",
+  "B": "视网膜周边部视敏度较高",
+  "C": "视神经穿出处形成盲点，位于颞侧",
+  "D": "色素细胞位于最外层"
+ },
+ "answer": null,
+ "answer_key": "A/D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 41 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "answer_note": "标答为复合/可选答案，见 answer_key",
+ "explanation": "【解析】A．正确。中心凹处视锥密集而视杆极少，对弱光的光敏度低于周边视杆密集区，故中心部光敏度较低成立。B．错误。视敏度以中心凹最高，周边部虽视杆密集但视敏度反而较低。C．错误。视神经穿出的盲点位于视网膜鼻侧，而非颞侧。D．官方标答为存疑（A/D）：官方标答把A与D并列为复合答案，色素上皮层确为视网膜最外层（靠巩膜一侧），与A并列存此一说，待人工裁定。"
+}

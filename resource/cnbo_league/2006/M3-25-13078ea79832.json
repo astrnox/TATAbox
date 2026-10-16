@@ -1,0 +1,47 @@
+{
+ "id": "M3-25-13078ea79832",
+ "type": "single",
+ "question": "在生物进化过程中，鸟类出现在",
+ "options": {
+  "A": "前寒武纪",
+  "B": "古生代",
+  "C": "中生代",
+  "D": "新生代",
+  "E": "都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 25 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。前寒武纪以单细胞及早期多细胞生物为主，无脊椎动物尚未繁盛，不可能出现鸟类。B．错误。古生代先后出现鱼类、两栖类与原始爬行类，鸟类尚未登场。C．正确。中生代爬行类繁盛，始祖鸟出现于晚侏罗世，白垩纪鸟类进一步辐射演化。D．错误。新生代是鸟类与哺乳类大发展的时期，属繁盛期而非出现期。E．错误。选项C正确，'都不对'不成立。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-116-2fe212d2245a",
+ "type": "multiple",
+ "question": "原口动物与后口动物的区别为",
+ "options": {
+  "A": "有体腔膜",
+  "B": "骨骼不是中胚层发育",
+  "C": "螺旋卵裂",
+  "D": "没有鳃裂"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "B C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 116 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。真体腔动物不论原口还是后口都具体腔膜，该特征不能区分两类。B．正确。原口动物的骨骼如节肢动物外骨骼、软体动物贝壳由表皮分泌，不属中胚层发育；后口动物的骨片与骨骼则由中胚层形成。C．正确。螺旋卵裂是原口动物的典型特征，后口动物为辐射卵裂。D．错误。咽鳃裂仅见于半索、脊索等部分后口动物，棘皮动物并无典型鳃裂，故'没有鳃裂'不能稳定区分两类（该官方标答存此一说）。故答案为BC。\n【通法】通法（原口与后口判别）：口的来源、卵裂方式（螺旋对辐射）、体腔形成（裂体腔对肠体腔）、骨骼与神经来源，四条线索成套记忆。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

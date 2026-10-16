@@ -1,0 +1,77 @@
+{
+ "id": "M4-111-83b69949a2f6",
+ "type": "multiple",
+ "question": "如图，图中的A 和B 是两种不同类型的物种形成方式，图中是共同祖先，从图中可知：",
+ "options": {
+  "A": "A 类物种形成方式比B 类更合理些",
+  "B": "A 类物种形成方式是由共同祖先逐渐变化而成",
+  "C": "B 类物种形成方式属于爆发式物种形成",
+  "D": "B 类物种形成方式是由共同祖先近期辐射演化的结果"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 111 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-111-83b69949a2f6/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 304,
+  "bbox": [
+   188.1,
+   653.5,
+   407.1,
+   769.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-111-83b69949a2f6/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 304,
+   "bbox": [
+    188.1,
+    653.5,
+    407.1,
+    769.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。渐变式与爆发式物种形成各有适用情形，不能笼统说A比B更合理。B．正确。A类为渐变式物种形成，由共同祖先逐渐变化而来。C．正确。B类在短时间内快速分化，属爆发式物种形成。D．正确。B类是共同祖先近期辐射演化（适应辐射）的结果。故答案为BCD。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-35-cc708101ad05",
+ "type": "single",
+ "question": "以下生物分子之间的作用中，哪项不属于专一性作用？",
+ "options": {
+  "A": "抗原与抗体的作用",
+  "B": "膜蛋白与膜脂的作用",
+  "C": "酶与底物的作用",
+  "D": "激素与受体的作用"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 35 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不属于专一性作用的一项，判断词指该选项是否合题意。A．错误。抗原与抗体以高特异性结合，表位与抗体可变区精确互补，表述成立。B．正确。膜蛋白与膜脂之间主要是疏水相互作用等非特异结合，不具严格的专一性，正是应选项。C．错误。酶以活性中心专一识别并催化底物，表述成立。D．错误。激素与受体高亲和力专一结合，表述成立。故答案为B。"
+}

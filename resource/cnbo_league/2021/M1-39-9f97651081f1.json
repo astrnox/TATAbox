@@ -1,0 +1,45 @@
+{
+ "id": "M1-39-9f97651081f1",
+ "type": "single",
+ "question": "渗透浓度是指溶液中有渗透活性的溶质粒子（离子或分子）的浓度，是溶液的浓度与渗透系数（g）的乘积。渗透系数用于描述溶液中溶质的解离程度，如果溶质分子不发生解离，则g=1.0，如果解离出2 个粒子，则g=2.0。对于浓度为0.45%的NaCl 溶液，如果 g=1.85，其渗透浓度最接近于",
+ "options": {
+  "A": "100 mmol/L",
+  "B": "150 mmol/L",
+  "C": "200 mmol/L",
+  "D": "300 mmol/L"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 39 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。0.45% NaCl 约为 76.9 mmol/L，乘以 1.85 约 142 mmol/L，不等于 100 mmol/L。B．正确。0.45 g/100 mL 即 4.5 g/L，除以摩尔质量 58.5 g/mol 得 76.9 mmol/L，渗透浓度为 76.9×1.85≈142 mmol/L，最接近 150 mmol/L。C．错误。计算值约 142 mmol/L，明显低于 200 mmol/L。D．错误。0.45% NaCl 属低渗溶液，远达不到 300 mmol/L。故答案为B。"
+}

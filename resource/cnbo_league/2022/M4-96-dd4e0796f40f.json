@@ -1,0 +1,48 @@
+{
+ "id": "M4-96-dd4e0796f40f",
+ "type": "single",
+ "question": "云南澄江发掘出了保存极其完好、多样性极高的寒武纪早期古生物化石，为研究寒武纪生命大爆发提供了佐证。可由澄江化石获得证据的学说最可能是：",
+ "options": {
+  "A": "渐进式演化",
+  "B": "间断平衡学说",
+  "C": "中性理论",
+  "D": "突变理论"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 96 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。澄江化石显示短期内多样性急剧增加，与渐进式演化的缓慢积累不符。B．正确。寒武纪早期短时间内的物种大爆发正是间断平衡学说所强调的快速成种与长期停滞的格局。C．错误。中性理论讨论分子水平的变异，与化石形态多样性无直接对应。D．错误。突变理论并非解释寒武纪爆发的主流学说。故答案为B。\n【点睛】点睛：化石证据看节奏——古老岩层里短时间冒出大量新体型，对应间断平衡的快变期；缓慢匀速的才叫渐进论。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

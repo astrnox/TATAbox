@@ -1,0 +1,45 @@
+{
+ "id": "M1-62-04f7b02173e0",
+ "type": "multiple",
+ "question": "消化液的生理作用是：",
+ "options": {
+  "A": "为消化酶提供适宜的pH 范围",
+  "B": "稀释食物，使其渗透压与血浆相近",
+  "C": "保护消化道粘膜",
+  "D": "促进消化道微生物繁殖"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 62 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。唾液、胃液、胰液等为消化酶提供各自的适宜pH范围，如胃蛋白酶需酸性、胰酶需弱碱性。B．正确。大量消化液可稀释食物，使其渗透压接近血浆，避免胃肠道渗透压剧烈波动。C．正确。黏液等消化液成分可润滑和保护消化道黏膜，免受机械和化学损伤。D．错误。胃酸等反而抑制消化道微生物的繁殖，消化液并不促进其繁殖。故答案为ABC。"
+}

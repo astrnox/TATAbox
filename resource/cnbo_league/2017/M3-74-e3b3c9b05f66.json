@@ -1,0 +1,48 @@
+{
+ "id": "M3-74-e3b3c9b05f66",
+ "type": "single",
+ "question": "在动物种群波动过程中，下面哪个因子的变化与动物自身的密度关系最弱：",
+ "options": {
+  "A": "气候",
+  "B": "食物",
+  "C": "天敌",
+  "D": "传染病"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 74 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。气候（温度、降水等）属非密度制约因素，其变化与种群自身密度无关，独立地影响种群数量。B．错误。食物随种群密度升高而竞争加剧，是密度制约因素。C．错误。天敌对猎物的捕食压力常随猎物密度上升而加强，属密度制约。D．错误。传染病在高密度种群中传播更快，是典型的密度制约因素。故答案为A。\n【通法】通法（密度制约判别）：随密度升高、作用自动加强的＝密度制约（食物、天敌、传染病、空间）；与密度无关、随天气随机波动的＝非密度制约（气候、火灾、污染）。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

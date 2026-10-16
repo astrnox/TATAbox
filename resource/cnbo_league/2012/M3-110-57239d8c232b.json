@@ -1,0 +1,45 @@
+{
+ "id": "M3-110-57239d8c232b",
+ "type": "multiple",
+ "question": "从裸岩到森林的演替过程属于",
+ "options": {
+  "A": "原生演替",
+  "B": "次生演替",
+  "C": "进行性演替",
+  "D": "逆行性演替"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 110 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第三部分 （9 道题10 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。裸岩上没有土壤和植物繁殖体，演替从从未被生物定居的基质上开始，属原生演替。B．错误。次生演替发生在原有植被破坏但土壤和繁殖体尚存的地段，与裸岩起点不符。C．正确。从裸岩经地衣、苔藓、草本、灌木到森林，群落结构由简单变复杂、物种增多、生产力升高，属进行性演替。D．错误。逆行性演替是群落结构由复杂退化为简单的过程，与题干方向相反。故答案为AC。"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "M1-41-33291e67b110",
+ "type": "single",
+ "question": "如图展示了一个肌小节的“长度-张力”曲线，请问张力值在B 点和C 点间达到最大的分子基础是：",
+ "options": {
+  "A": "肌动蛋白纤维之间互相重叠区域的长度最优",
+  "B": "肌球蛋白纤维之间互相重叠区域的长度最优",
+  "C": "肌小节与肌球蛋白纤维末端相互接触，有利于产生张力",
+  "D": "肌动蛋白纤维和肌球蛋白纤维互相重叠的长度最优"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 41 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-41-33291e67b110/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 439,
+  "bbox": [
+   186.6,
+   99.2,
+   408.2,
+   255.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-41-33291e67b110/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 439,
+   "bbox": [
+    186.6,
+    99.2,
+    408.2,
+    255.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。肌动蛋白纤维重叠区在最适长度时最大，但张力峰值对应的是与肌球蛋白的匹配而非肌动蛋白彼此重叠。B．错误。粗肌丝之间并不以重叠方式产生张力。C．错误。肌球蛋白纤维末端触碰肌小节两端对应的是过度缩短、张力下降区段。D．正确。B、C 之间肌动蛋白与肌球蛋白纤维的重叠长度最优，可形成横桥的位点最多，张力达到最大。故答案为D。"
+}

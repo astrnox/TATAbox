@@ -1,0 +1,45 @@
+{
+ "id": "M1-56-5fdf9bf1db72",
+ "type": "multiple",
+ "question": "生活在低温下的植物通过 增加其抗寒能力。",
+ "options": {
+  "A": "增加细胞含水量",
+  "B": "增加细胞内糖类、脂类和蛋白质含量",
+  "C": "降低细胞含水量",
+  "D": "降低细胞内糖类、脂类和蛋白质含量"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 56 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。增加含水量会加剧胞内结冰，降低而非提高抗寒能力。B．正确。糖类、脂类与蛋白质增加可提高细胞液浓度、保护膜结构，增强抗寒性。C．正确。降低含水量可减少结冰伤害，是抗寒的重要途径。D．错误。降低溶质与保护性蛋白含量会削弱抗寒能力。故答案为BC。"
+}

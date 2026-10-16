@@ -1,0 +1,48 @@
+{
+ "id": "M2-02-b5f9e72b3f2b",
+ "type": "single",
+ "question": "蓝藻与光合作用有关的色素有：",
+ "options": {
+  "A": "叶绿素a, 叶绿素c, 藻胆素",
+  "B": "叶绿素a, 叶绿素d, 藻胆素",
+  "C": "叶绿素b, 叶绿素c, 藻胆素",
+  "D": "叶绿素a, 类胡萝卜素, 藻胆素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 2 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蓝藻不含叶绿素c。B．错误。叶绿素d仅见于个别蓝藻，不是蓝藻的基本光合色素。C．错误。蓝藻不含叶绿素b。D．正确。蓝藻的光合色素是叶绿素a、类胡萝卜素和藻胆素（藻蓝蛋白、藻红蛋白等），故菌体常呈蓝绿色。故答案为D。\n【易错易混】易混：蓝藻＝叶绿素a＋类胡萝卜素＋藻胆素；绿藻＝叶绿素a、b；褐藻＝叶绿素a、c＋墨角藻黄素；红藻＝叶绿素a＋藻胆素，按类群记色素最稳。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

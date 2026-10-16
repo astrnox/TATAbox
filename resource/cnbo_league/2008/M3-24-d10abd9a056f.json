@@ -1,0 +1,45 @@
+{
+ "id": "M3-24-d10abd9a056f",
+ "type": "single",
+ "question": "鸟类的特化特征为",
+ "options": {
+  "A": "多具有龙骨突、具气囊与肺相通",
+  "B": "体温高而恒定、无皮肤腺",
+  "C": "具气囊与肺相通、无皮肤腺",
+  "D": "多具有龙骨突、体温高而恒定"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 24 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。多数鸟类具龙骨突以扩大胸肌附着面，气囊与肺相通实现双重呼吸，二者都是适应飞翔生活的特化特征（鸵鸟等走禽龙骨突退化，故题干说'多具有'）。B．错误。恒温虽是鸟类特征，但哺乳类同样恒温，并非鸟类特有的特化结构。C．错误。皮肤腺退化仅留尾脂腺，这在爬行类也大致如此，不是鸟类独有的特化特征。D．错误。该组合同样混入了恒温这一非鸟类特有的特征。故答案为A。"
+}

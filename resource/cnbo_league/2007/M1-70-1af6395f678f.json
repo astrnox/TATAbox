@@ -1,0 +1,48 @@
+{
+ "id": "M1-70-1af6395f678f",
+ "type": "single",
+ "question": "若NADH(H+)和FADH2 分别计2.5 和1.5ATP，则1 分子丙氨酸彻底氧化成CO2 和 H2O，释放的ATP 数是多少？",
+ "options": {
+  "A": "12.5",
+  "B": "14",
+  "C": "15",
+  "D": "11.5"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 70 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。12.5 只算入丙酮酸氧化脱羧与三羧酸循环的4 个NADH 及1 个FADH2，漏了氨基脱下经谷氨酸脱氢酶生成的NADH。B．错误。14 与各步当量换算不符。C．正确。丙氨酸转氨生成丙酮酸，氨基经谷氨酸脱氢酶脱下产生1 个NADH；丙酮酸氧化脱羧1 个NADH；三羧酸循环3 个NADH、1 个FADH2、1 个GTP，合计5×2.5＋1.5＋1＝15。D．错误。11.5 明显偏低。故答案为C。\n【通法】通法（氨基酸产能计算）：氨基酸拆成碳骨架＋氨基；碳骨架按丙酮酸或乙酰辅酶A 路径折算NADH、FADH2 与底物水平磷酸化，氨基经谷氨酸脱氢酶再添1 个NADH，逐项列加防漏算。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

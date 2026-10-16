@@ -1,0 +1,48 @@
+{
+ "id": "M4-85-169500d62892",
+ "type": "multiple",
+ "question": "一只白眼雌果蝇与一只红眼雄果蝇杂交，后代中出现了一只白眼雌蝇，这是由X 染色体不分离造成的，发生的不分离事件可能是：",
+ "options": {
+  "A": "母本果蝇，第一次减数分裂；",
+  "B": "母本果蝇，第二次减数分裂；",
+  "C": "父本果蝇，第一次减数分裂；",
+  "D": "父本果蝇，第二次减数分裂。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 85 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】白眼雌蝇（XwXw）×红眼雄蝇（XWY），正常后代雌蝇应从父本获得XW 而呈红眼。出现白眼雌蝇说明其未获得父本XW，需母本产生XwXw 的不正常卵（与父本Y 精子结合得XwXwY 雌蝇，隐性上位呈白眼）。A．正确。母本减数分裂Ⅰ同源染色体不分离可产生XwXw 卵。B．正确。母本减数分裂Ⅱ姐妹染色单体不分离同样可产生XwXw 卵。C．错误。父本不分离产生的XY 精子会使后代获得XW，呈红眼。D．错误。同理父本减数分裂Ⅱ不分离不产生含Xw 的异常配子组合。故答案为AB。\n【通法】通法（X 不分离后代判定）：先写出正常预期，再看异常个体缺失了哪条父源染色体，倒推不分离发生在哪一性、哪一次分裂。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

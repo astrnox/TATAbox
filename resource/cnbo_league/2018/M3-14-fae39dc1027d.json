@@ -1,0 +1,77 @@
+{
+ "id": "M3-14-fae39dc1027d",
+ "type": "single",
+ "question": "在用 Snai1-HA 转染的 RWP-1 细胞和 HT 29M6 细胞中用抗 Suz12 抗体获得的免疫沉淀复合物有 Snail。",
+ "options": {
+  "A": "正确",
+  "B": "错误"
+ },
+ "answer": {
+  "A": true,
+  "B": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "免疫系统",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 14 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "14-20",
+  "stimulus": "转录因子Snail 属于上皮向间充质转化过程中所需的转录阻遏物家族。而suz12"
+ },
+ "image": {
+  "file": "assets/questions/M3-14-fae39dc1027d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 286,
+  "bbox": [
+   90.0,
+   76.3,
+   505.2,
+   410.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-14-fae39dc1027d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 286,
+   "bbox": [
+    90.0,
+    76.3,
+    505.2,
+    410.6
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。以抗Suz12抗体获得的免疫沉淀复合物中检测到Snail，说明Suz12所在复合物中存在Snail，该表述成立。B．错误。免疫共沉淀结果显示复合物中确有Snail，'没有'的判断不成立。故答案为A。"
+}

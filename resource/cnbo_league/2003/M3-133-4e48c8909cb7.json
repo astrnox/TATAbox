@@ -1,0 +1,80 @@
+{
+ "id": "M3-133-4e48c8909cb7",
+ "type": "mtf",
+ "question": "某地人口普查得到年龄结构如下图，由图反映出：",
+ "options": {
+  "A": "该地区人口数量将下降",
+  "B": "该地区人口数量将增加",
+  "C": "人口种群的性比约等于1",
+  "D": "可以断定30 年后该地区将进入老龄社会"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "18.A（ × ）B（ √ ）C（ √ ） D（ × ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 18 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 18,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-133-4e48c8909cb7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 44,
+  "bbox": [
+   130.4,
+   259.2,
+   464.1,
+   477.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-133-4e48c8909cb7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 44,
+   "bbox": [
+    130.4,
+    259.2,
+    464.1,
+    477.4
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。图中幼年个体比例大、老年个体比例小，属增长型年龄结构，人口数量不会下降。B．正确。年龄结构呈下宽上窄的金字塔形，预示出生率高于死亡率，人口数量将增加。C．正确。图中各年龄组男女个体数大致相当，性比约等于1。D．错误。年龄结构只能预示近期变化趋势，30年后是否进入老龄社会还取决于出生率、死亡率和迁移等因素，不能断定。\n【点睛】点睛：年龄锥体先看底宽顶尖还是底窄顶尖——底部宽预示增长；远期趋势只能说'预测'，不能说'断定'。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

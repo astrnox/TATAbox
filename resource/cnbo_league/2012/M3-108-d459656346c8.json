@@ -1,0 +1,45 @@
+{
+ "id": "M3-108-d459656346c8",
+ "type": "multiple",
+ "question": "动物集群生活的好处有",
+ "options": {
+  "A": "防御捕食者",
+  "B": "提高觅食成功性",
+  "C": "提高种群遗传多样性",
+  "D": "更容易找到配偶"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 108 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 108,
+  "section": "第三部分 （9 道题10 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。集群可通过集体警戒、稀释效应、共同防御等降低个体被捕食的风险。B．正确。群体有利于发现和利用食物资源，如信息共享、协同捕食，提高觅食成功性。C．错误。遗传多样性取决于种群遗传结构和交配制度，集群生活本身并不直接提高遗传多样性。D．正确。集群增加个体相遇机会，更容易找到配偶。故答案为ABD。"
+}

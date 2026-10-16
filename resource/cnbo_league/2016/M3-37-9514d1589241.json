@@ -1,0 +1,45 @@
+{
+ "id": "M3-37-9514d1589241",
+ "type": "single",
+ "question": "哺乳类的颌弓与脑颅的连接类型属于",
+ "options": {
+  "A": "舌接型",
+  "B": "颅接型",
+  "C": "自接型",
+  "D": "两接型"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 37 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。舌接型以舌颌骨等将颌弓悬挂在脑颅下，是多数硬骨鱼类的连接方式。B．正确。哺乳类脑颅底部与颌弓直接愈合（齿骨、上颌骨与颅骨相连），属颅接型。C．错误。自接型见于软骨鱼类等，颌弓与脑颅广泛接触但方式不同。D．错误。两接型不是哺乳类的颌弓连接类型。故答案为B。"
+}

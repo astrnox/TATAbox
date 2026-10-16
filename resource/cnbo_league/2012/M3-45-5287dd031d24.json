@@ -1,0 +1,45 @@
+{
+ "id": "M3-45-5287dd031d24",
+ "type": "multiple",
+ "question": "从遗传和进化的角度来考虑，利他行为（altruistic behavior）提高了动物的广义适合度（inclusive fitness）。以下的利他行为可以提高其广义适合度的包括哪些",
+ "options": {
+  "A": "母鸟假装受伤引开捕食者以保护雏鸟",
+  "B": "白蚁社会中的兵蚁全力以赴帮助喂养幼虫",
+  "C": "哺乳类中一些个体在面临危险时发出尖锐刺耳的报警声",
+  "D": "工蜂用蛰刺攻击入侵者"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 45 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。母鸟以自身受伤风险换取雏鸟存活，雏鸟携带与其相同的基因，故提高广义适合度。B．正确。白蚁兵蚁与幼虫高度亲缘，帮助育幼可传递共有基因，属典型利他行为。C．正确。报警个体承担被捕食风险，但被警告者多为其亲属，间接保全其基因。D．正确。工蜂蛰刺后常自身死亡，但其不育而靠抚育姐妹传递基因，亦属利他行为。故答案为ABCD。"
+}

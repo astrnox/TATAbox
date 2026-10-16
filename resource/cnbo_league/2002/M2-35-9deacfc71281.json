@@ -1,0 +1,45 @@
+{
+ "id": "M2-35-9deacfc71281",
+ "type": "single",
+ "question": "根压的大小",
+ "options": {
+  "A": "当大气湿度高而蒸腾作用弱时减小",
+  "B": "取决于木质部导管与土壤的水势差",
+  "C": "与土壤水分经扩散作用进入木质部导管有关",
+  "D": "通常为2MPa 左右"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 35 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。大气湿度高、蒸腾弱时，根压的表现反而更明显（如清晨吐水），此时根压不是减小。B．正确。根压本质上由渗透吸水产生，其大小取决于木质部导管内溶液与土壤溶液之间的水势差，差值越大，水分进入导管的趋势越强。C．错误。土壤水分进入木质部主要靠渗透作用而非单纯的扩散作用，是离子主动进入导管建立起水势梯度的结果。D．错误。根压通常仅0.1～0.5 MPa，远低于2 MPa。故答案为B。"
+}

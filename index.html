@@ -290,6 +290,8 @@
   <link rel="stylesheet" href="css/bundle-core.css?v=20260917lg2">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
+  <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
+  <link rel="stylesheet" href="css/figure-viewer.css?v=20261012a">
   <!-- 非首屏关键 CSS：异步加载，不阻塞首次渲染 -->
   <link rel="preload" href="css/countdown.css" as="style" data-css-async>
   <noscript><link rel="stylesheet" href="css/countdown.css"></noscript>
@@ -314,8 +316,8 @@
   <link rel="preload" href="css/phet-sims.css?v=20260809j" as="style" data-css-async>
   <noscript><link rel="stylesheet" href="css/phet-sims.css?v=20260809j"></noscript>
   <!-- 每日亿题样式（异步加载，不影响首屏） -->
-  <link rel="preload" href="css/daily-billion.css?v=20260916b" as="style" data-css-async>
-  <noscript><link rel="stylesheet" href="css/daily-billion.css?v=20260916b"></noscript>
+  <link rel="preload" href="css/daily-billion.css?v=20261013a" as="style" data-css-async>
+  <noscript><link rel="stylesheet" href="css/daily-billion.css?v=20261013a"></noscript>
   <!-- Issue #123/#128：全局离线提示横幅 + 生物主题微交互彩蛋 -->
   <link rel="preload" href="css/offline-status.css?v=20260828a" as="style" data-css-async>
   <noscript><link rel="stylesheet" href="css/offline-status.css?v=20260828a"></noscript>
@@ -755,6 +757,8 @@
   <!-- supabase-client.js / supabase.js / storage.js 已从 HTML 移除，节省 ~140KB 首屏加载 -->
 
   <script src="js/core/utils.js?v=20260828a" defer></script>
+  <!-- 全站统一题图入口：window.BioQuestFigure（渲染 + 查看器 + 标注 + 下载） -->
+  <script src="js/core/figure-viewer.js?v=20261012a" defer></script>
   <!-- Issue #105/#123/#130/#128：事件集中管理 / 离线队列 / 离线提示 / 生物彩蛋 -->
   <script src="js/core/offline-queue.js?v=20260828a" defer></script>
   <script src="js/core/offline-status.js?v=20260828a" defer></script>
@@ -857,6 +861,8 @@
   <script src="js/ai/ai-client.js?v=20260819a" defer></script>
   <!-- v3.4 基础能力：事件总线 + IRT 引擎 + TTS + 白板 + 多智能体 -->
   <script src="js/core/event-bus.js?v=20260712k" defer></script>
+  <!-- 统一会话落盘服务：practice/exam/quiz/每日亿题共用的「刷题→全局体系」入口（纯 typeof 守卫，无加载期依赖） -->
+  <script src="js/core/record-session.js?v=20261013b" defer></script>
   <script src="js/core/csp-events.js?v=20260820a" defer></script>
   <script src="js/algo/irt-engine.js?v=20260712k" defer></script>
   <script src="js/engagement/tts.js?v=20260712k" defer></script>
@@ -872,7 +878,7 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/pages/daily-billion.js?v=20260916b" defer></script>
+  <script src="js/pages/daily-billion.js?v=20261013b" defer></script>
   <script src="js/engagement/points-ui.js?v=20260814a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20260821a" defer></script>
@@ -880,11 +886,15 @@
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
-  <script src="js/core/app.js?v=20260917b" defer></script>
+  <script src="js/core/app.js?v=20261013b" defer></script>
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
   <script src="js/core/error-recovery.js?v=20260803a" defer></script>
+  <script src="js/core/question-model.js?v=20261013a" defer></script>
+  <!-- Bio 分全局唯一实现（calcBioScore / computeBioDimensions）：预加载保证
+       仪表盘/练习/诊断/记录落盘首屏即可算分，不依赖打开分析页才加载 analytic.js -->
+  <script src="js/core/score-engine.js?v=20261013a" defer></script>
   <script src="js/core/question-utils.js?v=20260809c" defer></script>
   <script src="js/core/loader.js?v=20260826a" defer></script>
   <script src="js/core/cell-loader.js?v=20260803a" defer></script>

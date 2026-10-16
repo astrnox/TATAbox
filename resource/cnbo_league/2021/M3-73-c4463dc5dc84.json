@@ -1,0 +1,48 @@
+{
+ "id": "M3-73-c4463dc5dc84",
+ "type": "multiple",
+ "question": "1994-1995 年，鸟类空泡性髓鞘病变（A.VN）被首次发现，当时在阿肯色州的秃鹰中出现了神秘的大规模死亡事件，此后的几十年来，引起秃鹰感染此病而死亡的机制一直并不清楚。最近的研究发现，这是由于一种被称为 aetokthonotoxin 的新型蓝藻神经毒素造成的。研究人员发现，外来水生植物软水草上可大量滋生蓝藻 Aetokthonos hydrillicola，该蓝藻与环境中溴化物接触后会产生引发AVN 的aetokthonotoxin 毒素，最终又通过鱼类等其他水生生物传播到秃鹰并导致其死亡。北美秃鹰死亡事件主要反映了下列哪些生物学过程或现象：",
+ "options": {
+  "A": "食物网",
+  "B": "生物富集",
+  "C": "适应辐射",
+  "D": "生物入侵"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 73 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "三、动物行为学、生态学15 题23 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。软水草、蓝藻、鱼、秃鹰构成多营养级取食关系，反映食物网过程。B．正确。毒素沿食物链逐级浓缩，最终在秃鹰体内达到致害水平，属生物富集。C．错误。事件中没有新物种的分歧与辐射，不涉适应辐射。D．正确。外来水生植物软水草滋生蓝藻是生物入侵，入侵引发了毒素产生的连锁效应。故答案为ABD。\n【点睛】点睛：外来植物—蓝藻毒素—鱼—猛禽这条链，一眼看出三件事：食物网、生物富集、生物入侵。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

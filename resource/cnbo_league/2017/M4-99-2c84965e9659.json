@@ -1,0 +1,50 @@
+{
+ "id": "M4-99-2c84965e9659",
+ "type": "single",
+ "question": "有一对夫妇均患白化病（albinism），但他们的孩子却正常。对这个现象最可能的解释是：",
+ "options": {
+  "A": "这一对夫妇虽然都患白化病，但相似的表型是由同一基因座上不同的等位基因引起的，即等位基因异质性（allelic heterogeneity）",
+  "B": "这一对夫妇的白化病虽然表型相似，但却是不同基因座上的突变引起的，也就是基因座异质性（locus heterogeneity）",
+  "C": "白化病病症与可变表现度（variable expressivity）有关",
+  "D": "他们的孩子有白化病基因但不完全外显（incomplete penetrance）",
+  "E": "他们的孩子出现了突变"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 99 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。等位基因异质性指同一基因座不同突变导致相同表型，若如此父母同一基因座均为突变纯合，孩子仍应患病。B．正确。两位点异质性指不同基因座突变均可致白化病，父母分别携带不同基因座的隐性突变（AAbb×aaBB），孩子为双杂合子而表型正常。C．错误。可变表现度只涉及症状轻重，不能解释孩子完全正常。D．错误。孩子正常即未表现，不完全外显不适用于此。E．错误。孩子正常无需用新突变解释。故答案为B。\n【点睛】点睛：双亲同病、孩子正常的钥匙是'基因座异质性'——同一个病可由不同基因引起，父母各坏一个基因，孩子凑齐两份正常拷贝。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-90-adf7eb54cb64",
+ "type": "multiple",
+ "question": "酸性土壤中生长的植物容易出现哪些元素毒害现象",
+ "options": {
+  "A": "铁",
+  "B": "锰",
+  "C": "镁",
+  "D": "钙"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 90 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。酸性土壤中铁的溶解度显著升高，过量亚铁会对植物产生毒害，属常见的毒害元素。B．错误。按官方标答锰不在应选之列；但通行观点认为酸性土壤中锰溶解度增大常致锰毒害，此处从官方作非应选项处理（该官方标答存此一说）。C．错误。镁在酸性土中易随水淋失，表现为缺乏而非毒害。D．正确。官方标答将钙列入毒害元素；通行观点多认为酸性土中钙因淋溶而缺乏，此说存疑（该官方标答存此一说）。故答案为AD。"
+}

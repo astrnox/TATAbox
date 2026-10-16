@@ -1,0 +1,48 @@
+{
+ "id": "M3-90-4d76c8eb5b85",
+ "type": "single",
+ "question": "以下组织中不属于结缔组织的是",
+ "options": {
+  "A": "猪的皮下脂肪",
+  "B": "猫气管中间实质",
+  "C": "乌贼的软骨匣",
+  "D": "哺乳动物的肠腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 90 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不属于结缔组织的一项，判断词指该选项是否合题意。A．错误。皮下脂肪即脂肪组织，是疏松结缔组织的特化类型，确属结缔组织。B．错误。气管壁的软骨与周围结缔组织构成支架，其间的实质属结缔组织。C．错误。软骨匣由软骨构成，软骨是典型的结缔组织。D．正确。肠腺是上皮内陷形成的腺体，由单层柱状上皮构成，属上皮组织而非结缔组织，正是应选项。故答案为D。\n【点睛】点睛：四大组织速判——有腺体、覆盖体表的是上皮，血液、脂肪、软骨、骨是结缔，能收缩的是肌组织，能传导兴奋的是神经。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

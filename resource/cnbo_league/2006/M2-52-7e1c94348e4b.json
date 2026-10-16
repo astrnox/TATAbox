@@ -1,0 +1,50 @@
+{
+ "id": "M2-52-7e1c94348e4b",
+ "type": "single",
+ "question": "以下对生物节律的论断哪个是错误的？",
+ "options": {
+  "A": "动植物都有生物节律",
+  "B": "在没有外界刺激的情况下，动植物的生物节律会维持",
+  "C": "生物节律是由生物体内在的生物钟控制的",
+  "D": "生物钟是无法调整的",
+  "E": "外界环境会影响生物钟的运转"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 52 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出错误的一项，判断词指该选项是否合题意。A．错误。动植物都有近似昼夜节律，表述成立。B．错误。在恒定条件下生物节律仍自行运转，表述成立。C．错误。节律由内在生物钟控制，表述成立。D．正确。生物钟可被光周期等授时因子牵引校准，'无法调整'不成立，正是应选项。E．错误。外界环境会影响生物钟运转，表述成立。故答案为D。\n【点睛】点睛：生物钟的要诀是'内源自激、可被授时因子牵引'，凡说它不能校准调整者即为错误。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

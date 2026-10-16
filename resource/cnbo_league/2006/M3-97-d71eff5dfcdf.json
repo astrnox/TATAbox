@@ -1,0 +1,48 @@
+{
+ "id": "M3-97-d71eff5dfcdf",
+ "type": "single",
+ "question": "海洋中生活的环节动物在发育过程中多有一个幼虫期，称为",
+ "options": {
+  "A": "担轮幼虫",
+  "B": "两囊幼虫",
+  "C": "羽腕幼虫",
+  "D": "浮浪幼虫"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 97 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。海洋环节动物多具担轮幼虫，体呈陀螺形，口周围生有纤毛环，是环节动物与软体动物共有的幼虫型。B．错误。两囊幼虫是海绵动物的幼虫。C．错误。羽腕幼虫是棘皮动物（如海星）的幼虫。D．错误。浮浪幼虫是腔肠动物的幼虫。故答案为A。\n【易错易混】易混：担轮幼虫对应环节与软体，两囊对应海绵，浮浪对应腔肠，羽腕对应棘皮，按门与幼虫配对记忆不易串。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

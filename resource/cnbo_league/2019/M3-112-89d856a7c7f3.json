@@ -1,0 +1,47 @@
+{
+ "id": "M3-112-89d856a7c7f3",
+ "type": "single",
+ "question": "有一类软体动物，外形呈左右对称：贝壳退化，被外套膜包裹，或无壳；具触角1-2 对；鳃位于心室的后方。这类软体动物属于哪个纲？",
+ "options": {
+  "A": "多板纲",
+  "B": "腹足纲",
+  "C": "双壳纲",
+  "D": "掘足纲",
+  "E": "头足纲"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 112 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 112,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。多板纲具覆瓦状排列的多块贝壳，与'贝壳退化'不符。B．正确。左右对称、贝壳退化或无壳、具1-2对触角、鳃位于心室后方，符合腹足纲（后鳃类等）特征。C．错误。双壳纲具两片贝壳、无头部与触角。D．错误。掘足纲具牛角形管状贝壳，与描述不符。E．错误。头足纲具内壳或无壳，但鳃位于心室前方。故答案为B。"
+}

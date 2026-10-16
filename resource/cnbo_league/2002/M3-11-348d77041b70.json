@@ -1,0 +1,48 @@
+{
+ "id": "M3-11-348d77041b70",
+ "type": "single",
+ "question": "下列结构中，哪一种不是淋巴器官",
+ "options": {
+  "A": "头肾",
+  "B": "扁桃体",
+  "C": "脾脏",
+  "D": "甲状旁腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 11 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。头肾（前肾）是鱼类重要的淋巴造血器官，产生白细胞并参与免疫应答，属淋巴器官，不符合题意。B．错误。扁桃体位于咽部，是典型的外周淋巴器官，构成免疫的第一道防线，不符合题意。C．错误。脾脏是体内最大的淋巴器官，具滤血、储血和免疫应答功能，不符合题意。D．正确。甲状旁腺分泌甲状旁腺激素，调节钙磷代谢，是内分泌腺而非淋巴器官，正是题干所问的结构。\n【易错易混】易混：淋巴器官＝胸腺、脾、淋巴结、扁桃体及鱼类头肾等免疫相关结构；甲状腺、甲状旁腺、肾上腺虽位置邻近，却都是内分泌腺，勿混淆。故答案为D。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

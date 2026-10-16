@@ -1,0 +1,47 @@
+{
+ "id": "M1-14-7d6758449390",
+ "type": "single",
+ "question": "原核生物都有：",
+ "options": {
+  "A": "细胞核",
+  "B": "核糖体",
+  "C": "线粒体",
+  "D": "叶绿体",
+  "E": "中心体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 14 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。原核生物无核膜包被的细胞核，遗传物质集中在拟核区。B．正确。一切原核细胞都具有核糖体（70S），是其合成蛋白质的机器。C．错误。线粒体是真核细胞的产能细胞器，原核生物没有。D．错误。叶绿体只见于光合真核生物，蓝藻虽能放氧光合，但无叶绿体。E．错误。中心体存在于动物细胞和低等植物细胞，原核生物没有，故答案为B。"
+}

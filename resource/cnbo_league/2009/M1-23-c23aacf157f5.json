@@ -1,0 +1,45 @@
+{
+ "id": "M1-23-c23aacf157f5",
+ "type": "single",
+ "question": "下列描述哪一项是正确的？",
+ "options": {
+  "A": "RNA 都是蛋白质合成的模板",
+  "B": "所有的DNA 都将被翻译成蛋白质",
+  "C": "一条mRNA 上可以结合多个核糖体",
+  "D": "蛋白质的生物合成除mRNA 和蛋白质外，不再需任何其它的DNA、RNA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 23 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。RNA中只有mRNA是翻译模板，tRNA、rRNA、snRNA等各有其他功能。B．错误。DNA中含大量非编码序列如内含子、重复序列和调控序列，并非都被翻译。C．正确。一条mRNA可同时结合多个核糖体形成多聚核糖体，同时合成多条相同肽链，提高翻译效率。D．错误。翻译还需tRNA、rRNA、氨酰-tRNA合成酶及多种蛋白因子参与。故答案为C。"
+}

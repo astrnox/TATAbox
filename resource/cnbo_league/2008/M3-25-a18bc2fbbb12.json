@@ -1,0 +1,48 @@
+{
+ "id": "M3-25-a18bc2fbbb12",
+ "type": "single",
+ "question": "哺乳动物中肠的基本结构从外到内依次为",
+ "options": {
+  "A": "粘膜层、粘膜下层、肌肉层、浆膜",
+  "B": "浆膜、粘膜下层、肌肉层、粘膜层",
+  "C": "肌肉层、粘膜层、粘膜下层、浆膜",
+  "D": "浆膜、肌肉层、粘膜下层、粘膜层"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 25 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。这是由内向外的顺序，与题干'从外到内'正好相反。B．错误。该顺序把粘膜下层排到了肌肉层之外，浆膜与粘膜层的相对位置也不对。C．错误。该顺序把肌肉层放在最外、浆膜放在最内，层序完全颠倒。D．正确。消化管壁由外到内依次为浆膜（外膜）、肌肉层（外纵内环）、粘膜下层和粘膜层，肠壁即按此四层排列。故答案为D。\n【通法】通法（管壁结构排序）：消化管壁四层由内向外为'粘膜—粘膜下层—肌肉层—外膜（浆膜）'；做题先看清题干问的是由外到内还是由内到外，再按层序对号入座。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

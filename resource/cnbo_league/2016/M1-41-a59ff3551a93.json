@@ -1,0 +1,45 @@
+{
+ "id": "M1-41-a59ff3551a93",
+ "type": "multiple",
+ "question": "香菇、木耳、竹荪和灵芝的共同特征是：",
+ "options": {
+  "A": "营养体均为有隔菌丝组成的菌丝体",
+  "B": "它们的主要营养体都是次生菌丝体",
+  "C": "都以锁状联合方式形成次生菌丝体",
+  "D": "都能产生担孢子"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 41 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 41,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（31 道题35.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。香菇、木耳、竹荪、灵芝均为担子菌，营养体是由有隔菌丝构成的菌丝体。B．正确。其主要营养体都是由初生菌丝发育而来的次生菌丝体。C．正确。担子菌次生菌丝形成时以锁状联合方式产生双核菌丝。D．正确。四者都属担子菌门，均能产生担孢子。故答案为ABCD。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-88-2980db98c68d",
+ "type": "single",
+ "question": "下列有关神经细胞离子通透性和膜电位变化的叙述，其中正确的是",
+ "options": {
+  "A": "Na+通透性增大时会造成去极化现象",
+  "B": "神经细胞膜对K+的通透没有限制",
+  "C": "神经细胞的静息膜电位为零",
+  "D": "K+流入细胞时有利于膜极化状态的恢复"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 88 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。Na+通透性增大时Na+内流，膜内电位变正，产生去极化乃至动作电位。B．错误。膜对K+的通透由钾漏通道等介导，是有限度的，并非没有限制。C．错误。静息膜电位约为-70mV（内负外正），不是零。D．错误。恢复极化状态靠K+外流，K+流入细胞反而使膜去极化。故答案为A。\n【易错易混】易混：去极化多因Na+内流，复极化多因K+外流；判极性变化看离子流向，而非只看离子名称。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

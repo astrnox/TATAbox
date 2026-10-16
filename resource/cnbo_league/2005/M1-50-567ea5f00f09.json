@@ -1,0 +1,48 @@
+{
+ "id": "M1-50-567ea5f00f09",
+ "type": "single",
+ "question": "已知受血者为B 型血，在交叉配血中主侧不凝集，次侧发生凝集现象，供血者的血型是：",
+ "options": {
+  "A": "A 型",
+  "B": "B 型",
+  "C": "O 型",
+  "D": "AB 型"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 50 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A型供血者红细胞含A抗原，与受血者B型血清中的抗A抗体相遇，主侧必然凝集。B．错误。B型供血者血清不含抗B，次侧（供血者血清×受血者红细胞）不会凝集。C．正确。O型红细胞无A、B抗原，故主侧不凝集；O型血清含抗A和抗B，遇受血者B型红细胞使次侧凝集，与题意相符。D．错误。AB型红细胞含A、B两种抗原，主侧必凝集，故答案为C。\n【通法】通法（交叉配血）：主侧＝受血者血清×供血者红细胞，绝不容凝集；次侧＝供血者血清×受血者红细胞。主侧不凝说明供者红细胞无相应抗原，次侧凝说明供者血清含相应抗体，据此反推供血者血型。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

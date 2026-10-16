@@ -1,0 +1,48 @@
+{
+ "id": "M1-17-e628fee6c666",
+ "type": "single",
+ "question": "下列哪种分子或代谢过程为肌肉收缩提供了最大的ATP 产生率（mmol/sec）",
+ "options": {
+  "A": "肌糖原转化为CO2",
+  "B": "肌糖原转化为乳酸",
+  "C": "脂肪酸转化为CO2",
+  "D": "磷酸肌酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 17 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。肌糖原有氧氧化产能步骤多、速率受限，产生ATP的速率不高。B．错误。糖酵解产乳酸每分子葡萄糖仅净得2个ATP，速率虽快但总量低。C．错误。脂肪酸β-氧化产能大但速率慢，供能速率低。D．正确。磷酸肌酸经肌酸激酶直接转移高能磷酸键再生ATP，无需酶系级联，产ATP速率最大。故答案为D。\n【点睛】点睛：肌肉瞬时供能看'磷酸肌酸'——速率最快但容量最小，之后才轮到糖酵解与有氧氧化，速率与容量成反比。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-15-90313b80a0f4",
+ "type": "single",
+ "question": "肌肉中能量的主要贮存形式是：",
+ "options": {
+  "A": "ATP",
+  "B": "cAMP",
+  "C": "磷酸肌酸",
+  "D": "ADP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 15 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。ATP 是直接供能物质，但在肌肉中储量很少，仅够维持数秒收缩，不是能量的主要贮存形式。B．错误。cAMP 是细胞内第二信使，参与信号转导，不贮存能量。C．正确。磷酸肌酸是肌肉中高能磷酸基团的贮存形式，含量可达 ATP 的数倍，可由肌酸激酶催化将磷酸基转给 ADP 生成 ATP，起快速缓冲作用。D．错误。ADP 是 ATP 水解产物，不含高能贮存。故答案为C。\n【易错易混】易混：ATP 是直接能源，量少即用即耗；磷酸肌酸是储备能源，量多且可快速转化为 ATP，切勿把直接能源与贮存形式混为一谈。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M4-119-9a48304464a6",
+ "type": "multiple",
+ "question": "关于进化的解释，正确的是",
+ "options": {
+  "A": "大多数情况下生物的进化导致生物对环境的相对适应",
+  "B": "进化的逆过程是退化",
+  "C": "生物进化是通过传代过程中基因频率的变化而实现的",
+  "D": "中性的分子进化属于既无利也无害的基因突变"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 119 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 119,
+  "section": "第四部分 （9 道题13 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。进化使生物更适应所处环境，但适应是相对的，环境改变后原适应可能失效。B．错误。进化无逆过程，退化只是器官或结构的简化，不等同于进化的逆转。C．正确。进化实质是种群基因频率在传代过程中的定向改变。D．正确。中性突变既无利也无害，在漂变作用下固定，是分子进化的重要来源。故答案为ACD。"
+}

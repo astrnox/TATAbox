@@ -1,0 +1,48 @@
+{
+ "id": "M1-87-c8dec788ffcb",
+ "type": "single",
+ "question": "绿眼虫在运动中有趋光性，其中能感受光线的结构是：",
+ "options": {
+  "A": "眼点",
+  "B": "储蓄泡",
+  "C": "靠近眼点近鞭毛基部的膨大",
+  "D": "副淀粉粒"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 86 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。眼点主要起遮光、屏蔽作用，本身并不感受光。B．错误。储蓄泡是鞭毛基部的凹陷结构，与伸缩泡排水有关，不具感光功能。C．正确。眼虫真正的光感受器是鞭毛基部的膨大结构，内含光敏色素，光线被其感受后引起趋光运动，眼点位于其旁起遮挡调光作用。D．错误。副淀粉粒是贮藏的多糖颗粒，无感光功能。故答案为C。\n【易错易混】易错点：眼虫的'眼点'并非感光器，真正感光的是鞭毛基部膨大，眼点只是遮光结构。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

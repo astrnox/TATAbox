@@ -1,0 +1,84 @@
+{
+ "id": "M3-25-3dd150eaebe5",
+ "type": "mtf",
+ "question": "判断以下论述的正误：",
+ "options": {
+  "A": "图A 中有大孢子叶和小孢子叶，分别产生大孢子囊和小孢子囊；",
+  "B": "图A 中的生殖结构可产生大孢子和小孢子，有性生殖方式是异配生殖；",
+  "C": "图B 中有大孢子囊和小孢子囊，分别产生大孢子和小孢子；",
+  "D": "图B 中的生殖结构分别产生卵和精子，有性生殖方式是卵式生殖。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TFFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 25 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "下图为三种植物生殖结构的切片图。"
+ },
+ "image": {
+  "file": "assets/questions/M3-25-3dd150eaebe5/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 5,
+  "bbox": [
+   237.1,
+   129.1,
+   504.5,
+   248.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-25-3dd150eaebe5/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 5,
+   "bbox": [
+    237.1,
+    129.1,
+    504.5,
+    248.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图A的生殖结构中可见大孢子叶与小孢子叶，其上分别着生大孢子囊和小孢子囊。B．错误。产生大/小孢子是孢子体经减数分裂的产物，属于无性世代；'有性生殖方式'指配子结合方式，孢子产生与'异配生殖'混淆了世代概念。C．错误。图B所示为产生卵和精子的配子体阶段结构，并不同时具有大孢子囊和小孢子囊。D．正确。图B的生殖结构分别产生卵和精子，精卵结合为卵式生殖。\n【点睛】点睛：世代交替答题先分清'哪一代'——孢子体（2n）产孢子（减数分裂），配子体（n）产配子（有丝分裂）；'孢子'永远不参与'有性生殖方式'的命名。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

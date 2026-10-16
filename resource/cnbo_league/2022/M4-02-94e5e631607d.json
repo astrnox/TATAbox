@@ -1,0 +1,48 @@
+{
+ "id": "M4-02-94e5e631607d",
+ "type": "single",
+ "question": "在pH10.0 的缓冲液中，将以下几种氨基酸加入到阴离子交换层析柱中，然后用递减的 pH 梯度洗脱，这些氨基酸洗脱的先后顺序为：",
+ "options": {
+  "A": "Lys→His→Ser→Glu",
+  "B": "Lys→His→Glu→Ser",
+  "C": "Glu→His→Ser→Lys",
+  "D": "Lys→Ser→His→Glu"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 2 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】pH10 下阴离子交换树脂带正电，氨基酸净负电荷越少结合越弱、越先被洗脱。A．正确。Lys（pI 约 9.7）净负电荷最少最先洗脱，其次为 His（pI 7.6）、Ser（pI 5.7），Glu（pI 3.2）负电最多最后洗脱，与该项顺序一致。B．错误。把 Glu 排在 Ser 之前，与 Glu 负电荷最强、结合最牢矛盾。C．错误。Lys 负电最少应最先洗脱，排在最后不符合规律。D．错误。His 的 pI 高于 Ser，负电更少应先于 Ser 洗脱，该项顺序颠倒。故答案为A。\n【通法】通法（离子交换洗脱顺序）：先按 pH 与 pI 比出各分子净电荷多少——同号电荷越少越先洗脱、越多越后洗脱，阴柱阳柱只需按电荷符号对号。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

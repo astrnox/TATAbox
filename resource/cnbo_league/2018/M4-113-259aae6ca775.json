@@ -1,0 +1,47 @@
+{
+ "id": "M4-113-259aae6ca775",
+ "type": "multiple",
+ "question": "真核生物的细胞是高度组织化的，由不同的细胞器行使不同的功能，以下细胞器中，其自身含有遗传物质的是：",
+ "options": {
+  "A": "内质网",
+  "B": "线粒体",
+  "C": "高尔基体",
+  "D": "溶酶体",
+  "E": "叶绿体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 113 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。内质网不含遗传物质。B．正确。线粒体含自身环状DNA与核糖体。C．错误。高尔基体不含核酸。D．错误。溶酶体只含水解酶，无DNA。E．正确。叶绿体含自身DNA与核糖体。故答案为BE。"
+}

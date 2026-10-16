@@ -1,0 +1,45 @@
+{
+ "id": "M4-66-b85036f0e2ad",
+ "type": "single",
+ "question": "第64 题中，与两个亲本表型都不同的子代比例为：",
+ "options": {
+  "A": "15/16",
+  "B": "55/64",
+  "C": "64/128",
+  "D": "25/32"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 66 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 66,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。该选项为15/16，与计算结果55/64不符。B．正确。两个亲本表型无交集：与第一亲本相同者占9/128，与第二亲本相同者也占9/128，合计18/128=9/64，故与两者表型都不同的比例为1−9/64=55/64。C．错误。64/128即1/2，与55/64不符。D．错误。25/32即100/128，与110/128不符。故答案为B。"
+}

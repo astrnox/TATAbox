@@ -1,0 +1,81 @@
+{
+ "id": "M3-51-0b3625ac9b0b",
+ "type": "multiple",
+ "question": "与PF-04449613 功能相符的实验结果有：",
+ "options": {
+  "A": "PF-04449613 降低了心率；",
+  "B": "PF-04449613 降低了心脏收缩力；",
+  "C": "PF-04449613 降低了舒张压；",
+  "D": "PF-04449613 降低了外周阻力。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 51 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "51-52",
+  "stimulus": "磷酸二酯酶9 主要水解细胞中的cGMP。研究者通过心脏及主动脉双压力Millar 导"
+ },
+ "image": {
+  "file": "assets/questions/M3-51-0b3625ac9b0b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 418,
+  "bbox": [
+   90.0,
+   462.8,
+   504.4,
+   632.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-51-0b3625ac9b0b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 418,
+   "bbox": [
+    90.0,
+    462.8,
+    504.4,
+    632.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。实验中心率未见明显下降，与该药功能不符。B．错误。心脏收缩力未受抑制。C．正确。实验显示舒张压下降，与其功能相符。D．正确。外周阻力降低是舒张压下降的原因，与实验结果一致。故答案为CD。"
+}

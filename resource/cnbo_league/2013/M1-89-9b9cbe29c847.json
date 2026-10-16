@@ -1,0 +1,48 @@
+{
+ "id": "M1-89-9b9cbe29c847",
+ "type": "multiple",
+ "question": "在研究蛋白质功能时，常需要知道所研究蛋白在细胞中的定位，比如目的蛋白是否定位于细胞核、细胞质、线粒体等，可以用哪些方法来确定。",
+ "options": {
+  "A": "免疫荧光标记",
+  "B": "GFP 标记",
+  "C": "原位杂交",
+  "D": "免疫电镜"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 89 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。免疫荧光用抗体标记目的蛋白，可在荧光显微镜下直接观察其定位。B．正确。将目的蛋白与GFP融合表达，绿色荧光直接指示蛋白在细胞内的位置。C．错误。原位杂交检测的是mRNA的分布，反映基因表达部位而非蛋白质定位。D．正确。免疫电镜以金标记抗体在电镜下定位，可精确到细胞器水平。故答案为ABD。\n【点睛】点睛：看蛋白定位抓'抗体或荧光标签'——免疫荧光、GFP融合、免疫电镜都行，原位杂交看的是RNA。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M2-57-71ade9665a2f",
+ "type": "multiple",
+ "question": "植物导水率（K）是指单位压力梯度（Mpa）下植物传导水分的通量（kg·s-1）。植物根、茎和叶的导水率分别用Kroot，Kstem 和Kleaf 表示。请结合植物形态解剖学和植物生理学的相关知识，判断以下哪些因素会影响植物导水率？",
+ "options": {
+  "A": "水通道蛋白的表达和活性",
+  "B": "木质部导管的数量和直径",
+  "C": "从叶脉到气孔的路径长度",
+  "D": "气孔密度和气孔导度"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 57 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。水通道蛋白表达与活性直接影响跨细胞的水流阻力。B．正确。导管数量与直径决定输水通道的截面积，是导水率的关键结构基础。C．正确。叶脉到气孔路径越长，水流阻力越大。D．正确。气孔密度与导度决定水汽出口的通畅程度，影响整体导水。故答案为ABCD。\n【点睛】点睛：导水率从四个层次看——细胞层（水通道蛋白）、组织层（导管数量直径）、器官层（叶内路径）、界面层（气孔），任一环节都限流。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

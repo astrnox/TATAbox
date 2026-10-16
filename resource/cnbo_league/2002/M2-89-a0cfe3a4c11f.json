@@ -1,0 +1,45 @@
+{
+ "id": "M2-89-a0cfe3a4c11f",
+ "type": "single",
+ "question": "下列哪一特征是藻类植物，苔藓植物和蕨类植物所共有的：",
+ "options": {
+  "A": "孢子体和配子体均能独立生活",
+  "B": "都含有叶绿素a 和b 的光合色素",
+  "C": "均以孢子进行无性生殖",
+  "D": "均具卵式生殖"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 89 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。苔藓的孢子体寄生在配子体上不能独立生活，故不为三者共有。B．错误。并非所有藻类都含叶绿素a和b，如褐藻含叶绿素a和c，蓝藻含叶绿素a和藻蓝素而无叶绿素b。C．正确。藻类、苔藓和蕨类都能产生孢子并以孢子进行无性生殖，这是三者共有的特征。D．错误。卵式生殖是较高级的类型，低等藻类（如衣藻、水绵）为同配或异配生殖，并非都具卵式生殖。故答案为C。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-48-87b5f074da79",
+ "type": "single",
+ "question": "有丝分裂中，姊妹染色单体着丝粒分开发生于：",
+ "options": {
+  "A": "前期",
+  "B": "中期",
+  "C": "后期",
+  "D": "末期"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 48 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。前期染色质凝缩成染色体，姐妹染色单体仍由黏连蛋白连接在一起。B．错误。中期染色体排列在赤道板上，着丝粒尚未分开。C．正确。后期分离酶降解黏连蛋白，姐妹染色单体的着丝粒分开，被纺锤丝牵引移向两极。D．错误。末期进行核膜重建和胞质分裂，着丝粒在此前早已分开。故答案为C。"
+}

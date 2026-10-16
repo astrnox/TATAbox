@@ -1,0 +1,48 @@
+{
+ "id": "M4-48-a19360518953",
+ "type": "single",
+ "question": "某人群中可卷舌的人的比例是64%，会卷舌是等位基因决定的，一个卷舌者与一个不卷舌者结婚，得到一个会卷舌的孩子的机率是多少？",
+ "options": {
+  "A": "5/8",
+  "B": "3/8",
+  "C": "1/8",
+  "D": "6/8"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 48 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 48,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。设卷舌为显性A，人群中AA＋Aa＝64%，则aa＝36%，q＝0.6、p＝0.4，AA＝0.16、Aa＝0.48，卷舌者中AA占1/4、Aa占3/4；与不卷舌者aa婚配，AA×aa子代全卷舌，Aa×aa子代半卷舌，得卷舌孩子的概率为1/4×1＋3/4×1/2＝5/8。B．错误。3/8只计杂合亲本所生的卷舌子代，漏掉显性纯合亲本的贡献。C．错误。1/8计算有误。D．错误。6/8高于正确值。故答案为A。\n【通法】通法（哈迪-温伯格应用）：先由表型频率得隐性纯合aa并开方求基因频率，再还原显性表型中AA与Aa之比为p²比2pq，最后按亲本基因型加权求子代。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

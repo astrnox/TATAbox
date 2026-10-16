@@ -1,0 +1,45 @@
+{
+ "id": "M2-35-5d160300f1fc",
+ "type": "single",
+ "question": "某一温室植物由于生长条件不当导致生长出现“头重脚轻”的现象——地上部分生长过旺，以下哪些处理方式可缓解这种现象？",
+ "options": {
+  "A": "适当减少水分的供给",
+  "B": "适当多施N 肥，少施磷钾肥",
+  "C": "提高所处环境的光照强度",
+  "D": "适当提高所处环境的温度"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 35 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。适当减少水分供给可降低膨压、抑制地上部旺长，促使光合产物更多运往根系，从而缓解头重脚轻。B．错误。多施氮肥会促进茎叶徒长，加重现象。C．错误。提高光照主要增强光合，对抑制地上部旺长作用有限，反而可能使枝叶更茂。D．错误。提高温度促进呼吸和营养生长，会使地上部生长更旺。故答案为A。"
+}

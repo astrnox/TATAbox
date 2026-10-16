@@ -1,0 +1,45 @@
+{
+ "id": "M1-22-8c369bafbca9",
+ "type": "single",
+ "question": "植物细胞初生纹孔场是",
+ "options": {
+  "A": "细胞初生壁上凹陷、胞间连丝较为密集的地方",
+  "B": "细胞次生壁上凹陷、胞间连丝较为密集的地方",
+  "C": "细胞初生壁上纹孔较为密集的地方",
+  "D": "细胞次生壁上纹孔较为密集的地方"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 22 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。初生纹孔场是细胞初生壁上未次生增厚的薄区，呈凹陷状且胞间连丝密集，是相邻细胞间物质与信息交流的通道。B．错误。次生壁上的缺口才是纹孔，初生纹孔场位于初生壁。C．错误。该处是胞间连丝密集的凹陷区，纹孔属次生壁结构，二者不是一回事。D．错误。次生壁纹孔与此不同，且其处并非胞间连丝密集区。故答案为A。"
+}

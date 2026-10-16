@@ -1,0 +1,45 @@
+{
+ "id": "M3-38-804e53e6e963",
+ "type": "single",
+ "question": "花粉落在雌蕊的柱头上后是否能萌发生长，取决于两者间哪种物质之间的识别：",
+ "options": {
+  "A": "脱氧核糖核酸",
+  "B": "mRNA",
+  "C": "蛋白质",
+  "D": "激素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 38 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。脱氧核糖核酸存在于细胞内，不承担花粉与柱头间的识别功能。B．错误。mRNA 是翻译模板，不参与细胞表面识别。C．正确。花粉外壁中的识别蛋白与柱头表皮细胞表面的蛋白质（糖蛋白）相互识别，决定花粉能否萌发和花粉管能否生长，属蛋白质之间的识别。D．错误。激素参与花粉管生长等过程，但不是识别分子。故答案为C。"
+}

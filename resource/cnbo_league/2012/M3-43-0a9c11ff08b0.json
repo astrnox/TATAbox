@@ -1,0 +1,48 @@
+{
+ "id": "M3-43-0a9c11ff08b0",
+ "type": "multiple",
+ "question": "关于固定行为型，下述论述正确的是",
+ "options": {
+  "A": "固定行为型被特定的外部刺激所释放",
+  "B": "每一个物种都有物种特异的固定行为型",
+  "C": "固定行为型一旦释放就会持续到底",
+  "D": "固定行为型是一种先天行为"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 43 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "第三部分 动物行为学、生态学 （15 道题18 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。固定行为型由特定的外部刺激（信号刺激）所释放，如银鸥雏鸟啄亲鸟喙上的红点即触发反哺。B．正确。每个物种都有其物种特有的固定行为型，是物种识别的依据之一。C．正确。固定行为型一旦被释放便按固定程序进行到底，不因刺激中途消失而停止。D．正确。固定行为型是先天的、由遗传决定的行为模式，无需学习。故答案为ABCD。\n【通法】通法（固定行为型四特征）：信号刺激触发、物种特异、一旦触发即完成、先天遗传，四条同时成立即可全选。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

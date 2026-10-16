@@ -1,0 +1,45 @@
+{
+ "id": "M3-26-0ff0b5fabe0c",
+ "type": "single",
+ "question": "对于哺乳动物细胞来说，分化最明显最集中的时期是＿。",
+ "options": {
+  "A": "受精卵最初的几次分裂",
+  "B": "胚胎发育形成",
+  "C": "从胚胎形成到胎儿出生",
+  "D": "出生后的生长发育"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 26 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。最初几次卵裂是同步分裂，细胞尚未开始明显分化。B．正确。胚胎发育期（尤其器官形成期）细胞经诱导和决定大量分化为各类组织器官，是分化最明显、最集中的时期。C．错误。胚胎形成后的胎儿期以细胞生长、组织成熟和体积增大为主，分化强度已降低。D．错误。出生后以生长和组织更新为主，仅有部分干细胞继续分化。故答案为B。"
+}

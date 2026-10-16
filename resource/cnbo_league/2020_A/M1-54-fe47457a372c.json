@@ -1,0 +1,77 @@
+{
+ "id": "M1-54-fe47457a372c",
+ "type": "multiple",
+ "question": "phyB 是红光受体， PIF 是与 phyB 相互作用的蛋白，包括 4 种同源蛋白 （PIF1， 3，4，5）。科学家发现它们 在植物磷元素（Pi）吸收中具有新的功能。根据右图研究结果，下面叙述正确的有 = −0 Col 野生型， = −9 phyB phyB 功能缺失突变体， 5 4 3 1 、、、 pif 分别是 5 4 3 PIF1 、、、的单突变体， 5 4 3 PIF1 Q 、、、 = pif 的四重突变体（即四个基因都突变）",
+ "options": {
+  "A": "在野生型植物中，红光促进 Pi 的吸收",
+  "B": "在 phyB 突变体中，红光抑制 Pi 的吸收",
+  "C": "phyB 介导红光诱导的 Pi 的吸收",
+  "D": "phyB 是红光促进 Pi 吸收的负调节因子， PIF 蛋白是正调节因子"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 54 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-54-fe47457a372c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 343,
+  "bbox": [
+   94.4,
+   184.1,
+   500.7,
+   334.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-54-fe47457a372c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 343,
+   "bbox": [
+    94.4,
+    184.1,
+    500.7,
+    334.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图中野生型在红光处理下Pi吸收量高于暗对照，说明红光促进Pi吸收。B．错误。phyB突变体中红光组与对照差异不显著，是促进作用丧失而非转为抑制。C．正确。phyB功能缺失后红光的促进效应消失，说明红光诱导的Pi吸收由phyB介导。D．错误。phyB缺失使促进消失，说明phyB是正调节因子而非负调节因子。故答案为AC。"
+}

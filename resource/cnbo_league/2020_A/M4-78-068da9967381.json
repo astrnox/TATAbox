@@ -1,0 +1,84 @@
+{
+ "id": "M4-78-068da9967381",
+ "type": "single",
+ "question": "某些因素会使实验结果出现偏离，要增加上述结论的可信程度，最合理的做法是",
+ "options": {
+  "A": "从多种组织取样，分别进行检测",
+  "B": "先分离mRNA，再进行反转录",
+  "C": "进行单细胞转录组测序",
+  "D": "原位杂交检测"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 78 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "77-81",
+  "stimulus": "哺乳动物依靠X 染色体随机失活来实现剂量补偿。为研究X 染色体随机失活的机"
+ },
+ "image": {
+  "file": "assets/questions/M4-78-068da9967381/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 350,
+  "bbox": [
+   136.9,
+   636.5,
+   458.4,
+   755.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-78-068da9967381/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 350,
+   "bbox": [
+    136.9,
+    636.5,
+    458.4,
+    755.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。单一组织的取样可能存在组织特异性偏差，从多种组织分别检测可排除组织差异造成的偏离，显著提高结论的普适性与可信度。B．错误。先分离mRNA再反转录是常规RT流程，不能减少取样偏差。C．错误。单细胞测序提高的是分辨率，与'因素使结果偏离'的重复性问题不对应。D．错误。原位杂交只定位表达位置，不能解决样本代表性问题。故答案为A。\n【点睛】点睛：结论可信度的瓶颈看偏差来源——源于取样单一就换样本（多组织重复），源于分辨率低才换技术（单细胞），对症下药才是'最合理'。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

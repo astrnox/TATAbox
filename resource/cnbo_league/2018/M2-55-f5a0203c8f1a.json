@@ -1,0 +1,48 @@
+{
+ "id": "M2-55-f5a0203c8f1a",
+ "type": "single",
+ "question": "从理论上看，植物亲缘关系越近的植物，嫁接越容易成活：下列哪一组植物嫁接更容易成活？",
+ "options": {
+  "A": "萝卜和胡萝卜",
+  "B": "雪莲和莲花",
+  "C": "南瓜和丝瓜",
+  "D": "苹果和西府海棠"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 55 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。萝卜属十字花科、胡萝卜属伞形科，亲缘远，形成层难以愈合。B．错误。雪莲属菊科、莲花属睡莲科，亲缘关系很远。C．错误。南瓜与丝瓜同为葫芦科但不同属，亲缘仍有一定距离。D．正确。苹果与西府海棠同为蔷薇科苹果属，形成层亲和性高，嫁接容易成活。故答案为D。\n【通法】通法（嫁接成活判断）：先把双方归类到科、属，同属＞同科＞跨科；亲缘越近形成层愈合越好，嫁接越易成活。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

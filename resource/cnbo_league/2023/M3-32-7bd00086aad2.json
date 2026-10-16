@@ -1,0 +1,81 @@
+{
+ "id": "M3-32-7bd00086aad2",
+ "type": "single",
+ "question": "血管b 的功能相当于哺乳动物哪一类血管：",
+ "options": {
+  "A": "体动脉弓",
+  "B": "冠状动脉",
+  "C": "奇静脉",
+  "D": "腹腔肠系膜动脉"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 32 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "31-32",
+  "stimulus": "组题题干：鱼类为单循环，心室、心房、静脉窦内流动的是缺氧血，如下侧心脏和"
+ },
+ "image": {
+  "file": "assets/questions/M3-32-7bd00086aad2/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 437,
+  "bbox": [
+   157.2,
+   541.1,
+   438.0,
+   715.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-32-7bd00086aad2/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 437,
+   "bbox": [
+    157.2,
+    541.1,
+    438.0,
+    715.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。体动脉弓将心脏泵出的血液送往全身，是主干输送血管，与图中 b 的局部营养分配功能不同。B．正确。图中 b 自血管干发出后分布于心脏局部，功能相当于哺乳动物的冠状动脉这类营养分配血管。C．错误。奇静脉收集胸壁等处静脉血回心，属静脉，功能不符。D．错误。腹腔肠系膜动脉供应消化道，与 b 所营养的器官不符。故答案为B。"
+}

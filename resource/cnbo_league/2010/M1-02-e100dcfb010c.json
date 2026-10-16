@@ -1,0 +1,48 @@
+{
+ "id": "M1-02-e100dcfb010c",
+ "type": "single",
+ "question": "细胞质膜上具备的钠钾泵每消耗一个ATP分子将会",
+ "options": {
+  "A": "向细胞内转入2个K+向细胞外转出2个Na+",
+  "B": "向细胞内转入2个Na+向细胞外转出2个K+",
+  "C": "向细胞内转入3个K+向细胞外转出2个Na+",
+  "D": "向细胞内转入2个K+向细胞外转出3个Na+"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 2 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。钠钾泵的化学计量不是2个K+对2个Na+，方向也与实际相反。B．错误。该选项把Na+与K+的转运方向弄反了，钠钾泵是把Na+泵出细胞、K+泵入细胞。C．错误。其化学计量为3个Na+对2个K+，并非2对2。D．正确。钠钾泵即Na+-K+ATP酶，每水解一分子ATP即泵出3个Na+、泵入2个K+，维持细胞内高K+低Na+的离子梯度。故答案为D。\n【通法】通法（主动运输）：钠钾泵记作'每ATP泵出3Na+、泵入2K+'，二者均逆浓度梯度转运；判断此类题先核对数量比，再核对方向。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

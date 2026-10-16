@@ -1,0 +1,45 @@
+{
+ "id": "M1-13-2c53b1bd8169",
+ "type": "single",
+ "question": "动物细胞中与有丝分裂有关的细胞器是：",
+ "options": {
+  "A": "溶酶体",
+  "B": "高尔基体",
+  "C": "内质网",
+  "D": "中心体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 13 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。溶酶体与细胞内消化和衰老细胞器的清除有关。B．错误。高尔基体与分泌物的加工包装及植物细胞壁的形成有关。C．错误。内质网是蛋白质和脂类的合成车间。D．正确。中心体在间期复制，前期移向细胞两极并发出星射线形成纺锤体，与动物细胞的有丝分裂直接相关。故答案为D。"
+}

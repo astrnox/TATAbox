@@ -1,0 +1,48 @@
+{
+ "id": "M1-36-34c931f3eca0",
+ "type": "single",
+ "question": "在胚芽鞘的向光运动中，光感受部位是胚芽鞘的",
+ "options": {
+  "A": "顶端",
+  "B": "延长区",
+  "C": "基部",
+  "D": "胚芽鞘内的芽"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 36 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。胚芽鞘感受单侧光的部位是顶端，顶端的光受体感受光强差后引起生长素横向运输，使下部伸长区两侧生长不均而向光弯曲。B．错误。延长区（伸长区）是弯曲生长的执行部位，不是感光部位。C．错误。基部既不感光，也不决定弯曲方向。D．错误。胚芽鞘内的幼芽与向光反应无关，切除顶端后胚芽鞘即失去向光性。故答案为A。\n【点睛】点睛：向光性的经典结论是'感光在尖端，弯曲在尖端下部'，遮住顶端即无向光反应。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

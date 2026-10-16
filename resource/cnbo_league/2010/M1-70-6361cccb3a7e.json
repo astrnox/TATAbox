@@ -1,0 +1,48 @@
+{
+ "id": "M1-70-6361cccb3a7e",
+ "type": "single",
+ "question": "某人的血清与B血型者的红细胞不发生凝集，但其红细胞与B血型者的血清发生凝集，以此判断此人的血型",
+ "options": {
+  "A": "A型",
+  "B": "B型",
+  "C": "AB型",
+  "D": "0型"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 70 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A型红细胞含A抗原，会被B型血清中的抗A凝集，与题设不符。B．错误。B型红细胞与B血清本就互不凝集，不合题设的第二项现象。C．正确。该人血清与B红细胞不凝集，说明血清中无抗B；其红细胞与含抗A的B型血清凝集，说明红细胞带A抗原；兼有A、B抗原即AB型。D．错误。O型血清含抗A和抗B，会与B红细胞凝集，不合题设（题中'0型'应为'O型'）。故答案为C。\n【通法】通法（ABO血型判定）：双向交叉定型——血清与B红细胞不凝则无抗B、红细胞带B抗原；红细胞与B血清（抗A）凝则带A抗原；两者叠加即AB型。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

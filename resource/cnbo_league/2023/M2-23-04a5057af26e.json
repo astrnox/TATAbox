@@ -1,0 +1,45 @@
+{
+ "id": "M2-23-04a5057af26e",
+ "type": "single",
+ "question": "细菌通常需要借助光学显微镜才能观察到，但近年来科学家们发现了肉眼可见的巨型细菌，迄今发现的最大细菌是2022 年报道的体长可达2 厘米的：",
+ "options": {
+  "A": "纳米比亚硫磺珍珠菌",
+  "B": "食用菌",
+  "C": "巨大嗜硫珠菌",
+  "D": "放线菌"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 23 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。纳米比亚硫磺珍珠菌体长虽达厘米级，但不是 2022 年报道的最大细菌。B．错误。食用菌是真菌，不属于细菌。C．正确。2022 年报道的巨大嗜硫珠菌体长可达约 2 厘米，是迄今发现的最大细菌。D．错误。放线菌为丝状细菌，不达此体量。故答案为C。"
+}

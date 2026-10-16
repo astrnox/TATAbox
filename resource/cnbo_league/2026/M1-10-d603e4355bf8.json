@@ -1,0 +1,77 @@
+{
+ "id": "M1-10-d603e4355bf8",
+ "type": "mtf",
+ "question": "外泌体是细胞释放到细胞外环境的小型囊泡。研究者从小鼠细胞培养物中纯化出外泌体。右图左侧显示细胞RNA 及外泌体 RNA 的检测结果，横轴和纵轴分别表示RNA 分子的迁移时间和含量（荧光强度FU）。右侧显示用Poly(dT)作引物，将外泌体RNA 作为模板合成cDNA 的电泳结果。由此判断下列叙述的正误：",
+ "options": {
+  "A": "外泌体中含有分子量大小不同的RNA；",
+  "B": "与供体细胞相比，外泌体的rRNA 几乎没有或很少；",
+  "C": "外泌体及其供体细胞均检测到小于18S 的RNA；",
+  "D": "外泌体中含有mRNA。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "TTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 10 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-10-d603e4355bf8/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 3,
+  "bbox": [
+   355.9,
+   72.5,
+   505.4,
+   194.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-10-d603e4355bf8/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 3,
+   "bbox": [
+    355.9,
+    72.5,
+    505.4,
+    194.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。左侧电泳结果显示外泌体RNA呈现多种迁移时间/大小的峰，含不同分子量RNA。B．正确。与供体细胞相比，外泌体RNA中rRNA峰几乎没有或很少，说明rRNA基本不被分选入外泌体。C．正确。细胞与外泌体RNA中均检测到小于18S的RNA组分。D．正确。用Poly(dT)引物以外泌体RNA为模板可合成cDNA，说明其中含带poly(A)尾的mRNA。"
+}

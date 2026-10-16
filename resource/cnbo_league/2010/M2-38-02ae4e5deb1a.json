@@ -1,0 +1,45 @@
+{
+ "id": "M2-38-02ae4e5deb1a",
+ "type": "single",
+ "question": "水稻茎的维管束属于",
+ "options": {
+  "A": "双韧维管束",
+  "B": "周韧维管束",
+  "C": "外韧无限维管束",
+  "D": "外韧有限维管束"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 38 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。双韧维管束是木质部内外两侧均有韧皮部，见于葫芦科等双子叶植物茎，水稻不具此结构。B．错误。周韧维管束是韧皮部围绕木质部，多见于蕨类根状茎等，不是水稻茎的类型。C．错误。外韧无限维管束具束中形成层，可进行次生生长，是多数双子叶植物茎的特征。D．正确。水稻为单子叶植物，茎内维管束散生，韧皮部在外、木质部在内，无形成层，属外韧有限维管束。故答案为D。"
+}

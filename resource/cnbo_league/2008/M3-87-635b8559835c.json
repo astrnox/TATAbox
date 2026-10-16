@@ -1,0 +1,45 @@
+{
+ "id": "M3-87-635b8559835c",
+ "type": "single",
+ "question": "应该以下列哪一项指标判断一个物种为群落中的优势种。",
+ "options": {
+  "A": "群落中个体数量最多的物种",
+  "B": "在群落中作用最大的物种",
+  "C": "占有最大生存空间的物种",
+  "D": "有最大生物量的物种"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 87 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。个体数量最多只是数量优势，个体微小的物种数量可能极多而影响有限。B．正确。优势种是对群落结构和群落环境影响最大的物种，判断标准是其在群落中的作用和控制力。C．错误。占有空间大小不能反映物种对群落的控制作用。D．错误。生物量最大也不等于作用最大，如浮游植物生物量小却是初级生产的基础。故答案为B。"
+}

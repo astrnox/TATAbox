@@ -1,0 +1,48 @@
+{
+ "id": "M1-35-9ec24e942bdb",
+ "type": "single",
+ "question": "物质进出细胞核是受到控制的，其控制的机制主要是＿。",
+ "options": {
+  "A": "通过改变核周隙的宽度",
+  "B": "通过改变核膜的厚度",
+  "C": "通过改变被运送分子的结构",
+  "D": "通过改变核孔直径的大小"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 35 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。核周隙宽度不随运输需要改变，与核质交换的选择性无关。B．错误。核膜厚度相对恒定，不是调控物质运输的机制。C．错误。进出核的RNA和蛋白质结构并不因此改变，变化的是运输复合体与核孔的相互作用。D．正确。物质主要通过核孔复合体进出细胞核，核孔的有效直径可随运输状态改变，小分子可自由扩散，大分子需信号介导经核孔通道进出，从而实现受控运输。故答案为D。\n【点睛】点睛：核质交换的关卡是核孔复合体，被动扩散看孔径，大分子运输看信号识别与核孔构象变化。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

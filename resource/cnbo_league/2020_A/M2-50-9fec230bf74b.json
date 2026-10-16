@@ -1,0 +1,48 @@
+{
+ "id": "M2-50-9fec230bf74b",
+ "type": "single",
+ "question": "今有一草本植物，单叶、互生，花萼、花瓣均为五枚，雄、雌蕊多数，螺旋状排列于隆起的 花托上，子房上位、周位花，聚合瘦果。这种植物可能属于",
+ "options": {
+  "A": "木兰科",
+  "B": "蔷薇科",
+  "C": "毛茛科",
+  "D": "锦葵科"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 50 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。木兰科为木本植物，与题干草本不符。B．正确。该草本具五基数花、雄雌蕊多数螺旋着生于隆起花托、子房上位周位花、聚合瘦果，正是蔷薇科（如委陵菜族）的典型特征组合。C．错误。毛茛科虽也有多数雄雌蕊，但其花多为上位花而非周位花，花托形态与之不符。D．错误。锦葵科雄蕊常合生成单体雄蕊，与'雄蕊多数分离'不符。故答案为B。\n【通法】通法（科特征锁定）：先用生活型（草本/木本）筛掉一半，再用花程式抓手——五基数＋多数雄雌蕊螺旋＋周位花＋聚合瘦果，对应蔷薇科。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1183,7 +1183,9 @@ function handleRoute(route) {
     '/bio-lab': 'bio-lab',
     '/phet-sims': 'phet-sims',
     '/trends': 'trends',
-    '/teacher': 'teacher'
+    '/teacher': 'teacher',
+    // bio-calc.js 未在 index.html 预加载，必须经 loadModule 拉起（依赖 score-engine）
+    '/bio-calc': 'bio-calc'
   };
   var modName = moduleMap[route];
 
@@ -1207,7 +1209,13 @@ function handleRoute(route) {
 
   var renderFn = function() {
     _clearRouteLoading();
-    doRouteRender(route, target);
+    // bio-calc 走专用渲染（内嵌模式 → #userBioCalcEmbed，否则整页）：
+    // 不走 doRouteRender，它没有针对该模块的 render 分支，会静默渲染出空壳
+    if (route === '/bio-calc' && typeof window.renderBioCalcPage === 'function') {
+      window.renderBioCalcPage(target);
+    } else {
+      doRouteRender(route, target);
+    }
   };
 
   function finishRouting() {
@@ -1303,7 +1311,8 @@ function handleRoute(route) {
         '/bio-lab': 'initBioLab',
         '/trends': 'initTrends',
         '/teacher': 'initTeacher',
-        '/data-lab': 'initScoreCalc'
+        '/data-lab': 'initScoreCalc',
+        '/bio-calc': 'initBioCalc'
       }[route];
       if (initFnName && typeof window[initFnName] !== 'function') {
         // 给脚本一个微任务时间完成初始化
@@ -1364,7 +1373,7 @@ function _resolveModuleUrl(modName) {
 function _moduleDir(modName) {
   var core = { 'app': 1, 'app-routes': 1, 'boot-mask': 1, 'boot-lazy': 1, 'sw-register': 1,
     'theme-init': 1, 'theme-transition': 1, 'config': 1, 'utils': 1, 'storage': 1, 'rating': 1,
-    'supabase': 1, 'supabase-client': 1, 'loader': 1, 'question-utils': 1, 'event-bus': 1,
+    'supabase': 1, 'supabase-client': 1, 'loader': 1, 'question-utils': 1, 'question-model': 1, 'event-bus': 1,
     'csp-events': 1, 'error-recovery': 1, 'empty-state': 1, 'a11y-utils': 1, 'sync-tabs': 1,
     'cell-loader': 1, 'lazy-images': 1, 'offline-queue': 1, 'offline-status': 1,
     'shortcut-panel': 1, 'hamburger': 1, 'micro-details': 1,
@@ -1386,15 +1395,21 @@ function _moduleDir(modName) {
 
 // 模块依赖表：加载某模块前先加载其依赖
 var _moduleDeps = {
-  'practice': ['question-utils', 'loader', 'rating'],
-  'exam': ['question-utils', 'loader'],
-  'review': ['question-utils', 'loader'],
-  'wrongbook': ['question-utils', 'loader', 'review-deep'],
-  'review-deep': ['question-utils', 'loader'],
-  'admin': ['rating'],
+  'practice': ['question-model', 'question-utils', 'loader', 'rating'],
+  'exam': ['question-model', 'question-utils', 'loader'],
+  'review': ['question-model', 'question-utils', 'loader'],
+  'wrongbook': ['question-model', 'question-utils', 'loader', 'review-deep'],
+  'review-deep': ['question-model', 'question-utils', 'loader'],
+  'admin': ['rating', 'question-model'],
+  // 模块名为 'smart-diagnosis'（app-routes /diagnosis 的 module 字段），
+  // 此前误写成 'diagnosis' 导致依赖声明永不命中
+  'smart-diagnosis': ['question-model'],
+  'daily-billion': ['question-model', 'score-engine'],
   'analytics': ['score-engine'],
-  'score-calc': ['score-engine', 'credit-metrics'],
-  'bio-calc': ['score-engine']
+  // 键必须与 app-routes.js '/analytics' 的 module:'analytic' 一致（同 diagnosis 死键教训）
+  'analytic': ['score-engine'],
+  'bio-calc': ['score-engine'],
+  'score-calc': ['score-engine', 'credit-metrics']
 };
 
 // 模块名 → 初始化函数名（用于检测 head 中预加载的脚本是否已注册 init）
@@ -1407,7 +1422,7 @@ function modNameToInitFn(modName) {
     'admin': 'initAdmin',
     'community': 'initCommunity',
     'knowledge-graph': 'initKnowledgeGraph',
-    'diagnosis': 'initSmartDiagnosis',
+    'smart-diagnosis': 'initSmartDiagnosis',
     'pomodoro': 'initPomodoro',
     'habits': 'initHabits',
     'review': 'initReview',
@@ -1478,9 +1493,27 @@ window.loadModule = function(modName, options) {
 
     function loadOnce() {
       // 防御性检查：如果对应 script 标签已经在 head 中，跳过动态加载
+      // 精确匹配模块自身路径（忽略 query 版本号）：裸文件名匹配会被同名后缀的
+      // 核心脚本误命中（如 sb-study.js 匹配 "study.js"），导致 study.js 永远
+      // 不被注入、initStudy 3 秒后被误判为「已加载」而报初始化函数未找到。
       var targetUrl = _resolveModuleUrl(modName);
-      var baseName = modName + '.js';
-      var existing = document.querySelector('script[src*="' + baseName + '"]');
+      // 模块固定路径片段（如 /js/pages/study.js）：绝对/相对 src 都能归一比较
+      var modPath = '/js/' + _moduleDir(modName) + '/' + modName + '.js';
+      var existing = null;
+      var allScripts = document.querySelectorAll('script[src]');
+      for (var si = 0; si < allScripts.length; si++) {
+        var rawSrc = allScripts[si].getAttribute('src') || '';
+        // 归一为绝对 pathname（丢弃 query/hash）；URL 构造异常时退回手动去 query，
+        // 并补前导 '/'，否则相对 src（"js/pages/study.js"）的 slice 前缀比较会永远不命中
+        var srcPath;
+        try { srcPath = new URL(rawSrc, document.baseURI).pathname; }
+        catch (e) { srcPath = rawSrc.split('?')[0].split('#')[0]; }
+        if (srcPath.charAt(0) !== '/') srcPath = '/' + srcPath;
+        if (srcPath.slice(-modPath.length) === modPath) {
+          existing = allScripts[si];
+          break;
+        }
+      }
       if (existing) {
         // 已经在 head 中预加载，等待初始化函数暴露
         var waitStart = Date.now();
@@ -2305,9 +2338,17 @@ async function initSupabase() {
     }
 
     // 动态加载 supabase 相关脚本（按依赖顺序）
-    var v = '20260905a';
+    // sb-* 四件套必须随链加载（与 quiz.html 等子页面顺序一致）：
+    //   sb-gamify  —— 打卡/成就/bio分/信用点；sb-data —— 错题本/复习卡/练习云同步
+    //   sb-social  —— 社区动态；sb-study —— 学习记录
+    // 缺失会让主 SPA 各页面的全局调用点静默失效
+    var v = '20261013a';
     var supabaseScripts = [
       __jsBase + 'js/core/supabase-client.js?v=' + v,
+      __jsBase + 'js/core/sb-gamify.js?v=' + v,
+      __jsBase + 'js/core/sb-social.js?v=' + v,
+      __jsBase + 'js/core/sb-data.js?v=' + v,
+      __jsBase + 'js/core/sb-study.js?v=' + v,
       __jsBase + 'js/core/supabase.js?v=' + v,
       __jsBase + 'js/core/storage.js?v=' + v
     ];

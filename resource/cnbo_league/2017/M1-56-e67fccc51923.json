@@ -1,0 +1,45 @@
+{
+ "id": "M1-56-e67fccc51923",
+ "type": "single",
+ "question": "植物缺锌时通常出现节间缩短，叶片变小并呈簇生状，是因为哪个酶的合成受阻：",
+ "options": {
+  "A": "碳酸酐酶",
+  "B": "色氨酸合成酶",
+  "C": "谷氨酸脱氢酶",
+  "D": "超氧化物歧化酶"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 56 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。碳酸酐酶含锌，缺锌会影响其活性，但与节间缩短、叶片簇生的生长症状无直接因果。B．正确。锌是色氨酸合成酶的组分，缺锌使色氨酸合成受阻，生长素（吲哚乙酸）合成不足，导致节间缩短、叶片变小簇生（小叶病）。C．错误。谷氨酸脱氢酶含锌非其缺素症状的主导环节。D．错误。超氧化物歧化酶（Cu/Zn-SOD）与抗氧化相关，不是生长素合成环节。故答案为B。"
+}

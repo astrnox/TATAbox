@@ -1,0 +1,45 @@
+{
+ "id": "M1-08-2aad2050c3c0",
+ "type": "single",
+ "question": "光合产物蔗糖形成的部位是在",
+ "options": {
+  "A": "叶绿体基粒",
+  "B": "叶绿体间质",
+  "C": "细胞质",
+  "D": "类囊体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 8 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。基粒是类囊体堆叠而成的光反应场所，进行水的光解和光合磷酸化，不合成蔗糖。B．错误。叶绿体间质是卡尔文循环（暗反应）场所，产物为三碳糖磷酸，蔗糖合成酶系不在其中。C．正确。三碳糖磷酸运出叶绿体后，在细胞质中经蔗糖磷酸合酶等催化合成蔗糖，蔗糖是光合产物向外运输的主要形式。D．错误。类囊体膜上进行光反应，与蔗糖合成无关。故答案为C。"
+}

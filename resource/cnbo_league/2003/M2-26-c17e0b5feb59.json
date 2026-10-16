@@ -1,0 +1,45 @@
+{
+ "id": "M2-26-c17e0b5feb59",
+ "type": "single",
+ "question": "胞间连丝存在于：",
+ "options": {
+  "A": "动物上皮细胞之间",
+  "B": "植物组织细胞之间",
+  "C": "蓝藻群体细胞之间",
+  "D": "四联球菌各细胞之间"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 26 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。动物细胞间以桥粒、紧密连接和间隙连接等方式联系，没有胞间连丝。B．正确。胞间连丝是穿过相邻植物细胞细胞壁的细胞质通道，使相邻细胞的原生质体连通，进行物质运输和信息传递。C．错误。蓝藻为原核生物，无内质网等内膜系统，不能形成胞间连丝。D．错误。四联球菌是细菌，细胞分裂后即彼此分开，无胞间连丝。故答案为B。"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "M1-43-a307a7836afe",
+ "type": "mtf",
+ "question": "蜘蛛通常具有一对主眼和若干对副眼，主眼和副眼在功能和结构上存在差异。对以下关于蜘蛛眼睛结构与功能的陈述进行正误判断：",
+ "options": {
+  "A": "主眼的感杆束排列在光感受器的顶端，直接接收透过玻璃体细胞的光线；副眼的感杆束则位于感光体的基部",
+  "B": "副眼在视网膜基部具有反光层，可将一部分光线反射回视网膜以提高光敏感度",
+  "C": "视神经能将光信号转换为电信号",
+  "D": "蜘蛛的主眼和副眼都是由多个小眼构成的"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "TTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 43 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "三、动物学、动物生理学、生态学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-43-a307a7836afe/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 7,
+  "bbox": [
+   294.7,
+   599.5,
+   550.7,
+   721.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-43-a307a7836afe/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 7,
+   "bbox": [
+    294.7,
+    599.5,
+    550.7,
+    721.6
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。主眼的感杆束位于感光细胞顶端、朝向前方，直接接收经玻璃体细胞射入的光线；副眼的感杆束位于基部。B．正确。副眼视网膜基部具有反光层（反光色素层），将未吸收的光反射回视网膜，提高光敏感度。C．错误。将光信号转换为电信号（光转导）的是感光细胞，视神经负责传导动作电位。D．错误。蜘蛛的主眼是一对单眼（非多个小眼组成），副眼才是多对排列。"
+}

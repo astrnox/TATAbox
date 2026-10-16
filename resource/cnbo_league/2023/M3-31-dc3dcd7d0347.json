@@ -1,0 +1,81 @@
+{
+ "id": "M3-31-dc3dcd7d0347",
+ "type": "multiple",
+ "question": "以下关于血管内血液氧气含量的表述正确的是：",
+ "options": {
+  "A": "血管a 中氧气含量高于c",
+  "B": "血管a 中氧气含量高于b",
+  "C": "血管b 中氧气含量高于c",
+  "D": "血管b 中氧气含量等于c"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 31 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "31-32",
+  "stimulus": "组题题干：鱼类为单循环，心室、心房、静脉窦内流动的是缺氧血，如下侧心脏和"
+ },
+ "image": {
+  "file": "assets/questions/M3-31-dc3dcd7d0347/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 437,
+  "bbox": [
+   157.2,
+   541.1,
+   438.0,
+   715.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-31-dc3dcd7d0347/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 437,
+   "bbox": [
+    157.2,
+    541.1,
+    438.0,
+    715.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】依图中各血管在循环路径中的位置判断含氧水平：a、b 为含氧较高的血管，c 为经气体交换或组织消耗后的低氧血管。A．正确。a 的氧含量高于 c。B．错误。a 与 b 含氧水平相当，a 并不高于 b。C．正确。b 的氧含量高于 c。D．错误。b 明显高于 c，二者不相等。故答案为AC。"
+}

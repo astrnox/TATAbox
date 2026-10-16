@@ -1,0 +1,48 @@
+{
+ "id": "M1-55-580850c5f550",
+ "type": "single",
+ "question": "（接上题）回交产生的子代中，三种性状都和弗吉尼亚烟草相同的占：",
+ "options": {
+  "A": "50％",
+  "B": "39%",
+  "C": "27％",
+  "D": "25％"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 55 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。50%只按一个区间计算或假定两基因自由组合，与连锁不符。B．正确。三性状全与弗吉尼亚烟草（显性亲本）相同，需F1提供MCS型配子，即M-C与C-S两区间均不发生交换：(1−0.06)(1−0.17)=0.78，亲本型配子占一半，0.78÷2=0.39即39%。C．错误。27%是把单交换与双交换混算的近似值，并非全亲本型。D．错误。25%是两对基因独立分配时的假想值，未体现连锁。故答案为B。\n【通法】通法（三点回交配子概率）：亲本型配子=(1−r1)(1−r2)÷2；双交换型=r1×r2÷2；单交换型=该区间r×另一区间(1−r)÷2。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

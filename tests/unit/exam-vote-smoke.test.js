@@ -35,6 +35,8 @@ describe('试题页（quiz.html）投票/评分冒烟', () => {
     // storage.js / rating.js 显式挂载到 window，直接求值即可
     window.eval(read('js/core/storage.js'));
     window.eval(read('js/core/rating.js'));
+    // question-model.js：quiz.js 顶层引用 QuestionModel 分值常量
+    window.eval(read('js/core/question-model.js'));
     // quiz.js 为 'use strict' 经典脚本：去掉首行指令后以非严格模式 eval，
     // 使其函数声明进入全局作用域（等价于页面以 <script> 加载时的行为）
     const quizSrc = read('js/pages/quiz.js').replace(/^('use strict'|"use strict");?\s*\n?/, '');

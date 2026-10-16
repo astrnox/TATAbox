@@ -1,0 +1,45 @@
+{
+ "id": "M3-58-6b5b6c0c6cd3",
+ "type": "single",
+ "question": "动物的警戒色是用来：",
+ "options": {
+  "A": "吸引配偶",
+  "B": "提醒捕食者自己是不可食的",
+  "C": "保证动物体色与周围环境颜色一致",
+  "D": "吸引传粉昆虫"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 58 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。吸引配偶主要靠婚羽、鸣唱和性外激素等，与警戒色无关。B．正确。警戒色色彩鲜艳、对比强烈，往往配合毒刺、恶臭等防御手段，向捕食者昭示自己不可食，使捕食者回避。C．错误。体色与环境一致是保护色即隐蔽色，与警戒色的作用正相反。D．错误。吸引传粉昆虫靠花色、花蜜和气味，不是动物警戒色的功能。故答案为B。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-43-26eb5902ac61",
+ "type": "single",
+ "question": "三羧酸循环第一步反应产物是＿。",
+ "options": {
+  "A": "柠檬酸",
+  "B": "草酸乙酸",
+  "C": "乙酰CoA",
+  "D": "CO2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "柠檬酸循环",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 43 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。三羧酸循环第一步由柠檬酸合酶催化，乙酰CoA与草酰乙酸缩合生成柠檬酸，故第一步产物是柠檬酸。B．错误。'草酸乙酸'应为草酰乙酸，它是该步反应的底物而非产物。C．错误。乙酰CoA是进入循环的底物，缩合过程中被消耗。D．错误。CO2在异柠檬酸脱氢和α-酮戊二酸脱氢两步氧化脱羧中产生，第一步不释放CO2。故答案为A。"
+}

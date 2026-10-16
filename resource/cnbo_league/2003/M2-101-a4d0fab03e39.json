@@ -1,0 +1,77 @@
+{
+ "id": "M2-101-a4d0fab03e39",
+ "type": "single",
+ "question": "如果将一个池塘内的水体分为a、b、c 三层 (见图)，根据你对草履虫和眼虫的了解，你认为下列叙述正确的是：",
+ "options": {
+  "A": "草履虫主要生活在a 层，眼虫主要生活在b 层",
+  "B": "草履虫主要生活在b 层，眼虫主要生活在a 层",
+  "C": "草履虫和眼虫都主要生活在a 层",
+  "D": "草履虫和眼虫都主要生活在b 层"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 101 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 101,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-101-a4d0fab03e39/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 41,
+  "bbox": [
+   218.9,
+   78.3,
+   375.6,
+   159.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-101-a4d0fab03e39/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 41,
+   "bbox": [
+    218.9,
+    78.3,
+    375.6,
+    159.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】图中a、b、c依次为池塘水体的表层、中层和底层。A．错误。眼虫具叶绿体，需强光行光合作用，只能集中于表层a，不会主要在b层。B．错误。草履虫好氧异养、以细菌为食，表层溶氧高、细菌多，它也主要在a层。C．正确。眼虫趋光，草履虫趋氧且取食表层丰富的细菌，二者都主要生活在a层。D．错误。中层b光照与溶氧均不及表层，两者都不会主要集中于此。故答案为C。"
+}

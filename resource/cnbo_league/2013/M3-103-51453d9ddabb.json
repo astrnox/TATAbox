@@ -1,0 +1,48 @@
+{
+ "id": "M3-103-51453d9ddabb",
+ "type": "single",
+ "question": "与非冬眠时相比，动物在冬眠时",
+ "options": {
+  "A": "心率会显著增加",
+  "B": "警戒行为变得更强",
+  "C": "体温显著上升",
+  "D": "呼吸频率显著减慢"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 103 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。冬眠时代谢率大幅下降，心率显著减慢而非增加。B．错误。冬眠动物处于深度休眠状态，警戒行为明显减弱。C．错误。冬眠时体温随环境大幅下降，而非上升。D．正确。冬眠时代谢水平极低，氧耗减少，呼吸频率显著减慢，有时仅每隔数分钟一次。故答案为D。\n【易错易混】易混：冬眠≠睡眠，也≠变温动物的蛰眠；核心是主动降低代谢，心率、呼吸、体温'三降'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

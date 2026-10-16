@@ -1,0 +1,52 @@
+{
+ "id": "M4-61-7ed2ec7feaab",
+ "type": "mtf",
+ "question": "Walton 认为DMD 很可能是X-染色体连锁的隐性遗传病。判断下列相关论述的正误：",
+ "options": {
+  "A": "测定患者家系成员的血型，与表型相对照，有利于确定DMD 的遗传方式；",
+  "B": "患者几乎都是男性，是支持DMD 为X-染色体连锁的隐性遗传病的证据；",
+  "C": "因男患者无法留下后代，若有女患者存在，则说明DMD 是不完全显性遗传病；",
+  "D": "如果有女子与两任丈夫都生下DMD 患儿，则可以支持Walton 的推断。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 61 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 61,
+  "section": "第四部分：遗传学 演化生物学 生物信息学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "61-63",
+  "stimulus": "1955 年，遗传学家J. Walton 对英国某地居民中杜氏肌营养不良（DMD）的病例进行了研究，"
+ },
+ "explanation": "【解析】A．错误。血型与DMD基因不连锁，测定血型无助于确定DMD的遗传方式。B．正确。患者几乎全为男性，符合X连锁隐性遗传'男性半合即发病'的特征。C．错误。女患者出现不能推出'不完全显性'——可用X染色体失活偏倚、纯合/结构异常等解释。D．正确。同一女性与两任丈夫均生育DMD患儿，提示她是携带者，支持X连锁隐性推断。\n【点睛】点睛：'全男患者'＝X连锁隐性第一证据；'女患者'不推翻结论，先找X失活偏倚或纯合，别急着改遗传方式。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

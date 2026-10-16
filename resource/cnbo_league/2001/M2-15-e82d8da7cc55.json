@@ -1,0 +1,45 @@
+{
+ "id": "M2-15-e82d8da7cc55",
+ "type": "single",
+ "question": "菌根是＿在植物体上形成的，二者是一种＿关系。",
+ "options": {
+  "A": "细菌：寄生",
+  "B": "真菌；互惠共生",
+  "C": "真菌；附生",
+  "D": "根瘤菌；互惠共生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 15 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。菌根是真菌与植物根的共生体，而非细菌。B．正确。菌根由真菌菌丝与植物根共同形成，菌丝扩大吸收面积、供应水分和矿质元素，植物回馈光合产物，二者互惠共生。C．错误。菌丝深入根组织内部形成菌根，绝非附生关系。D．错误。根瘤菌与豆科植物形成根瘤，虽也是互惠共生，但主体与结构均非菌根。故答案为B。"
+}

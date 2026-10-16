@@ -1,0 +1,45 @@
+{
+ "id": "M1-88-e505ffa36769",
+ "type": "single",
+ "question": "腔肠动物出现了组织和胚层的分化，以下各组结构中，水螅所具有的一组结构是：",
+ "options": {
+  "A": "皮肌细胞、神经细胞、腺细胞、骨针",
+  "B": "皮肌细胞、神经细胞、间细胞、刺细胞",
+  "C": "肌细胞、腺细胞、间细胞、骨针",
+  "D": "肌细胞、腺细胞、间细胞、刺细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 87 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。骨针是海绵动物的骨骼结构，水螅不具备。B．正确。水螅外皮层含皮肌细胞（上皮肌细胞）、感觉细胞和神经细胞，内皮层有腺细胞和营养肌细胞，间细胞散布其间可分化补充各类细胞，刺细胞更是腔肠动物所特有。C．错误。水螅没有骨针，也没有独立的肌细胞，其肌原纤维位于皮肌细胞基部。D．错误。水螅不具独立的肌细胞，收缩依靠皮肌细胞内的肌原纤维。故答案为B。"
+}

@@ -1,0 +1,47 @@
+{
+ "id": "M3-81-fb26ac0c2a2a",
+ "type": "single",
+ "question": "下列哪一项不是生物多样性的主要研究内容：",
+ "options": {
+  "A": "景观多样性",
+  "B": "物种多样性",
+  "C": "遗传多样性",
+  "D": "个体多样性",
+  "E": "生态系统多样性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 81 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不是生物多样性主要研究内容的一项，判断词指该选项是否合题意。A．错误。表述成立，景观多样性是生物多样性研究的高层次内容之一。B．错误。表述成立，物种多样性是最核心的研究层次。C．错误。表述成立，遗传多样性即基因多样性，是物种和生态系统多样性的基础。D．正确。该表述不成立，正是应选项，生物多样性以基因、物种、生态系统乃至景观为度量单位，'个体多样性'并非公认的研究层次。E．错误。表述成立，生态系统多样性是生物多样性的重要层次。故答案为D。"
+}

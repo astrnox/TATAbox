@@ -1,0 +1,45 @@
+{
+ "id": "M3-86-1a13196a95df",
+ "type": "multiple",
+ "question": "初生的灰雁把研究者劳伦兹（Lorenz）看作自己的母亲，时刻跟随，属于哪些行为类型",
+ "options": {
+  "A": "印记行为",
+  "B": "定型行为",
+  "C": "保护行为",
+  "D": "学习行为"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 86 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。灰雁破壳后在关键期内把最先见到的活动物体当作母亲并持续跟随，是典型的印记（印随）行为。B．错误。定型行为是生来就有、由遗传决定的固定行为模式，跟随对象可随印记对象而变，不属定型行为。C．错误。该行为是依恋和跟随，与保护行为无关。D．正确。印记必须有经验对象才能形成，且在关键期内一经建立不易改变，属早期学习行为的特殊形式。故答案为AD。"
+}

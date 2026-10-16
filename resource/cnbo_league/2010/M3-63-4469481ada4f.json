@@ -1,0 +1,81 @@
+{
+ "id": "M3-63-4469481ada4f",
+ "type": "multiple",
+ "question": "如果将d和b之间用线结扎住，然后向d内注射红色粗颗粒颜料，那么下列哪些结构会呈现红色",
+ "options": {
+  "A": "肾门静脉",
+  "B": "肺皮动脉",
+  "C": "锁骨下静脉",
+  "D": "颈外静脉"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "CD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 63 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 63,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "60-63",
+  "stimulus": "下图显示的是某种脊椎动物的心脏，请仔细观察。"
+ },
+ "image": {
+  "file": "assets/questions/M3-63-4469481ada4f/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 135,
+  "bbox": [
+   96.6,
+   250.8,
+   498.6,
+   454.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-63-4469481ada4f/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2010 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 135,
+   "bbox": [
+    96.6,
+    250.8,
+    498.6,
+    454.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。肾门静脉收集后肢血液，不在注射点的回流方向上，且粗颗粒不能通过毛细血管，故不着色。B．错误。肺皮动脉属动脉系，向静脉侧注射的颜料不能进入。C．正确。结扎d和b之间后向d（静脉窦）注射，颜料沿静脉回流方向进入各体静脉属支，锁骨下静脉呈现红色。D．正确。颈外静脉同属汇入静脉窦的体静脉，故一并呈现红色。故答案为CD。"
+}

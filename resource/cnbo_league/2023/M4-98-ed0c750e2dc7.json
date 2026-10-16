@@ -1,0 +1,48 @@
+{
+ "id": "M4-98-ed0c750e2dc7",
+ "type": "single",
+ "question": "研究者要评估一种鸟类不同地理种群的遗传分化程度，以下研究方案中正确的做法是：",
+ "options": {
+  "A": "每个种群采集1-2 只雌性个体",
+  "B": "每个种群采集1-2 只雄性个体",
+  "C": "选择非常保守的1-2 个核基因作为遗传标记",
+  "D": "选择变异较多的线粒体DNA 作为遗传标记"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 98 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。每种群仅1-2 只样本量过小，难以估计种群等位基因频率。B．错误。1-2 只雄性样本同样过小，统计效力不足。C．错误。非常保守的核基因变异位点太少，分辨不出种群间的遗传分化。D．正确。线粒体 DNA 突变率较高、变异丰富，且母系遗传、不发生重组，适合作为评估遗传分化的分子标记。故答案为D。\n【点睛】点睛：评估遗传分化＝'足够样本量＋高变异性标记'，线粒体 DNA 是鸟类种群遗传比较的常用选择。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

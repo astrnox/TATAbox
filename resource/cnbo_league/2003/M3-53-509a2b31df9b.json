@@ -1,0 +1,48 @@
+{
+ "id": "M3-53-509a2b31df9b",
+ "type": "single",
+ "question": "生活在离海边50 公里的某种小鸟，每天飞到海边取食时间都比前一天迟到50 分钟。这种现象叫：",
+ "options": {
+  "A": "日节律",
+  "B": "潮汐节律",
+  "C": "月节律",
+  "D": "无规律"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 53 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 53,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。日节律周期约24小时，取食时间应每天大致相同。B．正确。潮汐随太阴日变化，涨落潮每天推迟约50分钟，小鸟随潮汐取食，故每天迟到50分钟，属潮汐节律。C．错误。月节律周期约一个月，与此不符。D．错误。其时间变化有明显规律，并非无规律。故答案为B。\n【点睛】点睛：'每天推迟50分钟'是潮汐节律的标志性数字，源于太阴日比太阳日长约50分钟，见此数即锁定潮汐。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

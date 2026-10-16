@@ -1,0 +1,45 @@
+{
+ "id": "M3-36-f16ec91465ee",
+ "type": "single",
+ "question": "心血管系统中有一套瓣膜，能保证血液不倒流。那么在左心室与左心房之间的瓣膜是：",
+ "options": {
+  "A": "二尖瓣",
+  "B": "三尖瓣",
+  "C": "半月瓣",
+  "D": "三角瓣"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 36 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。左心房与左心室之间的房室瓣由两片瓣叶构成，称二尖瓣（僧帽瓣），可防止心室收缩时血液倒流入左心房。B．错误。三尖瓣位于右心房与右心室之间。C．错误。半月瓣位于心室与动脉之间，即主动脉瓣和肺动脉瓣。D．错误。心脏瓣膜中并无三角瓣这一名称，属干扰项。故答案为A。"
+}

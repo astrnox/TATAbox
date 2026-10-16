@@ -1,0 +1,47 @@
+{
+ "id": "M4-108-5804ac4adf3c",
+ "type": "mtf",
+ "question": "通过下列哪些方法可以得到大肠杆菌组氨酸缺陷型的回复突变菌株？",
+ "options": {
+  "A": "转导",
+  "B": "紫外线诱变",
+  "C": "与野生型菌株发生接合",
+  "D": "转染",
+  "E": "转化"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "107.A（√）B（√）C（√）D（ ）E （√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 107 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】回复突变可通过再次突变或引入野生型基因实现。A．正确。转导可将野生型基因片段导入缺陷株，使其恢复。B．正确。紫外线诱变可使突变位点再次发生突变而回复。C．正确。与野生型接合可经重组引入正常等位基因。D．错误。转染指核酸导入细胞的操作，本身不能定向恢复组氨酸合成，不属常用回复手段。E．正确。转化可摄入野生型DNA 片段实现基因恢复。"
+}

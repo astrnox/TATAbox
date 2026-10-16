@@ -1,0 +1,50 @@
+{
+ "id": "M3-22-243e52421c6b",
+ "type": "single",
+ "question": "合成尿素的器官是：",
+ "options": {
+  "A": "肾脏",
+  "B": "肝脏",
+  "C": "肌肉",
+  "D": "胰脏",
+  "E": "脾脏"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 22 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。肾脏负责尿素的滤过与排出，本身并不合成尿素。B．正确。氨基酸脱氨基产生的氨在肝细胞内经鸟氨酸循环缩合为尿素，是氨的主要解毒途径。C．错误。肌肉主要经嘌呤核苷酸循环脱氨，产物以丙氨酸、谷氨酰胺的形式运出，不在肌内合成尿素。D．错误。胰脏分泌胰液和胰岛激素，不参与尿素合成。E．错误。脾脏司滤血、储血与免疫，与尿素合成无关。故答案为B。\n【通法】通法（氨的去路）：脱氨基产氨→肝内鸟氨酸循环生成尿素→血中运输→肾排出，记'肝合成、肾排出'即可覆盖此类题。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-50-405cac0b6ee6",
+ "type": "single",
+ "question": "昆虫羽化后体壁要经历硬化过程，这种硬化过程是＿＿＿＿＿的变化过程",
+ "options": {
+  "A": "蛋白质",
+  "B": "多糖",
+  "C": "脂类",
+  "D": "其他物质钙化"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 50 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。昆虫羽化后表皮的硬化即鞣化（骨化）：表皮蛋白在醌类等交联剂作用下彼此交联，由柔软变为坚硬，故是蛋白质的变化过程。B．错误。几丁质等多糖构成表皮骨架，但硬化并非多糖自身的化学变化。C．错误。脂类主要构成表皮的防水蜡层，不主导硬化。D．错误。昆虫体壁硬化是蛋白质交联的鞣化而非钙化，钙化见于某些甲壳类和脊椎动物骨骼。故答案为A。"
+}

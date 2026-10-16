@@ -1,0 +1,50 @@
+{
+ "id": "M3-55-f6d13748ca4f",
+ "type": "multiple",
+ "question": "生物多样性的主要层次包括",
+ "options": {
+  "A": "物种多样性",
+  "B": "种群多样性",
+  "C": "群落多样性",
+  "D": "生态系统多样性",
+  "E": "遗传多样性"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ADE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 55 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "第三部分 动物行为、生态学（14 道题16 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。物种多样性是生物多样性最直观的层次。B．错误。种群是种内群体单位，未被列为生物多样性的主要层次。C．错误。群落由多个种群构成，通常归入生态系统层次讨论，不单列为基本层次。D．正确。生态系统多样性是生物多样性的重要层次之一。E．正确。遗传（基因）多样性是物种多样性与适应性的基础。故答案为ADE。\n【点睛】点睛：生物多样性三层次＝基因（遗传）、物种、生态系统，背准这三个，'种群''群落'均为干扰项。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

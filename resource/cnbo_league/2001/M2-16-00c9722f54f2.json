@@ -1,0 +1,48 @@
+{
+ "id": "M2-16-00c9722f54f2",
+ "type": "single",
+ "question": "在提取叶绿素时，加入少量碳酸钙的目的是＿。",
+ "options": {
+  "A": "增加叶绿素的溶解度",
+  "B": "破坏膜系统，使叶绿素被充分提取",
+  "C": "防止叶绿素在提取时受到破坏",
+  "D": "防止叶绿素与其它物质结合"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 16 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。碳酸钙并不提高叶绿素在有机溶剂中的溶解度。B．错误。破坏膜系统、充分提取靠研磨和有机溶剂，通常加二氧化硅助磨。C．正确。研磨时液泡中的有机酸释放，会使叶绿素脱镁变成去镁叶绿素而遭破坏，加入碳酸钙中和有机酸即可保护叶绿素。D．错误。防止叶绿素与其他物质结合并非加碳酸钙的目的。故答案为C。\n【点睛】点睛：提取叶绿素三样试剂各司其职——二氧化硅助研磨、碳酸钙中和酸防脱镁、有机溶剂作提取剂。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-12-7b15cb55316d",
+ "type": "single",
+ "question": "地球上生命的能量始源于",
+ "options": {
+  "A": "食物",
+  "B": "水",
+  "C": "太阳",
+  "D": "ATP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 12 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。食物中的化学能是能量的中转形式，其中的能量归根结底来自生产者固定的太阳能，并非始源。B．错误。水是介质和反应物，不提供能量。C．正确。地球上生命活动所需能量始源于太阳，太阳能经光合作用转化为化学能，再沿食物链流动，是生态系统能量的根本来源。D．错误。ATP是细胞内的直接能源物质，好比能量'通货'，不是能量的最初来源。故答案为C。\n【点睛】点睛：生态系统能量流动以生产者固定的太阳能为起点，'始源看太阳，直接供能看ATP'。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M4-71-b9c95b8ca2fc",
+ "type": "single",
+ "question": "第70 题中，假设A 对a 为显性，且不受其他基因干扰，B 和C 也同样。如果该亲本和abc/abc 杂交，所得的1000 个子代中，表型为A 的个体为：",
+ "options": {
+  "A": "280",
+  "B": "190",
+  "C": "100",
+  "D": "500"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 71 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】测交亲本 abc/abc 只产生 abc 配子，子代的基因型与表型完全由 Abc/aBC 亲本产生的配子决定。A．错误。280 是亲本型配子 Abc（0.28×1000）的数目，只算了 B、C 均为隐性的那一部分 A 表型个体，漏掉了其余含 A 的配子所成个体。B．错误。190 与任何一类配子的频率都对不上，是臆算结果。C．错误。100 也不是含 A 配子的总频率，不成立。D．正确。'表型为 A'指 A 位点表现显性，即个体含 A 基因；无论连锁与否，Aa×aa 测交后代 A 表型与 a 表型各占 1/2，也可由配子相加验证：含 A 的配子 Abc、ABC、AbC、ABc 频率之和 0.28＋0.07＋0.12＋0.03＝0.50，故 1000 个子代中表型为 A 的约 500 个。故答案为D。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-39-67c16913e3ac",
+ "type": "single",
+ "question": "下面哪种有关酶的描述是错的：",
+ "options": {
+  "A": "所有酶都是蛋白质",
+  "B": "酶有专一性",
+  "C": "酶在细胞外也可以发挥功能",
+  "D": "酶可以不需要辅基"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 39 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出关于酶的错误描述，判断词指该选项是否合题意。A．正确。该表述不成立：少数酶的化学本质是RNA，即核酶，如核糖体大亚基的肽基转移酶由rRNA催化、RNase P的催化亚基是RNA，故'所有酶都是蛋白质'错误，正是应选项。B．错误。酶对底物和反应类型有专一性，可用锁钥学说和诱导契合学说解释，表述成立。C．错误。消化道中的消化酶、溶菌酶等胞外酶均可在细胞外发挥催化作用，表述成立。D．错误。许多酶是单纯蛋白，不含辅基也能催化，如脲酶、胃蛋白酶，表述成立。故答案为A。\n【易错易混】易混：'酶绝大多数是蛋白质'与'所有酶都是蛋白质'不同，核酶是RNA催化剂，这是本类题的常见陷阱。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

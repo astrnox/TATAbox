@@ -1,0 +1,48 @@
+{
+ "id": "M2-37-b5b035807ded",
+ "type": "multiple",
+ "question": "根据国际植物命名法规，每种植物都有一个学名。每种植物的学名具有如下特性：",
+ "options": {
+  "A": "唯一性",
+  "B": "英文命名",
+  "C": "拉丁文命名",
+  "D": "有效发表"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 37 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。每种植物学名在命名法规下具有唯一性，同名异物被禁止。B．错误。学名以拉丁文书写并按双名法构成，不是英文命名。C．正确。属名与种加词均使用拉丁语化的形式，属名为中性拉丁名词。D．正确。学名须经有效发表并符合法规要求才被承认。故答案为ACD。\n【易错易混】易混：学名三要素——双名法、拉丁文、有效发表；语言是拉丁文不是英文，别被英文属种名的印刷形式迷惑。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

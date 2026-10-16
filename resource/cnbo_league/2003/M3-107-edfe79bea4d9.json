@@ -1,0 +1,48 @@
+{
+ "id": "M3-107-edfe79bea4d9",
+ "type": "single",
+ "question": "大脑的新脑皮是脊椎动物神经系统发展到高级阶段出现的，它是从下列哪类动物开始出现的：",
+ "options": {
+  "A": "两栖纲",
+  "B": "爬行纲",
+  "C": "鸟纲",
+  "D": "哺乳纲"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 107 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。两栖类大脑半球顶壁主要为古脑皮和原脑皮，尚无新脑皮。B．正确。爬行纲开始出现新脑皮，大脑皮层出现神经元分层，是神经系统向高级发展的转折点。C．错误。鸟类大脑以发达的纹状体为主，新脑皮并不发达，且晚于爬行类。D．错误。哺乳类新脑皮最发达（六层结构），但不是最早出现的类群。故答案为B。\n【易错易混】易混：新脑皮始于爬行类、发达于哺乳类；两栖类是原脑皮，鸟类靠纹状体，别把'最发达'当成'最早出现'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

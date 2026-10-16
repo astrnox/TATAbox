@@ -1,0 +1,48 @@
+{
+ "id": "M1-11-0a3300601282",
+ "type": "single",
+ "question": "在减数分裂I 的前期中染色体出现配对及交叉互换，此现象：",
+ "options": {
+  "A": "发生在姊妹染色体之间",
+  "B": "发生在同源染色体之间",
+  "C": "在染色体之间随机进行",
+  "D": "在姊妹染色体之间与同源染色体之间均能发生"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 11 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。姐妹染色单体由同一DNA复制而来，遗传组成相同，其交换不产生基因重组。B．正确。减数分裂I前期同源染色体联会配对，交叉互换发生在同源染色体的非姐妹染色单体之间，是基因重组的细胞学基础。C．错误。交换发生在同源染色体的对应片段之间，并非在任意染色体间随机进行。D．错误。姐妹染色单体之间不发生典型的交叉互换。\n【点睛】点睛：交叉互换的完整表述是同源染色体的非姐妹染色单体之间，同源、非姐妹、染色单体几个限定缺一不可。故答案为B。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

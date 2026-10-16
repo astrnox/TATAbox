@@ -1,0 +1,48 @@
+{
+ "id": "M3-22-6fd5a39ce8ab",
+ "type": "single",
+ "question": "羊膜动物的脑神经有",
+ "options": {
+  "A": "10 对",
+  "B": "11 对",
+  "C": "12 对",
+  "D": "13 对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 22 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。10对脑神经见于鱼类和两栖类，不是羊膜动物的数目。B．错误。11对不是脊椎动物脑神经的典型数目。C．正确。羊膜动物（爬行类、鸟类、哺乳类）的脑神经为12对，较鱼类、两栖类多了副神经（Ⅺ）和舌下神经（Ⅻ）。D．错误。13对超出了脊椎动物脑神经的数目。故答案为C。\n【易错易混】易混：鱼类、两栖类脑神经10对，羊膜动物12对，记牢'低等10、羊膜12'，勿与脊神经的对数相混。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

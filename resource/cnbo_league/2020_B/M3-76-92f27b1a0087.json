@@ -1,0 +1,77 @@
+{
+ "id": "M3-76-92f27b1a0087",
+ "type": "multiple",
+ "question": "科学家研究了美国佛罗里达银泉的能流，结果如表所示，第二栏代表生产量。下列说法中正确的是：",
+ "options": {
+  "A": "GP 和NP 分别代表总生产量和净生产量；",
+  "B": "第三栏代表的是各营养级因呼吸或未被利用而损耗的能量；",
+  "C": "第四栏代表的是各营养级的同化效率；",
+  "D": "除分解者外，每一营养级对上一级的利用效率不超过40%。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 76 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "三. 动物行为学、生态学 19 题 24 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-76-92f27b1a0087/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 375,
+  "bbox": [
+   176.1,
+   76.0,
+   418.8,
+   317.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-76-92f27b1a0087/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 375,
+   "bbox": [
+    176.1,
+    76.0,
+    418.8,
+    317.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。GP 代表总生产量，NP 代表净生产量，二者关系为 NP 等于 GP 减去呼吸消耗。B．错误。第三栏代表各营养级的呼吸消耗量，与未被利用部分合并表述与表中栏目定义不符。C．错误。第四栏是流向下一营养级的能量，同化效率须由同化量与摄入量之比计算，不能由此栏直接得到。D．正确。逐级核算可知，除分解者外每一营养级对上一级能量的利用效率均不超过 40%。故答案为AD。"
+}

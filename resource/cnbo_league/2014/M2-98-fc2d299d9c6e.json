@@ -1,0 +1,45 @@
+{
+ "id": "M2-98-fc2d299d9c6e",
+ "type": "single",
+ "question": "适度的低温对植物衰老的影响是",
+ "options": {
+  "A": "促进衰老",
+  "B": "抑制衰老",
+  "C": "不影响衰老",
+  "D": "不确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 98 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。低温降低代谢与水解酶活性，不会促进衰老。B．正确。适度低温降低呼吸与乙烯等的作用，延缓叶绿素降解与蛋白质水解，从而抑制（延缓）衰老。C．错误。温度直接影响酶促过程，衰老速率随之改变。D．错误。适度低温的效应是明确的，不存在'不确定'。故答案为B。"
+}

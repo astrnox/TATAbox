@@ -1,0 +1,45 @@
+{
+ "id": "M1-57-1b48a986fd0a",
+ "type": "single",
+ "question": "雨影（rain shadow）指降雨量在山脉 减少，从而导致相对干燥的地表环境条件。",
+ "options": {
+  "A": "迎风向一边的",
+  "B": "高海拔地区",
+  "C": "背风向一边的",
+  "D": "低海拔地区"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 57 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。迎风坡气流被迫抬升、绝热冷却，水汽凝结形成地形雨，是降水偏多的一侧。B．错误。高海拔处往往降水更多，山地最大降水带常出现在一定高度上。C．正确。雨影指气流越过山顶后下沉增温、相对湿度降低，山脉背风向一侧降水显著减少，形成相对干燥的地表环境。D．错误。海拔高低不是决定因素，关键在于处于背风坡。故答案为C。"
+}

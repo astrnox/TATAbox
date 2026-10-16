@@ -1,0 +1,48 @@
+{
+ "id": "M1-80-129dd4159fcf",
+ "type": "single",
+ "question": "下图是mRNA 的模板链： 5’CTT TGA TAA GGA TAG CCC TTC 3’ 被转录后mRNA 的碱基序列是",
+ "options": {
+  "A": "5’GAA ACU AUU CCU AUC GGG AAG3’",
+  "B": "5’GAA GGG CUA UCC UUA UCA AAG3",
+  "C": "5’CTT CCC GAT AGG AAT AGT TTC3’",
+  "D": "5’GAA ACT ATT CCT ATC GGG AAG3’"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 80 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】转录按碱基互补、反向平行进行。模板链5’→3’为CTT TGA TAA GGA TAG CCC TTC，mRNA须与之反向互补，即先互补再倒序（或先倒序再互补），得5’GAA GGG CUA UCC UUA UCA AAG3’，即B。A．错误。A把模板自左至右直接互补而未倒序，链的方向颠倒。B．正确。序列与模板反向互补并以U代T，符合mRNA（原卷该选项3’端漏印撇号，属排版讹误）。C．错误。C含T且未反向互补，是DNA序列而非mRNA。D．错误。D也含T，仍为DNA序列。故答案为B。\n【通法】通法（转录序列推算）：模板与mRNA互为反向互补，口诀是先定端、再互补、后倒序；产物为RNA，见到T即可排除。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

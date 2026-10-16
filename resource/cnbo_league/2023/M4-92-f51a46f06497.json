@@ -1,0 +1,45 @@
+{
+ "id": "M4-92-f51a46f06497",
+ "type": "single",
+ "question": "一棵生长多年的大树，在生长季正常长出的新叶源于哪种分生组织？",
+ "options": {
+  "A": "维管形成层",
+  "B": "木栓形成层",
+  "C": "茎尖顶端分生组织",
+  "D": "根尖项端分生组织"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "植物学",
+ "concept": "植物组织",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 92 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。维管形成层属侧生分生组织，活动产生次生木质部与韧皮部，使茎加粗，不产生叶。B．错误。木栓形成层产生周皮，起保护作用，与新叶无关。C．正确。叶由叶原基发育而来，叶原基源自茎尖顶端分生组织的周缘区，故生长季新叶源于茎尖顶端分生组织。D．错误。根尖顶端分生组织产生根系结构，叶着生于茎上，二者无对应关系。故答案为C。"
+}

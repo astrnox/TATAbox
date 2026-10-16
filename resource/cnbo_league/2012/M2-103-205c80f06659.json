@@ -1,0 +1,50 @@
+{
+ "id": "M2-103-205c80f06659",
+ "type": "multiple",
+ "question": "导管分子之间通过下列哪些结构相沟通",
+ "options": {
+  "A": "穿孔",
+  "B": "胞间连丝",
+  "C": "初生纹孔场",
+  "D": "纹孔",
+  "E": "筛孔"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 103 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。导管分子端壁溶解形成穿孔，上下相连组成导管，是导管分子之间最主要的沟通结构。B．错误。胞间连丝主要连通生活细胞，导管分子成熟后为死细胞，不再靠胞间连丝输导。C．错误。初生纹孔场是初生壁上的薄区，多见于薄壁细胞之间，不是导管分子间的沟通通道。D．正确。导管分子侧壁上有纹孔，相邻分子经纹孔沟通，水分可横向运输。E．错误。筛孔位于筛板上，是筛管分子之间的结构。故答案为AD。\n【通法】通法（输导组织识别）：导管分子间＝穿孔（端壁）＋纹孔（侧壁）；筛管分子间＝筛孔（筛板）；生活细胞间＝胞间连丝，三者各有所属不可混用。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

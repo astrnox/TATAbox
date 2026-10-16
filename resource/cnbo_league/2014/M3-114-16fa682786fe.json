@@ -1,0 +1,45 @@
+{
+ "id": "M3-114-16fa682786fe",
+ "type": "single",
+ "question": "蜜蜂是一种典型的社会性昆虫，它们的社会生活高度发展主要表现在个体形态和职能分工上的高度专门化，在蜜蜂群体中表现出明显的利他行为是哪一种？",
+ "options": {
+  "A": "工蜂",
+  "B": "蜂后",
+  "C": "蜂王",
+  "D": "雄蜂"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 114 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第三部分 动物行为学、生态学（7 道题8 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。工蜂不育、终生从事采集、育幼、筑巢等工作，自身不繁殖而为群体利益服务，是典型的利他行为。B．错误。'蜂后'即产卵雌蜂，以自身繁殖为主，并非利他分工的代表，且B、C实为同一角色的两种叫法。C．错误。同B，蜂王承担繁殖职能，不具备工蜂式的利他分工。D．错误。雄蜂职能单一，只在交配中死亡，也不体现利他分工。故答案为A。"
+}

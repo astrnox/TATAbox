@@ -1,0 +1,48 @@
+{
+ "id": "M4-60-46c0a3cca78e",
+ "type": "single",
+ "question": "A/a 与B/b 是独立分配的，当AaBb 自交，子代中表型的AB:ab 的比例是9:7，你对此作何解释？",
+ "options": {
+  "A": "基因互补",
+  "B": "显性上位",
+  "C": "隐性上位",
+  "D": "抑制基因"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 60 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。两对独立基因共同决定同一性状，只有 A_B_ 表现一种表型（9），A_bb、aaB_、aabb 表现另一种表型（3+3+1=7），子代呈 9∶7，属基因互补（互补作用）。B．错误。显性上位时自交表型比为 12∶3∶1，即上位显性基因掩盖另一对基因的表现。C．错误。隐性上位时表型比为 9∶3∶4，双隐性个体掩盖另一基因的显性表现。D．错误。抑制基因作用的典型表型比为 13∶3，即显性抑制基因使性状不能表现。故答案为A。\n【通法】通法（基因互作比例判读）：以 9∶3∶3∶1 为基准看两类如何合并，互补 9∶7、显性上位 12∶3∶1、隐性上位 9∶3∶4、抑制 13∶3、重叠 15∶1，见到变型比例即按合并方式对号入座。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

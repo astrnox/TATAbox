@@ -1,0 +1,45 @@
+{
+ "id": "M1-42-7a79c7100ec3",
+ "type": "single",
+ "question": "下列哪一个结构的长度在骨骼肌细胞收缩时会缩短？",
+ "options": {
+  "A": "肌小节的暗带（A 带）",
+  "B": "肌小节的明带（I 带）",
+  "C": "粗丝",
+  "D": "细丝"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 42 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A带由粗丝全长决定，收缩时粗细丝相对滑动，A带长度不变。B．正确。收缩时细丝向M线滑动，两侧明带（I带）被蚕食而缩短。C．错误。粗丝本身长度在收缩中不变。D．错误。细丝长度亦不变，只是位置内移。故答案为B。"
+}

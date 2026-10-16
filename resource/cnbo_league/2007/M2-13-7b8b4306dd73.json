@@ -1,0 +1,45 @@
+{
+ "id": "M2-13-7b8b4306dd73",
+ "type": "single",
+ "question": "下列植物的干种子，吸水力最强的是：",
+ "options": {
+  "A": "花生",
+  "B": "大豆",
+  "C": "小麦",
+  "D": "玉米"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 13 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。花生种子富含油脂，亲水胶体相对较少，吸胀力不及大豆。B．正确。干种子吸水靠吸胀作用，蛋白质是亲水胶体、吸胀力最强；大豆种子蛋白质含量约35%~40%，居常见作物干种子之首，故吸水力最强。C．错误。小麦种子以淀粉为主，淀粉亲水性弱于蛋白质。D．错误。玉米种子同样以淀粉为主，吸胀吸水能力有限。故答案为B。"
+}

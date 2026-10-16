@@ -1,0 +1,47 @@
+{
+ "id": "M2-60-77fd2eacaac7",
+ "type": "single",
+ "question": "日本科学家提出了“中性进化论”，其根据主要来源于：",
+ "options": {
+  "A": "化石证据",
+  "B": "形态学证据",
+  "C": "生物大分子证据.",
+  "D": "行为学证据",
+  "E": "生理学证据"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 60 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。中性进化论不依赖化石证据。B．错误。形态性状多受自然选择影响，看不出中性突变的积累。C．正确。木村资生比较多种生物的蛋白质与核酸序列，发现分子置换速率大致恒定、多数突变属中性，据此提出中性进化论。D．错误。行为学证据与此无关。E．错误。生理学证据亦非其依据。故答案为C。"
+}

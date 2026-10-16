@@ -1,0 +1,80 @@
+{
+ "id": "M1-40-46daf5c2e093",
+ "type": "single",
+ "question": "如图，显示了人体某细胞的细胞膜对葡萄糖的转运速率（Glucosetransportrate）与葡萄糖浓度（Glucoseconcentration）的关系。实线表示仅葡萄糖存在的情况，虚线表示同时存在稳定浓度的半乳糖（galactose，1 mM）的情况。根据下图，如下说法，正确的是",
+ "options": {
+  "A": "葡萄糖的转运速率随葡萄糖浓度的升高将持续增大",
+  "B": "半乳糖的存在促进了葡萄糖的转运",
+  "C": "细胞膜可转运半乳糖",
+  "D": "半乳糖对葡萄糖的转运有竞争作用"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 40 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-40-46daf5c2e093/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 290,
+  "bbox": [
+   202.4,
+   235.8,
+   392.3,
+   391.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-40-46daf5c2e093/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2018 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 290,
+   "bbox": [
+    202.4,
+    235.8,
+    392.3,
+    391.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。载体介导的转运有饱和现象，图中曲线在高浓度区趋于饱和，不会持续增大。B．错误。加半乳糖后葡萄糖转运速率下降，是抑制而非促进。C．错误。曲线下降仅说明半乳糖与转运体结合，据此不能断定细胞膜可转运半乳糖。D．正确。半乳糖存在时葡萄糖转运速率降低，说明二者竞争同一转运载体。故答案为D。\n【通法】通法（转运读图）：加入物质使底物曲线下移＝竞争同一载体；曲线上移＝协同促进；出现平台＝载体饱和，据此即可破解此类图题。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

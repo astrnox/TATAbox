@@ -1,0 +1,45 @@
+{
+ "id": "M3-89-c778ad06d5d9",
+ "type": "multiple",
+ "question": "生物多样性包括下列哪些项？",
+ "options": {
+  "A": "遗传多样性",
+  "B": "物种多样性",
+  "C": "种群多样性",
+  "D": "生态系统多样性"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 89 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。遗传多样性（基因多样性）指种内基因、等位基因及遗传变异的多样性，是生物多样性最基本的层次。B．正确。物种多样性指一定区域内物种的丰富度与均匀度，是生物多样性最直观的层次。C．错误。种群不是生物多样性约定的层次，种内的遗传变异已归入遗传多样性，没有种群多样性这一标准层次。D．正确。生态系统多样性指生境类型、生态过程与群落类型的多样性，是生物多样性的重要层次。故答案为ABD。"
+}

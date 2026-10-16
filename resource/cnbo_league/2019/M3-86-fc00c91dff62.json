@@ -1,0 +1,48 @@
+{
+ "id": "M3-86-fc00c91dff62",
+ "type": "multiple",
+ "question": "气候变暖将对动物产生诸多影响，譬如",
+ "options": {
+  "A": "栖息地丧失",
+  "B": "降雨分布的格局变化导致动物水获取压力改变",
+  "C": "提升热带动物的繁殖产出和存活",
+  "D": "温带动物种群密度必然增加"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 86 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。气候变暖引起海平面上升、极端事件增多，导致动植物栖息地丧失。B．正确。降水格局改变影响水源的时空分布，加剧动物获取水的压力。C．错误。热带动物长期处于热耐受上限附近，升温常超出其耐受范围，繁殖与存活反而受损，并非提升。D．错误。'必然增加'过于绝对，温带升温同时伴随干旱、物候错配等负面效应，种群未必增加。故答案为AB。\n【点睛】点睛：气候变暖的影响看'基线温度'——热带物种贴近热上限受害更重，绝对化表述（必然、都）多为设错点。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

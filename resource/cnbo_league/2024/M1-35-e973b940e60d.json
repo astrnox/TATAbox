@@ -1,0 +1,81 @@
+{
+ "id": "M1-35-e973b940e60d",
+ "type": "multiple",
+ "question": "下列参与了上述①到④极性建立及细胞分裂过程的主要调控因素有：",
+ "options": {
+  "A": "温度；",
+  "B": "光照；",
+  "C": "水；",
+  "D": "微管。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 35 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二. 植物的解制、植物生理、植物演化（共19 题，34 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "32-35",
+  "stimulus": "下图是木贼孢子在光照下进行细胞分裂的过程，观察图片，回答下列问题："
+ },
+ "image": {
+  "file": "assets/questions/M1-35-e973b940e60d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 456,
+  "bbox": [
+   119.1,
+   566.6,
+   475.5,
+   679.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-35-e973b940e60d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 456,
+   "bbox": [
+    119.1,
+    566.6,
+    475.5,
+    679.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。温度不作为该极性建立与分裂定向的主要调控信号。B．正确。光照是诱导极性建立与叶状体方向的典型环境信号。C．错误。水是生存条件，但不直接给出极性建立的方向信息。D．正确。微管决定细胞板与分裂面方位，是极性建立与不等分裂的核心胞内调控因素。故答案为BD。"
+}

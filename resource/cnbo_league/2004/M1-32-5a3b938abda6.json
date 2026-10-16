@@ -1,0 +1,48 @@
+{
+ "id": "M1-32-5a3b938abda6",
+ "type": "single",
+ "question": "人类单倍体基因组是指存在于__________条染色体上的全部遗传信息",
+ "options": {
+  "A": "22 条常染色体",
+  "B": "22 条常染色体+X 染色体",
+  "C": "22 条常染色体+Y 染色体",
+  "D": "22 条常染色体+X+Y"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 32 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。仅22条常染色体漏掉了性染色体上的基因，遗传信息不完整。B．错误。22条常染色体加X仍缺Y染色体上的特有序列（如SRY基因），不是全部遗传信息。C．错误。22条常染色体加Y则缺X染色体上的大量基因，更不完整。D．正确。人类单倍体基因组指一个染色体组所含的全部遗传信息，按人类基因组计划的计数口径为22条常染色体+X+Y，共24条染色体上的全部DNA。故答案为D。\n【易错易混】易混：'单倍体基因组'不等于'一个配子的基因组'——卵细胞无Y、精子缺X或Y，故测序计数取22+X+Y共24条。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

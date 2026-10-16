@@ -1,0 +1,45 @@
+{
+ "id": "M2-96-138ca8010754",
+ "type": "single",
+ "question": "若全球二氧化碳增加，气候变暖持续100 年，请对分布在高于4000 米高山植物的“命运”进行预测，即100 年后这些植物：",
+ "options": {
+  "A": "不适应变化而死亡",
+  "B": "分布的范围将不变",
+  "C": "分布的上限将下移",
+  "D": "分布的上限将上移"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 96 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。高山植物可随温度带的移动向更高海拔迁移，并非必然不适应而死亡。B．错误。气候变暖使适生温度带上移，分布范围不会不变。C．错误。上限下移意味着向更低海拔退缩，与变暖的方向相反。D．正确。气候变暖使山地温度带整体上移，高山植物的适宜生境随之向更高海拔移动，故其分布上限将上移。故答案为D。"
+}

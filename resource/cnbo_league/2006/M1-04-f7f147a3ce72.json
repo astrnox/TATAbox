@@ -1,0 +1,47 @@
+{
+ "id": "M1-04-f7f147a3ce72",
+ "type": "single",
+ "question": "秋水仙素的作用位点是：",
+ "options": {
+  "A": "核膜",
+  "B": "微管",
+  "C": "微丝",
+  "D": "细胞骨架",
+  "E": "中间纤维"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 4 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。秋水仙素的作用靶点不是核膜。B．正确。秋水仙素与微管蛋白结合，抑制其聚合成微管，纺锤体不能形成，细胞停滞于中期，故可用于诱导多倍体。C．错误。微丝（肌动蛋白丝）是细胞松弛素的作用靶点。D．错误。细胞骨架是微管、微丝和中间纤维的总称，笼统而不确切。E．错误。中间纤维不受秋水仙素影响。故答案为B。"
+}

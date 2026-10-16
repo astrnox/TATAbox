@@ -1,0 +1,45 @@
+{
+ "id": "M1-60-001c69dbd0ba",
+ "type": "single",
+ "question": "核仁组织区是核仁的中心结构,它的组成成分是",
+ "options": {
+  "A": "rRNA",
+  "B": "rRNA 和蛋白质",
+  "C": "转录rRNA 的DNA",
+  "D": "核糖体蛋白"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 60 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。rRNA是核仁区的转录产物，不是核仁组织区本身的组成成分。B．错误。rRNA与蛋白质组装成核糖体亚基，是核仁的产物而非组织区的成分。C．正确。核仁组织区位于染色体次缢痕处，本质是含rRNA基因的染色质区段，即转录rRNA的DNA，可组织形成核仁。D．错误。核糖体蛋白由胞质核糖体合成后进入核仁参与装配，不是核仁组织区的组成成分。故答案为C。"
+}

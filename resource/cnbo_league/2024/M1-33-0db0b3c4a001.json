@@ -1,0 +1,81 @@
+{
+ "id": "M1-33-0db0b3c4a001",
+ "type": "multiple",
+ "question": "图片④中的细胞分裂是：",
+ "options": {
+  "A": "有丝分裂中期；",
+  "B": "减数分裂第一次分裂中期；",
+  "C": "增殖分裂；",
+  "D": "不等分裂。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 33 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "二. 植物的解制、植物生理、植物演化（共19 题，34 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "32-35",
+  "stimulus": "下图是木贼孢子在光照下进行细胞分裂的过程，观察图片，回答下列问题："
+ },
+ "image": {
+  "file": "assets/questions/M1-33-0db0b3c4a001/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 456,
+  "bbox": [
+   119.1,
+   566.6,
+   475.5,
+   679.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-33-0db0b3c4a001/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 456,
+   "bbox": [
+    119.1,
+    566.6,
+    475.5,
+    679.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】依图④中染色体排布与细胞形态判断。A．正确。染色体排列于赤道板，属有丝分裂中期。B．错误。同源染色体成对排列于赤道板两侧的构型与图不符。C．错误。增殖分裂指染色体复制后均等分配的有丝分裂，'增殖分裂'与图中不等分配的特征不符，按标答不选。D．正确。图中细胞分裂时细胞质分裂明显不均等，为不等分裂。故答案为AD。"
+}

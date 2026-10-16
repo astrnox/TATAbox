@@ -1,0 +1,77 @@
+{
+ "id": "M1-57-e909bacfc7d0",
+ "type": "single",
+ "question": "利用荧光蛋白感应器可以实时监测植物细胞内各个细胞器及细胞质中的NADP(H)氧化还原状态。某一实验分别测定光照前和光照180 秒后植物细胞各部分发出的荧光，结果如图a 和图b 所示（图中***，表明两组数据显著性差异）。请问图a 和图b 分别代表了下列哪两个细胞部分的实验结果：",
+ "options": {
+  "A": "细胞质，线粒体",
+  "B": "细胞质，叶绿体",
+  "C": "叶绿体，线粒体",
+  "D": "叶绿体，高尔基体"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 57 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-57-e909bacfc7d0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 397,
+  "bbox": [
+   161.1,
+   78.2,
+   434.1,
+   237.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-57-e909bacfc7d0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 397,
+   "bbox": [
+    161.1,
+    78.2,
+    434.1,
+    237.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。光照不直接改变线粒体的 NADP(H) 氧化还原状态，b 不可能是线粒体。B．正确。光照 180 秒后，叶绿体光反应大量生成 NADPH，氧化还原状态显著改变，对应图 b；细胞质经磷酸戊糖途径等过程其 NADP(H) 状态也随之出现显著变化，对应图 a。C．错误。顺序颠倒，叶绿体应对应变化显著的图 b。D．错误。高尔基体不直接参与光反应，不会出现光照后的显著变化。故答案为B。"
+}

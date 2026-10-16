@@ -1,0 +1,47 @@
+{
+ "id": "M2-33-6a8b41c63508",
+ "type": "single",
+ "question": "纺织用棉花纤维是由下列哪一结构发育形成的？",
+ "options": {
+  "A": "韧皮纤维",
+  "B": "表皮毛",
+  "C": "木纤维",
+  "D": "花丝",
+  "E": "珠柄"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 33 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。韧皮纤维位于韧皮部，细胞短而壁厚，起机械支持作用，与棉纤维无关。B．正确。棉纤维是种皮表皮细胞向外伸长形成的单细胞表皮毛（毛状体），成熟后细胞壁几乎全由纤维素构成，故可作纺织原料。C．错误。木纤维存在于木质部中，细胞短硬，缺乏棉纤维那样的长绒形态。D．错误。花丝是雄蕊的柄状部分，不产生纤维。E．错误。珠柄是连接胚珠与胎座的柄状结构，与纤维形成无关。故答案为B。"
+}

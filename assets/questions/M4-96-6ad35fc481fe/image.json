@@ -1,0 +1,20 @@
+{
+ "id": "M4-96-6ad35fc481fe",
+ "figures": [
+  {
+   "file": "assets/questions/M4-96-6ad35fc481fe/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 450,
+   "bbox": [
+    99.6,
+    419.9,
+    495.6,
+    567.0
+   ],
+   "kind": "raster"
+  }
+ ]
+}

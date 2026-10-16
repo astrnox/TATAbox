@@ -1,0 +1,48 @@
+{
+ "id": "M3-114-6c2a7567f99e",
+ "type": "mtf",
+ "question": "当每博输出量增加，而外周阻力和心率变化不大时，血压变化主要表现为：",
+ "options": {
+  "A": "舒张压升高较多",
+  "B": "收缩压升高较多",
+  "C": "脉压增加",
+  "D": "脉压减小"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "113.A（ ）B（√）C（√）D（ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 113 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。舒张压主要取决于外周阻力，外周阻力变化不大时舒张压升高并不明显。B．正确。每搏输出量增加使收缩期射入动脉的血量增多，收缩压升高较明显。C．正确。收缩压升高而舒张压变化不大，脉压（收缩压与舒张压之差）随之增大。D．错误。脉压是增大而非减小。\n【通法】通法（血压调节）：搏出量主要影响收缩压，心率与外周阻力主要影响舒张压，脉压＝收缩压－舒张压。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

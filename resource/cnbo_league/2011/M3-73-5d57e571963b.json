@@ -1,0 +1,45 @@
+{
+ "id": "M3-73-5d57e571963b",
+ "type": "single",
+ "question": "在繁殖季节，雄性麋鹿具有把尿喷洒在自己的身体表面，并引起其他个体嗅闻的行为。由此，尿喷洒行为的作用最可能与下列哪个选项有关？",
+ "options": {
+  "A": "是传递发情状态的信号",
+  "B": "对抗捕食者",
+  "C": "领地标记",
+  "D": "防暑降温"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 73 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。繁殖期雄鹿将尿液喷洒于体表并招引其他个体嗅闻，是借尿中气味物质（信息素）向同类传递自身发情状态等繁殖信息的化学通讯行为。B．错误。该行为不能抵御或威慑捕食者。C．错误。领地标记一般把气味留在环境中的物体上，而不是涂在自己体表并引起同类嗅闻。D．错误。喷洒尿液并非散热方式。故答案为A。"
+}

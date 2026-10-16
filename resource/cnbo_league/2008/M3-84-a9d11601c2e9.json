@@ -1,0 +1,45 @@
+{
+ "id": "M3-84-a9d11601c2e9",
+ "type": "single",
+ "question": "下列措施中对维持野生动物种群健康发展可能有积极作用的是",
+ "options": {
+  "A": "狩猎",
+  "B": "圈养",
+  "C": "近亲繁殖",
+  "D": "消灭其天敌"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 84 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 84,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。科学管理的狩猎可调节种群密度、淘汰老弱个体，作用类似捕食者的调控，有助于维持野生动物种群健康发展。B．错误。长期圈养使动物脱离自然选择压力，行为和遗传质量都会退化。C．错误。近亲繁殖使纯合度升高、隐性有害基因暴露，遗传多样性下降。D．错误。消灭天敌会破坏捕食调控，使猎物种群过度增长、栖息地退化。故答案为A。"
+}

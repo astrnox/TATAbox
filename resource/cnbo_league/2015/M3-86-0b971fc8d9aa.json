@@ -1,0 +1,45 @@
+{
+ "id": "M3-86-0b971fc8d9aa",
+ "type": "multiple",
+ "question": "自然种群的特征包括：",
+ "options": {
+  "A": "空间特征",
+  "B": "数量特征",
+  "C": "遗传特征",
+  "D": "系统特征"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 86 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 86,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。种群具有特定的空间分布特征（均匀、随机、集群）。B．正确。种群密度、出生率、死亡率、年龄结构等数量特征是种群的基本特征。C．正确。种群具有基因库等遗传特征。D．正确。种群作为一个系统具有物质、能量输入输出等系统特征。故答案为ABCD。"
+}

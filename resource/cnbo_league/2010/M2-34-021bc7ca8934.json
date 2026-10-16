@@ -1,0 +1,45 @@
+{
+ "id": "M2-34-021bc7ca8934",
+ "type": "multiple",
+ "question": "提取植物叶绿素时经常采用的试剂是：",
+ "options": {
+  "A": "乙醇",
+  "B": "甘油",
+  "C": "重蒸水",
+  "D": "丙酮"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 34 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（多选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。乙醇是常用的有机溶剂，95%乙醇或无水乙醇均可有效溶出叶绿素。B．错误。甘油黏稠且极性强，不能有效溶解叶绿素。C．错误。叶绿素是脂溶性色素，难溶于水，重蒸水不能用作提取剂。D．正确。丙酮是提取叶绿素最常用的有机溶剂，提取效率高，常与乙醇配合使用。故答案为AD。"
+}

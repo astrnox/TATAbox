@@ -1,0 +1,81 @@
+{
+ "id": "M2-32-5c440ec92bdf",
+ "type": "mtf",
+ "question": "进一步分析了生长素在MEE45 调控种子大小中的作用，YUC 是合成生长素的关键酶。在mee45-1 突变体背景下用MEE45 启动子或珠被特异的INO 启动子驱动YUC4 表达的转基因植株、在三重突变体yuc1 yuc4 yuc10 背景下用35S 启动子驱动MEE45 过量表达的转基因植株，以及WT 等植株的种子大小统计数据如图C 所示。根据已有生物学知识和实验结果，判断下列陈述的正误：",
+ "options": {
+  "A": "生长素缺乏可导致种子变大；",
+  "B": "突变体mee45 表型与生长素减少的表型相似；",
+  "C": "YUC 基因位于MEE45 的上游；",
+  "D": "过量表达YUC4 或MEE45 均可导致种子变大。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 32 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "31-32",
+  "stimulus": "为研究种子大小的调控机制，科学家做了"
+ },
+ "image": {
+  "file": "assets/questions/M2-32-5c440ec92bdf/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   349.3,
+   369.9,
+   514.7,
+   513.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-32-5c440ec92bdf/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    349.3,
+    369.9,
+    514.7,
+    513.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。由图C，yuc1 yuc4 yuc10三重突变体（生长素合成缺陷）种子变小，说明生长素缺乏使种子变小。B．正确。mee45突变体与生长素减少的表型相似，提示二者处于同一通路。C．错误。用MEE45启动子或INO启动子驱动YUC4可挽救mee45表型，说明YUC4（生长素合成）位于MEE45下游发挥作用，而非上游。D．正确。过量表达YUC4或MEE45的植株种子均变大。"
+}

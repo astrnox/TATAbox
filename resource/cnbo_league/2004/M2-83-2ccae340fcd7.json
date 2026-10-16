@@ -1,0 +1,81 @@
+{
+ "id": "M2-83-2ccae340fcd7",
+ "type": "single",
+ "question": "图中代码①表示",
+ "options": {
+  "A": "萼片残余",
+  "B": "花托",
+  "C": "种子",
+  "D": "胎座"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 83 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "83-86",
+  "stimulus": "见下图(表示不同果实类型)．"
+ },
+ "image": {
+  "file": "assets/questions/M2-83-2ccae340fcd7/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 54,
+  "bbox": [
+   149.1,
+   325.5,
+   446.2,
+   442.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-83-2ccae340fcd7/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 54,
+   "bbox": [
+    149.1,
+    325.5,
+    446.2,
+    442.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】图示果实的纵剖与横剖结构，①位于果实顶端、呈残留片状。A．正确。①是花后宿存的萼片残余（宿存萼），着生于果实顶端。B．错误。花托位于果实基部（图中④），承托花各部分。C．错误。种子是图中③所示的粒状结构。D．错误。胎座是着生种子的轴向组织（图中②），位于果实内部。故答案为A。"
+}

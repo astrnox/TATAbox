@@ -1,0 +1,48 @@
+{
+ "id": "M3-38-1c79d501384d",
+ "type": "mtf",
+ "question": "判断下列有关哺乳动物内分泌系统描述的正确与错误。",
+ "options": {
+  "A": "腺垂体来源于间脑底部向下的突出，神经垂体来源于原始口腔顶部的突出；",
+  "B": "神经垂体可分泌催产素，具有催产和乳腺排乳的作用；",
+  "C": "腺垂体可分泌促卵泡激素，能促进雌兽卵巢中卵泡的加速成熟；",
+  "D": "腺垂体可分泌促性腺激素，作用于雌兽乳腺分泌催乳激素。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "FTTF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 38 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．错误。起源说反了：腺垂体来自原始口腔顶部外胚层（Rathke囊），神经垂体来自间脑底部向下突出。B．正确。催产素由下丘脑合成、经神经垂体释放，具有催产和促进乳腺排乳的作用。C．正确。腺垂体分泌的促卵泡激素（FSH）促进卵巢卵泡发育成熟。D．错误。促进乳腺泌乳的是催乳素（PRL）；促性腺激素（FSH、LH）作用于性腺，不直接促进乳腺分泌催乳激素。\n【易错易混】易错：垂体两部分起源'口腔顶→腺垂体、间脑底→神经垂体'，考试爱把两者对调；激素归属同理——催产素/ADH是'下丘脑产、垂体放'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

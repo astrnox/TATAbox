@@ -1,0 +1,45 @@
+{
+ "id": "M1-33-6299f72e6c54",
+ "type": "single",
+ "question": "以下对蓝藻生理性质的描述不正确的是：",
+ "options": {
+  "A": "光合自养生物，含有叶绿素a，b 和β 胡萝卜素",
+  "B": "含有固氮酶，可进行生物固氮",
+  "C": "无有性生殖现象",
+  "D": "某些蓝藻在有机质丰富的水体中过量繁殖可导致水华的产生"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 33 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不正确的一项，判断词指该选项是否合题意。A．正确。蓝藻含叶绿素a、藻蓝素等藻胆蛋白及β-胡萝卜素，但不含叶绿素b，该表述不成立，正是应选项。B．错误。鱼腥藻、念珠藻等具异形胞并含固氮酶，能进行生物固氮，表述成立。C．错误。蓝藻以二分裂、断裂等方式繁殖，无减数分裂和配子结合的有性生殖，表述成立。D．错误。富营养水体中微囊藻等蓝藻过量繁殖可形成水华并产生毒素，表述成立，故答案为A。"
+}

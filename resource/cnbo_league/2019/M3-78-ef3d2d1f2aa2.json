@@ -1,0 +1,45 @@
+{
+ "id": "M3-78-ef3d2d1f2aa2",
+ "type": "single",
+ "question": "下列动物中，哪类动物理论上不遵循贝格曼定律",
+ "options": {
+  "A": "猫科动物",
+  "B": "熊科动物",
+  "C": "啮齿类动物",
+  "D": "爬行类动物"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 78 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第三部分 动物行为学、生态学（22 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出理论上不遵循贝格曼定律的一类动物，判断词指该选项是否合题意。A．错误。猫科为恒温哺乳动物，同种中寒冷地区个体偏大，遵循该定律。B．错误。熊科同为恒温动物，遵循该定律。C．错误。啮齿类为恒温动物，遵循该定律。D．正确。贝格曼定律描述的是恒温动物在寒冷环境中体型增大的趋势，爬行类为变温动物，体温随环境变化，不受该规律约束，正是应选项。故答案为D。"
+}

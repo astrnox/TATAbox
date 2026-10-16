@@ -1,0 +1,48 @@
+{
+ "id": "M1-21-41b520c23f48",
+ "type": "single",
+ "question": "用凝胶过滤层析分离下列4 种蛋白质混合物，最先从层析柱中洗脱下来的是",
+ "options": {
+  "A": "胰岛素（5. 7 kDa）",
+  "B": "细胞色素C（13. 4 kDa）",
+  "C": "牛血清白蛋白（66. 2 kDa）",
+  "D": "兔磷酸化酶B（97. 4 kDa）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 21 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。凝胶过滤中分子量越小进入填料孔隙越多、流程程越长，胰岛素分子量最小，最后洗脱。B．错误。细胞色素C仅13.4 kDa，属较小分子，洗脱较晚。C．错误。牛血清白蛋白66.2 kDa，小于兔磷酸化酶B，后洗脱。D．正确。兔磷酸化酶B分子量最大（97.4 kDa），被填料完全排阻、流程程最短，最先洗脱。故答案为D。\n【通法】通法（凝胶过滤）：按分子量从大到小依次洗脱，口诀'大先小后'；被排阻体积洗脱的一定是最大分子。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

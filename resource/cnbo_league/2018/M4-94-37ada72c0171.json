@@ -1,0 +1,45 @@
+{
+ "id": "M4-94-37ada72c0171",
+ "type": "single",
+ "question": "物种形成可以依地理条件区分为4 种模式。以下哪种模式认为两个正在分化的种群之间完全没有基因流的存在：",
+ "options": {
+  "A": "异域种化",
+  "B": "同域种化",
+  "C": "边域种化",
+  "D": "临域种化"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "群体遗传",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 94 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。异域物种形成中两个种群被地理屏障完全隔离，其间不存在基因流。B．错误。同域种化发生在同一区域，两分化种群间仍可能有基因流。C．错误。边域种化中分化种群边缘仍有接触与基因流。D．错误。临域种化沿分布区相邻推进，相邻种群间存在基因流。故答案为A。"
+}

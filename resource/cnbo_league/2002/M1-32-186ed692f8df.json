@@ -1,0 +1,45 @@
+{
+ "id": "M1-32-186ed692f8df",
+ "type": "single",
+ "question": "一般认为，光范型作用的光受体是",
+ "options": {
+  "A": "叶绿素",
+  "B": "花色素",
+  "C": "光敏素",
+  "D": "类胡萝卜素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 32 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。叶绿素是光合色素，吸收光能用于光合作用，不承担光信号感受。B．错误。花色素（花青素）是液泡中的呈色物质，无信号受体功能。C．正确。光敏素（光敏色素）是色素蛋白，有Pr和Pfr两种可逆形式，分别吸收红光和远红光，介导种子萌发、避荫反应、开花等光形态建成。D．错误。类胡萝卜素是光合辅助色素，蓝光受体为隐花色素、向光素等黄素蛋白。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-32-3d9d97f4ccb0",
+ "type": "single",
+ "question": "长期营养不良会造成水肿，主要由于",
+ "options": {
+  "A": "血浆晶体渗透压过高",
+  "B": "血浆晶体渗透压过低",
+  "C": "血浆胶体渗透压过高",
+  "D": "血浆胶体渗透压过低"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 32 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。晶体渗透压主要由无机盐维持，营养不良时不会升高，且升高会导致组织脱水而非水肿。B．错误。晶体渗透压过低不是营养不良性水肿的主要原因。C．错误。营养不良时血浆蛋白合成不足，胶体渗透压降低而非升高。D．正确。蛋白质摄入不足使血浆白蛋白减少，血浆胶体渗透压下降，组织液生成增多而回流减少，形成水肿。故答案为D。\n【通法】通法（水肿成因）：水肿＝组织液生成大于回流；从血浆胶体渗透压降低、毛细血管压升高、淋巴回流受阻、毛细血管通透性增大四条线索排查，营养不良对应白蛋白减少。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

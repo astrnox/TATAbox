@@ -1,0 +1,84 @@
+{
+ "id": "M3-72-ff12aced6061",
+ "type": "single",
+ "question": "在一个稳定的食物网中，最确切地反映猎物生物量x 与捕食者生物量y 关系的函数式（式中a、b 和c 为常数）是：",
+ "options": {
+  "A": "y=ax+b",
+  "B": "y=axc+b",
+  "C": "y=algx+b",
+  "D": "y=eax+b"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 72 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "71-72",
+  "stimulus": "Hatton 等分析了全球2260 个群落中捕食者和猎物生物量的比例，发现在一个稳定的"
+ },
+ "image": {
+  "file": "assets/questions/M3-72-ff12aced6061/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 423,
+  "bbox": [
+   110.9,
+   72.6,
+   484.3,
+   336.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-72-ff12aced6061/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 423,
+   "bbox": [
+    110.9,
+    72.6,
+    484.3,
+    336.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。线性式无法体现生物量关系随营养级升高的非线性衰减。B．正确。稳定食物网中猎物与捕食者生物量呈异速（幂律）关系，y=ax^c+b 最确切。C．错误。对数式不能刻画两端的行为特征。D．错误。指数式会随 x 增大而加速上升，与实际不符。故答案为B。\n【通法】通法（生物量关系选函数式）：营养级间是标度（幂律）关系而非直线、指数或对数——看到 y=ax^c+b 这类幂函数优先选。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

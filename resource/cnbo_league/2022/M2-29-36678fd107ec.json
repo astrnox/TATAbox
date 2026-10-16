@@ -1,0 +1,52 @@
+{
+ "id": "M2-29-36678fd107ec",
+ "type": "multiple",
+ "question": "关于马铃薯中BRCla 和BRC1b，下列叙述错误的有：",
+ "options": {
+  "A": "二者的表达受相同因素的调控；",
+  "B": "二者的DNA 序列应该有90%以上的同源性；",
+  "C": "BRC1a 和BRC1b 属于旁系同源基因；",
+  "D": "BRC1a 和BRC1b 的功能并不完全相同。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 29 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "29-30",
+  "stimulus": "马铃薯的两个基因BRC1a 和BRC1b 源自基因重复事件，他们都调控块茎的形成过"
+ },
+ "explanation": "【解析】本题要求选出叙述错误的选项，判断词指该叙述是否应选。A．正确（应选）。二者的表达受各自特异的调控元件控制，并非受相同因素调控，该叙述错误。B．正确（应选）。旁系同源基因经 duplication 产生，序列已发生分化，断定同源性在 90% 以上缺乏依据，该叙述错误。C．错误（表述成立）。BRC1a 与 BRC1b 由基因重复而来，属旁系同源基因，叙述成立。D．错误（表述成立）。旁系同源基因功能常发生分化，二者功能并不完全相同，叙述成立。故答案为AB。\n【易错易混】易混：直系同源（物种分化）看功能保守，旁系同源（基因重复）看功能分化；同源性百分比没给数据别硬断。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

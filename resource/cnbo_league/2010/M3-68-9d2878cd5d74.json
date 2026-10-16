@@ -1,0 +1,45 @@
+{
+ "id": "M3-68-9d2878cd5d74",
+ "type": "single",
+ "question": "糖尿病的直接原因是以下哪一种？",
+ "options": {
+  "A": "血液中胰岛素含量不足",
+  "B": "血液中胰岛素含量过高",
+  "C": "血液中胰高血糖素含量不足",
+  "D": "血液中肾上腺素含量过高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 68 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。胰岛素是唯一降低血糖的激素，其分泌不足使组织摄取和利用葡萄糖受阻、肝糖原分解与糖异生增强，血糖持续升高并出现糖尿，是糖尿病的直接原因。B．错误。胰岛素过多引起的是低血糖而非高血糖。C．错误。胰高血糖素不足使血糖降低，不会导致糖尿。D．错误。肾上腺素升糖作用短暂，须在胰岛素不足基础上才造成持续高血糖，不是糖尿病的直接原因。故答案为A。"
+}

@@ -1,0 +1,96 @@
+{
+ "id": "M1-23-4d1e58b23eda",
+ "type": "multiple",
+ "question": "对恶性星形细胞瘤细胞的描述，正确的有：",
+ "options": {
+  "A": "端粒酶活性低；",
+  "B": "迁移能力强；",
+  "C": "能无限增殖；",
+  "D": "细胞分化程度相对低。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 23 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "23-24",
+  "stimulus": "研究发现恶性星形胶质细胞瘤患者的脑脊液中有一种特异性蛋白M。为了探索这种"
+ },
+ "image": {
+  "file": "assets/questions/M1-23-4d1e58b23eda/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 455,
+  "bbox": [
+   118.9,
+   285.2,
+   305.9,
+   392.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-23-4d1e58b23eda/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 455,
+   "bbox": [
+    118.9,
+    285.2,
+    305.9,
+    392.9
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M1-23-4d1e58b23eda/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2024 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 455,
+   "bbox": [
+    306.4,
+    285.2,
+    476.6,
+    392.6
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。恶性肿瘤细胞须激活端粒酶维持端粒，端粒酶活性高而非低。B．正确。恶性星形细胞瘤侵袭性强，迁移能力明显增强。C．正确。瘤细胞激活端粒酶后可无限增殖。D．正确。恶性程度越高分化程度越低，该细胞分化程度相对较低。故答案为BCD。"
+}

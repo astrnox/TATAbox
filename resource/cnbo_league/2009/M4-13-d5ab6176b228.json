@@ -1,0 +1,48 @@
+{
+ "id": "M4-13-d5ab6176b228",
+ "type": "single",
+ "question": "两个先天性聋哑（AR）人结婚，所生的两个子女都不患聋哑，这种情况可能属于：",
+ "options": {
+  "A": "外显不完全",
+  "B": "遗传的异质性",
+  "C": "隔代遗传",
+  "D": "延迟显性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 13 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】两先天聋哑（常染色体隐性）者婚后子女均正常，说明双亲的致病突变不在同一基因，后代获得的两个突变位点各被对方的正常等位基因互补。A．错误。外显不完全指携带突变而不表现，与题意不符。B．正确。两个个体的聋哑由不同基因的突变引起（遗传异质性），后代互补故不患病，正是应选项。C．错误。子女直接正常，不涉及隔代遗传。D．错误。延迟显性指成年后才发病，与本题无关。故答案为B。\n【点睛】点睛：'同病婚配子女正常'先想位点异质——两位点突变互补，遗传咨询中的经典判断。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

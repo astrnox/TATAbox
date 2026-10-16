@@ -1,0 +1,45 @@
+{
+ "id": "M1-01-8bbdca43b770",
+ "type": "single",
+ "question": "细胞分化发生在细胞周期哪一阶段：",
+ "options": {
+  "A": "细胞分裂前期",
+  "B": "细胞分裂间期",
+  "C": "细胞分裂中期",
+  "D": "细胞分裂末期"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 1 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细胞分裂前期染色质凝缩、纺锤体开始形成，不发生细胞分化。B．正确。细胞分化发生在细胞周期的间期，细胞在间期（尤其是G1期）接受信号并决定分化方向。C．错误。中期染色体排列于赤道板，与分化无关。D．错误。末期进行核膜重建与胞质分裂，也不是分化的阶段。故答案为B。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-23-e90f41622bed",
+ "type": "single",
+ "question": "下列哪个多肽在给定条件下可以折叠成α-螺旋？",
+ "options": {
+  "A": "多聚谷氨酸pH7.0",
+  "B": "多聚谷氨酸pH3.0",
+  "C": "多聚赖氨酸pH7.0",
+  "D": "多聚赖氨酸pH3.0"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 23 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。pH7.0 时多聚谷氨酸侧链羧基解离带负电，静电排斥阻碍螺旋形成。B．正确。pH3.0 时谷氨酸侧链质子化、不带电，排斥消除，可折叠成 α-螺旋。C．错误。pH7.0 时多聚赖氨酸侧链氨基质子化带正电，相互排斥，不能形成螺旋。D．错误。pH3.0 时多聚赖氨酸同样带正电，排斥更强，仍不能成螺旋。故答案为B。\n【易错易混】易混：α-螺旋要求侧链电荷互斥弱——聚谷氨酸 pH7 带负电不卷曲、pH3 质子化后成螺旋；聚赖氨酸在 pH7 与 pH3 均带正电，都不成螺旋。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

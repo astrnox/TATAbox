@@ -1,0 +1,47 @@
+{
+ "id": "M4-116-eb47a70f4919",
+ "type": "multiple",
+ "question": "利用DNA 序列构建系统发育树的方法多种多样。以下方法中利用DNA 序列的遗传距离构建系统发育关系的是",
+ "options": {
+  "A": "最大简约法",
+  "B": "最大似然法",
+  "C": "邻接法",
+  "D": "贝叶斯法",
+  "E": "UPGMA 法"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "CE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 116 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。最大简约法基于序列特征状态的最少变化步数构建，不依赖遗传距离。B．错误。最大似然法在给定演化模型下计算序列出现的概率，属模型法而非距离法。C．正确。邻接法先计算序列间遗传距离矩阵，再依据距离逐步聚合成无根树。D．错误。贝叶斯法基于后验概率进行模型推断，不以遗传距离为直接依据。E．正确。UPPGMA依据遗传距离矩阵按逐级聚类建树，是典型的距离法。故答案为CE。"
+}

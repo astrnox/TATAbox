@@ -1,0 +1,48 @@
+{
+ "id": "M3-62-664e69dc9973",
+ "type": "single",
+ "question": "生物群落的动态至少应包括三个方面的内容：群落的内部动态、＿和地球上的生物群落的进化。",
+ "options": {
+  "A": "群落的演替",
+  "B": "生物群落的年变化",
+  "C": "干扰",
+  "D": "季节性变化"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "群落生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 62 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。群落的动态包括群落的内部动态（如生物量与种类组成的波动）、群落的演替以及地球上的生物群落的进化三个层次。B．错误。年变化只是内部动态在时间上的表现之一，不能与内部动态并列。C．错误。干扰是引起群落变化的重要外因，常是演替的触发条件，本身不属动态内容的三个方面。D．错误。季节性变化同样只是内部动态的表现形式之一。故答案为A。\n【点睛】点睛：群落动态的三个层次是内部动态、演替、进化，按'群落内部—群落之间—宏观时间尺度'递进记忆即可。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

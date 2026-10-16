@@ -1,0 +1,50 @@
+{
+ "id": "M1-16-b5800bd65e78",
+ "type": "multiple",
+ "question": "以下哪类化合物属于微生物的次生代谢产物",
+ "options": {
+  "A": "脂肪",
+  "B": "色素",
+  "C": "抗生素",
+  "D": "蛋白质",
+  "E": "毒素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 16 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。脂肪是储能物质，属初级代谢产物。B．正确。色素（细菌色素、真菌色素等）多在稳定期合成，对生长非必需，属次生代谢产物。C．正确。抗生素是微生物产生的抑制他种生物的物质，是典型次生代谢产物。D．错误。蛋白质是细胞结构与功能的基本物质，属初级代谢产物。E．正确。微生物毒素（如真菌毒素、细菌外毒素）多为次生代谢产物。故答案为BCE。\n【通法】通法（初生与次生代谢）：构成细胞、生长必需（氨基酸、核苷酸、糖、脂肪、蛋白质）→初生代谢产物；生长非必需、多在稳定期合成（色素、抗生素、毒素、生物碱、激素）→次生代谢产物。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

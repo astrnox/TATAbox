@@ -1,0 +1,48 @@
+{
+ "id": "M1-09-ab8c3787c044",
+ "type": "single",
+ "question": "测定一个蛋白质分子量时，哪一种方法不常用？",
+ "options": {
+  "A": "超速离心",
+  "B": "电泳",
+  "C": "层析",
+  "D": "X-光衍射"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 9 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题为选非题，判断词指该选项是否合题意。A．错误。超速离心可由沉降系数求得蛋白质分子量，表述成立。B．错误。SDS-PAGE按分子量大小迁移，是常用测定手段，表述成立。C．错误。凝胶过滤层析按分子大小洗脱，可估算分子量，表述成立。D．正确。X射线衍射用于解析蛋白质的三维晶体结构，不能直接测定分子量，该表述不成立，正是应选项。故答案为D。\n【点睛】点睛：测分子量认准按质量或大小分离的方法，结构解析方法不在此列。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

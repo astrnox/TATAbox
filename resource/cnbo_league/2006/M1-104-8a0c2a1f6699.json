@@ -1,0 +1,50 @@
+{
+ "id": "M1-104-8a0c2a1f6699",
+ "type": "mtf",
+ "question": "在升温使蛋白质变性过程中，以下哪些现象常会出现？",
+ "options": {
+  "A": "肽键断裂",
+  "B": "氢键的断裂",
+  "C": "溶解度下降",
+  "D": "分子量减小",
+  "E": "辅酶脱离"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "BCE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 4 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。热变性破坏的是高级结构，肽键完好，一级结构不变。B．正确。维持二、三级结构的氢键被破坏，肽链展开。C．正确。变性后疏水基团暴露，分子相互聚集而沉淀，溶解度下降。D．错误。肽键未断裂，分子量不变。E．正确。辅酶与酶蛋白的结合依赖高级结构，变性后辅酶脱离，酶随之失活。\n【易错易混】易错点：变性只破坏氢键、疏水作用等次级键，不破坏肽键，故分子量不变而活性、溶解度改变。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

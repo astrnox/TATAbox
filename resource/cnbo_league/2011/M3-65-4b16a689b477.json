@@ -1,0 +1,45 @@
+{
+ "id": "M3-65-4b16a689b477",
+ "type": "single",
+ "question": "消化系统的功能是在：",
+ "options": {
+  "A": "体液调节下进行的",
+  "B": "副交感神经的调节下进行的",
+  "C": "交感神经调节下进行的",
+  "D": "植物神经和体液共同调节下进行的"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 65 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 65,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。体液调节（胃肠激素等）只是消化调节的一部分，单说体液调节不全面。B．错误。副交感神经兴奋促进消化运动和分泌，但并非唯一的调节者。C．错误。交感神经兴奋主要抑制胃肠运动，更不是唯一调节者。D．正确。消化系统的功能在植物性神经（交感与副交感）和体液因素共同调节下进行，两者协调配合完成消化吸收。故答案为D。"
+}

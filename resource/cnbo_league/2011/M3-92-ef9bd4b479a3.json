@@ -1,0 +1,48 @@
+{
+ "id": "M3-92-ef9bd4b479a3",
+ "type": "single",
+ "question": "从理论上讲，对于一个处于平衡状态的封闭生态系统，仍需要提供：",
+ "options": {
+  "A": "能量",
+  "B": "无机盐",
+  "C": "二氧化碳和氧气",
+  "D": "能量和无机盐"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 92 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。能量沿食物链单向流动、逐级递减，最终以热的形式散失且不能循环利用，故任何生态系统（包括封闭生态系统）都必须持续输入能量（如光能）。B．错误。无机盐属物质，经分解者矿化后可在系统内反复循环，封闭系统中不必额外提供。C．错误。二氧化碳和氧气经光合作用与呼吸作用在系统内循环，平衡状态下无需外部补充。D．错误。无机盐无需提供，该组合不成立。故答案为A。\n【易错易混】易混：物质是循环的，能量是单向流动、逐级递减的；封闭限制的是物质交换，能量仍须源源输入。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

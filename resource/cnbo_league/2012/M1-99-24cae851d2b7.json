@@ -1,0 +1,45 @@
+{
+ "id": "M1-99-24cae851d2b7",
+ "type": "single",
+ "question": "人体对钙的吸收需要",
+ "options": {
+  "A": "维生素A",
+  "B": "维生素B",
+  "C": "维生素D",
+  "D": "维生素K"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 99 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。维生素A与视觉和上皮组织有关，不参与钙吸收。B．错误。维生素B族多为辅酶成分，与钙吸收无直接关系。C．正确。维生素D促进小肠对钙和磷的吸收，缺乏时儿童患佝偻病、成人患骨软化症。D．错误。维生素K参与凝血因子的合成，与钙吸收无直接关系。故答案为C。"
+}

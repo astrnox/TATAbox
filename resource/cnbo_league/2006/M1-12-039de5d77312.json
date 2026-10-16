@@ -1,0 +1,47 @@
+{
+ "id": "M1-12-039de5d77312",
+ "type": "single",
+ "question": "葡萄糖酵解的产物是",
+ "options": {
+  "A": "丙氨酸",
+  "B": "丙酮醛",
+  "C": "丙酮酸",
+  "D": "乳酸",
+  "E": "磷酸丙酮酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 12 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。丙氨酸是丙酮酸经转氨作用生成的氨基酸，不是糖酵解产物。B．错误。丙酮醛（甲基乙二醛）不是糖酵解的正常产物，只是磷酸丙糖的非酶促副产物。C．正确。一分子葡萄糖经糖酵解净生成2分子丙酮酸，同时产2分子ATP和2分子NADH。D．错误。乳酸是无氧条件下丙酮酸被乳酸脱氢酶还原的产物，属发酵阶段而非糖酵解本身。E．错误。糖酵解的中间物中有磷酸烯醇式丙酮酸，但它是中间物而非产物，'磷酸丙酮酸'这一名称也不规范。故答案为C。"
+}

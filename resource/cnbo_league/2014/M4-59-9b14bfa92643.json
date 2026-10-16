@@ -1,0 +1,81 @@
+{
+ "id": "M4-59-9b14bfa92643",
+ "type": "single",
+ "question": "上述家谱中，1 和9 婚配，所生的第一儿子为正常的可能性为",
+ "options": {
+  "A": "0",
+  "B": "25%",
+  "C": "50%",
+  "D": "75%"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 59 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 59,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "58-63",
+  "stimulus": "见下图，是某种罕见的遗传病家系："
+ },
+ "image": {
+  "file": "assets/questions/M4-59-9b14bfa92643/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2014 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 211,
+  "bbox": [
+   181.0,
+   638.5,
+   419.3,
+   768.7
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-59-9b14bfa92643/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2014 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 211,
+   "bbox": [
+    181.0,
+    638.5,
+    419.3,
+    768.7
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。1与9婚配可以生出正常儿子，概率不为0。B．错误。该概率不是25%。C．正确。该病为X染色体显性遗传，1为正常男性（XaY），9为杂合女性患者（XAXa），儿子的X染色体全部来自母亲，获得XA或Xa各占1/2，故第一儿子为正常的概率是50%。D．错误。75%无遗传学依据。故答案为C。"
+}

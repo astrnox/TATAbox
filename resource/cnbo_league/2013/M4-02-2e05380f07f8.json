@@ -1,0 +1,45 @@
+{
+ "id": "M4-02-2e05380f07f8",
+ "type": "single",
+ "question": "视网膜母细胞瘤主要是由于",
+ "options": {
+  "A": "原癌基因Rb 基因突变引起的",
+  "B": "抑癌基因Rb 基因突变引起的",
+  "C": "原癌基因p53 基因突变引起的",
+  "D": "抑癌基因p53 基因突变引起的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 2 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。Rb不是原癌基因，该分类本身即错。B．正确。Rb是经典的抑癌基因，其两个拷贝失活导致细胞周期失控，引起视网膜母细胞瘤。C．错误。p53虽与肿瘤密切相关，但本病的致病基因是Rb。D．错误。p53为抑癌基因，但不是视网膜母细胞瘤的主要致病基因。故答案为B。"
+}

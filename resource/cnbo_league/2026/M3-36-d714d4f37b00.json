@@ -1,0 +1,45 @@
+{
+ "id": "M3-36-d714d4f37b00",
+ "type": "mtf",
+ "question": "买麻藤纲的麻黄科、买麻藤科和百岁兰科在形态上差异巨大，判断以下对这种形态差异解释的正误：",
+ "options": {
+  "A": "适应不同生态环境趋异演化的结果；",
+  "B": "长期的地理隔离与遗传分化的结果；",
+  "C": "它们不享有最近的共同祖先；",
+  "D": "不同的生存和繁殖策略所致。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 36 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．正确。三科适应荒漠、热带藤本等不同生境，形态差异是趋异演化的结果。B．正确。长期地理隔离与遗传分化加剧了形态分化。C．错误。三科同属买麻藤纲单系群，享有最近的共同祖先。D．正确。不同的生存与繁殖策略（如百岁兰终生两叶、麻黄靠球花）塑造了各自的形态。"
+}

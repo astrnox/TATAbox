@@ -1,0 +1,48 @@
+{
+ "id": "M1-01-f4a64c3ef979",
+ "type": "single",
+ "question": "癌细胞与正常细胞的不同之处在于",
+ "options": {
+  "A": "癌细胞不能合成DNA",
+  "B": "癌细胞被锁定在细胞周期中的S期",
+  "C": "癌细胞能持续分裂尽管彼此紧密相接",
+  "D": "癌细胞始终处于细胞周期中的分裂期"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 1 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。癌细胞DNA合成旺盛、S期活跃，恰以不断复制DNA为特征，而非不能合成DNA。B．错误。癌细胞能依次通过G1、S、G2、M各期，并未被锁定在S期，只是细胞周期失控、增殖不休。C．正确。正常细胞相互接触后即停止分裂（接触抑制），癌细胞失去接触抑制，故彼此紧密相接时仍持续分裂。D．错误。癌细胞大部分时间仍处于分裂间期，只是分裂不再受控，并非始终停留在分裂期。故答案为C。\n【易错易混】易错点：癌细胞＝失去接触抑制＋越过G1检验点＋无限增殖；'不能合成DNA'和'一直处在M期'都是把'失控'错解为'停滞'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

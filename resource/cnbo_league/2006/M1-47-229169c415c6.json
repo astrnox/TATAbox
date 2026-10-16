@@ -1,0 +1,48 @@
+{
+ "id": "M1-47-229169c415c6",
+ "type": "single",
+ "question": "下列哪一项与显微镜的分辨率无关？",
+ "options": {
+  "A": "光波波长",
+  "B": "物镜放大倍数",
+  "C": "标本和透镜之间的物质的折射率",
+  "D": "透镜的数值孔径"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 47 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出与显微镜分辨率无关的一项，判断词指该选项是否合题意。A．错误。分辨率d=λ/(2n·sinθ)，照明光波长λ直接决定可分辨的最小距离，与分辨率有关。B．正确。放大倍数只放大物镜已分辨的图像，不能提高分辨本领，超过分辨率的细节放大后依然模糊，与分辨率无关，正是应选项。C．错误。介质折射率n是数值孔径的组成因子，油镜用香柏油提高折射率以增大数值孔径。D．错误。数值孔径NA=n·sinθ是决定分辨率的关键参数。故答案为B。\n【通法】通法（显微镜分辨率）：d=0.61λ/NA，相关因素只有波长和数值孔径（折射率、镜口角）；放大倍数决定'看得多大'，分辨率决定'看得多清'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

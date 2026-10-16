@@ -1,0 +1,48 @@
+{
+ "id": "M4-93-4ef6d4d9ba24",
+ "type": "single",
+ "question": "减数分裂中，等位基因的分离发生在：",
+ "options": {
+  "A": "第一次减数分裂",
+  "B": "第二次减数分裂",
+  "C": "A、B 都有可能",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 93 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。若不考虑基因与着丝粒间的交换，等位基因随同源染色体分开在第一次减数分裂分离，但并非所有情况都如此。B．错误。只有发生着丝粒与基因间交换时等位基因才在第二次减数分裂分离，不能涵盖全部。C．正确。等位基因位于一对同源染色体上时在减数分裂I分离；若基因与着丝粒之间发生交换，姐妹染色单体上可分别携带不同等位基因，其分离发生在减数分裂II，故A、B都有可能。D．错误。C项已给出正确判断。故答案为C。\n【点睛】点睛：等位基因分离＝'跟着同源走'在减I，'交换后跟单体走'在减II——判断关键看基因与着丝粒之间有没有交换。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

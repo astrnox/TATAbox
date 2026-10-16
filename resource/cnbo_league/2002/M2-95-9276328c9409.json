@@ -1,0 +1,48 @@
+{
+ "id": "M2-95-9276328c9409",
+ "type": "single",
+ "question": "根上的侧根是由哪里产生的：",
+ "options": {
+  "A": "表皮",
+  "B": "皮层",
+  "C": "中柱鞘",
+  "D": "髓"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 95 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。表皮是保护组织，不产生侧根。B．错误。皮层属基本组织，一般不具形成侧根的分生能力。C．正确。侧根起源于中柱鞘，属内起源，中柱鞘细胞恢复分裂形成侧根原基，穿过皮层和表皮伸出。D．错误。髓位于茎中央（根通常无髓或不发达），与侧根发生无关。故答案为C。\n【点睛】点睛：侧根为内起源、必起自中柱鞘，叶芽多为外起源，记住'内根外芽'可破此类题。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

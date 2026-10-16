@@ -1,0 +1,45 @@
+{
+ "id": "M1-49-ca5aae3f48c5",
+ "type": "single",
+ "question": "当一个人的前臂受伤造成大出血时，对其进行止血结扎的最佳位置是：",
+ "options": {
+  "A": "腕部",
+  "B": "上臂",
+  "C": "伤口上端",
+  "D": "腕部和上臂同时进行止血"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 49 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。腕部位于伤口的远端，结扎不能阻断来自近心端的动脉血流。B．正确。上臂有肱动脉走行且位置表浅，在此结扎可有效阻断前臂的动脉供血，是止血结扎的最佳位置。C．错误。前臂有尺、桡两条动脉且吻合丰富，仅在伤口上端结扎常难以完全止血，应扎在主干动脉所在的上臂。D．错误。同时结扎两处没有必要，反而增加组织损伤。故答案为B。"
+}

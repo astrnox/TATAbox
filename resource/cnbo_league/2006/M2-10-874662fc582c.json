@@ -1,0 +1,45 @@
+{
+ "id": "M2-10-874662fc582c",
+ "type": "single",
+ "question": "所有进行光合放氧的生物都具有那种色素：",
+ "options": {
+  "A": "叶绿素a, 叶绿素b",
+  "B": "叶绿素a, 叶绿素c",
+  "C": "叶绿素a, 类胡萝卜素",
+  "D": "叶绿素a，藻胆素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 10 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。红藻、褐藻等并无叶绿素b。B．错误。绿藻、裸藻无叶绿素c，蓝藻也无。C．正确。放氧光合生物包括蓝藻与各类真核光合生物，均具叶绿素a（反应中心色素）和类胡萝卜素（天线与光保护色素）。D．错误。藻胆素仅见于蓝藻、红藻和灰胞藻等，绿藻和高等植物都没有。故答案为C。"
+}

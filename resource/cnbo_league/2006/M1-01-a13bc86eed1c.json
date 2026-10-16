@@ -1,0 +1,48 @@
+{
+ "id": "M1-01-a13bc86eed1c",
+ "type": "single",
+ "question": "叶绿体不具有下面哪一项功能：",
+ "options": {
+  "A": "氮同化",
+  "B": "DNA 复制",
+  "C": "合成组蛋白",
+  "D": "产生ATP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 1 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题为选非题，判断词指该选项是否合题意。A．错误。叶绿体可进行氮同化，质体内含硝酸还原酶、谷氨酰胺合成酶等，能把无机氮并入氨基酸，表述成立。B．错误。叶绿体有自身的环状DNA和复制系统，能自主复制，表述成立。C．正确。组蛋白是核小体的结构蛋白，由细胞质核糖体合成后入核，叶绿体基因组不编码组蛋白，该表述不成立，正是应选项。D．错误。光合磷酸化在类囊体膜上产生ATP，表述成立。故答案为C。\n【点睛】点睛：抓住叶绿体的半自主性——有自己的DNA复制、能量转换和氮同化能力，却没有核小体结构。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

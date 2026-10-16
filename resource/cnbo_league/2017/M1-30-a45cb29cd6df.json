@@ -1,0 +1,48 @@
+{
+ "id": "M1-30-a45cb29cd6df",
+ "type": "multiple",
+ "question": "细菌通常通过下列哪些方式获得对抗生素的抵抗作用？",
+ "options": {
+  "A": "突变产生可以分解或修饰抗生素的酶类",
+  "B": "突变产生对于抗生素的转运蛋白",
+  "C": "突变产生小分子配体与抗生素结合",
+  "D": "突变抗生素的靶蛋白"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 30 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。突变产生β-内酰胺酶等可分解或修饰抗生素，使药物失活。B．正确。突变增强外排泵等转运蛋白的表达，把抗生素泵出细胞。C．正确。突变产生小分子或蛋白与抗生素结合，阻止其作用于靶点。D．正确。突变改变抗生素靶蛋白（如PBPs、核糖体、RNA聚合酶），使抗生素无法结合。四种机制均成立。故答案为ABCD。\n【点睛】点睛：细菌耐药四大套路——'降解它（酶）、赶走它（外排）、抓住它（结合）、改靶点'，四大方式全对是常见多选答案。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

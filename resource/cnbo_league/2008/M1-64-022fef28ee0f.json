@@ -1,0 +1,48 @@
+{
+ "id": "M1-64-022fef28ee0f",
+ "type": "single",
+ "question": "小肠上皮细胞间的哪种结构能够防止营养物质从细胞间隙进入血液",
+ "options": {
+  "A": "桥粒",
+  "B": "紧密连接",
+  "C": "间隙连接",
+  "D": "胞间连丝"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 64 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。桥粒是中间纤维锚定的点状连接，起机械支撑作用，不能封闭细胞间隙。B．正确。紧密连接把相邻上皮细胞顶部的质膜紧密贴合，封闭细胞间隙，阻止营养物质经旁路进入血液，维持上皮屏障与极性。C．错误。间隙连接由连接子构成通道，允许小分子和离子互通，起通讯作用而非阻挡。D．错误。胞间连丝是植物细胞间的通道结构，小肠上皮细胞没有。故答案为B。\n【易错易混】易混：紧密连接=封闭屏障；桥粒=机械锚定；间隙连接（胞间连丝）=物质通讯；黏着连接=肌动蛋白介导的细胞黏着。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-57-e75f13c5c942",
+ "type": "single",
+ "question": "氰化钾是什么物质的抑制剂",
+ "options": {
+  "A": "细胞色素C",
+  "B": "超氧化物歧化酶",
+  "C": "ATP 酶",
+  "D": "细胞色素氧化酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 57 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细胞色素c是复合物Ⅲ与Ⅳ之间的电子传递体，不是氰化物作用的靶点。B．错误。超氧化物歧化酶催化超氧阴离子歧化，不受CN-抑制。C．错误。ATP酶（ATP合酶）受寡霉素抑制，与氰化物无关。D．正确。CN-与细胞色素氧化酶（复合物Ⅳ）中细胞色素a3的三价铁紧密结合，阻断电子传给氧，呼吸链中断。故答案为D。\n【通法】通法（呼吸链抑制剂对位）：鱼藤酮、安密妥堵复合物Ⅰ，抗霉素A堵Ⅲ，CO、CN-、H2S堵Ⅳ，寡霉素堵ATP合酶，DNP解偶联；记'Ⅰ鱼Ⅲ抗Ⅳ氰'即可对号入座。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

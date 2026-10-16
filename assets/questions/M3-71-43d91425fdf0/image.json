@@ -1,0 +1,35 @@
+{
+ "id": "M3-71-43d91425fdf0",
+ "figures": [
+  {
+   "file": "assets/questions/M3-71-43d91425fdf0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 445,
+   "bbox": [
+    108.6,
+    140.1,
+    486.5,
+    281.1
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M3-71-43d91425fdf0/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 445,
+   "bbox": [
+    163.2,
+    281.1,
+    432.0,
+    424.8
+   ],
+   "kind": "raster"
+  }
+ ]
+}

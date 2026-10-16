@@ -1,0 +1,48 @@
+{
+ "id": "M1-02-2646cbff6a2b",
+ "type": "single",
+ "question": "蝌蚪尾巴消失的过程中，主要涉及：",
+ "options": {
+  "A": "细胞衰老",
+  "B": "细胞分化",
+  "C": "细胞凋亡",
+  "D": "细胞增殖"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 2 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细胞衰老是细胞功能与结构逐步退化的过程，蝌蚪尾巴的快速消失不是衰老所致。B．错误。细胞分化产生不同类型细胞，尾巴消失是细胞数量减少而非分化。C．正确。蝌蚪变态时尾部细胞通过程序性死亡（细胞凋亡）被有序清除，溶酶体酶与内切核酸酶降解自身结构，尾巴因此消失。D．错误。细胞增殖使细胞数量增加，与尾巴消失方向相反。故答案为C。\n【点睛】点睛：蝌蚪变尾巴、指间蹼消失、导管退化都是'程序性死亡'的经典例证，见到'幼体结构主动退化'先想凋亡，别选衰老。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

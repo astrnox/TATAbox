@@ -1,0 +1,45 @@
+{
+ "id": "M3-39-602251890d07",
+ "type": "single",
+ "question": "下列动物中，小肠相对最长且最弯曲的是：",
+ "options": {
+  "A": "野猪",
+  "B": "家兔",
+  "C": "山羊",
+  "D": "野马"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 39 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 39,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。野猪为杂食性，消化道相对短且弯曲度小。B．错误。家兔虽为草食性，但发达的主要是粗大的盲肠，小肠相对长度不及反刍类。C．正确。山羊是反刍草食动物，食性最粗，小肠相对最长、盘曲最多，利于充分消化吸收纤维性食物的分解产物。D．错误。野马为单胃草食动物，靠发达的盲肠发酵，小肠相对长度不如山羊。故答案为C。"
+}

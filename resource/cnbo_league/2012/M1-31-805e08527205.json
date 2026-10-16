@@ -1,0 +1,48 @@
+{
+ "id": "M1-31-805e08527205",
+ "type": "single",
+ "question": "心肌细胞有效不应期的长短主要取决于",
+ "options": {
+  "A": "静息电位水平",
+  "B": "0期去极化的速度",
+  "C": "阈电位水平",
+  "D": "平台期的长短"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 31 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。静息电位水平主要影响兴奋性高低，不决定不应期长短。B．错误。0期去极化速度取决于快Na+通道的开放，与不应期长短无关。C．错误。阈电位水平影响兴奋阈值，不决定不应期。D．正确。心肌动作电位有明显2期平台期（Ca2+内流与K+外流平衡），复极缓慢，使有效不应期长，覆盖整个收缩期。故答案为D。\n【易错易混】易混：心肌因平台期长而有效不应期长，故不发生强直收缩；骨骼肌动作电位无平台期、不应期极短，可发生强直收缩。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

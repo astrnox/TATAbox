@@ -1,0 +1,45 @@
+{
+ "id": "M2-111-1dbb6bae8e46",
+ "type": "multiple",
+ "question": "下列哪些物质可以抑制细菌生长",
+ "options": {
+  "A": "青霉素",
+  "B": "秋水仙素",
+  "C": "RNA 酶",
+  "D": "赤霉素"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 111 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 111,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】抑菌指抑制细菌生长繁殖。A．正确。青霉素抑制细菌细胞壁肽聚糖的交联，使细菌不能正常生长繁殖，对无细胞壁的支原体无效、对真核细胞无害。B．错误。秋水仙素抑制微管聚合、破坏纺锤体，作用于真核细胞，细菌无微管纺锤体，不受其抑制。C．错误。RNA酶不能穿过细菌的细胞壁和细胞膜，难以作用于胞内RNA，通常不抑制细菌生长。D．错误。赤霉素是植物激素，促进细胞伸长和种子萌发，对细菌无抑菌作用。故答案为A。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-13-cc59f8e43ed6",
+ "type": "single",
+ "question": "氧化磷酸化过程中电子传递的主要作用是：",
+ "options": {
+  "A": "形成质子梯度",
+  "B": "将电子传给氧分子",
+  "C": "转运磷酸根",
+  "D": "排出二氧化碳"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "氧化磷酸化",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 13 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。呼吸链传递电子释放的自由能用于把质子从线粒体基质泵到膜间隙，建立跨膜质子梯度（质子动力势），驱动ATP合酶合成ATP，这才是电子传递的主要意义。B．错误。氧只是链的最终电子受体，电子传给氧是链的终点，而非电子传递的主要作用，其意义在于与磷酸化偶联。C．错误。磷酸根由磷酸载体和腺苷酸转运体转运，与电子传递无直接关系。D．错误。CO2由丙酮酸脱氢和三羧酸循环脱羧产生，与电子传递无关。故答案为A。"
+}

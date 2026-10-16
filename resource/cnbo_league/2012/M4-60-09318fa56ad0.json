@@ -1,0 +1,50 @@
+{
+ "id": "M4-60-09318fa56ad0",
+ "type": "single",
+ "question": "不连锁的基因是",
+ "options": {
+  "A": "A和D",
+  "B": "B和D",
+  "C": "A和C",
+  "D": "B和C",
+  "E": "全部连锁"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 60 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A与D的重组值为0，A与B的重组值为10%，均远小于50%，二者是连锁的。B．错误。B与D的重组值为10%，明显低于50%，属连锁。C．错误。A与C的重组值为30%，虽较大但仍属连锁。D．错误。B与C的重组值为37%，同样未达到自由组合的50%。E．正确。六对基因间的重组值介于0至37%之间，均小于50%，故四对等位基因全部连锁。故答案为E。\n【通法】通法（判断是否连锁）：任一对基因重组值明显小于50%即为连锁，等于50%才是自由组合，四对基因两两检验并取最大值即可。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

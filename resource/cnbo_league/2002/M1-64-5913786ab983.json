@@ -1,0 +1,45 @@
+{
+ "id": "M1-64-5913786ab983",
+ "type": "single",
+ "question": "链霉素的抗菌方式为",
+ "options": {
+  "A": "阻止细胞壁合成",
+  "B": "影响细胞膜功能",
+  "C": "抑制蛋白质合成",
+  "D": "干扰核酸合成"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 64 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。阻止细胞壁合成的是青霉素等β-内酰胺类和万古霉素。B．错误。影响细胞膜功能的如多黏菌素、多烯类抗生素。C．正确。链霉素属氨基糖苷类，与细菌核糖体30S亚基结合，抑制翻译起始并造成密码错读，从而抑制蛋白质合成。D．错误。干扰核酸合成的如喹诺酮、利福平和磺胺类。故答案为C。"
+}

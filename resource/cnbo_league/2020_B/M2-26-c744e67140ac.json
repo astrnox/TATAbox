@@ -1,0 +1,48 @@
+{
+ "id": "M2-26-c744e67140ac",
+ "type": "single",
+ "question": "绿硫细菌在光照条件下，可以H2S 为氢供体和电子供体，将CO2 还原为葡萄糖。这种营养方式称为：",
+ "options": {
+  "A": "光能无机自养型",
+  "B": "光能无机异养型",
+  "C": "光能有机自养型",
+  "D": "光能有机异养型"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 26 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。绿硫细菌以光为能源、以CO2为碳源（自养），以无机物H2S为氢与电子供体，故属光能无机自养型。B．错误。其碳源是CO2而非有机物，不是异养。C．错误。氢供体H2S为无机物，并非有机异养。D．错误。能源与碳源判断均错。故答案为A。\n【通法】通法（营养方式四格）：先看能源（光/化）再看碳源（CO2/有机）定自养异养，最后看氢供体无机（H2S、H2）还是有机——光＋无机碳＋无机氢供体＝光能无机自养。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

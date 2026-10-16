@@ -1,0 +1,48 @@
+{
+ "id": "M2-37-dc2b5a0775b4",
+ "type": "single",
+ "question": "根据贮藏物质分类，90%以上的植物的种子是",
+ "options": {
+  "A": "油质的",
+  "B": "蛋白质的",
+  "C": "淀粉的",
+  "D": "糖质的"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 37 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】按主要贮藏物质可把种子分为淀粉种子、蛋白质种子和油质种子。按物种数量统计，绝大多数植物种子以油脂为主要贮藏物质。A．正确。90%以上的植物种子为油质种子，这是按物种比例计的教材统计口径。B．错误。蛋白质种子仅见于部分豆类等，比例很小。C．错误。淀粉种子（禾谷类、薯类）在粮食产量上举足轻重，但物种数不占多数。D．错误。以可溶性糖为主要贮藏物的种子极少。故答案为A。\n【易错易混】易错点：统计口径是'物种比例'而非'粮食产量'，勿因常见作物多是淀粉种子而误选C。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

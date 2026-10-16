@@ -1,0 +1,45 @@
+{
+ "id": "M4-100-1fc193662dce",
+ "type": "single",
+ "question": "减数分裂中，同源染色体交换发生在：",
+ "options": {
+  "A": "减数分裂I",
+  "B": "减数分裂II",
+  "C": "A、B 都有可能",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 100 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。同源染色体的非姐妹染色单体在减数分裂I前期发生交叉互换（交换）。B．错误。减数分裂II分离的是姐妹染色单体，不发生同源染色体间的交换。C．错误。交换只发生在减数分裂I，不存在两种可能。D．错误。A项正确，'以上都不对'不成立。故答案为A。"
+}

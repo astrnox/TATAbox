@@ -1,0 +1,48 @@
+{
+ "id": "M4-131-ed52e6b08c42",
+ "type": "mtf",
+ "question": "为决定控制人类ABO 血型和MN 血型的基因在遗传上是否独立，可采用下列哪种婚配所生子女的表现来判定：",
+ "options": {
+  "A": "IAIALMLN× iiLNLN",
+  "B": "IAIBLMLN×iiLNLN",
+  "C": "IAIBLNLN× iiLMLN",
+  "D": "IAIBLMLN×iiLMLM"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "16.A（ × ）B（ √ ）C（ × ） D（ √ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_4",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 16 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "二、多重判断(每小题2 分，答案完全正确才能得分，共40 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。IAIA与ii婚配，子女ABO血型全为A型，ABO座位无分离，无法与MN血型组合比较。B．正确。IAIBLMLN与iiLNLN婚配，一方两对基因均杂合、另一方双隐性纯合，子女可出现A-MN、A-N、B-MN、B-N四种表型组合，看比例是否为1∶1∶1∶1即可判定独立与否。C．错误。双亲的杂合方各自只在一对基因上分离，无同一个体两对基因同时分离，不能判定连锁关系。D．正确。IAIBLMLN与iiLMLM婚配，同样由双杂合亲本提供分离信息，子女的四种表型组合可检验是否自由组合。\n【点睛】点睛：判定两对基因是否独立，先找'同一个体两对基因均杂合'的亲本，再看后代表型组合能否分解为两个1∶1。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

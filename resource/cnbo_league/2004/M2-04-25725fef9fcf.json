@@ -1,0 +1,45 @@
+{
+ "id": "M2-04-25725fef9fcf",
+ "type": "single",
+ "question": "水生被子植物茎的结构特征是",
+ "options": {
+  "A": "表皮形成根毛",
+  "B": "机械组织发达",
+  "C": "通气组织发达",
+  "D": "木质部发达"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 4 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】水生被子植物的茎浸没水中，气体交换困难而机械支撑需求小。A．错误。根毛是根表皮细胞的突起，茎的表皮不形成根毛。B．错误。水的浮力已承担支撑，机械组织不发达。C．正确。通气组织发达，形成连通的气腔气道，把氧输送到水下器官，是水生茎最典型的结构特征。D．错误。水中水分充足、蒸腾拉力弱，木质部与导管反而退化不发达。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-35-91aa40cee456",
+ "type": "single",
+ "question": "食糜由胃进入十二指肠的过程称为胃排空。（1）糖（2）脂肪（3）蛋白质三种等量营养物质，胃排空速度由快到慢的顺序是：",
+ "options": {
+  "A": "（1）（2）（3）",
+  "B": "（1）（3）（2）",
+  "C": "（3）（1）（2）",
+  "D": "（3）（2）（1）"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 35 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。脂肪排空最慢，应排在末位，该项顺序不合。B．正确。三大营养物质胃排空速度为糖类最快、蛋白质次之、脂肪最慢，即（1）（3）（2）。C．错误。蛋白质排空慢于糖类，顺序颠倒。D．错误。糖类最快而非最慢。故答案为B。\n【通法】通法（胃排空）：排空速度糖＞蛋白质＞脂肪；机理是脂肪及其消化产物刺激十二指肠分泌缩胆囊素、抑胃肽等产生肠抑胃效应，记住'糖快、脂慢'即可排序。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

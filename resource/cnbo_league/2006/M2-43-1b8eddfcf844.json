@@ -1,0 +1,48 @@
+{
+ "id": "M2-43-1b8eddfcf844",
+ "type": "single",
+ "question": "豌豆花的花公式为 ↑K(5)C5A(9)+1G(1:1)。这表明",
+ "options": {
+  "A": "豌豆花子房下位",
+  "B": "豌豆花花瓣合生",
+  "C": "豌豆花为整齐花",
+  "D": "豌豆花雄蕊有合生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 43 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。花程式中G上方无横线表示子房上位，不是下位。B．错误。C5表示花瓣5枚彼此离生，合生应写作C(5)。C．错误。↑表示花两侧对称即不整齐花，整齐花记作＊。D．正确。A(9)+1表示雄蕊9枚合生成二体、另1枚分离，说明雄蕊有合生。故答案为D。\n【通法】通法（花程式解读）：＊为整齐花、↑为两侧对称，括号表合生，G带下横线表子房下位，A(9)+1即二体雄蕊。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

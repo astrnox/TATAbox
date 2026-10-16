@@ -1,0 +1,48 @@
+{
+ "id": "M1-100-423a4ae1afca",
+ "type": "mtf",
+ "question": "下列选项中对染色质的描述正确的是：",
+ "options": {
+  "A": "染色质由DNA、RNA、组蛋白和非组蛋白构成",
+  "B": "核小体是染色质的基本结构单位",
+  "C": "组蛋白与DNA 含量之比近于1:1",
+  "D": "组蛋白是序列特异性DNA 结合蛋白"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "99.A（√）B（√）C（√）D（ ）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 99 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。染色质由DNA、组蛋白、非组蛋白及少量RNA组成，是间期细胞核中遗传物质的存在形式。B．正确。核小体由约146 bp DNA绕组蛋白八聚体约1.75圈构成，是染色质的基本结构单位。C．正确。染色质中组蛋白与DNA的质量比接近1∶1，组蛋白是含量最丰富的染色质蛋白。D．错误。组蛋白与DNA结合不依赖特定碱基序列，属于非序列特异性DNA结合蛋白，识别特定序列的是转录因子一类的非组蛋白。\n【易错易混】易混：组蛋白结合DNA无序列特异性，序列特异性识别是转录因子等非组蛋白的特征，勿混为一谈。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

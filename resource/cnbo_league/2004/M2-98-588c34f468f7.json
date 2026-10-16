@@ -1,0 +1,48 @@
+{
+ "id": "M2-98-588c34f468f7",
+ "type": "single",
+ "question": "一种观赏植物，纯合的兰色品种与纯合的鲜红色品种杂交，F1 为兰色，F1 自交，F2 为 9 兰：6 紫：1 鲜红．若将F2 中的紫色植株用鲜红色植株授粉，则后代表型及其比例是",
+ "options": {
+  "A": "2 鲜红：1 兰",
+  "B": "2 紫：l 鲜红",
+  "C": "1 鲜红：1 紫",
+  "D": "3 紫：1 兰"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 98 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。与鲜红植株（aabb）杂交，后代不会出现兰色个体，因紫色亲本不含A与B的组合。B．正确。F2为9兰：6紫：1鲜红（题干'兰'即'蓝'），说明A_B_为兰、A_bb与aaB_为紫、aabb为鲜红；紫色植株中AAbb、aaBB各占1/6，Aabb、aaBb各占2/6，与aabb杂交后纯合者后代全为紫、杂合者半紫半鲜红，合计紫：鲜红＝4/6：2/6＝2：1。C．错误。1鲜红：1紫漏计了纯合紫色植株所产的全紫后代。D．错误。紫色植株与鲜红植株杂交不可能出现兰色后代。故答案为B。\n【通法】通法（基因互作与测交）：先由F2分离比反推基因型与表型的对应关系，再把目标表型按纯合、杂合拆成分数，逐类与隐性纯合亲本杂交后加权合并。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-114-c986c6f1fd68",
+ "type": "multiple",
+ "question": "在下列植物中，花被多轮的种类有：",
+ "options": {
+  "A": "玉兰",
+  "B": "蒲公英",
+  "C": "腊梅",
+  "D": "鹅掌楸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 114 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。玉兰花被片多轮排列，螺旋状着生于伸长的花托上。B．错误。蒲公英的花为头状花序中的舌状花，花冠仅一轮（舌状花冠）。C．正确。腊梅的花被片多数、螺旋状多轮排列。D．正确。鹅掌楸花被片约9枚、排成3轮。故答案为ACD。"
+}

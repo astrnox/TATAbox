@@ -1,0 +1,47 @@
+{
+ "id": "M1-26-b4ad5a0e2323",
+ "type": "multiple",
+ "question": "核仁中存在的生物成分是：",
+ "options": {
+  "A": "rDNA",
+  "B": "28S rRNA",
+  "C": "16SrRNA",
+  "D": "RNA 聚合酶Ⅱ",
+  "E": "RNA 聚合酶Ⅰ"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ABE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 26 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。核仁中含有rDNA，作为rRNA基因转录的模板。B．正确。真核生物45S rRNA前体加工产生28S rRNA，28S rRNA存在于核仁中并参与核糖体大亚基组装。C．错误。16S rRNA是原核生物核糖体小亚基的rRNA，不存在于真核细胞核仁。D．错误。RNA聚合酶Ⅱ转录mRNA，不参与核仁中rRNA的转录。E．正确。RNA聚合酶Ⅰ位于核仁，负责转录45S rRNA前体。故答案为ABE。"
+}

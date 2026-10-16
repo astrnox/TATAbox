@@ -1,0 +1,84 @@
+{
+ "id": "M1-81-1ffac0f02c5e",
+ "type": "single",
+ "question": "将129 品系小鼠的XY 型ES 细胞注入Pg-1 小鼠囊胚中，得到嵌合体的概率为38%，配子嵌合的概率为25%。如果将129 品系小鼠突变的XY 型ES 细胞（XΔ5Y）注入Pg-1 小鼠囊胚中，则",
+ "options": {
+  "A": "得到嵌合体的概率与配子嵌合的概率均略低于野生型",
+  "B": "基本无法得到嵌合体",
+  "C": "得到嵌合体的概率略低于野生型，配子嵌合的概率接近0",
+  "D": "嵌合体中突变的ES 细胞只能产生含Y 的配子，不能产生含XΔ5 的配子"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 81 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "四. 遗传学与进化生物学、生物系统学等   27 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "77-81",
+  "stimulus": "哺乳动物依靠X 染色体随机失活来实现剂量补偿。为研究X 染色体随机失活的机"
+ },
+ "image": {
+  "file": "assets/questions/M1-81-1ffac0f02c5e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 350,
+  "bbox": [
+   136.9,
+   636.5,
+   458.4,
+   755.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-81-1ffac0f02c5e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 350,
+   "bbox": [
+    136.9,
+    636.5,
+    458.4,
+    755.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。嵌合体概率远低于野生型而非略低，'略低'低估了突变的影响。B．正确。XΔ5使X染色体失活调控异常，突变ES细胞在囊胚中严重受损，难以正常增殖贡献个体，故基本无法得到嵌合体。C．错误。嵌合体本身都难以形成，不是嵌合体可得而配子嵌合趋零。D．错误。突变ES细胞并非只能产生含Y配子，限制在于其整体贡献能力而非单一配子类型。故答案为B。\n【点睛】点睛：X染色体失活调控元件缺失会使ES细胞在囊胚阶段就丧失贡献能力，嵌合体根本难以形成，而非仅配子贡献受影响。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

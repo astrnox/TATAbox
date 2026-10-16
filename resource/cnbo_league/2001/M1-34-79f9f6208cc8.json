@@ -1,0 +1,45 @@
+{
+ "id": "M1-34-79f9f6208cc8",
+ "type": "single",
+ "question": "下列哪一种恶性肿瘤在人类中发生的平均年龄较小？",
+ "options": {
+  "A": "胃癌",
+  "B": "肝癌",
+  "C": "膀胱癌",
+  "D": "白血病"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 34 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。胃癌多见于中老年人，平均发病年龄较大。B．错误。肝癌高发于中年以后，常与慢性肝炎、肝硬化相关，平均发病年龄偏大。C．错误。膀胱癌多见于老年男性，发病年龄也偏大。D．正确。白血病是儿童和青少年最常见的恶性肿瘤，急性淋巴细胞白血病的发病高峰在儿童期，故其发生的平均年龄在所列肿瘤中最小。故答案为D。"
+}

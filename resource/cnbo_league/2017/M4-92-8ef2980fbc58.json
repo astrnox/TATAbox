@@ -1,0 +1,45 @@
+{
+ "id": "M4-92-8ef2980fbc58",
+ "type": "single",
+ "question": "催化肽键形成的酶被称为肽酰转移酶，原因在于它能够：",
+ "options": {
+  "A": "将氨基酸从 tRNA 转移到正在伸长的肽链",
+  "B": "将肽链从一个氨基酸转到另一个氨基酸",
+  "C": "将正在生长的肽链转移到一个新的氨基酸上",
+  "D": "将肽链从一个核糖体转移到另一个带电荷的 tRNA 上"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 92 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。把氨基酸从tRNA上转移下来只完成了底物准备，未指明肽链去向。B．错误。肽链并不在氨基酸之间来回转移。C．正确。肽酰转移酶催化P位肽酰-tRNA上的生长中肽链转移到A位氨酰-tRNA的氨基酸氨基上，形成新肽键，故名肽酰转移。D．错误。肽链不会转移到另一个核糖体的tRNA上。故答案为C。"
+}

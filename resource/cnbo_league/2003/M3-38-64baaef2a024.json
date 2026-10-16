@@ -1,0 +1,48 @@
+{
+ "id": "M3-38-64baaef2a024",
+ "type": "single",
+ "question": "对于河蚌来说，下列哪一种答案与其生活方式关系最密切？",
+ "options": {
+  "A": "肛门开口在出水管附近",
+  "B": "肠管穿过心脏",
+  "C": "由于外套膜和鳃上纤毛的摆动而使水流在外套腔中流动",
+  "D": "有血窦存在"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 38 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 38,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。肛门开口在出水管附近只是粪便随水流排出的安排，属间接相关。B．错误。肠管穿过心脏是软体动物的特殊结构，与其生活方式无直接关系。C．正确。外套膜和鳃上纤毛摆动驱动水流进出外套腔，直接服务于滤食和气体交换，与其固着滤食的水生生活方式关系最密切。D．错误。血窦是开放式循环的特点，与生活方式联系不紧密。故答案为C。\n【点睛】点睛：河蚌纤毛驱动的这一条水流摄食、呼吸、排泄三用，抓住'水流'即抓住其生活方式的核心。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

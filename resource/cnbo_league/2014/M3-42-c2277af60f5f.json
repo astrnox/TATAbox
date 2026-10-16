@@ -1,0 +1,45 @@
+{
+ "id": "M3-42-c2277af60f5f",
+ "type": "single",
+ "question": "生物多样性中的α 多样性一般包含的因素为",
+ "options": {
+  "A": "物种的相对多度与丰度",
+  "B": "物种的相对丰度与均匀度",
+  "C": "物种的均匀度与异质性",
+  "D": "物种的相对数量与丰度"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生物多样性",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 42 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "第三部分 动物行为学、生态学（17 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。'相对多度与丰度'用词重复，规范表述为丰富度与均匀度。B．正确。α多样性衡量群落内部的多样性，由物种丰富度与均匀度（相对丰度的分布）共同决定。C．错误。异质性描述的是生境或群落的空间变异，属β、γ多样性关注的范畴。D．错误。'相对数量与丰度'同样用词重叠，非规范表述。故答案为B。"
+}

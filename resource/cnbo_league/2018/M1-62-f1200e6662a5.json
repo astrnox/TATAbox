@@ -1,0 +1,45 @@
+{
+ "id": "M1-62-f1200e6662a5",
+ "type": "multiple",
+ "question": "通常认为被子植物中具有支持作用的细胞有：",
+ "options": {
+  "A": "厚角组织细胞",
+  "B": "纤维",
+  "C": "石细胞",
+  "D": "管胞"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ABCD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 62 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。厚角组织细胞壁角隅加厚，既提供支持又不妨碍器官伸长，是幼茎与叶的支持组织。B．正确。纤维细长、壁厚，是机械组织的典型代表。C．正确。石细胞壁强烈木质化，如梨果肉中的石细胞起支持保护作用。D．正确。管胞除输导水分外兼有支持功能，是裸子植物的主要支持输导成分。故答案为ABCD。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-45-adc089c28074",
+ "type": "single",
+ "question": "当你吃完一大袋咸薯片，且未喝水的情况下，机体最可能出现的反应是",
+ "options": {
+  "A": "肾皮质集合管主细胞膜上水通道增加",
+  "B": "近端肾小管的氢钠交换活动增强",
+  "C": "集合管主细胞钠钾泵活动增强",
+  "D": "血液中心房钠尿肽的水平降低"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 45 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。高盐摄入使细胞外渗透压升高，ADH分泌增加，集合管主细胞膜上水通道蛋白插入增多，水重吸收增加。B．错误。近端小管氢钠交换主要参与酸碱调节，并非本情形的直接反应。C．错误。该情形下醛固酮无明显增强，钠钾泵不因此活动增强。D．错误。容量与渗透压升高使心房钠尿肽水平升高而非降低。故答案为A。\n【点睛】点睛：吃咸后牢记两条轴——渗透压升高→ADH↑→水通道插入↑；容量增大→ANP↑，按激素线索逐项排查。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

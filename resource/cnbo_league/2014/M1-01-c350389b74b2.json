@@ -1,0 +1,48 @@
+{
+ "id": "M1-01-c350389b74b2",
+ "type": "single",
+ "question": "兼性异染色质具有的特征是",
+ "options": {
+  "A": "染色质始终凝集从不转录",
+  "B": "染色质松散时可以转录",
+  "C": "染色质始终凝集可以转录",
+  "D": "染色质松散时不可以转录"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 1 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。始终凝集且从不转录是组成型异染色质的特征，兼性异染色质可解聚。B．正确。兼性异染色质（如雌性失活的X染色体）在特定时期可松散为常染色质状态并恢复转录活性。C．错误。始终凝集与'可以转录'互相矛盾。D．错误。松散状态是染色质开放、可被转录机器接近的状态，'不可以转录'说反了。故答案为B。\n【易错易混】易混：组成型异染色质永久凝集不转录，兼性异染色质随发育阶段在凝集与松散间转换，关键是'能否解聚'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

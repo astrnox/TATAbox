@@ -1,0 +1,50 @@
+{
+ "id": "M1-05-267fdaa887ce",
+ "type": "single",
+ "question": "以下哪种组蛋白不属于核小体的核心蛋白",
+ "options": {
+  "A": "H1",
+  "B": "H2A",
+  "C": "H2B",
+  "D": "H3",
+  "E": "H4"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 5 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不属于核小体核心蛋白的一项，判断词指该选项是否合题意。A．正确。H1结合在核小体之间的连接DNA上，属连接组蛋白而非核心蛋白，正是应选项。B．错误。H2A是核心组蛋白之一，表述成立。C．错误。H2B属核心组蛋白，表述成立。D．错误。H3与H4同H2A、H2B共同构成核心八聚体，表述成立。E．错误。H4亦为核心组蛋白，表述成立。故答案为A。\n【易错易混】易混：核小体核心＝H2A、H2B、H3、H4各两分子共八聚体，H1是连接组蛋白，切勿算进核心。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

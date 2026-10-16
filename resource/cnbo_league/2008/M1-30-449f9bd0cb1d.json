@@ -1,0 +1,48 @@
+{
+ "id": "M1-30-449f9bd0cb1d",
+ "type": "single",
+ "question": "新生儿溶血性贫血可能发生在以下哪一类婴儿？",
+ "options": {
+  "A": "Rh 阴性母亲所生的Rh 阴性婴儿",
+  "B": "Rh 阴性母亲所生的Rh 阳性婴儿",
+  "C": "Rh 阳性母亲所生的Rh 阳性婴儿",
+  "D": "Rh 阳性母亲所生的Rh 阴性婴儿"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 30 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。母婴均为Rh阴性，无Rh抗原致敏，不会发生Rh新生儿溶血。B．正确。Rh阴性母亲怀Rh阳性胎儿时，胎儿红细胞Rh抗原使其致敏并产生IgG类抗体，抗体经胎盘进入胎儿循环破坏其红细胞，导致新生儿溶血性贫血。C．错误。Rh阳性母亲一般已有相应抗体，不会因Rh血型不合致病。D．错误。Rh阳性母亲所生Rh阴性婴儿不存在Rh血型不合问题。故答案为B。\n【易错易混】易混：Rh溶血是母Rh阴性、胎Rh阳性且常在第二胎发病；ABO溶血则多为O型母亲怀A或B型胎儿，机制不同。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

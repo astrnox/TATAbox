@@ -1,0 +1,77 @@
+{
+ "id": "M1-03-e5dd626f7f15",
+ "type": "mtf",
+ "question": "接上题，研究者又分别构建了对照（shSC）和PHD3 敲低（shPHD3-704）细胞系，随后测定细胞裂解液中葡萄糖含量（图A）和培养基中乳酸含量（图B）以及氧消耗率（图C），DNP 为2,4-二硝基苯酚。图中*表示与对照组相比，p<0.05；**表示p<0.01。请判断下列陈述的正误：",
+ "options": {
+  "A": "PHD3 水平降低可能通过下调HIF-1 的活性而导致葡萄糖转运蛋白表达量增高；",
+  "B": "PHD3 水平降低可能通过下调HIF-1 的活性而导致乳酸脱氢酶A 表达量减少；",
+  "C": "PHD3 可能通过HIF-1 间接促进葡萄糖代谢向乳酸生成方向进行；",
+  "D": "PHD3 水平降低可使丙酮酸进入三羧酸循环，增强氧化磷酸化。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FTTT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 3 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-03-e5dd626f7f15/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 1,
+  "bbox": [
+   110.9,
+   379.8,
+   466.2,
+   471.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-03-e5dd626f7f15/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 1,
+   "bbox": [
+    110.9,
+    379.8,
+    466.2,
+    471.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。PHD3降低若下调HIF-1活性，应使葡萄糖转运蛋白表达下降而非增高，该项因果与HIF-1功能相反。B．正确。HIF-1上调LDHA表达；PHD3敲低下调HIF-1活性，乳酸脱氢酶A表达减少，培养基乳酸下降。C．正确。PHD3通过维持HIF-1活性间接推动糖酵解向乳酸生成（Warburg效应），敲低后该方向减弱。D．正确。糖酵解通量转向减少后，丙酮酸更多进入三羧酸循环，氧消耗率上升、氧化磷酸化增强。"
+}

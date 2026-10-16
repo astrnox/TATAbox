@@ -1,0 +1,80 @@
+{
+ "id": "M3-33-da4e3f567995",
+ "type": "single",
+ "question": "下图是两类鸟类的羽毛，请判断以下叙述，不正确的是",
+ "options": {
+  "A": "羽毛a 和b 均具有羽轴",
+  "B": "羽毛a 和b 均具有羽枝",
+  "C": "羽毛a 形成羽片，羽毛b 未形成羽片",
+  "D": "羽毛a 和b 均具有羽小钩"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 33 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-33-da4e3f567995/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 312,
+  "bbox": [
+   235.4,
+   468.1,
+   359.6,
+   558.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-33-da4e3f567995/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 312,
+   "bbox": [
+    235.4,
+    468.1,
+    359.6,
+    558.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】本题要求选出不正确的叙述，判断词指该选项是否合题意。A．错误。正羽a与绒羽b均具羽轴，表述成立。B．错误。二者均具羽枝，表述成立。C．错误。正羽羽枝间以羽小钩勾连形成羽片，绒羽羽枝蓬松未形成羽片，表述成立。D．正确。绒羽的羽枝上无羽小钩，'均具有羽小钩'不成立，正是应选项。故答案为D。\n【通法】通法（鸟类羽毛识别）：正羽——有羽小钩、形成羽片；绒羽——无羽小钩、不成羽片、保温；纤羽——细如毛发，按'有无羽小钩'直接判断。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "M1-52-b9912e3c0266",
+ "type": "multiple",
+ "question": "根据这个结果，cGMP 的功能可能包括：",
+ "options": {
+  "A": "调控窦房结细胞起搏电位；",
+  "B": "调控心室肌细胞起搏电位；",
+  "C": "调控大中血管平滑肌紧张度；",
+  "D": "调控小微血管平滑肌紧张度。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 52 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "51-52",
+  "stimulus": "磷酸二酯酶9 主要水解细胞中的cGMP。研究者通过心脏及主动脉双压力Millar 导"
+ },
+ "image": {
+  "file": "assets/questions/M1-52-b9912e3c0266/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 418,
+  "bbox": [
+   90.0,
+   462.8,
+   504.4,
+   632.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-52-b9912e3c0266/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 418,
+   "bbox": [
+    90.0,
+    462.8,
+    504.4,
+    632.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。cGMP 参与窦房结细胞起搏电流的调控，可影响心率。B．错误。心室肌细胞不产生起搏电位，无从调控。C．错误。实验结果指向的并非大中血管平滑肌，该推测缺乏依据。D．正确。cGMP 通路调节小微血管平滑肌的紧张度，参与血流分配与血压调节。故答案为AD。\n【点睛】点睛：cGMP 的地盘看两类细胞——能自动节律的窦房结细胞，和口径随信号变的微血管平滑肌；心室肌不自律，先排除。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

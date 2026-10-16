@@ -1,0 +1,84 @@
+{
+ "id": "M3-71-d76065eba279",
+ "type": "single",
+ "question": "一个保护区中猎物的生物量为400kg/km2，其捕食者生物量最接近：",
+ "options": {
+  "A": "2.5 kg/km2",
+  "B": "7.5 kg/km2",
+  "C": "10 kg/km2",
+  "D": "20 kg/km2"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 71 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "71-72",
+  "stimulus": "Hatton 等分析了全球2260 个群落中捕食者和猎物生物量的比例，发现在一个稳定的"
+ },
+ "image": {
+  "file": "assets/questions/M3-71-d76065eba279/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 423,
+  "bbox": [
+   110.9,
+   72.6,
+   484.3,
+   336.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-71-d76065eba279/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 423,
+   "bbox": [
+    110.9,
+    72.6,
+    484.3,
+    336.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。2.5 kg/km² 仅为猎物的 0.6%，明显偏低。B．正确。捕食者生物量通常只占猎物的百分之几，400×约 2%≈8，与 7.5 kg/km² 最接近。C．错误。10 kg/km² 相当于 2.5%，虽数量级相当但偏离实测常值。D．错误。20 kg/km² 达猎物的 5%，高于自然界捕食者生物量的常见比例。故答案为B。\n【通法】通法（营养级生物量估算）：能量传递效率约 10%，但捕食者同化量还需扣掉大量消耗，实际捕食者/猎物生物量比常在 1%~3%，按此量级在选项中找最接近值。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

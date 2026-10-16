@@ -1,0 +1,48 @@
+{
+ "id": "M2-56-f546a796018b",
+ "type": "single",
+ "question": "（接上题）回交产生的子代中，叶子形态与大小与弗吉尼亚烟草相同，而叶子颜色与卡罗来那烟草相同的所占比例为",
+ "options": {
+  "A": "8%",
+  "B": "3％",
+  "C": "1％",
+  "D": "0.5％"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 56 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。8% 与本题各交换区间均不对应，属干扰数值。B．错误。3% 亦不对应任何交换类别产生的表型比例。C．错误。1% 是双交换的合计频率，不是目标表型单独所占的比例。D．正确。据上题，控制叶形（M）、颜色（C）、大小（S）的三基因连锁且 C 居中，MC 图距 6、CS 图距 17；F1 与卡罗来那烟草回交，叶形与大小似弗吉尼亚、叶色似卡罗来那的个体来自 M-C 与 C-S 同时交换的双交换配子 M c S，频率为 0.06×0.17≈1.02% 的一半，约 0.5%。故答案为D。\n【通法】通法（三点测交计算）：双交换率＝两个相邻区间交换率之积，两种双交换表型各占其一半；先定基因顺序，再算目标表型比例。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

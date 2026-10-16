@@ -1,0 +1,81 @@
+{
+ "id": "M1-25-a8c6f8e1b10b",
+ "type": "single",
+ "question": "从电泳结果可得到哪些组织细胞的细胞核内容物中的蛋白具有特异识别并结合基因X 上游序列？这些组织中具有特异识别并结合此DNA 序列功能的蛋白是相同蛋白吗？",
+ "options": {
+  "A": "图A 和图B；相同",
+  "B": "图A 和图D；不同",
+  "C": "图B 和图C；相同",
+  "D": "图B 和图C；不同"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 25 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "25-27",
+  "stimulus": "（25-27 题共用题干）电泳迁移率变动分析（EMSA）是一种研究DNA 结合蛋白和相"
+ },
+ "image": {
+  "file": "assets/questions/M1-25-a8c6f8e1b10b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 310,
+  "bbox": [
+   208.9,
+   575.8,
+   386.5,
+   728.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-25-a8c6f8e1b10b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2019 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 310,
+   "bbox": [
+    208.9,
+    575.8,
+    386.5,
+    728.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。图A与图B泳道的结合条带格局不同，且不能推出结合蛋白相同。B．正确。图A与图D泳道出现位置一致的特异滞后条带，表明相应组织核蛋白能识别并结合基因X上游序列，而条带位置一致说明是相同蛋白。C．错误。图B与图C的条带位置不同，'相同'结论不成立。D．错误。图B与图C的判定与题意不符，位置不同但识别能力有差异。故答案为B。"
+}

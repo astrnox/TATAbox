@@ -1,0 +1,45 @@
+{
+ "id": "M4-110-93f50bf67042",
+ "type": "single",
+ "question": "2009年诺贝尔生理学或医学奖授予了下列哪一项重要科学发现",
+ "options": {
+  "A": "RNA干扰现象的发现",
+  "B": "有关端粒及端粒酶的研究",
+  "C": "有关核糖体的结构和功能的研究",
+  "D": "真核细胞的转录研究"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 110 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。RNA干扰现象由Fire和Mello发现，获2006年诺贝尔生理学或医学奖。B．正确。2009年该奖授予Blackburn、Greider和Szostak，表彰其发现端粒及端粒酶如何保护染色体。C．错误。核糖体结构与功能研究（Ramakrishnan、Steitz、Yonath）获2009年诺贝尔化学奖。D．错误。真核转录机制研究（Kornberg）获2006年诺贝尔化学奖。故答案为B。"
+}

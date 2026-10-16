@@ -1,0 +1,45 @@
+{
+ "id": "M1-46-552c3c2f4191",
+ "type": "single",
+ "question": "下列哪种物质产生的热量最高？",
+ "options": {
+  "A": "1 克的糖",
+  "B": "l 克的脂肪",
+  "C": "1 克的蛋白质",
+  "D": "1 克维生素"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 46 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、选择题(共73 题，共74 分。除标有2 分的题外，均为1 分。每题仅一个正确答案，请",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。糖类热价约17千焦每克，低于脂肪。B．正确。脂肪分子中碳氢比例高、氧含量低，完全氧化释放能量最多，热价约39千焦每克，是糖和蛋白质的两倍以上。C．错误。蛋白质热价约17千焦每克，且部分能量随含氮废物排出，实际产能更低。D．错误。维生素需要量极小，不作为能源物质氧化供能，不产生可比热量。故答案为B。"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "M1-71-4b360b2283b3",
+ "type": "single",
+ "question": "一种长尾小鹦鹉的两个常染色体上的基因（分别位于不同的染色体）控制着羽毛的颜色。B 基因控制产生蓝色，Y 基因控制产生黄色。每个基因的隐性突变可以使相应的颜色消失。两个绿色鹦鹉杂交后产生了绿色、蓝色、黄色和白化的后代。根据这些信息，判断绿色亲本的基因型为。",
+ "options": {
+  "A": "BBYy",
+  "B": "BbYY",
+  "C": "BbYy",
+  "D": "BBYY"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 71 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-71-4b360b2283b3/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 66,
+  "bbox": [
+   240.6,
+   635.0,
+   353.9,
+   756.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-71-4b360b2283b3/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2005 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 66,
+   "bbox": [
+    240.6,
+    635.0,
+    353.9,
+    756.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。BBYy互交后代只有B_个体，不会出现bb的黄色和白化个体。B．错误。BbYY互交后代无yy，不能出现蓝色（B_yy）和白化（bbyy）个体。C．正确。B控制蓝色、Y控制黄色，蓝与黄叠加为绿色，双隐性bbyy为白化；只有双杂合BbYy互交才能同时得到B_Y_（绿）、B_yy（蓝）、bbY_（黄）和bbyy（白）四种表型，符合自由组合9:3:3:1的变式。D．错误。BBYY后代全为绿色，无任何分离，故答案为C。"
+}

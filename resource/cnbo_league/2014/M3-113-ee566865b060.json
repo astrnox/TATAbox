@@ -1,0 +1,48 @@
+{
+ "id": "M3-113-ee566865b060",
+ "type": "single",
+ "question": "动物的领域行为本质上属于",
+ "options": {
+  "A": "种间资源竞争",
+  "B": "两性资源竞争",
+  "C": "种内资源竞争",
+  "D": "群体资源竞争"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 113 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "第三部分 动物行为学、生态学（7 道题8 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。领域虽会抵御入侵者，但领域的本质是同种个体对资源的独占。B．错误。两性竞争只是种内竞争的一种表现，范围过窄。C．正确。领域行为是个体或群体占据并保卫一块空间，排斥同种其他个体，本质是种内资源竞争。D．错误。'群体资源竞争'不是规范的生态学分类。故答案为C。\n【点睛】点睛：领域行为＝种内竞争的空间形式，看到'排斥同种、独占资源'即选种内竞争。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

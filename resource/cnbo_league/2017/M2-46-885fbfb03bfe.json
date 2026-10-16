@@ -1,0 +1,48 @@
+{
+ "id": "M2-46-885fbfb03bfe",
+ "type": "single",
+ "question": "下列哪个特征可以在显微镜下区别导管与管胞？",
+ "options": {
+  "A": "细胞两端的形态尖或钝",
+  "B": "是否具有穿孔",
+  "C": "细胞孔径的大小",
+  "D": "细胞壁上的纹孔"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物物质运输",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 46 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。管胞两端尖、导管分子两端有穿孔板，单看'尖或钝'在切片中难以稳定区分且非本质特征。B．正确。导管分子端壁具穿孔板（有穿孔），管胞无穿孔，这是显微镜下区别二者最可靠的特征。C．错误。孔径大小有重叠，不能作为区分依据。D．错误。二者细胞壁上都有纹孔（导管具缘纹孔、管胞亦有），不具鉴别力。故答案为B。\n【通法】通法（导管vs管胞）：一条主线——导管＝穿孔板串联的'管道'，管胞＝无穿孔、两端尖的'盲管'；其次才看孔径与壁厚。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

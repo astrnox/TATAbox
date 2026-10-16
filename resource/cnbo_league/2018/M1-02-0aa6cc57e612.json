@@ -1,0 +1,48 @@
+{
+ "id": "M1-02-0aa6cc57e612",
+ "type": "multiple",
+ "question": "定量分析组织中特异mRNA 丰度的方法有",
+ "options": {
+  "A": "Southern blotting",
+  "B": "Northern blotting",
+  "C": "Western blotting",
+  "D": "Real-time PCR"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 2 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。Southern blotting检测的是DNA片段，不能测mRNA丰度。B．正确。Northern blotting用标记探针与RNA杂交，可检测并定量特异mRNA。C．错误。Western blotting检测的是蛋白质，不涉及核酸。D．正确。Real-time PCR通过扩增中荧光信号的实时变化对mRNA进行定量，灵敏度高。故答案为BD。\n【易错易混】易混：Southern测DNA、Northern测RNA、Western测蛋白；测mRNA丰度选Northern与Real-time PCR，别按字面望文生义。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

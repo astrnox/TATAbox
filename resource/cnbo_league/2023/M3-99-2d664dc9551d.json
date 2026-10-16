@@ -1,0 +1,71 @@
+{
+ "id": "M3-99-2d664dc9551d",
+ "type": "single",
+ "question": "脊椎动物各类群的系统进化关系如图所示，以下描述中错误的是：",
+ "options": {
+  "A": "节点1 代表系统树中现生脊椎动物的共同祖先",
+  "B": "节点4 代表恒温动物的共同祖先",
+  "C": "节点5 代表鸟类与爬行动物的分化事件",
+  "D": "节点3 代表现生两栖动物的共同祖先"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 99 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-99-2d664dc9551d/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 451,
+  "bbox": [
+   191.8,
+   278.5,
+   403.5,
+   418.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-99-2d664dc9551d/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 451,
+   "bbox": [
+    191.8,
+    278.5,
+    403.5,
+    418.3
+   ],
+   "kind": "raster"
+  }
+ ]
+}

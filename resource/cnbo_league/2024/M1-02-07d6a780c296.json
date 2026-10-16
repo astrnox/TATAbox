@@ -1,0 +1,45 @@
+{
+ "id": "M1-02-07d6a780c296",
+ "type": "single",
+ "question": "下列实验方法中能直接鉴定蛋白质磷酸化位点的有：",
+ "options": {
+  "A": "蛋白质免疫印迹法；",
+  "B": "酶联免疫吸附；",
+  "C": "酵母双杂交系统；",
+  "D": "质谱分析。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 2 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】题干要求'直接鉴定磷酸化位点'。A．错误。蛋白质免疫印迹只能借助磷酸化特异抗体检测蛋白是否被磷酸化及相对含量，不能定位位点。B．错误。酶联免疫吸附用于定量检测抗原或抗体，同样不解析位点。C．错误。酵母双杂交用于检测蛋白质间相互作用，与磷酸化位点无关。D．正确。质谱分析通过测定肽段质量位移可直接推断磷酸化发生在哪个氨基酸残基上。故答案为D。"
+}

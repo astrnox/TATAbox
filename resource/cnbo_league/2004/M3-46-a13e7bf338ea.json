@@ -1,0 +1,48 @@
+{
+ "id": "M3-46-a13e7bf338ea",
+ "type": "single",
+ "question": "下列描述哪一个是不正确的？",
+ "options": {
+  "A": "鱼的鳞片是表皮鳞",
+  "B": "人的毛是表皮衍生物",
+  "C": "牛角起源于表皮",
+  "D": "蛇的鳞片是表皮鳞"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 46 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不正确的一项，判断词指该选项是否合题意。A．正确。鱼类的圆鳞、栉鳞由真皮形成属真皮鳞，'鱼的鳞片是表皮鳞'该表述不成立，正是应选项。B．错误。人的毛由表皮生发层形成，是表皮衍生物，表述成立。C．错误。牛角的角质鞘由表皮角化形成，就角的外层而言表述成立。D．错误。蛇的角质鳞由表皮角质层加厚形成，是表皮鳞，表述成立。故答案为A。\n【易错易混】易混：鱼的骨鳞＝真皮鳞，爬行动物的角质鳞＝表皮鳞，两者起源相反，最易颠倒。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

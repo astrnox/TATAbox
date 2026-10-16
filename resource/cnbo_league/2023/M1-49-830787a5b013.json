@@ -1,0 +1,81 @@
+{
+ "id": "M1-49-830787a5b013",
+ "type": "single",
+ "question": "图9 中“Syn”和“Atp”分别标注的细胞及它们的染色体数目分别是：",
+ "options": {
+  "A": "卵细胞8，助细胞8",
+  "B": "助细胞8、反足细胞16",
+  "C": "卵细胞8，助细胞16",
+  "D": "助细胞8、反足细胞24"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 49 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "48-50",
+  "stimulus": "组题题干：利用根尖为材料对某种二倍体植物体细胞染色体数进行观察，发现"
+ },
+ "image": {
+  "file": "assets/questions/M1-49-830787a5b013/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 440,
+  "bbox": [
+   189.6,
+   126.5,
+   405.4,
+   364.6
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-49-830787a5b013/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 440,
+   "bbox": [
+    189.6,
+    126.5,
+    405.4,
+    364.6
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。Syn 是助细胞不是卵细胞，数目也不对。B．错误。Syn 数目为 8 而非 16，Atp 数目与图不符。C．错误。Syn 是助细胞而非卵细胞，Atp 数目判断有误。D．正确。Syn 为助细胞、染色体 8 条，Atp 为反足细胞、染色体 24 条，与图中倍性一致。故答案为D。"
+}

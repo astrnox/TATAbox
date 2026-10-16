@@ -1,0 +1,77 @@
+{
+ "id": "M4-60-6b187b01baa9",
+ "type": "single",
+ "question": "在一个遗传筛选中，科学家获得了一个拟南芥突变体，对其细胞内氨基酸的含量测定结果如图。图中Col-0 为野生型拟南芥，cue1-6 为CUE1 基因的缺失突变体。根据图中的数据分析，下列叙述中正确的是：",
+ "options": {
+  "A": "酪氨酸、苯丙氨酸和色氨酸三种氨基酸在野生型中的绝对含量相当",
+  "B": "CUE1 蛋白是芳香族氨基酸合成的重要调节因子",
+  "C": "cue1-6 突变体中色氨酸的绝对含量显著高于酪氨酸和苯丙氨酸",
+  "D": "CUE1 基因编码芳香族氨基酸合成酶"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 60 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M4-60-6b187b01baa9/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 442,
+  "bbox": [
+   220.4,
+   399.1,
+   374.6,
+   553.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M4-60-6b187b01baa9/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2023 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 442,
+   "bbox": [
+    220.4,
+    399.1,
+    374.6,
+    553.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。图中野生型酪氨酸、苯丙氨酸、色氨酸的绝对含量并不相当，色氨酸明显更高。B．正确。cue1-6 缺失 CUE1 后三种芳香族氨基酸含量均明显改变，说明 CUE1 蛋白是芳香族氨基酸合成的重要调节因子。C．错误。突变体中色氨酸含量并不显著高于酪氨酸和苯丙氨酸。D．错误。CUE1 缺失主要引起代谢流改变，其并非直接编码合成酶，题干只支持其为调节因子。故答案为B。"
+}

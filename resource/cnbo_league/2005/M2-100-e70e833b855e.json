@@ -1,0 +1,45 @@
+{
+ "id": "M2-100-e70e833b855e",
+ "type": "mtf",
+ "question": "一般把豆科植物分成三个亚科，不论哪个亚科的植物都具有下列特征：",
+ "options": {
+  "A": "蝶形花冠",
+  "B": "两体雄蕊",
+  "C": "荚果",
+  "D": "多为复叶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "10.A（×）B（×）C（√）D（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 10 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蝶形花冠仅见于蝶形花亚科，含羞草亚科为辐射对称花、云实亚科近两侧对称，非全科共有。B．错误。两体雄蕊只是部分蝶形花亚科的特征，另两亚科多为雄蕊多数离生或单体。C．正确。荚果由单心皮雌蕊发育、沿两条缝线开裂，是豆科三个亚科共有的果实。D．正确。豆科植物多具羽状或掌状复叶，复叶是全科普遍特征。"
+}

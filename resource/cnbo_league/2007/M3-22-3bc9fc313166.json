@@ -1,0 +1,48 @@
+{
+ "id": "M3-22-3bc9fc313166",
+ "type": "single",
+ "question": "下列哪一组动物具有后肾？",
+ "options": {
+  "A": "鳐鱼，鲤鱼，中国大鲵",
+  "B": "鲸鱼，鲨鱼，狗",
+  "C": "麻雀、杨子鳄、家兔",
+  "D": "鲨鱼，麻雀，鸭嘴兽"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 22 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。鳐鱼、鲤鱼为鱼类，成体肾是中肾；中国大鲵为两栖类，成体肾也是中肾，均无后肾。B．错误。鲨鱼为软骨鱼，成体肾为中肾（前部特化为头肾），不具后肾。C．正确。麻雀为鸟类、杨子鳄（当作'扬子鳄'）为爬行类、家兔为哺乳类，均为羊膜动物，成体肾都是后肾，符合题意。D．错误。鸭嘴兽虽为哺乳类具后肾，但鲨鱼为中肾，同组不全为后肾。故答案为C。\n【易错易混】易混：肾脏进化序列为前肾（鱼类胚胎）→中肾（鱼类、两栖类成体）→后肾（羊膜类成体），按类群对应；俗名带'鱼'的鲨鱼、鳐鱼仍是鱼，别当哺乳类。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

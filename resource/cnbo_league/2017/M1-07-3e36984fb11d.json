@@ -1,0 +1,48 @@
+{
+ "id": "M1-07-3e36984fb11d",
+ "type": "single",
+ "question": "动物细胞培养工作始于20 世纪初，其后得到广泛的发展。Hayflick 和Moorhead 的实验发现在体外培养的细胞经过40-60 次群体倍增后便不再分裂了。这一发现源于下列何种生理现象？",
+ "options": {
+  "A": "细胞衰老",
+  "B": "细胞凋亡",
+  "C": "细胞自噬",
+  "D": "细胞坏死"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 7 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。Hayflick和Moorhead发现正常体外培养的细胞分裂40～60次后停止分裂，即Hayflick极限，其本质是细胞随分裂次数增加而进入增殖衰老状态。B．错误。细胞凋亡是程序性死亡，不表现为逐渐累积的分裂上限。C．错误。细胞自噬是细胞自我降解的应激机制，与分裂次数上限无关。D．错误。细胞坏死是病理性被动死亡，也不呈现有限增殖的特征。故答案为A。\n【点睛】点睛：'体外传代次数有限'＝Hayflick极限＝细胞衰老（端粒缩短、衰老相关分泌表型），不是凋亡也不是坏死。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

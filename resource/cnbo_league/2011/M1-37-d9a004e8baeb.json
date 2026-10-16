@@ -1,0 +1,48 @@
+{
+ "id": "M1-37-d9a004e8baeb",
+ "type": "single",
+ "question": "苔藓植物的生活史中、减数分裂发生在：",
+ "options": {
+  "A": "合子分裂产生胚时",
+  "B": "产生精子、卵细胞时",
+  "C": "产生孢子时",
+  "D": "原丝体发育成配子体时"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 37 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 37,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。合子经有丝分裂发育成胚（孢子体幼体），不发生减数分裂。B．错误。苔藓的精子和卵由精子器、颈卵器经有丝分裂产生，为单倍体。C．正确。苔藓孢子体的孢蒴内造孢组织形成孢子母细胞（2N），经减数分裂产生单倍体孢子，孢子再萌发成原丝体和配子体。D．错误。原丝体发育成配子体是有丝分裂生长过程，无减数分裂。故答案为C。\n【易错易混】易混：苔藓配子体发达，配子由有丝分裂产生；减数分裂发生在孢蒴内孢子母细胞形成孢子时，切勿照搬动物减数分裂产生配子的印象。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

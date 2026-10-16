@@ -1,0 +1,45 @@
+{
+ "id": "M1-36-c2c7c1d2e39b",
+ "type": "single",
+ "question": "在包涵体蛋白的变性与复性实验中，最有可能用到以下哪种实验技术？",
+ "options": {
+  "A": "透析",
+  "B": "离心",
+  "C": "盐析",
+  "D": "电泳"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 36 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。包涵体先用尿素或盐酸胍等变性剂溶解，复性时需通过透析缓慢除去变性剂，使肽链逐步正确折叠，这是复性实验的核心操作。B．错误。离心只用于收集和洗涤包涵体，不能解决复性问题。C．错误。盐析用于蛋白质的分级沉淀，会促进变性而非复性。D．错误。电泳是分析鉴定手段，不能用于制备复性。故答案为A。"
+}

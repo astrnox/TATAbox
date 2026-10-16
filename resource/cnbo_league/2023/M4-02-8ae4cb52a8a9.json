@@ -1,0 +1,45 @@
+{
+ "id": "M4-02-8ae4cb52a8a9",
+ "type": "single",
+ "question": "下列哪些细胞间连接可以实现细胞间物质的直接交换：",
+ "options": {
+  "A": "紧密连接",
+  "B": "桥粒连接",
+  "C": "黏着连接",
+  "D": "间隙连接"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 2 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。紧密连接封闭细胞间隙、阻止物质经旁细胞途径通透，不构成细胞间通道。B．错误。桥粒连接提供机械锚定，使细胞承受张力，无物质交换功能。C．错误。黏着连接同属机械连接，参与组织受力，不能沟通胞质。D．正确。间隙连接由连接子构成通道，允许离子与小分子在相邻细胞胞质间直接交换。故答案为D。"
+}

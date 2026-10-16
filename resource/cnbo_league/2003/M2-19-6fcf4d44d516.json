@@ -1,0 +1,48 @@
+{
+ "id": "M2-19-6fcf4d44d516",
+ "type": "single",
+ "question": "在筛选抗青霉素菌株时, 须在培养基中加入青霉素, 其作用是：",
+ "options": {
+  "A": "筛选",
+  "B": "诱变",
+  "C": "既筛选又诱变",
+  "D": "以上答案都不对"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 19 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。青霉素抑制细菌细胞壁合成，能杀死或抑制不抗青霉素的菌株，从而从混杂菌群中选择出抗性突变株，起筛选（选择）作用。B．错误。青霉素不是诱变剂，不能提高基因突变频率，诱变须用紫外线、亚硝基胍等。C．错误。青霉素只有筛选作用而无诱变作用。D．错误。A项正确，'以上答案都不对'自然不成立。故答案为A。\n【易错易混】易混：选择培养基中的抗生素只起筛选作用，抗性突变在加入抗生素前已自发产生；只有诱变剂才提高突变频率。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-15-eede9d65c34b",
+ "type": "single",
+ "question": "镰状细胞贫血是一种常染色体显性遗传血红蛋白（Hb）病。当此病发生时，会发生下列哪种变化？",
+ "options": {
+  "A": "电泳时血红蛋白向正极的迁移率增加",
+  "B": "去氧血红蛋白聚集",
+  "C": "血红蛋白溶解度增加",
+  "D": "血红蛋白分子量增加"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 15 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。镰状血红蛋白（HbS）表面负电荷减少，电泳时向正极的迁移率反而降低。B．正确。去氧状态下HbS分子表面疏水斑暴露、相互聚合形成纤维，使红细胞镰变。C．错误。聚合使HbS溶解度降低（去氧时溶解度显著下降）。D．错误。聚合是分子间缔合，并未改变单个血红蛋白分子的共价分子量。故答案为B。\n【点睛】点睛：镰状细胞贫血的核心链条是'去氧→HbS聚合→红细胞镰变→血管阻塞溶血'，别与'分子量改变'混淆。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

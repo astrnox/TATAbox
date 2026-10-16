@@ -1,0 +1,45 @@
+{
+ "id": "M1-60-40477feee100",
+ "type": "single",
+ "question": "逆转录酶是 聚合酶。",
+ "options": {
+  "A": "以DNA 为模板的RNA",
+  "B": "以RNA 为模板的DNA",
+  "C": "以RNA 为模板的RNA",
+  "D": "以DNA 为模板的DNA"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 60 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 60,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。以DNA为模板合成RNA的是RNA聚合酶，催化的是转录。B．正确。逆转录酶是RNA指导的DNA聚合酶，以RNA为模板合成互补DNA链，见于逆转录病毒复制和cDNA合成。C．错误。以RNA为模板合成RNA的是RNA复制酶，见于某些RNA病毒。D．错误。以DNA为模板合成DNA的是DNA聚合酶，参与DNA复制与修复。故答案为B。"
+}

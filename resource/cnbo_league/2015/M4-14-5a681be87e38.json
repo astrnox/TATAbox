@@ -1,0 +1,45 @@
+{
+ "id": "M4-14-5a681be87e38",
+ "type": "multiple",
+ "question": "Sanger 终止法测序中，用于使DNA 合成反应终止的是：",
+ "options": {
+  "A": "dNDP",
+  "B": "ddNDP",
+  "C": "dNTP",
+  "D": "ddNTP"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 14 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。dNDP不能终止DNA合成反应。B．错误。ddNDP的3位为磷酸而非羟基参与合成起始，不是Sanger法的终止物。C．错误。dNTP是DNA合成的正常底物，用于链的延伸而非终止。D．正确。Sanger终止法中加入ddNTP，其脱氧核糖3位缺少羟基，掺入后不能与下一个核苷酸形成磷酸二酯键，从而使DNA合成反应终止。故答案为D。"
+}

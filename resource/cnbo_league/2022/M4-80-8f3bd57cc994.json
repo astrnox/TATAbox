@@ -1,0 +1,48 @@
+{
+ "id": "M4-80-8f3bd57cc994",
+ "type": "single",
+ "question": "一位A 型血的女士跟一位AB 血型的男士结婚，他们孩子的血型为：",
+ "options": {
+  "A": "A 型",
+  "B": "A 型或AB 型",
+  "C": "B 型或AB 型",
+  "D": "A 型、B 型或AB 型"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 80 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。只考虑了女士为纯合子的情况，遗漏了 O 配子带来的 B 型。B．错误。若女士为杂合子可产生 O 配子，与 IB 配子结合产生 B 型，该选项不全。C．错误。遗漏了 A 型，与女士必传 IA 矛盾。D．正确。女士可能为 IAIA 或 IAIO，与 IB 配子结合，后代可出现 A、B、AB 三种血型。故答案为D。\n【易错易混】易混：血型题先问亲本是否可能杂合——A 型女士既可能 IAIA 也可能 IAIO，漏掉 O 配子就漏掉 B 型。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

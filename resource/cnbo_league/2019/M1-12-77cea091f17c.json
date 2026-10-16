@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-77cea091f17c",
+ "type": "single",
+ "question": "DNA 和蛋白质变性后，他们之间的一个区别是变性蛋白质",
+ "options": {
+  "A": "一级结构被破坏",
+  "B": "氢键被破坏",
+  "C": "理化性质不变",
+  "D": "复性较难"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 12 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蛋白质变性只破坏高级结构，肽链一级结构不被破坏。B．错误。变性蛋白质的氢键确实被破坏，但DNA变性同样破坏氢键，不构成两者的区别，该说法不成立。C．错误。变性后溶解度、生物活性等理化性质发生改变，'不变'不成立。D．正确。DNA变性后可复性（退火），而蛋白质高级结构复杂，复性困难，是二者变性后的显著区别。故答案为D。"
+}

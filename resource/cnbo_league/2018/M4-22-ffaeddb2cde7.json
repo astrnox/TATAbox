@@ -1,0 +1,48 @@
+{
+ "id": "M4-22-ffaeddb2cde7",
+ "type": "single",
+ "question": "紫外线对DNA 分子所造成的损伤主要是：",
+ "options": {
+  "A": "碱基替换",
+  "B": "碱基插入",
+  "C": "形成共价的嘧啶二聚体",
+  "D": "磷酸酯键断裂"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 22 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。碱基替换主要由化学诱变剂或复制错误引起，不是紫外线的主要损伤。B．错误。碱基插入属移码突变来源，非紫外线所致。C．正确。紫外线使相邻胸腺嘧啶等形成共价连接的嘧啶二聚体，是其主要损伤方式。D．错误。磷酸酯键断裂多为辐射或机械因素所致。故答案为C。\n【点睛】点睛：紫外线损伤看'嘧啶二聚体'，修复靠光复活与核苷酸切除修复，损伤类型与修复方式要成对记忆。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

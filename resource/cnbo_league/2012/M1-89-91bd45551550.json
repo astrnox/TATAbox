@@ -1,0 +1,45 @@
+{
+ "id": "M1-89-91bd45551550",
+ "type": "single",
+ "question": "农业生产中在马铃薯和甘薯生长中后期，增施哪种肥料有利于增加产量",
+ "options": {
+  "A": "氮肥",
+  "B": "钾肥",
+  "C": "硫肥",
+  "D": "镁肥"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 89 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 89,
+  "section": "第二部分 （18 道题19 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。氮肥主要促枝叶生长，中后期偏施氮肥易徒长倒伏，不利薯块膨大。B．正确。钾促进光合产物向块茎运输和淀粉积累，增强相关酶活性，中后期增施钾肥有利增产。C．错误。硫是含硫氨基酸和辅酶的成分，需要量小，不是块茎膨大的关键。D．错误。镁是叶绿素成分，仅缺镁时补充，中后期不是主要限制因素。故答案为B。"
+}

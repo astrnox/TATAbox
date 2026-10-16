@@ -1,0 +1,48 @@
+{
+ "id": "M3-71-087ad180f340",
+ "type": "single",
+ "question": "行为生态学家把引起动物行为周期性变化的环境因素分为近因（直接原因）和远因（最终原因）。那么，启动鸟类迁徙的近因最可能是：",
+ "options": {
+  "A": "食物和水",
+  "B": "光周期",
+  "C": "温湿度",
+  "D": "以上都不是"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 71 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。食物与水的短缺是迁徙的结果压力（远因之一），不是启动迁徙的直接信号。B．正确。光周期变化是启动鸟类迁徙的近因——日照缩短触发换羽、脂肪积累与迁飞行为（zugunruhe）等生理准备。C．错误。温湿度是随季节变化的伴随因素，不是启动迁徙的主导近因。D．错误。B项已给出正确答案。故答案为B。\n【通法】通法（近因vs远因）：近因＝直接触发行为的环境信号（光周期、温度骤变），远因＝自然选择塑造的适应意义（食物、越冬地），题干问'启动'即问近因，首选光周期。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

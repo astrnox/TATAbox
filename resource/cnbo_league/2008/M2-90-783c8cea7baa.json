@@ -1,0 +1,48 @@
+{
+ "id": "M2-90-783c8cea7baa",
+ "type": "single",
+ "question": "以下哪两个物种之间的关系属于拟寄生",
+ "options": {
+  "A": "多鞭毛虫和白蚁",
+  "B": "杜鹃和大苇莺",
+  "C": "华肝蛭和淡水螺",
+  "D": "赤眼蜂和玉米螟"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 90 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 90,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。多鞭毛虫（披发虫）生活在白蚁肠道中，帮其分解纤维素，二者为互利共生。B．错误。杜鹃将卵产于大苇莺巢中由其代孵代育，属巢寄生，不是拟寄生。C．错误。华肝蛭（华支睾吸虫）以淡水螺为中间宿主，在其体内发育繁殖，属寄生关系。D．正确。赤眼蜂把卵产入玉米螟卵内，幼虫取食寄主卵并最终杀死寄主，是典型的拟寄生。故答案为D。\n【易错易混】易混：拟寄生（赤眼蜂致死寄主）≠巢寄生（杜鹃）≠互利共生（白蚁与多鞭毛虫）≠一般寄生（华肝蛭与螺），关键看寄主最终是否死亡。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

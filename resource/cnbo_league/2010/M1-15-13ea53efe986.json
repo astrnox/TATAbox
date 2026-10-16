@@ -1,0 +1,45 @@
+{
+ "id": "M1-15-13ea53efe986",
+ "type": "single",
+ "question": "蛋白质的肽键是以下列哪一种方式形成的？",
+ "options": {
+  "A": "α-氨基与α-羧基缩合而成",
+  "B": "α-氨基与β-羧基缩合而成",
+  "C": "β-氨基与α-羧基缩合而成",
+  "D": "β-氨基与β-羧基缩合而成"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 15 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 15,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。一个氨基酸的α-氨基与另一个氨基酸的α-羧基脱水缩合形成肽键（酰胺键），构成蛋白质主链的重复单元，肽键具部分双键性质、呈刚性平面。B．错误。β-羧基不参与蛋白质主链成键。C．错误。β-氨基同样不参与肽键形成。D．错误。两个β基团都不能构成蛋白质的肽键。故答案为A。"
+}

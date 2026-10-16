@@ -1,0 +1,81 @@
+{
+ "id": "M2-50-b077c5ad620e",
+ "type": "single",
+ "question": "图b 中用阿拉伯数字1-5 标注的结构分别是",
+ "options": {
+  "A": "胚芽鞘-子叶-幼叶-胚芽生长点-胚根",
+  "B": "子叶-胚芽鞘-幼叶-胚芽生长点-胚根",
+  "C": "胚芽鞘-幼叶-子叶-胚芽生长点-维管组织",
+  "D": "子叶-胚芽鞘-幼叶-胚芽生长点-维管组织"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 50 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 50,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "49-50",
+  "stimulus": "题干。研究人员对大麦胚进行切片观察，并根据切片观察绘制大麦胚结构图，见"
+ },
+ "image": {
+  "file": "assets/questions/M2-50-b077c5ad620e/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 395,
+  "bbox": [
+   189.6,
+   276.1,
+   405.6,
+   460.4
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-50-b077c5ad620e/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2021 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 395,
+   "bbox": [
+    189.6,
+    276.1,
+    405.6,
+    460.4
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。1 应为子叶（盾片）而非胚芽鞘，且 5 为维管组织而非胚根，组合不符。B．错误。首位结构是子叶不是胚芽鞘，次序错位。C．错误。2 为胚芽鞘、3 为幼叶，选项把 3 写成子叶，次序错乱。D．正确。按图中由外向内、由上向下的位置，1 至 5 依次为子叶、胚芽鞘、幼叶、胚芽生长点和维管组织。故答案为D。"
+}

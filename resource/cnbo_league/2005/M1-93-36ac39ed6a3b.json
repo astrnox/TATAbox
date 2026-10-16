@@ -1,0 +1,50 @@
+{
+ "id": "M1-93-36ac39ed6a3b",
+ "type": "mtf",
+ "question": "mRNA 翻译成蛋白质的过程需要有以下哪些物质的参与？",
+ "options": {
+  "A": "mRNA",
+  "B": "DNA",
+  "C": "核糖体",
+  "D": "多种氨基酸",
+  "E": "多种酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "3.A（√）B（×）C（√）D（√）E（√）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 3 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。mRNA是翻译的模板，其密码子决定氨基酸排列顺序，翻译直接需要mRNA。B．错误。DNA不直接参与翻译，它先经转录生成mRNA，翻译体系中没有DNA。C．正确。核糖体是翻译的场所，大小亚基结合mRNA并完成肽键形成。D．正确。多种氨基酸是合成蛋白质的原料，须先经氨酰-tRNA合成酶活化后由tRNA搬运。E．正确。翻译需要多种酶和蛋白因子，如氨酰-tRNA合成酶以及起始、延伸、释放因子。\n【通法】通法（翻译体系组分）：模板mRNA、场所核糖体、原料氨基酸、搬运工具tRNA、酶与蛋白因子，逐项对照即可判断。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

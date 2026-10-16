@@ -1,0 +1,39 @@
+{
+ "id": "M2-87-be8b68d97d7d",
+ "type": "single",
+ "question": "给黄毛污灯蛾Diacrisiavirginica 幼虫喂食矮牵牛，会引起其呕吐，恢复之后的幼虫再喂食矮牵牛或其他植物时，幼虫拒绝取食矮牵牛。这一过程属于学习行为中的哪一个",
+ "options": {
+  "A": "习惯反应",
+  "B": "厌恶学习",
+  "C": "联系学习",
+  "D": "敏感反应"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 87 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "第三部分 动物行为学、生态学（21 道题24 分）",
+  "type_mark": "（单选 1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

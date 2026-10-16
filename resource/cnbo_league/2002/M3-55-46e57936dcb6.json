@@ -1,0 +1,48 @@
+{
+ "id": "M3-55-46e57936dcb6",
+ "type": "single",
+ "question": "厌氧条件下，哪一种化合物会在哺乳动物的肌肉组织中积累",
+ "options": {
+  "A": "乳酸",
+  "B": "丙酮酸",
+  "C": "葡萄酸",
+  "D": "CO2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 55 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 55,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。缺氧时肌肉靠糖酵解供能，丙酮酸在乳酸脱氢酶催化下被 NADH 还原为乳酸，乳酸在肌组织中积累，同时再生 NAD 以维持酵解持续进行。B．错误。丙酮酸是糖酵解的终产物，在无氧条件下迅速被还原为乳酸，不会大量积累。C．错误。'葡萄酸' 并非糖酵解途径的任何中间产物，属干扰名词。D．错误。CO2 主要在有氧条件下的丙酮酸氧化脱羧和三羧酸循环中产生，无氧条件下并无 CO2 的积累。\n【易错易混】易混：无氧条件下积累的是乳酸而非丙酮酸或酒精（酵母菌等才产酒精和 CO2）；哺乳动物骨骼肌剧烈运动时的酸胀感即乳酸堆积所致。故答案为A。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

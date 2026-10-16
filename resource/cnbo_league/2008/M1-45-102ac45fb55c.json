@@ -1,0 +1,48 @@
+{
+ "id": "M1-45-102ac45fb55c",
+ "type": "single",
+ "question": "（接上题）4 个孩子中至少有一个患病的概率是",
+ "options": {
+  "A": "25％",
+  "B": "68％",
+  "C": "75％",
+  "D": "81％"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 45 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。25%只是单个孩子患病的概率，与四个孩子的情形无关。B．正确。先求对立事件'四个孩子全部正常'的概率(3/4)^4=81/256，再用1减去得175/256，约68%。C．错误。75%是一个孩子正常的概率，答非所问。D．错误。81%是把(3/4)^4的分子81误作百分比，恰是'全正常'而非'至少一个患病'。故答案为B。\n【易错易混】易错点：'至少一个'正面分类易重易漏，统一取对立事件1−P(全不发生)；本题D项正是忘了用1去减。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

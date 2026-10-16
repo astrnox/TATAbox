@@ -1,0 +1,48 @@
+{
+ "id": "M3-47-afe3d4bdeb4d",
+ "type": "single",
+ "question": "下列哪一组动物均有内鼻孔？",
+ "options": {
+  "A": "蛙、龟、鸵鸟、肺鱼",
+  "B": "七鳃鳗、狗、猫、石龙子",
+  "C": "草鱼、陆龟、鸭嘴兽、文鸟",
+  "D": "文昌鱼、蟾蜍、肺鱼、鲤鱼"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 47 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 47,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。内鼻孔（后鼻孔）是内鼻孔类的共有特征，蛙等两栖类、龟等爬行类、鸵鸟等鸟类以及肺鱼都具有内鼻孔。B．错误。七鳃鳗属无颌类，无上下颌也无内鼻孔。C．错误。草鱼为真骨鱼，鼻孔不与口腔相通，无内鼻孔，该组不全。D．错误。文昌鱼和鲤鱼均无内鼻孔。故答案为A。\n【通法】通法（内鼻孔判断）：内鼻孔连通鼻腔与口腔，见于肺鱼及所有四足类；水生真骨鱼、无颌类、头索动物均无，逐组排查有无漏网的鱼即可。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M3-35-0a4138a3a5af",
+ "type": "single",
+ "question": "人们从土中挖出一个身体细长、形似蚯蚓的动物，无四肢；皮肤腺发达，体表富粘液；皮下具骨质小鳞。它最可能是下面哪种动物",
+ "options": {
+  "A": "版纳鱼螈",
+  "B": "中国小鲵",
+  "C": "盲蛇",
+  "D": "喙头蜥"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 35 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 35,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能30 题41 分",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。版纳鱼螈属蚓螈目（无足目）两栖动物，身体细长似蚯蚓、无四肢、皮肤腺发达且体表富粘液、皮下具骨质小鳞，各项特征全部吻合。B．错误。中国小鲵属有尾目，具四肢、体表光滑无骨质小鳞。C．错误。盲蛇是爬行动物，体表覆干燥角质鳞片，皮肤不富粘液，且无皮下骨质小鳞。D．错误。喙头蜥具四肢、体表被鳞，与细长无四肢的描述不符。故答案为A。"
+}

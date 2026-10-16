@@ -1,0 +1,45 @@
+{
+ "id": "M4-77-7ab983589c2b",
+ "type": "single",
+ "question": "以下关于有丝分裂和减数分裂的描述中正确的是：",
+ "options": {
+  "A": "有丝分裂的过程中，等位基因通常会发生重组",
+  "B": "有丝分裂的过程中通常包含同源染色体的配对",
+  "C": "减数分裂中两次核分裂的间隔时期，通常会发生DNA 复制",
+  "D": "减数分裂的过程中通常包含同源染色体的配对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "细胞生物学",
+ "concept": "细胞周期",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 77 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 77,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。有丝分裂不发生同源染色体配对与交换，等位基因通常不重组。B．错误。同源染色体配对是减数分裂的特征，有丝分裂中不出现。C．错误。减数分裂两次核分裂之间不进行DNA 复制，DNA 仅在减数分裂前的间期复制一次。D．正确。减数分裂Ⅰ前期同源染色体联会配对，是其典型特征。故答案为D。"
+}

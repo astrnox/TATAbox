@@ -1,0 +1,45 @@
+{
+ "id": "M2-85-9b2e18f7ccbc",
+ "type": "mtf",
+ "question": "判断以下关于线虫叙述的正误。",
+ "options": {
+  "A": "所有的线虫均为寄生性动物",
+  "B": "小麦线虫在小麦子房中发育为成虫",
+  "C": "人体内寄生的少量蛔虫可以自净",
+  "D": "人体感染了蛔虫卵，其发育过程始终在消化道内"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "12．A（×）B（√）C（√）D（×）",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2001",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2001,
+ "competition": "CnBO",
+ "source": "2001 年全国中学生生物学联赛（CnBO）第 12 题 · 2001 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2001",
+  "title": "2001 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "二、多重判断(共28 题，共56 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。线虫既有寄生的蛔虫、钩虫、小麦线虫，也有大量自由生活的土壤水体种类，如秀丽隐杆线虫。B．正确。小麦线虫幼虫侵入小麦花器，在子房内发育为成虫，并使子房形成虫瘿。C．正确。少量蛔虫感染时，虫体可被免疫清除或随粪便排出，即所谓自净现象。D．错误。蛔虫卵被吞入后幼虫孵出，在肠壁入血经肝、肺移行，再沿气管上行咽下回到小肠发育为成虫，并非始终在消化道内。"
+}

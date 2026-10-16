@@ -1,0 +1,48 @@
+{
+ "id": "M4-76-ae6dcb943f65",
+ "type": "multiple",
+ "question": "狗的重量是由A 基因和B 基因决定的，A 或B 对体重表型的贡献值是7.5kg，而a 或b 对体重表型的贡献是0kg。当用基因型为aabb 的5kg 贵宾犬与基因型为AABB 的35kg 拉布拉多犬交配之后，请问在F2 子代的个体当中以下哪些描述是正确的？",
+ "options": {
+  "A": "纯系在F2 子代中所占比率为1/4",
+  "B": "体重为27.5kg 的个体在F2 子代中占比率为1/4",
+  "C": "体重为20kg 的个体在F2 子代中占比率为5/8",
+  "D": "体重为12.5kg 的个体在F2 子代中占比率为1/2"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "AB",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 76 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "四、遗传学与进化生物学、生物系统学（25 题30 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】F1 为 AaBb，F2 中显性等位基因数按1∶4∶6∶4∶1 分布，对应体重5、12.5、20、27.5、35 kg。A．正确。双位点均纯合的个体（AABB、AAbb、aaBB、aabb）共4/16＝1/4，即纯系占1/4。B．正确。27.5 kg 对应3 个显性等位，占4/16＝1/4。C．错误。20 kg 对应2 个显性等位，占6/16＝3/8，而非5/8。D．错误。12.5 kg 对应1 个显性等位，占4/16＝1/4，而非1/2。故答案为AB。\n【通法】通法（累加基因题）：显性等位数为 k 的比例是 C(4,k)/16，体重＝基础值＋7.5×k，先算等位数分布再逐项核对。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

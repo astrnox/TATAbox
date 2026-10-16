@@ -1,0 +1,48 @@
+{
+ "id": "M1-71-0b2aed28193f",
+ "type": "single",
+ "question": "下列哪一生化代谢途径是发生在厌氧环境中",
+ "options": {
+  "A": "三羧酸循环",
+  "B": "线粒体电子传递链",
+  "C": "糖酵解",
+  "D": "糖异生"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 71 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 71,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。三羧酸循环在线粒体基质进行，其持续运转需要呼吸链不断氧化NADH、FADH2以再生NAD+和FAD，离不开氧。B．错误。电子传递链以氧为末端电子受体，必须在有氧条件下进行。C．正确。糖酵解在细胞质中进行、不直接需氧，厌氧时靠丙酮酸还原为乳酸等反应再生NAD+即可持续产ATP，是厌氧条件下的主要供能途径。D．错误。糖异生耗能合成葡萄糖，多发生于饥饿等需糖状态，与厌氧供能无关。故答案为C。\n【点睛】点睛：判断途径能否在厌氧下进行，看是否直接依赖氧，糖酵解只须NAD+循环再生，三羧酸循环与呼吸链则离不开氧。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-14-9e50936d4dce",
+ "type": "single",
+ "question": "引起动物呼吸加快、心跳加快、心脏收缩加强、外周小血管收缩的激素是",
+ "options": {
+  "A": "甲状腺索",
+  "B": "胰岛素",
+  "C": "肾上腺聚",
+  "D": "脑下垂体前叶分泌的促肾上腺皮质激素"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "内分泌系统",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 14 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。甲状腺素（题干'甲状腺索'为讹写）主要促进代谢与产热，不引起呼吸心跳骤然加快与外周血管收缩。B．错误。胰岛素降低血糖，与循环系统兴奋无关。C．正确。肾上腺素（题干'肾上腺聚'为OCR讹误）由肾上腺髓质分泌，可使呼吸加快、心跳加快、心肌收缩加强、外周小血管收缩，是应急反应的核心激素。D．错误。促肾上腺皮质激素主要促进肾上腺皮质分泌糖皮质激素，作用慢且不直接作用于心血管。故答案为C。\n【点睛】点睛：应急反应认准肾上腺髓质激素的交感样效应，作用迅速而广泛。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

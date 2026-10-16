@@ -1,0 +1,48 @@
+{
+ "id": "M1-16-cc7d7cba2d37",
+ "type": "single",
+ "question": "离子通道一般都具有选择性，K+通道允许：",
+ "options": {
+  "A": "K+通过，Na+、Ca2+不通过",
+  "B": "K+、Na+通过，Ca2+不通过",
+  "C": "K+、Ca2+通过，N+不通过",
+  "D": "K+、Na+、Ca2+通过，Cl-不通过；"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 16 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。K+通道的选择滤过器由一列羰基氧围成，大小恰好匹配脱去水化层的K+，Na+因半径偏小不能稳定结合而被拒，Ca2+更无法通过。B．错误。Na+经专一的钠通道通过，K+通道不容Na+通行。C．错误。Ca2+经钙通道内流，K+通道不允许Ca2+通过；该项中'N+'应为Na+，系排印讹误。D．错误。Cl-等阴离子走阴离子通道，与K+通道的选择性无关，故答案为A。\n【点睛】点睛：通道的选择性靠滤过器对离子直径和电荷的精确匹配，K+通道只通K+，这是静息电位接近K+平衡电位的基础。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

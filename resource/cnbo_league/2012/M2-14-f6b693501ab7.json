@@ -1,0 +1,45 @@
+{
+ "id": "M2-14-f6b693501ab7",
+ "type": "single",
+ "question": "巴斯德设计的曲颈瓶实验，可以",
+ "options": {
+  "A": "证明酒是酵母菌发酵获得",
+  "B": "否定自然发生学说的论点",
+  "C": "说明培养基灭菌后的作用",
+  "D": "验证某细菌是不能培养的"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 14 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。曲颈瓶实验并未涉及酒的酿造与酵母菌发酵的对应关系。B．正确。巴斯德把肉汤煮沸后置于曲颈瓶中，空气可以进入但尘埃和微生物被鹅颈弯曲处阻挡，肉汤长期不腐败；打断曲颈后肉汤迅速变质，证明微生物来自空气中的种源，从而否定了自然发生学说。C．错误。实验目的在于驳斥自然发生，而不是说明培养基灭菌的作用。D．错误。实验中培养的是肉汤中的微生物，并未验证某细菌不能培养。故答案为B。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-25-b202c6e2f063",
+ "type": "single",
+ "question": "在《荀子·富国篇》里记有“多粪肥田”，在《韩非子》里记有“积力于田畴，必且粪灌”，说明战国时期我国劳动人们已十分重视",
+ "options": {
+  "A": "翻耕和绿肥",
+  "B": "施肥和灌溉",
+  "C": "免耕和水田",
+  "D": "水田和翻耕"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 25 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（25 道题28 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。'多粪肥田'说的是施用粪肥，与翻耕、绿肥无直接对应。B．正确。'粪'即施肥，'灌'即灌溉，两条记载说明当时已重视施肥与灌溉。C．错误。文中未涉及免耕与水田管理。D．错误。文中既未提翻耕也未提水田，该组合不成立。故答案为B。"
+}

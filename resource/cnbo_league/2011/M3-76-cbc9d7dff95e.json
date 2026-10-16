@@ -1,0 +1,45 @@
+{
+ "id": "M3-76-cbc9d7dff95e",
+ "type": "single",
+ "question": "下列生态系统中，枯枝落叶层最厚的是：",
+ "options": {
+  "A": "泰加林",
+  "B": "热带雨林",
+  "C": "落叶阔叶林",
+  "D": "苔原"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 76 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为学、生态学（24 道题32 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。泰加林（北方针叶林）气候寒冷，低温强烈抑制微生物分解，枯枝落叶分解极慢而大量积累，形成深厚的枯枝落叶层甚至泥炭层。B．错误。热带雨林高温多雨，凋落物被迅速分解，养分几乎全部储存在活体中，凋落层很薄。C．错误。落叶阔叶林分解者活动较强，凋落层厚度中等。D．错误。苔原虽低温减缓分解，但植被稀矮、枯落物产量少，积累不及泰加林。故答案为A。"
+}

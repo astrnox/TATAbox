@@ -1,0 +1,48 @@
+{
+ "id": "M4-118-f06f75fa1f41",
+ "type": "multiple",
+ "question": "在减数分裂中可以引起子代遗传组成多样性的因素有：",
+ "options": {
+  "A": "等位基因彼此分离",
+  "B": "部分非等位基因自由组合",
+  "C": "同源染色体的交换现象",
+  "D": "连锁群上基因的连锁现象"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 118 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 118,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。等位基因分离本身只是把既有等位基因分入不同配子，不产生新的组合类型。B．正确。非等位基因的自由组合使不同基因间产生新配子组合，增加子代遗传组成多样性。C．正确。同源染色体非姐妹染色单体间的交换产生重组染色体，增加多样性。D．错误。连锁使基因间倾向于保持原有组合，降低而非增加多样性。故答案为BC。\n【点睛】点睛：减数分裂多样性三来源——自由组合、交叉互换、雌雄配子随机结合；'分离'只管分配不造新组合，'连锁'是多样性的反面。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

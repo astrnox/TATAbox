@@ -1,0 +1,39 @@
+{
+ "id": "M3-76-dff8959e2551",
+ "type": "single",
+ "question": "用矮牵牛喂食黄毛污灯蛾幼虫，会引起幼虫呕吐，恢复之后的幼虫拒绝取食矮牵牛。这一过程属于学习行为中的 反应模式。",
+ "options": {
+  "A": "习惯反应",
+  "B": "厌恶学习",
+  "C": "联系学习",
+  "D": "敏感反应"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 76 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "第三部分 动物行为学、生态学（20 道题23.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

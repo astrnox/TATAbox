@@ -1,0 +1,48 @@
+{
+ "id": "M4-106-86f8c4ff1ba7",
+ "type": "single",
+ "question": "鸡的k 基因是伴性遗传的隐性致死基因。含k 基因的杂合子雄鸡与正常的雌鸡交配，共孵化出120 只小鸡。请问这120 只鸡中雌雄的比例是多少（提示：鸡的性别决定为ZW 型）？",
+ "options": {
+  "A": "雌∶雄=80∶40",
+  "B": "雄∶雌=80∶40",
+  "C": "雌∶雄=60∶60",
+  "D": "雌∶雄=100∶20"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "伴性遗传",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 106 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（28 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。致死的是只含一条Z的半合子雌雏，雌雏数量减半，雌∶雄不是80∶40。B．正确。鸡为ZW型，雄鸡ZZ、雌鸡ZW。杂合雄鸡ZKZk与正常雌鸡ZKW交配，子代为ZKZK、ZKZk（雄）、ZKW（雌）、ZkW（雌）各1/4；k为隐性致死基因，半合子ZkW的雌鸡致死，故孵出小鸡中雄∶雌＝2∶1，120只即雄80、雌40。C．错误。因半数雌雏致死，雌雄不是1∶1。D．错误。致死发生在雌雏，不会出现雌多雄少的比例。故答案为B。\n【通法】通法（ZW伴性致死）：先写亲本性染色体组合，再列四种子代逐一判死活；ZW型的半合子出现在雌性（ZW），与XY型正相反。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

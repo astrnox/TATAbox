@@ -1,0 +1,45 @@
+{
+ "id": "M1-45-185623ba5dad",
+ "type": "single",
+ "question": "产生头晕、乏力等高原反应的主要原因是：",
+ "options": {
+  "A": "机体对低温的代偿性反应",
+  "B": "机体能量消耗过大",
+  "C": "机体红细胞中血红蛋白氧饱和度下降",
+  "D": "机体红细胞数量减少"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 45 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题45 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。低温代偿不是高原反应的主因，头晕乏力源于缺氧而非低温。B．错误。高原反应并非单纯能量消耗过大所致。C．正确。高原氧分压低，肺泡气氧分压随之下降，血红蛋白氧饱和度降低，组织供氧不足，引起头晕、乏力等反应。D．错误。进入高原初期红细胞数量不但不减少，反而经促红细胞生成素作用而增多。故答案为C。"
+}

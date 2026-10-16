@@ -1,0 +1,45 @@
+{
+ "id": "M2-57-b2835842fc1c",
+ "type": "single",
+ "question": "植物吸收无机氮后通过转化先形成下列哪种物质后，再进一步将氮整合到其他各种含氮有机化合物中？",
+ "options": {
+  "A": "天冬酰胺",
+  "B": "色氨酸",
+  "C": "谷氨酰胺",
+  "D": "甲硫氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 57 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。天冬酰胺是由天冬氨酸酰化形成，非无机氮同化的最初产物。B．错误。色氨酸是吲哚类氨基酸，非氮同化的初始产物。C．正确。植物吸收的硝酸盐经硝酸还原酶还原为铵后，由谷氨酰胺合成酶同化为谷氨酰胺，再将氮整合到其他含氮化合物。D．错误。甲硫氨酸是含硫氨基酸，非初始同化产物。故答案为C。"
+}

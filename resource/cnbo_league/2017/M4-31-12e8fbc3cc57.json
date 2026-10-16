@@ -1,0 +1,45 @@
+{
+ "id": "M4-31-12e8fbc3cc57",
+ "type": "multiple",
+ "question": "基因组学等组学相对于传统分子生物学的优点：",
+ "options": {
+  "A": "所获研究对象的数据量大了很多倍，便于对研究结果进行统计学分析",
+  "B": "对每一基因、每一序列的研究更加深入细致",
+  "C": "便于研究人员从总体上把握生物学问题的本质，避免“盲人摸象”",
+  "D": "数据信息共享更为普遍"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 31 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。组学提供海量数据，便于统计学分析与关联挖掘。B．错误。组学对单个基因、序列的精细刻画不如传统分子生物学深入，其优势恰在全局而非局部。C．正确。组学从整体网络与系统层面把握生物学问题，避免只见局部。D．正确。组学数据标准化程度高，更易实现数据与信息共享。故答案为ACD。"
+}

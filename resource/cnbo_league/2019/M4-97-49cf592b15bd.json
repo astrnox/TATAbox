@@ -1,0 +1,48 @@
+{
+ "id": "M4-97-49cf592b15bd",
+ "type": "single",
+ "question": "对一个三基因杂合体进行测交（基因顺序未知），得到的子代类型和数目为 AbC/abc 35×10； aBc/abc 37×10； ABc/abc 8×10； abC/abc 10×10； ABC/abc 3×10； abc/abc 5×10； Abc/abc 1×10； aBC/abc1×10；那么，基因A 和C 之间的图距是：",
+ "options": {
+  "A": "30",
+  "B": "25",
+  "C": "20",
+  "D": "15"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 97 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 97,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。30高于A—C区段的实测图距。B．错误。25与计算结果不符。C．正确。测交总数1000，最少的Abc（10）与aBC（10）为双交换，说明C居中；A—C区间的单交换为ABc（80）与abC（100），图距＝（80＋100＋20）÷1000×100＝20。D．错误。15只接近单交换的一部分，漏计了双交换。故答案为C。\n【点睛】点睛：三点测交先用最少的双交换类型定出中间基因（本题C居中），再把目标区间的单交换与双交换一并计入图距。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

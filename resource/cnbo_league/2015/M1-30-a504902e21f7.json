@@ -1,0 +1,50 @@
+{
+ "id": "M1-30-a504902e21f7",
+ "type": "multiple",
+ "question": "固氮酶结构中具有不同金属离子的组合，目前发现的固氮酶类型具有：",
+ "options": {
+  "A": "铁-铁固氮酶",
+  "B": "硫-铁固氮酶",
+  "C": "铜-铁固氮酶",
+  "D": "钼-铁固氮酶",
+  "E": "锌-铁固氮酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 30 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。铁-铁（FeFe）固氮酶是已发现的固氮酶类型之一。B．错误。不存在以硫与铁组合的固氮酶。C．错误。铜-铁组合不是已知的固氮酶类型。D．正确。钼-铁（MoFe）固氮酶是最常见、研究最深入的固氮酶类型。E．错误。锌-铁组合不是已知的固氮酶类型。故答案为AD。\n【点睛】点睛：固氮酶三兄弟=钼铁型（最常见）、钒铁型、铁铁型，金属组合中永远有铁，见到硫、铜、锌组合直接排除。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

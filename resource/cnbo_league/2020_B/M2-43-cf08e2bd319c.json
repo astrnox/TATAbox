@@ -1,0 +1,84 @@
+{
+ "id": "M2-43-cf08e2bd319c",
+ "type": "multiple",
+ "question": "下面对该图的理解正确的是：",
+ "options": {
+  "A": "Pr 是光敏色素的活化形式，而Pfr 是光敏色素的非活化形式；",
+  "B": "光导致Pr 和Pfr 之间的相互转换，从而影响植物幼苗的生长；",
+  "C": "热促进Pr 和Pfr 之间的相互转换，从而影响植物幼苗的生长；",
+  "D": "光敏色素既可以感受光，也可以感受温度。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 43 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能 34 题 38 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "43-44",
+  "stimulus": "随着全球气候变暖加剧，温度升高对植物的影响也越来越得到广泛的关注，下图总"
+ },
+ "image": {
+  "file": "assets/questions/M2-43-cf08e2bd319c/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 367,
+  "bbox": [
+   143.1,
+   415.9,
+   451.4,
+   586.0
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-43-cf08e2bd319c/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（B 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 367,
+   "bbox": [
+    143.1,
+    415.9,
+    451.4,
+    586.0
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。光敏色素吸收红光后形成的 Pfr 才是活化形式，Pr 为非活化形式，A 把两者说反了。B．正确。红光与远红光驱动 Pr 与 Pfr 相互转换，改变下游基因表达，从而影响幼苗去黄化等生长过程。C．错误。图中温度效应并非通过驱动 Pr 与 Pfr 的相互转换实现，C 与图不符。D．正确。光敏色素既以发色团感受红光与远红光，其 Pfr 的热反向速率又随温度改变，因而也能感受温度。故答案为BD。\n【点睛】点睛：抓住红光使 Pfr 增多（抑制伸长）、远红光与高温使 Pfr 减少（促进伸长）这一开关方向，光温类题即可秒判。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

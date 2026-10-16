@@ -1,0 +1,48 @@
+{
+ "id": "M1-16-035dbf8cdf0b",
+ "type": "single",
+ "question": "膈肌属于：",
+ "options": {
+  "A": "轴上肌",
+  "B": "轴下肌",
+  "C": "鳃下肌",
+  "D": "附肢肌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 16 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。轴上肌位于脊柱背侧，由生肌节背侧部形成，如背最长肌。B．正确。轴下肌位于脊柱腹侧，由生肌节腹侧部形成，包括肋间肌、腹壁肌和膈肌；膈肌由颈部体节（第3至5颈节）的生肌节迁至胸腹腔之间形成。C．错误。鳃下肌由鳃弓腹侧肌演化而来，如舌骨上、下肌群。D．错误。附肢肌是四肢等附肢的肌肉，由轴旁中胚层迁入肢芽形成。故答案为B。\n【点睛】点睛：膈肌虽位于体腔膈上，但按胚胎来源属颈部体节的轴下肌，分类看出生肌节位置而非成体位置。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

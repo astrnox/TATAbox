@@ -1,0 +1,45 @@
+{
+ "id": "M1-93-37234df2986a",
+ "type": "single",
+ "question": "我国劳动人民为解决冬小麦春播不能正常抽穗问题而创造的“七九闷麦法”，实际上就是现在的：",
+ "options": {
+  "A": "“冬化”法",
+  "B": "“腊化”法",
+  "C": "“加温”法",
+  "D": "“春化”法"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 93 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 93,
+  "section": "第二部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。'冬化'不是规范术语，春播前的低温处理另有其名。B．错误。'腊化'与低温处理无关，属干扰项。C．错误。该法是闷盖保湿让种子自然通过低温阶段，并非人工加温。D．正确。'七九闷麦法'是把冬小麦种子湿闷后经受低温，使其通过春化阶段，春播即可正常抽穗，即现在的春化处理。故答案为D。"
+}

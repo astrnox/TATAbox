@@ -1,0 +1,47 @@
+{
+ "id": "M1-95-e5a26543a69f",
+ "type": "mtf",
+ "question": "人类（包括男女性）的第一性征有：",
+ "options": {
+  "A": "睾丸、喉结、卵巢、胡须",
+  "B": "睾丸、卵巢、输精管、输卵管；",
+  "C": "睾丸、卵巢、月经、遗精",
+  "D": "睾丸、卵巢、子宫、阴囊；",
+  "E": "喉结、胡须、月经、遗精"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "95.A（×）B（√）C（×）D（√）E（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 95 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 95,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。喉结、胡须是青春期出现的第二性征，混入后该组不全为第一性征。B．正确。主性腺与生殖管道出生即已具备，全组皆为第一性征。C．错误。月经、遗精是青春期出现的生理现象，不属第一性征结构。D．正确。睾丸、卵巢、子宫、阴囊均为生殖器官，全组属第一性征。E．错误。四项全为青春期出现的第二性征。"
+}

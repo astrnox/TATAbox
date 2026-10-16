@@ -1,0 +1,47 @@
+{
+ "id": "M4-52-a1adb75e5c0a",
+ "type": "multiple",
+ "question": "进行基因组测序",
+ "options": {
+  "A": "需要先作遗传图",
+  "B": "需要先作物理图",
+  "C": "可以不依靠作图",
+  "D": "需要先进行DNA片段的克隆或PCR",
+  "E": "需要建立BAC文库"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "CD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 52 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。全基因组鸟枪法可不经遗传图直接测序，遗传图并非必需。B．错误。同样，物理图对鸟枪法测序也不是先决条件。C．正确。鸟枪法把基因组打断、测序后依靠重叠群拼接，可以不依赖事先作图。D．正确。无论是否作图，都须先将DNA片段克隆或经PCR扩增才能测序。E．错误。BAC文库是构建物理图的载体系统之一，不是测序的必备条件。故答案为CD。"
+}

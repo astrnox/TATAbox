@@ -1,0 +1,50 @@
+{
+ "id": "M1-11-a58f56e9001a",
+ "type": "multiple",
+ "question": "下面的细胞结构中，哪些有RNA？",
+ "options": {
+  "A": "细胞核",
+  "B": "高尔基体",
+  "C": "叶绿体",
+  "D": "液泡",
+  "E": "线粒体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 11 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。细胞核含染色质与核仁，是rRNA转录与加工的场所，含有RNA。B．错误。高尔基体是蛋白质加工与分选的车间，不含RNA。C．正确。叶绿体含自身DNA与核糖体，能转录产生RNA。D．错误。液泡主要承担储存与降解功能，不含RNA。E．正确。线粒体含DNA与核糖体，可转录合成RNA。故答案为ACE。\n【易错易混】易混：含核酸的细胞器是细胞核、线粒体、叶绿体（及核糖体本身），高尔基体、液泡、内质网均不含RNA。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

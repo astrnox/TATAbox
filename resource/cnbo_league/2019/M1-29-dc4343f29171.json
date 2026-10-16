@@ -1,0 +1,50 @@
+{
+ "id": "M1-29-dc4343f29171",
+ "type": "multiple",
+ "question": "下列哪几项组学技术研究，是直接在核苷酸水平开展的",
+ "options": {
+  "A": "基因组",
+  "B": "代谢组",
+  "C": "表观组",
+  "D": "蛋白组",
+  "E": "转录组"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "ACE",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 29 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。基因组研究直接测定DNA的核苷酸序列。B．错误。代谢组检测的是小分子代谢物，属化学水平。C．正确。表观组研究DNA甲基化等核苷酸层面的修饰。D．错误。蛋白组研究蛋白质，属蛋白质水平。E．正确。转录组测定RNA的核苷酸序列与丰度。故答案为ACE。\n【易错易混】易混：核苷酸水平的组学是基因组、表观组、转录组；蛋白组、代谢组分别在蛋白质与代谢物水平，按'研究对象是哪种分子'分类。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

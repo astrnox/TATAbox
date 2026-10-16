@@ -1,0 +1,45 @@
+{
+ "id": "M4-103-4f38534551cf",
+ "type": "single",
+ "question": "紫外线照射对DNA分子造成的损伤主要是哪一种？",
+ "options": {
+  "A": "形成共价交联的嘧啶二聚体",
+  "B": "磷酸酯键的断裂",
+  "C": "碱基缺失",
+  "D": "碱基替换"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "基因突变",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 103 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 103,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。紫外线（尤其260nm附近）被DNA强烈吸收，使同链相邻嘧啶形成环丁烷型共价交联的嘧啶二聚体（胸腺嘧啶二聚体），阻碍复制与转录。B．错误。磷酸二酯键断裂主要由电离辐射或核酸酶引起。C．错误。碱基缺失多由脱氨、脱嘌呤或复制滑移造成。D．错误。碱基替换多由碱基类似物、烷化剂等化学诱变剂引起。故答案为A。"
+}

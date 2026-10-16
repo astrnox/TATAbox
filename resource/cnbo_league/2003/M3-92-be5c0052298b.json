@@ -1,0 +1,48 @@
+{
+ "id": "M3-92-be5c0052298b",
+ "type": "single",
+ "question": "下列有关生态平衡的说法哪项是正确的？",
+ "options": {
+  "A": "生产者和分解者的数量相等",
+  "B": "消费者和分解者的数量相等",
+  "C": "生产者和消费者的数量相等",
+  "D": "在生态系统中，各种生物的数量和比例总是维持相对平衡和稳定"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 92 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。生态平衡不要求生产者与分解者数量相等。B．错误。消费者与分解者的数量也不必相等。C．错误。生产者与消费者数量并不相等，通常生产者的现存量远多于消费者。D．正确。生态平衡是动态平衡，各种生物的数量和所占比例总维持相对稳定。故答案为D。\n【易错易混】易错点：生态平衡是'数量与比例相对稳定'的动态平衡，不是各成分数量相等；其自我调节能力有一定限度。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

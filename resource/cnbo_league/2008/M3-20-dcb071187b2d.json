@@ -1,0 +1,45 @@
+{
+ "id": "M3-20-dcb071187b2d",
+ "type": "single",
+ "question": "通过消化道小肠吸收的营养，输送到肝脏的血管是",
+ "options": {
+  "A": "肝静脉",
+  "B": "肝动脉",
+  "C": "肝门静脉",
+  "D": "肾门静脉"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 20 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。肝静脉把肝内的血液汇入后腔静脉，是出肝的血管。B．错误。肝动脉是肝的动脉血来源，负责供氧而非输送吸收的营养。C．正确。肝门静脉收集小肠等消化道的静脉血，把吸收的营养物质首先送入肝脏代谢加工，构成典型的门脉系统。D．错误。肾门静脉见于低等脊椎动物，与肾的血液供应有关。故答案为C。"
+}

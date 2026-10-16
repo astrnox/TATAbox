@@ -1,0 +1,48 @@
+{
+ "id": "M1-14-dd859e9de26c",
+ "type": "single",
+ "question": "低温来临时，越冬作物体内的可溶性糖含量",
+ "options": {
+  "A": "增加",
+  "B": "减少",
+  "C": "保持不变",
+  "D": "随条件变化"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 14 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 14,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。低温胁迫下淀粉等大分子水解为可溶性糖，细胞液浓度升高、渗透势降低，保水与抗冻能力增强，是越冬作物的适应性变化。B．错误。可溶性糖不是减少而是积累，否则抗寒力下降。C．错误。低温诱导明显的代谢调整，含量并非不变。D．错误。低温这一特定条件下变化方向确定，即可溶性糖增加。故答案为A。\n【通法】通法（抗逆渗透调节）：低温、干旱等逆境下可溶性糖、脯氨酸等溶质积累，渗透势降低以保水抗逆；记忆方向为'逆境积糖'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

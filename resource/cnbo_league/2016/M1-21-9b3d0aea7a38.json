@@ -1,0 +1,77 @@
+{
+ "id": "M1-21-9b3d0aea7a38",
+ "type": "single",
+ "question": "DNA 形成一个右手螺旋，请从右图中找出右手螺旋",
+ "options": {
+  "A": "左图是右手螺旋",
+  "B": "中图是右手螺旋",
+  "C": "右图是右手螺旋",
+  "D": "以上没有右手螺旋"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 21 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M1-21-9b3d0aea7a38/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 246,
+  "bbox": [
+   245.3,
+   342.7,
+   324.0,
+   424.5
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-21-9b3d0aea7a38/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2016 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 246,
+   "bbox": [
+    245.3,
+    342.7,
+    324.0,
+    424.5
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。判断螺旋手性用右手定则：拇指指向螺旋前进方向，四指弯曲方向应与螺旋走向一致，图中左图符合该关系，为右手螺旋，DNA双螺旋即属此类。B．错误。中图按右手定则判断时四指方向与螺旋走向相反，为左手螺旋。C．错误。右图同样呈左手螺旋走向。D．错误。左图已符合右手螺旋的判据。故答案为A。"
+}

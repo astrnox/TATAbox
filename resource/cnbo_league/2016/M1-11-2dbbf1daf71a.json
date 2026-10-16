@@ -1,0 +1,48 @@
+{
+ "id": "M1-11-2dbbf1daf71a",
+ "type": "multiple",
+ "question": "以下维生素中属于水溶性维生素的是：",
+ "options": {
+  "A": "维生素D",
+  "B": "维生素C",
+  "C": "维生素K",
+  "D": "维生素B12"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "BD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 11 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。维生素D属于脂溶性维生素，可随脂肪储存。B．正确。维生素C（抗坏血酸）溶于水，属水溶性维生素。C．错误。维生素K为脂溶性维生素。D．正确。维生素B12含钴、溶于水，属水溶性维生素。故答案为BD。\n【点睛】点睛：脂溶性维生素记'A、D、E、K'，其余B族与C都是水溶性，一秒排除。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

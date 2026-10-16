@@ -1,0 +1,48 @@
+{
+ "id": "M1-23-df30c7351eda",
+ "type": "single",
+ "question": "下列哪个指标能证明大肠杆菌中成功表达了外源酶蛋白质：",
+ "options": {
+  "A": "核酸杂交证明蛋白质表达",
+  "B": "在蓝白筛选中菌落呈现蓝色",
+  "C": "RT-PCR 能扩增外源基因",
+  "D": "纯化目的蛋白质具有酶活性"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 23 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。核酸杂交检测的是核酸水平的存在，不能证明蛋白质已表达。B．错误。蓝白筛选中菌落呈蓝色说明载体自身环化或未插入外源片段，不能证明外源酶蛋白表达。C．错误。RT-PCR说明外源基因被转录为mRNA，属转录水平证据，不能证明翻译出有功能的蛋白。D．正确。纯化的目的蛋白具有酶活性，直接证明外源基因表达了有功能的酶蛋白。故答案为D。\n【通法】通法（表达验证证据链）：核酸杂交证明存在→RT-PCR证明转录→蛋白检测或酶活证明翻译，问'证明表达'一律选蛋白水平的证据。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

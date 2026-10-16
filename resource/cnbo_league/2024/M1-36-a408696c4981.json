@@ -1,0 +1,48 @@
+{
+ "id": "M1-36-a408696c4981",
+ "type": "single",
+ "question": "下列结构中的细胞，与拟南芥茎的背地性生长有关的是：",
+ "options": {
+  "A": "中柱鞘；",
+  "B": "维管束鞘；",
+  "C": "胚芽鞘；",
+  "D": "淀粉鞘"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 36 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "二. 植物的解制、植物生理、植物演化（共19 题，34 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】茎的负向重力性（背地性）依赖重力感应细胞中淀粉体的沉降。A．错误。中柱鞘参与侧根与维管形成层的形成，与重力感应无关。B．错误。维管束鞘与物质横向运输有关，不承担重力感应。C．错误。胚芽鞘与幼苗向光性密切相关，茎的背地性并非由其介导。D．正确。淀粉鞘（含淀粉体的厚壁组织细胞）作为重力感应部位，淀粉体沉降引导生长素重分布，使茎背地生长。故答案为D。\n【点睛】点睛：重力感应找'淀粉体沉降'——根冠与茎的淀粉鞘是经典 statocyte 位点。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

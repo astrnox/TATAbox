@@ -1,0 +1,48 @@
+{
+ "id": "M1-33-2a90fd09c18a",
+ "type": "single",
+ "question": "1 分子丙酮酸经TCA 循环及呼吸链氧化时",
+ "options": {
+  "A": "生成3 分子CO2",
+  "B": "生成5 分子H2O",
+  "C": "生成12 个分子ATP",
+  "D": "有5 次脱氢，均通过NAD 开始呼吸链"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "糖酵解",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 33 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。丙酮酸氧化脱羧产生1个CO2，异柠檬酸脱氢产生1个，α-酮戊二酸氧化脱羧产生1个，合计3分子CO2。B．错误。总反应为丙酮酸加2.5分子氧生成3CO2和2H2O，并非5分子H2O。C．错误。按旧的P/O比1分子丙酮酸产15个ATP（4对氢经NAD得12个、1对经FAD得2个、底物水平磷酸化1个），现代计数为12.5个，12均非经典答案。D．错误。5次脱氢中4次以NAD受氢，琥珀酸脱氢以FAD受氢，FADH2不经NAD进入呼吸链。故答案为A。\n【通法】通法（丙酮酸氧化核算）：丙酮酸彻底氧化固定为3CO2、2H2O、5次脱氢（4经NAD、1经FAD）、1次底物水平磷酸化，旧算法15ATP；葡萄糖按两份丙酮酸计再加糖酵解净2ATP，即旧算38ATP。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

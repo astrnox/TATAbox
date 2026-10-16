@@ -1,0 +1,45 @@
+{
+ "id": "M2-80-1aff1c7e5f78",
+ "type": "single",
+ "question": "一般认为，植物和动物的共同祖先是：",
+ "options": {
+  "A": "细菌",
+  "B": "原始绿色鞭毛生物",
+  "C": "原始单核变形虫",
+  "D": "蓝藻"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 80 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 80,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细菌为原核生物，与真核的动植物在细胞结构上相距甚远。B．正确。一般认为动植物的共同祖先是原始绿色鞭毛生物：一支保留光合自营发展为植物，一支失去叶绿体、转为异养并发展出吞噬营养而成为动物。C．错误。变形虫样的原始单核生物被视为真核演化中的旁支，不是动植物共同祖先。D．错误。蓝藻是原核光合生物，与植物叶绿体起源有关，但不是动植物的共同祖先。故答案为B。"
+}

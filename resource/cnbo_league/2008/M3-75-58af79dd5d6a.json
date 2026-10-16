@@ -1,0 +1,48 @@
+{
+ "id": "M3-75-58af79dd5d6a",
+ "type": "single",
+ "question": "下列哪种情况会促进脂肪分解",
+ "options": {
+  "A": "血液中胰高血糖水平升高",
+  "B": "血液中胰岛素水平升高",
+  "C": "膳食中碳水化合物摄取量偏低",
+  "D": "膳食中蛋白摄取量偏低"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 75 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 75,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。胰高血糖素升高激活脂肪酶，促进脂肪动员和脂肪分解，为机体供能。B．错误。胰岛素促进脂肪合成并抑制脂解，作用方向与之相反。C．错误。膳食中碳水摄入偏低需经胰岛素与胰高血糖素比值下降间接影响脂解，并非直接促进脂肪分解的因素（该官方标答存此一说）。D．错误。蛋白摄入偏低主要影响氮平衡和蛋白质代谢。故答案为A。\n【易错易混】易混：促脂解的激素有胰高血糖素、肾上腺素、糖皮质激素等，抑脂解的主要是胰岛素，判断方向先分清'促'与'抑'。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M2-106-1cef8a56af17",
+ "type": "single",
+ "question": "以下哪种植物最鲜艳的部分不是来源于花结构：",
+ "options": {
+  "A": "合欢",
+  "B": "一品红",
+  "C": "玉叶金花",
+  "D": "蝴蝶兰"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 106 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 106,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出最鲜艳部分不是来源于花的植物，判断词指该选项是否合题意。A．错误。合欢鲜红的是其花丝，来源为花结构，表述成立。B．正确。一品红鲜红的部分是包围花序的苞片（变态叶），真正的花小而不显眼，正是应选项。C．错误。玉叶金花醒目的白色部分是扩大的萼片，属花结构，表述成立。D．错误。蝴蝶兰鲜艳的是花瓣（含唇瓣），来源于花，表述成立。故答案为B。\n【点睛】点睛：见'鲜艳'先问是花还是苞片——一品红红的是苞片、三角梅红的是苞片、秋海棠红的是叶，花小则由苞片'代言'。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "M2-51-4614c915c437",
+ "type": "single",
+ "question": "以下对乙烯的论断哪个是错误的？",
+ "options": {
+  "A": "是一种气体植物激素",
+  "B": "所有的植物细胞都可以生产这种气体",
+  "C": "不能进行细胞间的传递",
+  "D": "不同果实之间可以传递",
+  "E": "浓度越高，果实成熟越快"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 51 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 51,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出错误的一项，判断词指该选项是否合题意。A．错误。乙烯是气态植物激素，表述成立。B．错误。植物各部位细胞都能合成乙烯，表述成立。C．正确。乙烯是气体，可在细胞间乃至个体间扩散传递，'不能进行细胞间传递'不成立，正是应选项。D．错误。成熟果实释放的乙烯可诱导邻近果实成熟，表述成立。E．错误。一定范围内乙烯浓度越高果实成熟越快，表述成立。故答案为C。"
+}

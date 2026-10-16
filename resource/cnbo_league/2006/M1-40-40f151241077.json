@@ -1,0 +1,50 @@
+{
+ "id": "M1-40-40f151241077",
+ "type": "single",
+ "question": "赖氨酸有3 个pK 值，pK1=2.1; pK2=9.0; pK3=10.5; 赖氨酸的pI 为：",
+ "options": {
+  "A": "7.2",
+  "B": "5.55",
+  "C": "6.3",
+  "D": "9.75",
+  "E": "10.5"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 40 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。7.2接近中性，远低于碱性氨基酸的等电点。B．错误。5.55不是赖氨酸的pI，碱性氨基酸的pI应大于9。C．错误。6.3同样偏酸，不符合赖氨酸的解离特征。D．正确。赖氨酸的α-羧基（pK1=2.1）、α-氨基（pK2=9.0）和侧链ε-氨基（pK3=10.5）可解离，净电荷为零时取后两者的均值，pI=(9.0+10.5)/2=9.75。E．错误。10.5是侧链氨基的pK3，此时侧链半数解离、净带负电，不是等电点。故答案为D。\n【通法】通法（等电点计算）：酸性氨基酸pI=(pK1+pKR)/2，碱性氨基酸pI=(pK2+pK3)/2，即取决定两性离子的那一对解离常数的平均值。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

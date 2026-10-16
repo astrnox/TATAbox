@@ -1,0 +1,47 @@
+{
+ "id": "M4-21-c345ff2b8af9",
+ "type": "single",
+ "question": "高通量测序方法在下面哪种实验中没有应用：",
+ "options": {
+  "A": "基因表达谱检测",
+  "B": "全基因组变异检测",
+  "C": "基因组甲基化检测",
+  "D": "蛋白质表达检测",
+  "E": "非编码RNA 表达检测"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 21 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。基因表达谱检测可用RNA-seq等高通量测序方法。B．错误。全基因组变异检测是高通量测序的重要应用。C．错误。基因组甲基化检测可用亚硫酸氢盐测序等高通量方法。D．正确。蛋白质表达检测用质谱或抗体方法，高通量测序检测的是核酸，不用于蛋白质表达的检测。E．错误。非编码RNA表达检测正是高通量测序的应用之一。故答案为D。"
+}

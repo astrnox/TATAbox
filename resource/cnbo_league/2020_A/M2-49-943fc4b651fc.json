@@ -1,0 +1,48 @@
+{
+ "id": "M2-49-943fc4b651fc",
+ "type": "multiple",
+ "question": "孑遗植物是起源较早、在某一地质历史时期十分繁盛，而今只孤立分布在个别地区的一类植物。下列属于孑遗植物的有",
+ "options": {
+  "A": "水杉",
+  "B": "银杉",
+  "C": "油松",
+  "D": "珙桐"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 49 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "二. 植物和动物的解剖、生理、组织和器官的结构与功能   32 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。水杉曾广布北半球，第四纪冰期后仅存于我国鄂西，是典型孑遗植物。B．正确。银杉仅在我国西南局部山地残存，为著名的活化石孑遗种。C．错误。油松分布广泛，是我国北方常见造林树种，不属于孤立残存的孑遗植物。D．正确。珙桐第四纪后仅存于我国西南，为孑遗植物。故答案为ABD。\n【通法】通法（孑遗识别）：看两条——起源早（常称活化石）＋现仅孤立残存于个别地区；分布广、常见栽培的多不是孑遗，水杉、银杉、珙桐是常考三例。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

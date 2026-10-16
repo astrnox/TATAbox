@@ -1,0 +1,48 @@
+{
+ "id": "M1-05-590f0b74c6f8",
+ "type": "single",
+ "question": "哪项有关II 型限制性内切酶的说法是不对的：",
+ "options": {
+  "A": "酶切位点一般就在DNA 识别位点内",
+  "B": "酶切后DNA 分子都有黏性末端",
+  "C": "不能切RNA",
+  "D": "来自细菌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 5 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题为选非题，判断词指该选项是否合题意。A．错误。II型限制酶的切割位点一般就位于识别序列内部或近旁，表述成立。B．正确。酶切产物既可以是黏性末端也可以是平末端（如SmaI切出平末端），'都有黏性末端'不成立，正是应选项。C．错误。限制性内切酶识别并切割双链DNA，不切RNA，表述成立。D．错误。限制酶源于细菌，是其限制—修饰系统防御外源DNA的工具，表述成立。故答案为B。\n【易错易混】易错点：末端类型取决于切点相对识别序列中心的位置，错位切产生黏性末端，沿中轴切产生平末端，不可一概而论。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

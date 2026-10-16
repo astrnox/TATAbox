@@ -1,0 +1,50 @@
+{
+ "id": "M1-32-2a2eeb6fc6d2",
+ "type": "single",
+ "question": "地钱是研究苔类植物的常用材料，目前已知其营养体的性别是由性染色体决定的，并且属于XY型，那么地钱雄性营养体的性染色体为",
+ "options": {
+  "A": "XX",
+  "B": "XY",
+  "C": "X",
+  "D": "Y",
+  "E": "YY"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 32 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 32,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。XX是雌性组合，且营养体为单倍体，不可能同时含两条性染色体。B．错误。XY是二倍体合子（孢子体）的雄性组合，营养体不具二倍性。C．错误。只含一条X染色体的营养体发育为雌性。D．正确。地钱营养体是单倍体配子体，仅含一条性染色体，含Y者发育为雄性。E．错误。单倍体营养体不会出现YY组合。故答案为D。\n【点睛】点睛：抓住'营养体是单倍体配子体'这一前提，XY型性别决定落到单倍体上只剩X或Y一条。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

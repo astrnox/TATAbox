@@ -1,0 +1,45 @@
+{
+ "id": "M4-96-d77e08fd8d44",
+ "type": "single",
+ "question": "在分类系统中，有下列单位①family ②phylum ③species ④genus 按从高到低的层次排列",
+ "options": {
+  "A": "④①②③",
+  "B": "②①④③",
+  "C": "①②③④",
+  "D": "②①③④"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 96 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】生物分类阶元由高到低依次为界、门、纲、目、科、属、种，其中①family 为科、②phylum 为门、③species 为种、④genus 为属，故从高到低应排列为门、科、属、种，即②①④③。A．错误。④①②③ 把属排在科之上，又把门排在科之下，层次颠倒。B．正确。②①④③ 即门、科、属、种，符合从高到低的排列。C．错误。①②③④ 把科排在门之上，又把种排在属之前，层次混乱。D．错误。②①③④ 前两位正确，但把种排在属之前，属种顺序颠倒。故答案为B。"
+}

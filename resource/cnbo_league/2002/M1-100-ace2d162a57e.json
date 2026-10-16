@@ -1,0 +1,45 @@
+{
+ "id": "M1-100-ace2d162a57e",
+ "type": "single",
+ "question": "酶促反应中酶的作用在于",
+ "options": {
+  "A": "提高反应的活化能",
+  "B": "促使正向反应速度的提高",
+  "C": "降低反应的活化能",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 100 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 100,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。酶的作用是降低而非提高反应的活化能。B．错误。酶同等加速正、逆反应，只缩短达到平衡所需的时间，不改变化学平衡点，且这只是现象而非酶的作用机制。C．正确。酶与底物形成过渡态复合物并稳定过渡态，从而降低反应的活化能，这是酶催化作用的本质。D．错误。C项已正确说明酶的作用，'以上都不对'不成立。故答案为C。"
+}

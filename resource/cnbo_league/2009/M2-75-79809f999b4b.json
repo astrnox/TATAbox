@@ -1,0 +1,45 @@
+{
+ "id": "M2-75-79809f999b4b",
+ "type": "single",
+ "question": "玉米茎维管束外的机械组织为:",
+ "options": {
+  "A": "中柱鞘",
+  "B": "淀粉鞘",
+  "C": "髓鞘",
+  "D": "维管束鞘"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 74 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。中柱鞘是根的结构，茎中一般没有中柱鞘。B．错误。淀粉鞘见于某些双子叶植物根的内皮层内侧，与玉米茎的维管束无关。C．错误。茎的结构中并无'髓鞘'这一名称。D．正确。玉米等单子叶植物茎的维管束外方常有一至数层厚壁细胞组成的维管束鞘，起机械支持作用。故答案为D。"
+}

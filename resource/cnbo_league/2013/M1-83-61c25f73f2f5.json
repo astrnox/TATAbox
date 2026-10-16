@@ -1,0 +1,48 @@
+{
+ "id": "M1-83-61c25f73f2f5",
+ "type": "single",
+ "question": "人体缺乏维生素B12 时易引起：",
+ "options": {
+  "A": "脚气病",
+  "B": "恶性贫血",
+  "C": "坏血病",
+  "D": "佝偻病"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 83 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 83,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。脚气病由维生素B1（硫胺素）缺乏引起，表现为周围神经与心肌病变。B．正确。维生素B12缺乏使DNA合成受阻、红细胞核发育停滞，引起巨幼红细胞性贫血即恶性贫血。C．错误。坏血病由维生素C缺乏引起。D．错误。佝偻病由维生素D缺乏、钙磷代谢障碍引起。故答案为B。\n【易错易混】易混：B1缺→脚气病，B12缺→恶性贫血，C缺→坏血病，D缺→佝偻病，四种维生素四种病成对记牢。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

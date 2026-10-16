@@ -1,0 +1,48 @@
+{
+ "id": "M1-57-8211c77e96d2",
+ "type": "single",
+ "question": "酸雨主要是由引起的：",
+ "options": {
+  "A": "NO，SO2",
+  "B": "NO，CO2",
+  "C": "CO2， SO2",
+  "D": "NO，SO2，CO2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 57 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 57,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。酸雨指pH低于5.6的降水，主要由化石燃料燃烧排放的硫氧化物和氮氧化物转化成硫酸、硝酸所致，选项中的NO应理解为氮氧化物。B．错误。CO2只能使雨水呈弱酸性，不造成酸雨。C．错误。CO2溶于水形成碳酸，是正常雨水pH约5.6的原因，并非酸雨成因。D．错误。把CO2计入酸雨成因属概念混淆。故答案为A。\n【易错易混】易混：CO2使正常雨水微酸（pH约5.6），SO2与氮氧化物才使pH降到5.6以下形成酸雨，两者不可混同。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-102-b605abf1ab44",
+ "type": "single",
+ "question": "如果控制毛色的上位基因I 位于X 染色体上，则一个白色雄性个体（BBXIY）与一个纯合棕色雌性个体的杂交后代近交后（BS），毛色的分离比为：白色:黑色:棕色=",
+ "options": {
+  "A": "12：3：1",
+  "B": "9：6：1",
+  "C": "9：3：4",
+  "D": "8：6：2"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 102 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。12∶3∶1是常染色体上显性上位的分离比，未体现X连锁特征。B．错误。9∶6∶1是两对基因互补作用的比例，与本题不符。C．错误。9∶3∶4是隐性上位的比例，与显性上位I基因不符。D．正确。F1为BbXIXi（白）与BbXIY（白）互交：女儿全得父方XI而全为白色（8/16）；儿子全得母方Xi，其中B_为黑（6/16）、bb为棕（2/16），故白色∶黑色∶棕色=8∶6∶2。故答案为D。\n【通法】通法（性染色体上位基因）：先按常染色体算3∶1，再按伴性遗传分配上位基因——父传女、母传子，最后把两套比例相乘合并。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

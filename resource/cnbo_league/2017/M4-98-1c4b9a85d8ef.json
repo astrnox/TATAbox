@@ -1,0 +1,45 @@
+{
+ "id": "M4-98-1c4b9a85d8ef",
+ "type": "single",
+ "question": "下列关于遗传物质的描述，哪项是错误的：",
+ "options": {
+  "A": "DNA 复制时，冈崎片段的合成需要RNA 引物",
+  "B": "DNA 复制与DNA 修复合成一样，都是由5’→3’方向",
+  "C": "DNA 的复制方式有多种，通常是双向进行的，但滚动式复制却是单向的",
+  "D": "单链DNA 结合蛋白与DNA 结合之后使双链DNA 解链"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "DNA复制",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 98 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出错误的描述，判断词指该选项是否合题意。A．错误。冈崎片段的合成必须以RNA引物起始，表述成立。B．错误。DNA复制与修复合成均沿5′→3′方向进行，表述成立。C．错误。复制通常双向，滚动环复制（如噬菌体、质粒）为单向，表述成立。D．正确。单链DNA结合蛋白（SSB）结合已解开的单链、防止其复链与降解，起稳定作用，并不能使双链DNA解链（解链由解旋酶完成），该表述不成立，正是应选项。故答案为D。"
+}

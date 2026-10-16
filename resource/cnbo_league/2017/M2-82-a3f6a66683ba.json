@@ -1,0 +1,48 @@
+{
+ "id": "M2-82-a3f6a66683ba",
+ "type": "single",
+ "question": "研究发现花旗松平均每棵树产生的球果数量与年轮的相对宽度呈现出显著的负相关关系，这说明：",
+ "options": {
+  "A": "该树种生长的区域环境生产力高",
+  "B": "该树种生长的区域气候环境相对稳定",
+  "C": "该树种投入到繁殖和生长的资源之间存在此消彼长的关系",
+  "D": "该树种的繁殖能力与个体大小显著相关"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 82 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 82,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。球果数与年轮宽度负相关不能推出环境生产力高低。B．错误。负相关关系与气候是否稳定无直接联系。C．正确。年轮宽度反映生长量，球果数反映繁殖投入，二者显著负相关说明资源在生长与繁殖之间存在此消彼长的权衡（trade-off）。D．错误。题干比较的是繁殖与生长，而非繁殖能力与个体大小的关系。故答案为C。\n【点睛】点睛：见到'两个性状此消彼长'先想资源权衡（life-history trade-off）——预算有限，花在生长上的多、留给繁殖的就少。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

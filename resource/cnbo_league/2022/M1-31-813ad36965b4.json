@@ -1,0 +1,48 @@
+{
+ "id": "M1-31-813ad36965b4",
+ "type": "single",
+ "question": "假设植物细胞内外K+浓度分别为100mM 和10mM，K+的平衡膜电位为-58mV。若在胞内施加-120mV 的电压，K+被动运输的方向为：",
+ "options": {
+  "A": "由胞内向胞外；",
+  "B": "由胞外向胞内；",
+  "C": "沿着细胞外表面；",
+  "D": "沿着细胞内表面。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 31 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。施加的 -120 mV 比钾平衡电位 -58 mV 更负，电场力指向胞内而非胞外。B．正确。膜电位比 EK 更负时，K+ 受电化学梯度驱动由胞外向胞内被动运输。C．错误。离子跨膜运输沿浓度与电位梯度跨膜进行，不沿膜表面移动。D．错误。同理，被动运输方向是跨膜而非沿膜内表面。故答案为B。\n【通法】通法（离子流向判断）：把膜电位与该离子平衡电位比大小——膜电位更负，负离子内流、正离子外流的判断反过来，对正离子则吸进来。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

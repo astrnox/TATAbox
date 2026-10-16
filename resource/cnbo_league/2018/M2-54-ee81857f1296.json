@@ -1,0 +1,50 @@
+{
+ "id": "M2-54-ee81857f1296",
+ "type": "single",
+ "question": "下列哪种激素需要与氨基酸结合才能最大发挥其生物学活性：",
+ "options": {
+  "A": "生长素",
+  "B": "乙烯",
+  "C": "细胞分裂素",
+  "D": "茉莉酸",
+  "E": "脱落酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 54 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（37 道题41 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。生长素以吲哚乙酸等形式直接起作用，不需与氨基酸结合。B．错误。乙烯是气体小分子，直接与受体结合，无氨基酸偶联修饰。C．错误。细胞分裂素的游离形式即有活性，不依赖氨基酸结合。D．正确。茉莉酸需与异亮氨酸偶联形成JA-Ile，才能高效结合受体、发挥最大生物学活性。E．错误。脱落酸直接结合受体，不需氨基酸结合。故答案为D。\n【点睛】点睛：茉莉酸的活性形式是JA-Ile（茉莉酸-异亮氨酸偶联物），'激素-氨基酸偶联'是茉莉酸信号的独特标志。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

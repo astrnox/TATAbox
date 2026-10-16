@@ -1,0 +1,45 @@
+{
+ "id": "M2-07-24aaf7cd541a",
+ "type": "single",
+ "question": "洪涝灾害发生时，农作物根系往往因下列哪种原因而受损、发黑甚至坏死，进而导致整株植物的死亡",
+ "options": {
+  "A": "病原菌感染",
+  "B": "饥饿",
+  "C": "过度吸水",
+  "D": "无氧呼吸及发酵"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 7 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。病原菌可加重根部腐烂，但淹水的直接伤害是缺氧，感染多为继发性。B．错误。根系可获得叶片运来的有机物，不是因饥饿而受损。C．错误。植物根系不会因在水中过度吸水而坏死，吸水仍取决于水势梯度。D．正确。淹水使土壤中氧气耗尽，根系有氧呼吸受抑而转向无氧呼吸和发酵，乙醇等产物积累毒害细胞，能量供应也骤减，根系发黑坏死，最终整株死亡。故答案为D。"
+}

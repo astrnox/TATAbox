@@ -1,0 +1,45 @@
+{
+ "id": "M2-76-43f7d74c9e05",
+ "type": "single",
+ "question": "在自然界，纤维素、半纤维素和木质素的主要分解者是：",
+ "options": {
+  "A": "绿色藻类",
+  "B": "霉菌",
+  "C": "酵母菌",
+  "D": "光合细菌"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 76 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 76,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。绿藻是光合自养生物，不分解大分子有机物。B．正确。霉菌（如木霉等真菌）能分泌纤维素酶、半纤维素酶和木质素降解酶系，是自然界纤维素、半纤维素特别是木质素的主要分解者。C．错误。酵母菌多为单细胞真菌，主要利用简单糖类，分解结构多糖的能力弱。D．错误。光合细菌以光能自养或光能异养生活，不承担枯落物的分解。故答案为B。"
+}

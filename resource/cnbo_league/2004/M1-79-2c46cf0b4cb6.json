@@ -1,0 +1,81 @@
+{
+ "id": "M1-79-2c46cf0b4cb6",
+ "type": "single",
+ "question": "图中E 代表",
+ "options": {
+  "A": "引物的3’末端",
+  "B": "模板的3’末端",
+  "C": "引物的5’末端",
+  "D": "模板的5’末端"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 79 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "77-79",
+  "stimulus": "见下图(表明为DNA 聚合酶作用的底物)"
+ },
+ "image": {
+  "file": "assets/questions/M1-79-2c46cf0b4cb6/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 53,
+  "bbox": [
+   90.0,
+   357.3,
+   361.5,
+   426.3
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-79-2c46cf0b4cb6/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2004 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 53,
+   "bbox": [
+    90.0,
+    357.3,
+    361.5,
+    426.3
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】图中长链为模板链，短链为引物，两者碱基互补配对。DNA聚合酶只能延伸引物的3’端，故引物左端E为5’末端、右端C为3’末端，新链沿5’→3’生长；模板与之反向平行，D端为模板3’端、F端为模板5’端。A．错误。引物的3’末端在图中C处，是延伸的起点。B．错误。模板的3’末端是图中D。C．正确。E位于引物左端，与模板3’端D配对，正是引物的5’末端。D．错误。模板的5’末端是图中F。故答案为C。"
+}

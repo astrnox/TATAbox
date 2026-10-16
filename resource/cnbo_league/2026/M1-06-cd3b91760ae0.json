@@ -1,0 +1,81 @@
+{
+ "id": "M1-06-cd3b91760ae0",
+ "type": "mtf",
+ "question": "根据上述实验结果，判断下列陈述的正误：",
+ "options": {
+  "A": "细胞内乳酸的增加能促进XLF 的乳酸化修饰和乙酰化修饰；",
+  "B": "288 位Lys 是XLF 的主要乳酸化修饰位点；",
+  "C": "GCN5 能促进野生型和突变体XLF 的乳酸化修饰；",
+  "D": "XLF 的288 位点与NHEJ 修复有关。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "FTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 6 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分：生物化学 分子生物学 细胞生物学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "6-7",
+  "stimulus": "对XLF 蛋白的乳酸化修饰进行研究。在细胞中分别转染带有HA 的野生型XLF（HA-XLF 或HA-"
+ },
+ "image": {
+  "file": "assets/questions/M1-06-cd3b91760ae0/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 2,
+  "bbox": [
+   276.9,
+   115.5,
+   526.2,
+   201.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M1-06-cd3b91760ae0/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 2,
+   "bbox": [
+    276.9,
+    115.5,
+    526.2,
+    201.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。由图A、B，乳酸增加促进XLF的乳酸化修饰，但不能同时促进其乙酰化修饰。B．正确。将288位Lys突变为Arg（K288R）后乳酸化信号基本消失，说明K288是主要乳酸化位点。C．错误。GCN5促进野生型XLF的乳酸化，但对K288R突变体无促进作用（位点已被替换）。D．正确。K288R突变伴随NHEJ修复效率改变，说明该位点与NHEJ修复功能相关。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M3-79-9efbb207809f",
+ "type": "multiple",
+ "question": "新热带界包括整个南美、中美和西印度群岛，本界拥有下列哪些动物",
+ "options": {
+  "A": "食虫目",
+  "B": "贫齿目",
+  "C": "有袋目的新袋鼠亚目",
+  "D": "灵长目的阔鼻亚目"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "BCD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 79 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 79,
+  "section": "第三部分 动物行为和生态学（20道题32分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。食虫目（鼩鼱类等）主要分布于古北界、新北界和旧热带区，新热带界无真正的食虫目成员，其食虫生态位由贫齿目等替代。B．正确。贫齿目（树懒、犰狳、食蚁兽）是新热带界的典型特有类群。C．正确。新袋鼠亚目即负鼠等美洲有袋类，分布于南、中美洲。D．正确。阔鼻亚目即新大陆猴（卷尾猴、吼猴、蛛猴等），是新热带界灵长类的代表。故答案为BCD。"
+}

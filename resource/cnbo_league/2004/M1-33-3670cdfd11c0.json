@@ -1,0 +1,45 @@
+{
+ "id": "M1-33-3670cdfd11c0",
+ "type": "single",
+ "question": "酸雨的形成主要是由于工业废气中的形成的",
+ "options": {
+  "A": "NH3",
+  "B": "N2",
+  "C": "SO2，NO",
+  "D": "O2"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 33 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "一、选择题(四选一，每题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。NH3是碱性气体，进入大气后可中和酸性物质形成铵盐，不会造成酸雨。B．错误。N2化学性质稳定，也不溶于水生成酸。C．正确。工业废气中的SO2和氮氧化物（如NO）在大气中被氧化并溶于水，分别生成硫酸和硝酸，随降水落下形成酸雨。D．错误。O2不能生成酸，与酸雨形成无关。故答案为C。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-87-43ea1a418005",
+ "type": "single",
+ "question": "细胞停止生长后所形成的细胞壁称为：",
+ "options": {
+  "A": "胞间层",
+  "B": "次生壁",
+  "C": "初生壁",
+  "D": "纹孔"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 87 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 87,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。胞间层是细胞分裂时在两细胞之间形成的果胶质层，与细胞停止生长无关。B．正确。初生壁在细胞生长期间形成并随之扩展，细胞停止生长后在其内侧继续沉积纤维素等加厚形成的壁即次生壁。C．错误。初生壁是细胞生长时形成的细胞壁。D．错误。纹孔是次生壁不均匀加厚时留下的薄壁区域，是结构名称而非壁的种类。故答案为B。\n【通法】通法（细胞壁三层定位）：胞间层（分裂时、果胶质）、初生壁（生长期、可塑延伸）、次生壁（停止生长后、内侧加厚）；按形成时间排队即可秒判。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

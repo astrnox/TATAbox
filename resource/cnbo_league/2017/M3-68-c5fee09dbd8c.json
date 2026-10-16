@@ -1,0 +1,45 @@
+{
+ "id": "M3-68-c5fee09dbd8c",
+ "type": "single",
+ "question": "下列属于动物的社会修饰行为（social grooming）的是：",
+ "options": {
+  "A": "野马舔舐自己的背部",
+  "B": "雄狮舔食它捕获的角马身上的血迹",
+  "C": "猕猴为同伴清理体毛下的寄生虫",
+  "D": "两只画眉互相啄击对方"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 68 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 68,
+  "section": "第三部分 动物行为学、生态学（23 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。野马舔舐自己属自我修饰（self-grooming），不涉及社会交往。B．错误。雄狮舔食猎物血迹是取食行为。C．正确。猕猴为同伴清理体毛下的寄生虫，是典型的社会修饰（互相理毛）行为，兼具清洁与社会关系维系功能。D．错误。画眉互相啄击属攻击或社会冲突行为。故答案为C。"
+}

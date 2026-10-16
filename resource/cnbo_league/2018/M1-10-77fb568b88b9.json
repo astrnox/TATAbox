@@ -1,0 +1,48 @@
+{
+ "id": "M1-10-77fb568b88b9",
+ "type": "single",
+ "question": "哺乳动物成熟的红细胞没有细胞核、线粒体及内膜系统，下面对其描述错误的是：",
+ "options": {
+  "A": "成熟的红细胞内没有DNA",
+  "B": "成熟的红细胞内不产生ATP",
+  "C": "成熟的红细胞不会被DNA 病毒侵染",
+  "D": "成熟的红细胞不再合成蛋白质"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 10 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出描述错误的一项，判断词指该选项是否合题意。A．错误。成熟红细胞无细胞核与细胞器，确实没有DNA，表述成立。B．正确。成熟红细胞无线粒体，但可在细胞质基质中通过糖酵解产生ATP，'不产生ATP'不成立，正是应选项。C．错误。没有DNA则DNA病毒无法在其中复制增殖，表述成立。D．错误。成熟红细胞无核糖体，不再合成蛋白质，表述成立。故答案为B。\n【点睛】点睛：哺乳动物成熟红细胞靠无氧糖酵解供能，产ATP但不耗氧，这是判断其代谢相关选项的总开关。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

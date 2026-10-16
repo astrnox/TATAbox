@@ -1,0 +1,48 @@
+{
+ "id": "M1-25-abb94ba2d2df",
+ "type": "single",
+ "question": "500 克黄豆制成2500 克黄豆芽，在这个过程中有机物总量的变化是：",
+ "options": {
+  "A": "增多",
+  "B": "减少",
+  "C": "不增也不减",
+  "D": "以上都不对"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 25 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 25,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。萌发初期无叶绿素、不能进行光合作用，有机物不可能增多。B．正确。黄豆萌发时呼吸作用消耗贮存的有机物并释放能量，有机物总量下降，增加的重量主要是水。C．错误。呼吸消耗使有机物只减不增。D．错误。B项已成立。\n【易错易混】易混：鲜重增加不等于有机物增加；萌发初期只做减法（呼吸消耗），长出绿叶后光合才开始做加法。故答案为B。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

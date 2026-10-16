@@ -1,0 +1,48 @@
+{
+ "id": "M4-102-98fc49cdb2ef",
+ "type": "single",
+ "question": "在一个热带人群中，白化病（aa，隐性纯合）患者的发病率为1/10,000。设这一群体对这一基因处于哈迪-温伯格平衡，则这一人群中对这一基因呈杂合状态的频率大约为：",
+ "options": {
+  "A": "1/50",
+  "B": "1/75",
+  "C": "1/100",
+  "D": "1/1000"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 102 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。隐性纯合率q²=1/10000，则q=1/100，p=99/100，杂合子频率2pq=2×0.99×0.01≈0.0198≈1/50。B．错误。1/75与计算结果不符。C．错误。1/100是隐性基因频率q而非杂合子频率。D．错误。1/1000远小于计算值。故答案为A。\n【通法】通法（哈迪-温伯格计算）：已知隐性发病率q²→开方得q→p=1-q→杂合子=2pq，顺序固定；注意区分基因频率与基因型频率。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

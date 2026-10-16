@@ -1,0 +1,80 @@
+{
+ "id": "M2-21-27982c719cf4",
+ "type": "mtf",
+ "question": "右图展示了基于不同数据构建的两种被子植物主要谱系的系统发生树（A: APG 系统；B: 基于基因组数据）。对以下关于这些谱系系统关系的陈述进行正误判断：",
+ "options": {
+  "A": "单子叶植物在两棵树上的系统位置不同，说明其与被子植物其它主要谱系的关系在不同数据分析下可能存在不确定性",
+  "B": "真双子叶植物与金鱼藻目在两树上均为姐妹类群",
+  "C": "木兰类与金粟兰目在两树上也是姐妹类群",
+  "D": "金粟兰目在两树上的位置不同，说明其系统位置存在不确定性"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "TTFT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 21 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 21,
+  "section": "二、植物学、植物生理、微生物（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-21-27982c719cf4/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 4,
+  "bbox": [
+   320.6,
+   45.4,
+   550.3,
+   294.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-21-27982c719cf4/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2025 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 4,
+   "bbox": [
+    320.6,
+    45.4,
+    550.3,
+    294.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。同一类群（单子叶植物）在不同数据/方法构建的树上位置不同，说明其系统位置存在不确定性。B．正确。由图可见，真双子叶植物与金鱼藻目在两棵树上均互为姐妹群。C．错误。木兰类与金粟兰目在两树上并不构成姐妹群。D．正确。金粟兰目在两树上位置不同，正是其系统位置不确定的直接体现。\n【通法】通法（系统树题）：先定位类群在树上的拓扑关系（姐妹群＝最近共同祖先的两个分支），再比较两棵树的拓扑是否一致；'位置不同'＝数据支持不足＝不确定性，不能读成'分类错误'。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-9cb33a23aa3f",
+ "type": "single",
+ "question": "在等电聚焦电泳过程中，随着蛋白质样品的迁移，电流的变化为",
+ "options": {
+  "A": "越变越大，当样品到达其等电点位置时，电流达到最大值",
+  "B": "越变越小，当样品到达其等电点位置时，电流达到最小值，接近于零",
+  "C": "基本不变，为一恒定值",
+  "D": "不确定"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 12 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。样品到达等电点处净电荷为零、停止迁移，电流不会增大。B．正确。等电聚焦中两性电解质载体形成pH梯度，蛋白质向与其等电点相应的区带聚焦；随聚焦完成，各处净电荷趋近于零，导电能力下降，电流越来越小并接近于零。C．错误。电流随聚焦过程明显下降，并非恒定。D．错误。电流变化有确定规律。故答案为B。"
+}

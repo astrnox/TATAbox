@@ -1,0 +1,45 @@
+{
+ "id": "M4-119-1c4977da1cac",
+ "type": "multiple",
+ "question": "下列有关蛋白质翻译过程的叙述，正确的是：",
+ "options": {
+  "A": "从理论上讲，通过改变氨酰-tRNA 合成酶的识别特异性就可以将天然蛋白质中不存在的氨基酸掺入到蛋白质中去",
+  "B": "蛋白质翻译一般以AUG 作为起始密码子，有时也以GUG 为起始密码子，但以GUG 为起始密码子，则第一个被掺入的氨基酸为Val",
+  "C": "在蛋白质生物合成中，氨酰-tRNA 都是首先进入核糖体的A 位点",
+  "D": "氨酰-tRNA 合成酶既能识别氨基酸又能识别tRNA，使它们特异结合"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "分子生物学",
+ "concept": "翻译",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 119 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 119,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。理论上改变氨酰-tRNA合成酶的识别特异性，使其装载非天然氨基酸，即可将其掺入蛋白质，这是非天然氨基酸定点插入技术的基础。B．错误。以GUG为起始密码子时，起始tRNA携带的是甲酰甲硫氨酸（fMet），而非缬氨酸。C．错误。翻译起始时，起始氨酰-tRNA首先进入核糖体的P位，后续氨酰-tRNA才进入A位。D．正确。氨酰-tRNA合成酶同时识别特定氨基酸与对应tRNA，保证氨基酸与tRNA的正确匹配。故答案为AD。"
+}

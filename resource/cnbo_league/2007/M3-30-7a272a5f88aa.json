@@ -1,0 +1,48 @@
+{
+ "id": "M3-30-7a272a5f88aa",
+ "type": "single",
+ "question": "下列哪一组结构和机能是鸟类所特有的？",
+ "options": {
+  "A": "嗉囊、上纹状体和叉骨",
+  "B": "羽毛、恒温和端生齿",
+  "C": "气囊、双重呼吸和枢椎",
+  "D": "异凹型椎体、肌胃和产羊膜卵"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 30 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 30,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。嗉囊是食管膨大的贮食结构，上纹状体是鸟类特有的高级神经中枢，叉骨由左右锁骨愈合而成，三者均为鸟类特有。B．错误。羽毛确为鸟类特有，但恒温在哺乳类同样存在，端生齿见于低等羊膜类，且现生鸟类无齿。C．错误。气囊和双重呼吸为鸟类特有，但枢椎（第二颈椎）是四足动物共有结构。D．错误。异凹型椎体为鸟类特有，但肌胃在鳄类等也存在，产羊膜卵是全部羊膜动物的共同特征。故答案为A。\n【点睛】点睛：此类题每项列三个特征，只要抓住其中一项并非鸟类独有即可排除该项。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

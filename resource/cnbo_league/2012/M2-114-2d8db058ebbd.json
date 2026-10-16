@@ -1,0 +1,45 @@
+{
+ "id": "M2-114-2d8db058ebbd",
+ "type": "single",
+ "question": "取油菜花、槐树花、薄荷花和百合花各一朵解剖，对应的雄蕊数分别是多少",
+ "options": {
+  "A": "4，l0，4，6",
+  "B": "6，10，4，4",
+  "C": "6，10，4，6",
+  "D": "6，9，2，6"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 114 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 114,
+  "section": "第四部分 （7 道题9 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。油菜为十字花科，具四强雄蕊共6枚，不是4枚。B．错误。百合为单子叶植物，雄蕊应为6枚而不是4枚。C．正确。油菜（十字花科）雄蕊6枚、四强；槐树（豆科）雄蕊10枚，常成二体；薄荷（唇形科）雄蕊4枚、二强；百合（百合科）雄蕊6枚，故依次为6、10、4、6。D．错误。槐树雄蕊为10枚而非9枚，薄荷为4枚而非2枚。故答案为C。"
+}

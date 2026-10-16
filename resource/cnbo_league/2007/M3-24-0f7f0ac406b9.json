@@ -1,0 +1,45 @@
+{
+ "id": "M3-24-0f7f0ac406b9",
+ "type": "single",
+ "question": "腔肠动物的神经网是动物界最简单最原始的神经系统。有些腔肠动物仅仅在外胚层有 1 个神经网，有的种类有2 个神经网，有的种类有3 个神经网。水螅神经网的情况是：",
+ "options": {
+  "A": "在外胚层和中胶层各有1 个神经网",
+  "B": "在内外胚层各有1 个神经网",
+  "C": "在外胚层有1 个神经网",
+  "D": "在内、外胚层和中胶层各有1 个神经网"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 24 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。水螅中胶层薄而无细胞，不含神经网。B．错误。内外胚层各有神经网的情况见于某些水母和珊瑚类，不是水螅。C．正确。水螅结构简单，仅在外胚层基部有1个神经网，神经细胞彼此联络成网状，是动物界最简单的神经系统。D．错误。三个神经网见于更复杂的腔肠动物，水螅内胚层没有神经网。故答案为C。"
+}

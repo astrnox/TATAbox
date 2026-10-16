@@ -41,6 +41,8 @@ describe('试题页出卷实时排除回收站题目', () => {
     window.eval(read('js/core/utils.js'));
     window.eval(read('js/core/storage.js'));
     window.eval(read('js/core/rating.js'));
+    // question-model.js：quiz.js 顶层引用 QuestionModel 分值常量
+    window.eval(read('js/core/question-model.js'));
     const quizSrc = read('js/pages/quiz.js').replace(/^('use strict'|"use strict");?\s*\n?/, '');
     window.eval(quizSrc);
 

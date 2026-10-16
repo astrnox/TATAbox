@@ -1,0 +1,45 @@
+{
+ "id": "M1-07-93ea6a51a796",
+ "type": "single",
+ "question": "布雷非德菌素A（Brefeldin A）是一种目前研究得较为透彻的药物，可以阻碍细胞的分泌途径以及囊泡循环转运的过程。用这种药物处理细胞时，细胞内有哪类结构不会在短期内发生变化",
+ "options": {
+  "A": "溶酶体",
+  "B": "液泡",
+  "C": "细胞核",
+  "D": "质膜"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 7 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。溶酶体由高尔基体出芽囊泡形成，分泌途径受阻后其成分与更新会受影响。B．错误。液泡的膜泡运输依赖分泌与囊泡循环，短期内会发生变化。C．正确。布雷非德菌素A破坏囊泡运输与分泌途径，而细胞核不参与该过程，短期内不发生变化。D．错误。质膜更新依赖囊泡融合，短期内会发生变化。故答案为C。"
+}

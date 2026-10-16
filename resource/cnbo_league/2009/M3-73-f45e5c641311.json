@@ -1,0 +1,48 @@
+{
+ "id": "M3-73-f45e5c641311",
+ "type": "single",
+ "question": "荷花的传粉媒介是：",
+ "options": {
+  "A": "风",
+  "B": "水",
+  "C": "昆虫",
+  "D": "水和昆虫"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 72 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。荷花非风媒花，花大、有蜜腺与芳香，不属风媒。B．错误。荷花虽生长于水中，但传粉在水面以上完成，不靠水传粉。C．正确。荷花具鲜艳花被、香味与蜜腺，主要依靠昆虫传粉。D．错误。水不参与其传粉过程。故答案为C。\n【易错易混】易混：长在水中不等于水媒传粉，荷花在水面以上开花、靠昆虫传粉；睡莲、金鱼藻等同理，按'传粉时花是否浸水'判断。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

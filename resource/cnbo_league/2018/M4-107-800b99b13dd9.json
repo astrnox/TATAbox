@@ -1,0 +1,49 @@
+{
+ "id": "M4-107-800b99b13dd9",
+ "type": "single",
+ "question": "如果II-3 跟一位患血友病的男性结婚，他们的第一个孩子不患病的概率为：",
+ "options": {
+  "A": "1/2",
+  "B": "1/4",
+  "C": "1/8",
+  "D": "3/4"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 107 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 107,
+  "section": "第四部分 遗传学与进化生物学、生物系统学等（27 道题32.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "105-107",
+  "stimulus": "右图是一个患X 染色体隐性遗传的血友病家系图谱。"
+ },
+ "explanation": "【解析】A．错误。1/2只考虑了II-3为携带者的情形，未计入其非携带者的可能。B．错误。1/4既非携带者概率也非子代患病概率的正确组合。C．错误。1/8与本题传递方式不符。D．正确。II-3为携带者的概率是1/2：若为携带者，与患者婚配不患病概率1/2；若非携带者，孩子全不患病。合计1/2×1/2+1/2×1=3/4。故答案为D。"
+}

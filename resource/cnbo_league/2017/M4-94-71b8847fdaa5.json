@@ -1,0 +1,50 @@
+{
+ "id": "M4-94-71b8847fdaa5",
+ "type": "single",
+ "question": "某疾病的致病基因位于常染色体上，且该病症是显性性状。现有一对夫妇，自己本身并不表现这种疾病的任何症状，但他们生的两个孩子则均患这种疾病，请问下述哪种遗传机理能够最好地解释这个原因：",
+ "options": {
+  "A": "可变表现度（variable expressivity）",
+  "B": "单亲双体型（uniparental disomy）",
+  "C": "新的突变",
+  "D": "父母某一方的胚胎镶嵌性（germinal mosaicism）",
+  "E": "不完全外显（incomplete penetrance）"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 94 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 94,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（30 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。可变表现度指同基因型个体症状轻重不同，不能解释双亲完全无症状。B．错误。单亲双体型指两条同源染色体来自同一亲本，与此家系表现不符。C．错误。若为新发突变，两个孩子分别新突变的概率极低，非最佳解释。D．错误。生殖系嵌合可解释多个患病孩子，但双亲均不表现且两个孩子均患病的最简解释另有其选。E．正确。不完全外显指携带致病显性基因的个体中有一定比例不发病，双亲携带而不外显、孩子外显患病，是最佳解释。故答案为E。\n【点睛】点睛：'双亲无病、孩子患显性病'先想不完全外显（携带≠发病），'孩子患隐性病、双亲无病'先想携带者或新突变，两个方向别弄反。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

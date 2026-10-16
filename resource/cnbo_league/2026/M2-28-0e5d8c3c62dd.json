@@ -1,0 +1,80 @@
+{
+ "id": "M2-28-0e5d8c3c62dd",
+ "type": "mtf",
+ "question": "将鸭跖草离体叶片分别培养在不同浓度的硝酸盐（图A）、铵盐（图B）、KCl（图C）和NaCl（图 D）中，各组分别添加（黑色柱）或不添加（斜线柱）终浓度为 2 μM 的ABA。1 小时后，测定叶片气孔导度（Y 轴），X 轴为无机盐浓度。各图中斜线柱数据间无统计学差异，B 图中15 和20 mM 两组数据内的ABA 与对照间无统计学差异，其它各组数据内的ABA 与对照间有统计学差异。根据实验结果和相关基础知识，判断下列陈述的正误：",
+ "options": {
+  "A": "在不施加ABA 的情况下，用无机盐处理不影响叶片气孔导度的原因主要是生理条件下这些无机离子在保卫细胞中不存在；",
+  "B": "增加硝酸盐浓度可提高气孔对ABA 的敏感性，而增加铵盐浓度会降低这种敏感性；",
+  "C": "KCl 与NaCl 处理也能显著改变气孔对ABA 的响应，作用与硝酸盐类似；",
+  "D": "气孔导度对ABA 敏感性与钙离子无关。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 28 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-28-0e5d8c3c62dd/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 5,
+  "bbox": [
+   344.0,
+   389.6,
+   522.3,
+   545.8
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-28-0e5d8c3c62dd/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 5,
+   "bbox": [
+    344.0,
+    389.6,
+    522.3,
+    545.8
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。保卫细胞本身含K⁺、Cl⁻等无机离子（气孔运动正是离子进出驱动的）；不加ABA时各组间无差异是实验条件下的净效应问题，不能归因于'离子不存在'。B．正确。由图A、B，随硝酸盐浓度升高ABA效应增强，随铵盐浓度升高ABA效应减弱。C．错误。KCl与NaCl处理组内ABA与对照的差异模式与硝酸盐不同（图C、D），不能说作用类似。D．错误。气孔对ABA的敏感性与Ca²⁺信号密切相关（ABA诱导胞内Ca²⁺升高、驱动阴离子与K⁺外流）。\n【通法】通法（柱状图实验题）：先读'组内有无显著差异'（题干常给出注释），再比'浓度梯度下的趋势'；'生理条件下该离子不存在'类解释几乎总是错的归因。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

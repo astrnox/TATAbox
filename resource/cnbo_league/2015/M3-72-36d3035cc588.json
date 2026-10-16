@@ -1,0 +1,48 @@
+{
+ "id": "M3-72-36d3035cc588",
+ "type": "single",
+ "question": "荒漠生态系统的形成，其决定性的生态因子是：",
+ "options": {
+  "A": "温度高低",
+  "B": "光照的长短",
+  "C": "雨量多少",
+  "D": "草食动物的多寡"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 72 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 72,
+  "section": "第三部分 动物行为学、生态学（23 道题29 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。温度不是荒漠生态系统形成的决定性因子，寒漠的存在说明低温不足以造就荒漠。B．错误。光照长短与荒漠的形成无直接因果关系。C．正确。荒漠生态系统以极端干旱为特征，年降水量稀少是其形成的决定性生态因子。D．错误。草食动物多寡是系统内的生物因素，不是生态系统形成的决定性因子。故答案为C。\n【点睛】点睛：划分生态系统的主导因子看水热组合——荒漠的关键是水（雨量稀少），苔原的关键是热（低温），别把从属因子当决定因子。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-43-baa5b0669c10",
+ "type": "single",
+ "question": "静脉注射下列哪种溶液会直接引起细胞外液体积增加，细胞内液体积降低并且机体总液体量增加？",
+ "options": {
+  "A": "1 L 0.9%氯化钠溶液",
+  "B": "1 L 0.45%氯化钠溶液",
+  "C": "1 L 3%氯化钠溶液",
+  "D": "1 L 纯水"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 43 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 43,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（35 道题44 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。0.9%氯化钠为等渗液，注入后细胞外液增加但水分可分布于细胞内外，不引起细胞内液明显降低。B．错误。0.45%为低渗液，水分进入细胞，细胞内液不会降低。C．正确。3%氯化钠为高渗液，水由细胞内移出，细胞外液增加、细胞内液降低，且输入1 L使总液体量增加。D．错误。纯水为无渗液，大量进入细胞并可溶血。故答案为C。"
+}

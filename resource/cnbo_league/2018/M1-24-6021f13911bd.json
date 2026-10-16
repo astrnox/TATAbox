@@ -1,0 +1,39 @@
+{
+ "id": "M1-24-6021f13911bd",
+ "type": "multiple",
+ "question": "蛋白质在分离纯化过程容易发生变性失活，以下能使蛋白质变性的因素有：",
+ "options": {
+  "A": "高浓度强酸",
+  "B": "紫外线",
+  "C": "低温下使用乙醇",
+  "D": "透析"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.5,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 24 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 24,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

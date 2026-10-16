@@ -1,0 +1,48 @@
+{
+ "id": "M3-42-adb024b0270e",
+ "type": "mtf",
+ "question": "血液承担着运输氧气的作用，对以下相关陈述进行正确或错误判断：",
+ "options": {
+  "A": "兔的肺动脉血比肺静脉血含氧量高；",
+  "B": "狗的冠状动脉血比冠状静脉血含氧量高；",
+  "C": "鲤鱼的出心血比回心血含氧量高；",
+  "D": "鲤鱼的入鳃血比出鳃血含氧量高。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "FTFF",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 42 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 42,
+  "section": "第三部分： 动物学 生理学 生态学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "explanation": "【解析】A．错误。肺动脉流静脉血（低氧），肺静脉回流动脉血（高氧），含氧量应是肺静脉高。B．正确。冠状动脉供动脉血、冠状静脉回流静脉血，动脉血含氧高。C．错误。鱼类心脏泵出的是经体循环回流的低氧血（出心血），回心血（经鳃回心）相对含氧更高，方向与陈述相反。D．错误。入鳃血含氧低，经鳃丝气体交换后出鳃血含氧高（鱼类心脏与鳃的配置使然）。\n【易错易混】易错：哺乳类'动脉=高氧'是例外而非规律——肺动脉低氧；鱼类全身皆静脉血配置。判断含氧量只看'经过气体交换没有'，不背名词。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M2-40-30cc0fdf837f",
+ "type": "single",
+ "question": "被子植物的雌配子体是指",
+ "options": {
+  "A": "雌蕊",
+  "B": "胚珠",
+  "C": "八核胚囊",
+  "D": "子房"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 40 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物学、植物生理学、动物生理学、无脊椎动物学、脊椎动物学（41道题48分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。雌蕊由心皮构成，是花的组成部分，属孢子体结构。B．错误。胚珠是大孢子囊及其附属结构的总称，也属孢子体。C．正确。被子植物的雌配子体即成熟胚囊，由功能性大孢子经三次有丝分裂形成，典型为八核七细胞结构。D．错误。子房是雌蕊基部膨大部分，属孢子体器官。故答案为C。"
+}

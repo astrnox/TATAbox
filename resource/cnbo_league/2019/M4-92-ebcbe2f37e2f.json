@@ -1,0 +1,50 @@
+{
+ "id": "M4-92-ebcbe2f37e2f",
+ "type": "single",
+ "question": "将基因型为Aabb 的玉米花粉给基因型为aaBb 的雌穗授粉，所得到籽粒，其胚乳的基因型有几种？",
+ "options": {
+  "A": "7",
+  "B": "6",
+  "C": "5",
+  "D": "4",
+  "E": "3"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 92 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（29 道题36 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。胚乳基因型并非7种，超出实际组合数。B．错误。6种多于极核与精子的实际组合。C．错误。5种不符合计算结果。D．正确。Aabb产生Ab、ab两种花粉，aaBb的胚珠产生aB、ab两种极核基因型（同一胚珠两极核同型），与两种精子结合，形成aBaB＋Ab、aBaB＋ab、abab＋Ab、abab＋ab共4种胚乳基因型。E．错误。3种少于实际组合。故答案为D。\n【通法】通法（胚乳基因型计数）：胚乳＝2个极核＋1个精子，先列极核可能型数，再列精子型数，两极核同型时组合数＝极核型数×精子型数。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

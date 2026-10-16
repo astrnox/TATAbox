@@ -1,0 +1,39 @@
+{
+ "id": "M1-91-8231f0d60625",
+ "type": "single",
+ "question": "人类R 基因和G 基因位于X 染色体上，B 基因位于常染色体上，它们都跟视觉有关，其中任何一个基因发生隐性失活突变都会导致色盲。假设有一对色盲的夫妇，他们所有的孩子（4 个儿子和2 个女儿）的视觉都正常，那么，这位色盲的父亲B 基因座的基因型如何？",
+ "options": {
+  "A": "BB",
+  "B": "Bb",
+  "C": "bb",
+  "D": "BB 或Bb"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": 1.0,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 91 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 91,
+  "section": "第四部分 遗传学与进化生物学、生物系统学（23 道题25.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ }
+}

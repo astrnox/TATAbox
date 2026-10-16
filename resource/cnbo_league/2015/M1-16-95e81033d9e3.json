@@ -1,0 +1,48 @@
+{
+ "id": "M1-16-95e81033d9e3",
+ "type": "single",
+ "question": "染色质DNA 的碱基可被甲基化，DNA 甲基化的作用是：",
+ "options": {
+  "A": "关闭某些基因",
+  "B": "可关闭某些基因，同时活化另一些基因",
+  "C": "与基因表达调节无关",
+  "D": "活化某些基因"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2015",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2015,
+ "competition": "CnBO",
+ "source": "2015 年全国中学生生物学联赛（CnBO）第 16 题 · 2015 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2015",
+  "title": "2015 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题39 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。仅说'关闭某些基因'不全面，DNA甲基化也有活化基因的情形。B．正确。启动子区CpG岛甲基化通常关闭基因，而基因内部或调控区特定部位的甲基化可解除抑制、活化基因，故甲基化兼具关闭和活化两方面作用。C．错误。DNA甲基化是重要的表观遗传调控方式，与基因表达调节密切相关。D．错误。仅说'活化某些基因'同样不全面。故答案为B。\n【点睛】点睛：DNA甲基化是双向开关——启动子高甲基化多为沉默，基因内甲基化可促进表达，见'仅关闭'或'仅活化'的绝对表述先存疑。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-10-24157fe462ae",
+ "type": "single",
+ "question": "在大麦种子萌发前，将胚去除，种子中的淀粉则不能被水解。若对其施用 ，可最有效地使种子重新获得水解淀粉的能力。",
+ "options": {
+  "A": "淀粉酶",
+  "B": "赤霉素",
+  "C": "碳水化合物",
+  "D": "DNA 酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 10 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。外源淀粉酶虽能水解淀粉，但不属于使种子恢复内源水解能力的处理。B．错误。经典实验中胚分泌的赤霉素诱导糊粉层合成α淀粉酶，外源赤霉素本应最有效，然官方标答不选此项。C．错误。碳水化合物不能诱导淀粉酶基因表达。D．正确。官方标答为DNA 酶，然DNA 酶只降解DNA，与淀粉水解无关，与实验事实相悖（该官方标答存此一说）。故答案为D。\n【点睛】点睛：去胚大麦种子加赤霉素恢复α淀粉酶合成，是赤霉素诱导糊粉层基因表达的经典实验，抓住'胚→赤霉素→糊粉层→淀粉酶'链条。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

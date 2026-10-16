@@ -1,0 +1,84 @@
+{
+ "id": "M2-26-e28d3d8a7f76",
+ "type": "multiple",
+ "question": "倾斜生长的树干往往会偏心生长，使得部分年轮宽度较大而部分年轮宽度较窄。下列有关描述正确的有：",
+ "options": {
+  "A": "图A 在倾斜生长的杨树主茎干下部，会形成窄年轮；",
+  "B": "图A 在倾斜生长的杨树主茎干上部，会形成宽年轮；",
+  "C": "图B 在倾斜生长的杨树主茎干下部，会形成窄年轮；",
+  "D": "图B 在倾斜生长的杨树主茎干上部，会形成宽年轮。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 26 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "26-28",
+  "stimulus": "树木受到斜坡、风吹等外界因素的影响，导致原本直立生长的树干发生倾斜或者弯"
+ },
+ "image": {
+  "file": "assets/questions/M2-26-e28d3d8a7f76/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 412,
+  "bbox": [
+   90.0,
+   618.2,
+   505.0,
+   758.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-26-e28d3d8a7f76/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 412,
+   "bbox": [
+    90.0,
+    618.2,
+    505.0,
+    758.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。图 A 所示偏心模式下，倾斜主茎干下部对应侧形成层活动弱，形成窄年轮。B．错误。图 A 模式中上部对应侧形成层活动强、应为宽年轮，与描述相反。C．错误。图 B 模式下部对应侧形成层活动强，形成的是宽年轮而非窄年轮。D．正确。图 B 所示模式中主茎干上部对应侧形成层活动强，形成宽年轮。故答案为AD。\n【点睛】点睛：倾斜树干偏心生长看图先定哪一侧宽——受压侧与受拉侧的形成层活动不同，年轮宽窄随部位上下对调，读图时把图例与部位一一对上。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

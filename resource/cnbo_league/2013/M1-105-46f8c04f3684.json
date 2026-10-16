@@ -1,0 +1,45 @@
+{
+ "id": "M1-105-46f8c04f3684",
+ "type": "single",
+ "question": "许多箭毒蛙的表皮颜色鲜艳，多半带有红色、黄色或黑色的斑纹，攻击者不敢靠近它们。它们鲜艳的颜色属于",
+ "options": {
+  "A": "保护色",
+  "B": "拟态",
+  "C": "警戒色",
+  "D": "超常刺激"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 105 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 105,
+  "section": "第三部分 （9 道题13 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。保护色要求体色与背景相近以便隐蔽，箭毒蛙鲜艳醒目恰恰相反。B．错误。拟态是模拟他种有毒或不可食的形态，箭毒蛙本身有毒，其鲜艳色是自身发出的信号。C．正确。鲜艳的红、黄、黑斑纹醒目易记，向攻击者宣示自身有毒不可食，属警戒色。D．错误。超常刺激指超越自然刺激的人工夸张信号，与本题色彩防御无关。故答案为C。"
+}

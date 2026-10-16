@@ -1,0 +1,45 @@
+{
+ "id": "M2-58-bcbeebc5b34c",
+ "type": "single",
+ "question": "下列哪些选项导致光呼吸现象的发现：",
+ "options": {
+  "A": "植物的瓦布格效应（Warburg effect）与CO2 猝发现象",
+  "B": "非光化学淬灭与“光合午休”",
+  "C": "满溢效应与光抑制现象",
+  "D": "双光增益效应与红降现象"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 58 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 58,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。瓦布格效应（高氧抑制光合）与光照下CO2猝发（植物在光下突然释放CO2）是发现光呼吸的直接实验证据，高氧条件下光合受抑即因光呼吸消耗了光合中间产物。B．错误。非光化学淬灭与光合午休涉及光能耗散与气孔限制，不是光呼吸发现的证据。C．错误。满溢效应指暗固定产物在光照下向叶绿体外溢出，光抑制指强光损伤，均非其证据。D．错误。双光增益效应与红降现象揭示的是两个光系统，与光呼吸无关。故答案为A。"
+}

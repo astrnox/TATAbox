@@ -1,0 +1,48 @@
+{
+ "id": "M1-46-2cf4df812257",
+ "type": "multiple",
+ "question": "已知哺乳类某细胞的胞浆和细胞外液中钙离子浓度分别为0.0001mM 和1mM，静息膜电位为-90mV。则下列说法中，正确的是：",
+ "options": {
+  "A": "钙离子的平衡电位接近+122mV",
+  "B": "静息状态下，钙离子倾向于向细胞外流动",
+  "C": "静息状态下，钙离子跨细胞膜流动的驱动力不足90mV",
+  "D": "静息状态下，钙离子跨细胞膜流动的驱动力超过90mV"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 46 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。E(Ca)=(RT/zF)ln(1/0.0001)≈61.5×lg(10⁴)≈+122 mV，接近该值。B．错误。静息电位 -90 mV 远低于钙平衡电位，钙离子倾向内流而非外流。C．错误。电化学驱动力为 E(Ca)-Vm≈122-(-90)≈212 mV，远超 90 mV。D．正确。由上计算，驱动力约 212 mV，超过 90 mV。故答案为AD。\n【通法】通法（离子驱动力）：先算平衡电位（能斯特方程），再用 E 减去膜电位得驱动力——二价离子别忘了 z=2 与对数前的系数。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "M3-54-19382be4ec87",
+ "type": "single",
+ "question": "将利用太阳定向的迁徙鸟置于笼中，下图A 为正常迁徙方向，图B 利用镜子改变了太阳照射的方向，则图B 中鸟向什么方向迁飞？",
+ "options": {
+  "A": "东",
+  "B": "南",
+  "C": "西",
+  "D": "北"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 54 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 54,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M3-54-19382be4ec87/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 36,
+  "bbox": [
+   116.1,
+   199.7,
+   478.6,
+   349.9
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-54-19382be4ec87/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2003 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 36,
+   "bbox": [
+    116.1,
+    199.7,
+    478.6,
+    349.9
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。图B中太阳视方位已被镜面改变，鸟不会保持原方向。B．错误。南向与题给航向不符。C．正确。迁徙鸟以太阳罗盘定向，按太阳视位置确定航向；镜面使太阳的照射方向看起来发生改变，鸟随之转向，与图A的正常方向相反，故向西飞。D．错误。北向不是镜像后得到的航向。故答案为C。\n【通法】通法（太阳罗盘实验判读）：鸟按太阳视方位定向，人为改变太阳视位置多少度，航向就改变多少度，左右翻转则航向翻转，方位反向则航向反向180°。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

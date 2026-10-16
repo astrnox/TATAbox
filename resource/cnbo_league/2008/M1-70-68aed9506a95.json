@@ -1,0 +1,48 @@
+{
+ "id": "M1-70-68aed9506a95",
+ "type": "single",
+ "question": "DNA 分子一般有成千上万甚至数百万个碱基对组成，基因中核苷酸的专一序列就是一种信息，编码专一蛋白质的一级序列。双链DNA 之所以具有较高的熔解温度是由于它含有较多的",
+ "options": {
+  "A": "A+G",
+  "B": "C+T",
+  "C": "A+T",
+  "D": "C+G"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 70 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 70,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。A+G是嘌呤总数，与碱基配对的氢键数目无对应关系。B．错误。C+T是嘧啶总数，同样与双链稳定性无关。C．错误。A-T之间只有2个氢键，A+T多则双链稳定性低、Tm下降。D．正确。G-C碱基对之间有3个氢键且堆积作用强，C+G含量越高双链越稳定，熔解温度Tm越高。故答案为D。\n【通法】通法（Tm与碱基组成）：Tm与G+C含量正相关，经验式Tm≈69.3+0.41×(G+C)%；氢键数A-T两个、G-C三个。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

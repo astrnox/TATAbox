@@ -1,0 +1,48 @@
+{
+ "id": "M1-04-9ebea397f985",
+ "type": "mtf",
+ "question": "反义RNA(antisense RNA)是一种与特定mRNA 序列互补的RNA 分子，参与基因表达调控。对以下关于反义 RNA 的陈述进行正误判断：",
+ "options": {
+  "A": "反义RNA 通过增强其靶标mRNA 的翻译效率来调控基因表达",
+  "B": "反义RNA 仅在细胞核内通过干扰转录起始来发挥其调控功能",
+  "C": "反义RNA 可与其互补的mRNA 结合形成双链结构，进而触发目标mRNA 的降解",
+  "D": "在原核生物和真核生物中均存在天然的反义RNA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "FFTT",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞结构",
+ "tags": [
+  "cnbo_league",
+  "2025",
+  "module_1",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2025,
+ "competition": "CnBO",
+ "source": "2025 年全国中学生生物学联赛（CnBO）第 4 题 · 2025 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2025",
+  "title": "2025 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 4,
+  "section": "一. 生物化学、分子生物学、细胞生物学（18 题）",
+  "type_mark": null,
+  "pdf": "https://www.czs.org.cn/cms_files/filemanager/1418207089/attach/20263/fc9bc31858ca4950a1959606cd1cb1ba.pdf"
+ },
+ "explanation": "【解析】A．错误。反义RNA与靶标mRNA互补配对，抑制其翻译或促其降解，是下调而非增强表达。B．错误。反义RNA既可在核内干扰转录（如影响转录延伸），也可在细胞质中作用于翻译水平，作用场所和机制并非'仅在细胞核内干扰转录起始'。C．正确。反义RNA与互补mRNA形成双链区，可被RNase识别切割，或直接阻碍核糖体结合。D．正确。原核（如调控ompF的micF RNA）和真核（如天然反义转录本、Xist）中都存在天然反义RNA。\n【通法】通法：正误判断中出现'仅、只、都、一定、完全'等绝对化表述时，先找反例——生物学中例外极多，绝对化陈述常常是错误项。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

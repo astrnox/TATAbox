@@ -1,0 +1,47 @@
+{
+ "id": "M3-67-9dc42868e40a",
+ "type": "multiple",
+ "question": "根据集合种群理论的内容，以及开展研究工作的可行性（考虑时间、空间等），判断下列适合开展集合种群生态学研究的动物有：",
+ "options": {
+  "A": "蝴蝶",
+  "B": "东北虎",
+  "C": "海豚",
+  "D": "大熊猫",
+  "E": "蜣螂"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "AE",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "种群生态",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 67 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "三. 动物行为学、生态学 19 题 24 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。蝴蝶个体小、扩散快，花境等斑块明确，适合开展集合种群研究。B．错误。东北虎家域巨大、种群稀少，扩散个体难以观测，研究难以实施。C．错误。海豚活动范围广、水体斑块难以划分，不适合该框架。D．错误。大熊猫栖息地虽破碎化明显，但其种群小、扩散弱、世代长，难以满足时间与多斑块重复观测的可行性要求。E．正确。蜣螂依赖牛粪这一可计量的临时斑块，周期短、易操控，是理想材料。故答案为AE。"
+}

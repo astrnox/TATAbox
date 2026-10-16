@@ -1,0 +1,48 @@
+{
+ "id": "M1-67-b588f8b37168",
+ "type": "single",
+ "question": "我们的肌肉细胞不同于神经细胞主要因为",
+ "options": {
+  "A": "它们表达了不同的基因",
+  "B": "它们具有不同的基因",
+  "C": "它们采用不同的遗传密码",
+  "D": "它们具有统一的核糖体"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 67 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 67,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。同一生物体的体细胞基因组基本相同，肌肉细胞与神经细胞的差异源于基因的选择性表达，二者表达的基因谱和蛋白质组不同。B．错误。除免疫细胞基因重排等特例外，体细胞基因组成相同，并非具有不同的基因。C．错误。遗传密码在几乎所有生物中通用，两类细胞使用同一套密码。D．错误。核糖体结构一致，且这不是细胞差异的原因。故答案为A。\n【易错易混】易错点：细胞分化的实质是基因选择性表达，基因不改、密码不改；'基因相同、表达不同'是此类题的总纲。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

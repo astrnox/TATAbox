@@ -1,0 +1,48 @@
+{
+ "id": "M1-07-f63eacc87b85",
+ "type": "single",
+ "question": "下列有关细胞凋亡的描述，错误的是",
+ "options": {
+  "A": "细胞凋亡途经都是依赖于Caspases 来切割底物蛋白的",
+  "B": "细胞凋亡过程中细胞内容物不会外泄",
+  "C": "细胞凋亡是主动地细胞死亡过程",
+  "D": "细胞凋亡途径是细胞信号网络组成的部分"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 7 题 · 2013 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（20 道题21 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出错误的描述，判断词指该选项是否合题意。A．正确。并非所有凋亡途径都依赖caspase切割底物，如AIF、endoG介导的caspase非依赖性凋亡同样存在，该表述不成立，正是应选项。B．错误。凋亡时细胞皱缩、形成凋亡小体并被邻近细胞吞噬，内容物不外泄，该表述成立。C．错误。凋亡是基因调控的主动程序性死亡过程，该表述成立。D．错误。凋亡通路接受多种信号调控，本身就是细胞信号网络的组成部分，该表述成立。故答案为A。\n【易错易混】易错点：'凋亡都靠caspase'是典型绝对化表述，凡见'都是、都依赖'先想反例。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

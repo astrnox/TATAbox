@@ -1,0 +1,48 @@
+{
+ "id": "M3-116-28d4fc9336f6",
+ "type": "single",
+ "question": "中胚层的出现在动物的演化中具有重要的意义。下列结构中属于中胚层来源的是：",
+ "options": {
+  "A": "红珊瑚的骨骼",
+  "B": "涡虫的肠壁",
+  "C": "乌贼的骨骼",
+  "D": "海参的骨针"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 116 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 116,
+  "section": "第四部分 遗传与进化、植物学、无脊椎动物学、脊椎动物学（30道题40分）",
+  "type_mark": "（单选1分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。红珊瑚的骨骼由体壁表皮细胞分泌，属外胚层来源。B．错误。涡虫是三胚层动物，但肠壁上皮由内胚层分化而来。C．错误。乌贼的骨骼（内壳即海螵蛸）由外套膜分泌，外套膜为体壁外胚层来源。D．正确。海参的骨针位于真皮结缔组织中，由中胚层来源的间充质细胞分泌，属中胚层结构。故答案为D。\n【易错易混】易混：体壁衍生物和外壳多为外胚层来源，消化道上皮多为内胚层来源，骨骼、肌肉、循环和生殖系统等多为中胚层来源。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

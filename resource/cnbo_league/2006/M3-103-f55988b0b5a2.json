@@ -1,0 +1,45 @@
+{
+ "id": "M3-103-f55988b0b5a2",
+ "type": "mtf",
+ "question": "下列有关交感神经的特性或功能的叙述，其中正确的是",
+ "options": {
+  "A": "受意识支配",
+  "B": "抑制消化道蠕动",
+  "C": "促进瞳孔扩张",
+  "D": "源自脊髓的胸段"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 3 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共50 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。交感神经属自主神经，不受意识随意支配。B．正确。交感兴奋时胃肠蠕动减弱、消化液分泌减少。C．正确。交感神经兴奋使瞳孔开大肌收缩、瞳孔扩张。D．错误。交感神经节前神经元位于脊髓胸1至腰2节段侧角，即胸腰段，不限于胸段。"
+}

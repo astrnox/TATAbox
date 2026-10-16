@@ -1,0 +1,48 @@
+{
+ "id": "M2-22-d15184d60766",
+ "type": "single",
+ "question": "向日葵的管状花的雄蕊（群）属于：",
+ "options": {
+  "A": "聚药雄蕊",
+  "B": "单体雄蕊",
+  "C": "两体雄蕊",
+  "D": "多体雄蕊"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 22 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。菊科管状花雄蕊的花药彼此联合成筒、花丝分离，为聚药雄蕊，是菊科的科特征。B．错误。单体雄蕊是花丝连成一束（如锦葵科），与向日葵不符。C．错误。两体雄蕊是花丝分成两束（如豆科），与题意不符。D．错误。多体雄蕊是花丝分成多束（如金丝桃），也不符。故答案为A。\n【易错易混】易混：聚药即花药合生看菊科，单体即花丝合为一束看锦葵科，两体即花丝分二束看豆科，多体即花丝分多束看金丝桃、柑橘。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

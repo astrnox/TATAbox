@@ -1,0 +1,48 @@
+{
+ "id": "M1-56-079e251e4ca1",
+ "type": "single",
+ "question": "电子传递链中的哪种组分是脂溶性的",
+ "options": {
+  "A": "辅酶Q",
+  "B": "黄素蛋白",
+  "C": "细胞色素",
+  "D": "FADH2"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 56 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 56,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。辅酶Q带长异戊二烯侧链，是脂溶性小分子，可在线粒体内膜脂双层中自由扩散，把电子从复合物Ⅰ、Ⅱ传给复合物Ⅲ。B．错误。黄素蛋白是膜结合蛋白，其辅基FMN或FAD与蛋白结合，本身不是脂溶性组分。C．错误。细胞色素是含血红素的蛋白质，属膜结合或膜外周蛋白。D．错误。FADH2是黄素蛋白的还原型辅基，并非独立存在于膜脂中的组分。故答案为A。\n【点睛】点睛：呼吸链中唯一能在膜内'游泳'的成员是辅酶Q，其余都是膜上的蛋白复合体。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

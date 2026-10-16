@@ -1,0 +1,77 @@
+{
+ "id": "M2-34-16ac8f1f4e56",
+ "type": "mtf",
+ "question": "植物在登陆过程中产生了许多创新性性状，即在祖先类群中从未存在的性状。根据表型相关基因，判断以下表述的正确与否：",
+ "options": {
+  "A": "调控胚形成的基因最早出现在苔藓植物；",
+  "B": "根据演化的简约性原则，苔类植物叶状营养体上没有气孔是一种祖征；",
+  "C": "角质层与导水细胞的形成是苔藓植物的创新性性状；",
+  "D": "陆生植物的多基因性状，如假根/根系统、胚的形成等是逐渐形成的。"
+ },
+ "answer": null,
+ "answer_key": "FFNT",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2026",
+  "module_2",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2026,
+ "competition": "CnBO",
+ "source": "2026 年全国中学生生物学联赛（CnBO）第 34 题 · 2026 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2026",
+  "title": "2026 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "第二部分：微生物学 植物学 植物生理学",
+  "type_mark": null,
+  "pdf": "http://www.botany.org.cn/swxjs/swxls/202605/P020260519348970681099.pdf"
+ },
+ "group": {
+  "range": "33-34",
+  "stimulus": "苔藓植物包括苔类、藓类和角苔类三大分支，是现存起源"
+ },
+ "answer_note": "官方标答含无法判定字符（N），见 answer_key C 项官方标答为 N（无法判定）。",
+ "image": {
+  "file": "assets/questions/M2-34-16ac8f1f4e56/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 6,
+  "bbox": [
+   61.8,
+   517.3,
+   417.6,
+   696.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-34-16ac8f1f4e56/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2026 年全国中学生生物学联赛试题（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 6,
+   "bbox": [
+    61.8,
+    517.3,
+    417.6,
+    696.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．错误。胚是陆生植物共祖的创新性状，调控胚形成的基因出现在苔藓植物分化之前，'最早出现在苔藓植物'不成立。B．错误。按简约性原则，苔类叶状营养体无气孔更宜解释为次生丢失（衍生状态），而非祖征。C．官方标答为'N'（无法判定）：角质层与导水细胞是否属苔藓植物的创新性性状，官方标答记为无法判定，本项留空待人工裁定。D．正确。假根/根、胚等多基因性状是逐步演化形成的。"
+}

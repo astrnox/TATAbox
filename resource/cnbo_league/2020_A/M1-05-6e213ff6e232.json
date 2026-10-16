@@ -1,0 +1,48 @@
+{
+ "id": "M1-05-6e213ff6e232",
+ "type": "multiple",
+ "question": "在正常细胞中过度增强脂肪酸氧化则抑制葡萄糖的氧化代谢，能够解释该机制的说法有",
+ "options": {
+  "A": "脂肪酸氧化产生乙酰-CoA，后者通过变构激活丙酮酸脱氢酶复合物（PDHc）激酶，来磷酸化 PDHc，从而抑制 PDHc 活性",
+  "B": "脂肪酸氧化产生的乙酰-CoA 不能全部进入TCA 循环彻底氧化，多余的乙酰-CoA 转化为柠檬酸，被运至胞浆中",
+  "C": "柠檬酸变构抑制糖酵解途径中关键酶的活性",
+  "D": "脂肪酸氧化产生的乙酰-CoA 通过激活PEP 羧激酶的活性，从而减少PEP 的生成"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 5 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术   24 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。脂肪酸氧化生成的乙酰-CoA变构激活PDH激酶，后者磷酸化PDHc使其失活，从而抑制葡萄糖氧化。B．正确。乙酰-CoA过量时转化为柠檬酸运出线粒体进入胞浆，是代谢切换的关键中间步骤。C．正确。胞浆柠檬酸变构抑制磷酸果糖激酶等糖酵解关键酶，压低糖酵解流量。D．错误。乙酰-CoA并不通过激活PEP羧激酶减少PEP，该酶属糖异生途径，与此机制无关。故答案为ABC。\n【通法】通法（Randle循环）：脂肪酸氧化增强时靠两条臂抑制糖代谢——乙酰-CoA经PDH激酶关掉PDHc，柠檬酸在胞浆关掉糖酵解，两臂同向即产生葡萄糖氧化抑制。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

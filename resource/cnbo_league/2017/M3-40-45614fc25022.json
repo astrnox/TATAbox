@@ -1,0 +1,45 @@
+{
+ "id": "M3-40-45614fc25022",
+ "type": "single",
+ "question": "剧烈运动时尿量减少的主要原因是：",
+ "options": {
+  "A": "肾小动脉收缩，肾血流量减少",
+  "B": "肾小球滤过膜面积减小",
+  "C": "血管升压素分泌增多",
+  "D": "肾小囊内压升高"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 40 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 40,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官的结构与功能（36 道题46 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。剧烈运动时交感兴奋使肾小动脉收缩、肾血流量与滤过率显著下降，是尿量减少的主要原因。B．错误。滤过膜面积在剧烈运动时无明显减小。C．错误。血管升压素（抗利尿激素）在剧烈运动时变化不是减少尿量的主因，且其作用属次级调节。D．错误。肾小囊内压不是主要变动因素。故答案为A。"
+}

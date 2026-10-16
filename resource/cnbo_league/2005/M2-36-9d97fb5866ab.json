@@ -1,0 +1,48 @@
+{
+ "id": "M2-36-9d97fb5866ab",
+ "type": "single",
+ "question": "下列过程中哪一个释放能量最多？",
+ "options": {
+  "A": "糖酵解",
+  "B": "三羧酸循环",
+  "C": "生物氧化",
+  "D": "暗反应"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 36 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。糖酵解只把葡萄糖分解为丙酮酸，净产少量ATP和NADH，释放能量有限。B．错误。三羧酸循环只彻底分解乙酰辅酶A，还需呼吸链继续氧化，单独计其释放能量不是最多。C．正确。生物氧化是有机物在细胞内彻底氧化为二氧化碳和水并释放全部能量的过程，涵盖糖酵解、三羧酸循环和氧化磷酸化，1分子葡萄糖约放出2870千焦能量，故释放能量最多。D．错误。暗反应是耗能固定二氧化碳的过程，并不释放能量。故答案为C。\n【通法】通法（放能比较）：整体多于部分，彻底氧化多于部分氧化；分解代谢放能、合成代谢耗能，先看过程方向再比能量。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

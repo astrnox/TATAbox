@@ -1,0 +1,45 @@
+{
+ "id": "M3-28-b1fc917b8c3b",
+ "type": "single",
+ "question": "节肢动物的一大特征是具有带关节的附肢。在演化的过程中，附肢的形态和功能发生了变化。以下节肢动物的身体部位不是由附肢演化而来的是",
+ "options": {
+  "A": "小颚",
+  "B": "纺绩器",
+  "C": "中尾丝",
+  "D": "脚须"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 28 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（22 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。小颚是头部附肢特化形成的口器组成部分。B．错误。纺绩器（纺器）由腹部附肢特化而来，见于蜘蛛等。C．正确。中尾丝由腹部末节的非附肢性结构（尾节）延伸形成，不由附肢演化，正是应选项。D．错误。脚须（颚肢）是第一对胸足特化而成的头部附肢。故答案为C。"
+}

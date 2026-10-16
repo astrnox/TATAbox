@@ -1,0 +1,81 @@
+{
+ "id": "M3-74-71e1879fda4b",
+ "type": "multiple",
+ "question": "如果从该生态系统中移除狼，那么以下情况中会发生的有",
+ "options": {
+  "A": "被马鹿哨食的三角杨的比例将增加",
+  "B": "三角杨幼树每年实际增长的高度将增加",
+  "C": "马鹿对三角杨的啃食强度将降低",
+  "D": "三角杨的生长将受到更强的抑制"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_3",
+ "subject": "生态学",
+ "concept": "生态系统",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 74 题 · 2020 全国中学生生物学联赛理论试卷（A 卷）",
+ "paper": {
+  "key": "2020_A",
+  "title": "2020 全国中学生生物学联赛理论试卷（A 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "三. 动物行为学、生态学   20 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "72-74",
+  "stimulus": "北美的黄石国家公园内，野生狼种群在历史上曾被人为清除。20 世纪90 年代中"
+ },
+ "image": {
+  "file": "assets/questions/M3-74-71e1879fda4b/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 349,
+  "bbox": [
+   141.6,
+   75.6,
+   453.4,
+   271.2
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M3-74-71e1879fda4b/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2020 全国中学生生物学联赛理论试卷（A 卷）（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 349,
+   "bbox": [
+    141.6,
+    75.6,
+    453.4,
+    271.2
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】A．正确。失去狼的捕食压力后马鹿数量与取食时间增加，被啃食的三角杨比例上升。B．错误。啃食加剧使实际增长高度下降而非增加。C．错误。马鹿不再受捕食威胁，啃食强度将上升而非降低。D．正确。啃食加重使三角杨生长受到更强抑制。故答案为AD。"
+}

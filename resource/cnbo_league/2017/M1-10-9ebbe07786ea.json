@@ -1,0 +1,48 @@
+{
+ "id": "M1-10-9ebbe07786ea",
+ "type": "single",
+ "question": "下列核酸合成过程中，哪项是无需模板的？",
+ "options": {
+  "A": "转录",
+  "B": "逆转录",
+  "C": "PCR",
+  "D": "合成真核细胞中mRNA 的3′polyA"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "转录",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 10 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 10,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。转录以DNA一条链为模板。B．错误。逆转录以RNA为模板合成DNA。C．错误。PCR以待扩增DNA片段两端的引物与模板链为依据延伸，离不开模板。D．正确。真核mRNA的3′polyA尾由多聚腺苷酸聚合酶在转录后按特定信号添加，不需要DNA模板。故答案为D。\n【通法】通法（核酸合成查模板）：转录、逆转录、复制、PCR都有模板，唯'加尾、加帽'类转录后加工不需要模板——见'polyA'即想无模板添加。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

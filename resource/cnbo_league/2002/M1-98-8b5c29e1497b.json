@@ -1,0 +1,48 @@
+{
+ "id": "M1-98-8b5c29e1497b",
+ "type": "single",
+ "question": "食蚜蝇长得极像是蜜峰，这种现象属于：",
+ "options": {
+  "A": "警戒色",
+  "B": "混淆色",
+  "C": "拟态",
+  "D": "隐蔽"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 98 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 98,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。警戒色是本身有毒或不可食的动物具鲜艳醒目的体色以警告天敌，食蚜蝇无毒无刺，不属此类。B．错误。混淆色指体表斑纹在运动时使捕食者难以判断其准确位置，与长得像另一种生物无关。C．正确。食蚜蝇无螫针，却在体色、体型上极似有毒刺的蜜蜂，使天敌不敢取食，属贝茨拟态，即无害种模仿有害种。D．错误。隐蔽指体色与背景一致而不易被发现，与模仿他种完全不同。故答案为C。\n【通法】通法（防御色型判断）：先看是否像背景——像背景为保护色；再看是否像别的生物——像有害生物为拟态；本身有害而色鲜为警戒色；运动时视觉模糊为混淆色。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

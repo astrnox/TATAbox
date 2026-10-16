@@ -1,0 +1,48 @@
+{
+ "id": "M3-49-58f6617e7f0b",
+ "type": "single",
+ "question": "鲨鱼是典型的水生脊椎动物，在它的心脏结构中除了具有心房、心室和静脉窦外，还具有下列哪一项：",
+ "options": {
+  "A": "动脉干",
+  "B": "动脉球",
+  "C": "动脉腺",
+  "D": "动脉圆锥"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "循环系统",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 49 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 49,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。动脉干是胚胎期心球的衍生物，不属鱼类心脏的组成部分。B．错误。动脉球是硬骨鱼类心室前方的弹性膨大，可缓冲血压，鲨鱼等软骨鱼并无此结构。C．错误。动脉腺不是心脏的组成部分。D．正确。软骨鱼类心脏由静脉窦、心房、心室和动脉圆锥四部分组成，动脉圆锥壁含平滑肌和瓣膜，可调节进入腹主动脉的血流。故答案为D。\n【易错易混】易混：软骨鱼心脏有动脉圆锥，硬骨鱼心脏有动脉球，两者都在心室前方但来源和结构不同，勿张冠李戴。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

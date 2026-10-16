@@ -1,0 +1,50 @@
+{
+ "id": "M1-33-2221c99a623b",
+ "type": "single",
+ "question": "当去甲肾上腺素与β 受体结合时，下列哪一种肌肉收缩或收缩加强",
+ "options": {
+  "A": "心室肌",
+  "B": "子宫平滑肌",
+  "C": "小肠平滑肌",
+  "D": "血管平滑肌",
+  "E": "支气管平滑肌"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 33 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 33,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。去甲肾上腺素与心室肌β1受体结合，经cAMP-PKA通路增强Ca2+内流，使心肌收缩加强。B．错误。子宫平滑肌β2受体兴奋引起舒张。C．错误。小肠平滑肌β受体兴奋使平滑肌舒张、蠕动减弱。D．错误。血管平滑肌β2受体兴奋引起舒张、血管扩张。E．错误。支气管平滑肌β2受体兴奋引起舒张。故答案为A。\n【通法】通法（肾上腺素受体效应）：α1→平滑肌收缩（血管、子宫、瞳孔开大肌）；β1→心肌收缩加强、心率加快；β2→平滑肌舒张（支气管、血管、子宫、胃肠）。先分亚型，再判收缩舒张。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

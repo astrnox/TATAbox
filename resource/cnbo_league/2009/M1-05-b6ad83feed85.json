@@ -1,0 +1,45 @@
+{
+ "id": "M1-05-b6ad83feed85",
+ "type": "single",
+ "question": "冬储大白菜帮结冰后，烹饪前最恰当的处理方法是：",
+ "options": {
+  "A": "直接炒或煮",
+  "B": "用热水使冰融化",
+  "C": "放在暖气旁使冰融化",
+  "D": "放在冷凉处使冰缓慢融化"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 5 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。直接炒煮时冰晶快速融化、细胞被胀破，汁液大量外流，口感和营养都受损。B．错误。热水解冻过快且受热不均，外层已变性而内部仍有冰。C．错误。暖气旁温度高，解冻过快且汁液流失多，还易滋生微生物。D．正确。在冷凉处让冰缓慢融化，细胞能逐步复水，汁液流失最少，最为恰当。故答案为D。"
+}

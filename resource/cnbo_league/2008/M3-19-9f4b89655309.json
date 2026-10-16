@@ -1,0 +1,45 @@
+{
+ "id": "M3-19-9f4b89655309",
+ "type": "single",
+ "question": "对于脊椎动物形态结构的表述正确的是",
+ "options": {
+  "A": "侧线器官是水生鱼类所特有的",
+  "B": "内鼻孔出现于鱼类",
+  "C": "跗间关节始见于爬行动物",
+  "D": "槽生齿是哺乳类特有的"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 19 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 19,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。侧线器官并非鱼类特有，水生两栖类的幼体（如蝌蚪）也具侧线，表述不成立。B．错误。内鼻孔是与用肺呼吸空气相联系的结构，软骨鱼和辐鳍鱼均无内鼻孔，它随四足动物登陆才普遍出现（总鳍鱼、肺鱼等具内鼻孔，该官方标答存此一说）。C．正确。跗间关节始见于爬行动物，使后肢在陆地上推进更有效，是适应陆生生活的进步特征。D．错误。槽生齿并非哺乳类特有，鳄类同样为槽生齿。故答案为C。"
+}

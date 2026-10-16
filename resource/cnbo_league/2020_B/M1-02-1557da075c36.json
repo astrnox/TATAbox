@@ -1,0 +1,48 @@
+{
+ "id": "M1-02-1557da075c36",
+ "type": "multiple",
+ "question": "以下可用于检测某人是否被 SARS-CoV-2 感染的方法有：",
+ "options": {
+  "A": "实时荧光定量 PCR；",
+  "B": "基于 IgM 的 ELISA 法；",
+  "C": "基于 IgE 的 ELISA 法；",
+  "D": "基于 IgG 的 ELISA 法"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "PCR技术",
+ "tags": [
+  "cnbo_league",
+  "2020",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2020,
+ "competition": "CnBO",
+ "source": "2020 年全国中学生生物学联赛（CnBO）第 2 题 · 2020 全国中学生生物学联赛理论试卷（B 卷）",
+ "paper": {
+  "key": "2020_B",
+  "title": "2020 全国中学生生物学联赛理论试卷（B 卷）",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一. 细胞生物学、生物化学、微生物学、生物信息学、生物技术 31 题 35 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。实时荧光定量PCR可检测病毒RNA，直接判断现症感染。B．正确。IgM是感染早期产生的抗体，阳性提示近期感染。C．错误。IgE介导过敏反应，与新冠病毒免疫应答无关。D．正确。IgG出现较晚且持续时间长，可用于既往感染的血清学检测。故答案为ABD。\n【点睛】点睛：新冠检测两条线——核酸（qPCR）抓病毒本身，抗体（IgM抓急性、IgG抓既往）抓免疫痕迹，IgE属过敏体系，见到即排除。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

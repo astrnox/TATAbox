@@ -1,0 +1,45 @@
+{
+ "id": "M3-36-6d05e980f211",
+ "type": "single",
+ "question": "以下细胞类型参与血脑屏障形成的是：",
+ "options": {
+  "A": "星形胶质细胞",
+  "B": "神经元",
+  "C": "少突胶质细胞",
+  "D": "小胶质细胞"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "神经系统",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 36 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 36,
+  "section": "二、植物和动物的解剖、生理、组织和器官的结构与功能（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。星形胶质细胞的血管周足包绕毛细血管，与内皮细胞紧密接触，共同构成血脑屏障的结构基础。B．错误。神经元是信号执行细胞，不参与屏障构建。C．错误。少突胶质细胞负责中枢神经的髓鞘形成。D．错误。小胶质细胞是中枢的吞噬细胞，属免疫防御成分。故答案为A。"
+}

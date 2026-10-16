@@ -1,0 +1,45 @@
+{
+ "id": "M2-102-05ca75e81b84",
+ "type": "multiple",
+ "question": "光合作用电子传递过程中",
+ "options": {
+  "A": "电子总是成对地转移",
+  "B": "电子总是不成对地转移",
+  "C": "电子总是从低电位载体向高电位载体转移",
+  "D": "叶绿素参与电子传递"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "光合作用",
+ "tags": [
+  "cnbo_league",
+  "2004",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2004,
+ "competition": "CnBO",
+ "source": "2004 年全国中学生生物学联赛（CnBO）第 102 题 · 2004 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2004",
+  "title": "2004 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 102,
+  "section": "二、多项选择题(每题有—个或一个以上正确答案．答案完全正确者得2 分；不答或未完全",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】光合电子传递链由PSⅡ、PQ、Cyt b6f、PC、PSⅠ、Fd等载体组成。A．错误。水裂解释放的电子经载体逐个传递，NADPH生成需两次单电子还原，'总是成对'不成立。B．错误。PQ等载体可同时携带两个电子和质子（PQH2），并非总是单个转移，'总是'过于绝对。C．错误。除光激发的两处'上坡'（P680、P700吸光后电子跃入高能低电位态）外，电子由高能载体向低能载体逐级下坡传递，'总是从低电位向高电位'把方向说反，'总是'也不成立。D．正确。反应中心色素P680、P700直接给出和接受电子，天线叶绿素吸收传递光能，叶绿素确参与电子传递。故答案为D。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M3-110-5739996a1f3e",
+ "type": "single",
+ "question": "不少食草兽类与其食性和取食行为相适应，消化系统出现了复胃，牛羊具有4 室，哪部分属真正的胃：",
+ "options": {
+  "A": "瘤胃",
+  "B": "网胃",
+  "C": "瓣胃",
+  "D": "皱胃"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 110 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 110,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。瘤胃由前肠特化而来，是微生物发酵分解纤维素的场所，无胃腺。B．错误。网胃与瘤胃协同发酵并参与反刍，也不分泌胃液。C．错误。瓣胃主要压榨食糜、吸收水分和无机盐，无胃腺。D．正确。皱胃内壁有胃腺分布，分泌盐酸和胃蛋白酶原，进行蛋白质的化学消化，是四室中唯一真正意义上的胃。故答案为D。\n【点睛】点睛：瘤胃、网胃、瓣胃均由前肠特化、以微生物发酵为主，只有皱胃保留胃腺，'真胃'之名由此而来。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

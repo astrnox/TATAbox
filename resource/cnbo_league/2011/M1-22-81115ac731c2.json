@@ -1,0 +1,48 @@
+{
+ "id": "M1-22-81115ac731c2",
+ "type": "multiple",
+ "question": "下列不参与DNA 复制解链的是：",
+ "options": {
+  "A": "单链结合蛋白（SSB）",
+  "B": "拓扑异构酶",
+  "C": "DNA 解链酶",
+  "D": "引发酶"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "AD",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 22 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 22,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（多选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出不参与DNA复制解链的成分，判断词指该选项是否合题意。A．正确。单链结合蛋白（SSB）只结合并稳定已解开的单链、防其复链，本身不解链，正是应选项。B．错误。拓扑异构酶切断并重接磷酸二酯键、消除解链产生的超螺旋张力，直接参与解链，表述成立，不合题意。C．错误。解链酶水解ATP沿复制叉解开双链，是解链的核心酶，表述成立，不合题意。D．正确。引发酶合成RNA引物、为DNA聚合酶提供3'-OH，与解开双链无关，正是应选项。故答案为AD。\n【通法】通法（复制叉分工）：解链酶解链、拓扑异构酶消超螺旋、SSB稳单链、引发酶合成引物、DNA聚合酶延伸，按功能对号入座即可判断。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

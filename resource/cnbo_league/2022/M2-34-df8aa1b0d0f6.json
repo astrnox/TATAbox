@@ -1,0 +1,95 @@
+{
+ "id": "M2-34-df8aa1b0d0f6",
+ "type": "single",
+ "question": "植物叶片上的表皮毛形成与赤霉素(GA)和茉莉酸(JA)密切相关。PAC 是GA 的合成抑制剂，用一定浓度的GA、JA 或PAC 处理叶片后得出的结果如图。根据该图中的数据分析，不能得出的结论是：",
+ "options": {
+  "A": "GA 和JA 均促进表皮毛的形成；",
+  "B": "PAC 处理可抑制叶片表皮毛的形成；",
+  "C": "用PAC 和JA 处理促进表皮毛的形成；",
+  "D": "GA 和JA 同时处理，促进表皮毛形成的作用更显著。"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": true,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 34 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 34,
+  "section": "二．植物的解剖 植物生理 植物演化   19 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "image": {
+  "file": "assets/questions/M2-34-df8aa1b0d0f6/fig1.png",
+  "caption": "",
+  "source": "paper",
+  "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+  "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+  "page": 414,
+  "bbox": [
+   90.0,
+   497.8,
+   253.8,
+   660.1
+  ],
+  "kind": "raster"
+ },
+ "images": [
+  {
+   "file": "assets/questions/M2-34-df8aa1b0d0f6/fig1.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 414,
+   "bbox": [
+    90.0,
+    497.8,
+    253.8,
+    660.1
+   ],
+   "kind": "raster"
+  },
+  {
+   "file": "assets/questions/M2-34-df8aa1b0d0f6/fig2.png",
+   "caption": "",
+   "source": "paper",
+   "credit": "原卷图：2022 全国中学生生物学联赛理论试卷（全国中学生生物学竞赛委员会公开试题）",
+   "license": "官方公开试题原图，仅限学习使用，版权归原发布方",
+   "page": 414,
+   "bbox": [
+    253.8,
+    535.7,
+    500.4,
+    660.1
+   ],
+   "kind": "raster"
+  }
+ ],
+ "explanation": "【解析】本题要求选出不能得出的结论，判断词指该选项是否合题意。A．错误（表述成立）。与对照相比 GA 与 JA 处理均使表皮毛增多，该结论可得出。B．错误（表述成立）。PAC 抑制 GA 合成，处理后表皮毛减少，该结论可得出。C．正确（应选）。图中未给出 PAC 与 JA 联合处理的数据或该组合无显著促进，无法得出此结论，正是应选项。D．错误（表述成立）。GA 与 JA 同时处理组的促进作用强于单用，该结论可得出。故答案为C。\n【通法】通法（实验图结论题）：结论不得超出数据——先数清楚图里有几组处理，凡涉及图中没有的组合或比较，一律无法得出。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

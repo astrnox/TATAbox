@@ -1,0 +1,45 @@
+{
+ "id": "M1-05-61d28095e676",
+ "type": "single",
+ "question": "下列有关核糖体的陈述，正确的是：",
+ "options": {
+  "A": "真核细胞核糖体大亚基的rRNA 包括5S、5.8S、28S 三种",
+  "B": "在体外实验中，随着溶液中Mg2+浓度升高，完整的核糖体易解聚为大小亚基",
+  "C": "在体外实验中，随着溶液中Mg2+浓度降低，核糖体易形成二聚体",
+  "D": "核糖体中发挥主要催化作用的成分是某些核糖体蛋白"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2017",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2017,
+ "competition": "CnBO",
+ "source": "2017 年全国中学生生物学联赛（CnBO）第 5 题 · 2017 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2017",
+  "title": "2017 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 5,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题38 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。真核细胞核糖体大亚基含5S、5.8S、28S三种rRNA，小亚基含18S rRNA。B．错误。Mg2+起稳定亚基间结合的作用，浓度升高使核糖体保持完整，浓度降低才解聚。C．错误。Mg2+浓度过低时解聚为亚基，过高时反而促使核糖体形成二聚体。D．错误。核糖体中起主要催化作用（肽基转移酶活性）的是rRNA，核糖体蛋白主要起结构支撑作用。故答案为A。"
+}

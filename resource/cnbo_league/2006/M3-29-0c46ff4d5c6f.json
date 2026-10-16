@@ -1,0 +1,50 @@
+{
+ "id": "M3-29-0c46ff4d5c6f",
+ "type": "single",
+ "question": "动物原始分节现象发生在。",
+ "options": {
+  "A": "节肢动物",
+  "B": "环节动物",
+  "C": "软体动物",
+  "D": "线虫动物",
+  "E": "原生动物"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 29 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 29,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。节肢动物体节愈合成头、胸、腹且附肢分节，是分节现象的次生特化，出现晚于环节动物。B．正确。环节动物身体由许多形态相似的体节重复排列，属同律分节，是原始分节现象的代表。C．错误。软体动物身体分为头、足、内脏团和外套膜，从不分节。D．错误。线虫动物体呈圆筒形、具假体腔而无分节现象。E．错误。原生动物为单细胞，无体节可言。故答案为B。\n【易错易混】易混：'分节'指体节的重复出现，同律分节看环节动物，附肢分节看节肢动物，软体与线虫均不分节。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M4-52-581f3ddd559f",
+ "type": "single",
+ "question": "已知在人类中有一种见强光就打喷嚏的achoo 综合征和由于焦虑引起的颤抖下巴（trembling chin）的两种表型都属于显性表型，那么对于achoo 基因和tremblingchin 基因均为杂合子父母的子女中第一个孩子具有achoo 综合征而没有trembling chin 的概率和他们的子女中第一个孩子不具有achoo 综合征或trembling chin 的概率分别是：",
+ "options": {
+  "A": "1/16 和3/16",
+  "B": "3/16 和3/16",
+  "C": "1/16 和1/16",
+  "D": "3/16 和1/16"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 52 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 52,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。1/16不是'患achoo而无颤抖下巴'的概率，3/16也不是'两性状皆无'的概率。B．错误。3/16只是第一问的答案，第二问并非3/16。C．错误。第一问应为3/16而非1/16。D．正确。双亲均为双杂合AaBb×AaBb，第一问'患achoo而不患trembling chin'即A-bb，概率3/4×1/4=3/16；第二问按两性状皆无理解即aabb，概率1/4×1/4=1/16。故答案为D。"
+}

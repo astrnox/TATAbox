@@ -1,0 +1,45 @@
+{
+ "id": "M1-09-8b25d71fda33",
+ "type": "single",
+ "question": "二糖（双糖）是最简单的寡糖，蔗糖、麦芽糖、纤维二糖和乳糖都是常见的二糖。关于这些二糖的说法正确的是：",
+ "options": {
+  "A": "这些二糖都能够还原斐林(Fehling)试剂；",
+  "B": "除蔗糖外，其他二糖都能够还原斐林试剂；",
+  "C": "除纤维二糖外，其他二糖都能够还原斐林试剂；",
+  "D": "蔗糖与纤维二糖是非还原性糖，麦芽糖与乳糖是还原性糖。"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 9 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 9,
+  "section": "一．生物化学 分子生物学 细胞生物学 微生物学   25 题",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。蔗糖的异头碳参与糖苷键，是非还原糖，不能还原斐林试剂。B．正确。麦芽糖、纤维二糖与乳糖均保留游离的半缩醛羟基，是还原糖，除蔗糖外都能还原斐林试剂。C．错误。纤维二糖是还原糖，可还原斐林试剂，排除它没有依据。D．错误。纤维二糖是还原性糖，仅蔗糖为非还原糖，该选项对纤维二糖的判断有误。故答案为B。"
+}

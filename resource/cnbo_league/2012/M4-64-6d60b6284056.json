@@ -1,0 +1,50 @@
+{
+ "id": "M4-64-6d60b6284056",
+ "type": "single",
+ "question": "连锁基因之间存在干涉，干涉系数是",
+ "options": {
+  "A": "0.1",
+  "B": "0.2",
+  "C": "0.3",
+  "D": "0.4",
+  "E": "0.5"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "E",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 64 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 64,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。按观察双交换值与期望值计算，干涉系数不为0.1。B．错误。同理不为0.2。C．错误。同理不为0.3。D．错误。同理不为0.4。E．正确。观察双交换值为（6＋9）/1000＝1.5%，期望双交换值为两端区间重组值之积10%×30%＝3%，并发系数＝1.5%/3%＝0.5，干涉系数＝1−0.5＝0.5。故答案为E。\n【通法】通法（干涉系数）：I＝1−观察双交换/期望双交换，期望值取两个区间重组值之积，先算并发系数再用1减去即得。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-08-1a40613faf20",
+ "type": "single",
+ "question": "人眼有3 种视锥细胞，分别对下面哪3 种颜色最敏感：",
+ "options": {
+  "A": "蓝，黄，绿",
+  "B": "红，蓝，绿",
+  "C": "蓝，红，黄",
+  "D": "绿，红，黄"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 8 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 8,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。三种视锥细胞视色素的吸收峰约在420 nm、530 nm和560 nm，分别对应蓝、绿、黄（黄绿）光区，故对蓝、黄、绿最敏感。B．错误。长波视锥的吸收峰在黄绿区而非红区，'红、蓝、绿'的说法不准确。C．错误。红、黄、蓝没有对应三种视色素的实际吸收峰。D．错误。绿、红、黄既错把长波峰记成红色，又漏了蓝光。故答案为A。\n【易错易混】易混：色觉三原色通俗说成'红、绿、蓝'，那是配色的说法；按视锥色素吸收光谱则是蓝（约420 nm）、绿（约530 nm）、黄（约560 nm）三峰，本题按吸收峰设问。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

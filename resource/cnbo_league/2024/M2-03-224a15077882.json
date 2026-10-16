@@ -1,0 +1,45 @@
+{
+ "id": "M2-03-224a15077882",
+ "type": "multiple",
+ "question": "关于豆科植物与根瘤菌的共生关系，下列叙述正确的是：",
+ "options": {
+  "A": "根瘤菌为豆科植物提供含氮化合物；",
+  "B": "根瘤菌固定的氮元素不会释放到土壤中；",
+  "C": "豆科植物为根瘤菌提供生长所需氨基酸；",
+  "D": "豆科植物分泌特殊物质，诱导根瘤菌靠近并感染其根部。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": true
+ },
+ "answer_key": "ACD",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "微生物生态",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_2",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 3 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 3,
+  "section": "一. 生物化学、分子生物学、细胞生物学、微生物学（共31 题，44 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。根瘤菌将 N2 固定为氨，进而合成含氮化合物供给豆科植物。B．错误。部分固定氮会以氨基酸等形式释放到土壤中，并非完全不释放。C．正确。豆科植物光合产物以糖等形式提供，根瘤菌据此合成自身所需氨基酸等含氮物，实为共生碳氮交换。D．正确。豆科植物分泌类黄酮等信号物质诱导根瘤菌趋化与结瘤基因表达，使其靠近并感染根部。故答案为ACD。"
+}

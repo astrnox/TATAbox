@@ -1,0 +1,50 @@
+{
+ "id": "M1-31-0d45d6a795b7",
+ "type": "single",
+ "question": "将两段寡聚脱氧核苷酸片段5′-ACCACGTAACGGA-3′和5′-GTTAC-3′与DNA 聚合酶一起加到含有dATP、dGTP、dCTP 和dTTP 的反应混合物之中，预测反应的终产物被参入的各碱基的比例是：",
+ "options": {
+  "A": "2C∶1T",
+  "B": "1G∶1T",
+  "C": "3G∶2T",
+  "D": "3G∶3T∶2C",
+  "E": "5T∶4G∶3C∶1A"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 31 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 31,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。2C∶1T没有按模板方向逐位对应统计。B．错误。1G∶1T只算了延伸开始的两个核苷酸。C．正确。引物5′-GTTAC-3′与模板中的GTAAC段互补，其3′端落在模板的G处，聚合酶沿模板5′→3′方向读取剩余的C、A、C、C、A，依次参入G、T、G、G、T，即3个G和2个T。D．错误。3G∶3T∶2C把引物或模板的碱基混入了参入统计。E．错误。5T∶4G∶3C∶1A接近整条模板互补链的碱基组成，与实际参入的5个核苷酸无关。故答案为C。\n【通法】通法（引物延伸计算）：先把引物3′端按互补关系定位到模板，再沿模板5′→3′逐位读模板、写互补碱基，只统计新参入的脱氧核苷酸。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

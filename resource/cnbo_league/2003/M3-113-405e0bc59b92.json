@@ -1,0 +1,45 @@
+{
+ "id": "M3-113-405e0bc59b92",
+ "type": "single",
+ "question": "脊椎动物的口腔和食道的上皮组织是：",
+ "options": {
+  "A": "单层柱状上皮",
+  "B": "单层立方上皮",
+  "C": "单层扁平上皮",
+  "D": "复层扁平上皮"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "动物组织",
+ "tags": [
+  "cnbo_league",
+  "2003",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2003,
+ "competition": "CnBO",
+ "source": "2003 年全国中学生生物学联赛（CnBO）第 113 题 · 2003 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2003",
+  "title": "2003 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 113,
+  "section": "一、单项选择(每小题1 分，共115 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。单层柱状上皮衬于胃肠腔面，利于消化吸收。B．错误。单层立方上皮见于肾小管和腺体导管等处。C．错误。单层扁平上皮构成血管内皮和胸腹膜间皮。D．正确。口腔和食道衬以复层扁平上皮，多层细胞耐摩擦、抗损伤，与其承受食物机械磨损的功能相适应。故答案为D。"
+}

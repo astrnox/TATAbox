@@ -1,0 +1,45 @@
+{
+ "id": "M1-82-651cfc786a9c",
+ "type": "single",
+ "question": "黄豆、白菜、芹菜、向日葵、黄瓜的果实类型依次是：",
+ "options": {
+  "A": "荚果、角果、双悬果、坚果、瓠果",
+  "B": "瘦果、角果、坚果、荚果、浆果",
+  "C": "蓇葖果、荚果、瘦果、小坚果、胞果",
+  "D": "荚果、角果、双悬果、瘦果、瓠果"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2009",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2009,
+ "competition": "CnBO",
+ "source": "2009 年全国中学生生物学联赛（CnBO）第 81 题 · 2009 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2009",
+  "title": "2009 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 81,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。向日葵的果实是瘦果而非坚果，其果皮薄而与种皮分离。B．错误。黄豆的果实是荚果而非瘦果，开头即错。C．错误。黄豆为荚果而非蓇葖果，芹菜为双悬果而非瘦果。D．正确。黄豆属豆科为荚果，白菜属十字花科为长角果，芹菜属伞形科为双悬果，向日葵属菊科为瘦果，黄瓜属葫芦科为瓠果。故答案为D。"
+}

@@ -1,0 +1,50 @@
+{
+ "id": "M4-62-8c8c527cdfdd",
+ "type": "single",
+ "question": "连锁的基因中，相距最近的两个基因是",
+ "options": {
+  "A": "A和D",
+  "B": "B和D",
+  "C": "A和C",
+  "D": "B和C",
+  "E": "无法判断"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "A",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "连锁与交换",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_4",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 62 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "四、遗传学与进化生物学、生物系统学 （23 道题30 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。A与D的重组值为0，在六对组合中最小，故两者相距最近。B．错误。B与D的重组值为10%，大于0。C．错误。A与C的重组值为30%，远大于0。D．错误。B与C的重组值为37%，是相距最远的一对。E．错误。重组值可直接反映距离，'无法判断'不成立。故答案为A。\n【点睛】点睛：重组值为0即完全连锁，说明两基因间未发生可检出的交换，正是距离最近的一对。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

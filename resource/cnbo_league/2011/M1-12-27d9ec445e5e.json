@@ -1,0 +1,50 @@
+{
+ "id": "M1-12-27d9ec445e5e",
+ "type": "multiple",
+ "question": "双缩脲反应主要用来定性或定量测定下列哪些物质？",
+ "options": {
+  "A": "氨基酸",
+  "B": "多肽",
+  "C": "糖",
+  "D": "脂",
+  "E": "蛋白质"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false,
+  "E": true
+ },
+ "answer_key": "B E",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 12 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。双缩脲反应检测的是肽键，氨基酸不含肽键，不能发生该反应。B．正确。多肽含多个肽键，碱性条件下Cu2+与两个以上肽键络合显紫色，可用于定性和定量测定。C．错误。糖类不含肽键，用斐林试剂、蒽酮试剂等检测，与双缩脲反应无关。D．错误。脂类不含肽键，不发生双缩脲反应。E．正确。蛋白质由大量氨基酸经肽键连接而成，是双缩脲反应最经典的测定对象。故答案为BE。\n【易错易混】易混：双缩脲反应显色的是肽键而非蛋白质本身，故三肽及以上均可显色，氨基酸、二肽不显色；针对游离氨基酸的显色反应是茚三酮反应。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

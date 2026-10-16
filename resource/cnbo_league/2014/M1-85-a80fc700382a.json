@@ -1,0 +1,45 @@
+{
+ "id": "M1-85-a80fc700382a",
+ "type": "single",
+ "question": "颗粒酶进入细胞可引起",
+ "options": {
+  "A": "细胞衰老",
+  "B": "细胞分裂",
+  "C": "细胞凋亡",
+  "D": "细胞自噬"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞凋亡",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 85 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 85,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（12 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。细胞衰老是基因决定的程序性老化过程，颗粒酶不直接引起衰老。B．错误。颗粒酶抑制而非促进细胞分裂。C．正确。细胞毒性T细胞与NK细胞释放颗粒酶，经穿孔素进入靶细胞后激活caspase级联，诱导靶细胞凋亡。D．错误。自噬是细胞自我降解受损组分的过程，非颗粒酶的直接效应。故答案为C。"
+}

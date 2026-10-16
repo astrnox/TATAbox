@@ -1,0 +1,45 @@
+{
+ "id": "M2-28-07f7945eaf63",
+ "type": "single",
+ "question": "多次吃发霉的花生会致癌，主要原因是发霉的花生中含有黄曲霉毒素。这种毒素是由下列哪类微生物产生？",
+ "options": {
+  "A": "病毒",
+  "B": "细菌",
+  "C": "支原体",
+  "D": "真菌"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "细菌",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 28 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（30 道题40 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。病毒无独立代谢系统，不能合成黄曲霉毒素这类次级代谢产物。B．错误。细菌不产生黄曲霉毒素。C．错误。支原体是最小的原核微生物，无细胞壁，也不产生此毒素。D．正确。黄曲霉毒素主要由黄曲霉、寄生曲霉等霉菌（真菌）产生，属真菌的次级代谢产物，其中黄曲霉毒素B1有强致癌性，长期摄入易诱发肝癌。故答案为D。"
+}

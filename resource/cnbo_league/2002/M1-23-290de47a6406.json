@@ -1,0 +1,48 @@
+{
+ "id": "M1-23-290de47a6406",
+ "type": "single",
+ "question": "细胞生长时，细胞壁表现出一定的",
+ "options": {
+  "A": "可逆性",
+  "B": "可塑性",
+  "C": "弹性",
+  "D": "刚性"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 23 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 23,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。可逆性指外力撤除后复原，即弹性形变，不能造成持续生长。B．正确。细胞生长时在膨压驱动下细胞壁发生不可逆的伸展（永久形变），即表现出可塑性，纤维素微纤丝滑动重排使壁扩展。C．错误。弹性形变只是生长的启动因素，撤压即回缩。D．错误。刚性是抗形变能力，与扩展生长相矛盾。故答案为B。\n【易错易混】易混：弹性（可逆形变）与可塑性（不可逆形变）——细胞壁先弹性伸展、后不可逆的塑性扩展，'生长'对应的是可塑性。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-12-0adfec5bbdbd",
+ "type": "single",
+ "question": "以下哪一个术语被用来描述含有几个转录因子与一个增强子结合的DNA-蛋白质复合物？",
+ "options": {
+  "A": "核糖体",
+  "B": "染色体",
+  "C": "增强体",
+  "D": "蛋白酶体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2023",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2023,
+ "competition": "CnBO",
+ "source": "2023 年全国中学生生物学联赛（CnBO）第 12 题 · 2023 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2023",
+  "title": "2023 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 12,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 题38 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。核糖体是翻译的机器，与增强子无关。B．错误。染色体是染色质的高级结构单位。C．正确。多个转录因子协同结合于增强子所形成的 DNA-蛋白质复合物称为增强体。D．错误。蛋白酶体是蛋白降解复合体。故答案为C。"
+}

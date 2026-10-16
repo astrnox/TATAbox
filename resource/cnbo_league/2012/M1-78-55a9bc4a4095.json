@@ -1,0 +1,48 @@
+{
+ "id": "M1-78-55a9bc4a4095",
+ "type": "single",
+ "question": "植物细胞不具有下列哪个结构？",
+ "options": {
+  "A": "溶酶体",
+  "B": "乙醛酸循环小体",
+  "C": "中心体",
+  "D": "线粒体"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 78 题 · 2012 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 78,
+  "section": "第一部分 （14 道题16 分）",
+  "type_mark": "（单选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】本题要求选出植物细胞不具有的结构，判断词指该选项是否合题意。A．错误。植物细胞有具溶酶体功能的结构（圆球体、液泡等含水解酶），该表述成立。B．错误。乙醛酸循环小体（乙醛酸体）是油料种子萌发时特有的过氧化物酶体，该表述成立。C．正确。中心体存在于动物细胞和低等植物细胞，高等植物细胞没有中心体，该表述不成立，正是应选项。D．错误。植物细胞有线粒体，该表述成立。故答案为C。\n【易错易混】易混：中心体只见于动物和低等植物（如衣藻），高等植物由细胞两极组织纺锤体；乙醛酸体只在油料种子萌发期出现。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-02-db01211b4106",
+ "type": "single",
+ "question": "一般来说被子植物双受精时，分别与两个精子结合的雌配子体细胞是：",
+ "options": {
+  "A": "卵细胞与助细胞",
+  "B": "卵细胞与中央细胞",
+  "C": "助细胞与中央细胞",
+  "D": "中央细胞与反足细胞"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2007",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2007,
+ "competition": "CnBO",
+ "source": "2007 年全国中学生生物学联赛（CnBO）第 2 题 · 2007 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2007",
+  "title": "2007 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 2,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。助细胞是雌配子体中的辅助细胞，负责引导花粉管并释放精子，本身不与精子结合。B．正确。双受精时一个精子与卵细胞融合为合子，另一个精子与中央细胞（含极核）融合为初生胚乳核，二者均为雌配子体细胞。C．错误。助细胞不参与受精，该项把辅助细胞误当受精配子。D．错误。反足细胞是营养细胞，受精后多退化，不与精子结合。故答案为B。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M2-45-4ef9d6e1da38",
+ "type": "single",
+ "question": "将叶绿素提取液放在直射光下观察，则会出现：",
+ "options": {
+  "A": "反射光是绿色，透射光是红色",
+  "B": "反射光是红色，透射光是绿色",
+  "C": "反射光和透射光都是绿色",
+  "D": "反射光和透射光都是红色"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2011",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2011,
+ "competition": "CnBO",
+ "source": "2011 年全国中学生生物学联赛（CnBO）第 45 题 · 2011 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2011",
+  "title": "2011 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 45,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（38 道题48 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。该说法把反射光与透射光的颜色颠倒了。B．正确。叶绿素分子吸收蓝紫光和红光后被激发，部分能量以长波红光形式释放，即荧光现象，故反射光呈红色；绿光几乎不被吸收而透过溶液，故透射光呈绿色。C．错误。反射光呈红色而非绿色。D．错误。透射光呈绿色而非红色。故答案为B。\n【点睛】点睛：透射光看未被吸收的绿光，反射光看激发后发射的荧光红，一透一反颜色正好互补。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

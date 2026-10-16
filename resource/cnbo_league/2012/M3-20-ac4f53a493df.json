@@ -1,0 +1,48 @@
+{
+ "id": "M3-20-ac4f53a493df",
+ "type": "multiple",
+ "question": "节肢动物类群很多，不同类群的排泄器官亦有差异，节肢动物门甲壳纲动物的排泄器官有",
+ "options": {
+  "A": "基节腺",
+  "B": "触角腺",
+  "C": "颚腺",
+  "D": "马氏管"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "BC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 20 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（18 道题24 分）",
+  "type_mark": "（多选l 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。基节腺是蛛形纲等类群的排泄器官，不见于甲壳纲。B．正确。触角腺（绿腺）是甲壳纲典型的排泄器官，开口于第二触角基部。C．正确。颚腺也是甲壳纲（尤其低等甲壳类）的排泄器官。D．错误。马氏管是昆虫纲、多足纲等的排泄器官，甲壳纲没有。故答案为BC。\n【通法】通法（节肢动物排泄器官）：甲壳纲—触角腺、颚腺；蛛形纲—基节腺、马氏管；昆虫纲与多足纲—马氏管，按类群对号入座即可。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

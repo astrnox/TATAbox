@@ -1,0 +1,48 @@
+{
+ "id": "M1-01-93ef6c45cbd9",
+ "type": "multiple",
+ "question": "DNA 双螺旋模型是在下列哪几个研究的基础上提出的？",
+ "options": {
+  "A": "X-光衍射实验数据表明DNA 是一种规则螺旋结构",
+  "B": "DNA 密度测量说明这种螺旋结构应有两条链",
+  "C": "三个连续的核苷酸代表一个遗传密码",
+  "D": "不论碱基数目多少，G 的含量总是与C 一样，而A 与T 也是一样的"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 1.5,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "分子生物学",
+ "concept": "DNA结构",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 1 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 1,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（多选1.5 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。X射线衍射数据显示DNA是规则的螺旋结构，为双螺旋提供直接实验证据。B．正确。DNA密度测量说明该螺旋由两条链组成。C．错误。'三个连续核苷酸代表一个密码子'属遗传密码范畴，1961年才提出，与双螺旋模型的建立无关。D．正确。无论碱基数目多少A与T、G与C含量相等（Chargaff规则），为碱基配对提供依据。故答案为ABD。\n【通法】通法（双螺旋模型证据链）：结构模型看三类证据——衍射定外形（螺旋）、密度定链数（两条）、碱基比例定配对（A=T、G=C），与这三类无关的选项即干扰项。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

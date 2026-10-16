@@ -1,0 +1,50 @@
+{
+ "id": "M1-26-123b76dcbd6c",
+ "type": "multiple",
+ "question": "将肝脏匀浆液通过离心去除细胞膜和细胞器后，下列哪些酶将留在上清液中？",
+ "options": {
+  "A": "糖原磷酸化酶",
+  "B": "乳酸脱氢酶",
+  "C": "琥珀酸脱氢酶",
+  "D": "氨基甲酰磷酸合成酶Ⅱ",
+  "E": "丙酮酸激酶"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": true
+ },
+ "answer_key": "ABDE",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2021",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2021,
+ "competition": "CnBO",
+ "source": "2021 年全国中学生生物学联赛（CnBO）第 26 题 · 2021 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2021",
+  "title": "2021 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 26,
+  "section": "一、细胞生物学、生物化学、微生物学、生物信息学、生物技术30 题41 分",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。糖原磷酸化酶位于胞质基质，留在上清液。B．正确。乳酸脱氢酶是胞质酶，留在上清液。C．错误。琥珀酸脱氢酶位于线粒体内膜，随细胞器沉淀。D．正确。氨基甲酰磷酸合成酶Ⅱ在胞质中催化嘧啶从头合成，留在上清液。E．正确。丙酮酸激酶是糖酵解胞质酶，留在上清液。故答案为ABDE。\n【通法】通法（差速离心定位）：上清液是胞质标志酶的地盘——糖酵解、糖原分解、LDH、氨基甲酰磷酸合成酶Ⅱ；沉淀中查细胞器标志酶——琥珀酸脱氢酶、细胞色素 c 氧化酶等。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

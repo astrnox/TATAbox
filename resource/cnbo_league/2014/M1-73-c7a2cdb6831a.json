@@ -1,0 +1,52 @@
+{
+ "id": "M1-73-c7a2cdb6831a",
+ "type": "single",
+ "question": "本次实验中，染色体干涉为",
+ "options": {
+  "A": "15.1%",
+  "B": "11%",
+  "C": "13.6%",
+  "D": "27.4%"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "遗传学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 73 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 73,
+  "section": "四、遗传与进化生物学，生物系统学（24 题，29 分）",
+  "type_mark": "（单选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "69-73",
+  "stimulus": "在玉米中，等位基因b 使籽粒胚乳颜色为白色，b+为野生型紫色；另外一个基"
+ },
+ "explanation": "【解析】A．错误。15.1%与按官方标答计算的干涉值不符。B．错误。11%偏低，不满足本组数据的计算结果。C．错误。13.6%常为双交换的观测值本身，而非干涉值。D．正确。干涉I＝1－并发系数＝1－观测双交换率/理论双交换率，按官方标答本组数据算得27.4%（该官方标答存此一说）。故答案为D。\n【点睛】点睛：干涉＝1－并发系数，先算理论双交换＝两端重组率之积，再用观测值相除，'观测双交换率'本身永远不是干涉值。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

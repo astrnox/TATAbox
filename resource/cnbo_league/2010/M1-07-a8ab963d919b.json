@@ -1,0 +1,48 @@
+{
+ "id": "M1-07-a8ab963d919b",
+ "type": "multiple",
+ "question": "线粒体在合成ATP过程中需要下列哪些条件",
+ "options": {
+  "A": "基质中含有O2",
+  "B": "基质中含ADP",
+  "C": "基质中的H+浓度大于膜间隙",
+  "D": "基质中的H+浓度小于膜间隙"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "ABD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2010",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2010,
+ "competition": "CnBO",
+ "source": "2010 年全国中学生生物学联赛（CnBO）第 7 题 · 2010 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2010",
+  "title": "2010 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 7,
+  "section": "第一部分 细胞学、生物化学和分子生物学、微生物学（29道题40分）",
+  "type_mark": "（多选2分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。O2是氧化磷酸化的末端电子受体，基质侧不断消耗O2，电子传递和质子泵出才能持续。B．正确。ADP与Pi是ATP合酶的底物，基质中ADP充足才能合成ATP。C．错误。电子传递链把H+从基质泵入膜间隙，膜间隙的H+浓度高于基质。D．正确。膜间隙与基质之间形成质子电化学梯度，H+经ATP合酶回流基质驱动ATP合成。故答案为ABD。\n【点睛】点睛：氧化磷酸化三要素——末端电子受体O2、底物ADP与Pi、跨内膜质子电化学梯度。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

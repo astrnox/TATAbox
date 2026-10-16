@@ -1,0 +1,45 @@
+{
+ "id": "M1-74-93752532abf8",
+ "type": "single",
+ "question": "以下哪一个关于化学渗透学说的描述是正确的",
+ "options": {
+  "A": "OH 一聚集在线粒体内膜外，而H+聚集在膜内",
+  "B": "H+聚集在线粒体内膜外，而OH 一聚集在膜内",
+  "C": "OH 一及H+都聚集在线粒体内膜内",
+  "D": "OH 一及H+都聚集在线粒体内膜外"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2008",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2008,
+ "competition": "CnBO",
+ "source": "2008 年全国中学生生物学联赛（CnBO）第 74 题 · 2008 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2008",
+  "title": "2008 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 74,
+  "section": "一、单项选择（每小题1 分，共94 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。化学渗透学说认为呼吸链把 H+ 从基质泵出到膜间隙，故 H+ 在膜外、OH- 相对在膜内，A 恰好说反（题中 OH 一 应为 OH-，系排版讹误）。B．正确。电子传递释放的能量将 H+ 泵过线粒体内膜，使膜外侧（膜间隙）H+ 浓度高、膜内侧（基质）OH- 相对富集，形成跨膜质子电化学梯度，H+ 回流驱动 ATP 合酶合成 ATP。C．错误。若两种离子同侧聚集则无跨膜梯度可言，与化学渗透学说相悖。D．错误。H+ 与 OH- 不会都聚集在膜外，否则无法建立质子梯度。故答案为B。"
+}

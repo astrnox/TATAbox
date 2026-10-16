@@ -1,0 +1,48 @@
+{
+ "id": "M1-20-af588b0b83a8",
+ "type": "single",
+ "question": "下列哪种蛋白质以翻译后运转机制转运",
+ "options": {
+  "A": "免疫球蛋白",
+  "B": "激素",
+  "C": "过氧化物酶体",
+  "D": "水解酶"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2016",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2016,
+ "competition": "CnBO",
+ "source": "2016 年全国中学生生物学联赛（CnBO）第 20 题 · 2016 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2016",
+  "title": "2016 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 20,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（26 道题30 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。免疫球蛋白是分泌蛋白，信号肽引导核糖体到内质网上进行共翻译转运。B．错误。分泌型多肽激素同样经内质网到高尔基体的共翻译途径。C．正确。过氧化物酶体基质蛋白在细胞质合成后，凭靶向信号PTS1/PTS2翻译后输入。D．错误。水解酶（溶酶体酶）经内质网合成、高尔基体加工分选的共翻译途径。故答案为C。\n【通法】通法（蛋白分选）：有信号肽、边翻译边进内质网＝共翻译转运（分泌蛋白、溶酶体酶）；无信号肽、进线粒体叶绿体过氧化物酶体＝翻译后输入。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

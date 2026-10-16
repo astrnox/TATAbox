@@ -1,0 +1,48 @@
+{
+ "id": "M1-11-7edf78b66186",
+ "type": "single",
+ "question": "内质网是细胞“钙库”之一，以下正确的是",
+ "options": {
+  "A": "钙离子从胞质扩散到内质网中",
+  "B": "内质网上钙泵将钙离子从胞质主动运输到内质网",
+  "C": "钙离子通过内质网上钙离子通道主动运输到内质网",
+  "D": "钙离子通过钠钾泵协同转运到内质网"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "B",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞器",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 11 题 · 2014 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 11,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（18 道题22 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。钙离子由胞质进入内质网是逆浓度的富集过程，不能靠扩散完成。B．正确。内质网膜上的钙泵（SERCA）水解ATP，将Ca2+从胞质主动泵入内质网腔储存，使内质网成为钙库。C．错误。钙通道介导的是Ca2+顺浓度外流（如IP3受体、Ryanodine受体），方向与题意相反且属易化扩散。D．错误。钠钾泵位于质膜，负责Na+/K+梯度，与钙入内质网无关。故答案为B。\n【点睛】点睛：钙库装钙靠SERCA泵耗能泵入，放钙靠通道顺浓度流出，泵进通道出、方向永远相反。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

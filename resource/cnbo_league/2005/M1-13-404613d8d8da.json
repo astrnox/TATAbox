@@ -1,0 +1,45 @@
+{
+ "id": "M1-13-404613d8d8da",
+ "type": "single",
+ "question": "青霉素直接影响细菌的结构是：",
+ "options": {
+  "A": "细胞壁",
+  "B": "细胞膜",
+  "C": "线粒体",
+  "D": "核酸"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": false,
+  "D": false
+ },
+ "answer_key": "A",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞膜",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 13 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 13,
+  "section": "一、单项选择（每小题1 分，共90 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。青霉素抑制转肽酶（青霉素结合蛋白）催化的肽聚糖交联反应，直接影响细胞壁的合成与完整性，使细菌在低渗环境中裂解。B．错误。细胞膜不是青霉素的直接靶点，菌体裂解后膜才暴露受损。C．错误。细菌是原核生物，本来就无线粒体。D．错误。青霉素不影响核酸合成，抑制核酸合成的是利福平、喹诺酮类等药物，故答案为A。"
+}

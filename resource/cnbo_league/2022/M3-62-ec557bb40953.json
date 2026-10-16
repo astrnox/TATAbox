@@ -1,0 +1,45 @@
+{
+ "id": "M3-62-ec557bb40953",
+ "type": "multiple",
+ "question": "下列有关青蛙骨骼的说法中正确的有：",
+ "options": {
+  "A": "脊柱包括颈椎1 个，躯椎7 个，荐椎1 个和尾杆骨1 个；",
+  "B": "第一至第七个椎骨为前凹型，第八个为后凹型；",
+  "C": "肩胛骨背面连有上肩胛骨，上肩胛骨通过肌肉连脊柱；",
+  "D": "后肢股骨特别加长，前端与荐椎粗大的横突相连，以此支撑体重。"
+ },
+ "answer": {
+  "A": true,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "AC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_3",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 62 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 62,
+  "section": "三．动物生理学 动物学 生态学   31 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。青蛙脊柱由颈椎 1、躯椎 7、荐椎 1 与尾杆骨 1 构成。B．错误。第一至第七躯椎为前凹型，第八枚（荐椎）并非后凹型，该描述有误。C．正确。肩胛骨背面连有上肩胛骨，上肩胛骨再经肌肉与脊柱相连。D．错误。后肢中加长的是胫跗骨等，股骨并非特别加长且不直接与荐椎横突相连，连于荐椎横突的是髂骨。故答案为AC。"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "M1-88-0c966bb4f392",
+ "type": "multiple",
+ "question": "关于过氧化物酶体的研究近年来取得了一些新的进展，下列描述正确的是：",
+ "options": {
+  "A": "过氧化物酶体是可以直接利用分子氧的细胞器",
+  "B": "过氧化物酶体可以参与植物的光呼吸作用",
+  "C": "过氧化物酶体含的酶类主要为氧化酶",
+  "D": "过氧化物酶体是细胞中数量最多的细胞器"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "酶",
+ "tags": [
+  "cnbo_league",
+  "2013",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2013,
+ "competition": "CnBO",
+ "source": "2013 年全国中学生生物学联赛（CnBO）第 88 题 · 2013 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2013",
+  "title": "2013 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 88,
+  "section": "第一部分 （11 道题17 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。过氧化物酶体含氧化酶，可直接以分子氧为受体氧化底物并生成过氧化氢，无需经呼吸链。B．正确。光呼吸中乙醇酸氧化酶位于过氧化物酶体，是该途径的关键酶。C．正确。其基质酶以氧化酶为主，作用特征是产生H2O2。D．错误。细胞中数量最多的细胞器并非过氧化物酶体，该说法不成立。故答案为ABC。\n【通法】通法（过氧化物酶体三问）：单层膜、直接用O2并产H2O2、以氧化酶为主，植物中还接光呼吸，抓住'产H2O2的小工厂'即通。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "M1-16-63ca1dd757aa",
+ "type": "single",
+ "question": "类固醇激素对基因表达的调节是通过",
+ "options": {
+  "A": "自身直接作用在基因调控序列上",
+  "B": "激活酪氨酸蛋白激酶",
+  "C": "以cAMP 作为第二信使",
+  "D": "与受体结合进入细胞核作用在调节元件上"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "细胞信号转导",
+ "tags": [
+  "cnbo_league",
+  "2019",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2019,
+ "competition": "CnBO",
+ "source": "2019 年全国中学生生物学联赛（CnBO）第 16 题 · 2019 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2019",
+  "title": "2019 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 16,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（30 道题35 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。类固醇激素为脂溶性小分子，不直接结合基因调控序列。B．错误。激活酪氨酸蛋白激酶的是肽类激素受体，与类固醇激素无关。C．错误。以cAMP为第二信使的是GPCR途径，非类固醇激素。D．正确。类固醇激素扩散入细胞与胞内受体结合，复合物入核作用于激素反应元件调控转录。故答案为D。"
+}

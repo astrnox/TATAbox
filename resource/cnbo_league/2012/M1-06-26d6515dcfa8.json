@@ -1,0 +1,50 @@
+{
+ "id": "M1-06-26d6515dcfa8",
+ "type": "multiple",
+ "question": "以下糖类中属于寡糖的有",
+ "options": {
+  "A": "甘露糖",
+  "B": "麦芽糖",
+  "C": "半乳糖",
+  "D": "蔗糖",
+  "E": "糖原"
+ },
+ "answer": {
+  "A": false,
+  "B": true,
+  "C": false,
+  "D": true,
+  "E": false
+ },
+ "answer_key": "BD",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2012",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2012,
+ "competition": "CnBO",
+ "source": "2012 年全国中学生生物学联赛（CnBO）第 6 题 · 2012 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2012",
+  "title": "2012 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 6,
+  "section": "第一部分 细胞生物学、生物化学、微生物学（16 道题18 分）",
+  "type_mark": "（多选2 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。甘露糖是六碳单糖，不属于寡糖。B．正确。麦芽糖由两分子葡萄糖缩合而成，是二糖，属于寡糖。C．错误。半乳糖是单糖。D．正确。蔗糖由葡萄糖和果糖组成，是二糖，属于寡糖。E．错误。糖原由大量葡萄糖残基聚合而成，是贮藏多糖。故答案为BD。\n【通法】通法（糖的分类）：单糖（葡萄糖、果糖、半乳糖、甘露糖）→寡糖（2～10个单糖：蔗糖、麦芽糖、乳糖、棉子糖）→多糖（淀粉、糖原、纤维素、几丁质）；判断抓聚合度，二糖必归寡糖。",
+ "explanation_tags": [
+  "通法"
+ ]
+}

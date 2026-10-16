@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-35dbd4cd912e'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-90cc5b07fca1'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -52,6 +52,7 @@ var SKELETON_ASSETS = [
   './js/core/utils.js',
   './js/core/loader.js',
   './js/core/question-utils.js',
+  './js/core/question-model.js',
   // 必要的小型基础依赖（运行时配置 / 数据压缩）
   './js/core/config.js',
   './js/vendor/lz-string.min.js',
@@ -92,7 +93,10 @@ var WARMUP_PHASE_1 = [
   // Issue #105 / #123 / #128：通用交互小模块
   './js/core/offline-queue.js',
   './js/core/offline-status.js',
-  './js/engagement/eggs.js'
+  './js/engagement/eggs.js',
+  // 全站统一题图：渲染入口 + 查看器样式（Viewer.js 本体按需懒加载）
+  './js/core/figure-viewer.js',
+  './css/figure-viewer.css'
 ];
 
 // 预热阶段 2：重型功能（quiz/exam/practice 等运行时库 + 数据）
@@ -115,6 +119,7 @@ var WARMUP_PHASE_2 = [
   './js/ai/ai-diagnostic-engine.js',
   './js/ai/smart-diagnosis.js',
   './js/core/storage.js',
+  './js/core/record-session.js',
   './js/core/supabase-client.js',
   './js/core/sb-gamify.js',
   './js/core/sb-social.js',

@@ -1,0 +1,48 @@
+{
+ "id": "M2-28-a16638e192c5",
+ "type": "single",
+ "question": "下列哪种微生物的任何菌株都不会产生毒素？",
+ "options": {
+  "A": "白喉棒杆菌",
+  "B": "大肠杆菌",
+  "C": "黄曲霉",
+  "D": "酿酒酵母"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "微生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2018",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2018,
+ "competition": "CnBO",
+ "source": "2018 年全国中学生生物学联赛（CnBO）第 28 题 · 2018 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2018",
+  "title": "2018 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 28,
+  "section": "第一部分 细胞生物学、生物化学、微生物学、生物信息学、生物技术（31 道题36.5 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。白喉棒杆菌的外毒素由β噬菌体毒素基因编码，溶原株可产毒素。B．错误。产志贺毒素大肠杆菌等菌株可产生毒素。C．错误。黄曲霉的某些菌株产黄曲霉毒素。D．正确。酿酒酵母长期用于食品发酵，其任何菌株均不产生毒素。故答案为D。\n【点睛】点睛：关键词是'任何菌株'——需排除携带毒力基因或溶原噬菌体的种类，食品发酵常用的酿酒酵母符合。",
+ "explanation_tags": [
+  "点睛"
+ ]
+}

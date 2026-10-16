@@ -1,0 +1,45 @@
+{
+ "id": "M1-104-4c90a4b12232",
+ "type": "multiple",
+ "question": "单细胞RNA 测序得到了越来越多的应用，相比于多细胞混合(Bulk)测序，它的优势是：",
+ "options": {
+  "A": "揭示罕见的细胞类型；",
+  "B": "检测癌组织内部的异质性；",
+  "C": "推断早期发育阶段的谱系信息；",
+  "D": "一般具有更高的测序覆盖度。"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "ABC",
+ "score": null,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "细胞生物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2024",
+  "module_1",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2024,
+ "competition": "CnBO",
+ "source": "2024 年全国中学生生物学联赛（CnBO）第 104 题 · 2024 年全国中学生生物学联赛试题",
+ "paper": {
+  "key": "2024",
+  "title": "2024 年全国中学生生物学联赛试题",
+  "event": "全国中学生生物学联赛",
+  "question_no": 104,
+  "section": "四. 遗传学、进化生物学、生物信息学（共29 题，46 分）",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。单细胞测序对每个细胞单独建库，可分辨丰度极低的罕见细胞类型，Bulk 会被主体细胞信号淹没。B．正确。单细胞水平可解析癌组织内部不同细胞的表达差异，揭示异质性。C．正确。结合时序表达特征可推断早期发育的细胞谱系关系。D．错误。单细胞测序每个细胞的 cDNA 量极少，通常测序深度与覆盖度低于 Bulk 混合测序，'更高'不成立。故答案为ABC。"
+}

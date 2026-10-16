@@ -1,0 +1,48 @@
+{
+ "id": "M3-46-80100ff6df6c",
+ "type": "single",
+ "question": "神经冲动到达运动神经末梢时，可引起末梢前膜的",
+ "options": {
+  "A": "Na 离子通道关闭",
+  "B": "Ca 离子通道关闭",
+  "C": "Ca 离子通道开放",
+  "D": "Cl 离子通道开放"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2002",
+  "module_3",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2002,
+ "competition": "CnBO",
+ "source": "2002 年全国中学生生物学联赛（CnBO）第 46 题 · 2002 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2002",
+  "title": "2002 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 46,
+  "section": "一、单项选择题(每小题1 分，共100 分)",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。Na 通道主要负责动作电位的产生和传导，兴奋到达末梢并非引起 Na 通道关闭。B．错误。末梢前膜的 Ca 通道不是关闭，而是被去极化激活而开放。C．正确。动作电位到达运动神经末梢使突触前膜去极化，电压门控 Ca 通道开放，Ca 内流触发突触小泡与前膜融合，释放乙酰胆碱。D．错误。Cl 通道开放引起超极化、抑制递质释放，与兴奋到达末梢的效应相反。\n【易错易混】易混：兴奋传导靠 Na 内流，递质释放靠 Ca 内流——突触前膜 'Ca 通道开放、Ca 内流' 才是触发胞吐的关键一步，切勿与动作电位的 Na 通道混淆。故答案为C。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

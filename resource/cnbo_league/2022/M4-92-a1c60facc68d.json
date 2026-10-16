@@ -1,0 +1,43 @@
+{
+ "id": "M4-92-a1c60facc68d",
+ "type": "multiple",
+ "question": "在小鼠中，人们将致病基因定位于分子标记D3Mit76 和D3Mit100 之间。对这一区域内的基因进行分析，发现只有Txnip 的mRNA 水平显著下降，但分子量没有变化，由此推测 Txnip 可能存在：",
+ "options": {
+  "A": "缺失突变",
+  "B": "错义突变",
+  "C": "无义突变",
+  "D": "影响剪接的突变"
+ },
+ "answer": null,
+ "answer_key": "删除",
+ "score": null,
+ "voided": true,
+ "has_figure": false,
+ "module": "module_4",
+ "subject": "遗传学",
+ "concept": "染色体变异",
+ "tags": [
+  "cnbo_league",
+  "2022",
+  "module_4",
+  "multiple"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2022,
+ "competition": "CnBO",
+ "source": "2022 年全国中学生生物学联赛（CnBO）第 92 题 · 2022 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2022",
+  "title": "2022 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 92,
+  "section": "四．遗传学 进化生物学 生物信息学   30 题",
+  "type_mark": "（多选）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "group": {
+  "range": "90-93",
+  "stimulus": "家族性混合型高脂血症(Familial combined hyperlipidemia，FCHL)是一种人类单基因"
+ }
+}

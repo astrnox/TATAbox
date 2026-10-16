@@ -1,0 +1,45 @@
+{
+ "id": "M1-99-0c9e671a95b3",
+ "type": "single",
+ "question": "第98 题中，这2 套呼吸器官和排泄器官分别是",
+ "options": {
+  "A": "鳃、书肺、马氏管、绿腺",
+  "B": "书鳃、书肺、绿腺、基节腺",
+  "C": "气管、书肺、马氏管、基节腺",
+  "D": "书肺、气管、马氏管、绿腺"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": true,
+  "D": false
+ },
+ "answer_key": "C",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_1",
+ "subject": "生物化学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2006",
+  "module_1",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2006,
+ "competition": "CnBO",
+ "source": "2006 年全国中学生生物学联赛（CnBO）第 99 题 · 2006 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2006",
+  "title": "2006 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 99,
+  "section": "一、单项选择（每小题1 分，共100 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。鳃和绿腺（触角腺）是甲壳纲的呼吸与排泄器官。B．错误。书鳃是肢口纲（鲎）的呼吸器官，绿腺、基节腺也不是蜘蛛的典型组合。C．正确。蛛形纲蜘蛛以书肺和气管两套呼吸器官呼吸，排泄则兼用马氏管和基节腺，恰为两套呼吸器官配两套排泄器官。D．错误。绿腺属甲壳纲，蜘蛛不具绿腺。故答案为C。"
+}

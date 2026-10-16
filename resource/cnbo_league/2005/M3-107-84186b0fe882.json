@@ -1,0 +1,50 @@
+{
+ "id": "M3-107-84186b0fe882",
+ "type": "mtf",
+ "question": "唾液腺的分泌活动受到下列哪些神经支配?",
+ "options": {
+  "A": "第VII 对脑神经",
+  "B": "交感神经",
+  "C": "第IX 对脑神经",
+  "D": "舌下神经",
+  "E": "三叉神经"
+ },
+ "answer": {
+  "A": true,
+  "B": true,
+  "C": true,
+  "D": false,
+  "E": false
+ },
+ "answer_key": "17.A（√）B（√）C（√）D（×）E（×）",
+ "score": 2.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_3",
+ "subject": "动物学",
+ "concept": "",
+ "tags": [
+  "cnbo_league",
+  "2005",
+  "module_3",
+  "mtf"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2005,
+ "competition": "CnBO",
+ "source": "2005 年全国中学生生物学联赛（CnBO）第 17 题 · 2005 全国中学生生物学联赛理论试卷",
+ "paper": {
+  "key": "2005",
+  "title": "2005 全国中学生生物学联赛理论试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 17,
+  "section": "二、多重判断（每小题2 分，答案完全正确才能得分，共60 分）",
+  "type_mark": null,
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．正确。面神经（第VII对脑神经）经鼓索支配下颌下腺和舌下腺的分泌。B．正确。交感神经经颈上神经节换元后支配唾液腺，使分泌量少而粘稠。C．正确。舌咽神经（第IX对脑神经）经耳神经节支配腮腺分泌。D．错误。舌下神经只支配舌肌运动，不含分泌纤维。E．错误。三叉神经主要传导面部感觉并支配咀嚼肌，不支配唾液腺分泌。\n【易错易混】易混：唾液分泌只由面神经（鼓索，下颌下腺、舌下腺）、舌咽神经（腮腺）和交感神经支配；舌下神经、三叉神经与分泌无关。",
+ "explanation_tags": [
+  "易错易混"
+ ]
+}

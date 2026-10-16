@@ -1,0 +1,45 @@
+{
+ "id": "M2-96-cce7054fbb5b",
+ "type": "single",
+ "question": "植物生长素吲哚乙酸在化学结构上与哪个类似？",
+ "options": {
+  "A": "脯氨酸",
+  "B": "甲硫氨酸",
+  "C": "苯丙氨酸",
+  "D": "色氨酸"
+ },
+ "answer": {
+  "A": false,
+  "B": false,
+  "C": false,
+  "D": true
+ },
+ "answer_key": "D",
+ "score": 1.0,
+ "voided": false,
+ "has_figure": false,
+ "module": "module_2",
+ "subject": "植物学",
+ "concept": "植物激素",
+ "tags": [
+  "cnbo_league",
+  "2014",
+  "module_2",
+  "single"
+ ],
+ "difficulty": "league",
+ "target": "competition",
+ "year": 2014,
+ "competition": "CnBO",
+ "source": "2014 年全国中学生生物学联赛（CnBO）第 96 题 · 2014 全国中学生生物学联赛电子试卷",
+ "paper": {
+  "key": "2014",
+  "title": "2014 全国中学生生物学联赛电子试卷",
+  "event": "全国中学生生物学联赛",
+  "question_no": 96,
+  "section": "第二部分 植物和动物的解剖、生理、组织和器官（14 道题16 分）",
+  "type_mark": "（单选1 分）",
+  "pdf": "docs/全国中学生生物学联赛真题与答案 .pdf"
+ },
+ "explanation": "【解析】A．错误。脯氨酸是亚氨基酸，与吲哚乙酸结构无相似之处。B．错误。甲硫氨酸为含硫氨基酸，与生长素结构无关。C．错误。苯丙氨酸含苯环但无吲哚环系。D．正确。吲哚乙酸（IAA，即生长素）由色氨酸经氨基转移与脱羧等步骤合成，两者共用吲哚环系，结构高度类似。故答案为D。"
+}
