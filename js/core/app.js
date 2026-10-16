@@ -1183,7 +1183,9 @@ function handleRoute(route) {
     '/bio-lab': 'bio-lab',
     '/phet-sims': 'phet-sims',
     '/trends': 'trends',
-    '/teacher': 'teacher'
+    '/teacher': 'teacher',
+    // bio-calc.js 未在 index.html 预加载，必须经 loadModule 拉起（依赖 score-engine）
+    '/bio-calc': 'bio-calc'
   };
   var modName = moduleMap[route];
 
@@ -1207,7 +1209,13 @@ function handleRoute(route) {
 
   var renderFn = function() {
     _clearRouteLoading();
-    doRouteRender(route, target);
+    // bio-calc 走专用渲染（内嵌模式 → #userBioCalcEmbed，否则整页）：
+    // 不走 doRouteRender，它没有针对该模块的 render 分支，会静默渲染出空壳
+    if (route === '/bio-calc' && typeof window.renderBioCalcPage === 'function') {
+      window.renderBioCalcPage(target);
+    } else {
+      doRouteRender(route, target);
+    }
   };
 
   function finishRouting() {
@@ -1303,7 +1311,8 @@ function handleRoute(route) {
         '/bio-lab': 'initBioLab',
         '/trends': 'initTrends',
         '/teacher': 'initTeacher',
-        '/data-lab': 'initScoreCalc'
+        '/data-lab': 'initScoreCalc',
+        '/bio-calc': 'initBioCalc'
       }[route];
       if (initFnName && typeof window[initFnName] !== 'function') {
         // 给脚本一个微任务时间完成初始化
@@ -1392,11 +1401,15 @@ var _moduleDeps = {
   'wrongbook': ['question-model', 'question-utils', 'loader', 'review-deep'],
   'review-deep': ['question-model', 'question-utils', 'loader'],
   'admin': ['rating', 'question-model'],
-  'diagnosis': ['question-model'],
+  // 模块名为 'smart-diagnosis'（app-routes /diagnosis 的 module 字段），
+  // 此前误写成 'diagnosis' 导致依赖声明永不命中
+  'smart-diagnosis': ['question-model'],
   'daily-billion': ['question-model', 'score-engine'],
   'analytics': ['score-engine'],
-  'score-calc': ['score-engine', 'credit-metrics'],
-  'bio-calc': ['score-engine']
+  // 键必须与 app-routes.js '/analytics' 的 module:'analytic' 一致（同 diagnosis 死键教训）
+  'analytic': ['score-engine'],
+  'bio-calc': ['score-engine'],
+  'score-calc': ['score-engine', 'credit-metrics']
 };
 
 // 模块名 → 初始化函数名（用于检测 head 中预加载的脚本是否已注册 init）
@@ -1409,7 +1422,7 @@ function modNameToInitFn(modName) {
     'admin': 'initAdmin',
     'community': 'initCommunity',
     'knowledge-graph': 'initKnowledgeGraph',
-    'diagnosis': 'initSmartDiagnosis',
+    'smart-diagnosis': 'initSmartDiagnosis',
     'pomodoro': 'initPomodoro',
     'habits': 'initHabits',
     'review': 'initReview',
@@ -1490,8 +1503,12 @@ window.loadModule = function(modName, options) {
       var allScripts = document.querySelectorAll('script[src]');
       for (var si = 0; si < allScripts.length; si++) {
         var rawSrc = allScripts[si].getAttribute('src') || '';
-        var srcPath = rawSrc.split('?')[0];
-        try { srcPath = new URL(rawSrc, document.baseURI).pathname; } catch (e) { /* 保留原值 */ }
+        // 归一为绝对 pathname（丢弃 query/hash）；URL 构造异常时退回手动去 query，
+        // 并补前导 '/'，否则相对 src（"js/pages/study.js"）的 slice 前缀比较会永远不命中
+        var srcPath;
+        try { srcPath = new URL(rawSrc, document.baseURI).pathname; }
+        catch (e) { srcPath = rawSrc.split('?')[0].split('#')[0]; }
+        if (srcPath.charAt(0) !== '/') srcPath = '/' + srcPath;
         if (srcPath.slice(-modPath.length) === modPath) {
           existing = allScripts[si];
           break;

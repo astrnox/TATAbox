@@ -123,6 +123,22 @@ describe('BioQuestSession.question（每题提交）', () => {
     expect(window.recordDailyCheckIn).toHaveBeenCalledTimes(1);
     expect(window.checkAchievement).toHaveBeenCalledWith('practice', 1);
   });
+
+  test('无 bioId/id 的老题用题干前 20 字兜底（难度统计不静默丢失）', () => {
+    const s = loadSession();
+    const stem = '这是一道没有稳定ID的老数据题目，用来验证难度统计兜底逻辑';
+    s.question({ module: 'practice', q: { question: stem, subject: '动物学' }, correct: true });
+    expect(window.recordQuestionAnswer).toHaveBeenCalledTimes(1);
+    const qid = window.recordQuestionAnswer.mock.calls[0][0];
+    expect(qid).toBe(stem.slice(0, 20));
+    expect(qid.length).toBe(20);
+  });
+
+  test('题干也为空时跳过难度统计但不抛错', () => {
+    const s = loadSession();
+    expect(() => s.question({ module: 'practice', q: { subject: '动物学' }, correct: true })).not.toThrow();
+    expect(window.recordQuestionAnswer).not.toHaveBeenCalled();
+  });
 });
 
 describe('信用点挂起补发（user.js 按需加载）', () => {
@@ -188,5 +204,22 @@ describe('BioQuestSession.finish（一段刷题结束）', () => {
     expect(window.updateBioScore.mock.calls[0][0]).toBe(77);
     expect(window.updateBioScore.mock.calls[0][1].total_answered).toBe(10);
     expect(out.bioScore).toBe(77);
+  });
+
+  test('computeBioDimensions 返回 null（stats 结构异常）时不同步 0 分上云', () => {
+    window.computeBioDimensions = jest.fn(() => null);
+    window.computeBioScoreFromRaw = jest.fn(() => ({ score: 0 }));
+    const s = loadSession();
+    const out = s.finish({ module: 'practice', questions: entries, stats: false });
+    expect(window.computeBioScoreFromRaw).not.toHaveBeenCalled();
+    expect(window.updateBioScore).not.toHaveBeenCalled();
+    expect(out.bioScore).toBeNull();
+  });
+
+  test('空 questions：返回全 0 且不落 saveRecord（0 题空记录不污染列表）', () => {
+    const s = loadSession();
+    const out = s.finish({ module: 'practice', questions: [] });
+    expect(out).toMatchObject({ correctCount: 0, totalQuestions: 0, score: 0, totalScore: 0 });
+    expect(window.saveRecord).not.toHaveBeenCalled();
   });
 });

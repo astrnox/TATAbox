@@ -892,6 +892,9 @@
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
   <script src="js/core/error-recovery.js?v=20260803a" defer></script>
   <script src="js/core/question-model.js?v=20261013a" defer></script>
+  <!-- Bio 分全局唯一实现（calcBioScore / computeBioDimensions）：预加载保证
+       仪表盘/练习/诊断/记录落盘首屏即可算分，不依赖打开分析页才加载 analytic.js -->
+  <script src="js/core/score-engine.js?v=20261013a" defer></script>
   <script src="js/core/question-utils.js?v=20260809c" defer></script>
   <script src="js/core/loader.js?v=20260826a" defer></script>
   <script src="js/core/cell-loader.js?v=20260803a" defer></script>

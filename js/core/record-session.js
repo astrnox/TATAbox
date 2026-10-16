@@ -56,6 +56,11 @@
     if (q.bioId) return String(q.bioId);
     var raw = (q.id !== undefined && q.id !== null && q.id !== '') ? q.id
       : ((q.question_id !== undefined && q.question_id !== null) ? q.question_id : '');
+    // 兜底：无稳定 bioID/id 的题（未注入分片的老数据）改用题干前 20 字，
+    // 保持旧 practice 的口径，避免难度自适应统计静默丢失。
+    if (raw === '' && typeof q.question === 'string' && q.question) {
+      raw = q.question.slice(0, 20);
+    }
     if (raw === '') return '';
     return (typeof window.resolveQuestionBioId === 'function')
       ? window.resolveQuestionBioId(raw) : String(raw);
@@ -190,7 +195,10 @@
     try {
       if (hasEngine) {
         var records = (typeof window.getRecords === 'function') ? window.getRecords() : [];
-        score = window.computeBioScoreFromRaw(window.computeBioDimensions(stats, records)).score;
+        var dims = window.computeBioDimensions(stats, records);
+        // stats 结构异常时返回 null：不能把 computeBioScoreFromRaw(null) → 0 分同步上云
+        if (!dims) return null;
+        score = window.computeBioScoreFromRaw(dims).score;
       } else {
         score = window.calcBioScore(stats).score;
       }
@@ -328,7 +336,8 @@
     }
 
     // 2. 练习记录（本地 KEYS.RECORDS + 双写云端 practice_records）
-    if (p.record !== false && typeof window.saveRecord === 'function') {
+    // 空会话不落记录：0 题的空成绩单没有统计意义，还会污染记录列表
+    if (p.record !== false && out.totalQuestions > 0 && typeof window.saveRecord === 'function') {
       try {
         window.saveRecord({
           totalQuestions: out.totalQuestions,

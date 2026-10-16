@@ -301,6 +301,7 @@ var QuestionModel = (function () {
 
   /** 4 子题联赛阶梯；其余子题数按比例归一到 0.1（练习页 2.0 分制） */
   function practiceScore(total, correct) {
+    if (!(total > 0)) return 0;   // 0/负数计分项（脏数据）不给分，避免 correct===total 恒真落满分
     if (total === 4) return LEAGUE_SCORE_TABLE[correct] || 0;
     if (correct === total) return PRACTICE_FULL_SCORE;
     if (correct > 0) {

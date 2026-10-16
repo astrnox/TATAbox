@@ -171,6 +171,17 @@ describe('gradeQuestion · practice 档（2.0 分制 + 联赛阶梯）', () => {
     expect(r).toMatchObject({ total: 1, score: 0, maxScore: 2, verdict: 'none' });
   });
 
+  test('practiceScore 脏数据边界：0/负数计分项不给分', () => {
+    // 修复前 practiceScore(0,0) 走 correct===total 分支恒返回满分 2
+    expect(QuestionModel.practiceScore(0, 0)).toBe(0);
+    expect(QuestionModel.practiceScore(-1, -1)).toBe(0);
+    expect(QuestionModel.practiceScore(NaN, NaN)).toBe(0);
+    // 正常口径不受影响
+    expect(QuestionModel.practiceScore(1, 1)).toBe(2);
+    expect(QuestionModel.practiceScore(7, 7)).toBe(2);
+    expect(QuestionModel.practiceScore(7, 3)).toBe(0.9);
+  });
+
   test('details 逐子题给出对错', () => {
     const r = QuestionModel.gradeQuestion(mtf4(), [true, true, false, true], 'practice');
     expect(r.details.map(d => d.isCorrect)).toEqual([true, false, false, true]);

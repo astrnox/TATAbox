@@ -1232,7 +1232,9 @@ function savePracticeRecord() {
         questionId: getQuestionBioId(q),
         userAnswers: ua,
         score: result.score,
-        totalScore: result.total,
+        // 满分口径：练习总账「满分 = 题数 × 单题满分 2.0」（result.total 是计分项数，
+        // 不是分值——混用会让记录页显示「20 / 10 分」这类错乱比值）
+        totalScore: QuestionModel.PRACTICE_FULL_SCORE,
         correctSubs: result.correct,
         totalSubs: result.total,
         // MTF 题型：全部子题正确才算对；逻辑推理题：correct === total 即对

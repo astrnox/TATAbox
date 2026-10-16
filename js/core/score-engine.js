@@ -6,7 +6,9 @@
  *   1) computeBioScoreFromRaw：由六维属性（B/I/O/G/C/D，0-100）合成 Bio Score
  *      —— 与 js/pages/analytic.js calcBioScore 的合成规则完全一致，
  *         供「数据实验室」计算器与页面展示复用，避免双实现漂移；
- *   2) BIO_SCORE_EXPLAIN：公式/权重/评级的中文说明元数据（透明化）。
+ *   2) BIO_SCORE_EXPLAIN：公式/权重/评级的中文说明元数据（透明化）；
+ *   3) calcBioScore：全局统一入口（stats → 六维 → 合成），任何页面
+ *      （仪表盘/练习/诊断/数据导出）无需加载 analytic.js 即可计算 Bio 分。
  * ============================================================
  */
 (function (g) {
@@ -279,8 +281,40 @@
     return { B: B, I: I, O: O, G: G, C: C, D: D, confidence: confidence };
   }
 
+  /**
+   * 全局统一 Bio 分入口：stats（getStats() 结构）→ 六维 → 合成分。
+   * 返回 shape 与 js/pages/analytic.js calcBioScore 完全一致
+   * （score/grade/letter/components/confidence/breakdown），由 score-audit
+   * 对拍测试锁定。记录数据经 getRecords() 取（storage.js 全局函数）。
+   * stats 结构异常返回 null（调用方自行判空，不可把 0 分当真实分数）。
+   * @param {Object} stats
+   * @returns {{score:number,grade:string,letter:string,components:Object,confidence:Object,breakdown:Object}|null}
+   */
+  function calcBioScore(stats) {
+    var dims = computeBioDimensions(stats, (typeof g.getRecords === 'function') ? (g.getRecords() || []) : []);
+    if (!dims) return null;
+    var out = computeBioScoreFromRaw(dims);
+    var comps = { B: dims.B, I: dims.I, O: dims.O, G: dims.G, C: dims.C, D: dims.D };
+    return {
+      score: out.score,
+      grade: out.grade,
+      letter: out.letter,
+      components: comps,
+      confidence: dims.confidence,
+      breakdown: {
+        '基础正确率(B)': dims.B,
+        '洞察力(I)': dims.I,
+        '活跃度(O)': dims.O,
+        '成长性(G)': dims.G,
+        '一致性(C)': dims.C,
+        '难度突破(D)': dims.D
+      }
+    };
+  }
+
   g.computeBioScoreFromRaw = computeBioScoreFromRaw;
   g.computeBioDimensions = computeBioDimensions;
+  g.calcBioScore = calcBioScore;
   g.BIO_SCORE_EXPLAIN = BIO_SCORE_EXPLAIN;
   g.BIO_WEIGHTS = BIO_WEIGHTS;
 })(typeof window !== 'undefined' ? window : globalThis);

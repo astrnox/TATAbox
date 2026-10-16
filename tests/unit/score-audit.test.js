@@ -265,6 +265,48 @@ describe('5. MTF 计分（calculateQuestionScore）子题数归一化', () => {
   });
 });
 
+describe('6.5 practice 练习记录满分口径（回归：totalScore 曾误传计分项数）', () => {
+  test('savePracticeRecord 每题传 PRACTICE_FULL_SCORE（2.0），不是 result.total 计分项数', () => {
+    const src = fs.readFileSync(PRACTICE_SRC, 'utf8');
+    const m = src.match(/function savePracticeRecord\(\)[\s\S]*?\n}/);
+    expect(m).toBeTruthy();
+    const body = m[0];
+    expect(body).toContain('totalScore: QuestionModel.PRACTICE_FULL_SCORE');
+    expect(body).not.toMatch(/totalScore:\s*result\.total\b/);
+  });
+
+  test('BioQuestSession.finish 汇总：10 道单选全对 → rec.score=20 / totalScore=20（显示 20/20 分）', () => {
+    // 模拟 savePracticeRecord 给 finish 的逐题条目（单选题每题 1 计分项、得分 2.0）
+    const QuestionModel = require('../../js/core/question-model.js');
+    const src = fs.readFileSync(path.join(ROOT, 'js', 'core', 'record-session.js'), 'utf8');
+    const win = {};
+    win.QuestionModel = QuestionModel;
+    win.saveRecord = jest.fn();
+    win.getStats = jest.fn(() => ({ totalAnswered: 0 }));
+    win.updateBioScore = jest.fn(() => Promise.resolve());
+    new Function('window', 'localStorage', src)(win, { getItem: () => null, setItem: () => {}, removeItem: () => {} });
+
+    const questions = Array.from({ length: 10 }, (_, i) => ({
+      q: { id: 'BQ-x', subject: '遗传学', question: 'q' },
+      questionId: 'BQ-x' + i,
+      userAnswers: { 0: 'A' },
+      score: QuestionModel.PRACTICE_FULL_SCORE,          // 全对得分
+      totalScore: QuestionModel.PRACTICE_FULL_SCORE,     // 满分 = 题数 × 2
+      correctSubs: 1,
+      totalSubs: 1,
+      correct: true
+    }));
+    win.BioQuestSession.finish({ module: 'practice', questions, stats: false, bio: false });
+
+    const rec = win.saveRecord.mock.calls[0][0];
+    expect(rec.score).toBe(20);
+    expect(rec.totalScore).toBe(20);           // 曾为 10（计分项数）→ 显示「20 / 10 分」错乱
+    expect(rec.correctCount).toBe(10);
+    expect(rec.totalQuestions).toBe(10);
+    expect(rec.score).toBeLessThanOrEqual(rec.totalScore); // 显示比值永不失衡
+  });
+});
+
 describe('6. BKT — forward/logLikelihood 与 EM 初始条件一致', () => {
   let Bkt;
   beforeAll(() => {
