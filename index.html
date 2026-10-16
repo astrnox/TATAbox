@@ -201,6 +201,7 @@
     .daily-billion-entry-link:hover { background: rgba(196,149,106,0.1); }
   </style>
   <script src="js/core/theme-init.js?v=20260820a"></script>
+  <script src="js/core/mode-init.js?v=20261016a"></script>
   <!-- 旧内核浏览器兼容探测（同步）：故意使用现代语法，老内核解析失败 → 标记缺失 → 由 legacy-fallback.js 降级 -->
   <script src="js/core/legacy-probe.js?v=20260919a"></script>
 
@@ -287,7 +288,7 @@
 
   <!-- 首屏关键 CSS：同步加载 -->
   <!-- Issue #108：首屏同步 CSS 合并为单文件（scripts/build-css-bundle.js 生成，减少 6→1 次串行请求） -->
-  <link rel="stylesheet" href="css/bundle-core.css?v=20260917lg2">
+  <link rel="stylesheet" href="css/bundle-core.css?v=20261016a">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
   <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
@@ -425,6 +426,8 @@
 
     <div class="header-right">
       <button type="button" class="header-help" id="onboarding-help" title="新手引导" aria-label="重新查看新手引导">?</button>
+      <!-- 极简版切换（设计方案 v2 §5.1）：跳转 lite 入口 -->
+      <a class="header-lite-btn" href="lite.html" title="切换到极简版">极简版</a>
       <button class="auth-btn" id="auth-btn" title="登录/注册">登录</button>
 
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单" aria-expanded="false">

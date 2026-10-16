@@ -1,0 +1,194 @@
+/* ============================================================
+ * TATABOX — 全局设计令牌（唯一定义源，v2）
+ * ------------------------------------------------------------
+ * 三层结构：
+ *   第一层 原始令牌（原子值，业务 CSS 不得直接引用）
+ *   第二层 语义令牌（默认值 = 主站亮色）
+ *   第三层 覆盖层   主站暗色 / lite 亮色 / lite 暗色 / 夜巡
+ * 业务 CSS 只允许引用语义令牌。
+ * 引入顺序：本文件必须在 globals.css 之前加载。
+ * ============================================================ */
+
+/* ============ 第一层：原始令牌 ============ */
+:root {
+  /* ── Sage：全站唯一彩色系（合并主站两套绿 + lite 用色） ── */
+  --sage-050: #eef4f0;
+  --sage-100: #dcebe2;
+  --sage-200: #b7d4c4;
+  --sage-300: #8fbca4;
+  --sage-400: #6ba488;
+  --sage-500: #4a7c59;   /* 主站品牌绿（原 --color-primary） */
+  --sage-600: #3d6b4b;
+  --sage-700: #2f5a3d;
+  --sage-800: #234630;
+  --sage-900: #1a2f1d;   /* 深林（仅亮色场景最深档） */
+  --sage-d1:  #6bc48e;   /* 暗色显示绿（原 dark primary） */
+  --sage-d2:  #8fd8ae;   /* 暗色强调文字绿 */
+
+  /* ── Clay：暖场景专用（打卡/习惯/徽章），其余场景禁用，由 audit 脚本把关 ── */
+  --clay-100: #f5e6d4;
+  --clay-200: #e8ceb0;
+  --clay-500: #c4956a;
+  --clay-600: #b08d5e;
+
+  /* ── 中性：v2 从 4 种收敛为 2 种（弃 #f2f5f3 与 #f5f0e8 作为底色） ── */
+  --paper:        #faf8f5;   /* 主站页面底 */
+  --paper-sunken: #f1ede6;   /* 主站凹陷区/分区底 */
+  --gray-050: #fafafa;  --gray-100: #f5f5f5;  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;  --gray-400: #a3a3a3;  --gray-500: #737373;
+  --gray-600: #525252;  --gray-800: #262626;  --gray-900: #0a0a0a;
+
+  /* ── 字体：v2 双轨制 ── */
+  --font-ui: -apple-system, BlinkMacSystemFont, 'PingFang SC',
+    'Microsoft YaHei', 'Noto Sans CJK SC', 'Segoe UI', sans-serif;
+  --font-content: 'LXGW WenKai', 'Noto Serif SC', 'Songti SC', serif;
+  --font-num: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo,
+    Consolas, monospace;
+
+  /* ── 字号阶梯 ── */
+  --step--1: 0.8125rem;  --step-0: 0.9375rem;  --step-1: 1.125rem;
+  --step-2: 1.5rem;      --step-3: 2.25rem;
+
+  /* ── 间距（4px 基线，两端共用） ── */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+
+  /* ── 形态 ── */
+  --radius-s: 2px;  --radius-m: 4px;  --radius-l: 12px;  --radius-full: 999px;
+  --dur-fast: 120ms;  --dur-slow: 240ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ── 密度分级（见设计方案 3.4） ── */
+  --measure-content: 720px;   /* 阅读/练习/卡片/错题/wiki */
+  --measure-tool: 1200px;     /* 分析/管理/教师端 */
+  --measure-data: 1600px;     /* 数据表格/知识图谱（上限，非默认） */
+
+  --z-progress: 50; --z-nav: 100; --z-toast: 200;
+}
+
+/* ============ 第二层：语义令牌（默认 = 主站亮色） ============ */
+:root {
+  --font-sans: var(--font-ui);          /* v2：UI 层换黑体 */
+  --font-serif: var(--font-content);    /* v2：楷体只留给内容，两者不再相同 */
+  --font-mono: var(--font-num);
+
+  --bg-page: var(--paper);
+  --bg-surface: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-sunken: var(--paper-sunken);
+  --bg-inverse: var(--sage-900);
+  --text-primary: #2c3e30;
+  --text-secondary: #5a6b5e;
+  --text-tertiary: #8a9a8e;
+  --text-inverse: #f5f0e8;
+  --border-subtle: #e2ddd6;
+  --border-strong: var(--sage-900);
+  --accent: var(--sage-500);
+  --accent-text: var(--sage-700);       /* 正文绿字一律用此档 */
+  --accent-soft: var(--sage-050);
+  --on-accent: #ffffff;
+
+  --radius-card: var(--radius-l);
+  --radius-btn: 8px;
+  --shadow-card: 0 1px 3px rgb(44 62 48 / 0.06), 0 4px 12px rgb(44 62 48 / 0.04);
+  --focus-ring: 0 0 0 2px var(--paper), 0 0 0 4px var(--sage-500);
+}
+
+/* ============ 第三层-A：主站暗色（v2 重映射） ============
+ * 数值语义规则：暗色下禁止组件直接引用 --sage-XXX 数字档，
+ * 只准用语义令牌；数字档仅在亮色语境有效。 */
+[data-theme="dark"] {
+  --bg-page: #121714;
+  --bg-surface: #1b221d;
+  --bg-elevated: #242d26;
+  --bg-sunken: #0e1210;
+  --text-primary: #e3e9e4;
+  --text-secondary: #a8b8ac;
+  --text-tertiary: #6a7a6e;
+  --text-inverse: #121714;
+  --border-subtle: #2e3833;
+  --border-strong: #3d4a42;
+  --accent: var(--sage-d1);
+  --accent-text: var(--sage-d2);
+  --accent-soft: #1a2f1d;
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.3);
+  --focus-ring: 0 0 0 2px #121714, 0 0 0 4px var(--sage-d1);
+}
+
+/* ============ 第三层-B：lite 亮色（血缘注入） ============ */
+html[data-ui="lite"] {
+  /* lite 单列内容页密度微调：720 → 880（688px 实宽配稀疏内容两侧空洞过大） */
+  --measure-content: 880px;
+  --bg-page: #f6f7f6;
+  --bg-surface: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-sunken: #ecefee;
+  --bg-inverse: var(--gray-900);
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-500);
+  --text-tertiary: var(--gray-400);
+  --text-inverse: var(--gray-050);
+  --border-subtle: var(--gray-200);
+  --border-strong: var(--gray-900);
+  --accent: #35855a;          /* sage 血统（对白底 ≈4.3:1，图形/进度/按钮用） */
+  --accent-text: #2b6a47;     /* 文字强调（对白底 ≈6.4:1，AA） */
+  --accent-soft: #eef4f0;
+  --on-accent: #ffffff;
+
+  --radius-card: 2px;
+  --radius-btn: 2px;
+  --shadow-card: none;
+  --focus-ring: 0 0 0 2px #f6f7f6, 0 0 0 4px #35855a;
+}
+
+/* ============ 第三层-C：lite 暗色（三档表面 + 降白） ============ */
+html[data-ui="lite"][data-theme="dark"] {
+  --bg-page: #0b0e0c;
+  --bg-surface: #171c19;
+  --bg-elevated: #222924;
+  --bg-sunken: #070908;
+  /* 暗色下"反色"= 亮按钮：黑底黑字不可读（主按钮/分段控件选中态依赖此对） */
+  --bg-inverse: #e6e9e6;
+  --text-primary: #e6e9e6;
+  --text-secondary: #9aa69d;
+  --text-tertiary: #5d685f;
+  --text-inverse: #0b0e0c;
+  --border-subtle: #343b36;   /* 提亮：卡片/按钮描边与表面拉开，1px 才浮得出来 */
+  --border-strong: #3a423d;
+  --accent: var(--sage-d1);      /* 对 #0b0e0c ≈9:1 */
+  --accent-text: var(--sage-d2);
+  --accent-soft: #12211a;
+  --focus-ring: 0 0 0 2px #0b0e0c, 0 0 0 4px var(--sage-d1);
+}
+
+/* ============ 第三层-D：夜巡（琥珀单色暗色，宪章唯一色彩例外） ============ */
+html[data-ui="lite"][data-theme="night"] {
+  --bg-page: #0d0c0a;
+  --bg-surface: #151310;
+  --bg-elevated: #1d1a15;
+  --bg-sunken: #080706;
+  --bg-inverse: #e8e2d4;       /* 同暗色：反色按钮为亮底，避免黑上加黑 */
+  --text-primary: #e8e2d4;
+  --text-secondary: #a89f8c;
+  --text-tertiary: #6f6858;
+  --text-inverse: #0d0c0a;
+  --border-subtle: #3b3529;   /* 同暗色：描边提亮 */
+  --border-strong: #3d372e;
+  --accent: #d9a648;          /* 琥珀图形/进度，对 #0d0c0a ≈8.8:1 */
+  --accent-text: #f2cd88;     /* 琥珀强调文字 */
+  --accent-soft: #211a0d;
+  --on-accent: #0d0c0a;       /* 琥珀底用深字（白字对比不足） */
+  --focus-ring: 0 0 0 2px #0d0c0a, 0 0 0 4px #d9a648;
+}
+
+/* ============ 1px 防线（低 DPR 屏边框提亮一档补偿） ============ */
+@media (resolution: 1.5dppx) {
+  html[data-ui="lite"] { --border-subtle: var(--gray-300); }
+  html[data-ui="lite"][data-theme="dark"] { --border-subtle: #414944; }
+  html[data-ui="lite"][data-theme="night"] { --border-subtle: #474034; }
+}
+
+/* ============ 动效尊重系统设置（reduced-motion 时长归零） ============ */
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-slow: 0ms; }
+}
