@@ -38,20 +38,27 @@ const SB_LAYER = [
  */
 function makeQuery(resolveRow) {
   let mode = 'select';
-  let col = null;
-  let val = null;
+  let filters = [];
 
   const q = {};
-  ['select', 'insert', 'upsert', 'delete', 'neq', 'in', 'is', 'ilike', 'like',
+  ['select', 'insert', 'upsert', 'delete', 'neq', 'in', 'is', 'like',
     'gte', 'lte', 'gt', 'lt', 'order', 'limit', 'range'].forEach(function (m) {
     q[m] = function () { return q; };
   });
   q.update = function () { mode = 'update'; return q; };
-  q.eq = function (c, v) { col = c; val = v; return q; };
+  q.eq = function (c, v) { filters.push({ op: 'eq', col: c, val: v }); return q; };
+  q.ilike = function (c, v) { filters.push({ op: 'ilike', col: c, val: v }); return q; };
 
   q.maybeSingle = async function () {
     if (mode === 'update') return { data: null, error: null };
-    return { data: resolveRow(col, val), error: null };
+    // 依次应用过滤条件（eq 精确 / ilike 大小写不敏感），与 PostgREST 语义对齐
+    let rows = null;
+    for (const f of filters) {
+      rows = resolveRow(f.col, f.val, f.op);
+      if (rows === undefined) rows = null;
+      if (rows === null) break;
+    }
+    return { data: rows, error: null };
   };
   q.then = function (onFulfilled, onRejected) {
     return Promise.resolve({ data: null, error: null }).then(onFulfilled, onRejected);
@@ -98,9 +105,15 @@ function setup(cfg) {
     },
     from: function (table) {
       if (table === 'profiles') {
-        return makeQuery(function (col, val) {
+        return makeQuery(function (col, val, op) {
           if (col === 'id') return cfg.profiles.find(function (p) { return p.id === val; }) || null;
-          if (col === 'username') return cfg.profiles.find(function (p) { return p.username === val; }) || null;
+          if (col === 'username') {
+            if (op === 'ilike') {
+              const low = String(val).toLowerCase();
+              return cfg.profiles.find(function (p) { return String(p.username).toLowerCase() === low; }) || null;
+            }
+            return cfg.profiles.find(function (p) { return p.username === val; }) || null;
+          }
           return null;
         });
       }
@@ -172,6 +185,19 @@ describe('Issue #170 用户名登录（profiles.email 为 NULL 的历史账号�
 
     expect(res.ok).toBe(true);
     expect(env.signInCalls.map(function (c) { return c.email; })).toEqual(['to9a4tr@bioquest.local']);
+  });
+
+  test('用户名大小写不敏感：输入 qiqi 可命中注册名 Qiqi 并用真实邮箱登录', async function () {
+    const env = setup({
+      profiles: [{ id: 'uid-2934166389@qq.com', username: 'Qiqi', email: '2934166389@qq.com' }],
+      passwords: { '2934166389@qq.com': '123456' }
+    });
+
+    const res = await env.loginUser('qiqi', '123456');
+
+    expect(res.ok).toBe(true);
+    expect(env.signInCalls.map(function (c) { return c.email; })).toEqual(['2934166389@qq.com']);
+    expect(res.user.username).toBe('Qiqi');
   });
 
   test('密码确实错误时提示失败并给出未绑定邮箱引导，不误报成功', async function () {

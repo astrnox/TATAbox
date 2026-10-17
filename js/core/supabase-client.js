@@ -695,6 +695,15 @@ async function loginUser(usernameOrEmail, password) {
           .select('id, username, email')
           .eq('username', usernameOrEmail)
           .maybeSingle();
+        // 用户名登录不区分大小写：eq 精确（区分大小写）未命中时用 ilike 回退，
+        // 否则输入 qiqi 查不到注册名 Qiqi，会误走占位邮箱候选导致"密码错误"
+        if (!(profileLookup && profileLookup.data)) {
+          var _safeName = usernameOrEmail.replace(/([%_\\])/g, '\\$1');
+          profileLookup = await sb.from('profiles')
+            .select('id, username, email')
+            .ilike('username', _safeName)
+            .maybeSingle();
+        }
       } catch (e) {
         // 查询失败不致命：仍可尝试下面的占位邮箱候选
         profileLookup = null;
