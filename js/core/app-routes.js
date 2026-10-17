@@ -127,10 +127,14 @@ const Routes = {
     render: 'renderStudyPage',
     module: 'study'
   },
+  '/videos': {
+    title: '生物动画视频',
+    render: 'renderBioVideoPage',
+    module: 'bio-video'
+  },
   '/bio-animation': {
-    title: '生物过程动画',
-    render: 'renderBioAnimationPage',
-    module: 'bio-animation'
+    title: '生物动画视频',
+    redirect: '/videos'
   },
   '/dashboard': {
     title: '仪表盘',

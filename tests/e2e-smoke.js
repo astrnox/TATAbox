@@ -5,7 +5,8 @@
 //   1. 首页可加载、标题非空、导航入口完整、主内容容器存在；
 //   2. 关键业务路由（练习 / 卡片 / 错题 / 学习 / 仪表盘 / 用户中心 / AI 导师…）
 //      都能渲染出非空内容（捕获模块未能挂载 / 渲染崩溃等回归）；
-//   3. 重定向路由（/review → /wrongbook、/points-leaderboard → /credit-leaderboard）生效；
+//   3. 重定向路由（/review → /wrongbook、/points-leaderboard → /credit-leaderboard、
+//      /bio-animation → /videos）生效；
 //   4. 全程未触发页面级 JS 异常（pageerror）。
 //   5. （Issue #121 P3-30 视觉回归）关键路由渲染后各截图落盘 /tmp 供人工比对，
 //      并断言渲染期间无 console error（CSS/JS/资源加载失败等视觉破坏信号）。
@@ -34,13 +35,15 @@ const ROUTES = [
   { hash: '/dashboard' },
   { hash: '/user' },
   { hash: '/tutor' },
-  { hash: '/credit-leaderboard' }
+  { hash: '/credit-leaderboard' },
+  { hash: '/videos' }
 ];
 
 // 重定向路由：访问 from 后应落在 to（location.hash 包含 '#' 前缀）
 const REDIRECTS = [
   { from: '/review', to: '/wrongbook' },
-  { from: '/points-leaderboard', to: '/credit-leaderboard' }
+  { from: '/points-leaderboard', to: '/credit-leaderboard' },
+  { from: '/bio-animation', to: '/videos' }
 ];
 
 (async () => {
