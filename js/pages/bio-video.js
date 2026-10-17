@@ -34,9 +34,9 @@
     return m + ':' + (s < 10 ? '0' + s : String(s));
   }
 
-  /** 兜底防线：五要素中 file/poster/license/source 缺任一则不进列表 */
+  /** 兜底防线：五要素 license/source/attribution/poster/steps + file 实体缺任一则不进列表 */
   function _eligible(v) {
-    return !!(v && v.file && v.poster && v.license && v.source);
+    return !!(v && v.file && v.poster && v.license && v.source && v.attribution);
   }
 
   /** 拉取并过滤清单；任何异常都回落为空数组（栏目进入空态而非崩溃） */
