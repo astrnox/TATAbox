@@ -635,6 +635,48 @@ html[data-ui="lite"] .lite-week-dot.today { box-shadow: 0 0 0 1px var(--accent);
 }
 .lite-footer .lite-footer-hint { display: block; margin-top: var(--space-1); }
 
+/* footer 登录/登出入口（文字级按钮，不引入新色） */
+.lite-auth-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-text);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lite-auth-btn:hover { color: var(--text-primary); }
+
+/* ---------- 登录弹窗（原生 dialog，无毛玻璃无渐变，只用语义令牌） ---------- */
+.lite-login {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-l);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  padding: var(--space-5);
+  width: min(360px, calc(100vw - 32px));
+}
+.lite-login::backdrop { background: var(--bg-page); }
+.lite-login-form { display: flex; flex-direction: column; }
+.lite-login-title { margin: 0 0 var(--space-2); font-size: var(--step-1); font-weight: 600; }
+.lite-login-label { margin-top: var(--space-3); font-size: var(--step--1); color: var(--text-secondary); }
+.lite-login-input {
+  margin-top: var(--space-1);
+  padding: 8px 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-btn);
+  width: 100%;
+}
+.lite-login-input:focus { border-color: var(--accent); }
+.lite-login-err {
+  margin: var(--space-3) 0 0;
+  font-size: var(--step--1);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+.lite-login-actions { display: flex; gap: var(--space-2); justify-content: flex-end; margin-top: var(--space-4); }
+
 /* ---------- toast（首次进入：进度互通提示） ---------- */
 .lite-toast {
   position: fixed;

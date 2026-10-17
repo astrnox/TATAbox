@@ -44,7 +44,7 @@
   /* ================= 全局状态 ================= */
   var S = {
     view: 'today',
-    bank: null,            // quiz.json 题库（懒加载）
+    bank: null,            // 题库（懒加载；与主站同源：manifest + data/bank 分片）
     decks: null,           // cards.json 卡片（启动加载）
     dueList: [],           // FSRS 当日到期卡（引擎实时值）
     target: 20,            // 今日练配额（引擎推荐，min(recommend, 20)）
@@ -338,12 +338,62 @@
    * ============================================================ */
   async function ensureBank() {
     if (S.bank) return S.bank;
-    try {
-      var r = await fetch('data/quiz.json');
-      var j = await r.json();
-      S.bank = (j['题库'] || []).filter(function (q) { return q.type === 'mtf' && q.subQuestions && q.subQuestions.length; });
-    } catch (e) { S.bank = []; }
+    S.bank = await loadShardBank();
+    if (!S.bank || !S.bank.length) {
+      // 分片不可用（离线/旧缓存）时回退静态 quiz.json
+      try {
+        var r = await fetch('data/quiz.json');
+        var j = await r.json();
+        S.bank = (j['题库'] || []).filter(function (q) { return q.type === 'mtf' && q.subQuestions && q.subQuestions.length; });
+      } catch (e) { S.bank = []; }
+    }
     return S.bank;
+  }
+
+  /**
+   * 题库与主站联动：以 data/manifest.json 的 files 清单为准拉取全部
+   * bank 分片（主站 loadQuestions 同一数据真源），不再依赖会过期的
+   * quiz.json 静态快照。过滤口径与主站练习页一致：mtf、子题 ≥4、
+   * 未被隔离标记（_needs_review/_unverified/_quarantined）。
+   */
+  async function loadShardBank() {
+    try {
+      var mfRes = await fetch('data/manifest.json');
+      if (!mfRes.ok) return [];
+      var mf = await mfRes.json();
+      var files = Object.keys(mf.files || {}).filter(function (k) {
+        return k.indexOf('bank/') === 0 && k.slice(-5) === '.json';
+      });
+      if (!files.length) return [];
+      var pending = files.slice();
+      var seen = {};
+      var list = [];
+      async function pull() {
+        while (pending.length) {
+          var f = pending.shift();
+          try {
+            var res = await fetch('data/' + f);
+            if (!res.ok) continue;
+            var obj = await res.json();
+            Object.keys(obj).forEach(function (id) {
+              var q = obj[id];
+              if (!q || typeof q !== 'object' || seen[id]) return;
+              seen[id] = 1;
+              q.id = id;      // 稳定 bioID 作题目 ID（与 loader.js 一致）
+              q.bioId = id;
+              list.push(q);
+            });
+          } catch (e) { /* 单分片失败不阻断整体 */ }
+        }
+      }
+      var workers = [];
+      for (var w = 0; w < 8; w++) workers.push(pull());   // 并发上限，避免 80 个连接齐发
+      await Promise.all(workers);
+      return list.filter(function (q) {
+        if (q.type !== 'mtf' || !q.subQuestions || q.subQuestions.length < 4) return false;
+        return q._needs_review !== true && q._unverified !== true && q._quarantined !== true;
+      });
+    } catch (e) { return []; }
   }
 
   function startPractice() {
@@ -1107,6 +1157,100 @@
   }
 
   /* ============================================================
+   * 登录（lite 入口）：复用 supabase-client 的 loginUser/logoutUser，
+   * 不引入主站 auth-ui（其弹层/验证码依赖主站 DOM，与 lite 无交集）
+   * ============================================================ */
+  function localPrivacy() {
+    try { return localStorage.getItem(LS.privacy) || 'public'; } catch (e) { return 'public'; }
+  }
+
+  /** 读自己的榜单隐私两位（云优先，失败回退本地偏好） */
+  async function loadCloudPrivacy() {
+    try {
+      var u = window.getCurrentUser();
+      if (u && u.id) {
+        var pr = await fetch(SUPABASE_URL + '/rest/v1/profiles?select=leader_anon,leader_optout&id=eq.' + encodeURIComponent(u.id),
+          { headers: sbHeaders() });
+        if (pr.ok) {
+          var pj = await pr.json();
+          if (pj && pj[0]) {
+            S.privacy = pj[0].leader_optout ? 'out' : (pj[0].leader_anon ? 'anon' : 'public');
+            return;
+          }
+        } else if (pr.status === 400 || pr.status === 404) {
+          S.board.localOnly = true;
+        }
+      }
+    } catch (e) { /* 回退本地 */ }
+    S.privacy = localPrivacy();
+  }
+
+  /** footer 账户行：状态文字 + 登录/登出按钮 + 入口偏好 */
+  function paintAccount() {
+    var acc = $('#liteAccount');
+    if (!acc) return;
+    var pref = '';
+    try { pref = localStorage.getItem(LS.entryPref) || ''; } catch (e) {}
+    acc.innerHTML = (S.loggedIn ? '已登录 · 数据与主站互通' : '未登录 · 本机存储') +
+      ' · <button type="button" class="lite-auth-btn" data-lite="auth">' +
+      (S.loggedIn ? '登出' : '登录') + '</button>' +
+      ' · <label class="cursor-ptr"><input type="checkbox" id="liteEntryPref"' +
+      (pref === 'lite' ? ' checked' : '') + '> 记住入口偏好</label>';
+    var cb = $('#liteEntryPref');
+    if (cb) cb.addEventListener('change', function () {
+      try {
+        if (cb.checked) localStorage.setItem(LS.entryPref, 'lite');
+        else localStorage.removeItem(LS.entryPref);
+      } catch (e) {}
+    });
+  }
+
+  /** 登录/登出后的状态切换（footer、隐私偏好、榜单视图、周值上行） */
+  async function afterAuthChange(loggedIn) {
+    S.loggedIn = loggedIn;
+    if (loggedIn) {
+      await loadCloudPrivacy();
+      toast('已登录 · 数据与主站互通');
+      scheduleWeekPatch();
+    } else {
+      S.privacy = localPrivacy();
+      S.board.my = null;
+      S.board.rows = null;
+      toast('已登出 · 本机存储');
+    }
+    paintAccount();
+    if (S.view === 'board') { renderBoard(); fetchBoard(); }
+  }
+
+  /** 登录表单提交（dialog 内，CSP：无内联 handler） */
+  function bindLoginForm() {
+    var form = $('#liteLoginForm');
+    if (!form) return;
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();   // method=dialog 会自动关窗，这里按成败接管
+      var errEl = $('#liteLoginErr');
+      var btn = $('#liteLoginSubmit');
+      var uEl = $('#liteLoginUser');
+      var pEl = $('#liteLoginPass');
+      var name = uEl ? uEl.value.trim() : '';
+      var pwd = pEl ? pEl.value : '';
+      function showErr(msg) { if (errEl) { errEl.textContent = msg; errEl.hidden = false; } }
+      if (errEl) errEl.hidden = true;
+      if (!name || !pwd) { showErr('请输入用户名和密码'); return; }
+      if (btn) { btn.disabled = true; btn.textContent = '登录中…'; }
+      var res = null;
+      try { res = await window.loginUser(name, pwd); }
+      catch (ex) { res = { ok: false, error: (ex && ex.message) || '登录失败' }; }
+      if (btn) { btn.disabled = false; btn.textContent = '登录'; }
+      if (!res.ok) { showErr(res.error || '登录失败'); return; }
+      var dlg = $('#liteLoginDlg');
+      if (dlg && dlg.open) dlg.close();
+      if (pEl) pEl.value = '';
+      await afterAuthChange(true);
+    });
+  }
+
+  /* ============================================================
    * 路由与渲染
    * ============================================================ */
   var VIEWS = ['today', 'practice', 'review', 'wrong', 'board'];
@@ -1155,6 +1299,23 @@
       return;
     }
     if (act === 'start') { startPractice(); renderPractice(); return; }
+
+    if (act === 'auth') {
+      if (!S.loggedIn) {
+        var dlg = $('#liteLoginDlg');
+        if (dlg) { dlg.showModal(); var uEl = $('#liteLoginUser'); if (uEl) uEl.focus(); }
+        return;
+      }
+      Promise.resolve(typeof window.logoutUser === 'function' ? window.logoutUser() : null)
+        .then(function () { return afterAuthChange(false); })
+        .catch(function () { return afterAuthChange(false); });
+      return;
+    }
+    if (act === 'login-cancel') {
+      var cdlg = $('#liteLoginDlg');
+      if (cdlg && cdlg.open) cdlg.close();
+      return;
+    }
 
     if (act === 'answer') {
       var p = S.practice;
@@ -1254,6 +1415,8 @@
     if (/input|textarea/i.test((e.target.tagName || ''))) return;
     var k = e.key;
     if (k === 'Escape') {
+      // 登录弹窗打开时交给 dialog 原生 Esc 关闭，不叠加视图级退出
+      if (document.querySelector('dialog[open]')) return;
       if (S.view === 'practice' && S.practice && !S.practice.finished) {
         if (S.practice.idx > 0) finishPractice();
         S.practice = null;
@@ -1326,46 +1489,12 @@
         S.loggedIn = !!(await window.restoreSession());
       }
     } catch (e) { S.loggedIn = false; }
-    if (!S.loggedIn) {
-      try { S.privacy = localStorage.getItem(LS.privacy) || 'public'; } catch (e) {}
-    } else {
-      // 云偏好优先（读自己的两个布尔位）
-      try {
-        var u = window.getCurrentUser();
-        if (u && u.id) {
-          var pr = await fetch(SUPABASE_URL + '/rest/v1/profiles?select=leader_anon,leader_optout&id=eq.' + encodeURIComponent(u.id),
-            { headers: sbHeaders() });
-          if (pr.ok) {
-            var pj = await pr.json();
-            if (pj && pj[0]) {
-              S.privacy = pj[0].leader_optout ? 'out' : (pj[0].leader_anon ? 'anon' : 'public');
-            } else {
-              S.privacy = localStorage.getItem(LS.privacy) || 'public';
-            }
-          } else {
-            S.board.localOnly = pr.status === 400 || pr.status === 404;
-            S.privacy = localStorage.getItem(LS.privacy) || 'public';
-          }
-        }
-      } catch (e) { S.privacy = localStorage.getItem(LS.privacy) || 'public'; }
-    }
+    if (S.loggedIn) await loadCloudPrivacy();
+    else S.privacy = localPrivacy();
 
-    // footer 账户行 + 入口偏好（5.3，默认关）
-    var acc = $('#liteAccount');
-    if (acc) {
-      var pref = '';
-      try { pref = localStorage.getItem(LS.entryPref) || ''; } catch (e) {}
-      acc.innerHTML = (S.loggedIn ? '已登录 · 数据与主站互通' : '未登录 · 本机存储') +
-        ' · <label class="cursor-ptr"><input type="checkbox" id="liteEntryPref"' +
-        (pref === 'lite' ? ' checked' : '') + '> 记住入口偏好</label>';
-      var cb = $('#liteEntryPref');
-      if (cb) cb.addEventListener('change', function () {
-        try {
-          if (cb.checked) localStorage.setItem(LS.entryPref, 'lite');
-          else localStorage.removeItem(LS.entryPref);
-        } catch (e) {}
-      });
-    }
+    // footer 账户行（登录/登出入口 + 入口偏好，5.3 默认关）+ 登录表单
+    paintAccount();
+    bindLoginForm();
 
     // 事件委托（CSP 无内联 handler）
     document.addEventListener('click', onClick);

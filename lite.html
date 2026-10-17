@@ -94,6 +94,26 @@
 
   <div class="lite-toast" id="liteToast" role="status" aria-live="polite"></div>
 
+  <!-- 登录弹窗（lite 入口：复用 supabase-client 的 loginUser，不引入 auth-ui）
+       表单 method=dialog，提交成败由 lite-app.js 接管 -->
+  <dialog class="lite-login" id="liteLoginDlg" aria-labelledby="liteLoginTitle">
+    <form method="dialog" class="lite-login-form" id="liteLoginForm">
+      <h2 class="lite-login-title" id="liteLoginTitle">登录</h2>
+      <p class="lite-note m0">与完整版同一账号，进度、错题与榜单互通。</p>
+      <label class="lite-login-label" for="liteLoginUser">用户名或邮箱</label>
+      <input class="lite-login-input" id="liteLoginUser" name="username" type="text"
+             autocomplete="username" autocapitalize="off" spellcheck="false" required>
+      <label class="lite-login-label" for="liteLoginPass">密码</label>
+      <input class="lite-login-input" id="liteLoginPass" name="password" type="password"
+             autocomplete="current-password" required>
+      <p class="lite-login-err" id="liteLoginErr" role="alert" hidden></p>
+      <div class="lite-login-actions">
+        <button type="button" class="btn-secondary" data-lite="login-cancel">取消</button>
+        <button type="submit" class="btn-primary" id="liteLoginSubmit">登录</button>
+      </div>
+    </form>
+  </dialog>
+
   <!-- ========== 数据层（与 quiz.html 同一成熟加载范式，同步顺序） ========== -->
   <!-- Supabase SDK（带 SRI；lite 仅此一个外部域，CSP 已限定） -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.115.0" integrity="sha384-EyR2P0dlmjnEGcm9xcjdAn0VedZpRHEwDLP9oSS6wYMvzHBHkUrvgonveazJ/sSx" crossorigin="anonymous"></script>
