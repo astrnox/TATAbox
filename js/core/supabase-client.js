@@ -184,6 +184,12 @@ function _setupAuthListener() {
           sessionStorage.removeItem('bioquest_admin_lock');
         } catch(e) {}
         if (typeof window.updateAuthUI === 'function') window.updateAuthUI();
+      } else if (event === 'PASSWORD_RECOVERY') {
+        // 邮件重置链接落地：GoTrue 会用 #access_token=...&type=recovery 覆盖
+        // redirectTo 自带的 hash，token 消费后 URL 只剩 #，这里主动跳到设置密码页
+        if (window.location.hash !== '#/reset-password') {
+          window.location.hash = '#/reset-password';
+        }
       }
     });
   } catch (e) {
