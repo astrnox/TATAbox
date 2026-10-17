@@ -1,0 +1,335 @@
+/* ============================================================
+   TATABOX — 生物动画视频栏目（#/videos）
+   由 bio-animation Canvas 栏目移植（方案 v2.0 阶段 1）
+   约束：全部走 tokens.css 令牌；无内联 style、无渐变、
+   无 backdrop-filter、无彩 emoji（audit-design 棘轮红线）；
+   未进 bundle-core（非首屏栏目，按 index.html 异步样式惯例
+   以 preload data-css-async + noscript 引入，双清单均不动）
+   ============================================================ */
+
+.bv-page {
+  max-width: var(--measure-content);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4) var(--space-7);
+  color: var(--text-primary);
+}
+
+.bv-header {
+  margin-bottom: var(--space-5);
+}
+
+.bv-h1 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--step-3);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.bv-sub {
+  margin: 0;
+  font-size: var(--step-0);
+  color: var(--text-secondary);
+}
+
+/* ── 列表网格 ── */
+
+.bv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.bv-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease);
+}
+
+.bv-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--accent);
+}
+
+.bv-card:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.bv-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-sunken);
+}
+
+.bv-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bv-badge {
+  position: absolute;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  padding: 2px var(--space-2);
+  font-size: var(--step--1);
+  font-family: var(--font-mono);
+  color: var(--text-inverse);
+  background: var(--bg-inverse);
+  border-radius: var(--radius-s);
+}
+
+.bv-playmark {
+  position: absolute;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  width: 34px;
+  height: 34px;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+  opacity: 0.92;
+}
+
+.bv-playmark::after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  border-style: solid;
+  border-width: 7px 0 7px 11px;
+  border-color: transparent transparent transparent var(--on-accent);
+}
+
+.bv-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4) var(--space-4);
+}
+
+.bv-title {
+  margin: 0;
+  font-size: var(--step-1);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+.bv-topics {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--text-tertiary);
+}
+
+.bv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--text-secondary);
+}
+
+.bv-chip {
+  display: inline-block;
+  padding: 1px var(--space-2);
+  font-size: var(--step--1);
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-full);
+}
+
+/* ── 空态 ── */
+
+.bv-empty {
+  padding: var(--space-7) var(--space-4);
+  text-align: center;
+  font-size: var(--step-1);
+  color: var(--text-secondary);
+  background: var(--bg-sunken);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-card);
+}
+
+/* ── 播放页 ── */
+
+.bv-back {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--step-0);
+  font-family: inherit;
+  color: var(--accent-text);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.bv-back:hover {
+  border-color: var(--accent);
+}
+
+.bv-back:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.bv-heading {
+  margin: 0 0 var(--space-2);
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+.bv-desc {
+  margin: 0 0 var(--space-3);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.bv-datahint {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--step--1);
+  line-height: 1.6;
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-s);
+}
+
+.bv-video-wrap {
+  margin-bottom: var(--space-4);
+}
+
+.bv-video {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  background: var(--bg-inverse);
+  border-radius: var(--radius-card);
+}
+
+.bv-video:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.bv-error {
+  margin: var(--space-2) 0 0;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--step-0);
+  color: var(--text-primary);
+  background: var(--bg-sunken);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-s);
+}
+
+.bv-error[hidden] {
+  display: none;
+}
+
+.bv-attribution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-5);
+  padding: var(--space-3);
+  font-size: var(--step--1);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  background: var(--bg-sunken);
+  border-radius: var(--radius-card);
+}
+
+.bv-attr-text {
+  overflow-wrap: anywhere;
+}
+
+.bv-source {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+
+.bv-source:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-s);
+}
+
+.bv-steps {
+  margin-bottom: var(--space-4);
+}
+
+.bv-steps-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--step-1);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.bv-steps-list {
+  margin: 0;
+  padding-left: var(--space-5);
+  font-size: var(--step-0);
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.bv-steps-list li {
+  margin-bottom: var(--space-1);
+}
+
+.bv-duration {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--text-tertiary);
+}
+
+/* ── 窄屏（F12：768px 不出现横向滚动） ── */
+
+@media (max-width: 768px) {
+  .bv-page {
+    padding: var(--space-4) var(--space-3) var(--space-6);
+  }
+
+  .bv-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .bv-h1 {
+    font-size: var(--step-2);
+  }
+
+  .bv-card-body {
+    padding: var(--space-2) var(--space-3) var(--space-3);
+  }
+
+  .bv-title {
+    font-size: var(--step-0);
+  }
+
+  .bv-video {
+    max-height: 56vh;
+  }
+}
