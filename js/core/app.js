@@ -1176,7 +1176,7 @@ function handleRoute(route) {
     '/wrongbook': 'wrongbook',
     '/review-deep': 'review-deep',
     '/study': 'study',
-    '/bio-animation': 'bio-animation',
+    '/videos': 'bio-video',
     '/dashboard': 'dashboard',
     '/tutor': 'tutor',
     '/discussion': 'discussion',
@@ -1304,7 +1304,7 @@ function handleRoute(route) {
         '/wrongbook': 'initWrongbook',
         '/review-deep': 'initReviewDeep',
         '/study': 'initStudy',
-        '/bio-animation': 'initBioAnimation',
+        '/videos': 'initBioVideo',
         '/dashboard': 'initDashboard',
         '/tutor': 'initTutor',
         '/discussion': 'initDiscussion',
@@ -1430,7 +1430,7 @@ function modNameToInitFn(modName) {
     'wrongbook': 'initWrongbook',
     'review-deep': 'initReviewDeep',
     'study': 'initStudy',
-    'bio-animation': 'initBioAnimation',
+    'bio-video': 'initBioVideo',
     'dashboard': 'initDashboard',
     'tutor': 'initTutor',
     'discussion': 'initDiscussion',
@@ -1750,8 +1750,8 @@ function doRouteRender(route, target) {
       case '/study':
         _safeInit('initStudy', route, target);
         break;
-      case '/bio-animation':
-        _safeInit('initBioAnimation', route, target);
+      case '/videos':
+        _safeInit('initBioVideo', route, target);
         break;
       case '/dashboard':
         _safeInit('initDashboard', route, target);

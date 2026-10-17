@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-40ff5f0931a6'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-2dc145873196'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -146,7 +146,7 @@ var WARMUP_PHASE_2 = [
   './js/pages/community.js',
   './js/pages/bounty.js',
   './js/pages/bio-lab.js',
-  './js/pages/bio-animation.js',
+  './js/pages/bio-video.js',
   './js/pages/phet-sims.js',
   './js/pages/photo-quiz.js',
   './js/pages/biology-history.js',
@@ -174,7 +174,8 @@ var WARMUP_PHASE_2 = [
   './data/resources.json',
   './data/knowledge-graph.json',
   './data/logic_questions.json',
-  './data/community.json'
+  './data/community.json',
+  './data/videos.json'
 ];
 
 // 这些"很重"的文件不做 install 预缓存，避免首次注册 SW 时 install 超时
@@ -193,7 +194,12 @@ var NEVER_PRECACHE = [
   './js/vendor/react.production.min.js',
   './js/vendor/react-dom.production.min.js',
   './js/vendor/igv.min.js',
-  './js/vendor/mammoth.browser.min.js'
+  './js/vendor/mammoth.browser.min.js',
+  // 视频实体（单条最大 15MB）：绝不 install 预缓存，避免首次注册 SW 超时；
+  // 首次播放时经 Cache First 自然进入缓存（见 data/videos.json 五要素清单）
+  './videos/mitosis-cell-division.mp4',
+  './videos/cd8-t-cell-mhc1.mp4',
+  './videos/phagocytosis-leucocytes.mp4'
 ];
 
 /**

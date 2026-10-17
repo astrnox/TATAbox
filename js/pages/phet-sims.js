@@ -600,7 +600,7 @@
     renderPhetSimsPage(target);
   }
 
-  // 暴露到全局（与 bio-lab.js / bio-animation.js 保持一致）
+  // 暴露到全局（与 bio-lab.js / bio-video.js 保持一致）
   if (typeof window !== 'undefined') {
     window.initPhetSims = initPhetSims;
     window.renderPhetSimsPage = renderPhetSimsPage;

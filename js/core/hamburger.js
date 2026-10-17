@@ -53,7 +53,7 @@
     '    <a href="cards.html">卡片</a>',
     '  </div>',
     '  <div class="mn-section"><div class="mn-section-label">探索</div>',
-    '    <a href="' + BASE + '#/bio-animation">生物动画</a>',
+    '    <a href="' + BASE + '#/videos">动画视频</a>',
     '    <a href="biology-history.html">生物学史</a>',
     '    <a href="wiki.html">生物百科</a>',
     '    <a href="' + BASE + '#/knowledge-graph">图谱</a>',

@@ -30,3 +30,6 @@ tatabox.cc.cd
 # ---- 外链导航链接（footer 外部站外链接，非加载的静态资源，无需 SRI）----
 github.com
 creativecommons.org
+# 视频条目的"查看授权与来源页"外链（data/videos.json source 字段，由
+# js/pages/bio-video.js 渲染为 <a target="_blank">，属导航链接无需 SRI）
+commons.wikimedia.org

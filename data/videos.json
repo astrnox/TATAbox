@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-17",
+  "videos": [
+    {
+      "id": "mitosis-cell-division",
+      "title": "有丝分裂：染色体分离与胞质分裂",
+      "description": "3D 动画演示动物细胞有丝分裂全程，可见染色体凝缩、排列、分离与胞质分裂。",
+      "topics": ["细胞分裂", "有丝分裂"],
+      "file": "videos/mitosis-cell-division.mp4",
+      "poster": "videos/mitosis-cell-division.jpg",
+      "duration": "0:10",
+      "durationSec": 10.42,
+      "width": 960,
+      "height": 540,
+      "sizeBytes": 194067,
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Proceso_de_Mitosis_celular.ogv",
+      "attribution": "María Bejarano《Proceso de Mitosis celular》（Wikimedia Commons，CC BY-SA 3.0）",
+      "steps": [
+        "间期结束，细胞核内染色质凝缩成可见染色体",
+        "前期：核膜解体，纺锤体形成，染色体散开",
+        "中期：染色体排列在细胞赤道板上",
+        "后期：姐妹染色单体被纺锤丝拉向两极",
+        "末期与胞质分裂：两个子细胞核重新形成，细胞一分为二"
+      ]
+    },
+    {
+      "id": "cd8-t-cell-mhc1",
+      "title": "CD8⁺ T 细胞清除感染神经元（MHC-I 依赖）",
+      "description": "免疫荧光延时影像：绿色为神经元网络，红色为 CD8⁺ T 细胞，展示细胞毒性 T 细胞与神经元的接触与杀伤过程。",
+      "topics": ["免疫应答", "细胞毒性 T 细胞", "MHC-I"],
+      "file": "videos/cd8-t-cell-mhc1.mp4",
+      "poster": "videos/cd8-t-cell-mhc1.jpg",
+      "duration": "0:10",
+      "durationSec": 10,
+      "width": 764,
+      "height": 760,
+      "sizeBytes": 2072624,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Neurons-are-MHC-Class-I-Dependent-Targets-for-CD8-T-Cells-upon-Neurotropic-Viral-Infection-ppat.1002393.s011.ogv",
+      "attribution": "Chevalier G, Suberbielle E, 等《Neurons are MHC Class I Dependent Targets for CD8 T Cells upon Neurotropic Viral Infection》, PLOS Pathogens (2014) Video S7（CC BY 2.5，via Wikimedia Commons）",
+      "steps": [
+        "神经元网络（绿色荧光）铺展成培养网络",
+        "CD8⁺ T 细胞（红色荧光）进入视野并在神经元间迁移扫描",
+        "T 细胞与候选靶神经元接触，形成免疫突触",
+        "被识别的感染神经元在 T 细胞作用下清除",
+        "该识别与杀伤过程依赖靶细胞表面的 MHC-I 分子（论文核心结论）"
+      ]
+    },
+    {
+      "id": "phagocytosis-leucocytes",
+      "title": "白细胞吞噬作用实录",
+      "description": "血液涂片活体显微影像：白细胞在红细胞之间伸出伪足捕捉并吞入病原颗粒，演示吞噬作用全过程。",
+      "topics": ["先天免疫", "吞噬作用"],
+      "file": "videos/phagocytosis-leucocytes.mp4",
+      "poster": "videos/phagocytosis-leucocytes.jpg",
+      "duration": "0:30",
+      "durationSec": 30.11,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 5399837,
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phagocytosis_by_leucocytes_in_blood_short_libtheora.ogg",
+      "attribution": "Bert Grijsen《Phagocytosis by leucocytes in blood》（Wikimedia Commons，CC BY-SA 4.0）",
+      "steps": [
+        "白细胞（中央大细胞）在红细胞间缓慢变形移动",
+        "识别并靠近病原颗粒，伸出伪足将其包围",
+        "颗粒被吞入细胞内形成吞噬体",
+        "吞噬体与溶酶体融合，内容物被消化分解"
+      ]
+    }
+  ]
+}
