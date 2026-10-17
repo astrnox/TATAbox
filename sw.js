@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-90cc5b07fca1'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-1217912d6e7e'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -38,6 +38,11 @@ var SKELETON_ASSETS = [
   './',
   './index.html',
   './manifest.json',
+  // 极简版（lite）整套入口：令牌 + 组件样式 + 单文件应用
+  './lite.html',
+  './css/tokens.css',
+  './css/lite.css',
+  './js/lite/lite-app.js',
   // 首屏同步渲染 CSS（不可异步，否则 FOUC）
   './css/globals.css',
   './css/layout.css',
@@ -58,7 +63,14 @@ var SKELETON_ASSETS = [
   './js/vendor/lz-string.min.js',
   // 必要的 meta/小数据
   './data/_version.json',
-  './data/cards.json'
+  './data/cards.json',
+  // lite 引擎与落盘依赖（小文件，保证 lite 离线可用）
+  './js/vendor/ts-fsrs.umd.min.js',
+  './js/algo/fsrs-algorithm.js',
+  './js/core/question-utils.js',
+  './js/core/record-session.js',
+  './js/core/supabase.js',
+  './js/core/sb-data.js'
 ];
 
 // 激活后空闲预热：首屏常用功能文件 + 常用 CSS（quiz/practice 这种高频路由）

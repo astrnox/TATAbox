@@ -65,6 +65,37 @@
   color: #fff;
 }
 
+/* 极简版切换按钮（设计方案 v2 §5.1）：明显且不突兀。
+   深绿 header 上用白底实心 chip（对比度 ≈15:1，一眼可见），
+   与绿色实心「登录」形成"中性 + 彩色"搭配，不与主 CTA 抢戏；
+   hover 反相为透明底白字，复用与相邻控件一致的反馈语汇。 */
+.header-lite-btn {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 9px 15px;
+  border-radius: var(--radius-full, 999px);
+  border: 1px solid #fff;
+  background: #fff;
+  color: var(--color-primary-900, #1a2f1d);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.header-lite-btn:hover {
+  background: transparent;
+  color: #fff;
+}
+.header-lite-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-primary-900, #1a2f1d), 0 0 0 4px #fff;
+}
+@media (max-width: 480px) {
+  .header-lite-btn { padding: 8px 11px; font-size: 0.78rem; }
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;

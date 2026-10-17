@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-ui="lite">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#f6f7f6"
+        data-color-light="#f6f7f6" data-color-dark="#0b0e0c" data-color-night="#0d0c0a">
+  <meta name="color-scheme" content="light dark">
+  <!-- lite 是主站的功能入口而非内容页：不参与收录 -->
+  <meta name="robots" content="noindex">
+  <!-- 极简版不引入第三方框架与埋点：connect 仅 Supabase REST（SDK 为 script-src） -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    font-src 'self';
+    connect-src 'self' https://qxehkfucvmxuojjkdaqy.supabase.co;
+    worker-src 'self' blob:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2764%27%20height%3D%2764%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%230a0a0a%27%2F%3E%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%3E%3Crect%20x%3D%273%27%20y%3D%273%27%20width%3D%2726%27%20height%3D%2726%27%20rx%3D%277.6%27%20stroke%3D%27%2335855a%27%20stroke-width%3D%272.6%27%2F%3E%3Cpath%20d%3D%27M16%2010.2v11.8%27%20stroke%3D%27%23f5f5f5%27%20stroke-width%3D%272.6%27%2F%3E%3Cpath%20d%3D%27M11.2%2010.2h9.6%27%20stroke%3D%27%23f5f5f5%27%20stroke-width%3D%272.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+
+  <title>极简版 · TATABOX</title>
+
+  <style>
+    /* 首帧防闪（与主站 boot mask 同思路，lite 无 webfont 故无需字体防闪） */
+    html, body { margin: 0; padding: 0; background: #f6f7f6; color: #0a0a0a; }
+    html[data-theme="dark"] body { background: #0b0e0c; color: #e6e9e6; }
+    html[data-theme="night"] body { background: #0d0c0a; color: #e8e2d4; }
+    #lite-boot { position: fixed; inset: 0; display: flex; align-items: center;
+      justify-content: center; background: inherit; font: 13px -apple-system, sans-serif;
+      color: inherit; opacity: .55; z-index: 99999; transition: opacity .3s ease; }
+    #lite-boot.gone { opacity: 0; pointer-events: none; }
+  </style>
+
+  <!-- 同步防闪：主题三态（light / dark / night）在首帧前应用 -->
+  <script src="js/core/theme-init.js?v=20261016a"></script>
+  <!-- 全局令牌（唯一定义源）必须在组件样式之前生效 -->
+  <link rel="stylesheet" href="css/tokens.css?v=20261016a">
+  <link rel="stylesheet" href="css/lite.css?v=20261016a">
+</head>
+<body>
+  <div id="lite-boot">TATABOX</div>
+
+  <!-- 全站唯一常驻动效：顶部 1px 进度线（槽满宽，i 为填充量） -->
+  <div class="lite-progress-line" id="liteProgress" role="presentation"><i></i></div>
+
+  <header class="lite-header">
+    <div class="lite-header-inner">
+      <!-- 品牌桥接：与主站 header-brand 同款「盒+T」标记（结构一致，颜色走各自主题令牌） -->
+      <a class="lite-brand" href="#/today">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="7.6" stroke="currentColor" stroke-width="2.6"/>
+          <path d="M16 10.2v11.8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M11.2 10.2h9.6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        </svg>
+        <span>TATABOX<span class="lite-brand-mark"> 极简</span></span>
+      </a>
+
+      <nav class="lite-nav" id="liteNav" aria-label="主导航">
+        <a href="#/today" data-view="today">今日</a>
+        <a href="#/practice" data-view="practice">练</a>
+        <a href="#/review" data-view="review">复</a>
+        <a href="#/wrong" data-view="wrong">错</a>
+        <a href="#/board" data-view="board">榜</a>
+      </nav>
+
+      <div class="lite-header-right">
+        <button class="lite-theme-btn" id="liteThemeBtn" type="button"
+                aria-label="切换主题：亮 / 暗 / 夜巡">亮</button>
+        <a class="lite-exit" href="index.html" id="liteExit" title="返回完整版">完整版</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lite-main" id="liteMain">
+    <!-- 五视图容器：内容由 lite-app.js 渲染（今日清单 / 练 / 复 / 错 / 榜） -->
+    <section class="lite-view" id="view-today" aria-labelledby="h1-today"></section>
+    <section class="lite-view" id="view-practice" aria-labelledby="h1-practice"></section>
+    <section class="lite-view" id="view-review" aria-labelledby="h1-review"></section>
+    <section class="lite-view" id="view-wrong" aria-labelledby="h1-wrong"></section>
+    <section class="lite-view" id="view-board" aria-labelledby="h1-board"></section>
+
+    <footer class="lite-footer">
+      <span id="liteFooter">每周一重置 · 只显示你前后 5 名</span>
+      <span class="lite-footer-hint" id="liteAccount"></span>
+    </footer>
+  </main>
+
+  <div class="lite-toast" id="liteToast" role="status" aria-live="polite"></div>
+
+  <!-- ========== 数据层（与 quiz.html 同一成熟加载范式，同步顺序） ========== -->
+  <!-- Supabase SDK（带 SRI；lite 仅此一个外部域，CSP 已限定） -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.115.0" integrity="sha384-EyR2P0dlmjnEGcm9xcjdAn0VedZpRHEwDLP9oSS6wYMvzHBHkUrvgonveazJ/sSx" crossorigin="anonymous"></script>
+  <script src="js/core/supabase-client.js?v=20261016a"></script>
+  <!-- 云端复习卡/错题封装（recordWrongAnswer：题错入云端 review_cards，登录态） -->
+  <script src="js/core/sb-data.js?v=20261016a"></script>
+  <!-- wrong_questions 云端 dual-write（storage.js _syncWrongToSupabase 的兜底分支裸调 saveWrongQuestion） -->
+  <script src="js/core/supabase.js?v=20261016a"></script>
+  <script src="js/core/utils.js?v=20261016a"></script>
+  <!-- 双层存储：主站与 lite 共享的唯一数据源（记录/错题/设置/标本馆） -->
+  <script src="js/core/storage.js?v=20261016a"></script>
+
+  <!-- ===== 引擎（defer，不阻塞首帧） ===== -->
+  <!-- ts-fsrs (MIT) 官方 FSRS-5 引擎 UMD，必须在包装层之前 -->
+  <script src="js/vendor/ts-fsrs.umd.min.js?v=20261016a" defer></script>
+  <script src="js/algo/fsrs-algorithm.js?v=20261016a" defer></script>
+  <script src="js/core/question-model.js?v=20261016a" defer></script>
+  <script src="js/core/question-utils.js?v=20261016a" defer></script>
+  <script src="js/core/score-engine.js?v=20261016a" defer></script>
+  <!-- 统一会话落盘（BioQuestSession）：模块统计/难度自适应/云端错题/bio 分，
+       与 practice/exam/quiz 同一口径；缺依赖时内部 typeof 守卫静默降级 -->
+  <script src="js/core/record-session.js?v=20261016a" defer></script>
+  <!-- lite 单文件应用：路由 + 五视图 + 引擎驱动配额 + 排行榜 -->
+  <script src="js/lite/lite-app.js?v=20261016a" defer></script>
+
+  <!-- PWA 注册（复用主站 sw-register） -->
+  <script src="js/core/sw-register.js?v=20261016a" defer></script>
+</body>
+</html>

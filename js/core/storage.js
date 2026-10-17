@@ -15,6 +15,7 @@ var KEYS = {
   RECORDS: STORAGE_PREFIX + 'records',
   FAVORITES: STORAGE_PREFIX + 'favorites',
   WRONG_QUESTIONS: STORAGE_PREFIX + 'wrong_questions',
+  SPECIMENS: STORAGE_PREFIX + 'specimens',          // 标本馆（9.1）：已掌握错题的馆藏档案
   STATS: STORAGE_PREFIX + 'stats',
   DEVICE_ID: STORAGE_PREFIX + 'device_id',
   PROFILE: STORAGE_PREFIX + 'profile',
@@ -972,6 +973,9 @@ function addWrongQuestion(qId, module, questionText, fullQuestion) {
   }
 
   safeSetJSON(KEYS.WRONG_QUESTIONS, wrongQuestions);
+  // 标本馆口径（设计方案 9.1）：同题再次做错 → 自动出馆重新排队列，
+  // 首次做错日期（collectedAt）保留原值，入馆日期清空待重记。
+  _specimenExit(qId, 'relapsed');
   _syncWrongToSupabase(qId, module, questionText, existing ? existing.wrongCount : 1);
   return true;
 }
@@ -1021,6 +1025,121 @@ function removeWrongQuestion(qId) {
   }
 
   return true;
+}
+
+/* ============================================================
+ * 标本馆（设计方案 9.1）——已掌握错题的馆藏档案
+ * 数据口径（写死，防止馆藏量撒谎）：
+ *  - 入馆：引擎判定"已掌握"后由 specAddSpecimen 单点写入，同时移出待处理队列；
+ *  - 出馆：同题再次做错 → addWrongQuestion 内 _specimenExit('relapsed') 自动出馆
+ *          重新排队列（collectedAt 保留、enteredAt 清空待重记）；
+ *  - 手动：specRemoveSpecimen 供用户主动"移出馆藏"重练。
+ * ============================================================ */
+
+function getSpecimens() {
+  var list = safeGetJSON(KEYS.SPECIMENS, []);
+  if (!Array.isArray(list)) list = [];
+  // 只显示在馆标本（enteredAt > 0）；已出馆记录保留采集日期、待重记入馆日期
+  list = list.filter(function (s) { return s && (s.enteredAt || 0) > 0; });
+  // 新入馆在前
+  list.sort(function (a, b) { return (b.enteredAt || 0) - (a.enteredAt || 0); });
+  return list;
+}
+
+function getSpecimenCount() {
+  var list = safeGetJSON(KEYS.SPECIMENS, []);
+  if (!Array.isArray(list)) return 0;
+  return list.filter(function (s) { return s && (s.enteredAt || 0) > 0; }).length;
+}
+
+/**
+ * 入馆（引擎单点写入；同时把该题移出待处理错题队列）
+ * @param {{qId:string, subject?:string, module?:string, text?:string, collectedAt?:number}} spec
+ *        collectedAt = 首次做错日期（取自队列记录 timestamp），缺省取当前时间
+ */
+function specAddSpecimen(spec) {
+  if (!spec || !spec.qId) return false;
+  var qId = (window.resolveQuestionBioId || resolveQuestionBioId)(spec.qId);
+  var list = safeGetJSON(KEYS.SPECIMENS, []);
+  if (!Array.isArray(list)) list = [];
+
+  var now = Date.now();
+  var exist = null;
+  for (var i = 0; i < list.length; i++) {
+    if (list[i].qId === qId) { exist = list[i]; break; }
+  }
+  if (exist) {
+    exist.enteredAt = now;
+    exist.subject = spec.subject || exist.subject;
+    exist.module = spec.module || exist.module;
+    exist.text = spec.text || exist.text;
+  } else {
+    list.push({
+      qId: qId,
+      subject: spec.subject || '',
+      module: spec.module || '',
+      text: spec.text || '',
+      collectedAt: spec.collectedAt || now,
+      enteredAt: now
+    });
+  }
+  safeSetJSON(KEYS.SPECIMENS, list);
+
+  // 已掌握 → 移出待处理队列（本地 + 云端 dual-write 走 removeWrongQuestion 既有路径）
+  if (typeof removeWrongQuestion === 'function' && _getWrongIndex(qId) !== -1) {
+    removeWrongQuestion(qId);
+  }
+  _broadcastSpecimen();
+  return true;
+}
+
+function _getWrongIndex(qId) {
+  var wrongQuestions = safeGetJSON(KEYS.WRONG_QUESTIONS, []);
+  if (!Array.isArray(wrongQuestions)) return -1;
+  for (var i = 0; i < wrongQuestions.length; i++) {
+    if (wrongQuestions[i].qId === qId) return i;
+  }
+  return -1;
+}
+
+/** 出馆（供 addWrongQuestion 的 relapse 路径调用；reason: relapsed | manual）
+ *  口径（9.1）：不删除记录——采集日期（collectedAt）保留原值，
+ *  仅清空入馆日期（enteredAt=0，"清空待重记"）；再次掌握时重新写入。 */
+function _specimenExit(qId, reason) {
+  if (!qId) return false;
+  var list = safeGetJSON(KEYS.SPECIMENS, []);
+  if (!Array.isArray(list)) return false;
+  var changed = false;
+  for (var i = 0; i < list.length; i++) {
+    if (list[i] && list[i].qId === qId && (list[i].enteredAt || 0) > 0) {
+      list[i].enteredAt = 0;
+      changed = true;
+      break;
+    }
+  }
+  if (!changed) return false;
+  safeSetJSON(KEYS.SPECIMENS, list);
+  _broadcastSpecimen();
+  return true;
+}
+
+/**
+ * 手动"移出馆藏"（重新进入错题队列，供用户主动重练）
+ * 云端 review_cards/wrong_questions 行保留不动（重练依赖 FSRS 状态），
+ * 仅把队列侧补回：由调用方用原题数据重建本地队列。
+ */
+function specRemoveSpecimen(qId) {
+  if (!qId) return false;
+  qId = (window.resolveQuestionBioId || resolveQuestionBioId)(qId);
+  return _specimenExit(qId, 'manual');
+}
+
+function _broadcastSpecimen() {
+  try {
+    if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+      window.dispatchEvent(new CustomEvent('bq:specimen-changed'));
+    }
+  } catch (e) {}
 }
 
 function _syncWrongToSupabase(qId, module, questionText, wrongCount) {
