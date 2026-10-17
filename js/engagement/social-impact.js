@@ -33,7 +33,7 @@
         }
       });
       // 禁用视频/动画
-      document.querySelectorAll('video, .bio-animation, canvas[data-animation]').forEach(function (el) {
+      document.querySelectorAll('video, canvas[data-animation]').forEach(function (el) {
         if (!el.dataset.originalDisplay) {
           el.dataset.originalDisplay = el.style.display || '';
           el.style.display = 'none';

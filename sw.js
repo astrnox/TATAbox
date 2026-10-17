@@ -146,7 +146,7 @@ var WARMUP_PHASE_2 = [
   './js/pages/community.js',
   './js/pages/bounty.js',
   './js/pages/bio-lab.js',
-  './js/pages/bio-animation.js',
+  './js/pages/bio-video.js',
   './js/pages/phet-sims.js',
   './js/pages/photo-quiz.js',
   './js/pages/biology-history.js',
@@ -174,7 +174,8 @@ var WARMUP_PHASE_2 = [
   './data/resources.json',
   './data/knowledge-graph.json',
   './data/logic_questions.json',
-  './data/community.json'
+  './data/community.json',
+  './data/videos.json'
 ];
 
 // 这些"很重"的文件不做 install 预缓存，避免首次注册 SW 时 install 超时
@@ -193,7 +194,12 @@ var NEVER_PRECACHE = [
   './js/vendor/react.production.min.js',
   './js/vendor/react-dom.production.min.js',
   './js/vendor/igv.min.js',
-  './js/vendor/mammoth.browser.min.js'
+  './js/vendor/mammoth.browser.min.js',
+  // 视频实体（单条最大 15MB）：绝不 install 预缓存，避免首次注册 SW 超时；
+  // 首次播放时经 Cache First 自然进入缓存（见 data/videos.json 五要素清单）
+  './videos/mitosis-cell-division.mp4',
+  './videos/cd8-t-cell-mhc1.mp4',
+  './videos/phagocytosis-leucocytes.mp4'
 ];
 
 /**
