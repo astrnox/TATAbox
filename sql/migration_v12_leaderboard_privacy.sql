@@ -31,7 +31,10 @@ CREATE TABLE IF NOT EXISTS public.lb_salt (
 INSERT INTO public.lb_salt (id, salt)
 VALUES (1, md5(random()::text || clock_timestamp()::text))
 ON CONFLICT (id) DO NOTHING;
-REVOKE ALL ON public.lb_salt FROM anon, public;
+REVOKE ALL ON public.lb_salt FROM anon, authenticated, public;
+-- RLS 全锁：不建任何 POLICY，anon/authenticated 一律读不到盐值；
+-- 表属主(视图/函数的定义者)不受 RLS 约束，故 weekly_leaderboard 仍可正常取盐。
+ALTER TABLE public.lb_salt ENABLE ROW LEVEL SECURITY;
 
 -- 周键：Asia/Shanghai 自然周（周一 00:00），格式 YYYY-MM-DD
 CREATE OR REPLACE FUNCTION public.lb_week_key()
