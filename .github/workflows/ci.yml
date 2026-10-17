@@ -51,7 +51,19 @@ jobs:
             git fetch origin "$PR_SHA" --depth=1 2>/dev/null || true
             node scripts/check-commit-msg.js --subject "$(git log -1 --format=%s "$PR_SHA" 2>/dev/null || true)"
           else
-            node scripts/check-commit-msg.js
+            # push 事件下 HEAD 可能是 GitHub 自动生成的合并提交
+            # （"Merge pull request #N from ..."），其消息不适用 Conventional
+            # Commits，跳过校验（否则每次合并 PR 后 main 都会误红，见 Run 192/196）；
+            # 普通提交仍照常校验。
+            SUBJECT="$(git log -1 --format=%s)"
+            case "$SUBJECT" in
+              "Merge "*)
+                echo "[check-commit-msg] 合并提交，跳过：$SUBJECT"
+                ;;
+              *)
+                node scripts/check-commit-msg.js --subject "$SUBJECT"
+                ;;
+            esac
           fi
 
       - name: Install dependencies
