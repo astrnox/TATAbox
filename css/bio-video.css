@@ -134,6 +134,30 @@
   overflow-wrap: anywhere;
 }
 
+/* ── 标签分类（拟真 / 动画 / 实拍…） ── */
+
+.bv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+}
+
+.bv-tag {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  background: var(--surface-tertiary, #f7f4f0);
+  border: 1px solid var(--border-light, #ede9e3);
+  border-radius: var(--radius-full);
+}
+
+/* 播放页为常规文档流（非 flex gap），标签行单独留出下间距 */
+.bv-player-page .bv-tags {
+  margin: 0 0 12px;
+}
+
 .bv-topics {
   margin: 0;
   font-size: var(--font-size-xs);

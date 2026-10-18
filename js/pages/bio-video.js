@@ -56,6 +56,17 @@
 
   /* ── 列表视图 ── */
 
+  /* 标签分类行（拟真 / 动画 / 实拍…）：仅渲染非空字符串 */
+  function _tagsHTML(v) {
+    var tags = Array.isArray(v && v.tags) ? v.tags.filter(function (t) {
+      return typeof t === 'string' && t.trim().length > 0;
+    }) : [];
+    if (!tags.length) return '';
+    return '<p class="bv-tags">' + tags.map(function (t) {
+      return '<span class="bv-tag">' + esc(t) + '</span>';
+    }).join('') + '</p>';
+  }
+
   function _cardHTML(v) {
     var dur = _formatDuration(v.durationSec);
     var size = _formatSize(v.sizeBytes);
@@ -69,6 +80,7 @@
       '</div>' +
       '<div class="bv-card-body">' +
         '<h3 class="bv-title">' + esc(v.title) + '</h3>' +
+        _tagsHTML(v) +
         (topics.length
           ? '<p class="bv-topics">' + topics.map(function (t) { return esc(t); }).join(' · ') + '</p>'
           : '') +
@@ -108,6 +120,7 @@
       '<button type="button" class="bv-back" data-bv-action="back">← 返回视频列表</button>' +
       '<h2 class="bv-heading">' + esc(v.title) + '</h2>' +
       (v.description ? '<p class="bv-desc">' + esc(v.description) + '</p>' : '') +
+      _tagsHTML(v) +
       // P2-1：播放前展示体积与网络建议（单码率首版，多码率/HLS 为后续演进）
       '<p class="bv-datahint" role="note">' +
         (size ? '本视频约 ' + esc(size) + '。' : '') +
