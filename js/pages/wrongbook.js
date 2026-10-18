@@ -3,6 +3,7 @@
   'use strict';
 
   var _currentList = [];
+  var _currentFiltered = [];   // 应用筛选后的列表（打印全部/勾选定位用）
   var _currentDetail = null;
   var _filter = { concept: '', errorReason: '' };
   var _wbFocusTrap = null;
@@ -41,8 +42,13 @@
       .wb-related-list { margin-top: 16px; }
       .wb-related-item { padding: 12px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 8px; cursor: pointer; }
       .wb-related-item:hover { background: #f9fafb; }
-      .wb-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+      .wb-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
       .wb-toolbar select, .wb-toolbar input { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; }
+      /* 打印功能：卡片勾选框 + 打印工具条（A4 打印走 window.PrintUtils） */
+      .wb-sel { display: inline-flex; align-items: center; justify-content: center; margin-right: 10px; cursor: pointer; flex-shrink: 0; }
+      .wb-sel input { width: 16px; height: 16px; accent-color: var(--color-sage, #5a7d5c); cursor: pointer; }
+      .wb-print-count { display: inline-block; min-width: 22px; padding: 1px 6px; border-radius: 10px; background: rgba(255,255,255,0.28); font-size: 0.78rem; }
+      .wb-toolbar .wb-btn--print { background: var(--color-deep, #1a3a2a); }
       @media (max-width: 640px) {
         .wb-card-header { flex-direction: column; }
         .wb-actions { flex-wrap: wrap; }
@@ -83,6 +89,7 @@
       if (_filter.errorReason && q.error_reason !== _filter.errorReason) return false;
       return true;
     });
+    _currentFiltered = items;
 
     if (items.length === 0) {
       // Issue #125：统一「温暖空状态」组件（加载失败时回退原有提示）
@@ -95,6 +102,7 @@
       } else {
         container.innerHTML = '<div class="wb-empty">暂无错题记录。练习时答错的题目会自动收录，也可以点击右上角添加。</div>';
       }
+      _updatePrintCount();
       return;
     }
 
@@ -105,6 +113,9 @@
             '<p class="wb-title">' + _truncate(q.question_text, 120) + '</p>' +
             '<div class="wb-meta">' + (q.subject || '未分类') + ' · ' + (q.concept || '未定位概念') + ' · ' + _formatDate(q.created_at) + '</div>' +
           '</div>' +
+          '<label class="wb-sel" title="勾选后可批量打印">' +
+            '<input type="checkbox" class="wb-select-cb" data-id="' + q.id + '" checked aria-label="选择该题用于打印">' +
+          '</label>' +
         '</div>' +
         '<div class="wb-tags">' +
           (q.error_reason ? '<span class="wb-tag wb-tag--reason">' + q.error_reason + '</span>' : '') +
@@ -147,6 +158,11 @@
         if (typeof navigateTo === 'function') navigateTo('/cards');
       });
     });
+    // 打印：勾选框变化 → 同步「打印所选」计数
+    container.querySelectorAll('.wb-select-cb').forEach(function(box) {
+      box.addEventListener('change', function() { _updatePrintCount(); });
+    });
+    _updatePrintCount();
   }
 
   function _renderToolbar(container) {
@@ -168,6 +184,13 @@
       '<button class="wb-btn" id="wb-add-btn">+ 添加错题</button>' +
       '<button class="wb-btn" id="wb-ocr-btn">拍照/OCR</button>' +
       '<input type="file" id="wb-ocr-input" accept="image/*" capture="environment" style="display:none;">' +
+      '<select id="wb-print-mode" aria-label="打印内容范围">' +
+        '<option value="all">打印内容：题目+答案解析</option>' +
+        '<option value="questions">打印内容：仅题目</option>' +
+        '<option value="answers">打印内容：仅答案解析</option>' +
+      '</select>' +
+      '<button class="wb-btn wb-btn--print" id="wb-print-selected">打印所选 <span class="wb-print-count" id="wb-print-count">0</span></button>' +
+      '<button class="wb-btn wb-btn--secondary" id="wb-print-all">打印全部</button>' +
     '</div>';
 
     document.getElementById('wb-filter-concept').addEventListener('change', function(e) {
@@ -192,6 +215,69 @@
       if (!file) return;
       _ocrRecognize(file);
       e.target.value = '';
+    });
+    document.getElementById('wb-print-selected').addEventListener('click', function() {
+      var picked = _collectChecked();
+      if (picked.length === 0) {
+        if (typeof showToast === 'function') showToast('请先勾选要打印的错题');
+        return;
+      }
+      _printRecords(picked, _printMode());
+    });
+    document.getElementById('wb-print-all').addEventListener('click', function() {
+      if (_currentFiltered.length === 0) {
+        if (typeof showToast === 'function') showToast('当前没有可打印的错题');
+        return;
+      }
+      _printRecords(_currentFiltered, _printMode());
+    });
+    _updatePrintCount();
+  }
+
+  /* ============== 打印（错题本） ============== */
+  // 取当前勾选的错题记录（保持列表顺序）
+  function _collectChecked() {
+    var picked = [];
+    var boxes = document.querySelectorAll('#wb-list .wb-select-cb');
+    boxes.forEach(function(box) {
+      if (!box.checked) return;
+      var rec = null;
+      for (var i = 0; i < _currentFiltered.length; i++) {
+        if (String(_currentFiltered[i].id) === box.getAttribute('data-id')) {
+          rec = _currentFiltered[i];
+          break;
+        }
+      }
+      if (rec) picked.push(rec);
+    });
+    return picked;
+  }
+
+  function _updatePrintCount() {
+    var el = document.getElementById('wb-print-count');
+    if (el) el.textContent = String(_collectChecked().length);
+  }
+
+  // 当前打印内容范围：all（题目+答案解析）/ questions（仅题目）/ answers（仅答案解析）
+  function _printMode() {
+    var sel = document.getElementById('wb-print-mode');
+    var v = sel ? sel.value : 'all';
+    return (v === 'questions' || v === 'answers') ? v : 'all';
+  }
+
+  function _printRecords(records, mode) {
+    if (!window.PrintUtils || typeof window.PrintUtils.printWrongRecords !== 'function') {
+      if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+      return;
+    }
+    var m = mode || 'all';
+    var scopeText = m === 'questions' ? '仅含题目与选项'
+      : m === 'answers' ? '仅含正确答案与解析' : '题干、选项、答案、解析齐全';
+    window.PrintUtils.printWrongRecords(records, {
+      mode: m,
+      title: 'TATABOX 错题打印',
+      metaText: '共 ' + records.length + ' 道错题 · ' + scopeText +
+        ' · 每页页脚含 ' + window.PrintUtils.FOOTER_MARK
     });
   }
 

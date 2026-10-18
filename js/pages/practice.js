@@ -2375,6 +2375,23 @@ function renderQuiz() {
             </svg>
             分享
           </button>
+          <button class="btn btn-sm practice-print-btn" id="practice-print-btn" title="打印当前练习题（A4 分页，每页页脚 TATAbox.cc.cd）">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            打印
+          </button>
+          <button class="btn btn-sm practice-print-answers-btn" id="practice-print-answers-btn" title="打印当前练习题的正确答案与解析（与题目分开打印）">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            打印答案
+          </button>
         </div>
         <div class="practice-actions-right">
           ${!PracticeState.submitted
@@ -2499,6 +2516,36 @@ function bindQuizEvents() {
   const shareBtn = document.getElementById('practice-share-btn');
   if (shareBtn) {
     shareBtn.addEventListener('click', handleShareCurrentQuestion);
+  }
+  // 打印当前练习题集（A4 分页 + 每页页脚 TATAbox.cc.cd，浏览器原生打印预览）
+  // 「打印」= 仅题目与选项；「打印答案」= 仅正确答案与解析（两者分开出纸）
+  const printBtn = document.getElementById('practice-print-btn');
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      if (!window.PrintUtils || typeof window.PrintUtils.printQuestionSet !== 'function') {
+        if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+        return;
+      }
+      window.PrintUtils.printQuestionSet(PracticeState.currentSet, {
+        mode: 'questions',
+        title: 'TATABOX 练习题打印',
+        metaText: '共 ' + PracticeState.currentSet.length + ' 题 · 仅含题目与选项'
+      });
+    });
+  }
+  const printAnswersBtn = document.getElementById('practice-print-answers-btn');
+  if (printAnswersBtn) {
+    printAnswersBtn.addEventListener('click', () => {
+      if (!window.PrintUtils || typeof window.PrintUtils.printQuestionSet !== 'function') {
+        if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+        return;
+      }
+      window.PrintUtils.printQuestionSet(PracticeState.currentSet, {
+        mode: 'answers',
+        title: 'TATABOX 练习答案解析打印',
+        metaText: '共 ' + PracticeState.currentSet.length + ' 题 · 仅含正确答案与解析'
+      });
+    });
   }
 }
 

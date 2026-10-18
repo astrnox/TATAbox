@@ -139,7 +139,9 @@
   <!-- 评分内核（纯函数）：交卷 bio 分六维重算用，quiz.html 无 app.js 的 loadModule 依赖链 -->
   <script src="js/core/score-engine.js?v=20261013a"></script>
   <script src="js/core/record-session.js?v=20261013b"></script>
-  <script src="js/pages/quiz.js?v=20261013a"></script>
+  <!-- 打印工具：组卷/试卷打印（A4 + 每页页脚 TATAbox.cc.cd），须在 quiz.js 之前就绪 -->
+  <script src="js/core/print-utils.js?v=20261018b"></script>
+  <script src="js/pages/quiz.js?v=20261018b"></script>
   <script>
     // 统一汉堡菜单（与主页一致）：注入主页导航结构并绑定交互
     if (window.BioQuestHamburger) {

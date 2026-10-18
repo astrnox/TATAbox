@@ -385,6 +385,10 @@ function renderPaper() {
           <div class="paper-info-num">${totalQuestions}</div>
           <div class="paper-info-label">总题</div>
         </div>
+        <button class="btn btn-secondary btn-sm" id="paperPrintBtn"
+          title="打印本卷题目（A4 分页，每页页脚 TATAbox.cc.cd）">打印试卷</button>
+        <button class="btn btn-secondary btn-sm" id="paperPrintAnswersBtn"
+          title="单独打印本卷正确答案与解析（与题目分开出纸）">打印答案</button>
       </div>
     </div>
 
@@ -591,6 +595,37 @@ function renderPaper() {
   `;
 
   paperEl.innerHTML = html;
+
+  // 打印本卷：A4 分页 + 每页页脚 TATAbox.cc.cd（window.PrintUtils，浏览器原生打印）
+  // 「打印试卷」= 仅题目与选项；「打印答案」= 仅正确答案与解析（题目与答案分开出纸）
+  const paperPrintBtn = document.getElementById('paperPrintBtn');
+  if (paperPrintBtn) {
+    paperPrintBtn.addEventListener('click', () => {
+      if (!window.PrintUtils || typeof window.PrintUtils.printQuestionSet !== 'function') {
+        if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+        return;
+      }
+      window.PrintUtils.printQuestionSet(currentPaper, {
+        mode: 'questions',
+        title: paperTitle,
+        metaText: '共 ' + totalQuestions + ' 题 · 满分 ' + totalScore + ' 分 · 仅含题目与选项'
+      });
+    });
+  }
+  const paperPrintAnswersBtn = document.getElementById('paperPrintAnswersBtn');
+  if (paperPrintAnswersBtn) {
+    paperPrintAnswersBtn.addEventListener('click', () => {
+      if (!window.PrintUtils || typeof window.PrintUtils.printQuestionSet !== 'function') {
+        if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+        return;
+      }
+      window.PrintUtils.printQuestionSet(currentPaper, {
+        mode: 'answers',
+        title: paperTitle + ' · 答案解析',
+        metaText: '共 ' + totalQuestions + ' 题 · 仅含正确答案与解析'
+      });
+    });
+  }
 
   paperEl.querySelectorAll('.pq-native-input').forEach(input => {
     input.addEventListener('change', function () {
