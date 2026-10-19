@@ -1,7 +1,7 @@
 {
  "concept": "CRISPR 碱基编辑",
  "difficulty": "league",
- "explanation": "A【对】依据：CBE 由 Cas9 切口酶（nCas9）融合胞嘧啶脱氨酶（如 APOBEC1）构成，脱氨酶在 R-loop 单链区将 C 脱氨为 U，经 DNA 修复后 U 被读为 T，实现 C•G→T•A 转换。\nB【对】依据：碱基编辑器仅产生单链切口而非双链断裂（DSB），避免了 NHEJ 修复带来的随机插入缺失（indel），显著降低脱靶结构变异风险。\nC【错】错因：碱基编辑器只能实现单碱基转换（C→T 或 A→G），无法插入大片段；大片段插入需借助 HDR 模板或先导编辑（prime editing）。\nD【错】错因：虽然 CBE 和 ABE 分别只能实现转换（transition），但通过组合策略（如 CBE+ABE 串联）或碱基编辑的衍生工具，理论上可间接实现部分颠换（transversion），'只能'表述过于绝对。",
+ "explanation": "A【对】依据：CBE 由 Cas9 切口酶（nCas9）融合胞嘧啶脱氨酶（如 APOBEC1）构成，脱氨酶在 R-loop 单链区将 C 脱氨为 U，经 DNA 修复后 U 被读为 T，实现 C•G→T•A 转换。\nB【对】依据：碱基编辑器仅产生单链切口而非双链断裂（DSB），避免了 NHEJ 修复带来的随机插入缺失（indel），显著降低脱靶结构变异风险。\nC【错】错因：碱基编辑器只能实现单碱基转换（C→T 或 A→G），无法插入大片段；大片段插入需借助 HDR 模板或先导编辑（prime editing）。\nD【错】错因：虽然 CBE 和 ABE 分别只能实现转换（transition），但通过组合策略（如 CBE+ABE 串联）或碱基编辑的衍生工具，理论上可间接实现部分颠换（transversion），'只能'表述过于绝对。\n【相关知识点】碱基编辑器（CBE/ABE）只做单碱基置换（C→T、A→G），只产生单链切口、无 DSB，因此几乎不引入随机 indel；大片段插入或敲除需要 HDR 模板、先导编辑或经典 CRISPR-Cas9 的 DSB 途径。",
  "question": "研究者利用胞嘧碱基编辑器（CBE）将靶位点的 C•G 碱基对转换为 T•A。根据以上信息，判断以下陈述的正误。",
  "references": [
   {

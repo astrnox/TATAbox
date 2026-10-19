@@ -26,7 +26,7 @@
   {
    "answer": true,
    "label": "A",
-   "text": "G1 期细胞因无姊妹染色单体模板，DSB 主要经 NHEJ（Ku70/80、DNA-PKcs、XRCC4-LigIV）修复，该通路常产生插入/缺失而较差错"
+   "text": "G1 期细胞因无姊妹染色单体模板，DSB 主要经 NHEJ（Ku70/80、DNA-PKcs、XRCC4-LigIV）修复，该通路常产生插入/缺失而较易出错"
   },
   {
    "answer": true,
