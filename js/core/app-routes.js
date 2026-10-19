@@ -48,8 +48,9 @@ const Routes = {
     render: 'renderAdminPage',
     module: 'admin',
     auth: true
-    // 注意：不再用 role: 'admin' 做路由门禁（会挡住持密钥的非 admin 账号）。
-    // 管理页内部自己做身份验证：管理员密钥（服务端 RPC 校验）或管理员账号密码。
+    // 注意：不再用 role: 'admin' 做路由门禁（会挡住持口令的非 admin 账号）。
+    // 管理页内部自己做身份验证：只接受管理员口令（服务端 RPC 校验），
+    // 不提供管理员账号密码登录入口。
   },
   '/cards': {
     title: '知识卡片',

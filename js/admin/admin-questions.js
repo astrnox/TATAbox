@@ -104,6 +104,8 @@ function renderQuestionsTab(container, questionsData) {
       </div>
     </div>
 
+    ${_LOCAL_SECTION_HTML}
+
     <div class="admin-section">
       <div class="admin-section-header">
         <div class="admin-section-title">
@@ -260,21 +262,7 @@ function renderQuestionsTab(container, questionsData) {
 
   html += '</div>';
 
-  // 本地题库评分与回收站（用户练习基于本地 JSON 题库；低分题自动进入回收站）
-  html += `
-    <div class="admin-section" id="admin-local-questions-section" style="margin-top:28px;">
-      <div class="admin-section-header">
-        <div class="admin-section-title">
-          ${ICONS.star || ''}
-          本地题库 · 评分与回收站
-        </div>
-        <span class="admin-section-badge" style="font-size:0.72rem;color:var(--text-muted,#8a8a8a);">数据来源：data/quiz.json + data/logic_questions.json</span>
-      </div>
-      <div id="admin-local-questions-body">
-        <div style="padding:16px 0;color:var(--text-muted,#8a8a8a);font-size:0.85rem;">正在加载本地题库...</div>
-      </div>
-    </div>
-  `;
+  // 本地题库评分与回收站：区块已作为 _LOCAL_SECTION_HTML 挂载于标签顶部（回收站入口在最上方）
 
   // 题目编辑弹窗
   html += `
@@ -484,26 +472,78 @@ window.handleDeleteQuestion = async function(id) {
 
 /* ============================================================
  * 本地题库 · 评分与回收站
- * 用户练习数据源为本地 JSON 题库（data/quiz.json + data/logic_questions.json），
+ * 用户练习数据源为本地 JSON 全量题库（data/quiz.json + data/logic_questions.json
+ * + resource/all.json 联赛真题池 + data/bank/daily_league_*.json 每日联赛），
  * 评分/回收站/覆盖数据存于 localStorage（storage.js），配合 js/core/rating.js
  * 的平滑评分算法（带中性先验）。管理员可在此查看评分、回收/恢复、重新评分、编辑题目（覆盖）。
  * ============================================================ */
+
+/* 「本地题库 · 评分与回收站」区块模板：
+ * 挂载于「题目管理」标签顶部（回收站筛选按钮在此，避免埋在页面底部找不到）。 */
+const _LOCAL_SECTION_HTML = `
+    <div class="admin-section" id="admin-local-questions-section" style="margin-top:0;">
+      <div class="admin-section-header">
+        <div class="admin-section-title">
+          ${ICONS.star || ''}
+          本地题库 · 评分与回收站
+        </div>
+        <span class="admin-section-badge" style="font-size:0.72rem;color:var(--text-muted,#8a8a8a);">数据来源：quiz + logic + 真题池(resource/all) + 每日联赛(daily_league_*)，全量约 3400 题</span>
+      </div>
+      <div id="admin-local-questions-body">
+        <div style="padding:16px 0;color:var(--text-muted,#8a8a8a);font-size:0.85rem;">正在加载本地题库...</div>
+      </div>
+    </div>
+  `;
+window._adminLocalSectionHtml = function () { return _LOCAL_SECTION_HTML; };
+/** 远端题目加载失败时的兜底挂载：保证回收站入口始终可见 */
+window._mountLocalSectionFallback = function (container) {
+  if (!container) return;
+  container.insertAdjacentHTML('beforeend', _LOCAL_SECTION_HTML);
+  _renderLocalQuestionSection();
+};
+
 let _localQuestionBankCache = null;
 let _localQuestionFilter = 'all'; // 'all' | 'rated' | 'recycled'
+let _localPageLimit = 100;        // 分页渲染（全量约 3400 题，一次性渲染会卡死页面）
 
 /**
- * 加载本地题库（quiz.json + logic_questions.json），按 bioId 去重并缓存。
+ * 加载本地全量题库（quiz + logic + 联赛真题池 + 每日联赛 6 分片），按 bioId 去重并缓存。
  */
 async function _loadLocalQuestionBank(force) {
   if (_localQuestionBankCache && !force) return _localQuestionBankCache;
   const list = [];
-  const results = await Promise.all([
-    fetch('data/quiz.json').then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch('data/logic_questions.json').then(r => r.ok ? r.json() : null).catch(() => null)
-  ]);
+  const DAILY_FILES = [
+    'data/bank/daily_league_animal.json',
+    'data/bank/daily_league_behavior_ecology.json',
+    'data/bank/daily_league_biochem_microbe.json',
+    'data/bank/daily_league_cellbio.json',
+    'data/bank/daily_league_genetics_evolution.json',
+    'data/bank/daily_league_plant.json'
+  ];
+  const sources = ['data/quiz.json', 'data/logic_questions.json', 'resource/all.json'].concat(DAILY_FILES);
+  const results = await Promise.all(sources.map(function (url) {
+    return fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }));
   results.forEach(function (data) {
     if (!data) return;
-    const arr = Array.isArray(data) ? data : (data['题库'] || data.questions || []);
+    // 注意：不要提前 || [] 兜底——每日联赛分片是 { DL-xx: 题目 } 字典，
+    // 兜底成数组会跳过下面的字典识别分支导致读到 0 道题
+    let arr = Array.isArray(data) ? data : (data['题库'] || data.questions);
+    if (!Array.isArray(arr)) {
+      // 每日联赛分片为 { DL-xx: 题目 } 字典形态：id 在字典 key 上，
+      // 值内没有 id/bioId，须从 key 回填，否则去重会全部塌缩成同一个空 id
+      const vals = Object.keys(data);
+      const isQuestionDict = vals.length > 0 && vals.every(function (k) {
+        const v = data[k];
+        return v && typeof v === 'object' && ('question' in v || 'subQuestions' in v);
+      });
+      if (isQuestionDict) {
+        arr = vals.map(function (k) {
+          const v = data[k];
+          return (!v.id && !v.bioId) ? Object.assign({ id: k }, v) : v;
+        });
+      }
+    }
     if (!Array.isArray(arr)) return;
     const filtered = (typeof window._filterQuarantinedQuestions === 'function')
       ? window._filterQuarantinedQuestions(arr)
@@ -632,6 +672,10 @@ async function _renderLocalQuestionSection() {
     return a.info.score01 - b.info.score01;
   });
 
+  // 分页渲染：全量约 3400 题，首屏 100 条 + 「显示更多」按需加载，避免一次性渲染卡死
+  const totalCards = cards.length;
+  const visibleCards = cards.slice(0, _localPageLimit);
+
   const filterBtn = function (f, label, count, extraStyle) {
     return `<button class="admin-btn ${_localQuestionFilter === f ? 'admin-btn--primary' : 'admin-btn--ghost'}" data-on='["adminLocalFilter","${f}"]' style="${extraStyle || ''}">${label}（${count}）</button>`;
   };
@@ -645,10 +689,10 @@ async function _renderLocalQuestionSection() {
     </div>
   `;
 
-  if (cards.length === 0) {
+  if (totalCards === 0) {
     html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无符合筛选条件的题目</div></div>`;
   } else {
-    cards.forEach(function (item) {
+    visibleCards.forEach(function (item) {
       const q = item.q;
       const id = item.id;
       const info = item.info;
@@ -691,6 +735,10 @@ async function _renderLocalQuestionSection() {
         </div>
       `;
     });
+  }
+
+  if (totalCards > visibleCards.length) {
+    html += `<div style="text-align:center;margin-top:12px;"><button class="admin-btn admin-btn--ghost" data-on='["adminLocalMore"]'>显示更多（已显示 ${visibleCards.length} / ${totalCards}）</button></div>`;
   }
 
   body.innerHTML = html + _localEditModalHtml();
@@ -741,10 +789,17 @@ function _localEditModalHtml() {
 
 window.adminLocalFilter = function(f) {
   _localQuestionFilter = (f === 'rated' || f === 'recycled') ? f : 'all';
+  _localPageLimit = 100;
+  _renderLocalQuestionSection();
+};
+
+window.adminLocalMore = function() {
+  _localPageLimit += 200;
   _renderLocalQuestionSection();
 };
 
 window.adminLocalRefresh = function() {
+  _localPageLimit = 100;
   _loadLocalQuestionBank(true).then(function () {
     _renderLocalQuestionSection();
   }).catch(function () {

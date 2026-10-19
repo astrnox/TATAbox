@@ -13,12 +13,14 @@
  *      现改为 RPC admin_reset_password（服务端校验调用者 user_group）。
  *
  * 验证矩阵：
- *   - /admin 路由不再有 role 门禁（否则持密钥的非 admin 账号进不来）
- *   - 管理员登录页默认渲染「密钥验证」表单，可切换到账号密码登录
- *   - adminVerifyKey：成功/密钥错误/RPC 未部署 三种路径
+ *   - /admin 路由不再有 role 门禁（否则持口令的非 admin 账号进不来）
+ *   - 管理员登录页只提供「管理员口令」表单：不渲染账号密码表单与切换入口
+ *   - adminVerifyKey：成功/口令错误/RPC 未部署 三种路径
  *   - 验证成功后账号升级 + 会话 token 写入 + 管理仪表盘可进入
+ *   - 账号密码路径移除护栏：adminLogin 不存在、admin 账号登录不自动解锁、
+ *     个人中心不再有管理员账号密码弹窗
  *   - handleResetPassword：正常重置/密码过短/两次不一致/RPC 未部署
- *   - 前端不再出现 ADMIN_KEY_HASH 式的本地密钥比对（P0-2 不回归）
+ *   - 前端不再出现 ADMIN_KEY_HASH 式的本地口令比对（P0-2 不回归）
  *   - 「找回密码」面板可切到邮箱重置并调用 resetPassword()
  */
 'use strict';
@@ -64,7 +66,7 @@ describe('migration_v11：SQL 迁移自身约束', () => {
 });
 
 describe('管理员密钥登录页', () => {
-  test('默认渲染密钥验证表单，并提供账号密码登录切换', () => {
+  test('登录页只提供管理员口令表单（账号密码入口已移除）', () => {
     const target = document.createElement('div');
     document.body.appendChild(target);
     window.renderAdminPage(target);
@@ -73,11 +75,35 @@ describe('管理员密钥登录页', () => {
     const keyInput = document.getElementById('admin-key-input');
     expect(keyInput).not.toBeNull();
     expect(keyInput.getAttribute('type')).toBe('password');
-    expect(keyInput.getAttribute('placeholder')).toBe('管理员密钥');
-    expect(document.getElementById('admin-pwd-form')).not.toBeNull();
-    expect(document.getElementById('admin-toggle-pwd-mode')).not.toBeNull();
+    expect(keyInput.getAttribute('placeholder')).toBe('管理员口令');
+    // 不得出现管理员账号密码表单与切换入口
+    expect(document.getElementById('admin-pwd-form')).toBeNull();
+    expect(document.getElementById('admin-toggle-pwd-mode')).toBeNull();
+    expect(document.getElementById('admin-email-input')).toBeNull();
+    expect(document.getElementById('admin-password-input')).toBeNull();
+    expect(target.innerHTML).not.toContain('改用管理员账号密码登录');
 
     target.remove();
+  });
+
+  test('账号密码直入路径已移除：adminLogin 不存在、admin 账号不自动解锁、个人中心无密码弹窗', () => {
+    // 1) adminLogin 函数与个人中心密码弹窗均删除
+    expect(adminSrc).not.toMatch(/function adminLogin\s*\(/);
+    const userSrc = read('js/pages/user.js');
+    expect(userSrc).not.toMatch(/adminLogin/);
+    expect(userSrc).not.toContain('user-admin-pwd');
+    // 2) 账号 user_group=admin 不再自动写入解锁 token（必须口令验证）
+    window._adminAuthenticated = false;
+    try { sessionStorage.clear(); } catch (e) { /* ignore */ }
+    window._onAuthUserLoaded({ id: 'u1', user_group: 'admin' });
+    expect(window._adminAuthenticated).toBe(false);
+    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    // 3) 非 admin 账号登录仍会清除残留解锁状态
+    window._adminAuthenticated = true;
+    sessionStorage.setItem('bioquest_admin_auth', '{}');
+    window._onAuthUserLoaded({ id: 'u2', user_group: 'member' });
+    expect(window._adminAuthenticated).toBe(false);
+    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
   });
 
   test('密钥验证成功：账号升级为 admin、写入会话 token、可进入仪表盘', async () => {
