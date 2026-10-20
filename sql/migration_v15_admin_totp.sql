@@ -118,7 +118,7 @@ BEGIN
     RETURN;
   END IF;
 
-  IF v_secret IS NULL OR length(public._b32_decode(v_secret)) < 20 THEN
+  IF v_secret IS NULL OR length(public._b32_decode(v_secret)) < 10 THEN
     RETURN QUERY SELECT FALSE, NULL::TEXT,
       '动态码未配置：请先在 SQL Editor 执行本文件末尾「第 2 步」生成种子'::TEXT;
     RETURN;
@@ -194,6 +194,8 @@ REVOKE EXECUTE ON FUNCTION public.admin_login_with_key(TEXT)
 GRANT EXECUTE ON FUNCTION public.admin_login_with_totp(TEXT) TO authenticated;
 
 -- ============================================================
+-- 种子规格：16 位 base32（gen_random_bytes(10) = 80bit 熵）。种子不出库、
+-- 无离线爆破面，在线爆破受「5 次失败锁 15 分钟」限制，够用。
 -- 第 2 步（生成种子；幂等，重复执行不会换种子）：
 -- 执行后结果面板会显示两列，把「密钥」录入身份验证器 App
 -- （App 内选「手动输入密钥」粘贴即可；URI 列供支持导入的应用使用）。
@@ -201,12 +203,12 @@ GRANT EXECUTE ON FUNCTION public.admin_login_with_totp(TEXT) TO authenticated;
 -- ============================================================
 WITH upd AS (
   UPDATE public.admin_config
-  SET totp_secret = COALESCE(totp_secret, public._b32_encode(gen_random_bytes(20))),
+  SET totp_secret = COALESCE(totp_secret, public._b32_encode(gen_random_bytes(10))),
       updated_at = NOW()
   WHERE id = 1
   RETURNING totp_secret
 )
-SELECT totp_secret AS "身份验证器密钥（32位base32，只在此显示）",
+SELECT totp_secret AS "身份验证器密钥（16位base32，只在此显示）",
        'otpauth://totp/TATABOX:admin?secret=' || totp_secret || '&issuer=TATABOX' AS "otpauth URI（可选）"
 FROM upd;
 
