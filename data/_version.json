@@ -1,7 +1,12 @@
 {
-  "version": "5.2.4",
+  "version": "5.2.5",
   "updated_at": "2026-10-20",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "version": "5.2.5",
+      "description": "管理员口令安全加固（公开仓库威胁模型）。①真实口令哈希出库：migration_v11 的 INSERT 换为固定占位哈希 sha256(REPLACE_ME_RUN_MIGRATION_V14_ROTATION)，tools/python/server.py 移除硬编码兜底改为仅读 ADMIN_KEY_HASH 环境变量（未配置时 X-Admin-Key* 路径 fail-closed），HEAD 中真实哈希清零（git 历史不可抹除，作废靠轮换）；②新增 sql/migration_v14_admin_hardening.sql：A 口令轮换指引（openssl rand -hex 16 本地生成高熵口令与哈希、明文不进 Supabase，或 SQL 内 digest 二选一）+ B 失败锁定（admin_config 增 failed_attempts/locked_until，admin_login_with_key 升级：连续 5 次错误锁定 15 分钟、锁定期内直接拒绝、成功清零，保留 pg_sleep(1) 与 SECURITY DEFINER 语义）；③测试护栏 2 例：v11 INSERT 必须等于占位串哈希（真实哈希回流即失败）、v14 内容断言（轮换指引/锁定参数/无自带哈希）。profiles 表 email/user_key 匿名暴露为已知遗留项，需列权限+RPC 改造（牵动注册查重/班级码查询/admin select=*），另行处理。"
+    },
     {
       "date": "2026-10-20",
       "version": "5.2.4",

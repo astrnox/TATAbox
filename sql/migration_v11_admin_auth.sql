@@ -36,13 +36,16 @@ ALTER TABLE public.admin_config ENABLE ROW LEVEL SECURITY;
 -- 不创建任何策略 + 收回权限：客户端读不到密钥摘要，只有 SECURITY DEFINER 函数才能比对
 REVOKE ALL ON public.admin_config FROM anon, authenticated;
 
--- 默认密钥摘要（原前端 ADMIN_KEY_HASH 对应的同一把密钥，摘要一致，明文不入库不上仓库）。
--- 轮换方式（在 SQL Editor 执行，把 '新密钥' 换掉即可）：
---   UPDATE public.admin_config
---   SET admin_key_hash = encode(digest('新密钥', 'sha256'), 'hex'), updated_at = NOW()
---   WHERE id = 1;
+-- 口令摘要占位值（公开仓库不存放真实哈希：SHA-256 无盐无慢化，
+-- 哈希进公开仓库 = 可被离线爆破）。历史提交中的旧真实哈希无法从
+-- git 历史抹除，唯一作废方式是轮换口令。
+-- 本 INSERT 仅对「全新部署」生效（ON CONFLICT DO NOTHING 不覆盖线上已有值）。
+-- 全新部署初始化后必须立即执行 sql/migration_v14_admin_hardening.sql 的
+-- 口令轮换（高熵口令），否则占位值对应明文即为生效口令。
+-- 本占位值 = sha256('REPLACE_ME_RUN_MIGRATION_V14_ROTATION')。
+-- 轮换方式见 migration_v14（推荐：本地 openssl 生成哈希后 UPDATE）。
 INSERT INTO public.admin_config (id, admin_key_hash)
-VALUES (1, 'd090ea0a3c226b0afb5fa7d86dce875dd63434b1e9bd6dc804ea9bf55a38f57b')
+VALUES (1, '4417197a1bb392011ea8b5cf84d59027431a4adcb58977009a02c63361c376ab')
 ON CONFLICT (id) DO NOTHING;
 
 

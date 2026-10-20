@@ -27,6 +27,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '../..');
 const read = (f) => fs.readFileSync(path.join(ROOT, f), 'utf8');
@@ -62,6 +63,33 @@ describe('migration_v11：SQL 迁移自身约束', () => {
 
   test('敏感字段保护触发器放行 SECURITY DEFINER（属主 postgres）路径', () => {
     expect(sqlSrc).toMatch(/current_user IN \('postgres', 'service_role', 'supabase_admin'\)/);
+  });
+
+  test('仓库文件不含真实口令哈希：v11 为固定占位值、server.py 仅读环境变量（fail-closed）', () => {
+    // v11 的 INSERT 必须等于占位串的 sha256——有人把另一个（真实）哈希塞回来即失败
+    const placeholder = crypto.createHash('sha256')
+      .update('REPLACE_ME_RUN_MIGRATION_V14_ROTATION').digest('hex');
+    const m = sqlSrc.match(/VALUES \(1, '([0-9a-f]{64})'\)/);
+    expect(m).toBeTruthy();
+    expect(m[1]).toBe(placeholder);
+
+    const serverSrc = read('tools/python/server.py');
+    expect(serverSrc).not.toMatch(/or "[0-9a-f]{64}"\)/); // 无硬编码兜底哈希
+    expect(serverSrc).toMatch(/os\.environ\.get\("ADMIN_KEY_HASH", ""\)\.strip\(\)\.lower\(\)$/m);
+    expect(serverSrc).toMatch(/if provided_hash and ADMIN_KEY_HASH_HEX:/);
+    expect(serverSrc).toMatch(/if provided and ADMIN_KEY_HASH_HEX:/);
+  });
+
+  test('migration_v14：口令轮换指引 + 失败锁定（5 次锁 15 分钟）', () => {
+    const v14 = read('sql/migration_v14_admin_hardening.sql');
+    expect(v14).toMatch(/openssl rand/);                                   // 高熵口令生成指引
+    expect(v14).toMatch(/UPDATE public\.admin_config/);                     // 轮换语句
+    expect(v14).toMatch(/failed_attempts/);
+    expect(v14).toMatch(/locked_until/);
+    expect(v14).toMatch(/INTERVAL '15 minutes'/);
+    expect(v14).toMatch(/CREATE OR REPLACE FUNCTION public\.admin_login_with_key/);
+    expect(v14).toMatch(/GRANT EXECUTE ON FUNCTION public\.admin_login_with_key\(TEXT\) TO authenticated/);
+    expect(v14).not.toMatch(/VALUES \(1, '[0-9a-f]{64}'\)/);               // 自身不携带任何可爆破哈希
   });
 });
 

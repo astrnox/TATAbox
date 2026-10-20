@@ -1555,9 +1555,13 @@ def retag_all_questions():
 
 # ========== 管理员授权 & Vision 模型选择 ==========
 
-# Admin 密钥哈希：与 js/admin/admin.js 的 ADMIN_KEY_HASH 保持一致（请通过 adminLogin 修改密钥）
-# 管理员密钥的 SHA-256 哈希（不是密钥本身）。可用环境变量 ADMIN_KEY_HASH 覆盖以便轮换。
-ADMIN_KEY_HASH_HEX = os.environ.get("ADMIN_KEY_HASH", "").strip().lower() or "d090ea0a3c226b0afb5fa7d86dce875dd63434b1e9bd6dc804ea9bf55a38f57b"
+# Admin 密钥哈希：仅从环境变量 ADMIN_KEY_HASH 读取（fail-closed）。
+# 仓库曾内置真实哈希作为兜底——公开仓库中泄露的 SHA-256 可被离线爆破，已移除。
+# 轮换/配置方式见 sql/migration_v14_admin_hardening.sql（SQL Editor 执行后，
+# 本地/运维环境把哈希写入 .env 的 ADMIN_KEY_HASH）。
+# 未配置时 X-Admin-Key / X-Admin-Key-Hash 两条遗留路径一律拒绝，
+# 仅保留 Authorization: Bearer <Supabase token>（service role 独立校验）路径。
+ADMIN_KEY_HASH_HEX = os.environ.get("ADMIN_KEY_HASH", "").strip().lower()
 
 
 # ========== 简易速率限制（防滥用 OCR/登录）==========
@@ -1625,9 +1629,10 @@ def _check_admin_authorization(headers):
     try:
         provided = (headers.get("X-Admin-Key") or headers.get("x-admin-key") or "").strip()
         provided_hash = (headers.get("X-Admin-Key-Hash") or headers.get("x-admin-key-hash") or "").strip().lower()
-        if provided_hash:
+        # fail-closed：未配置 ADMIN_KEY_HASH 环境变量时，密钥类凭证一律拒绝
+        if provided_hash and ADMIN_KEY_HASH_HEX:
             return provided_hash == ADMIN_KEY_HASH_HEX
-        if provided:
+        if provided and ADMIN_KEY_HASH_HEX:
             h = hashlib.sha256(provided.encode("utf-8")).hexdigest()
             return h == ADMIN_KEY_HASH_HEX
         authz = (headers.get("Authorization") or headers.get("authorization") or "").strip()
