@@ -147,7 +147,7 @@ if (document.readyState === 'loading') {
 var escapeHtml = (typeof window !== 'undefined' ? window : globalThis).escapeHtml; // 规范实现见 js/core/utils.js（Q-01 统一）
 
 // 修复：当 Supabase auth 状态变化时，admin 模块同步更新认证状态
-// 管理员入口只认「管理员口令」验证（adminVerifyKey 写入的会话 token）；
+// 管理员入口只认「TOTP 动态码」验证（adminVerifyTotp 写入的会话 token）；
 // 账号本身 user_group=admin 不再自动解锁——杜绝「管理员账号密码直入」，
 // 仅用于校正状态：非 admin 账号或登出时清除可能残留的解锁状态。
 window._onAuthUserLoaded = function(user) {
@@ -1022,13 +1022,15 @@ function injectAdminStyles() {
 }
 
 /* ===== API 调用 ===== */
-// 管理员认证只有一条路径（管理员入口仅接受管理员口令）：
-//   管理员口令：RPC admin_login_with_key（sql/migration_v11_admin_auth.sql）
-//   在服务端比对 SHA-256 摘要，通过后把「当前登录账号」升级为 user_group='admin'；
-//   纯前端伪造状态无法提权（密钥摘要不下发、不在前端比对）。
-//   账号密码登录不再作为管理员入口（adminLogin 已移除）。
+// 管理员认证只有一条路径（管理员入口仅接受 TOTP 动态验证码）：
+//   动态码：RPC admin_login_with_totp（sql/migration_v15_admin_totp.sql）
+//   服务端校验 6 位动态码（±1 时间窗 + 防重放 + 5 次失败锁 15 分钟），
+//   通过后把「当前登录账号」升级为 user_group='admin'；
+//   种子只存于 admin_config（客户端 REVOKE ALL 读不到）、不进公开仓库，
+//   纯前端伪造状态无法提权。
+//   旧静态口令（admin_login_with_key）已 REVOKE；账号密码登录同样不提供。
 // 数据读写权限始终由 sql/ 中的 RLS 策略在服务端强制。
-// 详见 sql/migration_v11_admin_auth.sql。
+// 详见 sql/migration_v15_admin_totp.sql。
 
 /**
  * 判断是否为「服务端未部署同名 RPC」错误（PostgREST: Could not find the function ... / does not exist）
@@ -1040,26 +1042,28 @@ function _isMissingRpcError(msg) {
 }
 
 /**
- * 管理员密钥验证（服务端校验）
- * @param {string} key 管理员密钥
+ * 管理员动态码验证（TOTP，服务端校验 + 防重放）
+ * @param {string} code 身份验证器 App 的 6 位动态验证码
  * @returns {Promise<{ok: boolean, error?: string}>}
  */
-async function adminVerifyKey(key) {
-  if (!key || !String(key).trim()) return { ok: false, error: '请输入管理员密钥' };
+async function adminVerifyTotp(code) {
+  var normalized = String(code || '').replace(/\s+/g, '');
+  if (!normalized) return { ok: false, error: '请输入 6 位动态验证码' };
+  if (!/^\d{6}$/.test(normalized)) return { ok: false, error: '动态验证码为 6 位数字' };
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
   if (!sb) return { ok: false, error: '系统未初始化，请刷新页面后重试' };
   try {
-    var res = await sb.rpc('admin_login_with_key', { p_key: String(key).trim() });
+    var res = await sb.rpc('admin_login_with_totp', { p_code: normalized });
     if (res && res.error) {
       var msg = res.error.message || '验证失败';
       if (_isMissingRpcError(msg)) {
-        msg = '服务端尚未部署管理员密钥功能，请先在 Supabase 执行 sql/migration_v11_admin_auth.sql';
+        msg = '服务端尚未部署动态码登录，请先在 Supabase SQL Editor 执行 sql/migration_v15_admin_totp.sql';
       }
       return { ok: false, error: msg };
     }
     var row = Array.isArray(res && res.data) ? res.data[0] : (res && res.data);
     if (!row || !row.ok) {
-      return { ok: false, error: (row && row.error_msg) || '管理员密钥不正确' };
+      return { ok: false, error: (row && row.error_msg) || '动态验证码不正确' };
     }
     // 授权成功：服务端 profiles.user_group 已升级为 admin，这里同步内存用户并解锁管理 UI
     var user = (typeof window.getCurrentUser === 'function') ? window.getCurrentUser() : null;
@@ -1071,10 +1075,10 @@ async function adminVerifyKey(key) {
     return { ok: false, error: '验证异常：' + ((e && e.message) || e) };
   }
 }
-window.adminVerifyKey = adminVerifyKey;
+window.adminVerifyTotp = adminVerifyTotp;
 
 // 检查会话中是否已认证（带过期校验）
-// 注：仅凭 token 恢复 UI 解锁状态；token 只可能由 adminVerifyKey（口令 RPC 校验）写入，
+// 注：仅凭 token 恢复 UI 解锁状态；token 只可能由 adminVerifyTotp（TOTP 动态码 RPC 校验）写入，
 // 管理员账号本身不产生解锁；非 admin 账号/登出时由 _onAuthUserLoaded 清除。
 (function() {
   try {
@@ -1802,8 +1806,8 @@ var ICONS = {
 };
 
 /* ===== 登录页渲染 ===== */
-// 管理员入口只提供「管理员口令」验证（服务端 RPC 比对）；
-// 不提供管理员账号密码登录入口（账号密码不得进入管理后台）。
+// 管理员入口只提供「TOTP 动态验证码」验证（服务端 RPC admin_login_with_totp）；
+// 旧静态口令与账号密码入口均已退役（口令太长且哈希曾在公开仓库泄露）。
 function renderAdminLoginPage(target) {
   target.innerHTML = `
     <div class="admin-login-wrap">
@@ -1812,16 +1816,18 @@ function renderAdminLoginPage(target) {
           ${ICONS.shield}
         </div>
         <div class="admin-login-title">管理员后台</div>
-        <div class="admin-login-subtitle" id="admin-login-subtitle">输入管理员口令完成身份验证</div>
-        <form class="admin-login-form" id="admin-key-form">
+        <div class="admin-login-subtitle" id="admin-login-subtitle">输入身份验证器的动态验证码</div>
+        <form class="admin-login-form" id="admin-totp-form">
           <div class="admin-login-input-wrap">
             <input
               type="password"
               class="admin-login-input"
-              id="admin-key-input"
-              placeholder="管理员口令"
+              id="admin-totp-input"
+              placeholder="6 位动态验证码"
+              inputmode="numeric"
+              maxlength="6"
               required
-              autocomplete="off"
+              autocomplete="one-time-code"
             >
             ${ICONS.key}
           </div>
@@ -1829,15 +1835,16 @@ function renderAdminLoginPage(target) {
         </form>
         <div class="admin-login-error" id="admin-login-error"></div>
         <div class="admin-login-hint">
-          仅限授权管理员。口令仅在服务端校验，验证通过后当前账号将获得管理员权限；不支持账号密码登录。
+          动态码由身份验证器 App（Google Authenticator / 2FAS 等）每 30 秒刷新；服务端校验并防重放。
+          不支持账号密码与静态口令登录。
         </div>
       </div>
     </div>
   `;
 
   var errorEl = document.getElementById('admin-login-error');
-  var keyForm = document.getElementById('admin-key-form');
-  var keyInput = document.getElementById('admin-key-input');
+  var totpForm = document.getElementById('admin-totp-form');
+  var totpInput = document.getElementById('admin-totp-input');
 
   function showError(msg) {
     if (!errorEl) return;
@@ -1851,14 +1858,14 @@ function renderAdminLoginPage(target) {
   }
   showError('');
 
-  if (keyForm) keyForm.addEventListener('submit', async (e) => {
+  if (totpForm) totpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    var btn = keyForm.querySelector('.admin-login-btn');
+    var btn = totpForm.querySelector('.admin-login-btn');
     showError('');
     btn.textContent = '验证中...';
     btn.disabled = true;
 
-    var result = await adminVerifyKey(keyInput ? keyInput.value : '');
+    var result = await adminVerifyTotp(totpInput ? totpInput.value : '');
 
     btn.textContent = '验证进入';
     btn.disabled = false;
@@ -1866,14 +1873,14 @@ function renderAdminLoginPage(target) {
       renderAdminDashboard(target);
     } else {
       showError(result.error || '验证失败');
-      if (keyInput) { keyInput.value = ''; keyInput.focus(); }
+      if (totpInput) { totpInput.value = ''; totpInput.focus(); }
     }
   });
 }
 
 /* ===== 仪表盘渲染 ===== */
 function renderAdminDashboard(target) {
-  // 管理员入口只认口令验证（adminVerifyKey 的会话 token）；
+  // 管理员入口只认 TOTP 动态码验证（adminVerifyTotp 的会话 token）；
   // 此处不再因 user_group==='admin' 自动放行——账号密码不得直入管理后台。
   // 服务端管理操作由 Supabase RLS 策略强制。
   if (!_adminAuthenticated) {
@@ -1886,7 +1893,7 @@ function renderAdminDashboard(target) {
   // 关键：禁止在 setInterval 回调中同步重入 renderAdminDashboard，
   // 否则一旦 _currentUser 状态在多次触发间反复切换，可能累积调用栈导致 "Maximum call stack size exceeded"。
   // 改为：使用 setTimeout 链式轮询，并在用户就绪后通过 setTimeout(0) 异步重入。
-  // 注：管理员认证只来自管理员口令验证写入的会话 token。
+  // 注：管理员认证只来自 TOTP 动态码验证写入的会话 token。
   if (_adminAuthenticated && !window.getCurrentUser()) {
     // 显示加载中
     target.innerHTML = '<div style="padding:80px 20px;text-align:center;color:#666;">正在恢复登录状态...</div>';

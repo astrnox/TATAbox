@@ -1,7 +1,12 @@
 {
-  "version": "5.2.5",
+  "version": "5.2.6",
   "updated_at": "2026-10-20",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "version": "5.2.6",
+      "description": "管理员登录改为 TOTP 动态验证码（解决 128bit 口令过长）。新增 sql/migration_v15_admin_totp.sql：admin_config 增 totp_secret/totp_last_step/failed_attempts/locked_until 列；_b32_encode/_b32_decode base32 辅助；admin_login_with_totp RPC（HMAC-SHA1 TOTP、±1 时间窗、防重放——同一步只可用一次、5 次失败锁 15 分钟、成功升级 user_group）；REVOKE 旧 admin_login_with_key（公开仓库泄露的历史哈希自此失效，无需轮换口令）；末尾幂等种子生成语句（gen_random_bytes(20)→base32，结果面板一次性显示，不进仓库）。前端 admin.js：adminVerifyKey→adminVerifyTotp（6 位数字校验、去空格、RPC admin_login_with_totp），登录页改 admin-totp-form/admin-totp-input（inputmode=numeric/maxlength=6），注释同步 user.js/app-routes；测试改造：admin-key-auth 重写为 TOTP 矩阵并新增 v15 SQL 完整性与前后端交叉断言（admin-split id 更新）。base32 与 TOTP 算法已用 RFC4226 向量与标准库对拍。"
+    },
     {
       "date": "2026-10-20",
       "version": "5.2.5",

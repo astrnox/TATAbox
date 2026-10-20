@@ -2729,10 +2729,10 @@ function formatNotifTime(iso) {
 }
 window._updateNotifBadge = _updateNotifBadge;
 
-/* ============== 管理员入口（只在 #/admin 页内用管理员口令验证） ============== */
+/* ============== 管理员入口（只在 #/admin 页内用 TOTP 动态码验证） ============== */
 function _userAdminEntry() {
-  // 管理员入口不提供账号密码登录弹窗：统一跳转 #/admin，由页内「管理员口令」
-  // （服务端 RPC admin_login_with_key）完成验证；账号本身为 admin 也不再自动放行。
+  // 管理员入口不提供账号密码登录弹窗：统一跳转 #/admin，由页内「TOTP 动态码」
+  // （服务端 RPC admin_login_with_totp）完成验证；账号本身为 admin 也不再自动放行。
   navigateTo('/admin');
 }
 window._userAdminEntry = _userAdminEntry;
