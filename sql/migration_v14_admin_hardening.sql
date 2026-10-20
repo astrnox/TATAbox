@@ -16,34 +16,39 @@
 
 
 -- ============================================================
--- A. 轮换管理员口令（二选一，推荐 A1）
+-- A. 轮换管理员口令（执行下面 A1 即可；A2 为备选）
 -- ============================================================
 
--- ---------- A1（推荐）：明文不进 Supabase：本地生成哈希 ----------
---   第 1 步：在本地终端（Mac/Linux）生成 128bit 高熵口令并计算哈希：
---       KEY=$(openssl rand -hex 16)
---       printf '%s' "$KEY" | sha256sum
---     把 KEY 妥善保存进密码管理器（丢了只能再轮换）。
---     Windows PowerShell 等价：
---       $k = -join ((1..32) | ForEach-Object { '{0:x}' -f (Get-Random -Max 16) })
---       $h = [BitConverter]::ToString(
---              [Security.Cryptography.SHA256]::Create().ComputeHash(
---                [Text.Encoding]::UTF8.GetBytes($k))).Replace('-','').ToLower()
---   第 2 步：在本 SQL Editor 执行（把 <64位哈希> 换成第 1 步输出）：
---
--- UPDATE public.admin_config
--- SET admin_key_hash = '<64位哈希>', updated_at = NOW()
--- WHERE id = 1;
+-- ---------- A1（推荐，一条语句）：SQL Editor 内生成 128bit 口令并轮换 ----------
+-- 口令明文只出现在结果面板（不写入任何已保存的查询文本）。
+-- 执行后结果列 new_admin_key 即为新口令：立即复制存入密码管理器，
+-- 只显示这一次。旧口令同时作废（git 历史中的旧哈希随之失效）。
+SET search_path TO public, extensions;
 
--- ---------- A2（简单）：明文会出现在本账号的 SQL Editor 历史中 ----------
--- UPDATE public.admin_config
--- SET admin_key_hash = encode(digest('把你生成的高熵口令粘在这里', 'sha256'), 'hex'),
---     updated_at = NOW()
--- WHERE id = 1;
+WITH k AS (
+  SELECT encode(gen_random_bytes(16), 'hex') AS new_key
+)
+UPDATE public.admin_config
+SET admin_key_hash = encode(digest((SELECT new_key FROM k), 'sha256'), 'hex'),
+    updated_at = NOW()
+WHERE id = 1
+RETURNING (SELECT new_key FROM k) AS new_admin_key;
 
--- 轮换后把哈希（不是口令）写入运维环境：.env 的 ADMIN_KEY_HASH=...
--- （tools/python/server.py 仅从该环境变量读取，未配置时密钥类登录 fail-closed。）
--- 注意：全新部署执行 v11 后得到的是「占位哈希」，必须紧接着执行本节轮换。
+-- ---------- A2（备选）：自选口令 ----------
+--   本地生成（Mac/Linux）：KEY=$(openssl rand -hex 16)
+--                          printf '%s' "$KEY" | sha256sum
+--   然后执行：
+--     UPDATE public.admin_config
+--     SET admin_key_hash = '<本地算出的64位哈希>', updated_at = NOW()
+--     WHERE id = 1;
+--   或一步到位（口令明文会进入本账号的 SQL Editor 历史）：
+--     UPDATE public.admin_config
+--     SET admin_key_hash = encode(digest('自选高熵口令', 'sha256'), 'hex'),
+--         updated_at = NOW()
+--     WHERE id = 1;
+-- 轮换后如需给 tools/python/server.py 配置：把下面返回的哈希写入 .env：
+--     SELECT admin_key_hash FROM public.admin_config WHERE id = 1;
+-- 注意：全新部署执行 v11 后得到的是「占位哈希」，必须紧接着执行 A1。
 
 
 -- ============================================================
