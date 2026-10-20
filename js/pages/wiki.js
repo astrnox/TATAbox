@@ -390,8 +390,14 @@
     var hash = md5(unescape(encodeURIComponent(name)));
     var enc = encodeURIComponent(name).replace(/%2F/gi, '/');
     var base = 'https://upload.wikimedia.org/wikipedia/commons/';
-    return base + hash.charAt(0) + '/' + hash.slice(0, 2) + '/' + enc + '/' + width + 'px-' + enc;
+    var thumb = base + hash.charAt(0) + '/' + hash.slice(0, 2) + '/' + enc + '/' + width + 'px-' + enc;
+    // Commons 对 SVG 缩略图要求补 .png 后缀（位图化约定），否则 404
+    if (/\.svg$/i.test(name)) thumb += '.png';
+    return thumb;
   }
+
+  // 维基维护/导航类图标（质量标记、跨语言导航等）——非内容配图，导入时排除
+  var WIKI_JUNK_IMAGE_RE = /Ambox|Question[_ ]book|Edit-clear|Symbol_|Loudspeaker|Wiki[_ ]letter|Crystal[_ ]Clear|BSicon|Gnome-|Commons-logo|Padlock|Cscr-|Wiktionary|Wikibooks|Wikiquote|Wikisource|Wikiversity|Wikivoyage|_stub\.|Stub\.|Increase2?\.png|Decrease2?\.png|Portal\.png|Font_awesome|Information_icon|No_image/i;
 
   // 将维基表格 {| ... |} 转为 Markdown 表格
   function wikitableToMarkdown(tbl) {
@@ -437,14 +443,20 @@
   function parseWikitextMedia(wt) {
     var tables = [];
     var images = [];
-    var t = String(wt || '');
-    t = t.replace(/\{\|[\s\S]*?\|\}/g, function (tbl) {
+    var raw = String(wt || '');
+    // 表格块 → Markdown（从原文抽取）
+    raw.replace(/\{\|[\s\S]*?\|\}/g, function (tbl) {
       var md = wikitableToMarkdown(tbl);
       if (md) tables.push(md);
       return '';
     });
-    t = t.replace(/\[\[(?:File|Image|文件):\s*([^\]|]+)(?:\|[^\]]*)?\]\]/gi, function (_m, name) {
-      images.push(name.trim());
+    // 图片从「原文」抽取（含信息框/表格内的配图），去重 + 过滤维护图标 + 上限 12
+    var seen = {};
+    raw.replace(/\[\[(?:File|Image|文件):\s*([^\]|]+)(?:\|[^\]]*)?\]\]/gi, function (_m, name) {
+      var n = String(name || '').trim();
+      if (!n || seen[n] || WIKI_JUNK_IMAGE_RE.test(n)) return '';
+      seen[n] = 1;
+      if (images.length < 12) images.push(n);
       return '';
     });
     return { tables: tables.join('\n\n'), images: images };
@@ -924,7 +936,7 @@
         if (media.tables) parts.push(media.tables);
         // 图片（生成维基共享资源缩略图链接）
         var imgs = [];
-        (media.images || []).slice(0, 8).forEach(function (fn) {
+        (media.images || []).slice(0, 12).forEach(function (fn) {
           var u = wikimediaThumbUrl(fn, 400);
           if (u) imgs.push('![' + fn.replace(/\.(jpg|jpeg|png|gif|svg|webp)$/i, '') + '](' + u + ')');
         });

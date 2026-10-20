@@ -11,6 +11,8 @@ const html = fs.readFileSync(path.join(WS, 'wiki.html'), 'utf8');
 const utilsJs = fs.readFileSync(path.join(WS, 'js/core/utils.js'), 'utf8');
 const wikiJs = fs.readFileSync(path.join(WS, 'js/pages/wiki.js'), 'utf8');
 const seedJson = fs.readFileSync(path.join(WS, 'data/wiki-seed.json'), 'utf8');
+// 词条数随抓取增长（2026-10-20 起种子由 wiki_crawler.py v2 全量抓取扩充），测试一律用动态计数
+const SEED_COUNT = JSON.parse(seedJson).entries.length;
 
 let fetchHandler = null;
 
@@ -48,13 +50,13 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   await sleep(150);
 
   const cards = $all('#wikiGrid .wiki-card');
-  ok('种子加载：渲染 15 张卡片', cards.length === 15, '实际 ' + cards.length);
-  ok('计数文本显示 15', $('#wikiCount') && $('#wikiCount').textContent === '15', $('#wikiCount') && $('#wikiCount').textContent);
+  ok(`种子加载：渲染 ${SEED_COUNT} 张卡片`, cards.length === SEED_COUNT, '实际 ' + cards.length);
+  ok('计数文本显示种子条数', $('#wikiCount') && $('#wikiCount').textContent === String(SEED_COUNT), $('#wikiCount') && $('#wikiCount').textContent);
 
   setInput($('#wikiSearch'), '线粒体');
   await sleep(60);
   let sCards = $all('#wikiGrid .wiki-card');
-  ok('搜索"线粒体"：只剩匹配卡片', sCards.length >= 1 && sCards.length < 15, '实际 ' + sCards.length);
+  ok('搜索"线粒体"：只剩匹配卡片', sCards.length >= 1 && sCards.length < SEED_COUNT, '实际 ' + sCards.length);
   ok('搜索结果包含线粒体', sCards.some(c => { const t = c.querySelector('.wiki-card-title'); return t && t.textContent === '线粒体'; }), 'results=' + sCards.map(c => c.querySelector('.wiki-card-title').textContent).join(','));
   setInput($('#wikiSearch'), '');
   await sleep(60);
@@ -95,8 +97,8 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   ok('编辑器实时预览渲染列表', prev.querySelector('ul') !== null);
   $('#wikiEditorForm').dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
   await sleep(30);
-  ok('新建后卡片数=16', $all('#wikiGrid .wiki-card').length === 16, '实际 ' + $all('#wikiGrid .wiki-card').length);
-  ok('新建后计数=16', $('#wikiCount').textContent === '16', $('#wikiCount').textContent);
+  ok(`新建后卡片数=${SEED_COUNT + 1}`, $all('#wikiGrid .wiki-card').length === SEED_COUNT + 1, '实际 ' + $all('#wikiGrid .wiki-card').length);
+  ok('新建后计数+1', $('#wikiCount').textContent === String(SEED_COUNT + 1), $('#wikiCount').textContent);
   ok('新词条出现在列表', $all('#wikiGrid .wiki-card').some(c => { const t = c.querySelector('.wiki-card-title'); return t && t.textContent === '测试词条'; }));
 
   const newCard = $all('#wikiGrid .wiki-card').find(c => { const t = c.querySelector('.wiki-card-title'); return t && t.textContent === '测试词条'; });
@@ -116,7 +118,7 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   window.confirm = () => true;
   clickEl($('#wikiDetailDelete'));
   await sleep(30);
-  ok('删除后卡片数=15', $all('#wikiGrid .wiki-card').length === 15, '实际 ' + $all('#wikiGrid .wiki-card').length);
+  ok(`删除后卡片数=${SEED_COUNT}`, $all('#wikiGrid .wiki-card').length === SEED_COUNT, '实际 ' + $all('#wikiGrid .wiki-card').length);
   ok('已删除词条不再出现', !$all('#wikiGrid .wiki-card').some(c => { const t = c.querySelector('.wiki-card-title'); return t && t.textContent === '测试词条-已编辑'; }));
 
   clickEl($('#wikiImportOpenBtn'));
@@ -126,12 +128,18 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   impF['source'].value = 'zh';
   setInput(impF['title'], '减数分裂');
 
+  // 模拟 wikitext：含 SVG 图片、维护类图标（应被过滤）、wikitable 表格
+  const mockWt = '== 图解 ==\n' +
+    '[[File:Meiosis stages.svg|thumb|减数分裂示意]]\n' +
+    '[[File:Ambox warning.png|thumb|维护图标]]\n' +
+    '{|\n! 阶段 !! 特点\n|-\n| 前期I || 同源联会\n|}';
+
   fetchHandler = (u) => {
     if (u.indexOf('rest_v1/page/summary') !== -1) {
       return { ok: true, status: 200, json: () => Promise.resolve({ title: '减数分裂', extract: '减数分裂是生物体生殖细胞形成过程中的分裂方式。', content_urls: { desktop: { page: 'https://zh.wikipedia.org/wiki/减数分裂' } } }) };
     }
     if (u.indexOf('w/api.php') !== -1) {
-      return { ok: true, status: 200, json: () => Promise.resolve({ query: { pages: { '1': { title: '减数分裂', extract: "== 概述 ==\n减数分裂（'''meiosis'''）是一种特殊的[[细胞分裂]]方式。\n\n== 过程 ==\n减数分裂分为两次连续分裂。\n* 减数第一次分裂\n* 减数第二次分裂", fullurl: 'https://zh.wikipedia.org/wiki/减数分裂' } } } }) };
+      return { ok: true, status: 200, json: () => Promise.resolve({ query: { pages: { '1': { title: '减数分裂', extract: "== 概述 ==\n减数分裂（'''meiosis'''）是一种特殊的[[细胞分裂]]方式。\n\n== 过程 ==\n减数分裂分为两次连续分裂。\n* 减数第一次分裂\n* 减数第二次分裂", fullurl: 'https://zh.wikipedia.org/wiki/减数分裂', revisions: [{ slots: { main: { '*': mockWt } } }] } } } }) };
     }
     return null;
   };
@@ -144,6 +152,10 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   ok('wikitext 粗体已转 **meiosis**', ef['content'].value.indexOf('**meiosis**') !== -1, 'no **meiosis**');
   ok('wikitext 链接 [[细胞分裂]] 已转纯文本', ef['content'].value.indexOf('[[细胞分裂]]') === -1 && ef['content'].value.indexOf('细胞分裂') !== -1);
   ok('导入正文含列表项', ef['content'].value.indexOf('减数第一次分裂') !== -1);
+  ok('导入含维基图片（upload.wikimedia 缩略图直链）', ef['content'].value.indexOf('https://upload.wikimedia.org/wikipedia/commons/') !== -1, ef['content'].value.slice(-200));
+  ok('SVG 图片补 .png 后缀（Commons 位图化约定，否则 404）', ef['content'].value.indexOf('400px-Meiosis_stages.svg.png') !== -1, ef['content'].value.slice(-260));
+  ok('过滤维护类图标（Ambox 不入库）', ef['content'].value.indexOf('Ambox') === -1);
+  ok('wikitext 表格 {|…|} 转 Markdown 表格', ef['content'].value.indexOf('| 阶段 | 特点 |') !== -1 && ef['content'].value.indexOf('| 前期I | 同源联会 |') !== -1, ef['content'].value.slice(-300));
 
   fetchHandler = null;
   let exportOk = true;

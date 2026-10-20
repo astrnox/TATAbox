@@ -7,22 +7,36 @@ TATABOX —— 百科模块词条爬虫 (wiki_crawler.py)
 转换为 data/wiki-seed.json 所需的 entries 格式，并合并进种子文件。
 
 适用场景：
-    在拥有一台可正常联网的机器上运行（本项目的沙箱出口代理会拦截维基/百度，
-    因此无法在沙箱内实时抓取）。运行后 data/wiki-seed.json 会被更新，
-    前端 wiki.html 首次加载（或调用 BioQuestWiki.resetSeed()）即可看到抓取结果。
+    在拥有一台可正常联网的机器上运行即可直接抓取维基/百度；
+    在本项目沙箱等「出口拦截 wikipedia/baike 域名」的环境里，使用
+    --via corsfix 经 https://proxy.corsfix.com 中转（服务端代取）。
+    运行后 data/wiki-seed.json 会被更新，前端 wiki.html 首次加载
+    （或调用 BioQuestWiki.resetSeed()）即可看到抓取结果。
 
 用法：
-    python scripts/wiki_crawler.py                # 抓取全部约 200 条，合并到 data/wiki-seed.json
-    python scripts/wiki_crawler.py --limit 20     # 只抓前 20 条（快速测试）
-    python scripts/wiki_crawler.py --only baidu   # 仅从百度百科抓取
-    python scripts/wiki_crawler.py --source zh    # 优先使用维基中文，跳过百度回退
-    python scripts/wiki_crawler.py --out /tmp/a.json   # 输出到其它路径
+    python tools/python/wiki_crawler.py                # 抓取全部约 200 条，合并到 data/wiki-seed.json
+    python tools/python/wiki_crawler.py --limit 30     # 只抓前 30 条（快速测试）
+    python tools/python/wiki_crawler.py --via corsfix  # 沙箱内经 corsfix 中转抓取维基
+    python tools/python/wiki_crawler.py --refresh      # 已存在的词条也重新抓取覆盖
+    python tools/python/wiki_crawler.py --only baidu   # 仅从百度百科抓取
+    python tools/python/wiki_crawler.py --source zh    # 优先使用维基中文，跳过百度回退
+    python tools/python/wiki_crawler.py --out /tmp/a.json   # 输出到其它路径
+
+内容完整性（v2 全量抓取改造）：
+    * 正文：维基 Action API prop=extracts 全文（含所有章节）；
+    * 图表：prop=wikitext → 表格 {|…|} 转 Markdown 表格；
+    * 图片：wikitext 中 [[File:…]] 抽取为 Commons 缩略图直链
+      （MD5 路径算法与前端 wiki.js wikimediaThumbUrl 一致，SVG 自动补
+      .png 后缀——Commons 对 SVG 缩略图要求该后缀，否则404）；
+    * 与前端「导入维基词条」管线同构，保证两种入口产出一致。
 
 依赖：
     仅 Python 3 标准库（urllib）。无需 requests / bs4。
 """
 
 import argparse
+import gzip
+import hashlib
 import json
 import os
 import re
@@ -269,15 +283,37 @@ TERMS = [
 ]
 
 
+# 中文维基实际页面名与教材词条名不一致时的回退映射（20 词条实测补充）。
+# 命中 missing 时用映射名重试；条目标题仍保留教材表述，sourceUrl 指向实际页面。
+ZH_TITLE_FALLBACKS = {
+    "细胞自噬": "自噬",
+    "细胞信号转导": "信号转导",           # 解析到「訊息傳遞 (生物)」
+    "细胞全能性": "細胞潛能",             # zh 无「细胞全能性」独立条目
+    "细胞的物质跨膜运输": "跨膜运输",
+    "细胞核仁": "核仁",
+}
+
+
 # ═══════════════════════════════════════════════════════════════
 # 网络请求（标准库，带重试与限速）
 # ═══════════════════════════════════════════════════════════════
 
+# 代理中转通道：沙箱出口拦截 wikipedia/baike 域名时，经服务端代取。
+# 用法：--via corsfix 或环境变量 WIKI_PROXY_TEMPLATE="https://xxx/?url={url}"
+PROXY_CHANNELS = {
+    # Corsfix 免费共享层：需伪造其官方 Origin（服务端按 Origin 放行）
+    "corsfix": ("https://proxy.corsfix.com/?url={url}", {"Origin": "https://corsfix.com"}),
+}
+
+
 class Fetcher:
-    def __init__(self, delay: float = 0.6, retries: int = 3, timeout: int = 20):
+    def __init__(self, delay: float = 0.6, retries: int = 3, timeout: int = 20,
+                 proxy_template: str = None, extra_headers: dict = None):
         self.delay = delay
         self.retries = retries
         self.timeout = timeout
+        self.proxy_template = proxy_template          # 形如 "https://proxy/?url={url}"
+        self.extra_headers = extra_headers or {}
         self._last = 0.0
 
     def _wait(self):
@@ -301,23 +337,34 @@ class Fetcher:
         return data.decode("utf-8", "ignore")
 
     def _request(self, url: str, accept: str = None):
+        target = url
+        if self.proxy_template:
+            target = self.proxy_template.format(url=urllib.parse.quote(url, safe=""))
         for attempt in range(self.retries):
             self._wait()
             try:
-                req = urllib.request.Request(url, headers={
+                headers = {
                     "User-Agent": UA,
                     "Accept": accept or "text/html,application/json;q=0.9,*/*;q=0.8",
                     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                })
+                }
+                headers.update(self.extra_headers)
+                req = urllib.request.Request(target, headers=headers)
                 with urllib.request.urlopen(req, timeout=self.timeout) as r:
                     self._last = time.time()
-                    return r.read()
+                    data = r.read()
+                if data[:2] == b"\x1f\x8b":  # 代理可能强制 gzip
+                    try:
+                        data = gzip.decompress(data)
+                    except Exception:
+                        pass
+                return data
             except Exception as e:
                 self._last = time.time()
                 if attempt == self.retries - 1:
                     print(f"        [请求失败] {url} -> {e}")
                     return None
-                time.sleep(0.8 * (attempt + 1))
+                time.sleep(1.2 * (attempt + 1))
         return None
 
 
@@ -372,14 +419,108 @@ def make_summary(full_text: str, limit: int = 120) -> str:
 
 
 # ═══════════════════════════════════════════════════════════════
-# 维基百科（中文优先，回退英文）
+# 维基百科（中文优先，回退英文）—— v2 全量抓取：正文 + 表格 + 图片
 # ═══════════════════════════════════════════════════════════════
 
 WIKI_API = "https://{lang}.wikipedia.org/w/api.php"
 
+# 维基维护/导航类图标（质量标记、跨语言导航等）——非内容配图，抽取时排除
+_JUNK_IMAGE_RE = re.compile(
+    r"(Ambox|Question[_ ]book|Edit-clear|Symbol_|Loudspeaker|Wiki[_ ]letter|"
+    r"Crystal[_ ]Clear|BSicon|Gnome-|Commons-logo|Padlock|Cscr-|"
+    r"Wiktionary|Wikibooks|Wikiquote|Wikisource|Wikiversity|Wikivoyage|"
+    r"_stub\.|Stub\.|Increase2?\.png|Decrease2?\.png|Portal\.png|"
+    r"Font_awesome|Information_icon|No_image)",
+    re.I,
+)
 
-def fetch_wikipedia(fetcher: Fetcher, title: str, lang: str = "zh"):
-    """返回 dict(title, content, summary, url) 或 None。"""
+
+def wikimedia_thumb_url(file_name: str, width: int = 400) -> str:
+    """Commons 缩略图直链（与前端 wiki.js wikimediaThumbUrl 同算法：MD5 路径）。
+    SVG 必须补 .png 后缀——Commons 对 SVG 位图化缩略图的约定，缺了会404
+    （此前前端导入与爬虫都没补，导致大量图示/流程图“抓了也显示不出来”）。"""
+    name = re.sub(r"\s+", "_", str(file_name or "").strip())
+    if not name:
+        return ""
+    h = hashlib.md5(name.encode("utf-8")).hexdigest()
+    enc = urllib.parse.quote(name)
+    base = f"https://upload.wikimedia.org/wikipedia/commons/{h[0]}/{h[:2]}/{enc}"
+    thumb = f"{base}/{width}px-{enc}"
+    if name.lower().endswith(".svg"):
+        thumb += ".png"
+    return thumb
+
+
+def wikitable_to_markdown(tbl: str) -> str:
+    """{| … |} 维基表格 → Markdown 表格（与前端 wikitableToMarkdown 同构）。"""
+    lines = str(tbl or "").split("\n")
+    rows, cur = [], None
+    for raw in lines:
+        ln = raw.strip()
+        if not ln:
+            continue
+        if ln.startswith("{|"):
+            continue
+        if ln.startswith("|}"):
+            break
+        if ln.startswith("|-"):
+            if cur:
+                rows.append(cur)
+            cur = None
+            continue
+        ch = ln[0]
+        if ch in ("|", "!"):
+            is_head = ch == "!"
+            rest = ln[1:]
+            rest = re.sub(r'^style="[^"]*"\s*', "", rest, flags=re.I)
+            rest = re.sub(r"^style=[\w-]+", "", rest, flags=re.I).strip()
+            rest = re.sub(r"\s*\|\s*$", "", rest)
+            sep_re = r"\s*!!\s*" if is_head else r"\s*\|\|\s*"
+            for cell in re.split(sep_re, rest):
+                cell = cell.strip()
+                cell = re.sub(r"\[\[(?:\s*[^\]|]*\|)?([^\]]+)\]\]", r"\1", cell)
+                cell = re.sub(r"'''([^']+)'''", r"\1", cell)
+                cell = re.sub(r"''([^']+)''", r"\1", cell)
+                if cur is None:
+                    cur = []
+                cur.append({"text": cell, "head": is_head})
+    if cur:
+        rows.append(cur)
+    if not rows:
+        return ""
+    header = rows.pop(0)
+    hdr = "| " + " | ".join(c["text"].replace("|", "\\|") for c in header) + " |"
+    sep = "| " + " | ".join("---" for _ in header) + " |"
+    body = ["| " + " | ".join(c["text"].replace("|", "\\|") for c in r) + " |" for r in rows]
+    return "\n".join([hdr, sep] + body)
+
+
+def parse_wikitext_media(wikitext: str, max_images: int = 12):
+    """从 wikitext 抽取：表格（Markdown）与配图（[(文件名, 缩略图URL), …]）。
+    图片从全文抽取（含信息框/表格内的图），过滤维护类图标，最多 max_images 张。"""
+    wt = str(wikitext or "")
+    tables = []
+    for m in re.finditer(r"\{\|[\s\S]*?\|\}", wt):
+        md = wikitable_to_markdown(m.group(0))
+        if md:
+            tables.append(md)
+    images, seen = [], set()
+    for m in re.finditer(r"\[\[(?:File|Image|文件):\s*([^\]|]+)(?:\|[^\]]*)?\]\]", wt, re.I):
+        name = m.group(1).strip()
+        if not name or name in seen or _JUNK_IMAGE_RE.search(name):
+            continue
+        u = wikimedia_thumb_url(name, 400)
+        if not u:
+            continue
+        seen.add(name)
+        images.append((name, u))
+        if len(images) >= max_images:
+            break
+    return {"tables": "\n\n".join(tables), "images": images}
+
+
+def _fetch_wikipedia_extracts_only(fetcher: "Fetcher", title: str, lang: str):
+    """回退路径：仅 extracts 全文（组合接口异常时使用，无媒体）。"""
     url = (WIKI_API.format(lang=lang)
            + "?action=query&format=json&prop=extracts|info&explaintext=1&inprop=url"
            + "&redirects=1&titles=" + urllib.parse.quote(title) + "&origin=*")
@@ -396,6 +537,55 @@ def fetch_wikipedia(fetcher: Fetcher, title: str, lang: str = "zh"):
     if not content:
         return None
     md = wiki_text_to_md(content)
+    return {
+        "title": p.get("title") or title,
+        "content": md,
+        "summary": make_summary(md),
+        "url": p.get("fullurl") or f"https://{lang}.wikipedia.org/wiki/{urllib.parse.quote(p.get('title') or title)}",
+    }
+
+
+def fetch_wikipedia(fetcher: Fetcher, title: str, lang: str = "zh"):
+    """全量抓取：正文（extracts 全文）+ 表格 + 图片。返回 dict(title, content, summary, url) 或 None。"""
+    url = (WIKI_API.format(lang=lang)
+           + "?action=query&format=json&prop=extracts|revisions|info&explaintext=1"
+           + "&rvprop=content&rvslots=main&inprop=url"
+           + "&redirects=1&titles=" + urllib.parse.quote(title) + "&origin=*")
+    data = fetcher.get_json(url)
+    if not data or "query" not in data:
+        return _fetch_wikipedia_extracts_only(fetcher, title, lang)
+    pages = (data.get("query") or {}).get("pages") or {}
+    if not pages:
+        return None
+    p = list(pages.values())[0]
+    if p.get("missing") is not None:
+        return None
+    extract = (p.get("extract") or "").strip()
+    if not extract:
+        return None
+
+    # wikitext（表格 + File 图片标记）
+    wt = ""
+    revs = p.get("revisions") or []
+    if revs:
+        rev = revs[0] or {}
+        slot = (rev.get("slots") or {}).get("main") or {}
+        wt = slot.get("*") or slot.get("content") or rev.get("*") or ""
+    media = parse_wikitext_media(wt)
+
+    body = wiki_text_to_md(extract)
+    parts = [body] if body else []
+    if media["tables"]:
+        parts.append(media["tables"])
+    if media["images"]:
+        img_lines = []
+        for fname, u in media["images"]:
+            cap = re.sub(r"\.(jpg|jpeg|png|gif|svg|webp)$", "", fname, flags=re.I)
+            img_lines.append(f"![{cap}]({u})")
+        parts.append("\n".join(img_lines))
+    md = "\n\n".join(parts).strip()
+    if not md:
+        return None
     return {
         "title": p.get("title") or title,
         "content": md,
@@ -485,8 +675,21 @@ def already_exists(entries, title):
     return any(e.get("title") == title for e in entries)
 
 
-def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia=True, out=DEFAULT_OUT, upload=False):
-    fetcher = Fetcher()
+def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia=True,
+        out=DEFAULT_OUT, upload=False, refresh=False, via=None):
+    # 代理中转通道（沙箱出口拦截目标域名时使用）
+    proxy_template, extra_headers = None, {}
+    if via and via in PROXY_CHANNELS:
+        proxy_template, extra_headers = PROXY_CHANNELS[via]
+    elif os.environ.get("WIKI_PROXY_TEMPLATE", "").strip():
+        proxy_template = os.environ["WIKI_PROXY_TEMPLATE"].strip()
+        origin = os.environ.get("WIKI_PROXY_ORIGIN", "").strip()
+        if origin:
+            extra_headers = {"Origin": origin}
+    fetcher = Fetcher(delay=0.8 if proxy_template else 0.6,
+                      proxy_template=proxy_template, extra_headers=extra_headers)
+    if proxy_template:
+        print(f"[通道] 经代理中转抓取：{proxy_template}")
     # 读取现有种子，保留已有词条
     out_path = Path(out)
     entries = []
@@ -504,16 +707,21 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
 
     ok, fail, skipped = 0, 0, 0
     for i, (title, category, tags) in enumerate(terms, start=1):
-        if already_exists(entries, title):
+        existed = already_exists(entries, title)
+        if existed and not refresh:
             skipped += 1
             print(f"[{i:3d}/{total}] 跳过（已存在）: {title}")
             continue
 
         fetched, source = None, None
 
-        # 1) 维基百科（中文优先）
+        # 1) 维基百科（中文优先；教材名无对应页面时按 ZH_TITLE_FALLBACKS 回退）
         if use_wikipedia and prefer == "zh":
             fetched = fetch_wikipedia(fetcher, title, "zh")
+            if not fetched and title in ZH_TITLE_FALLBACKS:
+                alt = ZH_TITLE_FALLBACKS[title]
+                print(f"        标题回退: {title} → {alt}")
+                fetched = fetch_wikipedia(fetcher, alt, "zh")
             source = "wikipedia" if fetched else None
 
         # 2) 百度百科
@@ -534,9 +742,13 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
             print(f"[{i:3d}/{total}] 失败: {title}")
             continue
 
+        # --refresh：抓取成功后才替换旧条目（失败不丢原数据）
+        if existed:
+            entries = [e for e in entries if e.get("title") != title]
         entries.append(build_entry(title, category, tags, fetched, source))
         ok += 1
-        print(f"[{i:3d}/{total}] OK  [{source}] {title}  （{len(fetched['content'])} 字）")
+        tag = "覆盖" if existed else "OK "
+        print(f"[{i:3d}/{total}] {tag} [{source}] {title}  （{len(fetched['content'])} 字）")
 
         # 每抓 10 条落盘一次，避免中断丢数据
         if ok % 10 == 0:
@@ -544,8 +756,8 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
 
     write_seed(out_path, entries)
     print("\n==== 完成 ====")
-    print(f"  新增: {ok}   失败: {fail}   跳过(已存在): {skipped}")
-    print(f"  当前 word 条数: {len(entries)}")
+    print(f"  新增/覆盖: {ok}   失败: {fail}   跳过(已存在): {skipped}")
+    print(f"  当前词条总数: {len(entries)}")
     print(f"  输出: {out_path}")
     if upload:
         upload_to_supabase(entries, os.environ.get("SUPABASE_SERVICE_ROLE_KEY", ""))
@@ -620,6 +832,9 @@ def main():
     ap.add_argument("--only", choices=["wikipedia", "baidu"], default=None, help="只从单一来源抓取（默认两者都试）")
     ap.add_argument("--source", choices=["zh", "baidu"], default="zh", help="首选来源：zh=维基中文优先, baidu=百度优先")
     ap.add_argument("--out", type=str, default=DEFAULT_OUT, help="输出 json 路径")
+    ap.add_argument("--refresh", action="store_true", help="已存在的词条也重新抓取覆盖（默认跳过）")
+    ap.add_argument("--via", choices=sorted(PROXY_CHANNELS.keys()), default=None,
+                    help="经代理中转抓取（沙箱出口拦截维基/百度时使用），或设环境变量 WIKI_PROXY_TEMPLATE")
     ap.add_argument("--upload", action="store_true", help="抓取后上传到 Supabase wiki_entries（需 SUPABASE_SERVICE_ROLE_KEY 环境变量）")
     args = ap.parse_args()
 
@@ -627,7 +842,8 @@ def main():
     use_baidu = args.only != "wikipedia"
     prefer = "zh" if args.source == "zh" else "baidu"
     run(TERMS, limit=args.limit, only=args.only, prefer=prefer,
-        use_baidu=use_baidu, use_wikipedia=use_wiki, out=args.out, upload=args.upload)
+        use_baidu=use_baidu, use_wikipedia=use_wiki, out=args.out, upload=args.upload,
+        refresh=args.refresh, via=args.via)
 
 
 if __name__ == "__main__":

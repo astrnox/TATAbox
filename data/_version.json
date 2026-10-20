@@ -1,7 +1,12 @@
 {
-  "version": "5.2.6",
+  "version": "5.2.7",
   "updated_at": "2026-10-20",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "version": "5.2.7",
+      "description": "百科模块 v2 全量抓取（图片/图表修复）。wiki_crawler.py：①新增 --via corsfix 出口通道（沙箱代理拦截 wikipedia/baike 域名，经 proxy.corsfix.com 服务端代取，自动 gzip 解码）与 --refresh 覆盖模式；②抽取管线从纯文本 extracts 升级为 extracts+wikitext 组合抓取——wikitext {|…|} 表格转 Markdown、[[File:]] 抽取 Commons 缩略图直链（MD5 路径与前端一致、SVG 自动补 .png 后缀、过滤维护图标、上限 12 张）；③ZH_TITLE_FALLBACKS 教材名→维基实际页面名回退映射（细胞自噬→自噬等 5 条）。前端 wiki.js：wikimediaThumbUrl SVG 补 .png（修复图示 404「图片抓了显示不出来」）、parseWikitextMedia 从原文抽取含信息框图片并去重过滤、导入图片上限 8→12。首批 30 关键词（细胞生物学块）已抓取入库：种子 15→41 条，24/30 含图、99 张图片（27 处 SVG 修复）、21 个表格、全文最短 388 字。测试：wiki 烟雾改动态计数并新增 4 项媒体断言（33/33）、新增 wiki-seed-crawl 质量套件（6 例）。"
+    },
     {
       "date": "2026-10-20",
       "version": "5.2.6",
