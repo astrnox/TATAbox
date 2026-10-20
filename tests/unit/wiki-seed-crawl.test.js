@@ -95,7 +95,8 @@ describe('wiki-seed 首批 30 关键词抓取产物', () => {
         expect(Object.prototype.hasOwnProperty.call(e, f)).toBe(true);
       }
     }
-    expect(seed.entries.length).toBe(41);            // 15 旧种子 + 30 抓取（其中 4 条为覆盖刷新）
-    expect(seed.updated_at).toBe('2026-10-20');
+    // 首批 30（2026-10-20）之后类目分层抓取持续追加，只锁下限
+    expect(seed.entries.length).toBeGreaterThanOrEqual(41);
+    expect(seed.updated_at).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });

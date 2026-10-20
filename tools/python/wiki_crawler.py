@@ -364,7 +364,8 @@ class Fetcher:
                 if attempt == self.retries - 1:
                     print(f"        [请求失败] {url} -> {e}")
                     return None
-                time.sleep(1.2 * (attempt + 1))
+                # 429 限流需要更长冷却（Corsfix 免费层按窗口限速）
+                time.sleep(8.0 if "429" in str(e) else 1.2 * (attempt + 1))
         return None
 
 
@@ -654,6 +655,105 @@ def fetch_baidu_direct(fetcher: Fetcher, title: str):
 
 
 # ═══════════════════════════════════════════════════════════════
+# v3：类目白名单分层发现（八大类目 → 过滤后的直接子类 → 页面）
+# 目标：约 1000 条核心词条；排除物种/人物/各国/列表/模板等噪声类目
+# ═══════════════════════════════════════════════════════════════
+
+CATEGORY_ROOTS = [
+    ("Category:细胞生物学", "细胞生物学"),
+    ("Category:分子生物学", "分子生物学"),
+    ("Category:生物化学", "生物化学"),
+    ("Category:遗传学", "遗传学"),
+    ("Category:动物学", "动物学"),
+    ("Category:植物学", "植物学"),
+    ("Category:微生物学", "微生物学"),
+    ("Category:生态学", "生态学"),
+]
+
+# 子类目排除：人物/历史/列表/各国/奖项/网站/模板/文献/图像 等非知识类目
+_SUBCAT_EXCLUDE = re.compile(
+    r"(人物|学家|历史|列表|各國|各国|城市|奖项|奖$|网站|模板|文献|文化|软件|专利|"
+    r"图像|标本|消歧义|小作品|^按|索引|缩写|年表|事件|组织|会议|期刊|标志|符号|"
+    r"未解决|争论|教育|职业|术语表)",
+    re.I,
+)
+
+# 页面排除：消歧义页 / 各种列表页（列表无教学价值且体积极大）
+_PAGE_EXCLUDE = re.compile(r"(消歧义|^列表|列表$|^索引|^年表$|的列表|^List of|^清单)", re.I)
+
+
+def _wiki_api(fetcher: "Fetcher", params: str):
+    url = WIKI_API.format(lang="zh") + "?format=json&origin=*&" + params
+    return fetcher.get_json(url)
+
+
+def discover_category_members(fetcher: "Fetcher", root_cat: str, root_label: str,
+                              page_cap: int = 140, subcat_cap: int = 14, max_depth: int = 1):
+    """从 root_cat 出发（含 max_depth 层过滤后的子类），返回 [(页面标题, 标签路径)]。"""
+    results = []
+    seen_pages = set()
+    seen_cats = {root_cat}
+    frontier = [(root_cat, [root_label], 0)]
+    subcats_used = 0
+    while frontier and len(results) < page_cap:
+        cat, labels, level = frontier.pop(0)
+        cont = ""
+        while len(results) < page_cap:
+            params = ("action=query&list=categorymembers&cmtype=page|subcat&cmlimit=500"
+                      + "&cmtitle=" + urllib.parse.quote(cat))
+            if cont:
+                params += "&cmcontinue=" + urllib.parse.quote(cont, safe="")
+            data = _wiki_api(fetcher, params)
+            if not data:
+                break
+            for m in (data.get("query") or {}).get("categorymembers", []):
+                t, ns = m.get("title"), m.get("ns")
+                if ns == 14:  # 子类
+                    if (level >= max_depth or subcats_used >= subcat_cap
+                            or t in seen_cats or _SUBCAT_EXCLUDE.search(t)):
+                        continue
+                    seen_cats.add(t)
+                    subcats_used += 1
+                    frontier.append((t, labels + [t.replace("Category:", "")], level + 1))
+                elif ns == 0:  # 正文页面
+                    if t in seen_pages or _PAGE_EXCLUDE.search(t):
+                        continue
+                    seen_pages.add(t)
+                    results.append((t, list(labels)))
+                    if len(results) >= page_cap:
+                        break
+            cont = (data.get("continue") or {}).get("cmcontinue")
+            if not cont:
+                break
+        time.sleep(0.3)
+    return results
+
+
+def discover_all(fetcher: "Fetcher", target: int = 1000):
+    """八大类目分层发现，返回 [(title, category, tags)]，供 run() 统一抓取。
+    category = 根类目（与前端八大分类/图谱分类同名）；tags 取路径上的中间类目名，
+    作为词云与图谱联动的天然标签。"""
+    import math
+    per_root = max(60, math.ceil(target / max(1, len(CATEGORY_ROOTS))))
+    out, seen = [], set()
+    for cat, label in CATEGORY_ROOTS:
+        pages = discover_category_members(fetcher, cat, label, page_cap=per_root)
+        got = 0
+        for title, path in pages:
+            if title in seen:
+                continue
+            seen.add(title)
+            tags = [x for x in path[1:3] if x and x != label]
+            out.append((title, label, tags))
+            got += 1
+        print(f"  [发现] {label}: {got} 条（每类配额 {per_root}）")
+        if len(out) >= target + max(20, int(target * 0.2)):
+            break
+    print(f"  [发现] 合计 {len(out)} 条待处理（已存在的后续本地跳过）")
+    return out
+
+
+# ═══════════════════════════════════════════════════════════════
 # 主流程
 # ═══════════════════════════════════════════════════════════════
 
@@ -676,7 +776,7 @@ def already_exists(entries, title):
 
 
 def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia=True,
-        out=DEFAULT_OUT, upload=False, refresh=False, via=None):
+        out=DEFAULT_OUT, upload=False, refresh=False, via=None, all_biology=False, target=1000):
     # 代理中转通道（沙箱出口拦截目标域名时使用）
     proxy_template, extra_headers = None, {}
     if via and via in PROXY_CHANNELS:
@@ -686,7 +786,7 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
         origin = os.environ.get("WIKI_PROXY_ORIGIN", "").strip()
         if origin:
             extra_headers = {"Origin": origin}
-    fetcher = Fetcher(delay=0.8 if proxy_template else 0.6,
+    fetcher = Fetcher(delay=1.8 if proxy_template else 0.6,
                       proxy_template=proxy_template, extra_headers=extra_headers)
     if proxy_template:
         print(f"[通道] 经代理中转抓取：{proxy_template}")
@@ -699,6 +799,11 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
             entries = existing.get("entries", [])
         except Exception:
             entries = []
+
+    # v3 模式：八大类目分层发现替代固定 TERMS 清单
+    if all_biology:
+        print(f"[v3] 类目分层发现（目标 ~{target}，八大类目白名单）…")
+        terms = discover_all(fetcher, target=target)
 
     total = len(terms)
     if limit:
@@ -835,6 +940,10 @@ def main():
     ap.add_argument("--refresh", action="store_true", help="已存在的词条也重新抓取覆盖（默认跳过）")
     ap.add_argument("--via", choices=sorted(PROXY_CHANNELS.keys()), default=None,
                     help="经代理中转抓取（沙箱出口拦截维基/百度时使用），或设环境变量 WIKI_PROXY_TEMPLATE")
+    ap.add_argument("--all-biology", action="store_true",
+                    help="v3：八大类目白名单分层发现并抓取（替代固定 TERMS 清单）")
+    ap.add_argument("--target", type=int, default=1000,
+                    help="--all-biology 的目标发现条数（默认 1000，已存在的自动跳过）")
     ap.add_argument("--upload", action="store_true", help="抓取后上传到 Supabase wiki_entries（需 SUPABASE_SERVICE_ROLE_KEY 环境变量）")
     args = ap.parse_args()
 
@@ -843,7 +952,8 @@ def main():
     prefer = "zh" if args.source == "zh" else "baidu"
     run(TERMS, limit=args.limit, only=args.only, prefer=prefer,
         use_baidu=use_baidu, use_wikipedia=use_wiki, out=args.out, upload=args.upload,
-        refresh=args.refresh, via=args.via)
+        refresh=args.refresh, via=args.via,
+        all_biology=args.all_biology, target=args.target)
 
 
 if __name__ == "__main__":

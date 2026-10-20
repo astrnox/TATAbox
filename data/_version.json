@@ -1,7 +1,12 @@
 {
-  "version": "5.2.7",
+  "version": "5.2.8",
   "updated_at": "2026-10-20",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "version": "5.2.8",
+      "description": "知识图谱 v5.0：百科词条层 + 词云 + AI 讲解（图谱/练习/百科/AI 四向串联）。①knowledge-graph.js：按需加载词条层（Supabase wiki_entries 优先、data/wiki-seed.json 回退、失败为空——默认视图零开销），分类幂等注入 wiki:: 节点（选中分类 60/类、未选 25/类，防 O(n²) 力导向过载），标题↔考点互含优先连边、否则轮转同分类考点；节点面板两套动作（考点：练习/课堂v4/v3/AI讲解/错题；词条：练习/读百科/AI讲解/错题，词条练习概念用分类），AI 讲解写 sessionStorage 预填并跳 #/tutor；头部图谱/词云视图切换，词云按权重（考点3/词条标题2/标签1）取 top150、6 级字号 class，点词条标题直达 wiki.html?entry=、点考点/标签词回图谱搜索定位；开关状态经整体重建保持筛选与搜索。②tutor.js：初始化消费 bioquest_tutor_prefill 并自动发送（一次）。③wiki.js：init 解析 ?entry= 轮询词条就绪后 openDetail（图谱/词云跳转）。④爬虫 v3：八大类目白名单分层发现（--all-biology --target，默认1000；子类排除人物/列表/各国等、页面排除消歧义/列表）、路径中间类目作 tags、429 退避 8s。测试：新增 knowledge-graph-wiki 5 例（默认零开销/注入还原/词云/面板/预填），全量 416/416。"
+    },
     {
       "date": "2026-10-20",
       "version": "5.2.7",

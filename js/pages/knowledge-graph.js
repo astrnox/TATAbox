@@ -47,6 +47,16 @@
    * ============================================================ */
   var GRAPH_NODES = [];   // 将由 _loadGraphData() 异步填充
   var GRAPH_EDGES = [];
+
+  /* —— v5.0 百科词条层 + 词云（按需加载，DB→本地种子回退）—— */
+  var WIKI_ENTRIES = null;            // [{id,title,category,tags,summary}]
+  var WIKI_LOAD_PROMISE = null;
+  var _wikiLayerOn = false;           // 百科层开关（默认关：默认视图与性能不变）
+  var _wikiInjectedCats = {};         // 已注入的分类（按分类幂等注入）
+  var _viewMode = 'graph';            // graph | cloud
+  var _cloudWeights = {};             // 词云权重缓存（每次渲染重建）
+  var WIKI_PER_CAT_ACTIVE = 60;       // 选中分类时该类注入上限
+  var WIKI_PER_CAT_ALL = 25;          // 未选分类时每类注入上限（全局 ≤ 8×25+80）
   var _graphDataLoaded = false;
 
   /**
@@ -666,8 +676,10 @@
         category: n.category,
         description: n.description,
         relatedModule: n.relatedModule,
+        isWiki: !!n.isWiki,
+        wikiId: n.wikiId || '',
         mastery: mastery,
-        radius: masteryToRadius(mastery),
+        radius: n.isWiki ? 7 : masteryToRadius(mastery),
         x: 0, y: 0,
         vx: 0, vy: 0
       };
@@ -738,7 +750,7 @@
 
     _nodes.forEach(function (node) {
       var g = svgEl('g', {
-        'class': 'kg-node',
+        'class': 'kg-node' + (node.isWiki ? ' kg-node-wiki' : ''),
         'data-id': node.id
       });
 
@@ -978,19 +990,47 @@
    * v4.0：节点点击操作面板（替代直接跳转 /practice）
    * 提供四个动作：开始练习 / 生成 v4 课堂 / 生成 v3 课堂 / 加入错题复习
    */
+  /**
+   * v5.0：面板描述与按钮组——百科词条节点与考点节点两套动作
+   * 考点：练习 / 课堂 v4 / 课堂 v3 / AI 讲解 / 错题
+   * 词条：练习 / 读百科 / AI 讲解 / 错题（词条无 kgNodeId，不提供课堂生成）
+   */
+  function _panelDesc(node) {
+    if (node.isWiki) {
+      return ('百科词条 · ' + (node.category || '') + ' · ' + (node.description || '')).slice(0, 120);
+    }
+    return node.description || '（暂无描述）';
+  }
+
+  function _panelButtons(node) {
+    var practice = '<button class="kg-action-btn kg-action-primary" data-action="practice">开始练习</button>';
+    var wrong = '<button class="kg-action-btn" data-action="wrongbook">加入错题复习</button>';
+    var ai = '<button class="kg-action-btn" data-action="ai">AI 讲解</button>';
+    if (node.isWiki) {
+      return practice +
+        '<button class="kg-action-btn" data-action="wiki">读百科词条</button>' +
+        ai + wrong;
+    }
+    return practice +
+      '<button class="kg-action-btn" data-action="classroom-v4">生成 AI 课堂 v4</button>' +
+      '<button class="kg-action-btn" data-action="classroom-v3">生成 AI 课堂 v3</button>' +
+      ai + wrong;
+  }
+
   function showNodeActionPanel(node, event, container) {
     // 移除已存在的面板
     var existing = document.getElementById('kg-action-panel');
     if (existing) existing.remove();
 
     // 将节点信息写入 sessionStorage，供练习模块读取并做专项过滤
+    // v5.0：百科词条的题库概念用分类（题库无词条标题级 concept）
     try {
       sessionStorage.setItem('bioquest_kg_practice', JSON.stringify({
         nodeId: node.id,
         label: node.label,
         category: node.category,
         module: node.relatedModule,
-        concept: node.label
+        concept: node.isWiki ? node.category : node.label
       }));
     } catch (e) {}
 
@@ -1002,13 +1042,8 @@
       '  <span class="kg-action-title">' + escapeHtml(node.label) + '</span>',
       '  <button class="kg-action-close" aria-label="关闭">×</button>',
       '</div>',
-      '<div class="kg-action-desc">' + escapeHtml(node.description || '（暂无描述）') + '</div>',
-      '<div class="kg-action-buttons">',
-      '  <button class="kg-action-btn kg-action-primary" data-action="practice">开始练习</button>',
-      '  <button class="kg-action-btn" data-action="classroom-v4">生成 AI 课堂 v4</button>',
-      '  <button class="kg-action-btn" data-action="classroom-v3">生成 AI 课堂 v3</button>',
-      '  <button class="kg-action-btn" data-action="wrongbook">加入错题复习</button>',
-      '</div>'
+      '<div class="kg-action-desc">' + escapeHtml(_panelDesc(node)) + '</div>',
+      '<div class="kg-action-buttons">' + _panelButtons(node) + '</div>'
     ].join('');
 
     document.body.appendChild(panel);
@@ -1044,7 +1079,8 @@
         var action = btn.getAttribute('data-action');
         panel.remove();
         if (action === 'practice') {
-          var practiceHash = '#/practice?concept=' + encodeURIComponent(node.label);
+          var conceptVal = node.isWiki ? node.category : node.label;
+          var practiceHash = '#/practice?concept=' + encodeURIComponent(conceptVal);
           if (node.category) practiceHash += '&category=' + encodeURIComponent(node.category);
           if (node.relatedModule) practiceHash += '&module=' + encodeURIComponent(node.relatedModule);
           window.location.hash = practiceHash;
@@ -1060,6 +1096,16 @@
           } else {
             alert('课堂模块未加载，请刷新页面重试');
           }
+        } else if (action === 'wiki') {
+          // 打开独立百科页并定位到该词条（wiki.js 解析 ?entry= 参数）
+          if (node.wikiId) window.location.href = 'wiki.html?entry=' + encodeURIComponent(node.wikiId);
+        } else if (action === 'ai') {
+          // v5.0 AI 讲解：把节点上下文写入预填，跳转 AI 导师直接发问
+          var aiPrompt = node.isWiki
+            ? ('请结合百科词条「' + node.label + '」讲解：先概述核心概念，再讲关键机制与易错点。摘要：' + (node.description || '（无）'))
+            : ('请讲解「' + node.label + '」这个' + (node.category || '生物学') + '知识点：先讲核心概念，再给一个记忆方法和一个常见考法。');
+          try { sessionStorage.setItem('bioquest_tutor_prefill', aiPrompt); } catch (err) {}
+          window.location.hash = '#/tutor';
         } else if (action === 'wrongbook') {
           // 把节点标记为待复习，跳转到错题本
           try {
@@ -1171,6 +1217,283 @@
     });
   }
 
+  /* ============================================================
+   * v5.0 百科词条层 + 词云
+   * ============================================================ */
+
+  /** 加载词条：Supabase wiki_entries 优先 → data/wiki-seed.json 回退 → 全失败 []
+   *  按需加载：默认视图不拉取，点「百科词条层」或「词云」时才触发 */
+  function _loadWikiLayer(cb) {
+    if (WIKI_ENTRIES) { if (cb) cb(WIKI_ENTRIES); return; }
+    if (WIKI_LOAD_PROMISE) {
+      WIKI_LOAD_PROMISE.then(function (l) { if (cb) cb(l); });
+      return;
+    }
+    WIKI_LOAD_PROMISE = new Promise(function (resolve) {
+      var finish = function (list) {
+        WIKI_ENTRIES = list || [];
+        resolve(WIKI_ENTRIES);
+        if (cb) cb(WIKI_ENTRIES);
+      };
+      var mapRows = function (rows) {
+        return (rows || []).map(function (r) {
+          return {
+            id: r.id, title: r.title,
+            category: r.category || '',
+            tags: r.tags || [],
+            summary: r.summary || ''
+          };
+        });
+      };
+      var fallbackSeed = function () {
+        fetch('data/wiki-seed.json', { cache: 'no-cache' })
+          .then(function (r) { return r.json(); })
+          .then(function (j) { finish(mapRows(j && j.entries)); })
+          .catch(function () { finish([]); });
+      };
+      try {
+        var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
+        if (sb && sb.from) {
+          sb.from('wiki_entries').select('id,title,category,tags,summary').limit(1000)
+            .then(function (res) {
+              var rows = (res && !res.error && res.data) || null;
+              if (rows && rows.length) finish(mapRows(rows));
+              else fallbackSeed();
+            })
+            .catch(fallbackSeed);
+          return;
+        }
+      } catch (e) {}
+      fallbackSeed();
+    });
+  }
+
+  /** 分类 → 练习模块（取该分类下第一个考点的 relatedModule） */
+  function _moduleForCategory(cat) {
+    for (var i = 0; i < GRAPH_NODES.length; i++) {
+      var n = GRAPH_NODES[i];
+      if (!n.isWiki && n.category === cat && n.relatedModule) return n.relatedModule;
+    }
+    return null;
+  }
+
+  /** 按分类幂等注入词条节点（选中分类 60/类，未选分类 25/类）；返回是否变更 */
+  function _injectWikiLayer() {
+    if (!WIKI_ENTRIES || !WIKI_ENTRIES.length) return false;
+    var activeCats = Object.keys(_activeCategories);
+    var cats = activeCats.length ? activeCats : Object.keys(CATEGORY_COLORS);
+    var perCat = activeCats.length ? WIKI_PER_CAT_ACTIVE : WIKI_PER_CAT_ALL;
+    var changed = false;
+    var examByCat = {};
+    GRAPH_NODES.forEach(function (n) {
+      if (n.isWiki) return;
+      (examByCat[n.category] = examByCat[n.category] || []).push(n);
+    });
+    cats.forEach(function (cat) {
+      if (_wikiInjectedCats[cat]) return;
+      _wikiInjectedCats[cat] = true;
+      var list = WIKI_ENTRIES.filter(function (e) { return e.category === cat; }).slice(0, perCat);
+      if (!list.length) return;
+      var sameCat = examByCat[cat] || [];
+      list.forEach(function (e, i) {
+        var nodeObj = {
+          id: 'wiki::' + e.id,
+          label: e.title,
+          category: cat,
+          description: e.summary || '',
+          relatedModule: _moduleForCategory(cat),
+          isWiki: true,
+          wikiId: e.id
+        };
+        GRAPH_NODES.push(nodeObj);
+        // 连边：优先「标题 ↔ 考点标签」互含；否则轮转接同分类考点（保持聚簇且边数可控）
+        var target = null;
+        for (var k = 0; k < sameCat.length; k++) {
+          var lbl = sameCat[k].label;
+          if (lbl && (e.title.indexOf(lbl) >= 0 || lbl.indexOf(e.title) >= 0)) { target = sameCat[k]; break; }
+        }
+        if (!target && sameCat.length) target = sameCat[i % sameCat.length];
+        if (target) GRAPH_EDGES.push({ source: target.id, target: nodeObj.id });
+        changed = true;
+      });
+    });
+    return changed;
+  }
+
+  /** 关闭百科层：移除词条节点与关联边 */
+  function _removeWikiLayer() {
+    GRAPH_NODES = GRAPH_NODES.filter(function (n) { return !n.isWiki; });
+    var alive = {};
+    GRAPH_NODES.forEach(function (n) { alive[n.id] = true; });
+    GRAPH_EDGES = GRAPH_EDGES.filter(function (e) { return alive[e.source] && alive[e.target]; });
+    _wikiInjectedCats = {};
+    _wikiLayerOn = false;
+  }
+
+  /** 整体重建（保留筛选 / 搜索 / 百科层开关与对应 UI 状态） */
+  function _rebuildGraph() {
+    if (!_containerEl) return;
+    var keepCats = _activeCategories;
+    var keepQ = _searchQuery;
+    var keepWiki = _wikiLayerOn;
+    _renderKnowledgeGraphContent(_containerEl);
+    _activeCategories = keepCats;
+    _searchQuery = keepQ;
+    _wikiLayerOn = keepWiki;
+    _containerEl.querySelectorAll('.kg-filter-btn[data-category]').forEach(function (btn) {
+      var c = btn.getAttribute('data-category');
+      if (keepCats[c]) btn.classList.add('active');
+      else btn.classList.remove('active');
+    });
+    var searchInput = document.getElementById('kg-search-input');
+    if (searchInput) searchInput.value = keepQ;
+    var wikiBtn = document.getElementById('kg-wiki-layer-btn');
+    if (wikiBtn) {
+      wikiBtn.classList.toggle('active', !!keepWiki);
+      wikiBtn.textContent = keepWiki ? '百科词条层 · 开' : '百科词条层';
+    }
+    applyFilters();
+  }
+
+  /** 百科层开关按钮绑定（含异步首载） */
+  function _bindWikiLayerBtn() {
+    var btn = document.getElementById('kg-wiki-layer-btn');
+    if (!btn) return;
+    if (_wikiLayerOn) { btn.classList.add('active'); btn.textContent = '百科词条层 · 开'; }
+    btn.addEventListener('click', function () {
+      if (_wikiLayerOn) {
+        _removeWikiLayer();
+        btn.classList.remove('active');
+        btn.textContent = '百科词条层';
+        _rebuildGraph();
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = '百科层加载中…';
+      _loadWikiLayer(function (list) {
+        btn.disabled = false;
+        if (!list || !list.length) { btn.textContent = '百科层不可用'; return; }
+        btn.classList.add('active');
+        btn.textContent = '百科词条层 · 开';
+        _wikiLayerOn = true;
+        if (_injectWikiLayer()) _rebuildGraph();
+      });
+    });
+  }
+
+  /* —— 词云视图 —— */
+
+  function _cloudTerm(term, w) {
+    term = String(term || '').trim();
+    if (!term || term.length < 2 || term.length > 12) return;
+    _cloudWeights[term] = (_cloudWeights[term] || 0) + w;
+  }
+
+  function renderWordCloud(el) {
+    var build = function () {
+      _cloudWeights = {};
+      GRAPH_NODES.forEach(function (n) { if (!n.isWiki) _cloudTerm(n.label, 3); });
+      if (WIKI_ENTRIES) {
+        WIKI_ENTRIES.forEach(function (e) {
+          _cloudTerm(e.title, 2);
+          (e.tags || []).forEach(function (t) { _cloudTerm(t, 1); });
+          _cloudTerm(e.category, 1);
+        });
+      }
+      var words = Object.keys(_cloudWeights).map(function (t) { return { term: t, w: _cloudWeights[t] }; })
+        .sort(function (a, b) { return b.w - a.w; }).slice(0, 150);
+      if (!words.length) { el.innerHTML = '<p class="kg-hint">词云数据为空</p>'; return; }
+      var max = words[0].w;
+      var min = words[words.length - 1].w;
+      el.innerHTML = '<div class="kg-cloud-inner">' + words.map(function (o) {
+        var ratio = max === min ? 1 : (o.w - min) / (max - min);
+        var bucket = Math.min(6, Math.max(1, Math.ceil(ratio * 6 || 1)));
+        return '<button class="kg-cw kg-cw-' + bucket + '" type="button" data-term="' +
+          escapeHtml(o.term) + '">' + escapeHtml(o.term) + '</button>';
+      }).join('') + '</div>' +
+        '<p class="kg-hint">字号 = 出现权重（考点 3 · 词条标题 2 · 标签 1）— 点词条标题直达百科，点标签/考点词回图谱定位</p>';
+      el.querySelectorAll('.kg-cw').forEach(function (b) {
+        b.addEventListener('click', function () { _onCloudWordClick(b.getAttribute('data-term')); });
+      });
+    };
+    if (WIKI_ENTRIES === null) {
+      el.innerHTML = '<p class="kg-hint">词云数据加载中…</p>';
+      _loadWikiLayer(build);
+    } else {
+      build();
+    }
+  }
+
+  function _onCloudWordClick(term) {
+    // 1) 命中百科词条标题 → 直达词条详情
+    var hit = WIKI_ENTRIES && WIKI_ENTRIES.filter(function (e) { return e.title === term; })[0];
+    if (hit) { window.location.href = 'wiki.html?entry=' + encodeURIComponent(hit.id); return; }
+    // 2) 否则切回图谱视图，用搜索框定位（匹配节点 label/description/category）
+    _setViewMode('graph');
+    var input = document.getElementById('kg-search-input');
+    if (input) input.value = term;
+    _searchQuery = term;
+    if (CATEGORY_COLORS[term] && !_activeCategories[term]) {
+      _activeCategories[term] = true;
+      _containerEl.querySelectorAll('.kg-filter-btn[data-category]').forEach(function (b) {
+        if (b.getAttribute('data-category') === term) b.classList.add('active');
+      });
+    }
+    applyFilters();
+  }
+
+  function _setViewMode(view) {
+    _viewMode = view;
+    if (!_containerEl) return;
+    var graphContainer = document.getElementById('kg-graph-container');
+    var cloudEl = document.getElementById('kg-wordcloud');
+    _containerEl.querySelectorAll('.kg-view-btn').forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-view') === view);
+    });
+    if (graphContainer) graphContainer.hidden = (view !== 'graph');
+    if (cloudEl) cloudEl.hidden = (view !== 'cloud');
+    if (view === 'cloud' && cloudEl) renderWordCloud(cloudEl);
+  }
+
+  function _bindViewSwitch() {
+    var btns = _containerEl ? _containerEl.querySelectorAll('.kg-view-btn') : [];
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        _setViewMode(btn.getAttribute('data-view') || 'graph');
+      });
+    });
+  }
+
+  /** v5.0 样式（词云/视图切换/百科节点虚线圈）——独立 style 避免主样式表膨胀 */
+  function injectWikiCloudStyles() {
+    if (document.getElementById('kg-wiki-style')) return;
+    var style = document.createElement('style');
+    style.id = 'kg-wiki-style';
+    style.textContent = [
+      '.kg-node-wiki .kg-node-circle { stroke-dasharray: 3 2; }',
+      '.kg-node-wiki .kg-node-label { font-size: 10px; opacity: 0.85; }',
+      '.kg-view-switch { display: flex; gap: 6px; margin-top: 10px; }',
+      '.kg-view-btn { border: 1px solid var(--border-color, #d8e0da); background: var(--bg-card, #fff);',
+      '  color: var(--text-secondary, #5a6b62); border-radius: 16px; padding: 4px 14px; font-size: .85rem; cursor: pointer; }',
+      '.kg-view-btn.active { background: var(--primary, #2a7c4a); border-color: var(--primary, #2a7c4a); color: #fff; }',
+      '.kg-wiki-toggle.active { border-color: var(--primary, #2a7c4a); color: var(--primary, #2a7c4a); }',
+      '.kg-wiki-toggle:disabled { opacity: .6; cursor: wait; }',
+      '.kg-wordcloud { min-height: 420px; padding: 18px; border: 1px solid var(--border-color, #e2e8e3);',
+      '  border-radius: 12px; background: var(--bg-card, #fff); }',
+      '.kg-cloud-inner { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: center; }',
+      '.kg-cw { border: none; background: transparent; cursor: pointer; border-radius: 6px;',
+      '  padding: 2px 4px; font-weight: 600; line-height: 1.15; }',
+      '.kg-cw:hover { background: var(--bg-hover, #eef4ef); }',
+      '.kg-cw-1 { font-size: .75rem; color: #8aa197; }',
+      '.kg-cw-2 { font-size: .9rem; color: #6f8c80; }',
+      '.kg-cw-3 { font-size: 1.05rem; color: #4f7d64; }',
+      '.kg-cw-4 { font-size: 1.3rem; color: #3a8c5c; }',
+      '.kg-cw-5 { font-size: 1.6rem; color: #2a7c4a; }',
+      '.kg-cw-6 { font-size: 2rem; color: #1f5f3a; }'
+    ].join('\n');
+    document.head.appendChild(style);
+  }
+
   function applyFilters() {
     var query = _searchQuery.toLowerCase().trim();
     var hasCategoryFilter = Object.keys(_activeCategories).length > 0;
@@ -1243,6 +1566,10 @@
         }
 
         applyFilters();
+        // v5.0：百科层开启时，新勾选的分类按需补注入词条节点并重建
+        if (_wikiLayerOn && _injectWikiLayer()) {
+          _rebuildGraph();
+        }
       });
     });
   }
@@ -1325,7 +1652,11 @@
     return '<div class="kg-page">' +
       '<div class="kg-header">' +
         '<h2 class="kg-title">生物学知识图谱</h2>' +
-        '<p class="kg-subtitle">交互式概念关系图 — 拖拽节点、悬停查看详情、点击跳转练习</p>' +
+        '<p class="kg-subtitle">交互式概念关系图 — 拖拽节点、悬停查看详情、点击可练习 / 读百科 / 问 AI</p>' +
+        '<div class="kg-view-switch">' +
+          '<button class="kg-view-btn active" data-view="graph" type="button">图谱</button>' +
+          '<button class="kg-view-btn" data-view="cloud" type="button">词云</button>' +
+        '</div>' +
       '</div>' +
 
       '<div class="kg-toolbar">' +
@@ -1333,12 +1664,15 @@
           '<svg class="kg-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
             '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>' +
           '</svg>' +
-          '<input type="text" class="kg-search-input" id="kg-search-input" placeholder="搜索概念，如：光合作用、DNA、遗传..." autocomplete="off" />' +
+          '<input type="text" class="kg-search-input" id="kg-search-input" placeholder="搜索概念/百科词条，如：光合作用、DNA、遗传..." autocomplete="off" />' +
         '</div>' +
-        '<div class="kg-filters">' + filterBtns + '</div>' +
+        '<div class="kg-filters">' + filterBtns +
+          '<button class="kg-filter-btn kg-wiki-toggle" id="kg-wiki-layer-btn" type="button">百科词条层</button>' +
+        '</div>' +
       '</div>' +
 
       '<div class="kg-graph-container" id="kg-graph-container"></div>' +
+      '<div class="kg-wordcloud" id="kg-wordcloud" hidden></div>' +
 
       '<div class="kg-legend">' + legendItems + '</div>' +
       '<div class="kg-legend" style="margin-top:8px;">' +
@@ -1368,6 +1702,7 @@
 
     // 注入样式
     injectKnowledgeGraphStyles();
+    injectWikiCloudStyles();
 
     // 先异步加载数据，加载完成后再渲染图谱
     if (!_graphDataLoaded) {
@@ -1444,6 +1779,10 @@
 
     // 绑定分类筛选
     bindFilters();
+
+    // v5.0：百科层开关 + 图谱/词云视图切换
+    _bindWikiLayerBtn();
+    _bindViewSwitch();
 
     // 启动动画
     startAnimation();

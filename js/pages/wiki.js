@@ -1168,9 +1168,30 @@
     else if (kind === 'quote') linePrefix('> ');
   }
 
+  /**
+   * wiki.html?entry=<id> 直达词条（知识图谱/词云「读百科」跳转用）。
+   * 种子是异步加载的，轮询等待条目就绪后打开详情（约 6 秒兜底放弃）。
+   */
+  function _openEntryFromUrl() {
+    var m = /[?&]entry=([^&#]+)/.exec(window.location.search || '');
+    if (!m) return;
+    var id = decodeURIComponent(m[1]);
+    var tries = 0;
+    var timer = setInterval(function () {
+      tries++;
+      if (findEntry(id)) {
+        clearInterval(timer);
+        openDetail(id);
+      } else if (tries > 20) {
+        clearInterval(timer);
+      }
+    }, 300);
+  }
+
   function init() {
     bindEvents();
     ensureSeed(); // ensureSeed 内部会触发 renderAll
+    _openEntryFromUrl();
     // 暴露调试接口
     window.BioQuestWiki = {
       getEntries: function () { return state.entries; },
