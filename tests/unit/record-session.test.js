@@ -38,6 +38,8 @@ function setupStubs() {
   window.calcBioScore = jest.fn(() => ({ score: 77 }));
   window.QuestionModel = QuestionModel;
   window.loadModule = jest.fn(() => Promise.resolve());
+  delete window.FSRS;                      // FSRS 闭环测试自行注入，避免串案
+  delete window.updateReviewCardOnCorrect;
   localStorage.clear();
 }
 
@@ -138,6 +140,47 @@ describe('BioQuestSession.question（每题提交）', () => {
     const s = loadSession();
     expect(() => s.question({ module: 'practice', q: { subject: '动物学' }, correct: true })).not.toThrow();
     expect(window.recordQuestionAnswer).not.toHaveBeenCalled();
+  });
+});
+
+describe('FSRS 错题闭环（本地镜像 + 云端推进）', () => {
+  const stubFsrs = (repetitions) => ({
+    RATING: { AGAIN: 1, HARD: 2, GOOD: 3, EASY: 4 },
+    reviewCard: jest.fn(() => ({})),
+    getCardState: jest.fn(() => ({ repetitions }))
+  });
+
+  test('答错：本地卡 Again；答对：有卡 Good + 云端 updateReviewCardOnCorrect', () => {
+    window.FSRS = stubFsrs(1);
+    window.updateReviewCardOnCorrect = jest.fn(() => Promise.resolve({ ok: true }));
+    const s = loadSession();
+
+    s.question({ module: 'practice', q: q('遗传学'), correct: false });
+    expect(window.FSRS.reviewCard).toHaveBeenCalledWith('BQ-test-000000000001', 1); // AGAIN
+    expect(window.updateReviewCardOnCorrect).not.toHaveBeenCalled();
+
+    s.question({ module: 'practice', q: q('遗传学'), correct: true });
+    expect(window.FSRS.reviewCard).toHaveBeenLastCalledWith('BQ-test-000000000001', 3); // GOOD
+    expect(window.updateReviewCardOnCorrect).toHaveBeenCalledTimes(1);
+  });
+
+  test('答对但本地无卡（repetitions=0）：本地不建卡，云端仍推进', () => {
+    window.FSRS = stubFsrs(0);
+    window.updateReviewCardOnCorrect = jest.fn(() => Promise.resolve({ ok: true }));
+    const s = loadSession();
+    s.question({ module: 'practice', q: q('生态学'), correct: true });
+    expect(window.FSRS.reviewCard).not.toHaveBeenCalled();
+    expect(window.updateReviewCardOnCorrect).toHaveBeenCalledTimes(1);
+  });
+
+  test('wrongbook:false 时本地镜像与云端推进都不触发（防双计开关）', () => {
+    window.FSRS = stubFsrs(1);
+    window.updateReviewCardOnCorrect = jest.fn(() => Promise.resolve({ ok: true }));
+    const s = loadSession();
+    s.question({ module: 'practice', q: q('动物学'), correct: false, wrongbook: false });
+    expect(window.FSRS.reviewCard).not.toHaveBeenCalled();
+    s.question({ module: 'practice', q: q('动物学'), correct: true, wrongbook: false });
+    expect(window.updateReviewCardOnCorrect).not.toHaveBeenCalled();
   });
 });
 

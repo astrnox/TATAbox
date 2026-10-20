@@ -1549,6 +1549,25 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       return { ok: true, data: { feedbacks: data }, status: 200 };
     }
 
+    // 题目反馈（练习页「反馈」按钮 → question_feedbacks 表）
+    if (endpoint.startsWith('/admin/question-feedbacks') && method === 'GET') {
+      var qf = await adminFetchRest('GET', 'question_feedbacks', 'select=*&order=created_at.desc&limit=500', null);
+      if (!qf.ok) {
+        var qfCode = qf._raw && qf._raw.code;
+        var qfMsg = String((qf.data && qf.data.error) || '');
+        if (qfCode === 'PGRST205' || /does not exist|schema cache/i.test(qfMsg) || qf.status === 404) {
+          console.warn('[Admin] question_feedbacks 表不存在，请执行 sql/incremental_update.sql');
+          return { ok: true, data: { items: [], _missing_table: true }, status: 200 };
+        }
+        if (qf.status === 42501 || /permission|row-level|RLS/i.test(qfMsg)) {
+          // RLS 未开放管理员跨用户读取：提示执行 migration_v13
+          return { ok: true, data: { items: [], _restricted: true }, status: 200 };
+        }
+        return { ok: false, data: { error: '查询题目反馈失败: ' + qfMsg }, status: qf.status };
+      }
+      return { ok: true, data: { items: Array.isArray(qf.data) ? qf.data : [] }, status: 200 };
+    }
+
     if (endpoint === '/admin/sync') {
       return { ok: true, data: { message: '同步功能暂不可用（无后端服务器）' }, status: 200 };
     }
@@ -1740,6 +1759,16 @@ window.dismissReportsByPostId = dismissReportsByPostId;
 async function getFeedbacks() {
   if (!_adminAuthenticated) return null;
   const result = await adminApiCall('GET', '/admin/feedbacks');
+  return result.ok ? result.data : null;
+}
+
+/**
+ * 题目反馈列表（练习页「反馈」按钮提交的 question_feedbacks）
+ * 返回 { items, _missing_table?, _restricted? }；未认证返回 null。
+ */
+async function getQuestionFeedbacks() {
+  if (!_adminAuthenticated) return null;
+  const result = await adminApiCall('GET', '/admin/question-feedbacks');
   return result.ok ? result.data : null;
 }
 

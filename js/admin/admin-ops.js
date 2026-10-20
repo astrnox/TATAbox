@@ -28,8 +28,173 @@ window.handleResolveAppeal = async function(appealId, action) {
 };
 
 /* ===== 反馈管理标签 ===== */
+/* ===== 题目反馈（练习页「反馈」按钮 → question_feedbacks / 本地备份） ===== */
+
+function _qfResolvedSet() {
+  try {
+    var raw = localStorage.getItem('bioquest_question_feedbacks_resolved');
+    var arr = raw ? JSON.parse(raw) : [];
+    var set = new Set();
+    if (Array.isArray(arr)) arr.forEach(function (x) { set.add(String(x)); });
+    return set;
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function _qfSaveResolved(set) {
+  try {
+    localStorage.setItem('bioquest_question_feedbacks_resolved', JSON.stringify(Array.from(set)));
+  } catch (e) { /* ignore */ }
+}
+
+/**
+ * 加载并合并题目反馈：云端 question_feedbacks（跨用户需 migration_v13）
+ * + 本机 localStorage 备份（同一浏览器提交必然可见）。按内容键去重。
+ */
+async function _loadQuestionFeedbacks() {
+  var cloud = [], missing = false, restricted = false;
+  try {
+    var res = (typeof getQuestionFeedbacks === 'function') ? await getQuestionFeedbacks() : null;
+    if (res && Array.isArray(res.items)) {
+      cloud = res.items;
+      missing = !!res._missing_table;
+      restricted = !!res._restricted;
+    }
+  } catch (e) {
+    console.warn('[Admin] 题目反馈云端加载失败:', e);
+  }
+  var local = [];
+  try {
+    var raw = localStorage.getItem('bioquest_question_feedbacks');
+    if (raw) {
+      var arr = JSON.parse(raw);
+      if (Array.isArray(arr)) local = arr;
+    }
+  } catch (e) { /* ignore */ }
+
+  var seen = {};
+  var keyOf = function (r) {
+    var t = r.created_at || r.createdAt || '';
+    return [
+      r.question_id || r.questionId || '',
+      r.issue_type || r.issueType || '',
+      String(t).slice(0, 10),
+      (r.description || '').slice(0, 40)
+    ].join('|');
+  };
+  var rows = [];
+  cloud.forEach(function (r) {
+    seen[keyOf(r)] = 1;
+    rows.push({
+      id: r.id, src: '云端',
+      question_id: r.question_id || '', question_text: r.question_text || '',
+      issue_type: r.issue_type || 'other', description: r.description || '',
+      created_at: r.created_at || '', user_id: r.user_id || ''
+    });
+  });
+  local.forEach(function (r) {
+    var k = keyOf(r);
+    if (seen[k]) return;
+    seen[k] = 1;
+    rows.push({
+      id: r.id, src: '本机',
+      question_id: r.questionId || '', question_text: r.questionText || '',
+      issue_type: r.issueType || 'other', description: r.description || '',
+      created_at: r.createdAt || '', user_id: ''
+    });
+  });
+  rows.sort(function (a, b) {
+    return new Date(b.created_at || 0) - new Date(a.created_at || 0);
+  });
+  return { rows: rows, missing: missing, restricted: restricted, cloudCount: cloud.length, localCount: local.length };
+}
+
+function _questionFeedbackSectionHtml(qf, resolvedSet) {
+  var typeMap = { wrong_answer: '答案有误', unclear: '题意不清', typo: '错别字', duplicate: '重复题', other: '其他' };
+  var pending = qf.rows.filter(function (r) { return !resolvedSet.has(String(r.id)); }).length;
+
+  var badge = qf.rows.length + ' 条 · 未处理 ' + pending + '（云端 ' + qf.cloudCount + ' · 本机 ' + qf.localCount + '）';
+  if (qf.missing) {
+    badge += ' · 云端表未创建：请执行 sql/incremental_update.sql（本机反馈仍可见）';
+  } else if (qf.restricted) {
+    badge += ' · 云端读取受限：请执行 sql/migration_v13_question_feedbacks_admin.sql 开放管理员读取（本机反馈仍可见）';
+  }
+
+  var html = `
+    <div class="admin-section">
+      <style>
+        #admin-tab-content .qf-tag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:0.75rem;}
+        #admin-tab-content .qf-tag--done{background:rgba(16,185,129,0.12);color:#10b981;}
+        #admin-tab-content .qf-tag--pending{background:rgba(217,119,6,0.12);color:#d97706;}
+        #admin-tab-content .qf-t-wrong_answer{background:rgba(192,85,58,0.12);color:#c0553a;}
+        #admin-tab-content .qf-t-unclear{background:rgba(196,149,106,0.18);color:#c4956a;}
+        #admin-tab-content .qf-t-typo{background:rgba(217,119,6,0.12);color:#d97706;}
+        #admin-tab-content .qf-t-duplicate{background:rgba(99,102,241,0.12);color:#6366f1;}
+        #admin-tab-content .qf-t-other{background:rgba(107,114,128,0.12);color:#6b7280;}
+      </style>
+      <div class="admin-section-header">
+        <div class="admin-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          题目反馈
+        </div>
+        <span class="admin-section-badge">${badge}</span>
+      </div>
+  `;
+
+  if (qf.rows.length === 0) {
+    html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无题目反馈</div><div class="admin-empty-hint">用户在练习页点击「反馈」提交的题目问题会显示在这里（云端 + 本机合并）。</div></div>`;
+  } else {
+    html += `
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>状态</th>
+              <th>类型</th>
+              <th>题目</th>
+              <th>详细描述</th>
+              <th>来源</th>
+              <th>时间</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${qf.rows.map(function (r) {
+              var done = resolvedSet.has(String(r.id));
+              var tLabel = typeMap[r.issue_type] || r.issue_type || '其他';
+              var tCls = typeMap[r.issue_type] ? r.issue_type : 'other';
+              var stem = (r.question_text || '').slice(0, 60);
+              var dateStr = r.created_at
+                ? new Date(r.created_at).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+                : '--';
+              return `
+                <tr>
+                  <td><span class="qf-tag ${done ? 'qf-tag--done' : 'qf-tag--pending'}">${done ? '已处理' : '未处理'}</span></td>
+                  <td><span class="qf-tag qf-t-${tCls}">${escapeHtml(tLabel)}</span></td>
+                  <td title="${escapeHtml((r.question_text || '').slice(0, 200))}">${escapeHtml(stem || r.question_id || '--')}<br><small>${escapeHtml(r.question_id || '')}</small></td>
+                  <td title="${escapeHtml(r.description || '')}">${escapeHtml((r.description || '').slice(0, 80))}${(r.description || '').length > 80 ? '…' : ''}</td>
+                  <td>${r.src}</td>
+                  <td>${dateStr}</td>
+                  <td><button class="admin-btn admin-btn--ghost qf-toggle-btn" data-id="${escapeHtml(String(r.id))}">${done ? '重新打开' : '标为已处理'}</button></td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+  html += '</div>';
+  return html;
+}
+
 async function renderFeedbacksTab(container) {
   container.innerHTML = `<div class="admin-loading"><div class="admin-spinner"></div><div class="admin-loading-text">加载反馈中...</div></div>`;
+
+  // 题目反馈先行加载（用户反馈入口放在页签最上方，避免被站点反馈淹没）
+  var qf = await _loadQuestionFeedbacks();
+  var qfSet = _qfResolvedSet();
 
   var feedbacks = [];
   var sourceLabel = '';
@@ -69,7 +234,7 @@ async function renderFeedbacksTab(container) {
   var typeMap = { bug: 'Bug 报告', feature: '功能建议', suggestion: '其他建议' };
   var typeColors = { bug: 'var(--color-error)', feature: 'var(--color-sage)', suggestion: 'var(--color-amber)' };
 
-  var html = `
+  var html = _questionFeedbackSectionHtml(qf, qfSet) + `
     <div class="admin-stats-row">
       <div class="admin-stat-card">
         <div class="admin-stat-icon admin-stat-icon--green">${ICONS.messageCircle}</div>
@@ -152,6 +317,17 @@ async function renderFeedbacksTab(container) {
 
   html += '</div>';
   container.innerHTML = html;
+
+  // 题目反馈：处理状态切换（存 localStorage，按浏览器持久）
+  container.querySelectorAll('.qf-toggle-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = String(btn.getAttribute('data-id'));
+      var set = _qfResolvedSet();
+      if (set.has(id)) set.delete(id); else set.add(id);
+      _qfSaveResolved(set);
+      renderFeedbacksTab(container);
+    });
+  });
 }
 
 /* ===== 信用申诉管理标签 ===== */

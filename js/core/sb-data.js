@@ -401,6 +401,82 @@ async function reviewQuestion(questionId, rating) {
 
 
 /**
+ * 答对时推进云端错题卡（FSRS Good）
+ * 仅更新已存在的 review_cards（不在错题本的普通题不建卡、不查询后建卡）；
+ * 与 recordWrongAnswer（答错 Again）构成错题的完整 FSRS 闭环。
+ */
+async function updateReviewCardOnCorrect(question) {
+  if (!question) return { ok: false, error: '参数为空' };
+  var qid = question.id || question.question_id;
+  if (!qid) return { ok: false, error: '题目 ID 缺失' };
+  if (!_currentUser || _currentUser.isGuest) return { ok: false, skipped: 'guest' };
+  var sb = getSupabase();
+  if (!sb) return { ok: false, error: 'Supabase 未初始化' };
+
+  try {
+    var { data: card, error: fetchError } = await sb.from('review_cards')
+      .select('*')
+      .eq('user_id', _currentUser.id)
+      .eq('question_id', String(qid))
+      .maybeSingle();
+    if (fetchError) throw fetchError;
+    if (!card) return { ok: true, skipped: 'not_in_wrongbook' };
+
+    var currentState = {
+      stability: card.stability || 0,
+      difficulty: card.fsrs_difficulty || 5,
+      lastReview: card.last_review ? new Date(card.last_review).getTime() : 0,
+      repetitions: card.repetitions || 0,
+      lapses: card.lapses || 0
+    };
+    var newState = window.FSRS.schedule(currentState, window.FSRS.RATING.GOOD, Date.now());
+
+    var { error } = await sb.from('review_cards')
+      .update({
+        stability: newState.stability,
+        fsrs_difficulty: newState.difficulty,
+        last_review: newState.lastReview ? new Date(newState.lastReview).toISOString() : new Date().toISOString(),
+        repetitions: newState.repetitions,
+        lapses: newState.lapses,
+        due_date: newState.dueDate ? new Date(newState.dueDate).toISOString() : new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString()
+      })
+      .eq('id', card.id);
+    if (error) throw error;
+    return { ok: true, nextDue: newState.dueDate };
+  } catch (e) {
+    return { ok: false, error: e.message };
+  }
+}
+
+
+/**
+ * 批量读取指定题目的云端 FSRS 复习卡状态（错题本 FSRS 徽标/到期排序用）
+ * @param {string[]} questionIds
+ * @returns {Promise<Object>} { [question_id]: {due_date, stability, repetitions, lapses, ...} }
+ */
+async function getReviewCardStates(questionIds) {
+  var out = {};
+  if (!Array.isArray(questionIds) || questionIds.length === 0) return out;
+  if (!_currentUser || _currentUser.isGuest) return out;
+  var sb = getSupabase();
+  if (!sb) return out;
+  try {
+    var { data, error } = await sb.from('review_cards')
+      .select('question_id,due_date,stability,fsrs_difficulty,repetitions,lapses,last_review')
+      .eq('user_id', _currentUser.id)
+      .in('question_id', questionIds.slice(0, 500));
+    if (error) throw error;
+    (data || []).forEach(function (row) {
+      if (row && row.question_id) out[row.question_id] = row;
+    });
+  } catch (e) {
+    console.warn('[sb-data] 批量读取复习卡状态失败:', e);
+  }
+  return out;
+}
+
+
+/**
  * 获取错题本列表
  */
 async function getWrongQuestions(options) {
@@ -936,6 +1012,9 @@ window.deleteUserProgressFromSupabase = deleteUserProgressFromSupabase;
 window.recordWrongAnswer = recordWrongAnswer;
 window.getDueReviewQuestions = getDueReviewQuestions;
 window.reviewQuestion = reviewQuestion;
+// FSRS 错题闭环：答对推进 + 批量读卡状态（错题本徽标）
+window.updateReviewCardOnCorrect = updateReviewCardOnCorrect;
+window.getReviewCardStates = getReviewCardStates;
 
 // 智能错题管理
 window.getWrongQuestions = getWrongQuestions;

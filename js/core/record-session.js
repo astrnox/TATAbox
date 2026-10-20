@@ -264,6 +264,30 @@
       } catch (e) { /* 静默 */ }
     }
 
+    // 3b. FSRS 本地镜像（bioquest_fsrs_cards，错题本 FSRS 徽标 / 游客复习用）：
+    //     答错 → Again（遗忘，间隔重置）；答对且已有本地卡 → Good（掌握，间隔延长）
+    if (p.wrongbook !== false && window.FSRS && typeof window.FSRS.reviewCard === 'function') {
+      try {
+        var fsq = _qid(p.q);
+        if (fsq) {
+          if (!correct) {
+            window.FSRS.reviewCard(fsq, window.FSRS.RATING.AGAIN);
+          } else if (typeof window.FSRS.getCardState === 'function' &&
+                     window.FSRS.getCardState(fsq).repetitions > 0) {
+            window.FSRS.reviewCard(fsq, window.FSRS.RATING.GOOD);
+          }
+        }
+      } catch (e) { /* 静默 */ }
+    }
+
+    // 3c. 答对时推进云端错题卡（仅更新已存在的 review_cards，不在错题本则跳过）
+    if (p.wrongbook !== false && correct && typeof window.updateReviewCardOnCorrect === 'function') {
+      try {
+        var wcp = window.updateReviewCardOnCorrect(p.q);
+        if (wcp && typeof wcp.catch === 'function') wcp.catch(function () {});
+      } catch (e) { /* 静默 */ }
+    }
+
     // 4. 信用点（按模块配置，daily-billion 有每日封顶）
     if (p.points !== false) _grantPoints(p.module, correct);
 

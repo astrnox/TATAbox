@@ -31,10 +31,58 @@
       '</div>';
   }
 
+  function _advanceOrDone() {
+    _currentIndex++;
+    if (_currentIndex < _currentCards.length) {
+      _renderCard(document.getElementById('review-container'), _currentCards[_currentIndex]);
+    } else {
+      _renderDone(document.getElementById('review-container'));
+    }
+  }
+
   async function _loadDueCards() {
     var fn = (typeof window.getDueReviewQuestions === 'function') ? window.getDueReviewQuestions : null;
-    if (!fn) return [];
-    return await fn(20);
+    var cloud = [];
+    try {
+      if (fn) cloud = (await fn(20)) || [];
+    } catch (e) {
+      cloud = [];
+    }
+    if (cloud.length) return cloud;
+
+    // 本地兜底（游客 / 云端无卡）：本地错题本 × 本地 FSRS 卡（bioquest_fsrs_cards）
+    // 到期优先级与 fsrs-algorithm.getDueCards 同序（过期越久、遗忘越多越优先）
+    try {
+      if (!window.FSRS || typeof window.FSRS.getDueCards !== 'function') return [];
+      if (typeof window.getWrongQuestions !== 'function') return [];
+      var wrongs = window.getWrongQuestions({ limit: 500 });
+      if (!Array.isArray(wrongs)) wrongs = (wrongs && (wrongs.items || wrongs.data)) || [];
+      var byId = {};
+      var ids = [];
+      wrongs.forEach(function (w) {
+        var id = w && (w.qId || w.question_id || w.id);
+        if (!id) return;
+        byId[String(id)] = w;
+        ids.push(String(id));
+      });
+      if (ids.length === 0) return [];
+      var due = (window.FSRS.getDueCards(ids, Date.now()).due) || [];
+      return due.slice(0, 20).map(function (d) {
+        var w = byId[String(d.id)] || {};
+        var text = w.question_text || w.questionText || (w.fullQuestion && w.fullQuestion.question) || '';
+        if (!text) return null;
+        return {
+          question_id: d.id,
+          question_text: text,
+          subject: w.subject || w.module || '',
+          concept: w.concept || '',
+          local: true
+        };
+      }).filter(Boolean);
+    } catch (e) {
+      console.warn('[review] 本地复习队列加载失败:', e);
+      return [];
+    }
   }
 
   function _renderCard(container, card) {
@@ -66,6 +114,17 @@
   }
 
   async function _handleRating(card, rating) {
+    // 本地卡（游客/云端无卡）：直接推进本地 FSRS 状态
+    if (card && card.local) {
+      try {
+        if (window.FSRS && typeof window.FSRS.reviewCard === 'function') {
+          window.FSRS.reviewCard(String(card.question_id), rating);
+        }
+      } catch (e) { /* 静默 */ }
+      _showToast('已按 FSRS 更新该错题的复习计划');
+      _advanceOrDone();
+      return;
+    }
     var reviewFn = (typeof window.reviewQuestion === 'function') ? window.reviewQuestion : null;
     if (!reviewFn) {
       _showToast('复习功能未加载');
@@ -73,12 +132,7 @@
     }
     var result = await reviewFn(card.question_id, rating);
     if (result && result.ok) {
-      _currentIndex++;
-      if (_currentIndex < _currentCards.length) {
-        _renderCard(document.getElementById('review-container'), _currentCards[_currentIndex]);
-      } else {
-        _renderDone(document.getElementById('review-container'));
-      }
+      _advanceOrDone();
     } else {
       _showToast('提交失败：' + (result && result.error ? result.error : '请重试'));
     }

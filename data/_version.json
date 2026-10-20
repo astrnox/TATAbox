@@ -1,7 +1,12 @@
 {
-  "version": "5.2.3",
-  "updated_at": "2026-10-19",
+  "version": "5.2.4",
+  "updated_at": "2026-10-20",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "version": "5.2.4",
+      "description": "题目反馈进管理面板 + 错题 FSRS 间隔重复闭环。①管理面板「反馈管理」页签顶部新增「题目反馈」区：合并云端 question_feedbacks（admin 接口 /admin/question-feedbacks，跨用户读取新增 sql/migration_v13_question_feedbacks_admin.sql 管理员策略）与本机 bioquest_question_feedbacks 备份，按内容键去重，支持标为已处理（localStorage 持久），缺表/RLS 受限时给出执行提示；提交侧云端同步失败不再静默（console.warn，本地始终保留）。②错题 FSRS 闭环（引擎用仓库已有 vendored ts-fsrs 5.4.1 MIT）：答错本地镜像 Again、答对（有卡）Good 并新增 sb-data.updateReviewCardOnCorrect 推进云端 review_cards（仅已存在的卡，不为普通题建卡）；错题本页新增 FSRS 到期徽标（云端批量 getReviewCardStates ∪ 本地 bioquest_fsrs_cards）、今日到期计数、到期优先/错误次数排序、「今日复习（FSRS）」入口；今日复习页在云端无卡（游客/未同步）时回退本地到期队列并本地推进；storage 错题读写归一化（对象入参不再丢题干/学科，存量旧条目补齐 id/question_text/subject/created_at）。新增测试：wrongbook-storage(4)、admin-question-feedback(3)、record-session FSRS 闭环(3)。"
+    },
     {
       "date": "2026-10-19",
       "version": "5.2.3",
