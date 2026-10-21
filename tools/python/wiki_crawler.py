@@ -49,6 +49,18 @@ from pathlib import Path
 PROJECT_ROOT = str(Path(__file__).resolve().parent.parent.parent)
 DEFAULT_OUT = os.path.join(PROJECT_ROOT, "data", "wiki-seed.json")
 
+# 繁→简（zh.wikipedia 大量条目为繁体；zhconv 纯 Python：pip install zhconv）
+try:
+    import zhconv as _zhconv
+
+    def to_simp(text):
+        if not text or not isinstance(text, str):
+            return text or ""
+        return _zhconv.convert(text, "zh-cn")
+except ImportError:  # 本机未装时降级：原样保存（沙箱/CI 必装，见 docstring）
+    def to_simp(text):
+        return text or ""
+
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 "
@@ -523,7 +535,7 @@ def parse_wikitext_media(wikitext: str, max_images: int = 12):
 def _fetch_wikipedia_extracts_only(fetcher: "Fetcher", title: str, lang: str):
     """回退路径：仅 extracts 全文（组合接口异常时使用，无媒体）。"""
     url = (WIKI_API.format(lang=lang)
-           + "?action=query&format=json&prop=extracts|info&explaintext=1&inprop=url"
+           + "?action=query&format=json&prop=extracts|info&explaintext=1&inprop=url&converttitles=1"
            + "&redirects=1&titles=" + urllib.parse.quote(title) + "&origin=*")
     data = fetcher.get_json(url)
     if not data:
@@ -546,11 +558,47 @@ def _fetch_wikipedia_extracts_only(fetcher: "Fetcher", title: str, lang: str):
     }
 
 
+def fetch_fallback_image(fetcher: "Fetcher", title: str):
+    """图片兜底两级：① pageimages 首图 ② prop=images 列页面文件取首个非维护图标
+    → Commons 缩略图（不少页面 pageimages 返回空但 File 列表有图）。
+    请求失败/限流/页面无图统一返回 None。"""
+    if not title:
+        return None
+    # ① pageimages
+    data = _wiki_api(fetcher, "action=query&prop=pageimages&piprop=thumbnail&pithumbsize=600"
+                             "&redirects=1&converttitles=1&titles=" + urllib.parse.quote(title))
+    if data and "query" in data:
+        pages = (data.get("query") or {}).get("pages") or {}
+        if pages:
+            pg = list(pages.values())[0]
+            if pg.get("missing") is None:
+                thumb = (pg.get("thumbnail") or {}).get("source")
+                if thumb:
+                    return thumb
+    # ② prop=images（页面 File 列表）
+    data = _wiki_api(fetcher, "action=query&prop=images&imlimit=20&redirects=1&converttitles=1"
+                             "&titles=" + urllib.parse.quote(title))
+    if data and "query" in data:
+        pages = (data.get("query") or {}).get("pages") or {}
+        if pages:
+            pg = list(pages.values())[0]
+            if pg.get("missing") is None:
+                for im in pg.get("images") or []:
+                    name = re.sub(r"^(File|文件):", "", im.get("title") or "", flags=re.I).strip()
+                    if not name or _JUNK_IMAGE_RE.search(name):
+                        continue
+                    u = wikimedia_thumb_url(name, 600)
+                    if u:
+                        return u
+    return None
+
+
 def fetch_wikipedia(fetcher: Fetcher, title: str, lang: str = "zh"):
     """全量抓取：正文（extracts 全文）+ 表格 + 图片。返回 dict(title, content, summary, url) 或 None。"""
+    # converttitles=1：简体查询词自动转换为维基实际（繁体）页面名，否则 missing
     url = (WIKI_API.format(lang=lang)
            + "?action=query&format=json&prop=extracts|revisions|info&explaintext=1"
-           + "&rvprop=content&rvslots=main&inprop=url"
+           + "&rvprop=content&rvslots=main&inprop=url&converttitles=1"
            + "&redirects=1&titles=" + urllib.parse.quote(title) + "&origin=*")
     data = fetcher.get_json(url)
     if not data or "query" not in data:
@@ -573,6 +621,12 @@ def fetch_wikipedia(fetcher: Fetcher, title: str, lang: str = "zh"):
         slot = (rev.get("slots") or {}).get("main") or {}
         wt = slot.get("*") or slot.get("content") or rev.get("*") or ""
     media = parse_wikitext_media(wt)
+
+    # 正文无 [[File:]] 标记 → 两级兜底（pageimages 首图 → File 列表造缩略图）
+    if not media["images"]:
+        lead = fetch_fallback_image(fetcher, p.get("title") or title)
+        if lead:
+            media["images"] = [(p.get("title") or title, lead)]
 
     body = wiki_text_to_md(extract)
     parts = [body] if body else []
@@ -700,6 +754,7 @@ def discover_category_members(fetcher: "Fetcher", root_cat: str, root_label: str
         cont = ""
         while len(results) < page_cap:
             params = ("action=query&list=categorymembers&cmtype=page|subcat&cmlimit=500"
+                      "&converttitles=1"
                       + "&cmtitle=" + urllib.parse.quote(cat))
             if cont:
                 params += "&cmcontinue=" + urllib.parse.quote(cont, safe="")
@@ -740,10 +795,12 @@ def discover_all(fetcher: "Fetcher", target: int = 1000):
         pages = discover_category_members(fetcher, cat, label, page_cap=per_root)
         got = 0
         for title, path in pages:
+            # 繁→简后再去重/存库（与回填后的存量条目标题一致，避免重复抓取与重复 id）
+            title = to_simp(title)
             if title in seen:
                 continue
             seen.add(title)
-            tags = [x for x in path[1:3] if x and x != label]
+            tags = [to_simp(x) for x in path[1:3] if x and x != label]
             out.append((title, label, tags))
             got += 1
         print(f"  [发现] {label}: {got} 条（每类配额 {per_root}）")
@@ -758,14 +815,19 @@ def discover_all(fetcher: "Fetcher", target: int = 1000):
 # ═══════════════════════════════════════════════════════════════
 
 def build_entry(title, category, tags, fetched, source):
+    title = to_simp(title)
+    summary = to_simp(fetched["summary"])
+    content = to_simp(fetched["content"])
+    cat = to_simp(category)
+    tag_list = [cat] + [to_simp(t) for t in tags]
     return {
         "id": "seed-" + re.sub(r"\W+", "-", title).strip("-"),
         "title": title,
         "aliases": [],
-        "summary": fetched["summary"],
-        "content": fetched["content"],
-        "category": category,
-        "tags": [category] + tags,
+        "summary": summary,
+        "content": content,
+        "category": cat,
+        "tags": tag_list,
         "source": source,
         "sourceUrl": fetched["url"],
     }
@@ -931,6 +993,57 @@ def upload_to_supabase(entries, service_key: str, batch_size: int = 50) -> int:
     return ok
 
 
+def backfill(out=DEFAULT_OUT, via=None):
+    """回填已有词条（幂等，可反复跑）：
+    ① 全量繁→简（标题/摘要/正文/标签）——zh.wikipedia 大量条目为繁体；
+    ② 无图词条补「页面首图」（pageimages，标题即页面名可直接查）。"""
+    proxy_template, extra_headers = None, {}
+    if via and via in PROXY_CHANNELS:
+        proxy_template, extra_headers = PROXY_CHANNELS[via]
+    elif os.environ.get("WIKI_PROXY_TEMPLATE", "").strip():
+        proxy_template = os.environ["WIKI_PROXY_TEMPLATE"].strip()
+        origin = os.environ.get("WIKI_PROXY_ORIGIN", "").strip()
+        if origin:
+            extra_headers = {"Origin": origin}
+    fetcher = Fetcher(delay=2.2 if proxy_template else 0.5,
+                      proxy_template=proxy_template, extra_headers=extra_headers)
+    out_path = Path(out)
+    seed = json.loads(out_path.read_text("utf-8"))
+    entries = seed.get("entries", [])
+
+    converted = imgs_added = attempted = 0
+    for i, e in enumerate(entries):
+        # ① 繁→简
+        before = json.dumps([e.get("title"), e.get("summary"), e.get("content"), e.get("tags")],
+                            ensure_ascii=False)
+        e["title"] = to_simp(e.get("title") or "")
+        e["summary"] = to_simp(e.get("summary") or "")
+        e["content"] = to_simp(e.get("content") or "")
+        e["tags"] = [to_simp(t) for t in (e.get("tags") or [])]
+        after = json.dumps([e.get("title"), e.get("summary"), e.get("content"), e.get("tags")],
+                           ensure_ascii=False)
+        if after != before:
+            converted += 1
+
+        # ② 无图 → 两级图片兜底（pageimages → File 列表）；页面不存在/限流跳过，幂等可重跑
+        if "![" not in (e.get("content") or ""):
+            attempted += 1
+            # 教材词条名与维基页面名不一致时（如 细胞核仁→核仁）按回退映射查图
+            lookup = ZH_TITLE_FALLBACKS.get(e.get("title") or "", e.get("title") or "")
+            lead = fetch_fallback_image(fetcher, lookup)
+            if lead:
+                e["content"] = "![{} 示图]({})\n\n{}".format(e.get("title") or "", lead, e.get("content") or "")
+                imgs_added += 1
+            if attempted % 10 == 0:
+                write_seed(out_path, entries)
+                print(f"  [回填] 进度 {i + 1}/{len(entries)}（已补图 {imgs_added}）")
+
+    write_seed(out_path, entries)
+    print(f"\n[回填完成] 繁→简改动 {converted} 条；补首图 {imgs_added} 条"
+          f"（无图尝试 {attempted}）；总数 {len(entries)}")
+    return converted, imgs_added
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=None, help="只抓前 N 条")
@@ -947,7 +1060,13 @@ def main():
     ap.add_argument("--upload", action="store_true", help="抓取后上传到 Supabase wiki_entries（需 SUPABASE_SERVICE_ROLE_KEY 环境变量）")
     ap.add_argument("--upload-only", action="store_true",
                     help="不抓取：直接把已有词条全量 upsert 到 Supabase wiki_entries（需表已建）")
+    ap.add_argument("--backfill", action="store_true",
+                    help="回填已有词条：繁→简 + 无图词条补页面首图（幂等）")
     args = ap.parse_args()
+
+    if args.backfill:
+        backfill(out=args.out, via=args.via)
+        return
 
     if args.upload_only:
         seed = json.loads(Path(args.out).read_text("utf-8"))

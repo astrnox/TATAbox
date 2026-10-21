@@ -523,7 +523,12 @@
 
   function renderToolbarCounts() {
     var el = $('#wikiCount');
-    if (el) el.textContent = String(state.entries.length);
+    if (!el) return;
+    var total = state.entries.length;
+    var filtered = filteredEntries().length;
+    var active = state.filter.keyword || state.filter.category || state.filter.tag;
+    // 筛选激活时显示「显示数 / 总数」——修复“计数 300+ 往下滑只剩几条”的困惑
+    el.textContent = (active && filtered !== total) ? (filtered + ' / ' + total) : String(total);
   }
 
   function renderCategoryChips() {
@@ -570,7 +575,18 @@
         '</div>';
       return;
     }
+    // 活动筛选横幅：明示当前哪些筛选生效 + 显示/总数 + 一键清除
+    var activeBits = [];
+    if (state.filter.keyword) activeBits.push('关键词「' + esc(state.filter.keyword) + '」');
+    if (state.filter.category) activeBits.push('分类「' + esc(state.filter.category) + '」');
+    if (state.filter.tag) activeBits.push('标签「' + esc(state.filter.tag) + '」');
     var html = '';
+    if (activeBits.length) {
+      html += '<div class="wiki-filter-banner" id="wikiFilterBanner">' +
+        '<span>已筛选：' + activeBits.join(' · ') + ' — 显示 ' + list.length + ' / ' + state.entries.length + ' 条</span>' +
+        '<button type="button" class="wiki-filter-clear" id="wikiFilterClear">清除筛选</button>' +
+        '</div>';
+    }
     list.forEach(function (e) {
       var color = CATEGORY_COLORS[e.category] || 'var(--color-primary)';
       var tagsHtml = (e.tags || []).slice(0, 4).map(function (t) {
@@ -589,6 +605,17 @@
         '</article>';
     });
     grid.innerHTML = html;
+
+    // 清除筛选：复位三项过滤与搜索框并重渲染
+    var clearBtn = document.getElementById('wikiFilterClear');
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      state.filter.keyword = '';
+      state.filter.category = '';
+      state.filter.tag = '';
+      var s = document.getElementById('wikiSearch');
+      if (s) s.value = '';
+      renderAll();
+    });
   }
 
   function stripMd(text) {
@@ -1043,7 +1070,8 @@
     if (search) {
       var onSearch = (typeof window.debounce === 'function' ? window.debounce : function (fn) { return fn; })(function () {
         state.filter.keyword = search.value;
-        renderList();
+        // renderAll：计数(显示/总数) 与横幅必须与列表同步刷新（修复计数不随筛选变化）
+        renderAll();
       }, 200);
       search.addEventListener('input', onSearch);
     }
@@ -1053,8 +1081,7 @@
       var catChip = ev.target.closest('[data-cat]');
       if (catChip && $('#wikiCategoryFilters').contains(catChip)) {
         state.filter.category = catChip.dataset.cat;
-        renderCategoryChips();
-        renderList();
+        renderAll();
         return;
       }
       var tagChip = ev.target.closest('[data-tag]');
@@ -1065,8 +1092,7 @@
         } else {
           state.filter.tag = (state.filter.tag === tn) ? '' : tn;
         }
-        renderTagChips();
-        renderList();
+        renderAll();
         if ($('#wikiTagFilters')) $('#wikiTagFilters').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         return;
       }

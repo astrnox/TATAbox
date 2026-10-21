@@ -1,7 +1,12 @@
 {
-  "version": "5.2.9",
+  "version": "5.2.10",
   "updated_at": "2026-10-21",
   "changes": [
+    {
+      "date": "2026-10-21",
+      "version": "5.2.10",
+      "description": "修复用户报障四问题：①百科繁体→简体——爬虫接入 zhconv（build_entry/发现/回填全链路 to_simp），回填全量转换108条，繁体残留0；②百科缺图——新增两级图片兜底（pageimages 首图→prop=images 文件列表造 Commons 缩略图）+ 教材名回退映射查图 + 所有 titles 查询加 converttitles=1（简体查询词自动对上繁体页面名），回填三轮共补图143张，图片覆盖91%（368/401，余33条为维基确无图或教材名无对应页）；③“计数300+却只剩几条”——根因是筛选处理器只 renderList 不刷新计数：三个筛选处理器改走 renderAll，计数在筛选时显示「显示数/总数」，列表顶部加活动筛选横幅（明示关键词/分类/标签+一键清除），wiki.html 补横幅样式与暗色适配；④“点进动画视频跳主页”——app.js 导航防御三连：getRouteFromHash/navigateTo/点击委托在 Routes（app-routes.js）未加载时乐观放行（分发不依赖 Routes），启动时 Routes 缺失绕缓存兜底重拉 app-routes.js。爬虫新增 --backfill 回填模式与 --upload-only 云同步（401/401 已入库，content-range 0-400/401）。烟雾测试新增计数/横幅/清除5断言=39/39，全量416/416。"
+    },
     {
       "date": "2026-10-21",
       "version": "5.2.9",

@@ -58,6 +58,16 @@ function setInput(el, val) { el.value = val; el.dispatchEvent(new window.Event('
   let sCards = $all('#wikiGrid .wiki-card');
   ok('搜索"线粒体"：只剩匹配卡片', sCards.length >= 1 && sCards.length < SEED_COUNT, '实际 ' + sCards.length);
   ok('搜索结果包含线粒体', sCards.some(c => { const t = c.querySelector('.wiki-card-title'); return t && t.textContent === '线粒体'; }), 'results=' + sCards.map(c => c.querySelector('.wiki-card-title').textContent).join(','));
+  // v5.2.10：计数与列表一致性——筛选时计数显示「显示数 / 总数」+ 活动筛选横幅 + 一键清除
+  ok('筛选时计数变为 显示/总数', $('#wikiCount').textContent === sCards.length + ' / ' + SEED_COUNT, $('#wikiCount').textContent);
+  const banner = $('#wikiFilterBanner');
+  ok('活动筛选横幅出现', !!banner && banner.textContent.indexOf('关键词') >= 0);
+  ok('横幅含一键清除按钮', !!$('#wikiFilterClear'));
+  clickEl($('#wikiFilterClear'));
+  await sleep(60);
+  ok('清除筛选后恢复全量计数', $('#wikiCount').textContent === String(SEED_COUNT), $('#wikiCount').textContent);
+  ok('清除筛选后横幅消失', !$('#wikiFilterBanner'));
+  ok('清除筛选后搜索框已复位', $('#wikiSearch').value === '', JSON.stringify($('#wikiSearch').value));
   setInput($('#wikiSearch'), '');
   await sleep(60);
 

@@ -14,6 +14,14 @@
     /* 首屏防闪烁，与全站一致 */
     html, body { margin:0; padding:0; background:#faf8f5; color:#2c3e30; overflow-x:clip; }
     html[data-theme="dark"], html[data-theme="dark"] body { background:#141a16; color:#e0e8e2; }
+    /* 活动筛选横幅：计数与列表一致性的可视化提示（修复“300+ 却只剩几条”困惑） */
+    .wiki-filter-banner { grid-column: 1 / -1; display:flex; align-items:center; justify-content:space-between;
+      gap:12px; flex-wrap:wrap; padding:10px 14px; border-radius:12px; font-size:.86rem;
+      background:rgba(58,140,92,.10); border:1px solid rgba(58,140,92,.35); color:#2c5c42; }
+    html[data-theme="dark"] .wiki-filter-banner { background:rgba(90,180,130,.12); border-color:rgba(90,180,130,.4); color:#a8d8bc; }
+    .wiki-filter-clear { border:1px solid #3a8c5c; background:#3a8c5c; color:#fff; border-radius:999px;
+      padding:4px 12px; font-size:.8rem; cursor:pointer; }
+    .wiki-filter-clear:hover { background:#2f7a4e; }
   </style>
   <script>
     // 渲染前同步读主题，防白闪
