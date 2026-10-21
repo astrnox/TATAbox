@@ -945,7 +945,20 @@ def main():
     ap.add_argument("--target", type=int, default=1000,
                     help="--all-biology 的目标发现条数（默认 1000，已存在的自动跳过）")
     ap.add_argument("--upload", action="store_true", help="抓取后上传到 Supabase wiki_entries（需 SUPABASE_SERVICE_ROLE_KEY 环境变量）")
+    ap.add_argument("--upload-only", action="store_true",
+                    help="不抓取：直接把已有词条全量 upsert 到 Supabase wiki_entries（需表已建）")
     args = ap.parse_args()
+
+    if args.upload_only:
+        seed = json.loads(Path(args.out).read_text("utf-8"))
+        entries = seed.get("entries", [])
+        print(f"[upload-only] 读取 {len(entries)} 条 → upsert wiki_entries")
+        key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+        if not key:
+            print("[ERROR] 未设置 SUPABASE_SERVICE_ROLE_KEY")
+            sys.exit(2)
+        ok = upload_to_supabase(entries, key)
+        sys.exit(0 if ok >= len(entries) else 1)
 
     use_wiki = args.only != "baidu"
     use_baidu = args.only != "wikipedia"

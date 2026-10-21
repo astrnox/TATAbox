@@ -1,7 +1,12 @@
 {
-  "version": "5.2.8",
-  "updated_at": "2026-10-20",
+  "version": "5.2.9",
+  "updated_at": "2026-10-21",
   "changes": [
+    {
+      "date": "2026-10-21",
+      "version": "5.2.9",
+      "description": "百科词条首批类目抓取落库（本地+云端双写完成）：wiki-seed.json 15→311 条（维基源 300：细胞生物学 149 + 分子生物学 122 + 生物化学 32，含图 60%；断点续爬因后台任务回收停在目标 1000 的 ~30%，剩余批次继续）；Supabase wiki_entries 表已由浏览器自动化在 Dashboard 建成（48 行迁移 + v15 TOTP 迁移同批执行），--upload-only 新模式全量 upsert 311/311，云端 content-range 0-310/311 核验通过，匿名可读策略生效（HTTP 200）。同批 TOTP 上线验证：admin_login_with_totp 可调用、种子 16 位就位、admin_login_with_key 已42501 注销。"
+    },
     {
       "date": "2026-10-20",
       "version": "5.2.8",
