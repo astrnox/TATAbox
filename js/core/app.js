@@ -2306,7 +2306,8 @@ window.testSupabaseAPI = async function() {
   try {
     var sb = typeof window.getSupabase === 'function' ? window.getSupabase() : null;
     if (!sb) { return { status: 'error', msg: 'Supabase 未初始化' }; }
-    var { data, error } = await sb.from('profiles').select('id,username').limit(1);
+    // 探活走公开资料视图（profiles 表已收紧为仅本人可读）
+    var { data, error } = await sb.from('public_profiles').select('id,username').limit(1);
     if (error) { return { status: 'error', msg: error.message }; }
 
     return { status: 'ok', data: data };

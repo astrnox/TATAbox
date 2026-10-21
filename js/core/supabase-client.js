@@ -411,7 +411,7 @@ async function registerUser(username, password, displayName, email) {
   // clearLock 提前声明（避免 var hoisting 导致 TypeError）
   var clearLock = function () { try { localStorage.removeItem(lockKey); } catch (e) {} };
   try {
-    var dupCheck = await sb.from('profiles')
+    var dupCheck = await sb.from('public_profiles')
       .select('id, username')
       .eq('username', username)
       .maybeSingle();
@@ -688,21 +688,17 @@ async function loginUser(usernameOrEmail, password) {
     if (usernameOrEmail.includes('@')) {
       emailCandidates.push(usernameOrEmail);
     } else {
-      // 用户名登录：先从 profiles 表查找对应的邮箱
+      // 用户名登录：profiles 已收紧（仅本人可读），改走窄 RPC resolve_login_email
+      // （SECURITY DEFINER，仅按用户名精确返回 email+username，不回吐其他字段）
       var profileLookup = null;
       try {
-        profileLookup = await sb.from('profiles')
-          .select('id, username, email')
-          .eq('username', usernameOrEmail)
-          .maybeSingle();
-        // 用户名登录不区分大小写：eq 精确（区分大小写）未命中时用 ilike 回退，
-        // 否则输入 qiqi 查不到注册名 Qiqi，会误走占位邮箱候选导致"密码错误"
-        if (!(profileLookup && profileLookup.data)) {
-          var _safeName = usernameOrEmail.replace(/([%_\\])/g, '\\$1');
-          profileLookup = await sb.from('profiles')
-            .select('id, username, email')
-            .ilike('username', _safeName)
-            .maybeSingle();
+        var _res = await sb.rpc('resolve_login_email', { p_name: usernameOrEmail });
+        var _row = Array.isArray(_res.data) ? _res.data[0] : _res.data;
+        if (!_res.error && _row && _row.res_username) {
+          // 命中用户名即视为存在（email 可为空——用于“未绑定邮箱”引导分支）
+          profileLookup = { data: { email: _row.res_email || null, username: _row.res_username } };
+        } else {
+          profileLookup = null;
         }
       } catch (e) {
         // 查询失败不致命：仍可尝试下面的占位邮箱候选
@@ -711,7 +707,7 @@ async function loginUser(usernameOrEmail, password) {
       var lookupProfile = (profileLookup && profileLookup.data) || null;
       usernameProfileUnbound = !!(lookupProfile && !lookupProfile.email);
 
-      // 候选 1：profiles.email（注册时填过真实邮箱的账号走这里）
+      // 候选 1：resolve_login_email（注册时填过真实邮箱的账号走这里）
       if (lookupProfile && lookupProfile.email) {
         emailCandidates.push(lookupProfile.email);
       }

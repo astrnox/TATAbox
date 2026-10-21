@@ -75,7 +75,7 @@
     if (!sb) return Promise.resolve();
     var ids = comments.map(function (c) { return c.author_id; }).filter(Boolean);
     if (ids.length === 0) return Promise.resolve();
-    return sb.from('profiles').select('id, username, display_name').in('id', ids).then(function (res) {
+    return sb.from('public_profiles').select('id, username, display_name').in('id', ids).then(function (res) {
       var map = {};
       (res.data || []).forEach(function (p) { map[p.id] = p; });
       comments.forEach(function (c) {

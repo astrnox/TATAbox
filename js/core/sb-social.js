@@ -31,7 +31,7 @@ async function getCommunityPosts(page, tag, sortBy) {
     // 并行执行：作者信息 + 当前用户点赞 + 所有点赞计数
     var tasks = [];
     if (authorIds.length > 0) {
-      tasks.push(sb.from('profiles')
+      tasks.push(sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds));
     }
@@ -193,10 +193,10 @@ async function getPostComments(postId) {
     var authorIds = data ? data.map(function(c) { return c.author_id; }) : [];
     var authorMap = {};
     if (authorIds.length > 0) {
-      var { data: profiles } = await sb.from('profiles')
+      var { data: profiles } = await sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds);
-      
+
       if (profiles) {
         profiles.forEach(function(profile) {
           authorMap[profile.id] = profile;
@@ -249,7 +249,7 @@ async function getCommentsForPosts(postIds, limit) {
     var authorIds = (data || []).map(function (c) { return c.author_id; }).filter(function (id) { return id != null; });
     var authorMap = {};
     if (authorIds.length > 0) {
-      var { data: profiles } = await sb.from('profiles')
+      var { data: profiles } = await sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds);
       if (profiles) {

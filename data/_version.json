@@ -1,7 +1,12 @@
 {
-  "version": "5.2.10",
+  "version": "5.2.11",
   "updated_at": "2026-10-21",
   "changes": [
+    {
+      "date": "2026-10-21",
+      "version": "5.2.11",
+      "description": "数据库安全全量修复（体检报告 5 组严重 + 4 中等一次修完）：①拆 11 条错误/高危策略——4 条 *_own 写成 true（登录用户互开4表全权）、4 条 anon 全权（favorites/practice/wrong/profiles）、profiles 3 条全读；②题库收回 7 条 anon/authed 写策略（防匿名篡改400题），cards 收回 cards_public_insert；③补 6 条正向策略：profiles_select_own/profiles_select_admin/bioquest_is_admin/profiles_delete_own/favorites_update_own/practice_records_update_own+delete_own；④REVOKE apply_cr_decay_and_adjust/bioquest_create_policy/fn_merge_conflicts 对 PUBLIC/anon/authenticated；⑤新增 resolve_login_email 窄 RPC（用户名登录只回 email+username）；⑥v_user_practice_summary/v_module_performance 设 security_invoker=true（视图不再绕RLS）；⑦REVOKE SELECT profiles←anon（公开信息走 public_profiles 视图8列），REVOKE TRUNCATE/REFERENCES/TRIGGER←anon,authenticated；⑧补 focus_sessions/study_tasks 缺失FK索引，admin_key_hash 置NULL（列改可空）。前端8处配套：sb-social×3/notifications/app探活/dupCheck 切 public_profiles、getStudentByKey+getStudentDetailByKey 切 get_student_by_key RPC、用户名登录切 resolve_login_email（行为等价，含未绑定邮箱引导）。SQL 事务化执行+27行回滚日志（p0_fix_log_20261021），验证行 bad=0/new=6/cr=false/policy=false/login=true/anon_cols=0；匿名复验17项全过（profiles.email 42501、题库/收藏/档案 INSERT 42501、CR函数42501、公开读保留）。全量 416/416+烟雾39/39+lint。附带发现：profiles 无 points 列（sb-gamify 积分榜一直静默失败，保持现状未激活）。"
+    },
     {
       "date": "2026-10-21",
       "version": "5.2.10",
