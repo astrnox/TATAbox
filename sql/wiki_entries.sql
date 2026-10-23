@@ -46,3 +46,13 @@ END $$;
 -- 便于按标题去重/更新
 create index if not exists wiki_entries_title_idx on public.wiki_entries (title);
 create index if not exists wiki_entries_category_idx on public.wiki_entries (category);
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.wiki_entries TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.wiki_entries TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

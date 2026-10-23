@@ -206,3 +206,13 @@ GRANT EXECUTE ON FUNCTION public.admin_reset_password(UUID, TEXT) TO authenticat
 --    注意：密钥正确时不建议在 SQL Editor 直接调用（会把 postgres 之外的
 --    auth.uid() 置空，返回"请先登录"；正式验证请从网页管理员入口进行）。
 -- ============================================================
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT ALL ON public.admin_config TO service_role;
+-- public.admin_config 刻意不授予 anon/authenticated（该表 RLS 无放行策略）
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

@@ -1108,3 +1108,49 @@ BEGIN
 EXCEPTION WHEN OTHERS THEN
     RAISE NOTICE '跳过 schedules RLS: %', SQLERRM;
 END $$;
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.ebook_pdfs TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.ebook_pdfs TO authenticated, service_role;
+GRANT SELECT ON public.community_posts TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_posts TO authenticated, service_role;
+GRANT SELECT ON public.community_post_likes TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_post_likes TO authenticated, service_role;
+GRANT SELECT ON public.community_comments TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_comments TO authenticated, service_role;
+GRANT SELECT ON public.community_mutes TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_mutes TO authenticated, service_role;
+GRANT SELECT ON public.daily_checkins TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.daily_checkins TO authenticated, service_role;
+GRANT SELECT ON public.achievements TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.achievements TO authenticated, service_role;
+GRANT SELECT ON public.cr_logs TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.cr_logs TO authenticated, service_role;
+GRANT SELECT ON public.question_feedbacks TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.question_feedbacks TO authenticated, service_role;
+GRANT SELECT ON public.feedbacks TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.feedbacks TO authenticated, service_role;
+GRANT SELECT ON public.cr_appeals TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.cr_appeals TO authenticated, service_role;
+GRANT SELECT ON public.review_cards TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.review_cards TO authenticated, service_role;
+GRANT SELECT ON public.q_bounties TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.q_bounties TO authenticated, service_role;
+GRANT SELECT ON public.q_bounty_answers TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.q_bounty_answers TO authenticated, service_role;
+GRANT SELECT ON public.study_tasks TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.study_tasks TO authenticated, service_role;
+GRANT SELECT ON public.focus_sessions TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.focus_sessions TO authenticated, service_role;
+GRANT SELECT ON public.notes TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.notes TO authenticated, service_role;
+GRANT SELECT ON public.schedules TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.schedules TO authenticated, service_role;
+GRANT SELECT ON public.schedule_items TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.schedule_items TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

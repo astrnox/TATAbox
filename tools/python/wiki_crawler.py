@@ -57,9 +57,10 @@ try:
         if not text or not isinstance(text, str):
             return text or ""
         return _zhconv.convert(text, "zh-cn")
-except ImportError:  # 本机未装时降级：原样保存（沙箱/CI 必装，见 docstring）
+except ImportError:  # 本机未装时降级：原样保存并大声警告（禁止静默降级——会整批存繁体）
     def to_simp(text):
         return text or ""
+    print("[警告] 未安装 zhconv，繁→简转换被跳过（pip install zhconv）；新词条将保持维基原字形！")
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -714,14 +715,15 @@ def fetch_baidu_direct(fetcher: Fetcher, title: str):
 # ═══════════════════════════════════════════════════════════════
 
 CATEGORY_ROOTS = [
+    # 注意：cmtitle 不跟随重定向——类名必须用维基实际（部分为繁体）页面名
     ("Category:细胞生物学", "细胞生物学"),
     ("Category:分子生物学", "分子生物学"),
     ("Category:生物化学", "生物化学"),
     ("Category:遗传学", "遗传学"),
-    ("Category:动物学", "动物学"),
-    ("Category:植物学", "植物学"),
+    ("Category:動物學", "动物学"),       # 实际类名为繁体「動物學」
+    ("Category:植物學", "植物学"),
     ("Category:微生物学", "微生物学"),
-    ("Category:生态学", "生态学"),
+    ("Category:生態學", "生态学"),
 ]
 
 # 子类目排除：人物/历史/列表/各国/奖项/网站/模板/文献/图像 等非知识类目
@@ -759,6 +761,10 @@ def discover_category_members(fetcher: "Fetcher", root_cat: str, root_label: str
             if cont:
                 params += "&cmcontinue=" + urllib.parse.quote(cont, safe="")
             data = _wiki_api(fetcher, params)
+            if not data:
+                # 限流风暴下单次 None 不放弃整个类目：等 6 秒补一发
+                time.sleep(6)
+                data = _wiki_api(fetcher, params)
             if not data:
                 break
             for m in (data.get("query") or {}).get("categorymembers", []):
@@ -873,6 +879,7 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
         total = len(terms)
 
     ok, fail, skipped = 0, 0, 0
+    existing_ids = set(filter(None, (e.get("id") for e in entries)))  # id 级重复守卫
     for i, (title, category, tags) in enumerate(terms, start=1):
         existed = already_exists(entries, title)
         if existed and not refresh:
@@ -910,9 +917,16 @@ def run(terms, limit=None, only=None, prefer="zh", use_baidu=True, use_wikipedia
             continue
 
         # --refresh：抓取成功后才替换旧条目（失败不丢原数据）
+        entry = build_entry(title, category, tags, fetched, source)
+        if entry["id"] in existing_ids:
+            # 兜底：标题转写/转换异常导致的绕过去重（繁简事故教训）——按 id 拦截
+            print(f"[{i:3d}/{total}] 跳过（id 已存在）: {entry['title']}")
+            skipped += 1
+            continue
         if existed:
             entries = [e for e in entries if e.get("title") != title]
-        entries.append(build_entry(title, category, tags, fetched, source))
+        entries.append(entry)
+        existing_ids.add(entry["id"])
         ok += 1
         tag = "覆盖" if existed else "OK "
         print(f"[{i:3d}/{total}] {tag} [{source}] {title}  （{len(fetched['content'])} 字）")

@@ -61,3 +61,13 @@ END $$;
 -- 验证：列出已创建的表（可选，部署后用于检查）
 -- ============================================================
 -- SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename = 'class_memberships';
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.class_memberships TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.class_memberships TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

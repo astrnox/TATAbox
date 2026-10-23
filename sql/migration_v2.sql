@@ -251,3 +251,15 @@ CREATE INDEX IF NOT EXISTS idx_feedbacks_created ON feedbacks(created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_cr_appeals_user ON cr_appeals(user_id);
 CREATE INDEX IF NOT EXISTS idx_cr_appeals_status ON cr_appeals(status);
 CREATE INDEX IF NOT EXISTS idx_profiles_user_group ON profiles(user_group);
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.feedbacks TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.feedbacks TO authenticated, service_role;
+GRANT SELECT ON public.cr_appeals TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.cr_appeals TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

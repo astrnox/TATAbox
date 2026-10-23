@@ -94,3 +94,13 @@ BEGIN
 EXCEPTION WHEN OTHERS THEN
   RAISE NOTICE '跳过 migration_log 记录: %', SQLERRM;
 END $$;
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.lb_salt TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.lb_salt TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

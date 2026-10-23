@@ -93,3 +93,13 @@ END $$;
 -- SELECT policyname FROM pg_policies WHERE tablename='user_progress';
 
 COMMIT;
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.user_progress TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.user_progress TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+
