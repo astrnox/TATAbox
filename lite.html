@@ -41,8 +41,8 @@
   <!-- 同步防闪：主题三态（light / dark / night）在首帧前应用 -->
   <script src="js/core/theme-init.js?v=20261016a"></script>
   <!-- 全局令牌（唯一定义源）必须在组件样式之前生效 -->
-  <link rel="stylesheet" href="css/tokens.css?v=20261016a">
-  <link rel="stylesheet" href="css/lite.css?v=20261016a">
+  <link rel="stylesheet" href="css/tokens.css?v=20261024c">
+  <link rel="stylesheet" href="css/lite.css?v=20261024c">
 </head>
 <body>
   <div id="lite-boot">TATABOX</div>
@@ -95,21 +95,29 @@
   <div class="lite-toast" id="liteToast" role="status" aria-live="polite"></div>
 
   <!-- 登录弹窗（lite 入口：复用 supabase-client 的 loginUser，不引入 auth-ui）
-       表单 method=dialog，提交成败由 lite-app.js 接管 -->
-  <dialog class="lite-login" id="liteLoginDlg" aria-labelledby="liteLoginTitle">
-    <form method="dialog" class="lite-login-form" id="liteLoginForm">
-      <h2 class="lite-login-title" id="liteLoginTitle">登录</h2>
-      <p class="lite-note m0">与完整版同一账号，进度、错题与榜单互通。</p>
+       表单 method=dialog，提交成败由 lite-app.js 接管；novalidate 走自定义错误文案 -->
+  <dialog class="lite-login" id="liteLoginDlg" aria-labelledby="liteLoginTitle" aria-describedby="liteLoginDesc">
+    <form method="dialog" class="lite-login-form" id="liteLoginForm" novalidate>
+      <div class="lite-login-head">
+        <span class="lite-login-kicker">TATABOX · 极简版</span>
+        <h2 class="lite-login-title" id="liteLoginTitle">登录</h2>
+        <p class="lite-login-desc" id="liteLoginDesc">与完整版同一账号 · 进度、错题与榜单互通</p>
+      </div>
       <label class="lite-login-label" for="liteLoginUser">用户名或邮箱</label>
-      <input class="lite-login-input" id="liteLoginUser" name="username" type="text"
-             autocomplete="username" autocapitalize="off" spellcheck="false" required>
+      <input class="lite-login-input lite-field" id="liteLoginUser" name="username" type="text"
+             autocomplete="username" autocapitalize="off" spellcheck="false" required
+             aria-describedby="liteLoginErr">
       <label class="lite-login-label" for="liteLoginPass">密码</label>
-      <input class="lite-login-input" id="liteLoginPass" name="password" type="password"
-             autocomplete="current-password" required>
+      <div class="lite-login-pass">
+        <input class="lite-login-input lite-field" id="liteLoginPass" name="password" type="password"
+               autocomplete="current-password" required aria-describedby="liteLoginErr">
+        <button type="button" class="lite-login-eye" id="liteLoginEye"
+                data-lite="toggle-pwd" aria-pressed="false" aria-label="显示密码">显示</button>
+      </div>
       <p class="lite-login-err" id="liteLoginErr" role="alert" hidden></p>
       <div class="lite-login-actions">
-        <button type="button" class="btn-secondary" data-lite="login-cancel">取消</button>
-        <button type="submit" class="btn-primary" id="liteLoginSubmit">登录</button>
+        <button type="button" class="btn-quiet lite-login-guest" data-lite="login-cancel">游客继续使用</button>
+        <button type="submit" class="btn-primary lite-login-submit" id="liteLoginSubmit">登录</button>
       </div>
     </form>
   </dialog>
@@ -117,7 +125,7 @@
   <!-- ========== 数据层（与 quiz.html 同一成熟加载范式，同步顺序） ========== -->
   <!-- Supabase SDK（带 SRI；lite 仅此一个外部域，CSP 已限定） -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.115.0" integrity="sha384-EyR2P0dlmjnEGcm9xcjdAn0VedZpRHEwDLP9oSS6wYMvzHBHkUrvgonveazJ/sSx" crossorigin="anonymous"></script>
-  <script src="js/core/supabase-client.js?v=20261016a"></script>
+  <script src="js/core/supabase-client.js?v=20261024a"></script>
   <!-- 云端复习卡/错题封装（recordWrongAnswer：题错入云端 review_cards，登录态） -->
   <script src="js/core/sb-data.js?v=20261016a"></script>
   <!-- wrong_questions 云端 dual-write（storage.js _syncWrongToSupabase 的兜底分支裸调 saveWrongQuestion） -->
@@ -137,7 +145,7 @@
        与 practice/exam/quiz 同一口径；缺依赖时内部 typeof 守卫静默降级 -->
   <script src="js/core/record-session.js?v=20261016a" defer></script>
   <!-- lite 单文件应用：路由 + 五视图 + 引擎驱动配额 + 排行榜 -->
-  <script src="js/lite/lite-app.js?v=20261016a" defer></script>
+  <script src="js/lite/lite-app.js?v=20261024c" defer></script>
 
   <!-- PWA 注册（复用主站 sw-register） -->
   <script src="js/core/sw-register.js?v=20261016a" defer></script>

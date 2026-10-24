@@ -1,7 +1,12 @@
 {
-  "version": "5.2.13",
+  "version": "5.2.14",
   "updated_at": "2026-10-24",
   "changes": [
+    {
+      "date": "2026-10-24",
+      "version": "5.2.14",
+      "description": "极简模式登录修复与登录页设计优化。①根因：lite.html 不加载 sb-gamify.js，而 supabase-client.loginUser/restoreSession 裸调 startOnlineTimeTracking 定义在该文件→登录抛 ReferenceError；两处改为 typeof 守卫，并新增 lite 无 gamify 登录回归测试。②视觉：登录弹窗改「薄荷纸底 + 森林绿单点 CTA」，新增 kicker/标题/说明分区、44px 输入框、密码内嵌显示切换、红色错误条、窄屏按钮竖排；新增 lite 语义令牌 --text-danger/--bg-danger-soft/--on-accent。③交互：空值/凭据错误聚焦对应字段并设 aria-invalid、技术性错误转用户文案、关闭弹窗清空密码、游客继续文案、登录中禁用输入与 aria-busy。④全站控件统一：新增 .lite-field 基线与 3px 柔焦、按钮统一 44px 最小高度、隐私卡 focus-within、lite 三主题按钮对比度。⑤缓存：lite.html 资源版本 20261024c、supabase-client 20261024a、bump:sw。门禁 jest 424/424、audit:design 通过。"
+    },
     {
       "date": "2026-10-24",
       "version": "5.2.13",

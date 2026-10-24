@@ -830,8 +830,9 @@ async function loginUser(usernameOrEmail, password) {
     // 持久化用户展示信息（供 wiki 等轻页面读取作者身份）
     _persistUserInfo();
 
-    // 启动在线时长跟踪
-    startOnlineTimeTracking();
+    // 启动在线时长跟踪（定义在 sb-gamify.js；lite 极简模式不加载该文件，
+    // 因此必须做存在性判断，避免登录流程抛 ReferenceError）
+    if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
 
     // 触发登录成就
     if (typeof checkAchievement === 'function') {
@@ -1285,8 +1286,8 @@ async function _doRestoreSession() {
         // 静默失败
       }
 
-      // 启动在线时长跟踪
-      startOnlineTimeTracking();
+      // 启动在线时长跟踪（同 loginUser：sb-gamify.js 未加载时跳过）
+      if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
 
       // 修复：restoreSession 成功后，通知 admin 模块同步认证状态
       if (_currentUser && _currentUser.user_group === 'admin') {
