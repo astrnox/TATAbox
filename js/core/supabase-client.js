@@ -38,6 +38,21 @@ var SESSION_RESTORE_CACHE_TTL_MS = 5000;       // restoreSession 结果缓存时
 var GET_SESSION_TIMEOUT_MS = 5000;             // getSession 超时
 var PROFILE_FETCH_TIMEOUT_MS = 5000;           // profile 查询超时
 var EMAIL_VERIFICATION_TIMEOUT_MS = 3000;     // 邮箱验证状态查询超时
+
+/**
+ * 数据库依赖缺失告警（视图/RPC 未先行部署时，前端会静默降级为匿名/空数据）。
+ * 同一依赖只告警一次，避免轮询刷屏；只在错误确实是「不存在」时触发。
+ */
+var _warnedDependencies = {};
+function _warnMissingDependency(label, err, hint) {
+  var msg = String((err && err.message) || err || '');
+  var code = err && err.code;
+  var missing = code === '42P01' || code === 'PGRST202' || code === 'PGRST205' ||
+    /Could not find|does not exist|not found|schema cache/i.test(msg);
+  if (!missing || _warnedDependencies[label]) return;
+  _warnedDependencies[label] = true;
+  console.warn('[TATABOX] ' + label + ' 不可用：' + msg + (hint ? '；' + hint : ''));
+}
 var ADMIN_TOKEN_TTL = 5 * 60 * 1000;           // 前端管理员 token 有效期（5 分钟）
 
 /**
@@ -411,7 +426,7 @@ async function registerUser(username, password, displayName, email) {
   // clearLock 提前声明（避免 var hoisting 导致 TypeError）
   var clearLock = function () { try { localStorage.removeItem(lockKey); } catch (e) {} };
   try {
-    var dupCheck = await sb.from('profiles')
+    var dupCheck = await sb.from('public_profiles')
       .select('id, username')
       .eq('username', username)
       .maybeSingle();
@@ -688,30 +703,33 @@ async function loginUser(usernameOrEmail, password) {
     if (usernameOrEmail.includes('@')) {
       emailCandidates.push(usernameOrEmail);
     } else {
-      // 用户名登录：先从 profiles 表查找对应的邮箱
+      // 用户名登录：profiles 已收紧（仅本人可读），改走窄 RPC resolve_login_email
+      // （SECURITY DEFINER，仅按用户名精确返回 email+username，不回吐其他字段；
+      //   契约：lower(username) 命中即返回行，email 可为 NULL——用于「未绑定邮箱」引导分支）
       var profileLookup = null;
       try {
-        profileLookup = await sb.from('profiles')
-          .select('id, username, email')
-          .eq('username', usernameOrEmail)
-          .maybeSingle();
-        // 用户名登录不区分大小写：eq 精确（区分大小写）未命中时用 ilike 回退，
-        // 否则输入 qiqi 查不到注册名 Qiqi，会误走占位邮箱候选导致"密码错误"
-        if (!(profileLookup && profileLookup.data)) {
-          var _safeName = usernameOrEmail.replace(/([%_\\])/g, '\\$1');
-          profileLookup = await sb.from('profiles')
-            .select('id, username, email')
-            .ilike('username', _safeName)
-            .maybeSingle();
+        var _res = await sb.rpc('resolve_login_email', { p_name: usernameOrEmail });
+        if (_res && _res.error) {
+          _warnMissingDependency('RPC resolve_login_email', _res.error,
+            '请先执行 sql/migration_v16_login_contract.sql');
+        }
+        var _row = Array.isArray(_res.data) ? _res.data[0] : _res.data;
+        if (!_res.error && _row && _row.res_username) {
+          // 命中用户名即视为存在（email 可为空——用于“未绑定邮箱”引导分支）
+          profileLookup = { data: { email: _row.res_email || null, username: _row.res_username } };
+        } else {
+          profileLookup = null;
         }
       } catch (e) {
         // 查询失败不致命：仍可尝试下面的占位邮箱候选
+        _warnMissingDependency('RPC resolve_login_email', e,
+          '请先执行 sql/migration_v16_login_contract.sql');
         profileLookup = null;
       }
       var lookupProfile = (profileLookup && profileLookup.data) || null;
       usernameProfileUnbound = !!(lookupProfile && !lookupProfile.email);
 
-      // 候选 1：profiles.email（注册时填过真实邮箱的账号走这里）
+      // 候选 1：resolve_login_email（注册时填过真实邮箱的账号走这里）
       if (lookupProfile && lookupProfile.email) {
         emailCandidates.push(lookupProfile.email);
       }
@@ -812,8 +830,9 @@ async function loginUser(usernameOrEmail, password) {
     // 持久化用户展示信息（供 wiki 等轻页面读取作者身份）
     _persistUserInfo();
 
-    // 启动在线时长跟踪
-    startOnlineTimeTracking();
+    // 启动在线时长跟踪（定义在 sb-gamify.js；lite 极简模式不加载该文件，
+    // 因此必须做存在性判断，避免登录流程抛 ReferenceError）
+    if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
 
     // 触发登录成就
     if (typeof checkAchievement === 'function') {
@@ -1267,8 +1286,8 @@ async function _doRestoreSession() {
         // 静默失败
       }
 
-      // 启动在线时长跟踪
-      startOnlineTimeTracking();
+      // 启动在线时长跟踪（同 loginUser：sb-gamify.js 未加载时跳过）
+      if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
 
       // 修复：restoreSession 成功后，通知 admin 模块同步认证状态
       if (_currentUser && _currentUser.user_group === 'admin') {

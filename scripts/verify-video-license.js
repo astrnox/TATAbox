@@ -36,11 +36,14 @@ const MANIFEST = path.join(ROOT, 'data', 'videos.json');
 // 授权白名单枚举（方案 §1.4 允许项）：
 //   ① 公有领域  ② CC BY / CC BY-SA（须署名展示）  ③ 免署名免费授权  ④（教育机构逐条核对，
 //     涉及新协议时必须扩充本枚举并在 PR 中附 license 页证据，禁止用模糊字符串绕过）
+//   CC BY 3.0 于 2026-10-17 按 ④ 流程扩充（HHMI BioInteractive / Sprouts / NIG 等
+//   Commons 教育动画授权页均为 CC BY 3.0，每条 source 指向对应文件页可复核）
 const LICENSE_WHITELIST = new Set([
   'Public Domain',
   'CC0 1.0',
   'CC BY 2.0',
   'CC BY 2.5',
+  'CC BY 3.0',
   'CC BY 4.0',
   'CC BY-SA 3.0',
   'CC BY-SA 4.0',

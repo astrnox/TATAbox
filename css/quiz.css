@@ -193,6 +193,11 @@
   flex-wrap: wrap;
 }
 
+/* 打印入口按钮（与已答/总题统计同行展示，垂直居中） */
+.paper-info .btn {
+  align-self: center;
+}
+
 .paper-info-item {
   text-align: center;
 }

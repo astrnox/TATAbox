@@ -84,7 +84,7 @@ describe('Issue #17：admin.js 核心模块', () => {
     document.body.appendChild(target);
     window.renderAdminPage(target);
     expect(target.innerHTML).toContain('admin-login-card');
-    expect(document.getElementById('admin-key-input')).not.toBeNull();
+    expect(document.getElementById('admin-totp-input')).not.toBeNull();
     // 样式已注入
     expect(document.querySelector('style')).not.toBeNull();
   });

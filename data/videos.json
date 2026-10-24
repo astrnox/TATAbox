@@ -1,12 +1,15 @@
 {
-  "version": 1,
-  "updatedAt": "2026-10-17",
+  "version": 2,
+  "updatedAt": "2026-10-18",
   "videos": [
     {
       "id": "mitosis-cell-division",
       "title": "有丝分裂：染色体分离与胞质分裂",
       "description": "3D 动画演示动物细胞有丝分裂全程，可见染色体凝缩、排列、分离与胞质分裂。",
-      "topics": ["细胞分裂", "有丝分裂"],
+      "topics": [
+        "细胞分裂",
+        "有丝分裂"
+      ],
       "file": "videos/mitosis-cell-division.mp4",
       "poster": "videos/mitosis-cell-division.jpg",
       "duration": "0:10",
@@ -23,13 +26,21 @@
         "中期：染色体排列在细胞赤道板上",
         "后期：姐妹染色单体被纺锤丝拉向两极",
         "末期与胞质分裂：两个子细胞核重新形成，细胞一分为二"
+      ],
+      "tags": [
+        "动画",
+        "3D"
       ]
     },
     {
       "id": "cd8-t-cell-mhc1",
       "title": "CD8⁺ T 细胞清除感染神经元（MHC-I 依赖）",
       "description": "免疫荧光延时影像：绿色为神经元网络，红色为 CD8⁺ T 细胞，展示细胞毒性 T 细胞与神经元的接触与杀伤过程。",
-      "topics": ["免疫应答", "细胞毒性 T 细胞", "MHC-I"],
+      "topics": [
+        "免疫应答",
+        "细胞毒性 T 细胞",
+        "MHC-I"
+      ],
       "file": "videos/cd8-t-cell-mhc1.mp4",
       "poster": "videos/cd8-t-cell-mhc1.jpg",
       "duration": "0:10",
@@ -46,13 +57,20 @@
         "T 细胞与候选靶神经元接触，形成免疫突触",
         "被识别的感染神经元在 T 细胞作用下清除",
         "该识别与杀伤过程依赖靶细胞表面的 MHC-I 分子（论文核心结论）"
+      ],
+      "tags": [
+        "显微",
+        "延时"
       ]
     },
     {
       "id": "phagocytosis-leucocytes",
       "title": "白细胞吞噬作用实录",
       "description": "血液涂片活体显微影像：白细胞在红细胞之间伸出伪足捕捉并吞入病原颗粒，演示吞噬作用全过程。",
-      "topics": ["先天免疫", "吞噬作用"],
+      "topics": [
+        "先天免疫",
+        "吞噬作用"
+      ],
       "file": "videos/phagocytosis-leucocytes.mp4",
       "poster": "videos/phagocytosis-leucocytes.jpg",
       "duration": "0:30",
@@ -68,6 +86,1016 @@
         "识别并靠近病原颗粒，伸出伪足将其包围",
         "颗粒被吞入细胞内形成吞噬体",
         "吞噬体与溶酶体融合，内容物被消化分解"
+      ],
+      "tags": [
+        "显微",
+        "实拍"
+      ]
+    },
+    {
+      "id": "dna-structure-packaging",
+      "title": "DNA 双螺旋到染色体的包装压缩",
+      "description": "演示 DNA 双螺旋如何经核小体层层缠绕、压缩成致密染色体，理解遗传物质的存在形式。",
+      "topics": [
+        "分子生物学",
+        "DNA 结构",
+        "染色体"
+      ],
+      "file": "videos/dna-structure-packaging.mp4",
+      "poster": "videos/dna-structure-packaging.jpg",
+      "duration": "1:00",
+      "durationSec": 60.04,
+      "width": 720,
+      "height": 540,
+      "sizeBytes": 4581737,
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/DNA_packing.theora.ogv",
+      "attribution": "Cookatoo.ergo.ZooM《DNA packing.theora》（Wikimedia Commons，Public Domain）",
+      "tags": [
+        "动画"
+      ],
+      "steps": [
+        "DNA 双螺旋围绕组蛋白八聚体盘绕，形成核小体（串珠结构）",
+        "核小体进一步螺旋化压缩成 30nm 染色质纤维",
+        "纤维经锚定与折叠形成更高级的环状结构",
+        "高度压缩后形成可在细胞分裂期观察到的染色体"
+      ]
+    },
+    {
+      "id": "dna-replication",
+      "title": "DNA 半保留复制",
+      "description": "动画演示解旋、引物合成、前导链与后随链的不连续合成，理解半保留复制机制。",
+      "topics": [
+        "分子生物学",
+        "DNA 复制"
+      ],
+      "file": "videos/dna-replication.mp4",
+      "poster": "videos/dna-replication.jpg",
+      "duration": "0:52",
+      "durationSec": 51.68,
+      "width": 640,
+      "height": 480,
+      "sizeBytes": 3310667,
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/DNA_replication_640*480.theora.ogv",
+      "attribution": "Cookatoo.ergo.ZooM《DNA replication 640*480.theora》（Wikimedia Commons，CC BY-SA 3.0）",
+      "tags": [
+        "动画"
+      ],
+      "steps": [
+        "解旋酶打开双链，形成复制叉",
+        "引物酶合成 RNA 引物，DNA 聚酶酶从 5'→3' 延伸",
+        "前导链连续合成，后随链以冈崎片段不连续合成",
+        "连接酶封合片段，形成两条与亲代完全相同的子链"
+      ]
+    },
+    {
+      "id": "transcription-single-molecule",
+      "title": "转录的单分子实时观测",
+      "description": "活细胞中单分子报告基因成像，展示 RNA 聚合酶成簇推进与基因表达的爆发式转录动力学。",
+      "topics": [
+        "分子生物学",
+        "转录",
+        "基因表达"
+      ],
+      "file": "videos/transcription-single-molecule.mp4",
+      "poster": "videos/transcription-single-molecule.jpg",
+      "duration": "0:11",
+      "durationSec": 10.67,
+      "width": 1024,
+      "height": 512,
+      "sizeBytes": 1648201,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/A-single-molecule-view-of-transcription-reveals-convoys-of-RNA-polymerases-and-multi-scale-bursting-ncomms12248-s4.ogv",
+      "attribution": "Tantale K, Mueller F, Kozulic-Pirher A, Lesne A, Victor J, Robert M, Capozi S, Chouaib R, Bäcker V, Mateos-Langerak J, Darzacq X, Zimmer C, Basyuk E, Bertrand E《A-single-molecule-view-of-transcription-reveals-convoys-of-RNA-polymerases-and-multi-scale-bursting-ncomms12248-s4》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "荧光标记的报告基因在活细胞核内定位为亮点",
+        "转录发生时亮点亮度周期性增强，反映 mRNA 连续合成",
+        "多个聚合酶成簇沿基因协同推进，产生转录爆发",
+        "较长时间尺度上可见基因表达呈随机、间歇式动态"
+      ]
+    },
+    {
+      "id": "transcription-rnap-md",
+      "title": "RNA 聚合酶转位循环（分子动力学）",
+      "description": "分子动力学模拟展示 RNA 聚合酶三元延伸复合物中触发环构象变化与转位过程，DNA 为金色、RNA 为红色。",
+      "topics": [
+        "分子生物学",
+        "转录",
+        "酶的分子机制"
+      ],
+      "file": "videos/transcription-rnap-md.mp4",
+      "poster": "videos/transcription-rnap-md.jpg",
+      "duration": "0:18",
+      "durationSec": 17.53,
+      "width": 568,
+      "height": 720,
+      "sizeBytes": 4605456,
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/Molecular-dynamics-and-mutational-analysis-of-the-catalytic-and-translocation-cycle-of-RNA-2046-1682-5-11-S2.ogv",
+      "attribution": "Kireeva M, Opron K, Seibold S, Domecq C, Cukier R, Coulombe B, Kashlev M, Burton Z《Molecular-dynamics-and-mutational-analysis-of-the-catalytic-and-translocation-cycle-of-RNA-2046-1682-5-11-S2》（Wikimedia Commons，CC BY 2.0）",
+      "tags": [
+        "拟真",
+        "3D"
+      ],
+      "steps": [
+        "DNA 模板（金色）与新生 RNA（红色）位于聚合酶活性中心",
+        "触发环闭合，催化 Mg²⁺ 完成一次核苷酸添加",
+        "触发环打开，新生 RNA 与 DNA 相对酶向前转位一个碱基",
+        "构象循环重复，实现 RNA 链的逐步延伸"
+      ]
+    },
+    {
+      "id": "translation-protein-synthesis",
+      "title": "核糖体翻译合成蛋白质",
+      "description": "动画演示核糖体读取 mRNA、t递送氨基酸并形成肽链的翻译全过程（假设每秒掺入约 30 个氨基酸）。",
+      "topics": [
+        "分子生物学",
+        "翻译",
+        "基因表达"
+      ],
+      "file": "videos/translation-protein-synthesis.mp4",
+      "poster": "videos/translation-protein-synthesis.jpg",
+      "duration": "0:21",
+      "durationSec": 20.5,
+      "width": 774,
+      "height": 582,
+      "sizeBytes": 650074,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Movie_5._Protein_synthesis.ogv",
+      "attribution": "National Institute of Genetics《Movie 5. Protein synthesis》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画",
+        "3D"
+      ],
+      "steps": [
+        "mRNA 与核糖体结合，起始 tRNA 定位起始密码子",
+        "延伸 tRNA 识别密码子并递送相应氨基酸",
+        "肽键形成，核糖体沿 mRNA 移动一个密码子",
+        "遇到终止密码子后肽链释放，核糖体解离"
+      ]
+    },
+    {
+      "id": "gene-regulation-switch",
+      "title": "诱导型基因开关（全细胞模拟）",
+      "description": "大肠杆菌全细胞模拟：群体对诱导物响应开启基因表达，展示噪声如何影响基因开关的表达异质性。",
+      "topics": [
+        "基因表达调控",
+        "操纵子",
+        "细胞信号"
+      ],
+      "file": "videos/gene-regulation-switch.mp4",
+      "poster": "videos/gene-regulation-switch.jpg",
+      "duration": "0:28",
+      "durationSec": 28.1,
+      "width": 712,
+      "height": 480,
+      "sizeBytes": 5424984,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Noise-Contributions-in-an-Inducible-Genetic-Switch-A-Whole-Cell-Simulation-Study-pcbi.1002010.s002.ogv",
+      "attribution": "Roberts E, Magis A, Ortiz J, Baumeister W, Luthey-Schulten Z《Noise-Contributions-in-an-Inducible-Genetic-Switch-A-Whole-Cell-Simulation-Study-pcbi.1002010.s002》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "拟真",
+        "动画"
+      ],
+      "steps": [
+        "诱导物加入前，基因开关处于低表达（关闭）状态",
+        "诱导物进入细胞，阻遏蛋白失活，启动子被 RNA 聚合酶占用",
+        "模拟群体中各细胞因分子噪声呈现表达水平差异",
+        "随诱导物浓度升高，群体整体切换到高表达（开启）状态"
+      ]
+    },
+    {
+      "id": "crispr-gene-editing",
+      "title": "CRISPR-Cas9 基因编辑原理",
+      "description": "动画演示向导 RNA 引导 Cas9 定位目标 DNA 并切割双链、细胞修复产生编辑的全过程。",
+      "topics": [
+        "基因工程",
+        "基因编辑",
+        "CRISPR"
+      ],
+      "file": "videos/crispr-gene-editing.mp4",
+      "poster": "videos/crispr-gene-editing.jpg",
+      "duration": "0:15",
+      "durationSec": 15.02,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 1280625,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/CRISPR_illustration_video_1.webm",
+      "attribution": "UC Berkeley, Video by Roxanne Makasdjian and Stephen McNally, Additional footage provided by Keck Graduate Institute (KGI) and Ella Maru Studio《CRISPR illustration video 1》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "动画"
+      ],
+      "steps": [
+        "设计向导 RNA 与目标序列互补配对",
+        "Cas9-向导 RNA 复合物扫描并识别 PAM 位点",
+        "RuvC 与 HNH 结构域切割 DNA 双链产生断裂",
+        "细胞通过非同源末端连接或同源重组修复，实现基因敲除/敲入"
+      ]
+    },
+    {
+      "id": "pcr-amplification",
+      "title": "PCR 聚合酶链式反应",
+      "description": "动画讲解变性、退火、延伸三步循环，实现目标 DNA 片段的指数级扩增。",
+      "topics": [
+        "生物技术",
+        "PCR",
+        "核酸扩增"
+      ],
+      "file": "videos/pcr-amplification.mp4",
+      "poster": "videos/pcr-amplification.jpg",
+      "duration": "2:06",
+      "durationSec": 125.69,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 3919584,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/PCR_explained_-_biology_animation.webm",
+      "attribution": "yourgenome《PCR explained - biology animation》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画",
+        "讲解"
+      ],
+      "steps": [
+        "约 95℃ 变性：双链 DNA 解开为单链",
+        "约 55℃ 退火：引物与互补模板序列结合",
+        "约 72℃ 延伸：耐热 DNA 聚合酶合成新链",
+        "循环 25~35 次，目标片段呈 2ⁿ 指数扩增"
+      ]
+    },
+    {
+      "id": "mendel-laws",
+      "title": "孟德尔第二定律（自由组合）",
+      "description": "讲解视频：以两对相对性状为例说明等位基因在配子形成时的自由组合与测交验证思路。",
+      "topics": [
+        "遗传学",
+        "孟德尔定律",
+        "自由组合"
+      ],
+      "file": "videos/mendel-laws.mp4",
+      "poster": "videos/mendel-laws.jpg",
+      "duration": "4:21",
+      "durationSec": 261.03,
+      "width": 960,
+      "height": 540,
+      "sizeBytes": 14695886,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/2ª_LEI_DE_MENDEL_-_GENÉTICA_-_Prof._Kennedy_Ramos.webm",
+      "attribution": "Kennedy Ramos《2ª LEI DE MENDEL - GENÉTICA - Prof. Kennedy Ramos》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "讲解",
+        "动画"
+      ],
+      "steps": [
+        "两对相对性状由位于非同源染色体上的两对等位基因控制",
+        "减数分裂时非等位基因随非同源染色体自由组合",
+        "F₂ 出现 9:3:3:1 的性状分离比",
+        "测交结果验证配子种类及比例符合自由组合定律"
+      ]
+    },
+    {
+      "id": "meiosis-overview",
+      "title": "减数分裂：染色体数目减半",
+      "description": "动画演示减数分裂Ⅰ与Ⅱ的染色体行为，理解同源染色体分离与配子形成。",
+      "topics": [
+        "细胞分裂",
+        "减数分裂",
+        "配子形成"
+      ],
+      "file": "videos/meiosis-overview.mp4",
+      "poster": "videos/meiosis-overview.jpg",
+      "duration": "0:31",
+      "durationSec": 31.46,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 582321,
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Meiosis.webm",
+      "attribution": "Laura Urbano Pancho《Meiosis》（Wikimedia Commons，CC BY-SA 4.0）",
+      "tags": [
+        "动画",
+        "3D"
+      ],
+      "steps": [
+        "间期完成 DNA 复制，同源染色体两两配对（联会）",
+        "减数分裂Ⅰ：同源染色体分离，染色体数目减半",
+        "减数分裂Ⅱ：姐妹染色单体分离",
+        "形成四个遗传组成不同的单倍体配子"
+      ]
+    },
+    {
+      "id": "crossing-over-recombination",
+      "title": "减数分裂重组（交叉互换）",
+      "description": "荧光显微延时影像展示减数分裂前期同源染色体间重组事件的形成，体现连锁与互换的细胞学基础。",
+      "topics": [
+        "遗传学",
+        "减数分裂",
+        "交叉互换"
+      ],
+      "file": "videos/crossing-over-recombination.mp4",
+      "poster": "videos/crossing-over-recombination.jpg",
+      "duration": "0:26",
+      "durationSec": 26,
+      "width": 512,
+      "height": 512,
+      "sizeBytes": 1254917,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/The-SMC-56-Complex-and-the-HIM-6-(BLM)-Helicase-Synergistically-Promote-Meiotic-Recombination-pgen.1005872.s008.ogv",
+      "attribution": "Hong Y, Sonneville R, Agostinho A, Meier B, Wang B, Blow J, Gartner A《The-SMC-56-Complex-and-the-HIM-6-(BLM)-Helicase-Synergistically-Promote-Meiotic-Recombination-pgen.1005872.s008》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "减数分裂前期Ⅰ，同源染色体联会配对",
+        "DNA 双链断裂并侵入同源链，形成重组中间体",
+        "交叉互换使非姐妹染色单体交换片段",
+        "产生重组配子，是连锁遗传产生变异的原因之一"
+      ]
+    },
+    {
+      "id": "x-chromosome-inactivation",
+      "title": "X 染色体失活（巴氏小体）",
+      "description": "活细胞延时成像展示雌性细胞中一条 X 染色体在分化早期逐步失活的过程，解释伴性遗传与剂量补偿。",
+      "topics": [
+        "遗传学",
+        "伴性遗传",
+        "基因表达调控"
+      ],
+      "file": "videos/x-chromosome-inactivation.mp4",
+      "poster": "videos/x-chromosome-inactivation.jpg",
+      "duration": "0:58",
+      "durationSec": 57.99,
+      "width": 640,
+      "height": 320,
+      "sizeBytes": 2777894,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Live-Cell-Imaging-of-the-Nascent-Inactive-X-Chromosome-during-the-Early-Differentiation-Process-of-pone.0116109.s005.ogv",
+      "attribution": "Guyochin A, Maenner S, Chu E, Hentati A, Attia M, Avner P, Clerc P《Live-Cell-Imaging-of-the-Nascent-Inactive-X-Chromosome-during-the-Early-Differentiation-Process-of-pone.0116109.s005》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "细胞分化早期两条 X 染色体均具转录活性",
+        "Xist RNA 在将失活的 X 染色体上顺式包裹",
+        "该染色体逐步浓缩、转录沉默",
+        "失活状态在后续细胞分裂中稳定遗传，形成巴氏小体"
+      ]
+    },
+    {
+      "id": "natural-selection",
+      "title": "自然选择如何驱动进化",
+      "description": "讲解动画：变异、过度繁殖、生存斗争与适者生存四要素如何逐代改变种群特征。",
+      "topics": [
+        "进化",
+        "自然选择"
+      ],
+      "file": "videos/natural-selection.mp4",
+      "poster": "videos/natural-selection.jpg",
+      "duration": "4:08",
+      "durationSec": 248.02,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 12874485,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Darwin's_Theory_of_Evolution_–_Natural_Selection_(explainer_video_by_Sprouts).webm",
+      "attribution": "Sprouts《Darwin's Theory of Evolution – Natural Selection (explainer video by Sprouts)》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "讲解",
+        "动画"
+      ],
+      "steps": [
+        "种群个体间存在可遗传变异",
+        "资源有限导致生存斗争，繁殖具有过度倾向",
+        "具适应性变异的个体更易存活并留下后代",
+        "有利性状逐代积累，种群特征发生定向改变"
+      ]
+    },
+    {
+      "id": "lactase-persistence",
+      "title": "乳糖耐受：人类近期进化案例",
+      "description": "基于人群数据的模拟展示乳糖耐受等位基因在欧洲人群中的频率变化，理解选择压与基因频率计算。",
+      "topics": [
+        "进化",
+        "基因频率",
+        "分子进化"
+      ],
+      "file": "videos/lactase-persistence.mp4",
+      "poster": "videos/lactase-persistence.jpg",
+      "duration": "3:00",
+      "durationSec": 180.24,
+      "width": 792,
+      "height": 612,
+      "sizeBytes": 1283567,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/The-Origins-of-Lactase-Persistence-in-Europe-pcbi.1000491.s015.ogv",
+      "attribution": "Itan Y, Powell A, Beaumont M, Burger J, Thomas M《The-Origins-of-Lactase-Persistence-in-Europe-pcbi.1000491.s015》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "拟真",
+        "动画"
+      ],
+      "steps": [
+        "畜牧业兴起后，成年人消化乳糖成为生存优势",
+        "调控区突变个体在奶类饮食人群中繁殖优势更大",
+        "模拟显示耐受等位基因频率在数千年间快速上升",
+        "对比中性漂变情形，说明自然选择对基因频率的作用"
+      ]
+    },
+    {
+      "id": "speciation-parapatric",
+      "title": "邻域物种形成的群体遗传模拟",
+      "description": "个体基模型模拟连续分布群体中基因流与局部选择的对抗，展示生殖隔离如何逐步形成。",
+      "topics": [
+        "进化",
+        "物种形成",
+        "生殖隔离"
+      ],
+      "file": "videos/speciation-parapatric.mp4",
+      "poster": "videos/speciation-parapatric.jpg",
+      "duration": "0:51",
+      "durationSec": 51.17,
+      "width": 900,
+      "height": 600,
+      "sizeBytes": 1392638,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Isolation-by-Distance-and-Outbreeding-Depression-Are-Sufficient-to-Drive-Parapatric-Speciation-in-pcbi.1000126.s001.ogv",
+      "attribution": "Hoelzer G, Drewes R, Meier J, Doursat R《Isolation-by-Distance-and-Outbreeding-Depression-Are-Sufficient-to-Drive-Parapatric-Speciation-in-pcbi.1000126.s001》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "拟真"
+      ],
+      "steps": [
+        "群体沿空间连续分布，个体间存在有限基因流",
+        "不同区域的选择压力偏好不同等位基因",
+        "基因流与选择对抗，形成适应性的空间梯度",
+        "杂交适合度下降，最终出现生殖隔离与新物种"
+      ]
+    },
+    {
+      "id": "antibiotic-resistance",
+      "title": "抗生素滥用与耐药性产生",
+      "description": "疾病控制与预防中心科普影像：不规范使用抗生素如何筛选出耐药菌，以及合理用药的公共卫生意义。",
+      "topics": [
+        "微生物学",
+        "耐药性",
+        "健康与疾病"
+      ],
+      "file": "videos/antibiotic-resistance.mp4",
+      "poster": "videos/antibiotic-resistance.jpg",
+      "duration": "1:43",
+      "durationSec": 103.02,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 14516624,
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/Combating_Antibiotic_Resistance-_Antibiotic_Use.webm",
+      "attribution": "Centers for Disease Control and Prevention《Combating Antibiotic Resistance- Antibiotic Use》（Wikimedia Commons，Public Domain）",
+      "tags": [
+        "讲解"
+      ],
+      "steps": [
+        "抗生素杀灭敏感菌，残留少量耐药个体",
+        "耐药菌在缺乏竞争的环境中大量繁殖",
+        "耐药基因可经质粒水平转移扩散到其他细菌",
+        "滥用与不规范用药加速多重耐药菌出现"
+      ]
+    },
+    {
+      "id": "apoptosis-caspase",
+      "title": "Caspase 依赖的细胞凋亡",
+      "description": "荧光延时影像展示发育过程中程序性细胞死亡：Caspase 激活后细胞皱缩、出泡并形成凋亡小体。",
+      "topics": [
+        "细胞生命历程",
+        "细胞凋亡"
+      ],
+      "file": "videos/apoptosis-caspase.mp4",
+      "poster": "videos/apoptosis-caspase.jpg",
+      "duration": "0:31",
+      "durationSec": 30.84,
+      "width": 320,
+      "height": 240,
+      "sizeBytes": 1336205,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Caspase-Dependent-Programmed-Cell-Death-in-Developing-Embryos-A-Potential-Target-for-Therapeutic-pntd.0001306.s005.ogv",
+      "attribution": "Mohapatra A, Kumar S, Satapathy A, Ravindran B《Caspase-Dependent-Programmed-Cell-Death-in-Developing-Embryos-A-Potential-Target-for-Therapeutic-pntd.0001306.s005》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "凋亡信号激活上游启动型 Caspase",
+        "执行型 Caspase 剪切胞内底物，细胞骨架崩解",
+        "细胞皱缩、膜出泡，DNA 片段化",
+        "凋亡小体被邻近细胞或吞噬细胞清除，不引发炎症"
+      ]
+    },
+    {
+      "id": "membrane-transport",
+      "title": "跨膜转运蛋白的分子动力学",
+      "description": "全原子分子动力学模拟展示膜转运蛋白在脂双层中的构象变化，理解载体蛋白如何转运底物。",
+      "topics": [
+        "细胞代谢",
+        "跨膜运输",
+        "膜结构"
+      ],
+      "file": "videos/membrane-transport.mp4",
+      "poster": "videos/membrane-transport.jpg",
+      "duration": "0:16",
+      "durationSec": 16.1,
+      "width": 808,
+      "height": 480,
+      "sizeBytes": 7344896,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Structural-Analysis-of-a-Peptide-Fragment-of-Transmembrane-Transporter-Protein-Bilitranslocase-pone.0038967.s009.ogv",
+      "attribution": "Perdih A, Roy Choudhury A, Župerl Š, Sikorska E, Zhukov I, Solmajer T, Novič M《Structural-Analysis-of-a-Peptide-Fragment-of-Transmembrane-Transporter-Protein-Bilitranslocase-pone.0038967.s009》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "拟真",
+        "3D"
+      ],
+      "steps": [
+        "转运蛋白嵌入磷脂双分子层中",
+        "底物结合引发蛋白构象改变",
+        "构象翻转使结合位点朝向膜另一侧",
+        "底物释放，载体恢复初始构象循环转运"
+      ]
+    },
+    {
+      "id": "bacterial-chemotaxis",
+      "title": "细菌趋化与信号转导",
+      "description": "个体基模拟展示细菌通过受体甲基化适应与鞭毛马达切换，实现向营养物浓度升高方向的趋化运动。",
+      "topics": [
+        "细胞信号",
+        "趋化性",
+        "原核生物"
+      ],
+      "file": "videos/bacterial-chemotaxis.mp4",
+      "poster": "videos/bacterial-chemotaxis.jpg",
+      "duration": "3:16",
+      "durationSec": 195.7,
+      "width": 640,
+      "height": 480,
+      "sizeBytes": 7183023,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/An-Agent-Based-Model-of-Signal-Transduction-in-Bacterial-Chemotaxis-pone.0009454.s003.ogv",
+      "attribution": "Miller J, Parker M, Bourret R, Giddings M《An-Agent-Based-Model-of-Signal-Transduction-in-Bacterial-Chemotaxis-pone.0009454.s003》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "拟真",
+        "动画"
+      ],
+      "steps": [
+        "膜受体感知胞外营养物浓度变化",
+        "胞内磷酸化级联调节鞭毛马达旋转方向",
+        "逆梯度时细菌频繁翻滚改变方向",
+        "顺梯度时翻滚减少，群体呈现定向趋化"
+      ]
+    },
+    {
+      "id": "cytoskeleton-kinesin",
+      "title": "驱动蛋白沿微管的定向运输",
+      "description": "单分子成像展示驱动蛋白马达在微管轨道上的行走与轨道选择，理解细胞内物质运输的分子基础。",
+      "topics": [
+        "细胞骨架",
+        "分子马达",
+        "胞内运输"
+      ],
+      "file": "videos/cytoskeleton-kinesin.mp4",
+      "poster": "videos/cytoskeleton-kinesin.jpg",
+      "duration": "0:06",
+      "durationSec": 6,
+      "width": 484,
+      "height": 624,
+      "sizeBytes": 171590,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Single-Molecule-Imaging-Reveals-Differences-in-Microtubule-Track-Selection-Between-Kinesin-Motors-pbio.1000216.s014.ogv",
+      "attribution": "Cai D, McEwen D, Martens J, Meyhofer E, Verhey K《Single-Molecule-Imaging-Reveals-Differences-in-Microtubule-Track-Selection-Between-Kinesin-Motors-pbio.1000216.s014》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "微管作为细胞内轨道，极性由正负端区分",
+        "驱动蛋白头部交替结合 ATP 与微管产生步进",
+        "马达携带囊泡等货物向正极定向运输",
+        "不同驱动蛋白对轨道选择性不同，决定运输方向"
+      ]
+    },
+    {
+      "id": "enzyme-reaction",
+      "title": "酶促反应的催化机制",
+      "description": "动画演示底物与酶活性中心结合、诱导契合、产物释放，以及浓度对反应速率的影响。",
+      "topics": [
+        "酶",
+        "代谢"
+      ],
+      "file": "videos/enzyme-reaction.mp4",
+      "poster": "videos/enzyme-reaction.jpg",
+      "duration": "0:20",
+      "durationSec": 20.47,
+      "width": 774,
+      "height": 582,
+      "sizeBytes": 265210,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Movie_6._Enzyme_reaction.ogv",
+      "attribution": "National Institute of Genetics《Movie 6. Enzyme reaction》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画"
+      ],
+      "steps": [
+        "底物与酶活性中心特异性结合",
+        "诱导契合降低反应活化能，形成过渡态",
+        "产物释放后酶恢复原有构象可重复使用",
+        "底物浓度升高至饱和后反应速率达到最大"
+      ]
+    },
+    {
+      "id": "bacterial-division-ftsz",
+      "title": "FtsZ 蛋白环与细菌分裂",
+      "description": "3D 超分辨显微成像显示 FtsZ 蛋白在细菌分裂位点呈珠状环形排列，驱动细胞中部缢裂。",
+      "topics": [
+        "原核生物",
+        "细胞分裂",
+        "细胞骨架"
+      ],
+      "file": "videos/bacterial-division-ftsz.mp4",
+      "poster": "videos/bacterial-division-ftsz.jpg",
+      "duration": "0:10",
+      "durationSec": 9.92,
+      "width": 1226,
+      "height": 720,
+      "sizeBytes": 715703,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/3D-SIM-Super-Resolution-Microscopy-Reveals-a-Bead-Like-Arrangement-for-FtsZ-and-the-Division-pbio.1001389.s004.ogv",
+      "attribution": "Strauss M, Liew A, Turnbull L, Whitchurch C, Monahan L, Harry E《3D-SIM-Super-Resolution-Microscopy-Reveals-a-Bead-Like-Arrangement-for-FtsZ-and-the-Division-pbio.1001389.s004》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "显微",
+        "3D"
+      ],
+      "steps": [
+        "FtsZ 单体聚合形成 Z 环定位在细胞中央",
+        "Z 环向心收缩并招募细胞壁合成酶",
+        "细胞中部向内缢裂形成隔膜",
+        "隔膜闭合完成细菌二分裂"
+      ]
+    },
+    {
+      "id": "phage-host-interaction",
+      "title": "噬菌体与宿主细胞的相互作用",
+      "description": "活细胞成像展示同一菌群中宿主细胞被噬菌体感染裂解的异质性动态，理解病毒增殖与裂解周期。",
+      "topics": [
+        "微生物学",
+        "病毒增殖",
+        "噬菌体"
+      ],
+      "file": "videos/phage-host-interaction.mp4",
+      "poster": "videos/phage-host-interaction.jpg",
+      "duration": "0:05",
+      "durationSec": 4.8,
+      "width": 370,
+      "height": 320,
+      "sizeBytes": 35101,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Nongenetic-Individuality-in-the-Host–Phage-Interaction-pbio.0060120.sv003.ogv",
+      "attribution": "Pearl S, Gabay C, Kishony R, Oppenheim A, Balaban N《Nongenetic-Individuality-in-the-Host–Phage-Interaction-pbio.0060120.sv003》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "噬菌体吸附宿主细胞并注入遗传物质",
+        "利用宿主机器复制基因组与合成衣壳蛋白",
+        "子代噬菌体在细胞内组装",
+        "宿主裂解释放子代，视野中感染细胞逐步消亡"
+      ]
+    },
+    {
+      "id": "glycolysis",
+      "title": "糖酵解：葡萄糖分解为丙酮酸",
+      "description": "HHMI 生物互动动画展示糖酵解十步反应如何将一分子葡萄糖分解为两分子丙酮酸并产生 ATP 与 NADH。",
+      "topics": [
+        "细胞呼吸",
+        "糖酵解",
+        "代谢"
+      ],
+      "file": "videos/glycolysis.mp4",
+      "poster": "videos/glycolysis.jpg",
+      "duration": "2:36",
+      "durationSec": 156.02,
+      "width": 712,
+      "height": 400,
+      "sizeBytes": 12641418,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Glycolysis_-_HHMI_BioInteractive_Video.webm",
+      "attribution": "biointeractive《Glycolysis - HHMI BioInteractive Video》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画",
+        "讲解"
+      ],
+      "steps": [
+        "耗能阶段：葡萄糖磷酸化并裂解为两个三碳分子",
+        "产生 2 ATP 与 2 NADH",
+        "生成两分子丙酮酸",
+        "丙酮酸进入线粒体进入后续氧化分解"
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "title": "电子传递链与氧化磷酸化",
+      "description": "HHMI 动画演示呼吸链复合体传递电子并泵出质子，建立跨膜质子梯度驱动 ATP 合成。",
+      "topics": [
+        "细胞呼吸",
+        "电子传递链",
+        "氧化磷酸化"
+      ],
+      "file": "videos/electron-transport-chain.mp4",
+      "poster": "videos/electron-transport-chain.jpg",
+      "duration": "2:00",
+      "durationSec": 120.02,
+      "width": 712,
+      "height": 400,
+      "sizeBytes": 15359086,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Electron_Transport_Chain_-_HHMI_BioInteractive_Video.webm",
+      "attribution": "biointeractive《Electron Transport Chain - HHMI BioInteractive Video》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画",
+        "讲解"
+      ],
+      "steps": [
+        "NADH/FADH₂ 将电子交给呼吸链复合体",
+        "复合体Ⅰ、Ⅲ、Ⅳ泵出质子形成电化学梯度",
+        "质子经 ATP 合酶回流驱动 ATP 生成",
+        "末端氧接受电子生成水"
+      ]
+    },
+    {
+      "id": "atp-synthase-rotation",
+      "title": "ATP 合酶的旋转催化",
+      "description": "结构插值动画展示 ATP 合酶 F₀F₁ 马达在旋转循环中的构象变化，解释结合变构机制如何合成 ATP。",
+      "topics": [
+        "细胞呼吸",
+        "ATP 合酶",
+        "分子马达"
+      ],
+      "file": "videos/atp-synthase-rotation.mp4",
+      "poster": "videos/atp-synthase-rotation.jpg",
+      "duration": "0:19",
+      "durationSec": 18.65,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 1250917,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/ATP_synthesis_-_ATP_synthase_rotation.ogv",
+      "attribution": "Roman Balabin《ATP synthesis - ATP synthase rotation》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "拟真",
+        "3D"
+      ],
+      "steps": [
+        "质子流驱动 F₀ 亚基与 c 环旋转",
+        "γ 轴旋转带动 β 亚基在开放、松散、紧密三种构象间循环",
+        "紧密态催化 ADP + Pi 合成 ATP",
+        "每旋转 120° 释放一分子 ATP"
+      ]
+    },
+    {
+      "id": "atp-energy-currency",
+      "title": "ATP 的利用：做功的分子",
+      "description": "HHMI 动画以钙离子泵与 DNA 解旋酶为例，展示 ATP 水解如何驱动细胞做功。",
+      "topics": [
+        "细胞呼吸",
+        "ATP",
+        "物质与能量"
+      ],
+      "file": "videos/atp-energy-currency.mp4",
+      "poster": "videos/atp-energy-currency.jpg",
+      "duration": "1:32",
+      "durationSec": 92.02,
+      "width": 854,
+      "height": 480,
+      "sizeBytes": 11924038,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/ATP_in_Use_-_HHMI_BioInteractive_Video.webm",
+      "attribution": "biointeractive《ATP in Use - HHMI BioInteractive Video》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "动画",
+        "讲解"
+      ],
+      "steps": [
+        "ATP 水解断裂高能磷酸键释放能量",
+        "能量使载体蛋白发生构象改变",
+        "钙泵逆浓度梯度转运 Ca²⁺，解旋酶解开 DNA 双链",
+        "ADP 重新磷酸化为 ATP，实现能量循环"
+      ]
+    },
+    {
+      "id": "action-potential",
+      "title": "神经纤维动作电位的产生与传导",
+      "description": "动画演示静息电位、去极化到复极化的离子机制，以及兴奋在神经纤维上的双向传导。",
+      "topics": [
+        "神经调节",
+        "动作电位",
+        "稳态"
+      ],
+      "file": "videos/action-potential.mp4",
+      "poster": "videos/action-potential.jpg",
+      "duration": "1:02",
+      "durationSec": 62.02,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 888088,
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Neuron_action_potential.webm",
+      "attribution": "Osmosis《Neuron action potential》（Wikimedia Commons，CC BY-SA 4.0）",
+      "tags": [
+        "动画"
+      ],
+      "steps": [
+        "静息时钾离子外流形成内负外正的静息电位",
+        "阈刺激触发钠离子通道开放，快速去极化",
+        "钠通道失活、钾外流完成复极化",
+        "局部电流使相邻膜依次兴奋，兴奋沿轴突传导"
+      ]
+    },
+    {
+      "id": "ligand-gated-ion-channel",
+      "title": "配体门控离子通道",
+      "description": "动画演示神经递质与受体结合后通道开放、离子跨膜流动，理解突触信号的化学传递。",
+      "topics": [
+        "神经调节",
+        "突触传递",
+        "离子通道"
+      ],
+      "file": "videos/ligand-gated-ion-channel.mp4",
+      "poster": "videos/ligand-gated-ion-channel.jpg",
+      "duration": "0:14",
+      "durationSec": 13.54,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 580833,
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Ligand-gated_ion_channel.webm",
+      "attribution": "Curtis Neveu《Ligand-gated ion channel》（Wikimedia Commons，CC BY-SA 4.0）",
+      "tags": [
+        "动画",
+        "3D"
+      ],
+      "steps": [
+        "突触小泡释放神经递质扩散过突触间隙",
+        "递质与配体门控通道受体特异结合",
+        "通道构象改变开放，离子顺浓度梯度内流",
+        "突触后膜电位变化，信号完成化学-电转换"
+      ]
+    },
+    {
+      "id": "blood-glucose-regulation",
+      "title": "胰岛素与血糖平衡调节",
+      "description": "科普讲解动画：胰岛如何感知血糖变化并分泌胰岛素/胰高血糖素，维持血糖浓度稳态。",
+      "topics": [
+        "体液调节",
+        "血糖平衡",
+        "稳态"
+      ],
+      "file": "videos/blood-glucose-regulation.mp4",
+      "poster": "videos/blood-glucose-regulation.jpg",
+      "duration": "2:45",
+      "durationSec": 164.68,
+      "width": 406,
+      "height": 720,
+      "sizeBytes": 7618792,
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Deutsche_Welle_-_Explaining_The_Human_Body_(English)_-_The_Pancreas_Keeping_Our_Blood_Sugar_Level_in_Check.webm",
+      "attribution": "Deutsche Welle (DW)《Deutsche Welle - Explaining The Human Body (English) - The Pancreas Keeping Our Blood Sugar Level in Check》（Wikimedia Commons，CC BY-SA 4.0）",
+      "tags": [
+        "讲解",
+        "动画"
+      ],
+      "steps": [
+        "进食后血糖升高，胰岛 β 细胞感知并分泌胰岛素",
+        "胰岛素促进组织摄取与利用葡萄糖、合成糖原",
+        "血糖降低时 α 细胞分泌胰高血糖素",
+        "胰高血糖素促进糖原分解与非糖物质转化，血糖回升"
+      ]
+    },
+    {
+      "id": "heart-anatomy-circulation",
+      "title": "心脏结构与血液循环",
+      "description": "解剖讲解视频：心脏四腔、瓣膜位置与前后视结构，理解体循环与肺循环的路径基础。",
+      "topics": [
+        "循环系统",
+        "心脏结构"
+      ],
+      "file": "videos/heart-anatomy-circulation.mp4",
+      "poster": "videos/heart-anatomy-circulation.jpg",
+      "duration": "2:01",
+      "durationSec": 121.05,
+      "width": 1280,
+      "height": 720,
+      "sizeBytes": 5059051,
+      "license": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/Heart_Anatomy_-_Anterior_view_(preview)_-_Human_Anatomy_Kenhub_1.webm",
+      "attribution": "Kenhub Template:Author of Illustration : Yousun Koh《Heart Anatomy - Anterior view (preview) - Human Anatomy Kenhub 1》（Wikimedia Commons，CC BY 3.0）",
+      "tags": [
+        "讲解",
+        "3D"
+      ],
+      "steps": [
+        "心脏分左右心房与左右心室，房室瓣保证血液单向流动",
+        "体循环：左心室→主动脉→全身→右心房",
+        "肺循环：右心室→肺动脉→肺部→左心房",
+        "心房收缩充盈心室，心室收缩射血"
+      ]
+    },
+    {
+      "id": "respiratory-ventilation",
+      "title": "呼吸运动与肺通气",
+      "description": "讲解动画演示吸气与呼气时胸廓容积、肺内压与气流的关系，理解呼吸运动的动力机制。",
+      "topics": [
+        "呼吸系统",
+        "肺通气"
+      ],
+      "file": "videos/respiratory-ventilation.mp4",
+      "poster": "videos/respiratory-ventilation.jpg",
+      "duration": "1:33",
+      "durationSec": 92.64,
+      "width": 640,
+      "height": 360,
+      "sizeBytes": 2405268,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/So_funktioniert_die_Atmung.webm",
+      "attribution": "ZDF/scobel/xkopp/Daniel Sich/Maximilian Mohr《So funktioniert die Atmung》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "讲解",
+        "动画"
+      ],
+      "steps": [
+        "吸气：膈肌与肋间肌收缩，胸廓容积增大",
+        "肺内压低于外界气压，空气经气道进入肺",
+        "呼气：呼吸肌舒张，胸廓回缩容积减小",
+        "肺内压高于外界，气体排出体外"
+      ]
+    },
+    {
+      "id": "pulmonary-gas-exchange",
+      "title": "肺泡气流与颗粒沉积（真实尺度模拟）",
+      "description": "真实尺度肺腺泡三维模拟展示吸气气流在肺泡道内的输运与颗粒沉积，理解肺部气体交换的结构基础。",
+      "topics": [
+        "呼吸系统",
+        "肺泡",
+        "气体交换"
+      ],
+      "file": "videos/pulmonary-gas-exchange.mp4",
+      "poster": "videos/pulmonary-gas-exchange.jpg",
+      "duration": "0:04",
+      "durationSec": 4.14,
+      "width": 960,
+      "height": 720,
+      "sizeBytes": 643255,
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/Particle-dynamics-and-deposition-in-true-scale-pulmonary-acinar-models-srep14071-s2.ogv",
+      "attribution": "Fishler R, Hofemeier P, Etzion Y, Dubowski Y, Sznitman J《Particle-dynamics-and-deposition-in-true-scale-pulmonary-acinar-models-srep14071-s2》（Wikimedia Commons，CC BY 4.0）",
+      "tags": [
+        "拟真",
+        "3D"
+      ],
+      "steps": [
+        "吸气气流沿各级支气管进入肺腺泡",
+        "气流在肺泡道内反复分流、减速",
+        "颗粒随气流沉积在肺泡壁表面",
+        "巨大表面积与薄壁为氧气/二氧化碳交换提供条件"
+      ]
+    },
+    {
+      "id": "nephron-kidney",
+      "title": "肾单位的发生与结构基础",
+      "description": "活细胞延时成像展示肾单位形态建成中的细胞集体迁移，理解肾单位这一结构与功能单位的来源。",
+      "topics": [
+        "排泄系统",
+        "肾单位"
+      ],
+      "file": "videos/nephron-kidney.mp4",
+      "poster": "videos/nephron-kidney.jpg",
+      "duration": "0:03",
+      "durationSec": 2.8,
+      "width": 516,
+      "height": 512,
+      "sizeBytes": 312777,
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/Collective-Cell-Migration-Drives-Morphogenesis-of-the-Kidney-Nephron-pbio.1000009.sv017.ogv",
+      "attribution": "Vasilyev A, Liu Y, Mudumana S, Mangos S, Lam P, Majumdar A, Zhao J, Poon K, Kondrychyn I, Korzh V, Drummond I《Collective-Cell-Migration-Drives-Morphogenesis-of-the-Kidney-Nephron-pbio.1000009.sv017》（Wikimedia Commons，CC BY 2.5）",
+      "tags": [
+        "显微",
+        "延时"
+      ],
+      "steps": [
+        "后肾间充质细胞聚集形成肾单位原基",
+        "细胞集体迁移并拉伸形成肾小管雏形",
+        "肾小管盘曲形成肾小球与肾小囊等结构",
+        "成熟肾单位成为尿形成的基本结构单位"
       ]
     }
   ]

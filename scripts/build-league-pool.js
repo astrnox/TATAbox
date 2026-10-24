@@ -94,6 +94,60 @@ function extractSubjects(section) {
 }
 
 /**
+ * 概念（考的范围）的学科词是否与本题 subject 相容。
+ * 大类「生物学」与空 subject 视为不限；细粒度概念（酶/神经系统等）无学科词自然相容。
+ * 不相容示例：subject=动物学 而 concept 含「植物」（环节动物题被挂到植物学）。
+ */
+function conceptFitsSubject(concept, subject) {
+  const s = String(subject || '');
+  if (!s || s === '生物学') return true;
+  const c = String(concept || '');
+  const sPlant = s.indexOf('植物') >= 0 || s.indexOf('微生物') >= 0;
+  const sAnimal = s.indexOf('动物') >= 0 || s.indexOf('生态') >= 0;
+  const sGen = s.indexOf('遗传') >= 0 || s.indexOf('进化') >= 0;
+  const cPlant = c.indexOf('植物') >= 0;
+  const cAnimal = c.indexOf('动物') >= 0;
+  const cBasic = c.indexOf('生物化学') >= 0 || c.indexOf('细胞生物学') >= 0;
+  if (cPlant && !sPlant) return false;   // 动物/细胞题挂上植物学科词（环节动物题→植物学）
+  if (cAnimal && !sAnimal) return false; // 植物/细胞题挂上动物学科词
+  if (cBasic && sGen) return false;      // 遗传题被模块兜底成生化/细胞学科词
+  if (cBasic && sPlant) return false;    // 植物题被模块兜底成生化/细胞学科词
+  if (cBasic && sAnimal) return false;   // 动物题被模块兜底成生化/细胞学科词（解剖生理题）
+  return true;
+}
+
+/**
+ * 混合多学科 section（如「第二部分 植物学、…、无脊椎动物学」）：
+ * 优先取与本题 subject 逐字命中（或包含 subject）的学科词
+ * （如 subject=动物学 → 「动物学」「无脊椎动物学」），否则回退首词保持既有
+ * 行为；残余矛盾由 reconcileConcept 按 subject 学科改写。
+ */
+function pickSubjectCompatible(subs, subject) {
+  const s = String(subject || '');
+  if (!s || s === '生物学') return subs[0];
+  for (const w of subs) {
+    if (w === s || w.indexOf(s) >= 0) return w;
+  }
+  return subs[0];
+}
+
+/**
+ * 派生 concept 与 subject 学科互斥时，改写为 subject 对应的学科短语
+ * （仅作用于由 section/模块兜底派生的 concept；源文件已填的 concept 视为真源）。
+ */
+function reconcileConcept(concept, subject, module) {
+  if (conceptFitsSubject(concept, subject)) return concept;
+  const s = String(subject);
+  if (s.indexOf('生态') >= 0) return '生态学';
+  if (s.indexOf('动物') >= 0) return '动物学';
+  if (s.indexOf('植物') >= 0) return '植物学';
+  if (s.indexOf('微生物') >= 0) return '微生物学';
+  if (s.indexOf('遗传') >= 0 || s.indexOf('进化') >= 0) return '遗传学与进化生物学';
+  if (s.indexOf('细胞') >= 0 || s.indexOf('生物化学') >= 0 || s.indexOf('生化') >= 0 || s.indexOf('分子') >= 0) return '细胞生物学与生物化学';
+  return MODULE_FALLBACK_CONCEPT[module] || concept;
+}
+
+/**
  * 标答归一：
  *   single   → 第一个 true 的字母；恰 1 个 true 才有效（否则 null）
  *   multiple → 全部 true 的字母串；≥1 才有效
@@ -147,18 +201,22 @@ function normalize(raw) {
   const opts = raw.options || {};
   const labels = Object.keys(opts).sort();
 
-  // concept（考的范围）：内容级 section 提取学科；题型级/空 → 模块兜底
+  // subject：试卷大类「生物学」保留（判定模块走 q.module 兜底）
+  const subject = String(raw.subject || '').trim();
+
+  // concept（考的范围）：内容级 section 提取学科（混合 section 优先取与本题
+  // subject 同学科域的词）；题型级/空 → 模块兜底；派生结果再与 subject 做
+  // 学科互斥校验（如环节动物题被卷面首词误挂到「植物学」时改回 subject 学科）
   const paper = raw.paper || {};
   const section = String(paper.section || '').trim();
   let concept = String(raw.concept || '').trim();
+  const conceptDerived = !concept;
   if (!concept && section && !isTypeLevelSection(section)) {
     const subs = extractSubjects(section);
-    if (subs.length > 0) concept = subs[0];
+    if (subs.length > 0) concept = pickSubjectCompatible(subs, subject);
   }
   if (!concept) concept = MODULE_FALLBACK_CONCEPT[raw.module] || '';
-
-  // subject：试卷大类「生物学」保留（判定模块走 q.module 兜底）
-  const subject = String(raw.subject || '').trim();
+  if (conceptDerived) concept = reconcileConcept(concept, subject, raw.module);
 
   // 标签：按旧题库规范（data/bank/*.json 的 tags 口径）——
   //   [来源key, 模块, 学科, 概念(考的范围), 年份]，类别固定不新增

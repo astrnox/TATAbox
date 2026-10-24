@@ -1,7 +1,7 @@
 {
  "concept": "m6A RNA 修饰的写入、读取与擦除",
  "difficulty": "league",
- "explanation": "A【对】依据：METTL3 为催化亚基，METTL14 为结构亚基，二者与 WTAP、VIRMA（KIAA1429）、ZC3H13、RBM15/15B 等组装为甲基转移酶复合体，以 SAM（S-腺苷甲硫氨酸）为甲基供体，特异催化 RNA 中 RRACH 基序内腺苷的 N6 位甲基化；图中 Writing/Erasing 循环展示了 m6A 的动态可逆性。\nB【对】依据：YTH 结构域蛋白 YTHDF1/2/3（细胞质）与 YTHDC1/2（细胞核）通过保守的 YTH 结构域识别 m6A：YTHDF2 招募 CCR4-NOT 复合体促进 mRNA 降解，YTHDF1 促进翻译，YTHDF3 协同二者；图中 YTH 结构域均位于各蛋白的 C 端。\nC【对】依据：FTO 与 ALKBH5 属于 AlkB 家族 α-酮戊二酸（α-KG）依赖性双加氧酶，可氧化去除 m6A 的甲基，使 m6A 成为可逆的动态修饰；这与图中 'Erasing' 箭头所示方向一致。\nD【错】错因：m6A 广泛分布于 mRNA、lncRNA（如 XIST）、circRNA 以及 miRNA 前体中，参与剪接、出核、稳定性与翻译等全过程调控；图中 YTHDC1 的核内降解/稳定化功能就作用于多种 RNA 类型，'仅存在于 mRNA' 的表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M1-02-30bbc833/fig1-annotated.jpg",
+ "explanation": "A【对】依据：METTL3 为催化亚基，METTL14 为结构亚基，二者与 WTAP、VIRMA（KIAA1429）、ZC3H13、RBM15/15B 等组装为甲基转移酶复合体，以 SAM（S-腺苷甲硫氨酸）为甲基供体，特异催化 RNA 中 RRACH 基序内腺苷的 N6 位甲基化；图中 Writing/Erasing 循环展示了 m6A 的动态可逆性。\nB【对】依据：YTH 结构域蛋白 YTHDF1/2/3（细胞质）与 YTHDC1/2（细胞核）通过保守的 YTH 结构域识别 m6A：YTHDF2 招募 CCR4-NOT 复合体促进 mRNA 降解，YTHDF1 促进翻译，YTHDF3 协同二者；图中 YTHDF1/2/3 的 YTH 结构域位于蛋白 C 端，而 YTHDC1 的 YTH 结构域位于中部。\nC【对】依据：FTO 与 ALKBH5 属于 AlkB 家族 α-酮戊二酸（α-KG）依赖性双加氧酶，可氧化去除 m6A 的甲基，使 m6A 成为可逆的动态修饰；这与图中 'Erasing' 箭头所示方向一致。\nD【错】错因：m6A 广泛分布于 mRNA、lncRNA（如 XIST）、circRNA 以及 miRNA 前体中，参与剪接、出核、稳定性与翻译等全过程调控；图中 YTHDC1 的核内降解/稳定化功能就作用于多种 RNA 类型，'仅存在于 mRNA' 的表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M1-02-30bbc833/fig1-annotated.jpg",
  "image": {
   "caption": "m6A 写入/读取/擦除机制：(A) m6A 动态写入与擦除循环，(B) YTH 结构域蛋白家族，(C) IGF2BP 家族",
   "credit": "Wei G, Biochemical Society Transactions 2024",

@@ -19,7 +19,8 @@ const path = require('path');
 const SRC = path.join(__dirname, '..', '..', 'js', 'core', 'utils.js');
 
 // 从 utils.js 中抽取 EventHub IIFE（避免整文件依赖其它全局函数）
-const source = fs.readFileSync(SRC, 'utf8');
+// 注意：Windows checkout 为 CRLF，先归一化为 LF，锚点字符串才可匹配
+const source = fs.readFileSync(SRC, 'utf8').replace(/\r\n/g, '\n');
 const start = source.indexOf('/* ============================================================\n * Issue #105');
 if (start < 0) throw new Error('utils.js 中未找到 EventHub 定义');
 const end = source.lastIndexOf('})();');

@@ -164,6 +164,30 @@ describe('3. 署名行渲染（CC 条目必须实际展示 attribution）', () =
     expect(html).toContain('data-video-id="demo"');
   });
 
+  test('标签分类行：卡片与播放页均渲染 tags（bv-tag 芯片）', () => {
+    const v = makeVideo({ tags: ['拟真', '动画'] });
+    const card = BV.listHTML([v]);
+    expect(card).toContain('bv-tags');
+    expect(card).toContain('<span class="bv-tag">拟真</span>');
+    expect(card).toContain('<span class="bv-tag">动画</span>');
+    const player = BV.playerHTML(v);
+    expect(player).toContain('<span class="bv-tag">拟真</span>');
+  });
+
+  test('标签经 esc() 转义，非字符串/空标签被丢弃', () => {
+    const v = makeVideo({ tags: ['<b>x</b>', '', '  ', null, '实拍'] });
+    const html = BV.listHTML([v]);
+    expect(html).toContain('&lt;b&gt;x&lt;/b&gt;');
+    expect(html).not.toContain('<b>x</b>');
+    expect(html).toContain('<span class="bv-tag">实拍</span>');
+    expect(html).not.toContain('bv-tag"> </span>');
+  });
+
+  test('无 tags 字段不输出标签行（向后兼容旧清单）', () => {
+    const html = BV.listHTML([makeVideo()]);
+    expect(html).not.toContain('bv-tags');
+  });
+
   test('流量提示与文字版步骤（P2-1/P2-2）渲染', () => {
     const html = BV.playerHTML(makeVideo());
     expect(html).toContain('Wi-Fi');

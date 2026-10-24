@@ -31,7 +31,7 @@ async function getCommunityPosts(page, tag, sortBy) {
     // 并行执行：作者信息 + 当前用户点赞 + 所有点赞计数
     var tasks = [];
     if (authorIds.length > 0) {
-      tasks.push(sb.from('profiles')
+      tasks.push(sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds));
     }
@@ -48,6 +48,10 @@ async function getCommunityPosts(page, tag, sortBy) {
     }
 
     var results = tasks.length > 0 ? await Promise.all(tasks) : [];
+    if (authorIds.length > 0 && results[0] && results[0].error) {
+      _warnMissingDependency('视图 public_profiles', results[0].error,
+        '作者信息将回退为匿名；请先执行 sql/migration_v3_security.sql');
+    }
     var profiles = results[0] && results[0].data ? results[0].data : [];
     var myLikes = (_currentUser && results[1] && results[1].data) ? results[1].data : [];
     var allLikes = (results.length > 0) ? (results[results.length - 1] && results[results.length - 1].data ? results[results.length - 1].data : []) : [];
@@ -193,10 +197,14 @@ async function getPostComments(postId) {
     var authorIds = data ? data.map(function(c) { return c.author_id; }) : [];
     var authorMap = {};
     if (authorIds.length > 0) {
-      var { data: profiles } = await sb.from('profiles')
+      var { data: profiles, error: profilesErr } = await sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds);
-      
+      if (profilesErr) {
+        _warnMissingDependency('视图 public_profiles', profilesErr,
+          '评论作者信息将回退为匿名；请先执行 sql/migration_v3_security.sql');
+      }
+
       if (profiles) {
         profiles.forEach(function(profile) {
           authorMap[profile.id] = profile;
@@ -249,9 +257,13 @@ async function getCommentsForPosts(postIds, limit) {
     var authorIds = (data || []).map(function (c) { return c.author_id; }).filter(function (id) { return id != null; });
     var authorMap = {};
     if (authorIds.length > 0) {
-      var { data: profiles } = await sb.from('profiles')
+      var { data: profiles, error: profilesErr } = await sb.from('public_profiles')
         .select('id, username, display_name')
         .in('id', authorIds);
+      if (profilesErr) {
+        _warnMissingDependency('视图 public_profiles', profilesErr,
+          '评论作者信息将回退为匿名；请先执行 sql/migration_v3_security.sql');
+      }
       if (profiles) {
         profiles.forEach(function (profile) { authorMap[profile.id] = profile; });
       }

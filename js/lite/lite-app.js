@@ -1222,32 +1222,108 @@
     if (S.view === 'board') { renderBoard(); fetchBoard(); }
   }
 
+  /** 登录表单：错误提示 + 对应字段聚焦（aria-invalid 供读屏与样式共用） */
+  function setLoginError(msg, field) {
+    var errEl = $('#liteLoginErr');
+    var uEl = $('#liteLoginUser');
+    var pEl = $('#liteLoginPass');
+    if (uEl) uEl.setAttribute('aria-invalid', field === 'username' ? 'true' : 'false');
+    if (pEl) pEl.setAttribute('aria-invalid', field === 'password' ? 'true' : 'false');
+    if (errEl) {
+      if (msg) {
+        errEl.textContent = msg;
+        errEl.hidden = false;
+      } else {
+        errEl.textContent = '';
+        errEl.hidden = true;
+      }
+    }
+    if (msg && field) {
+      var target = field === 'username' ? uEl : pEl;
+      if (target) {
+        try { target.focus(); } catch (e) { /* ignore */ }
+      }
+    }
+  }
+
+  /** 重置登录弹窗状态：错误、密码可见性；clearPwd 时清空密码（关闭即清） */
+  function resetLoginState(clearPwd) {
+    var pEl = $('#liteLoginPass');
+    var eye = $('#liteLoginEye');
+    setLoginError('');
+    if (clearPwd && pEl) pEl.value = '';
+    if (pEl) pEl.type = 'password';
+    if (eye) {
+      eye.textContent = '显示';
+      eye.setAttribute('aria-pressed', 'false');
+      eye.setAttribute('aria-label', '显示密码');
+    }
+  }
+
+  var _loginBusy = false;
+
   /** 登录表单提交（dialog 内，CSP：无内联 handler） */
   function bindLoginForm() {
     var form = $('#liteLoginForm');
     if (!form) return;
     form.addEventListener('submit', async function (e) {
       e.preventDefault();   // method=dialog 会自动关窗，这里按成败接管
-      var errEl = $('#liteLoginErr');
+      if (_loginBusy) return;
       var btn = $('#liteLoginSubmit');
       var uEl = $('#liteLoginUser');
       var pEl = $('#liteLoginPass');
       var name = uEl ? uEl.value.trim() : '';
       var pwd = pEl ? pEl.value : '';
-      function showErr(msg) { if (errEl) { errEl.textContent = msg; errEl.hidden = false; } }
-      if (errEl) errEl.hidden = true;
-      if (!name || !pwd) { showErr('请输入用户名和密码'); return; }
-      if (btn) { btn.disabled = true; btn.textContent = '登录中…'; }
+      setLoginError('');
+      if (!name) { setLoginError('请输入用户名或邮箱', 'username'); return; }
+      if (!pwd) { setLoginError('请输入密码', 'password'); return; }
+
+      _loginBusy = true;
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = '登录中…';
+        btn.setAttribute('aria-busy', 'true');
+      }
+      if (uEl) uEl.disabled = true;
+      if (pEl) pEl.disabled = true;
+
       var res = null;
       try { res = await window.loginUser(name, pwd); }
-      catch (ex) { res = { ok: false, error: (ex && ex.message) || '登录失败' }; }
-      if (btn) { btn.disabled = false; btn.textContent = '登录'; }
-      if (!res.ok) { showErr(res.error || '登录失败'); return; }
+      catch (ex) { res = { ok: false, error: (ex && ex.message) || '登录失败，请稍后再试' }; }
+
+      _loginBusy = false;
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = '登录';
+        btn.removeAttribute('aria-busy');
+      }
+      if (uEl) uEl.disabled = false;
+      if (pEl) pEl.disabled = false;
+
+      if (!res.ok) {
+        var msg = res.error || '登录失败，请稍后再试';
+        // 技术性错误转用户可执行文案（Supabase SDK/网络未就绪）
+        if (/Supabase 未初始化|Failed to fetch|network|NetworkError/i.test(msg)) {
+          msg = '登录服务暂不可用，请检查网络后重试';
+        }
+        // 仅当错误明确指向某个字段时才把焦点送回该字段
+        var field = '';
+        if (/密码/.test(msg)) field = 'password';
+        else if (/用户名|邮箱/.test(msg)) field = 'username';
+        setLoginError(msg, field);
+        return;
+      }
       var dlg = $('#liteLoginDlg');
       if (dlg && dlg.open) dlg.close();
-      if (pEl) pEl.value = '';
+      resetLoginState(true);
       await afterAuthChange(true);
     });
+
+    // 原生 dialog：ESC / 取消 / 成功后关闭都走 close 事件，统一清理密码
+    var dlg = $('#liteLoginDlg');
+    if (dlg) {
+      dlg.addEventListener('close', function () { resetLoginState(true); });
+    }
   }
 
   /* ============================================================
@@ -1303,12 +1379,30 @@
     if (act === 'auth') {
       if (!S.loggedIn) {
         var dlg = $('#liteLoginDlg');
-        if (dlg) { dlg.showModal(); var uEl = $('#liteLoginUser'); if (uEl) uEl.focus(); }
+        if (dlg) {
+          resetLoginState(false);   // 打开时清错误/恢复密码可见性，但保留已输入用户名
+          dlg.showModal();
+          var uEl = $('#liteLoginUser');
+          if (uEl && !uEl.value) uEl.focus();
+          else { var pEl0 = $('#liteLoginPass'); if (pEl0) pEl0.focus(); }
+        }
         return;
       }
       Promise.resolve(typeof window.logoutUser === 'function' ? window.logoutUser() : null)
         .then(function () { return afterAuthChange(false); })
         .catch(function () { return afterAuthChange(false); });
+      return;
+    }
+    if (act === 'toggle-pwd') {
+      var pEl = $('#liteLoginPass');
+      var eye = $('#liteLoginEye');
+      if (!pEl || !eye) return;
+      var show = pEl.type === 'password';
+      pEl.type = show ? 'text' : 'password';
+      eye.textContent = show ? '隐藏' : '显示';
+      eye.setAttribute('aria-pressed', show ? 'true' : 'false');
+      eye.setAttribute('aria-label', show ? '隐藏密码' : '显示密码');
+      try { pEl.focus(); } catch (e) { /* ignore */ }
       return;
     }
     if (act === 'login-cancel') {

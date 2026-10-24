@@ -28,7 +28,7 @@
   "bank/enzyme.json": "a29313536f72d4eb9f8e68eec94695475c3bc1393d88f2edc0d39c94244efe50",
   "bank/excretory.json": "79a3c2328adaf14352edf53692845de01fab64d976399bbd9c4d0287970348f5",
   "bank/gene_mutation.json": "d0e61fd9b271e63f0dffe2064b64cce3fae3701738d5ad306092bfb1bf5aae36",
-  "bank/gene_regulation.json": "145fa779dad1b5c46bf88bbd2d165f34de9c956933fa5bd05e25e88cf4eda60c",
+  "bank/gene_regulation.json": "23c005dd7a89cbcb7f2f05f8ce12350fdfa9d462e42efe7445655b55641ce1b5",
   "bank/genetic_drift.json": "b02e4ef9f1e20c664c91d0111e0bb3fea730837d523755cb83c78461d06fab67",
   "bank/genetic_engineering.json": "b759895eec2cd38a0ada1995c6c29651b8a40d77a03826629beec59852e2d16d",
   "bank/genome_assembly.json": "6fc79a5af123e12f8d01bd0e3a08685515b18d2cd1f82ac13f201ee7ab079383",
@@ -38,7 +38,7 @@
   "bank/immune_system.json": "1df02fa64a128d07ade1f5547330feb7f87ba9e772254f555a16a0a2fe740350",
   "bank/krebs_cycle.json": "ae889cd6097b8e283aab3efbfec0536311f88381ca8a39008c766a36a53e3358",
   "bank/linkage.json": "966a66e0043e35f5f11142e8b76c41e1c466fe404a8e05a8de38a37cd2e41dc4",
-  "bank/lipid_metab.json": "e854699dd1bc419c976e6bfb8cb18bd5e86d621dd9d22ed217da41ffc8516904",
+  "bank/lipid_metab.json": "248f4f0745d276b2dfa9570b1da4e3f478d5e772b5912edd86a8343691f9e883",
   "bank/macroevolution.json": "a5b66a65edd28ff52bb4e3ff14b524eca4bfdcd1a9b7bd266acd41fe10d164c5",
   "bank/meiosis.json": "898069493e1a1c068c98ea2bc23296b381970032bed5ba6821c8f51b5713dbba",
   "bank/mendel.json": "cb1f718285764287f97e31c5bc53cb71e0386d0d01235b486edf335a70d2b684",
@@ -69,7 +69,7 @@
   "bank/quantitative_gen.json": "157ce2768236438e6d7d2035d769939444960a8a465b1874a6c2a245fb2e45a5",
   "bank/replication.json": "e79abf6f735662e61ad6a8fb4dd2ec2b87ccf7b06ac9586518c7b5f48499422d",
   "bank/respiratory_sys.json": "91a2abd45362dcd088c5e0d84c5c0f0417ab754c00bacac1c77cb856420e2ac1",
-  "bank/rna_biology.json": "774bb48a034d15f481982d17b3945c756a22e887eab61dc05e9557ac543c2c2e",
+  "bank/rna_biology.json": "88a457f46f8411152ed49cc7418ff5a680b07ae3fc95686bbf1c29a59f6f3ee7",
   "bank/sensory_physio.json": "ef86da21482e5ce0aa6a2bf8c9996532a2fb8ac99cc240c8ad6377d935592ba9",
   "bank/sequence_alignment.json": "68fd4689e663b72c12285dd3922394767332b83a9f7cb6f8ef90c5f2bc59e8ca",
   "bank/sequencing_tech.json": "50b6ab3659b30b71c034127bb6380eaf9eedad8342189f52865886d0d2ade5ab",
@@ -160,7 +160,7 @@
   "index/transcriptomics.json": "7e74639b006caa396045dbc0db4bc63b21d6301decaa82e348a9db54dcd9a090",
   "index/translation.json": "b6377eeb7c55a6e61e01e277eb6e060782bcf102ebb633af7f96462a0aa09df0",
   "index/virus.json": "e31ccb30a98fb19651fd54b26426cdfd80ab4f9e74f796d9af44476a200e6432",
-  "questions/id-all.json": "7fd5794d2ff8e1c56901d9dad24fca311b63cfb10428d4447ce498641d8199b4"
+  "questions/id-all.json": "26b951612e2c4cfdfd58ffdceec1b248aa5e0248b31736a8e0541546b0383ecb"
  },
  "git": "6cc58414842bd7ad34d342024ffb1540580243db",
  "modules": {
@@ -254,7 +254,7 @@
   ]
  },
  "repo": "astrnox/TATAbox",
- "rev": 22,
+ "rev": 25,
  "sources": [
   {
    "count": 1,
@@ -601,7 +601,7 @@
   },
   {
    "category": "细胞生物学",
-   "count": 1,
+   "count": 3,
    "id": "cell_cycle",
    "label": "细胞周期与有丝分裂",
    "relatedModule": "module1"
@@ -657,7 +657,7 @@
   },
   {
    "category": "分子生物学",
-   "count": 2,
+   "count": 4,
    "id": "gene_regulation",
    "label": "基因表达调控",
    "relatedModule": "module1"
@@ -671,7 +671,7 @@
   },
   {
    "category": "分子生物学",
-   "count": 3,
+   "count": 4,
    "id": "rna_biology",
    "label": "RNA生物学",
    "relatedModule": "module1"
@@ -699,14 +699,14 @@
   },
   {
    "category": "生物化学",
-   "count": 1,
+   "count": 2,
    "id": "krebs_cycle",
    "label": "三羧酸循环",
    "relatedModule": "module1"
   },
   {
    "category": "生物化学",
-   "count": 1,
+   "count": 2,
    "id": "oxidative_phos",
    "label": "氧化磷酸化",
    "relatedModule": "module1"
@@ -874,7 +874,7 @@
   },
   {
    "category": "动物生理学",
-   "count": 2,
+   "count": 3,
    "id": "immune_system",
    "label": "免疫系统",
    "relatedModule": "module3"
@@ -1049,7 +1049,7 @@
   },
   {
    "category": "演化生物学",
-   "count": 2,
+   "count": 4,
    "id": "molecular_evo",
    "label": "分子演化",
    "relatedModule": "module4"
@@ -1140,5 +1140,5 @@
   }
  ],
  "total_questions": 101,
- "updated_at": "2026-09-17T15:12:29.000Z"
+ "updated_at": "2026-10-19"
 }

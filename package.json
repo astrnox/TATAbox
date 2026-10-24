@@ -1,6 +1,6 @@
 {
   "name": "bioquest",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "面向生物竞赛（联赛）备考的全栈学习平台，集知识卡片、模拟试题、学习分析、社区讨论于一体。",
   "scripts": {
     "test": "npm run test:anchor && npm run audit:design && npm run test:unit && npm run test:smoke",

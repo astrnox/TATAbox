@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-2dc145873196'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-9da0aabae2c1'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -108,7 +108,9 @@ var WARMUP_PHASE_1 = [
   './js/engagement/eggs.js',
   // 全站统一题图：渲染入口 + 查看器样式（Viewer.js 本体按需懒加载）
   './js/core/figure-viewer.js',
-  './css/figure-viewer.css'
+  './css/figure-viewer.css',
+  // 打印工具（错题/练习/组卷 A4 打印，体积极小，预热保证按钮即点即用）
+  './js/core/print-utils.js'
 ];
 
 // 预热阶段 2：重型功能（quiz/exam/practice 等运行时库 + 数据）

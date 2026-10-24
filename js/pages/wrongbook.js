@@ -3,9 +3,102 @@
   'use strict';
 
   var _currentList = [];
+  var _currentFiltered = [];   // 应用筛选后的列表（打印全部/勾选定位用）
   var _currentDetail = null;
   var _filter = { concept: '', errorReason: '' };
+  var _sortMode = 'recent';    // 'recent' | 'due'（FSRS 到期优先）| 'wrong'
+  var _fsrsCloud = {};         // 云端 review_cards 状态 { question_id: {...} }
+  var _fsrsLocal = {};         // 本地 FSRS 卡（bioquest_fsrs_cards）
+  var _dueTodayCount = 0;      // 今日到期（含逾期）错题数
+  var _fsrsLocalRaw = null;    // 本地 FSRS 卡原始串（缓存失效校验，避免每次渲染全量 parse）
   var _wbFocusTrap = null;
+
+  /* ============== FSRS 间隔重复（错题本展示层） ==============
+   * 状态来源：云端 review_cards（登录，经 sb-data.getReviewCardStates 批量拉取）
+   *           ∪ 本地 bioquest_fsrs_cards（record-session 答错/答对镜像写入）。
+   * 调度本身由 ts-fsrs（vendor，MIT）计算，本文件只负责读取与展示。 */
+
+  function _fsrsStateFor(item) {
+    var key = String(item.qId || item.question_id || item.id || '');
+    if (!key) return null;
+    var cloud = _fsrsCloud[key];
+    if (cloud) return cloud;
+    var local = _fsrsLocal[key];
+    if (local && (local.repetitions || 0) > 0) return local;
+    return null;
+  }
+
+  function _fsrsDueInfo(item) {
+    var st = _fsrsStateFor(item);
+    if (!st) return null;
+    var dueRaw = st.due_date || st.dueDate;
+    if (!dueRaw) return null;
+    var reps = st.repetitions || st.reps || 0;
+    // 本地新卡（未复习过）不算到期；云端卡在建卡时已排期（reps>=1）
+    if (!st.due_date && reps <= 0) return null;
+    var due = new Date(dueRaw);
+    if (isNaN(due.getTime())) return null;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var dueDay = new Date(due); dueDay.setHours(0, 0, 0, 0);
+    var days = Math.round((dueDay.getTime() - today.getTime()) / 86400000);
+    var label, level;
+    if (days < 0) { label = '逾期 ' + (-days) + ' 天'; level = 'overdue'; }
+    else if (days <= 1) { label = days === 0 ? '今天到期' : '明天到期'; level = 'today'; }
+    else { label = days + ' 天后到期'; level = ''; }
+    return {
+      due: due.getTime(), days: days, label: label, level: level,
+      lapses: st.lapses || 0, stability: st.stability || 0
+    };
+  }
+
+  function _fsrsBadgeHtml(item) {
+    var info = _fsrsDueInfo(item);
+    if (!info) return '';
+    var extra = '';
+    if (info.lapses > 0) extra += ' · 遗忘×' + info.lapses;
+    if (info.stability >= 1) extra += ' · 强度' + (Math.round(info.stability * 10) / 10) + 'd';
+    var tip = 'FSRS 间隔重复调度（ts-fsrs）：下次复习 ' +
+      _formatDate(new Date(info.due).toISOString()) +
+      (info.stability >= 1 ? ' | 记忆强度 ' + (Math.round(info.stability * 10) / 10) + ' 天' : '') +
+      (info.lapses > 0 ? ' | 遗忘 ' + info.lapses + ' 次' : '');
+    var esc = (typeof escapeHtml === 'function') ? escapeHtml : function (s) { return String(s); };
+    var cls = 'wb-tag wb-tag--fsrs' + (info.level ? ' wb-tag--fsrs-' + info.level : '');
+    return '<span class="' + cls + '" title="' + esc(tip) + '">FSRS · ' + info.label + extra + '</span>';
+  }
+
+  /** 加载 FSRS 状态（本地 + 云端批量）并统计今日到期数，返回 Promise */
+  function _loadFsrsStates(list) {
+    _fsrsCloud = {};
+    _fsrsLocal = {};
+    _dueTodayCount = 0;
+    var ids = [];
+    (list || []).forEach(function (item) {
+      var id = item.qId || item.question_id || item.id;
+      if (id) ids.push(String(id));
+    });
+    try {
+      var raw = localStorage.getItem('bioquest_fsrs_cards');
+      if (raw) {
+        if (raw !== _fsrsLocalRaw || !_fsrsLocal) {
+          var map = JSON.parse(raw);
+          if (map && typeof map === 'object') {
+            _fsrsLocal = map;
+            _fsrsLocalRaw = raw;
+          }
+        }
+      }
+    } catch (e) { /* ignore */ }
+    var cloudP = (ids.length && typeof window.getReviewCardStates === 'function')
+      ? Promise.resolve(window.getReviewCardStates(ids)).catch(function () { return {}; })
+      : Promise.resolve({});
+    return cloudP.then(function (cloud) {
+      if (cloud && typeof cloud === 'object') _fsrsCloud = cloud;
+      (list || []).forEach(function (item) {
+        var info = _fsrsDueInfo(item);
+        if (info && info.days <= 0) _dueTodayCount++;
+      });
+    });
+  }
 
   function _releaseWbModal() {
     if (_wbFocusTrap) { _wbFocusTrap.release(); _wbFocusTrap = null; }
@@ -41,8 +134,18 @@
       .wb-related-list { margin-top: 16px; }
       .wb-related-item { padding: 12px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 8px; cursor: pointer; }
       .wb-related-item:hover { background: #f9fafb; }
-      .wb-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+      .wb-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
       .wb-toolbar select, .wb-toolbar input { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; }
+      /* 打印功能：卡片勾选框 + 打印工具条（A4 打印走 window.PrintUtils） */
+      .wb-sel { display: inline-flex; align-items: center; justify-content: center; margin-right: 10px; cursor: pointer; flex-shrink: 0; }
+      .wb-sel input { width: 16px; height: 16px; accent-color: var(--color-sage, #5a7d5c); cursor: pointer; }
+      .wb-print-count { display: inline-block; min-width: 22px; padding: 1px 6px; border-radius: 10px; background: rgba(255,255,255,0.28); font-size: 0.78rem; }
+      .wb-toolbar .wb-btn--print { background: var(--color-deep, #1a3a2a); }
+      /* FSRS 间隔重复徽标（到期状态按天数分档着色） */
+      .wb-tag--due { background: rgba(217,119,6,0.13); color: #d97706; font-weight: 600; }
+      .wb-tag--fsrs { background: rgba(58,140,92,0.12); color: #3a8c5c; font-weight: 600; }
+      .wb-tag--fsrs-overdue { background: rgba(192,85,58,0.12); color: #c0553a; }
+      .wb-tag--fsrs-today { background: rgba(217,119,6,0.13); color: #d97706; }
       @media (max-width: 640px) {
         .wb-card-header { flex-direction: column; }
         .wb-actions { flex-wrap: wrap; }
@@ -60,6 +163,12 @@
   function _truncate(s, n) {
     s = s || '';
     return s.length > n ? s.substring(0, n) + '...' : s;
+  }
+
+  /** 统一转义：错题字段来自云端/用户输入，拼进 innerHTML 前必须转义 */
+  function _esc(s) {
+    s = (s === undefined || s === null) ? '' : String(s);
+    return (typeof escapeHtml === 'function') ? escapeHtml(s) : s;
   }
 
   async function _loadList() {
@@ -84,6 +193,19 @@
       return true;
     });
 
+    // 排序（FSRS 到期优先：逾期最久在前、无卡在后；错误次数：错得多在前）
+    if (_sortMode === 'due') {
+      items.sort(function(a, b) {
+        var ia = _fsrsDueInfo(a), ib = _fsrsDueInfo(b);
+        var da = ia ? ia.due : Infinity, db = ib ? ib.due : Infinity;
+        if (da !== db) return da - db;
+        return (b.timestamp || 0) - (a.timestamp || 0);
+      });
+    } else if (_sortMode === 'wrong') {
+      items.sort(function(a, b) { return (b.wrongCount || 0) - (a.wrongCount || 0); });
+    }
+    _currentFiltered = items;
+
     if (items.length === 0) {
       // Issue #125：统一「温暖空状态」组件（加载失败时回退原有提示）
       if (window.BioQuest && typeof window.BioQuest.renderEmptyState === 'function') {
@@ -95,28 +217,34 @@
       } else {
         container.innerHTML = '<div class="wb-empty">暂无错题记录。练习时答错的题目会自动收录，也可以点击右上角添加。</div>';
       }
+      _updatePrintCount();
       return;
     }
 
     var html = items.map(function(q) {
-      return '<div class="wb-card" data-id="' + q.id + '">' +
+      var qid = _esc(q.id);
+      return '<div class="wb-card" data-id="' + qid + '">' +
         '<div class="wb-card-header">' +
           '<div>' +
-            '<p class="wb-title">' + _truncate(q.question_text, 120) + '</p>' +
-            '<div class="wb-meta">' + (q.subject || '未分类') + ' · ' + (q.concept || '未定位概念') + ' · ' + _formatDate(q.created_at) + '</div>' +
+            '<p class="wb-title">' + _esc(_truncate(q.question_text, 120)) + '</p>' +
+            '<div class="wb-meta">' + _esc(q.subject || '未分类') + ' · ' + _esc(q.concept || '未定位概念') + ' · ' + _esc(_formatDate(q.created_at)) + '</div>' +
           '</div>' +
+          '<label class="wb-sel" title="勾选后可批量打印">' +
+            '<input type="checkbox" class="wb-select-cb" data-id="' + qid + '" checked aria-label="选择该题用于打印">' +
+          '</label>' +
         '</div>' +
         '<div class="wb-tags">' +
-          (q.error_reason ? '<span class="wb-tag wb-tag--reason">' + q.error_reason + '</span>' : '') +
-          (q.textbook_chapter ? '<span class="wb-tag">' + q.textbook_chapter + '</span>' : '') +
-          (q.difficulty ? '<span class="wb-tag">' + q.difficulty + '</span>' : '') +
+          (q.error_reason ? '<span class="wb-tag wb-tag--reason">' + _esc(q.error_reason) + '</span>' : '') +
+          _fsrsBadgeHtml(q) +
+          (q.textbook_chapter ? '<span class="wb-tag">' + _esc(q.textbook_chapter) + '</span>' : '') +
+          (q.difficulty ? '<span class="wb-tag">' + _esc(q.difficulty) + '</span>' : '') +
         '</div>' +
         '<div class="wb-actions">' +
-          '<button class="wb-btn wb-detail-btn" data-id="' + q.id + '">查看/编辑</button>' +
-          '<button class="wb-btn wb-analyze-btn" data-id="' + q.id + '">AI 分析</button>' +
-          '<button class="wb-btn wb-kg-btn" data-concept="' + (q.concept || q.subject || '') + '">知识图谱</button>' +
-          '<button class="wb-btn wb-card-btn" data-concept="' + (q.concept || q.subject || '') + '">生成卡片</button>' +
-          '<button class="wb-btn wb-btn--danger wb-delete-btn" data-id="' + q.id + '">删除</button>' +
+          '<button class="wb-btn wb-detail-btn" data-id="' + qid + '">查看/编辑</button>' +
+          '<button class="wb-btn wb-analyze-btn" data-id="' + qid + '">AI 分析</button>' +
+          '<button class="wb-btn wb-kg-btn" data-concept="' + _esc(q.concept || q.subject || '') + '">知识图谱</button>' +
+          '<button class="wb-btn wb-card-btn" data-concept="' + _esc(q.concept || q.subject || '') + '">生成卡片</button>' +
+          '<button class="wb-btn wb-btn--danger wb-delete-btn" data-id="' + qid + '">删除</button>' +
         '</div>' +
       '</div>';
     }).join('');
@@ -147,6 +275,11 @@
         if (typeof navigateTo === 'function') navigateTo('/cards');
       });
     });
+    // 打印：勾选框变化 → 同步「打印所选」计数
+    container.querySelectorAll('.wb-select-cb').forEach(function(box) {
+      box.addEventListener('change', function() { _updatePrintCount(); });
+    });
+    _updatePrintCount();
   }
 
   function _renderToolbar(container) {
@@ -158,16 +291,31 @@
     });
 
     var conceptOpts = '<option value="">全部概念</option>' +
-      Object.keys(concepts).sort().map(function(c) { return '<option value="' + c + '" ' + (_filter.concept === c ? 'selected' : '') + '>' + c + '</option>'; }).join('');
+      Object.keys(concepts).sort().map(function(c) { return '<option value="' + _esc(c) + '" ' + (_filter.concept === c ? 'selected' : '') + '>' + _esc(c) + '</option>'; }).join('');
     var reasonOpts = '<option value="">全部错误原因</option>' +
-      Object.keys(reasons).sort().map(function(r) { return '<option value="' + r + '" ' + (_filter.errorReason === r ? 'selected' : '') + '>' + r + '</option>'; }).join('');
+      Object.keys(reasons).sort().map(function(r) { return '<option value="' + _esc(r) + '" ' + (_filter.errorReason === r ? 'selected' : '') + '>' + _esc(r) + '</option>'; }).join('');
 
     container.innerHTML = '<div class="wb-toolbar">' +
       '<select id="wb-filter-concept">' + conceptOpts + '</select>' +
       '<select id="wb-filter-reason">' + reasonOpts + '</select>' +
+      '<select id="wb-sort" aria-label="排序方式">' +
+        '<option value="recent">排序：最近错误</option>' +
+        '<option value="due">排序：FSRS 到期优先</option>' +
+        '<option value="wrong">排序：错误次数</option>' +
+      '</select>' +
+      '<span class="wb-tag wb-tag--due" id="wb-due-badge" title="按 FSRS 间隔重复算法统计的今日到期（含逾期）错题">' +
+        '今日到期 ' + _dueTodayCount + ' 题</span>' +
+      '<button class="wb-btn" id="wb-review-btn" title="按 FSRS 到期推送的每日错题复习（今日复习页）">今日复习（FSRS）</button>' +
       '<button class="wb-btn" id="wb-add-btn">+ 添加错题</button>' +
       '<button class="wb-btn" id="wb-ocr-btn">拍照/OCR</button>' +
       '<input type="file" id="wb-ocr-input" accept="image/*" capture="environment" style="display:none;">' +
+      '<select id="wb-print-mode" aria-label="打印内容范围">' +
+        '<option value="all">打印内容：题目+答案解析</option>' +
+        '<option value="questions">打印内容：仅题目</option>' +
+        '<option value="answers">打印内容：仅答案解析</option>' +
+      '</select>' +
+      '<button class="wb-btn wb-btn--print" id="wb-print-selected">打印所选 <span class="wb-print-count" id="wb-print-count">0</span></button>' +
+      '<button class="wb-btn wb-btn--secondary" id="wb-print-all">打印全部</button>' +
     '</div>';
 
     document.getElementById('wb-filter-concept').addEventListener('change', function(e) {
@@ -177,6 +325,16 @@
     document.getElementById('wb-filter-reason').addEventListener('change', function(e) {
       _filter.errorReason = e.target.value;
       _renderList(document.getElementById('wb-list'));
+    });
+    var sortSel = document.getElementById('wb-sort');
+    sortSel.value = _sortMode;
+    sortSel.addEventListener('change', function(e) {
+      _sortMode = e.target.value;
+      _renderList(document.getElementById('wb-list'));
+    });
+    document.getElementById('wb-review-btn').addEventListener('click', function() {
+      if (typeof navigateTo === 'function') navigateTo('/review');
+      else window.location.hash = '#/review';
     });
     document.getElementById('wb-add-btn').addEventListener('click', function() { _openAddModal(); });
     document.getElementById('wb-ocr-btn').addEventListener('click', function() {
@@ -192,6 +350,68 @@
       if (!file) return;
       _ocrRecognize(file);
       e.target.value = '';
+    });
+    document.getElementById('wb-print-selected').addEventListener('click', function() {
+      var picked = _collectChecked();
+      if (picked.length === 0) {
+        if (typeof showToast === 'function') showToast('请先勾选要打印的错题');
+        return;
+      }
+      _printRecords(picked, _printMode());
+    });
+    document.getElementById('wb-print-all').addEventListener('click', function() {
+      if (_currentFiltered.length === 0) {
+        if (typeof showToast === 'function') showToast('当前没有可打印的错题');
+        return;
+      }
+      _printRecords(_currentFiltered, _printMode());
+    });
+    _updatePrintCount();
+  }
+
+  /* ============== 打印（错题本） ============== */
+  // 取当前勾选的错题记录（保持列表顺序）
+  function _collectChecked() {
+    // 先建 id → 记录索引，避免每次勾选 O(n×m) 线性查找
+    var index = new Map();
+    _currentFiltered.forEach(function (rec) {
+      var key = String(rec.id);
+      if (!index.has(key)) index.set(key, rec);
+    });
+    var picked = [];
+    document.querySelectorAll('#wb-list .wb-select-cb').forEach(function(box) {
+      if (!box.checked) return;
+      var rec = index.get(box.getAttribute('data-id'));
+      if (rec) picked.push(rec);
+    });
+    return picked;
+  }
+
+  function _updatePrintCount() {
+    var el = document.getElementById('wb-print-count');
+    if (el) el.textContent = String(_collectChecked().length);
+  }
+
+  // 当前打印内容范围：all（题目+答案解析）/ questions（仅题目）/ answers（仅答案解析）
+  function _printMode() {
+    var sel = document.getElementById('wb-print-mode');
+    var v = sel ? sel.value : 'all';
+    return (v === 'questions' || v === 'answers') ? v : 'all';
+  }
+
+  function _printRecords(records, mode) {
+    if (!window.PrintUtils || typeof window.PrintUtils.printWrongRecords !== 'function') {
+      if (typeof showToast === 'function') showToast('打印模块未加载，请刷新后重试');
+      return;
+    }
+    var m = mode || 'all';
+    var scopeText = m === 'questions' ? '仅含题目与选项'
+      : m === 'answers' ? '仅含正确答案与解析' : '题干、选项、答案、解析齐全';
+    window.PrintUtils.printWrongRecords(records, {
+      mode: m,
+      title: 'TATABOX 错题打印',
+      metaText: '共 ' + records.length + ' 道错题 · ' + scopeText +
+        ' · 每页页脚含 ' + window.PrintUtils.FOOTER_MARK
     });
   }
 
@@ -875,6 +1095,7 @@
       '<div id="wb-list"><div class="wb-empty">加载中...</div></div>' +
     '</div>';
     _currentList = await _loadList();
+    await _loadFsrsStates(_currentList);
     _renderToolbar(document.getElementById('wb-toolbar'));
     _renderList(document.getElementById('wb-list'));
   }

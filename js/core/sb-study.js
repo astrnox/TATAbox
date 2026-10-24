@@ -529,12 +529,15 @@ async function getStudentByKey(userKey) {
   if (!sb) return null;
   try {
     var key = userKey.toUpperCase();
-    var { data, error } = await sb.from('profiles')
-      .select('id, username, display_name, bio_score, practice_count, total_answered, total_correct, accuracy, current_streak, updated_at')
-      .eq('user_key', key)
-      .limit(1);
-    if (error || !data || data.length === 0) return null;
-    var p = data[0];
+    // 走 SECURITY DEFINER RPC：profiles 表已收紧为“仅本人可读”，公开查询统一走
+    // get_student_by_key（user_key 即能力凭证，函数只回公开字段）
+    var { data, error } = await sb.rpc('get_student_by_key', { p_user_key: key });
+    if (error) {
+      _warnMissingDependency('RPC get_student_by_key', error,
+        '请先执行 sql/migration_v3_security.sql');
+    }
+    var p = Array.isArray(data) ? data[0] : data;
+    if (error || !p) return null;
     return {
       id: p.id,
       username: p.username,
@@ -563,11 +566,13 @@ async function getStudentDetailByKey(userKey) {
   var sb = getSupabase();
   if (!sb) return null;
   try {
-    // 1. 通过 user_key 查 profiles（任何用户都可查 user_key 对应的公开资料）
-    var { data: profile, error: pErr } = await sb.from('profiles')
-      .select('id, username, display_name, bio_score, practice_count, total_answered, total_correct, accuracy, current_streak, updated_at')
-      .eq('user_key', userKey.toUpperCase())
-      .maybeSingle();
+    // 1. 通过 user_key 查公开资料（profiles 已收紧，改走 SECURITY DEFINER RPC）
+    var { data: row, error: pErr } = await sb.rpc('get_student_by_key', { p_user_key: userKey.toUpperCase() });
+    if (pErr) {
+      _warnMissingDependency('RPC get_student_by_key', pErr,
+        '请先执行 sql/migration_v3_security.sql');
+    }
+    var profile = Array.isArray(row) ? row[0] : row;
     if (pErr || !profile) return null;
 
     // 2. 拉取该学生最近 50 条练习记录（RLS 限制：只有本人能查，这里通过 RPC 或公开视图绕过）

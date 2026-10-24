@@ -198,7 +198,7 @@
       }
       localStorage.setItem('bioquest_question_feedbacks', JSON.stringify(all));
 
-      // 同步到云端（如果有登录）
+      // 同步到云端（如果有登录）；失败时保留本地并告警（管理面板「反馈管理 → 题目反馈」读取）
       if (typeof window.isLoggedIn === 'function' && window.isLoggedIn()) {
         try {
           var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
@@ -209,9 +209,15 @@
               issue_type: issueType,
               description: description || '',
               user_id: window.getCurrentUser() ? window.getCurrentUser().id : null
-            }).then(function() {}).catch(function() {});
+            }).then(function (res) {
+              if (res && res.error) {
+                console.warn('[question-feedback] 云端同步失败（本地已保存）:', res.error.message || res.error);
+              }
+            }).catch(function (e) {
+              console.warn('[question-feedback] 云端同步异常（本地已保存）:', e);
+            });
           }
-        } catch (e) { /* 静默 */ }
+        } catch (e) { console.warn('[question-feedback] 云端同步异常（本地已保存）:', e); }
       }
 
       return { ok: true, remaining: getRemainingFeedbacks(), feedback: feedback };

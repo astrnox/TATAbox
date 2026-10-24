@@ -2729,77 +2729,11 @@ function formatNotifTime(iso) {
 }
 window._updateNotifBadge = _updateNotifBadge;
 
-/* ============== 管理员入口（Supabase Auth 认证） ============== */
+/* ============== 管理员入口（只在 #/admin 页内用 TOTP 动态码验证） ============== */
 function _userAdminEntry() {
-  // 已登录的管理员（user_group === 'admin'）直接进入
-  try {
-    var cur = window.getCurrentUser ? window.getCurrentUser() : null;
-    if (cur && cur.user_group === 'admin') {
-      navigateTo('/admin');
-      return;
-    }
-  } catch (e) {}
-  // 已认证的本地会话（sessionStorage）且当前用户为管理员时直接进入
-  if (sessionStorage.getItem('bioquest_admin_auth') && cur && cur.user_group === 'admin') {
-    navigateTo('/admin');
-    return;
-  }
-  var overlay = document.createElement('div');
-  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:10030;display:flex;align-items:center;justify-content:center;padding:20px;';
-  overlay.innerHTML =
-    '<div style="background:var(--surface-primary,#fff);border-radius:12px;padding:24px;width:min(380px,92vw);box-shadow:var(--shadow-floating);">' +
-      '<div style="font-family:var(--font-serif,"Noto Serif SC",serif);font-size:1.1rem;font-weight:700;color:var(--color-deep,#1a3a2a);margin-bottom:6px;">管理员登录</div>' +
-      '<div style="font-size:0.82rem;color:var(--text-muted,#8a8a8a);margin-bottom:14px;">使用 Supabase 管理员账号（邮箱 + 密码）登录后台</div>' +
-      '<input type="email" id="user-admin-email" style="width:100%;box-sizing:border-box;padding:10px 14px;border:1px solid var(--border-light,#e3e0d8);border-radius:8px;font-size:0.92rem;outline:none;background:var(--surface-primary,#fff);color:var(--text-primary,#1a2f1d);margin-bottom:10px;" placeholder="管理员邮箱" autocomplete="username">' +
-      '<input type="password" id="user-admin-pwd" style="width:100%;box-sizing:border-box;padding:10px 14px;border:1px solid var(--border-light,#e3e0d8);border-radius:8px;font-size:0.92rem;outline:none;background:var(--surface-primary,#fff);color:var(--text-primary,#1a2f1d);" placeholder="密码" autocomplete="current-password">' +
-      '<div id="user-admin-err" style="font-size:0.78rem;color:var(--color-error,#c0553a);margin-top:6px;display:none;">登录失败：请检查邮箱/密码，或该账号无管理员权限</div>' +
-      '<div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px;">' +
-        '<button class="teacher-btn teacher-btn-ghost teacher-btn-sm" id="user-admin-cancel">取消</button>' +
-        '<button class="teacher-btn teacher-btn-primary teacher-btn-sm" id="user-admin-ok">登录并进入</button>' +
-      '</div>' +
-    '</div>';
-  document.body.appendChild(overlay);
-  var emailInput = overlay.querySelector('#user-admin-email');
-  var pwdInput = overlay.querySelector('#user-admin-pwd');
-  var errEl = overlay.querySelector('#user-admin-err');
-  setTimeout(function() { emailInput.focus(); }, 30);
-
-  function close() { overlay.remove(); }
-  overlay.querySelector('#user-admin-cancel').addEventListener('click', close);
-  overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
-
-  async function verify() {
-    var email = emailInput.value.trim();
-    var pwd = pwdInput.value;
-    if (!email || !pwd) return;
-    try {
-      // P0-2 修复：管理员认证统一走 Supabase Auth，不再使用客户端 SHA-256 比对
-      var ok = (typeof window.adminLogin === 'function')
-        ? await window.adminLogin(email, pwd)
-        : false;
-      if (ok) {
-        close();
-        navigateTo('/admin');
-      } else {
-        errEl.style.display = 'block';
-        pwdInput.value = '';
-        pwdInput.focus();
-      }
-    } catch (e2) {
-      errEl.style.display = 'block';
-      pwdInput.value = '';
-      pwdInput.focus();
-    }
-  }
-  overlay.querySelector('#user-admin-ok').addEventListener('click', verify);
-  pwdInput.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); verify(); }
-    if (e.key === 'Escape') { close(); }
-  });
-  emailInput.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); verify(); }
-    if (e.key === 'Escape') { close(); }
-  });
+  // 管理员入口不提供账号密码登录弹窗：统一跳转 #/admin，由页内「TOTP 动态码」
+  // （服务端 RPC admin_login_with_totp）完成验证；账号本身为 admin 也不再自动放行。
+  navigateTo('/admin');
 }
 window._userAdminEntry = _userAdminEntry;
 

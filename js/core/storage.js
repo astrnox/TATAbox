@@ -945,6 +945,15 @@ window.applyQuestionOverride = applyQuestionOverride;
 
 function addWrongQuestion(qId, module, questionText, fullQuestion) {
   if (!qId) return false;
+  // 兼容对象入参（quiz.js 等调用 addWrongQuestion(question)：完整题目对象）
+  if (typeof qId === 'object') {
+    var obj = qId;
+    fullQuestion = fullQuestion || obj;
+    questionText = questionText || obj.question_text || obj.question || '';
+    module = module || obj.module || obj.subject || 'general';
+    qId = obj.question_id || obj.bioId || obj.id || obj.qId || '';
+  }
+  if (!qId) return false;
   qId = (window.resolveQuestionBioId || resolveQuestionBioId)(qId);
   module = module || 'general';
   questionText = questionText || '';
@@ -959,14 +968,30 @@ function addWrongQuestion(qId, module, questionText, fullQuestion) {
   }
 
   if (existing) {
+    var origTs = existing.timestamp || Date.now();
     existing.wrongCount = (existing.wrongCount || 1) + 1;
     existing.timestamp = Date.now();
+    // 触碰时补齐早期条目缺失的展示字段（错题本列表/FSRS 徽标依赖）
+    if (!existing.id) existing.id = qId;
+    if (!existing.question_text && questionText) {
+      existing.question_text = questionText;
+      existing.questionText = questionText;
+    }
+    if (!existing.subject) existing.subject = (fullQuestion && fullQuestion.subject) || module;
+    if (!existing.concept && fullQuestion && fullQuestion.concept) existing.concept = fullQuestion.concept;
+    if (!existing.created_at) existing.created_at = new Date(origTs).toISOString();
   } else {
+    var ts = Date.now();
     wrongQuestions.push({
+      id: qId,
       qId: qId,
       module: module,
       questionText: questionText,
-      timestamp: Date.now(),
+      question_text: questionText,
+      subject: (fullQuestion && fullQuestion.subject) || module,
+      concept: (fullQuestion && fullQuestion.concept) || '',
+      created_at: new Date(ts).toISOString(),
+      timestamp: ts,
       wrongCount: 1,
       fullQuestion: typeof fullQuestion === 'object' ? fullQuestion : null
     });
@@ -989,6 +1014,27 @@ function getWrongQuestions(options) {
   if (!Array.isArray(wrongQuestions)) {
     wrongQuestions = [];
   }
+
+  // 读取归一化：历史上多条写入路径字段不一（quiz 对象入参 / 早期 {qId,questionText}），
+  // 统一补齐错题本列表渲染与 FSRS 徽标联接所需的规范字段
+  wrongQuestions = wrongQuestions.map(function (item) {
+    if (!item || typeof item !== 'object') return item;
+    var fq = (item.fullQuestion && typeof item.fullQuestion === 'object') ? item.fullQuestion : {};
+    var text = item.question_text || item.questionText || fq.question || '';
+    var ts = item.timestamp || (item.created_at ? Date.parse(item.created_at) : 0) || 0;
+    var norm = Object.assign({}, item);
+    norm.id = item.id || item.qId || '';
+    norm.qId = item.qId || item.id || '';
+    norm.question_id = item.question_id || norm.qId;
+    norm.question_text = text;
+    norm.questionText = item.questionText || text;
+    norm.subject = item.subject || fq.subject || item.module || '';
+    norm.concept = item.concept || fq.concept || '';
+    norm.created_at = item.created_at || (ts ? new Date(ts).toISOString() : '');
+    norm.timestamp = ts;
+    norm.module = item.module || norm.subject || 'general';
+    return norm;
+  });
 
   wrongQuestions.sort(function (a, b) { return (b.timestamp || 0) - (a.timestamp || 0); });
 

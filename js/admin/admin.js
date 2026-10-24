@@ -147,24 +147,18 @@ if (document.readyState === 'loading') {
 var escapeHtml = (typeof window !== 'undefined' ? window : globalThis).escapeHtml; // 规范实现见 js/core/utils.js（Q-01 统一）
 
 // 修复：当 Supabase auth 状态变化时，admin 模块同步更新认证状态
+// 管理员入口只认「TOTP 动态码」验证（adminVerifyTotp 写入的会话 token）；
+// 账号本身 user_group=admin 不再自动解锁——杜绝「管理员账号密码直入」，
+// 仅用于校正状态：非 admin 账号或登出时清除可能残留的解锁状态。
 window._onAuthUserLoaded = function(user) {
-  if (user && user.user_group === 'admin') {
-    if (!_adminAuthenticated) {
-      _adminAuthenticated = true;
-      // 安全：Supabase 管理员身份仅解锁前端 UI，绝不作为服务端管理凭证
-      // （服务端无法验证 Supabase JWT，否则任何人伪造 X-Admin-Key: supabase_admin 即可提权）。
-      var token = JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL });
-      sessionStorage.setItem('bioquest_admin_auth', token);
-
-    }
-  } else if (user) {
+  if (user && user.user_group !== 'admin') {
     // 普通用户登录时，清除可能残留的 admin 认证（user_group 非 admin 一律视为无权限）
     if (_adminAuthenticated) {
       _adminAuthenticated = false;
       sessionStorage.removeItem('bioquest_admin_auth');
 
     }
-  } else {
+  } else if (!user) {
     // 用户登出时
     _adminAuthenticated = false;
     sessionStorage.removeItem('bioquest_admin_auth');
@@ -1028,13 +1022,15 @@ function injectAdminStyles() {
 }
 
 /* ===== API 调用 ===== */
-// 管理员认证有两条路径，均由服务端把关：
-//   1. 管理员密钥：RPC admin_login_with_key（sql/migration_v11_admin_auth.sql）
-//      在服务端比对 SHA-256 摘要，通过后把「当前登录账号」升级为 user_group='admin'；
-//      纯前端伪造状态无法提权（密钥摘要不下发、不在前端比对）。
-//   2. 管理员账号：Supabase Auth 邮箱 + 密码登录，要求账号 user_group='admin'。
+// 管理员认证只有一条路径（管理员入口仅接受 TOTP 动态验证码）：
+//   动态码：RPC admin_login_with_totp（sql/migration_v15_admin_totp.sql）
+//   服务端校验 6 位动态码（±1 时间窗 + 防重放 + 5 次失败锁 15 分钟），
+//   通过后把「当前登录账号」升级为 user_group='admin'；
+//   种子只存于 admin_config（客户端 REVOKE ALL 读不到）、不进公开仓库，
+//   纯前端伪造状态无法提权。
+//   旧静态口令（admin_login_with_key）已 REVOKE；账号密码登录同样不提供。
 // 数据读写权限始终由 sql/ 中的 RLS 策略在服务端强制。
-// 详见 sql/migration_v11_admin_auth.sql。
+// 详见 sql/migration_v15_admin_totp.sql。
 
 /**
  * 判断是否为「服务端未部署同名 RPC」错误（PostgREST: Could not find the function ... / does not exist）
@@ -1046,26 +1042,28 @@ function _isMissingRpcError(msg) {
 }
 
 /**
- * 管理员密钥验证（服务端校验）
- * @param {string} key 管理员密钥
+ * 管理员动态码验证（TOTP，服务端校验 + 防重放）
+ * @param {string} code 身份验证器 App 的 6 位动态验证码
  * @returns {Promise<{ok: boolean, error?: string}>}
  */
-async function adminVerifyKey(key) {
-  if (!key || !String(key).trim()) return { ok: false, error: '请输入管理员密钥' };
+async function adminVerifyTotp(code) {
+  var normalized = String(code || '').replace(/\s+/g, '');
+  if (!normalized) return { ok: false, error: '请输入 6 位动态验证码' };
+  if (!/^\d{6}$/.test(normalized)) return { ok: false, error: '动态验证码为 6 位数字' };
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
   if (!sb) return { ok: false, error: '系统未初始化，请刷新页面后重试' };
   try {
-    var res = await sb.rpc('admin_login_with_key', { p_key: String(key).trim() });
+    var res = await sb.rpc('admin_login_with_totp', { p_code: normalized });
     if (res && res.error) {
       var msg = res.error.message || '验证失败';
       if (_isMissingRpcError(msg)) {
-        msg = '服务端尚未部署管理员密钥功能，请先在 Supabase 执行 sql/migration_v11_admin_auth.sql';
+        msg = '服务端尚未部署动态码登录，请先在 Supabase SQL Editor 执行 sql/migration_v15_admin_totp.sql';
       }
       return { ok: false, error: msg };
     }
     var row = Array.isArray(res && res.data) ? res.data[0] : (res && res.data);
     if (!row || !row.ok) {
-      return { ok: false, error: (row && row.error_msg) || '管理员密钥不正确' };
+      return { ok: false, error: (row && row.error_msg) || '动态验证码不正确' };
     }
     // 授权成功：服务端 profiles.user_group 已升级为 admin，这里同步内存用户并解锁管理 UI
     var user = (typeof window.getCurrentUser === 'function') ? window.getCurrentUser() : null;
@@ -1077,30 +1075,11 @@ async function adminVerifyKey(key) {
     return { ok: false, error: '验证异常：' + ((e && e.message) || e) };
   }
 }
-window.adminVerifyKey = adminVerifyKey;
-
-// 登录管理员账号（Supabase Auth：邮箱 + 密码）
-async function adminLogin(email, password) {
-  if (!email || !password) return false;
-  if (typeof window.loginUser !== 'function') return false;
-  var res = await window.loginUser(email, password);
-  if (!res || !res.ok) return false;
-  var user = res.user || (typeof window.getCurrentUser === 'function' ? window.getCurrentUser() : null);
-  if (!user || user.user_group !== 'admin') {
-    // 登录成功但非管理员 → 登出，避免以普通身份停留在管理界面
-    if (typeof window.logoutUser === 'function') { try { await window.logoutUser(); } catch (e) {} }
-    return false;
-  }
-  _adminAuthenticated = true;
-  // 使用带时间戳的 token 记录会话开始时间，5 分钟过期
-  var token = JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL });
-  sessionStorage.setItem('bioquest_admin_auth', token);
-  return true;
-}
+window.adminVerifyTotp = adminVerifyTotp;
 
 // 检查会话中是否已认证（带过期校验）
-// 注：仅凭 token 恢复 UI 解锁状态；最终以 Supabase 会话的 user_group === 'admin' 为准，
-// _onAuthUserLoaded / renderAdminDashboard 会在用户加载后校正（非管理员会被清除）。
+// 注：仅凭 token 恢复 UI 解锁状态；token 只可能由 adminVerifyTotp（TOTP 动态码 RPC 校验）写入，
+// 管理员账号本身不产生解锁；非 admin 账号/登出时由 _onAuthUserLoaded 清除。
 (function() {
   try {
     var raw = sessionStorage.getItem('bioquest_admin_auth');
@@ -1574,6 +1553,25 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       return { ok: true, data: { feedbacks: data }, status: 200 };
     }
 
+    // 题目反馈（练习页「反馈」按钮 → question_feedbacks 表）
+    if (endpoint.startsWith('/admin/question-feedbacks') && method === 'GET') {
+      var qf = await adminFetchRest('GET', 'question_feedbacks', 'select=*&order=created_at.desc&limit=500', null);
+      if (!qf.ok) {
+        var qfCode = qf._raw && qf._raw.code;
+        var qfMsg = String((qf.data && qf.data.error) || '');
+        if (qfCode === 'PGRST205' || /does not exist|schema cache/i.test(qfMsg) || qf.status === 404) {
+          console.warn('[Admin] question_feedbacks 表不存在，请执行 sql/incremental_update.sql');
+          return { ok: true, data: { items: [], _missing_table: true }, status: 200 };
+        }
+        if (qf.status === 42501 || /permission|row-level|RLS/i.test(qfMsg)) {
+          // RLS 未开放管理员跨用户读取：提示执行 migration_v13
+          return { ok: true, data: { items: [], _restricted: true }, status: 200 };
+        }
+        return { ok: false, data: { error: '查询题目反馈失败: ' + qfMsg }, status: qf.status };
+      }
+      return { ok: true, data: { items: Array.isArray(qf.data) ? qf.data : [] }, status: 200 };
+    }
+
     if (endpoint === '/admin/sync') {
       return { ok: true, data: { message: '同步功能暂不可用（无后端服务器）' }, status: 200 };
     }
@@ -1768,6 +1766,16 @@ async function getFeedbacks() {
   return result.ok ? result.data : null;
 }
 
+/**
+ * 题目反馈列表（练习页「反馈」按钮提交的 question_feedbacks）
+ * 返回 { items, _missing_table?, _restricted? }；未认证返回 null。
+ */
+async function getQuestionFeedbacks() {
+  if (!_adminAuthenticated) return null;
+  const result = await adminApiCall('GET', '/admin/question-feedbacks');
+  return result.ok ? result.data : null;
+}
+
 async function getCommunityPostComments(postId) {
   if (!_adminAuthenticated) return null;
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
@@ -1798,8 +1806,8 @@ var ICONS = {
 };
 
 /* ===== 登录页渲染 ===== */
-// 默认「管理员密钥」验证（服务端比对，适合站长本人的非 admin 账号补票）；
-// 可切换到「管理员账号密码」登录（保留原有 Supabase Auth 路径）。
+// 管理员入口只提供「TOTP 动态验证码」验证（服务端 RPC admin_login_with_totp）；
+// 旧静态口令与账号密码入口均已退役（口令太长且哈希曾在公开仓库泄露）。
 function renderAdminLoginPage(target) {
   target.innerHTML = `
     <div class="admin-login-wrap">
@@ -1808,60 +1816,35 @@ function renderAdminLoginPage(target) {
           ${ICONS.shield}
         </div>
         <div class="admin-login-title">管理员后台</div>
-        <div class="admin-login-subtitle" id="admin-login-subtitle">输入管理员密钥完成身份验证</div>
-        <form class="admin-login-form" id="admin-key-form">
+        <div class="admin-login-subtitle" id="admin-login-subtitle">输入身份验证器的动态验证码</div>
+        <form class="admin-login-form" id="admin-totp-form">
           <div class="admin-login-input-wrap">
             <input
               type="password"
               class="admin-login-input"
-              id="admin-key-input"
-              placeholder="管理员密钥"
+              id="admin-totp-input"
+              placeholder="6 位动态验证码"
+              inputmode="numeric"
+              maxlength="6"
               required
-              autocomplete="off"
+              autocomplete="one-time-code"
             >
             ${ICONS.key}
           </div>
           <button type="submit" class="admin-login-btn">验证进入</button>
         </form>
-        <form class="admin-login-form" id="admin-pwd-form" style="display:none;">
-          <div class="admin-login-input-wrap">
-            <input
-              type="email"
-              class="admin-login-input"
-              id="admin-email-input"
-              placeholder="管理员邮箱"
-              required
-              autocomplete="username"
-            >
-          </div>
-          <div class="admin-login-input-wrap">
-            <input
-              type="password"
-              class="admin-login-input"
-              id="admin-password-input"
-              placeholder="密码"
-              required
-              autocomplete="current-password"
-            >
-            ${ICONS.key}
-          </div>
-          <button type="submit" class="admin-login-btn">登录</button>
-        </form>
         <div class="admin-login-error" id="admin-login-error"></div>
         <div class="admin-login-hint">
-          仅限授权管理员。密钥仅在服务端校验，验证通过后当前账号将获得管理员权限。
-          <a href="#" id="admin-toggle-pwd-mode" style="color:inherit;text-decoration:underline;">改用管理员账号密码登录</a>
+          动态码由身份验证器 App（Google Authenticator / 2FAS 等）每 30 秒刷新；服务端校验并防重放。
+          不支持账号密码与静态口令登录。
         </div>
       </div>
     </div>
   `;
 
   var errorEl = document.getElementById('admin-login-error');
-  var keyForm = document.getElementById('admin-key-form');
-  var pwdForm = document.getElementById('admin-pwd-form');
-  var subtitle = document.getElementById('admin-login-subtitle');
-  var toggleLink = document.getElementById('admin-toggle-pwd-mode');
-  var keyInput = document.getElementById('admin-key-input');
+  var totpForm = document.getElementById('admin-totp-form');
+  var totpInput = document.getElementById('admin-totp-input');
 
   function showError(msg) {
     if (!errorEl) return;
@@ -1875,14 +1858,14 @@ function renderAdminLoginPage(target) {
   }
   showError('');
 
-  if (keyForm) keyForm.addEventListener('submit', async (e) => {
+  if (totpForm) totpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    var btn = keyForm.querySelector('.admin-login-btn');
+    var btn = totpForm.querySelector('.admin-login-btn');
     showError('');
     btn.textContent = '验证中...';
     btn.disabled = true;
 
-    var result = await adminVerifyKey(keyInput ? keyInput.value : '');
+    var result = await adminVerifyTotp(totpInput ? totpInput.value : '');
 
     btn.textContent = '验证进入';
     btn.disabled = false;
@@ -1890,63 +1873,19 @@ function renderAdminLoginPage(target) {
       renderAdminDashboard(target);
     } else {
       showError(result.error || '验证失败');
-      if (keyInput) { keyInput.value = ''; keyInput.focus(); }
-    }
-  });
-
-  if (toggleLink) toggleLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    var useKey = keyForm.style.display !== 'none';
-    keyForm.style.display = useKey ? 'none' : 'block';
-    pwdForm.style.display = useKey ? 'block' : 'none';
-    if (subtitle) {
-      subtitle.textContent = useKey
-        ? '使用 Supabase 管理员账号登录（邮箱 + 密码）'
-        : '输入管理员密钥完成身份验证';
-    }
-    toggleLink.textContent = useKey ? '改用管理员密钥验证' : '改用管理员账号密码登录';
-    showError('');
-    var focusEl = useKey ? document.getElementById('admin-email-input') : keyInput;
-    if (focusEl) focusEl.focus();
-  });
-
-  if (pwdForm) pwdForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = document.getElementById('admin-email-input').value.trim();
-    const pwd = document.getElementById('admin-password-input').value;
-    const btn = pwdForm.querySelector('.admin-login-btn');
-
-    showError('');
-    btn.textContent = '登录中...';
-    btn.disabled = true;
-
-    const success = await adminLogin(email, pwd);
-    if (success) {
-      renderAdminDashboard(target);
-    } else {
-      showError('登录失败：请检查邮箱/密码，或该账号无管理员权限');
-      btn.textContent = '登录';
-      btn.disabled = false;
-      var pwdInput = document.getElementById('admin-password-input');
-      if (pwdInput) { pwdInput.value = ''; pwdInput.focus(); }
+      if (totpInput) { totpInput.value = ''; totpInput.focus(); }
     }
   });
 }
 
 /* ===== 仪表盘渲染 ===== */
 function renderAdminDashboard(target) {
-  // 如果通过 Supabase 登录且 user_group 是 admin，自动认证
-  // 安全：Supabase 管理员身份仅解锁前端 UI，绝不作为服务端管理凭证
-  // （服务端无法验证 Supabase JWT，否则任何人伪造 X-Admin-Key: supabase_admin 即可提权）。
-  // 服务端管理操作由 Supabase RLS 策略强制，adminLogin 使用 Supabase Auth 邮箱/密码登录。
-  if (!_adminAuthenticated && typeof window.getCurrentUser === 'function') {
-    var user = window.getCurrentUser();
-    if (user && user.user_group === 'admin') {
-      _adminAuthenticated = true;
-      var token = JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL });
-      sessionStorage.setItem('bioquest_admin_auth', token);
-
-    }
+  // 管理员入口只认 TOTP 动态码验证（adminVerifyTotp 的会话 token）；
+  // 此处不再因 user_group==='admin' 自动放行——账号密码不得直入管理后台。
+  // 服务端管理操作由 Supabase RLS 策略强制。
+  if (!_adminAuthenticated) {
+    renderAdminLoginPage(target);
+    return;
   }
 
   // 修复：如果 _adminAuthenticated 是从 sessionStorage 恢复的，但 _currentUser 还是 null，
@@ -1954,7 +1893,7 @@ function renderAdminDashboard(target) {
   // 关键：禁止在 setInterval 回调中同步重入 renderAdminDashboard，
   // 否则一旦 _currentUser 状态在多次触发间反复切换，可能累积调用栈导致 "Maximum call stack size exceeded"。
   // 改为：使用 setTimeout 链式轮询，并在用户就绪后通过 setTimeout(0) 异步重入。
-  // 注：管理员认证一律来自 Supabase 会话（user_group === 'admin'），无本地密钥认证路径。
+  // 注：管理员认证只来自 TOTP 动态码验证写入的会话 token。
   if (_adminAuthenticated && !window.getCurrentUser()) {
     // 显示加载中
     target.innerHTML = '<div style="padding:80px 20px;text-align:center;color:#666;">正在恢复登录状态...</div>';
@@ -2245,11 +2184,18 @@ async function loadTabContent(target, tab) {
         renderQuestionsTab(contentEl, data);
       } else {
         contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">加载题目数据失败</div><div class="admin-empty-hint">请确认：<br>1. 已登录 Supabase（页面右上角显示用户信息）<br>2. questions 表已创建（在 Supabase SQL Editor 中运行 sql/schema.sql）<br>3. 当前用户的 user_group 已设为 "admin"<br>4. 打开浏览器控制台（F12）查看详细错误</div></div>`;
+        // 远端题目失败时仍挂载「本地题库 · 评分与回收站」，保证回收站入口始终可见
+        if (typeof window._mountLocalSectionFallback === 'function') {
+          window._mountLocalSectionFallback(contentEl);
+        }
       }
     } catch(e) {
       console.error('[Admin] 加载题目出错:', e);
       // S-007：不向用户暴露底层错误信息，仅显示通用提示
       contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">题目加载失败</div><div class="admin-empty-hint">请稍后重试；若持续失败，请检查浏览器控制台（F12）获取详细信息</div></div>`;
+      if (typeof window._mountLocalSectionFallback === 'function') {
+        window._mountLocalSectionFallback(contentEl);
+      }
     }
   }
 }

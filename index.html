@@ -892,12 +892,16 @@
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
-  <script src="js/core/app.js?v=20261013b" defer></script>
+  <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
+       修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
+  <script src="js/core/app.js?v=20261018b" defer></script>
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
   <script src="js/core/error-recovery.js?v=20260803a" defer></script>
   <script src="js/core/question-model.js?v=20261013a" defer></script>
+  <!-- 打印工具：错题/练习/组卷统一 A4 打印（原生 window.print，零依赖） -->
+  <script src="js/core/print-utils.js?v=20261018b" defer></script>
   <!-- Bio 分全局唯一实现（calcBioScore / computeBioDimensions）：预加载保证
        仪表盘/练习/诊断/记录落盘首屏即可算分，不依赖打开分析页才加载 analytic.js -->
   <script src="js/core/score-engine.js?v=20261013a" defer></script>

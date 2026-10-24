@@ -646,11 +646,16 @@ async function getPointsLeaderboard(limit) {
   var n = limit || 50;
   if (!sb) return [];
   try {
-    var { data, error } = await sb.from('profiles')
+    // 积分排行榜走公开视图（profiles 表已收紧为仅本人可读）
+    var { data, error } = await sb.from('public_profiles')
       .select('id, username, display_name, points, user_group')
       .order('points', { ascending: false })
       .limit(n);
-    if (error) throw error;
+    if (error) {
+      _warnMissingDependency('视图 public_profiles', error,
+        '积分榜将为空；请先执行 sql/migration_v3_security.sql');
+      throw error;
+    }
     return (data || []).map(function(p) {
       return {
         id: p.id,

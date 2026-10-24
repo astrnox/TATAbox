@@ -355,3 +355,33 @@ DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname='mutes_sel
 -- 完成！
 -- ============================================================
 -- 现在你可以在 Supabase 中使用前端直连了！
+
+-- ──────────────────────────────────────────────────────────
+-- Data API 授权（2026-10-30 起新建表必须显式 GRANT，否则 Data API 401）：本文件授权块，幂等可重跑。
+-- 模板取自 Supabase 官方邮件：anon 只读 / authenticated+service_role 读写；
+-- 行级隔离由 RLS 策略负责，GRANT 只解决 Data API 可达性。
+-- ──────────────────────────────────────────────────────────
+GRANT SELECT ON public.profiles TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.profiles TO authenticated, service_role;
+GRANT SELECT ON public.wrong_questions TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.wrong_questions TO authenticated, service_role;
+GRANT SELECT ON public.favorites TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.favorites TO authenticated, service_role;
+GRANT SELECT ON public.practice_records TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.practice_records TO authenticated, service_role;
+GRANT SELECT ON public.questions TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.questions TO authenticated, service_role;
+GRANT SELECT ON public.cards TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.cards TO authenticated, service_role;
+GRANT SELECT ON public.resources TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.resources TO authenticated, service_role;
+GRANT SELECT ON public.community_posts TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_posts TO authenticated, service_role;
+GRANT SELECT ON public.community_post_likes TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_post_likes TO authenticated, service_role;
+GRANT SELECT ON public.community_comments TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_comments TO authenticated, service_role;
+GRANT SELECT ON public.community_mutes TO anon, authenticated, service_role;
+GRANT INSERT, UPDATE, DELETE ON public.community_mutes TO authenticated, service_role;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

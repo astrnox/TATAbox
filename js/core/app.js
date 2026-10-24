@@ -283,6 +283,13 @@ function getRouteFromHash() {
   const hash = window.location.hash.slice(1) || '/';
   if (hash.startsWith('/')) {
     const cleanHash = hash.split('?')[0];
+    // 防御：app-routes.js 未加载/加载失败时 Routes 不可用——
+    // 乐观放行给 handleRoute 的 moduleMap+switch 分发（两者不依赖 Routes），
+    // 否则任何导航都会被判“未知路由”静默落回首页（用户表现为“点进模块跳回主页”）
+    if (typeof Routes === 'undefined' || !Routes || !Object.keys(Routes).length) {
+      console.warn('[TATABOX] Routes 不可用（app-routes 未加载），乐观路由:', cleanHash);
+      return cleanHash;
+    }
     return Routes[cleanHash] ? cleanHash : '/';
   }
   return '/';
@@ -335,7 +342,9 @@ function _applyPageQueryParam() {
 function navigateTo(route, options = {}) {
   const { replace = false } = options;
 
-  if (!Routes[route]) {
+  // Routes 不可用（app-routes 加载失败）时不做未知路由兜底，放行交由分发器处理
+  const _routesReady = typeof Routes !== 'undefined' && Routes && Object.keys(Routes).length > 0;
+  if (_routesReady && !Routes[route]) {
     console.warn(`[TATABOX] 未知路由: ${route}，回退到首页`);
     route = '/';
   }
@@ -2021,7 +2030,9 @@ function bindEvents() {
     const link = e.target.closest('[data-route]');
     if (link) {
       const route = link.getAttribute('data-route');
-      if (route && Routes[route]) {
+      // Routes 缺失时（app-routes 未加载）放行导航，避免链接点击后“卡在原页像跳回主页”
+      const _routesMissing = typeof Routes === 'undefined' || !Routes || !Object.keys(Routes).length;
+      if (route && (_routesMissing || Routes[route])) {
         e.preventDefault();
         // 解析 href 中的 ?tab=xxx 并写入 sessionStorage（绕过 hash 不能携带 query 的限制）
         try {
@@ -2295,7 +2306,8 @@ window.testSupabaseAPI = async function() {
   try {
     var sb = typeof window.getSupabase === 'function' ? window.getSupabase() : null;
     if (!sb) { return { status: 'error', msg: 'Supabase 未初始化' }; }
-    var { data, error } = await sb.from('profiles').select('id,username').limit(1);
+    // 探活走公开资料视图（profiles 表已收紧为仅本人可读）
+    var { data, error } = await sb.from('public_profiles').select('id,username').limit(1);
     if (error) { return { status: 'error', msg: error.message }; }
 
     return { status: 'ok', data: data };
@@ -3114,6 +3126,15 @@ function initApp() {
   _applyPageQueryParam();
 
   const route = getRouteFromHash();
+
+  // 防御：app-routes.js 加载失败会让导航/标题/重定向全部失效——
+  // 启动时若 Routes 缺失，绕过缓存兜底重拉一次（结果异步生效，不阻塞首屏）
+  if ((typeof Routes === 'undefined' || !Routes || !Object.keys(Routes).length)
+      && typeof window.loadScriptOnce === 'function') {
+    window.loadScriptOnce('js/core/app-routes.js?v=retry-' + Date.now()).catch(function () {
+      console.warn('[TATABOX] app-routes 兜底重拉仍失败，导航功能受限');
+    });
+  }
 
   bindEvents();
 

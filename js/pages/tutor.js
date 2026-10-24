@@ -959,6 +959,18 @@ function renderTutorPage(target) {
     if (quick) quick.remove();
   });
 
+  // v5.0：消费知识图谱「AI 讲解」预填（sessionStorage.bioquest_tutor_prefill）
+  // —— 图谱节点/百科词条点击「AI 讲解」后跳转本页并自动发出带上下文的问题
+  try {
+    var kgPrefill = sessionStorage.getItem('bioquest_tutor_prefill');
+    if (kgPrefill) {
+      sessionStorage.removeItem('bioquest_tutor_prefill');
+      var pInput = document.getElementById('tutor-input');
+      if (pInput) pInput.value = kgPrefill;
+      setTimeout(function () { _sendTutorMessage(kgPrefill); }, 80);
+    }
+  } catch (e) { /* 忽略 */ }
+
   // 暂停/继续 按钮
   var pauseBtn = document.getElementById('tutor-pause');
   if (pauseBtn) pauseBtn.addEventListener('click', _tutorPauseOrResume);

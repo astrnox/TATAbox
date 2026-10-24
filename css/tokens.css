@@ -134,6 +134,9 @@ html[data-ui="lite"] {
   --accent-text: #2b6a47;     /* 文字强调（对白底 ≈6.4:1，AA） */
   --accent-soft: #eef4f0;
   --on-accent: #ffffff;
+  /* 错误反馈（登录失败/表单校验；仅语义用途） */
+  --text-danger: #a03b32;
+  --bg-danger-soft: #f7ecea;
 
   --radius-card: 2px;
   --radius-btn: 2px;
@@ -158,6 +161,9 @@ html[data-ui="lite"][data-theme="dark"] {
   --accent: var(--sage-d1);      /* 对 #0b0e0c ≈9:1 */
   --accent-text: var(--sage-d2);
   --accent-soft: #12211a;
+  --on-accent: #0b0e0c;       /* 亮绿底用深字 */
+  --text-danger: #e89b91;
+  --bg-danger-soft: #2a1a17;
   --focus-ring: 0 0 0 2px #0b0e0c, 0 0 0 4px var(--sage-d1);
 }
 
@@ -178,6 +184,8 @@ html[data-ui="lite"][data-theme="night"] {
   --accent-text: #f2cd88;     /* 琥珀强调文字 */
   --accent-soft: #211a0d;
   --on-accent: #0d0c0a;       /* 琥珀底用深字（白字对比不足） */
+  --text-danger: #e7a88a;
+  --bg-danger-soft: #2a1d14;
   --focus-ring: 0 0 0 2px #0d0c0a, 0 0 0 4px #d9a648;
 }
 

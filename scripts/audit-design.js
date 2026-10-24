@@ -27,6 +27,7 @@ const ROOT = path.join(__dirname, '..');
 
 /* ── 棘轮基线：只允许下调；确需上调必须在 PR 里说明理由并在此处修改 ── */
 const BASELINE_INLINE_STYLE = 1261; // js/**（不含 vendor）中 style=" 出现次数
+const BASELINE_INLINE_STYLE_SETATTR = 0; // js/** 中 setAttribute('style') 出现次数（豁免需行内/上一行登记 audit-design-allow）
 const BASELINE_UNIQUE_HEX = 469;    // js/**（不含 vendor）中唯一 #rrggbb 数量
 
 /* ── 预算 ── */
@@ -168,16 +169,33 @@ function main() {
 
   /* ── 4. 棘轮：内联样式 / 硬编码色值 ── */
   let inlineStyle = 0;
+  let inlineSetAttr = 0;
+  const inlineSetAttrHits = [];
   const hexSet = new Set();
   for (const f of js) {
-    const src = fs.readFileSync(f, 'utf8');
-    inlineStyle += (src.match(/style="/g) || []).length;
-    (src.match(/#[0-9a-fA-F]{6}\b/g) || []).forEach((h) => hexSet.add(h.toLowerCase()));
+    const raw = fs.readFileSync(f, 'utf8');
+    inlineStyle += (raw.match(/style="/g) || []).length;
+    (raw.match(/#[0-9a-fA-F]{6}\b/g) || []).forEach((h) => hexSet.add(h.toLowerCase()));
+    // setAttribute('style') 同样绕过 style=" 计数：逐行识别，
+    // 确需使用的场景（如离屏打印 iframe）用 audit-design-allow 登记豁免。
+    const lines = raw.split('\n');
+    lines.forEach((line, i) => {
+      if (!/setAttribute\(\s*['"]style['"]\s*,/.test(line)) return;
+      if (/audit-design-allow/.test(line) || /audit-design-allow/.test(lines[i - 1] || '')) return;
+      inlineSetAttr++;
+      inlineSetAttrHits.push(`${rel(f)}:${i + 1}`);
+    });
   }
   report.push(`js 内联 style="               : ${inlineStyle} 处（基线 ${BASELINE_INLINE_STYLE}，只许下降）`);
+  report.push(`js setAttribute('style')      : ${inlineSetAttr} 处（基线 ${BASELINE_INLINE_STYLE_SETATTR}，只许下降）`);
   report.push(`js 硬编码 #rrggbb 唯一色值    : ${hexSet.size} 个（基线 ${BASELINE_UNIQUE_HEX}，只许下降）`);
   if (inlineStyle > BASELINE_INLINE_STYLE) {
     failures.push(`内联样式数超过基线（${inlineStyle} > ${BASELINE_INLINE_STYLE}）：新代码请使用全局组件类（.bq-btn/.bq-card/.bq-section-header…）`);
+  }
+  if (inlineSetAttr > BASELINE_INLINE_STYLE_SETATTR) {
+    failures.push(`setAttribute('style') 超过基线（${inlineSetAttr} > ${BASELINE_INLINE_STYLE_SETATTR}）：\n    ` +
+      inlineSetAttrHits.join('\n    ') +
+      `\n    请改用 class/CSS 变量；确需运行期样式时，在行内或上一行写 audit-design-allow 并说明原因。`);
   }
   if (hexSet.size > BASELINE_UNIQUE_HEX) {
     failures.push(`硬编码色值数超过基线（${hexSet.size} > ${BASELINE_UNIQUE_HEX}）：新代码请引用全局 token（--color-* / --state-*）`);
@@ -197,9 +215,10 @@ function main() {
     const self = path.join(__dirname, 'audit-design.js');
     let src = fs.readFileSync(self, 'utf8');
     src = src.replace(/const BASELINE_INLINE_STYLE = \d+;/, `const BASELINE_INLINE_STYLE = ${inlineStyle};`);
+    src = src.replace(/const BASELINE_INLINE_STYLE_SETATTR = \d+;/, `const BASELINE_INLINE_STYLE_SETATTR = ${inlineSetAttr};`);
     src = src.replace(/const BASELINE_UNIQUE_HEX = \d+;/, `const BASELINE_UNIQUE_HEX = ${hexSet.size};`);
     fs.writeFileSync(self, src);
-    console.log(`棘轮基线已下调：inline=${inlineStyle} hex=${hexSet.size}`);
+    console.log(`棘轮基线已下调：inline=${inlineStyle} setAttr=${inlineSetAttr} hex=${hexSet.size}`);
     process.exit(0);
   }
 

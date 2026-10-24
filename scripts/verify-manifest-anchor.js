@@ -101,7 +101,9 @@ function main() {
 
   if (gitSha === head) {
     console.log('[ok] 锚点 git == HEAD（' + gitSha.slice(0, 12) + '，部署态生成）');
-  } else if (git('cat-file -e ' + gitSha + '^{commit}') !== null) {
+  } else if (git('cat-file -e ' + gitSha) !== null) {
+    // 注意：不要写成 <sha>^{commit}——Windows 下 execSync 走 cmd，'^' 是转义符，
+    // 会被吞掉导致本地已有对象仍判为「不存在」而误走 fetch 分支
     console.log('[ok] 锚点 git=' + gitSha.slice(0, 12) + ' 存在于本地对象库（生成于历史 commit，正常）');
   } else {
     // 浅克隆（如 CI checkout depth=1）拿不到历史对象：单拉该 commit 验证其确实属于本仓库

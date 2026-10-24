@@ -390,8 +390,14 @@
     var hash = md5(unescape(encodeURIComponent(name)));
     var enc = encodeURIComponent(name).replace(/%2F/gi, '/');
     var base = 'https://upload.wikimedia.org/wikipedia/commons/';
-    return base + hash.charAt(0) + '/' + hash.slice(0, 2) + '/' + enc + '/' + width + 'px-' + enc;
+    var thumb = base + hash.charAt(0) + '/' + hash.slice(0, 2) + '/' + enc + '/' + width + 'px-' + enc;
+    // Commons 对 SVG 缩略图要求补 .png 后缀（位图化约定），否则 404
+    if (/\.svg$/i.test(name)) thumb += '.png';
+    return thumb;
   }
+
+  // 维基维护/导航类图标（质量标记、跨语言导航等）——非内容配图，导入时排除
+  var WIKI_JUNK_IMAGE_RE = /Ambox|Question[_ ]book|Edit-clear|Symbol_|Loudspeaker|Wiki[_ ]letter|Crystal[_ ]Clear|BSicon|Gnome-|Commons-logo|Padlock|Cscr-|Wiktionary|Wikibooks|Wikiquote|Wikisource|Wikiversity|Wikivoyage|_stub\.|Stub\.|Increase2?\.png|Decrease2?\.png|Portal\.png|Font_awesome|Information_icon|No_image/i;
 
   // 将维基表格 {| ... |} 转为 Markdown 表格
   function wikitableToMarkdown(tbl) {
@@ -437,14 +443,20 @@
   function parseWikitextMedia(wt) {
     var tables = [];
     var images = [];
-    var t = String(wt || '');
-    t = t.replace(/\{\|[\s\S]*?\|\}/g, function (tbl) {
+    var raw = String(wt || '');
+    // 表格块 → Markdown（从原文抽取）
+    raw.replace(/\{\|[\s\S]*?\|\}/g, function (tbl) {
       var md = wikitableToMarkdown(tbl);
       if (md) tables.push(md);
       return '';
     });
-    t = t.replace(/\[\[(?:File|Image|文件):\s*([^\]|]+)(?:\|[^\]]*)?\]\]/gi, function (_m, name) {
-      images.push(name.trim());
+    // 图片从「原文」抽取（含信息框/表格内的配图），去重 + 过滤维护图标 + 上限 12
+    var seen = {};
+    raw.replace(/\[\[(?:File|Image|文件):\s*([^\]|]+)(?:\|[^\]]*)?\]\]/gi, function (_m, name) {
+      var n = String(name || '').trim();
+      if (!n || seen[n] || WIKI_JUNK_IMAGE_RE.test(n)) return '';
+      seen[n] = 1;
+      if (images.length < 12) images.push(n);
       return '';
     });
     return { tables: tables.join('\n\n'), images: images };
@@ -511,7 +523,12 @@
 
   function renderToolbarCounts() {
     var el = $('#wikiCount');
-    if (el) el.textContent = String(state.entries.length);
+    if (!el) return;
+    var total = state.entries.length;
+    var filtered = filteredEntries().length;
+    var active = state.filter.keyword || state.filter.category || state.filter.tag;
+    // 筛选激活时显示「显示数 / 总数」——修复“计数 300+ 往下滑只剩几条”的困惑
+    el.textContent = (active && filtered !== total) ? (filtered + ' / ' + total) : String(total);
   }
 
   function renderCategoryChips() {
@@ -558,7 +575,18 @@
         '</div>';
       return;
     }
+    // 活动筛选横幅：明示当前哪些筛选生效 + 显示/总数 + 一键清除
+    var activeBits = [];
+    if (state.filter.keyword) activeBits.push('关键词「' + esc(state.filter.keyword) + '」');
+    if (state.filter.category) activeBits.push('分类「' + esc(state.filter.category) + '」');
+    if (state.filter.tag) activeBits.push('标签「' + esc(state.filter.tag) + '」');
     var html = '';
+    if (activeBits.length) {
+      html += '<div class="wiki-filter-banner" id="wikiFilterBanner">' +
+        '<span>已筛选：' + activeBits.join(' · ') + ' — 显示 ' + list.length + ' / ' + state.entries.length + ' 条</span>' +
+        '<button type="button" class="wiki-filter-clear" id="wikiFilterClear">清除筛选</button>' +
+        '</div>';
+    }
     list.forEach(function (e) {
       var color = CATEGORY_COLORS[e.category] || 'var(--color-primary)';
       var tagsHtml = (e.tags || []).slice(0, 4).map(function (t) {
@@ -577,6 +605,17 @@
         '</article>';
     });
     grid.innerHTML = html;
+
+    // 清除筛选：复位三项过滤与搜索框并重渲染
+    var clearBtn = document.getElementById('wikiFilterClear');
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      state.filter.keyword = '';
+      state.filter.category = '';
+      state.filter.tag = '';
+      var s = document.getElementById('wikiSearch');
+      if (s) s.value = '';
+      renderAll();
+    });
   }
 
   function stripMd(text) {
@@ -924,7 +963,7 @@
         if (media.tables) parts.push(media.tables);
         // 图片（生成维基共享资源缩略图链接）
         var imgs = [];
-        (media.images || []).slice(0, 8).forEach(function (fn) {
+        (media.images || []).slice(0, 12).forEach(function (fn) {
           var u = wikimediaThumbUrl(fn, 400);
           if (u) imgs.push('![' + fn.replace(/\.(jpg|jpeg|png|gif|svg|webp)$/i, '') + '](' + u + ')');
         });
@@ -1031,7 +1070,8 @@
     if (search) {
       var onSearch = (typeof window.debounce === 'function' ? window.debounce : function (fn) { return fn; })(function () {
         state.filter.keyword = search.value;
-        renderList();
+        // renderAll：计数(显示/总数) 与横幅必须与列表同步刷新（修复计数不随筛选变化）
+        renderAll();
       }, 200);
       search.addEventListener('input', onSearch);
     }
@@ -1041,8 +1081,7 @@
       var catChip = ev.target.closest('[data-cat]');
       if (catChip && $('#wikiCategoryFilters').contains(catChip)) {
         state.filter.category = catChip.dataset.cat;
-        renderCategoryChips();
-        renderList();
+        renderAll();
         return;
       }
       var tagChip = ev.target.closest('[data-tag]');
@@ -1053,8 +1092,7 @@
         } else {
           state.filter.tag = (state.filter.tag === tn) ? '' : tn;
         }
-        renderTagChips();
-        renderList();
+        renderAll();
         if ($('#wikiTagFilters')) $('#wikiTagFilters').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         return;
       }
@@ -1156,9 +1194,30 @@
     else if (kind === 'quote') linePrefix('> ');
   }
 
+  /**
+   * wiki.html?entry=<id> 直达词条（知识图谱/词云「读百科」跳转用）。
+   * 种子是异步加载的，轮询等待条目就绪后打开详情（约 6 秒兜底放弃）。
+   */
+  function _openEntryFromUrl() {
+    var m = /[?&]entry=([^&#]+)/.exec(window.location.search || '');
+    if (!m) return;
+    var id = decodeURIComponent(m[1]);
+    var tries = 0;
+    var timer = setInterval(function () {
+      tries++;
+      if (findEntry(id)) {
+        clearInterval(timer);
+        openDetail(id);
+      } else if (tries > 20) {
+        clearInterval(timer);
+      }
+    }, 300);
+  }
+
   function init() {
     bindEvents();
     ensureSeed(); // ensureSeed 内部会触发 renderAll
+    _openEntryFromUrl();
     // 暴露调试接口
     window.BioQuestWiki = {
       getEntries: function () { return state.entries; },

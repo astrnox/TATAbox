@@ -674,33 +674,43 @@
   },
   {
    "bioId": "M2-01-f05ce501",
-   "concept": "空间转录组学与肿瘤微环境",
+   "concept": "Stereo-seq 空间转录组学的原理与分辨率",
    "difficulty": "league",
-   "explanation": "A【对】依据：空间转录组学（如 10x Visium、MERFISH、seqFISH+）通过在组织切片上原位捕获 mRNA 或利用荧光原位杂交，在保留空间坐标的同时获取转录组信息，区别于需解离组织的 scRNA-seq。\nB【对】依据：MERFISH 和 seqFISH+ 等基于成像的技术已实现亚细胞分辨率，10x Visium 的 spot 直径约 55 μm（含 1-10 个细胞），Visium HD 已达到接近单细胞水平的分辨率。\nC【对】依据：空间转录组可识别肿瘤内不同区域（核心、侵袭前沿、免疫浸润区）的细胞组成差异，揭示癌细胞-免疫细胞-基质细胞的空间互作网络，为理解肿瘤微环境提供关键信息。\nD【错】错因：空间转录组学检测的是 RNA 分子的空间分布，蛋白质定位需借助空间蛋白质组学技术（如 CODEX、IMC、DBiT-seq 的蛋白模式），二者原理与检测对象不同。",
-   "question": "研究者利用空间转录组学技术绘制某肿瘤组织的基因表达图谱。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图 5 显示组织切片直接贴附于芯片表面，mRNA 被芯片上原位固定的捕获探针（3′-端 polyT 序列）捕获并经原位逆转录生成 cDNA（图 3 中 capture 探针依次含 polyT、UMI、CID 三层结构），从而在保留组织空间坐标的同时获得转录组信息；这与需先解离组织、丢失空间位置的 scRNA-seq 形成根本区别。\nB【对】依据：图 1 显示 DNB 点阵芯片上 spot 直径仅约 220 nm、中心距 500/715 nm，远小于一个细胞的尺度，因此 CID（坐标标识）测序可实现亚细胞级别的空间定位；图 6 展示的像素级空间表达图谱是其在单细胞/亚细胞分辨率成像的基础，'已达到接近单细胞或更细分辨率'表述正确。\nC【对】依据：空间转录组学把基因表达叠加到组织形态上（图 6 中不同解剖区域呈现不同表达谱），可用于解析肿瘤微环境中癌细胞、免疫细胞、基质细胞各自的空间分布及细胞间互作网络，这是研究肿瘤微环境空间异质性的关键手段。\nD【错】错因：Stereo-seq 捕获并测序的是 mRNA（转化为 cDNA 后测序），输出的是 RNA 层面的表达信息；蛋白质的空间定位必须借助基于抗体的空间蛋白质组学技术（如 CODEX、IMC 等），两者检测对象与原理不同，'直接检测蛋白质定位'错误。\n@@ANNOTATED_IMAGE:assets/questions/M2-01-f05ce501/fig1-annotated.jpg",
+   "image": {
+    "caption": "Stereo-seq 空间转录组学流程：(1) DNB 点阵芯片（spot 220nm），(2) CID 原位测序，(3) polyT-UMI-CID 捕获芯片，(4) 文库构建与测序，(5) 组织原位 mRNA 捕获、(6) 空间分辨率表达图谱",
+    "credit": "Zhu Y et al., Genes 2026",
+    "doi": "10.3390/genes17060604",
+    "figure": "4",
+    "file": "assets/questions/M2-01-f05ce501/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13300320",
+    "source": "paper"
+   },
+   "question": "研究者利用 Stereo-seq 技术绘制某肿瘤组织的空间转录组图谱（示意图见图 1-6：DNB 芯片制备、空间编码测序、原位捕获、测序与空间成像）。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Ståhl PL et al.",
-     "doi": "10.1126/science.aaf2403",
-     "journal": "Science",
-     "title": "Visualization and analysis of gene expression in tissue sections by spatial transcriptomics",
-     "year": 2016
+     "authors": "Zhu Y, Hao Z, Zhu L, et al.",
+     "doi": "10.3390/genes17060604",
+     "journal": "Genes",
+     "title": "Progress in the Application of Machine Learning in the Field of Single-Cell and Spatial Transcriptomics",
+     "year": 2026
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "空间转录组学可在保留组织空间位置信息的前提下检测基因表达",
+     "text": "Stereo-seq 通过芯片上原位捕获 mRNA 获得基因表达信息并保留组织空间坐标，无需先解离组织",
      "answer": true
     },
     {
      "label": "B",
-     "text": "当前主流空间转录组技术已达到接近单细胞的分辨率",
+     "text": "芯片 spot 约 220 nm 且逐位点编码坐标（CID），使其分辨率可达接近单细胞甚至亚细胞水平",
      "answer": true
     },
     {
      "label": "C",
-     "text": "空间转录组学可揭示肿瘤微环境中不同细胞类型的空间分布与互作关系",
+     "text": "空间转录组学可将基因表达叠加到组织形态上，用于解析肿瘤微环境中不同细胞类型的空间分布与互作",
      "answer": true
     },
     {
@@ -1229,38 +1239,48 @@
   },
   {
    "bioId": "M4-03-f59903ec",
-   "concept": "乳糖操纵子的双重调控机制",
+   "concept": "乳糖操纵子调控的环境依赖选择与进化",
    "difficulty": "league",
-   "explanation": "A【对】依据：乳糖操纵子同时受到负调控（LacI阻遏蛋白）和正调控（CAP-cAMP激活蛋白）的双重控制。LacI结合操纵基因阻止转录，而CAP-cAMP结合启动子区域增强RNA聚合酶的招募和转录起始效率。\nB【错】错因：当葡萄糖缺乏时，细胞内cAMP水平显著升高，而非下降。升高后的cAMP与CAP结合使其活化，从而增强转录。选项将葡萄糖缺乏时的cAMP变化方向说反了。\nC【错】错因：乳糖操纵子的完全激活需要两个条件同时满足：①乳糖存在（使LacI失活，解除负调控）；②葡萄糖缺乏（使cAMP升高，CAP活化，增强正调控）。仅乳糖存在而葡萄糖也充足时，cAMP水平低，CAP不活化，转录水平很低。\nD【错】错因：LacI阻遏蛋白在无乳糖（或别乳糖）时结合操纵基因，阻止转录；当乳糖存在时，乳糖转化为别乳糖，别乳糖与LacI结合使其构象改变而从操纵基因上解离，从而解除阻遏。因此LacI是在乳糖缺乏时结合操纵基因，并非乳糖存在时。",
-   "question": "研究者通过分析大肠杆菌乳糖操纵子的突变体，发现某些突变导致操纵子在不同碳源条件下的表达模式发生改变。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图 B 显示 lacI⁻（阻遏蛋白失活）突变在不同检测环境中的适合度效应不同：乳糖（Lac）环境中为正（约 +0.08），葡/乳混合（G/L）环境中为正但较小（约 +0.04），葡萄糖（Glu）环境中为负（约 -0.04）。这说明同一基因突变的选择效应强烈依赖环境碳源，'正/负效应随环境改变'正确。\nB【对】依据：图 A 显示在波动切换环境（G_L、L_G）中，多数重复群体出现高频率 lacI⁻（白色/浅格），而恒定乳糖（Lac）等环境频率较低；究其原因，lacI⁻ 使操纵子失去阻遏而组成型高表达 lacZYA，在'葡萄糖-乳糖'频繁切换时免去每次诱导的延迟，图 B 中乳糖环境下的正适合度（+0.08）为此提供了解释——环境波动与选择效应一致支持'组成型表达在波动环境中有优势'。\nC【错】错因：图 B 中 lacI⁻ 在葡萄糖环境中的适合度效应为负（约 -0.04），因为乳糖操纵子不必要的组成型表达会造成蛋白质合成负担；'在任何培养条件下都提高适合度'与图中负效应数据直接矛盾。\nD【错】错因：lacI 编码阻遏蛋白，其功能缺失（lacI⁻）使操纵子失去负调控而表现为组成型表达（无需乳糖诱导即有 lacZYA 转录，且乳糖存在时无需拆除阻遏即可快速利用），并非'完全无法表达'；此外乳糖分解代谢还需要 CAP-cAMP 的正调控，'完全无法表达'的表述与操纵子调控模型相悖。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/fig1-src-annotated.jpg",
+   "image": {
+    "caption": "lac 操纵子调控进化的两项关键实验数据：(A) 4 种进化环境（Lac、G/L、G_L、L_G）× 6 个重复群体中 lacI⁻ 突变频率热图；(B) lacI⁻ 在葡萄糖/乳糖/混合环境中的适合度效应",
+    "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
+    "doi": "10.1093/molbev/msab077",
+    "figure": "1",
+    "file": "assets/questions/gene_regulation/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC8233506",
+    "source": "paper"
+   },
+   "question": "研究者将大肠杆菌祖先株在 4 种碳源环境中进化 8,000 代，检测 lacI⁻（阻遏蛋白失活）突变在各重复群体中的频率（图 A），并测量该突变在不同检测环境中的适合度效应（图 B）。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Oehler S, Schlief A",
-     "doi": "10.3389/fmolb.2022.846805",
-     "journal": "Frontiers in Molecular Biosciences",
-     "title": "The lac operon: a historical perspective",
-     "year": 2022
+     "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
+     "doi": "10.1093/molbev/msab077",
+     "journal": "Molecular Biology and Evolution",
+     "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
+     "year": 2021
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "乳糖操纵子同时受到LacI阻遏蛋白的负调控和CAP-cAMP的正调控",
+     "text": "lacI⁻ 突变的适合度效应是环境依赖的：在乳糖环境中为正，在葡萄糖环境中为负",
      "answer": true
     },
     {
      "label": "B",
-     "text": "葡萄糖缺乏时，细菌细胞内cAMP浓度下降，CAP无法活化从而抑制转录",
-     "answer": false
+     "text": "在葡萄糖-乳糖波动切换环境中 lacI⁻ 高频出现，与'组成型表达在波动环境下减少诱导延迟、获得选择优势'的解释一致",
+     "answer": true
     },
     {
      "label": "C",
-     "text": "只要乳糖存在，无论葡萄糖水平如何，乳糖操纵子都会完全激活",
+     "text": "lacI⁻ 突变在任何培养条件下都会提高细菌适合度，因此其频率在所有环境中都快速固定",
      "answer": false
     },
     {
      "label": "D",
-     "text": "LacI阻遏蛋白在乳糖存在时结合操纵基因，阻止转录",
+     "text": "lacI 失活意味着乳糖操纵子失去阻遏蛋白，因此乳糖代谢相关基因将完全无法表达",
      "answer": false
     }
    ],
@@ -1270,7 +1290,7 @@
     "module_4",
     "分子生物学",
     "操纵子",
-    "基因表达调控"
+    "进化适应"
    ],
    "target": "competition",
    "type": "mtf"
@@ -1559,38 +1579,48 @@
   },
   {
    "bioId": "M3-01-7c52c506",
-   "concept": "CAR-T 细胞疗法与肿瘤免疫",
+   "concept": "CAR-T 细胞对抗原识别的 MHC 非限制性与结构域重组装",
    "difficulty": "league",
-   "explanation": "A【对】依据：CAR 的 scFv（单链可变区片段）直接识别靶抗原的构象表位，不依赖 MHC-肽复合物呈递，因此可克服肿瘤 MHC 下调导致的免疫逃逸，这是 CAR-T 相对于 TCR-T 的核心优势。\nB【对】依据：第二代 CAR 引入 CD28 或 4-1BB 共刺激域，CD28 促进 T 细胞快速扩增和效应功能，4-1BB 增强持久性和记忆形成，二者均通过招募信号分子（如 TRAF2/PI3K）激活下游通路。\nC【错】错因：CRS 是 CAR-T 疗法最严重的不良反应之一，由大量活化的 T 细胞和巨噬细胞释放 IL-6、IFN-γ 等细胞因子引起，重度 CRS 可致高热、低血压、器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预。\nD【错】错因：CD19 主要表达于 B 细胞谱系（包括 B 细胞淋巴瘤和白血病），不表达于 T 细胞、髓系或实体瘤细胞，因此 CD19 CAR-T 仅对 B 细胞来源的肿瘤有效，'所有类型'表述错误。",
-   "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程改造使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：天然 TCR（图 A）识别的是 MHC-肽复合物——肿瘤抗原必须先经 MHC I 类分子呈递，T细胞方能识别；而 CAR 的胞外 scFv（单链可变区片段）直接识别肿瘤细胞表面抗原的构象表位（图 B），不依赖 MHC 呈递，因此可克服肿瘤下调 MHC 导致的免疫逃逸，这是 CAR-T 相对 TCR-T 的核心优势。\nB【对】依据：CAR 胞内段整合了共刺激域（CD28 或 4-1BB，图 B 绿色标注）与刺激域（CD3ζ，紫色标注）：CD28 促进快速扩增与效应功能，4-1BB 增强持久性与记忆形成；天然 T 细胞的共刺激需要独立的 CD28 分子与 APC 上的 B7-2/CD80-86 结合（图 A 右侧），而 CAR 把该信号融合进受体本身，'可增强增殖与持久性'表述正确。\nC【错】错因：CRS（细胞因子释放综合征）是 CAR-T 最需防范的不良反应：大量活化的 T 细胞与巨噬细胞释放 IL-6、IFN-γ、TNF-α 等细胞因子，重症可致高热、低血压、毛细血管渗漏甚至多器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预；'通常轻微且无需干预'与临床事实不符。\nD【错】错因：CD19 是 B 细胞谱系特异的分化抗原，正常/恶性 B 细胞均表达；CD19 CAR-T 只杀伤 B 细胞来源的肿瘤（B-ALL、B 细胞淋巴瘤），对 T 细胞瘤、髓系肿瘤及实体瘤不直接杀伤，'杀伤表达 CD19 的所有类型肿瘤细胞'中'所有类型'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M3-01-a898fe16/fig1-annotated.jpg",
+   "image": {
+    "caption": "TCR 与 CAR 识别肿瘤抗原的差异：(A) 天然 TCR-CD3 复合体依赖 MHC I 呈递，(B) CAR 的 scFv 直接结合肿瘤抗原并将共刺激域（CD28/4-1BB）与 CD3ζ 集成于同一分子，(C) scFv 来源于抗体可变区",
+    "credit": "Mitra A et al., Frontiers in Immunology 2023",
+    "doi": "10.3389/fimmu.2023.1188049",
+    "figure": "1",
+    "file": "assets/questions/M3-01-a898fe16/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10225594",
+    "source": "paper"
+   },
+   "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。CAR 由 scFv（抗原识别）、铰链跨膜区、共刺激域与 CD3ζ 组成（图 B）。根据以上信息与图，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Neelapu SS et al.",
-     "doi": "10.1056/NEJMra2304277",
-     "journal": "New England Journal of Medicine",
-     "title": "Chimeric Antigen Receptor T-Cell Therapy — Assessment and Management of Toxicities",
-     "year": 2024
+     "authors": "Mitra A, Barua A, Huang L, et al.",
+     "doi": "10.3389/fimmu.2023.1188049",
+     "journal": "Frontiers in Immunology",
+     "title": "From bench to bedside: the history and progress of CAR T cell therapy",
+     "year": 2023
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "CAR 的胞外 scFv 结构域可直接识别靶细胞表面抗原，不受 MHC 限制",
+     "text": "CAR 的胞外 scFv 结构域直接识别肿瘤表面抗原构象表位，不受 MHC 限制，可规避肿瘤 MHC 下调导致的逃逸",
      "answer": true
     },
     {
      "label": "B",
-     "text": "CAR 中的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性",
+     "text": "CAR 内的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性，其信号被集成进受体而不依赖 APC 的 B7 配体",
      "answer": true
     },
     {
      "label": "C",
-     "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微且无需干预",
+     "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微，无需任何临床干预",
      "answer": false
     },
     {
      "label": "D",
-     "text": "CD19 CAR-T 可直接杀伤表达 CD19 的所有类型肿瘤细胞",
+     "text": "CD19 CAR-T 可杀伤表达 CD19 的所有类型肿瘤细胞，包括 T 细胞与髓系来源的肿瘤",
      "answer": false
     }
    ],
@@ -1646,38 +1676,48 @@
   },
   {
    "bioId": "M1-02-57119b7a",
-   "concept": "TCA循环的回补反应与代谢调控",
+   "concept": "TCA 循环的致癌代谢物与回补维持",
    "difficulty": "league",
-   "explanation": "A【对】依据：TCA循环中间物（如α-酮戊二酸、草酰乙酸）是氨基酸合成的前体，当细胞活跃合成蛋白质时，这些中间物被抽提用于生物合成，必须通过回补反应（如丙酮酸羧化酶催化丙酮酸→草酰乙酸）补充，否则循环无法持续运转。\nB【对】依据：丙酮酸羧化酶（PC）是关键的回补酶，催化丙酮酸 + CO₂ + ATP → 草酰乙酸 + ADP + Pi，该反应在肝脏和脂肪组织中活跃，确保草酰乙酸供应充足以维持TCA循环通量。\nC【对】依据：α-酮戊二酸经α-酮戊二酸脱氢酶复合体（OGDC，类丙酮酸脱氢酶的多酶复合体）氧化脱羧生成琥珀酰辅酶A，同时将NAD⁺还原为NADH并释放CO₂，这是循环中重要的氧化脱羧步骤。\nD【错】错因：回补反应在所有细胞中持续进行，不仅限于快速分裂的细胞。例如肝脏中氨基酸代谢不断产生或消耗TCA中间物，需要通过回补反应维持代谢稳态；肌肉细胞在运动时也会通过回补反应补充草酰乙酸以支持能量产生。\n【相关知识点】回补反应（anaplerosis）为 TCA 循环补充被抽提的中间物：丙酮酸羧化酶催化丙酮酸→草酰乙酸，谷氨酸可转氨生成 α-酮戊二酸。中间物被抽去合成氨基酸时若没有回补，循环通量必然下降甚至停摆。",
-   "question": "研究者发现，在某些快速增殖的肿瘤细胞中，TCA循环中间物被大量抽提用于氨基酸和核苷酸合成，导致循环通量下降。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图左半部分肿瘤细胞中显示 SDH（琥珀酸脱氢酶）功能缺失（SDH*）使琥珀酸（Succinate↑）蓄积。琥珀酸与 α-KG（α-酮戊二酸）结构相似，是 α-KG 依赖性双加氧酶（如 TET 家族 DNA 去甲基化酶、JMJD 组蛋白去甲基化酶）的竞争性抑制剂，从而造成 DNA/组蛋白甲基化谱改变并稳定 HIF-1α（伪缺氧），这是'琥珀酸蓄积→表观遗传与信号改变'的核心因果链。\nB【对】依据：当 TCA 中间物被抽提用于生物合成（如草酰乙酸/α-酮戊二酸用于氨基酸合成）或被'渗漏'（如柠檬酸输出、琥珀酸蓄积偏离循环），循环必须通过回补反应（anaplerosis）补充中间物，常见途径有丙酮酸羧化酶（丙酮酸+HCO₃⁻+ATP→草酰乙酸）、谷氨酰胺经谷氨酰胺酶进入 α-KG（图中 Glutamine→α-KG 箭头）等；'抽提时需回补维持通量'正确。\nC【对】依据：IDH1/2 基因的致癌突变（IDH*）使酶获得新功能（neomorphic），把 α-KG 转化为 D-2-羟基戊二酸（D-2HG，图中红色标注）；D-2HG 与 α-KG 竞争抑制多种双加氧酶，并影响 NADPH 代谢，是胶质瘤、AML 等的标志性致癌代谢物，'新功能催化生成 D-2HG'正确。\nD【错】错因：FH（富马酸水合酶，图 Fumarate→Malate 步骤）功能缺失导致富马酸（Fumarate↑）蓄积而非促进其下游转化，TCA 循环在富马酸水合步骤受阻后通量整体下降；'功能缺失会增强 TCA 循环整体通量'与酶学事实矛盾（酶缺失只会削弱该步骤及其下游流量）。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/fig1-src-annotated.jpg",
+   "image": {
+    "caption": "TCA 循环驱动的致癌代谢重编程：左）肿瘤细胞中 SDH*/FH*/IDH* 突变导致琥珀酸、富马酸与 D-2HG 蓄积（红色），TCA 循环与糖酵解/谷氨酰胺回补并存；右）免疫细胞中衣康酸（Itaconate）等免疫代谢物生成",
+    "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+    "doi": "10.1186/s12929-025-01186-y",
+    "figure": "1",
+    "file": "assets/questions/krebs_cycle/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12424225",
+    "source": "paper"
+   },
+   "question": "研究者发现快速增殖的肿瘤细胞中 TCA 循环中间物被大量抽提用于生物合成，同时 IDH1/2、SDH、FH 突变导致致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积（图）。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Mills CE, Ortmann J, Pierce KA, et al.",
-     "doi": "10.1016/j.cmet.2022.04.001",
-     "journal": "Cell Metabolism",
-     "title": "A mitochondrial pathway fuels biosynthetic capacity in cancer",
-     "year": 2022
+     "authors": "Sarkar S, Chang CI, Jean J, et al.",
+     "doi": "10.1186/s12929-025-01186-y",
+     "journal": "Journal of Biomedical Science",
+     "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+     "year": 2025
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "TCA循环中间物被抽提用于生物合成时，必须通过回补反应补充以维持循环运转",
+     "text": "SDH 功能缺失使琥珀酸蓄积，琥珀酸作为 α-KG 依赖性双加氧酶（如 TET、JMJD 去甲基化酶）的竞争性抑制剂，可导致表观遗传与 HIF-1α 信号改变",
      "answer": true
     },
     {
      "label": "B",
-     "text": "丙酮酸羧化酶催化的丙酮酸→草酰乙酸反应是重要的回补反应",
+     "text": "TCA 中间物被抽提用于生物合成时，必须通过回补反应（如谷氨酰胺进入 α-KG、丙酮酸羧化）补充中间物以维持循环运转",
      "answer": true
     },
     {
      "label": "C",
-     "text": "α-酮戊二酸经脱氢酶复合体氧化脱羧生成琥珀酰辅酶A，同时将NAD⁺还原为NADH",
+     "text": "IDH1/2 致癌突变获得新功能，将 α-KG 转化为 D-2HG；D-2HG 竞争性抑制多种 α-KG 依赖性双加氧酶",
      "answer": true
     },
     {
      "label": "D",
-     "text": "回补反应仅在快速分裂的细胞中发生，静止细胞不需要",
+     "text": "FH 功能缺失导致富马酸蓄积，会增强 TCA 循环的整体通量以代偿能量不足",
      "answer": false
     }
    ],
@@ -1687,7 +1727,7 @@
     "module_1",
     "生物化学",
     "TCA循环",
-    "代谢调控"
+    "致癌代谢物"
    ],
    "target": "competition",
    "type": "mtf"
@@ -1735,7 +1775,7 @@
    "bioId": "M1-01-e8980473",
    "concept": "脂肪酸氧化与酮体",
    "difficulty": "league",
-   "explanation": "A【对】依据：β 氧化经脱氢、水化、再脱氢、硫解四步循环，每轮切下二碳单位生成乙酰辅酶 A。\nB【对】依据：脂肪酸合酶在胞质溶胶以乙酰辅酶 A/丙二酸单酰辅酶 A 为原料合成脂酸。\nC【错】错因：两者场所、酶系、辅酶（NAD⁺/NADPH）与载体均不同，是两条独立途径而非逆转。\nD【错】错因：肝脏缺乏硫解酶（琥珀酰辅酶 A 转硫酶），只能生成酮体而不能氧化利用，酮体供肝外组织使用。",
+   "explanation": "A【对】依据：β 氧化经脱氢、水化、再脱氢、硫解四步循环，每轮切下二碳单位生成乙酰辅酶 A。\nB【对】依据：脂肪酸合酶在胞质溶胶以乙酰辅酶 A/丙二酸单酰辅酶 A 为原料合成脂肪酸。\nC【错】错因：两者场所、酶系、辅酶（NAD⁺/NADPH）与载体均不同，是两条独立途径而非逆转。\nD【错】错因：肝脏缺乏硫解酶（琥珀酰辅酶 A 转硫酶），只能生成酮体而不能氧化利用，酮体供肝外组织使用。",
    "question": "饥饿时机体动员脂肪组织储存的脂肪供能。根据以上信息，判断以下陈述的正误。",
    "references": [],
    "subQuestions": [
@@ -1850,38 +1890,48 @@
   },
   {
    "bioId": "M4-02-b7873823",
-   "concept": "双因子杂交与独立分配的验证",
+   "concept": "独立分配与非连锁染色体的关联（染色体间连锁不平衡）",
    "difficulty": "league",
-   "explanation": "A【对】依据：F₂代出现9:3:3:1的表型比例，说明两对等位基因在减数分裂时独立分配，符合自由组合定律。这一比例成立的前提是：①两对基因位于不同染色体上（或同染色体但距离足够远，重组率接近50%）；②完全显性；③无基因互作；④配子存活率相等。\nB【错】错因：测交是将F₁双杂合子（RrYy）与双隐性纯合子（rryy）杂交，测试交后代的比例（1:1:1:1）能直接反映F₁产生的四种配子（RY、Ry、rY、ry）的种类与比例，而非取决于亲本的表现型数量。选项将测交后代表型来源说反了。\nC【错】错因：如果两对基因位于同一染色体上且距离较近（连锁），它们倾向于一起遗传，不会独立分配。此时F₂代的表型比例会偏离9:3:3:1，亲本型偏多，重组型偏少。只有当基因位于不同染色体上，或同染色体但距离足够远（重组率≈50%）时，才会出现9:3:3:1。\nD【错】错因：9:3:3:1比例反映的是等位基因在减数分裂时的分离和组合规律，与群体中显性/隐性等位基因的频率无关。群体中等位基因频率由突变、选择、漂变、迁移等因素决定，与杂交实验的分离比例是两个不同层面的概念。\n【通法】9:3:3:1 成立的四前提缺一不可：两对基因位于非同源染色体（或重组率≈50%）、完全显性、无基因互作、配子存活率相等。题干出现偏离 9:3:3:1，优先怀疑连锁或致死基因，再考虑互作。",
-   "question": "研究者通过分析豌豆的双因子杂交实验，发现某些性状组合的F₂代表型比例偏离经典的9:3:3:1。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图 C-D 显示分别位于 chr14 与 chr22（非同源染色体）的两处 SNP 之间检出强 LD（r² > 0.8）。非连锁位点的等位基因在配子形成时按自由组合随机分配，仅凭物理连锁不可能解释此关联，故需从群体层面寻找原因（如群体分层、混合、选择、随机漂变下的小群体样本），选项因果判断正确。\nB【对】依据：当样本由遗传背景不同的人群混合组成（图 A-B 展示了 5 个超级人群与 26 个精细人群）时，即使各位点在每个亚群内遵循独立分配，混合样本仍会因亚群间等位基因频率差异形成虚假的染色体间关联（stratification），这是图 G 中观察计数与 Hardy-Weinberg 随机组合预期（图 E-F）显著偏离（P < 2.2×10⁻¹⁶）最可能的解释之一。\nC【错】错因：图 E 给出了单一人群的等位基因频率（如 P(A)=0.462、P(B)=0.465），图 F 给出按随机组合算得的 9 种基因型预期频率，图 G 将预期与观察计数并列——观察值显著偏离预期（如 AABB 预期 119 而观察 0），恰恰表明等位基因并非随机组合，即'独立分配'在该样本中并不成立；选项说'与随机组合预期一致'与图 G 数据相反。\nD【错】错因：连锁不平衡（LD）指同一群体内不同位点等位基因的关联统计，两个位点既可在同一条染色体（顺式连锁），也可异地存在但发生非随机组合（如本图所示的染色体间 LD）；'发现 LD 即证明两基因同一染色体'是错误的转移——LD 是群体现象，染色体位置是物理事实，二者不能互相否定。\n@@ANNOTATED_IMAGE:assets/questions/mendel/fig1-src-annotated.jpg",
+   "image": {
+    "caption": "GPU 加速的染色体间 LD 扫描：(A) 5 个超级人群 (B) 26 个精细人群 (C-D) chr14-chr22 LD 信号与 r²>0.8 位点对 (E-G) 随机组合预期 vs 观察基因型计数（P<2.2×10⁻¹⁶）",
+    "credit": "Lv W et al., Genome Biology 2026",
+    "doi": "10.1186/s13059-026-04019-9",
+    "figure": "1",
+    "file": "assets/questions/mendel/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13097867",
+    "source": "paper"
+   },
+   "question": "研究者对 1000 Genomes 人群进行 GPU 加速扫描，在分别位于 chr14 与 chr22 的非连锁 SNP 之间检测到强连锁不平衡（LD，r² > 0.8；观察基因型计数与 Hardy-Weinberg 随机组合预期显著偏离，P < 2.2×10⁻¹⁶），结果见图。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Huang TT, Marowsky AR",
-     "doi": "10.1093/genetics/iyac064",
-     "journal": "Genetics",
-     "title": "Mendelian genetics: a modern perspective",
-     "year": 2022
+     "authors": "Lv W, Zou Y, Shang Z, et al.",
+     "doi": "10.1186/s13059-026-04019-9",
+     "journal": "Genome Biology",
+     "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
+     "year": 2026
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "F₂代9:3:3:1的表型比例表明两对基因位于不同染色体上或距离足够远",
+     "text": "非连锁（非同源染色体）位点间出现强 LD，说明该关联不能由物理连锁与重组不足解释，需考察群体分层等群体因素",
      "answer": true
     },
     {
      "label": "B",
-     "text": "测交后代表型比例主要取决于亲本的表现型数量而非F₁配子的种类比例",
-     "answer": false
+     "text": "若样本由多个等位基因频率不同的亚群混合构成，仅群体分层即可产生染色体间假性关联，使观察基因型偏离随机组合预期",
+     "answer": true
     },
     {
      "label": "C",
-     "text": "若两对基因位于同一染色体上且距离较近，F₂代仍会出现9:3:3:1",
+     "text": "图 E-G 显示观察基因型计数与基于等位基因频率的随机组合预期一致，支持这些位点遵循独立分配",
      "answer": false
     },
     {
      "label": "D",
-     "text": "9:3:3:1比例证明显性等位基因在群体中的频率高于隐性等位基因",
+     "text": "两个位点之间存在连锁不平衡即证明它们必然位于同一条染色体上",
      "answer": false
     }
    ],
@@ -1891,7 +1941,7 @@
     "module_4",
     "遗传学",
     "自由组合定律",
-    "独立分配"
+    "连锁不平衡"
    ],
    "target": "competition",
    "type": "mtf"
@@ -2064,38 +2114,48 @@
   },
   {
    "bioId": "M4-01-516222a8",
-   "concept": "古 DNA 与人类演化",
+   "concept": "古 DNA 揭示尼安德特人基因渗入的时空格局",
    "difficulty": "league",
-   "explanation": "A【对】依据：古 DNA 在埋藏过程中发生水解和氧化损伤，最典型的是胞嘧啶脱氨基为尿嘧啶（C→U），PCR 扩增时 U 被读为 T，导致片段末端出现 C→T 替换，这是鉴定古 DNA 真实性的关键指标。\nB【对】依据：每个细胞含数百至数千个线粒体 DNA 拷贝，而核基因组仅 2 份，在 DNA 严重降解的古样本中，mtDNA 的回收率远高于核 DNA，因此早期古 DNA 研究多从 mtDNA 入手。\nC【对】依据：通过比对尼安德特人、丹尼索瓦人和现代人类的核基因组，发现非非洲人群基因组中约 1-2% 来自尼安德特人，证实了走出非洲后存在杂交事件（introgression）。\nD【错】错因：DNA 测序仅能获取基因组序列信息，基因表达（转录组）需要 RNA 作为模板，而 RNA 比 DNA 更不稳定，古样本中极难保存完整 mRNA，因此古 DNA 无法直接反映基因表达模式。\n【思路引导】古DNA题先想“损伤与污染”两大坑：末端 C→T（胞嘧啶脱氨基为尿嘧啶）是古DNA真实性的典型指标；线粒体DNA拷贝数多，严重降解的古老样本先从线粒体入手；测序时必须设空白对照以排除现代DNA污染。",
-   "question": "研究者从距今约 4 万年的尼安德特人化石中提取 DNA 并进行高通量测序，以研究古人类演化。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图 a 显示可检测到的尼安德特人祖先成分在欧亚古代个体中最高（德国 DBD001 约 2.36%、卢森堡 Loschbour 约 2.33%、跨欧亚农业人群约 1.8-1.9%），而撒哈拉以南古代个体趋近于零（Mota、Shum Laka 为 0%），与'现代人走出非洲后在欧亚与尼安德特人杂交并携带其血统回流'的主流模型（Out-of-Africa with admixture）一致。\nB【对】依据：图中北非摩洛哥 Taforalt（约 1.5 万年前）携带约 0.70-0.86% 可检测的尼安德特人成分；图 c 的混合图（admixture graph）显示 Taforalt 约 62% 来自欧亚/近东相关谱系、38% 来自基部欧亚相关谱系，即其尼安德特人血统经'欧亚谱系流入北非'的道路获得，而非就地杂交——这种'经欧亚回流（back-migration）介导'的判断正确。\nC【错】错因：撒哈拉中部 Takarkori 的尼安德特人成分极低（约 0.15%，近似噪音上限附近），且图 c 的混合图将其解释为接受的 7% 来自 Taforalt 谱系（即经北非——撒哈拉通道的间接传递），而非 Takarkori 人群与尼安德特人直接杂交产生；说'直接杂交解释其≈0.15%'与图中基因流模型不符。\nD【错】错因：本图数据来自对样本 DNA 的测序与混合分析，反映的是基因组上可检测的尼安德特人祖先片段比例，属于遗传（DNA 序列层）信息；基因表达模式需要以 RNA 为模板检测，古代样本中极难保存完整 RNA，且图本身不含任何表达数据，'可直接推断基因表达'属于概念错位。\n@@ANNOTATED_IMAGE:assets/questions/M4-01-516222a8/fig1-annotated.jpg",
+   "image": {
+    "caption": "可检测的尼安德特人祖先成分：(a) 不同古代人群的 Neanderthal 血统比例（横轴为比例%），(b) 采样地理位置，(c) admixture graph 显示 38%/62%/7%/93% 的基因流比",
+    "credit": "Salem N et al., Nature 2025",
+    "doi": "10.1038/s41586-025-08793-7",
+    "figure": "4",
+    "file": "assets/questions/M4-01-516222a8/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12043513",
+    "source": "paper"
+   },
+   "question": "研究者从撒哈拉及周边约 1.5 万年至 7 千年前的古代个体中提取 DNA，估计其可检测的尼安德特人祖先成分（图 a），并构建了混合图（图 c）。欧亚古代个体携带约 1.8%-2.4% 的尼安德特人血统，北非 Taforalt 约 0.7%-0.9%，而 Mota、Shum Laka 等撒哈拉以南古代个体近乎为 0。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Prufer K et al.",
-     "doi": "10.1126/science.abi8264",
-     "journal": "Science",
-     "title": "The evolutionary history of Neanderthals and Denisovans",
-     "year": 2024
+     "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
+     "doi": "10.1038/s41586-025-08793-7",
+     "journal": "Nature",
+     "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+     "year": 2025
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "古 DNA 片段末端常出现胞嘧啶脱氨基导致的 C→T 错误，这是古 DNA 的特征性损伤模式",
+     "text": "欧亚古代个体尼安德特人血统高于撒哈拉以南古代个体，符合'走出非洲后在欧亚发生的杂交（基因渗入）'模型",
      "answer": true
     },
     {
      "label": "B",
-     "text": "线粒体 DNA 因拷贝数高，比核 DNA 更容易从古代样本中成功提取",
+     "text": "北非 Taforalt 携带的尼安德特人成分可由欧亚相关谱系流入北非（回流）来解释，无需主张其与尼安德特人直接杂交",
      "answer": true
     },
     {
      "label": "C",
-     "text": "古核基因组分析可揭示尼安德特人与现代人类之间的基因交流事件",
-     "answer": true
+     "text": "Takarkori 约 0.15% 的尼安德特人成分应直接归因于其人群与尼安德特人的原处杂交事件",
+     "answer": false
     },
     {
      "label": "D",
-     "text": "古 DNA 测序可直接反映古代个体的基因表达模式",
+     "text": "基于该图数据可直接推断这些古代个体的基因表达模式",
      "answer": false
     }
    ],
@@ -2105,7 +2165,7 @@
     "module_4",
     "进化生物学",
     "古 DNA",
-    "尼安德特人"
+    "基因渗入"
    ],
    "target": "competition",
    "type": "mtf"
@@ -2440,38 +2500,48 @@
   },
   {
    "bioId": "M2-02-358991fe",
-   "concept": "光合电子传递与光合磷酸化的偶联",
+   "concept": "光合电子传递的线性与环式途径",
    "difficulty": "league",
-   "explanation": "A【对】依据：Z方案描述了光合电子传递的完整路径：H₂O在PSII的放氧复合体（OEC）被裂解，释放电子经PQ、Cyt b6f、PC传递至PSI，PSI再次吸收光能将电子提升至更高能级，经Fd传递至FNR，最终将NADP⁺还原为NADPH。两个光系统（PSII和PSI）串联工作，电子传递呈Z字形。\nB【对】依据：电子传递过程中，Cyt b6f复合体通过Q循环将质子从基质泵入类囊体腔，加上PSII水裂解释放的质子，在类囊体膜两侧形成质子梯度（ΔpH），质子通过ATP合酶回流时驱动ADP + Pi → ATP，这一过程称为光合磷酸化。\nC【对】依据：环式电子传递仅由PSI参与，电子经Fd返回Cyt b6f形成循环，只泵入质子驱动ATP合成，不产生NADPH也不裂解水放出O₂，是补充ATP的辅助途径。\nD【错】错因：Calvin循环（暗反应）的酶促反应本身不直接需要光，但需要光反应产生的ATP和NADPH作为能量和还原力。Rubisco的活化需要光调节（通过铁氧还蛋白-硫氧还蛋白系统），但Calvin循环的各个反应步骤不直接依赖光子的吸收，因此可在黑暗中短暂进行（直到ATP/NADPH耗尽）。",
-   "question": "研究者通过离体叶绿体实验发现，某些抑制剂阻断电子传递链后，ATP和NADPH的合成均受到抑制。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：图左侧 H₂O 在 PSII 放氧侧被裂解（释放 O₂ 与 H⁺），电子经质体醌库（PQ）传递至 Cyt b₆f，再经质体蓝素（PC）到达 PSI，PSI 受光激发后把电子经铁氧还蛋白（Fd）交给 FNR，最终将 NADP⁺ 还原为 NADPH；图中黄色虚线箭头即这条线性电子流（LEF），PSII 与 PSI 串联工作。\nB【对】依据：Cyt b₆f 通过 Q 循环将 H⁺ 泵入类囊体腔，PSII 水裂解也在腔侧释放 H⁺，形成跨膜 ΔpH；图中 ATP 合酶利用 H⁺ 回流（'胞质侧'）驱动 ATP 合成，即光合磷酸化（化学渗透偶联）。\nC【对】依据：环式电子流（CEF）由 PSI 发出，电子经 Fd 返回（细胞色素复合体/NDH-1 注入 PQ 库）形成循环，不还原 NADP⁺、不裂解水，只维持 ΔpH 驱动 ATP 合成；图中 NDH-1 和 PSI 之间可见环式箭头，NDH-1 是蓝细菌环式电子流的关键入口。\nD【错】错因：Flv1/Flv3 是位于 PSI 受体侧的可溶性黄素蛋白类'伪环式'电子受体，接受电子后将电子传给 O₂ 生成水（水-水循环），既产生 ΔpH 又保护 PSI，不将电子交给 NADP⁺；'直接将电子传递给 NADP⁺'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/photosynthesis/fig1-src-annotated.jpg",
+   "image": {
+    "caption": "蓝细菌类囊体膜上光合电子传递路由：(左→右) PBS-PSII、PQ 库、Cyt b₆f、NDH-1、PSI、Fd/FNR 与 ATP 合酶；含线性和环式电子流",
+    "credit": "Wey LT et al., Plant Physiology 2026",
+    "doi": "10.1093/plphys/kiag107",
+    "figure": "1",
+    "file": "assets/questions/photosynthesis/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13331136",
+    "source": "paper"
+   },
+   "question": "研究者利用蓝细菌（Synechocystis sp.）解析了类囊体膜上光合电子传递的完整路由（图）。电子可从水经 PSII、PQ、Cyt b₆f、PC、PSI 流向 NADP⁺（线性），也可在 PSI-NDH-1 之间形成环式回流。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Stirbet A, Govindjee, Kretschmer C, et al.",
-     "doi": "10.1007/s11120-023-01001-2",
-     "journal": "Photosynthesis Research",
-     "title": "Photosystem II: the water-splitting complex",
-     "year": 2023
+     "authors": "Wey LT, Bos PR, Crosbie M, et al.",
+     "doi": "10.1093/plphys/kiag107",
+     "journal": "Plant Physiology",
+     "title": "Electron transport reactions of cyanobacterial photosynthesis and state-of-the-art in vivo measurements",
+     "year": 2026
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "Z方案中，电子从H₂O经PSII和PSI传递至NADP⁺，两个光系统串联工作",
+     "text": "线性电子流中，电子从 H₂O 经 PSII、PQ、Cyt b₆f、PC、PSI、Fd 最终传给 FNR 还原 NADP⁺",
      "answer": true
     },
     {
      "label": "B",
-     "text": "电子传递过程中建立的质子梯度驱动ATP合酶合成ATP",
+     "text": "电子传递与 PSII 水裂解共同在膜两侧建立质子梯度，驱动 ATP 合酶合成 ATP",
      "answer": true
     },
     {
      "label": "C",
-     "text": "环式电子传递仅由PSI参与，只产生ATP而不产生NADPH和O₂",
+     "text": "NDH-1 介导的环式电子流只产生质子梯度驱动 ATP 合成，不生成 NADPH 也不裂解水",
      "answer": true
     },
     {
      "label": "D",
-     "text": "Calvin循环的每一步反应都需要光直接参与",
+     "text": "Flv1/Flv3 黄素蛋白是 PSI 的次级电子受体，直接将电子传递给 NADP⁺ 以减小 NADPH/ATP 比",
      "answer": false
     }
    ],
@@ -3209,33 +3279,43 @@
   },
   {
    "bioId": "M1-02-30bbc833",
-   "concept": "m6A RNA 修饰与表观转录组",
+   "concept": "m6A RNA 修饰的写入、读取与擦除",
    "difficulty": "league",
-   "explanation": "A【对】依据：METTL3 为催化亚基，METTL14 为结构亚基，二者形成异二聚体复合体，以 SAM 为甲基供体，特异性催化 mRNA 中 RRACH 基序内腺苷的 N6 位甲基化。\nB【对】依据：YTHDF1/2/3 通过 YTH 结构域识别 m6A，YTHDF1 促进翻译，YTHDF2 招募 CCR4-NOT 复合体促进 mRNA 降解，YTHDF3 协同二者功能。\nC【对】依据：FTO（fat mass and obesity-associated protein）属于 AlkB 家族双加氧酶，可氧化去除 m6A 的甲基，使 m6A 成为可逆的动态修饰，参与代谢与发育调控。\nD【错】错因：m6A 广泛分布于 mRNA、lncRNA（如 XIST）、circRNA 及 miRNA 前体中，在各类 RNA 的剪接、出核、稳定性及翻译调控中均发挥重要作用。",
-   "question": "N6-甲基腺苷（m6A）是真核生物 mRNA 中最丰富的内部修饰。根据以上信息，判断以下陈述的正误。",
+   "explanation": "A【对】依据：METTL3 为催化亚基，METTL14 为结构亚基，二者与 WTAP、VIRMA（KIAA1429）、ZC3H13、RBM15/15B 等组装为甲基转移酶复合体，以 SAM（S-腺苷甲硫氨酸）为甲基供体，特异催化 RNA 中 RRACH 基序内腺苷的 N6 位甲基化；图中 Writing/Erasing 循环展示了 m6A 的动态可逆性。\nB【对】依据：YTH 结构域蛋白 YTHDF1/2/3（细胞质）与 YTHDC1/2（细胞核）通过保守的 YTH 结构域识别 m6A：YTHDF2 招募 CCR4-NOT 复合体促进 mRNA 降解，YTHDF1 促进翻译，YTHDF3 协同二者；图中 YTHDF1/2/3 的 YTH 结构域位于蛋白 C 端，而 YTHDC1 的 YTH 结构域位于中部。\nC【对】依据：FTO 与 ALKBH5 属于 AlkB 家族 α-酮戊二酸（α-KG）依赖性双加氧酶，可氧化去除 m6A 的甲基，使 m6A 成为可逆的动态修饰；这与图中 'Erasing' 箭头所示方向一致。\nD【错】错因：m6A 广泛分布于 mRNA、lncRNA（如 XIST）、circRNA 以及 miRNA 前体中，参与剪接、出核、稳定性与翻译等全过程调控；图中 YTHDC1 的核内降解/稳定化功能就作用于多种 RNA 类型，'仅存在于 mRNA' 的表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M1-02-30bbc833/fig1-annotated.jpg",
+   "image": {
+    "caption": "m6A 写入/读取/擦除机制：(A) m6A 动态写入与擦除循环，(B) YTH 结构域蛋白家族，(C) IGF2BP 家族",
+    "credit": "Wei G, Biochemical Society Transactions 2024",
+    "doi": "10.1042/BST20230574",
+    "figure": "1",
+    "file": "assets/questions/M1-02-30bbc833/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC11088905",
+    "source": "paper"
+   },
+   "question": "N6-甲基腺苷（m6A）是真核生物 RNA 中最丰富的内部修饰，其动态调控网络如图（写入/擦除循环、YTH 结构域读取蛋白、IGF2BP 家族）所示。根据以上信息，判断以下陈述的正误。",
    "references": [
     {
-     "authors": "Zaccara S, Ries RJ, Jaffrey SR",
-     "doi": "10.1038/s41576-019-0168-5",
-     "journal": "Nature Reviews Genetics",
-     "title": "Reading, writing and erasing mRNA methylation",
-     "year": 2019
+     "authors": "Wei G",
+     "doi": "10.1042/BST20230574",
+     "journal": "Biochemical Society Transactions",
+     "title": "RNA m6A modification, signals for degradation or stabilisation?",
+     "year": 2024
     }
    ],
    "subQuestions": [
     {
      "label": "A",
-     "text": "METTL3/METTL14 复合体作为'书写器'催化腺苷 N6 位甲基化",
+     "text": "METTL3/METTL14 为核心亚基、并以 SAM 为甲基供体的复合体催化 mRNA 腺苷 N6 位甲基化",
      "answer": true
     },
     {
      "label": "B",
-     "text": "YTHDF 家族蛋白作为'阅读器'识别 m6A 并影响 mRNA 稳定性或翻译效率",
+     "text": "YTHDF 家族蛋白通过 YTH 结构域识别 m6A，可招募 CCR4-NOT 等复合体影响 mRNA 稳定性",
      "answer": true
     },
     {
      "label": "C",
-     "text": "FTO 蛋白作为'擦除器'可逆地去除 m6A 甲基化修饰",
+     "text": "FTO 属 AlkB 家族 α-酮戊二酸依赖性双加氧酶，可氧化去除 m6A 甲基，使修饰动态可逆",
      "answer": true
     },
     {
@@ -3680,6 +3760,588 @@
     "module_2",
     "微生物学",
     "噬菌体侵染实验"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M1-04-56c166ad",
+   "concept": "ATM-ATR 检查点通路的效应网络",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中 DSB 由 MRN 复合体感应并激活 ATM；活化的 ATM 磷酸化 CHK2，CHK2 进而磷酸化并稳定 p53，p53 上调 p21 抑制 CDK4/6，使细胞阻滞在 G1/S 检查点——这是'传感器→介质→效应器'的经典三级级联，选项中 ATM-CHK2-p53-p21-CDK4/6 的顺序与图一致。\nB【对】依据：图中复制叉停滞/核酸切除暴露的 ssDNA 被 RPA 包被并招募 ATR-ATRIP 激活 ATR；ATR 磷酸化 CHK1，CHK1 使 CDC25A 磷酸化而被泛素化降解，从而抑制 CDK2 活性、减缓 S 期复制叉进展（S 期检查点）——'ATR-CHK1-CDC25A-CDK2 轴建立 S 期阻滞'正确。\nC【错】错因：CHK1 对 CDC25C 的作用是磷酸化使其失活/降解，从而阻止 CDC25C 去除 CDK1 的抑制性磷酸（T14/Y15），最终抑制而非促进 CDK1 激活；选项把'抑制 CDC25C'说成'激活 CDC25C→促进 CDK1'，方向性错误（图中 G2/M 通路为 CHK1→CDC25C 抑制线，同时 WEE1/PKMYT1 磷酸化维持 CDK1 失活）。\nD【错】错因：G1/S 检查点主要依赖 ATM-CHK2-p53-p21 轴对 CDK4/6 的抑制；p53 缺失时该转录依赖的持久阻滞机制受损，DNA 损伤细胞仍可进入 S 期（基因组不稳定），这正是 p53 缺失肿瘤细胞 DNA 损伤检查点'失效'的要害；选项中 p53 缺失而 G1 检查点完好与机制矛盾。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/dna-checkpoint-annotated.jpg",
+   "image": {
+    "caption": "DNA 损伤检查点信号网络：上）DSB→ATM，ssDNA/复制应激→ATR；中）CHK2/CHK1 两级介质；下）p53-p21（G1 阻滞）、CDC25A（S 期阻滞）、CDC25C-WEE1/PKMYT1（G2/M 阻滞）等效应分子",
+    "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
+    "doi": "10.1038/s41392-023-01548-8",
+    "figure": "4",
+    "file": "assets/questions/cell_cycle/dna-checkpoint.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10485079",
+    "source": "paper"
+   },
+   "question": "图为 DNA 损伤检查点信号网络：DSB（左）与复制应激产生的 ssDNA（右）分别激活 ATM 与 ATR，经 CHK2/CHK1 两级级联调控 p53、CDC25、WEE1 等效应分子，进而建立 G1/S、S 期与 G2/M 检查点。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Li Q, Qian W, Zhang Y, et al.",
+     "doi": "10.1038/s41392-023-01548-8",
+     "journal": "Signal Transduction and Targeted Therapy",
+     "title": "A new wave of innovations within the DNA damage response",
+     "year": 2023
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "DSB 激活 ATM→CHK2→p53→p21 通路，抑制 CDK4/6 从而建立 G1/S 检查点阻滞",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "复制应激产生的单链 DNA 激活 ATR→CHK1，CHK1 磷酸化 CDC25A 促其降解，进而抑制 CDK2 导致 S 期阻滞",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "G2/M 检查点中 CHK1 通过磷酸化激活 CDC25C，促使 CDK1 去抑制而进入有丝分裂",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "p53 缺失的细胞其 G1/S DNA 损伤检查点依然完整，DNA 损伤细胞会被可靠地阻断在 G1 期",
+     "answer": false
+    }
+   ],
+   "subject": "细胞生物学",
+   "tags": [
+    "cell_cycle",
+    "module_1",
+    "细胞生物学",
+    "检查点",
+    "DNA损伤应答"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M1-04-77e90279",
+   "concept": "Cyclin-CDK-Rb 轴的细胞周期引擎与生长因子信号",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中 G1 期（限制点）附近显示 CycD-CDK4/6 首先使 Rb 发生初始磷酸化，随后 CycE-CDK2 完成高磷酸化，使 Rb 释放被其束缚的转录因子 E2F，游离 E2F 驱动 S 期所需基因（DNA 复制机器）表达——'Rb-E2F 轴是 G1→S 转换的关键开关'与教科书的限制点模型一致，选项因果关系正确。\nB【对】依据：图中 CKI（CDK 抑制蛋白）如 p16/p21/p27/p57 通过对 CDK-cyclin 复合体的直接抑制阻断周期进程：p16 特异抑制 CycD-CDK4/6，p21/p27 广谱抑制多种 G1/S CDK。抑癌基因 CDKN2A（p16）缺失或 p21 下调会使限制点管制失效，促进异常增殖，'CKI 缺失可解除制动、促增殖'正确。\nC【错】错因：CycB-CDK1（图中 G2/M 处）的活性受双重磷酸化开关调节：CAK 需磷酸化其激活环 T 环上的苏氨酸，而 Wee1/Myt1 激酶磷酸化 T14/Y15 的抑制位点使酶失活，进入 M 期前 CDC25 去除这些抑制性磷酸才使 CycB-CDK1 完全激活；'只需 CAK 激活、不受抑制性磷酸化控制'与图中 Wee1/Myt1 标注相悖。\nD【错】错因：生长因子（EGF 等）与受体酪氨酸激酶（EGFR/TKR）结合后，信号经 RAS-RAF-MEK-ERK 与 PI3K-AKT-mTOR 级联传递，最终上调并激活 CycD-CDK4/6 与 CycE-CDK2，再由这些 CDK 在细胞核内磷酸化 Rb——生长因子信号并不直接跨膜进入细胞核磷酸化 Rb，'直接进入细胞核'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/cdk-cyclin-annotated.jpg",
+   "image": {
+    "caption": "哺乳动物细胞周期的分子引擎：上方 EGFR/TKR 生长因子信号（RAS-ERK、PI3K-AKT-mTOR）驱动 Cyclin-CDK 序贯激活；中央 Rb-E2F 开关与 CKI（p16/p21/p27/p57）管制 G1/S 限制点；G2/M 处 Wee1/Myt1-CDC25 调控 CycB-CDK1",
+    "credit": "Pellarin I et al., Signal Transduction and Targeted Therapy 2025",
+    "doi": "10.1038/s41392-024-02080-z",
+    "figure": "3",
+    "file": "assets/questions/cell_cycle/cdk-cyclin.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC11734941",
+    "source": "paper"
+   },
+   "question": "图为哺乳动物细胞周期调控总览：生长因子经受体酪氨酸激酶信号入胞，驱动 Cyclin-CDK 复合体序贯激活；Rb-E2F、CKI（p16/p21/p27/p57）、Wee1/Myt1 与 CDC25 等构成多层开关。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Pellarin I, Dall'Acqua A, Favero A, et al.",
+     "doi": "10.1038/s41392-024-02080-z",
+     "journal": "Signal Transduction and Targeted Therapy",
+     "title": "Cyclin-dependent protein kinases and cell cycle regulation in biology and disease",
+     "year": 2025
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "CycD-CDK4/6 与 CycE-CDK2 依次磷酸化 Rb，释放转录因子 E2F 驱动 S 期基因表达，是 G1→S 限制点的核心开关",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "p16、p21、p27 等 CDK 抑制蛋白通过直接结合 CDK 阻断周期进程，其功能缺失可解除限制点管制、促进增殖",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "CycB-CDK1 进入 M 期的激活仅需要 CAK 的激活环磷酸化，不受 Wee1/Myt1 抑制性磷酸化的控制",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "EGF 等生长因子与其受体结合后，会直接进入细胞核磷酸化 Rb，从而解除对 E2F 的抑制",
+     "answer": false
+    }
+   ],
+   "subject": "细胞生物学",
+   "tags": [
+    "cell_cycle",
+    "module_1",
+    "细胞生物学",
+    "细胞周期",
+    "CDK"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M4-03-05b79a5a",
+   "concept": "DNA 双链断裂修复通路 NHEJ 与 HR 的细胞周期选择",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中左支 NHEJ 通路显示：Ku70/80 异二聚体识别游离双链断端→招募 DNA-PKcs 形成 DNA-PK→Artemis 等加工断端→XRCC4-Ligase IV 直接把两条断端连接；G1 期细胞没有姊妹染色单体可作模板，DSB 只能依赖 NHEJ（或以 TMEJ/SSA 为备选），该通路可与细胞周期各时期偶发，但 G1 期尤其占主导，且易产生插入/缺失（indel）——'G1 期以 NHEJ 为主、修复较易错'正确。\nB【对】依据：图中右支 HR 通路显示：MRN 复合体识别断裂并激活 ATM，随后 5′→3′ 末端切除（EXO1/BLM-DNA2）生成 3′ 单链 DNA，RPA 包被并激活 ATR 检查点，最后在 BRCA1/2-PALB2 介导下 RAD51 装载、以姊妹染色单体为模板进行无错误合成——HR 需要姊妹染色单体，故限于 S/G2 期且精确。'HR 依赖姊妹染色单体并局限于 S/G2'正确。\nC【错】错因：NHEJ 直接连接断端，通常伴随小段缺失或插入（indel），是一种'易错'修复；HR 以同源模板复制重建序列，修复结果精确。'NHEJ 比 HR 更精确'与分子机制相反。\nD【错】错因：ATM 的主要触发信号是 DNA 双链断裂（DSB）——它由 MRN 复合体招募并激活、磷酸化 H2AX 起始损伤级联；而 ATR 响应的是复制叉停滞/核酸切除产生的单链 DNA（ssDNA）。'ATM 响应 ssDNA、ATR 响应 DSB'把两个传感器的底物颠倒了。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/dsb-repair-annotated.jpg",
+   "image": {
+    "caption": "DSB 修复通路全景：左支 NHEJ（Ku70/80→DNA-PKcs→XRCC4-LigIV）；右支 HR（MRN/ATM→末端切除→RPA/ATR→RAD51 装载→姊妹染色单体模板）、TMEJ（Polθ）与 SSA（RAD52）；中央粉色框为各通路靶向抑制剂",
+    "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
+    "doi": "10.1038/s41392-023-01548-8",
+    "figure": "3",
+    "file": "assets/questions/gene_regulation/dsb-repair.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10485079",
+    "source": "paper"
+   },
+   "question": "图为真核细胞 DNA 双链断裂（DSB）修复的通路图：左支为非同源末端连接（NHEJ），右支为同源重组（HR）、θ 介导末端连接（TMEJ）与单链退火（SSA）。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Li Q, Qian W, Zhang Y, et al.",
+     "doi": "10.1038/s41392-023-01548-8",
+     "journal": "Signal Transduction and Targeted Therapy",
+     "title": "A new wave of innovations within the DNA damage response",
+     "year": 2023
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "G1 期细胞因无姊妹染色单体模板，DSB 主要经 NHEJ（Ku70/80、DNA-PKcs、XRCC4-LigIV）修复，该通路常产生插入/缺失而较易出错",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "HR 需要末端切除生成 3′ 单链 DNA，并以姊妹染色单体为模板（经 BRCA1/2、RAD51 等），故精确但局限于 S/G2 期",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "NHEJ 因直接连接断端而比以模板指导的 HR 修复更精确",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "ATM 主要响应复制叉停滞产生的单链 DNA，而 ATR 主要响应双链断裂",
+     "answer": false
+    }
+   ],
+   "subject": "分子生物学",
+   "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "DNA修复",
+    "双链断裂"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M4-03-807aa2ee",
+   "concept": "lacI 负调控在进化背景下的生长动力学",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图 B（EV^lacI⁻）相比图 A（Ancestor）显示出更明显的条件依赖生长差异：蓝色（含葡萄糖的检测条件）曲线先上升，红色（乳糖检测条件）存在停滞期后追赶且重复间变异增大；图 C（EV^lacI⁺）两条曲线高度重合。这提示在该 8,000 代进化克隆的遗传背景下，lacI⁻（组成型表达）克隆在乳糖环境中的诱导准备不再需要、但其代谢耦合差异更大——'表现型差异可由实验条件（碳源）与基因背景共同塑造'成立。\nB【对】依据：图 D 直接并列 EV^lacI⁻ 与 EV^lacI⁺——绿色曲线（lacI⁻ 克隆）在乳糖检测条件下呈滞后于其他曲线的动力学；说明把 lacI⁻ 突变'安插'进已有进化历史（EV，evolutionary flattened lineage）的克隆后，生长表现不仅由基因型单一决定，还取决于背景等位基因与基因×环境的互作（即历史偶然性，historical contingency）——这与原文标题'环境历史促成乳糖操纵子表达的适应性分歧'一致。\nC【错】错因：若某基因型与环境组合对生长只有纯加法效应，则各基因型在同一条件下的曲线应共享相同的对数期启动时机与生长速率；而图中曲线存在明显滞后与交叉（尤其 D 面板），说明基因（lacI 状态）与环境的互作效应（而非单一加性）在起作用，'完全一致、纯加性'与数据不符。\nD【错】错因：这些克隆会出现生长滞后的直接原因是乳糖诱导准备/代谢适应（操纵子诱导时间与时序调控），而不是乳糖不提供碳源；若乳糖不能作为碳源，克隆根本无法在乳糖检测条件下进入生长期（图中红色/绿色曲线仍显著生长），故'乳糖不能作为碳源'与图中数据矛盾。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/lac-fitness-annotated.jpg",
+   "image": {
+    "caption": "生长动力学比较：A) 祖先株；B) 携带 lacI⁻ 的进化克隆（EV^lacI⁻）；C) 携带 lacI⁺ 的进化克隆（EV^lacI⁺）；D) 三者的直接对比（绿色为 EV^lacI⁻），横轴为时间（h），纵轴为 OD",
+    "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
+    "doi": "10.1093/molbev/msab077",
+    "figure": "5",
+    "file": "assets/questions/gene_regulation/lac-fitness.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC8233506",
+    "source": "paper"
+   },
+   "question": "研究者将 8,000 代进化克隆（EV）与祖先株对比，把 lacI⁻ 或 lacI⁺ 等位基因分别导入 EV 克隆，测定其在检测环境（葡萄糖/乳糖）中的生长动力学（图 A-D：A 祖先，B EV^lacI⁻，C EV^lacI⁺，D 三者并列）。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
+     "doi": "10.1093/molbev/msab077",
+     "journal": "Molecular Biology and Evolution",
+     "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
+     "year": 2021
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "同一 lacI 基因型在不同检测条件下可能呈现不同的生长动态，即表型受基因与环境共同作用",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "EV^lacI⁻ 与 EV^lacI⁺ 在相同条件下的生长曲线并不完全一致，说明基因效应依赖克隆的进化历史背景（历史偶然性）",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "生长曲线的滞后意味着各基因型-环境组合的生长仅受加性效应控制，不存在基因×环境的互作",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "乳糖检测条件下部分克隆出现生长滞后，说明乳糖不能作为这些克隆的碳源",
+     "answer": false
+    }
+   ],
+   "subject": "分子生物学",
+   "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "操纵子",
+    "进化适应",
+    "历史偶然性"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M3-01-64989b6d",
+   "concept": "TCA 代谢物对免疫细胞极化的信号调控",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图右下（琥珀酸）面板显示琥珀酸经受体 SUCNR1 与转运体 MCT1 作用于肿瘤相关巨噬细胞（TAM）与 T 细胞：TAM 中稳定 HIF-1α、激活 PI3K 促瘤表型；T 细胞中促进耗竭（exhaustion，PD-1/TIM3 等上升）并抑制效应细胞因子 IFN-γ、TNF-α 分泌——'琥珀酸→SUCNR1→抑瘤免疫的促瘤/耗竭信号'与图示一致。\nB【对】依据：图右上（α-KG/2-HG）面板显示 α-KG 经 SLC13A3 进入 CD8⁺ T 细胞驱动增殖与 IFN-γ，并促进 Treg 极化（红箭头）、M2 巨噬细胞极化；而其衍生物 2-HG 则促进 Th17、抑制 Treg 与 NK 细胞功能（紫箭头向下）。两者的免疫效应相反且均源自同一代谢枢纽，'α-KG 与 2-HG 免疫作用相反'正确。\nC【错】错因：衣康酸（itaconate）关键机制之一是抑制 SDH（琥珀酸脱氢酶，图中 SDH 上标 ✕）进而阻断琥珀酸氧化、削弱 TCA 循环与氧化磷酸化的代谢通量；'抑制 SDH 增强氧化磷酸化'与酶学方向相反。图中衣康酸主要介导 CD8⁺ T 细胞耗竭（PD-1/TIM3↑）、M2 样 TAM 极化及巨噬细胞抗炎/IFN-I 反应。\nD【错】错因：图中琥珀酸作用于 T 细胞的效果是抑制 IFN-γ/TNF-α（T 形抑制线）并促进耗竭，故'琥珀酸升高增强效应 T 细胞的 IFN-γ 分泌'与图相反；效应增强与图不符。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-immune-annotated.jpg",
+   "image": {
+    "caption": "TCA 代谢物的免疫调控网络：中心为 TCA 循环，四象限分别为衣康酸（上左）、α-KG 与 2-HG（上右）、富马酸（下左）、琥珀酸（下右）对巨噬细胞/T/NK 细胞的作用",
+    "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+    "doi": "10.1186/s12929-025-01186-y",
+    "figure": "3",
+    "file": "assets/questions/krebs_cycle/onco-immune.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12424225",
+    "source": "paper"
+   },
+   "question": "图展示了 TCA 循环代谢物（α-KG、2-HG、衣康酸、琥珀酸、富马酸）对肿瘤微环境中巨噬细胞、T 细胞与 NK 细胞极化和功能的多重调控。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Sarkar S, Chang CI, Jean J, et al.",
+     "doi": "10.1186/s12929-025-01186-y",
+     "journal": "Journal of Biomedical Science",
+     "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+     "year": 2025
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "琥珀酸经受体 SUCNR1 信号促进肿瘤相关巨噬细胞促瘤表型，并促进 T 细胞耗竭、抑制 IFN-γ 与 TNF-α 分泌",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "α-KG 促进 CD8⁺ T 细胞增殖与 IFN-γ、促进 Treg/M2 极化，而其衍生物 2-HG 却抑制 NK 细胞并促 Th17——同一代谢枢纽衍生出相反的免疫结果",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "衣康酸通过抑制 SDH 阻断琥珀酸氧化，因此会增强氧化磷酸化的代谢通量",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "琥珀酸升高会增强效应 T 细胞 IFN-γ 与 TNF-α 的分泌，从而抑制肿瘤生长",
+     "answer": false
+    }
+   ],
+   "subject": "免疫学",
+   "tags": [
+    "immune_system",
+    "module_3",
+    "免疫学",
+    "肿瘤免疫",
+    "免疫代谢"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M1-02-76412fe1",
+   "concept": "致癌代谢物抑制表观遗传双加氧酶的因果链",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中枢框列出 D-2HG、富马酸、琥珀酸三种致癌代谢物。三者均为二羧酸类，与 α-KG（2-酮戊二酸）结构相似，可占据 α-KG 依赖性双加氧酶（α-KGDD）的辅底物口袋而无法被氧化利用，从而竞争性抑制 TET（DNA 去甲基化酶）、JMJ 家族组蛋白去甲基化酶及 PHD（脯氨酰羟化酶）等，这是'结构类似物→竞争性抑制'的核心机制。\nB【对】依据：TET 酶以 α-KG 与 O₂ 为辅底物，催化 5-甲基胞嘧啶（5mC）氧化为 5-羟甲基胞嘧啶（5hmC）等，启动 DNA 去甲基化；当 TET 被 D-2HG/琥珀酸/富马酸抑制时，DNA 呈超甲基化状态并伴组蛋白甲基化改变（图中 Epigenetic regulation 面板），阻断造血/神经等细胞分化，'抑制 TET 导致 DNA 超甲基化与分化阻滞'正确。\nC【对】依据：图中 Pseudohypoxia 面板显示琥珀酸/富马酸抑制 PHD（羟化 HIF-1α 使其被 VHL-E3 泛素化降解的酶），使缺氧诱导因子 HIF-1α 在常氧下也稳定累积、与 HIF-1β 二聚化入核驱动血管生成等靶基因转录——'伪缺氧'状态，'维持常氧稳定（伪缺氧）'正确。\nD【错】错因：D-2HG 并非由 FH（富马酸水合酶）产生——FH 突变导致的是富马酸蓄积；D-2HG 由 IDH1/2 致癌突变体（新功能酶）将 α-KG 还原生成。把'产生 2-HG'的酶错记为 FH，属于酶-代谢物对应关系错误。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-epi-annotated.jpg",
+   "image": {
+    "caption": "致癌代谢物的多效作用：(中) 2-HG/富马酸/琥珀酸蓄积；(左) 伪缺氧（PHD-HIF-1α 通路）与表观遗传调控（TET/JMJD/FTO）；(右) 异常代谢、基因组合不稳定等六个效应面板",
+    "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+    "doi": "10.1186/s12929-025-01186-y",
+    "figure": "2",
+    "file": "assets/questions/krebs_cycle/onco-epi.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12424225",
+    "source": "paper"
+   },
+   "question": "图汇总了 IDH1/2、SDH、FH 突变导致的致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积对各细胞过程的'多效'作用，包括表观遗传调控与伪缺氧等六个效应面板。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Sarkar S, Chang CI, Jean J, et al.",
+     "doi": "10.1186/s12929-025-01186-y",
+     "journal": "Journal of Biomedical Science",
+     "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+     "year": 2025
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "D-2HG、琥珀酸、富马酸作为 α-KG 的结构类似物，可竞争性抑制 α-KG 依赖性双加氧酶（TET、JMJ 去甲基化酶、PHD）",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "TET 受抑制后 5mC 无法被氧化，DNA 呈超甲基化状态，并可解释突变细胞的分化阻滞表型",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "琥珀酸/富马酸抑制 PHD 使 HIF-1α 在常氧下不被羟基化降解，形成'伪缺氧'并驱动血管生成相关转录",
+     "answer": true
+    },
+    {
+     "label": "D",
+     "text": "D-2HG 由 FH（富马酸水合酶）突变体催化富马酸生成，故 FH 突变同时引起富马酸与 2-HG 蓄积",
+     "answer": false
+    }
+   ],
+   "subject": "生物化学",
+   "tags": [
+    "krebs_cycle",
+    "module_1",
+    "生物化学",
+    "TCA循环",
+    "致癌代谢物",
+    "表观遗传"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M4-01-a54b4da9",
+   "concept": "基于 LD 谱的人群遗传聚类推断",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中聚类树的叶节点按人群分组：欧洲（EUR）的 CEU/GBR/IBS/TSI 聚为紧密分支，东亚（EAS）CHB/JPT/CHS/CDX/KHV 聚类，南亚（SAS）STU/ITU/PJL/BEB 聚类，非洲（AFR）各人群自成支系——基于 LD（连锁不平衡）谱的聚类结果与基于等位基因频率的地理大洲划分基本吻合，反映群体历史的分层结构，'LD 谱聚类与大洲分组大体一致'正确。\nB【对】依据：图中 PEL（秘鲁人群）以异常长的分支独立于其他美洲人群（AMR）之外约 600 距离处；PEL 经历过严重的人口瓶颈与奠基者效应（祖先极少数个体扩张），使连锁片段以较长 LD 块保留下来，LD 谱偏离其他美洲混血人群，'长分支提示特殊人口历史（瓶颈/漂变）'是群体遗传学的标准推断。\nC【错】错因：LD（同一群体内不同位点等位基因的非随机组合）由重组率、突变、漂变、选择、瓶颈与混合共同塑造，其延伸长度（LD blocks）尤其取决于重组率与人口历史；'完全由突变率决定'将多因素现象单一归因于突变率，与群体遗传学模型矛盾。\nD【错】错因：聚类树是基于群体水平 LD 谱的相似性对'人群'聚类，输出的是群体间结构关系，不携带个体家系信息，无法推断具体个体的血缘/谱系；'推断两个具体个体是否同宗'超出了群体聚类的信息范围。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/ld-clusters-annotated.jpg",
+   "image": {
+    "caption": "基于 LD 谱的 26 个人群层次聚类树：叶节点按大洲着色（EAS 粉、SAS 红、EUR 蓝、AMR 绿、AFR 紫），分支高度表示 LD 谱差异（0-2500）；PEL 以长独立分支远离其他美洲人群",
+    "credit": "Lv W et al., Genome Biology 2026",
+    "doi": "10.1186/s13059-026-04019-9",
+    "figure": "3",
+    "file": "assets/questions/molecular_evo/ld-clusters.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13097867",
+    "source": "paper"
+   },
+   "question": "研究者以人群内的 LD（连锁不平衡）谱为特征对 1000 Genomes 的 26 个人群做层次聚类（图，纵轴为聚类距离 0-2500，叶节点为人群）。欧洲各人群、东亚各人群、南亚各人群分别聚成紧密分支，而秘鲁人群（PEL）以长分支独立于其他美洲人群。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Lv W, Zou Y, Shang Z, et al.",
+     "doi": "10.1186/s13059-026-04019-9",
+     "journal": "Genome Biology",
+     "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
+     "year": 2026
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "基于 LD 谱的聚类与人群的地理大洲分组大体一致，反映群体水平的遗传结构与历史分层",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "PEL 以显著更长的分支独立于其他美洲人群，可用其经历的严重瓶颈/奠基者效应对 LD 结构的影响来解释",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "群体内 LD 的延伸长度完全由突变率决定，与重组率、漂变、选择及人口历史无关",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "该聚类树可直接判断任意两个具体个体是否属于同一宗族（血缘关系）",
+     "answer": false
+    }
+   ],
+   "subject": "进化生物学",
+   "tags": [
+    "molecular_evo",
+    "module_4",
+    "进化生物学",
+    "群体遗传",
+    "连锁不平衡"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M4-01-d6ececaa",
+   "concept": "古代与现代非洲-近东人群的主成分遗传结构",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中主成分图（PC1 纵轴解释方差 8.54%，PC2 横轴 0.53%）显示主要分化轴 PC1 将北非/近东人群（图上部：摩洛哥各期新石器组、近东 Natufian/Neolithic）与撒哈拉以南群体（下部：西非、中非觅食者）分开，反映'撒哈拉屏障'主导的南北向遗传分化；'PC1 主要区分北非/近东与撒哈拉以南人群'与图中聚类位置一致。\nB【对】依据：摩洛哥早期新石器（Morocco EN）相对更早的古-早期新石器与近东人群接近（图中位置向近东聚类偏移），而'对'的判断在于说明：欧洲农业扩散过程中近东农业人群的基因流（横跨地中海走廊）可解释北非新石器人群向近东方向的位置；这是'农业与人口扩散伴随基因流'假说的图证据。\nC【错】错因：PCA 中两点/两群的距离反映的是基因组整体等位基因频率的相似度（由群体历史、混合、漂变共同决定），并不代表两个个体的直系亲属或个体血缘世代关系；'亲缘关系（如直系家庭成员）'是家系层面的概念，用 PCA 距离直接断言'亲缘关系越近'属于概念混淆。\nD【错】错因：主成分解释的方差比例由数据本身的变异结构（如群体间差异大小、人群分层强度）决定，与分析所包含样本量无必然单调关系；增加样本量并不会让 PC1 解释比例无限上升，'解释比例越大→样本量越大'因果倒置。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/adna-pca-annotated.jpg",
+   "image": {
+    "caption": "现代与古代非洲/近东人群的主成分图：横轴 PC2（0.53%）、纵轴 PC1（8.54%）；右上角插图为采样点地理位置；各椭圆与符号对应不同时期的北非/近东/东非群体",
+    "credit": "Salem N et al., Nature 2025",
+    "doi": "10.1038/s41586-025-08793-7",
+    "figure": "2",
+    "file": "assets/questions/molecular_evo/adna-pca.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12043513",
+    "source": "paper"
+   },
+   "question": "研究者将古代个体与现代参考人群一起做主成分分析（PCA），图中 PC1（纵轴）约解释 8.54% 变异，PC2（横轴）约 0.53%；摩洛哥各期新石器人群聚于图上部，西非与中非觅食者位于下部，近东人群居中部偏上（图）。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
+     "doi": "10.1038/s41586-025-08793-7",
+     "journal": "Nature",
+     "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+     "year": 2025
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "PC1 将北非/近东人群与撒哈拉以南人群分开，反映跨越撒哈拉的遗传分化是非洲人群变异的主轴之一",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "摩洛哥早期新石器人群在图中向近东人群偏移，可用近东农业人群向西北非扩散伴随的基因流解释",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "PCA 中两个个体距离越近即表示两人是直系亲属，可用于直接确定家系血缘关系",
+     "answer": false
+    },
+    {
+     "label": "D",
+     "text": "某主成分解释的方差比例越高，说明分析所纳入的样本量越大",
+     "answer": false
+    }
+   ],
+   "subject": "进化生物学",
+   "tags": [
+    "molecular_evo",
+    "module_4",
+    "进化生物学",
+    "群体遗传",
+    "主成分分析"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M1-05-0d21288c",
+   "concept": "解偶联剂与转运抑制剂对线粒体膜电位的影响",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图中左侧为 JC-1 荧光显微图：对照组（Control 行）红色通道明亮、绿色微弱，说明线粒体保持高膜电位（JC-1 以红'聚合体'形式富集于极化线粒体）；CCCP 处理后红/绿比值显著下降（图 B 柱状图，P<0.0001）。CCCP 是质子载体（protonophore）解偶联剂，把质子梯度化学势直接耗散，因此'红/绿比值反映膜电位、CCCP 破坏质子梯度'的机制判断正确。\nB【错】错因：解偶联剂并不抑制呼吸链复合体的电子传递；相反，质子梯度消散后回馈抑制被解除，电子传递与耗氧往往加速（呼吸增强）。'CCCP 通过抑制电子传递链复合体来降低膜电位'把解偶联与复合体抑制两个概念混为一谈。\nC【对】依据：图中 BA（0.5 mM）处理后 JC-1 红/绿比值同样显著下降（图 C，P<0.0001），说明该条件下线粒体跨膜质子电化学梯度受损（趋近去极化）。BA 在此为腺嘌呤核苷酸转运体（ANT）的抑制剂，观察到的去极化提示线粒体依赖动态回路的平衡被打破（ATP 输出受阻改变 Δψ 稳态）——'根据图数据，BA 处理使质子梯度受损'与图一致；选项应严格按'图所示'判读而非假设其完全等于 CCCP。\nD【错】错因：JC-1 红/绿荧光比反映的是线粒体膜电位（Δψm），是'极化状态'的指标；线粒体数量需用 MitoTracker Green 等与膜电位无关的探针并结合拷贝数测定。'红/绿比值反映线粒体数量'颠倒了两类探针的作用对象。\n@@ANNOTATED_IMAGE:assets/questions/oxidative_phos/oxphos-uncoupler-annotated.jpg",
+   "image": {
+    "caption": "JC-1 检测线粒体膜电位：A) 荧光显微图（上=对照、中=CCCP 10μM、下=BA 0.5mM；左列=红色聚合体、右列=绿色单体）；B/C) 红/绿荧光比值定量（P<0.0001）",
+    "credit": "Wang J et al., Frontiers in Physiology 2026",
+    "doi": "10.3389/fphys.2026.1715312",
+    "figure": "1",
+    "file": "assets/questions/oxidative_phos/oxphos-uncoupler.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12950582",
+    "source": "paper"
+   },
+   "question": "研究者用 JC-1 荧光探针检测人卵巢颗粒细胞线粒体膜电位（Δψm）：对照组、CCCP（10 μM）与 BA（0.5 mM）处理后的荧光显微图并列（图 A，上行对照、中行 CCCP、下行 BA；左列红色=JC-1 聚合体，右列绿色=JC-1 单体），红/绿荧光比值定量见图 B/C。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Wang J, Wang GJ, Wang LC, et al.",
+     "doi": "10.3389/fphys.2026.1715312",
+     "journal": "Frontiers in Physiology",
+     "title": "The mechanisms of energy balance between oxidative phosphorylation and glycolysis in human ovarian granulosa cells",
+     "year": 2026
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "JC-1 红/绿荧光比值反映线粒体膜电位；CCCP 作为质子载体解偶联剂使质子梯度耗散，图中其处理后比值显著下降",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "解偶联剂 CCCP 通过抑制呼吸链电子传递复合体的活性来降低线粒体膜电位",
+     "answer": false
+    },
+    {
+     "label": "C",
+     "text": "图中 BA 处理后红/绿比值同样显著下降，说明该处理下线粒体跨膜质子电化学梯度受损（按图判读）",
+     "answer": true
+    },
+    {
+     "label": "D",
+     "text": "JC-1 红/绿荧光比值可用于直接比较各组线粒体数量的多少",
+     "answer": false
+    }
+   ],
+   "subject": "生物化学",
+   "tags": [
+    "oxidative_phos",
+    "module_1",
+    "生物化学",
+    "氧化磷酸化",
+    "线粒体膜电位"
+   ],
+   "target": "competition",
+   "type": "mtf"
+  },
+  {
+   "bioId": "M1-02-af55ba03",
+   "concept": "m6A 阅读器决定 mRNA 降解或稳定的命运",
+   "difficulty": "league",
+   "explanation": "A【对】依据：图 A 核内示意显示 YTHDC1 结合含 m6A 的 RNA 后招募 ZCCHC8-NEXT 复合体与 RBM7，把转录本导向核内 RNA exosome 降解；图 B 核内则显示 YTHDC1 以多聚化方式同时桥接多条 RNA，保护其免受 exosome 攻击（PAXT 通路）并促使稳定化——同一个 YTHDC1 随复合物组成不同可'降解'或'稳定'RNA，选项对两种模式并存且空间定位（核内）的描述正确。\nB【对】依据：图 A 细胞质区显示 YTHDF（YTHDF1/2/3）蛋白结合 m6A 位点后通过三条平行通路促进降解：脱腺苷酸化（CCR4-NOT 复合体）、内切酶切割（RNaseP/MRP，含 HRSP12 介导）与脱帽（UPF1/DCP1A）——均缩短 mRNA 半衰期，'YTHDFs 招募上述复合体促进降解'正确。\nC【对】依据：图 B 细胞质区显示 IGF2BP 家族（IGF2BP1/2/3）结合 m6A 后保护 mRNA 免受分解，具有稳定性/翻译增强的角色；与 YTHDF 的促降解功能互为相反，反映'同一修饰可被不同读取器赋予不同命运'，'IGF2BP 保护 mRNA 稳定'正确。\nD【错】错因：m6A 的功能并非只指向降解：图中同一修饰位点可被 YTHDF 导向降解，也可被 IGF2BP 稳定或促进翻译，且在核内经 YTHDC1 决定出核竞争力；'只能促进 RNA 降解'以偏概全，与图 B 的稳定化通路直接矛盾。\n@@ANNOTATED_IMAGE:assets/questions/rna_biology/m6a-stability-annotated.jpg",
+   "image": {
+    "caption": "m6A 介导的 RNA 命运决定：(A) 降解通路——核内 YTHDC1→exosome，胞质 YTHDFs→脱腺苷化/内切切割/脱帽；(B) 稳定化通路——核内 YTHDC1 多聚桥接、胞质 IGF2BP 保护",
+    "credit": "Wei G, Biochemical Society Transactions 2024",
+    "doi": "10.1042/BST20230574",
+    "figure": "2",
+    "file": "assets/questions/rna_biology/m6a-stability.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC11088905",
+    "source": "paper"
+   },
+   "question": "图为 m6A 修饰介导 RNA 稳定性调控的机制：(A) m6A 介导的 RNA 降解——核内 YTHDC1 可将 RNA 导向 exosome，胞质中 YTHDF 招募脱腺苷化/内切切割/脱帽复合体；(B) m6A 介导的 RNA 稳定化——核内 YTHDC1 多聚体桥接，胞质中 IGF2BP 保护。根据以上信息，判断以下陈述的正误。",
+   "references": [
+    {
+     "authors": "Wei G",
+     "doi": "10.1042/BST20230574",
+     "journal": "Biochemical Society Transactions",
+     "title": "RNA m6A modification, signals for degradation or stabilisation?",
+     "year": 2024
+    }
+   ],
+   "subQuestions": [
+    {
+     "label": "A",
+     "text": "YTHDC1 在核内既可把 m6A-RNA 导向 exosome 降解（与 ZCCHC8/NEXT 等互作），也可通过多聚化桥接保护 RNA，两种模式并存",
+     "answer": true
+    },
+    {
+     "label": "B",
+     "text": "细胞质 YTHDF 蛋白通过招募 CCR4-NOT（脱腺苷化）、RNaseP/MRP（内切切割）或 UPF1/DCP1A（脱帽）等复合体促进 mRNA 降解",
+     "answer": true
+    },
+    {
+     "label": "C",
+     "text": "IGF2BP 家族蛋白结合 m6A 可保护 mRNA 免于降解，与 YTHDF 的促降解效应相反",
+     "answer": true
+    },
+    {
+     "label": "D",
+     "text": "m6A 修饰的功能仅限于促进 RNA 降解，不参与 RNA 稳定性维持或翻译调控",
+     "answer": false
+    }
+   ],
+   "subject": "分子生物学",
+   "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "m6A",
+    "RNA稳定性"
    ],
    "target": "competition",
    "type": "mtf"

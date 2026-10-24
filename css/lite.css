@@ -188,6 +188,7 @@ html[data-ui="lite"] .lb-score {
   border: 1px solid var(--bg-inverse);
   border-radius: var(--radius-btn);
   padding: 12px 22px;
+  min-height: 44px;
   font-size: var(--step-0);
   font-weight: 600;
   cursor: pointer;
@@ -195,6 +196,7 @@ html[data-ui="lite"] .lb-score {
   transition: opacity var(--dur-fast) var(--ease);
 }
 .btn-primary:hover { opacity: 0.86; }
+.btn-primary:disabled { opacity: 0.55; cursor: wait; }
 
 .btn-secondary {
   display: inline-block;
@@ -203,11 +205,13 @@ html[data-ui="lite"] .lb-score {
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-btn);
   padding: 11px 21px;
+  min-height: 44px;
   font-size: var(--step-0);
   cursor: pointer;
   text-decoration: none;
 }
 .btn-secondary:hover { background: var(--bg-sunken); }
+.btn-secondary:disabled { opacity: 0.55; cursor: not-allowed; }
 
 .btn-quiet {
   background: transparent;
@@ -219,6 +223,27 @@ html[data-ui="lite"] .lb-score {
   cursor: pointer;
 }
 .btn-quiet:hover { color: var(--text-primary); border-color: var(--border-strong); }
+
+/* ---------- 表单控件基线（全站统一：44px / 1px 发丝边 / 2px 直角） ---------- */
+.lite-field {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-btn);
+  color: var(--text-primary);
+  transition: border-color var(--dur-fast) var(--ease);
+}
+.lite-field::placeholder { color: var(--text-tertiary); }
+.lite-field:hover { border-color: var(--border-strong); }
+.lite-field:focus { border-color: var(--accent); outline: none; }
+/* 输入框聚焦：柔光 3px（区别于按钮的硬焦点环，降低视觉噪音） */
+html[data-ui="lite"] .lite-field:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 26%, transparent);
+}
+.lite-field[aria-invalid="true"] { border-color: var(--text-danger); }
+.lite-field:disabled { opacity: 0.6; cursor: not-allowed; }
 
 /* ---------- 「今日」清单 ---------- */
 .lite-tasks { border-top: 1px solid var(--border-subtle); }
@@ -622,6 +647,7 @@ html[data-ui="lite"] .lite-week-dot.today { box-shadow: 0 0 0 1px var(--accent);
   font-size: var(--step--1);
 }
 .lite-privacy-opt:hover { border-color: var(--border-strong); }
+.lite-privacy-opt:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); }
 .lite-privacy-opt input { accent-color: var(--accent); }
 .lite-privacy-opt .opt-desc { color: var(--text-tertiary); margin-left: auto; }
 
@@ -647,35 +673,112 @@ html[data-ui="lite"] .lite-week-dot.today { box-shadow: 0 0 0 1px var(--accent);
 }
 .lite-auth-btn:hover { color: var(--text-primary); }
 
-/* ---------- 登录弹窗（原生 dialog，无毛玻璃无渐变，只用语义令牌） ---------- */
+/* ---------- 登录弹窗（原生 dialog；薄荷纸底 + 森林绿单点 CTA） ---------- */
 .lite-login {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-l);
   background: var(--bg-elevated);
   color: var(--text-primary);
-  padding: var(--space-5);
-  width: min(360px, calc(100vw - 32px));
+  padding: 0;
+  width: min(392px, calc(100vw - 32px));
+  max-height: calc(100dvh - 48px);
+  overflow: auto;
 }
-.lite-login::backdrop { background: var(--bg-page); }
-.lite-login-form { display: flex; flex-direction: column; }
-.lite-login-title { margin: 0 0 var(--space-2); font-size: var(--step-1); font-weight: 600; }
-.lite-login-label { margin-top: var(--space-3); font-size: var(--step--1); color: var(--text-secondary); }
-.lite-login-input {
-  margin-top: var(--space-1);
-  padding: 8px 10px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+.lite-login::backdrop {
+  background: var(--bg-page);
+  background: color-mix(in srgb, var(--bg-page) 76%, transparent);
+}
+.lite-login-form { display: flex; flex-direction: column; padding: var(--space-5); }
+/* 头部：小号字距 kicker + 标题 + 单行说明，底部发丝线分区 */
+.lite-login-head {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.lite-login-kicker {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+.lite-login-title {
+  margin: var(--space-2) 0 0;
+  font-size: var(--step-2);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.lite-login-desc {
+  margin: var(--space-1) 0 0;
+  color: var(--text-tertiary);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+.lite-login-label {
+  margin: var(--space-4) 0 var(--space-1);
+  font-size: var(--step--1);
+  color: var(--text-secondary);
+}
+.lite-login-input { width: 100%; }
+/* 密码区：右侧内嵌「显示/隐藏」，不额外占一行 */
+.lite-login-pass { position: relative; }
+.lite-login-pass .lite-login-input { padding-right: 64px; }
+.lite-login-eye {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 52px;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
   border-radius: var(--radius-btn);
-  width: 100%;
+  background: transparent;
+  color: var(--accent-text);
+  font-size: var(--step--1);
+  cursor: pointer;
 }
-.lite-login-input:focus { border-color: var(--accent); }
+.lite-login-eye:hover { background: var(--accent-soft); }
+.lite-login-eye:focus-visible { box-shadow: var(--focus-ring); }
 .lite-login-err {
   margin: var(--space-3) 0 0;
+  padding: 8px 10px;
+  border-left: 2px solid var(--text-danger);
+  background: var(--bg-danger-soft);
+  color: var(--text-danger);
   font-size: var(--step--1);
-  color: var(--accent-text);
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.5;
 }
-.lite-login-actions { display: flex; gap: var(--space-2); justify-content: flex-end; margin-top: var(--space-4); }
+.lite-login-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+.lite-login-guest { flex: none; white-space: nowrap; }
+/* 全页唯一绿色实心按钮：登录成功路径（提级覆盖 .btn-primary 的 color:inherit 链） */
+html[data-ui="lite"] .lite-login-submit {
+  color: var(--on-accent);
+}
+.lite-login-submit {
+  flex: 1;
+  min-height: 44px;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.lite-login-submit:hover {
+  opacity: 1;
+  background: var(--accent-text);
+  border-color: var(--accent-text);
+}
+/* 窄屏：次操作（游客继续）下沉，主操作占满整行 */
+@media (max-width: 360px) {
+  .lite-login-actions { flex-direction: column-reverse; align-items: stretch; }
+  .lite-login-guest { align-self: center; }
+}
 
 /* ---------- toast（首次进入：进度互通提示） ---------- */
 .lite-toast {

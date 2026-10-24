@@ -1,7 +1,82 @@
 {
-  "version": "5.1.0",
-  "updated_at": "2026-08-29",
+  "version": "5.2.14",
+  "updated_at": "2026-10-24",
   "changes": [
+    {
+      "date": "2026-10-24",
+      "version": "5.2.14",
+      "description": "极简模式登录修复与登录页设计优化。①根因：lite.html 不加载 sb-gamify.js，而 supabase-client.loginUser/restoreSession 裸调 startOnlineTimeTracking 定义在该文件→登录抛 ReferenceError；两处改为 typeof 守卫，并新增 lite 无 gamify 登录回归测试。②视觉：登录弹窗改「薄荷纸底 + 森林绿单点 CTA」，新增 kicker/标题/说明分区、44px 输入框、密码内嵌显示切换、红色错误条、窄屏按钮竖排；新增 lite 语义令牌 --text-danger/--bg-danger-soft/--on-accent。③交互：空值/凭据错误聚焦对应字段并设 aria-invalid、技术性错误转用户文案、关闭弹窗清空密码、游客继续文案、登录中禁用输入与 aria-busy。④全站控件统一：新增 .lite-field 基线与 3px 柔焦、按钮统一 44px 最小高度、隐私卡 focus-within、lite 三主题按钮对比度。⑤缓存：lite.html 资源版本 20261024c、supabase-client 20261024a、bump:sw。门禁 jest 424/424、audit:design 通过。"
+    },
+    {
+      "date": "2026-10-24",
+      "version": "5.2.13",
+      "description": "PR #214 审查问题修复（P1/P2/P3 全量）。①部署契约：新增 sql/migration_v16_login_contract.sql（重建 resolve_login_email，lower(username) 命中即返回、email 可为 NULL，与前端未绑定邮箱引导一致）与 sql/migration_v17_review_cards_options.sql（review_cards.options JSONB）；前端在 RPC/视图缺失时输出一次性 console 告警。②打印健壮性：非法 timestamp 降级为空日期、单条脏数据降级占位不阻断整批、options JSON 字符串兼容、对象选项取 text/content、27+ 选项降级 AA/AB、srcset 相对地址绝对化、图片就绪改 load/error 事件 + 5s 上限；错题选项随 recordWrongAnswer/addWrongQuestion 落库（缺列自动去字段重试）。③性能/正确性：getReviewCardStates 去重后 200/批查询（去掉 500 截断）、本地错题索引与 FSRS 卡解析缓存、错题本勾选 Map 索引与字段转义、图谱百科层按已存在节点判定幂等（勾选分类后 25/类补到 60/类）、反馈去重键改全文并给无 id 本地记录稳定哈希键。④门禁：audit-design 识别 setAttribute('style')（豁免需 audit-design-allow 登记）、图谱词云色值改 rgb()；eventhub 测试兼容 Windows CRLF。jest 423/423、audit:design、audit-rls、manifest 锚点、wiki 烟雾 39/39 全过。"
+    },
+    {
+      "date": "2026-10-23",
+      "version": "5.2.12",
+      "description": "应对 Supabase 2026-10-30 政策（新表需显式 GRANT）+ 繁简事故修复与抓取管线加固。①12 个含建表的迁移文件逐一追加 Data API 授权块（官方模板：anon 只读 / authenticated+service_role 读写 / 序列授权；admin_config 特例只授 service_role；幂等可重跑，覆盖 schema/schema_safe/incremental/v2/v5/v6/v8/v10/v11/v12/migration_tracker/wiki_entries）——新项目、preview 分支、db reset 重跑迁移不再出现 Data API 401。②繁简事故根因=沙箱环境重置后 zhconv 丢失、to_simp 静默降级恒等函数：重装 zhconv；ImportError 分支改为大声警告（禁止静默降级）；id 级去重守卫入 run()（build 后按 id 拦截，与标题双保险）。③数据修复：繁体轮次绕过标题去重产生的 72 条撞车按「简体 id>长内容」裁决去重（531→459，id/标题双唯一，繁体0）。④类目根繁名（動物學/植物學/生態學）与 categorymembers 单 None 不弃类目的 6 秒补发重试。门禁 416/416+烟雾39/39；抓取重启后 426 条精准跳过、新类目简体入库中。"
+    },
+    {
+      "date": "2026-10-21",
+      "version": "5.2.11",
+      "description": "数据库安全全量修复（体检报告 5 组严重 + 4 中等一次修完）：①拆 11 条错误/高危策略——4 条 *_own 写成 true（登录用户互开4表全权）、4 条 anon 全权（favorites/practice/wrong/profiles）、profiles 3 条全读；②题库收回 7 条 anon/authed 写策略（防匿名篡改400题），cards 收回 cards_public_insert；③补 6 条正向策略：profiles_select_own/profiles_select_admin/bioquest_is_admin/profiles_delete_own/favorites_update_own/practice_records_update_own+delete_own；④REVOKE apply_cr_decay_and_adjust/bioquest_create_policy/fn_merge_conflicts 对 PUBLIC/anon/authenticated；⑤新增 resolve_login_email 窄 RPC（用户名登录只回 email+username）；⑥v_user_practice_summary/v_module_performance 设 security_invoker=true（视图不再绕RLS）；⑦REVOKE SELECT profiles←anon（公开信息走 public_profiles 视图8列），REVOKE TRUNCATE/REFERENCES/TRIGGER←anon,authenticated；⑧补 focus_sessions/study_tasks 缺失FK索引，admin_key_hash 置NULL（列改可空）。前端8处配套：sb-social×3/notifications/app探活/dupCheck 切 public_profiles、getStudentByKey+getStudentDetailByKey 切 get_student_by_key RPC、用户名登录切 resolve_login_email（行为等价，含未绑定邮箱引导）。SQL 事务化执行+27行回滚日志（p0_fix_log_20261021），验证行 bad=0/new=6/cr=false/policy=false/login=true/anon_cols=0；匿名复验17项全过（profiles.email 42501、题库/收藏/档案 INSERT 42501、CR函数42501、公开读保留）。全量 416/416+烟雾39/39+lint。附带发现：profiles 无 points 列（sb-gamify 积分榜一直静默失败，保持现状未激活）。"
+    },
+    {
+      "date": "2026-10-21",
+      "version": "5.2.10",
+      "description": "修复用户报障四问题：①百科繁体→简体——爬虫接入 zhconv（build_entry/发现/回填全链路 to_simp），回填全量转换108条，繁体残留0；②百科缺图——新增两级图片兜底（pageimages 首图→prop=images 文件列表造 Commons 缩略图）+ 教材名回退映射查图 + 所有 titles 查询加 converttitles=1（简体查询词自动对上繁体页面名），回填三轮共补图143张，图片覆盖91%（368/401，余33条为维基确无图或教材名无对应页）；③“计数300+却只剩几条”——根因是筛选处理器只 renderList 不刷新计数：三个筛选处理器改走 renderAll，计数在筛选时显示「显示数/总数」，列表顶部加活动筛选横幅（明示关键词/分类/标签+一键清除），wiki.html 补横幅样式与暗色适配；④“点进动画视频跳主页”——app.js 导航防御三连：getRouteFromHash/navigateTo/点击委托在 Routes（app-routes.js）未加载时乐观放行（分发不依赖 Routes），启动时 Routes 缺失绕缓存兜底重拉 app-routes.js。爬虫新增 --backfill 回填模式与 --upload-only 云同步（401/401 已入库，content-range 0-400/401）。烟雾测试新增计数/横幅/清除5断言=39/39，全量416/416。"
+    },
+    {
+      "date": "2026-10-21",
+      "version": "5.2.9",
+      "description": "百科词条首批类目抓取落库（本地+云端双写完成）：wiki-seed.json 15→311 条（维基源 300：细胞生物学 149 + 分子生物学 122 + 生物化学 32，含图 60%；断点续爬因后台任务回收停在目标 1000 的 ~30%，剩余批次继续）；Supabase wiki_entries 表已由浏览器自动化在 Dashboard 建成（48 行迁移 + v15 TOTP 迁移同批执行），--upload-only 新模式全量 upsert 311/311，云端 content-range 0-310/311 核验通过，匿名可读策略生效（HTTP 200）。同批 TOTP 上线验证：admin_login_with_totp 可调用、种子 16 位就位、admin_login_with_key 已42501 注销。"
+    },
+    {
+      "date": "2026-10-20",
+      "version": "5.2.8",
+      "description": "知识图谱 v5.0：百科词条层 + 词云 + AI 讲解（图谱/练习/百科/AI 四向串联）。①knowledge-graph.js：按需加载词条层（Supabase wiki_entries 优先、data/wiki-seed.json 回退、失败为空——默认视图零开销），分类幂等注入 wiki:: 节点（选中分类 60/类、未选 25/类，防 O(n²) 力导向过载），标题↔考点互含优先连边、否则轮转同分类考点；节点面板两套动作（考点：练习/课堂v4/v3/AI讲解/错题；词条：练习/读百科/AI讲解/错题，词条练习概念用分类），AI 讲解写 sessionStorage 预填并跳 #/tutor；头部图谱/词云视图切换，词云按权重（考点3/词条标题2/标签1）取 top150、6 级字号 class，点词条标题直达 wiki.html?entry=、点考点/标签词回图谱搜索定位；开关状态经整体重建保持筛选与搜索。②tutor.js：初始化消费 bioquest_tutor_prefill 并自动发送（一次）。③wiki.js：init 解析 ?entry= 轮询词条就绪后 openDetail（图谱/词云跳转）。④爬虫 v3：八大类目白名单分层发现（--all-biology --target，默认1000；子类排除人物/列表/各国等、页面排除消歧义/列表）、路径中间类目作 tags、429 退避 8s。测试：新增 knowledge-graph-wiki 5 例（默认零开销/注入还原/词云/面板/预填），全量 416/416。"
+    },
+    {
+      "date": "2026-10-20",
+      "version": "5.2.7",
+      "description": "百科模块 v2 全量抓取（图片/图表修复）。wiki_crawler.py：①新增 --via corsfix 出口通道（沙箱代理拦截 wikipedia/baike 域名，经 proxy.corsfix.com 服务端代取，自动 gzip 解码）与 --refresh 覆盖模式；②抽取管线从纯文本 extracts 升级为 extracts+wikitext 组合抓取——wikitext {|…|} 表格转 Markdown、[[File:]] 抽取 Commons 缩略图直链（MD5 路径与前端一致、SVG 自动补 .png 后缀、过滤维护图标、上限 12 张）；③ZH_TITLE_FALLBACKS 教材名→维基实际页面名回退映射（细胞自噬→自噬等 5 条）。前端 wiki.js：wikimediaThumbUrl SVG 补 .png（修复图示 404「图片抓了显示不出来」）、parseWikitextMedia 从原文抽取含信息框图片并去重过滤、导入图片上限 8→12。首批 30 关键词（细胞生物学块）已抓取入库：种子 15→41 条，24/30 含图、99 张图片（27 处 SVG 修复）、21 个表格、全文最短 388 字。测试：wiki 烟雾改动态计数并新增 4 项媒体断言（33/33）、新增 wiki-seed-crawl 质量套件（6 例）。"
+    },
+    {
+      "date": "2026-10-20",
+      "version": "5.2.6",
+      "description": "管理员登录改为 TOTP 动态验证码（解决 128bit 口令过长）。新增 sql/migration_v15_admin_totp.sql：admin_config 增 totp_secret/totp_last_step/failed_attempts/locked_until 列；_b32_encode/_b32_decode base32 辅助；admin_login_with_totp RPC（HMAC-SHA1 TOTP、±1 时间窗、防重放——同一步只可用一次、5 次失败锁 15 分钟、成功升级 user_group）；REVOKE 旧 admin_login_with_key（公开仓库泄露的历史哈希自此失效，无需轮换口令）；末尾幂等种子生成语句（gen_random_bytes(20)→base32，结果面板一次性显示，不进仓库）。前端 admin.js：adminVerifyKey→adminVerifyTotp（6 位数字校验、去空格、RPC admin_login_with_totp），登录页改 admin-totp-form/admin-totp-input（inputmode=numeric/maxlength=6），注释同步 user.js/app-routes；测试改造：admin-key-auth 重写为 TOTP 矩阵并新增 v15 SQL 完整性与前后端交叉断言（admin-split id 更新）。base32 与 TOTP 算法已用 RFC4226 向量与标准库对拍。"
+    },
+    {
+      "date": "2026-10-20",
+      "version": "5.2.5",
+      "description": "管理员口令安全加固（公开仓库威胁模型）。①真实口令哈希出库：migration_v11 的 INSERT 换为固定占位哈希 sha256(REPLACE_ME_RUN_MIGRATION_V14_ROTATION)，tools/python/server.py 移除硬编码兜底改为仅读 ADMIN_KEY_HASH 环境变量（未配置时 X-Admin-Key* 路径 fail-closed），HEAD 中真实哈希清零（git 历史不可抹除，作废靠轮换）；②新增 sql/migration_v14_admin_hardening.sql：A 口令轮换指引（openssl rand -hex 16 本地生成高熵口令与哈希、明文不进 Supabase，或 SQL 内 digest 二选一）+ B 失败锁定（admin_config 增 failed_attempts/locked_until，admin_login_with_key 升级：连续 5 次错误锁定 15 分钟、锁定期内直接拒绝、成功清零，保留 pg_sleep(1) 与 SECURITY DEFINER 语义）；③测试护栏 2 例：v11 INSERT 必须等于占位串哈希（真实哈希回流即失败）、v14 内容断言（轮换指引/锁定参数/无自带哈希）。profiles 表 email/user_key 匿名暴露为已知遗留项，需列权限+RPC 改造（牵动注册查重/班级码查询/admin select=*），另行处理。"
+    },
+    {
+      "date": "2026-10-20",
+      "version": "5.2.4",
+      "description": "题目反馈进管理面板 + 错题 FSRS 间隔重复闭环。①管理面板「反馈管理」页签顶部新增「题目反馈」区：合并云端 question_feedbacks（admin 接口 /admin/question-feedbacks，跨用户读取新增 sql/migration_v13_question_feedbacks_admin.sql 管理员策略）与本机 bioquest_question_feedbacks 备份，按内容键去重，支持标为已处理（localStorage 持久），缺表/RLS 受限时给出执行提示；提交侧云端同步失败不再静默（console.warn，本地始终保留）。②错题 FSRS 闭环（引擎用仓库已有 vendored ts-fsrs 5.4.1 MIT）：答错本地镜像 Again、答对（有卡）Good 并新增 sb-data.updateReviewCardOnCorrect 推进云端 review_cards（仅已存在的卡，不为普通题建卡）；错题本页新增 FSRS 到期徽标（云端批量 getReviewCardStates ∪ 本地 bioquest_fsrs_cards）、今日到期计数、到期优先/错误次数排序、「今日复习（FSRS）」入口；今日复习页在云端无卡（游客/未同步）时回退本地到期队列并本地推进；storage 错题读写归一化（对象入参不再丢题干/学科，存量旧条目补齐 id/question_text/subject/created_at）。新增测试：wrongbook-storage(4)、admin-question-feedback(3)、record-session FSRS 闭环(3)。"
+    },
+    {
+      "date": "2026-10-19",
+      "version": "5.2.3",
+      "description": "管理员面板扩容与管理员入口收敛：①「本地题库·评分与回收站」从 141 道扩到全量 3414 道（quiz+logic+resource/all 真题池+daily_league 六分片），修复每日联赛字典形态被 ||[] 兜底吞掉（读到 0 道）与字典 id 未从 key 回填（400 题塌缩）两个解析陷阱，新增 admin-local-bank 回归测试；②回收站找回：本地题库区块上移到「题目管理」页顶部（原先埋在添加新题/远端表格之后底部），远端加载失败时兜底挂载，首屏 100 条分页 +「显示更多」；③管理员入口只接受管理员口令（RPC admin_login_with_key）：移除账号密码登录表单/切换入口、删除 adminLogin、取消 admin 账号自动放行、个人中心入口改为直跳 #/admin，admin-key-auth 测试同步改为「仅口令」护栏断言。"
+    },
+    {
+      "date": "2026-10-19",
+      "version": "5.2.2",
+      "description": "题库分类归属修复与真题池文本二轮修复：①分类——修复 70 道题的 subject 学科归属（含环节动物题被挂到植物学：4 道蚯蚓/沙蚕/幼虫题等）与 92 道派生 concept 错挂，构建器 build-league-pool.js 新增「混合 section 优先取 subject 逐字命中学科词 + 概念/学科学科族互斥校验（植物/动物/基础×遗传/植物/动物 四条规则）」，真题池学科矩阵矛盾归零；②文本——修复 M4-60 选项串入他题图注的 OCR 串扰、M1-70「织成→组成」错字、M1-69 双逗号、M2-57 漏字、M4-84/M4-99 两道表格拍平题加分隔符可读化；data/ 侧文本经第二轮机器复扫（重复短语/重复标点/串扰=0）确认无残留。"
+    },
+    {
+      "date": "2026-10-19",
+      "version": "5.2.1",
+      "description": "题库质量修复（错别字/漏字/重字 + 图片丢失/不符）：修复 43 处文本硬伤（错别字如“乳酸糖→乳糖”“暗反应加固→加强”、漏字如“催化有机物→具有催化作用的有机物”、重字如“Y染染色体”“一直直线上升”），订正 6 处解析错因与选项错位/引述不符、清理 5 处“C条目解析见上”类占位残留，修复 DL-BH-S04/DL-PL-S22 错因互换与 DL-PL-S01/DL-PL-S04/DL-BH-S41 三题选项缺损（多正确项）；data/quiz.json 与真源四源同步（101 题：补回 18 道带图题的 image 字段与 @@ANNOTATED_IMAGE 标记、补入 10 道缺失题、以真源重写 8 道过期题、保留 31 条增量解析段），31 道题的【思路引导/通法/易错易混】增量段回填 per-id 真源，id大全 _meta.total 修正 91→101；M1-02-30bbc833 解析中 YTH 结构域位置描述与配图不符已订正。"
+    },
+    {
+      "date": "2026-10-18",
+      "version": "5.2.0",
+      "description": "竞赛核心考点视频补全与打印功能：新增 34 条竞赛核心考点演示视频（Wikimedia Commons 公共领域/CC 授权素材，转码 ≤15MB + poster 抽帧），data/videos.json 升级 version=2 并为全部 37 条视频增加标签分类（动画/3D/显微/延时/拟真/讲解/实拍）；打印功能完善——错题本支持单/多选错题完整打印（题目+选项+答案+解析），练习页与组卷页新增打印入口，A4 自动分页防截断、每页底部固定页脚 TATAbox.cc.cd，题目与答案解析支持分开打印；package.json 同步 1.1.0。"
+    },
     {
       "date": "2026-08-29",
       "version": "5.1.0",
