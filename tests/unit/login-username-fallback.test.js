@@ -120,7 +120,8 @@ function setup(cfg) {
       return makeQuery(function () { return null; });
     },
     // 用户名登录已改为窄 RPC resolve_login_email（SECURITY DEFINER，仅回 email+username；
-    // 与库函数一致：lower(username) 匹配且 email 非空才返回，RETURNS TABLE → 数据为数组）
+    // 契约见 sql/migration_v16_login_contract.sql：lower(username) 命中即返回行，
+    // email 可为 NULL（未绑定邮箱的历史账号），RETURNS TABLE → 数据为数组）
     rpc: function (fn, args) {
       if (fn !== 'resolve_login_email') {
         return Promise.resolve({ data: null, error: { message: 'unknown rpc: ' + fn } });

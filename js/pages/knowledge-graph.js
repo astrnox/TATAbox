@@ -52,7 +52,6 @@
   var WIKI_ENTRIES = null;            // [{id,title,category,tags,summary}]
   var WIKI_LOAD_PROMISE = null;
   var _wikiLayerOn = false;           // 百科层开关（默认关：默认视图与性能不变）
-  var _wikiInjectedCats = {};         // 已注入的分类（按分类幂等注入）
   var _viewMode = 'graph';            // graph | cloud
   var _cloudWeights = {};             // 词云权重缓存（每次渲染重建）
   var WIKI_PER_CAT_ACTIVE = 60;       // 选中分类时该类注入上限
@@ -1277,7 +1276,9 @@
     return null;
   }
 
-  /** 按分类幂等注入词条节点（选中分类 60/类，未选分类 25/类）；返回是否变更 */
+  /** 按分类幂等注入词条节点（选中分类 60/类，未选分类 25/类）；返回是否变更
+   *  以「已存在的 wiki:: 节点」判定幂等：先按 25/类 注入后再勾选分类，
+   *  会继续补足到 60/类，而不是被「该分类已注入」标记挡住。 */
   function _injectWikiLayer() {
     if (!WIKI_ENTRIES || !WIKI_ENTRIES.length) return false;
     var activeCats = Object.keys(_activeCategories);
@@ -1290,14 +1291,18 @@
       (examByCat[n.category] = examByCat[n.category] || []).push(n);
     });
     cats.forEach(function (cat) {
-      if (_wikiInjectedCats[cat]) return;
-      _wikiInjectedCats[cat] = true;
       var list = WIKI_ENTRIES.filter(function (e) { return e.category === cat; }).slice(0, perCat);
       if (!list.length) return;
+      var existing = {};
+      GRAPH_NODES.forEach(function (n) {
+        if (n.isWiki && n.category === cat) existing[n.id] = true;
+      });
       var sameCat = examByCat[cat] || [];
       list.forEach(function (e, i) {
+        var nodeId = 'wiki::' + e.id;
+        if (existing[nodeId]) return;
         var nodeObj = {
-          id: 'wiki::' + e.id,
+          id: nodeId,
           label: e.title,
           category: cat,
           description: e.summary || '',
@@ -1326,7 +1331,6 @@
     var alive = {};
     GRAPH_NODES.forEach(function (n) { alive[n.id] = true; });
     GRAPH_EDGES = GRAPH_EDGES.filter(function (e) { return alive[e.source] && alive[e.target]; });
-    _wikiInjectedCats = {};
     _wikiLayerOn = false;
   }
 
@@ -1473,23 +1477,23 @@
       '.kg-node-wiki .kg-node-circle { stroke-dasharray: 3 2; }',
       '.kg-node-wiki .kg-node-label { font-size: 10px; opacity: 0.85; }',
       '.kg-view-switch { display: flex; gap: 6px; margin-top: 10px; }',
-      '.kg-view-btn { border: 1px solid var(--border-color, #d8e0da); background: var(--bg-card, #fff);',
-      '  color: var(--text-secondary, #5a6b62); border-radius: 16px; padding: 4px 14px; font-size: .85rem; cursor: pointer; }',
-      '.kg-view-btn.active { background: var(--primary, #2a7c4a); border-color: var(--primary, #2a7c4a); color: #fff; }',
-      '.kg-wiki-toggle.active { border-color: var(--primary, #2a7c4a); color: var(--primary, #2a7c4a); }',
+      '.kg-view-btn { border: 1px solid var(--border-color, rgb(216,224,218)); background: var(--bg-card, #fff);',
+      '  color: var(--text-secondary, rgb(90,107,98)); border-radius: 16px; padding: 4px 14px; font-size: .85rem; cursor: pointer; }',
+      '.kg-view-btn.active { background: var(--primary, rgb(42,124,74)); border-color: var(--primary, rgb(42,124,74)); color: #fff; }',
+      '.kg-wiki-toggle.active { border-color: var(--primary, rgb(42,124,74)); color: var(--primary, rgb(42,124,74)); }',
       '.kg-wiki-toggle:disabled { opacity: .6; cursor: wait; }',
-      '.kg-wordcloud { min-height: 420px; padding: 18px; border: 1px solid var(--border-color, #e2e8e3);',
+      '.kg-wordcloud { min-height: 420px; padding: 18px; border: 1px solid var(--border-color, rgb(226,232,227));',
       '  border-radius: 12px; background: var(--bg-card, #fff); }',
       '.kg-cloud-inner { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: center; }',
       '.kg-cw { border: none; background: transparent; cursor: pointer; border-radius: 6px;',
       '  padding: 2px 4px; font-weight: 600; line-height: 1.15; }',
-      '.kg-cw:hover { background: var(--bg-hover, #eef4ef); }',
-      '.kg-cw-1 { font-size: .75rem; color: #8aa197; }',
-      '.kg-cw-2 { font-size: .9rem; color: #6f8c80; }',
-      '.kg-cw-3 { font-size: 1.05rem; color: #4f7d64; }',
-      '.kg-cw-4 { font-size: 1.3rem; color: #3a8c5c; }',
-      '.kg-cw-5 { font-size: 1.6rem; color: #2a7c4a; }',
-      '.kg-cw-6 { font-size: 2rem; color: #1f5f3a; }'
+      '.kg-cw:hover { background: var(--bg-hover, rgb(238,244,239)); }',
+      '.kg-cw-1 { font-size: .75rem; color: rgb(138,161,151); }',
+      '.kg-cw-2 { font-size: .9rem; color: rgb(111,140,128); }',
+      '.kg-cw-3 { font-size: 1.05rem; color: rgb(79,125,100); }',
+      '.kg-cw-4 { font-size: 1.3rem; color: rgb(58,140,92); }',
+      '.kg-cw-5 { font-size: 1.6rem; color: rgb(42,124,74); }',
+      '.kg-cw-6 { font-size: 2rem; color: rgb(31,95,58); }'
     ].join('\n');
     document.head.appendChild(style);
   }

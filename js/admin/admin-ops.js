@@ -30,6 +30,17 @@ window.handleResolveAppeal = async function(appealId, action) {
 /* ===== 反馈管理标签 ===== */
 /* ===== 题目反馈（练习页「反馈」按钮 → question_feedbacks / 本地备份） ===== */
 
+/** 32 位 FNV-1a 哈希（本地旧反馈无 id 时生成稳定处理状态键） */
+function _hashKey(str) {
+  var h = 2166136261;
+  var s = String(str || '');
+  for (var i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return (h >>> 0).toString(36);
+}
+
 function _qfResolvedSet() {
   try {
     var raw = localStorage.getItem('bioquest_question_feedbacks_resolved');
@@ -74,31 +85,38 @@ async function _loadQuestionFeedbacks() {
   } catch (e) { /* ignore */ }
 
   var seen = {};
-  var keyOf = function (r) {
+  // 去重键：完整内容（描述不截断，避免同日同题的不同反馈被误合并）
+  var dedupeKeyOf = function (r) {
     var t = r.created_at || r.createdAt || '';
     return [
       r.question_id || r.questionId || '',
       r.issue_type || r.issueType || '',
       String(t).slice(0, 10),
-      (r.description || '').slice(0, 40)
+      String(r.description || '')
     ].join('|');
+  };
+  // 处理状态键：优先稳定 id；本地旧记录无 id 时用内容哈希（避免 String(undefined) 批量误伤）
+  var uidOf = function (r, key) {
+    if (r.id !== undefined && r.id !== null && r.id !== '') return String(r.id);
+    return 'local:' + _hashKey(key);
   };
   var rows = [];
   cloud.forEach(function (r) {
-    seen[keyOf(r)] = 1;
+    var key = dedupeKeyOf(r);
+    seen[key] = 1;
     rows.push({
-      id: r.id, src: '云端',
+      id: r.id, uid: uidOf(r, key), src: '云端',
       question_id: r.question_id || '', question_text: r.question_text || '',
       issue_type: r.issue_type || 'other', description: r.description || '',
       created_at: r.created_at || '', user_id: r.user_id || ''
     });
   });
   local.forEach(function (r) {
-    var k = keyOf(r);
-    if (seen[k]) return;
-    seen[k] = 1;
+    var key = dedupeKeyOf(r);
+    if (seen[key]) return;
+    seen[key] = 1;
     rows.push({
-      id: r.id, src: '本机',
+      id: r.id, uid: uidOf(r, key), src: '本机',
       question_id: r.questionId || '', question_text: r.questionText || '',
       issue_type: r.issueType || 'other', description: r.description || '',
       created_at: r.createdAt || '', user_id: ''
@@ -112,7 +130,7 @@ async function _loadQuestionFeedbacks() {
 
 function _questionFeedbackSectionHtml(qf, resolvedSet) {
   var typeMap = { wrong_answer: '答案有误', unclear: '题意不清', typo: '错别字', duplicate: '重复题', other: '其他' };
-  var pending = qf.rows.filter(function (r) { return !resolvedSet.has(String(r.id)); }).length;
+  var pending = qf.rows.filter(function (r) { return !resolvedSet.has(String(r.uid)); }).length;
 
   var badge = qf.rows.length + ' 条 · 未处理 ' + pending + '（云端 ' + qf.cloudCount + ' · 本机 ' + qf.localCount + '）';
   if (qf.missing) {
@@ -161,7 +179,7 @@ function _questionFeedbackSectionHtml(qf, resolvedSet) {
           </thead>
           <tbody>
             ${qf.rows.map(function (r) {
-              var done = resolvedSet.has(String(r.id));
+              var done = resolvedSet.has(String(r.uid));
               var tLabel = typeMap[r.issue_type] || r.issue_type || '其他';
               var tCls = typeMap[r.issue_type] ? r.issue_type : 'other';
               var stem = (r.question_text || '').slice(0, 60);
@@ -176,7 +194,7 @@ function _questionFeedbackSectionHtml(qf, resolvedSet) {
                   <td title="${escapeHtml(r.description || '')}">${escapeHtml((r.description || '').slice(0, 80))}${(r.description || '').length > 80 ? '…' : ''}</td>
                   <td>${r.src}</td>
                   <td>${dateStr}</td>
-                  <td><button class="admin-btn admin-btn--ghost qf-toggle-btn" data-id="${escapeHtml(String(r.id))}">${done ? '重新打开' : '标为已处理'}</button></td>
+                  <td><button class="admin-btn admin-btn--ghost qf-toggle-btn" data-id="${escapeHtml(String(r.uid))}">${done ? '重新打开' : '标为已处理'}</button></td>
                 </tr>
               `;
             }).join('')}

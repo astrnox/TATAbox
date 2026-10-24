@@ -2031,8 +2031,8 @@ function bindEvents() {
     if (link) {
       const route = link.getAttribute('data-route');
       // Routes 缺失时（app-routes 未加载）放行导航，避免链接点击后“卡在原页像跳回主页”
-      const _routesUsable = typeof Routes === 'undefined' || !Routes || !Object.keys(Routes).length;
-      if (route && (_routesUsable || Routes[route])) {
+      const _routesMissing = typeof Routes === 'undefined' || !Routes || !Object.keys(Routes).length;
+      if (route && (_routesMissing || Routes[route])) {
         e.preventDefault();
         // 解析 href 中的 ?tab=xxx 并写入 sessionStorage（绕过 hash 不能携带 query 的限制）
         try {

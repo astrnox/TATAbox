@@ -283,6 +283,29 @@ showToast('导入失败：' + errText(result.error));
 
 
 /**
+ * 错题选项落库：仅当题目确实带 options 时写入（review_cards.options jsonb 列，
+ * 见 sql/migration_v17_review_cards_options.sql），供跨设备打印补全选项。
+ */
+function _wrongOptionsForDb(question) {
+  if (!question) return undefined;
+  var opts = question.options;
+  if (!opts) return undefined;
+  if (typeof opts === 'string') {
+    try { opts = JSON.parse(opts); } catch (e) { return undefined; }
+  }
+  return opts;
+}
+
+/** 是否为「数据库缺少某列」错误（迁移未执行时降级重试，避免错题写入整体失败） */
+function _isMissingColumnError(err) {
+  if (!err) return false;
+  var msg = String(err.message || err);
+  return err.code === 'PGRST204' || err.code === '42703' ||
+    /column .* does not exist|schema cache/i.test(msg);
+}
+
+
+/**
  * 答错时记录错题卡片
  */
 async function recordWrongAnswer(question) {
@@ -298,21 +321,30 @@ async function recordWrongAnswer(question) {
     var fsrsState = { stability: 0, difficulty: 5, lastReview: 0, repetitions: 0, lapses: 0 };
     fsrsState = window.FSRS.schedule(fsrsState, window.FSRS.RATING.AGAIN, Date.now());
 
+    var payload = {
+      user_id: _currentUser.id,
+      question_id: String(qid),
+      question_text: (question.question_text || question.question || '').substring(0, 300),
+      subject: question.subject || '',
+      concept: question.concept || '',
+      difficulty: question.difficulty || 'medium',
+      options: _wrongOptionsForDb(question),
+      stability: fsrsState.stability || 0,
+      fsrs_difficulty: fsrsState.difficulty || 5,
+      last_review: fsrsState.lastReview ? new Date(fsrsState.lastReview).toISOString() : null,
+      repetitions: fsrsState.repetitions || 0,
+      lapses: fsrsState.lapses || 0,
+      due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
+    };
     var { error } = await sb.from('review_cards')
-      .upsert({
-        user_id: _currentUser.id,
-        question_id: String(qid),
-        question_text: (question.question_text || question.question || '').substring(0, 300),
-        subject: question.subject || '',
-        concept: question.concept || '',
-        difficulty: question.difficulty || 'medium',
-        stability: fsrsState.stability || 0,
-        fsrs_difficulty: fsrsState.difficulty || 5,
-        last_review: fsrsState.lastReview ? new Date(fsrsState.lastReview).toISOString() : null,
-        repetitions: fsrsState.repetitions || 0,
-        lapses: fsrsState.lapses || 0,
-        due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
-      }, { onConflict: 'user_id,question_id' });
+      .upsert(payload, { onConflict: 'user_id,question_id' });
+    // 迁移 v17 未执行时 options 列不存在：去掉该字段重试，保证错题仍能入册
+    if (error && payload.options !== undefined && _isMissingColumnError(error)) {
+      delete payload.options;
+      var retry = await sb.from('review_cards')
+        .upsert(payload, { onConflict: 'user_id,question_id' });
+      error = retry.error;
+    }
 
     if (error) throw error;
     return { ok: true };
@@ -460,17 +492,29 @@ async function getReviewCardStates(questionIds) {
   if (!_currentUser || _currentUser.isGuest) return out;
   var sb = getSupabase();
   if (!sb) return out;
-  try {
-    var { data, error } = await sb.from('review_cards')
-      .select('question_id,due_date,stability,fsrs_difficulty,repetitions,lapses,last_review')
-      .eq('user_id', _currentUser.id)
-      .in('question_id', questionIds.slice(0, 500));
-    if (error) throw error;
-    (data || []).forEach(function (row) {
-      if (row && row.question_id) out[row.question_id] = row;
-    });
-  } catch (e) {
-    console.warn('[sb-data] 批量读取复习卡状态失败:', e);
+  // 去重 + 分批：单次 .in() 最多 200 个 UUID（避免超量静默截断与 URL 过长）
+  var ids = [];
+  var seen = {};
+  questionIds.forEach(function (id) {
+    var k = String(id || '');
+    if (!k || seen[k]) return;
+    seen[k] = true;
+    ids.push(k);
+  });
+  var CHUNK = 200;
+  for (var i = 0; i < ids.length; i += CHUNK) {
+    try {
+      var { data, error } = await sb.from('review_cards')
+        .select('question_id,due_date,stability,fsrs_difficulty,repetitions,lapses,last_review')
+        .eq('user_id', _currentUser.id)
+        .in('question_id', ids.slice(i, i + CHUNK));
+      if (error) throw error;
+      (data || []).forEach(function (row) {
+        if (row && row.question_id) out[row.question_id] = row;
+      });
+    } catch (e) {
+      console.warn('[sb-data] 批量读取复习卡状态失败（第 ' + (i / CHUNK + 1) + ' 批）:', e);
+    }
   }
   return out;
 }
@@ -511,28 +555,40 @@ async function addWrongQuestion(question) {
   try {
     var fsrsState = { stability: 0, difficulty: 5, lastReview: 0, repetitions: 0, lapses: 0 };
     fsrsState = window.FSRS.schedule(fsrsState, window.FSRS.RATING.AGAIN, Date.now());
+    var payload = {
+      user_id: _currentUser.id,
+      question_id: question.question_id || 'manual_' + Date.now(),
+      question_text: (question.question_text || question.question || '').substring(0, 1000),
+      subject: question.subject || '',
+      concept: question.concept || '',
+      difficulty: question.difficulty || 'medium',
+      user_answer: question.user_answer || '',
+      correct_answer: question.correct_answer || '',
+      analysis: question.analysis || '',
+      error_reason: question.error_reason || '',
+      textbook_chapter: question.textbook_chapter || '',
+      knowledge_graph_nodes: question.knowledge_graph_nodes || [],
+      image_url: question.image_url || '',
+      source: question.source || 'manual',
+      options: _wrongOptionsForDb(question),
+      stability: fsrsState.stability || 0,
+      fsrs_difficulty: fsrsState.difficulty || 5,
+      due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
+    };
     var { data, error } = await sb.from('review_cards')
-      .insert({
-        user_id: _currentUser.id,
-        question_id: question.question_id || 'manual_' + Date.now(),
-        question_text: (question.question_text || question.question || '').substring(0, 1000),
-        subject: question.subject || '',
-        concept: question.concept || '',
-        difficulty: question.difficulty || 'medium',
-        user_answer: question.user_answer || '',
-        correct_answer: question.correct_answer || '',
-        analysis: question.analysis || '',
-        error_reason: question.error_reason || '',
-        textbook_chapter: question.textbook_chapter || '',
-        knowledge_graph_nodes: question.knowledge_graph_nodes || [],
-        image_url: question.image_url || '',
-        source: question.source || 'manual',
-        stability: fsrsState.stability || 0,
-        fsrs_difficulty: fsrsState.difficulty || 5,
-        due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
-      })
+      .insert(payload)
       .select()
       .single();
+    // 迁移 v17 未执行时 options 列不存在：去掉该字段重试
+    if (error && payload.options !== undefined && _isMissingColumnError(error)) {
+      delete payload.options;
+      var retry = await sb.from('review_cards')
+        .insert(payload)
+        .select()
+        .single();
+      data = retry.data;
+      error = retry.error;
+    }
     if (error) throw error;
     return { ok: true, wrongQuestion: data };
   } catch (e) {

@@ -49,15 +49,44 @@
     }
   }
 
-  /** 打印窗口是独立文档，相对路径图片会失效——统一转绝对 URL */
+  /** 打印窗口是独立文档，相对路径图片会失效——统一把 src / srcset 转绝对 URL */
   function absSrcs(html) {
-    return String(html || '').replace(/(\ssrc\s*=\s*)(["'])([^"']+)\2/gi, function (m, pre, q, url) {
+    var out = String(html || '').replace(/(\ssrc\s*=\s*)(["'])([^"']+)\2/gi, function (m, pre, q, url) {
       return pre + q + absUrl(url) + q;
+    });
+    // srcset：逗号分隔的 "url 1x/640w" 候选列表，逐个重写首段 URL
+    return out.replace(/(\ssrcset\s*=\s*)(["'])([^"']+)\2/gi, function (m, pre, q, val) {
+      var parts = String(val).split(',').map(function (part) {
+        var bits = part.trim().split(/\s+/);
+        if (!bits.length || !bits[0]) return part.trim();
+        bits[0] = absUrl(bits[0]);
+        return bits.join(' ');
+      });
+      return pre + q + parts.join(', ') + q;
     });
   }
 
+  /** 选项序号：A–Z，超出 26 项后降级为 AA、AB、…（避免第 27 项变成 [ 等符号） */
   function optionLabel(idx) {
-    return String.fromCharCode(65 + (Number(idx) || 0));
+    var n = Number(idx) || 0;
+    if (n < 0) n = 0;
+    if (n < 26) return String.fromCharCode(65 + n);
+    n -= 26;
+    var hi = Math.floor(n / 26);
+    var lo = n % 26;
+    if (hi > 25) return '#' + (Number(idx) + 1);   // 极端溢出兜底
+    return String.fromCharCode(65 + hi) + String.fromCharCode(65 + lo);
+  }
+
+  /** 选项值 → 纯文本（数组/对象两种 options 形状共用，避免 "[object Object]"） */
+  function optionText(o) {
+    if (o === undefined || o === null) return '';
+    if (typeof o === 'object') {
+      if (o.text != null) return String(o.text);
+      if (o.content != null) return String(o.content);
+      try { return JSON.stringify(o); } catch (e) { return String(o); }
+    }
+    return String(o);
   }
 
   /* ---------------- 题目结构归一化 ---------------- */
@@ -73,20 +102,14 @@
     var opts = q.options;
     if (Array.isArray(opts) && opts.length > 0) {
       return opts.map(function (o, i) {
-        var text;
-        if (o && typeof o === 'object') {
-          text = o.text != null ? o.text : (o.content != null ? o.content : JSON.stringify(o));
-        } else {
-          text = String(o);
-        }
-        return { label: optionLabel(i), text: text };
+        return { label: optionLabel(i), text: optionText(o) };
       });
     }
     if (opts && typeof opts === 'object') {
       var keys = Object.keys(opts).sort();
       if (keys.length === 0) return null;
       return keys.map(function (k) {
-        return { label: k, text: String(opts[k]) };
+        return { label: k, text: optionText(opts[k]) };
       });
     }
     if (Array.isArray(q.subQuestions) && q.subQuestions.length > 0) {
@@ -114,19 +137,38 @@
     return String(answer);
   }
 
+  /**
+   * 本地错题副本索引（qId → fullQuestion）。
+   * 缓存按原始字符串校验失效：一次打印批量补全时只解析一次大数组，避免 O(n²)。
+   */
+  var _localFqCache = null;
+
+  function _localQuestionIndex() {
+    if (!global.localStorage) return null;
+    var raw = null;
+    try { raw = global.localStorage.getItem('bioquest_wrong_questions'); } catch (e) { return null; }
+    if (!raw) return null;
+    if (_localFqCache && _localFqCache.raw === raw) return _localFqCache.map;
+    var map = {};
+    try {
+      var arr = JSON.parse(raw);
+      if (Array.isArray(arr)) {
+        arr.forEach(function (item) {
+          if (item && item.fullQuestion) {
+            map[String(item.qId || item.id || '')] = item.fullQuestion;
+          }
+        });
+      }
+    } catch (e) { return null; }
+    _localFqCache = { raw: raw, map: map };
+    return map;
+  }
+
   /** 本地（localStorage）错题副本中的完整题目（含选项/解析），用于云端记录补全 */
   function _localFullQuestion(id) {
-    if (!id || !global.localStorage) return null;
-    try {
-      var arr = JSON.parse(global.localStorage.getItem('bioquest_wrong_questions') || '[]');
-      if (!Array.isArray(arr)) return null;
-      for (var i = 0; i < arr.length; i++) {
-        if (arr[i] && String(arr[i].qId) === String(id) && arr[i].fullQuestion) {
-          return arr[i].fullQuestion;
-        }
-      }
-    } catch (e) { /* 数据损坏时忽略 */ }
-    return null;
+    if (!id) return null;
+    var map = _localQuestionIndex();
+    return map ? (map[String(id)] || null) : null;
   }
 
   /**
@@ -151,6 +193,10 @@
     if (!fq && !rec.options && !(extra && extra.options)) fq = _localFullQuestion(recId);
 
     var options = rec.options || (extra && extra.options) || (fq && fq.options) || null;
+    // DB/jsonb 正常返回数组/对象；兼容历史版本把 options 存成 JSON 字符串
+    if (typeof options === 'string') {
+      try { options = JSON.parse(options); } catch (e) { options = null; }
+    }
     var subQuestions = (extra && extra.sub_questions) || (fq && fq.subQuestions) || null;
     var probe = { options: options, subQuestions: subQuestions };
     var rows = optionRows(probe);
@@ -159,6 +205,14 @@
     else if (extra && extra.answer != null) answerRaw = extra.answer;
     else if (fq && fq.answer != null) answerRaw = fq.answer;
     else answerRaw = null;
+
+    // 时间戳容错：损坏的 localStorage / 云端异常值会生成 Invalid Date，
+    // 直接 toISOString() 抛 RangeError 会让整批打印失败——这里降级为空串。
+    var dateText = rec.created_at || '';
+    if (!dateText && rec.timestamp != null) {
+      var tsDate = new Date(rec.timestamp);
+      if (!isNaN(tsDate.getTime())) dateText = tsDate.toISOString();
+    }
 
     return {
       question: rec.question_text || rec.questionText ||
@@ -172,7 +226,7 @@
       errorReason: rec.error_reason || '',
       chapter: rec.textbook_chapter || '',
       difficulty: rec.difficulty || '',
-      date: rec.created_at || (rec.timestamp ? new Date(rec.timestamp).toISOString() : '')
+      date: dateText
     };
   }
 
@@ -228,21 +282,39 @@
       '</body></html>';
   }
 
-  /** 等待文档内图片解码完成再调起打印，避免打印预览里图片空白 */
+  /**
+   * 等待文档内图片解码完成再调起打印，避免打印预览里图片空白。
+   * 以 load/error 事件为准，另设 5s 总上限兜底（超慢图不再无限等待）。
+   */
   function _printWhenReady(docView) {
-    var tries = 0;
-    function check() {
-      var pending = false;
-      try {
-        var imgs = docView.document.images;
-        for (var i = 0; i < imgs.length; i++) {
-          if (!imgs[i].complete) { pending = true; break; }
-        }
-      } catch (e) { pending = false; }
-      if (pending && tries++ < 40) { setTimeout(check, 100); return; }
+    var printed = false;
+    function fire() {
+      if (printed) return;
+      printed = true;
       try { docView.focus(); docView.print(); } catch (e) { /* 用户可手动 Ctrl+P */ }
     }
-    setTimeout(check, 150);
+    var imgs = [];
+    try { imgs = docView.document.images || []; } catch (e) { imgs = []; }
+
+    var pending = 0;
+    var capTimer = setTimeout(fire, 5000);
+    function oneDone() {
+      pending--;
+      if (pending <= 0) {
+        clearTimeout(capTimer);
+        setTimeout(fire, 50);
+      }
+    }
+    for (var i = 0; i < imgs.length; i++) {
+      if (imgs[i].complete) continue;
+      pending++;
+      imgs[i].addEventListener('load', oneDone);
+      imgs[i].addEventListener('error', oneDone);
+    }
+    if (pending === 0) {
+      clearTimeout(capTimer);
+      setTimeout(fire, 150);
+    }
   }
 
   /**
@@ -266,7 +338,9 @@
       var frame = document.createElement('iframe');
       frame.setAttribute('aria-hidden', 'true');
       frame.setAttribute('tabindex', '-1');
-      // 打印用离屏 iframe：不可见但必须可渲染（display:none 会导致部分浏览器不打印）
+      // 打印用离屏 iframe：不可见但必须可渲染（display:none 会导致部分浏览器不打印）。
+      // 无法改用 class（该 iframe 不属于任何页面样式作用域）。
+      // audit-design-allow: setAttribute('style') —— 离屏定位为运行期必需，已登记豁免。
       frame.setAttribute('style', 'position:fixed;right:0;bottom:0;width:1px;height:1px;border:0;opacity:0;');
       document.body.appendChild(frame);
       var fdoc = frame.contentWindow.document;
@@ -457,43 +531,59 @@
       if (typeof global.showToast === 'function') global.showToast('请先勾选要打印的错题');
       return false;
     }
+    var failed = 0;
     var body = list.map(function (rec, i) {
-      var n = normalizeWrongRecord(rec);
-      if (mode === 'questions') {
-        return questionBlock(
-          { question: n.question, subject: n.subject, concept: n.concept },
-          i + 1,
-          { rows: n.rows }
-        );
-      }
-      if (mode === 'answers') {
-        return answerBlock(
-          {
-            userAnswer: n.userAnswer,
-            correctAnswer: n.correctAnswer,
-            analysis: n.analysis,
-            errorReason: n.errorReason,
-            chapter: n.chapter
-          },
-          i + 1
-        );
-      }
-      return questionBlock(
-        { question: n.question, subject: n.subject, concept: n.concept, explanation: n.analysis },
-        i + 1,
-        {
-          rows: n.rows,
-          showAnswer: true,
-          detail: {
-            userAnswer: n.userAnswer,
-            correctAnswer: n.correctAnswer,
-            analysis: n.analysis,
-            errorReason: n.errorReason,
-            chapter: n.chapter
-          }
+      // 单条脏数据不得拖垮整批：降级为一条占位说明，其余记录照常出纸
+      try {
+        var n = normalizeWrongRecord(rec);
+        if (mode === 'questions') {
+          return questionBlock(
+            { question: n.question, subject: n.subject, concept: n.concept },
+            i + 1,
+            { rows: n.rows }
+          );
         }
-      );
+        if (mode === 'answers') {
+          return answerBlock(
+            {
+              userAnswer: n.userAnswer,
+              correctAnswer: n.correctAnswer,
+              analysis: n.analysis,
+              errorReason: n.errorReason,
+              chapter: n.chapter
+            },
+            i + 1
+          );
+        }
+        return questionBlock(
+          { question: n.question, subject: n.subject, concept: n.concept, explanation: n.analysis },
+          i + 1,
+          {
+            rows: n.rows,
+            showAnswer: true,
+            detail: {
+              userAnswer: n.userAnswer,
+              correctAnswer: n.correctAnswer,
+              analysis: n.analysis,
+              errorReason: n.errorReason,
+              chapter: n.chapter
+            }
+          }
+        );
+      } catch (e) {
+        failed++;
+        return '<div class="q"><div class="q-head">第 ' + (i + 1) + ' 题</div>' +
+          '<div class="q-note">该条错题记录数据异常，无法完整打印。</div></div>';
+      }
     }).join('');
+    if (failed > 0) {
+      if (typeof global.showToast === 'function') {
+        global.showToast(failed + ' 条错题记录数据异常，已按占位方式打印');
+      }
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn('[print-utils] ' + failed + ' 条错题记录渲染失败，已降级为占位块');
+      }
+    }
     var metaText = meta.metaText || ('共 ' + list.length + ' 道错题 · ' +
       (mode === 'questions' ? '仅含题目与选项'
         : mode === 'answers' ? '仅含正确答案与解析' : '题干、选项、答案、解析齐全') +

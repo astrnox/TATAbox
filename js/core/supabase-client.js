@@ -38,6 +38,21 @@ var SESSION_RESTORE_CACHE_TTL_MS = 5000;       // restoreSession 结果缓存时
 var GET_SESSION_TIMEOUT_MS = 5000;             // getSession 超时
 var PROFILE_FETCH_TIMEOUT_MS = 5000;           // profile 查询超时
 var EMAIL_VERIFICATION_TIMEOUT_MS = 3000;     // 邮箱验证状态查询超时
+
+/**
+ * 数据库依赖缺失告警（视图/RPC 未先行部署时，前端会静默降级为匿名/空数据）。
+ * 同一依赖只告警一次，避免轮询刷屏；只在错误确实是「不存在」时触发。
+ */
+var _warnedDependencies = {};
+function _warnMissingDependency(label, err, hint) {
+  var msg = String((err && err.message) || err || '');
+  var code = err && err.code;
+  var missing = code === '42P01' || code === 'PGRST202' || code === 'PGRST205' ||
+    /Could not find|does not exist|not found|schema cache/i.test(msg);
+  if (!missing || _warnedDependencies[label]) return;
+  _warnedDependencies[label] = true;
+  console.warn('[TATABOX] ' + label + ' 不可用：' + msg + (hint ? '；' + hint : ''));
+}
 var ADMIN_TOKEN_TTL = 5 * 60 * 1000;           // 前端管理员 token 有效期（5 分钟）
 
 /**
@@ -689,10 +704,15 @@ async function loginUser(usernameOrEmail, password) {
       emailCandidates.push(usernameOrEmail);
     } else {
       // 用户名登录：profiles 已收紧（仅本人可读），改走窄 RPC resolve_login_email
-      // （SECURITY DEFINER，仅按用户名精确返回 email+username，不回吐其他字段）
+      // （SECURITY DEFINER，仅按用户名精确返回 email+username，不回吐其他字段；
+      //   契约：lower(username) 命中即返回行，email 可为 NULL——用于「未绑定邮箱」引导分支）
       var profileLookup = null;
       try {
         var _res = await sb.rpc('resolve_login_email', { p_name: usernameOrEmail });
+        if (_res && _res.error) {
+          _warnMissingDependency('RPC resolve_login_email', _res.error,
+            '请先执行 sql/migration_v16_login_contract.sql');
+        }
         var _row = Array.isArray(_res.data) ? _res.data[0] : _res.data;
         if (!_res.error && _row && _row.res_username) {
           // 命中用户名即视为存在（email 可为空——用于“未绑定邮箱”引导分支）
@@ -702,6 +722,8 @@ async function loginUser(usernameOrEmail, password) {
         }
       } catch (e) {
         // 查询失败不致命：仍可尝试下面的占位邮箱候选
+        _warnMissingDependency('RPC resolve_login_email', e,
+          '请先执行 sql/migration_v16_login_contract.sql');
         profileLookup = null;
       }
       var lookupProfile = (profileLookup && profileLookup.data) || null;

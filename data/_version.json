@@ -1,7 +1,12 @@
 {
-  "version": "5.2.12",
-  "updated_at": "2026-10-23",
+  "version": "5.2.13",
+  "updated_at": "2026-10-24",
   "changes": [
+    {
+      "date": "2026-10-24",
+      "version": "5.2.13",
+      "description": "PR #214 审查问题修复（P1/P2/P3 全量）。①部署契约：新增 sql/migration_v16_login_contract.sql（重建 resolve_login_email，lower(username) 命中即返回、email 可为 NULL，与前端未绑定邮箱引导一致）与 sql/migration_v17_review_cards_options.sql（review_cards.options JSONB）；前端在 RPC/视图缺失时输出一次性 console 告警。②打印健壮性：非法 timestamp 降级为空日期、单条脏数据降级占位不阻断整批、options JSON 字符串兼容、对象选项取 text/content、27+ 选项降级 AA/AB、srcset 相对地址绝对化、图片就绪改 load/error 事件 + 5s 上限；错题选项随 recordWrongAnswer/addWrongQuestion 落库（缺列自动去字段重试）。③性能/正确性：getReviewCardStates 去重后 200/批查询（去掉 500 截断）、本地错题索引与 FSRS 卡解析缓存、错题本勾选 Map 索引与字段转义、图谱百科层按已存在节点判定幂等（勾选分类后 25/类补到 60/类）、反馈去重键改全文并给无 id 本地记录稳定哈希键。④门禁：audit-design 识别 setAttribute('style')（豁免需 audit-design-allow 登记）、图谱词云色值改 rgb()；eventhub 测试兼容 Windows CRLF。jest 423/423、audit:design、audit-rls、manifest 锚点、wiki 烟雾 39/39 全过。"
+    },
     {
       "date": "2026-10-23",
       "version": "5.2.12",

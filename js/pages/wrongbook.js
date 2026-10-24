@@ -10,6 +10,7 @@
   var _fsrsCloud = {};         // 云端 review_cards 状态 { question_id: {...} }
   var _fsrsLocal = {};         // 本地 FSRS 卡（bioquest_fsrs_cards）
   var _dueTodayCount = 0;      // 今日到期（含逾期）错题数
+  var _fsrsLocalRaw = null;    // 本地 FSRS 卡原始串（缓存失效校验，避免每次渲染全量 parse）
   var _wbFocusTrap = null;
 
   /* ============== FSRS 间隔重复（错题本展示层） ==============
@@ -78,8 +79,13 @@
     try {
       var raw = localStorage.getItem('bioquest_fsrs_cards');
       if (raw) {
-        var map = JSON.parse(raw);
-        if (map && typeof map === 'object') _fsrsLocal = map;
+        if (raw !== _fsrsLocalRaw || !_fsrsLocal) {
+          var map = JSON.parse(raw);
+          if (map && typeof map === 'object') {
+            _fsrsLocal = map;
+            _fsrsLocalRaw = raw;
+          }
+        }
       }
     } catch (e) { /* ignore */ }
     var cloudP = (ids.length && typeof window.getReviewCardStates === 'function')
@@ -159,6 +165,12 @@
     return s.length > n ? s.substring(0, n) + '...' : s;
   }
 
+  /** 统一转义：错题字段来自云端/用户输入，拼进 innerHTML 前必须转义 */
+  function _esc(s) {
+    s = (s === undefined || s === null) ? '' : String(s);
+    return (typeof escapeHtml === 'function') ? escapeHtml(s) : s;
+  }
+
   async function _loadList() {
     if (typeof window.getWrongQuestions !== 'function') return [];
     try {
@@ -210,28 +222,29 @@
     }
 
     var html = items.map(function(q) {
-      return '<div class="wb-card" data-id="' + q.id + '">' +
+      var qid = _esc(q.id);
+      return '<div class="wb-card" data-id="' + qid + '">' +
         '<div class="wb-card-header">' +
           '<div>' +
-            '<p class="wb-title">' + _truncate(q.question_text, 120) + '</p>' +
-            '<div class="wb-meta">' + (q.subject || '未分类') + ' · ' + (q.concept || '未定位概念') + ' · ' + _formatDate(q.created_at) + '</div>' +
+            '<p class="wb-title">' + _esc(_truncate(q.question_text, 120)) + '</p>' +
+            '<div class="wb-meta">' + _esc(q.subject || '未分类') + ' · ' + _esc(q.concept || '未定位概念') + ' · ' + _esc(_formatDate(q.created_at)) + '</div>' +
           '</div>' +
           '<label class="wb-sel" title="勾选后可批量打印">' +
-            '<input type="checkbox" class="wb-select-cb" data-id="' + q.id + '" checked aria-label="选择该题用于打印">' +
+            '<input type="checkbox" class="wb-select-cb" data-id="' + qid + '" checked aria-label="选择该题用于打印">' +
           '</label>' +
         '</div>' +
         '<div class="wb-tags">' +
-          (q.error_reason ? '<span class="wb-tag wb-tag--reason">' + q.error_reason + '</span>' : '') +
+          (q.error_reason ? '<span class="wb-tag wb-tag--reason">' + _esc(q.error_reason) + '</span>' : '') +
           _fsrsBadgeHtml(q) +
-          (q.textbook_chapter ? '<span class="wb-tag">' + q.textbook_chapter + '</span>' : '') +
-          (q.difficulty ? '<span class="wb-tag">' + q.difficulty + '</span>' : '') +
+          (q.textbook_chapter ? '<span class="wb-tag">' + _esc(q.textbook_chapter) + '</span>' : '') +
+          (q.difficulty ? '<span class="wb-tag">' + _esc(q.difficulty) + '</span>' : '') +
         '</div>' +
         '<div class="wb-actions">' +
-          '<button class="wb-btn wb-detail-btn" data-id="' + q.id + '">查看/编辑</button>' +
-          '<button class="wb-btn wb-analyze-btn" data-id="' + q.id + '">AI 分析</button>' +
-          '<button class="wb-btn wb-kg-btn" data-concept="' + (q.concept || q.subject || '') + '">知识图谱</button>' +
-          '<button class="wb-btn wb-card-btn" data-concept="' + (q.concept || q.subject || '') + '">生成卡片</button>' +
-          '<button class="wb-btn wb-btn--danger wb-delete-btn" data-id="' + q.id + '">删除</button>' +
+          '<button class="wb-btn wb-detail-btn" data-id="' + qid + '">查看/编辑</button>' +
+          '<button class="wb-btn wb-analyze-btn" data-id="' + qid + '">AI 分析</button>' +
+          '<button class="wb-btn wb-kg-btn" data-concept="' + _esc(q.concept || q.subject || '') + '">知识图谱</button>' +
+          '<button class="wb-btn wb-card-btn" data-concept="' + _esc(q.concept || q.subject || '') + '">生成卡片</button>' +
+          '<button class="wb-btn wb-btn--danger wb-delete-btn" data-id="' + qid + '">删除</button>' +
         '</div>' +
       '</div>';
     }).join('');
@@ -278,9 +291,9 @@
     });
 
     var conceptOpts = '<option value="">全部概念</option>' +
-      Object.keys(concepts).sort().map(function(c) { return '<option value="' + c + '" ' + (_filter.concept === c ? 'selected' : '') + '>' + c + '</option>'; }).join('');
+      Object.keys(concepts).sort().map(function(c) { return '<option value="' + _esc(c) + '" ' + (_filter.concept === c ? 'selected' : '') + '>' + _esc(c) + '</option>'; }).join('');
     var reasonOpts = '<option value="">全部错误原因</option>' +
-      Object.keys(reasons).sort().map(function(r) { return '<option value="' + r + '" ' + (_filter.errorReason === r ? 'selected' : '') + '>' + r + '</option>'; }).join('');
+      Object.keys(reasons).sort().map(function(r) { return '<option value="' + _esc(r) + '" ' + (_filter.errorReason === r ? 'selected' : '') + '>' + _esc(r) + '</option>'; }).join('');
 
     container.innerHTML = '<div class="wb-toolbar">' +
       '<select id="wb-filter-concept">' + conceptOpts + '</select>' +
@@ -359,17 +372,16 @@
   /* ============== 打印（错题本） ============== */
   // 取当前勾选的错题记录（保持列表顺序）
   function _collectChecked() {
+    // 先建 id → 记录索引，避免每次勾选 O(n×m) 线性查找
+    var index = new Map();
+    _currentFiltered.forEach(function (rec) {
+      var key = String(rec.id);
+      if (!index.has(key)) index.set(key, rec);
+    });
     var picked = [];
-    var boxes = document.querySelectorAll('#wb-list .wb-select-cb');
-    boxes.forEach(function(box) {
+    document.querySelectorAll('#wb-list .wb-select-cb').forEach(function(box) {
       if (!box.checked) return;
-      var rec = null;
-      for (var i = 0; i < _currentFiltered.length; i++) {
-        if (String(_currentFiltered[i].id) === box.getAttribute('data-id')) {
-          rec = _currentFiltered[i];
-          break;
-        }
-      }
+      var rec = index.get(box.getAttribute('data-id'));
       if (rec) picked.push(rec);
     });
     return picked;

@@ -97,6 +97,24 @@ describe('题集打印（练习 / 组卷）', () => {
     expect(html).toContain('<b>Y.</b> 结论甲');
   });
 
+  test('对象型 options 的值为对象时取 text/content，不出现 [object Object]', () => {
+    const rows = PU.optionRows({
+      options: { A: { text: '甲文本' }, B: { content: '乙内容' } }
+    });
+    expect(rows.map((r) => r.text)).toEqual(['甲文本', '乙内容']);
+    const html = PU.questionBlock({ question: 'q', options: { A: { text: '甲文本' } } }, 1, {});
+    expect(html).not.toContain('[object Object]');
+    expect(html).toContain('甲文本');
+  });
+
+  test('选项超过 26 项时标签降级为 AA/AB，不再出现 [ 等符号', () => {
+    const opts = Array.from({ length: 27 }, (_, i) => '选项' + (i + 1));
+    const rows = PU.optionRows({ options: opts });
+    expect(rows[25].label).toBe('Z');
+    expect(rows[26].label).toBe('AA');
+    expect(rows[26].label).not.toBe('[');
+  });
+
   test('printQuestionSet 空列表不打开打印并返回 false', () => {
     expect(PU.printQuestionSet([], {})).toBe(false);
     expect(PU.printQuestionSet(null, {})).toBe(false);
@@ -173,6 +191,23 @@ describe('错题归一化与打印', () => {
     expect(n.question).toBe('本地错题');
     expect(n.correctAnswer).toBe('B');
     expect(n.analysis).toBe('本地解析');
+  });
+
+  test('来源①：review_cards.options 为 JSON 字符串时仍可渲染选项（v17 兼容）', () => {
+    const n = PU.normalizeWrongRecord({
+      question_id: 'q-json',
+      question_text: 'JSON 选项题',
+      options: JSON.stringify(['甲', '乙', '丙']),
+      correct_answer: 'B'
+    });
+    expect(n.rows.map((r) => r.label)).toEqual(['A', 'B', 'C']);
+    expect(n.rows[1].text).toBe('乙');
+  });
+
+  test('非法 timestamp 不抛异常，日期降级为空串', () => {
+    expect(() => PU.normalizeWrongRecord({ question_text: 'x', timestamp: 'not-a-date' })).not.toThrow();
+    const n = PU.normalizeWrongRecord({ question_text: 'x', timestamp: 'not-a-date' });
+    expect(n.date).toBe('');
   });
 
   test('多选答案数组 → 字母组合', () => {
@@ -354,5 +389,10 @@ describe('图片绝对化（独立打印窗口相对路径失效防护）', () =
     const out = PU.absSrcs('<img src="img/a.png"><img src="https://x/y.png">');
     expect(out).toContain('src="https://cdn.local/img/a.png"');
     expect(out).toContain('src="https://x/y.png"');
+  });
+
+  test('srcset 候选逐个绝对化并保留描述符', () => {
+    const out = PU.absSrcs('<img srcset="img/a.png 1x, img/a@2x.png 2x">');
+    expect(out).toContain('srcset="https://cdn.local/img/a.png 1x, https://cdn.local/img/a@2x.png 2x"');
   });
 });

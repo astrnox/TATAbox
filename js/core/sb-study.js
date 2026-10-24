@@ -532,6 +532,10 @@ async function getStudentByKey(userKey) {
     // 走 SECURITY DEFINER RPC：profiles 表已收紧为“仅本人可读”，公开查询统一走
     // get_student_by_key（user_key 即能力凭证，函数只回公开字段）
     var { data, error } = await sb.rpc('get_student_by_key', { p_user_key: key });
+    if (error) {
+      _warnMissingDependency('RPC get_student_by_key', error,
+        '请先执行 sql/migration_v3_security.sql');
+    }
     var p = Array.isArray(data) ? data[0] : data;
     if (error || !p) return null;
     return {
@@ -564,6 +568,10 @@ async function getStudentDetailByKey(userKey) {
   try {
     // 1. 通过 user_key 查公开资料（profiles 已收紧，改走 SECURITY DEFINER RPC）
     var { data: row, error: pErr } = await sb.rpc('get_student_by_key', { p_user_key: userKey.toUpperCase() });
+    if (pErr) {
+      _warnMissingDependency('RPC get_student_by_key', pErr,
+        '请先执行 sql/migration_v3_security.sql');
+    }
     var profile = Array.isArray(row) ? row[0] : row;
     if (pErr || !profile) return null;
 
