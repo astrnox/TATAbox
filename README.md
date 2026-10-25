@@ -279,8 +279,7 @@ MPL-2.0 为弱 copyleft 协议：允许修改与商用，但修改过的文件�
 
 
 ---
-**计划改名为GAGABOX,敬请期待~**
-<div align="center">
+
 
 用 TATABOX，学生物不迷路
 
