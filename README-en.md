@@ -9,6 +9,7 @@
 [🇨🇳 中文版](./README.md) · [🌐 Live Demo](https://tatabox.cc.cd/) · [📝 Start Practicing](https://tatabox.cc.cd/#/practice) · [💬 Report an Issue](https://github.com/astrnox/BioQuest/issues)
 
 [![Platform](https://img.shields.io/badge/platform-Web-blue?style=flat-square)]()
+[![Version](https://img.shields.io/badge/version-5.2.14-blue?style=flat-square)]()
 [![License: MPL 2.0](https://img.shields.io/badge/license-MPL--2.0-green?style=flat-square)](./LICENSE)
 [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)]()
 [![PWA](https://img.shields.io/badge/PWA-Supported-purple?style=flat-square)]()
@@ -22,6 +23,9 @@
 
 TATABOX is a biology learning website built specifically for high school students. Whether you are preparing for the National High School Biology League, grinding Gaokao mock exams, or reinforcing what you learned in class, you can use it.
 
+> [!IMPORTANT]
+> 📚 **Question bank status**: the bank now contains **3,400+ questions** across 80 biology topics (league past papers, module drills, logic questions, daily league, and more — 9 data sources). High-quality past papers and explanations are still being expanded.
+
 ---
 
 ## Quick Start
@@ -31,6 +35,8 @@ TATABOX is a biology learning website built specifically for high school student
 Open the online version directly: **[https://tatabox.cc.cd/](https://tatabox.cc.cd/)**
 
 - You can practice without registering; registering lets you sync your wrong-answer book and learning progress.
+- **Lite mode**: on phones or low-end devices open [tatabox.cc.cd/lite.html](https://tatabox.cc.cd/lite.html) — only five views (Today / Practice / Review / Wrong / Board), zero framework and faster startup.
+- Wrong-answer book, practice, and quiz pages all support printing: A4 pagination, with questions and answer explanations printable separately.
 - Features like the AI tutor and photo-based question search require you to configure your own API Key (they all use the free tiers of various providers — no cost, tutorial included).
 - Supports offline use — add it to your phone's home screen and use it like an app.
 
@@ -53,8 +59,9 @@ npx serve .                  # Node.js
 **Deploy online:** just drop the whole folder onto any free hosting platform (GitHub Pages, Vercel, Netlify, Cloudflare Pages). No build step, no server needed.
 
 **Things you may want to configure:**
-- Database: create a free project at [Supabase](https://supabase.com), run the SQL files in `sql/`, then fill the URL and key into `js/core/supabase-client.js` (optional — without it, it automatically falls back to browser local storage).
+- Database: create a free project at [Supabase](https://supabase.com), run the migrations in `sql/` in order (at minimum `migration_v3_security.sql` → `migration_v15_admin_totp.sql` → `migration_v16_login_contract.sql` → `migration_v17_review_cards_options.sql`), then fill the URL and key into `js/core/supabase-client.js` (optional — without it, it automatically falls back to browser local storage).
 - AI features: users enter their own API Key in "Profile → Settings"; developers don't need to manage it.
+- Quality gates: run `npm test` before contributing (manifest anchor + design audit + unit tests + smoke test).
 
 ---
 
@@ -62,15 +69,29 @@ npx serve .                  # Node.js
 
 | Feature | What it does |
 |---------|--------------|
-|  **Practice & Mock Exams** | League past papers, Gaokao mocks, and module-based drills — auto-grading with explanations after you finish |
-|  **Smart Wrong-Answer Book** | Wrong answers are auto-collected, and you can add questions by photo (supports print and handwriting OCR) |
-|  **Knowledge Cards** | Anki-style flashcard reviews automatically scheduled by your forgetting curve |
-|  **Skill Diagnosis** | A radar chart after each session shows which topics you're weak in |
-|  **AI Tutor** | Ask anything anytime — supports drawing, explaining, and generating similar questions |
-|  **Virtual Labs** | Plasmolysis, chromatography, DNA extraction and more — simulate experiments right in the browser |
-|  **Molecule Visualization** | Enter SMILES to view 2D structures, load PDB for 3D molecules, plus a genome browser |
-|  **Learning Analytics** | See how long you study each day and which questions you miss most |
-|  **Community Discussion** | Discuss questions with other students |
+| **Practice & Mock Exams** | Module drills across 80 biology topics with 3,400+ questions (league papers, module drills, logic, daily league), auto-graded with explanations |
+| **Smart Wrong-Answer Book** | Wrong answers auto-collected; add questions by photo (print/handwriting OCR); FSRS due-date badges and sorting |
+| **Printing** | Print wrong-answer book, practice, or quiz sets in three modes (questions + answers / questions only / answers only), with A4 pagination and a per-page footer |
+| **Knowledge Cards** | Anki-style spaced repetition, automatically scheduled by your forgetting curve |
+| **Knowledge Graph v5.0** | 80 exam nodes + encyclopedia layer (459 entries) + word cloud, with AI explanations and direct wiki links |
+| **Video Library** | 37 topic demo videos with seven tag filters (animation / 3D / microscopy / time-lapse / realistic / lecture / live-action) |
+| **Lite Mode** | Standalone `lite.html` with five views (Today / Practice / Review / Wrong / Board) — zero framework, fast startup, phone-friendly |
+| **Skill Diagnosis** | A radar chart after each session shows which topics you're weak in |
+| **AI Tutor** | Ask anything anytime — supports drawing, explaining, and generating similar questions |
+| **Virtual Labs** | Plasmolysis, chromatography, DNA extraction and more — simulate experiments right in the browser |
+| **Molecule Visualization** | Enter SMILES to view 2D structures, load PDB for 3D molecules, plus a genome browser |
+| **Learning Analytics** | See how long you study each day and which questions you miss most |
+| **Community Discussion** | Discuss questions with other students |
+| **Security & Privacy** | Supabase Row-Level Security, public profile views, admin TOTP, server-side protection for sensitive fields |
+
+### Recent updates (5.2.x)
+
+- **Printing system**: zero-dependency `print-utils.js`; three scenarios × three modes; dirty records no longer break a whole batch
+- **FSRS loop**: create a card on a wrong answer, only advance existing cards on correct answers; due badges and today's review queue
+- **Knowledge graph v5.0**: on-demand encyclopedia layer (DB → local seed fallback), weighted word cloud
+- **Video library**: 34 new competition-topic videos, tags and license whitelist checks for all 37
+- **Lite login**: mint-paper + forest-green single CTA, password visibility, error focus, clear password on close
+- **Security hardening**: `profiles` self-only, narrow login RPC, TOTP-only admin access
 
 ---
 
@@ -81,6 +102,8 @@ npx serve .                  # Node.js
 
 ### 1. Memory / review algorithm (FSRS)
 Replaces the traditional Anki SM-2 algorithm. It automatically computes the optimal next review time based on how hard a card is for you, using three memory metrics: stability, difficulty, and retrievability.
+
+Wrong answers now form a closed loop: a wrong answer mirrors Again locally and creates a cloud `review_cards` entry; a correct answer only advances cards that already exist, so ordinary questions never get spurious cards; guests fall back to the local due queue.
 
 ```js
 const scheduler = tsFsrs.fsrs({ request_retention: 0.9, maximum_interval: 36500, enable_fuzz: true });
@@ -115,11 +138,13 @@ finalEl.innerHTML = DOMPurify.sanitize(marked.parse(text));  // render after com
 
 Pure frontend architecture — no backend server to run:
 
-- **Frontend**: vanilla JavaScript (SPA) + CSS3 + PWA (offline support)
-- **Data**: Supabase (free tier) + IndexedDB (browser-side local database)
+- **Frontend**: vanilla JavaScript (SPA) + CSS3 + PWA (offline support); plus a zero-framework lite mode (`lite.html`)
+- **Data**: Supabase (free tier, RLS + narrow RPCs) + IndexedDB (browser-side local database)
 - **AI**: directly connects to 6 LLM providers from the frontend (DeepSeek, Zhipu, Qwen, Kimi, NVIDIA, SiliconFlow) with streaming output
-- **Visualization**: Chart.js, Cytoscape.js (knowledge graph), Mermaid (diagrams), 3Dmol.js (3D molecules), igv.js (genome)
+- **Visualization**: Chart.js, Cytoscape.js, a pure-SVG force-directed knowledge graph (with encyclopedia layer / word cloud), Mermaid, 3Dmol.js, igv.js
+- **Printing**: zero-dependency `js/core/print-utils.js` — A4, pagination, fixed footer, browser-native print
 - **OCR**: Tesseract.js (local) + multimodal LLM (cloud)
+- **Video**: Wikimedia Commons public-domain / CC assets, individually whitelisted
 - **Font**: LXGW WenKai (loaded locally, no network wait)
 
 ---
@@ -157,10 +182,10 @@ MPL-2.0 is a weak copyleft license: **modification and commercial use are allowe
 
 **As long as you're not directly selling the content itself, learning & educational use is fine**:
 
-✅ Personal study and reuse  
-✅ Schools, tutoring/extension centers using it for teaching (even if you charge tuition — you're selling a teaching *service*, not the content)  
-✅ Non-profit education projects and education-aid initiatives  
-❌ Selling the question bank/PDFs/animations content directly  
+✅ Personal study and reuse
+✅ Schools, tutoring/extension centers using it for teaching (even if you charge tuition — you're selling a teaching *service*, not the content)
+✅ Non-profit education projects and education-aid initiatives
+❌ Selling the question bank/PDFs/animations content directly
 ❌ Removing the copyright or claiming you wrote it
 
 ### Content commercial licensing
@@ -173,12 +198,14 @@ Content is **not permitted for commercial use** by default. Using the question b
 
 Planned work:
 
-- [ ] More Gaokao past papers and mock exams (currently more league questions; Gaokao questions coming incrementally)
-- [ ] Better wrong-answer book export (print, export PDF)
-- [ ] Multi-device sync improvements
+- [ ] Continue expanding the high-quality question bank (currently 3,400+ questions; keep raising the share of past papers and explanation quality)
+- [x] Wrong-answer book printing (browser-native A4, can save as PDF; questions and answers printable separately)
+- [x] FSRS cloud loop and multi-device sync (cards, due sorting, today's review entry)
+- [x] Competition-topic video library with tag filters
+- [x] Knowledge Graph v5.0 encyclopedia layer and word cloud
 - [ ] Auto-grading for biology drawing questions
 - [ ] More virtual labs
-- [ ] More animations
+- [ ] More animations and encyclopedia entries
 - [ ] Class/teacher management improvements
 - [ ] Mobile app packaging (TWA/PWA already supported; native shell considered later)
 
