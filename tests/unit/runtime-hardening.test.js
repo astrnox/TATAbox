@@ -11,11 +11,13 @@ const ROOT = path.resolve(__dirname, '../..');
 const read = (f) => fs.readFileSync(path.join(ROOT, f), 'utf8');
 
 describe('M-05 HTML/SVG 清洗 fail-closed', () => {
-  test('AI 流式/单次渲染在 DOMPurify 缺失时降级为纯文本', () => {
+  test('AI 渲染统一走 safeHtml，入口缺失时 fail-closed', () => {
     const js = read('js/integrations/ai-chat-enhanced.js');
-    expect(js).toMatch(/DOMPurify 未加载，已降级为纯文本渲染/);
+    expect(js).toMatch(/window\.safeHtml/);
+    expect(js).toMatch(/safeHtml 未加载，已降级为纯文本渲染/);
     expect(js).toMatch(/el\.textContent = buffer;/);
     expect(js).toMatch(/el\.textContent = markdown;/);
+    expect(read('js/core/utils.js')).toMatch(/return escapeHtml\(s\);/);
   });
 
   test('Mermaid SVG 在 DOMPurify 缺失时拒绝插入', () => {

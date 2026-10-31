@@ -225,6 +225,48 @@ function escapeHtml(str) {
 }
 
 /**
+ * 唯一 HTML 清洗入口（M-05）
+ * - DOMPurify 可用：按其策略消毒（调用方可传自定义配置）；
+ * - DOMPurify 缺失或消毒异常：fail-closed，全量 HTML 转义后再返回。
+ * 禁止把 marked/AI/社区内容直接拼进 innerHTML；优先走本函数或 setSafeHtml。
+ * @param {*} html
+ * @param {Object} [dompurifyOptions] - 透传给 DOMPurify.sanitize 的配置
+ * @returns {string}
+ */
+function safeHtml(html, dompurifyOptions) {
+  var s = String(html == null ? '' : html);
+  if (typeof window !== 'undefined' && window.DOMPurify &&
+      typeof window.DOMPurify.sanitize === 'function') {
+    try {
+      return window.DOMPurify.sanitize(s, dompurifyOptions || {});
+    } catch (e) {
+      console.warn('[safeHtml] DOMPurify 消毒失败，已降级为转义文本:', e);
+    }
+  }
+  return escapeHtml(s);
+}
+
+/**
+ * 安全写入元素的 innerHTML（内部调用 safeHtml）。
+ * @param {Element} el
+ * @param {*} html
+ * @param {Object} [dompurifyOptions]
+ * @returns {boolean} 是否写入
+ */
+function setSafeHtml(el, html, dompurifyOptions) {
+  if (!el) return false;
+  el.innerHTML = safeHtml(html, dompurifyOptions);
+  return true;
+}
+
+TATABOX.safeHtml = safeHtml;
+TATABOX.setSafeHtml = setSafeHtml;
+if (typeof window !== 'undefined') {
+  window.safeHtml = safeHtml;
+  window.setSafeHtml = setSafeHtml;
+}
+
+/**
  * 统一错误文本提取 —— 全站错误兜底的唯一入口。
  * 收敛此前散落各处的 `xxx.message || '未知错误'` 复制粘贴样板。
  * @param {*} err - Error / { message } / { error } / 字符串 / 空值

@@ -77,20 +77,20 @@
           // M-05：清洗必须是硬约束。DOMPurify 缺失时 fail-closed，
           // 直接按纯文本展示，绝不把 marked 输出原样 innerHTML。
           if (opts.sanitize !== false) {
-            if (typeof window.DOMPurify !== 'undefined' && typeof window.DOMPurify.sanitize === 'function') {
-              html = window.DOMPurify.sanitize(html, {
-                // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
-                ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
-                  'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
-                  'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
-                ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
-                  'type','disabled','checked']
-              });
-            } else {
-              console.warn('[AIChatEnhanced] DOMPurify 未加载，已降级为纯文本渲染');
+            if (typeof window.safeHtml !== 'function') {
+              // M-05：统一清洗入口缺失时 fail-closed，绝不插入 marked 原始输出
+              console.warn('[AIChatEnhanced] safeHtml 未加载，已降级为纯文本渲染');
               el.textContent = buffer;
               return;
             }
+            html = window.safeHtml(html, {
+              // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
+              ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
+                'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
+                'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
+              ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
+                'type','disabled','checked']
+            });
           }
           // 判断是否跟随滚动（用户上滚阅读时暂停，滚回底部后自动恢复）
           var shouldAutoScroll = _isNearBottom(el);
@@ -180,21 +180,20 @@
       try {
         var html = window.marked.parse(markdown);
         if (!opts || opts.sanitize !== false) {
-          if (typeof window.DOMPurify !== 'undefined' && typeof window.DOMPurify.sanitize === 'function') {
-            html = window.DOMPurify.sanitize(html, {
-              // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
-              ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
-                'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
-                'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
-              ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
-                'type','disabled','checked']
-            });
-          } else {
-            // M-05：未加载 DOMPurify 时 fail-closed
-            console.warn('[AIChatEnhanced] DOMPurify 未加载，已降级为纯文本渲染');
+          if (typeof window.safeHtml !== 'function') {
+            // M-05：统一清洗入口缺失时 fail-closed
+            console.warn('[AIChatEnhanced] safeHtml 未加载，已降级为纯文本渲染');
             el.textContent = markdown;
             return true;
           }
+          html = window.safeHtml(html, {
+            // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
+            ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
+              'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
+              'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
+            ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
+              'type','disabled','checked']
+          });
         }
         el.innerHTML = html;
         return true;
