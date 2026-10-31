@@ -1,40 +1,40 @@
 {
- "M2-01-01b80cd5": {
-  "concept": "种子萌发与呼吸类型",
-  "difficulty": "league",
-  "explanation": "A【对】依据：脂肪含氢多氧少，转化为糖需加氧，乙醛酸循环中脂肪转糖使干重短暂增加。\nB【对】依据：萌发需能量与碳骨架，呼吸作用同时提供 ATP 与中间代谢物。\nC【错】错因：脂肪先转为糖再经糖酵解与有氧呼吸供能，糖类是中间供能物质。\nD【错】错因：乙醛酸循环及后续糖异生过程需要氧参与氧化反应，缺氧时转化受阻。",
-  "question": "油料种子萌发初期，干重先增加后减少。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "脂肪转化为糖类时氧元素比例增加，干重因此暂时上升"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "萌发种子呼吸作用增强，为物质转化提供 ATP 和中间产物"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "油料种子萌发只消耗脂肪，糖类不参与供能"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "脂肪转化为糖类的过程不需要氧气参与"
-   }
-  ],
-  "subject": "植物生理学",
-  "tags": [
-   "plant_respiration",
-   "module_2",
-   "植物生理学",
-   "种子萌发与呼吸类型"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M2-01-01b80cd5": {
+    "concept": "种子萌发与呼吸类型",
+    "difficulty": "league",
+    "explanation": "A【对】依据：脂肪含氢多氧少，转化为糖需加氧，乙醛酸循环中脂肪转糖使干重短暂增加。\nB【对】依据：萌发需能量与碳骨架，呼吸作用同时提供 ATP 与中间代谢物。\nC【错】错因：脂肪先转为糖再经糖酵解与有氧呼吸供能，糖类是中间供能物质。\nD【错】错因：乙醛酸循环及后续糖异生过程需要氧参与氧化反应，缺氧时转化受阻。",
+    "question": "油料种子萌发初期，干重先增加后减少。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "脂肪转化为糖类时氧元素比例增加，干重因此暂时上升"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "萌发种子呼吸作用增强，为物质转化提供 ATP 和中间产物"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "油料种子萌发只消耗脂肪，糖类不参与供能"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "脂肪转化为糖类的过程不需要氧气参与"
+      }
+    ],
+    "subject": "植物生理学",
+    "tags": [
+      "plant_respiration",
+      "module_2",
+      "植物生理学",
+      "种子萌发与呼吸类型"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

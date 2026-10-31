@@ -1,19 +1,19 @@
 {
- "M4-01-770a5d45": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 44,
-  "module": "module_4",
-  "src": "animal_diversity",
-  "tag": "animal_diversity",
-  "tags": [
-   "animal_diversity",
-   "module_4",
-   "动物学",
-   "脊椎动物主要类群的特征"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-770a5d45": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 44,
+    "module": "module_4",
+    "src": "animal_diversity",
+    "tag": "animal_diversity",
+    "tags": [
+      "animal_diversity",
+      "module_4",
+      "动物学",
+      "脊椎动物主要类群的特征"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

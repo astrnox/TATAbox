@@ -18,6 +18,9 @@ sql/
 tests/
 tools/
 
+# 仅构建期使用：源码字体 7.6MB，运行时已改用 857KB 子集
+fonts/lxgw-wenkai.woff2
+
 # 本地环境与日志
 .env
 .env.example

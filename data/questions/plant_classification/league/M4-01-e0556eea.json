@@ -1,38 +1,38 @@
 {
- "concept": "植物主要类群的演化特征",
- "difficulty": "league",
- "explanation": "A【对】依据：蕨类具维管组织适应陆地生活，但精子具鞭毛，受精仍需水环境。\nB【错】错因：苔藓只有假根，无维管组织，是结构最简单的陆生植物。\nC【错】错因：裸子植物种子裸露，无果皮包被；被子植物才有果实。\nD【错】错因：双受精是被子植物特有现象，蕨类以孢子繁殖，无双受精。",
- "question": "植物从水生到陆生的演化过程中，各类群呈现出递进的适应特征。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "蕨类植物有了根茎叶分化和维管组织，但生殖仍离不开水"
-  },
-  {
-   "answer": false,
-   "label": "B",
-   "text": "苔藓植物具有真正的根和维管束"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "裸子植物的种子有果皮包被"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "被子植物的双受精现象在蕨类植物中也普遍存在"
-  }
- ],
- "subject": "植物学",
- "tags": [
-  "plant_classification",
-  "module_4",
-  "植物学",
-  "植物主要类群的演化特征"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "植物主要类群的演化特征",
+  "difficulty": "league",
+  "explanation": "A【对】依据：蕨类具维管组织适应陆地生活，但精子具鞭毛，受精仍需水环境。\nB【错】错因：苔藓只有假根，无维管组织，是结构最简单的陆生植物。\nC【错】错因：裸子植物种子裸露，无果皮包被；被子植物才有果实。\nD【错】错因：双受精是被子植物特有现象，蕨类以孢子繁殖，无双受精。",
+  "question": "植物从水生到陆生的演化过程中，各类群呈现出递进的适应特征。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "蕨类植物有了根茎叶分化和维管组织，但生殖仍离不开水"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "苔藓植物具有真正的根和维管束"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "裸子植物的种子有果皮包被"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "被子植物的双受精现象在蕨类植物中也普遍存在"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_classification",
+    "module_4",
+    "植物学",
+    "植物主要类群的演化特征"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

@@ -1,19 +1,19 @@
 {
- "M3-01-7f4c7a7b": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 31,
-  "module": "module_3",
-  "src": "digestive_sys",
-  "tag": "digestive_sys",
-  "tags": [
-   "digestive_sys",
-   "module_3",
-   "动物生理学",
-   "小肠的结构与消化吸收"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-7f4c7a7b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 31,
+    "module": "module_3",
+    "src": "digestive_sys",
+    "tag": "digestive_sys",
+    "tags": [
+      "digestive_sys",
+      "module_3",
+      "动物生理学",
+      "小肠的结构与消化吸收"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

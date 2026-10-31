@@ -1,19 +1,19 @@
 {
- "M3-01-6d7a5bee": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 41,
-  "module": "module_3",
-  "src": "nervous_sys",
-  "tag": "nervous_sys",
-  "tags": [
-   "nervous_sys",
-   "module_3",
-   "动物生理学",
-   "动作电位的产生与传导"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-6d7a5bee": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 41,
+    "module": "module_3",
+    "src": "nervous_sys",
+    "tag": "nervous_sys",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "动作电位的产生与传导"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,19 +1,19 @@
 {
- "M3-01-42c298c9": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 32,
-  "module": "module_3",
-  "src": "excretory",
-  "tag": "excretory",
-  "tags": [
-   "excretory",
-   "module_3",
-   "动物生理学",
-   "尿液的形成过程"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-42c298c9": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 32,
+    "module": "module_3",
+    "src": "excretory",
+    "tag": "excretory",
+    "tags": [
+      "excretory",
+      "module_3",
+      "动物生理学",
+      "尿液的形成过程"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

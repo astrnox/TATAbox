@@ -78,6 +78,23 @@ function makeQuery(resolveRow) {
 function setup(cfg) {
   const signInCalls = [];
 
+  // 与 supabase-client.js 的 _placeholderEmailForUsername 保持同一清洗规则
+  const placeholderFor = function (name) {
+    const clean = String(name || '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 20);
+    return clean ? clean + '@bioquest.local' : null;
+  };
+  const findProfile = function (name) {
+    const low = String(name || '').toLowerCase();
+    return cfg.profiles.find(function (p) { return String(p.username).toLowerCase() === low; }) || null;
+  };
+  // 用该账号可能关联到的任一认证邮箱判断密码是否正确（兼容 profiles.email 为旧值/为 NULL）
+  const passwordOk = function (p, password) {
+    const emails = [p.email, placeholderFor(p.username)].filter(Boolean);
+    return emails.some(function (email) {
+      return Object.prototype.hasOwnProperty.call(cfg.passwords, email) && cfg.passwords[email] === password;
+    });
+  };
+
   const client = {
     auth: {
       onAuthStateChange: function () {
@@ -119,21 +136,30 @@ function setup(cfg) {
       }
       return makeQuery(function () { return null; });
     },
-    // 用户名登录已改为窄 RPC resolve_login_email（SECURITY DEFINER，仅回 email+username；
-    // 契约见 sql/migration_v16_login_contract.sql：lower(username) 命中即返回行，
-    // email 可为 NULL（未绑定邮箱的历史账号），RETURNS TABLE → 数据为数组）
-    rpc: function (fn, args) {
-      if (fn !== 'resolve_login_email') {
-        return Promise.resolve({ data: null, error: { message: 'unknown rpc: ' + fn } });
+    rpc: async function (fn, params) {
+      if (fn === 'resolve_login_email_verified') {
+        const p = findProfile(params && params.p_name);
+        if (!p) return { data: [], error: null };
+        const ok = passwordOk(p, params && params.p_password);
+        return {
+          data: [{
+            res_email: ok ? (p.email || null) : null,
+            res_username: ok ? p.username : null,
+            res_ok: ok
+          }],
+          error: null
+        };
       }
-      const low = args && args.p_name != null ? String(args.p_name).toLowerCase() : '';
-      const hit = cfg.profiles.find(function (p) {
-        return String(p.username).toLowerCase() === low;
-      }) || null;
-      return Promise.resolve({
-        data: hit ? [{ res_email: hit.email || null, res_username: hit.username }] : [],
-        error: null
-      });
+      if (fn === 'resolve_login_email') {
+        const p = findProfile(params && params.p_name);
+        if (!p) return { data: [], error: null };
+        const isPlaceholder = !p.email || String(p.email).endsWith('@bioquest.local');
+        return {
+          data: [{ res_email: isPlaceholder ? (p.email || null) : null, res_username: p.username }],
+          error: null
+        };
+      }
+      return { data: null, error: { message: 'unknown rpc: ' + fn } };
     }
   };
 
@@ -216,7 +242,7 @@ describe('Issue #170 用户名登录（profiles.email 为 NULL 的历史账号�
     expect(res.user.username).toBe('Qiqi');
   });
 
-  test('密码确实错误时提示失败并给出未绑定邮箱引导，不误报成功', async function () {
+  test('密码确实错误时提示标准失败文案，不误报成功也不泄露账号详情', async function () {
     const env = setup({
       profiles: [{ id: 'u-qiqi', username: 'Qiqi', email: null }],
       passwords: { 'qiqi@bioquest.local': 'correct-password' }
@@ -225,7 +251,8 @@ describe('Issue #170 用户名登录（profiles.email 为 NULL 的历史账号�
     const res = await env.loginUser('Qiqi', 'wrong-password');
 
     expect(res.ok).toBe(false);
-    expect(res.error).toBe('用户名或密码错误；该账号未绑定邮箱，若注册时填写过邮箱，请改用注册邮箱登录');
+    // H-02：统一文案，不区分账号是否存在/是否绑定邮箱，避免账号枚举
+    expect(res.error).toBe('用户名/邮箱或密码错误');
     // 占位邮箱候选被尝试过（profiles.email 为 NULL，只有占位邮箱一个候选）
     expect(env.signInCalls.map(function (c) { return c.email; })).toEqual(['qiqi@bioquest.local']);
   });

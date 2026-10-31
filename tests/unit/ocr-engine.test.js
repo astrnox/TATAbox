@@ -7,7 +7,6 @@
  *   3. _postprocessText 后处理：Paddle 中文间空格合并、行尾标点清理
  * @jest-environment jsdom
  */
-/* eslint-env jest */
 'use strict';
 
 const fs = require('fs');

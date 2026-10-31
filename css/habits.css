@@ -370,6 +370,16 @@
   box-shadow: var(--shadow-md);
 }
 
+/* M-13：暗色下浅色阶底会把浅色日期文字淹没，换深绿阶（文字仍用 --text-primary） */
+[data-theme="dark"] .calendar-day.intensity-0 { background: #232a26; }
+[data-theme="dark"] .calendar-day.intensity-25 { background: #26332a; }
+[data-theme="dark"] .calendar-day.intensity-50 { background: #2c4034; }
+[data-theme="dark"] .calendar-day.intensity-75 { background: #34503f; }
+[data-theme="dark"] .calendar-day.intensity-100 {
+  background: #3d6b4b;
+  color: var(--color-text, #e0e8e2);
+}
+
 /* ---------- 徽章展架 (3D perspective shelf) ---------- */
 .badge-showcase {
   display: flex;

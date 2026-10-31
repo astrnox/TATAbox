@@ -120,9 +120,9 @@ describe('getStatModuleKey：联赛 subject 大类按 q.module 兜底', () => {
 });
 
 describe('练习页标签栏：年份 / 考试来源 tag 渲染', () => {
-  /* 从 practice.js 源码截取 _renderExamSourceTag 真实实现 */
+  /* M-01：从 practice-rating.js 源码截取 _renderExamSourceTag 真实实现 */
   function loadRenderExamSourceTag() {
-    const src = fs.readFileSync(path.join(ROOT, 'js/pages/practice.js'), 'utf-8');
+    const src = fs.readFileSync(path.join(ROOT, 'js/pages/practice-rating.js'), 'utf-8');
     const m = src.match(/(function\s+_renderExamSourceTag[\s\S]*?^})/m);
     if (!m) throw new Error('未找到 _renderExamSourceTag');
     const body = m[1] + '\n;return _renderExamSourceTag;';
@@ -155,7 +155,8 @@ describe('练习页标签栏：年份 / 考试来源 tag 渲染', () => {
   });
 
   test('标签栏模板含年份与来源 tag 插槽（renderQuiz）', () => {
-    const src = fs.readFileSync(path.join(ROOT, 'js/pages/practice.js'), 'utf-8');
+    // M-01：renderQuiz 实现已拆至 practice-quiz.js
+    const src = fs.readFileSync(path.join(ROOT, 'js/pages/practice-quiz.js'), 'utf-8');
     expect(src).toMatch(/q\.year \? '<span class="tag tag--outline">/);
     expect(src).toContain('${_renderExamSourceTag(q)}');
   });

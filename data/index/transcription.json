@@ -1,19 +1,19 @@
 {
- "M1-01-212edebf": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 46,
-  "module": "module_1",
-  "src": "transcription",
-  "tag": "transcription",
-  "tags": [
-   "transcription",
-   "module_1",
-   "分子生物学",
-   "真核生物转录与启动子"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-212edebf": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 46,
+    "module": "module_1",
+    "src": "transcription",
+    "tag": "transcription",
+    "tags": [
+      "transcription",
+      "module_1",
+      "分子生物学",
+      "真核生物转录与启动子"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

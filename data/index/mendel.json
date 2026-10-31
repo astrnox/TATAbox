@@ -1,20 +1,20 @@
 {
- "M4-02-b7873823": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 157,
-  "module": "module_4",
-  "src": "mendel",
-  "tag": "mendel",
-  "tags": [
-   "mendel",
-   "module_4",
-   "遗传学",
-   "自由组合定律",
-   "连锁不平衡"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-02-b7873823": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 157,
+    "module": "module_4",
+    "src": "mendel",
+    "tag": "mendel",
+    "tags": [
+      "mendel",
+      "module_4",
+      "遗传学",
+      "自由组合定律",
+      "连锁不平衡"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

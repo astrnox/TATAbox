@@ -86,6 +86,28 @@ describe('IRT 题目参数推断 inferParams', () => {
     expect(p.a).toBe(1.5);
     expect(p.c).toBe(0);
   });
+
+  test('字符串难度归一：hard > medium > easy，不再统一落到 b=0', () => {
+    const easy = Irt.inferParams({ type: 'mcq', difficulty: 'easy', options: [1, 2, 3, 4] });
+    const medium = Irt.inferParams({ type: 'mcq', difficulty: 'medium', options: [1, 2, 3, 4] });
+    const hard = Irt.inferParams({ type: 'mcq', difficulty: 'hard', options: [1, 2, 3, 4] });
+    expect(easy.b).toBeCloseTo(-1.25, 5);
+    expect(medium.b).toBeCloseTo(0, 5);
+    expect(hard.b).toBeCloseTo(1.25, 5);
+  });
+
+  test('中文/数字字符串难度同样归一', () => {
+    expect(Irt.inferParams({ type: 'mcq', difficulty: '简单', options: [1, 2, 3, 4] }).b).toBeCloseTo(-1.25, 5);
+    expect(Irt.inferParams({ type: 'mcq', difficulty: '联赛', options: [1, 2, 3, 4] }).b).toBeCloseTo(1.25, 5);
+    expect(Irt.inferParams({ type: 'mcq', difficulty: '0.8', options: [1, 2, 3, 4] }).b).toBeCloseTo(1.5, 5);
+  });
+
+  test('难度越界钳制到 [0,1]；无法识别的字符串回落题型默认值', () => {
+    expect(Irt.inferParams({ type: 'mcq', difficulty: 5, options: [1, 2, 3, 4] }).b).toBeCloseTo(2.5, 5);
+    expect(Irt.inferParams({ type: 'mcq', difficulty: -2, options: [1, 2, 3, 4] }).b).toBeCloseTo(-2.5, 5);
+    // 未知标签按 mcq 默认 0.4 → b=-0.5，而非 0
+    expect(Irt.inferParams({ type: 'mcq', difficulty: 'unknown', options: [1, 2, 3, 4] }).b).toBeCloseTo(-0.5, 5);
+  });
 });
 
 describe('IRT θ 贝叶斯更新 updateTheta（经 recordAnswer）', () => {

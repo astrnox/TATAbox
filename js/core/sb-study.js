@@ -529,15 +529,11 @@ async function getStudentByKey(userKey) {
   if (!sb) return null;
   try {
     var key = userKey.toUpperCase();
-    // 走 SECURITY DEFINER RPC：profiles 表已收紧为“仅本人可读”，公开查询统一走
-    // get_student_by_key（user_key 即能力凭证，函数只回公开字段）
+    // H-01：profiles 已收紧，教师按 user_key 查学生改走 SECURITY DEFINER RPC
+    // （只返回非敏感字段，避免匿名/普通用户直读整表）。
     var { data, error } = await sb.rpc('get_student_by_key', { p_user_key: key });
-    if (error) {
-      _warnMissingDependency('RPC get_student_by_key', error,
-        '请先执行 sql/migration_v3_security.sql');
-    }
-    var p = Array.isArray(data) ? data[0] : data;
-    if (error || !p) return null;
+    if (error || !data || data.length === 0) return null;
+    var p = data[0];
     return {
       id: p.id,
       username: p.username,
@@ -566,14 +562,12 @@ async function getStudentDetailByKey(userKey) {
   var sb = getSupabase();
   if (!sb) return null;
   try {
-    // 1. 通过 user_key 查公开资料（profiles 已收紧，改走 SECURITY DEFINER RPC）
-    var { data: row, error: pErr } = await sb.rpc('get_student_by_key', { p_user_key: userKey.toUpperCase() });
-    if (pErr) {
-      _warnMissingDependency('RPC get_student_by_key', pErr,
-        '请先执行 sql/migration_v3_security.sql');
-    }
-    var profile = Array.isArray(row) ? row[0] : row;
-    if (pErr || !profile) return null;
+    // 1. 通过 user_key 查公开资料（H-01：改走 SECURITY DEFINER RPC）
+    var { data: rows, error: pErr } = await sb.rpc('get_student_by_key', {
+      p_user_key: userKey.toUpperCase()
+    });
+    if (pErr || !rows || rows.length === 0) return null;
+    var profile = rows[0];
 
     // 2. 拉取该学生最近 50 条练习记录（RLS 限制：只有本人能查，这里通过 RPC 或公开视图绕过）
     // 由于 RLS，普通查询会返回空。这里返回基础资料，详细历史需要学生本人授权或通过教师密钥机制

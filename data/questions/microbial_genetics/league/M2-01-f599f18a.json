@@ -1,38 +1,38 @@
 {
- "concept": "乳糖操纵子的调控",
- "difficulty": "league",
- "explanation": "A【对】依据：阻遏蛋白由调节基因编码，结合操纵基因 O 区阻断 RNA 聚合酶转录。\nB【对】依据：乳糖（别乳糖）与阻遏蛋白结合使其构象改变脱离操纵基因，启动转录。\nC【对】依据：葡萄糖降低胞内 cAMP，CAP-cAMP 复合物不足，转录水平仍很低（葡萄糖效应）。\nD【错】错因：操纵子内多个结构基因共用一个启动子，转录为一条多顺反子 mRNA。",
- "question": "大肠杆菌乳糖操纵子是原核基因表达调控的经典模型。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "无乳糖时阻遏蛋白结合操纵基因，结构基因不转录"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "乳糖作为诱导物使阻遏蛋白失活，解除转录抑制"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "葡萄糖存在时，即使有乳糖，操纵子表达也受分解代谢物抑制"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "操纵子中的结构基因各自拥有独立的启动子"
-  }
- ],
- "subject": "微生物学",
- "tags": [
-  "microbial_genetics",
-  "module_2",
-  "微生物学",
-  "乳糖操纵子的调控"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "乳糖操纵子的调控",
+  "difficulty": "league",
+  "explanation": "A【对】依据：阻遏蛋白由调节基因编码，结合操纵基因 O 区阻断 RNA 聚合酶转录。\nB【对】依据：乳糖（别乳糖）与阻遏蛋白结合使其构象改变脱离操纵基因，启动转录。\nC【对】依据：葡萄糖降低胞内 cAMP，CAP-cAMP 复合物不足，转录水平仍很低（葡萄糖效应）。\nD【错】错因：操纵子内多个结构基因共用一个启动子，转录为一条多顺反子 mRNA。",
+  "question": "大肠杆菌乳糖操纵子是原核基因表达调控的经典模型。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "无乳糖时阻遏蛋白结合操纵基因，结构基因不转录"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "乳糖作为诱导物使阻遏蛋白失活，解除转录抑制"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "葡萄糖存在时，即使有乳糖，操纵子表达也受分解代谢物抑制"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "操纵子中的结构基因各自拥有独立的启动子"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "microbial_genetics",
+    "module_2",
+    "微生物学",
+    "乳糖操纵子的调控"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

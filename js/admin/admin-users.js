@@ -12,6 +12,18 @@ window._cspUserGroupChange = function (uid, el) {
   if (typeof window.handleChangeUserGroup === 'function') window.handleChangeUserGroup(uid, el && el.value);
 };
 
+/**
+ * 重新拉取并渲染用户表（H-03：后台写操作失败时把下拉/行状态恢复到服务端真值）。
+ */
+async function _reloadAdminUsers() {
+  try {
+    if (typeof getUsers !== 'function') return;
+    var users = await getUsers();
+    var container = document.getElementById('admin-tab-content');
+    if (users && container) renderUsersTab(container, users);
+  } catch (e) { /* 刷新失败不影响主提示 */ }
+}
+
 function renderUsersTab(container, users) {
   const totalUsers = users.length;
   const totalAnswered = users.reduce((sum, u) => sum + (u.total_answered || 0), 0);
@@ -211,11 +223,25 @@ window.handleChangeUserGroup = async function(userId, newGroup) {
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
   if (!sb) { showAdminToast('Supabase 未连接', 'error'); return; }
   try {
-    var { error } = await sb.from('profiles').update({ user_group: newGroup }).eq('id', userId);
-    if (error) { showAdminToast('更新失败: ' + error.message, 'error'); return; }
+    // H-03：user_group 受 profile_protect_sensitive 触发器保护，
+    // 客户端直接 PATCH 会被静默回滚（接口 200 但数据未变）。
+    // 改走服务端 RPC：校验调用者为 admin，并在 postgres 身份下完成更新。
+    var res = await sb.rpc('admin_set_user_group', { p_user_id: userId, p_group: newGroup });
+    if (res && res.error) {
+      showAdminToast('更新失败: ' + res.error.message, 'error');
+      _reloadAdminUsers();
+      return;
+    }
+    var row = Array.isArray(res.data) ? res.data[0] : res.data;
+    if (!row || !row.ok) {
+      showAdminToast((row && row.error_msg) || '更新失败', 'error');
+      _reloadAdminUsers();
+      return;
+    }
     showAdminToast('用户组已设为 ' + {admin:'管理员',premium:'高级会员',verified:'认证会员',member:'普通会员',guest:'访客'}[newGroup], 'success');
   } catch(e) {
     showAdminToast('更新出错: ' + e.message, 'error');
+    _reloadAdminUsers();
   }
 };
 
@@ -224,11 +250,13 @@ window.handleDeleteUser = async function(userId) {
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
   if (!sb) { alert('Supabase 未连接'); return; }
   try {
-    var { error } = await sb.from('profiles').delete().eq('id', userId);
-    if (error) { alert('删除失败: ' + error.message); return; }
-    const users = await getUsers();
-    const container = document.getElementById('admin-tab-content');
-    if (users && container) renderUsersTab(container, users);
+    // H-03：只删 profiles 会留下可继续登录的 auth.users 孤儿账号。
+    // 改走服务端 RPC：同时删除 auth 用户（级联清理业务数据），并阻止删自己/最后一名管理员。
+    var res = await sb.rpc('admin_delete_user', { p_user_id: userId });
+    if (res && res.error) { alert('删除失败: ' + res.error.message); return; }
+    var row = Array.isArray(res.data) ? res.data[0] : res.data;
+    if (!row || !row.ok) { alert((row && row.error_msg) || '删除失败'); return; }
+    await _reloadAdminUsers();
     showAdminToast('用户已删除', 'success');
   } catch(e) {
     alert('删除出错: ' + e.message);

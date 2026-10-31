@@ -1,7 +1,6 @@
 # 依赖
 node_modules/
-package-lock.json
-yarn.lock
+# M-11：package-lock.json 必须入库，CI 用 npm ci 保证依赖可复现
 
 # Python
 __pycache__/

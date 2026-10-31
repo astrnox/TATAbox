@@ -1,38 +1,38 @@
 {
- "concept": "哈迪-温伯格平衡",
- "difficulty": "league",
- "explanation": "A【对】依据：aa=1/10000，故 a 频率 q=1/100，携带者 2pq≈2×1×0.01≈2%。\nB【对】依据：五大前提（大种群、随机交配、无突变、无迁移、无选择）同时满足才保持平衡。\nC【错】错因：遗传平衡的核心是基因频率与基因型频率世代保持不变。\nD【错】错因：近亲婚配改变的是基因型频率（纯合子增多），不改变基因频率。",
- "question": "某理想种群中，某常染色体隐性遗传病发病率为 1/10000。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "隐性基因频率为 1/100，携带者频率约为 2%"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "哈迪-温伯格平衡要求种群足够大、随机交配、无突变和选择"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "在遗传平衡种群中，基因频率每代都会改变"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "近亲婚配会改变该种群的基因频率"
-  }
- ],
- "subject": "遗传学",
- "tags": [
-  "population_gen",
-  "module_4",
-  "遗传学",
-  "哈迪-温伯格平衡"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "哈迪-温伯格平衡",
+  "difficulty": "league",
+  "explanation": "A【对】依据：aa=1/10000，故 a 频率 q=1/100，携带者 2pq≈2×1×0.01≈2%。\nB【对】依据：五大前提（大种群、随机交配、无突变、无迁移、无选择）同时满足才保持平衡。\nC【错】错因：遗传平衡的核心是基因频率与基因型频率世代保持不变。\nD【错】错因：近亲婚配改变的是基因型频率（纯合子增多），不改变基因频率。",
+  "question": "某理想种群中，某常染色体隐性遗传病发病率为 1/10000。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "隐性基因频率为 1/100，携带者频率约为 2%"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "哈迪-温伯格平衡要求种群足够大、随机交配、无突变和选择"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "在遗传平衡种群中，基因频率每代都会改变"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "近亲婚配会改变该种群的基因频率"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "population_gen",
+    "module_4",
+    "遗传学",
+    "哈迪-温伯格平衡"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

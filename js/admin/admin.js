@@ -1156,10 +1156,11 @@ window.getSupabaseSessionToken = async function () {
 
 // 使用 fetch() 直接调用 Supabase REST API，避免 Supabase JS 客户端内部取消请求导致 net::ERR_ABORTED
 async function adminFetchRest(method, table, queryParams, body) {
-  // 公开表（社区帖子、社区评论、profiles 等）必须用 anon key 拉取，
-  // 避免登录用户的 RLS 策略限制（如 auth.uid() = author_id 导致只能看自己发的）
-  // 管理员专属操作（更新/删除/插入）才用 session token
-  var PUBLIC_TABLES = ['community_posts', 'community_comments', 'profiles', 'checkins', 'questions'];
+  // 公开表（社区帖子、社区评论等）用 anon key 拉取，
+  // 避免登录用户的 RLS 策略限制（如 auth.uid() = author_id 导致只能看自己发的）。
+  // profiles 不在此列：H-01 后 anon 已无 SELECT 权限，管理员列表必须带 session token，
+  // 由 profiles_select_admin 策略放行。
+  var PUBLIC_TABLES = ['community_posts', 'community_comments', 'checkins', 'questions'];
   var isWriteOp = (method === 'POST' || method === 'PATCH' || method === 'PUT' || method === 'DELETE');
   var useAnon = PUBLIC_TABLES.indexOf(table) >= 0 && method === 'GET';
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
@@ -1225,7 +1226,10 @@ async function adminFetchRest(method, table, queryParams, body) {
 async function handleAdminSupabaseCall(method, endpoint, body) {
   try {
     if (endpoint === '/admin/users') {
-      var result = await adminFetchRest('GET', 'profiles', 'select=*&order=created_at.desc', null);
+      // 只取后台表格需要的列：不把 email / user_key 等敏感字段拉到前端。
+      var result = await adminFetchRest('GET', 'profiles',
+        'select=id,username,display_name,user_group,bio_score,points,total_answered,total_correct,accuracy,created_at&order=created_at.desc&limit=1000',
+        null);
       if (!result.ok) return { ok: false, data: { error: '查询用户列表失败: ' + result.data.error }, status: result.status };
       var data = Array.isArray(result.data) ? result.data : [];
 
@@ -1233,12 +1237,22 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
     }
     if (endpoint.startsWith('/admin/users/') && method === 'DELETE') {
       var username = endpoint.split('/').pop();
-      var selResult = await adminFetchRest('GET', 'profiles', 'username=eq.' + encodeURIComponent(username), null);
+      var selResult = await adminFetchRest('GET', 'profiles',
+        'select=id,username&username=eq.' + encodeURIComponent(username), null);
       if (!selResult.ok) return { ok: false, data: { error: '查询用户失败: ' + selResult.data.error }, status: selResult.status };
       var profiles = Array.isArray(selResult.data) ? selResult.data : [];
       if (!profiles.length) return { ok: false, data: { error: '用户 "' + username + '" 不存在' }, status: 404 };
-      var delResult = await adminFetchRest('DELETE', 'profiles', 'id=eq.' + profiles[0].id, null);
-      if (!delResult.ok) return { ok: false, data: { error: '删除用户失败: ' + delResult.data.error }, status: delResult.status };
+      // H-03：删除必须同时清理 auth.users（否则留孤儿账号），改走服务端 RPC。
+      var sbDel = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
+      if (!sbDel) return { ok: false, data: { error: 'Supabase 未初始化' }, status: 500 };
+      var delRes = await sbDel.rpc('admin_delete_user', { p_user_id: profiles[0].id });
+      if (delRes && delRes.error) {
+        return { ok: false, data: { error: '删除用户失败: ' + delRes.error.message }, status: 500 };
+      }
+      var delRow = Array.isArray(delRes.data) ? delRes.data[0] : delRes.data;
+      if (!delRow || !delRow.ok) {
+        return { ok: false, data: { error: (delRow && delRow.error_msg) || '删除用户失败' }, status: 400 };
+      }
       return { ok: true, data: {}, status: 200 };
     }
     if (endpoint.startsWith('/admin/users/') && method === 'PUT') {

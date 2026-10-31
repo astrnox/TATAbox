@@ -1,57 +1,57 @@
 {
- "concept": "DNA 双链断裂修复通路 NHEJ 与 HR 的细胞周期选择",
- "difficulty": "league",
- "explanation": "A【对】依据：图中左支 NHEJ 通路显示：Ku70/80 异二聚体识别游离双链断端→招募 DNA-PKcs 形成 DNA-PK→Artemis 等加工断端→XRCC4-Ligase IV 直接把两条断端连接；G1 期细胞没有姊妹染色单体可作模板，DSB 只能依赖 NHEJ（或以 TMEJ/SSA 为备选），该通路可与细胞周期各时期偶发，但 G1 期尤其占主导，且易产生插入/缺失（indel）——'G1 期以 NHEJ 为主、修复较易错'正确。\nB【对】依据：图中右支 HR 通路显示：MRN 复合体识别断裂并激活 ATM，随后 5′→3′ 末端切除（EXO1/BLM-DNA2）生成 3′ 单链 DNA，RPA 包被并激活 ATR 检查点，最后在 BRCA1/2-PALB2 介导下 RAD51 装载、以姊妹染色单体为模板进行无错误合成——HR 需要姊妹染色单体，故限于 S/G2 期且精确。'HR 依赖姊妹染色单体并局限于 S/G2'正确。\nC【错】错因：NHEJ 直接连接断端，通常伴随小段缺失或插入（indel），是一种'易错'修复；HR 以同源模板复制重建序列，修复结果精确。'NHEJ 比 HR 更精确'与分子机制相反。\nD【错】错因：ATM 的主要触发信号是 DNA 双链断裂（DSB）——它由 MRN 复合体招募并激活、磷酸化 H2AX 起始损伤级联；而 ATR 响应的是复制叉停滞/核酸切除产生的单链 DNA（ssDNA）。'ATM 响应 ssDNA、ATR 响应 DSB'把两个传感器的底物颠倒了。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/dsb-repair-annotated.jpg",
- "image": {
-  "caption": "DSB 修复通路全景：左支 NHEJ（Ku70/80→DNA-PKcs→XRCC4-LigIV）；右支 HR（MRN/ATM→末端切除→RPA/ATR→RAD51 装载→姊妹染色单体模板）、TMEJ（Polθ）与 SSA（RAD52）；中央粉色框为各通路靶向抑制剂",
-  "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
-  "doi": "10.1038/s41392-023-01548-8",
-  "figure": "3",
-  "file": "assets/questions/gene_regulation/dsb-repair.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC10485079",
-  "source": "paper"
- },
- "question": "图为真核细胞 DNA 双链断裂（DSB）修复的通路图：左支为非同源末端连接（NHEJ），右支为同源重组（HR）、θ 介导末端连接（TMEJ）与单链退火（SSA）。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Li Q, Qian W, Zhang Y, et al.",
-   "doi": "10.1038/s41392-023-01548-8",
-   "journal": "Signal Transduction and Targeted Therapy",
-   "title": "A new wave of innovations within the DNA damage response",
-   "year": 2023
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "G1 期细胞因无姊妹染色单体模板，DSB 主要经 NHEJ（Ku70/80、DNA-PKcs、XRCC4-LigIV）修复，该通路常产生插入/缺失而较易出错"
+  "concept": "DNA 双链断裂修复通路 NHEJ 与 HR 的细胞周期选择",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中左支 NHEJ 通路显示：Ku70/80 异二聚体识别游离双链断端→招募 DNA-PKcs 形成 DNA-PK→Artemis 等加工断端→XRCC4-Ligase IV 直接把两条断端连接；G1 期细胞没有姊妹染色单体可作模板，DSB 只能依赖 NHEJ（或以 TMEJ/SSA 为备选），该通路可与细胞周期各时期偶发，但 G1 期尤其占主导，且易产生插入/缺失（indel）——'G1 期以 NHEJ 为主、修复较易错'正确。\nB【对】依据：图中右支 HR 通路显示：MRN 复合体识别断裂并激活 ATM，随后 5′→3′ 末端切除（EXO1/BLM-DNA2）生成 3′ 单链 DNA，RPA 包被并激活 ATR 检查点，最后在 BRCA1/2-PALB2 介导下 RAD51 装载、以姊妹染色单体为模板进行无错误合成——HR 需要姊妹染色单体，故限于 S/G2 期且精确。'HR 依赖姊妹染色单体并局限于 S/G2'正确。\nC【错】错因：NHEJ 直接连接断端，通常伴随小段缺失或插入（indel），是一种'易错'修复；HR 以同源模板复制重建序列，修复结果精确。'NHEJ 比 HR 更精确'与分子机制相反。\nD【错】错因：ATM 的主要触发信号是 DNA 双链断裂（DSB）——它由 MRN 复合体招募并激活、磷酸化 H2AX 起始损伤级联；而 ATR 响应的是复制叉停滞/核酸切除产生的单链 DNA（ssDNA）。'ATM 响应 ssDNA、ATR 响应 DSB'把两个传感器的底物颠倒了。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/dsb-repair-annotated.jpg",
+  "image": {
+    "caption": "DSB 修复通路全景：左支 NHEJ（Ku70/80→DNA-PKcs→XRCC4-LigIV）；右支 HR（MRN/ATM→末端切除→RPA/ATR→RAD51 装载→姊妹染色单体模板）、TMEJ（Polθ）与 SSA（RAD52）；中央粉色框为各通路靶向抑制剂",
+    "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
+    "doi": "10.1038/s41392-023-01548-8",
+    "figure": "3",
+    "file": "assets/questions/gene_regulation/dsb-repair.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10485079",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "HR 需要末端切除生成 3′ 单链 DNA，并以姊妹染色单体为模板（经 BRCA1/2、RAD51 等），故精确但局限于 S/G2 期"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "NHEJ 因直接连接断端而比以模板指导的 HR 修复更精确"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "ATM 主要响应复制叉停滞产生的单链 DNA，而 ATR 主要响应双链断裂"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "gene_regulation",
-  "module_4",
-  "分子生物学",
-  "DNA修复",
-  "双链断裂"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "图为真核细胞 DNA 双链断裂（DSB）修复的通路图：左支为非同源末端连接（NHEJ），右支为同源重组（HR）、θ 介导末端连接（TMEJ）与单链退火（SSA）。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Li Q, Qian W, Zhang Y, et al.",
+      "doi": "10.1038/s41392-023-01548-8",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "title": "A new wave of innovations within the DNA damage response",
+      "year": 2023
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "G1 期细胞因无姊妹染色单体模板，DSB 主要经 NHEJ（Ku70/80、DNA-PKcs、XRCC4-LigIV）修复，该通路常产生插入/缺失而较易出错"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "HR 需要末端切除生成 3′ 单链 DNA，并以姊妹染色单体为模板（经 BRCA1/2、RAD51 等），故精确但局限于 S/G2 期"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "NHEJ 因直接连接断端而比以模板指导的 HR 修复更精确"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "ATM 主要响应复制叉停滞产生的单链 DNA，而 ATR 主要响应双链断裂"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "DNA修复",
+    "双链断裂"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

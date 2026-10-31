@@ -1,59 +1,59 @@
 {
- "M4-02-b7873823": {
-  "concept": "独立分配与非连锁染色体的关联（染色体间连锁不平衡）",
-  "difficulty": "league",
-  "explanation": "A【对】依据：图 C-D 显示分别位于 chr14 与 chr22（非同源染色体）的两处 SNP 之间检出强 LD（r² > 0.8）。非连锁位点的等位基因在配子形成时按自由组合随机分配，仅凭物理连锁不可能解释此关联，故需从群体层面寻找原因（如群体分层、混合、选择、随机漂变下的小群体样本），选项因果判断正确。\nB【对】依据：当样本由遗传背景不同的人群混合组成（图 A-B 展示了 5 个超级人群与 26 个精细人群）时，即使各位点在每个亚群内遵循独立分配，混合样本仍会因亚群间等位基因频率差异形成虚假的染色体间关联（stratification），这是图 G 中观察计数与 Hardy-Weinberg 随机组合预期（图 E-F）显著偏离（P < 2.2×10⁻¹⁶）最可能的解释之一。\nC【错】错因：图 E 给出了单一人群的等位基因频率（如 P(A)=0.462、P(B)=0.465），图 F 给出按随机组合算得的 9 种基因型预期频率，图 G 将预期与观察计数并列——观察值显著偏离预期（如 AABB 预期 119 而观察 0），恰恰表明等位基因并非随机组合，即'独立分配'在该样本中并不成立；选项说'与随机组合预期一致'与图 G 数据相反。\nD【错】错因：连锁不平衡（LD）指同一群体内不同位点等位基因的关联统计，两个位点既可在同一条染色体（顺式连锁），也可异地存在但发生非随机组合（如本图所示的染色体间 LD）；'发现 LD 即证明两基因同一染色体'是错误的转移——LD 是群体现象，染色体位置是物理事实，二者不能互相否定。\n@@ANNOTATED_IMAGE:assets/questions/mendel/fig1-src-annotated.jpg",
-  "image": {
-   "caption": "GPU 加速的染色体间 LD 扫描：(A) 5 个超级人群 (B) 26 个精细人群 (C-D) chr14-chr22 LD 信号与 r²>0.8 位点对 (E-G) 随机组合预期 vs 观察基因型计数（P<2.2×10⁻¹⁶）",
-   "credit": "Lv W et al., Genome Biology 2026",
-   "doi": "10.1186/s13059-026-04019-9",
-   "figure": "1",
-   "file": "assets/questions/mendel/fig1-src.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC13097867",
-   "source": "paper"
-  },
-  "question": "研究者对 1000 Genomes 人群进行 GPU 加速扫描，在分别位于 chr14 与 chr22 的非连锁 SNP 之间检测到强连锁不平衡（LD，r² > 0.8；观察基因型计数与 Hardy-Weinberg 随机组合预期显著偏离，P < 2.2×10⁻¹⁶），结果见图。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Lv W, Zou Y, Shang Z, et al.",
-    "doi": "10.1186/s13059-026-04019-9",
-    "journal": "Genome Biology",
-    "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
-    "year": 2026
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "非连锁（非同源染色体）位点间出现强 LD，说明该关联不能由物理连锁与重组不足解释，需考察群体分层等群体因素"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "若样本由多个等位基因频率不同的亚群混合构成，仅群体分层即可产生染色体间假性关联，使观察基因型偏离随机组合预期"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "图 E-G 显示观察基因型计数与基于等位基因频率的随机组合预期一致，支持这些位点遵循独立分配"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "两个位点之间存在连锁不平衡即证明它们必然位于同一条染色体上"
-   }
-  ],
-  "subject": "遗传学",
-  "tags": [
-   "mendel",
-   "module_4",
-   "遗传学",
-   "自由组合定律",
-   "连锁不平衡"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M4-02-b7873823": {
+    "concept": "独立分配与非连锁染色体的关联（染色体间连锁不平衡）",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图 C-D 显示分别位于 chr14 与 chr22（非同源染色体）的两处 SNP 之间检出强 LD（r² > 0.8）。非连锁位点的等位基因在配子形成时按自由组合随机分配，仅凭物理连锁不可能解释此关联，故需从群体层面寻找原因（如群体分层、混合、选择、随机漂变下的小群体样本），选项因果判断正确。\nB【对】依据：当样本由遗传背景不同的人群混合组成（图 A-B 展示了 5 个超级人群与 26 个精细人群）时，即使各位点在每个亚群内遵循独立分配，混合样本仍会因亚群间等位基因频率差异形成虚假的染色体间关联（stratification），这是图 G 中观察计数与 Hardy-Weinberg 随机组合预期（图 E-F）显著偏离（P < 2.2×10⁻¹⁶）最可能的解释之一。\nC【错】错因：图 E 给出了单一人群的等位基因频率（如 P(A)=0.462、P(B)=0.465），图 F 给出按随机组合算得的 9 种基因型预期频率，图 G 将预期与观察计数并列——观察值显著偏离预期（如 AABB 预期 119 而观察 0），恰恰表明等位基因并非随机组合，即'独立分配'在该样本中并不成立；选项说'与随机组合预期一致'与图 G 数据相反。\nD【错】错因：连锁不平衡（LD）指同一群体内不同位点等位基因的关联统计，两个位点既可在同一条染色体（顺式连锁），也可异地存在但发生非随机组合（如本图所示的染色体间 LD）；'发现 LD 即证明两基因同一染色体'是错误的转移——LD 是群体现象，染色体位置是物理事实，二者不能互相否定。\n@@ANNOTATED_IMAGE:assets/questions/mendel/fig1-src-annotated.jpg",
+    "image": {
+      "caption": "GPU 加速的染色体间 LD 扫描：(A) 5 个超级人群 (B) 26 个精细人群 (C-D) chr14-chr22 LD 信号与 r²>0.8 位点对 (E-G) 随机组合预期 vs 观察基因型计数（P<2.2×10⁻¹⁶）",
+      "credit": "Lv W et al., Genome Biology 2026",
+      "doi": "10.1186/s13059-026-04019-9",
+      "figure": "1",
+      "file": "assets/questions/mendel/fig1-src.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC13097867",
+      "source": "paper"
+    },
+    "question": "研究者对 1000 Genomes 人群进行 GPU 加速扫描，在分别位于 chr14 与 chr22 的非连锁 SNP 之间检测到强连锁不平衡（LD，r² > 0.8；观察基因型计数与 Hardy-Weinberg 随机组合预期显著偏离，P < 2.2×10⁻¹⁶），结果见图。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Lv W, Zou Y, Shang Z, et al.",
+        "doi": "10.1186/s13059-026-04019-9",
+        "journal": "Genome Biology",
+        "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
+        "year": 2026
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "非连锁（非同源染色体）位点间出现强 LD，说明该关联不能由物理连锁与重组不足解释，需考察群体分层等群体因素"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "若样本由多个等位基因频率不同的亚群混合构成，仅群体分层即可产生染色体间假性关联，使观察基因型偏离随机组合预期"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "图 E-G 显示观察基因型计数与基于等位基因频率的随机组合预期一致，支持这些位点遵循独立分配"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "两个位点之间存在连锁不平衡即证明它们必然位于同一条染色体上"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "mendel",
+      "module_4",
+      "遗传学",
+      "自由组合定律",
+      "连锁不平衡"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

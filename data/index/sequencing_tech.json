@@ -1,19 +1,19 @@
 {
- "M4-01-ac9f7461": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 40,
-  "module": "module_4",
-  "src": "sequencing_tech",
-  "tag": "sequencing_tech",
-  "tags": [
-   "sequencing_tech",
-   "module_4",
-   "生物信息学",
-   "高通量测序技术的原理"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-ac9f7461": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_4",
+    "src": "sequencing_tech",
+    "tag": "sequencing_tech",
+    "tags": [
+      "sequencing_tech",
+      "module_4",
+      "生物信息学",
+      "高通量测序技术的原理"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

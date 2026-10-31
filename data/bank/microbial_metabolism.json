@@ -1,40 +1,40 @@
 {
- "M2-01-c8805f57": {
-  "concept": "微生物的代谢类型",
-  "difficulty": "league",
-  "explanation": "A【对】依据：硝化细菌氧化氨或亚硝酸获得能量，固定 CO₂ 合成有机物，是化能自养的代表。\nB【错】错因：乳酸菌为厌氧菌，进行乳酸发酵，葡萄糖不彻底氧化。\nC【错】错因：光能自养微生物以 CO₂ 为碳源、光为能源，以有机物为碳源的属异养型。\nD【错】错因：酵母菌为兼性厌氧菌，有氧时进行有氧呼吸，缺氧时才转为酒精发酵。",
-  "question": "微生物按碳源和能源不同可分为多种营养类型。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "硝化细菌利用氧化无机物释放的化学能，将 CO₂ 合成有机物，属于化能自养型"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "乳酸菌进行有氧呼吸，将葡萄糖彻底氧化为 CO₂ 和水"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "光能自养微生物以有机物为碳源，光为能源"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "酵母菌只能进行无氧发酵，不能进行有氧呼吸"
-   }
-  ],
-  "subject": "微生物学",
-  "tags": [
-   "microbial_metabolism",
-   "module_2",
-   "微生物学",
-   "微生物的代谢类型"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M2-01-c8805f57": {
+    "concept": "微生物的代谢类型",
+    "difficulty": "league",
+    "explanation": "A【对】依据：硝化细菌氧化氨或亚硝酸获得能量，固定 CO₂ 合成有机物，是化能自养的代表。\nB【错】错因：乳酸菌为厌氧菌，进行乳酸发酵，葡萄糖不彻底氧化。\nC【错】错因：光能自养微生物以 CO₂ 为碳源、光为能源，以有机物为碳源的属异养型。\nD【错】错因：酵母菌为兼性厌氧菌，有氧时进行有氧呼吸，缺氧时才转为酒精发酵。",
+    "question": "微生物按碳源和能源不同可分为多种营养类型。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "硝化细菌利用氧化无机物释放的化学能，将 CO₂ 合成有机物，属于化能自养型"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "乳酸菌进行有氧呼吸，将葡萄糖彻底氧化为 CO₂ 和水"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "光能自养微生物以有机物为碳源，光为能源"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "酵母菌只能进行无氧发酵，不能进行有氧呼吸"
+      }
+    ],
+    "subject": "微生物学",
+    "tags": [
+      "microbial_metabolism",
+      "module_2",
+      "微生物学",
+      "微生物的代谢类型"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

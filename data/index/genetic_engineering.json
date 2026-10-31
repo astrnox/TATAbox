@@ -1,19 +1,19 @@
 {
- "M4-01-028c38ed": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 39,
-  "module": "module_4",
-  "src": "genetic_engineering",
-  "tag": "genetic_engineering",
-  "tags": [
-   "genetic_engineering",
-   "module_4",
-   "生物技术",
-   "基因工程的基本工具与流程"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-028c38ed": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 39,
+    "module": "module_4",
+    "src": "genetic_engineering",
+    "tag": "genetic_engineering",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "生物技术",
+      "基因工程的基本工具与流程"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

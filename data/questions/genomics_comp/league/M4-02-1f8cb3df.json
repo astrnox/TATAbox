@@ -1,38 +1,38 @@
 {
- "concept": "比较基因组学与保守元件",
- "difficulty": "league",
- "explanation": "A【对】依据：纯化选择使功能重要的非编码序列（如增强子）在物种间保持保守。\nB【对】依据：如嗅觉受体基因家族在不同哺乳动物中的扩张收缩与环境适应相关。\nC【对】依据：共线性区块的断裂与重排记录了倒位、易位等染色体演化事件。\nD【错】错因：保守性正是功能约束的标志，二者密切相关，这是比较基因组学的核心逻辑。",
- "question": "比较不同物种基因组可揭示功能重要的序列。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "跨物种保守的非编码序列可能是调控元件"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "基因家族扩张与收缩可反映物种的适应性演化"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "共线性（synteny）分析可追溯染色体片段的演化重排"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "序列保守程度与功能重要性完全无关"
-  }
- ],
- "subject": "基因组学",
- "tags": [
-  "genomics_comp",
-  "module_4",
-  "基因组学",
-  "比较基因组学与保守元件"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "比较基因组学与保守元件",
+  "difficulty": "league",
+  "explanation": "A【对】依据：纯化选择使功能重要的非编码序列（如增强子）在物种间保持保守。\nB【对】依据：如嗅觉受体基因家族在不同哺乳动物中的扩张收缩与环境适应相关。\nC【对】依据：共线性区块的断裂与重排记录了倒位、易位等染色体演化事件。\nD【错】错因：保守性正是功能约束的标志，二者密切相关，这是比较基因组学的核心逻辑。",
+  "question": "比较不同物种基因组可揭示功能重要的序列。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "跨物种保守的非编码序列可能是调控元件"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "基因家族扩张与收缩可反映物种的适应性演化"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "共线性（synteny）分析可追溯染色体片段的演化重排"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "序列保守程度与功能重要性完全无关"
+    }
+  ],
+  "subject": "基因组学",
+  "tags": [
+    "genomics_comp",
+    "module_4",
+    "基因组学",
+    "比较基因组学与保守元件"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

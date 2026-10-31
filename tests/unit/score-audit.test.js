@@ -20,7 +20,9 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
 const ANALYTIC_SRC = path.join(ROOT, 'js', 'pages', 'analytic.js');
-const PRACTICE_SRC = path.join(ROOT, 'js', 'pages', 'practice.js');
+const ENGINE_SRC = path.join(ROOT, 'js', 'core', 'score-engine.js');
+// M-01：判卷薄封装已拆至 practice-session.js
+const PRACTICE_SRC = path.join(ROOT, 'js', 'pages', 'practice-session.js');
 const BKT_SRC = path.join(ROOT, 'js', 'integrations', 'bkt-engine.js');
 const FSRC_SRC = path.join(ROOT, 'js', 'algo', 'fsrs-algorithm.js');
 const TSFRS_SRC = path.join(ROOT, 'js', 'vendor', 'ts-fsrs.umd.min.js');
@@ -36,11 +38,13 @@ function makeLocalStorage(init) {
   };
 }
 
-/* 加载 analytic.js 的 calcBioScore（受控 getRecords / getStats） */
+/* 加载 analytic.js 的 calcBioScore（M-06 后为 score-engine 薄委托） */
 function loadBioScore(getRecordsFn) {
-  const win = {};
+  const win = { getRecords: getRecordsFn };
   const cap = {};
   win.__cap = cap;
+  // score-engine 是唯一实现来源，analytic 的 calcBioScore 只做委托
+  new Function('window', fs.readFileSync(ENGINE_SRC, 'utf8'))(win);
   const src = fs.readFileSync(ANALYTIC_SRC, 'utf8')
     + '\n;window.__cap={calcBioScore:calcBioScore};';
   new Function('window', 'getRecords', src)(win, getRecordsFn);

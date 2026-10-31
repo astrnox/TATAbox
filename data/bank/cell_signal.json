@@ -1,97 +1,97 @@
 {
- "M2-01-f05ce501": {
-  "concept": "Stereo-seq 空间转录组学的原理与分辨率",
-  "difficulty": "league",
-  "explanation": "A【对】依据：图 5 显示组织切片直接贴附于芯片表面，mRNA 被芯片上原位固定的捕获探针（3′-端 polyT 序列）捕获并经原位逆转录生成 cDNA（图 3 中 capture 探针依次含 polyT、UMI、CID 三层结构），从而在保留组织空间坐标的同时获得转录组信息；这与需先解离组织、丢失空间位置的 scRNA-seq 形成根本区别。\nB【对】依据：图 1 显示 DNB 点阵芯片上 spot 直径仅约 220 nm、中心距 500/715 nm，远小于一个细胞的尺度，因此 CID（坐标标识）测序可实现亚细胞级别的空间定位；图 6 展示的像素级空间表达图谱是其在单细胞/亚细胞分辨率成像的基础，'已达到接近单细胞或更细分辨率'表述正确。\nC【对】依据：空间转录组学把基因表达叠加到组织形态上（图 6 中不同解剖区域呈现不同表达谱），可用于解析肿瘤微环境中癌细胞、免疫细胞、基质细胞各自的空间分布及细胞间互作网络，这是研究肿瘤微环境空间异质性的关键手段。\nD【错】错因：Stereo-seq 捕获并测序的是 mRNA（转化为 cDNA 后测序），输出的是 RNA 层面的表达信息；蛋白质的空间定位必须借助基于抗体的空间蛋白质组学技术（如 CODEX、IMC 等），两者检测对象与原理不同，'直接检测蛋白质定位'错误。\n@@ANNOTATED_IMAGE:assets/questions/M2-01-f05ce501/fig1-annotated.jpg",
-  "image": {
-   "caption": "Stereo-seq 空间转录组学流程：(1) DNB 点阵芯片（spot 220nm），(2) CID 原位测序，(3) polyT-UMI-CID 捕获芯片，(4) 文库构建与测序，(5) 组织原位 mRNA 捕获、(6) 空间分辨率表达图谱",
-   "credit": "Zhu Y et al., Genes 2026",
-   "doi": "10.3390/genes17060604",
-   "figure": "4",
-   "file": "assets/questions/M2-01-f05ce501/fig1.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC13300320",
-   "source": "paper"
+  "M2-01-f05ce501": {
+    "concept": "Stereo-seq 空间转录组学的原理与分辨率",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图 5 显示组织切片直接贴附于芯片表面，mRNA 被芯片上原位固定的捕获探针（3′-端 polyT 序列）捕获并经原位逆转录生成 cDNA（图 3 中 capture 探针依次含 polyT、UMI、CID 三层结构），从而在保留组织空间坐标的同时获得转录组信息；这与需先解离组织、丢失空间位置的 scRNA-seq 形成根本区别。\nB【对】依据：图 1 显示 DNB 点阵芯片上 spot 直径仅约 220 nm、中心距 500/715 nm，远小于一个细胞的尺度，因此 CID（坐标标识）测序可实现亚细胞级别的空间定位；图 6 展示的像素级空间表达图谱是其在单细胞/亚细胞分辨率成像的基础，'已达到接近单细胞或更细分辨率'表述正确。\nC【对】依据：空间转录组学把基因表达叠加到组织形态上（图 6 中不同解剖区域呈现不同表达谱），可用于解析肿瘤微环境中癌细胞、免疫细胞、基质细胞各自的空间分布及细胞间互作网络，这是研究肿瘤微环境空间异质性的关键手段。\nD【错】错因：Stereo-seq 捕获并测序的是 mRNA（转化为 cDNA 后测序），输出的是 RNA 层面的表达信息；蛋白质的空间定位必须借助基于抗体的空间蛋白质组学技术（如 CODEX、IMC 等），两者检测对象与原理不同，'直接检测蛋白质定位'错误。\n@@ANNOTATED_IMAGE:assets/questions/M2-01-f05ce501/fig1-annotated.jpg",
+    "image": {
+      "caption": "Stereo-seq 空间转录组学流程：(1) DNB 点阵芯片（spot 220nm），(2) CID 原位测序，(3) polyT-UMI-CID 捕获芯片，(4) 文库构建与测序，(5) 组织原位 mRNA 捕获、(6) 空间分辨率表达图谱",
+      "credit": "Zhu Y et al., Genes 2026",
+      "doi": "10.3390/genes17060604",
+      "figure": "4",
+      "file": "assets/questions/M2-01-f05ce501/fig1.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC13300320",
+      "source": "paper"
+    },
+    "question": "研究者利用 Stereo-seq 技术绘制某肿瘤组织的空间转录组图谱（示意图见图 1-6：DNB 芯片制备、空间编码测序、原位捕获、测序与空间成像）。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Zhu Y, Hao Z, Zhu L, et al.",
+        "doi": "10.3390/genes17060604",
+        "journal": "Genes",
+        "title": "Progress in the Application of Machine Learning in the Field of Single-Cell and Spatial Transcriptomics",
+        "year": 2026
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "Stereo-seq 通过芯片上原位捕获 mRNA 获得基因表达信息并保留组织空间坐标，无需先解离组织"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "芯片 spot 约 220 nm 且逐位点编码坐标（CID），使其分辨率可达接近单细胞甚至亚细胞水平"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "空间转录组学可将基因表达叠加到组织形态上，用于解析肿瘤微环境中不同细胞类型的空间分布与互作"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "空间转录组学可直接检测蛋白质的空间定位"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_signal",
+      "module_2",
+      "细胞生物学",
+      "空间转录组",
+      "肿瘤微环境"
+    ],
+    "target": "competition",
+    "type": "mtf"
   },
-  "question": "研究者利用 Stereo-seq 技术绘制某肿瘤组织的空间转录组图谱（示意图见图 1-6：DNB 芯片制备、空间编码测序、原位捕获、测序与空间成像）。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Zhu Y, Hao Z, Zhu L, et al.",
-    "doi": "10.3390/genes17060604",
-    "journal": "Genes",
-    "title": "Progress in the Application of Machine Learning in the Field of Single-Cell and Spatial Transcriptomics",
-    "year": 2026
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "Stereo-seq 通过芯片上原位捕获 mRNA 获得基因表达信息并保留组织空间坐标，无需先解离组织"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "芯片 spot 约 220 nm 且逐位点编码坐标（CID），使其分辨率可达接近单细胞甚至亚细胞水平"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "空间转录组学可将基因表达叠加到组织形态上，用于解析肿瘤微环境中不同细胞类型的空间分布与互作"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "空间转录组学可直接检测蛋白质的空间定位"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_signal",
-   "module_2",
-   "细胞生物学",
-   "空间转录组",
-   "肿瘤微环境"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M2-02-846b66ee": {
-  "concept": "GPCR-cAMP 第二信使通路",
-  "difficulty": "league",
-  "explanation": "A【对】依据：腺苷酸环化酶催化生成 cAMP，cAMP 结合 PKA 调节亚基使其催化亚基释放活化。\nB【对】依据：Gα 亚基结合 GTP 活化，其内在 GTP 酶活性水解 GTP 后回到失活状态，实现自我计时。\nC【错】错因：肾上腺素为水溶性激素，不进入细胞，经膜受体与胞内级联传递信号。\nD【错】错因：级联反应逐级放大，一个激素分子可激活大量酶分子，放大效应显著。",
-  "question": "肾上腺素与肝细胞膜上 β 受体结合后，激活 G 蛋白-腺苷酸环化酶通路，促进糖原分解。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "cAMP 作为第二信使激活蛋白激酶 A（PKA）"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "G 蛋白结合 GTP 后活化，水解 GTP 后自行失活"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "肾上腺素进入肝细胞细胞核直接激活糖原磷酸化酶"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "该信号通路无放大效应，一个激素分子只激活一个酶分子"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_signal",
-   "module_2",
-   "细胞生物学",
-   "GPCR-cAMP 第二信使通路"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M2-02-846b66ee": {
+    "concept": "GPCR-cAMP 第二信使通路",
+    "difficulty": "league",
+    "explanation": "A【对】依据：腺苷酸环化酶催化生成 cAMP，cAMP 结合 PKA 调节亚基使其催化亚基释放活化。\nB【对】依据：Gα 亚基结合 GTP 活化，其内在 GTP 酶活性水解 GTP 后回到失活状态，实现自我计时。\nC【错】错因：肾上腺素为水溶性激素，不进入细胞，经膜受体与胞内级联传递信号。\nD【错】错因：级联反应逐级放大，一个激素分子可激活大量酶分子，放大效应显著。",
+    "question": "肾上腺素与肝细胞膜上 β 受体结合后，激活 G 蛋白-腺苷酸环化酶通路，促进糖原分解。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "cAMP 作为第二信使激活蛋白激酶 A（PKA）"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "G 蛋白结合 GTP 后活化，水解 GTP 后自行失活"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "肾上腺素进入肝细胞细胞核直接激活糖原磷酸化酶"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "该信号通路无放大效应，一个激素分子只激活一个酶分子"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_signal",
+      "module_2",
+      "细胞生物学",
+      "GPCR-cAMP 第二信使通路"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

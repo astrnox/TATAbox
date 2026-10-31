@@ -38,6 +38,7 @@ var SESSION_RESTORE_CACHE_TTL_MS = 5000;       // restoreSession 结果缓存时
 var GET_SESSION_TIMEOUT_MS = 5000;             // getSession 超时
 var PROFILE_FETCH_TIMEOUT_MS = 5000;           // profile 查询超时
 var EMAIL_VERIFICATION_TIMEOUT_MS = 3000;     // 邮箱验证状态查询超时
+var ADMIN_TOKEN_TTL = 5 * 60 * 1000;           // 前端管理员 token 有效期（5 分钟）
 
 /**
  * 数据库依赖缺失告警（视图/RPC 未先行部署时，前端会静默降级为匿名/空数据）。
@@ -53,7 +54,6 @@ function _warnMissingDependency(label, err, hint) {
   _warnedDependencies[label] = true;
   console.warn('[TATABOX] ' + label + ' 不可用：' + msg + (hint ? '；' + hint : ''));
 }
-var ADMIN_TOKEN_TTL = 5 * 60 * 1000;           // 前端管理员 token 有效期（5 分钟）
 
 /**
  * 获取 Supabase 客户端实例
@@ -422,36 +422,33 @@ async function registerUser(username, password, displayName, email) {
     return { ok: false, error: '请输入有效的邮箱地址（或留空使用占位）' };
   }
 
-  // 预防性检查：username 是否已被占用
+  // 预防性检查：username / email 是否已被占用
+  // H-01 后 profiles 仅本人可读，anon 无法再直接 SELECT；改走窄 RPC
+  // （只返回布尔值，不回吐任何用户字段）。
   // clearLock 提前声明（避免 var hoisting 导致 TypeError）
   var clearLock = function () { try { localStorage.removeItem(lockKey); } catch (e) {} };
   try {
-    var dupCheck = await sb.from('public_profiles')
-      .select('id, username')
-      .eq('username', username)
-      .maybeSingle();
-    if (dupCheck.data && dupCheck.data.id) {
-      clearLock();
-      return { ok: false, error: '该用户名已被使用，请换一个' };
-    }
-  } catch (e) {
-    console.warn('[TATABOX] username 重复检查失败（非致命）:', e && e.message);
-  }
-
-  // 预防性检查：email 是否已被注册（仅当用户填了真实邮箱）
-  if (email && !email.endsWith('@bioquest.local')) {
-    try {
-      var emailCheck = await sb.from('profiles')
-        .select('id, email')
-        .eq('email', email)
-        .maybeSingle();
-      if (emailCheck.data && emailCheck.data.id) {
+    var availRes = await sb.rpc('check_signup_availability', {
+      p_username: username,
+      p_email: (email && !email.endsWith('@bioquest.local')) ? email : null
+    });
+    if (availRes && availRes.error) {
+      _warnMissingDependency('RPC check_signup_availability', availRes.error,
+        '请先执行 sql/migration_v18_profiles_lockdown.sql');
+    } else {
+      var availRow = Array.isArray(availRes.data) ? availRes.data[0] : availRes.data;
+      if (availRow && availRow.username_taken) {
+        clearLock();
+        return { ok: false, error: '该用户名已被使用，请换一个' };
+      }
+      if (availRow && availRow.email_taken) {
         clearLock();
         return { ok: false, error: '该邮箱已被注册，请直接登录或换一个' };
       }
-    } catch (e) {
-      console.warn('[TATABOX] email 重复检查失败（非致命）:', e && e.message);
     }
+  } catch (e) {
+    // 预检失败不阻断注册：数据库唯一约束/auth 错误映射仍会兜底
+    console.warn('[TATABOX] 注册可用性预检失败（非致命）:', e && e.message);
   }
 
   // 上锁：30 秒
@@ -699,46 +696,47 @@ async function loginUser(usernameOrEmail, password) {
   try {
     // 判断输入是邮箱还是用户名，并解析候选登录邮箱（用户名登录时可能有多个候选）
     var emailCandidates = [];
-    var usernameProfileUnbound = false; // 用户名存在但 profiles.email 为 NULL
     if (usernameOrEmail.includes('@')) {
       emailCandidates.push(usernameOrEmail);
     } else {
-      // 用户名登录：profiles 已收紧（仅本人可读），改走窄 RPC resolve_login_email
-      // （SECURITY DEFINER，仅按用户名精确返回 email+username，不回吐其他字段；
-      //   契约：lower(username) 命中即返回行，email 可为 NULL——用于「未绑定邮箱」引导分支）
-      var profileLookup = null;
+      // H-02：用户名登录不再直读 profiles（H-01 后 anon 无权限，且直读会泄露邮箱）。
+      // 优先调用 verified RPC：服务端校验 bcrypt 密码，只有密码正确才返回真实邮箱；
+      // 旧库/未部署时回退到 1-arg 安全版（只返回占位邮箱，真实邮箱恒为 NULL）。
+      var lookup = null;
       try {
-        var _res = await sb.rpc('resolve_login_email', { p_name: usernameOrEmail });
-        if (_res && _res.error) {
-          _warnMissingDependency('RPC resolve_login_email', _res.error,
-            '请先执行 sql/migration_v16_login_contract.sql');
-        }
-        var _row = Array.isArray(_res.data) ? _res.data[0] : _res.data;
-        if (!_res.error && _row && _row.res_username) {
-          // 命中用户名即视为存在（email 可为空——用于“未绑定邮箱”引导分支）
-          profileLookup = { data: { email: _row.res_email || null, username: _row.res_username } };
+        var verifiedRes = await sb.rpc('resolve_login_email_verified', {
+          p_name: usernameOrEmail,
+          p_password: password
+        });
+        if (verifiedRes && verifiedRes.error) {
+          _warnMissingDependency('RPC resolve_login_email_verified', verifiedRes.error,
+            '请先执行 sql/migration_v19_login_rpc_hardening.sql');
         } else {
-          profileLookup = null;
+          lookup = Array.isArray(verifiedRes.data) ? verifiedRes.data[0] : verifiedRes.data;
         }
       } catch (e) {
-        // 查询失败不致命：仍可尝试下面的占位邮箱候选
-        _warnMissingDependency('RPC resolve_login_email', e,
-          '请先执行 sql/migration_v16_login_contract.sql');
-        profileLookup = null;
+        lookup = null;
       }
-      var lookupProfile = (profileLookup && profileLookup.data) || null;
-      usernameProfileUnbound = !!(lookupProfile && !lookupProfile.email);
+      if (!lookup) {
+        try {
+          var safeRes = await sb.rpc('resolve_login_email', { p_name: usernameOrEmail });
+          if (!(safeRes && safeRes.error)) {
+            lookup = Array.isArray(safeRes.data) ? safeRes.data[0] : safeRes.data;
+          }
+        } catch (e) {
+          lookup = null;
+        }
+      }
 
-      // 候选 1：resolve_login_email（注册时填过真实邮箱的账号走这里）
-      if (lookupProfile && lookupProfile.email) {
-        emailCandidates.push(lookupProfile.email);
+      // 候选 1：RPC 返回的邮箱。verified 版本只有在密码校验通过后才给出真实邮箱；
+      // 1-arg 兼容版只会给出 <username>@bioquest.local 占位邮箱。
+      if (lookup && lookup.res_email) {
+        emailCandidates.push(lookup.res_email);
       }
       // 候选 2（兜底）：注册未填邮箱的账号，认证邮箱固定为
-      // <清洗后的用户名>@bioquest.local；历史账号的 profiles.email 可能为 NULL
-      // （触发器未回填/回填被数据库触发器拦截），此时按注册规则推导出的占位邮箱
-      // 才是真实认证邮箱。不用真实密码校验一次就断言"密码错误"会把这类账号挡在门外。
+      // <清洗后的用户名>@bioquest.local；也用于 profiles.email 为 NULL 的历史账号。
       var placeholderEmail = _placeholderEmailForUsername(
-        (lookupProfile && lookupProfile.username) || usernameOrEmail
+        (lookup && lookup.res_username) || usernameOrEmail
       );
       if (placeholderEmail && emailCandidates.indexOf(placeholderEmail) === -1) {
         emailCandidates.push(placeholderEmail);
@@ -775,11 +773,9 @@ async function loginUser(usernameOrEmail, password) {
       // 友好化错误信息
       var msg = (error && error.message) || '用户名/邮箱或密码错误';
       if (msg.includes('Invalid login credentials')) {
-        // 用户名确实存在、但 profiles.email 为 NULL 且占位邮箱也无法登录：
-        // 该账号认证邮箱应是注册时填写的真实邮箱，引导改用邮箱登录，避免"密码错误"误导
-        msg = usernameProfileUnbound
-          ? '用户名或密码错误；该账号未绑定邮箱，若注册时填写过邮箱，请改用注册邮箱登录'
-          : '用户名/邮箱或密码错误';
+        // 统一文案：不区分「用户名不存在 / 密码错误 / 用了邮箱登录」，
+        // 避免通过错误提示做账号枚举。
+        msg = '用户名/邮箱或密码错误';
       } else if (msg.includes('Email not confirmed')) {
         msg = '邮箱尚未验证，请查收验证邮件后重试';
       } else if (msg.includes('rate limit')) {
@@ -802,16 +798,9 @@ async function loginUser(usernameOrEmail, password) {
       // profile 可能不存在
     }
 
-    // 数据自愈：部分历史账号 profiles.email 为 null（注册未填邮箱），
-    // 登录成功后把实际登录邮箱回填，保证下次“用户名登录”能直接命中；
-    // 静默失败不影响登录主流程。
-    try {
-      if (email && (!profile || !profile.email || profile.email !== email)) {
-        await sb.from('profiles')
-          .update({ email: email })
-          .eq('id', data.user.id);
-      }
-    } catch (e) { /* 回填失败不影响登录 */ }
+    // 注意：不再在登录成功后回填 profiles.email。
+    // profiles 的 email 列受 profile_protect_sensitive 触发器保护（客户端写会被回滚），
+    // 且登录邮箱已由 RPC 解析，无需再落一次无效写入。
 
     _currentUser = {
       id: data.user.id,
@@ -830,9 +819,10 @@ async function loginUser(usernameOrEmail, password) {
     // 持久化用户展示信息（供 wiki 等轻页面读取作者身份）
     _persistUserInfo();
 
-    // 启动在线时长跟踪（定义在 sb-gamify.js；lite 极简模式不加载该文件，
-    // 因此必须做存在性判断，避免登录流程抛 ReferenceError）
-    if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
+    // 启动在线时长跟踪（lite 不加载 sb-gamify.js，必须 typeof 守卫）
+    if (typeof startOnlineTimeTracking === 'function') {
+      startOnlineTimeTracking();
+    }
 
     // 触发登录成就
     if (typeof checkAchievement === 'function') {
@@ -1083,12 +1073,32 @@ async function deleteAccount() {
   var userId = _currentUser && _currentUser.id;
   if (!userId) { showToast('未获取到用户信息'); return; }
   try {
-    await sb.from('profiles').delete().eq('id', userId);
-    await sb.from('wrong_questions').delete().eq('profile_id', userId);
-    await sb.from('favorites').delete().eq('profile_id', userId);
-    await sb.from('practice_records').delete().eq('profile_id', userId);
-  } catch(e) { console.warn('清理用户数据失败:', e); }
-  showToast('账户数据已清除');
+    // M-10：必须同时删除 auth.users，否则只删 profiles 会留下可继续登录的孤儿账号。
+    // 删除逻辑放在 SECURITY DEFINER RPC（v21），前端只负责调用与清理本地状态。
+    // 先清头像：RPC 删除 auth 用户后当前 JWT 立即失效，之后就删不了 Storage 了。
+    try {
+      await sb.storage.from('avatars').remove([
+        userId + '.jpg', userId + '.png', userId + '.webp'
+      ]);
+    } catch (e) { /* 静默 */ }
+    var res = await sb.rpc('delete_my_account');
+    if (res && res.error) {
+      _warnMissingDependency('RPC delete_my_account', res.error,
+        '请先执行 sql/migration_v21_account_self_delete.sql');
+      showToast('注销失败：请先完成数据库迁移');
+      return;
+    }
+    var row = Array.isArray(res.data) ? res.data[0] : res.data;
+    if (!row || !row.ok) {
+      showToast((row && row.error_msg) || '注销失败');
+      return;
+    }
+  } catch(e) {
+    console.warn('[TATABOX] 注销账号失败:', e);
+    showToast('注销失败：' + (e && e.message ? e.message : '未知错误'));
+    return;
+  }
+  showToast('账号及数据已注销');
   forceLogout();
 }
 
@@ -1286,8 +1296,10 @@ async function _doRestoreSession() {
         // 静默失败
       }
 
-      // 启动在线时长跟踪（同 loginUser：sb-gamify.js 未加载时跳过）
-      if (typeof startOnlineTimeTracking === 'function') startOnlineTimeTracking();
+      // 启动在线时长跟踪（lite 不加载 sb-gamify.js，必须 typeof 守卫）
+      if (typeof startOnlineTimeTracking === 'function') {
+        startOnlineTimeTracking();
+      }
 
       // 修复：restoreSession 成功后，通知 admin 模块同步认证状态
       if (_currentUser && _currentUser.user_group === 'admin') {

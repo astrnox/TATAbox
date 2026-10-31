@@ -1,57 +1,57 @@
 {
- "concept": "ATM-ATR 检查点通路的效应网络",
- "difficulty": "league",
- "explanation": "A【对】依据：图中 DSB 由 MRN 复合体感应并激活 ATM；活化的 ATM 磷酸化 CHK2，CHK2 进而磷酸化并稳定 p53，p53 上调 p21 抑制 CDK4/6，使细胞阻滞在 G1/S 检查点——这是'传感器→介质→效应器'的经典三级级联，选项中 ATM-CHK2-p53-p21-CDK4/6 的顺序与图一致。\nB【对】依据：图中复制叉停滞/核酸切除暴露的 ssDNA 被 RPA 包被并招募 ATR-ATRIP 激活 ATR；ATR 磷酸化 CHK1，CHK1 使 CDC25A 磷酸化而被泛素化降解，从而抑制 CDK2 活性、减缓 S 期复制叉进展（S 期检查点）——'ATR-CHK1-CDC25A-CDK2 轴建立 S 期阻滞'正确。\nC【错】错因：CHK1 对 CDC25C 的作用是磷酸化使其失活/降解，从而阻止 CDC25C 去除 CDK1 的抑制性磷酸（T14/Y15），最终抑制而非促进 CDK1 激活；选项把'抑制 CDC25C'说成'激活 CDC25C→促进 CDK1'，方向性错误（图中 G2/M 通路为 CHK1→CDC25C 抑制线，同时 WEE1/PKMYT1 磷酸化维持 CDK1 失活）。\nD【错】错因：G1/S 检查点主要依赖 ATM-CHK2-p53-p21 轴对 CDK4/6 的抑制；p53 缺失时该转录依赖的持久阻滞机制受损，DNA 损伤细胞仍可进入 S 期（基因组不稳定），这正是 p53 缺失肿瘤细胞 DNA 损伤检查点'失效'的要害；选项中 p53 缺失而 G1 检查点完好与机制矛盾。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/dna-checkpoint-annotated.jpg",
- "image": {
-  "caption": "DNA 损伤检查点信号网络：上）DSB→ATM，ssDNA/复制应激→ATR；中）CHK2/CHK1 两级介质；下）p53-p21（G1 阻滞）、CDC25A（S 期阻滞）、CDC25C-WEE1/PKMYT1（G2/M 阻滞）等效应分子",
-  "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
-  "doi": "10.1038/s41392-023-01548-8",
-  "figure": "4",
-  "file": "assets/questions/cell_cycle/dna-checkpoint.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC10485079",
-  "source": "paper"
- },
- "question": "图为 DNA 损伤检查点信号网络：DSB（左）与复制应激产生的 ssDNA（右）分别激活 ATM 与 ATR，经 CHK2/CHK1 两级级联调控 p53、CDC25、WEE1 等效应分子，进而建立 G1/S、S 期与 G2/M 检查点。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Li Q, Qian W, Zhang Y, et al.",
-   "doi": "10.1038/s41392-023-01548-8",
-   "journal": "Signal Transduction and Targeted Therapy",
-   "title": "A new wave of innovations within the DNA damage response",
-   "year": 2023
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "DSB 激活 ATM→CHK2→p53→p21 通路，抑制 CDK4/6 从而建立 G1/S 检查点阻滞"
+  "concept": "ATM-ATR 检查点通路的效应网络",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中 DSB 由 MRN 复合体感应并激活 ATM；活化的 ATM 磷酸化 CHK2，CHK2 进而磷酸化并稳定 p53，p53 上调 p21 抑制 CDK4/6，使细胞阻滞在 G1/S 检查点——这是'传感器→介质→效应器'的经典三级级联，选项中 ATM-CHK2-p53-p21-CDK4/6 的顺序与图一致。\nB【对】依据：图中复制叉停滞/核酸切除暴露的 ssDNA 被 RPA 包被并招募 ATR-ATRIP 激活 ATR；ATR 磷酸化 CHK1，CHK1 使 CDC25A 磷酸化而被泛素化降解，从而抑制 CDK2 活性、减缓 S 期复制叉进展（S 期检查点）——'ATR-CHK1-CDC25A-CDK2 轴建立 S 期阻滞'正确。\nC【错】错因：CHK1 对 CDC25C 的作用是磷酸化使其失活/降解，从而阻止 CDC25C 去除 CDK1 的抑制性磷酸（T14/Y15），最终抑制而非促进 CDK1 激活；选项把'抑制 CDC25C'说成'激活 CDC25C→促进 CDK1'，方向性错误（图中 G2/M 通路为 CHK1→CDC25C 抑制线，同时 WEE1/PKMYT1 磷酸化维持 CDK1 失活）。\nD【错】错因：G1/S 检查点主要依赖 ATM-CHK2-p53-p21 轴对 CDK4/6 的抑制；p53 缺失时该转录依赖的持久阻滞机制受损，DNA 损伤细胞仍可进入 S 期（基因组不稳定），这正是 p53 缺失肿瘤细胞 DNA 损伤检查点'失效'的要害；选项中 p53 缺失而 G1 检查点完好与机制矛盾。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/dna-checkpoint-annotated.jpg",
+  "image": {
+    "caption": "DNA 损伤检查点信号网络：上）DSB→ATM，ssDNA/复制应激→ATR；中）CHK2/CHK1 两级介质；下）p53-p21（G1 阻滞）、CDC25A（S 期阻滞）、CDC25C-WEE1/PKMYT1（G2/M 阻滞）等效应分子",
+    "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
+    "doi": "10.1038/s41392-023-01548-8",
+    "figure": "4",
+    "file": "assets/questions/cell_cycle/dna-checkpoint.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10485079",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "复制应激产生的单链 DNA 激活 ATR→CHK1，CHK1 磷酸化 CDC25A 促其降解，进而抑制 CDK2 导致 S 期阻滞"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "G2/M 检查点中 CHK1 通过磷酸化激活 CDC25C，促使 CDK1 去抑制而进入有丝分裂"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "p53 缺失的细胞其 G1/S DNA 损伤检查点依然完整，DNA 损伤细胞会被可靠地阻断在 G1 期"
-  }
- ],
- "subject": "细胞生物学",
- "tags": [
-  "cell_cycle",
-  "module_1",
-  "细胞生物学",
-  "检查点",
-  "DNA损伤应答"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "图为 DNA 损伤检查点信号网络：DSB（左）与复制应激产生的 ssDNA（右）分别激活 ATM 与 ATR，经 CHK2/CHK1 两级级联调控 p53、CDC25、WEE1 等效应分子，进而建立 G1/S、S 期与 G2/M 检查点。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Li Q, Qian W, Zhang Y, et al.",
+      "doi": "10.1038/s41392-023-01548-8",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "title": "A new wave of innovations within the DNA damage response",
+      "year": 2023
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "DSB 激活 ATM→CHK2→p53→p21 通路，抑制 CDK4/6 从而建立 G1/S 检查点阻滞"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "复制应激产生的单链 DNA 激活 ATR→CHK1，CHK1 磷酸化 CDC25A 促其降解，进而抑制 CDK2 导致 S 期阻滞"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "G2/M 检查点中 CHK1 通过磷酸化激活 CDC25C，促使 CDK1 去抑制而进入有丝分裂"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "p53 缺失的细胞其 G1/S DNA 损伤检查点依然完整，DNA 损伤细胞会被可靠地阻断在 G1 期"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "cell_cycle",
+    "module_1",
+    "细胞生物学",
+    "检查点",
+    "DNA损伤应答"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

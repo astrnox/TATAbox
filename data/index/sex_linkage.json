@@ -1,19 +1,19 @@
 {
- "M4-01-9282854c": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 36,
-  "module": "module_4",
-  "src": "sex_linkage",
-  "tag": "sex_linkage",
-  "tags": [
-   "sex_linkage",
-   "module_4",
-   "遗传学",
-   "伴性遗传的特点"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-9282854c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 36,
+    "module": "module_4",
+    "src": "sex_linkage",
+    "tag": "sex_linkage",
+    "tags": [
+      "sex_linkage",
+      "module_4",
+      "遗传学",
+      "伴性遗传的特点"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,38 +1,38 @@
 {
- "concept": "尿素循环",
- "difficulty": "league",
- "explanation": "A【错】错因：尿素循环前两步在线粒体，其余步骤在胞质溶胶，需两个区室协作完成。\nB【对】依据：氨基甲酰磷酸提供游离氨来源的氮，精氨酸代琥珀酸带入天冬氨酸的氮，共同构成尿素。\nC【错】错因：氨基甲酰磷酸合成与精氨酸代琥珀酸合成共消耗相当于 4 个高能磷酸键的 ATP。\nD【错】错因：尿素仅在肝脏经尿素循环合成，肾脏只负责将其滤过排出。",
- "question": "氨基酸分解产生的氨主要在肝脏转化为尿素后经肾排出。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": false,
-   "label": "A",
-   "text": "尿素循环只发生在线粒体基质内即可完成"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "一分子尿素含两个氮原子，一个来自游离氨、另一个来自天冬氨酸"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "尿素循环不消耗 ATP，是能量中性过程"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "尿素在肾脏合成并随尿液排出体外"
-  }
- ],
- "subject": "生物化学",
- "tags": [
-  "amino_acid_metab",
-  "module_1",
-  "生物化学",
-  "尿素循环"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "尿素循环",
+  "difficulty": "league",
+  "explanation": "A【错】错因：尿素循环前两步在线粒体，其余步骤在胞质溶胶，需两个区室协作完成。\nB【对】依据：氨基甲酰磷酸提供游离氨来源的氮，精氨酸代琥珀酸带入天冬氨酸的氮，共同构成尿素。\nC【错】错因：氨基甲酰磷酸合成与精氨酸代琥珀酸合成共消耗相当于 4 个高能磷酸键的 ATP。\nD【错】错因：尿素仅在肝脏经尿素循环合成，肾脏只负责将其滤过排出。",
+  "question": "氨基酸分解产生的氨主要在肝脏转化为尿素后经肾排出。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "尿素循环只发生在线粒体基质内即可完成"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "一分子尿素含两个氮原子，一个来自游离氨、另一个来自天冬氨酸"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "尿素循环不消耗 ATP，是能量中性过程"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "尿素在肾脏合成并随尿液排出体外"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "amino_acid_metab",
+    "module_1",
+    "生物化学",
+    "尿素循环"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

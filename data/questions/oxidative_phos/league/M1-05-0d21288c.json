@@ -1,57 +1,57 @@
 {
- "concept": "解偶联剂与转运抑制剂对线粒体膜电位的影响",
- "difficulty": "league",
- "explanation": "A【对】依据：图中左侧为 JC-1 荧光显微图：对照组（Control 行）红色通道明亮、绿色微弱，说明线粒体保持高膜电位（JC-1 以红'聚合体'形式富集于极化线粒体）；CCCP 处理后红/绿比值显著下降（图 B 柱状图，P<0.0001）。CCCP 是质子载体（protonophore）解偶联剂，把质子梯度化学势直接耗散，因此'红/绿比值反映膜电位、CCCP 破坏质子梯度'的机制判断正确。\nB【错】错因：解偶联剂并不抑制呼吸链复合体的电子传递；相反，质子梯度消散后回馈抑制被解除，电子传递与耗氧往往加速（呼吸增强）。'CCCP 通过抑制电子传递链复合体来降低膜电位'把解偶联与复合体抑制两个概念混为一谈。\nC【对】依据：图中 BA（0.5 mM）处理后 JC-1 红/绿比值同样显著下降（图 C，P<0.0001），说明该条件下线粒体跨膜质子电化学梯度受损（趋近去极化）。BA 在此为腺嘌呤核苷酸转运体（ANT）的抑制剂，观察到的去极化提示线粒体依赖动态回路的平衡被打破（ATP 输出受阻改变 Δψ 稳态）——'根据图数据，BA 处理使质子梯度受损'与图一致；选项应严格按'图所示'判读而非假设其完全等于 CCCP。\nD【错】错因：JC-1 红/绿荧光比反映的是线粒体膜电位（Δψm），是'极化状态'的指标；线粒体数量需用 MitoTracker Green 等与膜电位无关的探针并结合拷贝数测定。'红/绿比值反映线粒体数量'颠倒了两类探针的作用对象。\n@@ANNOTATED_IMAGE:assets/questions/oxidative_phos/oxphos-uncoupler-annotated.jpg",
- "image": {
-  "caption": "JC-1 检测线粒体膜电位：A) 荧光显微图（上=对照、中=CCCP 10μM、下=BA 0.5mM；左列=红色聚合体、右列=绿色单体）；B/C) 红/绿荧光比值定量（P<0.0001）",
-  "credit": "Wang J et al., Frontiers in Physiology 2026",
-  "doi": "10.3389/fphys.2026.1715312",
-  "figure": "1",
-  "file": "assets/questions/oxidative_phos/oxphos-uncoupler.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC12950582",
-  "source": "paper"
- },
- "question": "研究者用 JC-1 荧光探针检测人卵巢颗粒细胞线粒体膜电位（Δψm）：对照组、CCCP（10 μM）与 BA（0.5 mM）处理后的荧光显微图并列（图 A，上行对照、中行 CCCP、下行 BA；左列红色=JC-1 聚合体，右列绿色=JC-1 单体），红/绿荧光比值定量见图 B/C。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Wang J, Wang GJ, Wang LC, et al.",
-   "doi": "10.3389/fphys.2026.1715312",
-   "journal": "Frontiers in Physiology",
-   "title": "The mechanisms of energy balance between oxidative phosphorylation and glycolysis in human ovarian granulosa cells",
-   "year": 2026
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "JC-1 红/绿荧光比值反映线粒体膜电位；CCCP 作为质子载体解偶联剂使质子梯度耗散，图中其处理后比值显著下降"
+  "concept": "解偶联剂与转运抑制剂对线粒体膜电位的影响",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中左侧为 JC-1 荧光显微图：对照组（Control 行）红色通道明亮、绿色微弱，说明线粒体保持高膜电位（JC-1 以红'聚合体'形式富集于极化线粒体）；CCCP 处理后红/绿比值显著下降（图 B 柱状图，P<0.0001）。CCCP 是质子载体（protonophore）解偶联剂，把质子梯度化学势直接耗散，因此'红/绿比值反映膜电位、CCCP 破坏质子梯度'的机制判断正确。\nB【错】错因：解偶联剂并不抑制呼吸链复合体的电子传递；相反，质子梯度消散后回馈抑制被解除，电子传递与耗氧往往加速（呼吸增强）。'CCCP 通过抑制电子传递链复合体来降低膜电位'把解偶联与复合体抑制两个概念混为一谈。\nC【对】依据：图中 BA（0.5 mM）处理后 JC-1 红/绿比值同样显著下降（图 C，P<0.0001），说明该条件下线粒体跨膜质子电化学梯度受损（趋近去极化）。BA 在此为腺嘌呤核苷酸转运体（ANT）的抑制剂，观察到的去极化提示线粒体依赖动态回路的平衡被打破（ATP 输出受阻改变 Δψ 稳态）——'根据图数据，BA 处理使质子梯度受损'与图一致；选项应严格按'图所示'判读而非假设其完全等于 CCCP。\nD【错】错因：JC-1 红/绿荧光比反映的是线粒体膜电位（Δψm），是'极化状态'的指标；线粒体数量需用 MitoTracker Green 等与膜电位无关的探针并结合拷贝数测定。'红/绿比值反映线粒体数量'颠倒了两类探针的作用对象。\n@@ANNOTATED_IMAGE:assets/questions/oxidative_phos/oxphos-uncoupler-annotated.jpg",
+  "image": {
+    "caption": "JC-1 检测线粒体膜电位：A) 荧光显微图（上=对照、中=CCCP 10μM、下=BA 0.5mM；左列=红色聚合体、右列=绿色单体）；B/C) 红/绿荧光比值定量（P<0.0001）",
+    "credit": "Wang J et al., Frontiers in Physiology 2026",
+    "doi": "10.3389/fphys.2026.1715312",
+    "figure": "1",
+    "file": "assets/questions/oxidative_phos/oxphos-uncoupler.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12950582",
+    "source": "paper"
   },
-  {
-   "answer": false,
-   "label": "B",
-   "text": "解偶联剂 CCCP 通过抑制呼吸链电子传递复合体的活性来降低线粒体膜电位"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "图中 BA 处理后红/绿比值同样显著下降，说明该处理下线粒体跨膜质子电化学梯度受损（按图判读）"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "JC-1 红/绿荧光比值可用于直接比较各组线粒体数量的多少"
-  }
- ],
- "subject": "生物化学",
- "tags": [
-  "oxidative_phos",
-  "module_1",
-  "生物化学",
-  "氧化磷酸化",
-  "线粒体膜电位"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者用 JC-1 荧光探针检测人卵巢颗粒细胞线粒体膜电位（Δψm）：对照组、CCCP（10 μM）与 BA（0.5 mM）处理后的荧光显微图并列（图 A，上行对照、中行 CCCP、下行 BA；左列红色=JC-1 聚合体，右列绿色=JC-1 单体），红/绿荧光比值定量见图 B/C。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Wang J, Wang GJ, Wang LC, et al.",
+      "doi": "10.3389/fphys.2026.1715312",
+      "journal": "Frontiers in Physiology",
+      "title": "The mechanisms of energy balance between oxidative phosphorylation and glycolysis in human ovarian granulosa cells",
+      "year": 2026
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "JC-1 红/绿荧光比值反映线粒体膜电位；CCCP 作为质子载体解偶联剂使质子梯度耗散，图中其处理后比值显著下降"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "解偶联剂 CCCP 通过抑制呼吸链电子传递复合体的活性来降低线粒体膜电位"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "图中 BA 处理后红/绿比值同样显著下降，说明该处理下线粒体跨膜质子电化学梯度受损（按图判读）"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "JC-1 红/绿荧光比值可用于直接比较各组线粒体数量的多少"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "oxidative_phos",
+    "module_1",
+    "生物化学",
+    "氧化磷酸化",
+    "线粒体膜电位"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

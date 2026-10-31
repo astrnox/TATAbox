@@ -1,74 +1,74 @@
 {
- "M4-02-df81db11": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 45,
-  "module": "module_4",
-  "src": "gene_regulation",
-  "tag": "gene_regulation",
-  "tags": [
-   "gene_regulation",
-   "module_4",
-   "分子生物学",
-   "增强子的作用机制"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M4-03-f59903ec": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 109,
-  "module": "module_4",
-  "src": "gene_regulation",
-  "tag": "gene_regulation",
-  "tags": [
-   "gene_regulation",
-   "module_4",
-   "分子生物学",
-   "操纵子",
-   "进化适应"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M4-03-05b79a5a": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 98,
-  "module": "module_4",
-  "src": "gene_regulation",
-  "tag": "gene_regulation",
-  "tags": [
-   "gene_regulation",
-   "module_4",
-   "分子生物学",
-   "DNA修复",
-   "双链断裂"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M4-03-807aa2ee": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 140,
-  "module": "module_4",
-  "src": "gene_regulation",
-  "tag": "gene_regulation",
-  "tags": [
-   "gene_regulation",
-   "module_4",
-   "分子生物学",
-   "操纵子",
-   "进化适应",
-   "历史偶然性"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-02-df81db11": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 45,
+    "module": "module_4",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_4",
+      "分子生物学",
+      "增强子的作用机制"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-05b79a5a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 98,
+    "module": "module_4",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_4",
+      "分子生物学",
+      "DNA修复",
+      "双链断裂"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-807aa2ee": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 140,
+    "module": "module_4",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_4",
+      "分子生物学",
+      "操纵子",
+      "进化适应",
+      "历史偶然性"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-f59903ec": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 109,
+    "module": "module_4",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_4",
+      "分子生物学",
+      "操纵子",
+      "进化适应"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

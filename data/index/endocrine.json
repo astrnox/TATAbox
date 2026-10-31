@@ -1,19 +1,19 @@
 {
- "M3-01-960fdd44": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 41,
-  "module": "module_3",
-  "src": "endocrine",
-  "tag": "endocrine",
-  "tags": [
-   "endocrine",
-   "module_3",
-   "动物生理学",
-   "血糖的激素调节"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-960fdd44": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 41,
+    "module": "module_3",
+    "src": "endocrine",
+    "tag": "endocrine",
+    "tags": [
+      "endocrine",
+      "module_3",
+      "动物生理学",
+      "血糖的激素调节"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,38 +1,38 @@
 {
- "concept": "连锁与交换定律",
- "difficulty": "league",
- "explanation": "A【对】依据：完全连锁（如雄果蝇）不发生交换，BbVv 只产生 BV 和 bv 两种配子。\nB【对】依据：交换值与基因间距离成正比，是绘制遗传图谱的依据。\nC【错】错因：同源染色体非姐妹染色单体间的交换可使连锁基因发生重组。\nD【错】错因：交换值最大为 50%，此时与独立遗传无法区分，不会超过 50%。",
- "question": "果蝇中灰身（B）对黑身（b）为显性，长翅（V）对残翅（v）为显性，两对基因位于同一对常染色体上。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "完全连锁时，BbVv 个体只产生两种比例相等的配子"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "交换值越大，说明两基因在染色体上的距离越远"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "位于同一染色体上的基因在遗传时完全不能发生重组"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "交换值可以超过 50%"
-  }
- ],
- "subject": "遗传学",
- "tags": [
-  "linkage",
-  "module_4",
-  "遗传学",
-  "连锁与交换定律"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "连锁与交换定律",
+  "difficulty": "league",
+  "explanation": "A【对】依据：完全连锁（如雄果蝇）不发生交换，BbVv 只产生 BV 和 bv 两种配子。\nB【对】依据：交换值与基因间距离成正比，是绘制遗传图谱的依据。\nC【错】错因：同源染色体非姐妹染色单体间的交换可使连锁基因发生重组。\nD【错】错因：交换值最大为 50%，此时与独立遗传无法区分，不会超过 50%。",
+  "question": "果蝇中灰身（B）对黑身（b）为显性，长翅（V）对残翅（v）为显性，两对基因位于同一对常染色体上。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "完全连锁时，BbVv 个体只产生两种比例相等的配子"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "交换值越大，说明两基因在染色体上的距离越远"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "位于同一染色体上的基因在遗传时完全不能发生重组"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "交换值可以超过 50%"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "linkage",
+    "module_4",
+    "遗传学",
+    "连锁与交换定律"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

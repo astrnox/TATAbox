@@ -1,19 +1,19 @@
 {
- "M3-01-e59fb03e": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 40,
-  "module": "module_3",
-  "src": "animal_behavior",
-  "tag": "animal_behavior",
-  "tags": [
-   "animal_behavior",
-   "module_3",
-   "动物学",
-   "先天性行为与学习行为"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-e59fb03e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_3",
+    "src": "animal_behavior",
+    "tag": "animal_behavior",
+    "tags": [
+      "animal_behavior",
+      "module_3",
+      "动物学",
+      "先天性行为与学习行为"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

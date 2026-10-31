@@ -1,40 +1,40 @@
 {
- "M3-01-0cf8ec28": {
-  "concept": "种群增长的 S 型曲线",
-  "difficulty": "league",
-  "explanation": "A【对】依据：K 值（环境容纳量）时种群数量稳定，出生率约等于死亡率，增长率为零。\nB【错】错因：K 值取决于食物、空间等环境条件，环境改变则 K 值改变。\nC【错】错因：增长速率在 K/2 时最大，K 值时增长速率为零。\nD【错】错因：S 型增长正是环境阻力（密度制约）作用的结果，与 J 型增长的区别所在。",
-  "question": "某封闭培养液中酵母菌种群数量随时间呈 S 型增长。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "种群数量达到 K 值时，出生率与死亡率基本相等"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "K 值是固定不变的，与环境条件无关"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "种群增长速率在 K 值时达到最大"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "S 型增长过程中不存在环境阻力"
-   }
-  ],
-  "subject": "生态学",
-  "tags": [
-   "population_eco",
-   "module_3",
-   "生态学",
-   "种群增长的 S 型曲线"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M3-01-0cf8ec28": {
+    "concept": "种群增长的 S 型曲线",
+    "difficulty": "league",
+    "explanation": "A【对】依据：K 值（环境容纳量）时种群数量稳定，出生率约等于死亡率，增长率为零。\nB【错】错因：K 值取决于食物、空间等环境条件，环境改变则 K 值改变。\nC【错】错因：增长速率在 K/2 时最大，K 值时增长速率为零。\nD【错】错因：S 型增长正是环境阻力（密度制约）作用的结果，与 J 型增长的区别所在。",
+    "question": "某封闭培养液中酵母菌种群数量随时间呈 S 型增长。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "种群数量达到 K 值时，出生率与死亡率基本相等"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "K 值是固定不变的，与环境条件无关"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "种群增长速率在 K 值时达到最大"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "S 型增长过程中不存在环境阻力"
+      }
+    ],
+    "subject": "生态学",
+    "tags": [
+      "population_eco",
+      "module_3",
+      "生态学",
+      "种群增长的 S 型曲线"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

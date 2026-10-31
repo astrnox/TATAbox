@@ -1,57 +1,57 @@
 {
- "concept": "CAR-T 细胞对抗原识别的 MHC 非限制性与结构域重组装",
- "difficulty": "league",
- "explanation": "A【对】依据：天然 TCR（图 A）识别的是 MHC-肽复合物——肿瘤抗原必须先经 MHC I 类分子呈递，T细胞方能识别；而 CAR 的胞外 scFv（单链可变区片段）直接识别肿瘤细胞表面抗原的构象表位（图 B），不依赖 MHC 呈递，因此可克服肿瘤下调 MHC 导致的免疫逃逸，这是 CAR-T 相对 TCR-T 的核心优势。\nB【对】依据：CAR 胞内段整合了共刺激域（CD28 或 4-1BB，图 B 绿色标注）与刺激域（CD3ζ，紫色标注）：CD28 促进快速扩增与效应功能，4-1BB 增强持久性与记忆形成；天然 T 细胞的共刺激需要独立的 CD28 分子与 APC 上的 B7-2/CD80-86 结合（图 A 右侧），而 CAR 把该信号融合进受体本身，'可增强增殖与持久性'表述正确。\nC【错】错因：CRS（细胞因子释放综合征）是 CAR-T 最需防范的不良反应：大量活化的 T 细胞与巨噬细胞释放 IL-6、IFN-γ、TNF-α 等细胞因子，重症可致高热、低血压、毛细血管渗漏甚至多器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预；'通常轻微且无需干预'与临床事实不符。\nD【错】错因：CD19 是 B 细胞谱系特异的分化抗原，正常/恶性 B 细胞均表达；CD19 CAR-T 只杀伤 B 细胞来源的肿瘤（B-ALL、B 细胞淋巴瘤），对 T 细胞瘤、髓系肿瘤及实体瘤不直接杀伤，'杀伤表达 CD19 的所有类型肿瘤细胞'中'所有类型'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M3-01-a898fe16/fig1-annotated.jpg",
- "image": {
-  "caption": "TCR 与 CAR 识别肿瘤抗原的差异：(A) 天然 TCR-CD3 复合体依赖 MHC I 呈递，(B) CAR 的 scFv 直接结合肿瘤抗原并将共刺激域（CD28/4-1BB）与 CD3ζ 集成于同一分子，(C) scFv 来源于抗体可变区",
-  "credit": "Mitra A et al., Frontiers in Immunology 2023",
-  "doi": "10.3389/fimmu.2023.1188049",
-  "figure": "1",
-  "file": "assets/questions/M3-01-a898fe16/fig1.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC10225594",
-  "source": "paper"
- },
- "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。CAR 由 scFv（抗原识别）、铰链跨膜区、共刺激域与 CD3ζ 组成（图 B）。根据以上信息与图，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Mitra A, Barua A, Huang L, et al.",
-   "doi": "10.3389/fimmu.2023.1188049",
-   "journal": "Frontiers in Immunology",
-   "title": "From bench to bedside: the history and progress of CAR T cell therapy",
-   "year": 2023
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "CAR 的胞外 scFv 结构域直接识别肿瘤表面抗原构象表位，不受 MHC 限制，可规避肿瘤 MHC 下调导致的逃逸"
+  "concept": "CAR-T 细胞对抗原识别的 MHC 非限制性与结构域重组装",
+  "difficulty": "league",
+  "explanation": "A【对】依据：天然 TCR（图 A）识别的是 MHC-肽复合物——肿瘤抗原必须先经 MHC I 类分子呈递，T细胞方能识别；而 CAR 的胞外 scFv（单链可变区片段）直接识别肿瘤细胞表面抗原的构象表位（图 B），不依赖 MHC 呈递，因此可克服肿瘤下调 MHC 导致的免疫逃逸，这是 CAR-T 相对 TCR-T 的核心优势。\nB【对】依据：CAR 胞内段整合了共刺激域（CD28 或 4-1BB，图 B 绿色标注）与刺激域（CD3ζ，紫色标注）：CD28 促进快速扩增与效应功能，4-1BB 增强持久性与记忆形成；天然 T 细胞的共刺激需要独立的 CD28 分子与 APC 上的 B7-2/CD80-86 结合（图 A 右侧），而 CAR 把该信号融合进受体本身，'可增强增殖与持久性'表述正确。\nC【错】错因：CRS（细胞因子释放综合征）是 CAR-T 最需防范的不良反应：大量活化的 T 细胞与巨噬细胞释放 IL-6、IFN-γ、TNF-α 等细胞因子，重症可致高热、低血压、毛细血管渗漏甚至多器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预；'通常轻微且无需干预'与临床事实不符。\nD【错】错因：CD19 是 B 细胞谱系特异的分化抗原，正常/恶性 B 细胞均表达；CD19 CAR-T 只杀伤 B 细胞来源的肿瘤（B-ALL、B 细胞淋巴瘤），对 T 细胞瘤、髓系肿瘤及实体瘤不直接杀伤，'杀伤表达 CD19 的所有类型肿瘤细胞'中'所有类型'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M3-01-a898fe16/fig1-annotated.jpg",
+  "image": {
+    "caption": "TCR 与 CAR 识别肿瘤抗原的差异：(A) 天然 TCR-CD3 复合体依赖 MHC I 呈递，(B) CAR 的 scFv 直接结合肿瘤抗原并将共刺激域（CD28/4-1BB）与 CD3ζ 集成于同一分子，(C) scFv 来源于抗体可变区",
+    "credit": "Mitra A et al., Frontiers in Immunology 2023",
+    "doi": "10.3389/fimmu.2023.1188049",
+    "figure": "1",
+    "file": "assets/questions/M3-01-a898fe16/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC10225594",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "CAR 内的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性，其信号被集成进受体而不依赖 APC 的 B7 配体"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微，无需任何临床干预"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "CD19 CAR-T 可杀伤表达 CD19 的所有类型肿瘤细胞，包括 T 细胞与髓系来源的肿瘤"
-  }
- ],
- "subject": "免疫学",
- "tags": [
-  "immune_system",
-  "module_3",
-  "免疫学",
-  "CAR-T",
-  "肿瘤免疫"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。CAR 由 scFv（抗原识别）、铰链跨膜区、共刺激域与 CD3ζ 组成（图 B）。根据以上信息与图，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Mitra A, Barua A, Huang L, et al.",
+      "doi": "10.3389/fimmu.2023.1188049",
+      "journal": "Frontiers in Immunology",
+      "title": "From bench to bedside: the history and progress of CAR T cell therapy",
+      "year": 2023
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "CAR 的胞外 scFv 结构域直接识别肿瘤表面抗原构象表位，不受 MHC 限制，可规避肿瘤 MHC 下调导致的逃逸"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "CAR 内的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性，其信号被集成进受体而不依赖 APC 的 B7 配体"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微，无需任何临床干预"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "CD19 CAR-T 可杀伤表达 CD19 的所有类型肿瘤细胞，包括 T 细胞与髓系来源的肿瘤"
+    }
+  ],
+  "subject": "免疫学",
+  "tags": [
+    "immune_system",
+    "module_3",
+    "免疫学",
+    "CAR-T",
+    "肿瘤免疫"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

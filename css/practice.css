@@ -341,6 +341,11 @@
   background: #fff;
 }
 
+/* M-13：整屏白遮罩在暗色下会闪白，换深色半透明 */
+[data-theme="dark"] .practice-loading-overlay {
+  background-color: rgba(20, 26, 22, 0.94);
+}
+
 .practice-options-list {
   display: flex;
   flex-direction: column;

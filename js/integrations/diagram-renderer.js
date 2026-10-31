@@ -226,9 +226,10 @@
         USE_PROFILES: { svg: true, svgFilters: true }
       });
     }
-    // 兜底：DOMPurify 未加载时仅剥离 <script>（仍不安全，应确保 DOMPurify 已引入）
-    console.warn('[DiagramRenderer] DOMPurify 未加载，SVG 未经消毒');
-    return svg.replace(/<script[\s\S]*?<\/script>/gi, '');
+    // M-05：fail-closed。只剥离 <script> 挡不住 onload/foreignObject 等注入向量，
+    // 因此 DOMPurify 缺失时宁可不渲染图表，也不插入未消毒 SVG。
+    console.warn('[DiagramRenderer] DOMPurify 未加载，已跳过 SVG 渲染');
+    return '';
   }
 
   /**

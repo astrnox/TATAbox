@@ -317,4 +317,13 @@
   g.calcBioScore = calcBioScore;
   g.BIO_SCORE_EXPLAIN = BIO_SCORE_EXPLAIN;
   g.BIO_WEIGHTS = BIO_WEIGHTS;
+  // M-06：单一命名空间入口。页面的 window.calcBioScore 会被 analytic.js
+  // 的同名全局函数覆盖，委托方必须经 ScoreEngine 调用唯一实现，避免自递归。
+  g.ScoreEngine = {
+    calcBioScore: calcBioScore,
+    computeBioScoreFromRaw: computeBioScoreFromRaw,
+    computeBioDimensions: computeBioDimensions,
+    BIO_SCORE_EXPLAIN: BIO_SCORE_EXPLAIN,
+    BIO_WEIGHTS: BIO_WEIGHTS
+  };
 })(typeof window !== 'undefined' ? window : globalThis);

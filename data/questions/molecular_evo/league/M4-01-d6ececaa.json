@@ -1,57 +1,57 @@
 {
- "concept": "古代与现代非洲-近东人群的主成分遗传结构",
- "difficulty": "league",
- "explanation": "A【对】依据：图中主成分图（PC1 纵轴解释方差 8.54%，PC2 横轴 0.53%）显示主要分化轴 PC1 将北非/近东人群（图上部：摩洛哥各期新石器组、近东 Natufian/Neolithic）与撒哈拉以南群体（下部：西非、中非觅食者）分开，反映'撒哈拉屏障'主导的南北向遗传分化；'PC1 主要区分北非/近东与撒哈拉以南人群'与图中聚类位置一致。\nB【对】依据：摩洛哥早期新石器（Morocco EN）相对更早的古-早期新石器与近东人群接近（图中位置向近东聚类偏移），而'对'的判断在于说明：欧洲农业扩散过程中近东农业人群的基因流（横跨地中海走廊）可解释北非新石器人群向近东方向的位置；这是'农业与人口扩散伴随基因流'假说的图证据。\nC【错】错因：PCA 中两点/两群的距离反映的是基因组整体等位基因频率的相似度（由群体历史、混合、漂变共同决定），并不代表两个个体的直系亲属或个体血缘世代关系；'亲缘关系（如直系家庭成员）'是家系层面的概念，用 PCA 距离直接断言'亲缘关系越近'属于概念混淆。\nD【错】错因：主成分解释的方差比例由数据本身的变异结构（如群体间差异大小、人群分层强度）决定，与分析所包含样本量无必然单调关系；增加样本量并不会让 PC1 解释比例无限上升，'解释比例越大→样本量越大'因果倒置。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/adna-pca-annotated.jpg",
- "image": {
-  "caption": "现代与古代非洲/近东人群的主成分图：横轴 PC2（0.53%）、纵轴 PC1（8.54%）；右上角插图为采样点地理位置；各椭圆与符号对应不同时期的北非/近东/东非群体",
-  "credit": "Salem N et al., Nature 2025",
-  "doi": "10.1038/s41586-025-08793-7",
-  "figure": "2",
-  "file": "assets/questions/molecular_evo/adna-pca.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC12043513",
-  "source": "paper"
- },
- "question": "研究者将古代个体与现代参考人群一起做主成分分析（PCA），图中 PC1（纵轴）约解释 8.54% 变异，PC2（横轴）约 0.53%；摩洛哥各期新石器人群聚于图上部，西非与中非觅食者位于下部，近东人群居中部偏上（图）。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
-   "doi": "10.1038/s41586-025-08793-7",
-   "journal": "Nature",
-   "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
-   "year": 2025
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "PC1 将北非/近东人群与撒哈拉以南人群分开，反映跨越撒哈拉的遗传分化是非洲人群变异的主轴之一"
+  "concept": "古代与现代非洲-近东人群的主成分遗传结构",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中主成分图（PC1 纵轴解释方差 8.54%，PC2 横轴 0.53%）显示主要分化轴 PC1 将北非/近东人群（图上部：摩洛哥各期新石器组、近东 Natufian/Neolithic）与撒哈拉以南群体（下部：西非、中非觅食者）分开，反映'撒哈拉屏障'主导的南北向遗传分化；'PC1 主要区分北非/近东与撒哈拉以南人群'与图中聚类位置一致。\nB【对】依据：摩洛哥早期新石器（Morocco EN）相对更早的古-早期新石器与近东人群接近（图中位置向近东聚类偏移），而'对'的判断在于说明：欧洲农业扩散过程中近东农业人群的基因流（横跨地中海走廊）可解释北非新石器人群向近东方向的位置；这是'农业与人口扩散伴随基因流'假说的图证据。\nC【错】错因：PCA 中两点/两群的距离反映的是基因组整体等位基因频率的相似度（由群体历史、混合、漂变共同决定），并不代表两个个体的直系亲属或个体血缘世代关系；'亲缘关系（如直系家庭成员）'是家系层面的概念，用 PCA 距离直接断言'亲缘关系越近'属于概念混淆。\nD【错】错因：主成分解释的方差比例由数据本身的变异结构（如群体间差异大小、人群分层强度）决定，与分析所包含样本量无必然单调关系；增加样本量并不会让 PC1 解释比例无限上升，'解释比例越大→样本量越大'因果倒置。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/adna-pca-annotated.jpg",
+  "image": {
+    "caption": "现代与古代非洲/近东人群的主成分图：横轴 PC2（0.53%）、纵轴 PC1（8.54%）；右上角插图为采样点地理位置；各椭圆与符号对应不同时期的北非/近东/东非群体",
+    "credit": "Salem N et al., Nature 2025",
+    "doi": "10.1038/s41586-025-08793-7",
+    "figure": "2",
+    "file": "assets/questions/molecular_evo/adna-pca.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12043513",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "摩洛哥早期新石器人群在图中向近东人群偏移，可用近东农业人群向西北非扩散伴随的基因流解释"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "PCA 中两个个体距离越近即表示两人是直系亲属，可用于直接确定家系血缘关系"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "某主成分解释的方差比例越高，说明分析所纳入的样本量越大"
-  }
- ],
- "subject": "进化生物学",
- "tags": [
-  "molecular_evo",
-  "module_4",
-  "进化生物学",
-  "群体遗传",
-  "主成分分析"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者将古代个体与现代参考人群一起做主成分分析（PCA），图中 PC1（纵轴）约解释 8.54% 变异，PC2（横轴）约 0.53%；摩洛哥各期新石器人群聚于图上部，西非与中非觅食者位于下部，近东人群居中部偏上（图）。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
+      "doi": "10.1038/s41586-025-08793-7",
+      "journal": "Nature",
+      "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+      "year": 2025
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "PC1 将北非/近东人群与撒哈拉以南人群分开，反映跨越撒哈拉的遗传分化是非洲人群变异的主轴之一"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "摩洛哥早期新石器人群在图中向近东人群偏移，可用近东农业人群向西北非扩散伴随的基因流解释"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "PCA 中两个个体距离越近即表示两人是直系亲属，可用于直接确定家系血缘关系"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "某主成分解释的方差比例越高，说明分析所纳入的样本量越大"
+    }
+  ],
+  "subject": "进化生物学",
+  "tags": [
+    "molecular_evo",
+    "module_4",
+    "进化生物学",
+    "群体遗传",
+    "主成分分析"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

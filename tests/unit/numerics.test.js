@@ -23,6 +23,7 @@ const ROOT = path.join(__dirname, '..', '..');
 const IRT_SRC = path.join(ROOT, 'js', 'algo', 'irt-engine.js');
 const DIAG_SRC = path.join(ROOT, 'js', 'ai', 'smart-diagnosis.js');
 const ANALYTIC_SRC = path.join(ROOT, 'js', 'pages', 'analytic.js');
+const ENGINE_SRC = path.join(ROOT, 'js', 'core', 'score-engine.js');
 
 /* 最小 localStorage（内存版），与既有单元测试一致 */
 function makeLocalStorage(init) {
@@ -56,11 +57,13 @@ function loadDiagnosis() {
   return win.__cap;
 }
 
-/* 加载 analytic.js，用受控 getRecords/getStats 捕获 calcBioScore */
+/* 加载 analytic.js，用受控 getRecords/getStats 捕获 calcBioScore
+ * （M-06 后解析器只做委托，先注入唯一实现 score-engine） */
 function loadBioScore(getRecordsFn) {
-  const win = {};
+  const win = { getRecords: getRecordsFn };
   const cap = {};
   win.__cap = cap;
+  new Function('window', fs.readFileSync(ENGINE_SRC, 'utf8'))(win);
   const src = fs.readFileSync(ANALYTIC_SRC, 'utf8')
     + '\n;window.__cap={calcBioScore:calcBioScore};';
   new Function('window', 'getRecords', src)(win, getRecordsFn);

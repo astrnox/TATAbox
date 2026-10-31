@@ -1,19 +1,19 @@
 {
- "M4-01-54dea07d": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 40,
-  "module": "module_4",
-  "src": "plant_biotech",
-  "tag": "plant_biotech",
-  "tags": [
-   "plant_biotech",
-   "module_4",
-   "生物技术",
-   "植物组织培养与细胞全能性"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-54dea07d": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_4",
+    "src": "plant_biotech",
+    "tag": "plant_biotech",
+    "tags": [
+      "plant_biotech",
+      "module_4",
+      "生物技术",
+      "植物组织培养与细胞全能性"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

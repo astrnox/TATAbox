@@ -1,19 +1,19 @@
 {
- "M4-01-ed0fb48f": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 47,
-  "module": "module_4",
-  "src": "population_gen",
-  "tag": "population_gen",
-  "tags": [
-   "population_gen",
-   "module_4",
-   "遗传学",
-   "哈迪-温伯格平衡"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-ed0fb48f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 47,
+    "module": "module_4",
+    "src": "population_gen",
+    "tag": "population_gen",
+    "tags": [
+      "population_gen",
+      "module_4",
+      "遗传学",
+      "哈迪-温伯格平衡"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

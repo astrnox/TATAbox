@@ -151,7 +151,8 @@ describe('管理员动态码登录页', () => {
   test('账号密码直入路径已移除：adminLogin 不存在、admin 账号不自动解锁、个人中心无密码弹窗', () => {
     // 1) adminLogin 函数与个人中心密码弹窗均删除
     expect(adminSrc).not.toMatch(/function adminLogin\s*\(/);
-    const userSrc = read('js/pages/user.js');
+    // M-01：个人中心入口已拆至 user-page.js
+    const userSrc = read('js/pages/user-page.js');
     expect(userSrc).not.toMatch(/adminLogin/);
     expect(userSrc).not.toContain('user-admin-pwd');
     // 2) 账号 user_group=admin 不再自动写入解锁 token（必须口令验证）
@@ -328,7 +329,7 @@ describe('实现约束（回归护栏）', () => {
 
   test('/admin 路由登录即可进入（页内再做管理员验证）', () => {
     const adminRouteBlock = routesSrc
-      .match(/'\/admin': \{[\s\S]*?\n  \},/)[0]
+      .match(/'\/admin': \{[\s\S]*?\n {2}\},/)[0]
       .replace(/\/\/.*$/gm, ''); // 去掉注释，只检查真实配置项
     expect(adminRouteBlock).toMatch(/auth: true/);
     expect(adminRouteBlock).not.toMatch(/role:/);

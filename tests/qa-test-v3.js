@@ -78,10 +78,12 @@ function logIssue(level, page, msg, evidence) {
   } else {
     console.log('✓ 首页 cal-heatmap/d3 修复确认');
   }
-  // 验证 d3 已加载
-  const d3Loaded = await page.evaluate(() => typeof window.d3 !== 'undefined' && typeof window.d3.timeSecond === 'function');
-  console.log('window.d3 已加载:', d3Loaded, '| CalHeatmap:', await page.evaluate(() => typeof window.CalHeatmap));
-  if (!d3Loaded) logIssue('P0', 'home', 'window.d3 未加载，d3.min.js 引入失败');
+  // H-04：d3 / cal-heatmap 已从首屏移除（仓库内无调用方）。
+  // 首页只需确认不再出现 timeSecond/d3 相关异常，不再断言 d3 必须存在。
+  console.log(
+    'window.d3:', await page.evaluate(() => typeof window.d3),
+    '| CalHeatmap:', await page.evaluate(() => typeof window.CalHeatmap)
+  );
 
   // B2: sketch Excalidraw 修复验证
   console.log('\n--- B2: sketch Excalidraw 修复 ---');

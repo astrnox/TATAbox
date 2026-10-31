@@ -646,16 +646,10 @@ async function getPointsLeaderboard(limit) {
   var n = limit || 50;
   if (!sb) return [];
   try {
-    // 积分排行榜走公开视图（profiles 表已收紧为仅本人可读）
-    var { data, error } = await sb.from('public_profiles')
-      .select('id, username, display_name, points, user_group')
-      .order('points', { ascending: false })
-      .limit(n);
-    if (error) {
-      _warnMissingDependency('视图 public_profiles', error,
-        '积分榜将为空；请先执行 sql/migration_v3_security.sql');
-      throw error;
-    }
+    // H-01：profiles 已收紧为本人/管理员可读，排行榜改走窄 RPC
+    // （只返回榜单需要的公开字段，不暴露 email/user_key）。
+    var { data, error } = await sb.rpc('get_points_leaderboard', { p_limit: n });
+    if (error) throw error;
     return (data || []).map(function(p) {
       return {
         id: p.id,

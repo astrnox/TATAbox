@@ -1,38 +1,38 @@
 {
- "concept": "真核生物转录与启动子",
- "difficulty": "league",
- "explanation": "A【对】依据：聚合酶读取模板链方向为 3'→5'，新 RNA 链只能从 5' 端向 3' 端延伸。\nB【错】错因：rRNA、tRNA、lncRNA 等基因转录后不翻译，mRNA 仅是蛋白编码基因的产物。\nC【错】错因：真核转录在核内、翻译在细胞质，时空分隔；边转录边翻译见于原核生物。\nD【错】错因：TATA 框是核心启动子元件，被通用转录因子识别以起始转录，与终止无关。",
- "question": "真核基因的转录需要 RNA 聚合酶与多种转录因子协同完成。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "RNA 聚合酶沿模板链 3'→5' 移动，RNA 链按 5'→3' 方向延伸"
-  },
-  {
-   "answer": false,
-   "label": "B",
-   "text": "所有基因的转录产物都是直接用于翻译的 mRNA"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "真核细胞中转录与翻译在同一场所同时进行"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "TATA 框位于基因终止区，负责终止转录"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "transcription",
-  "module_1",
-  "分子生物学",
-  "真核生物转录与启动子"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "真核生物转录与启动子",
+  "difficulty": "league",
+  "explanation": "A【对】依据：聚合酶读取模板链方向为 3'→5'，新 RNA 链只能从 5' 端向 3' 端延伸。\nB【错】错因：rRNA、tRNA、lncRNA 等基因转录后不翻译，mRNA 仅是蛋白编码基因的产物。\nC【错】错因：真核转录在核内、翻译在细胞质，时空分隔；边转录边翻译见于原核生物。\nD【错】错因：TATA 框是核心启动子元件，被通用转录因子识别以起始转录，与终止无关。",
+  "question": "真核基因的转录需要 RNA 聚合酶与多种转录因子协同完成。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "RNA 聚合酶沿模板链 3'→5' 移动，RNA 链按 5'→3' 方向延伸"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "所有基因的转录产物都是直接用于翻译的 mRNA"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "真核细胞中转录与翻译在同一场所同时进行"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "TATA 框位于基因终止区，负责终止转录"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "transcription",
+    "module_1",
+    "分子生物学",
+    "真核生物转录与启动子"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

@@ -1,19 +1,19 @@
 {
- "M2-01-7788eb8c": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 39,
-  "module": "module_2",
-  "src": "plant_nutrition",
-  "tag": "plant_nutrition",
-  "tags": [
-   "plant_nutrition",
-   "module_2",
-   "植物生理学",
-   "植物必需元素与缺素症"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-7788eb8c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 39,
+    "module": "module_2",
+    "src": "plant_nutrition",
+    "tag": "plant_nutrition",
+    "tags": [
+      "plant_nutrition",
+      "module_2",
+      "植物生理学",
+      "植物必需元素与缺素症"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

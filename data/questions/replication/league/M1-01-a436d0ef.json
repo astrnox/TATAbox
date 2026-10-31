@@ -1,38 +1,38 @@
 {
- "concept": "DNA 半保留复制",
- "difficulty": "league",
- "explanation": "A【对】依据：解旋酶解开双链，DNA 聚合酶只能将核苷酸加到新链 3' 端，即沿 5'→3' 方向合成。\nB【对】依据：后随链模板方向与复制叉移动相反，只能不连续合成冈崎片段后由连接酶连接。\nC【对】依据：半保留复制下每个子代分子含一条 ¹⁵N 旧链与一条 ¹⁴N 新链，密度居中。\nD【错】错因：线粒体（及叶绿体）DNA 能半自主复制，原核生物则在拟核复制。",
- "question": "Meselson 和 Stahl 用 ¹⁵N 标记结合密度梯度离心，证明了 DNA 的半保留复制。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "解旋酶解开氢键，DNA 聚合酶沿 5'→3' 方向合成新链"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "前导链连续合成，后随链先合成冈崎片段再连接"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "¹⁵N-DNA 在 ¹⁴N 培养基中复制一代后，子代 DNA 全为杂合密度"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "DNA 复制只发生在细胞核中，线粒体 DNA 不能复制"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "replication",
-  "module_1",
-  "分子生物学",
-  "DNA 半保留复制"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "DNA 半保留复制",
+  "difficulty": "league",
+  "explanation": "A【对】依据：解旋酶解开双链，DNA 聚合酶只能将核苷酸加到新链 3' 端，即沿 5'→3' 方向合成。\nB【对】依据：后随链模板方向与复制叉移动相反，只能不连续合成冈崎片段后由连接酶连接。\nC【对】依据：半保留复制下每个子代分子含一条 ¹⁵N 旧链与一条 ¹⁴N 新链，密度居中。\nD【错】错因：线粒体（及叶绿体）DNA 能半自主复制，原核生物则在拟核复制。",
+  "question": "Meselson 和 Stahl 用 ¹⁵N 标记结合密度梯度离心，证明了 DNA 的半保留复制。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "解旋酶解开氢键，DNA 聚合酶沿 5'→3' 方向合成新链"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "前导链连续合成，后随链先合成冈崎片段再连接"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "¹⁵N-DNA 在 ¹⁴N 培养基中复制一代后，子代 DNA 全为杂合密度"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "DNA 复制只发生在细胞核中，线粒体 DNA 不能复制"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "replication",
+    "module_1",
+    "分子生物学",
+    "DNA 半保留复制"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

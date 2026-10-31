@@ -149,7 +149,7 @@ for (const f of fs.readdirSync(bankDir).filter((f) => f.startsWith('daily_league
     } else {
       const truth = answerMap[info.id].subQuestions || [];
       for (let i = 0; i < info.subCount; i++) {
-        const val = wantCorrect ? String(Boolean(truth[i].answer)) : String(!Boolean(truth[i].answer));
+        const val = wantCorrect ? (truth[i].answer ? 'true' : 'false') : (truth[i].answer ? 'false' : 'true');
         await page.click(selector + ' .db-sub-item[data-sub-idx="' + i + '"] .db-tf-btn[data-value="' + val + '"]');
       }
     }

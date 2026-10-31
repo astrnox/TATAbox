@@ -1,40 +1,40 @@
 {
- "M3-01-3d4873ff": {
-  "concept": "体温调节机制",
-  "difficulty": "league",
-  "explanation": "A【对】依据：交感神经使皮肤血管收缩，血流量减少，降低体表散热速率。\nB【对】依据：甲状腺激素提高代谢率，肾上腺素促进物质氧化，二者协同增加产热。\nC【错】错因：体温调节中枢位于下丘脑，大脑皮层产生冷热感觉但不直接调节。\nD【错】错因：体温恒定时产热与散热保持动态平衡，产热大于散热会导致体温上升，不符合稳态。",
-  "question": "寒冷环境中，人体通过多种途径维持体温恒定。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "寒冷刺激下，皮肤血管收缩减少散热"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "甲状腺激素和肾上腺素分泌增加，促进产热"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "体温调节中枢位于大脑皮层"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "寒冷环境中机体产热量大于散热量，体温持续升高"
-   }
-  ],
-  "subject": "动物生理学",
-  "tags": [
-   "temperature_reg",
-   "module_3",
-   "动物生理学",
-   "体温调节机制"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M3-01-3d4873ff": {
+    "concept": "体温调节机制",
+    "difficulty": "league",
+    "explanation": "A【对】依据：交感神经使皮肤血管收缩，血流量减少，降低体表散热速率。\nB【对】依据：甲状腺激素提高代谢率，肾上腺素促进物质氧化，二者协同增加产热。\nC【错】错因：体温调节中枢位于下丘脑，大脑皮层产生冷热感觉但不直接调节。\nD【错】错因：体温恒定时产热与散热保持动态平衡，产热大于散热会导致体温上升，不符合稳态。",
+    "question": "寒冷环境中，人体通过多种途径维持体温恒定。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "寒冷刺激下，皮肤血管收缩减少散热"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "甲状腺激素和肾上腺素分泌增加，促进产热"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "体温调节中枢位于大脑皮层"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "寒冷环境中机体产热量大于散热量，体温持续升高"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "temperature_reg",
+      "module_3",
+      "动物生理学",
+      "体温调节机制"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

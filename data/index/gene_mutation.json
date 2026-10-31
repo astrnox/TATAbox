@@ -1,19 +1,19 @@
 {
- "M4-01-b83b8e9e": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 44,
-  "module": "module_4",
-  "src": "gene_mutation",
-  "tag": "gene_mutation",
-  "tags": [
-   "gene_mutation",
-   "module_4",
-   "遗传学",
-   "基因突变的类型与特征"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-b83b8e9e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 44,
+    "module": "module_4",
+    "src": "gene_mutation",
+    "tag": "gene_mutation",
+    "tags": [
+      "gene_mutation",
+      "module_4",
+      "遗传学",
+      "基因突变的类型与特征"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

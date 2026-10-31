@@ -1,154 +1,154 @@
 {
- "M1-01-8d54d522": {
-  "concept": "细胞周期的调控与检查点",
-  "difficulty": "league",
-  "explanation": "A【对】依据：周期蛋白周期性合成与降解（如 cyclin B 在 M 期末被 APC/C 降解），驱动周期运转。\nB【对】依据：CDK 单独无活性，与周期蛋白结合并磷酸化后才具激酶活性。\nC【对】依据：G2/M 检查点检测 DNA 复制完整性与损伤，激活抑制通路阻滞细胞进入 M 期。\nD【错】错因：CDK 活性受周期蛋白结合、磷酸化状态与抑制蛋白（如 p21）多重调控，并非恒定。\n【相关知识点】三大检查点各司其职：G1/S 查损伤与条件、G2/M 查复制完整性、M 中期查着丝粒连接。周期蛋白周期性合成降解 + CDK 磷酸化激活，构成细胞周期的“分子钟”。",
-  "question": "真核细胞周期受细胞周期蛋白与细胞周期蛋白依赖性激酶（CDK）的精密调控。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "细胞周期蛋白的含量在细胞周期中周期性升降"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "CDK 需与细胞周期蛋白结合后才表现出激酶活性"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "G2/M 检查点可阻止 DNA 损伤的细胞进入分裂期"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "CDK 活性在整个细胞周期中恒定不变，不受调控"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_cycle",
-   "module_1",
-   "细胞生物学",
-   "细胞周期的调控与检查点"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M1-04-56c166ad": {
-  "concept": "ATM-ATR 检查点通路的效应网络",
-  "difficulty": "league",
-  "explanation": "A【对】依据：图中 DSB 由 MRN 复合体感应并激活 ATM；活化的 ATM 磷酸化 CHK2，CHK2 进而磷酸化并稳定 p53，p53 上调 p21 抑制 CDK4/6，使细胞阻滞在 G1/S 检查点——这是'传感器→介质→效应器'的经典三级级联，选项中 ATM-CHK2-p53-p21-CDK4/6 的顺序与图一致。\nB【对】依据：图中复制叉停滞/核酸切除暴露的 ssDNA 被 RPA 包被并招募 ATR-ATRIP 激活 ATR；ATR 磷酸化 CHK1，CHK1 使 CDC25A 磷酸化而被泛素化降解，从而抑制 CDK2 活性、减缓 S 期复制叉进展（S 期检查点）——'ATR-CHK1-CDC25A-CDK2 轴建立 S 期阻滞'正确。\nC【错】错因：CHK1 对 CDC25C 的作用是磷酸化使其失活/降解，从而阻止 CDC25C 去除 CDK1 的抑制性磷酸（T14/Y15），最终抑制而非促进 CDK1 激活；选项把'抑制 CDC25C'说成'激活 CDC25C→促进 CDK1'，方向性错误（图中 G2/M 通路为 CHK1→CDC25C 抑制线，同时 WEE1/PKMYT1 磷酸化维持 CDK1 失活）。\nD【错】错因：G1/S 检查点主要依赖 ATM-CHK2-p53-p21 轴对 CDK4/6 的抑制；p53 缺失时该转录依赖的持久阻滞机制受损，DNA 损伤细胞仍可进入 S 期（基因组不稳定），这正是 p53 缺失肿瘤细胞 DNA 损伤检查点'失效'的要害；选项中 p53 缺失而 G1 检查点完好与机制矛盾。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/dna-checkpoint-annotated.jpg",
-  "image": {
-   "caption": "DNA 损伤检查点信号网络：上）DSB→ATM，ssDNA/复制应激→ATR；中）CHK2/CHK1 两级介质；下）p53-p21（G1 阻滞）、CDC25A（S 期阻滞）、CDC25C-WEE1/PKMYT1（G2/M 阻滞）等效应分子",
-   "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
-   "doi": "10.1038/s41392-023-01548-8",
-   "figure": "4",
-   "file": "assets/questions/cell_cycle/dna-checkpoint.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC10485079",
-   "source": "paper"
+  "M1-01-8d54d522": {
+    "concept": "细胞周期的调控与检查点",
+    "difficulty": "league",
+    "explanation": "A【对】依据：周期蛋白周期性合成与降解（如 cyclin B 在 M 期末被 APC/C 降解），驱动周期运转。\nB【对】依据：CDK 单独无活性，与周期蛋白结合并磷酸化后才具激酶活性。\nC【对】依据：G2/M 检查点检测 DNA 复制完整性与损伤，激活抑制通路阻滞细胞进入 M 期。\nD【错】错因：CDK 活性受周期蛋白结合、磷酸化状态与抑制蛋白（如 p21）多重调控，并非恒定。\n【相关知识点】三大检查点各司其职：G1/S 查损伤与条件、G2/M 查复制完整性、M 中期查着丝粒连接。周期蛋白周期性合成降解 + CDK 磷酸化激活，构成细胞周期的“分子钟”。",
+    "question": "真核细胞周期受细胞周期蛋白与细胞周期蛋白依赖性激酶（CDK）的精密调控。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "细胞周期蛋白的含量在细胞周期中周期性升降"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "CDK 需与细胞周期蛋白结合后才表现出激酶活性"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "G2/M 检查点可阻止 DNA 损伤的细胞进入分裂期"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "CDK 活性在整个细胞周期中恒定不变，不受调控"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_cycle",
+      "module_1",
+      "细胞生物学",
+      "细胞周期的调控与检查点"
+    ],
+    "target": "competition",
+    "type": "mtf"
   },
-  "question": "图为 DNA 损伤检查点信号网络：DSB（左）与复制应激产生的 ssDNA（右）分别激活 ATM 与 ATR，经 CHK2/CHK1 两级级联调控 p53、CDC25、WEE1 等效应分子，进而建立 G1/S、S 期与 G2/M 检查点。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Li Q, Qian W, Zhang Y, et al.",
-    "doi": "10.1038/s41392-023-01548-8",
-    "journal": "Signal Transduction and Targeted Therapy",
-    "title": "A new wave of innovations within the DNA damage response",
-    "year": 2023
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "DSB 激活 ATM→CHK2→p53→p21 通路，抑制 CDK4/6 从而建立 G1/S 检查点阻滞"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "复制应激产生的单链 DNA 激活 ATR→CHK1，CHK1 磷酸化 CDC25A 促其降解，进而抑制 CDK2 导致 S 期阻滞"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "G2/M 检查点中 CHK1 通过磷酸化激活 CDC25C，促使 CDK1 去抑制而进入有丝分裂"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "p53 缺失的细胞其 G1/S DNA 损伤检查点依然完整，DNA 损伤细胞会被可靠地阻断在 G1 期"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_cycle",
-   "module_1",
-   "细胞生物学",
-   "检查点",
-   "DNA损伤应答"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M1-04-77e90279": {
-  "concept": "Cyclin-CDK-Rb 轴的细胞周期引擎与生长因子信号",
-  "difficulty": "league",
-  "explanation": "A【对】依据：图中 G1 期（限制点）附近显示 CycD-CDK4/6 首先使 Rb 发生初始磷酸化，随后 CycE-CDK2 完成高磷酸化，使 Rb 释放被其束缚的转录因子 E2F，游离 E2F 驱动 S 期所需基因（DNA 复制机器）表达——'Rb-E2F 轴是 G1→S 转换的关键开关'与教科书的限制点模型一致，选项因果关系正确。\nB【对】依据：图中 CKI（CDK 抑制蛋白）如 p16/p21/p27/p57 通过对 CDK-cyclin 复合体的直接抑制阻断周期进程：p16 特异抑制 CycD-CDK4/6，p21/p27 广谱抑制多种 G1/S CDK。抑癌基因 CDKN2A（p16）缺失或 p21 下调会使限制点管制失效，促进异常增殖，'CKI 缺失可解除制动、促增殖'正确。\nC【错】错因：CycB-CDK1（图中 G2/M 处）的活性受双重磷酸化开关调节：CAK 需磷酸化其激活环 T 环上的苏氨酸，而 Wee1/Myt1 激酶磷酸化 T14/Y15 的抑制位点使酶失活，进入 M 期前 CDC25 去除这些抑制性磷酸才使 CycB-CDK1 完全激活；'只需 CAK 激活、不受抑制性磷酸化控制'与图中 Wee1/Myt1 标注相悖。\nD【错】错因：生长因子（EGF 等）与受体酪氨酸激酶（EGFR/TKR）结合后，信号经 RAS-RAF-MEK-ERK 与 PI3K-AKT-mTOR 级联传递，最终上调并激活 CycD-CDK4/6 与 CycE-CDK2，再由这些 CDK 在细胞核内磷酸化 Rb——生长因子信号并不直接跨膜进入细胞核磷酸化 Rb，'直接进入细胞核'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/cdk-cyclin-annotated.jpg",
-  "image": {
-   "caption": "哺乳动物细胞周期的分子引擎：上方 EGFR/TKR 生长因子信号（RAS-ERK、PI3K-AKT-mTOR）驱动 Cyclin-CDK 序贯激活；中央 Rb-E2F 开关与 CKI（p16/p21/p27/p57）管制 G1/S 限制点；G2/M 处 Wee1/Myt1-CDC25 调控 CycB-CDK1",
-   "credit": "Pellarin I et al., Signal Transduction and Targeted Therapy 2025",
-   "doi": "10.1038/s41392-024-02080-z",
-   "figure": "3",
-   "file": "assets/questions/cell_cycle/cdk-cyclin.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC11734941",
-   "source": "paper"
+  "M1-04-56c166ad": {
+    "concept": "ATM-ATR 检查点通路的效应网络",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图中 DSB 由 MRN 复合体感应并激活 ATM；活化的 ATM 磷酸化 CHK2，CHK2 进而磷酸化并稳定 p53，p53 上调 p21 抑制 CDK4/6，使细胞阻滞在 G1/S 检查点——这是'传感器→介质→效应器'的经典三级级联，选项中 ATM-CHK2-p53-p21-CDK4/6 的顺序与图一致。\nB【对】依据：图中复制叉停滞/核酸切除暴露的 ssDNA 被 RPA 包被并招募 ATR-ATRIP 激活 ATR；ATR 磷酸化 CHK1，CHK1 使 CDC25A 磷酸化而被泛素化降解，从而抑制 CDK2 活性、减缓 S 期复制叉进展（S 期检查点）——'ATR-CHK1-CDC25A-CDK2 轴建立 S 期阻滞'正确。\nC【错】错因：CHK1 对 CDC25C 的作用是磷酸化使其失活/降解，从而阻止 CDC25C 去除 CDK1 的抑制性磷酸（T14/Y15），最终抑制而非促进 CDK1 激活；选项把'抑制 CDC25C'说成'激活 CDC25C→促进 CDK1'，方向性错误（图中 G2/M 通路为 CHK1→CDC25C 抑制线，同时 WEE1/PKMYT1 磷酸化维持 CDK1 失活）。\nD【错】错因：G1/S 检查点主要依赖 ATM-CHK2-p53-p21 轴对 CDK4/6 的抑制；p53 缺失时该转录依赖的持久阻滞机制受损，DNA 损伤细胞仍可进入 S 期（基因组不稳定），这正是 p53 缺失肿瘤细胞 DNA 损伤检查点'失效'的要害；选项中 p53 缺失而 G1 检查点完好与机制矛盾。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/dna-checkpoint-annotated.jpg",
+    "image": {
+      "caption": "DNA 损伤检查点信号网络：上）DSB→ATM，ssDNA/复制应激→ATR；中）CHK2/CHK1 两级介质；下）p53-p21（G1 阻滞）、CDC25A（S 期阻滞）、CDC25C-WEE1/PKMYT1（G2/M 阻滞）等效应分子",
+      "credit": "Li Q et al., Signal Transduction and Targeted Therapy 2023",
+      "doi": "10.1038/s41392-023-01548-8",
+      "figure": "4",
+      "file": "assets/questions/cell_cycle/dna-checkpoint.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC10485079",
+      "source": "paper"
+    },
+    "question": "图为 DNA 损伤检查点信号网络：DSB（左）与复制应激产生的 ssDNA（右）分别激活 ATM 与 ATR，经 CHK2/CHK1 两级级联调控 p53、CDC25、WEE1 等效应分子，进而建立 G1/S、S 期与 G2/M 检查点。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Li Q, Qian W, Zhang Y, et al.",
+        "doi": "10.1038/s41392-023-01548-8",
+        "journal": "Signal Transduction and Targeted Therapy",
+        "title": "A new wave of innovations within the DNA damage response",
+        "year": 2023
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "DSB 激活 ATM→CHK2→p53→p21 通路，抑制 CDK4/6 从而建立 G1/S 检查点阻滞"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "复制应激产生的单链 DNA 激活 ATR→CHK1，CHK1 磷酸化 CDC25A 促其降解，进而抑制 CDK2 导致 S 期阻滞"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "G2/M 检查点中 CHK1 通过磷酸化激活 CDC25C，促使 CDK1 去抑制而进入有丝分裂"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "p53 缺失的细胞其 G1/S DNA 损伤检查点依然完整，DNA 损伤细胞会被可靠地阻断在 G1 期"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_cycle",
+      "module_1",
+      "细胞生物学",
+      "检查点",
+      "DNA损伤应答"
+    ],
+    "target": "competition",
+    "type": "mtf"
   },
-  "question": "图为哺乳动物细胞周期调控总览：生长因子经受体酪氨酸激酶信号入胞，驱动 Cyclin-CDK 复合体序贯激活；Rb-E2F、CKI（p16/p21/p27/p57）、Wee1/Myt1 与 CDC25 等构成多层开关。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Pellarin I, Dall'Acqua A, Favero A, et al.",
-    "doi": "10.1038/s41392-024-02080-z",
-    "journal": "Signal Transduction and Targeted Therapy",
-    "title": "Cyclin-dependent protein kinases and cell cycle regulation in biology and disease",
-    "year": 2025
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "CycD-CDK4/6 与 CycE-CDK2 依次磷酸化 Rb，释放转录因子 E2F 驱动 S 期基因表达，是 G1→S 限制点的核心开关"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "p16、p21、p27 等 CDK 抑制蛋白通过直接结合 CDK 阻断周期进程，其功能缺失可解除限制点管制、促进增殖"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "CycB-CDK1 进入 M 期的激活仅需要 CAK 的激活环磷酸化，不受 Wee1/Myt1 抑制性磷酸化的控制"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "EGF 等生长因子与其受体结合后，会直接进入细胞核磷酸化 Rb，从而解除对 E2F 的抑制"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_cycle",
-   "module_1",
-   "细胞生物学",
-   "细胞周期",
-   "CDK"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-04-77e90279": {
+    "concept": "Cyclin-CDK-Rb 轴的细胞周期引擎与生长因子信号",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图中 G1 期（限制点）附近显示 CycD-CDK4/6 首先使 Rb 发生初始磷酸化，随后 CycE-CDK2 完成高磷酸化，使 Rb 释放被其束缚的转录因子 E2F，游离 E2F 驱动 S 期所需基因（DNA 复制机器）表达——'Rb-E2F 轴是 G1→S 转换的关键开关'与教科书的限制点模型一致，选项因果关系正确。\nB【对】依据：图中 CKI（CDK 抑制蛋白）如 p16/p21/p27/p57 通过对 CDK-cyclin 复合体的直接抑制阻断周期进程：p16 特异抑制 CycD-CDK4/6，p21/p27 广谱抑制多种 G1/S CDK。抑癌基因 CDKN2A（p16）缺失或 p21 下调会使限制点管制失效，促进异常增殖，'CKI 缺失可解除制动、促增殖'正确。\nC【错】错因：CycB-CDK1（图中 G2/M 处）的活性受双重磷酸化开关调节：CAK 需磷酸化其激活环 T 环上的苏氨酸，而 Wee1/Myt1 激酶磷酸化 T14/Y15 的抑制位点使酶失活，进入 M 期前 CDC25 去除这些抑制性磷酸才使 CycB-CDK1 完全激活；'只需 CAK 激活、不受抑制性磷酸化控制'与图中 Wee1/Myt1 标注相悖。\nD【错】错因：生长因子（EGF 等）与受体酪氨酸激酶（EGFR/TKR）结合后，信号经 RAS-RAF-MEK-ERK 与 PI3K-AKT-mTOR 级联传递，最终上调并激活 CycD-CDK4/6 与 CycE-CDK2，再由这些 CDK 在细胞核内磷酸化 Rb——生长因子信号并不直接跨膜进入细胞核磷酸化 Rb，'直接进入细胞核'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/cdk-cyclin-annotated.jpg",
+    "image": {
+      "caption": "哺乳动物细胞周期的分子引擎：上方 EGFR/TKR 生长因子信号（RAS-ERK、PI3K-AKT-mTOR）驱动 Cyclin-CDK 序贯激活；中央 Rb-E2F 开关与 CKI（p16/p21/p27/p57）管制 G1/S 限制点；G2/M 处 Wee1/Myt1-CDC25 调控 CycB-CDK1",
+      "credit": "Pellarin I et al., Signal Transduction and Targeted Therapy 2025",
+      "doi": "10.1038/s41392-024-02080-z",
+      "figure": "3",
+      "file": "assets/questions/cell_cycle/cdk-cyclin.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC11734941",
+      "source": "paper"
+    },
+    "question": "图为哺乳动物细胞周期调控总览：生长因子经受体酪氨酸激酶信号入胞，驱动 Cyclin-CDK 复合体序贯激活；Rb-E2F、CKI（p16/p21/p27/p57）、Wee1/Myt1 与 CDC25 等构成多层开关。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Pellarin I, Dall'Acqua A, Favero A, et al.",
+        "doi": "10.1038/s41392-024-02080-z",
+        "journal": "Signal Transduction and Targeted Therapy",
+        "title": "Cyclin-dependent protein kinases and cell cycle regulation in biology and disease",
+        "year": 2025
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "CycD-CDK4/6 与 CycE-CDK2 依次磷酸化 Rb，释放转录因子 E2F 驱动 S 期基因表达，是 G1→S 限制点的核心开关"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "p16、p21、p27 等 CDK 抑制蛋白通过直接结合 CDK 阻断周期进程，其功能缺失可解除限制点管制、促进增殖"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "CycB-CDK1 进入 M 期的激活仅需要 CAK 的激活环磷酸化，不受 Wee1/Myt1 抑制性磷酸化的控制"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "EGF 等生长因子与其受体结合后，会直接进入细胞核磷酸化 Rb，从而解除对 E2F 的抑制"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_cycle",
+      "module_1",
+      "细胞生物学",
+      "细胞周期",
+      "CDK"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        欢迎提想法！先看看 [README](https://github.com/astrnox/BioQuest#roadmap) 的 Roadmap，可能已经在计划里了。
+        欢迎提想法！先看看 [README](https://github.com/astrnox/TATAbox#roadmap) 的 Roadmap，可能已经在计划里了。
   - type: textarea
     id: problem
     attributes:

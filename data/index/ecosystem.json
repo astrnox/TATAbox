@@ -1,19 +1,19 @@
 {
- "M3-01-370aad72": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 34,
-  "module": "module_3",
-  "src": "ecosystem",
-  "tag": "ecosystem",
-  "tags": [
-   "ecosystem",
-   "module_3",
-   "生态学",
-   "生态系统的能量流动"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-370aad72": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 34,
+    "module": "module_3",
+    "src": "ecosystem",
+    "tag": "ecosystem",
+    "tags": [
+      "ecosystem",
+      "module_3",
+      "生态学",
+      "生态系统的能量流动"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,19 +1,19 @@
 {
- "M1-01-ebf918bf": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 51,
-  "module": "module_1",
-  "src": "dna_structure",
-  "tag": "dna_structure",
-  "tags": [
-   "dna_structure",
-   "module_1",
-   "分子生物学",
-   "DNA 双螺旋结构"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-ebf918bf": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 51,
+    "module": "module_1",
+    "src": "dna_structure",
+    "tag": "dna_structure",
+    "tags": [
+      "dna_structure",
+      "module_1",
+      "分子生物学",
+      "DNA 双螺旋结构"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

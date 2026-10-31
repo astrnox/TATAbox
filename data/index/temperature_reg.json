@@ -1,19 +1,19 @@
 {
- "M3-01-3d4873ff": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 38,
-  "module": "module_3",
-  "src": "temperature_reg",
-  "tag": "temperature_reg",
-  "tags": [
-   "temperature_reg",
-   "module_3",
-   "动物生理学",
-   "体温调节机制"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-3d4873ff": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 38,
+    "module": "module_3",
+    "src": "temperature_reg",
+    "tag": "temperature_reg",
+    "tags": [
+      "temperature_reg",
+      "module_3",
+      "动物生理学",
+      "体温调节机制"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

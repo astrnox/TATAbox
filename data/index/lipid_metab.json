@@ -1,19 +1,19 @@
 {
- "M1-01-e8980473": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 36,
-  "module": "module_1",
-  "src": "lipid_metab",
-  "tag": "lipid_metab",
-  "tags": [
-   "lipid_metab",
-   "module_1",
-   "生物化学",
-   "脂肪酸氧化与酮体"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-e8980473": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 36,
+    "module": "module_1",
+    "src": "lipid_metab",
+    "tag": "lipid_metab",
+    "tags": [
+      "lipid_metab",
+      "module_1",
+      "生物化学",
+      "脂肪酸氧化与酮体"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

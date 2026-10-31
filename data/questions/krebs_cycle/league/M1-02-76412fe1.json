@@ -1,58 +1,58 @@
 {
- "concept": "致癌代谢物抑制表观遗传双加氧酶的因果链",
- "difficulty": "league",
- "explanation": "A【对】依据：图中枢框列出 D-2HG、富马酸、琥珀酸三种致癌代谢物。三者均为二羧酸类，与 α-KG（2-酮戊二酸）结构相似，可占据 α-KG 依赖性双加氧酶（α-KGDD）的辅底物口袋而无法被氧化利用，从而竞争性抑制 TET（DNA 去甲基化酶）、JMJ 家族组蛋白去甲基化酶及 PHD（脯氨酰羟化酶）等，这是'结构类似物→竞争性抑制'的核心机制。\nB【对】依据：TET 酶以 α-KG 与 O₂ 为辅底物，催化 5-甲基胞嘧啶（5mC）氧化为 5-羟甲基胞嘧啶（5hmC）等，启动 DNA 去甲基化；当 TET 被 D-2HG/琥珀酸/富马酸抑制时，DNA 呈超甲基化状态并伴组蛋白甲基化改变（图中 Epigenetic regulation 面板），阻断造血/神经等细胞分化，'抑制 TET 导致 DNA 超甲基化与分化阻滞'正确。\nC【对】依据：图中 Pseudohypoxia 面板显示琥珀酸/富马酸抑制 PHD（羟化 HIF-1α 使其被 VHL-E3 泛素化降解的酶），使缺氧诱导因子 HIF-1α 在常氧下也稳定累积、与 HIF-1β 二聚化入核驱动血管生成等靶基因转录——'伪缺氧'状态，'维持常氧稳定（伪缺氧）'正确。\nD【错】错因：D-2HG 并非由 FH（富马酸水合酶）产生——FH 突变导致的是富马酸蓄积；D-2HG 由 IDH1/2 致癌突变体（新功能酶）将 α-KG 还原生成。把'产生 2-HG'的酶错记为 FH，属于酶-代谢物对应关系错误。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-epi-annotated.jpg",
- "image": {
-  "caption": "致癌代谢物的多效作用：(中) 2-HG/富马酸/琥珀酸蓄积；(左) 伪缺氧（PHD-HIF-1α 通路）与表观遗传调控（TET/JMJD/FTO）；(右) 异常代谢、基因组合不稳定等六个效应面板",
-  "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
-  "doi": "10.1186/s12929-025-01186-y",
-  "figure": "2",
-  "file": "assets/questions/krebs_cycle/onco-epi.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC12424225",
-  "source": "paper"
- },
- "question": "图汇总了 IDH1/2、SDH、FH 突变导致的致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积对各细胞过程的'多效'作用，包括表观遗传调控与伪缺氧等六个效应面板。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Sarkar S, Chang CI, Jean J, et al.",
-   "doi": "10.1186/s12929-025-01186-y",
-   "journal": "Journal of Biomedical Science",
-   "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
-   "year": 2025
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "D-2HG、琥珀酸、富马酸作为 α-KG 的结构类似物，可竞争性抑制 α-KG 依赖性双加氧酶（TET、JMJ 去甲基化酶、PHD）"
+  "concept": "致癌代谢物抑制表观遗传双加氧酶的因果链",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中枢框列出 D-2HG、富马酸、琥珀酸三种致癌代谢物。三者均为二羧酸类，与 α-KG（2-酮戊二酸）结构相似，可占据 α-KG 依赖性双加氧酶（α-KGDD）的辅底物口袋而无法被氧化利用，从而竞争性抑制 TET（DNA 去甲基化酶）、JMJ 家族组蛋白去甲基化酶及 PHD（脯氨酰羟化酶）等，这是'结构类似物→竞争性抑制'的核心机制。\nB【对】依据：TET 酶以 α-KG 与 O₂ 为辅底物，催化 5-甲基胞嘧啶（5mC）氧化为 5-羟甲基胞嘧啶（5hmC）等，启动 DNA 去甲基化；当 TET 被 D-2HG/琥珀酸/富马酸抑制时，DNA 呈超甲基化状态并伴组蛋白甲基化改变（图中 Epigenetic regulation 面板），阻断造血/神经等细胞分化，'抑制 TET 导致 DNA 超甲基化与分化阻滞'正确。\nC【对】依据：图中 Pseudohypoxia 面板显示琥珀酸/富马酸抑制 PHD（羟化 HIF-1α 使其被 VHL-E3 泛素化降解的酶），使缺氧诱导因子 HIF-1α 在常氧下也稳定累积、与 HIF-1β 二聚化入核驱动血管生成等靶基因转录——'伪缺氧'状态，'维持常氧稳定（伪缺氧）'正确。\nD【错】错因：D-2HG 并非由 FH（富马酸水合酶）产生——FH 突变导致的是富马酸蓄积；D-2HG 由 IDH1/2 致癌突变体（新功能酶）将 α-KG 还原生成。把'产生 2-HG'的酶错记为 FH，属于酶-代谢物对应关系错误。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-epi-annotated.jpg",
+  "image": {
+    "caption": "致癌代谢物的多效作用：(中) 2-HG/富马酸/琥珀酸蓄积；(左) 伪缺氧（PHD-HIF-1α 通路）与表观遗传调控（TET/JMJD/FTO）；(右) 异常代谢、基因组合不稳定等六个效应面板",
+    "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+    "doi": "10.1186/s12929-025-01186-y",
+    "figure": "2",
+    "file": "assets/questions/krebs_cycle/onco-epi.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12424225",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "TET 受抑制后 5mC 无法被氧化，DNA 呈超甲基化状态，并可解释突变细胞的分化阻滞表型"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "琥珀酸/富马酸抑制 PHD 使 HIF-1α 在常氧下不被羟基化降解，形成'伪缺氧'并驱动血管生成相关转录"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "D-2HG 由 FH（富马酸水合酶）突变体催化富马酸生成，故 FH 突变同时引起富马酸与 2-HG 蓄积"
-  }
- ],
- "subject": "生物化学",
- "tags": [
-  "krebs_cycle",
-  "module_1",
-  "生物化学",
-  "TCA循环",
-  "致癌代谢物",
-  "表观遗传"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "图汇总了 IDH1/2、SDH、FH 突变导致的致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积对各细胞过程的'多效'作用，包括表观遗传调控与伪缺氧等六个效应面板。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Sarkar S, Chang CI, Jean J, et al.",
+      "doi": "10.1186/s12929-025-01186-y",
+      "journal": "Journal of Biomedical Science",
+      "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+      "year": 2025
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "D-2HG、琥珀酸、富马酸作为 α-KG 的结构类似物，可竞争性抑制 α-KG 依赖性双加氧酶（TET、JMJ 去甲基化酶、PHD）"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "TET 受抑制后 5mC 无法被氧化，DNA 呈超甲基化状态，并可解释突变细胞的分化阻滞表型"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "琥珀酸/富马酸抑制 PHD 使 HIF-1α 在常氧下不被羟基化降解，形成'伪缺氧'并驱动血管生成相关转录"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "D-2HG 由 FH（富马酸水合酶）突变体催化富马酸生成，故 FH 突变同时引起富马酸与 2-HG 蓄积"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "krebs_cycle",
+    "module_1",
+    "生物化学",
+    "TCA循环",
+    "致癌代谢物",
+    "表观遗传"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

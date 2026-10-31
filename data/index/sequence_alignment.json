@@ -1,19 +1,19 @@
 {
- "M4-01-33d67c21": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 45,
-  "module": "module_4",
-  "src": "sequence_alignment",
-  "tag": "sequence_alignment",
-  "tags": [
-   "sequence_alignment",
-   "module_4",
-   "生物信息学",
-   "序列比对与打分矩阵"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-33d67c21": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 45,
+    "module": "module_4",
+    "src": "sequence_alignment",
+    "tag": "sequence_alignment",
+    "tags": [
+      "sequence_alignment",
+      "module_4",
+      "生物信息学",
+      "序列比对与打分矩阵"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

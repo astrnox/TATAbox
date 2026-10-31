@@ -1,38 +1,38 @@
 {
- "concept": "基因组拼接与质量评估",
- "difficulty": "league",
- "explanation": "A【对】依据：长重复序列使读段定位不唯一，导致拼接图产生歧义与断裂。\nB【对】依据：N50 反映拼接片段的长度分布，越大说明连续性越好。\nC【错】错因：适度提高覆盖度有助于纠错，覆盖度与错误率并非单调正相关。\nD【对】依据：长读段可跨越整个重复单元，明确两侧连接关系，显著改善拼接。",
- "question": "研究者对某新物种进行全基因组测序与拼接。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "重复序列是基因组拼接的主要难点之一"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "Contig N50 越大通常表示拼接连续性越好"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "测序覆盖度越高，拼接错误一定越多"
-  },
-  {
-   "answer": true,
-   "label": "D",
-   "text": "长读长测序有助于跨越重复区，提升拼接质量"
-  }
- ],
- "subject": "生物信息学",
- "tags": [
-  "genome_assembly",
-  "module_4",
-  "生物信息学",
-  "基因组拼接与质量评估"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "基因组拼接与质量评估",
+  "difficulty": "league",
+  "explanation": "A【对】依据：长重复序列使读段定位不唯一，导致拼接图产生歧义与断裂。\nB【对】依据：N50 反映拼接片段的长度分布，越大说明连续性越好。\nC【错】错因：适度提高覆盖度有助于纠错，覆盖度与错误率并非单调正相关。\nD【对】依据：长读段可跨越整个重复单元，明确两侧连接关系，显著改善拼接。",
+  "question": "研究者对某新物种进行全基因组测序与拼接。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "重复序列是基因组拼接的主要难点之一"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Contig N50 越大通常表示拼接连续性越好"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "测序覆盖度越高，拼接错误一定越多"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "长读长测序有助于跨越重复区，提升拼接质量"
+    }
+  ],
+  "subject": "生物信息学",
+  "tags": [
+    "genome_assembly",
+    "module_4",
+    "生物信息学",
+    "基因组拼接与质量评估"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

@@ -425,6 +425,18 @@
   border-radius: var(--radius-md, 8px);
 }
 
+/* M-13：暗色下浅黄提示框会整块发亮，换暗表面 + 暖色描边/标题 */
+[data-theme="dark"] .phet-modal-fallback {
+  background: var(--color-surface-sunken, #1a201d);
+  border-color: var(--color-warm, #d4a87e);
+}
+[data-theme="dark"] .phet-modal-fallback-title {
+  color: var(--color-warm, #d4a87e);
+}
+[data-theme="dark"] .phet-modal-fallback p {
+  color: var(--text-secondary, #a8b8ac);
+}
+
 .phet-modal-fallback-title {
   font-weight: 700;
   color: #8a5a20;

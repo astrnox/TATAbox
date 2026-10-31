@@ -1,87 +1,87 @@
 {
- "M1-01-5516890d": {
-  "concept": "蛋白质结构预测与序列-结构-功能关系",
-  "difficulty": "league",
-  "explanation": "A【对】依据：Anfinsen 原理指出氨基酸序列包含折叠所需的全部信息，但体内折叠常需 Hsp70/Hsp90 等分子伴侣防止错误聚集，协助达到热力学最稳态。\nB【对】依据：AlphaFold 的核心创新之一是利用 MSA 中残基对的共进化信号（mutual information / direct coupling analysis）推断空间接触约束，再经 Evoformer 和结构模块迭代优化三维坐标。\nC【错】错因：AlphaFold 采用端到端深度学习，直接从 MSA 和模板特征预测结构，不依赖实验解析的同源模板（与同源建模有本质区别），这也是其能预测无同源结构蛋白的原因。\nD【错】错因：蛋白质结构比序列更保守，远缘同源蛋白（序列相似度 < 20% 的 'twilight zone'）仍可保持相似的核心折叠（如 TIM 桶折叠广泛分布于不同酶类）。\n【思路引导】蛋白质结构预测先分清两类方法：同源建模依靠已解析的模板结构，端到端深度学习（如 AlphaFold）直接从序列与多序列比对特征预测且可预测无同源结构的蛋白；Anfinsen 原理回答“序列决定结构”，分子伴侣只协助折叠、不改变这段序列信息。",
-  "question": "研究者用 AlphaFold 类 AI 模型预测某蛋白与配体的结合复合物结构。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Abramson J et al.",
-    "doi": "10.1038/s41586-024-07487-w",
-    "journal": "Nature",
-    "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
-    "year": 2024
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "蛋白质的三维结构主要由其氨基酸序列决定，但折叠过程常需分子伴侣辅助"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "AlphaFold 等模型利用多序列比对中的共进化信息推断残基间空间接触"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "AlphaFold 预测蛋白质结构时必须以实验解析的同源结构作为模板"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "同源蛋白一级序列相似度越低，其高级结构相似度必然越低"
-   }
-  ],
-  "subject": "生物化学",
-  "tags": [
-   "amino_acid_metab",
-   "module_1",
-   "生物化学",
-   "蛋白质结构",
-   "AlphaFold"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M1-02-411970b0": {
-  "concept": "尿素循环",
-  "difficulty": "league",
-  "explanation": "A【错】错因：尿素循环前两步在线粒体，其余步骤在胞质溶胶，需两个区室协作完成。\nB【对】依据：氨基甲酰磷酸提供游离氨来源的氮，精氨酸代琥珀酸带入天冬氨酸的氮，共同构成尿素。\nC【错】错因：氨基甲酰磷酸合成与精氨酸代琥珀酸合成共消耗相当于 4 个高能磷酸键的 ATP。\nD【错】错因：尿素仅在肝脏经尿素循环合成，肾脏只负责将其滤过排出。",
-  "question": "氨基酸分解产生的氨主要在肝脏转化为尿素后经肾排出。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": false,
-    "label": "A",
-    "text": "尿素循环只发生在线粒体基质内即可完成"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "一分子尿素含两个氮原子，一个来自游离氨、另一个来自天冬氨酸"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "尿素循环不消耗 ATP，是能量中性过程"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "尿素在肾脏合成并随尿液排出体外"
-   }
-  ],
-  "subject": "生物化学",
-  "tags": [
-   "amino_acid_metab",
-   "module_1",
-   "生物化学",
-   "尿素循环"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-01-5516890d": {
+    "concept": "蛋白质结构预测与序列-结构-功能关系",
+    "difficulty": "league",
+    "explanation": "A【对】依据：Anfinsen 原理指出氨基酸序列包含折叠所需的全部信息，但体内折叠常需 Hsp70/Hsp90 等分子伴侣防止错误聚集，协助达到热力学最稳态。\nB【对】依据：AlphaFold 的核心创新之一是利用 MSA 中残基对的共进化信号（mutual information / direct coupling analysis）推断空间接触约束，再经 Evoformer 和结构模块迭代优化三维坐标。\nC【错】错因：AlphaFold 采用端到端深度学习，直接从 MSA 和模板特征预测结构，不依赖实验解析的同源模板（与同源建模有本质区别），这也是其能预测无同源结构蛋白的原因。\nD【错】错因：蛋白质结构比序列更保守，远缘同源蛋白（序列相似度 < 20% 的 'twilight zone'）仍可保持相似的核心折叠（如 TIM 桶折叠广泛分布于不同酶类）。\n【思路引导】蛋白质结构预测先分清两类方法：同源建模依靠已解析的模板结构，端到端深度学习（如 AlphaFold）直接从序列与多序列比对特征预测且可预测无同源结构的蛋白；Anfinsen 原理回答“序列决定结构”，分子伴侣只协助折叠、不改变这段序列信息。",
+    "question": "研究者用 AlphaFold 类 AI 模型预测某蛋白与配体的结合复合物结构。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Abramson J et al.",
+        "doi": "10.1038/s41586-024-07487-w",
+        "journal": "Nature",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "year": 2024
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "蛋白质的三维结构主要由其氨基酸序列决定，但折叠过程常需分子伴侣辅助"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "AlphaFold 等模型利用多序列比对中的共进化信息推断残基间空间接触"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "AlphaFold 预测蛋白质结构时必须以实验解析的同源结构作为模板"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "同源蛋白一级序列相似度越低，其高级结构相似度必然越低"
+      }
+    ],
+    "subject": "生物化学",
+    "tags": [
+      "amino_acid_metab",
+      "module_1",
+      "生物化学",
+      "蛋白质结构",
+      "AlphaFold"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-02-411970b0": {
+    "concept": "尿素循环",
+    "difficulty": "league",
+    "explanation": "A【错】错因：尿素循环前两步在线粒体，其余步骤在胞质溶胶，需两个区室协作完成。\nB【对】依据：氨基甲酰磷酸提供游离氨来源的氮，精氨酸代琥珀酸带入天冬氨酸的氮，共同构成尿素。\nC【错】错因：氨基甲酰磷酸合成与精氨酸代琥珀酸合成共消耗相当于 4 个高能磷酸键的 ATP。\nD【错】错因：尿素仅在肝脏经尿素循环合成，肾脏只负责将其滤过排出。",
+    "question": "氨基酸分解产生的氨主要在肝脏转化为尿素后经肾排出。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "尿素循环只发生在线粒体基质内即可完成"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "一分子尿素含两个氮原子，一个来自游离氨、另一个来自天冬氨酸"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "尿素循环不消耗 ATP，是能量中性过程"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "尿素在肾脏合成并随尿液排出体外"
+      }
+    ],
+    "subject": "生物化学",
+    "tags": [
+      "amino_acid_metab",
+      "module_1",
+      "生物化学",
+      "尿素循环"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

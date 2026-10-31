@@ -263,18 +263,15 @@
   <link rel="dns-prefetch" href="https://phet.colorado.edu">
   <link rel="preconnect" href="https://phet.colorado.edu" crossorigin>
 
-  <!-- 字体：本地霞鹜文楷 v1.522，woff2 压缩（7.6MB），零网络请求 -->
-  <!-- 字体 preload：与 CSS/JS 并行下载，避免"进度条走完页面仍在加载"时字体还在路上；
-       crossorigin 为字体 preload 必需（字体以 CORS 模式请求） -->
-  <link rel="preload" as="font" type="font/woff2" href="fonts/lxgw-wenkai.woff2?v=1.522" crossorigin>
+  <!-- 字体：本地霞鹜文楷子集（约 857KB，覆盖站点内容用字；缺失字符回退系统字体）
+       不再 preload：把首屏带宽优先让给 JS/CSS；font-display:swap 保证文字先可见 -->
   <style>
     @font-face {
       font-family: 'LXGW WenKai';
-      src: url('fonts/lxgw-wenkai.woff2?v=1.522') format('woff2');
+      src: url('fonts/lxgw-wenkai-subset.woff2?v=subset1') format('woff2');
       font-weight: 100 900;
       font-style: normal;
       font-display: swap;
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE10-FE1F, U+FE30-FE4F, U+FF00-FFEF;
     }
   </style>
 
@@ -699,7 +696,7 @@
     <div class="footer-content">
       <div class="footer-top">
         <div class="footer-brand">TATABOX — 高中生物学习平台</div>
-        <a href="https://github.com/astrnox/BioQuest" target="_blank" rel="noopener" class="footer-github" title="GitHub 仓库">
+        <a href="https://github.com/astrnox/TATAbox" target="_blank" rel="noopener" class="footer-github" title="GitHub 仓库">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           <span>GitHub</span>
         </a>
@@ -768,6 +765,8 @@
   <!-- Issue #105/#123/#130/#128：事件集中管理 / 离线队列 / 离线提示 / 生物彩蛋 -->
   <script src="js/core/offline-queue.js?v=20260828a" defer></script>
   <script src="js/core/offline-status.js?v=20260828a" defer></script>
+  <!-- M-14：离线题库包（按需下载完整/核心题库，断网可刷题） -->
+  <script src="js/core/offline-bank.js?v=20261031a" defer></script>
   <!-- 首页联赛倒计时：全站唯一实现与唯一目标日期（app.js 的 reinitHomeComponents 复用 window.BioQuestCountdown） -->
   <script src="js/engagement/countdown.js?v=20261007a" defer></script>
   <script src="js/engagement/eggs.js?v=20260828a" defer></script>
@@ -783,27 +782,22 @@
   <script src="js/algo/fsrs-algorithm.js?v=20260723d" defer></script>
   <!-- v5.0 Tier1 vendor 库：仅保留首页/学习主链路真正用到的库；
        体积大且仅特定路由使用/当前未使用的库（katex/mhchem/gsap 无业务调用，
-       mammoth/pdf.js 仅文档导入用）不再首屏加载，mammoth/pdf 由 document-tools 用时注入 -->
+       mammoth/pdf.js 仅文档导入用）不再首屏加载 -->
   <script src="js/vendor/dexie.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/chart.umd.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/jszip.min.js?v=20260723d" defer></script>
-  <!-- d3 (BSD-3): cal-heatmap 4.x 依赖（d3-selection/d3-color/d3-fetch），
-       必须在 cal-heatmap.min.js 之前加载，否则 cal-heatmap 会报
-       "Cannot read properties of undefined (reading 'timeSecond')" -->
-  <script src="js/vendor/d3.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/cal-heatmap.min.js?v=20260723d" defer></script>
+  <!-- H-04 / M-06：移除首屏 dead weight（约 723KB）：
+       chart.umd / d3 / cal-heatmap / jszip，以及无调用方的
+       analytics-charts / study-heatmap / document-tools 集成模块均已删除。
+       若未来恢复图表/热力图/压缩导出，请在对应路由内按需 loadScriptOnce。 -->
   <!-- v5.0 Tier1 集成模块 -->
   <script src="js/integrations/vendor-init.js?v=20260723d" defer></script>
   <!-- OCR 多引擎抽象层：L0 OCR.space(可选云) → L1 Vision → L2 PaddleOCR → L3 Tesseract → L4 OCRad 五级降级；
        photo-quiz.js / wrongbook.js / 社区发帖图片等模块均通过 window.OcrEngine 调用。
        文件本身非常轻（仅调度与懒加载框架），真正的引擎 CDN 在使用时按需下载。 -->
   <script src="js/integrations/ocr-engine.js?v=20260916a" defer></script>
-  <script src="js/integrations/study-heatmap.js?v=20260723d" defer></script>
-  <script src="js/integrations/analytics-charts.js?v=20260723d" defer></script>
   <script src="js/integrations/diagram-renderer.js?v=20260723d" defer></script>
-  <script src="js/integrations/molecule-viewer.js?v=20260723d" defer></script>
-  <script src="js/integrations/document-tools.js?v=20260826a" defer></script>
   <script src="js/integrations/data-store.js?v=20260723d" defer></script>
+  <!-- H-04：molecule-viewer / rdkit-viewer / sketch-pad / community-enhanced / genome-browser
+       改为路由级懒加载（见 app.js _moduleDir 的 integrations 分组）。 -->
   <!-- Issue #14：FSRS 优化器/分片哈希 Web Worker 核心（纯函数，双上下文：Worker + 主线程桶底）。
        必须先于 fsrs-optimizer.js 加载，提供 window.FSRSWorkerCore 供主线程兜底。 -->
   <script src="js/algo/fsrs.worker.js?v=20260817a" defer></script>
@@ -811,13 +805,8 @@
   <!-- Tier 2 集成模块：IRT增强 + BKT知识追踪 + RDKit分子 + Excalidraw白板（vendor 懒加载） -->
   <script src="js/integrations/irt-enhanced.js?v=20260723d" defer></script>
   <script src="js/integrations/bkt-engine.js?v=20260723d" defer></script>
-  <script src="js/integrations/rdkit-viewer.js?v=20260723d" defer></script>
-  <script src="js/integrations/sketch-pad.js?v=20260809a" defer></script>
-  <!-- Tier 2 增强模块：社区(quikchat) + AI对话(marked) -->
-  <script src="js/integrations/community-enhanced.js?v=20260723d" defer></script>
+  <!-- Tier 2 增强模块：AI对话(marked) 保持首屏可用；社区增强/白板/基因组浏览器已路由级懒加载 -->
   <script src="js/integrations/ai-chat-enhanced.js?v=20260723d" defer></script>
-  <!-- Tier 2 增强模块：基因组浏览器（igv.js MIT，访问 #/genome 时懒加载 igv.min.js ~1.5MB） -->
-  <script src="js/integrations/genome-browser.js?v=20260723d" defer></script>
   <!-- question-utils.js / loader.js 已从 HTML 移除，由 practice/exam 模块按需加载 -->
   <!-- 降级导航：由 boot-lazy.js 统一处理（app.js 未加载时兜底 data-route 点击） -->
   <!-- 全局调试脚本（已禁用）
@@ -895,6 +884,23 @@
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
   <script src="js/core/app.js?v=20261018b" defer></script>
+  <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
+  <script src="js/core/app-auth.js?v=20261031a" defer></script>
+  <script src="js/core/app-home.js?v=20261031a" defer></script>
+  <script src="js/core/app-router.js?v=20261031a" defer></script>
+  <script src="js/core/app-modules.js?v=20261031a" defer></script>
+  <script src="js/core/app-pages.js?v=20261031a" defer></script>
+  <!-- M-01：隐私政策页/首次提示自 app.js 拆分，保持全局入口并由 app.js 运行时调用 -->
+  <script src="js/core/app-privacy.js?v=20261031a" defer></script>
+  <!-- M-01：捐赠弹窗自 app.js 拆分，window.openDonation 入口保持不变 -->
+  <script src="js/core/app-donation.js?v=20261031a" defer></script>
+  <!-- M-01：主题切换 / 移动端菜单 / 标签页预取自 app.js 拆分 -->
+  <script src="js/core/app-shell.js?v=20261031a" defer></script>
+  <!-- M-01：AI 课堂入口页自 app.js 拆分 -->
+  <script src="js/core/app-classroom.js?v=20261031a" defer></script>
+  <!-- M-01：启动流程 / 反馈弹窗自 app.js 拆分（boot 最后加载并触发 initApp） -->
+  <script src="js/core/app-boot.js?v=20261031a" defer></script>
+  <script src="js/core/app-feedback.js?v=20261031a" defer></script>
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>

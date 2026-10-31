@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-9da0aabae2c1'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-49bab6255436'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -20,6 +20,12 @@ var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
  *    不影响应用外壳（避免"旧壳新数据"错位：外壳版本由 CACHE_VERSION 控制）。
  * ====================================================================== */
 var DATA_CACHE_NAME = 'bioquest-data';
+
+/* M-14：用户主动下载的离线题库包（与 runtime DATA_CACHE 分离）。
+ *  - core：manifest + 全部分片（index/bank）+ 101 题精练 + 40 题逻辑；
+ *  - full：core + resource/all.json（2,873 道联赛真题，约 4.7MB）。
+ * 独立缓存便于用户一键清理，也不会被 manifest 版本更新时的 purge 误删。 */
+var OFFLINE_BANK_CACHE = 'bioquest-offline-bank-v1';
 
 /* ========================================================================
  * 首屏缓存策略（修复"新用户首次加载很久/卡住/需要刷新"）
@@ -51,6 +57,17 @@ var SKELETON_ASSETS = [
   './css/learning-hub.css',
   // 初始化关键 JS（其余 defer 都靠网络命中后自然进缓存）
   './js/core/app.js',
+  './js/core/app-auth.js',
+  './js/core/app-home.js',
+  './js/core/app-router.js',
+  './js/core/app-modules.js',
+  './js/core/app-pages.js',
+  './js/core/app-privacy.js',
+  './js/core/app-donation.js',
+  './js/core/app-shell.js',
+  './js/core/app-classroom.js',
+  './js/core/app-boot.js',
+  './js/core/app-feedback.js',
   './js/core/auth-ui.js',
   './js/core/app-search.js',
   './js/core/app-leaderboard.js',
@@ -84,6 +101,7 @@ var WARMUP_PHASE_1 = [
   './css/habits.css',
   './css/study.css',
   './css/user.css',
+  './css/user-styles.css',
   './css/resources.css',
   './css/ebook.css',
   './css/announcements.css',
@@ -105,6 +123,7 @@ var WARMUP_PHASE_1 = [
   // Issue #105 / #123 / #128：通用交互小模块
   './js/core/offline-queue.js',
   './js/core/offline-status.js',
+  './js/core/offline-bank.js',
   './js/engagement/eggs.js',
   // 全站统一题图：渲染入口 + 查看器样式（Viewer.js 本体按需懒加载）
   './js/core/figure-viewer.js',
@@ -120,6 +139,19 @@ var WARMUP_PHASE_2 = [
   // 路由核心
   './js/pages/quiz.js',
   './js/pages/practice.js',
+  './js/pages/practice-share.js',
+  './js/pages/practice-pull.js',
+  './js/pages/practice-filters.js',
+  './js/pages/practice-quiz.js',
+  './js/pages/practice-data.js',
+  './js/pages/practice-rating.js',
+  './js/pages/practice-session.js',
+  './js/pages/practice-redo.js',
+  './js/pages/practice-input.js',
+  './js/pages/practice-sync.js',
+  './js/pages/practice-styles.js',
+  './js/pages/practice-helpers.js',
+  './js/pages/practice-page.js',
   './js/pages/exam.js',
   './js/pages/dashboard.js',
   './js/pages/cards.js',
@@ -145,6 +177,14 @@ var WARMUP_PHASE_2 = [
   './js/pages/trends.js',
   './js/pages/discussion.js',
   './js/pages/user.js',
+  './js/pages/user-styles.js',
+  './js/pages/user-avatar.js',
+  './js/pages/user-profile.js',
+  './js/pages/user-ai-key.js',
+  './js/pages/user-points.js',
+  './js/pages/user-data.js',
+  './js/pages/user-panels.js',
+  './js/pages/user-page.js',
   './js/pages/community.js',
   './js/pages/bounty.js',
   './js/pages/bio-lab.js',
@@ -180,10 +220,10 @@ var WARMUP_PHASE_2 = [
   './data/videos.json'
 ];
 
-// 这些"很重"的文件不做 install 预缓存，避免首次注册 SW 时 install 超时
-// 它们靠首次访问时的网络自然进入 Cache First 缓存
+// 这些"很重"的文件不做 install 预缓存，避免首次注册 SW 时 install 超时。
+// 除视频外，其余库首次访问后仍走策略 5 进入 Cache First 缓存。
 var NEVER_PRECACHE = [
-  './fonts/lxgw-wenkai.woff2',        // 7.7MB 字体
+  './fonts/lxgw-wenkai-subset.woff2', // 857KB 子集字体（缺失字符回退系统字体）
   './js/vendor/three.min.js',         // ~1MB Three.js
   './js/vendor/3Dmol-min.js',         // ~1MB 3Dmol
   './js/vendor/cytoscape.min.js',     // ~700KB
@@ -197,8 +237,8 @@ var NEVER_PRECACHE = [
   './js/vendor/react-dom.production.min.js',
   './js/vendor/igv.min.js',
   './js/vendor/mammoth.browser.min.js',
-  // 视频实体（单条最大 15MB）：绝不 install 预缓存，避免首次注册 SW 超时；
-  // 首次播放时经 Cache First 自然进入缓存（见 data/videos.json 五要素清单）
+  // 视频实体（单条最大 15MB）：既不 install 预缓存，也永不写入 Cache Storage
+  // （M-07：播放器发 Range/206，Cache API 无法正确处理，且会挤占题库缓存配额）
   './videos/mitosis-cell-division.mp4',
   './videos/cd8-t-cell-mhc1.mp4',
   './videos/phagocytosis-leucocytes.mp4'
@@ -445,6 +485,14 @@ self.addEventListener('fetch', function (event) {
     return;
   }
 
+  // M-07：视频/音频不进入 Cache Storage。
+  // 单条视频可达 15MB，且播放器普遍发 Range 请求，Cache API 无法正确处理 206；
+  // 盲目 Cache First 会把 150MB+ 媒体塞进用户配额，进而挤掉题库/应用缓存。
+  if (request.destination === 'video' || request.destination === 'audio') {
+    event.respondWith(fetch(request));
+    return;
+  }
+
   // 策略 5: 其他资源 - 缓存优先
   event.respondWith(
     safeCacheMatch(request).then(function (cached) {
@@ -468,6 +516,73 @@ function purgeDataCaches() {
       keys.filter(function (k) { return k === DATA_CACHE_NAME || k.indexOf('bioquest-data-') === 0; })
         .map(function (k) { return caches.delete(k).catch(function () {}); })
     );
+  });
+}
+
+/* ==================== M-14：离线题库包下载 / 清理 / 状态 ==================== */
+function getOfflineBankUrls(level) {
+  return fetch('./data/manifest.json', { cache: 'no-cache' }).then(function (response) {
+    if (!response.ok) throw new Error('manifest HTTP ' + response.status);
+    return response.json();
+  }).then(function (manifest) {
+    var urls = [
+      './data/manifest.json',
+      './data/quiz.json',
+      './data/logic_questions.json'
+    ];
+    var files = (manifest && manifest.files) || {};
+    Object.keys(files).forEach(function (rel) {
+      // manifest 的键为 bank/xxx.json 与 index/xxx.json
+      urls.push('./data/' + rel);
+    });
+    if (level === 'full') {
+      urls.push('./resource/count.json', './resource/all.json');
+    }
+    return urls;
+  });
+}
+
+function cacheOfflineBank(level) {
+  return getOfflineBankUrls(level).then(function (urls) {
+    return caches.open(OFFLINE_BANK_CACHE).then(function (cache) {
+      var cached = 0, failed = 0, bytes = 0, index = 0;
+      // 6 路并发：160+ 个分片逐个串行会因往返延迟拖到数分钟
+      function worker() {
+        if (index >= urls.length) return Promise.resolve();
+        var url = urls[index++];
+        return fetch(url, { cache: 'no-cache' }).then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          var len = Number(response.headers.get('content-length')) || 0;
+          return cache.put(url, response.clone()).then(function () {
+            cached++;
+            bytes += len;
+          });
+        }).catch(function () {
+          failed++;
+        }).then(worker);
+      }
+      var workers = [];
+      for (var i = 0; i < 6; i++) workers.push(worker());
+      return Promise.all(workers).then(function () {
+        return { cached: cached, failed: failed, bytes: bytes };
+      });
+    });
+  });
+}
+
+function offlineBankStatus() {
+  return caches.has(OFFLINE_BANK_CACHE).then(function (exists) {
+    if (!exists) return { core: false, full: false, entries: 0 };
+    return caches.open(OFFLINE_BANK_CACHE).then(function (cache) {
+      return cache.keys().then(function (keys) {
+        var hasCore = false, hasFull = false;
+        keys.forEach(function (req) {
+          if (req.url.indexOf('/data/manifest.json') !== -1) hasCore = true;
+          if (req.url.indexOf('/resource/all.json') !== -1) hasFull = true;
+        });
+        return { core: hasCore, full: hasFull, entries: keys.length };
+      });
+    });
   });
 }
 
@@ -504,6 +619,34 @@ self.addEventListener('message', function (event) {
       // 「检查更新」发现题库新版本：清空题库 runtime cache，页面重取后自然落新缓存
       event.waitUntil(purgeDataCaches().then(function () {
         _reply({ type: 'DATA_CACHE_PURGED' });
+      }));
+      break;
+    case 'CACHE_OFFLINE_BANK':
+      event.waitUntil(cacheOfflineBank(data.level === 'full' ? 'full' : 'core').then(function (result) {
+        _reply({
+          type: 'OFFLINE_BANK_DONE',
+          level: data.level === 'full' ? 'full' : 'core',
+          cached: result.cached,
+          failed: result.failed,
+          bytes: result.bytes
+        });
+      }).catch(function (err) {
+        _reply({ type: 'OFFLINE_BANK_DONE', level: data.level, cached: 0, failed: 1, bytes: 0, error: err.message });
+      }));
+      break;
+    case 'CLEAR_OFFLINE_BANK':
+      event.waitUntil(caches.delete(OFFLINE_BANK_CACHE).then(function () {
+        _reply({ type: 'OFFLINE_BANK_CLEARED' });
+      }));
+      break;
+    case 'OFFLINE_BANK_STATUS':
+      event.waitUntil(offlineBankStatus().then(function (status) {
+        _reply({
+          type: 'OFFLINE_BANK_STATUS',
+          core: status.core,
+          full: status.full,
+          entries: status.entries
+        });
       }));
       break;
     case 'WARM_UP':

@@ -1,19 +1,19 @@
 {
- "M4-01-4f8cb76e": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 41,
-  "module": "module_4",
-  "src": "natural_selection",
-  "tag": "natural_selection",
-  "tags": [
-   "natural_selection",
-   "module_4",
-   "进化生物学",
-   "自然选择与适应性进化"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-4f8cb76e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 41,
+    "module": "module_4",
+    "src": "natural_selection",
+    "tag": "natural_selection",
+    "tags": [
+      "natural_selection",
+      "module_4",
+      "进化生物学",
+      "自然选择与适应性进化"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

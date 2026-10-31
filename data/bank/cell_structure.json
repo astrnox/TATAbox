@@ -1,40 +1,40 @@
 {
- "M1-01-e9bacfd5": {
-  "concept": "原核细胞与真核细胞的比较",
-  "difficulty": "league",
-  "explanation": "A【对】依据：支原体为原核生物，无核膜，遗传物质集中于拟核。\nB【对】依据：支原体是少数无细胞壁的原核生物，直径约 0.1–0.3 μm，小于动物细胞。\nC【错】错因：支原体含 70S 核糖体，能独立合成蛋白质，这是其独立生活的基础。\nD【错】错因：支原体具有含固醇的细胞膜，细胞膜是所有细胞的基本边界结构。",
-  "question": "支原体是目前已知最小、能独立生活的细胞。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "支原体无核膜包被，DNA 集中于拟核区域"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "支原体无细胞壁，细胞体积一般小于动物细胞"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "支原体无核糖体，蛋白质合成完全依赖宿主"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "支原体无细胞膜，细胞质直接暴露于环境"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "cell_structure",
-   "module_1",
-   "细胞生物学",
-   "原核细胞与真核细胞的比较"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-01-e9bacfd5": {
+    "concept": "原核细胞与真核细胞的比较",
+    "difficulty": "league",
+    "explanation": "A【对】依据：支原体为原核生物，无核膜，遗传物质集中于拟核。\nB【对】依据：支原体是少数无细胞壁的原核生物，直径约 0.1–0.3 μm，小于动物细胞。\nC【错】错因：支原体含 70S 核糖体，能独立合成蛋白质，这是其独立生活的基础。\nD【错】错因：支原体具有含固醇的细胞膜，细胞膜是所有细胞的基本边界结构。",
+    "question": "支原体是目前已知最小、能独立生活的细胞。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "支原体无核膜包被，DNA 集中于拟核区域"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "支原体无细胞壁，细胞体积一般小于动物细胞"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "支原体无核糖体，蛋白质合成完全依赖宿主"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "支原体无细胞膜，细胞质直接暴露于环境"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_structure",
+      "module_1",
+      "细胞生物学",
+      "原核细胞与真核细胞的比较"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

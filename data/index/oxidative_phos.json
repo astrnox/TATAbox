@@ -1,37 +1,37 @@
 {
- "M1-01-dabbd60f": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 47,
-  "module": "module_1",
-  "src": "oxidative_phos",
-  "tag": "oxidative_phos",
-  "tags": [
-   "oxidative_phos",
-   "module_1",
-   "生物化学",
-   "电子传递链与氧化磷酸化"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M1-05-0d21288c": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 158,
-  "module": "module_1",
-  "src": "oxidative_phos",
-  "tag": "oxidative_phos",
-  "tags": [
-   "oxidative_phos",
-   "module_1",
-   "生物化学",
-   "氧化磷酸化",
-   "线粒体膜电位"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-dabbd60f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 47,
+    "module": "module_1",
+    "src": "oxidative_phos",
+    "tag": "oxidative_phos",
+    "tags": [
+      "oxidative_phos",
+      "module_1",
+      "生物化学",
+      "电子传递链与氧化磷酸化"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-05-0d21288c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 158,
+    "module": "module_1",
+    "src": "oxidative_phos",
+    "tag": "oxidative_phos",
+    "tags": [
+      "oxidative_phos",
+      "module_1",
+      "生物化学",
+      "氧化磷酸化",
+      "线粒体膜电位"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

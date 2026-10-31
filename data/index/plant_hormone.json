@@ -1,19 +1,19 @@
 {
- "M2-01-c15afc54": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 53,
-  "module": "module_2",
-  "src": "plant_hormone",
-  "tag": "plant_hormone",
-  "tags": [
-   "plant_hormone",
-   "module_2",
-   "植物生理学",
-   "生长素的极性运输与生理作用"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-c15afc54": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 53,
+    "module": "module_2",
+    "src": "plant_hormone",
+    "tag": "plant_hormone",
+    "tags": [
+      "plant_hormone",
+      "module_2",
+      "植物生理学",
+      "生长素的极性运输与生理作用"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

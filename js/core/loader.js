@@ -235,6 +235,11 @@ var _cdnDisabled = false;     // 会话级 kill-switch
 var CDN_FETCH_TIMEOUT = 8000; // CDN 单请求超时
 var CDN_MAX_FAILURES = 3;     // 连续失败阈值，达到后本会话禁用 CDN
 var CDN_BASE_TEMPLATE = 'https://cdn.jsdelivr.net/gh/';
+// H-05：TATABOX 仓库快照 ~253MB，超过 jsDelivr 的 50MB 包限制，
+// 该通道会返回 "Package size exceeded..." 而不是分片内容。
+// generate-bio-shards.js 会在 manifest 里写 cdn:false，loader 据此关闭该通道；
+// fork/小仓库如仍想启用，可把 manifest.cdn 改为 true（或设此开关为 true）。
+var CDN_FALLBACK_ENABLED = true;
 
 /**
  * 从 manifest 解析 CDN 基址（git 锚点 + repo slug 均合法才启用）。
@@ -242,6 +247,9 @@ var CDN_BASE_TEMPLATE = 'https://cdn.jsdelivr.net/gh/';
  * @returns {string|null}
  */
 function _resolveCdnBase(mf) {
+  if (!CDN_FALLBACK_ENABLED) return null;
+  // 仓库体积超限（jsDelivr 50MB 包限制）时由生成器写入 cdn:false
+  if (mf && mf.cdn === false) return null;
   if (!mf || !mf.git || !mf.repo) return null;
   var sha = String(mf.git);
   var repo = String(mf.repo);
