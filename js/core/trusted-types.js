@@ -33,8 +33,14 @@
       createScript: function () {
         throw new Error('Trusted Types: script 注入已阻止');
       },
-      createScriptURL: function () {
-        throw new Error('Trusted Types: script URL 注入已阻止');
+      createScriptURL: function (url) {
+        // 允许相对路径与 http(s) 脚本；拒绝可执行伪协议。
+        // Report-Only 阶段浏览器也会调用该策略，直接 throw 会误伤正常脚本加载。
+        var s = String(url == null ? '' : url).trim();
+        if (/^(javascript|data|blob|filesystem|vbscript):/i.test(s)) {
+          throw new Error('Trusted Types: script URL 注入已阻止');
+        }
+        return s;
       }
     });
   } catch (e) {

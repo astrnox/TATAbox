@@ -45,9 +45,15 @@ test('DOMPurify 缺失时默认策略 fail-closed', () => {
   expect(out).toContain('&lt;img');
 });
 
-test('createScript / createScriptURL 直接抛错', () => {
-  expect(() => policy.createScript('alert(1)')).toThrow();
+test('createScriptURL 放行正常脚本、拒绝伪协议', () => {
+  expect(policy.createScriptURL('/js/core/app.js')).toBe('/js/core/app.js');
+  expect(policy.createScriptURL('https://cdn.jsdelivr.net/x.js')).toBe('https://cdn.jsdelivr.net/x.js');
   expect(() => policy.createScriptURL('javascript:alert(1)')).toThrow();
+  expect(() => policy.createScriptURL('data:text/javascript,alert(1)')).toThrow();
+});
+
+test('createScript 直接抛错', () => {
+  expect(() => policy.createScript('alert(1)')).toThrow();
 });
 
 test('index / SW / 响应头均已接入', () => {

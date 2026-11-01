@@ -96,8 +96,7 @@ function showFilterPanel() {
   _showFilterPanelImpl.apply(this, arguments);
 }
 
-// 挂载到 window 对象，供 app.js 调用
-window.initPractice = initPractice;
+// 挂载到 window 对象，供 app.js 调用（initPractice 由 practice-page.js 挂载）
 window.enableHeaderAutoHide = enableHeaderAutoHide;
 window.disableHeaderAutoHide = disableHeaderAutoHide;
 window.showLastQuestionEffect = showLastQuestionEffect;

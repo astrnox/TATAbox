@@ -201,10 +201,7 @@ function showUndoToast(message, onUndo, options) {
   return { dismiss: dismiss };
 }
 
-// 暴露到全局
-window.showFeedbackModal = showFeedbackModal;
-window.closeFeedbackModal = closeFeedbackModal;
-window.handleFeedbackSubmit = handleFeedbackSubmit;
+// 暴露到全局（反馈弹窗三个入口由 app-feedback.js 自行挂载）
 window.showToast = showToast;
 window.showUndoToast = showUndoToast;
 

@@ -158,6 +158,11 @@ function handleFeedbackSubmit() {
  * @returns {{ dismiss: Function }}
  */
 
+// M-01：反馈弹窗入口随实现一起挂载，避免 app.js 引用未定义函数
+window.showFeedbackModal = showFeedbackModal;
+window.closeFeedbackModal = closeFeedbackModal;
+window.handleFeedbackSubmit = handleFeedbackSubmit;
+
 // 注册到全站唯一命名空间（window.BioQuest；旧全局别名保留）
 (function () {
   var BQ = (typeof window !== 'undefined') ? (window.BioQuest = window.BioQuest || {}) : {};
