@@ -9,9 +9,9 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(self), microphone=(self), geolocation=()
-  # M-05 渐进：Trusted Types 先以 Report-Only 观察违规，不阻断线上；
-  # 待所有 innerHTML 收敛到 safeHtml/setSafeHtml 后再切换为强制模式。
-  Content-Security-Policy-Report-Only: require-trusted-types-for 'script'; trusted-types dompurify default 'allow-duplicates'
+  # M-05：Trusted Types 强制模式。存量 innerHTML 由默认策略统一经 safeHtml 消毒；
+  # 已通过 16 条主路由 + 后台全 tab + 社区发帖弹窗的强制模式浏览器实测（0 违规）。
+  Content-Security-Policy: require-trusted-types-for 'script'; trusted-types dompurify default 'allow-duplicates'
 
 
 # 不可变资源（哈希/内容寻址或基本不变）：长缓存

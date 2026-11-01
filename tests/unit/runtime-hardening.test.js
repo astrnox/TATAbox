@@ -20,10 +20,14 @@ describe('M-05 HTML/SVG 清洗 fail-closed', () => {
     expect(read('js/core/utils.js')).toMatch(/return escapeHtml\(s\);/);
   });
 
-  test('Trusted Types 以 Report-Only 渐进观察', () => {
-    expect(read('_headers')).toMatch(/Content-Security-Policy-Report-Only: require-trusted-types-for 'script'/);
-    expect(read('_headers')).toMatch(/trusted-types dompurify/);
-    expect(read('.htaccess')).toMatch(/Content-Security-Policy-Report-Only/);
+  test('Trusted Types 强制模式已启用', () => {
+    const headers = read('_headers');
+    expect(headers).toMatch(/Content-Security-Policy: require-trusted-types-for 'script'/);
+    expect(headers).toMatch(/trusted-types dompurify default/);
+    expect(headers).not.toMatch(/Content-Security-Policy-Report-Only/);
+    const htaccess = read('.htaccess');
+    expect(htaccess).toMatch(/require-trusted-types-for 'script'/);
+    expect(htaccess).not.toMatch(/Content-Security-Policy-Report-Only/);
   });
 
   test('Mermaid SVG 在 DOMPurify 缺失时拒绝插入', () => {
