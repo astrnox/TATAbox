@@ -894,7 +894,7 @@ function _showPasswordSetup(onConfirm) {
     attackStart.textContent = '停止';
     attackFill.style.transform = 'scaleX(0)';
     attackFill.style.background = '#d63a2a';
-    attackLog.innerHTML = '';
+    attackLog.replaceChildren();
     var tried = 0;
     var lastMs = Date.now();
     var speed = 50 + Math.floor(Math.random() * 30);

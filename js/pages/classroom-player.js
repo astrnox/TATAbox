@@ -468,7 +468,7 @@
 
   function _renderStageForScene(scene) {
     var stage = elements.stage;
-    stage.innerHTML = '';
+    stage.replaceChildren();
 
     if (scene.type === 'intro' || scene.type === 'lecture' || scene.type === 'simulate'
         || scene.type === 'discuss' || scene.type === 'discussion' || scene.type === 'animation') {

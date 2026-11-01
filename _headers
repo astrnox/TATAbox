@@ -11,7 +11,7 @@
   Permissions-Policy: camera=(self), microphone=(self), geolocation=()
   # M-05 渐进：Trusted Types 先以 Report-Only 观察违规，不阻断线上；
   # 待所有 innerHTML 收敛到 safeHtml/setSafeHtml 后再切换为强制模式。
-  Content-Security-Policy-Report-Only: require-trusted-types-for 'script'; trusted-types dompurify 'allow-duplicates'
+  Content-Security-Policy-Report-Only: require-trusted-types-for 'script'; trusted-types dompurify default 'allow-duplicates'
 
 
 # 不可变资源（哈希/内容寻址或基本不变）：长缓存

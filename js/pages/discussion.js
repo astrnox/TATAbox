@@ -549,7 +549,7 @@ function _openCustomAgentModal() {
 /* ============== 渲染消息列表 ============== */
 function _renderMessages(container) {
   if (!container) return;
-  container.innerHTML = '';
+  container.replaceChildren();
 
   var hasContent = (_discussionState.mode === 'group' && _discussionState.rounds.length > 0) ||
                    (_discussionState.mode === 'pipeline' && _discussionState.pipelineRuns.length > 0);

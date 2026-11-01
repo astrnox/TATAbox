@@ -1940,13 +1940,13 @@ function updateBreadcrumb(sectionId) {
   if (!bc) return;
 
   if (!sectionId) {
-    bc.innerHTML = '';
+    bc.replaceChildren();
     return;
   }
 
   const data = findSection(sectionId);
   if (!data) {
-    bc.innerHTML = '';
+    bc.replaceChildren();
     return;
   }
 

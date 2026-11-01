@@ -903,13 +903,13 @@ function _renderMoodWidget() {
   var container = document.getElementById('dash-mood-widget');
   if (!container) return;
   if (!window.BioQuestMoodTracker || typeof window.BioQuestMoodTracker.renderMoodWidget !== 'function') {
-    container.innerHTML = '';
+    container.replaceChildren();
     return;
   }
   try {
     window.BioQuestMoodTracker.renderMoodWidget(container);
   } catch (e) {
-    container.innerHTML = '';
+    container.replaceChildren();
   }
 }
 

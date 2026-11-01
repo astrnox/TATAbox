@@ -1403,7 +1403,7 @@
         fontSize: '14px', background: '#fff', color: DEEP
       });
       btnClear.addEventListener('click', function () {
-        tasks.length = 0; list.innerHTML = ''; fill.style.width = '0'; _updateStat();
+        tasks.length = 0; list.replaceChildren(); fill.style.width = '0'; _updateStat();
       });
       var btnJump = document.createElement('button');
       btnJump.textContent = '前往错题本列表';

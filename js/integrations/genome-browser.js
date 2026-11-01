@@ -107,7 +107,7 @@
   function createBrowser(container, opts) {
     return ensureLoaded().then(function () {
       // 清空旧实例
-      container.innerHTML = '';
+      container.replaceChildren();
       return window.igv.createBrowser(container, opts);
     });
   }

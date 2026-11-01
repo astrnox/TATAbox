@@ -148,7 +148,7 @@
         buffer = '';
         isFinished = false;
         if (renderTimer) clearTimeout(renderTimer);
-        el.innerHTML = '';
+        el.replaceChildren();
       },
       /**
        * 获取当前 buffer

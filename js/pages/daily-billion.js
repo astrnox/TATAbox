@@ -1487,7 +1487,7 @@
     wrapperEl.style.cssText = 'position:fixed;inset:0;z-index:10001;';
     document.body.appendChild(wrapperEl);
 
-    if (targetEl) { targetEl.innerHTML = ''; }
+    if (targetEl) { targetEl.replaceChildren(); }
 
     pageEl = document.createElement('div');
     pageEl.className = 'db-page';
@@ -1543,7 +1543,7 @@
       localStorage.setItem('bioquest_billion_v3', JSON.stringify(data));
     } catch(e) {}
     cleanupDom();
-    if (targetEl) { targetEl.innerHTML = ''; targetEl.style.cssText = ''; }
+    if (targetEl) { targetEl.replaceChildren(); targetEl.style.cssText = ''; }
     targetEl = null;
     _sbClient = null;
   }

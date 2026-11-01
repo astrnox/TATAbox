@@ -497,7 +497,7 @@ function teacherRenderStats() {
   if (!area) return;
 
   if (list.length === 0) {
-    area.innerHTML = '';
+    area.replaceChildren();
     return;
   }
 

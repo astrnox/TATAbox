@@ -752,7 +752,7 @@
     state.empathyMode = !!s.empathyMode;
     // 重渲染对话
     if (state.elements.body) {
-      state.elements.body.innerHTML = '';
+      state.elements.body.replaceChildren();
       state.history.forEach(function (h) {
         if (h.role === 'user') {
           _addMessage('user', h.text);
@@ -901,7 +901,7 @@
     state.history = [];
     state.empathyMode = false;
     state.currentSessionId = null;
-    if (state.elements.body) state.elements.body.innerHTML = '';
+    if (state.elements.body) state.elements.body.replaceChildren();
     _updateButtonStates();
     _updateModeBadge();
   }

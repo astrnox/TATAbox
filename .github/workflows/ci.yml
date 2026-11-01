@@ -122,6 +122,10 @@ jobs:
         # 内联样式数与硬编码色值数采用棘轮（不得超过基线，只许下降）。
         run: npm run audit:design
 
+      - name: HTML sink 棘轮（M-05）
+        # 禁止新增裸写 innerHTML；只允许向 safeHtml/setSafeHtml 迁移（计数只降不升）。
+        run: npm run audit:sinks
+
       - name: 发布资源压缩构建验证（Issue #112）
         # 验证 js/css 可经 esbuild 压缩进 dist/（构建产物不入库）,
         # 且首屏同步 CSS 可合并为 bundle-core.css（Issue #108）。

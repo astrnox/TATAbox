@@ -234,7 +234,7 @@
     }
     if (_quikchatContainer) {
       // 清空容器 DOM 即可解除所有内部事件监听（quikchat 把事件绑在容器内 DOM 上）
-      _quikchatContainer.innerHTML = '';
+      _quikchatContainer.replaceChildren();
       _quikchatContainer = null;
     }
   }

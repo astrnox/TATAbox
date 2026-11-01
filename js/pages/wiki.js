@@ -547,7 +547,7 @@
     var wrap = $('#wikiTagFilters');
     if (!wrap) return;
     var tags = allTags();
-    if (tags.length === 0) { wrap.innerHTML = ''; return; }
+    if (tags.length === 0) { wrap.replaceChildren(); return; }
     var html = '<button class="wiki-chip sm' + (!state.filter.tag ? ' active' : '') + '" data-tag="">全部</button>';
     tags.slice(0, 24).forEach(function (t) {
       html += '<button class="wiki-chip sm' + (state.filter.tag === t.name ? ' active' : '') + '" data-tag="' + esc(t.name) + '">' + esc(t.name) + '<span class="wiki-chip-n">' + t.count + '</span></button>';

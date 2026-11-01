@@ -35,7 +35,7 @@
     // 允许重复初始化：每次切换 scene 都重新建 canvas
     destroy();
     container = parentEl;
-    container.innerHTML = '';
+    container.replaceChildren();
 
     var wrapper = document.createElement('div');
     wrapper.className = 'bq-whiteboard-wrapper';

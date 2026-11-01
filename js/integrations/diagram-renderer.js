@@ -87,7 +87,7 @@
     var diagramId = 'mmd-' + (++_seq);
 
     // 重置容器
-    container.innerHTML = '';
+    container.replaceChildren();
     container.removeAttribute('data-processed');
 
     return new Promise(function (resolve) {

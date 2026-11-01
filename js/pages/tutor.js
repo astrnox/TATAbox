@@ -565,7 +565,7 @@ function _newTutorSession() {
  */
 function _renderTutorMessages(container) {
   if (!container) return;
-  container.innerHTML = '';
+  container.replaceChildren();
   if (_tutorState.messages.length === 0) {
     var mode = TUTOR_MODES[_tutorState.currentMode];
     container.innerHTML = '<div class="tutor-welcome">' +

@@ -401,7 +401,7 @@
     document.getElementById('rd-analyze-btn').addEventListener('click', function() { _doAnalyze(q); });
     document.getElementById('rd-practice-btn').addEventListener('click', function() { _doPractice(q); });
     document.getElementById('rd-collapse-btn').addEventListener('click', function() {
-      host.innerHTML = '';
+      host.replaceChildren();
       _expandedId = null;
     });
   }

@@ -48,7 +48,7 @@
       } catch (e) {}
       container._bioquestViewer = null;
     }
-    container.innerHTML = '';
+    container.replaceChildren();
   }
 
   function render(containerId, pdbData, opts) {

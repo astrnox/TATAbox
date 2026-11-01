@@ -737,7 +737,7 @@ function _bindAiGoalEvents(container) {
           }
           showToast('已添加 ' + added + ' 个每日小目标到打卡列表', 'success');
           resultDiv.style.display = 'none';
-          resultDiv.innerHTML = '';
+          resultDiv.replaceChildren();
           input.value = '';
           renderHabitsPage(container);
         });
@@ -747,7 +747,7 @@ function _bindAiGoalEvents(container) {
       if (cancelBtn) {
         cancelBtn.addEventListener('click', function () {
           resultDiv.style.display = 'none';
-          resultDiv.innerHTML = '';
+          resultDiv.replaceChildren();
         });
       }
     });
