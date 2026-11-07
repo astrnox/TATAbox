@@ -16,6 +16,8 @@
     "bump:sw": "node scripts/bump-sw.js",
     "build:css": "node scripts/build-css-bundle.js",
     "build:min": "node scripts/minify-assets.js",
+    "build:prod": "node scripts/build-prod.js",
+    "verify:prod": "node scripts/verify-prod-build.js",
     "build:stats": "node scripts/build-data-stats.js",
     "verify:stats": "node scripts/verify-data-stats.js",
     "verify:migrations": "node scripts/verify-migrations.js",

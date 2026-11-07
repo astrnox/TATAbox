@@ -51,6 +51,16 @@ describe('M-05 HTML/SVG 清洗 fail-closed', () => {
     expect(ocr).not.toMatch(/CDN\.ort|CDN\.paddleocrBrowser|Paddle\.init|ENGINE_NAMES\.PADDLE/);
   });
 
+  test('H-04 首屏脚本不回归：下线模块不再加载，脚本数守住预算', () => {
+    const html = read('index.html');
+    // /classroom 已下线：OpenMAIC 课堂脚本不得重回首屏
+    expect(html).not.toMatch(/vendor\/openmaic/);
+    // 首屏脚本标签数棘轮（当前 80，预算 90）
+    expect((html.match(/<script[^>]+src=/g) || []).length).toBeLessThanOrEqual(90);
+    // daily-billion 改为路由级懒加载，不再静态预置
+    expect(html).not.toMatch(/<script[^>]+js\/pages\/daily-billion\.js/);
+  });
+
   test('考试页题干/子题文本统一转义，题库内容不会注入 HTML', () => {
     const js = read('js/pages/exam.js');
     expect(js).not.toMatch(/<div class="exam-q-stem">\$\{q\.question\.replace/);

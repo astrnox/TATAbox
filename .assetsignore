@@ -1,6 +1,8 @@
 # Cloudflare Workers Assets 排除规则（语法同 .gitignore）
 # 构建环境会执行 bun install，node_modules 必须排除，
 # 否则 workerd 二进制（>100 MiB）会触发「Asset too large」失败。
+# 构建产物（本地 npm run build:prod 生成，不应作为源站资源上传）
+dist/
 node_modules/
 
 # 版本控制 / CI 基础设施

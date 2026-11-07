@@ -62,6 +62,8 @@ npx serve .                  # Node.js
 
 **在线部署**：将整个文件夹上传至 GitHub Pages、Vercel、Netlify、Cloudflare Pages 等任意免费托管平台即可，无需构建步骤。
 
+**生产构建（可选，推荐）**：先 `npm ci`，再 `npm run build:css && npm run build:prod`，把生成的 `dist/` 目录作为站点根目录上传。`dist/` 已完成逐文件压缩、开发目录裁剪与 SW 版本重写，并可用 `npm run verify:prod` 校验体积/引用完整性。
+
 **可选配置**：
 
 - **数据库**：在 [Supabase](https://supabase.com) 创建免费项目，先执行**唯一基线** `sql/schema.sql`，再执行 `sql/migration_tracker.sql`（版本追踪），最后按版本顺序执行 `sql/migration_v2.sql` → `migration_v3_security.sql` → … → `migration_v22_profiles_policy_cleanup.sql`（不要只挑其中几个：`v18` 收紧 `profiles` 权限、`v19` 加固用户名登录 RPC、`v20` 提供管理员用户操作 RPC、`v21` 补齐账号自助注销、`v22` 清理重复/误伤的 profiles 策略，缺一会导致匿名可读邮箱、后台用户管理失效或注销留孤儿账号；`schema_safe.sql` / `incremental_update.sql` 仅为旧库修复脚本，新库不要执行）。**已执行过 v15 的线上库，在部署 v18 后需重跑一次 v15**（其 TOTP 升级管理员函数已加入内部写标记，否则会被 v18 修正后的触发器回滚）。执行顺序必须是 SQL 先于前端；随后把地址与 Key 填入 `js/core/supabase-client.js`（不配置则自动使用浏览器本地存储）

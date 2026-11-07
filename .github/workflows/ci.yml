@@ -126,12 +126,13 @@ jobs:
         # 禁止新增裸写 innerHTML；只允许向 safeHtml/setSafeHtml 迁移（计数只降不升）。
         run: npm run audit:sinks
 
-      - name: 发布资源压缩构建验证（Issue #112）
-        # 验证 js/css 可经 esbuild 压缩进 dist/（构建产物不入库）,
-        # 且首屏同步 CSS 可合并为 bundle-core.css（Issue #108）。
+      - name: 生产构建 + 产物校验（H-04）
+        # 生成可部署的 dist/（逐文件 esbuild 压缩 + 静态资源裁剪 + SW 版本重写），
+        # 并校验必需文件、本地引用完整性、包体与脚本数预算。
         run: |
-          npm run build:min
           npm run build:css
+          npm run build:prod
+          npm run verify:prod
 
       - name: 烟雾测试（Wiki）
         run: npm run test:smoke
@@ -161,11 +162,18 @@ jobs:
         # --with-deps 自动安装浏览器所需的系统共享库。
         run: npx playwright install chromium --with-deps
 
+      - name: 生产构建（E2E 针对 dist 产物）
+        # H-04：真实浏览器直接验证压缩后的生产目录，而不是源码目录。
+        run: |
+          npm run build:css
+          npm run build:prod
+
       - name: 启动静态服务器
         # 静态 SPA 由 python3 提供（与本地开发一致），绑定随机端口避免冲突。
         run: |
+          cd dist
           python3 -m http.server 8091 --bind 127.0.0.1 > /tmp/bioquest-http.log 2>&1 &
-          echo "http server started (127.0.0.1:8091)"
+          echo "http server started (127.0.0.1:8091, root=dist)"
 
       - name: Run Playwright E2E（P1-28）
         # e2e-smoke.js 内置服务器冷启动重试，测试脚本常在服务器就绪前才开始。

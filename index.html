@@ -877,7 +877,6 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/pages/daily-billion.js?v=20261013b" defer></script>
   <script src="js/engagement/points-ui.js?v=20260814a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20260821a" defer></script>
@@ -922,36 +921,7 @@
   <script src="js/engagement/soundscape.js?v=20260803a" defer></script>
   <script src="js/pages/onboarding.js?v=20260803a" defer></script>
   <script src="js/engagement/social-impact.js?v=20260803a" defer></script>
-</head>  <!-- v3.2 OpenMAIC 范式移植：DSL 类型 + Canvas 渲染器 + Action 执行器（封装在 vendor/ 目录） -->
-  <script src="vendor/openmaic/openmaic-dsl.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-renderer.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-actions.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-json-repair.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-action-parser.js?v=20260712k" defer></script>
-  <!-- v3.3 OpenMAIC 完整移植：6 步可视化 + 生成进度页 -->
-  <script src="vendor/openmaic/main-extracted/openmaic-visualizers.js?v=20260712m" defer></script>
-  <script src="vendor/openmaic/main-extracted/openmaic-generation-progress.js?v=20260712m" defer></script>
-  <!-- v3.4 OpenMAIC lib/ 全量移植：utils + store + playback + action + generation + buffer + chat + types + constants + audio -->
-  <script src="vendor/openmaic/openmaic-emitter.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-cn.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-geometry.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-element.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-json-repair.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-actions-types.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-action-parser.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-stage-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-canvas-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-whiteboard-history-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-playback.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-action-engine.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-derived-state.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-stream-buffer.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-agent-loop.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-types.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-constants.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-browser-tts.js?v=20260712j" defer></script>
-  <!-- 注：AI 课堂模块已移除，首屏由 app.js 控制路由，不再加载 classroom.js/pages/classroom-player.js/runner -->
+</head>  <!-- H-04：OpenMAIC 课堂脚本已随 /classroom 路由下线移除，不再进入首屏加载 -->
   <!-- 首页背景为纯 CSS 静态层次（原随机粒子背景脚本已移除：无脚本、零常驻动画） -->
   <!-- PWA Service Worker 注册（外部化 sw-register.js）：DOMContentLoaded 立即启动，配 6s 硬超时兜底 -->
   <script src="js/core/sw-register.js?v=20260820a" defer></script>
