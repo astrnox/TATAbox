@@ -65,16 +65,15 @@ def _read_json(path, default=None):
 def _write_json(path, obj):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
+    # 固定 LF：Windows 默认会写 CRLF，而 manifest 里的 SHA-256 需要跨平台一致
+    with path.open("w", encoding="utf-8", newline="\n") as f:
         f.write(_json_sorted(obj))
 
 
 def _sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    # 统一按 LF 计算摘要：兼容历史上被写成 CRLF 的文件
+    data = Path(path).read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def tag_list():

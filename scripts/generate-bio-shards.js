@@ -322,7 +322,10 @@ function normalizeQuestion(raw) {
  * ============================================================ */
 
 function sha256(absPath) {
-  return crypto.createHash('sha256').update(fs.readFileSync(absPath)).digest('hex');
+  // 统一按 LF 计算，保证 Windows（CRLF 工作区）与 Linux CI 产生同一摘要
+  const raw = fs.readFileSync(absPath);
+  const normalized = Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n'), 'utf8');
+  return crypto.createHash('sha256').update(normalized).digest('hex');
 }
 
 /* ============================================================
