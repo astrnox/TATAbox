@@ -65,7 +65,7 @@ function installFetch(manifest, mode) {
     const u = String(url);
     fetchCalls.push(u);
     if (u.indexOf('data/manifest.json') === 0) return textResponse(JSON.stringify(manifest));
-    if (u.indexOf('https://cdn.jsdelivr.net/gh/') === 0) {
+    if (u.indexOf('https://cdn.jsdelivr.net/gh/') === 0 || u.indexOf('https://raw.githubusercontent.com/') === 0) {
       if (mode === 'cdn-fail' || mode === 'all-fail') throw new TypeError('network unreachable');
       return textResponse(u.indexOf('bioid-map') !== -1 ? '{}' : SHARD_TEXT);
     }
@@ -97,6 +97,7 @@ function freshLoader() {
 }
 
 const CDN_PREFIX = 'https://cdn.jsdelivr.net/gh/';
+const RAW_PREFIX = 'https://raw.githubusercontent.com/';
 
 describe('Issue #15：同源优先分发与 CDN 兜底', () => {
   test('manifest 带 git/repo 锚点 → 同源（Cloudflare 边缘）命中，不发 CDN 请求', async () => {
@@ -138,6 +139,19 @@ describe('Issue #15：同源优先分发与 CDN 兜底', () => {
     // 同源被尝试过（返回陈旧内容触发兜底）
     expect(fetchCalls).toContain('data/bank/cell.json');
     expect(fetchCalls.some((u) => u.indexOf(CDN_PREFIX) === 0 && u.indexOf('/data/bank/cell.json') !== -1)).toBe(true);
+  });
+
+  test('manifest.cdn=false（仓库超 50MB）→ 改用 raw.githubusercontent 兜底', async () => {
+    freshLoader();
+    const sha = '3333333333333333333333333333333333333333';
+    installFetch(makeManifest({ rev: 15, cdn: false, git: sha, repo: 'astrnox/TATAbox' }), 'origin-fail');
+    const items = await window.loadAllShards();
+    expect(items.length).toBe(1);
+    expect(items[0].question).toContain('细胞膜');
+    const raw = fetchCalls.filter((u) => u.indexOf(RAW_PREFIX + 'astrnox/TATAbox@' + sha + '/data/bank/cell.json') === 0);
+    expect(raw.length).toBe(1);
+    // jsDelivr 包超限，不应再尝试该域名
+    expect(fetchCalls.filter((u) => u.indexOf(CDN_PREFIX) === 0).length).toBe(0);
   });
 
   test('manifest 无 git/repo 锚点 → 不发任何 CDN 请求（同源直连）', async () => {

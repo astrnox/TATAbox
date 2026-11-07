@@ -20,6 +20,9 @@ sql/
 tests/
 tools/
 
+# H-04：/classroom 下线后 OpenMAIC 课堂脚本已从首屏移除，也不进入部署产物
+vendor/openmaic/
+
 # 仅构建期使用：源码字体 7.6MB，运行时已改用 857KB 子集
 fonts/lxgw-wenkai.woff2
 

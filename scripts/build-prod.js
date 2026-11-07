@@ -40,7 +40,19 @@ const SKIP_FILES = new Set([
 const SKIP_FILES_REL = new Set(['fonts/lxgw-wenkai.woff2']);
 
 function rmrf(p) {
-  fs.rmSync(p, { recursive: true, force: true });
+  fs.rmSync(p, { recursive: true, force: true, maxRetries: 3, retryDelay: 200 });
+}
+
+/**
+ * 清空目录内容但保留目录本身。
+ * Windows 下若某终端/资源管理器把 dist/ 作为当前目录，目录句柄会阻止
+ * rmdir/rename（EPERM），但不影响写入；这里逐个清理子项以兼容该场景。
+ */
+function clearDir(dir) {
+  if (!fs.existsSync(dir)) return;
+  for (const name of fs.readdirSync(dir)) {
+    rmrf(path.join(dir, name));
+  }
 }
 
 function copyFile(from, to) {
@@ -102,7 +114,7 @@ function countIndexScripts() {
 
 function main() {
   console.log('[build-prod] 清理 dist/ …');
-  rmrf(DIST);
+  clearDir(DIST);
 
   if (!fs.existsSync(path.join(ROOT, 'css', 'bundle-core.css'))) {
     console.error('[build-prod] 缺少 css/bundle-core.css，请先运行 npm run build:css');

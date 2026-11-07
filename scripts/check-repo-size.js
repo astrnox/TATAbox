@@ -4,9 +4,10 @@
  *
  * 背景：视频/题目配图/字体/历史归档把仓库快照推到 ~267MB、Git 对象 ~1.15GB，
  * clone/CI/部署成本持续上升；jsDelivr 对 >50MB 包还会直接拒绝。
- * 本脚本在 CI 中对「已跟踪文件快照」设上限，阻止继续无约束增长。
+ * H-05 已把 archive/ 与已下线课堂 vendor 移出主分支；视频仍占 ~150MB，
+ * 后续需迁 Git LFS / R2 / S3。本脚本在 CI 中对「已跟踪文件快照」设上限。
  *
- * 用法：node scripts/check-repo-size.js [--max-mb=300] [--max-file-mb=25]
+ * 用法：node scripts/check-repo-size.js [--max-mb=245] [--max-file-mb=25]
  */
 'use strict';
 
@@ -21,7 +22,7 @@ function arg(name, fallback) {
   return hit ? Number(hit.split('=')[1]) : fallback;
 }
 
-const MAX_MB = arg('max-mb', 300);
+const MAX_MB = arg('max-mb', 245);
 const MAX_FILE_MB = arg('max-file-mb', 25);
 
 const files = execSync('git ls-files', { cwd: ROOT, encoding: 'utf8' })
