@@ -93,7 +93,7 @@ function _privacySection(title, items) {
 function _maybeShowPrivacyNotice() {
   try {
     var seen = false;
-    try { seen = localStorage.getItem('bioquest_privacy_notice_seen') === '1'; } catch (e) {}
+    try { seen = localStorage.getItem('tatabox_privacy_notice_seen') === '1'; } catch (e) {}
     if (seen || typeof document === 'undefined' || !document.body) return;
 
     var el = document.createElement('div');
@@ -131,8 +131,8 @@ function _maybeShowPrivacyNotice() {
     closeBtn.style.cssText = 'border:1px solid var(--accent-text, #3a6b4a);background:var(--accent-text, #3a6b4a);color:#fff;border-radius:8px;padding:6px 14px;font-size:0.82rem;cursor:pointer;white-space:nowrap;';
     closeBtn.style.opacity = '0.5';
     closeBtn.addEventListener('click', function () {
-      try { localStorage.setItem('bioquest_privacy_notice_seen', '1'); } catch (e) {}
-      try { localStorage.setItem('bioquest_age_consent', '1'); } catch (e) {}
+      try { localStorage.setItem('tatabox_privacy_notice_seen', '1'); } catch (e) {}
+      try { localStorage.setItem('tatabox_age_consent', '1'); } catch (e) {}
       if (el.parentNode) el.parentNode.removeChild(el);
     });
     ageInput.addEventListener('change', function () {

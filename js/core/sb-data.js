@@ -33,7 +33,7 @@ function exportUserData() {
     // 游客/本地账号：只导出密码哈希，绝不导出明文
     if (_currentUser.isGuest) {
       try {
-        var savedHash = localStorage.getItem('bioquest_guest_pwdhash');
+        var savedHash = localStorage.getItem('tatabox_guest_pwdhash');
         if (savedHash) {
           data.account.password_hash = savedHash;
           data.account.password_note = '游客模式：仅本地哈希，明文已废弃';
@@ -63,7 +63,7 @@ function exportUserData() {
 
   // 错题数据
   try {
-    var wrongRaw = localStorage.getItem('bioquest_wrong_questions');
+    var wrongRaw = localStorage.getItem('tatabox_wrong_questions');
     if (wrongRaw) {
       data.wrongQuestions = JSON.parse(wrongRaw);
       if (!Array.isArray(data.wrongQuestions)) data.wrongQuestions = [];
@@ -72,7 +72,7 @@ function exportUserData() {
 
   // 收藏数据
   try {
-    var favRaw = localStorage.getItem('bioquest_favorites');
+    var favRaw = localStorage.getItem('tatabox_favorites');
     if (favRaw) {
       data.favorites = JSON.parse(favRaw);
       if (!Array.isArray(data.favorites)) data.favorites = [];
@@ -81,7 +81,7 @@ function exportUserData() {
 
   // 练习记录
   try {
-    var recRaw = localStorage.getItem('bioquest_practice_records');
+    var recRaw = localStorage.getItem('tatabox_practice_records');
     if (recRaw) {
       data.practiceRecords = JSON.parse(recRaw);
       if (!Array.isArray(data.practiceRecords)) data.practiceRecords = [];
@@ -90,7 +90,7 @@ function exportUserData() {
 
   // 旧格式记录合并
   try {
-    var recRaw2 = localStorage.getItem('bioquest_records');
+    var recRaw2 = localStorage.getItem('tatabox_records');
     if (recRaw2) {
       var records2 = JSON.parse(recRaw2);
       if (Array.isArray(records2) && records2.length > 0) {
@@ -101,7 +101,7 @@ function exportUserData() {
 
   // 成就数据
   try {
-    var achRaw = localStorage.getItem('bioquest_achievements');
+    var achRaw = localStorage.getItem('tatabox_achievements');
     if (achRaw) {
       data.achievements = JSON.parse(achRaw);
       if (!Array.isArray(data.achievements)) data.achievements = [];
@@ -110,7 +110,7 @@ function exportUserData() {
 
   // 签到数据
   try {
-    var checkRaw = localStorage.getItem('bioquest_checkin');
+    var checkRaw = localStorage.getItem('tatabox_checkin');
     if (checkRaw) {
       data.checkInData = JSON.parse(checkRaw);
     }
@@ -119,18 +119,18 @@ function exportUserData() {
   // 额外数据：考试记录、学习进度、搜索历史、反馈等
   try {
     var extraPrefixes = [
-      'bioquest_exam_records', 'bioquest_study_progress', 'bioquest_search_history',
-      'bioquest_feedbacks', 'bioquest_guest_session', 'bioquest_device_id',
-      'bioquest_card_progress', 'bioquest_daily_streak', 'bioquest_last_practice'
+      'tatabox_exam_records', 'tatabox_study_progress', 'tatabox_search_history',
+      'tatabox_feedbacks', 'tatabox_guest_session', 'tatabox_device_id',
+      'tatabox_card_progress', 'tatabox_daily_streak', 'tatabox_last_practice'
     ];
     for (var j = 0; j < extraPrefixes.length; j++) {
       var key = extraPrefixes[j];
       var val = localStorage.getItem(key);
       if (val !== null) {
         try {
-          data.extraData[key.replace('bioquest_', '')] = JSON.parse(val);
+          data.extraData[key.replace('tatabox_', '')] = JSON.parse(val);
         } catch (e2) {
-          data.extraData[key.replace('bioquest_', '')] = val;
+          data.extraData[key.replace('tatabox_', '')] = val;
         }
       }
     }
@@ -150,7 +150,7 @@ function downloadUserData() {
   var url = URL.createObjectURL(blob);
   var a = document.createElement('a');
   a.href = url;
-  a.download = 'bioquest_backup_' + _localDateStr() + '.json';
+  a.download = 'tatabox_backup_' + _localDateStr() + '.json';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -176,7 +176,7 @@ function importUserData(jsonData) {
     // 导入账号密码（游客/本地账号）
     if (data.account && data.account.password && data.account.isGuest) {
       try {
-        localStorage.setItem('bioquest_guest_password', data.account.password);
+        localStorage.setItem('tatabox_guest_password', data.account.password);
         imported.password = true;
       } catch (e) {}
     }
@@ -202,13 +202,13 @@ function importUserData(jsonData) {
 
     // 导入错题
     if (Array.isArray(data.wrongQuestions)) {
-      localStorage.setItem('bioquest_wrong_questions', JSON.stringify(data.wrongQuestions));
+      localStorage.setItem('tatabox_wrong_questions', JSON.stringify(data.wrongQuestions));
       imported.wrongQuestions = true;
     }
 
     // 导入收藏
     if (Array.isArray(data.favorites)) {
-      localStorage.setItem('bioquest_favorites', JSON.stringify(data.favorites));
+      localStorage.setItem('tatabox_favorites', JSON.stringify(data.favorites));
       imported.favorites = true;
     }
 
@@ -216,23 +216,23 @@ function importUserData(jsonData) {
     if (Array.isArray(data.practiceRecords)) {
       var existing = [];
       try {
-        var existingRaw = localStorage.getItem('bioquest_practice_records');
+        var existingRaw = localStorage.getItem('tatabox_practice_records');
         if (existingRaw) existing = JSON.parse(existingRaw);
       } catch (e) {}
       var merged = (existing || []).concat(data.practiceRecords);
-      localStorage.setItem('bioquest_practice_records', JSON.stringify(merged));
+      localStorage.setItem('tatabox_practice_records', JSON.stringify(merged));
       imported.practiceRecords = true;
     }
 
     // 导入成就
     if (Array.isArray(data.achievements)) {
-      localStorage.setItem('bioquest_achievements', JSON.stringify(data.achievements));
+      localStorage.setItem('tatabox_achievements', JSON.stringify(data.achievements));
       imported.achievements = true;
     }
 
     // 导入签到数据
     if (data.checkInData && typeof data.checkInData === 'object') {
-      localStorage.setItem('bioquest_checkin', JSON.stringify(data.checkInData));
+      localStorage.setItem('tatabox_checkin', JSON.stringify(data.checkInData));
       imported.checkIn = true;
     }
 
@@ -242,7 +242,7 @@ function importUserData(jsonData) {
       for (var ei = 0; ei < extraKeys.length; ei++) {
         var ek = extraKeys[ei];
         try {
-          localStorage.setItem('bioquest_' + ek, typeof data.extraData[ek] === 'string' ? data.extraData[ek] : JSON.stringify(data.extraData[ek]));
+          localStorage.setItem('tatabox_' + ek, typeof data.extraData[ek] === 'string' ? data.extraData[ek] : JSON.stringify(data.extraData[ek]));
         } catch (e) {}
       }
       imported.extra = extraKeys.length > 0;
@@ -564,7 +564,7 @@ async function getRelatedPracticeQuestions(concepts, limit) {
 /**
  * 从 Supabase 读取用户聚合统计（dashboard._getUserStats 的远端实现）
  * 数据源：practice_records（按 module_num 聚合）+ daily_checkins（连续打卡）
- * @returns {Promise<Object|null>} 与 localStorage 'bioquest_stats' 同构的对象，失败返回 null
+ * @returns {Promise<Object|null>} 与 localStorage 'tatabox_stats' 同构的对象，失败返回 null
  */
 async function getUserStatsFromSupabase() {
   if (!_currentUser || _currentUser.isGuest) return null;
@@ -645,7 +645,7 @@ async function getUserStatsFromSupabase() {
 
     // 写入 localStorage 缓存，便于离线/快速首屏
     try {
-      localStorage.setItem('bioquest_stats', JSON.stringify(stats));
+      localStorage.setItem('tatabox_stats', JSON.stringify(stats));
     } catch (e) {}
 
     return stats;

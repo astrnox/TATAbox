@@ -412,7 +412,7 @@ function _userJoinClass() {
       }
       // 保存加入记录
       var joined = [];
-      try { joined = JSON.parse(localStorage.getItem('bioquest_joined_classes') || '[]'); } catch(e) {}
+      try { joined = JSON.parse(localStorage.getItem('tatabox_joined_classes') || '[]'); } catch(e) {}
       // 避免重复加入
       var exists = joined.filter(function(c) { return c.classCode === classCode; })[0];
       if (exists) {
@@ -425,7 +425,7 @@ function _userJoinClass() {
         studentKey: myKeyVal,
         joinedAt: new Date().toISOString()
       });
-      localStorage.setItem('bioquest_joined_classes', JSON.stringify(joined));
+      localStorage.setItem('tatabox_joined_classes', JSON.stringify(joined));
       showToast('已加入 ' + (teacher.display_name || teacher.username || '') + ' 的班级');
       close();
     } catch (e) {
@@ -472,7 +472,7 @@ function generateShareCard() {
   // 未登录时用本地数据降级
   if (!user) {
     var localStats = {};
-    try { localStats = JSON.parse(localStorage.getItem('bioquest_stats') || '{}'); } catch(e){}
+    try { localStats = JSON.parse(localStorage.getItem('tatabox_stats') || '{}'); } catch(e){}
     user = {
       display_name: '学习者',
       user_group: 'member',

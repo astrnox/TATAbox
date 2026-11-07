@@ -420,7 +420,7 @@ showToast(val === 'local' ? '已切换为本地题库，正在重新加载题目
       PracticeState.kgSource = null;
       PracticeState.kgCategory = null;
       PracticeState.selectedModules = ['module1', 'module2', 'module3', 'module4'];
-      try { sessionStorage.removeItem('bioquest_kg_practice'); } catch (err) {}
+      try { sessionStorage.removeItem('tatabox_kg_practice'); } catch (err) {}
       // 清除 URL 中的 concept 参数：直接替换 URL 并显式触发一次路由
       var baseUrl = window.location.pathname + window.location.search;
       if (window.history && window.history.replaceState) {

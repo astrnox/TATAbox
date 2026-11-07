@@ -75,7 +75,7 @@ const Diag = loadDiagnosis();
 
 describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
   function pred(theta, n) {
-    const l = loadIrtEngine({ bioquest_irt_state: JSON.stringify({ theta, totalAnswered: n, byModule: {}, history: [] }) });
+    const l = loadIrtEngine({ tatabox_irt_state: JSON.stringify({ theta, totalAnswered: n, byModule: {}, history: [] }) });
     return l.predictScore();
   }
 
@@ -120,11 +120,11 @@ describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
   test('信息函数驱动：high-区分度题比 low-区分度题提供更小 SE / 更高置信（非只按题量）', () => {
     const mk = (a) => {
       const l = loadIrtEngine({
-        bioquest_irt_state: JSON.stringify({
+        tatabox_irt_state: JSON.stringify({
           theta: 0.5, totalAnswered: 1, byModule: {},
           history: [{ ts: 1, questionId: 'qa', correct: true, thetaAfter: 0.5 }]
         }),
-        bioquest_irt_params: JSON.stringify({ qa: { a, b: 0.5, c: 0.2 } })
+        tatabox_irt_params: JSON.stringify({ qa: { a, b: 0.5, c: 0.2 } })
       });
       return l.predictScore();
     };
@@ -137,7 +137,7 @@ describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
 
 describe('2. IRT describeAbility（能力等级描述）设计合理性', () => {
   function ab(theta) {
-    const l = loadIrtEngine({ bioquest_irt_state: JSON.stringify({ theta, totalAnswered: 20, byModule: {}, history: [] }) });
+    const l = loadIrtEngine({ tatabox_irt_state: JSON.stringify({ theta, totalAnswered: 20, byModule: {}, history: [] }) });
     return l.describeAbility(theta);
   }
   test('百分位随 θ 单调递增且 ∈[0,100]', () => {

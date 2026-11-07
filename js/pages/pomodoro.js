@@ -93,7 +93,7 @@
 
   function loadHistory() {
     try {
-      var raw = localStorage.getItem('bioquest_pomodoro_history');
+      var raw = localStorage.getItem('tatabox_pomodoro_history');
       if (raw) _pomodoroHistory = JSON.parse(raw);
     } catch (e) { _pomodoroHistory = []; }
   }
@@ -102,7 +102,7 @@
     try {
       // 只保留最近 100 条
       if (_pomodoroHistory.length > 100) _pomodoroHistory = _pomodoroHistory.slice(-100);
-      localStorage.setItem('bioquest_pomodoro_history', JSON.stringify(_pomodoroHistory));
+      localStorage.setItem('tatabox_pomodoro_history', JSON.stringify(_pomodoroHistory));
     } catch (e) {}
   }
 

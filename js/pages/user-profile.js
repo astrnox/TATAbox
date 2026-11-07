@@ -310,7 +310,7 @@ function renderSettingsPanel(container) {
             <p class="bq-m-0 bq-mb-8">访问 <a href="https://cloud.siliconflow.cn" target="_blank" class="bq-hint--amber">cloud.siliconflow.cn</a> → 注册 → 「API 密钥」。新用户送 14 元额度，Qwen2.5-7B 等小模型永久免费。模型填 <code class="bq-kbd">Qwen/Qwen2.5-7B-Instruct</code></p>
 
             <p style="margin:10px 0 4px;padding-top:8px;border-top:1px dashed var(--border-light,#ece8e1);"><strong>隐私说明</strong></p>
-            <p style="margin:0;">API Key 仅保存在当前页面的内存中；若勾选「会话内记住」，会额外存入本标签页的 sessionStorage（关闭标签页即自动清除）。Key 不会上传服务器，也不会持久化到你浏览器的 localStorage 或磁盘，关闭浏览器后长期不留存。</p>
+            <p style="margin:0;">API Key 仅保存在当前页面的内存中；若勾选「会话内记住」，浏览器会用不可导出的会话密钥（WebCrypto AES-GCM）加密后存入本标签页 sessionStorage，关闭标签页即自动清除（不支持 WebCrypto 的环境退回 sessionStorage 明文）。Key 不会上传服务器，也不会持久化到 localStorage 或磁盘，关闭浏览器后长期不留存。</p>
 
             <p style="margin:10px 0 4px;"><strong>用量限制</strong></p>
             <p style="margin:0;">为避免滥用，每个用户每日限 ${_AI_DAILY_LIMIT} 次 AI 调用，0:00 自动重置。自定义 Key 用户同样受此限制。</p>

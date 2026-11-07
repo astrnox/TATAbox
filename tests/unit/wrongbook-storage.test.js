@@ -65,7 +65,7 @@ describe('addWrongQuestion 对象入参兼容', () => {
 describe('getWrongQuestions 读取归一化（存量旧条目）', () => {
   test('早期 {qId,questionText} 条目补齐 id/question_text/created_at', () => {
     const ts = Date.parse('2026-10-01T00:00:00Z');
-    localStorage.setItem('bioquest_wrong_questions', JSON.stringify([
+    localStorage.setItem('tatabox_wrong_questions', JSON.stringify([
       { qId: 'LEG-1', questionText: '旧题干', timestamp: ts, wrongCount: 2 }
     ]));
     const items = window.getWrongQuestions();
@@ -79,7 +79,7 @@ describe('getWrongQuestions 读取归一化（存量旧条目）', () => {
   });
 
   test('fullQuestion 快照可回填题干与学科', () => {
-    localStorage.setItem('bioquest_wrong_questions', JSON.stringify([
+    localStorage.setItem('tatabox_wrong_questions', JSON.stringify([
       { qId: 'LEG-2', questionText: '', timestamp: Date.now(), wrongCount: 1,
         fullQuestion: { question: '快照题干', subject: '动物学', concept: '循环' } }
     ]));

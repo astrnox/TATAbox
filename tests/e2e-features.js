@@ -25,12 +25,12 @@ const WAIT_TIMEOUT = 8000;
 // 仅需满足 totalAnswered >= 10 即可触发完整诊断）。
 function seedData(page) {
   return page.evaluate(() => {
-    localStorage.setItem('bioquest_stats', JSON.stringify({
+    localStorage.setItem('tatabox_stats', JSON.stringify({
       module1: { totalAnswered: 8, totalCorrect: 7, accuracy: 88 },
       module2: { totalAnswered: 10, totalCorrect: 5, accuracy: 50 },
       module3: { totalAnswered: 6, totalCorrect: 3, accuracy: 50 }
     }));
-    localStorage.setItem('bioquest_records', JSON.stringify([
+    localStorage.setItem('tatabox_records', JSON.stringify([
       {
         timestamp: 1724220000000, date: '2026-08-19', totalQuestions: 5, correctCount: 3,
         questions: [
@@ -39,7 +39,7 @@ function seedData(page) {
         ]
       }
     ]));
-    localStorage.setItem('bioquest_wrong_questions', JSON.stringify([]));
+    localStorage.setItem('tatabox_wrong_questions', JSON.stringify([]));
     return true;
   });
 }

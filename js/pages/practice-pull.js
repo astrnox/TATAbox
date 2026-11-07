@@ -9,7 +9,7 @@
 'use strict';
 
 var PULL_COOLDOWN_MS = 20 * 1000; // 20 秒冷却（用户要求）
-var PULL_COOLDOWN_KEY = 'bioquest_pull_cooldown_until';
+var PULL_COOLDOWN_KEY = 'tatabox_pull_cooldown_until';
 var PULL_COOLDOWN_TIMER = null;
 
 function _getPullCooldownRemaining() {

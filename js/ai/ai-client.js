@@ -458,7 +458,7 @@
     // 实际 Key 由 _getApiKey() 从页面内存读取，仅供内部 fetch 使用。
     var prefs = { provider: DEFAULT_PROVIDER, model: '' };
     try {
-      var rawPref = localStorage.getItem('bioquest_ai_key_config');
+      var rawPref = localStorage.getItem('tatabox_ai_key_config');
       if (rawPref) {
         var stored = JSON.parse(rawPref);
         if (stored) {
@@ -494,12 +494,12 @@
   // 检查每日用量上限
   function getUsage() {
     try {
-      var raw = localStorage.getItem('bioquest_ai_usage');
+      var raw = localStorage.getItem('tatabox_ai_usage');
       var data = raw ? JSON.parse(raw) : {};
       var today = new Date().toISOString().slice(0, 10);
       if (data.date !== today) {
         data = { date: today, count: 0 };
-        localStorage.setItem('bioquest_ai_usage', JSON.stringify(data));
+        localStorage.setItem('tatabox_ai_usage', JSON.stringify(data));
       }
       return data;
     } catch (e) { return { date: new Date().toISOString().slice(0, 10), count: 0 }; }
@@ -509,7 +509,7 @@
     var data = getUsage();
     if (data.count >= AI_DAILY_USAGE_LIMIT) return false;
     data.count += 1;
-    try { localStorage.setItem('bioquest_ai_usage', JSON.stringify(data)); } catch (e) {}
+    try { localStorage.setItem('tatabox_ai_usage', JSON.stringify(data)); } catch (e) {}
     return true;
   }
 

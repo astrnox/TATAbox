@@ -479,7 +479,7 @@ function _getGreeting() {
  */
 function _getUserStats() {
   try {
-    var raw = localStorage.getItem('bioquest_stats');
+    var raw = localStorage.getItem('tatabox_stats');
     if (!raw) return { totalAnswered: 0, totalCorrect: 0, modules: {} };
     var stats = JSON.parse(raw);
     return {
@@ -498,7 +498,7 @@ function _getUserStats() {
  * 读取练习历史（兼容 bioquest_history 和 bioquest_practice_history 两个 key）
  */
 function _loadPracticeHistory() {
-  var sources = ['bioquest_history', 'bioquest_practice_history', 'bioquest_records'];
+  var sources = ['tatabox_history', 'tatabox_practice_history', 'tatabox_records'];
   for (var s = 0; s < sources.length; s++) {
     try {
       var raw = localStorage.getItem(sources[s]);
@@ -603,7 +603,7 @@ function _getTrendData(days) {
  */
 function _getStreak() {
   try {
-    var raw = localStorage.getItem('bioquest_habit_logs');
+    var raw = localStorage.getItem('tatabox_habit_logs');
     if (!raw) return 0;
     var logs = JSON.parse(raw);
     if (!Array.isArray(logs)) return 0;
@@ -958,14 +958,14 @@ async function _refreshDashboardFromSupabase(target) {
 
     // 把 Supabase 历史写入 localStorage 缓存（供 _loadPracticeHistory 读取）
     if (history && history.length > 0) {
-      try { localStorage.setItem('bioquest_history', JSON.stringify(history)); } catch (e) {}
+      try { localStorage.setItem('tatabox_history', JSON.stringify(history)); } catch (e) {}
     }
     // 把 Supabase 打卡日志写入 localStorage 缓存（供 _getStreak 读取）
     if (habitLogs && habitLogs.length > 0) {
-      try { localStorage.setItem('bioquest_habit_logs', JSON.stringify(habitLogs)); } catch (e) {}
+      try { localStorage.setItem('tatabox_habit_logs', JSON.stringify(habitLogs)); } catch (e) {}
     }
 
-    // 重新渲染（getUserStatsFromSupabase 已写入 localStorage 'bioquest_stats'）
+    // 重新渲染（getUserStatsFromSupabase 已写入 localStorage 'tatabox_stats'）
     // 仅当目标元素仍是当前仪表盘时才刷新，避免路由切换后误刷
     var hash = window.location.hash || '';
     var currentPage = hash.replace(/^#/, '').split('?')[0] || '/';

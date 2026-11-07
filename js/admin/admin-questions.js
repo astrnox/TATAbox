@@ -614,7 +614,7 @@ function _localRatingInfo(bioId) {
 function _localIsRecycled(bioId) {
   if (typeof isQuestionRecycled === 'function') return !!isQuestionRecycled(bioId);
   try {
-    const list = JSON.parse(localStorage.getItem('bioquest_question_recycled') || '[]');
+    const list = JSON.parse(localStorage.getItem('tatabox_question_recycled') || '[]');
     return Array.isArray(list) && list.indexOf(bioId) !== -1;
   } catch (e) {
     return false;

@@ -41,7 +41,7 @@
     '活着没意思', '不想面对', '一了百了', '走不下去'
   ];
 
-  var STORAGE_KEY = 'bioquest_mood_logs';
+  var STORAGE_KEY = 'tatabox_mood_logs';
 
   function _loadLogs() {
     try {

@@ -1247,7 +1247,7 @@ function computeLearningPath(weakPoints, moduleRanking) {
 
   /* 从 localStorage 读取各知识点的 BKT 掌握概率 */
   try {
-    var raw = localStorage.getItem('bioquest_skill_mastery');
+    var raw = localStorage.getItem('tatabox_skill_mastery');
     if (raw) mastery = JSON.parse(raw);
   } catch (e) { mastery = {}; }
 

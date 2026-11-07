@@ -34,9 +34,9 @@ function renderPracticePage(target) {
   try {
   // 检查是否为错题重做模式
   var redoData = null;
-  try { redoData = sessionStorage.getItem('bioquest_redo_question'); } catch(e) {}
+  try { redoData = sessionStorage.getItem('tatabox_redo_question'); } catch(e) {}
   if (redoData) {
-    sessionStorage.removeItem('bioquest_redo_question');
+    sessionStorage.removeItem('tatabox_redo_question');
   }
 
   // 解析知识图谱传入的专项练习参数（URL hash 优先，sessionStorage 兜底）
@@ -85,7 +85,7 @@ function renderPracticePage(target) {
       }
     }
     if (!kgData) {
-      var stored = sessionStorage.getItem('bioquest_kg_practice');
+      var stored = sessionStorage.getItem('tatabox_kg_practice');
       if (stored) kgData = JSON.parse(stored);
     }
   } catch (e) { kgData = null; }

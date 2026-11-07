@@ -174,7 +174,7 @@
         btn.addEventListener('click', function () {
           var next = (document.documentElement.getAttribute('data-theme') === 'dark') ? 'light' : 'dark';
           document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('bioquest_theme', next); } catch (e) {}
+          try { localStorage.setItem('tatabox_theme', next); } catch (e) {}
           toggles.forEach(function (b) {
             b.setAttribute('aria-label', next === 'dark' ? '切换浅色模式' : '切换深色模式');
             b.setAttribute('title', next === 'dark' ? '切换浅色模式' : '切换深色模式');

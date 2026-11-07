@@ -136,14 +136,14 @@
     container.querySelectorAll('.wb-kg-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var concept = btn.getAttribute('data-concept') || '';
-        try { sessionStorage.setItem('bioquest_kg_focus', concept); } catch (e) {}
+        try { sessionStorage.setItem('tatabox_kg_focus', concept); } catch (e) {}
         if (typeof navigateTo === 'function') navigateTo('/knowledge-graph');
       });
     });
     container.querySelectorAll('.wb-card-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var concept = btn.getAttribute('data-concept') || '';
-        try { sessionStorage.setItem('bioquest_card_focus', concept); } catch (e) {}
+        try { sessionStorage.setItem('tatabox_card_focus', concept); } catch (e) {}
         if (typeof navigateTo === 'function') navigateTo('/cards');
       });
     });
@@ -427,9 +427,9 @@
     // 回填已保存的 OCR.space key，本地监听保存
     var ocrspaceKeyInput = document.getElementById('wb-ocrspace-key');
     if (ocrspaceKeyInput) {
-      try { ocrspaceKeyInput.value = localStorage.getItem('bioquest_ocrspace_key') || ''; } catch (e) {}
+      try { ocrspaceKeyInput.value = localStorage.getItem('tatabox_ocrspace_key') || ''; } catch (e) {}
       ocrspaceKeyInput.addEventListener('input', function () {
-        try { localStorage.setItem('bioquest_ocrspace_key', ocrspaceKeyInput.value.trim()); } catch (e) {}
+        try { localStorage.setItem('tatabox_ocrspace_key', ocrspaceKeyInput.value.trim()); } catch (e) {}
       });
     }
 
@@ -477,7 +477,7 @@
         }, function (result) {
           if (result && result.text) {
             if (qEl) qEl.value = result.text;
-            try { sessionStorage.setItem('bioquest_ocr_last_engine', result.engine || ''); } catch (e) {}
+            try { sessionStorage.setItem('tatabox_ocr_last_engine', result.engine || ''); } catch (e) {}
             return;
           }
           // OcrEngine 全失败 → 最终再兜底一次 _runTesseractOcr

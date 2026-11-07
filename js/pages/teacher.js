@@ -2,7 +2,7 @@
  * ============================================================
  * TATABOX — 教师协同视图（教师/家长学习监控面板）
  * 入口：输入"班级码"或"学生ID"查看学生数据
- * 简化版：用 localStorage 'bioquest_class_data' 模拟班级数据
+ * 简化版：用 localStorage 'tatabox_class_data' 模拟班级数据
  * ============================================================
  */
 
@@ -205,7 +205,7 @@ function teacherModalConfirm(message, callback) {
 
 /* ============== 数据层 ============== */
 
-var TEACHER_LS_KEY = 'bioquest_class_data';
+var TEACHER_LS_KEY = 'tatabox_class_data';
 var TEACHER_API_BASE = (function () {
   // 与 server.py 一致：同源 fetch
   return '';
@@ -381,11 +381,11 @@ function teacherCopyCurrentUserData() {
   var history = [];
   var wrongQuestions = [];
   try {
-    history = JSON.parse(localStorage.getItem('bioquest_history') || '[]');
+    history = JSON.parse(localStorage.getItem('tatabox_history') || '[]');
     if (!Array.isArray(history)) history = [];
   } catch (e) { history = []; }
   try {
-    wrongQuestions = JSON.parse(localStorage.getItem('bioquest_wrong_questions') || '[]');
+    wrongQuestions = JSON.parse(localStorage.getItem('tatabox_wrong_questions') || '[]');
     if (!Array.isArray(wrongQuestions)) wrongQuestions = [];
   } catch (e) { wrongQuestions = []; }
 
@@ -1001,7 +1001,7 @@ function teacherExportCSV(student) {
   var filename;
 
   if (student) {
-    filename = 'bioquest_report_' + (student.name || student.id) + '.csv';
+    filename = 'tatabox_report_' + (student.name || student.id) + '.csv';
     var weakModules = teacherComputeWeakModules(student);
     rows.push(['学生报告', '', '', '']);
     rows.push(['姓名', 'ID', 'Bio分', '正确率', '累计答题', '最后活跃']);

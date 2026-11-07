@@ -466,7 +466,7 @@ window.showUndoToast = showUndoToast;
 (function () {
   if (!('beforeinstallprompt' in window)) return;
 
-  var INSTALL_STORE_KEY = 'bioquest_a2hs_dismissed';
+  var INSTALL_STORE_KEY = 'tatabox_a2hs_dismissed';
   var deferredPrompt = null;
 
   function _wasDismissed() {

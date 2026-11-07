@@ -630,7 +630,7 @@ async function getAnnouncements(options) {
   if (!sb) {
     // 降级到 localStorage
     try {
-      var raw = localStorage.getItem('bioquest_announcements');
+      var raw = localStorage.getItem('tatabox_announcements');
       return raw ? JSON.parse(raw) : [];
     } catch (e) { return []; }
   }

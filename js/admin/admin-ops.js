@@ -43,7 +43,7 @@ function _hashKey(str) {
 
 function _qfResolvedSet() {
   try {
-    var raw = localStorage.getItem('bioquest_question_feedbacks_resolved');
+    var raw = localStorage.getItem('tatabox_question_feedbacks_resolved');
     var arr = raw ? JSON.parse(raw) : [];
     var set = new Set();
     if (Array.isArray(arr)) arr.forEach(function (x) { set.add(String(x)); });
@@ -55,7 +55,7 @@ function _qfResolvedSet() {
 
 function _qfSaveResolved(set) {
   try {
-    localStorage.setItem('bioquest_question_feedbacks_resolved', JSON.stringify(Array.from(set)));
+    localStorage.setItem('tatabox_question_feedbacks_resolved', JSON.stringify(Array.from(set)));
   } catch (e) { /* ignore */ }
 }
 
@@ -77,7 +77,7 @@ async function _loadQuestionFeedbacks() {
   }
   var local = [];
   try {
-    var raw = localStorage.getItem('bioquest_question_feedbacks');
+    var raw = localStorage.getItem('tatabox_question_feedbacks');
     if (raw) {
       var arr = JSON.parse(raw);
       if (Array.isArray(arr)) local = arr;
@@ -234,7 +234,7 @@ async function renderFeedbacksTab(container) {
   // Fallback: 从 localStorage 加载
   if (feedbacks.length === 0) {
     try {
-      var raw = localStorage.getItem('bioquest_feedbacks');
+      var raw = localStorage.getItem('tatabox_feedbacks');
       if (raw) {
         var localData = JSON.parse(raw);
         if (Array.isArray(localData)) feedbacks = localData;

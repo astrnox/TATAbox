@@ -274,7 +274,7 @@
     mountChat('community-chat', {
       title: 'TATABOX 讨论室',
       userName: '学习者',
-      storageKey: 'bioquest_community_chat'
+      storageKey: 'tatabox_community_chat'
     }).catch(function () {});
   }
 

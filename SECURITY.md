@@ -51,7 +51,9 @@ TATABOX 是**纯前端静态应用 + Supabase（Auth / 数据库 / RLS）**架�
 采用 BYOK（用户自带 Key）模式，`js/ai/ai-key-store.js`：
 
 - Key 默认仅存**页面内存**（闭包单例，非枚举属性），刷新即失；
-- 仅当用户显式勾选「会话内记住」才写 sessionStorage（关闭标签页即清除）；
+- 仅当用户显式勾选「会话内记住」才写入会话存储：优先用 **WebCrypto AES-GCM**
+  加密（密钥为不可导出的 CryptoKey，保存在 IndexedDB），sessionStorage 只保存密文；
+  不支持 WebCrypto/IndexedDB 的环境退回 sessionStorage 明文（关闭标签页即清除）；
 - **绝不写 localStorage**；检测到旧版 localStorage 残留明文 Key 会自动搬入内存并擦除。
 
 ## 内容安全策略（CSP）

@@ -15,7 +15,7 @@
 (function (root) {
   'use strict';
 
-  var STORE_KEY = 'bioquest_achievements';
+  var STORE_KEY = 'tatabox_achievements';
   var UNLOCKED_EVENT = 'bq:achievement-unlocked';
 
   /* ---------- 成就定义（数据源单表，便于测试与维护） ----------
@@ -314,7 +314,7 @@
   function gatherMaxStreak() {
     // 1) 优先读进度统计快照（若已含连续信息）
     try {
-      var snap = _safeParse('bioquest_progress_stats', null);
+      var snap = _safeParse('tatabox_progress_stats', null);
       var sd = snap && snap.data;
       if (sd && (typeof sd.maxStreak === 'number' || typeof sd.streak === 'number')) {
         return Math.max(sd.maxStreak || 0, sd.streak || 0);
@@ -323,8 +323,8 @@
 
     // 2) 基于习惯打卡日志计算
     try {
-      var habits = _safeParse('bioquest_habits', []);
-      var logs = _safeParse('bioquest_habit_logs', []);
+      var habits = _safeParse('tatabox_habits', []);
+      var logs = _safeParse('tatabox_habit_logs', []);
       if (!Array.isArray(habits) || !Array.isArray(logs) || !logs.length) return 0;
       var max = 0;
       var i, h;
@@ -359,15 +359,15 @@
   function gatherStats() {
     var stats = { records: [], favorites: 0, wrongCount: 0, maxStreak: 0 };
     try {
-      var recs = _safeParse('bioquest_records', []);
+      var recs = _safeParse('tatabox_records', []);
       stats.records = Array.isArray(recs) ? recs : [];
     } catch (e) { stats.records = []; }
     try {
-      var favs = _safeParse('bioquest_favorites', []);
+      var favs = _safeParse('tatabox_favorites', []);
       stats.favorites = Array.isArray(favs) ? favs.length : (typeof favs === 'number' ? favs : 0);
     } catch (e) { stats.favorites = 0; }
     try {
-      var wrongs = _safeParse('bioquest_wrong_questions', []);
+      var wrongs = _safeParse('tatabox_wrong_questions', []);
       stats.wrongCount = Array.isArray(wrongs) ? wrongs.length : (typeof wrongs === 'number' ? wrongs : 0);
     } catch (e) { stats.wrongCount = 0; }
     stats.maxStreak = gatherMaxStreak();

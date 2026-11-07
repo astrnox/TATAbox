@@ -48,8 +48,8 @@ for (const f of fs.readdirSync(bankDir).filter((f) => f.startsWith('daily_league
   // 每次导航前预置「已看过隐私声明」，避免首访合规条（z-index 最高）拦截底部按钮点击
   await context.addInitScript(() => {
     try {
-      localStorage.setItem('bioquest_privacy_notice_seen', '1');
-      localStorage.setItem('bioquest_age_consent', '1');
+      localStorage.setItem('tatabox_privacy_notice_seen', '1');
+      localStorage.setItem('tatabox_age_consent', '1');
     } catch (e) {}
   });
 
@@ -104,8 +104,8 @@ for (const f of fs.readdirSync(bankDir).filter((f) => f.startsWith('daily_league
       }
     });
     // 记录全局统计初始快照
-    window.__statsBefore = localStorage.getItem('bioquest_stats');
-    window.__recordsBefore = localStorage.getItem('bioquest_records');
+    window.__statsBefore = localStorage.getItem('tatabox_stats');
+    window.__recordsBefore = localStorage.getItem('tatabox_records');
   }, { fns: [...GAMIFY_FNS, ...STORAGE_FNS, ...UTIL_FNS, ...DATA_FNS, ...POINTS_FNS] });
 
   // ---------- 2. 首屏渲染 ----------
@@ -346,10 +346,10 @@ for (const f of fs.readdirSync(bankDir).filter((f) => f.startsWith('daily_league
     'score-engine 六维内核随 daily-billion 模块加载（' + JSON.stringify(engineAvail) + '）');
 
   const statsAfter = await page.evaluate(() => ({
-    stats: localStorage.getItem('bioquest_stats'),
-    records: localStorage.getItem('bioquest_records'),
-    billion: localStorage.getItem('bioquest_billion_v3'),
-    favorites: localStorage.getItem('bioquest_favorites')
+    stats: localStorage.getItem('tatabox_stats'),
+    records: localStorage.getItem('tatabox_records'),
+    billion: localStorage.getItem('tatabox_billion_v3'),
+    favorites: localStorage.getItem('tatabox_favorites')
   }));
   const billion = JSON.parse(statsAfter.billion || '{}');
   check(billion.totalAnswered === 2, '本地进度持久化 totalAnswered=2（实际 ' + billion.totalAnswered + '）');

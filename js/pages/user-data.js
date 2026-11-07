@@ -209,7 +209,7 @@ function renderDataManagement(container) {
             // 兜底：仅清 Web Storage
             for (var i = localStorage.length - 1; i >= 0; i--) {
               var k = localStorage.key(i);
-              if (k && k.indexOf('bioquest_') === 0) localStorage.removeItem(k);
+              if (k && (k.indexOf('tatabox_') === 0 || k.indexOf('bioquest_') === 0)) localStorage.removeItem(k);
             }
             wipePromise = Promise.resolve([]);
           }

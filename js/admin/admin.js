@@ -155,13 +155,13 @@ window._onAuthUserLoaded = function(user) {
     // 普通用户登录时，清除可能残留的 admin 认证（user_group 非 admin 一律视为无权限）
     if (_adminAuthenticated) {
       _adminAuthenticated = false;
-      sessionStorage.removeItem('bioquest_admin_auth');
+      sessionStorage.removeItem('tatabox_admin_auth');
 
     }
   } else if (!user) {
     // 用户登出时
     _adminAuthenticated = false;
-    sessionStorage.removeItem('bioquest_admin_auth');
+    sessionStorage.removeItem('tatabox_admin_auth');
   }
 };
 
@@ -1069,7 +1069,7 @@ async function adminVerifyTotp(code) {
     var user = (typeof window.getCurrentUser === 'function') ? window.getCurrentUser() : null;
     if (user) user.user_group = 'admin';
     _adminAuthenticated = true;
-    sessionStorage.setItem('bioquest_admin_auth', JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL }));
+    sessionStorage.setItem('tatabox_admin_auth', JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL }));
     return { ok: true };
   } catch (e) {
     return { ok: false, error: '验证异常：' + ((e && e.message) || e) };
@@ -1082,22 +1082,22 @@ window.adminVerifyTotp = adminVerifyTotp;
 // 管理员账号本身不产生解锁；非 admin 账号/登出时由 _onAuthUserLoaded 清除。
 (function() {
   try {
-    var raw = sessionStorage.getItem('bioquest_admin_auth');
+    var raw = sessionStorage.getItem('tatabox_admin_auth');
     if (!raw) return;
     var token = JSON.parse(raw);
     // 校验 token 结构和过期时间
     if (!token || typeof token.t !== 'number' || typeof token.exp !== 'number') {
-      sessionStorage.removeItem('bioquest_admin_auth');
+      sessionStorage.removeItem('tatabox_admin_auth');
       return;
     }
     if (Date.now() - token.t > token.exp) {
       // 过期，清除
-      sessionStorage.removeItem('bioquest_admin_auth');
+      sessionStorage.removeItem('tatabox_admin_auth');
       return;
     }
     _adminAuthenticated = true;
   } catch (e) {
-    sessionStorage.removeItem('bioquest_admin_auth');
+    sessionStorage.removeItem('tatabox_admin_auth');
   }
 })();
 
@@ -1923,7 +1923,7 @@ function renderAdminDashboard(target) {
       }
       if (waitCount > 20) {
         // 2 秒后仍无用户，可能是 session 真的过期
-        sessionStorage.removeItem('bioquest_admin_auth');
+        sessionStorage.removeItem('tatabox_admin_auth');
         _adminAuthenticated = false;
         setTimeout(function() { renderAdminLoginPage(target); }, 0);
         return;
@@ -2004,7 +2004,7 @@ function renderAdminDashboard(target) {
   // 退出登录
   document.getElementById('admin-logout-btn').addEventListener('click', () => {
     _adminAuthenticated = false;
-    sessionStorage.removeItem('bioquest_admin_auth');
+    sessionStorage.removeItem('tatabox_admin_auth');
     renderAdminLoginPage(target);
   });
 

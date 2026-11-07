@@ -38,7 +38,7 @@ function showToast(message) {
  * 获取当前头像 URL
  * 优先 localStorage，其次 user.avatar_url，都没有返回 null（用首字母兜底）
  */
-var _USER_KEY_STORAGE = 'bioquest_user_key';
+var _USER_KEY_STORAGE = 'tatabox_user_key';
 
 // 获取或生成本机用户密钥（8 位字母数字，易于口头传达）
 function _getUserKey() {

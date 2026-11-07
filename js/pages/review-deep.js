@@ -9,9 +9,9 @@
 (function() {
   'use strict';
 
-  var STORAGE_WRONG = 'bioquest_wrong_questions';
-  var STORAGE_ANALYSIS = 'bioquest_review_analysis';  // { qId: { errorType, analysis, suggestion, similarConcepts, ts } }
-  var STORAGE_MASTERY = 'bioquest_review_mastery';     // { qId: { attempts, correct, mastered, lastAt } }
+  var STORAGE_WRONG = 'tatabox_wrong_questions';
+  var STORAGE_ANALYSIS = 'tatabox_review_analysis';  // { qId: { errorType, analysis, suggestion, similarConcepts, ts } }
+  var STORAGE_MASTERY = 'tatabox_review_mastery';     // { qId: { attempts, correct, mastered, lastAt } }
 
   var ERROR_TYPE_LABELS = {
     concept: '概念混淆',

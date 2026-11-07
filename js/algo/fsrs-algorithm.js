@@ -154,7 +154,7 @@
   }
 
 
-  var STORAGE_KEY = 'bioquest_fsrs_cards';
+  var STORAGE_KEY = 'tatabox_fsrs_cards';
 
   function loadCardStates() {
     try {

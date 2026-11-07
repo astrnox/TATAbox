@@ -1592,9 +1592,9 @@ function maintainQuestionBank() {
     // 避免新用户刚进站就被大流量下载拖慢，造成"进度条走完页面还在加载/卡网速"。
     // 置位标记后，从下一次访问起（分片已随用户使用按需进入 SW/内存缓存）再在空闲时后台预热。
     var warmedOnce = false;
-    try { warmedOnce = localStorage.getItem('bioquest_bank_warmed_once') === '1'; } catch (e) {}
+    try { warmedOnce = localStorage.getItem('tatabox_bank_warmed_once') === '1'; } catch (e) {}
     if (!warmedOnce) {
-      try { localStorage.setItem('bioquest_bank_warmed_once', '1'); } catch (e) {}
+      try { localStorage.setItem('tatabox_bank_warmed_once', '1'); } catch (e) {}
       _maintenanceRunning = false;
       return { changed: result.changed, refreshed: 0, deferred: true };
     }

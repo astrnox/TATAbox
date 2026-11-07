@@ -50,7 +50,7 @@
     studyMinutesNoBreak: 120  // 连续学习 2 小时未休息
   };
 
-  var STORAGE_KEY = 'bioquest_classmate_sessions';
+  var STORAGE_KEY = 'tatabox_classmate_sessions';
   var MAX_SESSIONS = 20;
 
   var state = {
@@ -812,9 +812,9 @@
     );
     // 记录共情触发事件到 localStorage（供后续分析）
     try {
-      var logs = JSON.parse(localStorage.getItem('bioquest_empathy_logs') || '[]');
+      var logs = JSON.parse(localStorage.getItem('tatabox_empathy_logs') || '[]');
       logs.push({ timestamp: Date.now(), trigger: 'consecutive_wrong', count: state.consecutiveWrongCount, context: opts });
-      localStorage.setItem('bioquest_empathy_logs', JSON.stringify(logs.slice(-50)));
+      localStorage.setItem('tatabox_empathy_logs', JSON.stringify(logs.slice(-50)));
     } catch (e) {}
   }
 
@@ -840,9 +840,9 @@
     }
     // 记录危机事件
     try {
-      var logs = JSON.parse(localStorage.getItem('bioquest_crisis_logs') || '[]');
+      var logs = JSON.parse(localStorage.getItem('tatabox_crisis_logs') || '[]');
       logs.push({ timestamp: Date.now(), source: 'classmate' });
-      localStorage.setItem('bioquest_crisis_logs', JSON.stringify(logs.slice(-30)));
+      localStorage.setItem('tatabox_crisis_logs', JSON.stringify(logs.slice(-30)));
     } catch (e) {}
   }
 

@@ -36,7 +36,7 @@ async function render(opts) {
   window.getQuestionFeedbacks = jest.fn(async () =>
     opts.cloud !== undefined ? opts.cloud : { items: [{ id: 'cf-1', question_id: 'M1-15-aaaa', question_text: '云端题干：尿素循环发生在？', issue_type: 'wrong_answer', description: '选项B和C都对', created_at: '2026-10-19T08:00:00+08:00' }] });
   window.getFeedbacks = jest.fn(async () => ({ feedbacks: [] }));
-  if (opts.local) localStorage.setItem('bioquest_question_feedbacks', JSON.stringify(opts.local));
+  if (opts.local) localStorage.setItem('tatabox_question_feedbacks', JSON.stringify(opts.local));
   const container = document.createElement('div');
   document.body.appendChild(container);
   await renderFeedbacksTab(container);
@@ -72,7 +72,7 @@ describe('管理面板 · 题目反馈', () => {
     expect(btn).toBeTruthy();
     btn.click();
     await flush();
-    const saved = JSON.parse(localStorage.getItem('bioquest_question_feedbacks_resolved') || '[]');
+    const saved = JSON.parse(localStorage.getItem('tatabox_question_feedbacks_resolved') || '[]');
     expect(saved.map(String)).toContain('cf-1');
     const html = container.innerHTML;
     expect(html).toContain('已处理');

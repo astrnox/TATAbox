@@ -23,8 +23,8 @@
 
   if (window.IrtEngine) return;
 
-  var STORAGE_KEY = 'bioquest_irt_state';
-  var PARAMS_KEY = 'bioquest_irt_params';  // 题库参数缓存
+  var STORAGE_KEY = 'tatabox_irt_state';
+  var PARAMS_KEY = 'tatabox_irt_params';  // 题库参数缓存
 
 
   // 字符串难度 → 数值（0-1）。题库历史数据混用 easy/medium/hard、中文标签

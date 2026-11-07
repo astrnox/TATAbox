@@ -22,7 +22,7 @@
   var _pomodoroRunning = false;
   var _pomodoroMode = 25;            // 当前模式（分钟）
   var _pomodoroLinkedTask = null;    // 关联的待办任务 id
-  var _examDate = localStorage.getItem('bioquest_exam_date') || '';
+  var _examDate = localStorage.getItem('tatabox_exam_date') || '';
   var _reviewCount = 0;
 
   /* ---------- 样式（Trae 设计 Token） ---------- */
@@ -586,7 +586,7 @@
 
     document.getElementById('st-save-exam').addEventListener('click', function() {
       _examDate = document.getElementById('st-exam-date').value;
-      localStorage.setItem('bioquest_exam_date', _examDate);
+      localStorage.setItem('tatabox_exam_date', _examDate);
       _render();
     });
   }

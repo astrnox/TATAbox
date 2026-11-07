@@ -170,7 +170,7 @@ function confirmDeleteWithTyping(message, callback) {
 // PRD §5-35：字体大小选项
 var FontSizeManager = (function () {
   'use strict';
-  var KEY = 'bioquest_font_size';
+  var KEY = 'tatabox_font_size';
   var SIZES = { standard: '100%', large: '112%', xlarge: '125%' };
 
   function apply(size) {

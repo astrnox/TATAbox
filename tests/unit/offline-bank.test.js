@@ -52,4 +52,13 @@ describe('M-14 离线题库包', () => {
   test('index.html 加载离线题库模块', () => {
     expect(read('index.html')).toMatch(/js\/core\/offline-bank\.js\?v=/);
   });
+
+  test('下载前检查存储配额，空间不足时给出可读提示（M-07）', () => {
+    const api = read('js/core/offline-bank.js');
+    expect(api).toContain('navigator.storage');
+    expect(api).toContain('estimate()');
+    expect(api).toContain('可用存储空间不足');
+    expect(api).toContain("downloadWithQuota('core'");
+    expect(api).toContain("downloadWithQuota('full'");
+  });
 });

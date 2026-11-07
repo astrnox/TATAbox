@@ -309,7 +309,7 @@
   function _getOcrspaceKey(opts) {
     opts = opts || {};
     if (opts.ocrspaceApiKey) return opts.ocrspaceApiKey;
-    try { return localStorage.getItem('bioquest_ocrspace_key') || ''; } catch (e) { return ''; }
+    try { return localStorage.getItem('tatabox_ocrspace_key') || ''; } catch (e) { return ''; }
   }
 
   function _tryOcrspaceEngine(imgData, ui, onResult, extra) {

@@ -130,7 +130,7 @@ describe('Issue #129 轻量级成就引擎', () => {
     // 已解锁后在 evaluate 中不再重复解锁
     expect(api.__test.evaluate({ favorites: 5 })).toEqual([]);
     // 存储确实写入 localStorage
-    expect(localStorage.getItem('bioquest_achievements')).toContain('favorite_1');
+    expect(localStorage.getItem('tatabox_achievements')).toContain('favorite_1');
   });
 
   test('checkAndUnlock 批量解锁且不重复', () => {
@@ -149,7 +149,7 @@ describe('Issue #129 轻量级成就引擎', () => {
     const cleared = api.reset();
     expect(cleared).toBe(1);
     expect(api.getEarned()).toHaveLength(0);
-    expect(localStorage.getItem('bioquest_achievements')).toBeNull();
+    expect(localStorage.getItem('tatabox_achievements')).toBeNull();
     // reset 后可重新解锁
     expect(keysOf(api.__test.evaluate({ maxStreak: 3 }))).toEqual(['streak_3']);
   });

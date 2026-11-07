@@ -11,8 +11,8 @@
 (function () {
   'use strict';
 
-  var NOTIF_KEY = 'bioquest_notifications';      // [{id, postId, postPreview, commenter, comment, time, read}]
-  var HANDLED_KEY = 'bioquest_notified_comments'; // { commentId: true } 已处理过的回帖
+  var NOTIF_KEY = 'tatabox_notifications';      // [{id, postId, postPreview, commenter, comment, time, read}]
+  var HANDLED_KEY = 'tatabox_notified_comments'; // { commentId: true } 已处理过的回帖
   var POLL_MS = 60000;                            // 轮询间隔（登录后）
 
   function getNotifs() {

@@ -8,7 +8,7 @@
 
 'use strict';
 
-var STORAGE_PREFIX = 'bioquest_';
+var STORAGE_PREFIX = 'tatabox_';
 
 var KEYS = {
   SETTINGS: STORAGE_PREFIX + 'settings',
@@ -273,13 +273,13 @@ function clearAllLocalData() {
     try {
       for (var i = localStorage.length - 1; i >= 0; i--) {
         var k = localStorage.key(i);
-        if (k && k.indexOf('bioquest_') === 0) localStorage.removeItem(k);
+        if (k && (k.indexOf('tatabox_') === 0 || k.indexOf('bioquest_') === 0)) localStorage.removeItem(k);
       }
     } catch (e) {}
     try {
       for (var j = sessionStorage.length - 1; j >= 0; j--) {
         var sk = sessionStorage.key(j);
-        if (sk && sk.indexOf('bioquest_') === 0) sessionStorage.removeItem(sk);
+        if (sk && (sk.indexOf('tatabox_') === 0 || sk.indexOf('bioquest_') === 0)) sessionStorage.removeItem(sk);
       }
     } catch (e) {}
 
@@ -1391,9 +1391,9 @@ async function exportData(options) {
       favorites: safeGetJSON(KEYS.FAVORITES, []),
       wrongQuestions: safeGetJSON(KEYS.WRONG_QUESTIONS, []),
       stats: safeGetJSON(KEYS.STATS, {}),
-      habits: safeGetJSON('bioquest_habits', []),
-      habitLogs: safeGetJSON('bioquest_habit_logs', []),
-      badges: safeGetJSON('bioquest_badges', []),
+      habits: safeGetJSON('tatabox_habits', []),
+      habitLogs: safeGetJSON('tatabox_habit_logs', []),
+      badges: safeGetJSON('tatabox_badges', []),
       progress: getAllLocalProgress()
     };
 
@@ -1631,7 +1631,7 @@ function _decompressMeta(parsed) {
  * 配套表：user_progress（sql/migration_v8_user_progress.sql）
  * 同步：pushUserProgressToSupabase / pullUserProgressFromSupabase（supabase-client.js）
  * ============================================================ */
-var PROGRESS_PREFIX = 'bioquest_progress_';
+var PROGRESS_PREFIX = 'tatabox_progress_';
 var _progressSyncTimers = {};
 var _progressSyncInflight = null;
 

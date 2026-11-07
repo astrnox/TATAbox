@@ -369,7 +369,7 @@ describe('7. FSRS generateForecast — 今天到期/过期卡不漏桶', () => {
     ];
     // 通过 localStorage 预置（generateForecast 直接读 localStorage）
     const save = makeLocalStorage({});
-    save.setItem('bioquest_fsrs_cards', JSON.stringify(Object.fromEntries(cards.map((c) => [c.id, c.state]))));
+    save.setItem('tatabox_fsrs_cards', JSON.stringify(Object.fromEntries(cards.map((c) => [c.id, c.state]))));
     // 重新加载 FSRS 包装层后调用 generateForecast
     const sandbox = { window: { FSRS: require(TSFRS_SRC) }, localStorage: save, console };
     new Function('window', 'localStorage', 'console', fs.readFileSync(FSRC_SRC, 'utf8'))(sandbox.window, sandbox.localStorage, sandbox.console);
@@ -384,7 +384,7 @@ describe('7. FSRS generateForecast — 今天到期/过期卡不漏桶', () => {
 
   test('getStatistics：avgStability/avgDifficulty 为数值（非字符串拼接）', () => {
     const save = makeLocalStorage({});
-    save.setItem('bioquest_fsrs_cards', JSON.stringify({
+    save.setItem('tatabox_fsrs_cards', JSON.stringify({
       c1: { repetitions: 3, stability: 20, difficulty: 6, dueDate: Date.now() + 100000 },
       c2: { repetitions: 3, stability: 10, difficulty: 4, dueDate: Date.now() + 100000 }
     }));

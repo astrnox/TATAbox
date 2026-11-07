@@ -1299,7 +1299,7 @@ const MODULE_GROUPS = {
   4: { name: '模块四', desc: '遗传学、进化生物学、生物信息学', fields: [4] }
 };
 
-const STORAGE_KEY = 'bioquest_exam_state';
+const STORAGE_KEY = 'tatabox_exam_state';
 
 async function loadQuizData() {
   if (dataLoaded) return true;
@@ -2406,8 +2406,8 @@ function submitExam(isAuto) {
   // 触发考试成就
   if (typeof checkAchievement === 'function') {
     // 获取考试次数（从 localStorage）
-    var examCount = parseInt(localStorage.getItem('bioquest_exam_count') || '0') + 1;
-    localStorage.setItem('bioquest_exam_count', String(examCount));
+    var examCount = parseInt(localStorage.getItem('tatabox_exam_count') || '0') + 1;
+    localStorage.setItem('tatabox_exam_count', String(examCount));
     checkAchievement('exam', examCount);
   }
 

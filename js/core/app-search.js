@@ -305,7 +305,7 @@ function renderSearchPage() {
         card.addEventListener('click', function() {
           var qId = card.getAttribute('data-question-id');
           if (qId && typeof navigateTo === 'function') {
-            sessionStorage.setItem('bioquest_redo_question', qId);
+            sessionStorage.setItem('tatabox_redo_question', qId);
             navigateTo('/practice');
           }
         });
@@ -339,7 +339,7 @@ function renderSearchPage() {
 
               quickHint.querySelectorAll('.search-quick-item').forEach(function(el) {
                 el.addEventListener('click', function() {
-                  sessionStorage.setItem('bioquest_redo_question', el.getAttribute('data-qid'));
+                  sessionStorage.setItem('tatabox_redo_question', el.getAttribute('data-qid'));
                   if (typeof navigateTo === 'function') navigateTo('/practice');
                 });
               });

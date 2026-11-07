@@ -490,7 +490,7 @@
    */
   function getMastery(relatedModule) {
     try {
-      var statsKey = 'bioquest_stats';
+      var statsKey = 'tatabox_stats';
       var raw = localStorage.getItem(statsKey);
       if (!raw) return 0;
       var stats = JSON.parse(raw);
@@ -636,7 +636,7 @@
   function loadMasteryData() {
     try {
       // 优先从 bioquest_skill_mastery 读取 BKT 数据
-      var raw = localStorage.getItem('bioquest_skill_mastery');
+      var raw = localStorage.getItem('tatabox_skill_mastery');
       if (raw) return JSON.parse(raw);
     } catch (e) {}
     try {
@@ -985,7 +985,7 @@
 
     // 将节点信息写入 sessionStorage，供练习模块读取并做专项过滤
     try {
-      sessionStorage.setItem('bioquest_kg_practice', JSON.stringify({
+      sessionStorage.setItem('tatabox_kg_practice', JSON.stringify({
         nodeId: node.id,
         label: node.label,
         category: node.category,
@@ -1063,10 +1063,10 @@
         } else if (action === 'wrongbook') {
           // 把节点标记为待复习，跳转到错题本
           try {
-            var list = JSON.parse(localStorage.getItem('bioquest_wrongbook_concepts') || '[]');
+            var list = JSON.parse(localStorage.getItem('tatabox_wrongbook_concepts') || '[]');
             if (!list.some(function (c) { return c.label === node.label; })) {
               list.push({ label: node.label, nodeId: node.id, addedAt: Date.now() });
-              localStorage.setItem('bioquest_wrongbook_concepts', JSON.stringify(list));
+              localStorage.setItem('tatabox_wrongbook_concepts', JSON.stringify(list));
             }
           } catch (err) {}
           window.location.hash = '#/wrongbook';
@@ -1398,8 +1398,8 @@
     // v4.0 四向联动：读取其他模块传递的 focus 概念，自动定位/高亮节点
     var focusConcept = null;
     try {
-      focusConcept = sessionStorage.getItem('bioquest_kg_focus');
-      if (focusConcept) sessionStorage.removeItem('bioquest_kg_focus');
+      focusConcept = sessionStorage.getItem('tatabox_kg_focus');
+      if (focusConcept) sessionStorage.removeItem('tatabox_kg_focus');
     } catch (e) {}
 
     // 断开之前的 ResizeObserver，避免内存泄漏

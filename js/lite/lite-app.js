@@ -62,10 +62,10 @@
 
   var LS = {
     theme: 'bioquest-theme',
-    privacy: 'bioquest_lb_privacy',
+    privacy: 'tatabox_lb_privacy',
     entryPref: 'bioquest-entry-pref',
-    sample: 'bioquest_lite_sample_done',
-    touched: 'bioquest_lite_touched'   // 首次从主站跳入的 toast 标记
+    sample: 'tatabox_lite_sample_done',
+    touched: 'tatabox_lite_touched'   // 首次从主站跳入的 toast 标记
   };
 
   /* ================= 三态主题（亮 → 暗 → 夜巡） ================= */
@@ -876,7 +876,7 @@
 
   function myNickname() {
     try {
-      var u = JSON.parse(localStorage.getItem('bioquest_user_info') || 'null');
+      var u = JSON.parse(localStorage.getItem('tatabox_user_info') || 'null');
       if (u && (u.display_name || u.username)) return u.display_name || u.username;
     } catch (e) {}
     if (window.getCurrentUser) {
@@ -1598,7 +1598,7 @@
     // 跨标签实时（主站练习/复习 → lite 同步刷新；storage 事件为浏览器级广播）
     window.addEventListener('storage', function (e) {
       if (!e.key) return;
-      if (e.key.indexOf('bioquest_') === 0) {
+      if (e.key.indexOf('tatabox_') === 0 || e.key.indexOf('bioquest_') === 0) {
         if (S.view === 'today') renderToday();
         else if (S.view === 'wrong') renderWrong();
         else if (S.view === 'board') fetchBoard();

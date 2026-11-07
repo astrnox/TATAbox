@@ -114,11 +114,11 @@ function handleFeedbackSubmit() {
   // 存储到 localStorage
   try {
     var existing = [];
-    var raw = localStorage.getItem('bioquest_feedbacks');
+    var raw = localStorage.getItem('tatabox_feedbacks');
     if (raw) existing = JSON.parse(raw);
     if (!Array.isArray(existing)) existing = [];
     existing.push(feedback);
-    localStorage.setItem('bioquest_feedbacks', JSON.stringify(existing));
+    localStorage.setItem('tatabox_feedbacks', JSON.stringify(existing));
   } catch (e) {
     if (errorEl) {
       errorEl.textContent = '存储失败：' + errText(e);

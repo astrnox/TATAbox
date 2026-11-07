@@ -252,9 +252,9 @@ async function syncToCloud() {
     return { ok: true };
   }
 
-  var localWrong = safeGetJSON('bioquest_wrong_questions', []);
-  var localFavs = safeGetJSON('bioquest_favorites', []);
-  var localRecords = safeGetJSON('bioquest_records', []);
+  var localWrong = safeGetJSON('tatabox_wrong_questions', []);
+  var localFavs = safeGetJSON('tatabox_favorites', []);
+  var localRecords = safeGetJSON('tatabox_records', []);
 
   var result = await apiCall('POST', '/api/sync/upload', {
     wrong_questions: localWrong.map(function(w) {
@@ -275,9 +275,9 @@ async function syncToCloud() {
 
   if (result.ok) {
     // 清空本地待同步数据
-    localStorage.setItem('bioquest_wrong_questions', '[]');
-    localStorage.setItem('bioquest_favorites', '[]');
-    localStorage.setItem('bioquest_records', '[]');
+    localStorage.setItem('tatabox_wrong_questions', '[]');
+    localStorage.setItem('tatabox_favorites', '[]');
+    localStorage.setItem('tatabox_records', '[]');
   }
   return result;
 }
@@ -294,16 +294,16 @@ async function mergeCloudData() {
     var records = await getPracticeRecords();
 
     // 合并到本地（取并集，保留本地较新数据）
-    var localWrong = safeGetJSON('bioquest_wrong_questions', []);
-    var localFavs = safeGetJSON('bioquest_favorites', []);
-    var localRecords = safeGetJSON('bioquest_records', []);
+    var localWrong = safeGetJSON('tatabox_wrong_questions', []);
+    var localFavs = safeGetJSON('tatabox_favorites', []);
+    var localRecords = safeGetJSON('tatabox_records', []);
 
     // 简单合并策略：云端数据覆盖本地
     if (wrong.data && wrong.data.length > 0) {
-      localStorage.setItem('bioquest_wrong_questions_cloud', JSON.stringify(wrong.data));
+      localStorage.setItem('tatabox_wrong_questions_cloud', JSON.stringify(wrong.data));
     }
     if (favs.data && favs.data.length > 0) {
-      localStorage.setItem('bioquest_favorites_cloud', JSON.stringify(favs.data));
+      localStorage.setItem('tatabox_favorites_cloud', JSON.stringify(favs.data));
     }
   } catch (e) {
     // 静默失败
@@ -374,9 +374,9 @@ window.hasPermission = hasPermission;
 window._setCurrentUser = function(user) {
   // 委托给 supabase-client.js 的 localStorage 存储
   if (user) {
-    try { localStorage.setItem('bioquest_user', JSON.stringify(user)); } catch(e) {}
+    try { localStorage.setItem('tatabox_user', JSON.stringify(user)); } catch(e) {}
   } else {
-    localStorage.removeItem('bioquest_auth_token');
-    localStorage.removeItem('bioquest_user');
+    localStorage.removeItem('tatabox_auth_token');
+    localStorage.removeItem('tatabox_user');
   }
 };

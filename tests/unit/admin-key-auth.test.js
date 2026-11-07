@@ -160,13 +160,13 @@ describe('管理员动态码登录页', () => {
     try { sessionStorage.clear(); } catch (e) { /* ignore */ }
     window._onAuthUserLoaded({ id: 'u1', user_group: 'admin' });
     expect(window._adminAuthenticated).toBe(false);
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
     // 3) 非 admin 账号登录仍会清除残留解锁状态
     window._adminAuthenticated = true;
-    sessionStorage.setItem('bioquest_admin_auth', '{}');
+    sessionStorage.setItem('tatabox_admin_auth', '{}');
     window._onAuthUserLoaded({ id: 'u2', user_group: 'member' });
     expect(window._adminAuthenticated).toBe(false);
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
   });
 
   test('动态码验证成功：调用 admin_login_with_totp（去空格归一化）、账号升级、写 token、进仪表盘', async () => {
@@ -185,7 +185,7 @@ describe('管理员动态码登录页', () => {
     // 必须调用服务端 TOTP RPC（前端不做动态码比对），入参去空格且为 6 位数字
     expect(rpcCalls).toEqual([{ fn: 'admin_login_with_totp', params: { p_code: '123456' } }]);
     expect(me.user_group).toBe('admin');
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeTruthy();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeTruthy();
 
     // 进入管理页应渲染仪表盘而不是登录页
     const target = document.createElement('div');
@@ -213,7 +213,7 @@ describe('管理员动态码登录页', () => {
     expect(res.ok).toBe(false);
     expect(res.error).toBe('动态验证码不正确');
     expect(me.user_group).toBe('member');
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
   });
 
   test('服务端未部署 RPC：提示先执行 migration_v15_admin_totp.sql', async () => {

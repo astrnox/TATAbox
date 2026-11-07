@@ -177,7 +177,7 @@ describe('Issue #15：会话级 kill-switch', () => {
 
     // 首访带宽保护：全新会话（localStorage 无标记）会跳过后台预热，
     // 因此本用例先置位标记模拟"回访用户"，验证预热阶段的 CDN kill-switch 时序。
-    try { localStorage.setItem('bioquest_bank_warmed_once', '1'); } catch (e) {}
+    try { localStorage.setItem('tatabox_bank_warmed_once', '1'); } catch (e) {}
 
     const result = await realMaintain();
     expect(result).not.toBeNull();

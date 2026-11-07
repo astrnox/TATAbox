@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'bioquest_photo_quiz_history';
+  var STORAGE_KEY = 'tatabox_photo_quiz_history';
   var MAX_HISTORY = 20;
   var _stylesInjected = false;
   var _stream = null;        // MediaStream
@@ -206,7 +206,7 @@
         setProgress: setProgress,
         setEngine: function (engineName) {
           // 可扩展：显示当前正在使用的引擎徽标
-          try { sessionStorage.setItem('bioquest_ocr_last_engine', engineName); } catch (e) {}
+          try { sessionStorage.setItem('tatabox_ocr_last_engine', engineName); } catch (e) {}
         }
       }, function (result) {
         if (result && result.text) {

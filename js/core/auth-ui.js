@@ -264,7 +264,7 @@ function showAuthModal(mode) {
   // P0 登录持久化：若用户勾选了“记住我的账号”，自动预填上次登录标识
   if (mode !== 'register') {
     var savedId = null;
-    try { savedId = localStorage.getItem('bioquest_remember_id'); } catch (e) {}
+    try { savedId = localStorage.getItem('tatabox_remember_id'); } catch (e) {}
     if (savedId) {
       var loginUserEl = document.getElementById('auth-login-username');
       if (loginUserEl) loginUserEl.value = savedId;
@@ -1318,9 +1318,9 @@ async function handleLogin() {
       var rememberEl = document.getElementById('auth-remember');
       try {
         if (rememberEl && rememberEl.checked) {
-          localStorage.setItem('bioquest_remember_id', username);
+          localStorage.setItem('tatabox_remember_id', username);
         } else {
-          localStorage.removeItem('bioquest_remember_id');
+          localStorage.removeItem('tatabox_remember_id');
         }
       } catch (e) {}
       setAuthCooldown('login');
@@ -1376,7 +1376,7 @@ async function handleGuestLogin() {
   // 检查是否存在已有的游客会话
   var existingSession = null;
   try {
-    existingSession = JSON.parse(localStorage.getItem('bioquest_guest_session') || 'null');
+    existingSession = JSON.parse(localStorage.getItem('tatabox_guest_session') || 'null');
   } catch (e) {}
 
   var result;
@@ -1420,7 +1420,7 @@ showToast('已作为游客登录，数据保存在本地');
  */
 function checkAuthCooldown(action) {
   try {
-    var key = 'bioquest_cooldown_' + action;
+    var key = 'tatabox_cooldown_' + action;
     var lastAttempt = parseInt(localStorage.getItem(key) || '0', 10);
     var now = Date.now();
     var cooldowns = { register: 30000, login: 15000, resetPassword: 60000 };
@@ -1441,7 +1441,7 @@ function checkAuthCooldown(action) {
  */
 function setAuthCooldown(action) {
   try {
-    var key = 'bioquest_cooldown_' + action;
+    var key = 'tatabox_cooldown_' + action;
     localStorage.setItem(key, String(Date.now()));
   } catch (e) { /* 静默 */ }
 }

@@ -146,7 +146,7 @@
   function _localQuestionIndex() {
     if (!global.localStorage) return null;
     var raw = null;
-    try { raw = global.localStorage.getItem('bioquest_wrong_questions'); } catch (e) { return null; }
+    try { raw = global.localStorage.getItem('tatabox_wrong_questions'); } catch (e) { return null; }
     if (!raw) return null;
     if (_localFqCache && _localFqCache.raw === raw) return _localFqCache.map;
     var map = {};

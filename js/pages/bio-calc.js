@@ -306,8 +306,8 @@
   function loadRealData() {
     try {
       var stats = null, records = [];
-      try { stats = JSON.parse(localStorage.getItem('bioquest_stats') || 'null'); } catch (e) {}
-      try { records = JSON.parse(localStorage.getItem('bioquest_records') || '[]'); } catch (e) {}
+      try { stats = JSON.parse(localStorage.getItem('tatabox_stats') || 'null'); } catch (e) {}
+      try { records = JSON.parse(localStorage.getItem('tatabox_records') || '[]'); } catch (e) {}
       if (!stats || typeof window.computeBioDimensions !== 'function') {
         alert('暂未读取到你的统计数据。先去「练习」刷几题，再来看看你的真实 Bio 分吧。');
         return;

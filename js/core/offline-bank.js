@@ -48,14 +48,46 @@
     });
   }
 
+  /**
+   * M-07：下载前检查存储配额，避免写满磁盘后静默失败。
+   * 无法读取 estimate 的环境直接放行（按浏览器默认行为处理）。
+   * @param {number} minBytes 预计需要的最小空闲字节数
+   * @returns {Promise<Object|boolean>} true 表示充足；否则返回 { error }
+   */
+  function ensureQuota(minBytes) {
+    return new Promise(function (resolve) {
+      var st = navigator.storage;
+      if (!st || typeof st.estimate !== 'function') { resolve(true); return; }
+      st.estimate().then(function (est) {
+        var quota = (est && est.quota) || 0;
+        var usage = (est && est.usage) || 0;
+        var free = quota - usage;
+        if (quota && free < minBytes) {
+          resolve({
+            error: '可用存储空间不足：需要约 ' + Math.ceil(minBytes / 1048576) +
+              ' MB，当前仅剩 ' + Math.max(0, Math.floor(free / 1048576)) + ' MB'
+          });
+        } else {
+          resolve(true);
+        }
+      }).catch(function () { resolve(true); });
+    });
+  }
+
+  function downloadWithQuota(level, minBytes, timeoutMs) {
+    return ensureQuota(minBytes).then(function (ok) {
+      return ok === true ? send({ type: 'CACHE_OFFLINE_BANK', level: level }, timeoutMs) : ok;
+    });
+  }
+
   window.OfflineBank = {
     /** 核心包：manifest + 全部分片 + 101 题精练 + 40 题逻辑 */
     downloadCore: function () {
-      return send({ type: 'CACHE_OFFLINE_BANK', level: 'core' }, 180000);
+      return downloadWithQuota('core', 10 * 1048576, 180000);
     },
     /** 完整包：核心包 + 2,873 道联赛真题（resource/all.json，约 4.7MB） */
     downloadFull: function () {
-      return send({ type: 'CACHE_OFFLINE_BANK', level: 'full' }, 180000);
+      return downloadWithQuota('full', 30 * 1048576, 180000);
     },
     clear: function () {
       return send({ type: 'CLEAR_OFFLINE_BANK' }, 15000);

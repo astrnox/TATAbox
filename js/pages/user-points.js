@@ -5,7 +5,7 @@
  */
 'use strict';
 
-var _POINTS_STORAGE = 'bioquest_credit_state';
+var _POINTS_STORAGE = 'tatabox_credit_state';
 var _POINTS_DEFAULTS = {
   BASE: 100,                 // 基础信任值，不随时间衰减
   DECAY_DAYS: 90,            // 信任增量经过多久全部清零（线性衰减）
@@ -251,7 +251,7 @@ window.POINTS_LEVELS = _POINTS_LEVELS;
 // 每日首次启动 → 微弱信任增量
 (function _pointsDailyLoginReward() {
   try {
-    var LAST_KEY = 'bioquest_credit_last_login_day';
+    var LAST_KEY = 'tatabox_credit_last_login_day';
     var today = new Date();
     var tag = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var last = localStorage.getItem(LAST_KEY);

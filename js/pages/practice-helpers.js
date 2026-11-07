@@ -153,7 +153,7 @@ function bindWrongPracticeEntry() {
       if (wrongs.length > 0) {
         var firstWrong = wrongs[0];
         try {
-          sessionStorage.setItem('bioquest_redo_question', JSON.stringify(firstWrong));
+          sessionStorage.setItem('tatabox_redo_question', JSON.stringify(firstWrong));
         } catch(e) {}
         handleRedoQuestion(JSON.stringify(firstWrong));
       } else {

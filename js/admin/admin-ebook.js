@@ -21,7 +21,7 @@ async function renderEbookTab(container) {
   // Load any saved edits
   let savedEdits = {};
   try {
-    const raw = localStorage.getItem('bioquest_ebook_edits');
+    const raw = localStorage.getItem('tatabox_ebook_edits');
     if (raw) savedEdits = JSON.parse(raw);
   } catch(e) {}
 
@@ -319,7 +319,7 @@ async function renderEbookTab(container) {
 
     const editKey = partId + '/ch' + chIdx + '/sec' + secIdx;
     savedEdits[editKey] = contentEdit.value;
-    localStorage.setItem('bioquest_ebook_edits', JSON.stringify(savedEdits));
+    localStorage.setItem('tatabox_ebook_edits', JSON.stringify(savedEdits));
     showAdminToast('内容已保存到本地存储', 'success');
 
     // Refresh saved edits display
@@ -342,20 +342,20 @@ async function renderEbookTab(container) {
 
   function getCustomEbooks() {
     try {
-      var raw = localStorage.getItem('bioquest_custom_ebooks');
+      var raw = localStorage.getItem('tatabox_custom_ebooks');
       if (raw) return JSON.parse(raw);
     } catch(e) {}
     return [];
   }
 
   function saveCustomEbooks(ebooks) {
-    localStorage.setItem('bioquest_custom_ebooks', JSON.stringify(ebooks));
+    localStorage.setItem('tatabox_custom_ebooks', JSON.stringify(ebooks));
   }
 
   function getPdfStatus() {
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     // Also check custom ebooks
@@ -369,11 +369,11 @@ async function renderEbookTab(container) {
   function setPdfStatus(key, hasPdf) {
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     status[key] = hasPdf;
-    localStorage.setItem('bioquest_ebook_pdf_status', JSON.stringify(status));
+    localStorage.setItem('tatabox_ebook_pdf_status', JSON.stringify(status));
   }
 
   function sanitizeBookName(name) {
@@ -696,21 +696,21 @@ window.adminDeletePdf = async function(bookKey, filePath, isCustom) {
 
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     status[bookKey] = false;
-    localStorage.setItem('bioquest_ebook_pdf_status', JSON.stringify(status));
+    localStorage.setItem('tatabox_ebook_pdf_status', JSON.stringify(status));
 
     // If custom book, also remove from custom ebooks list
     if (isCustom) {
       var customEbooks = [];
       try {
-        var rawEbooks = localStorage.getItem('bioquest_custom_ebooks');
+        var rawEbooks = localStorage.getItem('tatabox_custom_ebooks');
         if (rawEbooks) customEbooks = JSON.parse(rawEbooks);
       } catch(e) {}
       customEbooks = customEbooks.filter(function(eb) { return eb.id !== bookKey; });
-      localStorage.setItem('bioquest_custom_ebooks', JSON.stringify(customEbooks));
+      localStorage.setItem('tatabox_custom_ebooks', JSON.stringify(customEbooks));
     }
 
     showAdminToast('PDF 已删除', 'success');
@@ -726,11 +726,11 @@ window.adminDeletePdf = async function(bookKey, filePath, isCustom) {
 window.deleteEbookEdit = function(key) {
   let savedEdits = {};
   try {
-    const raw = localStorage.getItem('bioquest_ebook_edits');
+    const raw = localStorage.getItem('tatabox_ebook_edits');
     if (raw) savedEdits = JSON.parse(raw);
   } catch(e) {}
   delete savedEdits[key];
-  localStorage.setItem('bioquest_ebook_edits', JSON.stringify(savedEdits));
+  localStorage.setItem('tatabox_ebook_edits', JSON.stringify(savedEdits));
   showAdminToast('编辑已删除', 'success');
   // Refresh the tab
   const container = document.getElementById('admin-tab-content');

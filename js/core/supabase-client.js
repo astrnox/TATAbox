@@ -194,9 +194,9 @@ function _setupAuthListener() {
           window._onAuthUserLoaded(null);
         }
         try {
-          sessionStorage.removeItem('bioquest_admin_auth');
-          sessionStorage.removeItem('bioquest_admin_attempts');
-          sessionStorage.removeItem('bioquest_admin_lock');
+          sessionStorage.removeItem('tatabox_admin_auth');
+          sessionStorage.removeItem('tatabox_admin_attempts');
+          sessionStorage.removeItem('tatabox_admin_lock');
         } catch(e) {}
         if (typeof window.updateAuthUI === 'function') window.updateAuthUI();
       } else if (event === 'PASSWORD_RECOVERY') {
@@ -228,13 +228,13 @@ function isLoggedIn() {
 
 // 将当前用户的可展示信息（昵称/用户名/头像）持久化到 localStorage，
 // 供其它页面（如 wiki.html 这类轻页面）读取，从而在提交历史中显示作者头像与昵称。
-var _USER_INFO_KEY = 'bioquest_user_info';
+var _USER_INFO_KEY = 'tatabox_user_info';
 function _persistUserInfo() {
   try {
     var u = _currentUser;
     if (u) {
       var avatar = '';
-      try { avatar = localStorage.getItem('bioquest_avatar') || ''; } catch (e) {}
+      try { avatar = localStorage.getItem('tatabox_avatar') || ''; } catch (e) {}
       localStorage.setItem(_USER_INFO_KEY, JSON.stringify({
         username: u.username || u.email || '',
         display_name: u.display_name || u.username || '',
@@ -455,10 +455,10 @@ async function registerUser(username, password, displayName, email) {
   try { localStorage.setItem(lockKey, String(Date.now() + 30000)); } catch (e) {}
 
   try {
-    var deviceId = localStorage.getItem('bioquest_device_id');
+    var deviceId = localStorage.getItem('tatabox_device_id');
     if (!deviceId) {
       deviceId = 'dev_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
-      localStorage.setItem('bioquest_device_id', deviceId);
+      localStorage.setItem('tatabox_device_id', deviceId);
     }
 
     // 策略 1：使用完整的 options.data
@@ -846,8 +846,8 @@ async function loginUser(usernameOrEmail, password) {
  */
 function _hashGuestPassword(password) {
   try {
-    var salt = 'bioquest_guest_v1_' + (function () {
-      try { return localStorage.getItem('bioquest_device_id') || 'unknown'; }
+    var salt = 'tatabox_guest_v1_' + (function () {
+      try { return localStorage.getItem('tatabox_device_id') || 'unknown'; }
       catch (e) { return 'unknown'; }
     })();
     return (function (str) {
@@ -871,10 +871,10 @@ function _hashGuestPassword(password) {
  */
 function guestLogin(password, username) {
   // 生成或获取设备ID
-  var deviceId = localStorage.getItem('bioquest_device_id');
+  var deviceId = localStorage.getItem('tatabox_device_id');
   if (!deviceId) {
     deviceId = 'dev_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
-    localStorage.setItem('bioquest_device_id', deviceId);
+    localStorage.setItem('tatabox_device_id', deviceId);
   }
 
   // 如果提供了用户名，尝试恢复已有账号
@@ -907,13 +907,13 @@ function guestLogin(password, username) {
     try {
       // SHA-256 + 设备ID 盐值（防止彩虹表 + 跨设备撞库）
       var hash = _hashGuestPassword(password);
-      if (hash) localStorage.setItem('bioquest_guest_pwdhash', hash);
+      if (hash) localStorage.setItem('tatabox_guest_pwdhash', hash);
     } catch (e) {}
   }
 
   // 持久化游客会话到 localStorage
   try {
-    localStorage.setItem('bioquest_guest_session', JSON.stringify({
+    localStorage.setItem('tatabox_guest_session', JSON.stringify({
       id: guestId,
       username: guestUsername,
       display_name: _currentUser.display_name,
@@ -939,15 +939,15 @@ function guestLogin(password, username) {
 function guestLoginWithPassword(username, password) {
   var sessionData = null;
   try {
-    sessionData = JSON.parse(localStorage.getItem('bioquest_guest_session') || 'null');
+    sessionData = JSON.parse(localStorage.getItem('tatabox_guest_session') || 'null');
   } catch (e) {}
 
   // 优先用哈希校验（guestLogin 保存的 bioquest_guest_pwdhash）；
   // 兼容旧版备份导入的明文密码（bioquest_guest_password）
   var savedHash = null;
   var legacyPwd = null;
-  try { savedHash = localStorage.getItem('bioquest_guest_pwdhash'); } catch (e) {}
-  try { legacyPwd = localStorage.getItem('bioquest_guest_password'); } catch (e) {}
+  try { savedHash = localStorage.getItem('tatabox_guest_pwdhash'); } catch (e) {}
+  try { legacyPwd = localStorage.getItem('tatabox_guest_password'); } catch (e) {}
 
   if (savedHash) {
     if (_hashGuestPassword(password) !== savedHash) {
@@ -974,7 +974,7 @@ function guestLoginWithPassword(username, password) {
  */
 function restoreGuestSession() {
   try {
-    var sessionData = localStorage.getItem('bioquest_guest_session');
+    var sessionData = localStorage.getItem('tatabox_guest_session');
     if (!sessionData) return false;
     var session = JSON.parse(sessionData);
     if (!session || !session.id) return false;
@@ -1011,7 +1011,7 @@ async function logoutUser() {
     }
   }
   // 清除游客会话
-  try { localStorage.removeItem('bioquest_guest_session'); } catch (e) {}
+  try { localStorage.removeItem('tatabox_guest_session'); } catch (e) {}
   _currentUser = null;
 }
 
@@ -1033,10 +1033,10 @@ function forceLogout() {
   // 仅清除认证相关 key，保留用户数据（API Key / 头像 / 设置 / 错题 / 记录等）
   var authKeys = [
     'sb-',           // Supabase auth tokens（前缀匹配）
-    'bioquest_guest_session',
-    'bioquest_guest_password',
-    'bioquest_guest_pwdhash',
-    'bioquest_admin_auth'
+    'tatabox_guest_session',
+    'tatabox_guest_password',
+    'tatabox_guest_pwdhash',
+    'tatabox_admin_auth'
   ];
   var keysToRemove = [];
   for (var i = 0; i < localStorage.length; i++) {
@@ -1055,9 +1055,9 @@ function forceLogout() {
   }
   // 清除 sessionStorage 中的管理员认证和频率限制状态
   try {
-    sessionStorage.removeItem('bioquest_admin_auth');
-    sessionStorage.removeItem('bioquest_admin_attempts');
-    sessionStorage.removeItem('bioquest_admin_lock');
+    sessionStorage.removeItem('tatabox_admin_auth');
+    sessionStorage.removeItem('tatabox_admin_attempts');
+    sessionStorage.removeItem('tatabox_admin_lock');
   } catch(e) {}
 
   showToast('已退出登录');
@@ -1304,7 +1304,7 @@ async function _doRestoreSession() {
       // 修复：restoreSession 成功后，通知 admin 模块同步认证状态
       if (_currentUser && _currentUser.user_group === 'admin') {
         var token = JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL });
-        sessionStorage.setItem('bioquest_admin_auth', token);
+        sessionStorage.setItem('tatabox_admin_auth', token);
         if (typeof window._onAuthUserLoaded === 'function') {
           window._onAuthUserLoaded(_currentUser);
         }

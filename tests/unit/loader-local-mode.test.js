@@ -65,15 +65,15 @@ describe('本地题库模式（PREFER_LOCAL）', () => {
     // 复刻 saveSetting/loadSetting（同一 localStorage key：bioquest_settings）。
     window.saveSetting = function (key, value) {
       try {
-        const all = JSON.parse(localStorage.getItem('bioquest_settings') || '{}');
+        const all = JSON.parse(localStorage.getItem('tatabox_settings') || '{}');
         all[key] = value;
-        localStorage.setItem('bioquest_settings', JSON.stringify(all));
+        localStorage.setItem('tatabox_settings', JSON.stringify(all));
         return true;
       } catch (e) { return false; }
     };
     window.loadSetting = function (key, dflt) {
       try {
-        const all = JSON.parse(localStorage.getItem('bioquest_settings') || '{}');
+        const all = JSON.parse(localStorage.getItem('tatabox_settings') || '{}');
         return all.hasOwnProperty(key) ? all[key] : dflt;
       } catch (e) { return dflt; }
     };

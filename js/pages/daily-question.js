@@ -396,7 +396,7 @@
   // 检查今日是否已答
   function getTodayAnswer() {
     try {
-      const data = JSON.parse(localStorage.getItem('bioquest_daily_answer') || '{}');
+      const data = JSON.parse(localStorage.getItem('tatabox_daily_answer') || '{}');
       if (data.seed === getDailySeed()) return data;
       return null;
     } catch(e) { return null; }
@@ -405,23 +405,23 @@
   // 保存今日答案
   function saveTodayAnswer(selectedIdx, isCorrect) {
     const data = { seed: getDailySeed(), selected: selectedIdx, correct: isCorrect };
-    localStorage.setItem('bioquest_daily_answer', JSON.stringify(data));
+    localStorage.setItem('tatabox_daily_answer', JSON.stringify(data));
   }
 
   // 获取连续答题天数
   function getStreak() {
     try {
-      return parseInt(localStorage.getItem('bioquest_daily_streak') || '0');
+      return parseInt(localStorage.getItem('tatabox_daily_streak') || '0');
     } catch(e) { return 0; }
   }
 
   function incrementStreak() {
     const streak = getStreak();
-    const lastDate = localStorage.getItem('bioquest_daily_last_date');
+    const lastDate = localStorage.getItem('tatabox_daily_last_date');
     const today = getDailySeed().toString();
     if (lastDate !== today) {
-      localStorage.setItem('bioquest_daily_streak', (streak + 1).toString());
-      localStorage.setItem('bioquest_daily_last_date', today);
+      localStorage.setItem('tatabox_daily_streak', (streak + 1).toString());
+      localStorage.setItem('tatabox_daily_last_date', today);
     }
   }
 

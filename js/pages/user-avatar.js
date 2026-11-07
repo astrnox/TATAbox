@@ -7,7 +7,7 @@
 
 function getAvatarUrl() {
   try {
-    var local = localStorage.getItem('bioquest_avatar');
+    var local = localStorage.getItem('tatabox_avatar');
     if (local) return local;
   } catch (e) {}
   if (typeof getCurrentUser === 'function') {
@@ -108,7 +108,7 @@ function setupAvatarUpload() {
           return;
         }
         // 存到 localStorage
-        try { localStorage.setItem('bioquest_avatar', compressed); } catch (storageErr) {
+        try { localStorage.setItem('tatabox_avatar', compressed); } catch (storageErr) {
           showToast('本地存储失败：' + (storageErr.message || '空间不足'));
           e.target.value = '';
           return;

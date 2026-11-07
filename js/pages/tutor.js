@@ -466,7 +466,7 @@ function _setStreamPhase(phase) {
   if (sendBtn) sendBtn.disabled = (phase !== 'idle');
 }
 
-var TUTOR_STORAGE_KEY = 'bioquest_tutor_sessions';
+var TUTOR_STORAGE_KEY = 'tatabox_tutor_sessions';
 
 function _loadTutorSessions() {
   try {
@@ -875,11 +875,11 @@ function _renderTutorSetup(target) {
       }
       // provider/model 为非敏感偏好，可落 localStorage；Key 本身绝不写入
       var prev = {};
-      try { var raw = localStorage.getItem('bioquest_ai_key_config'); if (raw) prev = JSON.parse(raw) || {}; } catch (e) { prev = {}; }
+      try { var raw = localStorage.getItem('tatabox_ai_key_config'); if (raw) prev = JSON.parse(raw) || {}; } catch (e) { prev = {}; }
       prev.provider = provider;
       prev.model = prev.model || '';
       prev.apiKey = '';
-      localStorage.setItem('bioquest_ai_key_config', JSON.stringify(prev));
+      localStorage.setItem('tatabox_ai_key_config', JSON.stringify(prev));
     } catch (e) {
       if (msgEl) msgEl.textContent = '保存失败，请检查浏览器是否禁用了本地存储';
       return;
@@ -962,9 +962,9 @@ function renderTutorPage(target) {
   // v5.0：消费知识图谱「AI 讲解」预填（sessionStorage.bioquest_tutor_prefill）
   // —— 图谱节点/百科词条点击「AI 讲解」后跳转本页并自动发出带上下文的问题
   try {
-    var kgPrefill = sessionStorage.getItem('bioquest_tutor_prefill');
+    var kgPrefill = sessionStorage.getItem('tatabox_tutor_prefill');
     if (kgPrefill) {
-      sessionStorage.removeItem('bioquest_tutor_prefill');
+      sessionStorage.removeItem('tatabox_tutor_prefill');
       var pInput = document.getElementById('tutor-input');
       if (pInput) pInput.value = kgPrefill;
       setTimeout(function () { _sendTutorMessage(kgPrefill); }, 80);

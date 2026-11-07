@@ -24,7 +24,7 @@ function _isRecycledQuestion(q) {
     return isQuestionRecycled(qId);
   }
   try {
-    const list = JSON.parse(localStorage.getItem('bioquest_question_recycled') || '[]');
+    const list = JSON.parse(localStorage.getItem('tatabox_question_recycled') || '[]');
     return Array.isArray(list) && list.indexOf(qId) !== -1;
   } catch (e) {
     return false;

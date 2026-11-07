@@ -86,7 +86,7 @@ async function updateBioScore(bioScore, stats) {
       accuracy: stats.accuracy || 0,
       updated_at: new Date().toISOString()
     };
-    await sb.from('profiles').upsert({ id: _currentUser.id, ...updates, device_id: localStorage.getItem('bioquest_device_id') || 'unknown' }, { onConflict: 'id' });
+    await sb.from('profiles').upsert({ id: _currentUser.id, ...updates, device_id: localStorage.getItem('tatabox_device_id') || 'unknown' }, { onConflict: 'id' });
     // 分数已变化：失效排行榜缓存，保证下次查询立即拿到最新值（实时更新）
     invalidateLeaderboardCache();
 
@@ -95,7 +95,7 @@ async function updateBioScore(bioScore, stats) {
       var answered = stats.total_answered || 0;
       var milestone = Math.floor(answered / 10);
       var lastMilestone = 0;
-      try { lastMilestone = parseInt(localStorage.getItem('bioquest_points_practice_milestone') || '0', 10); } catch (e) {}
+      try { lastMilestone = parseInt(localStorage.getItem('tatabox_points_practice_milestone') || '0', 10); } catch (e) {}
       if (milestone > lastMilestone) {
         var rewardSteps = milestone - lastMilestone;
         for (var i = 0; i < rewardSteps; i++) {
@@ -104,7 +104,7 @@ async function updateBioScore(bioScore, stats) {
             await adjustUserPoints(delta, POINTS_EARN_RULES.practice_milestone.reason, { source: 'practice' });
           }
         }
-        localStorage.setItem('bioquest_points_practice_milestone', String(milestone));
+        localStorage.setItem('tatabox_points_practice_milestone', String(milestone));
       }
     } catch (e) { /* 静默 */ }
   } catch (e) {
@@ -670,7 +670,7 @@ function startOnlineTimeTracking() {
   if (_onlineTracker.heartbeatTimer || !_currentUser || _currentUser.isGuest) return;
   _onlineTracker.lastActive = Date.now();
 
-  var keys = { date: 'bioquest_points_online_date', count: 'bioquest_points_online_count' };
+  var keys = { date: 'tatabox_points_online_date', count: 'tatabox_points_online_count' };
   try {
     var today = _localDateStr();
     var savedDate = localStorage.getItem(keys.date);

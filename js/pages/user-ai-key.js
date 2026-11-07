@@ -5,8 +5,8 @@
 'use strict';
 
 var _AI_DAILY_LIMIT = 100; // 每用户每日限 100 次 AI 调用
-var _AI_KEY_STORAGE = 'bioquest_ai_key_config';
-var _AI_USAGE_STORAGE = 'bioquest_ai_usage';
+var _AI_KEY_STORAGE = 'tatabox_ai_key_config';
+var _AI_USAGE_STORAGE = 'tatabox_ai_usage';
 
 // 安全：API Key 存储统一委托 window.BioQuestKeyStore（闭包化单例，P1-3 修复）。
 // - 页面内存：默认，刷新后需重新输入 Key；
@@ -115,6 +115,19 @@ var _AI_PROVIDER_MAP = {
 function _bindApiKeySettings() {
   var toggleBtn = document.getElementById('aiKeyToggleBtn');
   var keyInput = document.getElementById('aiApiKeyInput');
+
+  // M-05：会话密钥由 WebCrypto 异步恢复，完成后补显示遮罩值
+  if (window.BioQuestKeyStore && typeof window.BioQuestKeyStore.whenReady === 'function') {
+    window.BioQuestKeyStore.whenReady().then(function () {
+      var input = document.getElementById('aiApiKeyInput');
+      if (!input || input.getAttribute('data-has-key') === '1') return;
+      var restored = _loadApiKeyConfig().apiKey;
+      if (!restored) return;
+      input.value = restored.length > 4 ? '****' + restored.slice(-4) : '****';
+      input.setAttribute('data-has-key', '1');
+    });
+  }
+
   if (toggleBtn && keyInput) {
     toggleBtn.addEventListener('click', function() {
       if (keyInput.type === 'password') {

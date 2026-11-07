@@ -17,6 +17,35 @@ var TATABOX = (typeof window !== 'undefined' ? window.BioQuest : null) || {};
 if (typeof window !== 'undefined') { window.BioQuest = TATABOX; }
 
 /**
+ * M-12：旧品牌存储键兼容迁移（bioquest_* → tatabox_*）
+ * ------------------------------------------------------------
+ * 新代码统一读写 tatabox_* 前缀；首次加载时把旧键的值复制到对应的新键。
+ * - 幂等：新键已存在时不覆盖；
+ * - 保留旧键：同源旧页面 / 未刷新的旧标签页仍可正常读写，避免数据“凭空消失”；
+ * - 失败静默：隐私模式或配额受限时忽略，不阻断应用启动。
+ */
+(function migrateLegacyStorageKeys() {
+  if (typeof window === 'undefined') return;
+  var OLD_PREFIX = 'bioquest_';
+  var NEW_PREFIX = 'tatabox_';
+  function migrate(storage) {
+    if (!storage) return;
+    try {
+      for (var i = storage.length - 1; i >= 0; i--) {
+        var k = storage.key(i);
+        if (!k || k.indexOf(OLD_PREFIX) !== 0) continue;
+        var nk = NEW_PREFIX + k.slice(OLD_PREFIX.length);
+        if (storage.getItem(nk) === null) {
+          storage.setItem(nk, storage.getItem(k));
+        }
+      }
+    } catch (e) { /* 忽略存储不可用场景 */ }
+  }
+  migrate(window.localStorage);
+  migrate(window.sessionStorage);
+})();
+
+/**
  * ═══ 全站图标系统（P0 设计整改）═══
  * 统一替代散落在各页面的 emoji（奖杯 / 奖牌 / 对勾 / 警告等）。
  * 约定：

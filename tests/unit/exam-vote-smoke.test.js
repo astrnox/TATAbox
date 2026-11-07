@@ -66,7 +66,7 @@ describe('试题页（quiz.html）投票/评分冒烟', () => {
     const tag = document.querySelector('[data-exam-rating-tag]');
     expect(tag).toBeTruthy();
     expect(tag.textContent).toContain('评分');
-    const stored = JSON.parse(localStorage.getItem('bioquest_question_ratings') || '{}');
+    const stored = JSON.parse(localStorage.getItem('tatabox_question_ratings') || '{}');
     expect(Object.keys(stored).length).toBeGreaterThan(0);
   });
 

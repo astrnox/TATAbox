@@ -15,7 +15,7 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'bioquest_onboarding_done';
+  var STORAGE_KEY = 'tatabox_onboarding_done';
 
   // 3 步引导内容。targetSelector 为可选的「高亮锚点」（可为空）。
   var STEPS = [
