@@ -13,10 +13,12 @@
        P1-8 修复：已移除 script-src 的 'unsafe-inline'——所有内联脚本外部化为
        js/core/theme-init.js（同步防闪烁）、js/core/boot-mask.js、js/core/boot-lazy.js、js/core/sw-register.js，
        所有动态内联 onclick/onchange 等处理器改由 js/core/csp-events.js 的 data-on 委托实现。
+       OCR 修复：'wasm-unsafe-eval' 仅放行 WebAssembly 编译（Tesseract WASM 引擎），
+       不放开 JS eval / new Function，eval 逃逸路径仍被 CSP 禁止。
        style-src 保留 unsafe-inline：动态度量/背景等数百处内联 style 属性为低风险（非 XSS 载体）。 -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
+    script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com;
     style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
     img-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://upload.wikimedia.org;
     font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
@@ -792,7 +794,7 @@
        若未来恢复图表/热力图/压缩导出，请在对应路由内按需 loadScriptOnce。 -->
   <!-- v5.0 Tier1 集成模块 -->
   <script src="js/integrations/vendor-init.js?v=20260723d" defer></script>
-  <!-- OCR 多引擎抽象层：L0 OCR.space(可选云) → L1 Vision → L2 PaddleOCR → L3 Tesseract → L4 OCRad 五级降级；
+  <!-- OCR 多引擎抽象层：L0 OCR.space(可选云) → L1 Vision → L2 Tesseract → L3 OCRad 四级降级；
        photo-quiz.js / wrongbook.js / 社区发帖图片等模块均通过 window.OcrEngine 调用。
        文件本身非常轻（仅调度与懒加载框架），真正的引擎 CDN 在使用时按需下载。 -->
   <script src="js/integrations/ocr-engine.js?v=20260916a" defer></script>

@@ -37,6 +37,20 @@ describe('M-05 HTML/SVG 清洗 fail-closed', () => {
     expect(js).not.toMatch(/svg\.replace\(\/<script/);
   });
 
+  test('OCR WASM 编译单独放行，JS eval 仍被 CSP 禁止', () => {
+    const html = read('index.html');
+    const meta = html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/);
+    expect(meta).toBeTruthy();
+    expect(meta[1]).toMatch(/script-src 'self' 'wasm-unsafe-eval'/);
+    expect(meta[1]).not.toMatch(/'unsafe-eval'/);
+    const htaccess = read('.htaccess');
+    expect(htaccess).toMatch(/script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'/);
+    expect(htaccess).not.toMatch(/'unsafe-eval'/);
+    // 已移除失效的 PaddleOCR/onnxruntime 路径（其 protobufjs 初始化会调用 eval）
+    const ocr = read('js/integrations/ocr-engine.js');
+    expect(ocr).not.toMatch(/CDN\.ort|CDN\.paddleocrBrowser|Paddle\.init|ENGINE_NAMES\.PADDLE/);
+  });
+
   test('考试页题干/子题文本统一转义，题库内容不会注入 HTML', () => {
     const js = read('js/pages/exam.js');
     expect(js).not.toMatch(/<div class="exam-q-stem">\$\{q\.question\.replace/);

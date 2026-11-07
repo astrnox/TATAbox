@@ -61,7 +61,8 @@ TATABOX 是**纯前端静态应用 + Supabase（Auth / 数据库 / RLS）**架�
 `index.html` 通过 meta CSP 收紧（`js/ai/ai-client.js` 同样受 `connect-src` 约束）：
 
 - `script-src 'self'` + CDN 白名单，**无 `unsafe-inline` / `unsafe-eval`**
-  （内联脚本已外部化，`onclick` 改为事件委托）；
+  （内联脚本已外部化，`onclick` 改为事件委托）；OCR 的 Tesseract WASM 通过
+  `'wasm-unsafe-eval'` 单独放行 WebAssembly 编译，不放开 JS `eval()`；
 - `object-src 'none'`、`base-uri 'self'`、`form-action 'self'`；
 - 外连域最小化：Supabase、jsDelivr/unpkg、题图（Wikimedia）、PhET、6 家 AI 服务商。
 

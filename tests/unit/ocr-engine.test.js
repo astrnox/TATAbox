@@ -4,7 +4,7 @@
  * 验证矩阵：
  *   1. _otsuThreshold 大津法：双峰灰度正确分割、单峰/空数据不崩
  *   2. _rateOcrCandidate 候选评分：中文/英数文本高、乱码垃圾低（含 -1）
- *   3. _postprocessText 后处理：Paddle 中文间空格合并、行尾标点清理
+ *   3. _postprocessText 后处理：Tesseract 中文间空格合并、行尾标点清理
  * @jest-environment jsdom
  */
 'use strict';
@@ -106,9 +106,9 @@ describe('OcrEngine._rateOcrCandidate（候选质量评分）', () => {
 });
 
 describe('OcrEngine._postprocessText（生物题后处理）', () => {
-  test('Paddle 行内中文间空格合并、行尾标点清理', () => {
+  test('Tesseract 行内中文间空格合并、行尾标点清理', () => {
     const engine = freshEngine();
-    const out = engine._postprocessText('细胞 呼吸 是 过程 ，\n\n下一步 F 最接近：  ', 'paddle');
+    const out = engine._postprocessText('细胞 呼吸 是 过程 ，\n\n下一步 F 最接近：  ', 'tesseract');
     expect(out.indexOf('细胞呼吸是过程')).toBeGreaterThanOrEqual(0);
     // 空行被压缩且结果首尾无空白
     expect(out).not.toContain('\n\n\n');
@@ -117,13 +117,13 @@ describe('OcrEngine._postprocessText（生物题后处理）', () => {
 
   test('跨行中文不被错误粘连（修复前会用 \\s 跨行合并）', () => {
     const engine = freshEngine();
-    const out = engine._postprocessText('第一行内容\n第二行内容', 'paddle');
+    const out = engine._postprocessText('第一行内容\n第二行内容', 'tesseract');
     expect(out.indexOf('第一行内容\n第二行内容') >= 0 || out.indexOf('第一行内容') >= 0).toBe(true);
   });
 
   test('断行等号修复', () => {
     const engine = freshEngine();
-    const out = engine._postprocessText('a =\n= b', 'paddle');
+    const out = engine._postprocessText('a =\n= b', 'tesseract');
     expect(out).toContain('==');
   });
 });

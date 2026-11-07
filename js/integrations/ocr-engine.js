@@ -5,16 +5,18 @@
  * 设计原则：
  *   1. 完全独立：单一文件暴露 window.OcrEngine，无外部业务依赖
  *   2. 懒加载：各引擎 runtime / model 按需加载，未使用零开销
- *   3. 渐进降级：L1 AI视觉 → L2 PaddleOCR ONNX → L3 Tesseract → L4 OCRad
+ *   3. 渐进降级：L1 AI视觉 → L2 Tesseract → L3 OCRad
  *   4. 统一接口：OcrEngine.recognize(imgData, opts, ui) 一套参数跑所有引擎
  *   5. 最小侵入：photo-quiz.js / wrongbook.js 仅替换调用点，业务逻辑不变
  *
- * 引擎选型（GitHub 成熟项目，bug 少）：
- *   L2  PaddleOCR ONNX  — paddleocr-browser (基于 eSearch-OCR v5)
- *                         https://github.com/xulihang/paddleocr-browser
- *                         https://github.com/xushengfeng/eSearch-OCR (353 commits, 成熟稳定)
- *   L3  Tesseract.js v5  — 现有实现保留作为多语言兜底
- *   L4  OCRad.js         — ocrad.js 纯JS超轻量，简单印刷体极速兜底
+ * 引擎选型：
+ *   L2  Tesseract.js v5  — 多语言（chi_sim+eng）WASM 引擎，社区最大
+ *   L3  OCRad.js         — ocrad.js 纯JS超轻量，简单印刷体极速兜底
+ *
+ * 说明（M-05 CSP）：PaddleOCR/onnxruntime 路径依赖的 paddleocr-browser 发布包为空
+ * （index.js 0 字节），且 protobufjs 初始化时调用 eval 会触发严格 CSP 拦截；
+ * 该路径已移除。Tesseract 的 WASM 编译由 CSP 的 'wasm-unsafe-eval' 单独放行，
+ * 不引入 'unsafe-eval'，JS eval 仍被禁止。
  * ============================================================
  */
 
@@ -28,9 +30,8 @@
   var ENGINE_NAMES = {
     OCRSPACE: 'ocrspace',   // L0 免费云 API（可选，需用户配置 key）
     VISION: 'vision',       // L1 AI多模态视觉模型 (AiClient.visionRecognize)
-    PADDLE: 'paddle',       // L2 PaddleOCR ONNX (DB检测 + CRNN识别，中英混合最优)
-    TESSERACT: 'tesseract', // L3 Tesseract.js v5 (社区最大，多语言兜底)
-    OCRAD: 'ocrad'          // L4 OCRad.js (纯JS，超轻量极速兜底)
+    TESSERACT: 'tesseract', // L2 Tesseract.js v5 (chi_sim+eng，多语言主力)
+    OCRAD: 'ocrad'          // L3 OCRad.js (纯JS，超轻量极速兜底)
   };
 
   // 引擎状态：未加载 → 加载中 → 就绪 / 失败
@@ -43,12 +44,6 @@
 
   var _state = {
     engineStates: {},
-    paddle: {
-      ortLoaded: false,
-      cvReady: false,
-      instance: null,
-      loadingPromise: null
-    },
     tesseract: {
       loaded: false
     },
@@ -62,15 +57,7 @@
 
   // CDN 资源配置（全部使用 jsDelivr，国内稳定）
   var CDN = {
-    // onnxruntime-web (PaddleOCR 依赖)
-    ort: 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js',
-    // opencv.js (PaddleOCR 预处理依赖)
-    opencv: 'https://cdn.jsdelivr.net/npm/@opencv.js/4.8.0/opencv.js',
-    // PaddleOCR browser 封装 (基于 eSearch-OCR，包含模型字典)
-    paddleocrBrowser: 'https://cdn.jsdelivr.net/npm/paddleocr-browser@1.0.4/index.min.js',
-    // PaddleOCR 模型资源
-    paddleAssets: 'https://cdn.jsdelivr.net/npm/paddleocr-browser@1.0.4/dist/',
-    // Tesseract.js v5 (兜底)
+    // Tesseract.js v5（本地主力引擎，语言包按需从 jsDelivr 拉取）
     tesseract: 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',
     // OCRad.js (最轻量兜底，纯 JS 实现，约 150KB)
     ocrad: 'https://cdn.jsdelivr.net/npm/ocrad.js@0.0.1/ocrad.js'
@@ -78,7 +65,6 @@
 
   _state.engineStates[ENGINE_NAMES.OCRSPACE] = ENGINE_STATE.IDLE;
   _state.engineStates[ENGINE_NAMES.VISION] = ENGINE_STATE.IDLE;
-  _state.engineStates[ENGINE_NAMES.PADDLE] = ENGINE_STATE.IDLE;
   _state.engineStates[ENGINE_NAMES.TESSERACT] = ENGINE_STATE.IDLE;
   _state.engineStates[ENGINE_NAMES.OCRAD] = ENGINE_STATE.IDLE;
 
@@ -253,8 +239,8 @@
       text = text.replace(rules[i][0], rules[i][1]);
     }
 
-    // PaddleOCR 特有修正（v5模型常见空格问题）
-    if (engineName === ENGINE_NAMES.PADDLE) {
+    // Tesseract 中文空格/选项修正（chi_sim 常见：行内中文词间被插入空格）
+    if (engineName === ENGINE_NAMES.TESSERACT) {
       // 仅合并行内中文间空格；不能用 \s（会把\n当空格，跨行粘成一行）。
       // 全局正则对 A␣B␣C 的相邻重叠对只会消掉一个（如"吸 是"与"是 过"共享"是"），
       // 因此循环合并直到收敛：至多 2 遍即可把任意长度的中文词链全合并。
@@ -265,10 +251,6 @@
         text = merged;
       }
       text = text.replace(/(选项)?\s*([A-D])\s*[\.、\)]\s*/g, '\n$2. '); // 选项格式化
-    }
-
-    // Tesseract 特有修正
-    if (engineName === ENGINE_NAMES.TESSERACT) {
       text = text.replace(/\u00A0/g, ' ');   // NBSP 替换
     }
 
@@ -323,7 +305,7 @@
       return;
     }
 
-    setText('[L0/5] OCR.space 云端识别中（免费 API，支持中文/手写）...');
+    setText('[L0/4] OCR.space 云端识别中（免费 API，支持中文/手写）...');
     setProgress(15);
 
     // dataURL → Blob → FormData
@@ -369,17 +351,17 @@
       text = _postprocessText(text, ENGINE_NAMES.OCRSPACE);
       setProgress(100);
       if (text && text.length >= 3) {
-        setText('[L0/5] ✓ OCR.space 识别完成，请校对', 'success');
+        setText('[L0/4] ✓ OCR.space 识别完成，请校对', 'success');
         onResult({ text: text, engine: ENGINE_NAMES.OCRSPACE });
       } else {
-        setText('[L0/5] OCR.space 未识别到有效文本，进入本地引擎...', 'warn');
+        setText('[L0/4] OCR.space 未识别到有效文本，进入本地引擎...', 'warn');
         onResult(null);
       }
     }).catch(function (err) {
       if (timer) clearTimeout(timer);
       var aborted = err && (err.name === 'AbortError' || /abort/i.test(String(err.message)));
       console.warn('[ocr-engine] OCR.space ' + (aborted ? '超时' : '请求失败') + ':', aborted ? '' : (err && err.message));
-      setText('[L0/5] OCR.space ' + (aborted ? '超时' : '不可用') + ' → 本地引擎', 'warn');
+      setText('[L0/4] OCR.space ' + (aborted ? '超时' : '不可用') + ' → 本地引擎', 'warn');
       onResult(null);
     });
   }
@@ -415,14 +397,14 @@
             setText('[L1/4] ✓ AI 视觉识别完成，请校对', 'success');
             onResult({ text: _postprocessText(text, ENGINE_NAMES.VISION), engine: ENGINE_NAMES.VISION });
           } else {
-            setText('[L1/4] AI 未识别到有效文本，进入 L2 PaddleOCR...', 'warn');
+            setText('[L1/4] AI 未识别到有效文本，进入 L2 Tesseract...', 'warn');
             onResult(null); // 回退下一级
           }
         },
         onError: function (err) {
           console.warn('[ocr-engine] vision OCR fallback:', err && err.message);
           _state.engineStates[ENGINE_NAMES.VISION] = ENGINE_STATE.FAILED;
-          setText('[L1/4] 视觉 OCR 异常，进入 L2 PaddleOCR...', 'warn');
+          setText('[L1/4] 视觉 OCR 异常，进入 L2 Tesseract...', 'warn');
           onResult(null);
         }
       }).catch(function (err) {
@@ -437,126 +419,7 @@
   }
 
   /* =========================================================
-   *           L2 引擎：PaddleOCR ONNX (eSearch-OCR)
-   *   选用 paddleocr-browser (GitHub xulihang/paddleocr-browser)
-   *   - 基于 eSearch-OCR v5，成熟稳定 (353 commits)
-   *   - 模型打包：det.onnx + rec.onnx + ppocr_keys_v1.txt (v4 中英混合)
-   *   - 支持 onnxruntime-web wasm/webgpu 后端
-   * ========================================================= */
-
-  function _loadPaddleEngine() {
-    if (_state.paddle.loadingPromise) return _state.paddle.loadingPromise;
-
-    _state.paddle.loadingPromise = new Promise(function (resolve, reject) {
-      _state.engineStates[ENGINE_NAMES.PADDLE] = ENGINE_STATE.LOADING;
-
-      // 1. 加载 onnxruntime-web
-      var loadOrt = (typeof ort !== 'undefined') ? Promise.resolve() : _loadScript(CDN.ort);
-
-      // 2. 加载 paddleocr-browser UMD (已包含 eSearch-OCR)
-      var loadPaddleBrowser = (typeof Paddle !== 'undefined') ? Promise.resolve() : _loadScript(CDN.paddleocrBrowser);
-
-      Promise.all([loadOrt, loadPaddleBrowser]).then(function () {
-        _state.paddle.ortLoaded = true;
-        // 3. 加载模型字典并初始化 Paddle OCR 实例
-        var assetsPath = CDN.paddleAssets;
-        return fetch(assetsPath + 'ppocr_keys_v1.txt').then(function (r) {
-          if (!r.ok) throw new Error('dict fetch HTTP ' + r.status);
-          return r.text();
-        }).then(function (dic) {
-          if (typeof Paddle === 'undefined' || typeof ort === 'undefined') {
-            throw new Error('Paddle or ort global not ready');
-          }
-          return Paddle.init({
-            detPath: assetsPath + 'ppocr_det.onnx',
-            recPath: assetsPath + 'ppocr_rec.onnx',
-            dic: dic,
-            ort: ort,
-            node: false,
-            cv: null
-          });
-        });
-      }).then(function (instance) {
-        _state.paddle.instance = instance;
-        _state.engineStates[ENGINE_NAMES.PADDLE] = ENGINE_STATE.READY;
-        resolve(instance);
-      }).catch(function (err) {
-        console.warn('[ocr-engine] PaddleOCR init failed:', err);
-        _state.engineStates[ENGINE_NAMES.PADDLE] = ENGINE_STATE.FAILED;
-        reject(err);
-      });
-    });
-
-    return _state.paddle.loadingPromise;
-  }
-
-  function _tryPaddleEngine(imgData, ui, onResult) {
-    var setText = _safeCallback(ui.setText);
-    var setProgress = _safeCallback(ui.setProgress);
-
-    // 如过之前失败过，直接跳过（避免每次都重试网络）
-    if (_state.engineStates[ENGINE_NAMES.PADDLE] === ENGINE_STATE.FAILED) {
-      setText('[L2/4] PaddleOCR 上次加载失败，跳过 → L3 Tesseract...', 'warn');
-      onResult(null);
-      return;
-    }
-
-    setText('[L2/4] 加载 PaddleOCR ONNX 引擎（中英混合识别最优）...');
-    setProgress(15);
-
-    _loadPaddleEngine().then(function () {
-      setProgress(45);
-      setText('[L2/5] PaddleOCR 识别中... (DB文本检测 + CRNN识别)');
-      var t0 = Date.now();
-      // 手写模式：先做"保留灰度"预处理（去噪/增强笔画），再交给 PaddleOCR，
-      // 不要直接送原图（拍照底色/阴影会干扰检测）
-      if (_curRun.handwriting) {
-        return new Promise(function (resolve) {
-          _preprocessImage(imgData, { handwriting: true }, function (processed) {
-            resolve(Paddle.ocr(processed));
-          });
-        });
-      }
-      return Paddle.ocr(imgData);
-    }).then(function (result) {
-      var text = '';
-      var score = 0;
-      if (result && Array.isArray(result)) {
-        // eSearch-OCR 返回 [{text, mean, box, style}, ...]
-        var lines = result.map(function (r) { return r.text || ''; });
-        text = lines.join('\n');
-        if (result.length > 0) {
-          var sum = 0;
-          result.forEach(function(r){ sum += (r.mean || 0); });
-          score = sum / result.length;
-        }
-      } else if (result && typeof result === 'object' && result.text) {
-        text = result.text;
-        score = result.mean || 0;
-      }
-
-      text = _postprocessText(text, ENGINE_NAMES.PADDLE);
-      var dt = Date.now() - t0;
-      console.log('[ocr-engine] PaddleOCR done: ' + text.length + ' chars, score=' + score.toFixed(3) + ', ' + dt + 'ms');
-
-      setProgress(100);
-      if (text && text.length >= 3) {
-        setText('[L2/4] ✓ PaddleOCR 识别完成（置信度 ' + (score*100).toFixed(0) + '%），请校对', 'success');
-        onResult({ text: text, engine: ENGINE_NAMES.PADDLE, score: score });
-      } else {
-        setText('[L2/4] PaddleOCR 未识别到文本，进入 L3 Tesseract...', 'warn');
-        onResult(null);
-      }
-    }).catch(function (err) {
-      console.warn('[ocr-engine] PaddleOCR fail fallback:', err);
-      setText('[L2/4] PaddleOCR 失败: ' + (err.message || err).slice(0,40) + ' → L3 Tesseract', 'warn');
-      _state.engineStates[ENGINE_NAMES.PADDLE] = ENGINE_STATE.FAILED;
-      onResult(null);
-    });
-  }
-
-  /* =========================================================
-   *             L3 引擎：Tesseract.js v5 (兜底)
+   *             L2 引擎：Tesseract.js v5 (主力)
    *  复用项目现有实现，保留 chi_sim+eng 双语
    * ========================================================= */
 
@@ -575,13 +438,13 @@
     var setText = _safeCallback(ui.setText);
     var setProgress = _safeCallback(ui.setProgress);
 
-    setText('[L3/4] 加载 Tesseract.js（社区最大，多语言兜底）...');
+    setText('[L2/4] 加载 Tesseract.js（社区最大，多语言主力）...');
     setProgress(10);
 
     _loadTesseractEngine().then(function () {
       _state.engineStates[ENGINE_NAMES.TESSERACT] = ENGINE_STATE.LOADING;
       setProgress(20);
-      setText('[L3/5] 图像预处理（' + (_curRun.handwriting ? '手写保留灰度' : '放大+灰度+Otsu 二值化') + '）...');
+      setText('[L2/4] 图像预处理（' + (_curRun.handwriting ? '手写保留灰度' : '放大+灰度+Otsu 二值化') + '）...');
 
       return new Promise(function (resolve) {
         _preprocessImage(imgData, { scale: 2, handwriting: _curRun.handwriting }, resolve);
@@ -594,21 +457,21 @@
 
       // 双 PSM 策略：印刷假设统一文本块先 PSM 6；手写排版不规整直接 PSM 3
       var tryRecognize = function (psm, fallback) {
-        setText('[L3/5] Tesseract 识别中... PSM=' + psm);
+        setText('[L2/4] Tesseract 识别中... PSM=' + psm);
         return window.Tesseract.recognize(processedData, 'chi_sim+eng', {
           tessedit_pageseg_mode: psm,
           logger: function (m) {
             if (m.status === 'recognizing text') {
               var pct = Math.round(m.progress * 100);
               setProgress(35 + Math.round(pct * 0.6));
-              setText('[L3/5] Tesseract 识别中... ' + pct + '% (PSM ' + psm + ')');
+              setText('[L2/4] Tesseract 识别中... ' + pct + '% (PSM ' + psm + ')');
             }
           }
         }).then(function (result) {
           var text = (result && result.data && result.data.text) || '';
           text = _postprocessText(text, ENGINE_NAMES.TESSERACT);
           if (text.length < 5 && fallback) {
-            setText('[L3/5] 文本过短，切换 ' + (_curRun.handwriting ? 'PSM=6' : 'PSM=3') + ' 重试...');
+            setText('[L2/4] 文本过短，切换 ' + (_curRun.handwriting ? 'PSM=6' : 'PSM=3') + ' 重试...');
             return tryRecognize(_curRun.handwriting ? 6 : 3, false);
           }
           return text;
@@ -620,22 +483,22 @@
       setProgress(100);
       if (text && text.length >= 3) {
         _state.engineStates[ENGINE_NAMES.TESSERACT] = ENGINE_STATE.READY;
-        setText('[L3/4] ✓ Tesseract 识别完成，请校对', 'success');
+        setText('[L2/4] ✓ Tesseract 识别完成，请校对', 'success');
         onResult({ text: text, engine: ENGINE_NAMES.TESSERACT });
       } else {
-        setText('[L3/4] Tesseract 未识别到有效文本，进入 L4 OCRad...', 'warn');
+        setText('[L2/4] Tesseract 未识别到有效文本，进入 L3 OCRad...', 'warn');
         onResult(null);
       }
     }).catch(function (err) {
       console.warn('[ocr-engine] Tesseract fail fallback:', err);
       _state.engineStates[ENGINE_NAMES.TESSERACT] = ENGINE_STATE.FAILED;
-      setText('[L3/4] Tesseract 失败 → L4 OCRad', 'warn');
+      setText('[L2/4] Tesseract 失败 → L3 OCRad', 'warn');
       onResult(null);
     });
   }
 
   /* =========================================================
-   *              L4 引擎：OCRad.js (极速兜底)
+   *              L3 引擎：OCRad.js (极速兜底)
    *   纯 JavaScript 实现，约 150KB，无训练数据
    *   仅支持英文印刷体，但加载和推理极快
    * ========================================================= */
@@ -655,14 +518,14 @@
     var setText = _safeCallback(ui.setText);
     var setProgress = _safeCallback(ui.setProgress);
 
-    setText('[L4/4] 加载 OCRad.js（纯JS极速兜底，仅英文）...');
+    setText('[L3/4] 加载 OCRad.js（纯JS极速兜底，仅英文）...');
     setProgress(20);
 
     _loadOcradEngine().then(function () {
       if (typeof OCRAD === 'undefined') throw new Error('OCRAD global not ready');
       _state.engineStates[ENGINE_NAMES.OCRAD] = ENGINE_STATE.LOADING;
       setProgress(50);
-      setText('[L4/4] OCRad 识别中（仅英文印刷体有效）...');
+      setText('[L3/4] OCRad 识别中（仅英文印刷体有效）...');
 
       // OCRAD 接受 canvas / img / dataURL
       var text = '';
@@ -691,17 +554,17 @@
         setProgress(100);
         _state.engineStates[ENGINE_NAMES.OCRAD] = text ? ENGINE_STATE.READY : ENGINE_STATE.FAILED;
         if (text && text.length >= 2) {
-          setText('[L4/4] ✓ OCRad 英文兜底识别完成，请校对', 'success');
+          setText('[L3/4] ✓ OCRad 英文兜底识别完成，请校对', 'success');
           onResult({ text: text, engine: ENGINE_NAMES.OCRAD });
         } else {
-          setText('[L4/4] ✗ 全部引擎均未识别到文本，请手动输入', 'error');
+          setText('[L3/4] ✗ 全部引擎均未识别到文本，请手动输入', 'error');
           onResult(null);
         }
       }
     }).catch(function (err) {
       console.warn('[ocr-engine] OCRad fail:', err);
       _state.engineStates[ENGINE_NAMES.OCRAD] = ENGINE_STATE.FAILED;
-      setText('[L4/4] ✗ 全部引擎识别失败，请手动输入', 'error');
+      setText('[L3/4] ✗ 全部引擎识别失败，请手动输入', 'error');
       onResult(null);
     });
   }
@@ -714,7 +577,7 @@
    * 统一 OCR 识别入口
    * @param {string} imgData - 图像 dataURL (jpeg/png)
    * @param {Object} [opts] - 可选参数
-   * @param {string[]} [opts.engineOrder] - 自定义执行顺序，默认 [VISION, PADDLE, TESSERACT, OCRAD]
+   * @param {string[]} [opts.engineOrder] - 自定义执行顺序，默认 [VISION, TESSERACT, OCRAD]
    * @param {boolean}  [opts.preprocess] - 是否启用图像预处理（默认 true）
    * @param {number}   [opts.minTextLength] - 判定"有效结果"的最小文本长度（默认3）
    * @param {Object} [ui] - UI 回调
@@ -744,15 +607,14 @@
     var engineOrder = opts.engineOrder;
     if (!engineOrder) {
       if (_curRun.handwriting) {
-        // 手写：云端 OCR.space（有 key 时）→ AI 视觉 → PaddleOCR → Tesseract
+        // 手写：云端 OCR.space（有 key 时）→ AI 视觉 → Tesseract
         // OCRad 仅识别英文印刷体，对手写无意义，剔除
-        engineOrder = [ENGINE_NAMES.PADDLE, ENGINE_NAMES.TESSERACT];
+        engineOrder = [ENGINE_NAMES.TESSERACT];
         if (_curRun.ocrspaceApiKey) engineOrder.unshift(ENGINE_NAMES.OCRSPACE);
         engineOrder.unshift(ENGINE_NAMES.VISION);
       } else {
         engineOrder = [
           ENGINE_NAMES.VISION,
-          ENGINE_NAMES.PADDLE,
           ENGINE_NAMES.TESSERACT,
           ENGINE_NAMES.OCRAD
         ];
@@ -776,7 +638,6 @@
       switch (engineName) {
         case ENGINE_NAMES.OCRSPACE:  runner = function (im, u, ocb) { _tryOcrspaceEngine(im, u, ocb, _curRun); }; break;
         case ENGINE_NAMES.VISION:    runner = _tryVisionEngine;      break;
-        case ENGINE_NAMES.PADDLE:    runner = _tryPaddleEngine;      break;
         case ENGINE_NAMES.TESSERACT: runner = _tryTesseractEngine;   break;
         case ENGINE_NAMES.OCRAD:     runner = _tryOcradEngine;       break;
         default:
@@ -821,7 +682,6 @@
 
   function preloadEngine(engineName) {
     switch (engineName) {
-      case ENGINE_NAMES.PADDLE:    return _loadPaddleEngine().catch(function(){});
       case ENGINE_NAMES.TESSERACT: return _loadTesseractEngine().catch(function(){});
       case ENGINE_NAMES.OCRAD:     return _loadOcradEngine().catch(function(){});
       default: return Promise.resolve();
@@ -843,25 +703,7 @@
     _getOcrspaceKey: _getOcrspaceKey
   };
 
-  // 自动预加载策略：页面空闲时加载 L2/L3 依赖（后台准备，不阻塞UI）
-  // 注意：首次 OCR 点击会立即进入 _loadPaddleEngine，共享 loadingPromise 避免重复加载
-  if (typeof window.requestIdleCallback === 'function') {
-    window.requestIdleCallback(function () {
-      // 只预加载轻的脚本标签，模型文件仍按需加载
-      if (_state.engineStates[ENGINE_NAMES.PADDLE] === ENGINE_STATE.IDLE) {
-        _loadScript(CDN.paddleocrBrowser).catch(function(){});
-        _loadScript(CDN.ort).catch(function(){});
-      }
-    }, { timeout: 5000 });
-  } else {
-    // Safari 不支持 requestIdleCallback，延迟 3s 加载
-    setTimeout(function () {
-      if (_state.engineStates[ENGINE_NAMES.PADDLE] === ENGINE_STATE.IDLE) {
-        _loadScript(CDN.paddleocrBrowser).catch(function(){});
-        _loadScript(CDN.ort).catch(function(){});
-      }
-    }, 3000);
-  }
+  // 依赖全部懒加载：首次 OCR 时按 engineOrder 逐级加载，未使用零开销。
 
   /* ========================================================================
    * 新增 OCR 应用场景 1：全局图片 OCR 浮窗

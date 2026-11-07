@@ -452,7 +452,7 @@
       };
       var setProgress = function (p) { progressFill.style.width = p + '%'; };
 
-      // =====【新路径】OcrEngine 统一多引擎降级：Vision → PaddleOCR → Tesseract → OCRad；
+      // =====【新路径】OcrEngine 统一多引擎降级：Vision → Tesseract → OCRad；
       // 勾选"手写内容"后走手写优化链（保留灰度预处理 + 可选 OCR.space 云端手写 API）
       if (window.OcrEngine && typeof window.OcrEngine.recognize === 'function') {
         var handCheckbox = document.getElementById('wb-ocr-handwriting');
