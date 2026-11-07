@@ -2232,7 +2232,7 @@ function showAdminToast(message, type = 'success') {
     box-shadow: var(--shadow-lg);
     animation: adminToastIn 0.35s ease; max-width: 380px;
   `;
-  toast.innerHTML = `${iconSvg}<span>${message}</span>`;
+  toast.innerHTML = `${iconSvg}<span>${escapeHtml(message)}</span>`;
   document.body.appendChild(toast);
 
   setTimeout(() => {

@@ -318,7 +318,7 @@ async function renderFeedbacksTab(container) {
               var urlShort = fb.url ? fb.url.replace(/^.*#/,'#') : '';
               return `
                 <tr>
-                  <td><span class="admin-q-tag" style="background:${tColor}15;color:${tColor};font-size:0.75rem;">${tLabel}</span></td>
+                  <td><span class="admin-q-tag" style="background:${tColor}15;color:${tColor};font-size:0.75rem;">${escapeHtml(tLabel)}</span></td>
                   <td style="font-weight:600;max-width:180px;" title="${escapeHtml(fb.title || '')}">${escapeHtml((fb.title || '').slice(0,30))}</td>
                   <td style="max-width:260px;color:var(--text-secondary);font-size:0.82rem;" title="${escapeHtml(fb.description || '')}">${escapeHtml((fb.description || '').slice(0,60))}${(fb.description || '').length > 60 ? '...' : ''}</td>
                   <td style="font-size:0.82rem;">${escapeHtml(userName)}</td>

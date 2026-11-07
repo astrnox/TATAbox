@@ -141,6 +141,12 @@ describe('Issue #17：admin 子模块', () => {
     expect(ebookSrc).toMatch(/_escJsStr\(eb\.filePath\)/);
   });
 
+  test('后台 Toast 文案统一转义，服务端错误文本不会注入 HTML', () => {
+    const adminSrc = read('js/admin/admin.js');
+    expect(adminSrc).not.toMatch(/toast\.innerHTML = `\$\{iconSvg\}<span>\$\{message\}/);
+    expect(adminSrc).toMatch(/escapeHtml\(message\)/);
+  });
+
   test('loadTabContent("users") 走懒加载并渲染用户表（stub 子模块加载）', async () => {
     const contentEl = ensureTabContent();
 
