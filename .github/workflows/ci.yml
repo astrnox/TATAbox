@@ -178,3 +178,8 @@ jobs:
       - name: Run Playwright E2E（P1-28）
         # e2e-smoke.js 内置服务器冷启动重试，测试脚本常在服务器就绪前才开始。
         run: npm run test:e2e
+
+      - name: 无障碍扫描（L-02，axe-core）
+        # 复用同一静态服务器，对关键路由跑 WCAG 2.1 A/AA 扫描；
+        # critical 违规为硬门禁，serious（如颜色对比度）先告警不阻断。
+        run: npm run test:a11y

@@ -7,6 +7,7 @@
     "test:unit": "jest --verbose --coverage",
     "test:smoke": "node tests/wiki-smoke-test.cjs",
     "test:e2e": "node tests/e2e-smoke.js",
+    "test:a11y": "node tests/a11y-scan.js",
     "test:anchor": "node scripts/verify-manifest-anchor.js",
     "lint:js": "git ls-files 'js/**/*.js' 'tests/*.js' 'tests/*.cjs' | xargs -n1 node --check",
     "lint:code": "eslint js scripts tests --quiet",
@@ -43,6 +44,7 @@
   "homepage": "https://github.com/astrnox/TATAbox#readme",
   "devDependencies": {
     "agent-browser": "^0.31.1",
+    "axe-core": "^4.14.0",
     "esbuild": "^0.24.2",
     "eslint": "^9.39.5",
     "jest": "^30.4.2",

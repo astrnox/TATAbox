@@ -216,7 +216,7 @@ describe('管理员动态码登录页', () => {
     expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
   });
 
-  test('服务端未部署 RPC：提示先执行 migration_v15_admin_totp.sql', async () => {
+  test('服务端未部署 RPC：界面给通用提示，不暴露迁移文件名（L-08）', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({
         data: null,
@@ -225,7 +225,9 @@ describe('管理员动态码登录页', () => {
     });
     const res = await window.adminVerifyTotp('123456');
     expect(res.ok).toBe(false);
-    expect(res.error).toContain('migration_v15_admin_totp.sql');
+    expect(res.error).toContain('暂未启用动态码登录');
+    expect(res.error).not.toContain('migration_v15');
+    expect(res.error).not.toContain('schema cache');
   });
 
   test('未填/非 6 位数字：直接返回校验提示，不发请求', async () => {
@@ -298,7 +300,7 @@ describe('管理员重置密码（admin-users.js）', () => {
     }
   });
 
-  test('服务端未部署 RPC：提示先执行 migration_v11_admin_auth.sql', async () => {
+  test('服务端未部署 RPC：界面给通用提示，不暴露迁移文件名（L-08）', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({
         data: null,
@@ -313,7 +315,8 @@ describe('管理员重置密码（admin-users.js）', () => {
 
     try {
       await window.handleResetPassword('user-42');
-      expect(toastMock).toHaveBeenCalledWith(expect.stringContaining('migration_v11_admin_auth.sql'), 'error');
+      expect(toastMock).toHaveBeenCalledWith(expect.stringContaining('暂未启用密码重置'), 'error');
+      expect(toastMock).not.toHaveBeenCalledWith(expect.stringContaining('migration_v11'), 'error');
     } finally {
       window.prompt = realPrompt;
       window.showAdminToast = realToast;

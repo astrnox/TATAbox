@@ -23,6 +23,11 @@
 (function () {
   'use strict';
 
+  // L-03：统一日志；logger 未加载时退回 console，保证模块可独立运行
+  var log = (window.BQLog && typeof window.BQLog.scope === 'function')
+    ? window.BQLog.scope('OCR')
+    : console;
+
   /* =========================================================
    *                   常量 & 全局状态
    * ========================================================= */
@@ -99,7 +104,7 @@
   function _safeCallback(fn) {
     if (typeof fn !== 'function') return function () {};
     return function () {
-      try { fn.apply(null, arguments); } catch (e) { console.warn('[ocr-engine] callback error:', e); }
+      try { fn.apply(null, arguments); } catch (e) { log.warn('[ocr-engine] callback error:', e); }
     };
   }
 
@@ -170,7 +175,7 @@
       ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h); // 透明底画成白底，避免透明通道干扰
       ctx.drawImage(img, 0, 0, w, h);
       var imgData;
-      try { imgData = ctx.getImageData(0, 0, w, h); } catch (e) { console.warn('[ocr-engine] getImageData 失败，使用原图'); callback(dataUrl); return; }
+      try { imgData = ctx.getImageData(0, 0, w, h); } catch (e) { log.warn('[ocr-engine] getImageData 失败，使用原图'); callback(dataUrl); return; }
       var d = imgData.data;
 
       // 灰度
@@ -206,7 +211,7 @@
       callback(canvas.toDataURL('image/png'));
     };
     img.onerror = function () {
-      console.warn('[ocr-engine] preprocess image load failed, using original');
+      log.warn('[ocr-engine] preprocess image load failed, using original');
       callback(dataUrl);
     };
     img.src = dataUrl;
@@ -326,7 +331,7 @@
       if (extra.handwriting) form.append('isHandwriting', 'true');
       fetchBody = form;
     } catch (e) {
-      console.warn('[ocr-engine] OCR.space 请求构造失败:', e.message);
+      log.warn('[ocr-engine] OCR.space 请求构造失败:', e.message);
       onResult(null);
       return;
     }
@@ -346,7 +351,7 @@
       if (json && Array.isArray(json.ParsedResults) && json.ParsedResults.length > 0) {
         text = (json.ParsedResults.map(function (p) { return p.ParsedText || ''; }).join('\n')) || '';
       } else if (json && json.ErrorMessage) {
-        console.warn('[ocr-engine] OCR.space 返回错误:', json.ErrorMessage);
+        log.warn('[ocr-engine] OCR.space 返回错误:', json.ErrorMessage);
       }
       text = _postprocessText(text, ENGINE_NAMES.OCRSPACE);
       setProgress(100);
@@ -360,7 +365,7 @@
     }).catch(function (err) {
       if (timer) clearTimeout(timer);
       var aborted = err && (err.name === 'AbortError' || /abort/i.test(String(err.message)));
-      console.warn('[ocr-engine] OCR.space ' + (aborted ? '超时' : '请求失败') + ':', aborted ? '' : (err && err.message));
+      log.warn('[ocr-engine] OCR.space ' + (aborted ? '超时' : '请求失败') + ':', aborted ? '' : (err && err.message));
       setText('[L0/4] OCR.space ' + (aborted ? '超时' : '不可用') + ' → 本地引擎', 'warn');
       onResult(null);
     });
@@ -402,18 +407,18 @@
           }
         },
         onError: function (err) {
-          console.warn('[ocr-engine] vision OCR fallback:', err && err.message);
+          log.warn('[ocr-engine] vision OCR fallback:', err && err.message);
           _state.engineStates[ENGINE_NAMES.VISION] = ENGINE_STATE.FAILED;
           setText('[L1/4] 视觉 OCR 异常，进入 L2 Tesseract...', 'warn');
           onResult(null);
         }
       }).catch(function (err) {
-        console.warn('[ocr-engine] vision OCR exception fallback:', err);
+        log.warn('[ocr-engine] vision OCR exception fallback:', err);
         _state.engineStates[ENGINE_NAMES.VISION] = ENGINE_STATE.FAILED;
         onResult(null);
       });
     } catch (e) {
-      console.warn('[ocr-engine] vision call exception:', e);
+      log.warn('[ocr-engine] vision call exception:', e);
       onResult(null);
     }
   }
@@ -490,7 +495,7 @@
         onResult(null);
       }
     }).catch(function (err) {
-      console.warn('[ocr-engine] Tesseract fail fallback:', err);
+      log.warn('[ocr-engine] Tesseract fail fallback:', err);
       _state.engineStates[ENGINE_NAMES.TESSERACT] = ENGINE_STATE.FAILED;
       setText('[L2/4] Tesseract 失败 → L3 OCRad', 'warn');
       onResult(null);
@@ -545,7 +550,7 @@
         };
         img.src = imgData;
       } catch (e) {
-        console.warn('[ocr-engine] OCRad exception:', e);
+        log.warn('[ocr-engine] OCRad exception:', e);
         done();
       }
 
@@ -562,7 +567,7 @@
         }
       }
     }).catch(function (err) {
-      console.warn('[ocr-engine] OCRad fail:', err);
+      log.warn('[ocr-engine] OCRad fail:', err);
       _state.engineStates[ENGINE_NAMES.OCRAD] = ENGINE_STATE.FAILED;
       setText('[L3/4] ✗ 全部引擎识别失败，请手动输入', 'error');
       onResult(null);
@@ -641,7 +646,7 @@
         case ENGINE_NAMES.TESSERACT: runner = _tryTesseractEngine;   break;
         case ENGINE_NAMES.OCRAD:     runner = _tryOcradEngine;       break;
         default:
-          console.warn('[ocr-engine] unknown engine:', engineName);
+          log.warn('[ocr-engine] unknown engine:', engineName);
           return runNext();
       }
 
@@ -1460,7 +1465,7 @@
           _setRowStatus(task, 'saved');
           _updateStat();
         }).catch(function (err) {
-          console.warn('[ocr-batch] 保存失败:', err);
+          log.warn('[ocr-batch] 保存失败:', err);
           _setRowStatus(task, 'failed', '保存失败');
           _updateStat();
         });

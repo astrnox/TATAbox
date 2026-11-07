@@ -351,9 +351,9 @@
 
     container.innerHTML = '<div class="st-card"><h3>添加课程</h3>' +
       '<div class="st-form-row">' +
-        '<select class="st-select" id="st-sched-day">' + order.map(function(i){return '<option value="' + i + '">' + days[i] + '</option>';}).join('') + '</select>' +
-        '<input type="time" class="st-input" id="st-sched-start" value="08:00">' +
-        '<input type="time" class="st-input" id="st-sched-end" value="08:45">' +
+        '<select class="st-select" id="st-sched-day" aria-label="星期">' + order.map(function(i){return '<option value="' + i + '">' + days[i] + '</option>';}).join('') + '</select>' +
+        '<input type="time" class="st-input" id="st-sched-start" aria-label="开始时间" value="08:00">' +
+        '<input type="time" class="st-input" id="st-sched-end" aria-label="结束时间" value="08:45">' +
         '<input type="text" class="st-input" id="st-sched-subject" placeholder="科目">' +
       '</div>' +
       '<div class="st-form-row">' +

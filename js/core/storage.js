@@ -8,6 +8,11 @@
 
 'use strict';
 
+// L-03：统一日志（logger 未加载时退回 console，保证本文件可独立运行）
+var _storageLog = (window.BQLog && typeof window.BQLog.scope === 'function')
+  ? window.BQLog.scope('Storage')
+  : console;
+
 var STORAGE_PREFIX = 'tatabox_';
 
 var KEYS = {
@@ -38,14 +43,14 @@ function safeGetJSON(key, defaultValue) {
     if (_isIntegrityProtected(key)) {
       var ok = _verifyIntegrity(key, raw);
       if (ok === 'tampered') {
-        console.warn('[TATABOX Storage] ' + key + ' 完整性校验失败，判定为被篡改或损坏，已忽略该数据。');
+        _storageLog.warn('[TATABOX Storage] ' + key + ' 完整性校验失败，判定为被篡改或损坏，已忽略该数据。');
         return defaultValue;
       }
     }
     var parsed = JSON.parse(raw);
     return (parsed === null || parsed === undefined) ? defaultValue : parsed;
   } catch (e) {
-    console.warn('[TATABOX Storage] 读取 ' + key + ' 失败:', e.message);
+    _storageLog.warn('[TATABOX Storage] 读取 ' + key + ' 失败:', e.message);
     return defaultValue;
   }
 }
@@ -66,7 +71,7 @@ function safeSetJSON(key, value) {
         if (_isIntegrityProtected(key)) _recordIntegrity(key);
         return true;
       } catch (e2) {
-        console.warn('[TATABOX Storage] 写入 ' + key + ' 失败（清理缓存后配额仍不足）:', e2.message);
+        _storageLog.warn('[TATABOX Storage] 写入 ' + key + ' 失败（清理缓存后配额仍不足）:', e2.message);
         return false;
       }
     }
@@ -74,11 +79,11 @@ function safeSetJSON(key, value) {
       var usage = getStorageUsage();
       if (usage.percent > 80 && !_quotaWarnFired) {
         _quotaWarnFired = true;
-        console.warn('[TATABOX Storage] localStorage 已用约 ' + usage.percent.toFixed(0) + '%，接近配额，可能发生数据写入失败。建议导出备份并清理缓存数据。');
+        _storageLog.warn('[TATABOX Storage] localStorage 已用约 ' + usage.percent.toFixed(0) + '%，接近配额，可能发生数据写入失败。建议导出备份并清理缓存数据。');
       }
       return false;
     }
-    console.warn('[TATABOX Storage] 写入 ' + key + ' 失败:', e.message);
+    _storageLog.warn('[TATABOX Storage] 写入 ' + key + ' 失败:', e.message);
     return false;
   }
 }
@@ -295,7 +300,7 @@ function clearAllLocalData() {
 
     Promise.all(idbCalls).then(function (results) {
       if (results.join('').indexOf('false') !== -1) {
-        console.warn('[TATABOX Storage] 部分 IndexedDB 数据库删除未完成（可能因其他标签页仍打开）。建议关闭其他标签页后重试。');
+        _storageLog.warn('[TATABOX Storage] 部分 IndexedDB 数据库删除未完成（可能因其他标签页仍打开）。建议关闭其他标签页后重试。');
       }
       resolve(results);
     }, function () {
@@ -420,7 +425,7 @@ function migrateLocalDataToBioId() {
   }
 
   if (migrated > 0) {
-    console.info('[TATABOX Storage] 已迁移 ' + migrated + ' 类本地数据到稳定 bioID');
+    _storageLog.info('[TATABOX Storage] 已迁移 ' + migrated + ' 类本地数据到稳定 bioID');
   }
   return migrated;
 }
@@ -612,10 +617,10 @@ function _syncPracticeRecordToSupabase(fullRecord) {
     // Issue #130：离线时入队，网络恢复后自动重放，避免练习记录丢失
     if (_enqueueIfOffline('practice-record', record)) return;
     window.syncPracticeRecordToSupabase(record).catch(function (e) {
-      console.warn('[storage] syncPracticeRecordToSupabase 失败:', e && e.message);
+      _storageLog.warn('[storage] syncPracticeRecordToSupabase 失败:', e && e.message);
     });
   } catch (e) {
-    console.warn('[storage] _syncPracticeRecordToSupabase 异常:', e && e.message);
+    _storageLog.warn('[storage] _syncPracticeRecordToSupabase 异常:', e && e.message);
   }
 }
 
@@ -1460,7 +1465,7 @@ async function exportData(options) {
         var bioScoreResult = calcBioScore(stats);
         data.bioScore = bioScoreResult;
       } catch (e) {
-        console.warn('[TATABOX Storage] 计算 Bio Score 失败:', e.message);
+        _storageLog.warn('[TATABOX Storage] 计算 Bio Score 失败:', e.message);
       }
     }
 
@@ -1488,7 +1493,7 @@ async function exportData(options) {
 
     return data;
   } catch (e) {
-    console.error('[TATABOX Storage] 数据导出失败:', e.message);
+    _storageLog.error('[TATABOX Storage] 数据导出失败:', e.message);
     return null;
   }
 }
@@ -1618,7 +1623,7 @@ async function importData(jsonString, options) {
 
     return true;
   } catch (e) {
-    console.error('[TATABOX Storage] 数据导入失败:', e.message);
+    _storageLog.error('[TATABOX Storage] 数据导入失败:', e.message);
     return false;
   }
 }
@@ -1681,7 +1686,7 @@ function _decompressMeta(parsed) {
       return restored && typeof restored === 'object' ? restored : parsed;
     }
   } catch (e) {
-    console.warn('[TATABOX Storage] 进度快照解压失败，按损坏处理：', e.message);
+    _storageLog.warn('[TATABOX Storage] 进度快照解压失败，按损坏处理：', e.message);
   }
   return parsed;
 }

@@ -6,6 +6,11 @@
  * ============================================================
  */
 
+// L-03：统一日志（logger 未加载时退回 console）
+var _adminLog = (window.BQLog && typeof window.BQLog.scope === 'function')
+  ? window.BQLog.scope('Admin')
+  : console;
+
 var _adminAuthenticated = false;
 
 // admin modal 焦点陷阱管理（统一通过 MutationObserver 监听 display 变化）
@@ -1057,7 +1062,9 @@ async function adminVerifyTotp(code) {
     if (res && res.error) {
       var msg = res.error.message || '验证失败';
       if (_isMissingRpcError(msg)) {
-        msg = '服务端尚未部署动态码登录，请先在 Supabase SQL Editor 执行 sql/migration_v15_admin_totp.sql';
+        // L-08：迁移文件名等细节只写日志，界面给通用提示
+        _adminLog.error('[Admin] TOTP RPC 未部署:', msg);
+        msg = '服务端暂未启用动态码登录，请联系维护者。';
       }
       return { ok: false, error: msg };
     }
@@ -1065,14 +1072,27 @@ async function adminVerifyTotp(code) {
     if (!row || !row.ok) {
       return { ok: false, error: (row && row.error_msg) || '动态验证码不正确' };
     }
-    // 授权成功：服务端 profiles.user_group 已升级为 admin，这里同步内存用户并解锁管理 UI
+    // 授权成功：服务端 profiles.user_group 应已升级为 admin。
+    // L-02/L-08 加固：回读本人 profile 确认升级真的落库（旧库触发器可能回滚），
+    // 避免「TOTP 显示成功但所有后台查询都因 RLS 失败」。
     var user = (typeof window.getCurrentUser === 'function') ? window.getCurrentUser() : null;
+    if (user && user.id && sb && typeof sb.from === 'function') {
+      try {
+        var prof = await sb.from('profiles').select('user_group').eq('id', user.id).single();
+        if (prof && prof.data && prof.data.user_group !== 'admin') {
+          _adminLog.error('[Admin] TOTP 成功但 user_group 未落库:', prof.data.user_group);
+          return { ok: false, error: '管理员授权未生效，请重试动态码；若持续失败请联系维护者。' };
+        }
+      } catch (profErr) {
+        _adminLog.warn('[Admin] 管理员授权回读失败（继续尝试）:', profErr && profErr.message);
+      }
+    }
     if (user) user.user_group = 'admin';
     _adminAuthenticated = true;
     sessionStorage.setItem('tatabox_admin_auth', JSON.stringify({ t: Date.now(), exp: ADMIN_TOKEN_TTL }));
     return { ok: true };
   } catch (e) {
-    return { ok: false, error: '验证异常：' + ((e && e.message) || e) };
+    return { ok: false, error: adminFriendlyError(e, '验证失败，请稍后重试') };
   }
 }
 window.adminVerifyTotp = adminVerifyTotp;
@@ -1101,35 +1121,51 @@ window.adminVerifyTotp = adminVerifyTotp;
   }
 })();
 
-// 解析 Supabase 错误，返回用户友好的错误信息
+/**
+ * L-08：把技术错误留在控制台，界面只给可操作提示。
+ * @param {*} err 原始错误（对象/字符串）
+ * @param {string} fallback 用户可见兜底文案
+ * @returns {string} 脱敏后的提示
+ */
+function adminFriendlyError(err, fallback) {
+  try {
+    _adminLog.error('[Admin] 操作失败详情:', err);
+  } catch (e) { /* 日志失败不影响提示 */ }
+  return fallback || '操作失败，请稍后重试';
+}
+window.adminFriendlyError = adminFriendlyError;
+
+// 解析 Supabase 错误：仅返回通用提示，表名/RLS/迁移文件名等细节只写控制台。
 function parseSupabaseError(error) {
-  if (!error) return errText(error);
+  if (!error) return '操作失败，请稍后重试';
   var msg = error.message || String(error);
   var code = error.code || '';
-  var details = error.details || '';
-  var hint = error.hint || '';
-  // 常见错误分类
-  if (code === '42P01' || msg.includes('does not exist') || msg.includes('relation') && msg.includes('exist')) {
-    return '数据库表不存在。请在 Supabase SQL Editor 中运行 sql/schema.sql 初始化表结构。';
+  // 先完整记录技术细节，便于管理员在控制台排查
+  _adminLog.error('[Admin] Supabase 错误详情:', {
+    code: code,
+    message: msg,
+    details: error.details || '',
+    hint: error.hint || ''
+  });
+  if (code === '42P01' || msg.includes('does not exist') || (msg.includes('relation') && msg.includes('exist'))) {
+    return '数据服务尚未初始化，请联系维护者。';
   }
   if (code === '42501' || msg.includes('permission denied') || msg.includes('policy') || msg.includes('violates row-level security')) {
-    return '权限不足（RLS 策略拒绝）。请确认管理员账号的 user_group 已设为 "admin"，并在 Supabase 中运行最新 schema.sql 添加管理员策略。';
+    return '当前账号权限不足，请重新登录或联系维护者。';
   }
   if (code === '23505' || msg.includes('duplicate key') || msg.includes('unique')) {
-    return '数据重复，该记录已存在。';
+    return '该记录已存在，请勿重复提交。';
   }
   if (code === '23503' || msg.includes('foreign key')) {
-    return '外键约束失败，关联数据不存在。';
+    return '关联数据不存在，无法完成操作。';
   }
   if (msg.includes('JWT') || msg.includes('token') || msg.includes('expired') || msg.includes('auth')) {
-    return '认证已过期，请刷新页面重新登录 Supabase。';
+    return '登录状态已过期，请刷新页面后重试。';
   }
   if (msg.includes('network') || msg.includes('fetch') || msg.includes('timeout')) {
     return '网络连接失败，请检查网络后重试。';
   }
-  if (details) return details;
-  if (hint) return hint;
-  return msg;
+  return '操作失败，请稍后重试（详情见控制台）。';
 }
 
 // Supabase 直连的管理员 API
@@ -1208,18 +1244,23 @@ async function adminFetchRest(method, table, queryParams, body) {
     if (!resp.ok) {
       var errMsg = (json && json.message) || (json && json.msg) || resp.statusText || '请求失败';
       var errCode = (json && json.code) || '';
-      console.error('[Admin REST] 请求失败:', resp.status, errCode, errMsg, json);
-      // 如果是 401/403，提示认证问题
+      _adminLog.error('[Admin REST] 请求失败:', resp.status, errCode, errMsg, json);
+      // L-08：界面只给可操作提示，表名/SQL 错误等细节留在控制台
+      var friendly;
       if (resp.status === 401 || resp.status === 403) {
-        errMsg = '权限不足（' + (token ? 'token可能已过期' : '未登录') + '）：' + errMsg;
+        friendly = '登录状态已失效或无权限，请刷新页面后重新验证管理员动态码。';
+      } else if (resp.status >= 500) {
+        friendly = '服务暂时不可用，请稍后重试。';
+      } else {
+        friendly = '请求失败，请稍后重试（详情见控制台）。';
       }
-      return { ok: false, data: { error: errMsg }, status: resp.status, _raw: json };
+      return { ok: false, data: { error: friendly }, status: resp.status, _raw: json };
     }
 
     return { ok: true, data: json, status: resp.status };
   } catch (fetchErr) {
-    console.error('[Admin REST] 网络错误:', fetchErr.message);
-    return { ok: false, data: { error: '网络请求失败: ' + fetchErr.message }, status: 0 };
+    _adminLog.error('[Admin REST] 网络错误:', fetchErr.message);
+    return { ok: false, data: { error: adminFriendlyError(fetchErr, '网络连接失败，请检查网络后重试') }, status: 0 };
   }
 }
 
@@ -1230,6 +1271,13 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       var result = await adminFetchRest('GET', 'profiles',
         'select=id,username,display_name,user_group,bio_score,points,total_answered,total_correct,accuracy,created_at&order=created_at.desc&limit=1000',
         null);
+      // 兼容旧库缺失可选举（如 points）：400 时退化为最小列集，至少让后台可打开
+      if (!result.ok && result.status === 400) {
+        _adminLog.warn('[Admin] profiles 完整列查询失败，回退最小列集');
+        result = await adminFetchRest('GET', 'profiles',
+          'select=id,username,display_name,user_group,created_at&order=created_at.desc&limit=1000',
+          null);
+      }
       if (!result.ok) return { ok: false, data: { error: '查询用户列表失败: ' + result.data.error }, status: result.status };
       var data = Array.isArray(result.data) ? result.data : [];
 
@@ -1247,7 +1295,8 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       if (!sbDel) return { ok: false, data: { error: 'Supabase 未初始化' }, status: 500 };
       var delRes = await sbDel.rpc('admin_delete_user', { p_user_id: profiles[0].id });
       if (delRes && delRes.error) {
-        return { ok: false, data: { error: '删除用户失败: ' + delRes.error.message }, status: 500 };
+        // L-08：原始错误只写控制台
+        return { ok: false, data: { error: adminFriendlyError(delRes.error, '删除用户失败，请稍后重试') }, status: 500 };
       }
       var delRow = Array.isArray(delRes.data) ? delRes.data[0] : delRes.data;
       if (!delRow || !delRow.ok) {
@@ -1332,17 +1381,27 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
             totalCount = Math.max(data.length, (data.length === perPage) ? (page * perPage + 1) : data.length);
           }
         } catch (countErr) {
-          console.warn('[Admin] 精确计数失败，使用分页数据兜底:', countErr.message);
+          _adminLog.warn('[Admin] 精确计数失败，使用分页数据兜底:', countErr.message);
         }
 
-        // 后台「题目总数」对齐数据源：选择本地题库时统计本地题库（manifest 真源），
-        // 仅当显式选择云端同步时才展示云端题目数量。
+        // 后台同时展示「云端题目」与「本地题库」两个口径：
+        // manifest.total_questions 只是分片体系内的 MTF 题（当前 101），
+        // 全站题库总量应取 data/stats.json 的 unique_questions（约 3414），
+        // 否则后台会把 101 误当成题目总数（用户可见口径不一致）。
+        var localTotal = null;
+        try {
+          var statsResp = await fetch('data/stats.json', { cache: 'no-store' });
+          if (statsResp.ok) {
+            var statsJson = await statsResp.json();
+            if (statsJson && statsJson.unique_questions) localTotal = statsJson.unique_questions;
+          }
+        } catch (e) { /* 本地统计不可用时回退下面的计数 API */ }
+        if (!localTotal && typeof window.getPlayableQuestionCount === 'function') {
+          try { localTotal = await window.getPlayableQuestionCount(); } catch (e) { /* 忽略 */ }
+        }
         try {
           var adminQSource = (typeof loadSetting === 'function') ? loadSetting('question_source', 'cloud') : 'cloud';
-          if (adminQSource === 'local' && typeof window.getQuestionBankCount === 'function') {
-            var localTotal = await window.getQuestionBankCount();
-            if (localTotal) totalCount = localTotal;
-          }
+          if (adminQSource === 'local' && localTotal) totalCount = localTotal;
         } catch (e) {} // 本地计数失败时保留云端统计，不阻断后台加载
 
         // 提取模块（从 subject 字段去重）
@@ -1367,7 +1426,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
         }
         modules.sort();
 
-        return { ok: true, data: { questions: data, total: totalCount, modules: modules, page: page, per_page: perPage }, status: 200 };
+        return { ok: true, data: { questions: data, total: totalCount, local_total: localTotal, modules: modules, page: page, per_page: perPage }, status: 200 };
       }
       if (method === 'POST') {
         var result = await adminFetchRest('POST', 'questions', null, body);
@@ -1413,7 +1472,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
         if (!result.ok) {
           var isMissingTable = result._raw && result._raw.code === 'PGRST205';
           if (isMissingTable) {
-            console.warn('[Admin] cards 表不存在，请在 Supabase SQL Editor 中运行 sql/schema.sql');
+            _adminLog.warn('[Admin] cards 表不存在，请在 Supabase SQL Editor 中运行 sql/schema.sql');
             return { ok: true, data: { cards: [], total: 0, categories: [], page: page, per_page: perPage, _missing_table: true }, status: 200 };
           }
           return { ok: false, data: { error: '查询卡片列表失败: ' + result.data.error }, status: result.status };
@@ -1458,7 +1517,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       if (method === 'GET') {
         var result = await adminFetchRest('GET', 'community_posts', 'select=*&order=created_at.desc&limit=' + ADMIN_LIST_LIMIT, null);
         if (!result.ok) {
-          console.error('[Admin] 查询帖子列表失败:', result.data);
+          _adminLog.error('[Admin] 查询帖子列表失败:', result.data);
           return { ok: false, data: { error: '查询帖子列表失败: ' + result.data.error }, status: result.status };
         }
         var data = Array.isArray(result.data) ? result.data : [];
@@ -1499,7 +1558,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
         if (!result.ok) {
           var isMissingTable = result._raw && result._raw.code === 'PGRST205';
           if (isMissingTable) {
-            console.warn('[Admin] community_mutes 表不存在，请在 Supabase SQL Editor 中运行 sql/schema.sql');
+            _adminLog.warn('[Admin] community_mutes 表不存在，请在 Supabase SQL Editor 中运行 sql/schema.sql');
             return { ok: true, data: { mutes: [], _missing_table: true }, status: 200 };
           }
           return { ok: false, data: { error: '查询禁言列表失败: ' + result.data.error }, status: result.status };
@@ -1525,7 +1584,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       if (method === 'GET') {
         var result = await adminFetchRest('GET', 'announcements', 'select=*&order=created_at.desc&limit=' + ADMIN_LIST_LIMIT, null);
         if (!result.ok) {
-          console.error('[Admin] 查询公告列表失败:', result.data);
+          _adminLog.error('[Admin] 查询公告列表失败:', result.data);
           return { ok: false, data: { error: '查询公告列表失败: ' + result.data.error }, status: result.status };
         }
         var data = Array.isArray(result.data) ? result.data : [];
@@ -1558,7 +1617,7 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
       if (!result.ok) {
         var isMissing = result._raw && result._raw.code === 'PGRST205';
         if (isMissing) {
-          console.warn('[Admin] feedbacks 表不存在，请在 Supabase SQL Editor 中运行 sql/migration_v2.sql');
+          _adminLog.warn('[Admin] feedbacks 表不存在，请在 Supabase SQL Editor 中运行 sql/migration_v2.sql');
           return { ok: true, data: { feedbacks: [], _missing_table: true }, status: 200 };
         }
         return { ok: false, data: { error: '查询反馈列表失败: ' + result.data.error }, status: result.status };
@@ -1574,14 +1633,14 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
         var qfCode = qf._raw && qf._raw.code;
         var qfMsg = String((qf.data && qf.data.error) || '');
         if (qfCode === 'PGRST205' || /does not exist|schema cache/i.test(qfMsg) || qf.status === 404) {
-          console.warn('[Admin] question_feedbacks 表不存在，请执行 sql/incremental_update.sql');
+          _adminLog.warn('[Admin] question_feedbacks 表不存在，请执行 sql/incremental_update.sql');
           return { ok: true, data: { items: [], _missing_table: true }, status: 200 };
         }
         if (qf.status === 42501 || /permission|row-level|RLS/i.test(qfMsg)) {
           // RLS 未开放管理员跨用户读取：提示执行 migration_v13
           return { ok: true, data: { items: [], _restricted: true }, status: 200 };
         }
-        return { ok: false, data: { error: '查询题目反馈失败: ' + qfMsg }, status: qf.status };
+        return { ok: false, data: { error: qfMsg || '查询题目反馈失败，请稍后重试' }, status: qf.status };
       }
       return { ok: true, data: { items: Array.isArray(qf.data) ? qf.data : [] }, status: 200 };
     }
@@ -1591,8 +1650,8 @@ async function handleAdminSupabaseCall(method, endpoint, body) {
     }
     return { ok: false, data: { error: '未知的管理员操作: ' + method + ' ' + endpoint }, status: 404 };
   } catch (e) {
-    console.error('[Admin] REST API 调用异常:', e);
-    return { ok: false, data: { error: '请求异常: ' + errText(e) }, status: 500 };
+    _adminLog.error('[Admin] REST API 调用异常:', e);
+    return { ok: false, data: { error: adminFriendlyError(e, '请求失败，请稍后重试') }, status: 500 };
   }
 }
 
@@ -1625,7 +1684,7 @@ async function getQuestions(params = {}) {
   const query = new URLSearchParams(params).toString();
   const result = await adminApiCall('GET', `/admin/questions?${query}`);
   if (!result.ok) {
-    console.error('[Admin] getQuestions 失败:', result.data);
+    _adminLog.error('[Admin] getQuestions 失败:', result.data);
   }
   return result.ok ? result.data : null;
 }
@@ -1654,7 +1713,7 @@ async function getCards(params = {}) {
   const query = new URLSearchParams(params).toString();
   const result = await adminApiCall('GET', `/admin/cards?${query}`);
   if (!result.ok) {
-    console.error('[Admin] getCards 失败:', result.data);
+    _adminLog.error('[Admin] getCards 失败:', result.data);
   }
   return result.ok ? result.data : null;
 }
@@ -1746,7 +1805,7 @@ async function getCommunityReports() {
       return { reports: [], _missing_table: true };
     }
   } catch (e) {
-    console.warn('[Admin] 查询举报表失败:', e.message);
+    _adminLog.warn('[Admin] 查询举报表失败:', e.message);
   }
   return { reports: [], _missing_table: true };
 }
@@ -1795,7 +1854,7 @@ async function getCommunityPostComments(postId) {
   var sb = (typeof window.getSupabase === 'function') ? window.getSupabase() : null;
   if (!sb) return null;
   var { data, error } = await sb.from('community_comments').select('*').eq('post_id', postId).order('created_at', { ascending: true });
-  if (error) { console.error('[Admin] 查询评论失败:', error); return null; }
+  if (error) { _adminLog.error('[Admin] 查询评论失败:', error); return null; }
   return data || [];
 }
 
@@ -2098,7 +2157,7 @@ async function loadTabContent(target, tab) {
     if (users) {
       renderUsersTab(contentEl, users);
     } else {
-      contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">加载用户数据失败</div><div class="admin-empty-hint">请确认：<br>1. 已登录 Supabase（页面右上角显示用户信息）<br>2. profiles 表已创建（运行 sql/schema.sql）<br>3. 当前用户的 user_group 已设为 "admin"</div></div>`;
+      contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">加载用户数据失败</div><div class="admin-empty-hint">管理员后台需要先完成 6 位动态码验证（授权 5 分钟有效）。<br>请回到管理员入口重新输入动态码后重试；若仍失败，请刷新页面并检查浏览器控制台（F12）。</div></div>`;
     }
   } else if (tab === 'community') {
     renderCommunityTab(contentEl);
@@ -2176,18 +2235,18 @@ async function loadTabContent(target, tab) {
               contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无知识卡片</div><div class="admin-empty-hint">当前分类/搜索条件下没有卡片。<br>共 ${cardsArr.length} 张卡片，${categories.length} 个分类。</div></div>`;
             } else {
               renderCardsTab(contentEl, fallbackData);
-              showAdminToast('Supabase cards 表为空，已从 data/cards.json 加载 ' + cardsArr.length + ' 张卡片（仅作展示）', 'info');
+              showAdminToast('云端暂无卡片数据，已从本地知识卡片加载 ' + cardsArr.length + ' 张（仅作展示）', 'info');
             }
           } else {
-            contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无知识卡片</div><div class="admin-empty-hint">Supabase cards 表为空且 data/cards.json 不可读。<br>可在 Supabase SQL Editor 中运行 sql/schema.sql 创建表后手动添加卡片。</div></div>`;
+            contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无知识卡片</div><div class="admin-empty-hint">云端暂无数据，且本地知识卡片数据不可读。<br>请稍后重试，或联系维护者检查数据服务。</div></div>`;
           }
         } catch(fetchErr) {
-          console.warn('[Admin] 从 cards.json 加载失败:', fetchErr);
-          contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无知识卡片</div><div class="admin-empty-hint">Supabase cards 表为空，且 data/cards.json 加载失败。</div></div>`;
+          _adminLog.warn('[Admin] 从 cards.json 加载失败:', fetchErr);
+          contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">暂无知识卡片</div><div class="admin-empty-hint">云端暂无数据，本地知识卡片数据亦加载失败。<br>请稍后重试，或打开浏览器控制台（F12）查看详细错误。</div></div>`;
         }
       }
     } catch(e) {
-      console.error('[Admin] 加载卡片出错:', e);
+      _adminLog.error('[Admin] 加载卡片出错:', e);
       // S-007：不向用户暴露底层错误信息（可能含表名/字段/SQL），仅显示通用提示
       contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">卡片加载失败</div><div class="admin-empty-hint">请稍后重试；若持续失败，请检查浏览器控制台（F12）获取详细信息</div></div>`;
     }
@@ -2197,14 +2256,14 @@ async function loadTabContent(target, tab) {
       if (data) {
         renderQuestionsTab(contentEl, data);
       } else {
-        contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">加载题目数据失败</div><div class="admin-empty-hint">请确认：<br>1. 已登录 Supabase（页面右上角显示用户信息）<br>2. questions 表已创建（在 Supabase SQL Editor 中运行 sql/schema.sql）<br>3. 当前用户的 user_group 已设为 "admin"<br>4. 打开浏览器控制台（F12）查看详细错误</div></div>`;
+        contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">加载题目数据失败</div><div class="admin-empty-hint">请确认已登录且具备管理员权限，然后刷新重试。<br>若持续失败，请打开浏览器控制台（F12）查看详细错误。</div></div>`;
         // 远端题目失败时仍挂载「本地题库 · 评分与回收站」，保证回收站入口始终可见
         if (typeof window._mountLocalSectionFallback === 'function') {
           window._mountLocalSectionFallback(contentEl);
         }
       }
     } catch(e) {
-      console.error('[Admin] 加载题目出错:', e);
+      _adminLog.error('[Admin] 加载题目出错:', e);
       // S-007：不向用户暴露底层错误信息，仅显示通用提示
       contentEl.innerHTML = `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.inbox}</div><div class="admin-empty-text">题目加载失败</div><div class="admin-empty-hint">请稍后重试；若持续失败，请检查浏览器控制台（F12）获取详细信息</div></div>`;
       if (typeof window._mountLocalSectionFallback === 'function') {
@@ -2271,7 +2330,7 @@ function _ocrReadFileAsBase64(file) {
 var _adminRenderGuard = false;
 function renderAdminPage(target) {
   if (_adminRenderGuard) {
-    console.warn('[Admin] renderAdminPage 重入检测，已阻止');
+    _adminLog.warn('[Admin] renderAdminPage 重入检测，已阻止');
     return;
   }
   _adminRenderGuard = true;
@@ -2290,7 +2349,7 @@ function renderAdminPage(target) {
 var _adminInitGuard = false;
 function initAdmin(target) {
   if (_adminInitGuard) {
-    console.warn('[Admin] initAdmin 重入检测，已阻止');
+    _adminLog.warn('[Admin] initAdmin 重入检测，已阻止');
     return;
   }
   _adminInitGuard = true;

@@ -130,7 +130,12 @@ function main() {
     if (SKIP_DIRS.has(name)) continue;
     const from = path.join(ROOT, name);
     if (entry.isDirectory()) {
-      if (name === 'css') continue; // 已由 minify-assets 写入 dist/css
+      if (name === 'css') {
+        // 顶层 CSS 已由 minify-assets 写入 dist/css；css/vendor/ 为未压缩的
+        // 第三方样式与字体（如 KaTeX），需原样复制（L-07）。
+        copyTree(path.join(from, 'vendor'), path.join(DIST, 'css', 'vendor'), 'css/vendor');
+        continue;
+      }
       if (name === 'js') {
         // 业务 JS 已压缩进 dist/js；vendor 保持原样（已是压缩后的三方库）
         copyTree(path.join(from, 'vendor'), path.join(DIST, 'js', 'vendor'), 'js/vendor');

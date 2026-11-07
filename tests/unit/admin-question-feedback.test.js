@@ -80,13 +80,14 @@ describe('管理面板 · 题目反馈', () => {
     container.remove();
   });
 
-  test('云端受限（RLS 未开放）时提示执行 migration_v13，本机反馈仍显示', async () => {
+  test('云端读取受限时提示权限受限（不暴露迁移文件名），本机反馈仍显示', async () => {
     const container = await render({
       cloud: { items: [], _restricted: true },
       local: [{ id: 'qf_only_local', questionId: 'M2-05-cccc', questionText: '向光性', issueType: 'unclear', description: '图看不清', createdAt: '2026-10-17T09:00:00.000Z' }]
     });
     const html = container.innerHTML;
-    expect(html).toContain('migration_v13_question_feedbacks_admin.sql');
+    expect(html).toContain('云端读取权限受限');
+    expect(html).not.toContain('migration_v13');
     expect(html).toContain('向光性');
     expect(html).toContain('题意不清');
     container.remove();

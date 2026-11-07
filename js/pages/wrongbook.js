@@ -163,8 +163,8 @@
       Object.keys(reasons).sort().map(function(r) { return '<option value="' + r + '" ' + (_filter.errorReason === r ? 'selected' : '') + '>' + r + '</option>'; }).join('');
 
     container.innerHTML = '<div class="wb-toolbar">' +
-      '<select id="wb-filter-concept">' + conceptOpts + '</select>' +
-      '<select id="wb-filter-reason">' + reasonOpts + '</select>' +
+      '<select id="wb-filter-concept" aria-label="按概念筛选错题">' + conceptOpts + '</select>' +
+      '<select id="wb-filter-reason" aria-label="按错误原因筛选错题">' + reasonOpts + '</select>' +
       '<button class="wb-btn" id="wb-add-btn">+ 添加错题</button>' +
       '<button class="wb-btn" id="wb-ocr-btn">拍照/OCR</button>' +
       '<input type="file" id="wb-ocr-input" accept="image/*" capture="environment" style="display:none;">' +

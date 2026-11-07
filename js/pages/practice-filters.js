@@ -96,7 +96,7 @@ function renderFilterPanel() {
             </span>
           </div>
           <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px;">
-            <select class="practice-select" id="practiceQuestionSource" style="min-width:150px;">
+            <select class="practice-select" id="practiceQuestionSource" aria-label="题库数据源" style="min-width:150px;">
               <option value="cloud" ${qSource === 'cloud' ? 'selected' : ''}>云端同步</option>
               <option value="local" ${qSource === 'local' ? 'selected' : ''}>本地题库</option>
             </select>
@@ -168,7 +168,7 @@ function renderFilterPanel() {
         <div class="practice-filter-section">
           <h3 class="practice-filter-title">题目数量</h3>
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-            <select class="practice-select" id="questionCount" style="min-width:110px;">
+            <select class="practice-select" id="questionCount" aria-label="题目数量" style="min-width:110px;">
               ${countOptions}
             </select>
             <input type="number" id="customQuestionCount" class="practice-select" min="1" max="200" step="1"
@@ -200,7 +200,7 @@ function renderFilterPanel() {
           </div>
           <div class="practice-pull-summary" id="practice-pull-summary"></div>
           <div class="practice-pull-controls">
-            <select class="practice-select practice-pull-select" id="practice-pull-count">
+            <select class="practice-select practice-pull-select" id="practice-pull-count" aria-label="拉取题目数量">
               <option value="5">5 道</option>
               <option value="10" selected>10 道</option>
               <option value="20">20 道</option>

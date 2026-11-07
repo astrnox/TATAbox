@@ -396,6 +396,12 @@ function handleRoute(route) {
   // setTimeout 覆盖标题焦点，因此无需抢占守卫。
   function _manageFocusForNewRoute() {
     try {
+      // 首次路由渲染不抢焦点：保留浏览器默认起点，让键盘用户第一次 Tab
+      // 能命中 skip-link；后续路由切换才把焦点移入新页面标题。
+      if (!_AppState._focusManagedOnce) {
+        _AppState._focusManagedOnce = true;
+        return;
+      }
       var root = (typeof _AppState !== 'undefined' && _AppState.rootElement) || document.getElementById('page-content');
       if (!root) return;
       var targets = ['h1', '.page-title', '[role="heading"]', 'h2'];

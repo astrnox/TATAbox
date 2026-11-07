@@ -5,6 +5,11 @@
  * ============================================================
  */
 
+// L-03：统一日志（logger 未加载时退回 console，保证本文件可独立运行）
+var _sbLog = (window.BQLog && typeof window.BQLog.scope === 'function')
+  ? window.BQLog.scope('Supabase')
+  : console;
+
 // Supabase 配置
 var SUPABASE_URL = 'https://qxehkfucvmxuojjkdaqy.supabase.co';
 var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4ZWhrZnVjdm14dW9qamtkYXF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MjU2ODUsImV4cCI6MjEwMjIwMTY4NX0.lbiJxhFvy0t_J4qSeoP6K0r53M4KaEDSKkRlZu03ze8';
@@ -52,7 +57,7 @@ function _warnMissingDependency(label, err, hint) {
     /Could not find|does not exist|not found|schema cache/i.test(msg);
   if (!missing || _warnedDependencies[label]) return;
   _warnedDependencies[label] = true;
-  console.warn('[TATABOX] ' + label + ' 不可用：' + msg + (hint ? '；' + hint : ''));
+  _sbLog.warn('[TATABOX] ' + label + ' 不可用：' + msg + (hint ? '；' + hint : ''));
 }
 
 /**
@@ -105,12 +110,12 @@ async function sbFetchRest(method, table, queryParams, body) {
       json = await resp.json();
     } catch (e) {}
     if (!resp.ok) {
-      console.error('[sbFetchRest] 请求失败:', method, table, resp.status, json);
+      _sbLog.error('[sbFetchRest] 请求失败:', method, table, resp.status, json);
       return { ok: false, data: json, status: resp.status };
     }
     return { ok: true, data: json, status: resp.status };
   } catch (fetchErr) {
-    console.error('[sbFetchRest] 网络错误:', fetchErr.message);
+    _sbLog.error('[sbFetchRest] 网络错误:', fetchErr.message);
     return { ok: false, data: null, status: 0 };
   }
 }
@@ -181,7 +186,7 @@ function _setupAuthListener() {
                 }
               })
               .catch(function(e) {
-                console.warn('[TATABOX] onAuthStateChange 获取 profile 失败:', e);
+                _sbLog.warn('[TATABOX] onAuthStateChange 获取 profile 失败:', e);
               });
           }, AUTH_UPDATE_DEBOUNCE_MS); // 缩短到 200ms
         }
@@ -448,7 +453,7 @@ async function registerUser(username, password, displayName, email) {
     }
   } catch (e) {
     // 预检失败不阻断注册：数据库唯一约束/auth 错误映射仍会兜底
-    console.warn('[TATABOX] 注册可用性预检失败（非致命）:', e && e.message);
+    _sbLog.warn('[TATABOX] 注册可用性预检失败（非致命）:', e && e.message);
   }
 
   // 上锁：30 秒
@@ -481,13 +486,13 @@ async function registerUser(username, password, displayName, email) {
 
     } catch (tryErr) {
       strategy1Error = tryErr;
-      console.warn('[TATABOX] signUp (含data) 抛出异常，尝试简化请求:', tryErr && tryErr.message, tryErr);
+      _sbLog.warn('[TATABOX] signUp (含data) 抛出异常，尝试简化请求:', tryErr && tryErr.message, tryErr);
       signUpResult = { data: null, error: tryErr };
     }
 
     // 策略 2：如果失败，尝试不带 options.data
     if (signUpResult && signUpResult.error) {
-      console.warn('[TATABOX] signUp 策略 1 失败，错误消息:', signUpResult.error.message);
+      _sbLog.warn('[TATABOX] signUp 策略 1 失败，错误消息:', signUpResult.error.message);
       try {
         signUpResult = await sb.auth.signUp({
           email: email,
@@ -498,7 +503,7 @@ async function registerUser(username, password, displayName, email) {
         });
 
       } catch (tryErr2) {
-        console.error('[TATABOX] signUp 策略 2 也抛出异常:', tryErr2 && tryErr2.message, tryErr2);
+        _sbLog.error('[TATABOX] signUp 策略 2 也抛出异常:', tryErr2 && tryErr2.message, tryErr2);
         if (!signUpResult || !signUpResult.error) signUpResult = { data: null, error: tryErr2 };
       }
     }
@@ -517,9 +522,9 @@ async function registerUser(username, password, displayName, email) {
         if (errName === 'AuthRetryableFetchError' || errStatus === 500) {
           msg = 'Supabase 服务暂时异常（500），可能是：邮件发送失败 / 触发器冲突 / 服务维护中。请稍后重试，或在 Supabase Dashboard 关闭「Confirm email」开关';
         }
-        console.error('[TATABOX] 注册失败 - 错误对象为空:', JSON.stringify(error), '完整 error:', error);
+        _sbLog.error('[TATABOX] 注册失败 - 错误对象为空:', JSON.stringify(error), '完整 error:', error);
       } else {
-        console.error('[TATABOX] 注册失败 - Supabase 错误消息:', msg, '完整 error:', error);
+        _sbLog.error('[TATABOX] 注册失败 - Supabase 错误消息:', msg, '完整 error:', error);
       }
       if (msg.includes('already registered') || msg.includes('already been registered') || msg.includes('unique')) {
         msg = '该邮箱已被注册，请直接登录或换一个';
@@ -574,7 +579,7 @@ async function registerUser(username, password, displayName, email) {
             id: data.user.id, username: username, display_name: displayName || username, user_group: 'member', points: POINTS_DEFAULT
           }, { onConflict: 'id' });
         } catch (e2) {
-          console.warn('[TATABOX] profiles upsert 失败（邮箱验证前，非致命）:', e2 && e2.message);
+          _sbLog.warn('[TATABOX] profiles upsert 失败（邮箱验证前，非致命）:', e2 && e2.message);
         }
       }
       clearLock();
@@ -629,7 +634,7 @@ async function registerUser(username, password, displayName, email) {
           try { upsertDataFallback.email = email; } catch (e) {}
           await sb.from('profiles').upsert(upsertDataFallback, { onConflict: 'id' });
         } catch (e2) {
-          console.warn('[TATABOX] profiles upsert 失败（已尝试回退）:', e2 && e2.message);
+          _sbLog.warn('[TATABOX] profiles upsert 失败（已尝试回退）:', e2 && e2.message);
         }
       }
 
@@ -646,10 +651,10 @@ async function registerUser(username, password, displayName, email) {
       return { ok: true, user: _currentUser, userKey: uk2 };
     }
 
-    console.error('[TATABOX] signUp 返回但 data.user 为空:', signUpResult);
+    _sbLog.error('[TATABOX] signUp 返回但 data.user 为空:', signUpResult);
     return { ok: false, error: '注册失败：服务端返回的用户信息为空，请稍后重试' };
   } catch (e) {
-    console.error('[TATABOX] registerUser 顶层异常:', e && e.message, e);
+    _sbLog.error('[TATABOX] registerUser 顶层异常:', e && e.message, e);
     return { ok: false, error: '注册失败：' + (e.message || String(e)) };
   }
 }
@@ -1007,7 +1012,7 @@ async function logoutUser() {
       await sb.auth.signOut();
     } catch (e) {
       // signOut 可能因网络问题失败，本地状态仍需清除
-      console.warn('登出网络请求失败，已清除本地状态');
+      _sbLog.warn('登出网络请求失败，已清除本地状态');
     }
   }
   // 清除游客会话
@@ -1094,7 +1099,7 @@ async function deleteAccount() {
       return;
     }
   } catch(e) {
-    console.warn('[TATABOX] 注销账号失败:', e);
+    _sbLog.warn('[TATABOX] 注销账号失败:', e);
     showToast('注销失败：' + (e && e.message ? e.message : '未知错误'));
     return;
   }
@@ -1250,7 +1255,7 @@ async function _doRestoreSession() {
     ]);
 
     if (sessionResult.timedOut) {
-      console.warn('[TATABOX] restoreSession: getSession 超时');
+      _sbLog.warn('[TATABOX] restoreSession: getSession 超时');
       return false;
     }
 

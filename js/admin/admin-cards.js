@@ -63,7 +63,7 @@ function renderCardsTab(container, cardsData) {
 
   if (cards.length === 0) {
     if (cardsData._missing_table) {
-      html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.alertCircle}</div><div class="admin-empty-text">cards 表无法访问</div><div class="admin-empty-hint">可能是表未创建或 RLS 策略阻止读取。请在 Supabase SQL Editor 中运行 sql/schema.sql 创建表，并为 admin 用户添加 RLS 读取策略</div></div>`;
+      html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.alertCircle}</div><div class="admin-empty-text">知识卡片数据暂时不可用</div><div class="admin-empty-hint">请确认已登录且具备管理员权限，然后刷新重试。<br>若持续失败，请打开浏览器控制台（F12）查看详细错误。</div></div>`;
     } else {
       html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.layers}</div><div class="admin-empty-text">暂无知识卡片，请点击上方「添加卡片」</div></div>`;
     }

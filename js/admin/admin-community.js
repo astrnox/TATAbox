@@ -251,7 +251,7 @@ async function renderCommunityTab(container) {
   `;
 
   if (reportsData && reportsData._missing_table) {
-    html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.shield}</div><div class="admin-empty-text">举报表未创建</div><div style="font-size:0.82rem;color:var(--text-muted);margin-top:8px;">请在 Supabase SQL Editor 中运行 <code>sql/migration_v5_reports.sql</code> 创建 community_reports 表</div></div>`;
+    html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.shield}</div><div class="admin-empty-text">举报数据暂时不可用</div><div style="font-size:0.82rem;color:var(--text-muted);margin-top:8px;">数据服务尚未初始化或当前账号无读取权限，请联系维护者（详情见浏览器控制台 F12）。</div></div>`;
   } else if (reports.length === 0) {
     html += `<div class="admin-empty"><div class="admin-empty-icon">${ICONS.shield}</div><div class="admin-empty-text">暂无举报</div></div>`;
   } else {

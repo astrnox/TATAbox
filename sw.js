@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-fe0d159b9923'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-387bd8202d80'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -44,6 +44,10 @@ var SKELETON_ASSETS = [
   './',
   './index.html',
   './manifest.json',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-maskable-192.png',
+  './icons/icon-maskable-512.png',
   // 极简版（lite）整套入口：令牌 + 组件样式 + 单文件应用
   './lite.html',
   './css/tokens.css',
@@ -72,6 +76,7 @@ var SKELETON_ASSETS = [
   './js/core/app-search.js',
   './js/core/app-leaderboard.js',
   './js/core/utils.js',
+  './js/core/logger.js',
   './js/core/trusted-types.js',
   './js/core/loader.js',
   './js/core/question-utils.js',

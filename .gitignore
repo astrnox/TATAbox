@@ -58,6 +58,9 @@ waf-rules.txt
 archive/
 vendor/openmaic/
 
+# L-04：题库转换脚本的一次性中间产物（可随时用 scripts/convert-to-mtf.js 重跑生成）
+scripts/converted-questions.json
+
 # GGBO 高中生物竞赛（独立项目，不属于 BioQuest 主仓库）
 ggbo-answer/
 ggbo_*.json
