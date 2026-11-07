@@ -69,7 +69,8 @@ TATABOX 是**纯前端静态应用 + Supabase（Auth / 数据库 / RLS）**架�
 ## 数据完整性
 
 - 题库分片带 SHA-256 校验（`js/core/loader.js`），CDN 回退数据防篡改；
-- 本地备份采用 WebCrypto AES-GCM 加密（`js/core/storage.js`），密钥由密码 PBKDF 派生；
+- 本地备份采用 WebCrypto AES-GCM 加密（`js/core/storage.js`），新备份密钥由用户密码
+  经 PBKDF2-HMAC-SHA256（310,000 次迭代 + 随机盐）派生；旧版 v2 备份仅为兼容保留读取路径；
 - URL 参数经 `sanitizeUrlParam` 清洗（控制字符 / HTML 定界符过滤 + 长度上限）。
 
 ## 已知风险面（如实披露）

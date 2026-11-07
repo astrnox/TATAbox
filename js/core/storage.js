@@ -1300,44 +1300,100 @@ function getStats(module) {
  * 数据导出 / 导入（支持 AES-GCM 加密）
  * ============================================================ */
 
+var BACKUP_KDF_ITERATIONS = 310000;   // OWASP 建议（PBKDF2-HMAC-SHA256）
+var BACKUP_LEGACY_SALT = 'bioquest_backup_key'; // 仅用于解密 v2 旧备份，新备份不再使用
+
+/**
+ * 由用户密码派生 AES-GCM 密钥（PBKDF2-HMAC-SHA256）。
+ * @param {string} password
+ * @param {Uint8Array} salt
+ * @param {number} iterations
+ * @param {'encrypt'|'decrypt'} usage
+ * @returns {Promise<CryptoKey>}
+ */
+async function deriveBackupKey(password, salt, iterations, usage) {
+  var enc = new TextEncoder();
+  var baseKey = await crypto.subtle.importKey(
+    'raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']
+  );
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-256' },
+    baseKey,
+    { name: 'AES-GCM', length: 256 },
+    false,
+    [usage]
+  );
+}
+
+/**
+ * 旧版 v2 备份的密钥派生（SHA-256(常量)）。
+ * 仅用于读取历史备份，新备份必须走用户密码 PBKDF2。
+ */
+async function deriveLegacyBackupKey(usage) {
+  var enc = new TextEncoder();
+  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode(BACKUP_LEGACY_SALT));
+  return crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, [usage]);
+}
+
 /**
  * AES-GCM 加密备份数据
  * @param {string} jsonString - 要加密的 JSON 字符串
- * @returns {Promise<Object>} 加密后的备份对象
+ * @param {string} password - 用户设置的备份密码（必填）
+ * @returns {Promise<Object>} 加密后的备份对象（v3：PBKDF2 派生密钥）
  */
-async function encryptBackup(jsonString) {
+async function encryptBackup(jsonString, password) {
+  if (!password || typeof password !== 'string') {
+    throw new Error('PASSWORD_REQUIRED');
+  }
   var enc = new TextEncoder();
-  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode('bioquest_backup_key'));
-  var key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['encrypt']);
+  var salt = crypto.getRandomValues(new Uint8Array(16));
   var iv = crypto.getRandomValues(new Uint8Array(12));
+  var key = await deriveBackupKey(password, salt, BACKUP_KDF_ITERATIONS, 'encrypt');
   var encrypted = await crypto.subtle.encrypt({ name: 'AES-GCM', iv: iv }, key, enc.encode(jsonString));
-
-  // 手动转 Base64，避免 String.fromCharCode.apply 对大数组栈溢出
-  var ivBase64 = uint8ToBase64(iv);
-  var dataBase64 = uint8ToBase64(new Uint8Array(encrypted));
 
   return {
     encrypted: true,
-    iv: ivBase64,
-    data: dataBase64,
-    version: '2.0.0'
+    v: 3,
+    kdf: 'PBKDF2-SHA256',
+    iterations: BACKUP_KDF_ITERATIONS,
+    salt: uint8ToBase64(salt),
+    iv: uint8ToBase64(iv),
+    data: uint8ToBase64(new Uint8Array(encrypted)),
+    version: '3.0.0'
   };
 }
 
 /**
  * AES-GCM 解密备份数据
- * @param {Object} backupObj - 加密的备份对象 { encrypted, iv, data, version }
+ * @param {Object} backupObj - 备份对象（v3 需密码；v2 旧格式用历史常量密钥）
+ * @param {string} [password] - v3 备份的密码
  * @returns {Promise<string>} 解密后的 JSON 字符串
  */
-async function decryptBackup(backupObj) {
-  var enc = new TextEncoder();
-  var dec = new TextDecoder();
-  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode('bioquest_backup_key'));
-  var key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['decrypt']);
+async function decryptBackup(backupObj, password) {
+  if (!backupObj || !backupObj.iv || !backupObj.data) {
+    throw new Error('INVALID_BACKUP');
+  }
+  var enc = new TextDecoder();
   var iv = base64ToUint8(backupObj.iv);
   var data = base64ToUint8(backupObj.data);
+
+  var isV3 = backupObj.kdf === 'PBKDF2-SHA256' || Number(backupObj.v) >= 3;
+  var key;
+  if (isV3) {
+    if (!password || typeof password !== 'string') {
+      throw new Error('PASSWORD_REQUIRED');
+    }
+    var iterations = Number(backupObj.iterations) || BACKUP_KDF_ITERATIONS;
+    var salt = base64ToUint8(backupObj.salt || '');
+    if (!salt.length) throw new Error('INVALID_BACKUP');
+    key = await deriveBackupKey(password, salt, iterations, 'decrypt');
+  } else {
+    // 历史 v2 格式：常量派生密钥，仅为兼容旧备份
+    key = await deriveLegacyBackupKey('decrypt');
+  }
+
   var decrypted = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, data);
-  return dec.decode(decrypted);
+  return enc.decode(decrypted);
 }
 
 /**
@@ -1365,12 +1421,13 @@ function base64ToUint8(base64) {
 
 /**
  * 导出数据
- * @param {Object} options - 导出选项 { encrypted: boolean }，默认 encrypted=true
+ * @param {Object} options - 导出选项 { encrypted: boolean, password: string }，默认 encrypted=true
  * @returns {Promise<Object|null>} 导出的数据对象
  */
 async function exportData(options) {
   options = options || {};
   var useEncryption = options.encrypted !== false;
+  var backupPassword = options.password || '';
 
   try {
     var records = safeGetJSON(KEYS.RECORDS, []);
@@ -1411,7 +1468,7 @@ async function exportData(options) {
     var blob, fileExt, mimeType;
 
     if (useEncryption) {
-      var encryptedObj = await encryptBackup(json);
+      var encryptedObj = await encryptBackup(json, backupPassword);
       var encryptedJson = JSON.stringify(encryptedObj, null, 2);
       blob = new Blob([encryptedJson], { type: 'application/octet-stream' });
       fileExt = '.bqb';
@@ -1439,9 +1496,11 @@ async function exportData(options) {
 /**
  * 导入数据（支持加密和明文格式）
  * @param {string} jsonString - 导入的 JSON 字符串
+ * @param {Object} [options] - { password: v3 加密备份的密码 }
  * @returns {Promise<boolean>} 是否导入成功
  */
-async function importData(jsonString) {
+async function importData(jsonString, options) {
+  options = options || {};
   try {
     var raw = typeof jsonString === 'string' ? JSON.parse(jsonString) : jsonString;
 
@@ -1454,10 +1513,12 @@ async function importData(jsonString) {
     // 检测是否为加密数据
     if (raw.encrypted === true && raw.iv && raw.data) {
       try {
-        var decryptedStr = await decryptBackup(raw);
+        var decryptedStr = await decryptBackup(raw, options.password || '');
         data = JSON.parse(decryptedStr);
       } catch (e) {
-        throw new Error('解密失败，文件可能已损坏或密钥不匹配');
+        throw new Error(e && e.message === 'PASSWORD_REQUIRED'
+          ? '需要备份密码'
+          : '解密失败，文件可能已损坏或密码不正确');
       }
     } else {
       data = raw;

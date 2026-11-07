@@ -14,7 +14,7 @@ function renderDataManagement(container) {
         <div class="user-data-action">
           <div class="user-data-action-info">
             <div class="user-data-action-label">导出加密备份</div>
-            <div class="user-data-action-desc">一键导出加密备份文件 (.bqb)，用于数据迁移与灾难还原（需本机解密密钥）</div>
+            <div class="user-data-action-desc">使用自定义备份密码加密导出 (.bqb，PBKDF2 + AES-GCM)，用于数据迁移与灾难还原</div>
           </div>
           <button class="btn btn-sm btn-primary" id="userExportBtn">导出备份</button>
         </div>
@@ -30,10 +30,10 @@ function renderDataManagement(container) {
         <div class="user-data-action">
           <div class="user-data-action-info">
             <div class="user-data-action-label">导入学习数据</div>
-            <div class="user-data-action-desc">从之前导出的 JSON 文件恢复数据（会合并而非覆盖）</div>
+            <div class="user-data-action-desc">从之前导出的 JSON / .bqb 备份恢复数据（会合并而非覆盖；加密备份需输入原密码）</div>
           </div>
           <button class="btn btn-sm btn-secondary" id="userImportBtn">导入</button>
-          <input type="file" accept=".json" class="user-import-input" id="userImportInput">
+          <input type="file" accept=".json,.bqb,application/json,application/octet-stream" class="user-import-input" id="userImportInput">
         </div>
 
         <div class="user-data-action">
@@ -71,11 +71,20 @@ function renderDataManagement(container) {
     </div>
   `;
 
-  document.getElementById('userExportBtn').addEventListener('click', async () => {
-    if (typeof exportData === 'function') {
-      var result = await exportData();
-      showToast(result ? '加密备份已导出' : '数据导出失败');
+  document.getElementById('userExportBtn').addEventListener('click', () => {
+    if (typeof exportData !== 'function') {
+      showToast('导出模块未就绪');
+      return;
     }
+    showPasswordPrompt({
+      title: '导出加密备份',
+      desc: '请设置备份密码（至少 6 位）。导入时需要同一密码，忘记密码将无法解密。',
+      minLength: 6,
+      okText: '导出'
+    }, async function (password) {
+      var result = await exportData({ password: password });
+      showToast(result ? '加密备份已导出' : '数据导出失败');
+    });
   });
 
   document.getElementById('userExportPlainBtn').addEventListener('click', async () => {
@@ -97,14 +106,34 @@ function renderDataManagement(container) {
 
     const reader = new FileReader();
     reader.onload = async (ev) => {
-      if (typeof importData === 'function') {
-        const success = await importData(ev.target.result);
+      if (typeof importData !== 'function') return;
+      const text = ev.target.result;
+
+      // 仅 v3（PBKDF2 派生）备份需要密码；v2 旧备份沿用历史密钥，直接兼容导入
+      let meta = null;
+      try { meta = JSON.parse(text); } catch (e) {}
+      const needsPassword = !!(meta && meta.encrypted === true &&
+        (meta.kdf === 'PBKDF2-SHA256' || Number(meta.v) >= 3));
+
+      const runImport = async function (password) {
+        const success = await importData(text, { password: password || '' });
         if (success) {
           showToast('数据导入成功');
           refreshAllData();
         } else {
-          showToast('数据导入失败，请检查文件格式');
+          showToast('数据导入失败，请检查文件格式或备份密码');
         }
+      };
+
+      if (needsPassword) {
+        showPasswordPrompt({
+          title: '导入加密备份',
+          desc: '该备份使用密码加密，请输入导出时设置的密码。',
+          minLength: 1,
+          okText: '导入'
+        }, runImport);
+      } else {
+        await runImport('');
       }
     };
     reader.readAsText(file);
@@ -230,6 +259,89 @@ function renderDataManagement(container) {
       }
     );
   });
+}
+
+function showPasswordPrompt(options, onSubmit) {
+  options = options || {};
+  var minLen = Number(options.minLength) || 1;
+
+  var overlay = document.createElement('div');
+  overlay.className = 'user-confirm-overlay';
+
+  var dialog = document.createElement('div');
+  dialog.className = 'user-confirm-dialog';
+
+  var icon = document.createElement('div');
+  icon.className = 'user-confirm-icon';
+  icon.textContent = '密';
+
+  var title = document.createElement('div');
+  title.className = 'user-confirm-title';
+  title.textContent = options.title || '输入密码';
+
+  var desc = document.createElement('div');
+  desc.className = 'user-confirm-text';
+  desc.textContent = options.desc || '';
+
+  var input = document.createElement('input');
+  input.type = 'password';
+  input.id = 'userPwdInput';
+  input.autocomplete = 'new-password';
+  input.style.cssText = [
+    'width:100%', 'box-sizing:border-box', 'margin-top:12px', 'padding:10px 12px',
+    'border:1px solid var(--border-light,#e3e0d8)', 'border-radius:8px', 'font-size:0.88rem',
+    'background:var(--surface-primary,#fff)', 'color:var(--text-primary,#1a1a1a)', 'outline:none'
+  ].join(';');
+
+  var errorEl = document.createElement('div');
+  errorEl.id = 'userPwdError';
+  errorEl.style.cssText = 'min-height:18px;margin-top:6px;font-size:0.78rem;color:var(--color-error,#c0553a);';
+
+  var actions = document.createElement('div');
+  actions.className = 'user-confirm-actions';
+
+  var cancelBtn = document.createElement('button');
+  cancelBtn.type = 'button';
+  cancelBtn.className = 'btn btn-sm btn-secondary';
+  cancelBtn.textContent = '取消';
+
+  var okBtn = document.createElement('button');
+  okBtn.type = 'button';
+  okBtn.className = 'btn btn-sm btn-primary';
+  okBtn.textContent = options.okText || '确认';
+
+  actions.appendChild(cancelBtn);
+  actions.appendChild(okBtn);
+  dialog.appendChild(icon);
+  dialog.appendChild(title);
+  dialog.appendChild(desc);
+  dialog.appendChild(input);
+  dialog.appendChild(errorEl);
+  dialog.appendChild(actions);
+  overlay.appendChild(dialog);
+  document.body.appendChild(overlay);
+
+  function close() { overlay.remove(); }
+  function submit() {
+    var value = input.value.trim();
+    if (value.length < minLen) {
+      errorEl.textContent = '密码长度至少 ' + minLen + ' 位';
+      input.focus();
+      return;
+    }
+    close();
+    if (typeof onSubmit === 'function') onSubmit(value);
+  }
+
+  cancelBtn.addEventListener('click', close);
+  okBtn.addEventListener('click', submit);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); submit(); }
+  });
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) close();
+  });
+  setTimeout(function () { input.focus(); }, 0);
 }
 
 function showConfirmDialog(icon, title, text, onConfirm) {
