@@ -36,6 +36,19 @@ describe('M-05 HTML/SVG 清洗 fail-closed', () => {
     expect(js).toMatch(/return '';/);
     expect(js).not.toMatch(/svg\.replace\(\/<script/);
   });
+
+  test('考试页题干/子题文本统一转义，题库内容不会注入 HTML', () => {
+    const js = read('js/pages/exam.js');
+    expect(js).not.toMatch(/<div class="exam-q-stem">\$\{q\.question\.replace/);
+    expect(js).not.toMatch(/<div class="exam-review-q-stem">\$\{q\.question\.replace/);
+    expect(js).not.toMatch(/<div class="exam-subq-text">\$\{sub\.text\}/);
+    expect(js).not.toMatch(/<div class="exam-review-sub-text">\$\{sub\.text\}/);
+    expect(js).not.toMatch(/\+ q\.subject \+/);
+    expect(js).toMatch(/escapeHtml\(q\.question\)\.replace\(\/\\n\/g, '<br>'\)/);
+    expect(js).toMatch(/escapeHtml\(sub\.label\)/);
+    expect(js).toMatch(/escapeHtml\(sub\.text\)/);
+    expect(js).toMatch(/escapeHtml\(q\.subject\)/);
+  });
 });
 
 describe('M-07 Service Worker 不缓存整段视频', () => {
