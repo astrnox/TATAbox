@@ -1079,12 +1079,19 @@ async function adminVerifyTotp(code) {
     if (user && user.id && sb && typeof sb.from === 'function') {
       try {
         var prof = await sb.from('profiles').select('user_group').eq('id', user.id).single();
-        if (prof && prof.data && prof.data.user_group !== 'admin') {
+        // 读不到（RLS 拒绝 / 行不存在 / 网络失败）不能当作"已升级"，
+        // 否则会解锁界面但后台查询全部失败，重演用户反馈的症状。
+        if (!prof || prof.error || !prof.data) {
+          _adminLog.error('[Admin] 管理员授权回读失败:', prof && prof.error);
+          return { ok: false, error: '无法确认管理员授权状态，请刷新页面后重试（详情见控制台）。' };
+        }
+        if (prof.data.user_group !== 'admin') {
           _adminLog.error('[Admin] TOTP 成功但 user_group 未落库:', prof.data.user_group);
           return { ok: false, error: '管理员授权未生效，请重试动态码；若持续失败请联系维护者。' };
         }
       } catch (profErr) {
-        _adminLog.warn('[Admin] 管理员授权回读失败（继续尝试）:', profErr && profErr.message);
+        _adminLog.error('[Admin] 管理员授权回读异常:', profErr && profErr.message);
+        return { ok: false, error: '无法确认管理员授权状态，请刷新页面后重试（详情见控制台）。' };
       }
     }
     if (user) user.user_group = 'admin';

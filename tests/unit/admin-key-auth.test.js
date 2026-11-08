@@ -202,6 +202,45 @@ describe('管理员动态码登录页', () => {
     }
   });
 
+  test('回读 profile 失败或仍是 member：不解锁（避免"验证成功但后台全拒"）', async () => {
+    const me = { id: 'u1', user_group: 'member' };
+    window.getCurrentUser = () => me;
+
+    // 场景 1：RLS 拒绝读取（data 为 null + error）
+    window.getSupabase = () => ({
+      rpc: async () => ({ data: [{ ok: true, user_group: 'admin', error_msg: null }], error: null }),
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            single: async () => ({ data: null, error: { code: '42501', message: 'permission denied' } })
+          })
+        })
+      })
+    });
+    const r1 = await window.adminVerifyTotp('123456');
+    expect(r1.ok).toBe(false);
+    expect(r1.error).toContain('无法确认管理员授权状态');
+    expect(window._adminAuthenticated).toBe(false);
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
+
+    // 场景 2：能读到但 user_group 未升级（旧库触发器回滚）
+    window.getSupabase = () => ({
+      rpc: async () => ({ data: [{ ok: true, user_group: 'admin', error_msg: null }], error: null }),
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            single: async () => ({ data: { user_group: 'member' }, error: null })
+          })
+        })
+      })
+    });
+    const r2 = await window.adminVerifyTotp('123456');
+    expect(r2.ok).toBe(false);
+    expect(r2.error).toContain('管理员授权未生效');
+    expect(me.user_group).toBe('member');
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
+  });
+
   test('动态码错误：返回服务端错误文案且不解锁', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({ data: [{ ok: false, user_group: null, error_msg: '动态验证码不正确' }], error: null })

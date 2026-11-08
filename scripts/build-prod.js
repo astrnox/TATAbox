@@ -133,7 +133,11 @@ function main() {
       if (name === 'css') {
         // 顶层 CSS 已由 minify-assets 写入 dist/css；css/vendor/ 为未压缩的
         // 第三方样式与字体（如 KaTeX），需原样复制（L-07）。
-        copyTree(path.join(from, 'vendor'), path.join(DIST, 'css', 'vendor'), 'css/vendor');
+        // 目录可能尚未创建（纯业务 CSS 项目），此时跳过而不是让构建失败。
+        const cssVendor = path.join(from, 'vendor');
+        if (fs.existsSync(cssVendor)) {
+          copyTree(cssVendor, path.join(DIST, 'css', 'vendor'), 'css/vendor');
+        }
         continue;
       }
       if (name === 'js') {
