@@ -20,8 +20,8 @@
 'use strict';
 
 (function () {
-  var STORAGE_KEY = 'bioquest_wiki_entries_v1';
-  var SEED_FLAG_KEY = 'bioquest_wiki_seeded_v1';
+  var STORAGE_KEY = 'tatabox_wiki_entries_v1';
+  var SEED_FLAG_KEY = 'tatabox_wiki_seeded_v1';
   var SEED_URL = 'data/wiki-seed.json?v=20260812a';
 
   // Supabase 配置（匿名 key 公开，仅用于公开读取词条；表结构见 sql/wiki_entries.sql）
@@ -202,7 +202,7 @@
     } catch (e) { /* 静默 */ }
     // 轻页面（如 wiki.html 未加载 supabase-client）回退读取持久化用户信息
     try {
-      var raw = localStorage.getItem('bioquest_user_info');
+      var raw = localStorage.getItem('tatabox_user_info');
       if (raw) {
         var info = JSON.parse(raw);
         if (info && (info.display_name || info.username)) {
@@ -547,7 +547,7 @@
     var wrap = $('#wikiTagFilters');
     if (!wrap) return;
     var tags = allTags();
-    if (tags.length === 0) { wrap.innerHTML = ''; return; }
+    if (tags.length === 0) { wrap.replaceChildren(); return; }
     var html = '<button class="wiki-chip sm' + (!state.filter.tag ? ' active' : '') + '" data-tag="">全部</button>';
     tags.slice(0, 24).forEach(function (t) {
       html += '<button class="wiki-chip sm' + (state.filter.tag === t.name ? ' active' : '') + '" data-tag="' + esc(t.name) + '">' + esc(t.name) + '<span class="wiki-chip-n">' + t.count + '</span></button>';

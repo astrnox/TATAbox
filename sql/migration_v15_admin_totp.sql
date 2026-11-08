@@ -178,11 +178,16 @@ BEGIN
   SET failed_attempts = 0, locked_until = NULL, totp_last_step = v_last_step
   WHERE id = 1;
 
+  -- v18 起 profile_protect_sensitive 只放行「会话 role=service_role」或
+  -- 显式内部写标记；SECURITY DEFINER 不会改变会话 role，故必须先打标记。
+  PERFORM set_config('bioquest.internal_write', '1', true);
   UPDATE public.profiles SET user_group = 'admin' WHERE id = v_uid;
   IF NOT FOUND THEN
+    PERFORM set_config('bioquest.internal_write', '', true);
     RETURN QUERY SELECT FALSE, NULL::TEXT, '账号档案不存在，请先完成注册登录'::TEXT;
     RETURN;
   END IF;
+  PERFORM set_config('bioquest.internal_write', '', true);
 
   RETURN QUERY SELECT TRUE, 'admin'::TEXT, NULL::TEXT;
 END;

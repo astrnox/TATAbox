@@ -1,57 +1,57 @@
 {
- "concept": "m6A 阅读器决定 mRNA 降解或稳定的命运",
- "difficulty": "league",
- "explanation": "A【对】依据：图 A 核内示意显示 YTHDC1 结合含 m6A 的 RNA 后招募 ZCCHC8-NEXT 复合体与 RBM7，把转录本导向核内 RNA exosome 降解；图 B 核内则显示 YTHDC1 以多聚化方式同时桥接多条 RNA，保护其免受 exosome 攻击（PAXT 通路）并促使稳定化——同一个 YTHDC1 随复合物组成不同可'降解'或'稳定'RNA，选项对两种模式并存且空间定位（核内）的描述正确。\nB【对】依据：图 A 细胞质区显示 YTHDF（YTHDF1/2/3）蛋白结合 m6A 位点后通过三条平行通路促进降解：脱腺苷酸化（CCR4-NOT 复合体）、内切酶切割（RNaseP/MRP，含 HRSP12 介导）与脱帽（UPF1/DCP1A）——均缩短 mRNA 半衰期，'YTHDFs 招募上述复合体促进降解'正确。\nC【对】依据：图 B 细胞质区显示 IGF2BP 家族（IGF2BP1/2/3）结合 m6A 后保护 mRNA 免受分解，具有稳定性/翻译增强的角色；与 YTHDF 的促降解功能互为相反，反映'同一修饰可被不同读取器赋予不同命运'，'IGF2BP 保护 mRNA 稳定'正确。\nD【错】错因：m6A 的功能并非只指向降解：图中同一修饰位点可被 YTHDF 导向降解，也可被 IGF2BP 稳定或促进翻译，且在核内经 YTHDC1 决定出核竞争力；'只能促进 RNA 降解'以偏概全，与图 B 的稳定化通路直接矛盾。\n@@ANNOTATED_IMAGE:assets/questions/rna_biology/m6a-stability-annotated.jpg",
- "image": {
-  "caption": "m6A 介导的 RNA 命运决定：(A) 降解通路——核内 YTHDC1→exosome，胞质 YTHDFs→脱腺苷化/内切切割/脱帽；(B) 稳定化通路——核内 YTHDC1 多聚桥接、胞质 IGF2BP 保护",
-  "credit": "Wei G, Biochemical Society Transactions 2024",
-  "doi": "10.1042/BST20230574",
-  "figure": "2",
-  "file": "assets/questions/rna_biology/m6a-stability.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC11088905",
-  "source": "paper"
- },
- "question": "图为 m6A 修饰介导 RNA 稳定性调控的机制：(A) m6A 介导的 RNA 降解——核内 YTHDC1 可将 RNA 导向 exosome，胞质中 YTHDF 招募脱腺苷化/内切切割/脱帽复合体；(B) m6A 介导的 RNA 稳定化——核内 YTHDC1 多聚体桥接，胞质中 IGF2BP 保护。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Wei G",
-   "doi": "10.1042/BST20230574",
-   "journal": "Biochemical Society Transactions",
-   "title": "RNA m6A modification, signals for degradation or stabilisation?",
-   "year": 2024
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "YTHDC1 在核内既可把 m6A-RNA 导向 exosome 降解（与 ZCCHC8/NEXT 等互作），也可通过多聚化桥接保护 RNA，两种模式并存"
+  "concept": "m6A 阅读器决定 mRNA 降解或稳定的命运",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图 A 核内示意显示 YTHDC1 结合含 m6A 的 RNA 后招募 ZCCHC8-NEXT 复合体与 RBM7，把转录本导向核内 RNA exosome 降解；图 B 核内则显示 YTHDC1 以多聚化方式同时桥接多条 RNA，保护其免受 exosome 攻击（PAXT 通路）并促使稳定化——同一个 YTHDC1 随复合物组成不同可'降解'或'稳定'RNA，选项对两种模式并存且空间定位（核内）的描述正确。\nB【对】依据：图 A 细胞质区显示 YTHDF（YTHDF1/2/3）蛋白结合 m6A 位点后通过三条平行通路促进降解：脱腺苷酸化（CCR4-NOT 复合体）、内切酶切割（RNaseP/MRP，含 HRSP12 介导）与脱帽（UPF1/DCP1A）——均缩短 mRNA 半衰期，'YTHDFs 招募上述复合体促进降解'正确。\nC【对】依据：图 B 细胞质区显示 IGF2BP 家族（IGF2BP1/2/3）结合 m6A 后保护 mRNA 免受分解，具有稳定性/翻译增强的角色；与 YTHDF 的促降解功能互为相反，反映'同一修饰可被不同读取器赋予不同命运'，'IGF2BP 保护 mRNA 稳定'正确。\nD【错】错因：m6A 的功能并非只指向降解：图中同一修饰位点可被 YTHDF 导向降解，也可被 IGF2BP 稳定或促进翻译，且在核内经 YTHDC1 决定出核竞争力；'只能促进 RNA 降解'以偏概全，与图 B 的稳定化通路直接矛盾。\n@@ANNOTATED_IMAGE:assets/questions/rna_biology/m6a-stability-annotated.jpg",
+  "image": {
+    "caption": "m6A 介导的 RNA 命运决定：(A) 降解通路——核内 YTHDC1→exosome，胞质 YTHDFs→脱腺苷化/内切切割/脱帽；(B) 稳定化通路——核内 YTHDC1 多聚桥接、胞质 IGF2BP 保护",
+    "credit": "Wei G, Biochemical Society Transactions 2024",
+    "doi": "10.1042/BST20230574",
+    "figure": "2",
+    "file": "assets/questions/rna_biology/m6a-stability.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC11088905",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "细胞质 YTHDF 蛋白通过招募 CCR4-NOT（脱腺苷化）、RNaseP/MRP（内切切割）或 UPF1/DCP1A（脱帽）等复合体促进 mRNA 降解"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "IGF2BP 家族蛋白结合 m6A 可保护 mRNA 免于降解，与 YTHDF 的促降解效应相反"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "m6A 修饰的功能仅限于促进 RNA 降解，不参与 RNA 稳定性维持或翻译调控"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "rna_biology",
-  "module_1",
-  "分子生物学",
-  "m6A",
-  "RNA稳定性"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "图为 m6A 修饰介导 RNA 稳定性调控的机制：(A) m6A 介导的 RNA 降解——核内 YTHDC1 可将 RNA 导向 exosome，胞质中 YTHDF 招募脱腺苷化/内切切割/脱帽复合体；(B) m6A 介导的 RNA 稳定化——核内 YTHDC1 多聚体桥接，胞质中 IGF2BP 保护。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Wei G",
+      "doi": "10.1042/BST20230574",
+      "journal": "Biochemical Society Transactions",
+      "title": "RNA m6A modification, signals for degradation or stabilisation?",
+      "year": 2024
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "YTHDC1 在核内既可把 m6A-RNA 导向 exosome 降解（与 ZCCHC8/NEXT 等互作），也可通过多聚化桥接保护 RNA，两种模式并存"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "细胞质 YTHDF 蛋白通过招募 CCR4-NOT（脱腺苷化）、RNaseP/MRP（内切切割）或 UPF1/DCP1A（脱帽）等复合体促进 mRNA 降解"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "IGF2BP 家族蛋白结合 m6A 可保护 mRNA 免于降解，与 YTHDF 的促降解效应相反"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "m6A 修饰的功能仅限于促进 RNA 降解，不参与 RNA 稳定性维持或翻译调控"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "m6A",
+    "RNA稳定性"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

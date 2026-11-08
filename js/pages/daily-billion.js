@@ -1389,7 +1389,7 @@
     state.speedWarnCount = 0;
     _supabaseRetryCount = 0;
     _sbClient = null;
-    try { localStorage.removeItem('bioquest_billion_v3'); } catch(e) {}
+    try { localStorage.removeItem('tatabox_billion_v3'); } catch(e) {}
   }
 
   var _saveTimer = null;
@@ -1408,7 +1408,7 @@
           feedback: state.feedback,
           recordedQids: state.recordedQids
         };
-        localStorage.setItem('bioquest_billion_v3', JSON.stringify(data));
+        localStorage.setItem('tatabox_billion_v3', JSON.stringify(data));
       } catch(e) {}
     };
     // immediate=true：同步落盘（离场/成绩单落记录前用，避免 300ms 内关页丢标记）
@@ -1418,7 +1418,7 @@
 
   function loadPersistedState() {
     try {
-      var raw = localStorage.getItem('bioquest_billion_v3');
+      var raw = localStorage.getItem('tatabox_billion_v3');
       if (!raw) return;
       var data = JSON.parse(raw);
       if (data.totalAnswered !== undefined) state.totalAnswered = data.totalAnswered;
@@ -1487,7 +1487,7 @@
     wrapperEl.style.cssText = 'position:fixed;inset:0;z-index:10001;';
     document.body.appendChild(wrapperEl);
 
-    if (targetEl) { targetEl.innerHTML = ''; }
+    if (targetEl) { targetEl.replaceChildren(); }
 
     pageEl = document.createElement('div');
     pageEl.className = 'db-page';
@@ -1540,10 +1540,10 @@
         feedback: state.feedback,
         recordedQids: state.recordedQids
       };
-      localStorage.setItem('bioquest_billion_v3', JSON.stringify(data));
+      localStorage.setItem('tatabox_billion_v3', JSON.stringify(data));
     } catch(e) {}
     cleanupDom();
-    if (targetEl) { targetEl.innerHTML = ''; targetEl.style.cssText = ''; }
+    if (targetEl) { targetEl.replaceChildren(); targetEl.style.cssText = ''; }
     targetEl = null;
     _sbClient = null;
   }

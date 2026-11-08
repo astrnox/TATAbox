@@ -1,88 +1,88 @@
 {
- "M3-01-6ca40312": {
-  "concept": "肠道菌群代谢物与宿主互作",
-  "difficulty": "league",
-  "explanation": "A【对】依据：丁酸（butyrate）通过单羧酸转运体（MCT1）被结肠上皮细胞摄取，经 β-氧化提供约 70% 的能量需求，同时促进紧密连接蛋白表达，维持肠道屏障功能。\nB【对】依据：丁酸等 SCFAs 是天然的 HDAC 抑制剂，通过增加组蛋白乙酰化水平激活抑癌基因（如 p21）和抗炎基因转录，这是 SCFAs 发挥表观遗传调控作用的重要机制。\nC【错】错因：肠-脑轴（gut-brain axis）的信号传递是多途径的，包括迷走神经传入、内分泌途径（肠嗜铬细胞分泌 5-HT）、免疫途径（细胞因子）和代谢物途径（SCFAs 入血），'仅通过迷走神经'表述错误。\nD【错】错因：肠道菌群代谢物具有双面性，如次级胆汁酸（脱氧胆酸）在高浓度下具有基因毒性，三甲胺（TMA）经肝脏氧化为 TMAO 与心血管疾病风险正相关，并非所有代谢物均有益。",
-  "question": "肠道菌群发酵膳食纤维产生的短链脂肪酸（SCFAs，如丁酸）可被宿主结肠上皮细胞吸收利用。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Rios-Covian D et al.",
-    "doi": "10.1016/j.cell.2023.03.023",
-    "journal": "Cell",
-    "title": "The microbiome and short-chain fatty acids in health and disease",
-    "year": 2023
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "丁酸是结肠上皮细胞的主要能量来源，可维持肠道屏障完整性"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "SCFAs 可通过抑制组蛋白去乙酰化酶（HDAC）调控宿主基因表达"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "肠-脑轴的信号传递仅通过迷走神经一条途径实现"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "所有肠道菌群代谢物对宿主健康均具有促进作用"
-   }
-  ],
-  "subject": "微生物学",
-  "tags": [
-   "microbial_eco",
-   "module_3",
-   "微生物学",
-   "肠道菌群",
-   "短链脂肪酸",
-   "肠脑轴"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M3-02-9a7f655c": {
-  "concept": "微生物在氮循环中的作用",
-  "difficulty": "league",
-  "explanation": "A【对】依据：固氮酶在厌氧微环境中将 N₂ 还原为 NH₃，是生物固氮的核心反应。\nB【对】依据：硝化作用分两步，亚硝化细菌与硝化细菌依次将氨氧化至硝酸盐。\nC【对】依据：反硝化细菌在缺氧条件下以硝酸盐为电子受体，终产物为 N₂。\nD【错】错因：根瘤菌主要与豆科植物共生，与少数非豆科植物（如木麻黄）共生属例外，并非所有植物。",
-  "question": "土壤微生物驱动氮素在不同形态间转化。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "固氮菌将大气 N₂ 还原为氨，供植物吸收利用"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "硝化细菌将氨氧化为亚硝酸盐和硝酸盐"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "反硝化细菌将硝酸盐还原为 N₂，使氮素返回大气"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "根瘤菌可与所有植物共生固氮，不限于豆科"
-   }
-  ],
-  "subject": "微生物学",
-  "tags": [
-   "microbial_eco",
-   "module_3",
-   "微生物学",
-   "微生物在氮循环中的作用"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M3-01-6ca40312": {
+    "concept": "肠道菌群代谢物与宿主互作",
+    "difficulty": "league",
+    "explanation": "A【对】依据：丁酸（butyrate）通过单羧酸转运体（MCT1）被结肠上皮细胞摄取，经 β-氧化提供约 70% 的能量需求，同时促进紧密连接蛋白表达，维持肠道屏障功能。\nB【对】依据：丁酸等 SCFAs 是天然的 HDAC 抑制剂，通过增加组蛋白乙酰化水平激活抑癌基因（如 p21）和抗炎基因转录，这是 SCFAs 发挥表观遗传调控作用的重要机制。\nC【错】错因：肠-脑轴（gut-brain axis）的信号传递是多途径的，包括迷走神经传入、内分泌途径（肠嗜铬细胞分泌 5-HT）、免疫途径（细胞因子）和代谢物途径（SCFAs 入血），'仅通过迷走神经'表述错误。\nD【错】错因：肠道菌群代谢物具有双面性，如次级胆汁酸（脱氧胆酸）在高浓度下具有基因毒性，三甲胺（TMA）经肝脏氧化为 TMAO 与心血管疾病风险正相关，并非所有代谢物均有益。",
+    "question": "肠道菌群发酵膳食纤维产生的短链脂肪酸（SCFAs，如丁酸）可被宿主结肠上皮细胞吸收利用。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Rios-Covian D et al.",
+        "doi": "10.1016/j.cell.2023.03.023",
+        "journal": "Cell",
+        "title": "The microbiome and short-chain fatty acids in health and disease",
+        "year": 2023
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "丁酸是结肠上皮细胞的主要能量来源，可维持肠道屏障完整性"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "SCFAs 可通过抑制组蛋白去乙酰化酶（HDAC）调控宿主基因表达"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "肠-脑轴的信号传递仅通过迷走神经一条途径实现"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "所有肠道菌群代谢物对宿主健康均具有促进作用"
+      }
+    ],
+    "subject": "微生物学",
+    "tags": [
+      "microbial_eco",
+      "module_3",
+      "微生物学",
+      "肠道菌群",
+      "短链脂肪酸",
+      "肠脑轴"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M3-02-9a7f655c": {
+    "concept": "微生物在氮循环中的作用",
+    "difficulty": "league",
+    "explanation": "A【对】依据：固氮酶在厌氧微环境中将 N₂ 还原为 NH₃，是生物固氮的核心反应。\nB【对】依据：硝化作用分两步，亚硝化细菌与硝化细菌依次将氨氧化至硝酸盐。\nC【对】依据：反硝化细菌在缺氧条件下以硝酸盐为电子受体，终产物为 N₂。\nD【错】错因：根瘤菌主要与豆科植物共生，与少数非豆科植物（如木麻黄）共生属例外，并非所有植物。",
+    "question": "土壤微生物驱动氮素在不同形态间转化。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "固氮菌将大气 N₂ 还原为氨，供植物吸收利用"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "硝化细菌将氨氧化为亚硝酸盐和硝酸盐"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "反硝化细菌将硝酸盐还原为 N₂，使氮素返回大气"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "根瘤菌可与所有植物共生固氮，不限于豆科"
+      }
+    ],
+    "subject": "微生物学",
+    "tags": [
+      "microbial_eco",
+      "module_3",
+      "微生物学",
+      "微生物在氮循环中的作用"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

@@ -1,19 +1,19 @@
 {
- "M1-01-4887c2a5": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 56,
-  "module": "module_1",
-  "src": "cell_membrane",
-  "tag": "cell_membrane",
-  "tags": [
-   "cell_membrane",
-   "module_1",
-   "细胞生物学",
-   "钠钾泵与主动运输"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-4887c2a5": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 56,
+    "module": "module_1",
+    "src": "cell_membrane",
+    "tag": "cell_membrane",
+    "tags": [
+      "cell_membrane",
+      "module_1",
+      "细胞生物学",
+      "钠钾泵与主动运输"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

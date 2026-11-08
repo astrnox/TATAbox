@@ -29,7 +29,8 @@ describe('逻辑推理 MTF（type="mtf"）语义一致性', () => {
   });
 
   test('practice / quiz / exam / daily 页的薄封装都指向 question-model 内核', () => {
-    ['js/pages/practice.js', 'js/pages/quiz.js'].forEach(fileRel => {
+    // M-01：判卷薄封装已拆至 practice-session.js
+    ['js/pages/practice-session.js', 'js/pages/quiz.js'].forEach(fileRel => {
       const src = fs.readFileSync(path.join(ROOT, fileRel), 'utf8');
       expect(src).toContain('QuestionModel.getEffectiveSubQuestions');
     });

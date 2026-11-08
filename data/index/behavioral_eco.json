@@ -1,19 +1,19 @@
 {
- "M3-01-44d4e6b6": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 47,
-  "module": "module_3",
-  "src": "behavioral_eco",
-  "tag": "behavioral_eco",
-  "tags": [
-   "behavioral_eco",
-   "module_3",
-   "生态学",
-   "利他行为与亲缘选择"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-44d4e6b6": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 47,
+    "module": "module_3",
+    "src": "behavioral_eco",
+    "tag": "behavioral_eco",
+    "tags": [
+      "behavioral_eco",
+      "module_3",
+      "生态学",
+      "利他行为与亲缘选择"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

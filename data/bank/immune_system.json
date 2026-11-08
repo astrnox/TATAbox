@@ -1,154 +1,154 @@
 {
- "M3-01-7c52c506": {
-  "concept": "CAR-T 细胞对抗原识别的 MHC 非限制性与结构域重组装",
-  "difficulty": "league",
-  "explanation": "A【对】依据：天然 TCR（图 A）识别的是 MHC-肽复合物——肿瘤抗原必须先经 MHC I 类分子呈递，T细胞方能识别；而 CAR 的胞外 scFv（单链可变区片段）直接识别肿瘤细胞表面抗原的构象表位（图 B），不依赖 MHC 呈递，因此可克服肿瘤下调 MHC 导致的免疫逃逸，这是 CAR-T 相对 TCR-T 的核心优势。\nB【对】依据：CAR 胞内段整合了共刺激域（CD28 或 4-1BB，图 B 绿色标注）与刺激域（CD3ζ，紫色标注）：CD28 促进快速扩增与效应功能，4-1BB 增强持久性与记忆形成；天然 T 细胞的共刺激需要独立的 CD28 分子与 APC 上的 B7-2/CD80-86 结合（图 A 右侧），而 CAR 把该信号融合进受体本身，'可增强增殖与持久性'表述正确。\nC【错】错因：CRS（细胞因子释放综合征）是 CAR-T 最需防范的不良反应：大量活化的 T 细胞与巨噬细胞释放 IL-6、IFN-γ、TNF-α 等细胞因子，重症可致高热、低血压、毛细血管渗漏甚至多器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预；'通常轻微且无需干预'与临床事实不符。\nD【错】错因：CD19 是 B 细胞谱系特异的分化抗原，正常/恶性 B 细胞均表达；CD19 CAR-T 只杀伤 B 细胞来源的肿瘤（B-ALL、B 细胞淋巴瘤），对 T 细胞瘤、髓系肿瘤及实体瘤不直接杀伤，'杀伤表达 CD19 的所有类型肿瘤细胞'中'所有类型'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M3-01-a898fe16/fig1-annotated.jpg",
-  "image": {
-   "caption": "TCR 与 CAR 识别肿瘤抗原的差异：(A) 天然 TCR-CD3 复合体依赖 MHC I 呈递，(B) CAR 的 scFv 直接结合肿瘤抗原并将共刺激域（CD28/4-1BB）与 CD3ζ 集成于同一分子，(C) scFv 来源于抗体可变区",
-   "credit": "Mitra A et al., Frontiers in Immunology 2023",
-   "doi": "10.3389/fimmu.2023.1188049",
-   "figure": "1",
-   "file": "assets/questions/M3-01-a898fe16/fig1.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC10225594",
-   "source": "paper"
+  "M3-01-64989b6d": {
+    "concept": "TCA 代谢物对免疫细胞极化的信号调控",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图右下（琥珀酸）面板显示琥珀酸经受体 SUCNR1 与转运体 MCT1 作用于肿瘤相关巨噬细胞（TAM）与 T 细胞：TAM 中稳定 HIF-1α、激活 PI3K 促瘤表型；T 细胞中促进耗竭（exhaustion，PD-1/TIM3 等上升）并抑制效应细胞因子 IFN-γ、TNF-α 分泌——'琥珀酸→SUCNR1→抑瘤免疫的促瘤/耗竭信号'与图示一致。\nB【对】依据：图右上（α-KG/2-HG）面板显示 α-KG 经 SLC13A3 进入 CD8⁺ T 细胞驱动增殖与 IFN-γ，并促进 Treg 极化（红箭头）、M2 巨噬细胞极化；而其衍生物 2-HG 则促进 Th17、抑制 Treg 与 NK 细胞功能（紫箭头向下）。两者的免疫效应相反且均源自同一代谢枢纽，'α-KG 与 2-HG 免疫作用相反'正确。\nC【错】错因：衣康酸（itaconate）关键机制之一是抑制 SDH（琥珀酸脱氢酶，图中 SDH 上标 ✕）进而阻断琥珀酸氧化、削弱 TCA 循环与氧化磷酸化的代谢通量；'抑制 SDH 增强氧化磷酸化'与酶学方向相反。图中衣康酸主要介导 CD8⁺ T 细胞耗竭（PD-1/TIM3↑）、M2 样 TAM 极化及巨噬细胞抗炎/IFN-I 反应。\nD【错】错因：图中琥珀酸作用于 T 细胞的效果是抑制 IFN-γ/TNF-α（T 形抑制线）并促进耗竭，故'琥珀酸升高增强效应 T 细胞的 IFN-γ 分泌'与图相反；效应增强与图不符。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-immune-annotated.jpg",
+    "image": {
+      "caption": "TCA 代谢物的免疫调控网络：中心为 TCA 循环，四象限分别为衣康酸（上左）、α-KG 与 2-HG（上右）、富马酸（下左）、琥珀酸（下右）对巨噬细胞/T/NK 细胞的作用",
+      "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+      "doi": "10.1186/s12929-025-01186-y",
+      "figure": "3",
+      "file": "assets/questions/krebs_cycle/onco-immune.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC12424225",
+      "source": "paper"
+    },
+    "question": "图展示了 TCA 循环代谢物（α-KG、2-HG、衣康酸、琥珀酸、富马酸）对肿瘤微环境中巨噬细胞、T 细胞与 NK 细胞极化和功能的多重调控。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Sarkar S, Chang CI, Jean J, et al.",
+        "doi": "10.1186/s12929-025-01186-y",
+        "journal": "Journal of Biomedical Science",
+        "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+        "year": 2025
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "琥珀酸经受体 SUCNR1 信号促进肿瘤相关巨噬细胞促瘤表型，并促进 T 细胞耗竭、抑制 IFN-γ 与 TNF-α 分泌"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "α-KG 促进 CD8⁺ T 细胞增殖与 IFN-γ、促进 Treg/M2 极化，而其衍生物 2-HG 却抑制 NK 细胞并促 Th17——同一代谢枢纽衍生出相反的免疫结果"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "衣康酸通过抑制 SDH 阻断琥珀酸氧化，因此会增强氧化磷酸化的代谢通量"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "琥珀酸升高会增强效应 T 细胞 IFN-γ 与 TNF-α 的分泌，从而抑制肿瘤生长"
+      }
+    ],
+    "subject": "免疫学",
+    "tags": [
+      "immune_system",
+      "module_3",
+      "免疫学",
+      "肿瘤免疫",
+      "免疫代谢"
+    ],
+    "target": "competition",
+    "type": "mtf"
   },
-  "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。CAR 由 scFv（抗原识别）、铰链跨膜区、共刺激域与 CD3ζ 组成（图 B）。根据以上信息与图，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Mitra A, Barua A, Huang L, et al.",
-    "doi": "10.3389/fimmu.2023.1188049",
-    "journal": "Frontiers in Immunology",
-    "title": "From bench to bedside: the history and progress of CAR T cell therapy",
-    "year": 2023
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "CAR 的胞外 scFv 结构域直接识别肿瘤表面抗原构象表位，不受 MHC 限制，可规避肿瘤 MHC 下调导致的逃逸"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "CAR 内的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性，其信号被集成进受体而不依赖 APC 的 B7 配体"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微，无需任何临床干预"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "CD19 CAR-T 可杀伤表达 CD19 的所有类型肿瘤细胞，包括 T 细胞与髓系来源的肿瘤"
-   }
-  ],
-  "subject": "免疫学",
-  "tags": [
-   "immune_system",
-   "module_3",
-   "免疫学",
-   "CAR-T",
-   "肿瘤免疫"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M3-02-c2773aee": {
-  "concept": "克隆选择学说与特异性免疫",
-  "difficulty": "league",
-  "explanation": "A【对】依据：克隆选择学说核心是受体多样性先于抗原存在，抗原选择并扩增对应克隆。\nB【对】依据：效应 B 细胞（浆细胞）分泌抗体执行体液免疫，记忆细胞提供二次应答基础。\nC【错】错因：抗体分布于体液中，不能进入细胞，胞内寄生菌主要依赖细胞免疫清除。\nD【对】依据：T 细胞前体迁移至胸腺成熟，B 细胞在骨髓（bone marrow）中发育成熟。\n【思路引导】克隆选择学说三要点：受体多样性“先于”抗原存在（先造好钥匙库再遇到锁）、抗原选择并扩增对应克隆、记忆细胞来自增殖分化。清除胞内菌靠细胞免疫（效应T细胞），胞外病原体靠体液免疫（抗体），两条清除路径别混。",
-  "question": "Burnet 提出的克隆选择学说解释了抗体多样性和免疫记忆的形成。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "每个 B 淋巴细胞只表达一种特异性受体，抗原选择相应克隆增殖"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "浆细胞分泌抗体，记忆细胞在再次感染时快速应答"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "抗体可直接进入宿主细胞内清除胞内寄生菌"
-   },
-   {
-    "answer": true,
-    "label": "D",
-    "text": "T 细胞在胸腺中成熟，B 细胞在骨髓中成熟"
-   }
-  ],
-  "subject": "免疫学",
-  "tags": [
-   "immune_system",
-   "module_3",
-   "免疫学",
-   "克隆选择学说与特异性免疫"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M3-01-64989b6d": {
-  "concept": "TCA 代谢物对免疫细胞极化的信号调控",
-  "difficulty": "league",
-  "explanation": "A【对】依据：图右下（琥珀酸）面板显示琥珀酸经受体 SUCNR1 与转运体 MCT1 作用于肿瘤相关巨噬细胞（TAM）与 T 细胞：TAM 中稳定 HIF-1α、激活 PI3K 促瘤表型；T 细胞中促进耗竭（exhaustion，PD-1/TIM3 等上升）并抑制效应细胞因子 IFN-γ、TNF-α 分泌——'琥珀酸→SUCNR1→抑瘤免疫的促瘤/耗竭信号'与图示一致。\nB【对】依据：图右上（α-KG/2-HG）面板显示 α-KG 经 SLC13A3 进入 CD8⁺ T 细胞驱动增殖与 IFN-γ，并促进 Treg 极化（红箭头）、M2 巨噬细胞极化；而其衍生物 2-HG 则促进 Th17、抑制 Treg 与 NK 细胞功能（紫箭头向下）。两者的免疫效应相反且均源自同一代谢枢纽，'α-KG 与 2-HG 免疫作用相反'正确。\nC【错】错因：衣康酸（itaconate）关键机制之一是抑制 SDH（琥珀酸脱氢酶，图中 SDH 上标 ✕）进而阻断琥珀酸氧化、削弱 TCA 循环与氧化磷酸化的代谢通量；'抑制 SDH 增强氧化磷酸化'与酶学方向相反。图中衣康酸主要介导 CD8⁺ T 细胞耗竭（PD-1/TIM3↑）、M2 样 TAM 极化及巨噬细胞抗炎/IFN-I 反应。\nD【错】错因：图中琥珀酸作用于 T 细胞的效果是抑制 IFN-γ/TNF-α（T 形抑制线）并促进耗竭，故'琥珀酸升高增强效应 T 细胞的 IFN-γ 分泌'与图相反；效应增强与图不符。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/onco-immune-annotated.jpg",
-  "image": {
-   "caption": "TCA 代谢物的免疫调控网络：中心为 TCA 循环，四象限分别为衣康酸（上左）、α-KG 与 2-HG（上右）、富马酸（下左）、琥珀酸（下右）对巨噬细胞/T/NK 细胞的作用",
-   "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
-   "doi": "10.1186/s12929-025-01186-y",
-   "figure": "3",
-   "file": "assets/questions/krebs_cycle/onco-immune.jpg",
-   "license": "CC BY 4.0",
-   "pmcId": "PMC12424225",
-   "source": "paper"
+  "M3-01-7c52c506": {
+    "concept": "CAR-T 细胞对抗原识别的 MHC 非限制性与结构域重组装",
+    "difficulty": "league",
+    "explanation": "A【对】依据：天然 TCR（图 A）识别的是 MHC-肽复合物——肿瘤抗原必须先经 MHC I 类分子呈递，T细胞方能识别；而 CAR 的胞外 scFv（单链可变区片段）直接识别肿瘤细胞表面抗原的构象表位（图 B），不依赖 MHC 呈递，因此可克服肿瘤下调 MHC 导致的免疫逃逸，这是 CAR-T 相对 TCR-T 的核心优势。\nB【对】依据：CAR 胞内段整合了共刺激域（CD28 或 4-1BB，图 B 绿色标注）与刺激域（CD3ζ，紫色标注）：CD28 促进快速扩增与效应功能，4-1BB 增强持久性与记忆形成；天然 T 细胞的共刺激需要独立的 CD28 分子与 APC 上的 B7-2/CD80-86 结合（图 A 右侧），而 CAR 把该信号融合进受体本身，'可增强增殖与持久性'表述正确。\nC【错】错因：CRS（细胞因子释放综合征）是 CAR-T 最需防范的不良反应：大量活化的 T 细胞与巨噬细胞释放 IL-6、IFN-γ、TNF-α 等细胞因子，重症可致高热、低血压、毛细血管渗漏甚至多器官衰竭，需用托珠单抗（抗 IL-6R）或糖皮质激素干预；'通常轻微且无需干预'与临床事实不符。\nD【错】错因：CD19 是 B 细胞谱系特异的分化抗原，正常/恶性 B 细胞均表达；CD19 CAR-T 只杀伤 B 细胞来源的肿瘤（B-ALL、B 细胞淋巴瘤），对 T 细胞瘤、髓系肿瘤及实体瘤不直接杀伤，'杀伤表达 CD19 的所有类型肿瘤细胞'中'所有类型'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/M3-01-a898fe16/fig1-annotated.jpg",
+    "image": {
+      "caption": "TCR 与 CAR 识别肿瘤抗原的差异：(A) 天然 TCR-CD3 复合体依赖 MHC I 呈递，(B) CAR 的 scFv 直接结合肿瘤抗原并将共刺激域（CD28/4-1BB）与 CD3ζ 集成于同一分子，(C) scFv 来源于抗体可变区",
+      "credit": "Mitra A et al., Frontiers in Immunology 2023",
+      "doi": "10.3389/fimmu.2023.1188049",
+      "figure": "1",
+      "file": "assets/questions/M3-01-a898fe16/fig1.jpg",
+      "license": "CC BY 4.0",
+      "pmcId": "PMC10225594",
+      "source": "paper"
+    },
+    "question": "研究者从 B 细胞淋巴瘤患者体内分离 T 细胞，经基因工程使其表达靶向 CD19 的嵌合抗原受体（CAR），回输后肿瘤显著缩小。CAR 由 scFv（抗原识别）、铰链跨膜区、共刺激域与 CD3ζ 组成（图 B）。根据以上信息与图，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Mitra A, Barua A, Huang L, et al.",
+        "doi": "10.3389/fimmu.2023.1188049",
+        "journal": "Frontiers in Immunology",
+        "title": "From bench to bedside: the history and progress of CAR T cell therapy",
+        "year": 2023
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "CAR 的胞外 scFv 结构域直接识别肿瘤表面抗原构象表位，不受 MHC 限制，可规避肿瘤 MHC 下调导致的逃逸"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "CAR 内的共刺激结构域（如 CD28 或 4-1BB）可增强 T 细胞的增殖与持久性，其信号被集成进受体而不依赖 APC 的 B7 配体"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "CAR-T 疗法的主要不良反应细胞因子释放综合征（CRS）通常轻微，无需任何临床干预"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "CD19 CAR-T 可杀伤表达 CD19 的所有类型肿瘤细胞，包括 T 细胞与髓系来源的肿瘤"
+      }
+    ],
+    "subject": "免疫学",
+    "tags": [
+      "immune_system",
+      "module_3",
+      "免疫学",
+      "CAR-T",
+      "肿瘤免疫"
+    ],
+    "target": "competition",
+    "type": "mtf"
   },
-  "question": "图展示了 TCA 循环代谢物（α-KG、2-HG、衣康酸、琥珀酸、富马酸）对肿瘤微环境中巨噬细胞、T 细胞与 NK 细胞极化和功能的多重调控。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Sarkar S, Chang CI, Jean J, et al.",
-    "doi": "10.1186/s12929-025-01186-y",
-    "journal": "Journal of Biomedical Science",
-    "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
-    "year": 2025
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "琥珀酸经受体 SUCNR1 信号促进肿瘤相关巨噬细胞促瘤表型，并促进 T 细胞耗竭、抑制 IFN-γ 与 TNF-α 分泌"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "α-KG 促进 CD8⁺ T 细胞增殖与 IFN-γ、促进 Treg/M2 极化，而其衍生物 2-HG 却抑制 NK 细胞并促 Th17——同一代谢枢纽衍生出相反的免疫结果"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "衣康酸通过抑制 SDH 阻断琥珀酸氧化，因此会增强氧化磷酸化的代谢通量"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "琥珀酸升高会增强效应 T 细胞 IFN-γ 与 TNF-α 的分泌，从而抑制肿瘤生长"
-   }
-  ],
-  "subject": "免疫学",
-  "tags": [
-   "immune_system",
-   "module_3",
-   "免疫学",
-   "肿瘤免疫",
-   "免疫代谢"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M3-02-c2773aee": {
+    "concept": "克隆选择学说与特异性免疫",
+    "difficulty": "league",
+    "explanation": "A【对】依据：克隆选择学说核心是受体多样性先于抗原存在，抗原选择并扩增对应克隆。\nB【对】依据：效应 B 细胞（浆细胞）分泌抗体执行体液免疫，记忆细胞提供二次应答基础。\nC【错】错因：抗体分布于体液中，不能进入细胞，胞内寄生菌主要依赖细胞免疫清除。\nD【对】依据：T 细胞前体迁移至胸腺成熟，B 细胞在骨髓（bone marrow）中发育成熟。\n【思路引导】克隆选择学说三要点：受体多样性“先于”抗原存在（先造好钥匙库再遇到锁）、抗原选择并扩增对应克隆、记忆细胞来自增殖分化。清除胞内菌靠细胞免疫（效应T细胞），胞外病原体靠体液免疫（抗体），两条清除路径别混。",
+    "question": "Burnet 提出的克隆选择学说解释了抗体多样性和免疫记忆的形成。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "每个 B 淋巴细胞只表达一种特异性受体，抗原选择相应克隆增殖"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "浆细胞分泌抗体，记忆细胞在再次感染时快速应答"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "抗体可直接进入宿主细胞内清除胞内寄生菌"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "T 细胞在胸腺中成熟，B 细胞在骨髓中成熟"
+      }
+    ],
+    "subject": "免疫学",
+    "tags": [
+      "immune_system",
+      "module_3",
+      "免疫学",
+      "克隆选择学说与特异性免疫"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

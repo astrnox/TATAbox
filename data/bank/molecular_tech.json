@@ -1,94 +1,94 @@
 {
- "M1-01-4000ade1": {
-  "concept": "CRISPR 碱基编辑",
-  "difficulty": "league",
-  "explanation": "A【对】依据：CBE 由 Cas9 切口酶（nCas9）融合胞嘧啶脱氨酶（如 APOBEC1）构成，脱氨酶在 R-loop 单链区将 C 脱氨为 U，经 DNA 修复后 U 被读为 T，实现 C•G→T•A 转换。\nB【对】依据：碱基编辑器仅产生单链切口而非双链断裂（DSB），避免了 NHEJ 修复带来的随机插入缺失（indel），显著降低脱靶结构变异风险。\nC【错】错因：碱基编辑器只能实现单碱基转换（C→T 或 A→G），无法插入大片段；大片段插入需借助 HDR 模板或先导编辑（prime editing）。\nD【错】错因：虽然 CBE 和 ABE 分别只能实现转换（transition），但通过组合策略（如 CBE+ABE 串联）或碱基编辑的衍生工具，理论上可间接实现部分颠换（transversion），'只能'表述过于绝对。\n【相关知识点】碱基编辑器（CBE/ABE）只做单碱基置换（C→T、A→G），只产生单链切口、无 DSB，因此几乎不引入随机 indel；大片段插入或敲除需要 HDR 模板、先导编辑或经典 CRISPR-Cas9 的 DSB 途径。",
-  "question": "研究者利用胞嘧碱基编辑器（CBE）将靶位点的 C•G 碱基对转换为 T•A。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Komor AC et al.",
-    "doi": "10.1038/nature17946",
-    "journal": "Nature",
-    "title": "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage",
-    "year": 2016
-   },
-   {
-    "authors": "Rees HA, Liu DR",
-    "doi": "10.1038/s41587-023-01944-x",
-    "journal": "Nature Reviews Genetics",
-    "title": "Base editing: precision chemistry on the genome and transcriptome of living cells",
-    "year": 2018
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "CBE 融合蛋白中的胞嘧啶脱氨酶将靶位点胞嘧啶脱氨转化为尿嘧啶"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "碱基编辑不产生 DNA 双链断裂，因此比传统 CRISPR-Cas9 切割更安全"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "碱基编辑器可以在基因组任意位置插入大片段外源 DNA 序列"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "碱基编辑只能实现转换突变，无法实现颠换突变"
-   }
-  ],
-  "subject": "生物技术",
-  "tags": [
-   "molecular_tech",
-   "module_1",
-   "生物技术",
-   "碱基编辑",
-   "CRISPR"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M1-02-5775c58d": {
-  "concept": "PCR 的原理与应用",
-  "difficulty": "league",
-  "explanation": "A【对】依据：高温变性解链、降温退火引物结合、72℃ 左右延伸，三步循环实现体外扩增。\nB【对】依据：两条引物与模板两端互补，界定扩增区间，DNA 聚合酶只能从引物 3'-OH 延伸。\nC【对】依据：理想条件下产物以 2ⁿ 指数增长，这是 PCR 高灵敏度的基础。\nD【错】错因：PCR 必须以模板 DNA 为复制对象，无模板则无扩增产物。\n【通法】PCR 三步循环：高温变性解链→低温退火引物结合→中温（约72℃）延伸。两条引物界定扩增区间、聚合酶只能从引物 3′-OH 延伸；产物按 2ⁿ 指数增长，无模板则无产物。",
-  "question": "研究人员利用 PCR 从基因组 DNA 模板中扩增某目的基因片段。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "PCR 依据 DNA 半保留复制原理，每循环含变性、退火、延伸三步"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "引物决定扩增片段的边界，Taq 酶从引物 3' 端开始延伸"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "扩增产物量随循环数指数增长，第 n 轮理论可达 2ⁿ 拷贝"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "PCR 不需要模板 DNA，可凭空合成任意序列"
-   }
-  ],
-  "subject": "生物技术",
-  "tags": [
-   "molecular_tech",
-   "module_1",
-   "生物技术",
-   "PCR 的原理与应用"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-01-4000ade1": {
+    "concept": "CRISPR 碱基编辑",
+    "difficulty": "league",
+    "explanation": "A【对】依据：CBE 由 Cas9 切口酶（nCas9）融合胞嘧啶脱氨酶（如 APOBEC1）构成，脱氨酶在 R-loop 单链区将 C 脱氨为 U，经 DNA 修复后 U 被读为 T，实现 C•G→T•A 转换。\nB【对】依据：碱基编辑器仅产生单链切口而非双链断裂（DSB），避免了 NHEJ 修复带来的随机插入缺失（indel），显著降低脱靶结构变异风险。\nC【错】错因：碱基编辑器只能实现单碱基转换（C→T 或 A→G），无法插入大片段；大片段插入需借助 HDR 模板或先导编辑（prime editing）。\nD【错】错因：虽然 CBE 和 ABE 分别只能实现转换（transition），但通过组合策略（如 CBE+ABE 串联）或碱基编辑的衍生工具，理论上可间接实现部分颠换（transversion），'只能'表述过于绝对。\n【相关知识点】碱基编辑器（CBE/ABE）只做单碱基置换（C→T、A→G），只产生单链切口、无 DSB，因此几乎不引入随机 indel；大片段插入或敲除需要 HDR 模板、先导编辑或经典 CRISPR-Cas9 的 DSB 途径。",
+    "question": "研究者利用胞嘧碱基编辑器（CBE）将靶位点的 C•G 碱基对转换为 T•A。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Komor AC et al.",
+        "doi": "10.1038/nature17946",
+        "journal": "Nature",
+        "title": "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage",
+        "year": 2016
+      },
+      {
+        "authors": "Rees HA, Liu DR",
+        "doi": "10.1038/s41587-023-01944-x",
+        "journal": "Nature Reviews Genetics",
+        "title": "Base editing: precision chemistry on the genome and transcriptome of living cells",
+        "year": 2018
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "CBE 融合蛋白中的胞嘧啶脱氨酶将靶位点胞嘧啶脱氨转化为尿嘧啶"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "碱基编辑不产生 DNA 双链断裂，因此比传统 CRISPR-Cas9 切割更安全"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "碱基编辑器可以在基因组任意位置插入大片段外源 DNA 序列"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "碱基编辑只能实现转换突变，无法实现颠换突变"
+      }
+    ],
+    "subject": "生物技术",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物技术",
+      "碱基编辑",
+      "CRISPR"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-02-5775c58d": {
+    "concept": "PCR 的原理与应用",
+    "difficulty": "league",
+    "explanation": "A【对】依据：高温变性解链、降温退火引物结合、72℃ 左右延伸，三步循环实现体外扩增。\nB【对】依据：两条引物与模板两端互补，界定扩增区间，DNA 聚合酶只能从引物 3'-OH 延伸。\nC【对】依据：理想条件下产物以 2ⁿ 指数增长，这是 PCR 高灵敏度的基础。\nD【错】错因：PCR 必须以模板 DNA 为复制对象，无模板则无扩增产物。\n【通法】PCR 三步循环：高温变性解链→低温退火引物结合→中温（约72℃）延伸。两条引物界定扩增区间、聚合酶只能从引物 3′-OH 延伸；产物按 2ⁿ 指数增长，无模板则无产物。",
+    "question": "研究人员利用 PCR 从基因组 DNA 模板中扩增某目的基因片段。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "PCR 依据 DNA 半保留复制原理，每循环含变性、退火、延伸三步"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "引物决定扩增片段的边界，Taq 酶从引物 3' 端开始延伸"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "扩增产物量随循环数指数增长，第 n 轮理论可达 2ⁿ 拷贝"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "PCR 不需要模板 DNA，可凭空合成任意序列"
+      }
+    ],
+    "subject": "生物技术",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物技术",
+      "PCR 的原理与应用"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

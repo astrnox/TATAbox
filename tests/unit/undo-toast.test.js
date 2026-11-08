@@ -25,7 +25,8 @@ describe('P1-21 Undo：showUndoToast 提供方', () => {
   });
 
   test('撤销条包含可点击的“撤销”按钮（无内联脚本）', () => {
-    const fn = appSource.slice(appSource.indexOf('function showUndoToast'), appSource.indexOf('window.showFeedbackModal'));
+    // M-01：反馈弹窗已拆出 app.js，showUndoToast 之后的边界改为文件末尾
+    const fn = appSource.slice(appSource.indexOf('function showUndoToast'));
     expect(fn).toContain('undoBtn');
     expect(fn).toMatch(/undoBtn\.addEventListener\(['"]click['"]/);
     expect(fn).toContain('options.label || \'撤销\'');

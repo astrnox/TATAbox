@@ -88,7 +88,7 @@ describe('setQuestionRating（管理员重新评分）', () => {
     expect(ok).toBe(true);
     expect(window.getQuestionRating(q)).toEqual({ up: 40, down: 10 });
     // 重新评分后持久化，重读仍一致
-    const reloaded = JSON.parse(localStorage.getItem('bioquest_question_ratings'));
+    const reloaded = JSON.parse(localStorage.getItem('tatabox_question_ratings'));
     expect(reloaded['q-local-0001']).toEqual({ up: 40, down: 10 });
   });
 
@@ -107,20 +107,20 @@ describe('回收站流转（recycle / restore / isRecycled）', () => {
   test('回收后 isRecycled=true，且持久化', () => {
     window.recycleQuestion(q);
     expect(window.isQuestionRecycled(q)).toBe(true);
-    expect(JSON.parse(localStorage.getItem('bioquest_question_recycled'))).toContain('q-local-0001');
+    expect(JSON.parse(localStorage.getItem('tatabox_question_recycled'))).toContain('q-local-0001');
   });
 
   test('重复回收幂等', () => {
     window.recycleQuestion(q);
     window.recycleQuestion(q);
-    expect(JSON.parse(localStorage.getItem('bioquest_question_recycled'))).toHaveLength(1);
+    expect(JSON.parse(localStorage.getItem('tatabox_question_recycled'))).toHaveLength(1);
   });
 
   test('恢复后 isRecycled=false 且列表移除', () => {
     window.recycleQuestion(q);
     window.restoreQuestion(q);
     expect(window.isQuestionRecycled(q)).toBe(false);
-    expect(JSON.parse(localStorage.getItem('bioquest_question_recycled'))).toHaveLength(0);
+    expect(JSON.parse(localStorage.getItem('tatabox_question_recycled'))).toHaveLength(0);
   });
 });
 

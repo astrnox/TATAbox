@@ -203,7 +203,7 @@ function _isQuizRecycled(q) {
     return window.isQuestionRecycled(qId);
   }
   try {
-    var list = JSON.parse(localStorage.getItem('bioquest_question_recycled') || '[]');
+    var list = JSON.parse(localStorage.getItem('tatabox_question_recycled') || '[]');
     return Array.isArray(list) && list.indexOf(qId) !== -1;
   } catch (e) {
     return false;
@@ -655,7 +655,7 @@ function renderPaper() {
       var qidx = this.getAttribute('data-qidx');
       if (action === 'kg') {
         // 跳转到知识图谱，并通过 sessionStorage 传递概念
-        try { sessionStorage.setItem('bioquest_kg_focus', concept); } catch (e) {}
+        try { sessionStorage.setItem('tatabox_kg_focus', concept); } catch (e) {}
         if (typeof navigateTo === 'function') navigateTo('/knowledge-graph');
       } else if (action === 'wrongbook') {
         var q = currentPaper[parseInt(qidx)];
@@ -671,9 +671,9 @@ function renderPaper() {
           } else {
             // 兜底：直接写入 localStorage（同样以稳定 bioID 为 id，key 与 storage.js KEYS.WRONG_QUESTIONS 一致）
             try {
-              var arr = JSON.parse(localStorage.getItem('bioquest_wrong_questions') || '[]');
+              var arr = JSON.parse(localStorage.getItem('tatabox_wrong_questions') || '[]');
               arr.push({ qId: qBio, questionText: q.question, subject: q.subject, timestamp: Date.now(), wrongCount: 1 });
-              localStorage.setItem('bioquest_wrong_questions', JSON.stringify(arr.slice(-200)));
+              localStorage.setItem('tatabox_wrong_questions', JSON.stringify(arr.slice(-200)));
               this.textContent = '✓ 已加入';
               this.disabled = true;
             } catch (e) {}
@@ -681,7 +681,7 @@ function renderPaper() {
         }
       } else if (action === 'card') {
         // 跳转到卡片页，并通过 sessionStorage 传递概念
-        try { sessionStorage.setItem('bioquest_card_focus', concept); } catch (e) {}
+        try { sessionStorage.setItem('tatabox_card_focus', concept); } catch (e) {}
         if (typeof navigateTo === 'function') navigateTo('/cards');
       }
     });

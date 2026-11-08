@@ -1,40 +1,40 @@
 {
- "M2-01-7c09ba00": {
-  "concept": "向光性与光受体",
-  "difficulty": "league",
-  "explanation": "A【对】依据：单侧光使生长素横向运输至背光侧，背光侧浓度高、伸长快，向光弯曲。\nB【错】错因：向光性是向性运动，方向由刺激方向决定；感性运动才与刺激方向无关。\nC【错】错因：感光部位在尖端，尖端以下伸长区只发生不均匀伸长。\nD【错】错因：向光性还涉及生长抑制物（如萝卜宁）分布及光受体信号，并非仅靠生长素。",
-  "question": "单侧光照射下，胚芽鞘向光源方向弯曲生长。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "向光弯曲的原因是背光侧生长素分布多、细胞伸长快"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "向光性属于感性运动，与刺激方向无关"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "感受光刺激的部位是胚芽鞘尖端以下的伸长区"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "植物只有生长素一种激素参与向光性反应"
-   }
-  ],
-  "subject": "植物生理学",
-  "tags": [
-   "plant_movement",
-   "module_2",
-   "植物生理学",
-   "向光性与光受体"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M2-01-7c09ba00": {
+    "concept": "向光性与光受体",
+    "difficulty": "league",
+    "explanation": "A【对】依据：单侧光使生长素横向运输至背光侧，背光侧浓度高、伸长快，向光弯曲。\nB【错】错因：向光性是向性运动，方向由刺激方向决定；感性运动才与刺激方向无关。\nC【错】错因：感光部位在尖端，尖端以下伸长区只发生不均匀伸长。\nD【错】错因：向光性还涉及生长抑制物（如萝卜宁）分布及光受体信号，并非仅靠生长素。",
+    "question": "单侧光照射下，胚芽鞘向光源方向弯曲生长。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "向光弯曲的原因是背光侧生长素分布多、细胞伸长快"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "向光性属于感性运动，与刺激方向无关"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "感受光刺激的部位是胚芽鞘尖端以下的伸长区"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "植物只有生长素一种激素参与向光性反应"
+      }
+    ],
+    "subject": "植物生理学",
+    "tags": [
+      "plant_movement",
+      "module_2",
+      "植物生理学",
+      "向光性与光受体"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

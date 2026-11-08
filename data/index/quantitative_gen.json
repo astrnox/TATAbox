@@ -1,19 +1,19 @@
 {
- "M4-01-94f59e97": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 35,
-  "module": "module_4",
-  "src": "quantitative_gen",
-  "tag": "quantitative_gen",
-  "tags": [
-   "quantitative_gen",
-   "module_4",
-   "遗传学",
-   "数量性状的多基因假说"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-94f59e97": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 35,
+    "module": "module_4",
+    "src": "quantitative_gen",
+    "tag": "quantitative_gen",
+    "tags": [
+      "quantitative_gen",
+      "module_4",
+      "遗传学",
+      "数量性状的多基因假说"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

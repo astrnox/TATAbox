@@ -1,38 +1,38 @@
 {
- "concept": "微生物在氮循环中的作用",
- "difficulty": "league",
- "explanation": "A【对】依据：固氮酶在厌氧微环境中将 N₂ 还原为 NH₃，是生物固氮的核心反应。\nB【对】依据：硝化作用分两步，亚硝化细菌与硝化细菌依次将氨氧化至硝酸盐。\nC【对】依据：反硝化细菌在缺氧条件下以硝酸盐为电子受体，终产物为 N₂。\nD【错】错因：根瘤菌主要与豆科植物共生，与少数非豆科植物（如木麻黄）共生属例外，并非所有植物。",
- "question": "土壤微生物驱动氮素在不同形态间转化。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "固氮菌将大气 N₂ 还原为氨，供植物吸收利用"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "硝化细菌将氨氧化为亚硝酸盐和硝酸盐"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "反硝化细菌将硝酸盐还原为 N₂，使氮素返回大气"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "根瘤菌可与所有植物共生固氮，不限于豆科"
-  }
- ],
- "subject": "微生物学",
- "tags": [
-  "microbial_eco",
-  "module_3",
-  "微生物学",
-  "微生物在氮循环中的作用"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "微生物在氮循环中的作用",
+  "difficulty": "league",
+  "explanation": "A【对】依据：固氮酶在厌氧微环境中将 N₂ 还原为 NH₃，是生物固氮的核心反应。\nB【对】依据：硝化作用分两步，亚硝化细菌与硝化细菌依次将氨氧化至硝酸盐。\nC【对】依据：反硝化细菌在缺氧条件下以硝酸盐为电子受体，终产物为 N₂。\nD【错】错因：根瘤菌主要与豆科植物共生，与少数非豆科植物（如木麻黄）共生属例外，并非所有植物。",
+  "question": "土壤微生物驱动氮素在不同形态间转化。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "固氮菌将大气 N₂ 还原为氨，供植物吸收利用"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "硝化细菌将氨氧化为亚硝酸盐和硝酸盐"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "反硝化细菌将硝酸盐还原为 N₂，使氮素返回大气"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "根瘤菌可与所有植物共生固氮，不限于豆科"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "microbial_eco",
+    "module_3",
+    "微生物学",
+    "微生物在氮循环中的作用"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

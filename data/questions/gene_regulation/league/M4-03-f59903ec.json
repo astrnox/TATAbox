@@ -1,57 +1,57 @@
 {
- "concept": "乳糖操纵子调控的环境依赖选择与进化",
- "difficulty": "league",
- "explanation": "A【对】依据：图 B 显示 lacI⁻（阻遏蛋白失活）突变在不同检测环境中的适合度效应不同：乳糖（Lac）环境中为正（约 +0.08），葡/乳混合（G/L）环境中为正但较小（约 +0.04），葡萄糖（Glu）环境中为负（约 -0.04）。这说明同一基因突变的选择效应强烈依赖环境碳源，'正/负效应随环境改变'正确。\nB【对】依据：图 A 显示在波动切换环境（G_L、L_G）中，多数重复群体出现高频率 lacI⁻（白色/浅格），而恒定乳糖（Lac）等环境频率较低；究其原因，lacI⁻ 使操纵子失去阻遏而组成型高表达 lacZYA，在'葡萄糖-乳糖'频繁切换时免去每次诱导的延迟，图 B 中乳糖环境下的正适合度（+0.08）为此提供了解释——环境波动与选择效应一致支持'组成型表达在波动环境中有优势'。\nC【错】错因：图 B 中 lacI⁻ 在葡萄糖环境中的适合度效应为负（约 -0.04），因为乳糖操纵子不必要的组成型表达会造成蛋白质合成负担；'在任何培养条件下都提高适合度'与图中负效应数据直接矛盾。\nD【错】错因：lacI 编码阻遏蛋白，其功能缺失（lacI⁻）使操纵子失去负调控而表现为组成型表达（无需乳糖诱导即有 lacZYA 转录，且乳糖存在时无需拆除阻遏即可快速利用），并非'完全无法表达'；此外乳糖分解代谢还需要 CAP-cAMP 的正调控，'完全无法表达'的表述与操纵子调控模型相悖。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/fig1-src-annotated.jpg",
- "image": {
-  "caption": "lac 操纵子调控进化的两项关键实验数据：(A) 4 种进化环境（Lac、G/L、G_L、L_G）× 6 个重复群体中 lacI⁻ 突变频率热图；(B) lacI⁻ 在葡萄糖/乳糖/混合环境中的适合度效应",
-  "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
-  "doi": "10.1093/molbev/msab077",
-  "figure": "1",
-  "file": "assets/questions/gene_regulation/fig1-src.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC8233506",
-  "source": "paper"
- },
- "question": "研究者将大肠杆菌祖先株在 4 种碳源环境中进化 8,000 代，检测 lacI⁻（阻遏蛋白失活）突变在各重复群体中的频率（图 A），并测量该突变在不同检测环境中的适合度效应（图 B）。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
-   "doi": "10.1093/molbev/msab077",
-   "journal": "Molecular Biology and Evolution",
-   "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
-   "year": 2021
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "lacI⁻ 突变的适合度效应是环境依赖的：在乳糖环境中为正，在葡萄糖环境中为负"
+  "concept": "乳糖操纵子调控的环境依赖选择与进化",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图 B 显示 lacI⁻（阻遏蛋白失活）突变在不同检测环境中的适合度效应不同：乳糖（Lac）环境中为正（约 +0.08），葡/乳混合（G/L）环境中为正但较小（约 +0.04），葡萄糖（Glu）环境中为负（约 -0.04）。这说明同一基因突变的选择效应强烈依赖环境碳源，'正/负效应随环境改变'正确。\nB【对】依据：图 A 显示在波动切换环境（G_L、L_G）中，多数重复群体出现高频率 lacI⁻（白色/浅格），而恒定乳糖（Lac）等环境频率较低；究其原因，lacI⁻ 使操纵子失去阻遏而组成型高表达 lacZYA，在'葡萄糖-乳糖'频繁切换时免去每次诱导的延迟，图 B 中乳糖环境下的正适合度（+0.08）为此提供了解释——环境波动与选择效应一致支持'组成型表达在波动环境中有优势'。\nC【错】错因：图 B 中 lacI⁻ 在葡萄糖环境中的适合度效应为负（约 -0.04），因为乳糖操纵子不必要的组成型表达会造成蛋白质合成负担；'在任何培养条件下都提高适合度'与图中负效应数据直接矛盾。\nD【错】错因：lacI 编码阻遏蛋白，其功能缺失（lacI⁻）使操纵子失去负调控而表现为组成型表达（无需乳糖诱导即有 lacZYA 转录，且乳糖存在时无需拆除阻遏即可快速利用），并非'完全无法表达'；此外乳糖分解代谢还需要 CAP-cAMP 的正调控，'完全无法表达'的表述与操纵子调控模型相悖。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/fig1-src-annotated.jpg",
+  "image": {
+    "caption": "lac 操纵子调控进化的两项关键实验数据：(A) 4 种进化环境（Lac、G/L、G_L、L_G）× 6 个重复群体中 lacI⁻ 突变频率热图；(B) lacI⁻ 在葡萄糖/乳糖/混合环境中的适合度效应",
+    "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
+    "doi": "10.1093/molbev/msab077",
+    "figure": "1",
+    "file": "assets/questions/gene_regulation/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC8233506",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "在葡萄糖-乳糖波动切换环境中 lacI⁻ 高频出现，与'组成型表达在波动环境下减少诱导延迟、获得选择优势'的解释一致"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "lacI⁻ 突变在任何培养条件下都会提高细菌适合度，因此其频率在所有环境中都快速固定"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "lacI 失活意味着乳糖操纵子失去阻遏蛋白，因此乳糖代谢相关基因将完全无法表达"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "gene_regulation",
-  "module_4",
-  "分子生物学",
-  "操纵子",
-  "进化适应"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者将大肠杆菌祖先株在 4 种碳源环境中进化 8,000 代，检测 lacI⁻（阻遏蛋白失活）突变在各重复群体中的频率（图 A），并测量该突变在不同检测环境中的适合度效应（图 B）。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
+      "doi": "10.1093/molbev/msab077",
+      "journal": "Molecular Biology and Evolution",
+      "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
+      "year": 2021
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "lacI⁻ 突变的适合度效应是环境依赖的：在乳糖环境中为正，在葡萄糖环境中为负"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "在葡萄糖-乳糖波动切换环境中 lacI⁻ 高频出现，与'组成型表达在波动环境下减少诱导延迟、获得选择优势'的解释一致"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "lacI⁻ 突变在任何培养条件下都会提高细菌适合度，因此其频率在所有环境中都快速固定"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "lacI 失活意味着乳糖操纵子失去阻遏蛋白，因此乳糖代谢相关基因将完全无法表达"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "操纵子",
+    "进化适应"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

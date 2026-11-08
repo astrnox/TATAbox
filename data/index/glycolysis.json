@@ -1,19 +1,19 @@
 {
- "M1-01-4e193bd6": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 41,
-  "module": "module_1",
-  "src": "glycolysis",
-  "tag": "glycolysis",
-  "tags": [
-   "glycolysis",
-   "module_1",
-   "生物化学",
-   "糖酵解途径"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-4e193bd6": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 41,
+    "module": "module_1",
+    "src": "glycolysis",
+    "tag": "glycolysis",
+    "tags": [
+      "glycolysis",
+      "module_1",
+      "生物化学",
+      "糖酵解途径"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

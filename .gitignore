@@ -1,7 +1,6 @@
 # 依赖
 node_modules/
-package-lock.json
-yarn.lock
+# M-11：package-lock.json 必须入库，CI 用 npm ci 保证依赖可复现
 
 # Python
 __pycache__/
@@ -54,6 +53,13 @@ test_screenshots/
 __tests__/
 pool.json.bak
 waf-rules.txt
+
+# H-05：历史归档与已下线课堂 vendor 移出主分支（本地保留，git 历史可查）
+archive/
+vendor/openmaic/
+
+# L-04：题库转换脚本的一次性中间产物（可随时用 scripts/convert-to-mtf.js 重跑生成）
+scripts/converted-questions.json
 
 # GGBO 高中生物竞赛（独立项目，不属于 BioQuest 主仓库）
 ggbo-answer/

@@ -21,7 +21,7 @@ async function renderEbookTab(container) {
   // Load any saved edits
   let savedEdits = {};
   try {
-    const raw = localStorage.getItem('bioquest_ebook_edits');
+    const raw = localStorage.getItem('tatabox_ebook_edits');
     if (raw) savedEdits = JSON.parse(raw);
   } catch(e) {}
 
@@ -76,7 +76,7 @@ async function renderEbookTab(container) {
           <tbody>
             ${PARTS.map(p => `
               <tr>
-                <td class="admin-table-name">${p.name}</td>
+                <td class="admin-table-name">${escapeHtml(p.name)}</td>
                 <td>${p.chapters}</td>
                 <td>${p.sections}</td>
                 <td><span class="admin-q-tag admin-q-tag--module">已发布</span></td>
@@ -104,7 +104,7 @@ async function renderEbookTab(container) {
         <div class="admin-form-group">
           <label class="admin-form-label">选择篇</label>
           <select class="admin-form-select" id="ebook-part-select">
-            ${PARTS.map(p => `<option value="${p.id}">${p.name}</option>`).join('')}
+            ${PARTS.map(p => `<option value="${escapeHtml(p.id)}">${escapeHtml(p.name)}</option>`).join('')}
           </select>
         </div>
         <div class="admin-form-group">
@@ -319,7 +319,7 @@ async function renderEbookTab(container) {
 
     const editKey = partId + '/ch' + chIdx + '/sec' + secIdx;
     savedEdits[editKey] = contentEdit.value;
-    localStorage.setItem('bioquest_ebook_edits', JSON.stringify(savedEdits));
+    localStorage.setItem('tatabox_ebook_edits', JSON.stringify(savedEdits));
     showAdminToast('内容已保存到本地存储', 'success');
 
     // Refresh saved edits display
@@ -342,20 +342,20 @@ async function renderEbookTab(container) {
 
   function getCustomEbooks() {
     try {
-      var raw = localStorage.getItem('bioquest_custom_ebooks');
+      var raw = localStorage.getItem('tatabox_custom_ebooks');
       if (raw) return JSON.parse(raw);
     } catch(e) {}
     return [];
   }
 
   function saveCustomEbooks(ebooks) {
-    localStorage.setItem('bioquest_custom_ebooks', JSON.stringify(ebooks));
+    localStorage.setItem('tatabox_custom_ebooks', JSON.stringify(ebooks));
   }
 
   function getPdfStatus() {
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     // Also check custom ebooks
@@ -369,15 +369,20 @@ async function renderEbookTab(container) {
   function setPdfStatus(key, hasPdf) {
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     status[key] = hasPdf;
-    localStorage.setItem('bioquest_ebook_pdf_status', JSON.stringify(status));
+    localStorage.setItem('tatabox_ebook_pdf_status', JSON.stringify(status));
   }
 
   function sanitizeBookName(name) {
     return name.replace(/[^a-zA-Z0-9\u4e00-\u9fff_()]/g, '_').replace(/_+/g, '_');
+  }
+
+  // data-on 数组里的 JS 字符串参数：先做 JS 字符串转义，再处理 HTML 属性边界
+  function _escJsStr(s) {
+    return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/</g, '&lt;');
   }
 
   function renderPdfTable() {
@@ -390,7 +395,7 @@ async function renderEbookTab(container) {
       // 注意：filePath 不应包含 bucket 名前缀，因为 .from('bioquest-ebooks') 已指定 bucket
       var filePath = sanitizeBookName(book.name) + '.pdf';
       return '<tr>' +
-        '<td class="admin-table-name">' + book.name + '</td>' +
+        '<td class="admin-table-name">' + escapeHtml(book.name) + '</td>' +
         '<td>' + (hasPdf
           ? '<span class="admin-q-tag admin-q-tag--module">已上传</span>'
           : '<span class="admin-q-tag admin-q-tag--difficulty">未上传</span>') +
@@ -398,12 +403,12 @@ async function renderEbookTab(container) {
         '<td>' +
           '<label class="admin-btn admin-btn--primary" style="padding:4px 12px;font-size:0.78rem;cursor:pointer;margin:0;">' +
             '选择PDF' +
-            '<input type="file" accept="application/pdf" style="display:none;" data-book-key="' + book.key + '" data-book-name="' + book.name + '" data-file-path="' + filePath + '" class="admin-pdf-file-input" />' +
+            '<input type="file" accept="application/pdf" style="display:none;" data-book-key="' + escapeHtml(book.key) + '" data-book-name="' + escapeHtml(book.name) + '" data-file-path="' + escapeHtml(filePath) + '" class="admin-pdf-file-input" />' +
           '</label>' +
         '</td>' +
         '<td>' +
           (hasPdf
-            ? '<button class="admin-btn admin-btn--danger admin-pdf-delete-btn" style="padding:4px 12px;font-size:0.78rem;" data-book-key="' + book.key + '" data-file-path="' + filePath + '" data-on=\'["adminDeletePdf","' + book.key + '","' + filePath + '"]\'>删除</button>'
+            ? '<button class="admin-btn admin-btn--danger admin-pdf-delete-btn" style="padding:4px 12px;font-size:0.78rem;" data-book-key="' + escapeHtml(book.key) + '" data-file-path="' + escapeHtml(filePath) + '" data-on=\'["adminDeletePdf","' + _escJsStr(book.key) + '","' + _escJsStr(filePath) + '"]\'>删除</button>'
             : '<span style="color:var(--text-muted,#8a8a8a);font-size:0.8rem;">—</span>') +
         '</td>' +
       '</tr>';
@@ -414,9 +419,6 @@ async function renderEbookTab(container) {
     customEbooks.forEach(function(eb) {
       var hasPdf = !!status[eb.id];
       // P0-3 修复：用户上传书籍的标题/作者/分类为用户可控字段，渲染与属性均需转义
-      function _escJsStr(s) {
-        return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/</g, '&lt;');
-      }
       var ebTitle = escapeHtml(eb.title || '');
       var ebAuthor = escapeHtml(eb.author || '');
       var ebCategory = escapeHtml(eb.category || '');
@@ -432,7 +434,7 @@ async function renderEbookTab(container) {
         '<td>' +
           '<label class="admin-btn admin-btn--primary" style="padding:4px 12px;font-size:0.78rem;cursor:pointer;margin:0;">' +
             '选择PDF' +
-            '<input type="file" accept="application/pdf" style="display:none;" data-book-key="' + eb.id + '" data-book-name="' + ebTitleAttr + '" data-file-path="' + ebPathJs + '" data-custom-id="' + eb.id + '" class="admin-pdf-file-input" />' +
+            '<input type="file" accept="application/pdf" style="display:none;" data-book-key="' + ebIdJs + '" data-book-name="' + ebTitleAttr + '" data-file-path="' + ebPathJs + '" data-custom-id="' + ebIdJs + '" class="admin-pdf-file-input" />' +
           '</label>' +
         '</td>' +
         '<td>' +
@@ -537,12 +539,12 @@ async function renderEbookTab(container) {
       '</tr></thead><tbody>' +
       customEbooks.map(function(eb) {
         return '<tr>' +
-          '<td class="admin-table-name">' + eb.title + '</td>' +
-          '<td>' + (eb.author || '—') + '</td>' +
-          '<td><span class="admin-q-tag admin-q-tag--module">' + eb.category + '</span></td>' +
-          '<td style="font-size:0.82rem;">' + (eb.uploadDate ? new Date(eb.uploadDate).toLocaleDateString('zh-CN') : '—') + '</td>' +
+          '<td class="admin-table-name">' + escapeHtml(eb.title || '') + '</td>' +
+          '<td>' + (eb.author ? escapeHtml(eb.author) : '—') + '</td>' +
+          '<td><span class="admin-q-tag admin-q-tag--module">' + escapeHtml(eb.category || '') + '</span></td>' +
+          '<td style="font-size:0.82rem;">' + (eb.uploadDate ? escapeHtml(new Date(eb.uploadDate).toLocaleDateString('zh-CN')) : '—') + '</td>' +
           '<td>' +
-            '<button class="admin-btn admin-btn--danger" style="padding:4px 12px;font-size:0.78rem;" data-on=\'["adminDeletePdf","' + eb.id + '","' + eb.filePath + '",true]\'>删除</button>' +
+            '<button class="admin-btn admin-btn--danger" style="padding:4px 12px;font-size:0.78rem;" data-on=\'["adminDeletePdf","' + _escJsStr(eb.id) + '","' + _escJsStr(eb.filePath) + '",true]\'>删除</button>' +
           '</td>' +
         '</tr>';
       }).join('') +
@@ -694,21 +696,21 @@ window.adminDeletePdf = async function(bookKey, filePath, isCustom) {
 
     var status = {};
     try {
-      var raw = localStorage.getItem('bioquest_ebook_pdf_status');
+      var raw = localStorage.getItem('tatabox_ebook_pdf_status');
       if (raw) status = JSON.parse(raw);
     } catch(e) {}
     status[bookKey] = false;
-    localStorage.setItem('bioquest_ebook_pdf_status', JSON.stringify(status));
+    localStorage.setItem('tatabox_ebook_pdf_status', JSON.stringify(status));
 
     // If custom book, also remove from custom ebooks list
     if (isCustom) {
       var customEbooks = [];
       try {
-        var rawEbooks = localStorage.getItem('bioquest_custom_ebooks');
+        var rawEbooks = localStorage.getItem('tatabox_custom_ebooks');
         if (rawEbooks) customEbooks = JSON.parse(rawEbooks);
       } catch(e) {}
       customEbooks = customEbooks.filter(function(eb) { return eb.id !== bookKey; });
-      localStorage.setItem('bioquest_custom_ebooks', JSON.stringify(customEbooks));
+      localStorage.setItem('tatabox_custom_ebooks', JSON.stringify(customEbooks));
     }
 
     showAdminToast('PDF 已删除', 'success');
@@ -724,11 +726,11 @@ window.adminDeletePdf = async function(bookKey, filePath, isCustom) {
 window.deleteEbookEdit = function(key) {
   let savedEdits = {};
   try {
-    const raw = localStorage.getItem('bioquest_ebook_edits');
+    const raw = localStorage.getItem('tatabox_ebook_edits');
     if (raw) savedEdits = JSON.parse(raw);
   } catch(e) {}
   delete savedEdits[key];
-  localStorage.setItem('bioquest_ebook_edits', JSON.stringify(savedEdits));
+  localStorage.setItem('tatabox_ebook_edits', JSON.stringify(savedEdits));
   showAdminToast('编辑已删除', 'success');
   // Refresh the tab
   const container = document.getElementById('admin-tab-content');

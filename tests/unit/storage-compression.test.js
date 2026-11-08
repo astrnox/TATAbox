@@ -94,7 +94,7 @@ describe('Issue #134 storage 压缩', () => {
   test('小 payload：saveProgress/loadProgress 保持明文（无信封）', () => {
     const { api, localStorage } = loadStorage({ withLZ: true });
     api.saveProgress('stats', { total: 1 });
-    const raw = localStorage.raw('bioquest_progress_stats');
+    const raw = localStorage.raw('tatabox_progress_stats');
     expect(raw.indexOf('__bqz')).toBe(-1);
     expect(api.loadProgress('stats').data.total).toBe(1);
   });
@@ -103,7 +103,7 @@ describe('Issue #134 storage 压缩', () => {
     const { api, localStorage } = loadStorage({ withLZ: true });
     const payload = bigPayload(800);
     api.saveProgress('fsrs_cards', payload);
-    const raw = localStorage.raw('bioquest_progress_fsrs_cards');
+    const raw = localStorage.raw('tatabox_progress_fsrs_cards');
     const stored = JSON.parse(raw);
     expect(stored.__bqz).toBe(1); // 已压缩
     const loaded = api.loadProgress('fsrs_cards');
@@ -116,7 +116,7 @@ describe('Issue #134 storage 压缩', () => {
     const { api, localStorage } = loadStorage({ withLZ: true });
     const payload = bigPayload(800);
     api.saveProgress('fsrs_cards', payload);
-    const raw = localStorage.raw('bioquest_progress_fsrs_cards');
+    const raw = localStorage.raw('tatabox_progress_fsrs_cards');
     const plain = JSON.stringify({ updatedAt: Date.now(), deviceId: 'x', data: payload });
     expect(raw.length).toBeLessThan(plain.length * 0.9);
   });
@@ -124,7 +124,7 @@ describe('Issue #134 storage 压缩', () => {
   test('明文旧数据兼容读取', () => {
     const { api, localStorage } = loadStorage({ withLZ: true });
     const legacy = { updatedAt: 1, deviceId: 'legacy', data: { v: 42 } };
-    localStorage.setItem('bioquest_progress_legacy', JSON.stringify(legacy));
+    localStorage.setItem('tatabox_progress_legacy', JSON.stringify(legacy));
     expect(api.loadProgress('legacy').data.v).toBe(42);
   });
 
@@ -134,7 +134,7 @@ describe('Issue #134 storage 压缩', () => {
     let entropy = '';
     for (let i = 0; i < 20000; i++) entropy += String.fromCharCode(33 + (Math.random() * 90) | 0);
     api.saveProgress('entropy', { blob: entropy });
-    const raw = localStorage.raw('bioquest_progress_entropy');
+    const raw = localStorage.raw('tatabox_progress_entropy');
     expect(raw.indexOf('__bqz')).toBe(-1);
     const loaded = api.loadProgress('entropy');
     expect(loaded.data.blob).toBe(entropy);
@@ -143,17 +143,17 @@ describe('Issue #134 storage 压缩', () => {
   test('完整性校验不受压缩影响：篡改 settings 仍可检出', () => {
     const { api, localStorage } = loadStorage({ withLZ: true });
     api.saveSetting('theme', 'dark');
-    localStorage.setItem('bioquest_settings', JSON.stringify({ theme: 'dark' }) + 'X'); // 篡改
+    localStorage.setItem('tatabox_settings', JSON.stringify({ theme: 'dark' }) + 'X'); // 篡改
     expect(api.loadSetting('theme', 'default')).toBe('default');
     const report = api.verifyStorageIntegrity();
-    expect(report.tampered).toContain('bioquest_settings');
+    expect(report.tampered).toContain('tatabox_settings');
   });
 
   test('未挂载 lz-string：压缩整体透明禁用（明文直读）', () => {
     const { api, localStorage } = loadStorage({ withLZ: false });
     const payload = bigPayload(800);
     api.saveProgress('fsrs_cards', payload);
-    const raw = localStorage.raw('bioquest_progress_fsrs_cards');
+    const raw = localStorage.raw('tatabox_progress_fsrs_cards');
     expect(raw.indexOf('__bqz')).toBe(-1);
     expect(api.loadProgress('fsrs_cards').data.cards.length).toBe(800);
   });

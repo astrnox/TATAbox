@@ -1,19 +1,19 @@
 {
- "M2-01-01b80cd5": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 35,
-  "module": "module_2",
-  "src": "plant_respiration",
-  "tag": "plant_respiration",
-  "tags": [
-   "plant_respiration",
-   "module_2",
-   "植物生理学",
-   "种子萌发与呼吸类型"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-01b80cd5": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 35,
+    "module": "module_2",
+    "src": "plant_respiration",
+    "tag": "plant_respiration",
+    "tags": [
+      "plant_respiration",
+      "module_2",
+      "植物生理学",
+      "种子萌发与呼吸类型"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

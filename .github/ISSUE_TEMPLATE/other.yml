@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        其他问题、求助或反馈都可以填在这里。也可以先翻翻 [已有 Issue](https://github.com/astrnox/BioQuest/issues) 看看有没有人问过了。
+        其他问题、求助或反馈都可以填在这里。也可以先翻翻 [已有 Issue](https://github.com/astrnox/TATAbox/issues) 看看有没有人问过了。
   - type: textarea
     id: content
     attributes:

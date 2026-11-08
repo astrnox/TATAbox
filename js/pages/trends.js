@@ -72,7 +72,7 @@
   // 读取学习历史，归一化为 { date, module, concept, correct, total, score, duration }
   function readHistory() {
     var out = [];
-    var sources = ['bioquest_history', 'bioquest_records'];
+    var sources = ['tatabox_history', 'tatabox_records'];
     for (var s = 0; s < sources.length; s++) {
       var raw = null;
       try { raw = localStorage.getItem(sources[s]); } catch (e) { raw = null; }
@@ -436,7 +436,7 @@
     var studyDays = Object.keys(dayMap).filter(function (d) { return dayMap[d].total > 0; }).length;
 
     var stats = {};
-    try { stats = JSON.parse(localStorage.getItem('bioquest_stats') || '{}'); } catch (e) {}
+    try { stats = JSON.parse(localStorage.getItem('tatabox_stats') || '{}'); } catch (e) {}
     var bioScore = stats.bio_score || 0;
     // 本周 Bio 分趋势：近两周正确率之差（百分点，保留 1 位小数）
     // 替代旧的「答对数 × 题量截断」估算——原式与 Bio Score 公式无关且量纲失真

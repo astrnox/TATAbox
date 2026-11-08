@@ -39,19 +39,26 @@ EXCEPTION WHEN OTHERS THEN
 END $$;
 
 -- ---------- 2. profiles：禁止普通用户自提权 ----------
--- WITH CHECK 跨策略为 AND 语义：既有 profiles_update_policy 允许用户改自己的行，
--- 本策略再叠加「user_group 不得随意提升」，两条同时满足才能更新成功。
--- 豁免：目标值不变、升为 verified（邮箱验证流程）、或操作者是 admin。
+-- ⚠️ 本节的 RESTRICTIVE 策略会误伤 admin/premium 的普通资料更新
+--   （新行的 user_group 仍是 admin/premium，不在白名单内）。
+--   v18 的 profile_protect 触发器已能阻止提权，v22 会移除本策略；
+--   执行 v6 后请务必继续执行 migration_v22_profiles_policy_cleanup.sql。
+-- 语义修正（M-04）：
+--   1) 策略表达式不支持触发器语境里的 NEW.*，旧版 NEW.user_group 会抛语法错误，
+--      被下方 EXCEPTION 静默吞掉，等同于策略从未创建；
+--   2) 多条 FOR UPDATE 策略默认是 OR（permissive），旧版即使创建成功也无法收紧
+--      既有 profiles_update_policy；必须显式写 AS RESTRICTIVE（AND 语义）。
+-- WITH CHECK 中的裸列名即新行值：普通用户只能把 user_group 落在白名单内。
+-- admin / premium 等特权组变更一律走 SECURITY DEFINER RPC（v15 TOTP、v20 管理员
+-- 用户操作）或 service_role，二者绕过 RLS；更细的状态机由 v18 触发器兜底。
 DO $$
 BEGIN
-    IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'profiles_no_elevation' AND tablename = 'profiles') THEN
-        CREATE POLICY "profiles_no_elevation" ON profiles FOR UPDATE
-            WITH CHECK (
-                NEW.user_group IS NOT DISTINCT FROM user_group
-                OR NEW.user_group = 'verified'
-                OR EXISTS (SELECT 1 FROM profiles WHERE profiles.id = auth.uid() AND profiles.user_group = 'admin')
-            );
-    END IF;
+    DROP POLICY IF EXISTS "profiles_no_elevation" ON profiles;
+    CREATE POLICY "profiles_no_elevation" ON profiles
+        AS RESTRICTIVE
+        FOR UPDATE
+        USING (true)
+        WITH CHECK (user_group IN ('member', 'guest', 'verified'));
 EXCEPTION WHEN OTHERS THEN
     RAISE NOTICE '跳过 profiles_no_elevation 策略: %', SQLERRM;
 END $$;

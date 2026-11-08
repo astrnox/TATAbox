@@ -20,7 +20,9 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
 const ANALYTIC_SRC = path.join(ROOT, 'js', 'pages', 'analytic.js');
-const PRACTICE_SRC = path.join(ROOT, 'js', 'pages', 'practice.js');
+const ENGINE_SRC = path.join(ROOT, 'js', 'core', 'score-engine.js');
+// M-01：判卷薄封装已拆至 practice-session.js
+const PRACTICE_SRC = path.join(ROOT, 'js', 'pages', 'practice-session.js');
 const BKT_SRC = path.join(ROOT, 'js', 'integrations', 'bkt-engine.js');
 const FSRC_SRC = path.join(ROOT, 'js', 'algo', 'fsrs-algorithm.js');
 const TSFRS_SRC = path.join(ROOT, 'js', 'vendor', 'ts-fsrs.umd.min.js');
@@ -36,11 +38,13 @@ function makeLocalStorage(init) {
   };
 }
 
-/* 加载 analytic.js 的 calcBioScore（受控 getRecords / getStats） */
+/* 加载 analytic.js 的 calcBioScore（M-06 后为 score-engine 薄委托） */
 function loadBioScore(getRecordsFn) {
-  const win = {};
+  const win = { getRecords: getRecordsFn };
   const cap = {};
   win.__cap = cap;
+  // score-engine 是唯一实现来源，analytic 的 calcBioScore 只做委托
+  new Function('window', fs.readFileSync(ENGINE_SRC, 'utf8'))(win);
   const src = fs.readFileSync(ANALYTIC_SRC, 'utf8')
     + '\n;window.__cap={calcBioScore:calcBioScore};';
   new Function('window', 'getRecords', src)(win, getRecordsFn);
@@ -365,7 +369,7 @@ describe('7. FSRS generateForecast — 今天到期/过期卡不漏桶', () => {
     ];
     // 通过 localStorage 预置（generateForecast 直接读 localStorage）
     const save = makeLocalStorage({});
-    save.setItem('bioquest_fsrs_cards', JSON.stringify(Object.fromEntries(cards.map((c) => [c.id, c.state]))));
+    save.setItem('tatabox_fsrs_cards', JSON.stringify(Object.fromEntries(cards.map((c) => [c.id, c.state]))));
     // 重新加载 FSRS 包装层后调用 generateForecast
     const sandbox = { window: { FSRS: require(TSFRS_SRC) }, localStorage: save, console };
     new Function('window', 'localStorage', 'console', fs.readFileSync(FSRC_SRC, 'utf8'))(sandbox.window, sandbox.localStorage, sandbox.console);
@@ -380,7 +384,7 @@ describe('7. FSRS generateForecast — 今天到期/过期卡不漏桶', () => {
 
   test('getStatistics：avgStability/avgDifficulty 为数值（非字符串拼接）', () => {
     const save = makeLocalStorage({});
-    save.setItem('bioquest_fsrs_cards', JSON.stringify({
+    save.setItem('tatabox_fsrs_cards', JSON.stringify({
       c1: { repetitions: 3, stability: 20, difficulty: 6, dueDate: Date.now() + 100000 },
       c2: { repetitions: 3, stability: 10, difficulty: 4, dueDate: Date.now() + 100000 }
     }));

@@ -7,9 +7,9 @@
 
 /* ========================= 数据层 ========================= */
 
-var HABITS_KEY = 'bioquest_habits';
-var HABIT_LOGS_KEY = 'bioquest_habit_logs';
-var BADGES_KEY = 'bioquest_badges';
+var HABITS_KEY = 'tatabox_habits';
+var HABIT_LOGS_KEY = 'tatabox_habit_logs';
+var BADGES_KEY = 'tatabox_badges';
 
 var _habitFocusTrap = null;
 
@@ -324,7 +324,7 @@ function getMonthlyCalendar() {
 }
 
 /* ========================= 在线时间追踪（仿 GitHub 热力图） ========================= */
-var ONLINE_TIME_KEY = 'bioquest_online_time';
+var ONLINE_TIME_KEY = 'tatabox_online_time';
 var _sessionStart = Date.now();
 
 // 每 30 秒自动记录一次在线时间
@@ -449,7 +449,7 @@ function syncAutoHabits() {
   // 同步今日数据
   // 1. 每日刷题 — 从 bioquest_history 统计今日答题数
   try {
-    var history = _lsGet('bioquest_history', []);
+    var history = _lsGet('tatabox_history', []);
     var todayCount = 0;
     for (var h = 0; h < history.length; h++) {
       if (history[h].date && history[h].date.startsWith(today)) {
@@ -463,7 +463,7 @@ function syncAutoHabits() {
 
   // 2. 专注学习 — 从 bioquest_pomodoro_history 统计今日专注分钟
   try {
-    var pomodoroHistory = _lsGet('bioquest_pomodoro_history', []);
+    var pomodoroHistory = _lsGet('tatabox_pomodoro_history', []);
     var todayMinutes = 0;
     for (var p = 0; p < pomodoroHistory.length; p++) {
       if (pomodoroHistory[p].date && pomodoroHistory[p].date.startsWith(today)) {
@@ -477,7 +477,7 @@ function syncAutoHabits() {
 
   // 3. 错题复习 — 从 bioquest_wrong_book 统计今日重做数
   try {
-    var wrongBook = _lsGet('bioquest_wrong_book', []);
+    var wrongBook = _lsGet('tatabox_wrong_book', []);
     var todayReview = 0;
     for (var w = 0; w < wrongBook.length; w++) {
       if (wrongBook[w].lastReviewed && wrongBook[w].lastReviewed.startsWith(today)) {
@@ -737,7 +737,7 @@ function _bindAiGoalEvents(container) {
           }
           showToast('已添加 ' + added + ' 个每日小目标到打卡列表', 'success');
           resultDiv.style.display = 'none';
-          resultDiv.innerHTML = '';
+          resultDiv.replaceChildren();
           input.value = '';
           renderHabitsPage(container);
         });
@@ -747,7 +747,7 @@ function _bindAiGoalEvents(container) {
       if (cancelBtn) {
         cancelBtn.addEventListener('click', function () {
           resultDiv.style.display = 'none';
-          resultDiv.innerHTML = '';
+          resultDiv.replaceChildren();
         });
       }
     });

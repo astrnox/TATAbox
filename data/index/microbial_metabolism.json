@@ -1,19 +1,19 @@
 {
- "M2-01-c8805f57": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 38,
-  "module": "module_2",
-  "src": "microbial_metabolism",
-  "tag": "microbial_metabolism",
-  "tags": [
-   "microbial_metabolism",
-   "module_2",
-   "微生物学",
-   "微生物的代谢类型"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-c8805f57": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 38,
+    "module": "module_2",
+    "src": "microbial_metabolism",
+    "tag": "microbial_metabolism",
+    "tags": [
+      "microbial_metabolism",
+      "module_2",
+      "微生物学",
+      "微生物的代谢类型"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

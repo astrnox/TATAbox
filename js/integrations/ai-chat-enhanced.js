@@ -74,9 +74,16 @@
       ensureLoaded().then(function () {
         try {
           var html = window.marked.parse(buffer);
-          // 可选：用 DOMPurify 消毒（如果已加载）
-          if (opts.sanitize !== false && typeof window.DOMPurify !== 'undefined') {
-            html = window.DOMPurify.sanitize(html, {
+          // M-05：清洗必须是硬约束。DOMPurify 缺失时 fail-closed，
+          // 直接按纯文本展示，绝不把 marked 输出原样 innerHTML。
+          if (opts.sanitize !== false) {
+            if (typeof window.safeHtml !== 'function') {
+              // M-05：统一清洗入口缺失时 fail-closed，绝不插入 marked 原始输出
+              console.warn('[AIChatEnhanced] safeHtml 未加载，已降级为纯文本渲染');
+              el.textContent = buffer;
+              return;
+            }
+            html = window.safeHtml(html, {
               // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
               ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
                 'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
@@ -141,7 +148,7 @@
         buffer = '';
         isFinished = false;
         if (renderTimer) clearTimeout(renderTimer);
-        el.innerHTML = '';
+        el.replaceChildren();
       },
       /**
        * 获取当前 buffer
@@ -173,16 +180,20 @@
       try {
         var html = window.marked.parse(markdown);
         if (!opts || opts.sanitize !== false) {
-          if (typeof window.DOMPurify !== 'undefined') {
-            html = window.DOMPurify.sanitize(html, {
-              // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
-              ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
-                'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
-                'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
-              ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
-                'type','disabled','checked']
-            });
+          if (typeof window.safeHtml !== 'function') {
+            // M-05：统一清洗入口缺失时 fail-closed
+            console.warn('[AIChatEnhanced] safeHtml 未加载，已降级为纯文本渲染');
+            el.textContent = markdown;
+            return true;
           }
+          html = window.safeHtml(html, {
+            // input 标签用于 GFM 任务列表（- [ ] xxx），必须允许 type/disabled/checked
+            ALLOWED_TAGS: ['p','br','strong','em','u','s','sup','sub','ul','ol','li',
+              'table','thead','tbody','tr','td','th','img','a','h1','h2','h3','h4','h5','h6',
+              'blockquote','pre','code','span','div','hr','del','ins','mark','input'],
+            ALLOWED_ATTR: ['href','src','alt','title','class','target','rel',
+              'type','disabled','checked']
+          });
         }
         el.innerHTML = html;
         return true;

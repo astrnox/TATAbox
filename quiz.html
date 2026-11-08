@@ -15,14 +15,14 @@
        会拖住首屏解析（渲染阻塞样式表），首次加载表现为"必失败"。
        media="print" 先以非阻塞方式下载，onload 后恢复为全部媒体。 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <style>@font-face{font-family:'LXGW WenKai';src:url('fonts/lxgw-wenkai.woff2?v=1.522') format('woff2');font-weight:100 900;font-display:swap;}</style>
+  <style>@font-face{font-family:'LXGW WenKai';src:url('fonts/lxgw-wenkai-subset.woff2?v=subset1') format('woff2');font-weight:100 900;font-display:swap;}</style>
   <link rel="stylesheet" href="css/globals.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/figure-viewer.css?v=20261012a">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.115.0" integrity="sha384-EyR2P0dlmjnEGcm9xcjdAn0VedZpRHEwDLP9oSS6wYMvzHBHkUrvgonveazJ/sSx" crossorigin="anonymous"></script>
-  <script src="js/core/supabase-client.js?v=20261024a"></script>
+  <script src="js/core/supabase-client.js?v=20261013a"></script>
   <script src="js/core/sb-gamify.js?v=20261009a"></script>
   <script src="js/core/sb-social.js?v=20261009a"></script>
   <script src="js/core/sb-data.js?v=20261009a"></script>
@@ -139,9 +139,7 @@
   <!-- 评分内核（纯函数）：交卷 bio 分六维重算用，quiz.html 无 app.js 的 loadModule 依赖链 -->
   <script src="js/core/score-engine.js?v=20261013a"></script>
   <script src="js/core/record-session.js?v=20261013b"></script>
-  <!-- 打印工具：组卷/试卷打印（A4 + 每页页脚 TATAbox.cc.cd），须在 quiz.js 之前就绪 -->
-  <script src="js/core/print-utils.js?v=20261018b"></script>
-  <script src="js/pages/quiz.js?v=20261018b"></script>
+  <script src="js/pages/quiz.js?v=20261013a"></script>
   <script>
     // 统一汉堡菜单（与主页一致）：注入主页导航结构并绑定交互
     if (window.BioQuestHamburger) {

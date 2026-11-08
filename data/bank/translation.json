@@ -1,40 +1,40 @@
 {
- "M1-01-a77cfd5b": {
-  "concept": "翻译与密码子",
-  "difficulty": "league",
-  "explanation": "A【错】错因：一种 tRNA 通常只对应一种氨基酸，借助摆动配对可识别少数同义密码子，而非全部。\nB【错】错因：AUG 既编码甲硫氨酸又是起始信号，双重功能缺一不可。\nC【对】依据：核糖体按 5'→3' 读码，氨基酸依次加到肽链羧基端，即 N 端向 C 端延伸。\nD【错】错因：tRNA 依 A 位→P 位→E 位顺序移位，卸载后从 E 位离开，并非停留 A 位。",
-  "question": "核糖体沿 mRNA 移动，tRNA 按密码子转运氨基酸合成多肽链。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": false,
-    "label": "A",
-    "text": "一种 tRNA 能识别并转运所有同义密码子"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "起始密码子 AUG 只编码甲硫氨酸，没有起始功能"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "核糖体沿 mRNA 5'→3' 移动，肽链从 N 端向 C 端延伸"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "tRNA 进入核糖体后始终停留在 A 位直至肽链完成"
-   }
-  ],
-  "subject": "分子生物学",
-  "tags": [
-   "translation",
-   "module_1",
-   "分子生物学",
-   "翻译与密码子"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-01-a77cfd5b": {
+    "concept": "翻译与密码子",
+    "difficulty": "league",
+    "explanation": "A【错】错因：一种 tRNA 通常只对应一种氨基酸，借助摆动配对可识别少数同义密码子，而非全部。\nB【错】错因：AUG 既编码甲硫氨酸又是起始信号，双重功能缺一不可。\nC【对】依据：核糖体按 5'→3' 读码，氨基酸依次加到肽链羧基端，即 N 端向 C 端延伸。\nD【错】错因：tRNA 依 A 位→P 位→E 位顺序移位，卸载后从 E 位离开，并非停留 A 位。",
+    "question": "核糖体沿 mRNA 移动，tRNA 按密码子转运氨基酸合成多肽链。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "一种 tRNA 能识别并转运所有同义密码子"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "起始密码子 AUG 只编码甲硫氨酸，没有起始功能"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "核糖体沿 mRNA 5'→3' 移动，肽链从 N 端向 C 端延伸"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "tRNA 进入核糖体后始终停留在 A 位直至肽链完成"
+      }
+    ],
+    "subject": "分子生物学",
+    "tags": [
+      "translation",
+      "module_1",
+      "分子生物学",
+      "翻译与密码子"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

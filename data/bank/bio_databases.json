@@ -1,40 +1,40 @@
 {
- "M4-01-fc98f5e0": {
-  "concept": "常用生物信息学数据库",
-  "difficulty": "league",
-  "explanation": "A【对】依据：GenBank 与 EMBL、DDBJ 构成国际核酸序列数据库协作，每日同步更新。\nB【错】错因：PDB 存储蛋白质等大分子的三维结构数据，分类与分布信息属于其他专门数据库。\nC【错】错因：数据库存在注释错误与冗余，需使用者甄别，且部分库有审核流程。\nD【错】错因：UniProt 整合 Swiss-Prot 与 TrEMBL，覆盖各物种蛋白质。\n【易错易混】数据库按数据类型分工：核酸序列（GenBank/EMBL/DDBJ）、蛋白序列（UniProt）、三维结构（PDB）、分类分布（NCBI Taxonomy/GBIF）。数据库有冗余与注释错误，使用时要甄别。",
-  "question": "生物信息学数据库是生命科学研究的重要资源。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "GenBank 是 NCBI 维护的核酸序列数据库，收录提交的序列及注释"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "PDB 数据库专门存储物种分类与地理分布信息"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "所有生物数据库的数据都无需人工审核且绝对无误"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "UniProt 只收录人类蛋白质，不含其他物种"
-   }
-  ],
-  "subject": "生物信息学",
-  "tags": [
-   "bio_databases",
-   "module_4",
-   "生物信息学",
-   "常用生物信息学数据库"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M4-01-fc98f5e0": {
+    "concept": "常用生物信息学数据库",
+    "difficulty": "league",
+    "explanation": "A【对】依据：GenBank 与 EMBL、DDBJ 构成国际核酸序列数据库协作，每日同步更新。\nB【错】错因：PDB 存储蛋白质等大分子的三维结构数据，分类与分布信息属于其他专门数据库。\nC【错】错因：数据库存在注释错误与冗余，需使用者甄别，且部分库有审核流程。\nD【错】错因：UniProt 整合 Swiss-Prot 与 TrEMBL，覆盖各物种蛋白质。\n【易错易混】数据库按数据类型分工：核酸序列（GenBank/EMBL/DDBJ）、蛋白序列（UniProt）、三维结构（PDB）、分类分布（NCBI Taxonomy/GBIF）。数据库有冗余与注释错误，使用时要甄别。",
+    "question": "生物信息学数据库是生命科学研究的重要资源。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "GenBank 是 NCBI 维护的核酸序列数据库，收录提交的序列及注释"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "PDB 数据库专门存储物种分类与地理分布信息"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "所有生物数据库的数据都无需人工审核且绝对无误"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "UniProt 只收录人类蛋白质，不含其他物种"
+      }
+    ],
+    "subject": "生物信息学",
+    "tags": [
+      "bio_databases",
+      "module_4",
+      "生物信息学",
+      "常用生物信息学数据库"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

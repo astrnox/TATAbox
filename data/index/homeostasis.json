@@ -1,19 +1,19 @@
 {
- "M3-01-2166787e": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 46,
-  "module": "module_3",
-  "src": "homeostasis",
-  "tag": "homeostasis",
-  "tags": [
-   "homeostasis",
-   "module_3",
-   "动物生理学",
-   "内环境稳态与负反馈调节"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-2166787e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 46,
+    "module": "module_3",
+    "src": "homeostasis",
+    "tag": "homeostasis",
+    "tags": [
+      "homeostasis",
+      "module_3",
+      "动物生理学",
+      "内环境稳态与负反馈调节"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

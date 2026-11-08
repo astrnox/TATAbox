@@ -34,8 +34,16 @@ function walk(dir, base) {
   return out.sort((a, b) => a.rel.localeCompare(b.rel));
 }
 
+// 统一换行符后再哈希：Git 的 core.autocrlf 会在 Windows 检出时把 LF 改成 CRLF，
+// 若直接对工作区字节哈希，同一 commit 在 Windows 必红、Linux CI 却通过。
+// 归一化只消除检出差异，不掩盖任何实际内容改动。
 function sha256(file) {
-  return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  // 二进制文件按原始字节哈希（用文本编码读写会破坏 wasm 等文件）
+  if (/\.(wasm|png|jpe?g|gif|ico|woff2?|ttf|otf|mp4|webp)$/i.test(file)) {
+    return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  }
+  const raw = fs.readFileSync(file, 'utf8');
+  return crypto.createHash('sha256').update(raw.replace(/\r\n/g, '\n')).digest('hex');
 }
 
 const files = walk(VENDOR_DIR, VENDOR_DIR);

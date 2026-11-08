@@ -1,40 +1,40 @@
 {
- "M4-01-69aba2ea": {
-  "concept": "RNA-seq 与差异表达分析",
-  "difficulty": "league",
-  "explanation": "A【对】依据：提取的 RNA 经片段化、反转录建库测序，是转录组定量的主流方法。\nB【对】依据：TPM/FPKM 等标准化校正基因长度与测序深度，使样本间可比。\nC【对】依据：表达量高的基因产生更多 reads，计数是表达定量的基础。\nD【错】错因：RNA-seq 不依赖探针，可通过从头拼接发现新转录本与新剪接异构体。",
-  "question": "研究者用 RNA-seq 比较肿瘤组织与正常组织的基因表达差异。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "RNA-seq 通过将 RNA 反转录为 cDNA 后测序来定量基因表达"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "差异表达分析需进行标准化以消除测序深度等偏差"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "测序读数（reads）比对到基因上的数量可反映其表达水平"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "RNA-seq 只能检测已知基因，无法发现新的转录本"
-   }
-  ],
-  "subject": "生物信息学",
-  "tags": [
-   "transcriptomics",
-   "module_4",
-   "生物信息学",
-   "RNA-seq 与差异表达分析"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M4-01-69aba2ea": {
+    "concept": "RNA-seq 与差异表达分析",
+    "difficulty": "league",
+    "explanation": "A【对】依据：提取的 RNA 经片段化、反转录建库测序，是转录组定量的主流方法。\nB【对】依据：TPM/FPKM 等标准化校正基因长度与测序深度，使样本间可比。\nC【对】依据：表达量高的基因产生更多 reads，计数是表达定量的基础。\nD【错】错因：RNA-seq 不依赖探针，可通过从头拼接发现新转录本与新剪接异构体。",
+    "question": "研究者用 RNA-seq 比较肿瘤组织与正常组织的基因表达差异。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "RNA-seq 通过将 RNA 反转录为 cDNA 后测序来定量基因表达"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "差异表达分析需进行标准化以消除测序深度等偏差"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "测序读数（reads）比对到基因上的数量可反映其表达水平"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "RNA-seq 只能检测已知基因，无法发现新的转录本"
+      }
+    ],
+    "subject": "生物信息学",
+    "tags": [
+      "transcriptomics",
+      "module_4",
+      "生物信息学",
+      "RNA-seq 与差异表达分析"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

@@ -1,19 +1,19 @@
 {
- "M1-01-4ae1b8be": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 46,
-  "module": "module_1",
-  "src": "meiosis",
-  "tag": "meiosis",
-  "tags": [
-   "meiosis",
-   "module_1",
-   "细胞生物学",
-   "减数分裂与遗传学基础"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-4ae1b8be": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 46,
+    "module": "module_1",
+    "src": "meiosis",
+    "tag": "meiosis",
+    "tags": [
+      "meiosis",
+      "module_1",
+      "细胞生物学",
+      "减数分裂与遗传学基础"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

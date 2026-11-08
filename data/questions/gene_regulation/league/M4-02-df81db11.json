@@ -1,38 +1,38 @@
 {
- "concept": "增强子的作用机制",
- "difficulty": "league",
- "explanation": "A【对】依据：增强子可远距离（数千乃至上百万碱基对）调控靶基因，经 DNA 成环接近启动子。\nB【对】依据：增强子位置灵活，上游、下游甚至内含子中均可存在，且倒置后通常仍有活性。\nC【错】错因：增强子结合特异性转录因子，经成环与启动子区复合物互作，不直接结合聚合酶。\nD【错】错因：增强子活性依赖细胞特异的转录因子组合，具有显著的组织与时空特异性。",
- "question": "增强子是一类能显著增强基因转录效率的 DNA 调控元件。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "增强子可在距启动子数千碱基对的位置发挥作用"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "增强子可位于基因上游或下游，作用一般无方向性"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "增强子直接结合 RNA 聚合酶并启动转录"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "增强子无组织特异性，在所有细胞中激活全部基因"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "gene_regulation",
-  "module_4",
-  "分子生物学",
-  "增强子的作用机制"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "增强子的作用机制",
+  "difficulty": "league",
+  "explanation": "A【对】依据：增强子可远距离（数千乃至上百万碱基对）调控靶基因，经 DNA 成环接近启动子。\nB【对】依据：增强子位置灵活，上游、下游甚至内含子中均可存在，且倒置后通常仍有活性。\nC【错】错因：增强子结合特异性转录因子，经成环与启动子区复合物互作，不直接结合聚合酶。\nD【错】错因：增强子活性依赖细胞特异的转录因子组合，具有显著的组织与时空特异性。",
+  "question": "增强子是一类能显著增强基因转录效率的 DNA 调控元件。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "增强子可在距启动子数千碱基对的位置发挥作用"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "增强子可位于基因上游或下游，作用一般无方向性"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "增强子直接结合 RNA 聚合酶并启动转录"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "增强子无组织特异性，在所有细胞中激活全部基因"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "增强子的作用机制"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

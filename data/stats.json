@@ -1,0 +1,19 @@
+{
+  "site_version": "5.1.0",
+  "site_updated_at": "2026-08-29",
+  "question_sources": {
+    "league_pool": 2873,
+    "quiz": 101,
+    "bank": 501,
+    "logic": 40
+  },
+  "unique_questions": 3414,
+  "manifest_total_questions": 101,
+  "cards": 200,
+  "wiki_entries": 401,
+  "videos": 37,
+  "notes": [
+    "unique_questions = 联赛池/quiz/每日联赛 bank/logic 按 bioID 去重后的总数",
+    "manifest_total_questions 仅统计 shard（manifest/index/bank）体系的 MTF 题，不等于全站题库"
+  ]
+}

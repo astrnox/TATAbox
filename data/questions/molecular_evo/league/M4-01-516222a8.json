@@ -1,57 +1,57 @@
 {
- "concept": "古 DNA 揭示尼安德特人基因渗入的时空格局",
- "difficulty": "league",
- "explanation": "A【对】依据：图 a 显示可检测到的尼安德特人祖先成分在欧亚古代个体中最高（德国 DBD001 约 2.36%、卢森堡 Loschbour 约 2.33%、跨欧亚农业人群约 1.8-1.9%），而撒哈拉以南古代个体趋近于零（Mota、Shum Laka 为 0%），与'现代人走出非洲后在欧亚与尼安德特人杂交并携带其血统回流'的主流模型（Out-of-Africa with admixture）一致。\nB【对】依据：图中北非摩洛哥 Taforalt（约 1.5 万年前）携带约 0.70-0.86% 可检测的尼安德特人成分；图 c 的混合图（admixture graph）显示 Taforalt 约 62% 来自欧亚/近东相关谱系、38% 来自基部欧亚相关谱系，即其尼安德特人血统经'欧亚谱系流入北非'的道路获得，而非就地杂交——这种'经欧亚回流（back-migration）介导'的判断正确。\nC【错】错因：撒哈拉中部 Takarkori 的尼安德特人成分极低（约 0.15%，近似噪音上限附近），且图 c 的混合图将其解释为接受的 7% 来自 Taforalt 谱系（即经北非——撒哈拉通道的间接传递），而非 Takarkori 人群与尼安德特人直接杂交产生；说'直接杂交解释其≈0.15%'与图中基因流模型不符。\nD【错】错因：本图数据来自对样本 DNA 的测序与混合分析，反映的是基因组上可检测的尼安德特人祖先片段比例，属于遗传（DNA 序列层）信息；基因表达模式需要以 RNA 为模板检测，古代样本中极难保存完整 RNA，且图本身不含任何表达数据，'可直接推断基因表达'属于概念错位。\n@@ANNOTATED_IMAGE:assets/questions/M4-01-516222a8/fig1-annotated.jpg",
- "image": {
-  "caption": "可检测的尼安德特人祖先成分：(a) 不同古代人群的 Neanderthal 血统比例（横轴为比例%），(b) 采样地理位置，(c) admixture graph 显示 38%/62%/7%/93% 的基因流比",
-  "credit": "Salem N et al., Nature 2025",
-  "doi": "10.1038/s41586-025-08793-7",
-  "figure": "4",
-  "file": "assets/questions/M4-01-516222a8/fig1.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC12043513",
-  "source": "paper"
- },
- "question": "研究者从撒哈拉及周边约 1.5 万年至 7 千年前的古代个体中提取 DNA，估计其可检测的尼安德特人祖先成分（图 a），并构建了混合图（图 c）。欧亚古代个体携带约 1.8%-2.4% 的尼安德特人血统，北非 Taforalt 约 0.7%-0.9%，而 Mota、Shum Laka 等撒哈拉以南古代个体近乎为 0。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
-   "doi": "10.1038/s41586-025-08793-7",
-   "journal": "Nature",
-   "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
-   "year": 2025
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "欧亚古代个体尼安德特人血统高于撒哈拉以南古代个体，符合'走出非洲后在欧亚发生的杂交（基因渗入）'模型"
+  "concept": "古 DNA 揭示尼安德特人基因渗入的时空格局",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图 a 显示可检测到的尼安德特人祖先成分在欧亚古代个体中最高（德国 DBD001 约 2.36%、卢森堡 Loschbour 约 2.33%、跨欧亚农业人群约 1.8-1.9%），而撒哈拉以南古代个体趋近于零（Mota、Shum Laka 为 0%），与'现代人走出非洲后在欧亚与尼安德特人杂交并携带其血统回流'的主流模型（Out-of-Africa with admixture）一致。\nB【对】依据：图中北非摩洛哥 Taforalt（约 1.5 万年前）携带约 0.70-0.86% 可检测的尼安德特人成分；图 c 的混合图（admixture graph）显示 Taforalt 约 62% 来自欧亚/近东相关谱系、38% 来自基部欧亚相关谱系，即其尼安德特人血统经'欧亚谱系流入北非'的道路获得，而非就地杂交——这种'经欧亚回流（back-migration）介导'的判断正确。\nC【错】错因：撒哈拉中部 Takarkori 的尼安德特人成分极低（约 0.15%，近似噪音上限附近），且图 c 的混合图将其解释为接受的 7% 来自 Taforalt 谱系（即经北非——撒哈拉通道的间接传递），而非 Takarkori 人群与尼安德特人直接杂交产生；说'直接杂交解释其≈0.15%'与图中基因流模型不符。\nD【错】错因：本图数据来自对样本 DNA 的测序与混合分析，反映的是基因组上可检测的尼安德特人祖先片段比例，属于遗传（DNA 序列层）信息；基因表达模式需要以 RNA 为模板检测，古代样本中极难保存完整 RNA，且图本身不含任何表达数据，'可直接推断基因表达'属于概念错位。\n@@ANNOTATED_IMAGE:assets/questions/M4-01-516222a8/fig1-annotated.jpg",
+  "image": {
+    "caption": "可检测的尼安德特人祖先成分：(a) 不同古代人群的 Neanderthal 血统比例（横轴为比例%），(b) 采样地理位置，(c) admixture graph 显示 38%/62%/7%/93% 的基因流比",
+    "credit": "Salem N et al., Nature 2025",
+    "doi": "10.1038/s41586-025-08793-7",
+    "figure": "4",
+    "file": "assets/questions/M4-01-516222a8/fig1.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12043513",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "北非 Taforalt 携带的尼安德特人成分可由欧亚相关谱系流入北非（回流）来解释，无需主张其与尼安德特人直接杂交"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "Takarkori 约 0.15% 的尼安德特人成分应直接归因于其人群与尼安德特人的原处杂交事件"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "基于该图数据可直接推断这些古代个体的基因表达模式"
-  }
- ],
- "subject": "进化生物学",
- "tags": [
-  "molecular_evo",
-  "module_4",
-  "进化生物学",
-  "古 DNA",
-  "基因渗入"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者从撒哈拉及周边约 1.5 万年至 7 千年前的古代个体中提取 DNA，估计其可检测的尼安德特人祖先成分（图 a），并构建了混合图（图 c）。欧亚古代个体携带约 1.8%-2.4% 的尼安德特人血统，北非 Taforalt 约 0.7%-0.9%，而 Mota、Shum Laka 等撒哈拉以南古代个体近乎为 0。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Salem N, van de Loosdrecht MS, Sümer AP, et al.",
+      "doi": "10.1038/s41586-025-08793-7",
+      "journal": "Nature",
+      "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+      "year": 2025
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "欧亚古代个体尼安德特人血统高于撒哈拉以南古代个体，符合'走出非洲后在欧亚发生的杂交（基因渗入）'模型"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "北非 Taforalt 携带的尼安德特人成分可由欧亚相关谱系流入北非（回流）来解释，无需主张其与尼安德特人直接杂交"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Takarkori 约 0.15% 的尼安德特人成分应直接归因于其人群与尼安德特人的原处杂交事件"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "基于该图数据可直接推断这些古代个体的基因表达模式"
+    }
+  ],
+  "subject": "进化生物学",
+  "tags": [
+    "molecular_evo",
+    "module_4",
+    "进化生物学",
+    "古 DNA",
+    "基因渗入"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

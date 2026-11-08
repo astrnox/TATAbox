@@ -1,3 +1,11 @@
 microscope-3d/assets/*.js -whitespace
 *.sql linguist-detectable=false
 *.py linguist-detectable=false
+
+# 题库分片要求跨平台字节一致：manifest 里存的是这些文件的 SHA-256，
+# Windows 检出若转成 CRLF 会让 Linux CI / 线上校验全部失配。
+# 强制工作区保持 LF（仓库内本来就是 LF）。
+data/manifest.json text eol=lf
+data/bank/** text eol=lf
+data/index/** text eol=lf
+data/questions/id-all.json text eol=lf

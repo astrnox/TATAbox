@@ -10,7 +10,7 @@
 - **形态**：纯静态站点，托管于 GitHub Pages（主分支直接发布）。
 - **主分支**：`main`。所有合并最终收敛到 `main`，`main` 仅通过 PR + Squash 合并接收变更。
 - **Node 环境**：Node.js ≥ 20（CI 使用 20）。
-- **仓库地址**：<https://github.com/astrnox/BioQuest>
+- **仓库地址**：<https://github.com/astrnox/TATAbox>
 
 ---
 

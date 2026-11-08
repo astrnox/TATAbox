@@ -1,39 +1,39 @@
 {
- "M1-02-57119b7a": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 101,
-  "module": "module_1",
-  "src": "krebs_cycle",
-  "tag": "krebs_cycle",
-  "tags": [
-   "krebs_cycle",
-   "module_1",
-   "生物化学",
-   "TCA循环",
-   "致癌代谢物"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M1-02-76412fe1": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 97,
-  "module": "module_1",
-  "src": "krebs_cycle",
-  "tag": "krebs_cycle",
-  "tags": [
-   "krebs_cycle",
-   "module_1",
-   "生物化学",
-   "TCA循环",
-   "致癌代谢物",
-   "表观遗传"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-02-57119b7a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 101,
+    "module": "module_1",
+    "src": "krebs_cycle",
+    "tag": "krebs_cycle",
+    "tags": [
+      "krebs_cycle",
+      "module_1",
+      "生物化学",
+      "TCA循环",
+      "致癌代谢物"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-02-76412fe1": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 97,
+    "module": "module_1",
+    "src": "krebs_cycle",
+    "tag": "krebs_cycle",
+    "tags": [
+      "krebs_cycle",
+      "module_1",
+      "生物化学",
+      "TCA循环",
+      "致癌代谢物",
+      "表观遗传"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,48 +1,48 @@
 {
- "concept": "植物干旱胁迫响应与渗透调节",
- "difficulty": "league",
- "explanation": "A【对】依据：气孔是植物蒸腾失水和 CO2 吸收的共同通道，干旱时气孔关闭是减少水分损失的快速响应，但胞间 CO2 浓度（Ci）随之下降，直接限制 Rubisco 的羧化反应。\nB【对】依据：干旱胁迫下根部合成 ABA 并运输至叶片，ABA 与保卫细胞膜上受体结合，激活离子通道导致 K⁺ 外流，保卫细胞失水、膨压下降，气孔关闭。\nC【错】错因：干旱导致气孔关闭、Ci 降低，Rubisco 的加氧酶活性相对增强（CO2/O2 比值下降），光呼吸速率反而升高，这是 C3 植物干旱胁迫的典型特征。\nD【对】依据：脯氨酸、甜菜碱、可溶性糖等渗透调节物质在干旱下大量积累，降低细胞渗透势，维持膨压和膜稳定性，同时脯氨酸还具有清除活性氧的保护功能。",
- "question": "某 C3 植物在持续干旱条件下，叶片气孔导度显著下降。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Zhang H et al.",
-   "doi": "10.1016/j.molp.2023.01.002",
-   "journal": "Molecular Plant",
-   "title": "Plant responses to drought stress: from physiological and biochemical adaptations to molecular regulatory networks",
-   "year": 2023
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "气孔关闭可减少水分蒸腾散失，但同时也会限制 CO2 进入叶片"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "干旱胁迫诱导脱落酸（ABA）合成增加，ABA 促进保卫细胞失水导致气孔关闭"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "干旱条件下 C3 植物的光呼吸速率通常会降低"
-  },
-  {
-   "answer": true,
-   "label": "D",
-   "text": "植物可通过积累脯氨酸等渗透调节物质维持细胞膨压"
-  }
- ],
- "subject": "植物生理学",
- "tags": [
-  "plant_stress",
-  "module_2",
-  "植物生理学",
-  "干旱胁迫",
-  "ABA",
-  "渗透调节"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "植物干旱胁迫响应与渗透调节",
+  "difficulty": "league",
+  "explanation": "A【对】依据：气孔是植物蒸腾失水和 CO2 吸收的共同通道，干旱时气孔关闭是减少水分损失的快速响应，但胞间 CO2 浓度（Ci）随之下降，直接限制 Rubisco 的羧化反应。\nB【对】依据：干旱胁迫下根部合成 ABA 并运输至叶片，ABA 与保卫细胞膜上受体结合，激活离子通道导致 K⁺ 外流，保卫细胞失水、膨压下降，气孔关闭。\nC【错】错因：干旱导致气孔关闭、Ci 降低，Rubisco 的加氧酶活性相对增强（CO2/O2 比值下降），光呼吸速率反而升高，这是 C3 植物干旱胁迫的典型特征。\nD【对】依据：脯氨酸、甜菜碱、可溶性糖等渗透调节物质在干旱下大量积累，降低细胞渗透势，维持膨压和膜稳定性，同时脯氨酸还具有清除活性氧的保护功能。",
+  "question": "某 C3 植物在持续干旱条件下，叶片气孔导度显著下降。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Zhang H et al.",
+      "doi": "10.1016/j.molp.2023.01.002",
+      "journal": "Molecular Plant",
+      "title": "Plant responses to drought stress: from physiological and biochemical adaptations to molecular regulatory networks",
+      "year": 2023
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "气孔关闭可减少水分蒸腾散失，但同时也会限制 CO2 进入叶片"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "干旱胁迫诱导脱落酸（ABA）合成增加，ABA 促进保卫细胞失水导致气孔关闭"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "干旱条件下 C3 植物的光呼吸速率通常会降低"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "植物可通过积累脯氨酸等渗透调节物质维持细胞膨压"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "plant_stress",
+    "module_2",
+    "植物生理学",
+    "干旱胁迫",
+    "ABA",
+    "渗透调节"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

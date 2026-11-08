@@ -1,19 +1,19 @@
 {
- "M4-01-d42c014c": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 41,
-  "module": "module_4",
-  "src": "speciation",
-  "tag": "speciation",
-  "tags": [
-   "speciation",
-   "module_4",
-   "进化生物学",
-   "物种形成与生殖隔离"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-d42c014c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 41,
+    "module": "module_4",
+    "src": "speciation",
+    "tag": "speciation",
+    "tags": [
+      "speciation",
+      "module_4",
+      "进化生物学",
+      "物种形成与生殖隔离"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

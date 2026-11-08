@@ -1,6 +1,8 @@
 # Cloudflare Workers Assets 排除规则（语法同 .gitignore）
 # 构建环境会执行 bun install，node_modules 必须排除，
 # 否则 workerd 二进制（>100 MiB）会触发「Asset too large」失败。
+# 构建产物（本地 npm run build:prod 生成，不应作为源站资源上传）
+dist/
 node_modules/
 
 # 版本控制 / CI 基础设施
@@ -17,6 +19,12 @@ scripts/
 sql/
 tests/
 tools/
+
+# H-04：/classroom 下线后 OpenMAIC 课堂脚本已从首屏移除，也不进入部署产物
+vendor/openmaic/
+
+# 仅构建期使用：源码字体 7.6MB，运行时已改用 857KB 子集
+fonts/lxgw-wenkai.woff2
 
 # 本地环境与日志
 .env

@@ -1,19 +1,19 @@
 {
- "M3-01-783bf831": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 37,
-  "module": "module_3",
-  "src": "respiratory_sys",
-  "tag": "respiratory_sys",
-  "tags": [
-   "respiratory_sys",
-   "module_3",
-   "动物生理学",
-   "气体交换与氧解离曲线"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-783bf831": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 37,
+    "module": "module_3",
+    "src": "respiratory_sys",
+    "tag": "respiratory_sys",
+    "tags": [
+      "respiratory_sys",
+      "module_3",
+      "动物生理学",
+      "气体交换与氧解离曲线"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

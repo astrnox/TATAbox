@@ -33,7 +33,7 @@
     'daily-billion': { correct: 0.25, wrong: 0.05, dailyCap: 5 }
   };
 
-  var DAILY_POINTS_KEY = 'bioquest_daily_points_v1';
+  var DAILY_POINTS_KEY = 'tatabox_daily_points_v1';
 
   /* 挂起的信用发放：addPoints 实现在 js/pages/user.js（历史上仅 /user 路由可达）。
    * practice/每日亿题等路由下 user.js 未加载时，先挂起、按需加载后补发，

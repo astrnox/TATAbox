@@ -8,7 +8,12 @@
 
 'use strict';
 
-var STORAGE_PREFIX = 'bioquest_';
+// L-03：统一日志（logger 未加载时退回 console，保证本文件可独立运行）
+var _storageLog = (window.BQLog && typeof window.BQLog.scope === 'function')
+  ? window.BQLog.scope('Storage')
+  : console;
+
+var STORAGE_PREFIX = 'tatabox_';
 
 var KEYS = {
   SETTINGS: STORAGE_PREFIX + 'settings',
@@ -38,14 +43,14 @@ function safeGetJSON(key, defaultValue) {
     if (_isIntegrityProtected(key)) {
       var ok = _verifyIntegrity(key, raw);
       if (ok === 'tampered') {
-        console.warn('[TATABOX Storage] ' + key + ' 完整性校验失败，判定为被篡改或损坏，已忽略该数据。');
+        _storageLog.warn('[TATABOX Storage] ' + key + ' 完整性校验失败，判定为被篡改或损坏，已忽略该数据。');
         return defaultValue;
       }
     }
     var parsed = JSON.parse(raw);
     return (parsed === null || parsed === undefined) ? defaultValue : parsed;
   } catch (e) {
-    console.warn('[TATABOX Storage] 读取 ' + key + ' 失败:', e.message);
+    _storageLog.warn('[TATABOX Storage] 读取 ' + key + ' 失败:', e.message);
     return defaultValue;
   }
 }
@@ -66,7 +71,7 @@ function safeSetJSON(key, value) {
         if (_isIntegrityProtected(key)) _recordIntegrity(key);
         return true;
       } catch (e2) {
-        console.warn('[TATABOX Storage] 写入 ' + key + ' 失败（清理缓存后配额仍不足）:', e2.message);
+        _storageLog.warn('[TATABOX Storage] 写入 ' + key + ' 失败（清理缓存后配额仍不足）:', e2.message);
         return false;
       }
     }
@@ -74,11 +79,11 @@ function safeSetJSON(key, value) {
       var usage = getStorageUsage();
       if (usage.percent > 80 && !_quotaWarnFired) {
         _quotaWarnFired = true;
-        console.warn('[TATABOX Storage] localStorage 已用约 ' + usage.percent.toFixed(0) + '%，接近配额，可能发生数据写入失败。建议导出备份并清理缓存数据。');
+        _storageLog.warn('[TATABOX Storage] localStorage 已用约 ' + usage.percent.toFixed(0) + '%，接近配额，可能发生数据写入失败。建议导出备份并清理缓存数据。');
       }
       return false;
     }
-    console.warn('[TATABOX Storage] 写入 ' + key + ' 失败:', e.message);
+    _storageLog.warn('[TATABOX Storage] 写入 ' + key + ' 失败:', e.message);
     return false;
   }
 }
@@ -273,13 +278,13 @@ function clearAllLocalData() {
     try {
       for (var i = localStorage.length - 1; i >= 0; i--) {
         var k = localStorage.key(i);
-        if (k && k.indexOf('bioquest_') === 0) localStorage.removeItem(k);
+        if (k && (k.indexOf('tatabox_') === 0 || k.indexOf('bioquest_') === 0)) localStorage.removeItem(k);
       }
     } catch (e) {}
     try {
       for (var j = sessionStorage.length - 1; j >= 0; j--) {
         var sk = sessionStorage.key(j);
-        if (sk && sk.indexOf('bioquest_') === 0) sessionStorage.removeItem(sk);
+        if (sk && (sk.indexOf('tatabox_') === 0 || sk.indexOf('bioquest_') === 0)) sessionStorage.removeItem(sk);
       }
     } catch (e) {}
 
@@ -295,7 +300,7 @@ function clearAllLocalData() {
 
     Promise.all(idbCalls).then(function (results) {
       if (results.join('').indexOf('false') !== -1) {
-        console.warn('[TATABOX Storage] 部分 IndexedDB 数据库删除未完成（可能因其他标签页仍打开）。建议关闭其他标签页后重试。');
+        _storageLog.warn('[TATABOX Storage] 部分 IndexedDB 数据库删除未完成（可能因其他标签页仍打开）。建议关闭其他标签页后重试。');
       }
       resolve(results);
     }, function () {
@@ -420,7 +425,7 @@ function migrateLocalDataToBioId() {
   }
 
   if (migrated > 0) {
-    console.info('[TATABOX Storage] 已迁移 ' + migrated + ' 类本地数据到稳定 bioID');
+    _storageLog.info('[TATABOX Storage] 已迁移 ' + migrated + ' 类本地数据到稳定 bioID');
   }
   return migrated;
 }
@@ -612,10 +617,10 @@ function _syncPracticeRecordToSupabase(fullRecord) {
     // Issue #130：离线时入队，网络恢复后自动重放，避免练习记录丢失
     if (_enqueueIfOffline('practice-record', record)) return;
     window.syncPracticeRecordToSupabase(record).catch(function (e) {
-      console.warn('[storage] syncPracticeRecordToSupabase 失败:', e && e.message);
+      _storageLog.warn('[storage] syncPracticeRecordToSupabase 失败:', e && e.message);
     });
   } catch (e) {
-    console.warn('[storage] _syncPracticeRecordToSupabase 异常:', e && e.message);
+    _storageLog.warn('[storage] _syncPracticeRecordToSupabase 异常:', e && e.message);
   }
 }
 
@@ -1300,44 +1305,100 @@ function getStats(module) {
  * 数据导出 / 导入（支持 AES-GCM 加密）
  * ============================================================ */
 
+var BACKUP_KDF_ITERATIONS = 310000;   // OWASP 建议（PBKDF2-HMAC-SHA256）
+var BACKUP_LEGACY_SALT = 'bioquest_backup_key'; // 仅用于解密 v2 旧备份，新备份不再使用
+
+/**
+ * 由用户密码派生 AES-GCM 密钥（PBKDF2-HMAC-SHA256）。
+ * @param {string} password
+ * @param {Uint8Array} salt
+ * @param {number} iterations
+ * @param {'encrypt'|'decrypt'} usage
+ * @returns {Promise<CryptoKey>}
+ */
+async function deriveBackupKey(password, salt, iterations, usage) {
+  var enc = new TextEncoder();
+  var baseKey = await crypto.subtle.importKey(
+    'raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']
+  );
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-256' },
+    baseKey,
+    { name: 'AES-GCM', length: 256 },
+    false,
+    [usage]
+  );
+}
+
+/**
+ * 旧版 v2 备份的密钥派生（SHA-256(常量)）。
+ * 仅用于读取历史备份，新备份必须走用户密码 PBKDF2。
+ */
+async function deriveLegacyBackupKey(usage) {
+  var enc = new TextEncoder();
+  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode(BACKUP_LEGACY_SALT));
+  return crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, [usage]);
+}
+
 /**
  * AES-GCM 加密备份数据
  * @param {string} jsonString - 要加密的 JSON 字符串
- * @returns {Promise<Object>} 加密后的备份对象
+ * @param {string} password - 用户设置的备份密码（必填）
+ * @returns {Promise<Object>} 加密后的备份对象（v3：PBKDF2 派生密钥）
  */
-async function encryptBackup(jsonString) {
+async function encryptBackup(jsonString, password) {
+  if (!password || typeof password !== 'string') {
+    throw new Error('PASSWORD_REQUIRED');
+  }
   var enc = new TextEncoder();
-  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode('bioquest_backup_key'));
-  var key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['encrypt']);
+  var salt = crypto.getRandomValues(new Uint8Array(16));
   var iv = crypto.getRandomValues(new Uint8Array(12));
+  var key = await deriveBackupKey(password, salt, BACKUP_KDF_ITERATIONS, 'encrypt');
   var encrypted = await crypto.subtle.encrypt({ name: 'AES-GCM', iv: iv }, key, enc.encode(jsonString));
-
-  // 手动转 Base64，避免 String.fromCharCode.apply 对大数组栈溢出
-  var ivBase64 = uint8ToBase64(iv);
-  var dataBase64 = uint8ToBase64(new Uint8Array(encrypted));
 
   return {
     encrypted: true,
-    iv: ivBase64,
-    data: dataBase64,
-    version: '2.0.0'
+    v: 3,
+    kdf: 'PBKDF2-SHA256',
+    iterations: BACKUP_KDF_ITERATIONS,
+    salt: uint8ToBase64(salt),
+    iv: uint8ToBase64(iv),
+    data: uint8ToBase64(new Uint8Array(encrypted)),
+    version: '3.0.0'
   };
 }
 
 /**
  * AES-GCM 解密备份数据
- * @param {Object} backupObj - 加密的备份对象 { encrypted, iv, data, version }
+ * @param {Object} backupObj - 备份对象（v3 需密码；v2 旧格式用历史常量密钥）
+ * @param {string} [password] - v3 备份的密码
  * @returns {Promise<string>} 解密后的 JSON 字符串
  */
-async function decryptBackup(backupObj) {
-  var enc = new TextEncoder();
-  var dec = new TextDecoder();
-  var keyMaterial = await crypto.subtle.digest('SHA-256', enc.encode('bioquest_backup_key'));
-  var key = await crypto.subtle.importKey('raw', keyMaterial, { name: 'AES-GCM' }, false, ['decrypt']);
+async function decryptBackup(backupObj, password) {
+  if (!backupObj || !backupObj.iv || !backupObj.data) {
+    throw new Error('INVALID_BACKUP');
+  }
+  var enc = new TextDecoder();
   var iv = base64ToUint8(backupObj.iv);
   var data = base64ToUint8(backupObj.data);
+
+  var isV3 = backupObj.kdf === 'PBKDF2-SHA256' || Number(backupObj.v) >= 3;
+  var key;
+  if (isV3) {
+    if (!password || typeof password !== 'string') {
+      throw new Error('PASSWORD_REQUIRED');
+    }
+    var iterations = Number(backupObj.iterations) || BACKUP_KDF_ITERATIONS;
+    var salt = base64ToUint8(backupObj.salt || '');
+    if (!salt.length) throw new Error('INVALID_BACKUP');
+    key = await deriveBackupKey(password, salt, iterations, 'decrypt');
+  } else {
+    // 历史 v2 格式：常量派生密钥，仅为兼容旧备份
+    key = await deriveLegacyBackupKey('decrypt');
+  }
+
   var decrypted = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, data);
-  return dec.decode(decrypted);
+  return enc.decode(decrypted);
 }
 
 /**
@@ -1365,12 +1426,13 @@ function base64ToUint8(base64) {
 
 /**
  * 导出数据
- * @param {Object} options - 导出选项 { encrypted: boolean }，默认 encrypted=true
+ * @param {Object} options - 导出选项 { encrypted: boolean, password: string }，默认 encrypted=true
  * @returns {Promise<Object|null>} 导出的数据对象
  */
 async function exportData(options) {
   options = options || {};
   var useEncryption = options.encrypted !== false;
+  var backupPassword = options.password || '';
 
   try {
     var records = safeGetJSON(KEYS.RECORDS, []);
@@ -1391,9 +1453,9 @@ async function exportData(options) {
       favorites: safeGetJSON(KEYS.FAVORITES, []),
       wrongQuestions: safeGetJSON(KEYS.WRONG_QUESTIONS, []),
       stats: safeGetJSON(KEYS.STATS, {}),
-      habits: safeGetJSON('bioquest_habits', []),
-      habitLogs: safeGetJSON('bioquest_habit_logs', []),
-      badges: safeGetJSON('bioquest_badges', []),
+      habits: safeGetJSON('tatabox_habits', []),
+      habitLogs: safeGetJSON('tatabox_habit_logs', []),
+      badges: safeGetJSON('tatabox_badges', []),
       progress: getAllLocalProgress()
     };
 
@@ -1403,7 +1465,7 @@ async function exportData(options) {
         var bioScoreResult = calcBioScore(stats);
         data.bioScore = bioScoreResult;
       } catch (e) {
-        console.warn('[TATABOX Storage] 计算 Bio Score 失败:', e.message);
+        _storageLog.warn('[TATABOX Storage] 计算 Bio Score 失败:', e.message);
       }
     }
 
@@ -1411,7 +1473,7 @@ async function exportData(options) {
     var blob, fileExt, mimeType;
 
     if (useEncryption) {
-      var encryptedObj = await encryptBackup(json);
+      var encryptedObj = await encryptBackup(json, backupPassword);
       var encryptedJson = JSON.stringify(encryptedObj, null, 2);
       blob = new Blob([encryptedJson], { type: 'application/octet-stream' });
       fileExt = '.bqb';
@@ -1431,7 +1493,7 @@ async function exportData(options) {
 
     return data;
   } catch (e) {
-    console.error('[TATABOX Storage] 数据导出失败:', e.message);
+    _storageLog.error('[TATABOX Storage] 数据导出失败:', e.message);
     return null;
   }
 }
@@ -1439,9 +1501,11 @@ async function exportData(options) {
 /**
  * 导入数据（支持加密和明文格式）
  * @param {string} jsonString - 导入的 JSON 字符串
+ * @param {Object} [options] - { password: v3 加密备份的密码 }
  * @returns {Promise<boolean>} 是否导入成功
  */
-async function importData(jsonString) {
+async function importData(jsonString, options) {
+  options = options || {};
   try {
     var raw = typeof jsonString === 'string' ? JSON.parse(jsonString) : jsonString;
 
@@ -1454,10 +1518,12 @@ async function importData(jsonString) {
     // 检测是否为加密数据
     if (raw.encrypted === true && raw.iv && raw.data) {
       try {
-        var decryptedStr = await decryptBackup(raw);
+        var decryptedStr = await decryptBackup(raw, options.password || '');
         data = JSON.parse(decryptedStr);
       } catch (e) {
-        throw new Error('解密失败，文件可能已损坏或密钥不匹配');
+        throw new Error(e && e.message === 'PASSWORD_REQUIRED'
+          ? '需要备份密码'
+          : '解密失败，文件可能已损坏或密码不正确');
       }
     } else {
       data = raw;
@@ -1557,7 +1623,7 @@ async function importData(jsonString) {
 
     return true;
   } catch (e) {
-    console.error('[TATABOX Storage] 数据导入失败:', e.message);
+    _storageLog.error('[TATABOX Storage] 数据导入失败:', e.message);
     return false;
   }
 }
@@ -1620,7 +1686,7 @@ function _decompressMeta(parsed) {
       return restored && typeof restored === 'object' ? restored : parsed;
     }
   } catch (e) {
-    console.warn('[TATABOX Storage] 进度快照解压失败，按损坏处理：', e.message);
+    _storageLog.warn('[TATABOX Storage] 进度快照解压失败，按损坏处理：', e.message);
   }
   return parsed;
 }
@@ -1631,7 +1697,7 @@ function _decompressMeta(parsed) {
  * 配套表：user_progress（sql/migration_v8_user_progress.sql）
  * 同步：pushUserProgressToSupabase / pullUserProgressFromSupabase（supabase-client.js）
  * ============================================================ */
-var PROGRESS_PREFIX = 'bioquest_progress_';
+var PROGRESS_PREFIX = 'tatabox_progress_';
 var _progressSyncTimers = {};
 var _progressSyncInflight = null;
 

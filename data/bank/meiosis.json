@@ -1,40 +1,40 @@
 {
- "M1-01-4ae1b8be": {
-  "concept": "减数分裂与遗传学基础",
-  "difficulty": "league",
-  "explanation": "A【对】依据：联会形成四分体发生在减数分裂 I 前期（偶线期至粗线期）。\nB【对】依据：等位基因随同源染色体在减数分裂 I 后期分离而分开，对应分离定律。\nC【错】错因：DNA 复制一次、分裂两次，子细胞 DNA 含量为复制前的一半。\nD【错】错因：交换发生在同源染色体的非姐妹染色单体之间，姐妹染色单体遗传内容相同，交换不产生重组。",
-  "question": "二倍体生物进行减数分裂时，同源染色体的行为发生规律性变化。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "同源染色体联会发生在减数分裂 I 前期"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "减数分裂 I 后期同源染色体分离，是分离定律的细胞学基础"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "减数分裂完成后子细胞 DNA 含量与复制前相同"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "姐妹染色单体之间的交换是遗传重组的主要来源"
-   }
-  ],
-  "subject": "细胞生物学",
-  "tags": [
-   "meiosis",
-   "module_1",
-   "细胞生物学",
-   "减数分裂与遗传学基础"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M1-01-4ae1b8be": {
+    "concept": "减数分裂与遗传学基础",
+    "difficulty": "league",
+    "explanation": "A【对】依据：联会形成四分体发生在减数分裂 I 前期（偶线期至粗线期）。\nB【对】依据：等位基因随同源染色体在减数分裂 I 后期分离而分开，对应分离定律。\nC【错】错因：DNA 复制一次、分裂两次，子细胞 DNA 含量为复制前的一半。\nD【错】错因：交换发生在同源染色体的非姐妹染色单体之间，姐妹染色单体遗传内容相同，交换不产生重组。",
+    "question": "二倍体生物进行减数分裂时，同源染色体的行为发生规律性变化。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "同源染色体联会发生在减数分裂 I 前期"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "减数分裂 I 后期同源染色体分离，是分离定律的细胞学基础"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "减数分裂完成后子细胞 DNA 含量与复制前相同"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "姐妹染色单体之间的交换是遗传重组的主要来源"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "meiosis",
+      "module_1",
+      "细胞生物学",
+      "减数分裂与遗传学基础"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

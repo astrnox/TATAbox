@@ -1,19 +1,19 @@
 {
- "M1-01-a77cfd5b": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 50,
-  "module": "module_1",
-  "src": "translation",
-  "tag": "translation",
-  "tags": [
-   "translation",
-   "module_1",
-   "分子生物学",
-   "翻译与密码子"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-a77cfd5b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 50,
+    "module": "module_1",
+    "src": "translation",
+    "tag": "translation",
+    "tags": [
+      "translation",
+      "module_1",
+      "分子生物学",
+      "翻译与密码子"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

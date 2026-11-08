@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢帮忙纠错！题库数据在 `data/` 里是纯 JSON，会几行 JSON 的同学也可以直接提 Pull Request（见 [README 贡献指南](https://github.com/astrnox/BioQuest#贡献指南)）。
+        感谢帮忙纠错！题库数据在 `data/` 里是纯 JSON，会几行 JSON 的同学也可以直接提 Pull Request（见 [README 贡献指南](https://github.com/astrnox/TATAbox#贡献指南)）。
   - type: textarea
     id: location
     attributes:

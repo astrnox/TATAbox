@@ -20,10 +20,19 @@ window.handleResolveAppeal = async function(appealId, action) {
       var contentEl = document.getElementById('admin-tab-content');
       if (contentEl) renderAppealsTab(contentEl);
     } else {
-      showAdminToast('处理失败：' + errText(result), 'error');
+      // L-08：原始错误只写控制台，界面给通用提示
+      try {
+        if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 申诉处理失败:', result);
+        else console.error('[AdminOps] 申诉处理失败:', result);
+      } catch (logErr) {}
+      showAdminToast('处理失败，请稍后重试', 'error');
     }
   } catch (e) {
-    showAdminToast('处理出错：' + e.message, 'error');
+    try {
+      if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 申诉处理异常:', e);
+      else console.error('[AdminOps] 申诉处理异常:', e);
+    } catch (logErr) {}
+    showAdminToast('处理失败，请稍后重试', 'error');
   }
 };
 
@@ -43,7 +52,7 @@ function _hashKey(str) {
 
 function _qfResolvedSet() {
   try {
-    var raw = localStorage.getItem('bioquest_question_feedbacks_resolved');
+    var raw = localStorage.getItem('tatabox_question_feedbacks_resolved');
     var arr = raw ? JSON.parse(raw) : [];
     var set = new Set();
     if (Array.isArray(arr)) arr.forEach(function (x) { set.add(String(x)); });
@@ -55,7 +64,7 @@ function _qfResolvedSet() {
 
 function _qfSaveResolved(set) {
   try {
-    localStorage.setItem('bioquest_question_feedbacks_resolved', JSON.stringify(Array.from(set)));
+    localStorage.setItem('tatabox_question_feedbacks_resolved', JSON.stringify(Array.from(set)));
   } catch (e) { /* ignore */ }
 }
 
@@ -77,7 +86,7 @@ async function _loadQuestionFeedbacks() {
   }
   var local = [];
   try {
-    var raw = localStorage.getItem('bioquest_question_feedbacks');
+    var raw = localStorage.getItem('tatabox_question_feedbacks');
     if (raw) {
       var arr = JSON.parse(raw);
       if (Array.isArray(arr)) local = arr;
@@ -134,9 +143,9 @@ function _questionFeedbackSectionHtml(qf, resolvedSet) {
 
   var badge = qf.rows.length + ' 条 · 未处理 ' + pending + '（云端 ' + qf.cloudCount + ' · 本机 ' + qf.localCount + '）';
   if (qf.missing) {
-    badge += ' · 云端表未创建：请执行 sql/incremental_update.sql（本机反馈仍可见）';
+    badge += ' · 云端数据未初始化（本机反馈仍可见，详情见控制台）';
   } else if (qf.restricted) {
-    badge += ' · 云端读取受限：请执行 sql/migration_v13_question_feedbacks_admin.sql 开放管理员读取（本机反馈仍可见）';
+    badge += ' · 云端读取权限受限（本机反馈仍可见，详情见控制台）';
   }
 
   var html = `
@@ -207,6 +216,7 @@ function _questionFeedbackSectionHtml(qf, resolvedSet) {
   return html;
 }
 
+
 async function renderFeedbacksTab(container) {
   container.innerHTML = `<div class="admin-loading"><div class="admin-spinner"></div><div class="admin-loading-text">加载反馈中...</div></div>`;
 
@@ -224,7 +234,7 @@ async function renderFeedbacksTab(container) {
       feedbacks = fbData.feedbacks;
       sourceLabel = '（来自 Supabase）';
     } else if (fbData && fbData._missing_table) {
-      sourceLabel = '（feedbacks 表未创建，从本地加载）';
+      sourceLabel = '（云端数据未初始化，从本地加载）';
     }
   } catch (e) {
     console.warn('[Admin] 从 Supabase 加载反馈失败:', e);
@@ -233,7 +243,7 @@ async function renderFeedbacksTab(container) {
   // Fallback: 从 localStorage 加载
   if (feedbacks.length === 0) {
     try {
-      var raw = localStorage.getItem('bioquest_feedbacks');
+      var raw = localStorage.getItem('tatabox_feedbacks');
       if (raw) {
         var localData = JSON.parse(raw);
         if (Array.isArray(localData)) feedbacks = localData;
@@ -317,7 +327,7 @@ async function renderFeedbacksTab(container) {
               var urlShort = fb.url ? fb.url.replace(/^.*#/,'#') : '';
               return `
                 <tr>
-                  <td><span class="admin-q-tag" style="background:${tColor}15;color:${tColor};font-size:0.75rem;">${tLabel}</span></td>
+                  <td><span class="admin-q-tag" style="background:${tColor}15;color:${tColor};font-size:0.75rem;">${escapeHtml(tLabel)}</span></td>
                   <td style="font-weight:600;max-width:180px;" title="${escapeHtml(fb.title || '')}">${escapeHtml((fb.title || '').slice(0,30))}</td>
                   <td style="max-width:260px;color:var(--text-secondary);font-size:0.82rem;" title="${escapeHtml(fb.description || '')}">${escapeHtml((fb.description || '').slice(0,60))}${(fb.description || '').length > 60 ? '...' : ''}</td>
                   <td style="font-size:0.82rem;">${escapeHtml(userName)}</td>
@@ -499,7 +509,7 @@ function renderSyncTab(container) {
         <ul style="color:var(--text-secondary);font-size:13px;margin:0;padding-left:20px;line-height:2;">
           <li>同步会将本地 <code>data/</code> 目录下的 JSON 数据上传到 Supabase</li>
           <li>使用 <code>--force</code> 模式：先删除旧数据再插入新数据</li>
-          <li>如果 Supabase 表不存在，同步会失败（需先在 Supabase SQL Editor 中执行 schema.sql）</li>
+          <li>如果云端数据服务尚未初始化，同步会失败（详细原因见浏览器控制台 F12）</li>
           <li>即使同步失败，网站仍可正常使用本地数据</li>
         </ul>
       </div>
@@ -520,11 +530,19 @@ function renderSyncTab(container) {
         syncStatus.textContent = '同步已触发，后台执行中。大约需要几分钟完成。';
         syncStatus.style.color = 'var(--color-sage)';
       } else {
-        syncStatus.textContent = '触发失败：' + errText(result.data.error);
+        try {
+          if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 同步失败详情:', result);
+          else console.error('[AdminOps] 同步失败详情:', result);
+        } catch (logErr) {}
+        syncStatus.textContent = '触发失败，请稍后重试（详情见控制台）';
         syncStatus.style.color = '#e74c3c';
       }
     } catch (e) {
-      syncStatus.textContent = '网络错误：' + e.message;
+      try {
+        if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 同步网络错误:', e);
+        else console.error('[AdminOps] 同步网络错误:', e);
+      } catch (logErr) {}
+      syncStatus.textContent = '网络错误，请检查网络后重试';
       syncStatus.style.color = '#e74c3c';
     }
 
@@ -634,12 +652,20 @@ async function refreshAnnouncementList(container) {
           showToast('公告已删除');
           await refreshAnnouncementList(container);
         } else {
-          showToast('删除失败：' + errText(result.error));
+          try {
+            if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 公告删除失败:', result);
+            else console.error('[AdminOps] 公告删除失败:', result);
+          } catch (logErr) {}
+          showToast('删除失败，请稍后重试');
         }
       });
     });
   } catch (e) {
-    listEl.innerHTML = '<div class="admin-empty"><div class="admin-empty-text">加载失败：' + escapeHtml(e.message || '') + '</div></div>';
+    try {
+      if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminOps] 公告列表加载失败:', e);
+      else console.error('[AdminOps] 公告列表加载失败:', e);
+    } catch (logErr) {}
+    listEl.innerHTML = '<div class="admin-empty"><div class="admin-empty-text">加载失败，请稍后重试（详情见控制台）</div></div>';
   }
 }
 

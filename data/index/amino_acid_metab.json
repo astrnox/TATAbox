@@ -1,37 +1,37 @@
 {
- "M1-01-5516890d": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 56,
-  "module": "module_1",
-  "src": "amino_acid_metab",
-  "tag": "amino_acid_metab",
-  "tags": [
-   "amino_acid_metab",
-   "module_1",
-   "生物化学",
-   "蛋白质结构",
-   "AlphaFold"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M1-02-411970b0": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 42,
-  "module": "module_1",
-  "src": "amino_acid_metab",
-  "tag": "amino_acid_metab",
-  "tags": [
-   "amino_acid_metab",
-   "module_1",
-   "生物化学",
-   "尿素循环"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-5516890d": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 56,
+    "module": "module_1",
+    "src": "amino_acid_metab",
+    "tag": "amino_acid_metab",
+    "tags": [
+      "amino_acid_metab",
+      "module_1",
+      "生物化学",
+      "蛋白质结构",
+      "AlphaFold"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-02-411970b0": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 42,
+    "module": "module_1",
+    "src": "amino_acid_metab",
+    "tag": "amino_acid_metab",
+    "tags": [
+      "amino_acid_metab",
+      "module_1",
+      "生物化学",
+      "尿素循环"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

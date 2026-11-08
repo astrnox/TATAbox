@@ -8,14 +8,14 @@
 
 **从联赛备考到高考模拟，一个网站搞定你的生物练习**
 
-[在线 Demo](https://tatabox.cc.cd/) · [开始刷题](https://tatabox.cc.cd/#/practice) · [出题/讨论](https://github.com/astrnox/BioQuest/discussions) · [反馈问题](https://github.com/astrnox/BioQuest/issues)
+[在线 Demo](https://tatabox.cc.cd/) · [开始刷题](https://tatabox.cc.cd/#/practice) · [出题/讨论](https://github.com/astrnox/TATAbox/discussions) · [反馈问题](https://github.com/astrnox/TATAbox/issues)
 
 [![Platform](https://img.shields.io/badge/platform-Web-blue?style=flat-square)]()
-[![Version](https://img.shields.io/badge/version-5.2.14-blue?style=flat-square)]()
+[![Version](https://img.shields.io/badge/version-5.1.0-blue?style=flat-square)]()
 [![License](https://img.shields.io/badge/license-MPL--2.0%20%2F%20CC%20BY--NC--SA%204.0-green?style=flat-square)]()
 [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)]()
 [![PWA](https://img.shields.io/badge/PWA-Supported-purple?style=flat-square)]()
-[![GitHub Stars](https://img.shields.io/github/stars/astrnox/BioQuest?style=flat-square)]()
+[![GitHub Stars](https://img.shields.io/github/stars/astrnox/TATAbox?style=flat-square)]()
 
 </div>
 
@@ -28,7 +28,7 @@ TATABOX 是一个面向高中生的生物学习网站。无论是备战全国中
 > [!IMPORTANT]
 > 📚 **题库现状**：题库已扩充至 **3400+ 道**（联赛真题、模块练习、逻辑题、每日联赛等 9 个数据源），覆盖 80 个生物学科主题。高质量真题与精编解析仍在持续补充，欢迎一起出题。
 >
-> 🙌 **欢迎来出题！** 如果你是生物老师、竞赛党或学科大佬，甚至只是一个对生物感兴趣的普通人，欢迎在 [GitHub Discussions](https://github.com/astrnox/BioQuest/discussions) 里交流出题、认领主题，或直接提交 PR 补充 JSON 题库（建议先在 Discussion 交流，如果一段时间内没有回复，直接 PR 也可以）。每一道好题都会被认真对待。
+> 🙌 **欢迎来出题！** 如果你是生物老师、竞赛党或学科大佬，甚至只是一个对生物感兴趣的普通人，欢迎在 [GitHub Discussions](https://github.com/astrnox/TATAbox/discussions) 里交流出题、认领主题，或直接提交 PR 补充 JSON 题库（建议先在 Discussion 交流，如果一段时间内没有回复，直接 PR 也可以）。每一道好题都会被认真对待。
 
 ---
 
@@ -42,7 +42,7 @@ TATABOX 是一个面向高中生的生物学习网站。无论是备战全国中
 - **极简版**：手机或低性能设备可打开 [tatabox.cc.cd/lite.html](https://tatabox.cc.cd/lite.html)，只有「今日 / 练 / 复 / 错 / 榜」五个视图，启动更快、干扰更少
 - 错题本、练习与组卷均支持打印：A4 自动分页、题目与答案解析可分模式出纸
 - AI 导师、拍照搜题等功能需自行配置 API Key（均使用各大模型的免费额度，站内有教程）
-- 支持离线使用，可添加到手机主屏幕或 PC 作为 App 运行
+- 支持离线使用：可添加到手机主屏幕或 PC 作为 App 运行，并在「我的 → 数据管理」按需下载核心/完整离线题库
 
 ### 自行部署 / 二次开发
 
@@ -50,7 +50,7 @@ TATABOX 是一个面向高中生的生物学习网站。无论是备战全国中
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/astrnox/BioQuest.git
+git clone https://github.com/astrnox/TATAbox.git
 cd TATABOX
 
 # 2. 本地预览（任选其一）
@@ -62,11 +62,13 @@ npx serve .                  # Node.js
 
 **在线部署**：将整个文件夹上传至 GitHub Pages、Vercel、Netlify、Cloudflare Pages 等任意免费托管平台即可，无需构建步骤。
 
+**生产构建（可选，推荐）**：先 `npm ci`，再 `npm run build:css && npm run build:prod`，把生成的 `dist/` 目录作为站点根目录上传。`dist/` 已完成逐文件压缩、开发目录裁剪与 SW 版本重写，并可用 `npm run verify:prod` 校验体积/引用完整性。
+
 **可选配置**：
 
-- **数据库**：在 [Supabase](https://supabase.com) 创建免费项目，按顺序执行 `sql/` 下的迁移（至少 `migration_v3_security.sql` → `migration_v15_admin_totp.sql` → `migration_v16_login_contract.sql` → `migration_v17_review_cards_options.sql`），再把地址与 Key 填入 `js/core/supabase-client.js`（不配置则自动使用浏览器本地存储）
+- **数据库**：在 [Supabase](https://supabase.com) 创建免费项目，先执行**唯一基线** `sql/schema.sql`，再执行 `sql/migration_tracker.sql`（版本追踪），最后按版本顺序执行 `sql/migration_v2.sql` → `migration_v3_security.sql` → … → `migration_v22_profiles_policy_cleanup.sql`（不要只挑其中几个：`v18` 收紧 `profiles` 权限、`v19` 加固用户名登录 RPC、`v20` 提供管理员用户操作 RPC、`v21` 补齐账号自助注销、`v22` 清理重复/误伤的 profiles 策略，缺一会导致匿名可读邮箱、后台用户管理失效或注销留孤儿账号；`schema_safe.sql` / `incremental_update.sql` 仅为旧库修复脚本，新库不要执行）。**已执行过 v15 的线上库，在部署 v18 后需重跑一次 v15**（其 TOTP 升级管理员函数已加入内部写标记，否则会被 v18 修正后的触发器回滚）。执行顺序必须是 SQL 先于前端；随后把地址与 Key 填入 `js/core/supabase-client.js`（不配置则自动使用浏览器本地存储）
 - **AI 功能**：用户在「我的 → 设置」中自行填写 API Key，开发者无需管理
-- **门禁自查**：提交前运行 `npm test`（manifest 锚点 + 设计审计 + 单元测试 + 烟雾测试）
+- **门禁自查**：提交前运行 `npm test`（manifest 锚点 + 数据/迁移口径 + ESLint + 设计审计 + 单元测试/覆盖率 + 烟雾测试）
 
 ---
 
@@ -78,7 +80,7 @@ npx serve .                  # Node.js
 | **智能错题本** | 错题自动归集，支持拍照录题（印刷体与手写识别）与 FSRS 到期排序 |
 | **错题打印** | 错题本 / 练习 / 组卷均可打印，支持「题目+答案解析 / 仅题目 / 仅答案」三种模式，A4 自动分页、每页页脚标记 |
 | **知识卡片** | Anki 风格间隔重复卡片，基于遗忘曲线自动安排复习 |
-| **知识图谱 v5.0** | 80 个考点 + 百科词条层（459 条）+ 词云视图，支持 AI 讲解与直达百科 |
+| **知识图谱 v5.0** | 80 个考点 + 百科词条层（本地种子 401 条，云端可扩展）+ 词云视图，支持 AI 讲解与直达百科 |
 | **视频演示** | 37 条考点演示视频（动画 / 3D / 显微 / 延时 / 拟真 / 讲解 / 实拍 七类标签筛选） |
 | **极简版** | 独立的 `lite.html` 五视图（今日 / 练 / 复 / 错 / 榜），零框架、启动快，适合手机与低性能设备 |
 | **能力诊断** | 答题后生成能力雷达图，定位薄弱知识点 |
@@ -89,7 +91,7 @@ npx serve .                  # Node.js
 | **社区讨论** | 与其他学生交流题目 |
 | **安全与隐私** | Supabase 行级安全（RLS）、公开资料视图、管理员 TOTP 动态码、敏感字段服务端保护 |
 
-### 近期更新（5.2.x）
+### 近期更新
 
 - **打印体系**：新增零依赖 `print-utils.js`，三类场景 × 三种模式统一出纸；修复脏数据导致整批打印失败的问题
 - **FSRS 闭环**：答错建卡 / 答对仅推进已有卡，错题本显示到期徽标与今日复习入口
@@ -122,7 +124,7 @@ const result = scheduler.next(card, now, Rating.Good);
 
 ### 2. 能力估计（IRT + BKT）
 
-不采用简单的正确率计分，而是运用项目反应理论（3PL 模型）从答题历史中估计真实能力水平，同时考虑每道题的难度与区分度。此外使用贝叶斯知识追踪（BKT）估算各知识点的掌握概率。
+不采用简单的正确率计分，而是运用项目反应理论（3PL 模型）从答题历史中估计能力水平，同时考虑每道题的难度与区分度。此外使用贝叶斯知识追踪（BKT）估算各知识点的掌握概率。**注意：当前题库尚未做离线参数标定，a/b/c 由题型与选项数启发式估计，结果用于相对趋势与薄弱点定位，不等同于标准化测验分数。**
 
 ### 3. 拍照搜题/加错题（OCR）
 
@@ -225,7 +227,7 @@ MPL-2.0 为弱 copyleft 协议：允许修改与商用，但修改过的文件�
 - [ ] 班级 / 教师管理功能完善
 - [ ] 移动端 App 打包（TWA / PWA 已支持，后续考虑原生壳）
 
-欢迎提交 Issue 或在 [Discussions](https://github.com/astrnox/BioQuest/discussions) 中提出功能建议。
+欢迎提交 Issue 或在 [Discussions](https://github.com/astrnox/TATAbox/discussions) 中提出功能建议。
 
 ---
 
@@ -250,7 +252,7 @@ MPL-2.0 为弱 copyleft 协议：允许修改与商用，但修改过的文件�
 
 欢迎各种形式的贡献，**尤其是出题**：
 
-- 🧬 **擅长生物**：来出题！补充题库、修正题目错误、撰写详细解析——可在 [Discussions](https://github.com/astrnox/BioQuest/discussions) 认领主题或交流题目质量
+- 🧬 **擅长生物**：来出题！补充题库、修正题目错误、撰写详细解析——可在 [Discussions](https://github.com/astrnox/TATAbox/discussions) 认领主题或交流题目质量
 - 💻 **擅长代码**：修复 Bug、添加新功能
 - 🎨 **擅长设计**：优化界面
 - 💡 **其他**：使用中遇到问题或有想法，直接提 Issue 即可
@@ -279,7 +281,8 @@ MPL-2.0 为弱 copyleft 协议：允许修改与商用，但修改过的文件�
 
 
 ---
-
+**计划改名为GAGABOX,敬请期待~**
+<div align="center">
 
 用 TATABOX，学生物不迷路
 

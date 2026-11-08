@@ -15,6 +15,15 @@
     return String(num).padStart(2, '0');
   }
 
+  // M-13：日期文案也从 TARGET_DATE 生成，避免 index.html 再手写一份日期
+  // （Issue #186：两处硬编码，改了一处忘了另一处）。
+  function syncDateLabel() {
+    var date = document.querySelector('.countdown-banner .countdown-date');
+    if (!date) return;
+    date.textContent = TARGET_DATE.getFullYear() + '年' +
+      (TARGET_DATE.getMonth() + 1) + '月' + TARGET_DATE.getDate() + '日';
+  }
+
   // 目标日期已过：归零会一直是「00天00时00分00秒」且每秒空转，
   // 这里切换为「下一届备考期」文案、隐藏数字区并停掉定时器。
   function showExpired() {
@@ -57,6 +66,7 @@
   // 幂等启动：SPA 返回首页时会重复调用，先清掉旧定时器，避免叠加多个 interval
   function init() {
     if (timer) { clearInterval(timer); timer = null; }
+    syncDateLabel();
     timer = update() ? setInterval(update, 1000) : null;
   }
 

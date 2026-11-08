@@ -1,57 +1,57 @@
 {
- "concept": "光合电子传递的线性与环式途径",
- "difficulty": "league",
- "explanation": "A【对】依据：图左侧 H₂O 在 PSII 放氧侧被裂解（释放 O₂ 与 H⁺），电子经质体醌库（PQ）传递至 Cyt b₆f，再经质体蓝素（PC）到达 PSI，PSI 受光激发后把电子经铁氧还蛋白（Fd）交给 FNR，最终将 NADP⁺ 还原为 NADPH；图中黄色虚线箭头即这条线性电子流（LEF），PSII 与 PSI 串联工作。\nB【对】依据：Cyt b₆f 通过 Q 循环将 H⁺ 泵入类囊体腔，PSII 水裂解也在腔侧释放 H⁺，形成跨膜 ΔpH；图中 ATP 合酶利用 H⁺ 回流（'胞质侧'）驱动 ATP 合成，即光合磷酸化（化学渗透偶联）。\nC【对】依据：环式电子流（CEF）由 PSI 发出，电子经 Fd 返回（细胞色素复合体/NDH-1 注入 PQ 库）形成循环，不还原 NADP⁺、不裂解水，只维持 ΔpH 驱动 ATP 合成；图中 NDH-1 和 PSI 之间可见环式箭头，NDH-1 是蓝细菌环式电子流的关键入口。\nD【错】错因：Flv1/Flv3 是位于 PSI 受体侧的可溶性黄素蛋白类'伪环式'电子受体，接受电子后将电子传给 O₂ 生成水（水-水循环），既产生 ΔpH 又保护 PSI，不将电子交给 NADP⁺；'直接将电子传递给 NADP⁺'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/photosynthesis/fig1-src-annotated.jpg",
- "image": {
-  "caption": "蓝细菌类囊体膜上光合电子传递路由：(左→右) PBS-PSII、PQ 库、Cyt b₆f、NDH-1、PSI、Fd/FNR 与 ATP 合酶；含线性和环式电子流",
-  "credit": "Wey LT et al., Plant Physiology 2026",
-  "doi": "10.1093/plphys/kiag107",
-  "figure": "1",
-  "file": "assets/questions/photosynthesis/fig1-src.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC13331136",
-  "source": "paper"
- },
- "question": "研究者利用蓝细菌（Synechocystis sp.）解析了类囊体膜上光合电子传递的完整路由（图）。电子可从水经 PSII、PQ、Cyt b₆f、PC、PSI 流向 NADP⁺（线性），也可在 PSI-NDH-1 之间形成环式回流。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Wey LT, Bos PR, Crosbie M, et al.",
-   "doi": "10.1093/plphys/kiag107",
-   "journal": "Plant Physiology",
-   "title": "Electron transport reactions of cyanobacterial photosynthesis and state-of-the-art in vivo measurements",
-   "year": 2026
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "线性电子流中，电子从 H₂O 经 PSII、PQ、Cyt b₆f、PC、PSI、Fd 最终传给 FNR 还原 NADP⁺"
+  "concept": "光合电子传递的线性与环式途径",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图左侧 H₂O 在 PSII 放氧侧被裂解（释放 O₂ 与 H⁺），电子经质体醌库（PQ）传递至 Cyt b₆f，再经质体蓝素（PC）到达 PSI，PSI 受光激发后把电子经铁氧还蛋白（Fd）交给 FNR，最终将 NADP⁺ 还原为 NADPH；图中黄色虚线箭头即这条线性电子流（LEF），PSII 与 PSI 串联工作。\nB【对】依据：Cyt b₆f 通过 Q 循环将 H⁺ 泵入类囊体腔，PSII 水裂解也在腔侧释放 H⁺，形成跨膜 ΔpH；图中 ATP 合酶利用 H⁺ 回流（'胞质侧'）驱动 ATP 合成，即光合磷酸化（化学渗透偶联）。\nC【对】依据：环式电子流（CEF）由 PSI 发出，电子经 Fd 返回（细胞色素复合体/NDH-1 注入 PQ 库）形成循环，不还原 NADP⁺、不裂解水，只维持 ΔpH 驱动 ATP 合成；图中 NDH-1 和 PSI 之间可见环式箭头，NDH-1 是蓝细菌环式电子流的关键入口。\nD【错】错因：Flv1/Flv3 是位于 PSI 受体侧的可溶性黄素蛋白类'伪环式'电子受体，接受电子后将电子传给 O₂ 生成水（水-水循环），既产生 ΔpH 又保护 PSI，不将电子交给 NADP⁺；'直接将电子传递给 NADP⁺'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/photosynthesis/fig1-src-annotated.jpg",
+  "image": {
+    "caption": "蓝细菌类囊体膜上光合电子传递路由：(左→右) PBS-PSII、PQ 库、Cyt b₆f、NDH-1、PSI、Fd/FNR 与 ATP 合酶；含线性和环式电子流",
+    "credit": "Wey LT et al., Plant Physiology 2026",
+    "doi": "10.1093/plphys/kiag107",
+    "figure": "1",
+    "file": "assets/questions/photosynthesis/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13331136",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "电子传递与 PSII 水裂解共同在膜两侧建立质子梯度，驱动 ATP 合酶合成 ATP"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "NDH-1 介导的环式电子流只产生质子梯度驱动 ATP 合成，不生成 NADPH 也不裂解水"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "Flv1/Flv3 黄素蛋白是 PSI 的次级电子受体，直接将电子传递给 NADP⁺ 以减小 NADPH/ATP 比"
-  }
- ],
- "subject": "植物生理学",
- "tags": [
-  "photosynthesis",
-  "module_2",
-  "植物生理学",
-  "光反应",
-  "电子传递"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者利用蓝细菌（Synechocystis sp.）解析了类囊体膜上光合电子传递的完整路由（图）。电子可从水经 PSII、PQ、Cyt b₆f、PC、PSI 流向 NADP⁺（线性），也可在 PSI-NDH-1 之间形成环式回流。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Wey LT, Bos PR, Crosbie M, et al.",
+      "doi": "10.1093/plphys/kiag107",
+      "journal": "Plant Physiology",
+      "title": "Electron transport reactions of cyanobacterial photosynthesis and state-of-the-art in vivo measurements",
+      "year": 2026
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "线性电子流中，电子从 H₂O 经 PSII、PQ、Cyt b₆f、PC、PSI、Fd 最终传给 FNR 还原 NADP⁺"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "电子传递与 PSII 水裂解共同在膜两侧建立质子梯度，驱动 ATP 合酶合成 ATP"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "NDH-1 介导的环式电子流只产生质子梯度驱动 ATP 合成，不生成 NADPH 也不裂解水"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Flv1/Flv3 黄素蛋白是 PSI 的次级电子受体，直接将电子传递给 NADP⁺ 以减小 NADPH/ATP 比"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "photosynthesis",
+    "module_2",
+    "植物生理学",
+    "光反应",
+    "电子传递"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

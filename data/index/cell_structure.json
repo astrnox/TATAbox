@@ -1,19 +1,19 @@
 {
- "M1-01-e9bacfd5": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 37,
-  "module": "module_1",
-  "src": "cell_structure",
-  "tag": "cell_structure",
-  "tags": [
-   "cell_structure",
-   "module_1",
-   "细胞生物学",
-   "原核细胞与真核细胞的比较"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-e9bacfd5": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 37,
+    "module": "module_1",
+    "src": "cell_structure",
+    "tag": "cell_structure",
+    "tags": [
+      "cell_structure",
+      "module_1",
+      "细胞生物学",
+      "原核细胞与真核细胞的比较"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

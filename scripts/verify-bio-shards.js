@@ -43,7 +43,11 @@ function ok(msg) {
 }
 
 function sha256(absPath) {
-  return crypto.createHash('sha256').update(fs.readFileSync(absPath)).digest('hex');
+  // 统一按 LF 计算：Windows 检出若为 CRLF，直接哈希原始字节会与 manifest
+  // （按 LF 生成）不匹配，导致 Linux CI 全量误报。
+  const raw = fs.readFileSync(absPath);
+  const normalized = Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n'), 'utf8');
+  return crypto.createHash('sha256').update(normalized).digest('hex');
 }
 
 // 新格式：M<模块1-4>-<tag十六进制>-<8~16位hash>

@@ -1,57 +1,57 @@
 {
- "concept": "基于 LD 谱的人群遗传聚类推断",
- "difficulty": "league",
- "explanation": "A【对】依据：图中聚类树的叶节点按人群分组：欧洲（EUR）的 CEU/GBR/IBS/TSI 聚为紧密分支，东亚（EAS）CHB/JPT/CHS/CDX/KHV 聚类，南亚（SAS）STU/ITU/PJL/BEB 聚类，非洲（AFR）各人群自成支系——基于 LD（连锁不平衡）谱的聚类结果与基于等位基因频率的地理大洲划分基本吻合，反映群体历史的分层结构，'LD 谱聚类与大洲分组大体一致'正确。\nB【对】依据：图中 PEL（秘鲁人群）以异常长的分支独立于其他美洲人群（AMR）之外约 600 距离处；PEL 经历过严重的人口瓶颈与奠基者效应（祖先极少数个体扩张），使连锁片段以较长 LD 块保留下来，LD 谱偏离其他美洲混血人群，'长分支提示特殊人口历史（瓶颈/漂变）'是群体遗传学的标准推断。\nC【错】错因：LD（同一群体内不同位点等位基因的非随机组合）由重组率、突变、漂变、选择、瓶颈与混合共同塑造，其延伸长度（LD blocks）尤其取决于重组率与人口历史；'完全由突变率决定'将多因素现象单一归因于突变率，与群体遗传学模型矛盾。\nD【错】错因：聚类树是基于群体水平 LD 谱的相似性对'人群'聚类，输出的是群体间结构关系，不携带个体家系信息，无法推断具体个体的血缘/谱系；'推断两个具体个体是否同宗'超出了群体聚类的信息范围。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/ld-clusters-annotated.jpg",
- "image": {
-  "caption": "基于 LD 谱的 26 个人群层次聚类树：叶节点按大洲着色（EAS 粉、SAS 红、EUR 蓝、AMR 绿、AFR 紫），分支高度表示 LD 谱差异（0-2500）；PEL 以长独立分支远离其他美洲人群",
-  "credit": "Lv W et al., Genome Biology 2026",
-  "doi": "10.1186/s13059-026-04019-9",
-  "figure": "3",
-  "file": "assets/questions/molecular_evo/ld-clusters.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC13097867",
-  "source": "paper"
- },
- "question": "研究者以人群内的 LD（连锁不平衡）谱为特征对 1000 Genomes 的 26 个人群做层次聚类（图，纵轴为聚类距离 0-2500，叶节点为人群）。欧洲各人群、东亚各人群、南亚各人群分别聚成紧密分支，而秘鲁人群（PEL）以长分支独立于其他美洲人群。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Lv W, Zou Y, Shang Z, et al.",
-   "doi": "10.1186/s13059-026-04019-9",
-   "journal": "Genome Biology",
-   "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
-   "year": 2026
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "基于 LD 谱的聚类与人群的地理大洲分组大体一致，反映群体水平的遗传结构与历史分层"
+  "concept": "基于 LD 谱的人群遗传聚类推断",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中聚类树的叶节点按人群分组：欧洲（EUR）的 CEU/GBR/IBS/TSI 聚为紧密分支，东亚（EAS）CHB/JPT/CHS/CDX/KHV 聚类，南亚（SAS）STU/ITU/PJL/BEB 聚类，非洲（AFR）各人群自成支系——基于 LD（连锁不平衡）谱的聚类结果与基于等位基因频率的地理大洲划分基本吻合，反映群体历史的分层结构，'LD 谱聚类与大洲分组大体一致'正确。\nB【对】依据：图中 PEL（秘鲁人群）以异常长的分支独立于其他美洲人群（AMR）之外约 600 距离处；PEL 经历过严重的人口瓶颈与奠基者效应（祖先极少数个体扩张），使连锁片段以较长 LD 块保留下来，LD 谱偏离其他美洲混血人群，'长分支提示特殊人口历史（瓶颈/漂变）'是群体遗传学的标准推断。\nC【错】错因：LD（同一群体内不同位点等位基因的非随机组合）由重组率、突变、漂变、选择、瓶颈与混合共同塑造，其延伸长度（LD blocks）尤其取决于重组率与人口历史；'完全由突变率决定'将多因素现象单一归因于突变率，与群体遗传学模型矛盾。\nD【错】错因：聚类树是基于群体水平 LD 谱的相似性对'人群'聚类，输出的是群体间结构关系，不携带个体家系信息，无法推断具体个体的血缘/谱系；'推断两个具体个体是否同宗'超出了群体聚类的信息范围。\n@@ANNOTATED_IMAGE:assets/questions/molecular_evo/ld-clusters-annotated.jpg",
+  "image": {
+    "caption": "基于 LD 谱的 26 个人群层次聚类树：叶节点按大洲着色（EAS 粉、SAS 红、EUR 蓝、AMR 绿、AFR 紫），分支高度表示 LD 谱差异（0-2500）；PEL 以长独立分支远离其他美洲人群",
+    "credit": "Lv W et al., Genome Biology 2026",
+    "doi": "10.1186/s13059-026-04019-9",
+    "figure": "3",
+    "file": "assets/questions/molecular_evo/ld-clusters.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC13097867",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "PEL 以显著更长的分支独立于其他美洲人群，可用其经历的严重瓶颈/奠基者效应对 LD 结构的影响来解释"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "群体内 LD 的延伸长度完全由突变率决定，与重组率、漂变、选择及人口历史无关"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "该聚类树可直接判断任意两个具体个体是否属于同一宗族（血缘关系）"
-  }
- ],
- "subject": "进化生物学",
- "tags": [
-  "molecular_evo",
-  "module_4",
-  "进化生物学",
-  "群体遗传",
-  "连锁不平衡"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者以人群内的 LD（连锁不平衡）谱为特征对 1000 Genomes 的 26 个人群做层次聚类（图，纵轴为聚类距离 0-2500，叶节点为人群）。欧洲各人群、东亚各人群、南亚各人群分别聚成紧密分支，而秘鲁人群（PEL）以长分支独立于其他美洲人群。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Lv W, Zou Y, Shang Z, et al.",
+      "doi": "10.1186/s13059-026-04019-9",
+      "journal": "Genome Biology",
+      "title": "GPU-accelerated linkage disequilibrium scans reveal non-independent assortment of human non-homologous chromosome variants",
+      "year": 2026
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "基于 LD 谱的聚类与人群的地理大洲分组大体一致，反映群体水平的遗传结构与历史分层"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "PEL 以显著更长的分支独立于其他美洲人群，可用其经历的严重瓶颈/奠基者效应对 LD 结构的影响来解释"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "群体内 LD 的延伸长度完全由突变率决定，与重组率、漂变、选择及人口历史无关"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "该聚类树可直接判断任意两个具体个体是否属于同一宗族（血缘关系）"
+    }
+  ],
+  "subject": "进化生物学",
+  "tags": [
+    "molecular_evo",
+    "module_4",
+    "进化生物学",
+    "群体遗传",
+    "连锁不平衡"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

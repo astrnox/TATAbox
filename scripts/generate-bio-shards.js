@@ -39,7 +39,7 @@ const { execSync } = require('child_process');
  * 在贡献者 fork 里跑会把锚点写成 fork 仓库（上游部署时 CDN 全部指向 fork，
  * jsDelivr 404 后静默回退同源，版本化分发失效）。
  *   - 在 fork 中生成、准备合入上游时，必须显式指定：
- *       node scripts/generate-bio-shards.js --repo=astrnox/BioQuest --git=<上游存在的 commit>
+ *       node scripts/generate-bio-shards.js --repo=astrnox/TATAbox --git=<上游存在的 commit>
  *   - 合并到上游后由维护者在 main 重跑生成器（自动探测即正确）。
  * 校验：node scripts/verify-manifest-anchor.js（已挂 CI 与 npm test）
  * ============================================================ */
@@ -165,7 +165,7 @@ const SUBJECT_ALIAS = {
   '动物生理学与进化生物学': '动物生理学', '动物学与动物生理学': '动物学',
   '生物化学与细胞生物学': '生物化学', '细胞生物学与生物化学': '细胞生物学',
   '植物学与细胞生物学': '植物学', '植物生理学与细胞生物学': '植物生理学',
-  '细胞生物学与生物化学': '细胞生物学', '神经生物学': '动物生理学',
+  '神经生物学': '动物生理学',
   '生理学': '动物生理学', '实验设计': '细胞生物学'
 };
 
@@ -322,7 +322,10 @@ function normalizeQuestion(raw) {
  * ============================================================ */
 
 function sha256(absPath) {
-  return crypto.createHash('sha256').update(fs.readFileSync(absPath)).digest('hex');
+  // 统一按 LF 计算，保证 Windows（CRLF 工作区）与 Linux CI 产生同一摘要
+  const raw = fs.readFileSync(absPath);
+  const normalized = Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n'), 'utf8');
+  return crypto.createHash('sha256').update(normalized).digest('hex');
 }
 
 /* ============================================================
@@ -463,6 +466,9 @@ function main() {
     updated_at: new Date().toISOString().slice(0, 10),
     git: anchors.git,
     repo: anchors.repo,
+    // H-05：仓库快照 ~253MB > jsDelivr 50MB 包限制，默认关闭 CDN 兜底，
+    // 只用「同源 + IndexedDB」；拆分独立题库仓后可改为 true。
+    cdn: false,
     total_questions: assigned,
     topics: TOPICS.map((t) => ({
       id: t.id, label: t.label, category: t.category,

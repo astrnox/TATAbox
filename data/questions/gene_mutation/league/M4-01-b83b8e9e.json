@@ -1,38 +1,38 @@
 {
- "concept": "基因突变的类型与特征",
- "difficulty": "league",
- "explanation": "A【对】依据：突变方向不定，同一基因位点可突变为多个等位形式，如 ABO 血型。\nB【错】错因：同义突变不改变氨基酸，且非编码区突变不一定影响蛋白质结构。\nC【错】错因：突变可发生在个体发育的任何时期，DNA 复制期只是易发期之一。\nD【错】错因：影响大小取决于位点与性质，移码突变（缺失/插入）通常影响更大，但并非绝对。",
- "question": "镰刀型细胞贫血症由血红蛋白基因中一个碱基对的替换引起。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "基因突变具有不定向性，可产生复等位基因"
-  },
-  {
-   "answer": false,
-   "label": "B",
-   "text": "所有基因突变都会导致蛋白质结构改变"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "基因突变只发生在 DNA 复制时期"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "碱基对替换一定比缺失造成的影响更大"
-  }
- ],
- "subject": "遗传学",
- "tags": [
-  "gene_mutation",
-  "module_4",
-  "遗传学",
-  "基因突变的类型与特征"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "基因突变的类型与特征",
+  "difficulty": "league",
+  "explanation": "A【对】依据：突变方向不定，同一基因位点可突变为多个等位形式，如 ABO 血型。\nB【错】错因：同义突变不改变氨基酸，且非编码区突变不一定影响蛋白质结构。\nC【错】错因：突变可发生在个体发育的任何时期，DNA 复制期只是易发期之一。\nD【错】错因：影响大小取决于位点与性质，移码突变（缺失/插入）通常影响更大，但并非绝对。",
+  "question": "镰刀型细胞贫血症由血红蛋白基因中一个碱基对的替换引起。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "基因突变具有不定向性，可产生复等位基因"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "所有基因突变都会导致蛋白质结构改变"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "基因突变只发生在 DNA 复制时期"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "碱基对替换一定比缺失造成的影响更大"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "gene_mutation",
+    "module_4",
+    "遗传学",
+    "基因突变的类型与特征"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

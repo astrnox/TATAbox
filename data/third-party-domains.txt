@@ -19,6 +19,9 @@ phet.colorado.edu
 # ---- 脚本模块 CDN（CSP script-src 允许，当前 index.html 未直接引用，预留）----
 unpkg.com
 
+# ---- 题库分片远程镜像兜底（H-05：jsDelivr 包超限时改走 raw，仅 connect-src/fetch）----
+raw.githubusercontent.com
+
 # ---- 本站部署域名（GitHub Pages 宿主 + 自定义域名 CNAME，非第三方）----
 # astrnox.github.io：GitHub Pages 默认域名
 # tatabox.cc.cd    ：CNAME 指向的自定义域名；index.html 的 canonical / og:url /

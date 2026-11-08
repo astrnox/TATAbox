@@ -1,19 +1,19 @@
 {
- "M1-01-35a697fe": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 45,
-  "module": "module_1",
-  "src": "cell_death",
-  "tag": "cell_death",
-  "tags": [
-   "cell_death",
-   "module_1",
-   "细胞生物学",
-   "细胞凋亡的机制与意义"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-35a697fe": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 45,
+    "module": "module_1",
+    "src": "cell_death",
+    "tag": "cell_death",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "细胞凋亡的机制与意义"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -35,7 +35,7 @@ const PAGES = [
     await ctx.route('**sw.js', route => route.abort());
     // 预设主题，避免依赖系统偏好
     await ctx.addInitScript((t) => {
-      try { localStorage.setItem('bioquest_settings', JSON.stringify({ theme: t })); } catch (e) {}
+      try { localStorage.setItem('tatabox_settings', JSON.stringify({ theme: t })); } catch (e) {}
       try {
         Object.defineProperty(document.documentElement, 'data-theme', {
           value: t, configurable: true, writable: true

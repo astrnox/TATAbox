@@ -1,47 +1,47 @@
 {
- "concept": "microRNA 加工与转录后调控",
- "difficulty": "league",
- "explanation": "A【对】依据：动物 pri-miRNA 在核内经 Drosha 切割为约 70 nt 的 pre-miRNA，出核后由 Dicer 加工为成熟双链，其中一条进入 RISC 发挥调控功能。\nB【对】依据：植物中 miRNA 与靶标多为完全互补，导向 AGO2 介导的 mRNA 切割降解；动物中多为种子区部分互补，主要抑制翻译或促进去腺苷酸化。\nC【错】错因：单个 miRNA 通过种子序列（第 2-8 位）可靶向数百个 mRNA，反之多个 miRNA 也可协同调控同一靶标，形成复杂调控网络。\nD【错】错因：miRNA 在转录后水平起作用（翻译抑制或 mRNA 去稳定化），不直接影响 RNA 聚合酶 II 的转录起始过程。",
- "question": "某小 RNA 经加工后进入 RISC 复合物，通过与靶 mRNA 3'UTR 部分互补配对抑制翻译。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Bartel DP",
-   "doi": "10.1016/j.cell.2018.03.006",
-   "journal": "Cell",
-   "title": "Metazoan MicroRNAs",
-   "year": 2018
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "该小 RNA 为 microRNA，其初级转录本 pri-miRNA 需经 Drosha 切割形成 pre-miRNA"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "microRNA 与靶 mRNA 完全互补时通常导向靶 mRNA 降解，部分互补则主要抑制翻译"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "一个 microRNA 只能特异性调控一个靶 mRNA"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "microRNA 在转录水平直接抑制靶基因的转录起始"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "rna_biology",
-  "module_1",
-  "分子生物学",
-  "microRNA",
-  "转录后调控"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "microRNA 加工与转录后调控",
+  "difficulty": "league",
+  "explanation": "A【对】依据：动物 pri-miRNA 在核内经 Drosha 切割为约 70 nt 的 pre-miRNA，出核后由 Dicer 加工为成熟双链，其中一条进入 RISC 发挥调控功能。\nB【对】依据：植物中 miRNA 与靶标多为完全互补，导向 AGO2 介导的 mRNA 切割降解；动物中多为种子区部分互补，主要抑制翻译或促进去腺苷酸化。\nC【错】错因：单个 miRNA 通过种子序列（第 2-8 位）可靶向数百个 mRNA，反之多个 miRNA 也可协同调控同一靶标，形成复杂调控网络。\nD【错】错因：miRNA 在转录后水平起作用（翻译抑制或 mRNA 去稳定化），不直接影响 RNA 聚合酶 II 的转录起始过程。",
+  "question": "某小 RNA 经加工后进入 RISC 复合物，通过与靶 mRNA 3'UTR 部分互补配对抑制翻译。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Bartel DP",
+      "doi": "10.1016/j.cell.2018.03.006",
+      "journal": "Cell",
+      "title": "Metazoan MicroRNAs",
+      "year": 2018
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "该小 RNA 为 microRNA，其初级转录本 pri-miRNA 需经 Drosha 切割形成 pre-miRNA"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "microRNA 与靶 mRNA 完全互补时通常导向靶 mRNA 降解，部分互补则主要抑制翻译"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "一个 microRNA 只能特异性调控一个靶 mRNA"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "microRNA 在转录水平直接抑制靶基因的转录起始"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "microRNA",
+    "转录后调控"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

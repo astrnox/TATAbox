@@ -1,18 +1,30 @@
 {
-  "name": "bioquest",
-  "version": "1.1.0",
-  "description": "面向生物竞赛（联赛）备考的全栈学习平台，集知识卡片、模拟试题、学习分析、社区讨论于一体。",
+  "name": "tatabox",
+  "version": "5.1.0",
+  "description": "面向生物竞赛（联赛）备考的纯前端学习平台，集知识卡片、模拟试题、学习分析、社区讨论于一体。",
   "scripts": {
-    "test": "npm run test:anchor && npm run audit:design && npm run test:unit && npm run test:smoke",
+    "test": "npm run test:anchor && npm run verify:stats && npm run verify:migrations && npm run lint:code && npm run audit:design && npm run audit:sinks && npm run test:unit && npm run test:smoke",
     "test:unit": "jest --verbose --coverage",
     "test:smoke": "node tests/wiki-smoke-test.cjs",
     "test:e2e": "node tests/e2e-smoke.js",
+    "test:a11y": "node tests/a11y-scan.js",
     "test:anchor": "node scripts/verify-manifest-anchor.js",
     "lint:js": "git ls-files 'js/**/*.js' 'tests/*.js' 'tests/*.cjs' | xargs -n1 node --check",
+    "lint:code": "eslint js scripts tests --quiet",
+    "format:code": "prettier --write \"scripts/**/*.js\" \"tests/**/*.js\" \"eslint.config.mjs\"",
     "audit:design": "node scripts/audit-design.js",
+    "audit:sinks": "node scripts/audit-html-sinks.js",
     "bump:sw": "node scripts/bump-sw.js",
     "build:css": "node scripts/build-css-bundle.js",
     "build:min": "node scripts/minify-assets.js",
+    "build:prod": "node scripts/build-prod.js",
+    "verify:prod": "node scripts/verify-prod-build.js",
+    "build:stats": "node scripts/build-data-stats.js",
+    "verify:stats": "node scripts/verify-data-stats.js",
+    "verify:migrations": "node scripts/verify-migrations.js",
+    "sync:version": "node scripts/sync-version.js && node scripts/build-data-stats.js",
+    "build:font": "python scripts/build-font-subset.py",
+    "verify:repo-size": "node scripts/check-repo-size.js",
     "indexnow": "node scripts/submit-indexnow.js",
     "indexnow:dry": "node scripts/submit-indexnow.js --dry-run",
     "baidu": "node scripts/submit-baidu.js",
@@ -20,22 +32,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/astrnox/BioQuest.git"
+    "url": "https://github.com/astrnox/TATAbox.git"
   },
   "keywords": [],
   "author": "",
   "license": "MPL-2.0",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/astrnox/BioQuest/issues"
+    "url": "https://github.com/astrnox/TATAbox/issues"
   },
-  "homepage": "https://github.com/astrnox/BioQuest#readme",
+  "homepage": "https://github.com/astrnox/TATAbox#readme",
   "devDependencies": {
     "agent-browser": "^0.31.1",
+    "axe-core": "^4.14.0",
     "esbuild": "^0.24.2",
+    "eslint": "^9.39.5",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "jsdom": "^29.1.1",
-    "playwright": "^1.63.0"
+    "playwright": "^1.63.0",
+    "prettier": "^3.9.10"
   }
 }

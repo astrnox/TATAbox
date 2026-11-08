@@ -1,19 +1,19 @@
 {
- "M2-01-29df4a1b": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 66,
-  "module": "module_2",
-  "src": "virus",
-  "tag": "virus",
-  "tags": [
-   "virus",
-   "module_2",
-   "微生物学",
-   "噬菌体侵染实验"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-29df4a1b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 66,
+    "module": "module_2",
+    "src": "virus",
+    "tag": "virus",
+    "tags": [
+      "virus",
+      "module_2",
+      "微生物学",
+      "噬菌体侵染实验"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

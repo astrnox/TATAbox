@@ -1,57 +1,57 @@
 {
- "concept": "Cyclin-CDK-Rb 轴的细胞周期引擎与生长因子信号",
- "difficulty": "league",
- "explanation": "A【对】依据：图中 G1 期（限制点）附近显示 CycD-CDK4/6 首先使 Rb 发生初始磷酸化，随后 CycE-CDK2 完成高磷酸化，使 Rb 释放被其束缚的转录因子 E2F，游离 E2F 驱动 S 期所需基因（DNA 复制机器）表达——'Rb-E2F 轴是 G1→S 转换的关键开关'与教科书的限制点模型一致，选项因果关系正确。\nB【对】依据：图中 CKI（CDK 抑制蛋白）如 p16/p21/p27/p57 通过对 CDK-cyclin 复合体的直接抑制阻断周期进程：p16 特异抑制 CycD-CDK4/6，p21/p27 广谱抑制多种 G1/S CDK。抑癌基因 CDKN2A（p16）缺失或 p21 下调会使限制点管制失效，促进异常增殖，'CKI 缺失可解除制动、促增殖'正确。\nC【错】错因：CycB-CDK1（图中 G2/M 处）的活性受双重磷酸化开关调节：CAK 需磷酸化其激活环 T 环上的苏氨酸，而 Wee1/Myt1 激酶磷酸化 T14/Y15 的抑制位点使酶失活，进入 M 期前 CDC25 去除这些抑制性磷酸才使 CycB-CDK1 完全激活；'只需 CAK 激活、不受抑制性磷酸化控制'与图中 Wee1/Myt1 标注相悖。\nD【错】错因：生长因子（EGF 等）与受体酪氨酸激酶（EGFR/TKR）结合后，信号经 RAS-RAF-MEK-ERK 与 PI3K-AKT-mTOR 级联传递，最终上调并激活 CycD-CDK4/6 与 CycE-CDK2，再由这些 CDK 在细胞核内磷酸化 Rb——生长因子信号并不直接跨膜进入细胞核磷酸化 Rb，'直接进入细胞核'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/cdk-cyclin-annotated.jpg",
- "image": {
-  "caption": "哺乳动物细胞周期的分子引擎：上方 EGFR/TKR 生长因子信号（RAS-ERK、PI3K-AKT-mTOR）驱动 Cyclin-CDK 序贯激活；中央 Rb-E2F 开关与 CKI（p16/p21/p27/p57）管制 G1/S 限制点；G2/M 处 Wee1/Myt1-CDC25 调控 CycB-CDK1",
-  "credit": "Pellarin I et al., Signal Transduction and Targeted Therapy 2025",
-  "doi": "10.1038/s41392-024-02080-z",
-  "figure": "3",
-  "file": "assets/questions/cell_cycle/cdk-cyclin.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC11734941",
-  "source": "paper"
- },
- "question": "图为哺乳动物细胞周期调控总览：生长因子经受体酪氨酸激酶信号入胞，驱动 Cyclin-CDK 复合体序贯激活；Rb-E2F、CKI（p16/p21/p27/p57）、Wee1/Myt1 与 CDC25 等构成多层开关。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Pellarin I, Dall'Acqua A, Favero A, et al.",
-   "doi": "10.1038/s41392-024-02080-z",
-   "journal": "Signal Transduction and Targeted Therapy",
-   "title": "Cyclin-dependent protein kinases and cell cycle regulation in biology and disease",
-   "year": 2025
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "CycD-CDK4/6 与 CycE-CDK2 依次磷酸化 Rb，释放转录因子 E2F 驱动 S 期基因表达，是 G1→S 限制点的核心开关"
+  "concept": "Cyclin-CDK-Rb 轴的细胞周期引擎与生长因子信号",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中 G1 期（限制点）附近显示 CycD-CDK4/6 首先使 Rb 发生初始磷酸化，随后 CycE-CDK2 完成高磷酸化，使 Rb 释放被其束缚的转录因子 E2F，游离 E2F 驱动 S 期所需基因（DNA 复制机器）表达——'Rb-E2F 轴是 G1→S 转换的关键开关'与教科书的限制点模型一致，选项因果关系正确。\nB【对】依据：图中 CKI（CDK 抑制蛋白）如 p16/p21/p27/p57 通过对 CDK-cyclin 复合体的直接抑制阻断周期进程：p16 特异抑制 CycD-CDK4/6，p21/p27 广谱抑制多种 G1/S CDK。抑癌基因 CDKN2A（p16）缺失或 p21 下调会使限制点管制失效，促进异常增殖，'CKI 缺失可解除制动、促增殖'正确。\nC【错】错因：CycB-CDK1（图中 G2/M 处）的活性受双重磷酸化开关调节：CAK 需磷酸化其激活环 T 环上的苏氨酸，而 Wee1/Myt1 激酶磷酸化 T14/Y15 的抑制位点使酶失活，进入 M 期前 CDC25 去除这些抑制性磷酸才使 CycB-CDK1 完全激活；'只需 CAK 激活、不受抑制性磷酸化控制'与图中 Wee1/Myt1 标注相悖。\nD【错】错因：生长因子（EGF 等）与受体酪氨酸激酶（EGFR/TKR）结合后，信号经 RAS-RAF-MEK-ERK 与 PI3K-AKT-mTOR 级联传递，最终上调并激活 CycD-CDK4/6 与 CycE-CDK2，再由这些 CDK 在细胞核内磷酸化 Rb——生长因子信号并不直接跨膜进入细胞核磷酸化 Rb，'直接进入细胞核'表述错误。\n@@ANNOTATED_IMAGE:assets/questions/cell_cycle/cdk-cyclin-annotated.jpg",
+  "image": {
+    "caption": "哺乳动物细胞周期的分子引擎：上方 EGFR/TKR 生长因子信号（RAS-ERK、PI3K-AKT-mTOR）驱动 Cyclin-CDK 序贯激活；中央 Rb-E2F 开关与 CKI（p16/p21/p27/p57）管制 G1/S 限制点；G2/M 处 Wee1/Myt1-CDC25 调控 CycB-CDK1",
+    "credit": "Pellarin I et al., Signal Transduction and Targeted Therapy 2025",
+    "doi": "10.1038/s41392-024-02080-z",
+    "figure": "3",
+    "file": "assets/questions/cell_cycle/cdk-cyclin.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC11734941",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "p16、p21、p27 等 CDK 抑制蛋白通过直接结合 CDK 阻断周期进程，其功能缺失可解除限制点管制、促进增殖"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "CycB-CDK1 进入 M 期的激活仅需要 CAK 的激活环磷酸化，不受 Wee1/Myt1 抑制性磷酸化的控制"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "EGF 等生长因子与其受体结合后，会直接进入细胞核磷酸化 Rb，从而解除对 E2F 的抑制"
-  }
- ],
- "subject": "细胞生物学",
- "tags": [
-  "cell_cycle",
-  "module_1",
-  "细胞生物学",
-  "细胞周期",
-  "CDK"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "图为哺乳动物细胞周期调控总览：生长因子经受体酪氨酸激酶信号入胞，驱动 Cyclin-CDK 复合体序贯激活；Rb-E2F、CKI（p16/p21/p27/p57）、Wee1/Myt1 与 CDC25 等构成多层开关。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Pellarin I, Dall'Acqua A, Favero A, et al.",
+      "doi": "10.1038/s41392-024-02080-z",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "title": "Cyclin-dependent protein kinases and cell cycle regulation in biology and disease",
+      "year": 2025
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "CycD-CDK4/6 与 CycE-CDK2 依次磷酸化 Rb，释放转录因子 E2F 驱动 S 期基因表达，是 G1→S 限制点的核心开关"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "p16、p21、p27 等 CDK 抑制蛋白通过直接结合 CDK 阻断周期进程，其功能缺失可解除限制点管制、促进增殖"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "CycB-CDK1 进入 M 期的激活仅需要 CAK 的激活环磷酸化，不受 Wee1/Myt1 抑制性磷酸化的控制"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "EGF 等生长因子与其受体结合后，会直接进入细胞核磷酸化 Rb，从而解除对 E2F 的抑制"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "cell_cycle",
+    "module_1",
+    "细胞生物学",
+    "细胞周期",
+    "CDK"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

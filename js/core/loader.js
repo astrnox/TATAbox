@@ -219,36 +219,44 @@ var _shardStoreReady = null;
 var _maintenanceRunning = null; // Issue #11：启动后台维护单例
 
 /* ============================================================
- * Issue #15：题库分发 jsDelivr CDN 主通道
+ * Issue #15：题库分发「同源优先 + 远程镜像兜底」
  *  - manifest（版本真源）始终走同源 + 缓存破坏，保证新鲜；
- *  - 重资源（bank/index/bioid-map）走版本化 CDN URL：
- *      https://cdn.jsdelivr.net/gh/<repo>@<git-sha>/data/...
+ *  - 重资源（bank/index/bioid-map）走版本化 URL：
+ *      jsDelivr: https://cdn.jsdelivr.net/gh/<repo>@<git-sha>/data/...
+ *      raw:      https://raw.githubusercontent.com/<repo>/<git-sha>/data/...
  *    commit 锚定 URL 天然长缓存，manifest.rev/git 变化即整体换 URL；
- *  - 三级回退：CDN → 同源直连 → IndexedDB 离线缓存；
- *  - SHA-256 与 manifest 不符（CDN 陈旧/fork 数据不一致）视为未命中，
- *    自动降级同源；连续网络失败达到阈值后会话级禁用 CDN（国内不可达场景）。
+ *  - 三级回退：同源直连 → 远程镜像 → IndexedDB 离线缓存；
+ *  - H-05：仓库快照 >50MB 时 jsDelivr 包限制会拒绝服务，此时 manifest 写
+ *    cdn:false，loader 自动改用 raw.githubusercontent（按文件直出，无包体限制）；
+ *  - SHA-256 与 manifest 不符（镜像陈旧/fork 数据不一致）视为未命中，
+ *    自动降级；连续网络失败达到阈值后会话级禁用远程镜像。
  * ============================================================ */
 
-var _cdnBase = null;          // https://cdn.jsdelivr.net/gh/<repo>@<sha>（manifest 加载后解析）
+var _cdnBase = null;          // 远程镜像基址（manifest 加载后解析）
 var _cdnFailCount = 0;        // 连续网络失败计数
 var _cdnDisabled = false;     // 会话级 kill-switch
-var CDN_FETCH_TIMEOUT = 8000; // CDN 单请求超时
-var CDN_MAX_FAILURES = 3;     // 连续失败阈值，达到后本会话禁用 CDN
+var CDN_FETCH_TIMEOUT = 8000; // 远程镜像单请求超时
+var CDN_MAX_FAILURES = 3;     // 连续失败阈值，达到后本会话禁用远程镜像
 var CDN_BASE_TEMPLATE = 'https://cdn.jsdelivr.net/gh/';
+var RAW_BASE_TEMPLATE = 'https://raw.githubusercontent.com/';
+var CDN_FALLBACK_ENABLED = true;
 
 /**
- * 从 manifest 解析 CDN 基址（git 锚点 + repo slug 均合法才启用）。
+ * 从 manifest 解析镜像基址（git 锚点 + repo slug 均合法才启用）。
+ * manifest.cdn === false 表示 jsDelivr 包超限，改用 raw.githubusercontent。
  * @param {Object} mf - data/manifest.json
  * @returns {string|null}
  */
 function _resolveCdnBase(mf) {
+  if (!CDN_FALLBACK_ENABLED) return null;
   if (!mf || !mf.git || !mf.repo) return null;
   var sha = String(mf.git);
   var repo = String(mf.repo);
   // 安全校验：仅接受 40/7-40 位十六进制 commit 与 owner/repo slug，防注入
   if (!/^[0-9a-f]{7,40}$/i.test(sha)) return null;
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo)) return null;
-  return CDN_BASE_TEMPLATE + repo + '@' + sha;
+  var template = (mf.cdn === false) ? RAW_BASE_TEMPLATE : CDN_BASE_TEMPLATE;
+  return template + repo + '@' + sha;
 }
 
 /**
@@ -275,7 +283,7 @@ function _fetchWithTimeout(url, timeoutMs, signal) {
 /**
  * Issue #15：题库重资源统一取数通道。
  * 站点已部署在 Cloudflare Workers Assets（全球边缘缓存），同源即最优通道，
- * 因此策略为「同源（Cloudflare）优先 → SHA 校验 → jsDelivr 兜底」。
+ * 因此策略为「同源（Cloudflare）优先 → SHA 校验 → 远程镜像兜底」。
  * @param {string} path 相对路径，如 'data/bank/cell_structure.json'
  * @param {string|null} expectedSha manifest 期望的 SHA-256（可空）
  * @param {AbortSignal|null} signal
@@ -307,7 +315,7 @@ function _fetchShardText(path, expectedSha, signal) {
       _cdnFailCount++;
       if (_cdnFailCount >= CDN_MAX_FAILURES) {
         _cdnDisabled = true;
-        console.warn('[Loader] jsDelivr 连续 ' + _cdnFailCount + ' 次不可达，本会话禁用 CDN（同源直连）');
+        console.warn('[Loader] 远程镜像连续 ' + _cdnFailCount + ' 次不可达，本会话禁用镜像（同源直连）');
       }
       throw err;
     });
@@ -330,12 +338,12 @@ function _fetchShardText(path, expectedSha, signal) {
   // 页面本身就部署在 jsDelivr 上时（预览场景），无需再绕 CDN
   if (location.hostname === 'cdn.jsdelivr.net') return fromOrigin();
 
-  // 同源（Cloudflare 边缘）优先；jsDelivr 兜底
+  // 同源（Cloudflare 边缘）优先；远程镜像兜底
   return fromOrigin()
     .then(checkSha)
     .then(function (res) {
       if (res) return res;
-      // 同源分片陈旧 → jsDelivr 兜底
+      // 同源分片陈旧 → 远程镜像兜底
       if (!_cdnBase || _cdnDisabled) throw new Error('STALE_ORIGIN');
       return fromCdn().then(checkSha).then(function (res2) {
         if (res2) return res2;
@@ -1584,9 +1592,9 @@ function maintainQuestionBank() {
     // 避免新用户刚进站就被大流量下载拖慢，造成"进度条走完页面还在加载/卡网速"。
     // 置位标记后，从下一次访问起（分片已随用户使用按需进入 SW/内存缓存）再在空闲时后台预热。
     var warmedOnce = false;
-    try { warmedOnce = localStorage.getItem('bioquest_bank_warmed_once') === '1'; } catch (e) {}
+    try { warmedOnce = localStorage.getItem('tatabox_bank_warmed_once') === '1'; } catch (e) {}
     if (!warmedOnce) {
-      try { localStorage.setItem('bioquest_bank_warmed_once', '1'); } catch (e) {}
+      try { localStorage.setItem('tatabox_bank_warmed_once', '1'); } catch (e) {}
       _maintenanceRunning = false;
       return { changed: result.changed, refreshed: 0, deferred: true };
     }

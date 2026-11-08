@@ -283,7 +283,7 @@
   function _renderSidebar(container) {
     var exp = _experiments[_state.experiment];
     if (!exp || !exp.steps) {
-      container.innerHTML = '';
+      container.replaceChildren();
       return;
     }
     container.innerHTML = '<select class="bl-exp-select" id="bl-exp-select">' +
@@ -324,7 +324,7 @@
   function _renderTools(container) {
     var exp = _experiments[_state.experiment];
     if (!exp || !exp.steps || _state.step < 0 || _state.step >= exp.steps.length) {
-      container.innerHTML = '';
+      container.replaceChildren();
       return;
     }
     var current = exp.steps[_state.step];

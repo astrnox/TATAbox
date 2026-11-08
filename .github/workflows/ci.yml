@@ -67,7 +67,8 @@ jobs:
           fi
 
       - name: Install dependencies
-        run: npm install
+        # M-11：用 lockfile 锁定依赖，避免 CI 每次解析出不同版本
+        run: npm ci
 
       - name: JS 语法检查
         run: |
@@ -76,6 +77,9 @@ jobs:
             node --check "$f" || { echo "SYNTAX FAIL: $f"; fail=1; }
           done
           exit $fail
+
+      - name: ESLint 静态检查（M-02）
+        run: npm run lint:code
 
       - name: manifest CDN 锚点一致性校验（Issue #15）
         # 必须排在「题库重建确定性」重跑生成器之前——重跑会用 runner 环境
@@ -88,6 +92,20 @@ jobs:
         # 模块前缀一致、index/bank 双向一致。（新题库为 M 格式；旧的内容寻址反算与
         # bioid-map 迁移映射校验因 #150 更换数据体系 / 删除 bioid-map 而移除。）
         run: node scripts/verify-bio-shards.js
+
+      - name: 数据/版本口径一致性（H-06）
+        # 题库/内容变更后必须重跑 npm run build:stats；同时校验
+        # data/_version.json、package.json、README 徽章与题量宣称一致。
+        run: node scripts/verify-data-stats.js
+
+      - name: 迁移体系一致性（M-04）
+        # 校验迁移版本唯一、v16+ 均写入 migration_log、CREATE POLICY 不使用 NEW.*
+        # （v6 历史缺陷：非法表达式被 EXCEPTION 吞掉，策略实际不存在）。
+        run: npm run verify:migrations
+
+      - name: 仓库体积预算（H-05）
+        # 防止视频/大图/归档继续把 clone 与 CI 成本推高；超预算时失败。
+        run: node scripts/check-repo-size.js
 
       - name: 单元测试（IRT / FSRS / 调度器 + 覆盖率门禁）
         # #140/#141：--coverage 已并入 test:unit；低于 jest.config.cjs
@@ -104,12 +122,17 @@ jobs:
         # 内联样式数与硬编码色值数采用棘轮（不得超过基线，只许下降）。
         run: npm run audit:design
 
-      - name: 发布资源压缩构建验证（Issue #112）
-        # 验证 js/css 可经 esbuild 压缩进 dist/（构建产物不入库）,
-        # 且首屏同步 CSS 可合并为 bundle-core.css（Issue #108）。
+      - name: HTML sink 棘轮（M-05）
+        # 禁止新增裸写 innerHTML；只允许向 safeHtml/setSafeHtml 迁移（计数只降不升）。
+        run: npm run audit:sinks
+
+      - name: 生产构建 + 产物校验（H-04）
+        # 生成可部署的 dist/（逐文件 esbuild 压缩 + 静态资源裁剪 + SW 版本重写），
+        # 并校验必需文件、本地引用完整性、包体与脚本数预算。
         run: |
-          npm run build:min
           npm run build:css
+          npm run build:prod
+          npm run verify:prod
 
       - name: 烟雾测试（Wiki）
         run: npm run test:smoke
@@ -132,21 +155,31 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        # M-11：lockfile 已包含 playwright devDependency，直接 npm ci
+        run: npm ci
 
       - name: Install Playwright 与 Chromium
-        # 以 --no-save 方式装载 Playwright，避免把重型依赖写入仓库锁定文件；
         # --with-deps 自动安装浏览器所需的系统共享库。
+        run: npx playwright install chromium --with-deps
+
+      - name: 生产构建（E2E 针对 dist 产物）
+        # H-04：真实浏览器直接验证压缩后的生产目录，而不是源码目录。
         run: |
-          npm install --no-save playwright
-          npx playwright install chromium --with-deps
+          npm run build:css
+          npm run build:prod
 
       - name: 启动静态服务器
         # 静态 SPA 由 python3 提供（与本地开发一致），绑定随机端口避免冲突。
         run: |
+          cd dist
           python3 -m http.server 8091 --bind 127.0.0.1 > /tmp/bioquest-http.log 2>&1 &
-          echo "http server started (127.0.0.1:8091)"
+          echo "http server started (127.0.0.1:8091, root=dist)"
 
       - name: Run Playwright E2E（P1-28）
         # e2e-smoke.js 内置服务器冷启动重试，测试脚本常在服务器就绪前才开始。
         run: npm run test:e2e
+
+      - name: 无障碍扫描（L-02，axe-core）
+        # 复用同一静态服务器，对关键路由跑 WCAG 2.1 A/AA 扫描；
+        # critical 违规为硬门禁，serious（如颜色对比度）先告警不阻断。
+        run: npm run test:a11y

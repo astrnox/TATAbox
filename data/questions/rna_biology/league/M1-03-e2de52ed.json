@@ -1,38 +1,38 @@
 {
- "concept": "lncRNA XIST 与 X 染色体失活",
- "difficulty": "league",
- "explanation": "A【对】依据：XIST 不扩散，顺式包裹同一条 X 染色体，启动该染色体的剂量补偿沉默。\nB【对】依据：XIST 募集 PRC2 等复合体，建立 H3K27me3 等抑制性修饰，使染色质凝集失活。\nC【错】错因：XIST 是长链非编码 RNA，以 RNA 分子本身发挥功能，不编码蛋白质。\nD【错】错因：失活 X 上仍有部分基因（如假常染色体区基因）逃逸失活，并非全部沉默。",
- "question": "lncRNA XIST 由 X 染色体失活中心转录，介导雌性哺乳动物一条 X 染色体失活。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "XIST RNA 包裹其转录来源的那条 X 染色体，发挥顺式作用"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "XIST 募集染色质修饰复合体，促进染色质凝集与沉默"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "XIST 编码一个小肽，由该肽促进染色体凝集"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "X 染色体失活后其上所有基因永久沉默，无一例外"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "rna_biology",
-  "module_1",
-  "分子生物学",
-  "lncRNA XIST 与 X 染色体失活"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "lncRNA XIST 与 X 染色体失活",
+  "difficulty": "league",
+  "explanation": "A【对】依据：XIST 不扩散，顺式包裹同一条 X 染色体，启动该染色体的剂量补偿沉默。\nB【对】依据：XIST 募集 PRC2 等复合体，建立 H3K27me3 等抑制性修饰，使染色质凝集失活。\nC【错】错因：XIST 是长链非编码 RNA，以 RNA 分子本身发挥功能，不编码蛋白质。\nD【错】错因：失活 X 上仍有部分基因（如假常染色体区基因）逃逸失活，并非全部沉默。",
+  "question": "lncRNA XIST 由 X 染色体失活中心转录，介导雌性哺乳动物一条 X 染色体失活。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "XIST RNA 包裹其转录来源的那条 X 染色体，发挥顺式作用"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "XIST 募集染色质修饰复合体，促进染色质凝集与沉默"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "XIST 编码一个小肽，由该肽促进染色体凝集"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "X 染色体失活后其上所有基因永久沉默，无一例外"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "lncRNA XIST 与 X 染色体失活"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

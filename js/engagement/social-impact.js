@@ -8,7 +8,7 @@
   'use strict';
 
   // 乡村科普模式（低流量模式）
-  var LOW_FLOW_KEY = 'bioquest_low_flow_mode';
+  var LOW_FLOW_KEY = 'tatabox_low_flow_mode';
 
   var LowFlowMode = {
     isEnabled: function () {
@@ -76,7 +76,7 @@
   }
 
   // 濒危物种卡片收集系统
-  var COLLECTION_KEY = 'bioquest_species_collection';
+  var COLLECTION_KEY = 'tatabox_species_collection';
 
   var ENDANGERED_SPECIES = [
     { id: 'panda', name: '大熊猫', latin: 'Ailuropoda melanoleuca', status: 'VU', iucn: '易危', desc: '中国特有物种，栖息于四川、陕西、甘肃的山区竹林中。' },

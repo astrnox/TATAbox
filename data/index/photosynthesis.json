@@ -1,20 +1,20 @@
 {
- "M2-02-358991fe": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": true,
-  "len": 133,
-  "module": "module_2",
-  "src": "photosynthesis",
-  "tag": "photosynthesis",
-  "tags": [
-   "photosynthesis",
-   "module_2",
-   "植物生理学",
-   "光反应",
-   "电子传递"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-02-358991fe": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 133,
+    "module": "module_2",
+    "src": "photosynthesis",
+    "tag": "photosynthesis",
+    "tags": [
+      "photosynthesis",
+      "module_2",
+      "植物生理学",
+      "光反应",
+      "电子传递"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

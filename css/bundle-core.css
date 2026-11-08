@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-10-16T12:31:37.067Z
+ * 生成时间：2026-11-07T05:21:45.148Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -2946,6 +2946,15 @@ body {
   background: rgba(58,140,92,0.15);
   color: #6bc48e;
 }
+/* M-13：亮色 hover 底配暗色主题文字会翻白，暗色单独给半透明绿底 */
+[data-theme="dark"] .search-filter-chip:hover,
+[data-theme="dark"] .search-module-chip:hover {
+  background: rgba(58, 140, 92, 0.14);
+  border-color: #6bc48e;
+}
+[data-theme="dark"] .search-result-local:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
 [data-theme="dark"] .search-section-title {
   color: #e0e8e4;
   border-bottom-color: #2e3833;
@@ -3117,6 +3126,16 @@ mark.search-highlight {
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
+}
+
+/* M-13：暗色下不用亮粉底，改用暖色低饱和表面 */
+[data-theme="dark"] .knowledge-refresh-btn {
+  background: var(--color-warm-50, #2a2420);
+  border-color: rgba(212, 168, 126, 0.35);
+  color: var(--color-warm, #d4a87e);
+}
+[data-theme="dark"] .knowledge-refresh-btn:hover {
+  background: var(--color-warm-100, #3a3430);
 }
 
 /* ============================================================
@@ -3965,7 +3984,8 @@ html[data-theme="dark"] .bottom-tab-bar.is-dragging .bottom-tab-glow {
 
 /* 底部标签栏常驻：给页面主内容留出底部空间，隐藏桌面页脚避免遮挡 */
 #page-content {
-  padding-bottom: 84px;
+  /* M-13：标签栏高度 + iPhone 底部安全区，避免最后一行内容被遮挡 */
+  padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
 }
 .footer {
   display: none;

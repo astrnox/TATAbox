@@ -1,19 +1,19 @@
 {
- "M1-01-95cb6665": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 52,
-  "module": "module_1",
-  "src": "organelle",
-  "tag": "organelle",
-  "tags": [
-   "organelle",
-   "module_1",
-   "细胞生物学",
-   "分泌蛋白的合成与运输"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-95cb6665": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 52,
+    "module": "module_1",
+    "src": "organelle",
+    "tag": "organelle",
+    "tags": [
+      "organelle",
+      "module_1",
+      "细胞生物学",
+      "分泌蛋白的合成与运输"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

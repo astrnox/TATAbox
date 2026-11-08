@@ -1,38 +1,38 @@
 {
- "concept": "酶动力学与抑制类型",
- "difficulty": "league",
- "explanation": "A【对】依据：底物饱和后所有酶分子处于 ES 复合物状态，速率达到最大反应速度 Vmax。\nB【对】依据：Vmax 与酶浓度成正比，底物饱和时增加酶量可提高总反应速率。\nC【错】错因：竞争性抑制剂与底物争夺活性中心，Vmax 不变而表观 Km 增大，选项说反了。\nD【对】依据：竞争性抑制可被高浓度底物通过竞争结合位点而逆转，抑制程度随底物浓度下降。",
- "question": "研究者测定某酶在不同底物浓度下的活性，发现底物浓度达到一定值后反应速率不再上升。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "此时酶活性中心基本被底物饱和，反应速率接近 Vmax"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "此时增加酶量可进一步提高反应速率"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "竞争性抑制剂会改变 Vmax，但不改变表观 Km"
-  },
-  {
-   "answer": true,
-   "label": "D",
-   "text": "提高底物浓度可克服竞争性抑制剂的抑制作用"
-  }
- ],
- "subject": "生物化学",
- "tags": [
-  "enzyme",
-  "module_1",
-  "生物化学",
-  "酶动力学与抑制类型"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "酶动力学与抑制类型",
+  "difficulty": "league",
+  "explanation": "A【对】依据：底物饱和后所有酶分子处于 ES 复合物状态，速率达到最大反应速度 Vmax。\nB【对】依据：Vmax 与酶浓度成正比，底物饱和时增加酶量可提高总反应速率。\nC【错】错因：竞争性抑制剂与底物争夺活性中心，Vmax 不变而表观 Km 增大，选项说反了。\nD【对】依据：竞争性抑制可被高浓度底物通过竞争结合位点而逆转，抑制程度随底物浓度下降。",
+  "question": "研究者测定某酶在不同底物浓度下的活性，发现底物浓度达到一定值后反应速率不再上升。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "此时酶活性中心基本被底物饱和，反应速率接近 Vmax"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "此时增加酶量可进一步提高反应速率"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "竞争性抑制剂会改变 Vmax，但不改变表观 Km"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "提高底物浓度可克服竞争性抑制剂的抑制作用"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "enzyme",
+    "module_1",
+    "生物化学",
+    "酶动力学与抑制类型"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

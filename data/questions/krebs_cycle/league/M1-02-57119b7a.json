@@ -1,57 +1,57 @@
 {
- "concept": "TCA 循环的致癌代谢物与回补维持",
- "difficulty": "league",
- "explanation": "A【对】依据：图左半部分肿瘤细胞中显示 SDH（琥珀酸脱氢酶）功能缺失（SDH*）使琥珀酸（Succinate↑）蓄积。琥珀酸与 α-KG（α-酮戊二酸）结构相似，是 α-KG 依赖性双加氧酶（如 TET 家族 DNA 去甲基化酶、JMJD 组蛋白去甲基化酶）的竞争性抑制剂，从而造成 DNA/组蛋白甲基化谱改变并稳定 HIF-1α（伪缺氧），这是'琥珀酸蓄积→表观遗传与信号改变'的核心因果链。\nB【对】依据：当 TCA 中间物被抽提用于生物合成（如草酰乙酸/α-酮戊二酸用于氨基酸合成）或被'渗漏'（如柠檬酸输出、琥珀酸蓄积偏离循环），循环必须通过回补反应（anaplerosis）补充中间物，常见途径有丙酮酸羧化酶（丙酮酸+HCO₃⁻+ATP→草酰乙酸）、谷氨酰胺经谷氨酰胺酶进入 α-KG（图中 Glutamine→α-KG 箭头）等；'抽提时需回补维持通量'正确。\nC【对】依据：IDH1/2 基因的致癌突变（IDH*）使酶获得新功能（neomorphic），把 α-KG 转化为 D-2-羟基戊二酸（D-2HG，图中红色标注）；D-2HG 与 α-KG 竞争抑制多种双加氧酶，并影响 NADPH 代谢，是胶质瘤、AML 等的标志性致癌代谢物，'新功能催化生成 D-2HG'正确。\nD【错】错因：FH（富马酸水合酶，图 Fumarate→Malate 步骤）功能缺失导致富马酸（Fumarate↑）蓄积而非促进其下游转化，TCA 循环在富马酸水合步骤受阻后通量整体下降；'功能缺失会增强 TCA 循环整体通量'与酶学事实矛盾（酶缺失只会削弱该步骤及其下游流量）。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/fig1-src-annotated.jpg",
- "image": {
-  "caption": "TCA 循环驱动的致癌代谢重编程：左）肿瘤细胞中 SDH*/FH*/IDH* 突变导致琥珀酸、富马酸与 D-2HG 蓄积（红色），TCA 循环与糖酵解/谷氨酰胺回补并存；右）免疫细胞中衣康酸（Itaconate）等免疫代谢物生成",
-  "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
-  "doi": "10.1186/s12929-025-01186-y",
-  "figure": "1",
-  "file": "assets/questions/krebs_cycle/fig1-src.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC12424225",
-  "source": "paper"
- },
- "question": "研究者发现快速增殖的肿瘤细胞中 TCA 循环中间物被大量抽提用于生物合成，同时 IDH1/2、SDH、FH 突变导致致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积（图）。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Sarkar S, Chang CI, Jean J, et al.",
-   "doi": "10.1186/s12929-025-01186-y",
-   "journal": "Journal of Biomedical Science",
-   "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
-   "year": 2025
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "SDH 功能缺失使琥珀酸蓄积，琥珀酸作为 α-KG 依赖性双加氧酶（如 TET、JMJD 去甲基化酶）的竞争性抑制剂，可导致表观遗传与 HIF-1α 信号改变"
+  "concept": "TCA 循环的致癌代谢物与回补维持",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图左半部分肿瘤细胞中显示 SDH（琥珀酸脱氢酶）功能缺失（SDH*）使琥珀酸（Succinate↑）蓄积。琥珀酸与 α-KG（α-酮戊二酸）结构相似，是 α-KG 依赖性双加氧酶（如 TET 家族 DNA 去甲基化酶、JMJD 组蛋白去甲基化酶）的竞争性抑制剂，从而造成 DNA/组蛋白甲基化谱改变并稳定 HIF-1α（伪缺氧），这是'琥珀酸蓄积→表观遗传与信号改变'的核心因果链。\nB【对】依据：当 TCA 中间物被抽提用于生物合成（如草酰乙酸/α-酮戊二酸用于氨基酸合成）或被'渗漏'（如柠檬酸输出、琥珀酸蓄积偏离循环），循环必须通过回补反应（anaplerosis）补充中间物，常见途径有丙酮酸羧化酶（丙酮酸+HCO₃⁻+ATP→草酰乙酸）、谷氨酰胺经谷氨酰胺酶进入 α-KG（图中 Glutamine→α-KG 箭头）等；'抽提时需回补维持通量'正确。\nC【对】依据：IDH1/2 基因的致癌突变（IDH*）使酶获得新功能（neomorphic），把 α-KG 转化为 D-2-羟基戊二酸（D-2HG，图中红色标注）；D-2HG 与 α-KG 竞争抑制多种双加氧酶，并影响 NADPH 代谢，是胶质瘤、AML 等的标志性致癌代谢物，'新功能催化生成 D-2HG'正确。\nD【错】错因：FH（富马酸水合酶，图 Fumarate→Malate 步骤）功能缺失导致富马酸（Fumarate↑）蓄积而非促进其下游转化，TCA 循环在富马酸水合步骤受阻后通量整体下降；'功能缺失会增强 TCA 循环整体通量'与酶学事实矛盾（酶缺失只会削弱该步骤及其下游流量）。\n@@ANNOTATED_IMAGE:assets/questions/krebs_cycle/fig1-src-annotated.jpg",
+  "image": {
+    "caption": "TCA 循环驱动的致癌代谢重编程：左）肿瘤细胞中 SDH*/FH*/IDH* 突变导致琥珀酸、富马酸与 D-2HG 蓄积（红色），TCA 循环与糖酵解/谷氨酰胺回补并存；右）免疫细胞中衣康酸（Itaconate）等免疫代谢物生成",
+    "credit": "Sarkar S et al., Journal of Biomedical Science 2025",
+    "doi": "10.1186/s12929-025-01186-y",
+    "figure": "1",
+    "file": "assets/questions/krebs_cycle/fig1-src.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC12424225",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "TCA 中间物被抽提用于生物合成时，必须通过回补反应（如谷氨酰胺进入 α-KG、丙酮酸羧化）补充中间物以维持循环运转"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "IDH1/2 致癌突变获得新功能，将 α-KG 转化为 D-2HG；D-2HG 竞争性抑制多种 α-KG 依赖性双加氧酶"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "FH 功能缺失导致富马酸蓄积，会增强 TCA 循环的整体通量以代偿能量不足"
-  }
- ],
- "subject": "生物化学",
- "tags": [
-  "krebs_cycle",
-  "module_1",
-  "生物化学",
-  "TCA循环",
-  "致癌代谢物"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者发现快速增殖的肿瘤细胞中 TCA 循环中间物被大量抽提用于生物合成，同时 IDH1/2、SDH、FH 突变导致致癌代谢物（D-2HG、琥珀酸、富马酸）蓄积（图）。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Sarkar S, Chang CI, Jean J, et al.",
+      "doi": "10.1186/s12929-025-01186-y",
+      "journal": "Journal of Biomedical Science",
+      "title": "TCA cycle-derived oncometabolites in cancer and the immune microenvironment",
+      "year": 2025
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "SDH 功能缺失使琥珀酸蓄积，琥珀酸作为 α-KG 依赖性双加氧酶（如 TET、JMJD 去甲基化酶）的竞争性抑制剂，可导致表观遗传与 HIF-1α 信号改变"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "TCA 中间物被抽提用于生物合成时，必须通过回补反应（如谷氨酰胺进入 α-KG、丙酮酸羧化）补充中间物以维持循环运转"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "IDH1/2 致癌突变获得新功能，将 α-KG 转化为 D-2HG；D-2HG 竞争性抑制多种 α-KG 依赖性双加氧酶"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "FH 功能缺失导致富马酸蓄积，会增强 TCA 循环的整体通量以代偿能量不足"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "krebs_cycle",
+    "module_1",
+    "生物化学",
+    "TCA循环",
+    "致癌代谢物"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

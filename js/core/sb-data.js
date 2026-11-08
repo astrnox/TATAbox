@@ -33,7 +33,7 @@ function exportUserData() {
     // 游客/本地账号：只导出密码哈希，绝不导出明文
     if (_currentUser.isGuest) {
       try {
-        var savedHash = localStorage.getItem('bioquest_guest_pwdhash');
+        var savedHash = localStorage.getItem('tatabox_guest_pwdhash');
         if (savedHash) {
           data.account.password_hash = savedHash;
           data.account.password_note = '游客模式：仅本地哈希，明文已废弃';
@@ -63,7 +63,7 @@ function exportUserData() {
 
   // 错题数据
   try {
-    var wrongRaw = localStorage.getItem('bioquest_wrong_questions');
+    var wrongRaw = localStorage.getItem('tatabox_wrong_questions');
     if (wrongRaw) {
       data.wrongQuestions = JSON.parse(wrongRaw);
       if (!Array.isArray(data.wrongQuestions)) data.wrongQuestions = [];
@@ -72,7 +72,7 @@ function exportUserData() {
 
   // 收藏数据
   try {
-    var favRaw = localStorage.getItem('bioquest_favorites');
+    var favRaw = localStorage.getItem('tatabox_favorites');
     if (favRaw) {
       data.favorites = JSON.parse(favRaw);
       if (!Array.isArray(data.favorites)) data.favorites = [];
@@ -81,7 +81,7 @@ function exportUserData() {
 
   // 练习记录
   try {
-    var recRaw = localStorage.getItem('bioquest_practice_records');
+    var recRaw = localStorage.getItem('tatabox_practice_records');
     if (recRaw) {
       data.practiceRecords = JSON.parse(recRaw);
       if (!Array.isArray(data.practiceRecords)) data.practiceRecords = [];
@@ -90,7 +90,7 @@ function exportUserData() {
 
   // 旧格式记录合并
   try {
-    var recRaw2 = localStorage.getItem('bioquest_records');
+    var recRaw2 = localStorage.getItem('tatabox_records');
     if (recRaw2) {
       var records2 = JSON.parse(recRaw2);
       if (Array.isArray(records2) && records2.length > 0) {
@@ -101,7 +101,7 @@ function exportUserData() {
 
   // 成就数据
   try {
-    var achRaw = localStorage.getItem('bioquest_achievements');
+    var achRaw = localStorage.getItem('tatabox_achievements');
     if (achRaw) {
       data.achievements = JSON.parse(achRaw);
       if (!Array.isArray(data.achievements)) data.achievements = [];
@@ -110,7 +110,7 @@ function exportUserData() {
 
   // 签到数据
   try {
-    var checkRaw = localStorage.getItem('bioquest_checkin');
+    var checkRaw = localStorage.getItem('tatabox_checkin');
     if (checkRaw) {
       data.checkInData = JSON.parse(checkRaw);
     }
@@ -119,18 +119,18 @@ function exportUserData() {
   // 额外数据：考试记录、学习进度、搜索历史、反馈等
   try {
     var extraPrefixes = [
-      'bioquest_exam_records', 'bioquest_study_progress', 'bioquest_search_history',
-      'bioquest_feedbacks', 'bioquest_guest_session', 'bioquest_device_id',
-      'bioquest_card_progress', 'bioquest_daily_streak', 'bioquest_last_practice'
+      'tatabox_exam_records', 'tatabox_study_progress', 'tatabox_search_history',
+      'tatabox_feedbacks', 'tatabox_guest_session', 'tatabox_device_id',
+      'tatabox_card_progress', 'tatabox_daily_streak', 'tatabox_last_practice'
     ];
     for (var j = 0; j < extraPrefixes.length; j++) {
       var key = extraPrefixes[j];
       var val = localStorage.getItem(key);
       if (val !== null) {
         try {
-          data.extraData[key.replace('bioquest_', '')] = JSON.parse(val);
+          data.extraData[key.replace('tatabox_', '')] = JSON.parse(val);
         } catch (e2) {
-          data.extraData[key.replace('bioquest_', '')] = val;
+          data.extraData[key.replace('tatabox_', '')] = val;
         }
       }
     }
@@ -150,7 +150,7 @@ function downloadUserData() {
   var url = URL.createObjectURL(blob);
   var a = document.createElement('a');
   a.href = url;
-  a.download = 'bioquest_backup_' + _localDateStr() + '.json';
+  a.download = 'tatabox_backup_' + _localDateStr() + '.json';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -176,7 +176,7 @@ function importUserData(jsonData) {
     // 导入账号密码（游客/本地账号）
     if (data.account && data.account.password && data.account.isGuest) {
       try {
-        localStorage.setItem('bioquest_guest_password', data.account.password);
+        localStorage.setItem('tatabox_guest_password', data.account.password);
         imported.password = true;
       } catch (e) {}
     }
@@ -202,13 +202,13 @@ function importUserData(jsonData) {
 
     // 导入错题
     if (Array.isArray(data.wrongQuestions)) {
-      localStorage.setItem('bioquest_wrong_questions', JSON.stringify(data.wrongQuestions));
+      localStorage.setItem('tatabox_wrong_questions', JSON.stringify(data.wrongQuestions));
       imported.wrongQuestions = true;
     }
 
     // 导入收藏
     if (Array.isArray(data.favorites)) {
-      localStorage.setItem('bioquest_favorites', JSON.stringify(data.favorites));
+      localStorage.setItem('tatabox_favorites', JSON.stringify(data.favorites));
       imported.favorites = true;
     }
 
@@ -216,23 +216,23 @@ function importUserData(jsonData) {
     if (Array.isArray(data.practiceRecords)) {
       var existing = [];
       try {
-        var existingRaw = localStorage.getItem('bioquest_practice_records');
+        var existingRaw = localStorage.getItem('tatabox_practice_records');
         if (existingRaw) existing = JSON.parse(existingRaw);
       } catch (e) {}
       var merged = (existing || []).concat(data.practiceRecords);
-      localStorage.setItem('bioquest_practice_records', JSON.stringify(merged));
+      localStorage.setItem('tatabox_practice_records', JSON.stringify(merged));
       imported.practiceRecords = true;
     }
 
     // 导入成就
     if (Array.isArray(data.achievements)) {
-      localStorage.setItem('bioquest_achievements', JSON.stringify(data.achievements));
+      localStorage.setItem('tatabox_achievements', JSON.stringify(data.achievements));
       imported.achievements = true;
     }
 
     // 导入签到数据
     if (data.checkInData && typeof data.checkInData === 'object') {
-      localStorage.setItem('bioquest_checkin', JSON.stringify(data.checkInData));
+      localStorage.setItem('tatabox_checkin', JSON.stringify(data.checkInData));
       imported.checkIn = true;
     }
 
@@ -242,7 +242,7 @@ function importUserData(jsonData) {
       for (var ei = 0; ei < extraKeys.length; ei++) {
         var ek = extraKeys[ei];
         try {
-          localStorage.setItem('bioquest_' + ek, typeof data.extraData[ek] === 'string' ? data.extraData[ek] : JSON.stringify(data.extraData[ek]));
+          localStorage.setItem('tatabox_' + ek, typeof data.extraData[ek] === 'string' ? data.extraData[ek] : JSON.stringify(data.extraData[ek]));
         } catch (e) {}
       }
       imported.extra = extraKeys.length > 0;
@@ -283,29 +283,6 @@ showToast('导入失败：' + errText(result.error));
 
 
 /**
- * 错题选项落库：仅当题目确实带 options 时写入（review_cards.options jsonb 列，
- * 见 sql/migration_v17_review_cards_options.sql），供跨设备打印补全选项。
- */
-function _wrongOptionsForDb(question) {
-  if (!question) return undefined;
-  var opts = question.options;
-  if (!opts) return undefined;
-  if (typeof opts === 'string') {
-    try { opts = JSON.parse(opts); } catch (e) { return undefined; }
-  }
-  return opts;
-}
-
-/** 是否为「数据库缺少某列」错误（迁移未执行时降级重试，避免错题写入整体失败） */
-function _isMissingColumnError(err) {
-  if (!err) return false;
-  var msg = String(err.message || err);
-  return err.code === 'PGRST204' || err.code === '42703' ||
-    /column .* does not exist|schema cache/i.test(msg);
-}
-
-
-/**
  * 答错时记录错题卡片
  */
 async function recordWrongAnswer(question) {
@@ -321,30 +298,21 @@ async function recordWrongAnswer(question) {
     var fsrsState = { stability: 0, difficulty: 5, lastReview: 0, repetitions: 0, lapses: 0 };
     fsrsState = window.FSRS.schedule(fsrsState, window.FSRS.RATING.AGAIN, Date.now());
 
-    var payload = {
-      user_id: _currentUser.id,
-      question_id: String(qid),
-      question_text: (question.question_text || question.question || '').substring(0, 300),
-      subject: question.subject || '',
-      concept: question.concept || '',
-      difficulty: question.difficulty || 'medium',
-      options: _wrongOptionsForDb(question),
-      stability: fsrsState.stability || 0,
-      fsrs_difficulty: fsrsState.difficulty || 5,
-      last_review: fsrsState.lastReview ? new Date(fsrsState.lastReview).toISOString() : null,
-      repetitions: fsrsState.repetitions || 0,
-      lapses: fsrsState.lapses || 0,
-      due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
-    };
     var { error } = await sb.from('review_cards')
-      .upsert(payload, { onConflict: 'user_id,question_id' });
-    // 迁移 v17 未执行时 options 列不存在：去掉该字段重试，保证错题仍能入册
-    if (error && payload.options !== undefined && _isMissingColumnError(error)) {
-      delete payload.options;
-      var retry = await sb.from('review_cards')
-        .upsert(payload, { onConflict: 'user_id,question_id' });
-      error = retry.error;
-    }
+      .upsert({
+        user_id: _currentUser.id,
+        question_id: String(qid),
+        question_text: (question.question_text || question.question || '').substring(0, 300),
+        subject: question.subject || '',
+        concept: question.concept || '',
+        difficulty: question.difficulty || 'medium',
+        stability: fsrsState.stability || 0,
+        fsrs_difficulty: fsrsState.difficulty || 5,
+        last_review: fsrsState.lastReview ? new Date(fsrsState.lastReview).toISOString() : null,
+        repetitions: fsrsState.repetitions || 0,
+        lapses: fsrsState.lapses || 0,
+        due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
+      }, { onConflict: 'user_id,question_id' });
 
     if (error) throw error;
     return { ok: true };
@@ -433,94 +401,6 @@ async function reviewQuestion(questionId, rating) {
 
 
 /**
- * 答对时推进云端错题卡（FSRS Good）
- * 仅更新已存在的 review_cards（不在错题本的普通题不建卡、不查询后建卡）；
- * 与 recordWrongAnswer（答错 Again）构成错题的完整 FSRS 闭环。
- */
-async function updateReviewCardOnCorrect(question) {
-  if (!question) return { ok: false, error: '参数为空' };
-  var qid = question.id || question.question_id;
-  if (!qid) return { ok: false, error: '题目 ID 缺失' };
-  if (!_currentUser || _currentUser.isGuest) return { ok: false, skipped: 'guest' };
-  var sb = getSupabase();
-  if (!sb) return { ok: false, error: 'Supabase 未初始化' };
-
-  try {
-    var { data: card, error: fetchError } = await sb.from('review_cards')
-      .select('*')
-      .eq('user_id', _currentUser.id)
-      .eq('question_id', String(qid))
-      .maybeSingle();
-    if (fetchError) throw fetchError;
-    if (!card) return { ok: true, skipped: 'not_in_wrongbook' };
-
-    var currentState = {
-      stability: card.stability || 0,
-      difficulty: card.fsrs_difficulty || 5,
-      lastReview: card.last_review ? new Date(card.last_review).getTime() : 0,
-      repetitions: card.repetitions || 0,
-      lapses: card.lapses || 0
-    };
-    var newState = window.FSRS.schedule(currentState, window.FSRS.RATING.GOOD, Date.now());
-
-    var { error } = await sb.from('review_cards')
-      .update({
-        stability: newState.stability,
-        fsrs_difficulty: newState.difficulty,
-        last_review: newState.lastReview ? new Date(newState.lastReview).toISOString() : new Date().toISOString(),
-        repetitions: newState.repetitions,
-        lapses: newState.lapses,
-        due_date: newState.dueDate ? new Date(newState.dueDate).toISOString() : new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString()
-      })
-      .eq('id', card.id);
-    if (error) throw error;
-    return { ok: true, nextDue: newState.dueDate };
-  } catch (e) {
-    return { ok: false, error: e.message };
-  }
-}
-
-
-/**
- * 批量读取指定题目的云端 FSRS 复习卡状态（错题本 FSRS 徽标/到期排序用）
- * @param {string[]} questionIds
- * @returns {Promise<Object>} { [question_id]: {due_date, stability, repetitions, lapses, ...} }
- */
-async function getReviewCardStates(questionIds) {
-  var out = {};
-  if (!Array.isArray(questionIds) || questionIds.length === 0) return out;
-  if (!_currentUser || _currentUser.isGuest) return out;
-  var sb = getSupabase();
-  if (!sb) return out;
-  // 去重 + 分批：单次 .in() 最多 200 个 UUID（避免超量静默截断与 URL 过长）
-  var ids = [];
-  var seen = {};
-  questionIds.forEach(function (id) {
-    var k = String(id || '');
-    if (!k || seen[k]) return;
-    seen[k] = true;
-    ids.push(k);
-  });
-  var CHUNK = 200;
-  for (var i = 0; i < ids.length; i += CHUNK) {
-    try {
-      var { data, error } = await sb.from('review_cards')
-        .select('question_id,due_date,stability,fsrs_difficulty,repetitions,lapses,last_review')
-        .eq('user_id', _currentUser.id)
-        .in('question_id', ids.slice(i, i + CHUNK));
-      if (error) throw error;
-      (data || []).forEach(function (row) {
-        if (row && row.question_id) out[row.question_id] = row;
-      });
-    } catch (e) {
-      console.warn('[sb-data] 批量读取复习卡状态失败（第 ' + (i / CHUNK + 1) + ' 批）:', e);
-    }
-  }
-  return out;
-}
-
-
-/**
  * 获取错题本列表
  */
 async function getWrongQuestions(options) {
@@ -555,40 +435,28 @@ async function addWrongQuestion(question) {
   try {
     var fsrsState = { stability: 0, difficulty: 5, lastReview: 0, repetitions: 0, lapses: 0 };
     fsrsState = window.FSRS.schedule(fsrsState, window.FSRS.RATING.AGAIN, Date.now());
-    var payload = {
-      user_id: _currentUser.id,
-      question_id: question.question_id || 'manual_' + Date.now(),
-      question_text: (question.question_text || question.question || '').substring(0, 1000),
-      subject: question.subject || '',
-      concept: question.concept || '',
-      difficulty: question.difficulty || 'medium',
-      user_answer: question.user_answer || '',
-      correct_answer: question.correct_answer || '',
-      analysis: question.analysis || '',
-      error_reason: question.error_reason || '',
-      textbook_chapter: question.textbook_chapter || '',
-      knowledge_graph_nodes: question.knowledge_graph_nodes || [],
-      image_url: question.image_url || '',
-      source: question.source || 'manual',
-      options: _wrongOptionsForDb(question),
-      stability: fsrsState.stability || 0,
-      fsrs_difficulty: fsrsState.difficulty || 5,
-      due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
-    };
     var { data, error } = await sb.from('review_cards')
-      .insert(payload)
+      .insert({
+        user_id: _currentUser.id,
+        question_id: question.question_id || 'manual_' + Date.now(),
+        question_text: (question.question_text || question.question || '').substring(0, 1000),
+        subject: question.subject || '',
+        concept: question.concept || '',
+        difficulty: question.difficulty || 'medium',
+        user_answer: question.user_answer || '',
+        correct_answer: question.correct_answer || '',
+        analysis: question.analysis || '',
+        error_reason: question.error_reason || '',
+        textbook_chapter: question.textbook_chapter || '',
+        knowledge_graph_nodes: question.knowledge_graph_nodes || [],
+        image_url: question.image_url || '',
+        source: question.source || 'manual',
+        stability: fsrsState.stability || 0,
+        fsrs_difficulty: fsrsState.difficulty || 5,
+        due_date: fsrsState.dueDate ? new Date(fsrsState.dueDate).toISOString() : new Date().toISOString()
+      })
       .select()
       .single();
-    // 迁移 v17 未执行时 options 列不存在：去掉该字段重试
-    if (error && payload.options !== undefined && _isMissingColumnError(error)) {
-      delete payload.options;
-      var retry = await sb.from('review_cards')
-        .insert(payload)
-        .select()
-        .single();
-      data = retry.data;
-      error = retry.error;
-    }
     if (error) throw error;
     return { ok: true, wrongQuestion: data };
   } catch (e) {
@@ -696,7 +564,7 @@ async function getRelatedPracticeQuestions(concepts, limit) {
 /**
  * 从 Supabase 读取用户聚合统计（dashboard._getUserStats 的远端实现）
  * 数据源：practice_records（按 module_num 聚合）+ daily_checkins（连续打卡）
- * @returns {Promise<Object|null>} 与 localStorage 'bioquest_stats' 同构的对象，失败返回 null
+ * @returns {Promise<Object|null>} 与 localStorage 'tatabox_stats' 同构的对象，失败返回 null
  */
 async function getUserStatsFromSupabase() {
   if (!_currentUser || _currentUser.isGuest) return null;
@@ -777,7 +645,7 @@ async function getUserStatsFromSupabase() {
 
     // 写入 localStorage 缓存，便于离线/快速首屏
     try {
-      localStorage.setItem('bioquest_stats', JSON.stringify(stats));
+      localStorage.setItem('tatabox_stats', JSON.stringify(stats));
     } catch (e) {}
 
     return stats;
@@ -1068,9 +936,6 @@ window.deleteUserProgressFromSupabase = deleteUserProgressFromSupabase;
 window.recordWrongAnswer = recordWrongAnswer;
 window.getDueReviewQuestions = getDueReviewQuestions;
 window.reviewQuestion = reviewQuestion;
-// FSRS 错题闭环：答对推进 + 批量读卡状态（错题本徽标）
-window.updateReviewCardOnCorrect = updateReviewCardOnCorrect;
-window.getReviewCardStates = getReviewCardStates;
 
 // 智能错题管理
 window.getWrongQuestions = getWrongQuestions;

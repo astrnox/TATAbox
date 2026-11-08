@@ -1,19 +1,19 @@
 {
- "M3-01-0cf8ec28": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 42,
-  "module": "module_3",
-  "src": "population_eco",
-  "tag": "population_eco",
-  "tags": [
-   "population_eco",
-   "module_3",
-   "生态学",
-   "种群增长的 S 型曲线"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-0cf8ec28": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 42,
+    "module": "module_3",
+    "src": "population_eco",
+    "tag": "population_eco",
+    "tags": [
+      "population_eco",
+      "module_3",
+      "生态学",
+      "种群增长的 S 型曲线"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

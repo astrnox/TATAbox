@@ -1,19 +1,19 @@
 {
- "M4-01-5f91e857": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 65,
-  "module": "module_4",
-  "src": "linkage",
-  "tag": "linkage",
-  "tags": [
-   "linkage",
-   "module_4",
-   "遗传学",
-   "连锁与交换定律"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-5f91e857": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 65,
+    "module": "module_4",
+    "src": "linkage",
+    "tag": "linkage",
+    "tags": [
+      "linkage",
+      "module_4",
+      "遗传学",
+      "连锁与交换定律"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

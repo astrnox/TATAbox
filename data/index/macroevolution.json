@@ -1,19 +1,19 @@
 {
- "M4-01-19334fa9": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 50,
-  "module": "module_4",
-  "src": "macroevolution",
-  "tag": "macroevolution",
-  "tags": [
-   "macroevolution",
-   "module_4",
-   "进化生物学",
-   "大灭绝与适应辐射"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-19334fa9": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 50,
+    "module": "module_4",
+    "src": "macroevolution",
+    "tag": "macroevolution",
+    "tags": [
+      "macroevolution",
+      "module_4",
+      "进化生物学",
+      "大灭绝与适应辐射"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

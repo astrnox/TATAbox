@@ -683,6 +683,13 @@
   box-shadow: var(--shadow-sm);
 }
 
+/* M-13：暗色下浅米底 + 浅色正文会失去对比度，改用凹陷面与语义描边 */
+[data-theme="dark"] .ebook-key-point-card {
+  background: var(--color-surface-sunken, #1a201d);
+  border-color: var(--color-border, #2e3833);
+  border-left-color: var(--color-warm, #d4a87e);
+}
+
 /* 关联知识点 */
 .ebook-related {
   margin-top: 32px;

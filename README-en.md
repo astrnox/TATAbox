@@ -6,14 +6,14 @@
 
 **From biology-league prep to Gaokao mock exams — practice biology with one website.**
 
-[🇨🇳 中文版](./README.md) · [🌐 Live Demo](https://tatabox.cc.cd/) · [📝 Start Practicing](https://tatabox.cc.cd/#/practice) · [💬 Report an Issue](https://github.com/astrnox/BioQuest/issues)
+[🇨🇳 中文版](./README.md) · [🌐 Live Demo](https://tatabox.cc.cd/) · [📝 Start Practicing](https://tatabox.cc.cd/#/practice) · [💬 Report an Issue](https://github.com/astrnox/TATAbox/issues)
 
 [![Platform](https://img.shields.io/badge/platform-Web-blue?style=flat-square)]()
-[![Version](https://img.shields.io/badge/version-5.2.14-blue?style=flat-square)]()
+[![Version](https://img.shields.io/badge/version-5.1.0-blue?style=flat-square)]()
 [![License: MPL 2.0](https://img.shields.io/badge/license-MPL--2.0-green?style=flat-square)](./LICENSE)
 [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)]()
 [![PWA](https://img.shields.io/badge/PWA-Supported-purple?style=flat-square)]()
-[![GitHub Stars](https://img.shields.io/github/stars/astrnox/BioQuest?style=flat-square)]()
+[![GitHub Stars](https://img.shields.io/github/stars/astrnox/TATAbox?style=flat-square)]()
 
 </div>
 
@@ -38,7 +38,7 @@ Open the online version directly: **[https://tatabox.cc.cd/](https://tatabox.cc.
 - **Lite mode**: on phones or low-end devices open [tatabox.cc.cd/lite.html](https://tatabox.cc.cd/lite.html) — only five views (Today / Practice / Review / Wrong / Board), zero framework and faster startup.
 - Wrong-answer book, practice, and quiz pages all support printing: A4 pagination, with questions and answer explanations printable separately.
 - Features like the AI tutor and photo-based question search require you to configure your own API Key (they all use the free tiers of various providers — no cost, tutorial included).
-- Supports offline use — add it to your phone's home screen and use it like an app.
+- Supports offline use — add it to your phone's home screen and use it like an app; download the core or full offline question bank from Profile → Data.
 
 ### 👨‍💻 Want to deploy / modify the code yourself
 
@@ -46,8 +46,8 @@ This is a pure static site with no backend — deployment is simple:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/astrnox/BioQuest.git
-cd bioquest
+git clone https://github.com/astrnox/TATAbox.git
+cd TATAbox
 
 # 2. Preview locally (pick one)
 python -m http.server 8000   # Python
@@ -59,9 +59,9 @@ npx serve .                  # Node.js
 **Deploy online:** just drop the whole folder onto any free hosting platform (GitHub Pages, Vercel, Netlify, Cloudflare Pages). No build step, no server needed.
 
 **Things you may want to configure:**
-- Database: create a free project at [Supabase](https://supabase.com), run the migrations in `sql/` in order (at minimum `migration_v3_security.sql` → `migration_v15_admin_totp.sql` → `migration_v16_login_contract.sql` → `migration_v17_review_cards_options.sql`), then fill the URL and key into `js/core/supabase-client.js` (optional — without it, it automatically falls back to browser local storage).
+- Database: create a free project at [Supabase](https://supabase.com), run the canonical baseline `sql/schema.sql`, then `sql/migration_tracker.sql`, and finally **all** `sql/migration_v2.sql` → `migration_v22_profiles_policy_cleanup.sql` migrations in version order (do not cherry-pick: `v18` locks down `profiles`, `v19` hardens the username-login RPC, `v20` adds admin user-operation RPCs, `v21` closes self-service account deletion, and `v22` cleans up duplicated/over-restrictive profiles policies; `schema_safe.sql` / `incremental_update.sql` are legacy repair scripts for existing databases only). **Existing deployments that already ran v15 must re-run v15 after v18** (its TOTP admin-upgrade function now uses the internal-write flag; otherwise the hardened trigger will revert it). Always deploy SQL before the frontend code, then fill the URL and key into `js/core/supabase-client.js` (optional — without it, it automatically falls back to browser local storage).
 - AI features: users enter their own API Key in "Profile → Settings"; developers don't need to manage it.
-- Quality gates: run `npm test` before contributing (manifest anchor + design audit + unit tests + smoke test).
+- Quality gates: run `npm test` before contributing (manifest anchor + data/migration checks + ESLint + design audit + unit tests/coverage + smoke test).
 
 ---
 
@@ -73,7 +73,7 @@ npx serve .                  # Node.js
 | **Smart Wrong-Answer Book** | Wrong answers auto-collected; add questions by photo (print/handwriting OCR); FSRS due-date badges and sorting |
 | **Printing** | Print wrong-answer book, practice, or quiz sets in three modes (questions + answers / questions only / answers only), with A4 pagination and a per-page footer |
 | **Knowledge Cards** | Anki-style spaced repetition, automatically scheduled by your forgetting curve |
-| **Knowledge Graph v5.0** | 80 exam nodes + encyclopedia layer (459 entries) + word cloud, with AI explanations and direct wiki links |
+| **Knowledge Graph v5.0** | 80 exam nodes + encyclopedia layer (401 local seed entries, cloud-extensible) + word cloud, with AI explanations and direct wiki links |
 | **Video Library** | 37 topic demo videos with seven tag filters (animation / 3D / microscopy / time-lapse / realistic / lecture / live-action) |
 | **Lite Mode** | Standalone `lite.html` with five views (Today / Practice / Review / Wrong / Board) — zero framework, fast startup, phone-friendly |
 | **Skill Diagnosis** | A radar chart after each session shows which topics you're weak in |
@@ -84,7 +84,7 @@ npx serve .                  # Node.js
 | **Community Discussion** | Discuss questions with other students |
 | **Security & Privacy** | Supabase Row-Level Security, public profile views, admin TOTP, server-side protection for sensitive fields |
 
-### Recent updates (5.2.x)
+### Recent updates
 
 - **Printing system**: zero-dependency `print-utils.js`; three scenarios × three modes; dirty records no longer break a whole batch
 - **FSRS loop**: create a card on a wrong answer, only advance existing cards on correct answers; due badges and today's review queue
@@ -111,7 +111,7 @@ const result = scheduler.next(card, now, Rating.Good);
 ```
 
 ### 2. Ability estimation (IRT)
-Instead of a simple "how many did you get right," it uses item response theory (3PL model) on your answer history to estimate your true ability level, taking into account how hard and how discriminative each question is. It also uses Bayesian Knowledge Tracing (BKT) to estimate the probability you've mastered each knowledge point.
+Instead of a simple "how many did you get right," it uses item response theory (3PL model) on your answer history to estimate ability level, taking into account how hard and how discriminative each question is. It also uses Bayesian Knowledge Tracing (BKT) to estimate the probability you've mastered each knowledge point. **Note: item parameters (a/b/c) are currently heuristic estimates from question type and option count, not offline-calibrated; treat the result as a relative trend / weak-spot signal, not a standardized test score.**
 
 ### 3. OCR photo-based question search
 Two-layer recognition: if the user has configured a multimodal LLM key, AI recognition is used first (higher accuracy, handles italics and formulas); otherwise Tesseract.js runs locally in the browser — upscaling, grayscale, contrast stretch, and binarization before recognition, then a few regexes to fix common recognition errors.
@@ -182,10 +182,10 @@ MPL-2.0 is a weak copyleft license: **modification and commercial use are allowe
 
 **As long as you're not directly selling the content itself, learning & educational use is fine**:
 
-✅ Personal study and reuse
-✅ Schools, tutoring/extension centers using it for teaching (even if you charge tuition — you're selling a teaching *service*, not the content)
-✅ Non-profit education projects and education-aid initiatives
-❌ Selling the question bank/PDFs/animations content directly
+✅ Personal study and reuse  
+✅ Schools, tutoring/extension centers using it for teaching (even if you charge tuition — you're selling a teaching *service*, not the content)  
+✅ Non-profit education projects and education-aid initiatives  
+❌ Selling the question bank/PDFs/animations content directly  
 ❌ Removing the copyright or claiming you wrote it
 
 ### Content commercial licensing

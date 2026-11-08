@@ -99,9 +99,9 @@ describe('FSRS getDueCards 到期摘取', () => {
     const state = FSRS.getCardState('due-1');
     state.dueDate = now - 1000; // 视为已到期
     // 直接写回 storage
-    const raw = JSON.parse(localStorage.getItem('bioquest_fsrs_cards') || '{}');
+    const raw = JSON.parse(localStorage.getItem('tatabox_fsrs_cards') || '{}');
     raw['due-1'] = state;
-    localStorage.setItem('bioquest_fsrs_cards', JSON.stringify(raw));
+    localStorage.setItem('tatabox_fsrs_cards', JSON.stringify(raw));
 
     const res = FSRS.getDueCards(['due-1', 'new-1'], now);
     expect(res.newCards).toContain('new-1');
@@ -112,7 +112,7 @@ describe('FSRS getDueCards 到期摘取', () => {
 describe('FSRS reviewCard 持久化', () => {
   test('复习后状态被写入 localStorage', () => {
     const s = FSRS.reviewCard('card-abc', R.HARD);
-    const raw = JSON.parse(localStorage.getItem('bioquest_fsrs_cards') || '{}');
+    const raw = JSON.parse(localStorage.getItem('tatabox_fsrs_cards') || '{}');
     expect(raw['card-abc']).toBeDefined();
     expect(raw['card-abc'].repetitions).toBe(s.repetitions);
   });

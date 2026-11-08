@@ -9,7 +9,7 @@
   'use strict';
 
   var STORAGE_KEY = 'anki_progress_v2'; // v2: FSRS-4.5 + BKT
-  var BKT_STORAGE_KEY = 'bioquest_bkt_v1';
+  var BKT_STORAGE_KEY = 'tatabox_bkt_v1';
   var NEW_CARDS_PER_DAY = 20;
   var DEFAULT_EASE_FACTOR = 2.5;
   var MIN_EASE_FACTOR = 1.3;
@@ -246,8 +246,8 @@
       // v4.0 四向联动：若其他模块传递了 focus 概念，匹配对应牌组
       var focusConcept = null;
       try {
-        focusConcept = sessionStorage.getItem('bioquest_card_focus');
-        if (focusConcept) sessionStorage.removeItem('bioquest_card_focus');
+        focusConcept = sessionStorage.getItem('tatabox_card_focus');
+        if (focusConcept) sessionStorage.removeItem('tatabox_card_focus');
       } catch (e) {}
       var matchedIdx = -1;
       if (focusConcept) {

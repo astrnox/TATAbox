@@ -26,7 +26,7 @@
   <script>
     // 渲染前同步读主题，防白闪
     try {
-      var t = localStorage.getItem('bioquest_theme') || 'light';
+      var t = localStorage.getItem('tatabox_theme') || localStorage.getItem('bioquest_theme') || 'light';
       document.documentElement.setAttribute('data-theme', t);
     } catch (e) {}
   </script>

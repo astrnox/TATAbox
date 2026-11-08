@@ -508,7 +508,7 @@
   }
 
 
-  var HISTORY_KEY = 'bioquest_practice_history';
+  var HISTORY_KEY = 'tatabox_practice_history';
 
   function loadHistory() {
     try {

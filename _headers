@@ -2,6 +2,18 @@
 # 目的：让 Cloudflare 全球边缘缓存静态资源，题库流量不落源站、不给 Supabase 加压。
 # 说明：index.html / sw.js 不在此配置（默认不缓存），避免发版更新受阻。
 
+# M-09：边缘层安全响应头（CSP 仍由各 HTML 的 meta 标签下发，避免误伤独立页面）
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(self), microphone=(self), geolocation=()
+  # M-05：Trusted Types 强制模式。存量 innerHTML 由默认策略统一经 safeHtml 消毒；
+  # 已通过 16 条主路由 + 后台全 tab + 社区发帖弹窗的强制模式浏览器实测（0 违规）。
+  Content-Security-Policy: require-trusted-types-for 'script'; trusted-types dompurify default 'allow-duplicates'
+
+
 # 不可变资源（哈希/内容寻址或基本不变）：长缓存
 /fonts/*
 /images/*

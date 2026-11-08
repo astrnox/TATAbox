@@ -1,37 +1,37 @@
 {
- "M1-01-4000ade1": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 55,
-  "module": "module_1",
-  "src": "molecular_tech",
-  "tag": "molecular_tech",
-  "tags": [
-   "molecular_tech",
-   "module_1",
-   "生物技术",
-   "碱基编辑",
-   "CRISPR"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M1-02-5775c58d": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 50,
-  "module": "module_1",
-  "src": "molecular_tech",
-  "tag": "molecular_tech",
-  "tags": [
-   "molecular_tech",
-   "module_1",
-   "生物技术",
-   "PCR 的原理与应用"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-4000ade1": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 55,
+    "module": "module_1",
+    "src": "molecular_tech",
+    "tag": "molecular_tech",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物技术",
+      "碱基编辑",
+      "CRISPR"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-02-5775c58d": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 50,
+    "module": "module_1",
+    "src": "molecular_tech",
+    "tag": "molecular_tech",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物技术",
+      "PCR 的原理与应用"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -170,7 +170,7 @@ var DISC_PRESET_AGENTS = [
                    '请用专业且通俗的语言回答，结合细胞生物学视角。回答控制在 300 字以内。不要输出 [[ANIM:xxx]] 标记，不要生成 SVG 代码块。' }
 ];
 
-var DISC_CUSTOM_LS_KEY = 'bioquest_custom_agents';
+var DISC_CUSTOM_LS_KEY = 'tatabox_custom_agents';
 
 /* 流水线四阶段（与后端对应，用于前端展示） */
 var DISC_STAGES = [
@@ -549,7 +549,7 @@ function _openCustomAgentModal() {
 /* ============== 渲染消息列表 ============== */
 function _renderMessages(container) {
   if (!container) return;
-  container.innerHTML = '';
+  container.replaceChildren();
 
   var hasContent = (_discussionState.mode === 'group' && _discussionState.rounds.length > 0) ||
                    (_discussionState.mode === 'pipeline' && _discussionState.pipelineRuns.length > 0);

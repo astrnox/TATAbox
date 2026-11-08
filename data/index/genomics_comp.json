@@ -1,37 +1,37 @@
 {
- "M4-01-7476e725": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 71,
-  "module": "module_4",
-  "src": "genomics_comp",
-  "tag": "genomics_comp",
-  "tags": [
-   "genomics_comp",
-   "module_4",
-   "基因组学",
-   "泛基因组",
-   "结构变异"
-  ],
-  "target": "competition",
-  "year": null
- },
- "M4-02-1f8cb3df": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 37,
-  "module": "module_4",
-  "src": "genomics_comp",
-  "tag": "genomics_comp",
-  "tags": [
-   "genomics_comp",
-   "module_4",
-   "基因组学",
-   "比较基因组学与保守元件"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-7476e725": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 71,
+    "module": "module_4",
+    "src": "genomics_comp",
+    "tag": "genomics_comp",
+    "tags": [
+      "genomics_comp",
+      "module_4",
+      "基因组学",
+      "泛基因组",
+      "结构变异"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-02-1f8cb3df": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 37,
+    "module": "module_4",
+    "src": "genomics_comp",
+    "tag": "genomics_comp",
+    "tags": [
+      "genomics_comp",
+      "module_4",
+      "基因组学",
+      "比较基因组学与保守元件"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

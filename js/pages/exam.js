@@ -1299,7 +1299,7 @@ const MODULE_GROUPS = {
   4: { name: '模块四', desc: '遗传学、进化生物学、生物信息学', fields: [4] }
 };
 
-const STORAGE_KEY = 'bioquest_exam_state';
+const STORAGE_KEY = 'tatabox_exam_state';
 
 async function loadQuizData() {
   if (dataLoaded) return true;
@@ -2044,7 +2044,7 @@ function renderQuestionHTML(qIndex) {
           <span class="exam-q-module">${mod.name}</span>
           ${typeof renderDifficultyTag === 'function' ? renderDifficultyTag(q.id || qIndex, q.difficulty || 3) : ''}
           <span class="exam-q-score">2分</span>
-          ${q.subject ? '<span class="exam-q-subject">' + q.subject + '</span>' : ''}
+          ${q.subject ? '<span class="exam-q-subject">' + escapeHtml(q.subject) + '</span>' : ''}
           ${isAnswered ? '<span class="exam-q-answered-badge">已答</span>' : ''}
         </div>
         <button class="exam-q-feedback-btn" title="反馈题目问题" data-qindex="${qIndex}" style="background:transparent;border:1px solid var(--border-light,#ece8e1);border-radius:8px;padding:3px 10px;font-size:0.72rem;cursor:pointer;color:var(--text-muted,#8a8a8a);display:flex;align-items:center;gap:4px;transition:all 0.15s;">
@@ -2052,7 +2052,7 @@ function renderQuestionHTML(qIndex) {
           反馈
         </button>
       </div>
-      <div class="exam-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
+      <div class="exam-q-stem">${escapeHtml(q.question).replace(/\n/g, '<br>')}</div>
       ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
       <div class="exam-q-hint">请对以下 4 个子选项分别判断正误（每题2分，按2025联赛标准阶梯赋分：对2个得0.2分，对3个得1分，全对得2分）</div>
       <div class="exam-subquestions">
@@ -2062,8 +2062,8 @@ function renderQuestionHTML(qIndex) {
     const selected = userAns[subIdx];
     html += `
       <div class="exam-subq" id="examSubQ-${qIndex}-${subIdx}">
-        <div class="exam-subq-label">${sub.label}</div>
-        <div class="exam-subq-text">${sub.text}</div>
+        <div class="exam-subq-label">${escapeHtml(sub.label)}</div>
+        <div class="exam-subq-text">${escapeHtml(sub.text)}</div>
         <div class="exam-subq-toggle">
           <button class="exam-toggle-btn exam-toggle-true${selected === true ? ' active' : ''}"
             data-q="${qIndex}" data-sub="${subIdx}" data-val="true">
@@ -2406,8 +2406,8 @@ function submitExam(isAuto) {
   // 触发考试成就
   if (typeof checkAchievement === 'function') {
     // 获取考试次数（从 localStorage）
-    var examCount = parseInt(localStorage.getItem('bioquest_exam_count') || '0') + 1;
-    localStorage.setItem('bioquest_exam_count', String(examCount));
+    var examCount = parseInt(localStorage.getItem('tatabox_exam_count') || '0') + 1;
+    localStorage.setItem('tatabox_exam_count', String(examCount));
     checkAchievement('exam', examCount);
   }
 
@@ -2573,7 +2573,7 @@ function renderResultPage(target) {
               return `
                 <div class="exam-wrong-item">
                   <div class="exam-wrong-num">第 ${item.index + 1} 题 · ${mod.name}</div>
-                  <div class="exam-wrong-stem">${q.question}</div>
+                  <div class="exam-wrong-stem">${escapeHtml(q.question)}</div>
                   ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : ''}
                   <div class="exam-wrong-score">${result.correct}/4 正确 (${result.score.toFixed(1)}分)</div>
                 </div>
@@ -2672,7 +2672,7 @@ function renderReviewMode(target) {
           ${scoreTag}
           ${markTag}
         </div>
-        <div class="exam-review-q-stem">${q.question.replace(/\n/g, '<br>')}</div>
+        <div class="exam-review-q-stem">${escapeHtml(q.question).replace(/\n/g, '<br>')}</div>
         ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
         <div class="exam-review-subs">
     `;
@@ -2685,8 +2685,8 @@ function renderReviewMode(target) {
 
       html += `
         <div class="exam-review-sub ${notAnswered ? 'exam-review-sub--unanswered' : (isCorrect ? 'exam-review-sub--correct' : 'exam-review-sub--wrong')}">
-          <div class="exam-review-sub-label">${sub.label}</div>
-          <div class="exam-review-sub-text">${sub.text}</div>
+          <div class="exam-review-sub-label">${escapeHtml(sub.label)}</div>
+          <div class="exam-review-sub-text">${escapeHtml(sub.text)}</div>
           <div class="exam-review-sub-result">
             <span>你的答案: <strong>${notAnswered ? '未答' : (userChoice ? '正确' : '错误')}</strong></span>
             <span>正确答案: <strong>${correct ? '正确' : '错误'}</strong></span>

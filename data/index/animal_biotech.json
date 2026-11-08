@@ -1,19 +1,19 @@
 {
- "M4-01-9979790a": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 39,
-  "module": "module_4",
-  "src": "animal_biotech",
-  "tag": "animal_biotech",
-  "tags": [
-   "animal_biotech",
-   "module_4",
-   "生物技术",
-   "动物细胞核移植与克隆"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-9979790a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 39,
+    "module": "module_4",
+    "src": "animal_biotech",
+    "tag": "animal_biotech",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "生物技术",
+      "动物细胞核移植与克隆"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -1,19 +1,19 @@
 {
- "M4-01-6adf2163": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 51,
-  "module": "module_4",
-  "src": "genetic_drift",
-  "tag": "genetic_drift",
-  "tags": [
-   "genetic_drift",
-   "module_4",
-   "进化生物学",
-   "遗传漂变与奠基者效应"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-6adf2163": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 51,
+    "module": "module_4",
+    "src": "genetic_drift",
+    "tag": "genetic_drift",
+    "tags": [
+      "genetic_drift",
+      "module_4",
+      "进化生物学",
+      "遗传漂变与奠基者效应"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

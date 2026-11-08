@@ -69,7 +69,13 @@ test('lite 未加载 sb-gamify.js 时 loginUser 仍可成功（不抛 startOnlin
         return { id: 'uid-lite', username: 'liteuser', display_name: '极简用户', email: 'lite@example.com' };
       });
     },
-    rpc: function (fn) {
+    rpc: function (fn, params) {
+      if (fn === 'resolve_login_email_verified') {
+        return Promise.resolve({
+          data: [{ res_email: 'lite@example.com', res_username: 'liteuser', res_ok: (params && params.p_password) === 'pw123456' }],
+          error: null
+        });
+      }
       if (fn === 'resolve_login_email') {
         return Promise.resolve({
           data: [{ res_email: 'lite@example.com', res_username: 'liteuser' }],

@@ -23,9 +23,35 @@
 
   if (window.IrtEngine) return;
 
-  var STORAGE_KEY = 'bioquest_irt_state';
-  var PARAMS_KEY = 'bioquest_irt_params';  // 题库参数缓存
+  var STORAGE_KEY = 'tatabox_irt_state';
+  var PARAMS_KEY = 'tatabox_irt_params';  // 题库参数缓存
 
+
+  // 字符串难度 → 数值（0-1）。题库历史数据混用 easy/medium/hard、中文标签
+  // 与数字字符串；不归一化会让这些题全部落到 b=0（M-08）。
+  var STRING_DIFFICULTY = {
+    easy: 0.25, simple: 0.25, '简单': 0.25, '基础': 0.25, '容易': 0.25,
+    normal: 0.5, medium: 0.5, '中等': 0.5, '普通': 0.5, '进阶': 0.5,
+    hard: 0.75, difficult: 0.75, '困难': 0.75, '难': 0.75,
+    league: 0.75, '联赛': 0.75, '竞赛': 0.8, '省一': 0.8
+  };
+
+  /**
+   * 把 difficulty 归一为 [0,1] 数值；无法识别返回 null（由题型兜底）。
+   * @param {*} value
+   * @returns {number|null}
+   */
+  function normalizeDifficulty(value) {
+    if (typeof value === 'number') {
+      return isFinite(value) ? Math.max(0, Math.min(1, value)) : null;
+    }
+    if (typeof value !== 'string') return null;
+    var s = value.trim().toLowerCase();
+    if (!s) return null;
+    var n = Number(s);
+    if (isFinite(n)) return Math.max(0, Math.min(1, n));
+    return Object.prototype.hasOwnProperty.call(STRING_DIFFICULTY, s) ? STRING_DIFFICULTY[s] : null;
+  }
 
   /**
    * 从题库推断 IRT 参数（启发式估计，无需人工标注）
@@ -35,9 +61,9 @@
    */
   function inferParams(question) {
     // 难度 b：题库的 difficulty (0-1) 映射到 (-2.5, 2.5)
-    var diff = question.difficulty;
-    if (typeof diff !== 'number') {
-      // 无标注时按题型推断
+    var diff = normalizeDifficulty(question.difficulty);
+    if (diff === null) {
+      // 无标注/无法识别时按题型推断
       if (question.type === 'mcq') diff = 0.4;
       else if (question.type === 'fill') diff = 0.55;
       else if (question.type === 'essay' || question.type === 'experiment') diff = 0.7;

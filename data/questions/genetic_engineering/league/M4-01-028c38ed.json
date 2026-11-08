@@ -1,38 +1,38 @@
 {
- "concept": "基因工程的基本工具与流程",
- "difficulty": "league",
- "explanation": "A【对】依据：限制酶识别回文序列并在特定位点切割，是基因工程的分子剪刀。\nB【对】依据：连接酶封闭切口形成磷酸二酯键，将目的基因与载体连成重组 DNA。\nC【错】错因：导入后需检测筛选，目的基因可能未整合、不转录或表达产物无活性。\nD【对】依据：质粒需能自主复制（复制起点）并便于筛选（抗性基因等标记）。",
- "question": "科学家将人胰岛素基因导入大肠杆菌生产胰岛素。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "限制性内切酶识别特定序列并切割，产生黏性末端或平末端"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "DNA 连接酶催化磷酸二酯键形成，连接目的基因与载体"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "目的基因导入受体细胞后一定能稳定表达"
-  },
-  {
-   "answer": true,
-   "label": "D",
-   "text": "质粒是常用的基因工程载体，需具备复制起点和标记基因"
-  }
- ],
- "subject": "生物技术",
- "tags": [
-  "genetic_engineering",
-  "module_4",
-  "生物技术",
-  "基因工程的基本工具与流程"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "基因工程的基本工具与流程",
+  "difficulty": "league",
+  "explanation": "A【对】依据：限制酶识别回文序列并在特定位点切割，是基因工程的分子剪刀。\nB【对】依据：连接酶封闭切口形成磷酸二酯键，将目的基因与载体连成重组 DNA。\nC【错】错因：导入后需检测筛选，目的基因可能未整合、不转录或表达产物无活性。\nD【对】依据：质粒需能自主复制（复制起点）并便于筛选（抗性基因等标记）。",
+  "question": "科学家将人胰岛素基因导入大肠杆菌生产胰岛素。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "限制性内切酶识别特定序列并切割，产生黏性末端或平末端"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "DNA 连接酶催化磷酸二酯键形成，连接目的基因与载体"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "目的基因导入受体细胞后一定能稳定表达"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "质粒是常用的基因工程载体，需具备复制起点和标记基因"
+    }
+  ],
+  "subject": "生物技术",
+  "tags": [
+    "genetic_engineering",
+    "module_4",
+    "生物技术",
+    "基因工程的基本工具与流程"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

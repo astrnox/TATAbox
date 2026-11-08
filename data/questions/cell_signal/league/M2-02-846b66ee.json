@@ -1,38 +1,38 @@
 {
- "concept": "GPCR-cAMP 第二信使通路",
- "difficulty": "league",
- "explanation": "A【对】依据：腺苷酸环化酶催化生成 cAMP，cAMP 结合 PKA 调节亚基使其催化亚基释放活化。\nB【对】依据：Gα 亚基结合 GTP 活化，其内在 GTP 酶活性水解 GTP 后回到失活状态，实现自我计时。\nC【错】错因：肾上腺素为水溶性激素，不进入细胞，经膜受体与胞内级联传递信号。\nD【错】错因：级联反应逐级放大，一个激素分子可激活大量酶分子，放大效应显著。",
- "question": "肾上腺素与肝细胞膜上 β 受体结合后，激活 G 蛋白-腺苷酸环化酶通路，促进糖原分解。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "cAMP 作为第二信使激活蛋白激酶 A（PKA）"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "G 蛋白结合 GTP 后活化，水解 GTP 后自行失活"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "肾上腺素进入肝细胞细胞核直接激活糖原磷酸化酶"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "该信号通路无放大效应，一个激素分子只激活一个酶分子"
-  }
- ],
- "subject": "细胞生物学",
- "tags": [
-  "cell_signal",
-  "module_2",
-  "细胞生物学",
-  "GPCR-cAMP 第二信使通路"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "GPCR-cAMP 第二信使通路",
+  "difficulty": "league",
+  "explanation": "A【对】依据：腺苷酸环化酶催化生成 cAMP，cAMP 结合 PKA 调节亚基使其催化亚基释放活化。\nB【对】依据：Gα 亚基结合 GTP 活化，其内在 GTP 酶活性水解 GTP 后回到失活状态，实现自我计时。\nC【错】错因：肾上腺素为水溶性激素，不进入细胞，经膜受体与胞内级联传递信号。\nD【错】错因：级联反应逐级放大，一个激素分子可激活大量酶分子，放大效应显著。",
+  "question": "肾上腺素与肝细胞膜上 β 受体结合后，激活 G 蛋白-腺苷酸环化酶通路，促进糖原分解。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "cAMP 作为第二信使激活蛋白激酶 A（PKA）"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "G 蛋白结合 GTP 后活化，水解 GTP 后自行失活"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "肾上腺素进入肝细胞细胞核直接激活糖原磷酸化酶"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "该信号通路无放大效应，一个激素分子只激活一个酶分子"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "cell_signal",
+    "module_2",
+    "细胞生物学",
+    "GPCR-cAMP 第二信使通路"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

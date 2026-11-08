@@ -1,19 +1,19 @@
 {
- "M2-01-f7ede15b": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 48,
-  "module": "module_2",
-  "src": "plant_water_mineral",
-  "tag": "plant_water_mineral",
-  "tags": [
-   "plant_water_mineral",
-   "module_2",
-   "植物生理学",
-   "植物对矿质元素的吸收"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-f7ede15b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 48,
+    "module": "module_2",
+    "src": "plant_water_mineral",
+    "tag": "plant_water_mineral",
+    "tags": [
+      "plant_water_mineral",
+      "module_2",
+      "植物生理学",
+      "植物对矿质元素的吸收"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

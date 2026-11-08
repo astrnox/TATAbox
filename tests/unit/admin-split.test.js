@@ -126,6 +126,27 @@ describe('Issue #17：admin 子模块', () => {
     expect(typeof globalThis._ocrReadFileAsBase64).toBe('function');
   });
 
+  test('电子书管理对用户可控字段统一转义，不再原样拼接进 HTML', () => {
+    const ebookSrc = read('js/admin/admin-ebook.js');
+    // 文本 / 属性走 escapeHtml，data-on 的 JS 字符串参数走 _escJsStr
+    expect(ebookSrc).not.toMatch(/\+\s*eb\.title\s*\+/);
+    expect(ebookSrc).not.toMatch(/\+\s*eb\.category\s*\+/);
+    expect(ebookSrc).not.toMatch(/\+\s*eb\.filePath\s*\+/);
+    expect(ebookSrc).not.toMatch(/data-book-key="'\s*\+\s*eb\.id\s*\+/);
+    expect(ebookSrc).not.toMatch(/data-custom-id="'\s*\+\s*eb\.id\s*\+/);
+    expect(ebookSrc).toMatch(/escapeHtml\(eb\.title/);
+    expect(ebookSrc).toMatch(/escapeHtml\(eb\.author/);
+    expect(ebookSrc).toMatch(/escapeHtml\(eb\.category/);
+    expect(ebookSrc).toMatch(/_escJsStr\(eb\.id\)/);
+    expect(ebookSrc).toMatch(/_escJsStr\(eb\.filePath\)/);
+  });
+
+  test('后台 Toast 文案统一转义，服务端错误文本不会注入 HTML', () => {
+    const adminSrc = read('js/admin/admin.js');
+    expect(adminSrc).not.toMatch(/toast\.innerHTML = `\$\{iconSvg\}<span>\$\{message\}/);
+    expect(adminSrc).toMatch(/escapeHtml\(message\)/);
+  });
+
   test('loadTabContent("users") 走懒加载并渲染用户表（stub 子模块加载）', async () => {
     const contentEl = ensureTabContent();
 

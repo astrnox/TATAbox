@@ -13,19 +13,21 @@
        P1-8 修复：已移除 script-src 的 'unsafe-inline'——所有内联脚本外部化为
        js/core/theme-init.js（同步防闪烁）、js/core/boot-mask.js、js/core/boot-lazy.js、js/core/sw-register.js，
        所有动态内联 onclick/onchange 等处理器改由 js/core/csp-events.js 的 data-on 委托实现。
+       OCR 修复：'wasm-unsafe-eval' 仅放行 WebAssembly 编译（Tesseract WASM 引擎），
+       不放开 JS eval / new Function，eval 逃逸路径仍被 CSP 禁止。
        style-src 保留 unsafe-inline：动态度量/背景等数百处内联 style 属性为低风险（非 XSS 载体）。 -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
+    script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com;
     style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-    img-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://upload.wikimedia.org;
+    img-src 'self' data: blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://upload.wikimedia.org https://qxehkfucvmxuojjkdaqy.supabase.co;
     font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
     connect-src 'self'
       https://qxehkfucvmxuojjkdaqy.supabase.co
       https://open.bigmodel.cn https://metaso.cn https://api.deepseek.com
       https://dashscope.aliyuncs.com https://api.moonshot.cn
       https://integrate.api.nvidia.com https://api.siliconflow.cn
-      https://cdn.jsdelivr.net https://r.jina.ai;
+      https://cdn.jsdelivr.net https://r.jina.ai https://raw.githubusercontent.com;
     frame-src 'self' https://phet.colorado.edu;
     media-src 'self' blob: data:;
     worker-src 'self' blob:;
@@ -36,6 +38,8 @@
   <link rel="manifest" href="manifest.json">
   <!-- 内联 SVG favicon：避免浏览器默认请求 /favicon.ico 产生 404 -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2764%27%20height%3D%2764%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231a2f1d%27%2F%3E%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%3E%3Crect%20x%3D%273%27%20y%3D%273%27%20width%3D%2726%27%20height%3D%2726%27%20rx%3D%277.6%27%20stroke%3D%27%23d4a87e%27%20stroke-width%3D%272.6%27%2F%3E%3Cpath%20d%3D%27M16%2010.2v11.8%27%20stroke%3D%27%23f5f0e8%27%20stroke-width%3D%272.6%27%2F%3E%3Cpath%20d%3D%27M11.2%2010.2h9.6%27%20stroke%3D%27%23f5f0e8%27%20stroke-width%3D%272.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <!-- L-06：iOS 主屏图标（与 manifest PNG 同源） -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
 
   <!-- ================================================================
        首屏防白边 / 防缩放闪烁 / 防 FOUC / 防主题闪烁（内联，渲染前必执行）
@@ -263,28 +267,27 @@
   <link rel="dns-prefetch" href="https://phet.colorado.edu">
   <link rel="preconnect" href="https://phet.colorado.edu" crossorigin>
 
-  <!-- 字体：本地霞鹜文楷 v1.522，woff2 压缩（7.6MB），零网络请求 -->
-  <!-- 字体 preload：与 CSS/JS 并行下载，避免"进度条走完页面仍在加载"时字体还在路上；
-       crossorigin 为字体 preload 必需（字体以 CORS 模式请求） -->
-  <link rel="preload" as="font" type="font/woff2" href="fonts/lxgw-wenkai.woff2?v=1.522" crossorigin>
+  <!-- 字体：本地霞鹜文楷子集（约 857KB，覆盖站点内容用字；缺失字符回退系统字体）
+       不再 preload：把首屏带宽优先让给 JS/CSS；font-display:swap 保证文字先可见 -->
   <style>
     @font-face {
       font-family: 'LXGW WenKai';
-      src: url('fonts/lxgw-wenkai.woff2?v=1.522') format('woff2');
+      src: url('fonts/lxgw-wenkai-subset.woff2?v=subset1') format('woff2');
       font-weight: 100 900;
       font-style: normal;
       font-display: swap;
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE10-FE1F, U+FE30-FE4F, U+FF00-FFEF;
     }
   </style>
 
-  <!-- KaTeX：首屏不依赖，异步加载（Issue #104：外链样式带 SRI 完整性校验） -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" as="style" data-css-async integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous"></noscript>
+  <!-- KaTeX（L-07）：本地 CSS/字体优先，加载失败时由 boot-lazy.js 回退 jsDelivr（带 SRI）。
+       首屏不依赖 KaTeX，脚本就绪后再挂载样式，不阻塞渲染。 -->
+  <noscript><link rel="stylesheet" href="css/vendor/katex.min.css"></noscript>
 
   <!-- 外部 CDN 失败回退状态与工具函数 -->
   <!-- 启动辅助脚本（defer）：Supabase 延迟加载 + data-route 点击委托兜底 -->
   <script src="js/core/boot-lazy.js?v=20260820a" defer></script>
+  <!-- L-03：统一日志（生产默认仅输出 warn/error；debug 可用 ?debug=1 或 localStorage 打开） -->
+  <script src="js/core/logger.js?v=20261107a" defer></script>
 
   <!-- 首屏关键 CSS：同步加载 -->
   <!-- Issue #108：首屏同步 CSS 合并为单文件（scripts/build-css-bundle.js 生成，减少 6→1 次串行请求） -->
@@ -525,7 +528,7 @@
   </nav>
 
   <main id="app-main">
-    <div id="page-content" class="page-content page-content--home">
+    <div id="page-content" class="page-content page-content--home" tabindex="-1">
       <section class="hero" id="main-content" data-section="hero">
         <div class="hero-bg"></div>
         <div class="hero-gradient-left"></div>
@@ -699,7 +702,7 @@
     <div class="footer-content">
       <div class="footer-top">
         <div class="footer-brand">TATABOX — 高中生物学习平台</div>
-        <a href="https://github.com/astrnox/BioQuest" target="_blank" rel="noopener" class="footer-github" title="GitHub 仓库">
+        <a href="https://github.com/astrnox/TATAbox" target="_blank" rel="noopener" class="footer-github" title="GitHub 仓库">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           <span>GitHub</span>
         </a>
@@ -763,11 +766,15 @@
   <!-- supabase-client.js / supabase.js / storage.js 已从 HTML 移除，节省 ~140KB 首屏加载 -->
 
   <script src="js/core/utils.js?v=20260828a" defer></script>
+  <!-- M-05：Trusted Types 默认策略（存量 innerHTML 自动走 safeHtml 清洗） -->
+  <script src="js/core/trusted-types.js?v=20261031a" defer></script>
   <!-- 全站统一题图入口：window.BioQuestFigure（渲染 + 查看器 + 标注 + 下载） -->
   <script src="js/core/figure-viewer.js?v=20261012a" defer></script>
   <!-- Issue #105/#123/#130/#128：事件集中管理 / 离线队列 / 离线提示 / 生物彩蛋 -->
   <script src="js/core/offline-queue.js?v=20260828a" defer></script>
   <script src="js/core/offline-status.js?v=20260828a" defer></script>
+  <!-- M-14：离线题库包（按需下载完整/核心题库，断网可刷题） -->
+  <script src="js/core/offline-bank.js?v=20261031a" defer></script>
   <!-- 首页联赛倒计时：全站唯一实现与唯一目标日期（app.js 的 reinitHomeComponents 复用 window.BioQuestCountdown） -->
   <script src="js/engagement/countdown.js?v=20261007a" defer></script>
   <script src="js/engagement/eggs.js?v=20260828a" defer></script>
@@ -783,27 +790,22 @@
   <script src="js/algo/fsrs-algorithm.js?v=20260723d" defer></script>
   <!-- v5.0 Tier1 vendor 库：仅保留首页/学习主链路真正用到的库；
        体积大且仅特定路由使用/当前未使用的库（katex/mhchem/gsap 无业务调用，
-       mammoth/pdf.js 仅文档导入用）不再首屏加载，mammoth/pdf 由 document-tools 用时注入 -->
+       mammoth/pdf.js 仅文档导入用）不再首屏加载 -->
   <script src="js/vendor/dexie.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/chart.umd.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/jszip.min.js?v=20260723d" defer></script>
-  <!-- d3 (BSD-3): cal-heatmap 4.x 依赖（d3-selection/d3-color/d3-fetch），
-       必须在 cal-heatmap.min.js 之前加载，否则 cal-heatmap 会报
-       "Cannot read properties of undefined (reading 'timeSecond')" -->
-  <script src="js/vendor/d3.min.js?v=20260723d" defer></script>
-  <script src="js/vendor/cal-heatmap.min.js?v=20260723d" defer></script>
+  <!-- H-04 / M-06：移除首屏 dead weight（约 723KB）：
+       chart.umd / d3 / cal-heatmap / jszip，以及无调用方的
+       analytics-charts / study-heatmap / document-tools 集成模块均已删除。
+       若未来恢复图表/热力图/压缩导出，请在对应路由内按需 loadScriptOnce。 -->
   <!-- v5.0 Tier1 集成模块 -->
   <script src="js/integrations/vendor-init.js?v=20260723d" defer></script>
-  <!-- OCR 多引擎抽象层：L0 OCR.space(可选云) → L1 Vision → L2 PaddleOCR → L3 Tesseract → L4 OCRad 五级降级；
+  <!-- OCR 多引擎抽象层：L0 OCR.space(可选云) → L1 Vision → L2 Tesseract → L3 OCRad 四级降级；
        photo-quiz.js / wrongbook.js / 社区发帖图片等模块均通过 window.OcrEngine 调用。
        文件本身非常轻（仅调度与懒加载框架），真正的引擎 CDN 在使用时按需下载。 -->
   <script src="js/integrations/ocr-engine.js?v=20260916a" defer></script>
-  <script src="js/integrations/study-heatmap.js?v=20260723d" defer></script>
-  <script src="js/integrations/analytics-charts.js?v=20260723d" defer></script>
   <script src="js/integrations/diagram-renderer.js?v=20260723d" defer></script>
-  <script src="js/integrations/molecule-viewer.js?v=20260723d" defer></script>
-  <script src="js/integrations/document-tools.js?v=20260826a" defer></script>
   <script src="js/integrations/data-store.js?v=20260723d" defer></script>
+  <!-- H-04：molecule-viewer / rdkit-viewer / sketch-pad / community-enhanced / genome-browser
+       改为路由级懒加载（见 app.js _moduleDir 的 integrations 分组）。 -->
   <!-- Issue #14：FSRS 优化器/分片哈希 Web Worker 核心（纯函数，双上下文：Worker + 主线程桶底）。
        必须先于 fsrs-optimizer.js 加载，提供 window.FSRSWorkerCore 供主线程兜底。 -->
   <script src="js/algo/fsrs.worker.js?v=20260817a" defer></script>
@@ -811,13 +813,8 @@
   <!-- Tier 2 集成模块：IRT增强 + BKT知识追踪 + RDKit分子 + Excalidraw白板（vendor 懒加载） -->
   <script src="js/integrations/irt-enhanced.js?v=20260723d" defer></script>
   <script src="js/integrations/bkt-engine.js?v=20260723d" defer></script>
-  <script src="js/integrations/rdkit-viewer.js?v=20260723d" defer></script>
-  <script src="js/integrations/sketch-pad.js?v=20260809a" defer></script>
-  <!-- Tier 2 增强模块：社区(quikchat) + AI对话(marked) -->
-  <script src="js/integrations/community-enhanced.js?v=20260723d" defer></script>
+  <!-- Tier 2 增强模块：AI对话(marked) 保持首屏可用；社区增强/白板/基因组浏览器已路由级懒加载 -->
   <script src="js/integrations/ai-chat-enhanced.js?v=20260723d" defer></script>
-  <!-- Tier 2 增强模块：基因组浏览器（igv.js MIT，访问 #/genome 时懒加载 igv.min.js ~1.5MB） -->
-  <script src="js/integrations/genome-browser.js?v=20260723d" defer></script>
   <!-- question-utils.js / loader.js 已从 HTML 移除，由 practice/exam 模块按需加载 -->
   <!-- 降级导航：由 boot-lazy.js 统一处理（app.js 未加载时兜底 data-route 点击） -->
   <!-- 全局调试脚本（已禁用）
@@ -884,7 +881,6 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/pages/daily-billion.js?v=20261013b" defer></script>
   <script src="js/engagement/points-ui.js?v=20260814a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20260821a" defer></script>
@@ -895,6 +891,23 @@
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
   <script src="js/core/app.js?v=20261018b" defer></script>
+  <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
+  <script src="js/core/app-auth.js?v=20261031a" defer></script>
+  <script src="js/core/app-home.js?v=20261031a" defer></script>
+  <script src="js/core/app-router.js?v=20261031a" defer></script>
+  <script src="js/core/app-modules.js?v=20261031a" defer></script>
+  <script src="js/core/app-pages.js?v=20261031a" defer></script>
+  <!-- M-01：隐私政策页/首次提示自 app.js 拆分，保持全局入口并由 app.js 运行时调用 -->
+  <script src="js/core/app-privacy.js?v=20261031a" defer></script>
+  <!-- M-01：捐赠弹窗自 app.js 拆分，window.openDonation 入口保持不变 -->
+  <script src="js/core/app-donation.js?v=20261031a" defer></script>
+  <!-- M-01：主题切换 / 移动端菜单 / 标签页预取自 app.js 拆分 -->
+  <script src="js/core/app-shell.js?v=20261031a" defer></script>
+  <!-- M-01：AI 课堂入口页自 app.js 拆分 -->
+  <script src="js/core/app-classroom.js?v=20261031a" defer></script>
+  <!-- M-01：启动流程 / 反馈弹窗自 app.js 拆分（boot 最后加载并触发 initApp） -->
+  <script src="js/core/app-boot.js?v=20261031a" defer></script>
+  <script src="js/core/app-feedback.js?v=20261031a" defer></script>
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
@@ -912,36 +925,7 @@
   <script src="js/engagement/soundscape.js?v=20260803a" defer></script>
   <script src="js/pages/onboarding.js?v=20260803a" defer></script>
   <script src="js/engagement/social-impact.js?v=20260803a" defer></script>
-</head>  <!-- v3.2 OpenMAIC 范式移植：DSL 类型 + Canvas 渲染器 + Action 执行器（封装在 vendor/ 目录） -->
-  <script src="vendor/openmaic/openmaic-dsl.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-renderer.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-actions.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-json-repair.js?v=20260712k" defer></script>
-  <script src="vendor/openmaic/openmaic-action-parser.js?v=20260712k" defer></script>
-  <!-- v3.3 OpenMAIC 完整移植：6 步可视化 + 生成进度页 -->
-  <script src="vendor/openmaic/main-extracted/openmaic-visualizers.js?v=20260712m" defer></script>
-  <script src="vendor/openmaic/main-extracted/openmaic-generation-progress.js?v=20260712m" defer></script>
-  <!-- v3.4 OpenMAIC lib/ 全量移植：utils + store + playback + action + generation + buffer + chat + types + constants + audio -->
-  <script src="vendor/openmaic/openmaic-emitter.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-cn.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-geometry.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-element.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-json-repair.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-actions-types.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-action-parser.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-stage-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-canvas-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-whiteboard-history-store.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-playback.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-action-engine.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-derived-state.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-stream-buffer.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-agent-loop.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-types.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-constants.js?v=20260712j" defer></script>
-  <script src="vendor/openmaic/openmaic-browser-tts.js?v=20260712j" defer></script>
-  <!-- 注：AI 课堂模块已移除，首屏由 app.js 控制路由，不再加载 classroom.js/pages/classroom-player.js/runner -->
+</head>  <!-- H-04：OpenMAIC 课堂脚本已随 /classroom 路由下线移除，不再进入首屏加载 -->
   <!-- 首页背景为纯 CSS 静态层次（原随机粒子背景脚本已移除：无脚本、零常驻动画） -->
   <!-- PWA Service Worker 注册（外部化 sw-register.js）：DOMContentLoaded 立即启动，配 6s 硬超时兜底 -->
   <script src="js/core/sw-register.js?v=20260820a" defer></script>

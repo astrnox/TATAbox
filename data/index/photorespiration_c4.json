@@ -1,19 +1,19 @@
 {
- "M2-01-3db91630": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 46,
-  "module": "module_2",
-  "src": "photorespiration_c4",
-  "tag": "photorespiration_c4",
-  "tags": [
-   "photorespiration_c4",
-   "module_2",
-   "植物生理学",
-   "C4 途径与光呼吸"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M2-01-3db91630": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 46,
+    "module": "module_2",
+    "src": "photorespiration_c4",
+    "tag": "photorespiration_c4",
+    "tags": [
+      "photorespiration_c4",
+      "module_2",
+      "植物生理学",
+      "C4 途径与光呼吸"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

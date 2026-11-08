@@ -1,38 +1,38 @@
 {
- "concept": "序列比对与打分矩阵",
- "difficulty": "league",
- "explanation": "A【对】依据：BLAST 通过短词匹配延伸实现高速局部比对，是功能注释的基础工具。\nB【对】依据：替换矩阵基于氨基酸理化性质与观测频率，给不同替换赋予得分。\nC【对】依据：显著比对提示同源性，可作为功能与进化关系推断的证据。\nD【错】错因：空位开放与延伸罚分直接影响比对方式与结果，是重要参数。",
- "question": "研究者将新测定的蛋白序列与数据库序列进行比对以推测功能。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "BLAST 是一种常用的快速局部序列比对工具"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "BLOSUM/PAM 矩阵用于评估氨基酸替换的得分"
-  },
-  {
-   "answer": true,
-   "label": "C",
-   "text": "比对得分越高，两条序列亲缘关系或功能相似性越可能接近"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "序列比对结果不受空位罚分设置的影响"
-  }
- ],
- "subject": "生物信息学",
- "tags": [
-  "sequence_alignment",
-  "module_4",
-  "生物信息学",
-  "序列比对与打分矩阵"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "序列比对与打分矩阵",
+  "difficulty": "league",
+  "explanation": "A【对】依据：BLAST 通过短词匹配延伸实现高速局部比对，是功能注释的基础工具。\nB【对】依据：替换矩阵基于氨基酸理化性质与观测频率，给不同替换赋予得分。\nC【对】依据：显著比对提示同源性，可作为功能与进化关系推断的证据。\nD【错】错因：空位开放与延伸罚分直接影响比对方式与结果，是重要参数。",
+  "question": "研究者将新测定的蛋白序列与数据库序列进行比对以推测功能。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "BLAST 是一种常用的快速局部序列比对工具"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "BLOSUM/PAM 矩阵用于评估氨基酸替换的得分"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "比对得分越高，两条序列亲缘关系或功能相似性越可能接近"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "序列比对结果不受空位罚分设置的影响"
+    }
+  ],
+  "subject": "生物信息学",
+  "tags": [
+    "sequence_alignment",
+    "module_4",
+    "生物信息学",
+    "序列比对与打分矩阵"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

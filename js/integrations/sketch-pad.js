@@ -189,11 +189,11 @@
       } catch (e) {}
       // 若旧 root 挂在别的容器上，一并清空其 DOM
       if (_mountedRoot.parent && _mountedRoot.parent !== container) {
-        try { _mountedRoot.parent.innerHTML = ''; } catch (e) {}
+        try { _mountedRoot.parent.replaceChildren(); } catch (e) {}
       }
       _mountedRoot = null;
     }
-    container.innerHTML = '';
+    container.replaceChildren();
   }
 
   function renderSketchPadPage(pageEl) {

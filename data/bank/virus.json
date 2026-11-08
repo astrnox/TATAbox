@@ -1,40 +1,40 @@
 {
- "M2-01-29df4a1b": {
-  "concept": "噬菌体侵染实验",
-  "difficulty": "league",
-  "explanation": "A【对】依据：DNA 含磷不含硫，蛋白质含硫不含磷，离心后 ³²P 在沉淀、³⁵S 在上清。\nB【错】错因：蛋白质外壳不进入细菌，子代噬菌体的蛋白质由细菌内 DNA 指导合成。\nC【错】错因：噬菌体为专性寄生，必须先用标记的大肠杆菌培养才能获得标记噬菌体。\nD【错】错因：实验只证明 T2 噬菌体的遗传物质是 DNA，RNA 病毒（如烟草花叶病毒）的遗传物质是 RNA。",
-  "question": "Hershey 和 Chase 用 ³²P 和 ³⁵S 分别标记噬菌体，证明 DNA 是遗传物质。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "³²P 标记的 DNA 进入细菌，³⁵S 标记的蛋白质外壳留在菌体外"
-   },
-   {
-    "answer": false,
-    "label": "B",
-    "text": "³⁵S 标记的蛋白质进入细菌并指导子代噬菌体合成"
-   },
-   {
-    "answer": false,
-    "label": "C",
-    "text": "噬菌体可在普通培养基上直接培养并标记"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "该实验证明所有病毒的遗传物质都是 DNA"
-   }
-  ],
-  "subject": "微生物学",
-  "tags": [
-   "virus",
-   "module_2",
-   "微生物学",
-   "噬菌体侵染实验"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M2-01-29df4a1b": {
+    "concept": "噬菌体侵染实验",
+    "difficulty": "league",
+    "explanation": "A【对】依据：DNA 含磷不含硫，蛋白质含硫不含磷，离心后 ³²P 在沉淀、³⁵S 在上清。\nB【错】错因：蛋白质外壳不进入细菌，子代噬菌体的蛋白质由细菌内 DNA 指导合成。\nC【错】错因：噬菌体为专性寄生，必须先用标记的大肠杆菌培养才能获得标记噬菌体。\nD【错】错因：实验只证明 T2 噬菌体的遗传物质是 DNA，RNA 病毒（如烟草花叶病毒）的遗传物质是 RNA。",
+    "question": "Hershey 和 Chase 用 ³²P 和 ³⁵S 分别标记噬菌体，证明 DNA 是遗传物质。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "³²P 标记的 DNA 进入细菌，³⁵S 标记的蛋白质外壳留在菌体外"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "³⁵S 标记的蛋白质进入细菌并指导子代噬菌体合成"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "噬菌体可在普通培养基上直接培养并标记"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "该实验证明所有病毒的遗传物质都是 DNA"
+      }
+    ],
+    "subject": "微生物学",
+    "tags": [
+      "virus",
+      "module_2",
+      "微生物学",
+      "噬菌体侵染实验"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

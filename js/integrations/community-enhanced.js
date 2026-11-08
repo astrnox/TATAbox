@@ -234,7 +234,7 @@
     }
     if (_quikchatContainer) {
       // 清空容器 DOM 即可解除所有内部事件监听（quikchat 把事件绑在容器内 DOM 上）
-      _quikchatContainer.innerHTML = '';
+      _quikchatContainer.replaceChildren();
       _quikchatContainer = null;
     }
   }
@@ -274,7 +274,7 @@
     mountChat('community-chat', {
       title: 'TATABOX 讨论室',
       userName: '学习者',
-      storageKey: 'bioquest_community_chat'
+      storageKey: 'tatabox_community_chat'
     }).catch(function () {});
   }
 

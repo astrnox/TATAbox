@@ -1,87 +1,87 @@
 {
- "M4-01-7476e725": {
-  "concept": "人类泛基因组与图参考",
-  "difficulty": "league",
-  "explanation": "A【对】依据：线性参考（如 GRCh38）仅代表单倍型，无法有效表示插入、缺失、倒位等结构变异（SV）；图参考将多条单倍型路径整合为有向图，比对时可映射到最匹配的路径，显著提高 SV 检出率。\nB【对】依据：HPRC 整合了 T2T-CHM13 等完整组装基因组，覆盖了 GRCh38 中缺失的着丝粒卫星 DNA、端粒重复序列和核仁组织区（NOR），这些区域富含结构变异和进化信息。\nC【对】依据：泛基因组纳入了非洲、亚洲、欧洲、美洲等多祖先背景个体，可识别线性参考中缺失的人群特异性序列（如非洲人群特有的大片段插入），减少参考偏向（reference bias）。\nD【错】错因：泛基因组参考是比对的'地图'，个体测序仍是获取个人遗传信息的必要手段；泛基因组提高了比对准确性和变异检出率，但不能替代个体基因组测序。",
-  "question": "人类泛基因组参考联盟（HPRC）构建了基于图结构的泛基因组参考，整合了多个不同祖先背景个体的完整基因组序列。根据以上信息，判断以下陈述的正误。",
-  "references": [
-   {
-    "authors": "Liao WW et al. (Human Pangenome Reference Consortium)",
-    "doi": "10.1038/s41586-023-06127-8",
-    "journal": "Nature",
-    "title": "A draft human pangenome reference",
-    "year": 2023
-   }
-  ],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "泛基因组参考以图结构表示，比线性参考更能捕捉人群间的结构变异"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "泛基因组参考包含了端粒到端粒（T2T）完整组装的着丝粒和端粒序列"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "泛基因组参考有助于发现特定人群特有的遗传变异"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "泛基因组参考建成后，个体基因组测序将不再必要"
-   }
-  ],
-  "subject": "基因组学",
-  "tags": [
-   "genomics_comp",
-   "module_4",
-   "基因组学",
-   "泛基因组",
-   "结构变异"
-  ],
-  "target": "competition",
-  "type": "mtf"
- },
- "M4-02-1f8cb3df": {
-  "concept": "比较基因组学与保守元件",
-  "difficulty": "league",
-  "explanation": "A【对】依据：纯化选择使功能重要的非编码序列（如增强子）在物种间保持保守。\nB【对】依据：如嗅觉受体基因家族在不同哺乳动物中的扩张收缩与环境适应相关。\nC【对】依据：共线性区块的断裂与重排记录了倒位、易位等染色体演化事件。\nD【错】错因：保守性正是功能约束的标志，二者密切相关，这是比较基因组学的核心逻辑。",
-  "question": "比较不同物种基因组可揭示功能重要的序列。根据以上信息，判断以下陈述的正误。",
-  "references": [],
-  "subQuestions": [
-   {
-    "answer": true,
-    "label": "A",
-    "text": "跨物种保守的非编码序列可能是调控元件"
-   },
-   {
-    "answer": true,
-    "label": "B",
-    "text": "基因家族扩张与收缩可反映物种的适应性演化"
-   },
-   {
-    "answer": true,
-    "label": "C",
-    "text": "共线性（synteny）分析可追溯染色体片段的演化重排"
-   },
-   {
-    "answer": false,
-    "label": "D",
-    "text": "序列保守程度与功能重要性完全无关"
-   }
-  ],
-  "subject": "基因组学",
-  "tags": [
-   "genomics_comp",
-   "module_4",
-   "基因组学",
-   "比较基因组学与保守元件"
-  ],
-  "target": "competition",
-  "type": "mtf"
- }
+  "M4-01-7476e725": {
+    "concept": "人类泛基因组与图参考",
+    "difficulty": "league",
+    "explanation": "A【对】依据：线性参考（如 GRCh38）仅代表单倍型，无法有效表示插入、缺失、倒位等结构变异（SV）；图参考将多条单倍型路径整合为有向图，比对时可映射到最匹配的路径，显著提高 SV 检出率。\nB【对】依据：HPRC 整合了 T2T-CHM13 等完整组装基因组，覆盖了 GRCh38 中缺失的着丝粒卫星 DNA、端粒重复序列和核仁组织区（NOR），这些区域富含结构变异和进化信息。\nC【对】依据：泛基因组纳入了非洲、亚洲、欧洲、美洲等多祖先背景个体，可识别线性参考中缺失的人群特异性序列（如非洲人群特有的大片段插入），减少参考偏向（reference bias）。\nD【错】错因：泛基因组参考是比对的'地图'，个体测序仍是获取个人遗传信息的必要手段；泛基因组提高了比对准确性和变异检出率，但不能替代个体基因组测序。",
+    "question": "人类泛基因组参考联盟（HPRC）构建了基于图结构的泛基因组参考，整合了多个不同祖先背景个体的完整基因组序列。根据以上信息，判断以下陈述的正误。",
+    "references": [
+      {
+        "authors": "Liao WW et al. (Human Pangenome Reference Consortium)",
+        "doi": "10.1038/s41586-023-06127-8",
+        "journal": "Nature",
+        "title": "A draft human pangenome reference",
+        "year": 2023
+      }
+    ],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "泛基因组参考以图结构表示，比线性参考更能捕捉人群间的结构变异"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "泛基因组参考包含了端粒到端粒（T2T）完整组装的着丝粒和端粒序列"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "泛基因组参考有助于发现特定人群特有的遗传变异"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "泛基因组参考建成后，个体基因组测序将不再必要"
+      }
+    ],
+    "subject": "基因组学",
+    "tags": [
+      "genomics_comp",
+      "module_4",
+      "基因组学",
+      "泛基因组",
+      "结构变异"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-02-1f8cb3df": {
+    "concept": "比较基因组学与保守元件",
+    "difficulty": "league",
+    "explanation": "A【对】依据：纯化选择使功能重要的非编码序列（如增强子）在物种间保持保守。\nB【对】依据：如嗅觉受体基因家族在不同哺乳动物中的扩张收缩与环境适应相关。\nC【对】依据：共线性区块的断裂与重排记录了倒位、易位等染色体演化事件。\nD【错】错因：保守性正是功能约束的标志，二者密切相关，这是比较基因组学的核心逻辑。",
+    "question": "比较不同物种基因组可揭示功能重要的序列。根据以上信息，判断以下陈述的正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "跨物种保守的非编码序列可能是调控元件"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "基因家族扩张与收缩可反映物种的适应性演化"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "共线性（synteny）分析可追溯染色体片段的演化重排"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "序列保守程度与功能重要性完全无关"
+      }
+    ],
+    "subject": "基因组学",
+    "tags": [
+      "genomics_comp",
+      "module_4",
+      "基因组学",
+      "比较基因组学与保守元件"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  }
 }

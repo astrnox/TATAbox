@@ -66,6 +66,9 @@ function renderQuestionsTab(container, questionsData) {
     return t === _adminQuestionTarget;
   }) : allQuestions;
   const totalQ = questionsData.total || questions.length;
+  // 本地题库总量（data/stats.json 的 unique_questions，约 3414）；
+  // 与云端题目数分开显示，避免把 manifest 的 101 误当全站题库总量。
+  const localTotal = questionsData.local_total || null;
   const modules = questionsData.modules || [];
   const currentPage = questionsData.page || 1;
   const perPage = questionsData.per_page || 50;
@@ -85,7 +88,14 @@ function renderQuestionsTab(container, questionsData) {
         <div class="admin-stat-icon admin-stat-icon--green">${ICONS.book}</div>
         <div>
           <div class="admin-stat-num">${totalQ}</div>
-          <div class="admin-stat-label">题目总数</div>
+          <div class="admin-stat-label">云端题目</div>
+        </div>
+      </div>
+      <div class="admin-stat-card">
+        <div class="admin-stat-icon admin-stat-icon--blue">${ICONS.book || ICONS.layers}</div>
+        <div>
+          <div class="admin-stat-num">${localTotal != null ? localTotal : '--'}</div>
+          <div class="admin-stat-label">本地题库</div>
         </div>
       </div>
       <div class="admin-stat-card">
@@ -93,13 +103,6 @@ function renderQuestionsTab(container, questionsData) {
         <div>
           <div class="admin-stat-num">${modules.length}</div>
           <div class="admin-stat-label">模块数</div>
-        </div>
-      </div>
-      <div class="admin-stat-card">
-        <div class="admin-stat-icon admin-stat-icon--blue">${ICONS.plus}</div>
-        <div>
-          <div class="admin-stat-num">--</div>
-          <div class="admin-stat-label">添加新题</div>
         </div>
       </div>
     </div>
@@ -179,7 +182,7 @@ function renderQuestionsTab(container, questionsData) {
           ${ICONS.book}
           题目列表
         </div>
-        <span class="admin-section-badge">${totalQ} 题</span>
+        <span class="admin-section-badge">云端 ${totalQ} 题${localTotal != null ? ' · 本地 ' + localTotal + ' 题' : ''}</span>
       </div>
 
       <div style="display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;align-items:center;">
@@ -614,7 +617,7 @@ function _localRatingInfo(bioId) {
 function _localIsRecycled(bioId) {
   if (typeof isQuestionRecycled === 'function') return !!isQuestionRecycled(bioId);
   try {
-    const list = JSON.parse(localStorage.getItem('bioquest_question_recycled') || '[]');
+    const list = JSON.parse(localStorage.getItem('tatabox_question_recycled') || '[]');
     return Array.isArray(list) && list.indexOf(bioId) !== -1;
   } catch (e) {
     return false;
@@ -645,7 +648,12 @@ async function _renderLocalQuestionSection() {
     try {
       list = await _loadLocalQuestionBank();
     } catch (e) {
-      body.innerHTML = '<div style="padding:16px 0;color:var(--color-error,#c0553a);font-size:0.85rem;">本地题库加载失败：' + escapeHtml(e && e.message) + '</div>';
+      // L-08：原始错误只写控制台，界面给通用提示
+      try {
+        if (window.BQLog && window.BQLog.error) window.BQLog.error('[AdminQuestions] 本地题库加载失败:', e);
+        else console.error('[AdminQuestions] 本地题库加载失败:', e);
+      } catch (logErr) {}
+      body.innerHTML = '<div style="padding:16px 0;color:var(--color-error,#c0553a);font-size:0.85rem;">本地题库加载失败，请刷新重试（详情见控制台）。</div>';
       return;
     }
   }
@@ -774,6 +782,16 @@ function _localEditModalHtml() {
             <label class="admin-form-label">解析</label>
             <textarea class="admin-form-textarea" id="local-eq-explanation" style="min-height:60px;"></textarea>
           </div>
+          <div class="admin-form-group full" id="local-eq-image-row" style="display:none;">
+            <label class="admin-form-label">题目配图（只读）</label>
+            <div id="local-eq-image-preview" style="max-width:180px;max-height:120px;overflow:hidden;border-radius:8px;border:1px solid var(--border-light,#ece8e1);">
+              <img id="local-eq-image-preview-img" style="max-width:100%;max-height:120px;object-fit:contain;">
+            </div>
+          </div>
+          <div class="admin-form-group full" style="font-size:0.75rem;color:var(--text-muted,#8a8a8a);line-height:1.6;">
+            管理员覆盖只写入本机 localStorage（<code>tatabox_question_overrides</code>），
+            不会改动题库源文件，也不会同步到其他设备/其他用户；点击「清除覆盖」可还原原题。
+          </div>
           <div class="admin-form-group full" id="local-eq-override-row" style="display:none;">
             <span style="font-size:0.75rem;color:#6366f1;">已存在管理员覆盖，保存将替换；可点击「清除覆盖」还原题库原题。</span>
           </div>
@@ -857,6 +875,18 @@ window.adminEditLocalQuestion = function(bioId) {
   document.getElementById('local-eq-options').value = lines.join('\n');
   document.getElementById('local-eq-answer').value = _answerToTTFF(eff.answer, eff.type || 'single', lines.length, subs);
   document.getElementById('local-eq-explanation').value = eff.explanation || '';
+  // 本地题库配图存在 image 对象（或 chart）中，编辑时只读预览，覆盖不改图片
+  const localImgRow = document.getElementById('local-eq-image-row');
+  const localImg = document.getElementById('local-eq-image-preview-img');
+  const localImgSrc = _resolveQuestionImageSrc(eff);
+  if (localImgSrc) {
+    localImg.onerror = function () { localImgRow.style.display = 'none'; };
+    localImg.src = localImgSrc;
+    localImgRow.style.display = '';
+  } else {
+    localImgRow.style.display = 'none';
+    localImg.src = '';
+  }
   document.getElementById('local-eq-override-row').style.display = patch ? '' : 'none';
   document.getElementById('local-eq-clear-override').style.display = patch ? '' : 'none';
   modal.style.display = 'flex';
@@ -1027,6 +1057,37 @@ function _parseTTFFAnswer(ttff, qType, optionLines) {
   return result;
 }
 
+/**
+ * 解析题目配图地址：兼容本地题库的 image 对象（{file,...}）、
+ * 云端 questions.chart（TEXT）与 image_url 字段。
+ * @returns {string} 可直接用于 <img src> 的地址（无图时返回空串）
+ */
+function _resolveQuestionImageSrc(qData) {
+  if (!qData) return '';
+  const candidates = [qData.chart, qData.image, qData.image_url, qData.imageUrl];
+  for (let i = 0; i < candidates.length; i++) {
+    const v = candidates[i];
+    if (!v) continue;
+    if (typeof v === 'string') {
+      // 兼容 chart 里存 JSON 字符串（{file/caption/...}）的历史数据
+      const s = v.trim();
+      if (s.charAt(0) === '{') {
+        try {
+          const obj = JSON.parse(s);
+          const src = obj && (obj.file || obj.url || obj.src || obj.dataUrl);
+          if (src) return String(src);
+        } catch (e) { /* 按普通字符串处理 */ }
+      }
+      return v;
+    }
+    if (typeof v === 'object') {
+      const src = v.file || v.url || v.src || v.dataUrl || v.data || '';
+      if (src) return String(src);
+    }
+  }
+  return '';
+}
+
 window.handleEditQuestion = function(qData) {
   const modal = document.getElementById('admin-question-modal');
   if (!modal) return;
@@ -1070,11 +1131,18 @@ window.handleEditQuestion = function(qData) {
   _editQuestionTags = Array.isArray(qData.tags) ? [...qData.tags] : [];
   renderEditTags();
 
-  // 图片
-  const imgVal = qData.image || '';
+  // 图片（云端题库实际存于 questions.chart；本地题为 image 对象）
+  const imgVal = _resolveQuestionImageSrc(qData);
   document.getElementById('eq-image').value = imgVal;
   const preview = document.getElementById('eq-image-preview');
   const previewImg = document.getElementById('eq-image-preview-img');
+  previewImg.onerror = function () {
+    preview.style.display = 'none';
+    try {
+      if (window.BQLog && window.BQLog.warn) window.BQLog.warn('[AdminQuestions] 配图加载失败:', imgVal);
+      else console.warn('[AdminQuestions] 配图加载失败:', imgVal);
+    } catch (e) { /* ignore */ }
+  };
   if (imgVal) {
     previewImg.src = imgVal;
     preview.style.display = '';
@@ -1145,7 +1213,9 @@ window.handleEditQuestion = function(qData) {
       explanation: document.getElementById('eq-explanation').value,
       difficulty: parseInt(document.getElementById('eq-difficulty').value),
       tags: _editQuestionTags,
-      image: document.getElementById('eq-image').value || undefined,
+      // 云端 questions 表的配图列是 chart（TEXT），不是 image；
+      // 写错列名会被 PostgREST 拒绝（400）且图片永远无法回显。
+      chart: document.getElementById('eq-image').value || undefined,
     };
 
     submitBtn.textContent = '保存中...';

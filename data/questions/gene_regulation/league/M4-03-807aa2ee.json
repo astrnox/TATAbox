@@ -1,58 +1,58 @@
 {
- "concept": "lacI 负调控在进化背景下的生长动力学",
- "difficulty": "league",
- "explanation": "A【对】依据：图 B（EV^lacI⁻）相比图 A（Ancestor）显示出更明显的条件依赖生长差异：蓝色（含葡萄糖的检测条件）曲线先上升，红色（乳糖检测条件）存在停滞期后追赶且重复间变异增大；图 C（EV^lacI⁺）两条曲线高度重合。这提示在该 8,000 代进化克隆的遗传背景下，lacI⁻（组成型表达）克隆在乳糖环境中的诱导准备不再需要、但其代谢耦合差异更大——'表现型差异可由实验条件（碳源）与基因背景共同塑造'成立。\nB【对】依据：图 D 直接并列 EV^lacI⁻ 与 EV^lacI⁺——绿色曲线（lacI⁻ 克隆）在乳糖检测条件下呈滞后于其他曲线的动力学；说明把 lacI⁻ 突变'安插'进已有进化历史（EV，evolutionary flattened lineage）的克隆后，生长表现不仅由基因型单一决定，还取决于背景等位基因与基因×环境的互作（即历史偶然性，historical contingency）——这与原文标题'环境历史促成乳糖操纵子表达的适应性分歧'一致。\nC【错】错因：若某基因型与环境组合对生长只有纯加法效应，则各基因型在同一条件下的曲线应共享相同的对数期启动时机与生长速率；而图中曲线存在明显滞后与交叉（尤其 D 面板），说明基因（lacI 状态）与环境的互作效应（而非单一加性）在起作用，'完全一致、纯加性'与数据不符。\nD【错】错因：这些克隆会出现生长滞后的直接原因是乳糖诱导准备/代谢适应（操纵子诱导时间与时序调控），而不是乳糖不提供碳源；若乳糖不能作为碳源，克隆根本无法在乳糖检测条件下进入生长期（图中红色/绿色曲线仍显著生长），故'乳糖不能作为碳源'与图中数据矛盾。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/lac-fitness-annotated.jpg",
- "image": {
-  "caption": "生长动力学比较：A) 祖先株；B) 携带 lacI⁻ 的进化克隆（EV^lacI⁻）；C) 携带 lacI⁺ 的进化克隆（EV^lacI⁺）；D) 三者的直接对比（绿色为 EV^lacI⁻），横轴为时间（h），纵轴为 OD",
-  "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
-  "doi": "10.1093/molbev/msab077",
-  "figure": "5",
-  "file": "assets/questions/gene_regulation/lac-fitness.jpg",
-  "license": "CC BY 4.0",
-  "pmcId": "PMC8233506",
-  "source": "paper"
- },
- "question": "研究者将 8,000 代进化克隆（EV）与祖先株对比，把 lacI⁻ 或 lacI⁺ 等位基因分别导入 EV 克隆，测定其在检测环境（葡萄糖/乳糖）中的生长动力学（图 A-D：A 祖先，B EV^lacI⁻，C EV^lacI⁺，D 三者并列）。根据以上信息，判断以下陈述的正误。",
- "references": [
-  {
-   "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
-   "doi": "10.1093/molbev/msab077",
-   "journal": "Molecular Biology and Evolution",
-   "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
-   "year": 2021
-  }
- ],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "同一 lacI 基因型在不同检测条件下可能呈现不同的生长动态，即表型受基因与环境共同作用"
+  "concept": "lacI 负调控在进化背景下的生长动力学",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图 B（EV^lacI⁻）相比图 A（Ancestor）显示出更明显的条件依赖生长差异：蓝色（含葡萄糖的检测条件）曲线先上升，红色（乳糖检测条件）存在停滞期后追赶且重复间变异增大；图 C（EV^lacI⁺）两条曲线高度重合。这提示在该 8,000 代进化克隆的遗传背景下，lacI⁻（组成型表达）克隆在乳糖环境中的诱导准备不再需要、但其代谢耦合差异更大——'表现型差异可由实验条件（碳源）与基因背景共同塑造'成立。\nB【对】依据：图 D 直接并列 EV^lacI⁻ 与 EV^lacI⁺——绿色曲线（lacI⁻ 克隆）在乳糖检测条件下呈滞后于其他曲线的动力学；说明把 lacI⁻ 突变'安插'进已有进化历史（EV，evolutionary flattened lineage）的克隆后，生长表现不仅由基因型单一决定，还取决于背景等位基因与基因×环境的互作（即历史偶然性，historical contingency）——这与原文标题'环境历史促成乳糖操纵子表达的适应性分歧'一致。\nC【错】错因：若某基因型与环境组合对生长只有纯加法效应，则各基因型在同一条件下的曲线应共享相同的对数期启动时机与生长速率；而图中曲线存在明显滞后与交叉（尤其 D 面板），说明基因（lacI 状态）与环境的互作效应（而非单一加性）在起作用，'完全一致、纯加性'与数据不符。\nD【错】错因：这些克隆会出现生长滞后的直接原因是乳糖诱导准备/代谢适应（操纵子诱导时间与时序调控），而不是乳糖不提供碳源；若乳糖不能作为碳源，克隆根本无法在乳糖检测条件下进入生长期（图中红色/绿色曲线仍显著生长），故'乳糖不能作为碳源'与图中数据矛盾。\n@@ANNOTATED_IMAGE:assets/questions/gene_regulation/lac-fitness-annotated.jpg",
+  "image": {
+    "caption": "生长动力学比较：A) 祖先株；B) 携带 lacI⁻ 的进化克隆（EV^lacI⁻）；C) 携带 lacI⁺ 的进化克隆（EV^lacI⁺）；D) 三者的直接对比（绿色为 EV^lacI⁻），横轴为时间（h），纵轴为 OD",
+    "credit": "Karkare K et al., Molecular Biology and Evolution 2021",
+    "doi": "10.1093/molbev/msab077",
+    "figure": "5",
+    "file": "assets/questions/gene_regulation/lac-fitness.jpg",
+    "license": "CC BY 4.0",
+    "pmcId": "PMC8233506",
+    "source": "paper"
   },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "EV^lacI⁻ 与 EV^lacI⁺ 在相同条件下的生长曲线并不完全一致，说明基因效应依赖克隆的进化历史背景（历史偶然性）"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "生长曲线的滞后意味着各基因型-环境组合的生长仅受加性效应控制，不存在基因×环境的互作"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "乳糖检测条件下部分克隆出现生长滞后，说明乳糖不能作为这些克隆的碳源"
-  }
- ],
- "subject": "分子生物学",
- "tags": [
-  "gene_regulation",
-  "module_4",
-  "分子生物学",
-  "操纵子",
-  "进化适应",
-  "历史偶然性"
- ],
- "target": "competition",
- "type": "mtf"
+  "question": "研究者将 8,000 代进化克隆（EV）与祖先株对比，把 lacI⁻ 或 lacI⁺ 等位基因分别导入 EV 克隆，测定其在检测环境（葡萄糖/乳糖）中的生长动力学（图 A-D：A 祖先，B EV^lacI⁻，C EV^lacI⁺，D 三者并列）。根据以上信息，判断以下陈述的正误。",
+  "references": [
+    {
+      "authors": "Karkare K, Lai HY, Azevedo RBR, Cooper TF",
+      "doi": "10.1093/molbev/msab077",
+      "journal": "Molecular Biology and Evolution",
+      "title": "Historical Contingency Causes Divergence in Adaptive Expression of the lac Operon",
+      "year": 2021
+    }
+  ],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "同一 lacI 基因型在不同检测条件下可能呈现不同的生长动态，即表型受基因与环境共同作用"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "EV^lacI⁻ 与 EV^lacI⁺ 在相同条件下的生长曲线并不完全一致，说明基因效应依赖克隆的进化历史背景（历史偶然性）"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "生长曲线的滞后意味着各基因型-环境组合的生长仅受加性效应控制，不存在基因×环境的互作"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "乳糖检测条件下部分克隆出现生长滞后，说明乳糖不能作为这些克隆的碳源"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_4",
+    "分子生物学",
+    "操纵子",
+    "进化适应",
+    "历史偶然性"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

@@ -1,19 +1,19 @@
 {
- "M1-01-ea6b71cf": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 57,
-  "module": "module_1",
-  "src": "enzyme",
-  "tag": "enzyme",
-  "tags": [
-   "enzyme",
-   "module_1",
-   "生物化学",
-   "酶动力学与抑制类型"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-ea6b71cf": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 57,
+    "module": "module_1",
+    "src": "enzyme",
+    "tag": "enzyme",
+    "tags": [
+      "enzyme",
+      "module_1",
+      "生物化学",
+      "酶动力学与抑制类型"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

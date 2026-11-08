@@ -17,6 +17,35 @@ var TATABOX = (typeof window !== 'undefined' ? window.BioQuest : null) || {};
 if (typeof window !== 'undefined') { window.BioQuest = TATABOX; }
 
 /**
+ * M-12：旧品牌存储键兼容迁移（bioquest_* → tatabox_*）
+ * ------------------------------------------------------------
+ * 新代码统一读写 tatabox_* 前缀；首次加载时把旧键的值复制到对应的新键。
+ * - 幂等：新键已存在时不覆盖；
+ * - 保留旧键：同源旧页面 / 未刷新的旧标签页仍可正常读写，避免数据“凭空消失”；
+ * - 失败静默：隐私模式或配额受限时忽略，不阻断应用启动。
+ */
+(function migrateLegacyStorageKeys() {
+  if (typeof window === 'undefined') return;
+  var OLD_PREFIX = 'bioquest_';
+  var NEW_PREFIX = 'tatabox_';
+  function migrate(storage) {
+    if (!storage) return;
+    try {
+      for (var i = storage.length - 1; i >= 0; i--) {
+        var k = storage.key(i);
+        if (!k || k.indexOf(OLD_PREFIX) !== 0) continue;
+        var nk = NEW_PREFIX + k.slice(OLD_PREFIX.length);
+        if (storage.getItem(nk) === null) {
+          storage.setItem(nk, storage.getItem(k));
+        }
+      }
+    } catch (e) { /* 忽略存储不可用场景 */ }
+  }
+  migrate(window.localStorage);
+  migrate(window.sessionStorage);
+})();
+
+/**
  * ═══ 全站图标系统（P0 设计整改）═══
  * 统一替代散落在各页面的 emoji（奖杯 / 奖牌 / 对勾 / 警告等）。
  * 约定：
@@ -222,6 +251,48 @@ function escapeHtml(str) {
   };
 
   return str.replace(/[&<>"'/`=]/g, (char) => entityMap[char]);
+}
+
+/**
+ * 唯一 HTML 清洗入口（M-05）
+ * - DOMPurify 可用：按其策略消毒（调用方可传自定义配置）；
+ * - DOMPurify 缺失或消毒异常：fail-closed，全量 HTML 转义后再返回。
+ * 禁止把 marked/AI/社区内容直接拼进 innerHTML；优先走本函数或 setSafeHtml。
+ * @param {*} html
+ * @param {Object} [dompurifyOptions] - 透传给 DOMPurify.sanitize 的配置
+ * @returns {string}
+ */
+function safeHtml(html, dompurifyOptions) {
+  var s = String(html == null ? '' : html);
+  if (typeof window !== 'undefined' && window.DOMPurify &&
+      typeof window.DOMPurify.sanitize === 'function') {
+    try {
+      return window.DOMPurify.sanitize(s, dompurifyOptions || {});
+    } catch (e) {
+      console.warn('[safeHtml] DOMPurify 消毒失败，已降级为转义文本:', e);
+    }
+  }
+  return escapeHtml(s);
+}
+
+/**
+ * 安全写入元素的 innerHTML（内部调用 safeHtml）。
+ * @param {Element} el
+ * @param {*} html
+ * @param {Object} [dompurifyOptions]
+ * @returns {boolean} 是否写入
+ */
+function setSafeHtml(el, html, dompurifyOptions) {
+  if (!el) return false;
+  el.innerHTML = safeHtml(html, dompurifyOptions);
+  return true;
+}
+
+TATABOX.safeHtml = safeHtml;
+TATABOX.setSafeHtml = setSafeHtml;
+if (typeof window !== 'undefined') {
+  window.safeHtml = safeHtml;
+  window.setSafeHtml = setSafeHtml;
 }
 
 /**

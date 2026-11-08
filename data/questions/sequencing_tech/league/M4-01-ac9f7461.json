@@ -1,38 +1,38 @@
 {
- "concept": "高通量测序技术的原理",
- "difficulty": "league",
- "explanation": "A【对】依据：NGS 在桥式扩增的簇上逐轮掺入荧光标记可逆终止核苷酸并成像，实现大规模并行测序。\nB【错】错因：Sanger 是低通量双脱氧链终止法，一次反应读一条序列；数百万短序列是 NGS 特征。\nC【错】错因：长读长跨越重复区能力强，有利于拼接，短读长才造成拼接困难。\nD【错】错因：三代测序（如 PacBio、纳米孔）的核心优势正是单分子实时测序，无需 PCR 扩增。",
- "question": "第二代测序（NGS）使基因组测序成本大幅下降。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "Illumina 测序基于边合成边测序原理，通过荧光标记核苷酸识别碱基"
-  },
-  {
-   "answer": false,
-   "label": "B",
-   "text": "Sanger 测序一次反应可读取数百万条短序列"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "测序读长越长，越不利于基因组拼接"
-  },
-  {
-   "answer": false,
-   "label": "D",
-   "text": "第三代测序无法读取单条 DNA 分子，必须扩增后测序"
-  }
- ],
- "subject": "生物信息学",
- "tags": [
-  "sequencing_tech",
-  "module_4",
-  "生物信息学",
-  "高通量测序技术的原理"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "高通量测序技术的原理",
+  "difficulty": "league",
+  "explanation": "A【对】依据：NGS 在桥式扩增的簇上逐轮掺入荧光标记可逆终止核苷酸并成像，实现大规模并行测序。\nB【错】错因：Sanger 是低通量双脱氧链终止法，一次反应读一条序列；数百万短序列是 NGS 特征。\nC【错】错因：长读长跨越重复区能力强，有利于拼接，短读长才造成拼接困难。\nD【错】错因：三代测序（如 PacBio、纳米孔）的核心优势正是单分子实时测序，无需 PCR 扩增。",
+  "question": "第二代测序（NGS）使基因组测序成本大幅下降。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Illumina 测序基于边合成边测序原理，通过荧光标记核苷酸识别碱基"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Sanger 测序一次反应可读取数百万条短序列"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "测序读长越长，越不利于基因组拼接"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "第三代测序无法读取单条 DNA 分子，必须扩增后测序"
+    }
+  ],
+  "subject": "生物信息学",
+  "tags": [
+    "sequencing_tech",
+    "module_4",
+    "生物信息学",
+    "高通量测序技术的原理"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

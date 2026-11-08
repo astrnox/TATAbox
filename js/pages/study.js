@@ -22,7 +22,7 @@
   var _pomodoroRunning = false;
   var _pomodoroMode = 25;            // 当前模式（分钟）
   var _pomodoroLinkedTask = null;    // 关联的待办任务 id
-  var _examDate = localStorage.getItem('bioquest_exam_date') || '';
+  var _examDate = localStorage.getItem('tatabox_exam_date') || '';
   var _reviewCount = 0;
 
   /* ---------- 样式（Trae 设计 Token） ---------- */
@@ -351,9 +351,9 @@
 
     container.innerHTML = '<div class="st-card"><h3>添加课程</h3>' +
       '<div class="st-form-row">' +
-        '<select class="st-select" id="st-sched-day">' + order.map(function(i){return '<option value="' + i + '">' + days[i] + '</option>';}).join('') + '</select>' +
-        '<input type="time" class="st-input" id="st-sched-start" value="08:00">' +
-        '<input type="time" class="st-input" id="st-sched-end" value="08:45">' +
+        '<select class="st-select" id="st-sched-day" aria-label="星期">' + order.map(function(i){return '<option value="' + i + '">' + days[i] + '</option>';}).join('') + '</select>' +
+        '<input type="time" class="st-input" id="st-sched-start" aria-label="开始时间" value="08:00">' +
+        '<input type="time" class="st-input" id="st-sched-end" aria-label="结束时间" value="08:45">' +
         '<input type="text" class="st-input" id="st-sched-subject" placeholder="科目">' +
       '</div>' +
       '<div class="st-form-row">' +
@@ -586,7 +586,7 @@
 
     document.getElementById('st-save-exam').addEventListener('click', function() {
       _examDate = document.getElementById('st-exam-date').value;
-      localStorage.setItem('bioquest_exam_date', _examDate);
+      localStorage.setItem('tatabox_exam_date', _examDate);
       _render();
     });
   }

@@ -151,7 +151,8 @@ describe('管理员动态码登录页', () => {
   test('账号密码直入路径已移除：adminLogin 不存在、admin 账号不自动解锁、个人中心无密码弹窗', () => {
     // 1) adminLogin 函数与个人中心密码弹窗均删除
     expect(adminSrc).not.toMatch(/function adminLogin\s*\(/);
-    const userSrc = read('js/pages/user.js');
+    // M-01：个人中心入口已拆至 user-page.js
+    const userSrc = read('js/pages/user-page.js');
     expect(userSrc).not.toMatch(/adminLogin/);
     expect(userSrc).not.toContain('user-admin-pwd');
     // 2) 账号 user_group=admin 不再自动写入解锁 token（必须口令验证）
@@ -159,13 +160,13 @@ describe('管理员动态码登录页', () => {
     try { sessionStorage.clear(); } catch (e) { /* ignore */ }
     window._onAuthUserLoaded({ id: 'u1', user_group: 'admin' });
     expect(window._adminAuthenticated).toBe(false);
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
     // 3) 非 admin 账号登录仍会清除残留解锁状态
     window._adminAuthenticated = true;
-    sessionStorage.setItem('bioquest_admin_auth', '{}');
+    sessionStorage.setItem('tatabox_admin_auth', '{}');
     window._onAuthUserLoaded({ id: 'u2', user_group: 'member' });
     expect(window._adminAuthenticated).toBe(false);
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
   });
 
   test('动态码验证成功：调用 admin_login_with_totp（去空格归一化）、账号升级、写 token、进仪表盘', async () => {
@@ -184,7 +185,7 @@ describe('管理员动态码登录页', () => {
     // 必须调用服务端 TOTP RPC（前端不做动态码比对），入参去空格且为 6 位数字
     expect(rpcCalls).toEqual([{ fn: 'admin_login_with_totp', params: { p_code: '123456' } }]);
     expect(me.user_group).toBe('admin');
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeTruthy();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeTruthy();
 
     // 进入管理页应渲染仪表盘而不是登录页
     const target = document.createElement('div');
@@ -201,6 +202,45 @@ describe('管理员动态码登录页', () => {
     }
   });
 
+  test('回读 profile 失败或仍是 member：不解锁（避免"验证成功但后台全拒"）', async () => {
+    const me = { id: 'u1', user_group: 'member' };
+    window.getCurrentUser = () => me;
+
+    // 场景 1：RLS 拒绝读取（data 为 null + error）
+    window.getSupabase = () => ({
+      rpc: async () => ({ data: [{ ok: true, user_group: 'admin', error_msg: null }], error: null }),
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            single: async () => ({ data: null, error: { code: '42501', message: 'permission denied' } })
+          })
+        })
+      })
+    });
+    const r1 = await window.adminVerifyTotp('123456');
+    expect(r1.ok).toBe(false);
+    expect(r1.error).toContain('无法确认管理员授权状态');
+    expect(window._adminAuthenticated).toBe(false);
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
+
+    // 场景 2：能读到但 user_group 未升级（旧库触发器回滚）
+    window.getSupabase = () => ({
+      rpc: async () => ({ data: [{ ok: true, user_group: 'admin', error_msg: null }], error: null }),
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            single: async () => ({ data: { user_group: 'member' }, error: null })
+          })
+        })
+      })
+    });
+    const r2 = await window.adminVerifyTotp('123456');
+    expect(r2.ok).toBe(false);
+    expect(r2.error).toContain('管理员授权未生效');
+    expect(me.user_group).toBe('member');
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
+  });
+
   test('动态码错误：返回服务端错误文案且不解锁', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({ data: [{ ok: false, user_group: null, error_msg: '动态验证码不正确' }], error: null })
@@ -212,10 +252,10 @@ describe('管理员动态码登录页', () => {
     expect(res.ok).toBe(false);
     expect(res.error).toBe('动态验证码不正确');
     expect(me.user_group).toBe('member');
-    expect(sessionStorage.getItem('bioquest_admin_auth')).toBeNull();
+    expect(sessionStorage.getItem('tatabox_admin_auth')).toBeNull();
   });
 
-  test('服务端未部署 RPC：提示先执行 migration_v15_admin_totp.sql', async () => {
+  test('服务端未部署 RPC：界面给通用提示，不暴露迁移文件名（L-08）', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({
         data: null,
@@ -224,7 +264,9 @@ describe('管理员动态码登录页', () => {
     });
     const res = await window.adminVerifyTotp('123456');
     expect(res.ok).toBe(false);
-    expect(res.error).toContain('migration_v15_admin_totp.sql');
+    expect(res.error).toContain('暂未启用动态码登录');
+    expect(res.error).not.toContain('migration_v15');
+    expect(res.error).not.toContain('schema cache');
   });
 
   test('未填/非 6 位数字：直接返回校验提示，不发请求', async () => {
@@ -297,7 +339,7 @@ describe('管理员重置密码（admin-users.js）', () => {
     }
   });
 
-  test('服务端未部署 RPC：提示先执行 migration_v11_admin_auth.sql', async () => {
+  test('服务端未部署 RPC：界面给通用提示，不暴露迁移文件名（L-08）', async () => {
     window.getSupabase = () => ({
       rpc: async () => ({
         data: null,
@@ -312,7 +354,8 @@ describe('管理员重置密码（admin-users.js）', () => {
 
     try {
       await window.handleResetPassword('user-42');
-      expect(toastMock).toHaveBeenCalledWith(expect.stringContaining('migration_v11_admin_auth.sql'), 'error');
+      expect(toastMock).toHaveBeenCalledWith(expect.stringContaining('暂未启用密码重置'), 'error');
+      expect(toastMock).not.toHaveBeenCalledWith(expect.stringContaining('migration_v11'), 'error');
     } finally {
       window.prompt = realPrompt;
       window.showAdminToast = realToast;
@@ -328,7 +371,7 @@ describe('实现约束（回归护栏）', () => {
 
   test('/admin 路由登录即可进入（页内再做管理员验证）', () => {
     const adminRouteBlock = routesSrc
-      .match(/'\/admin': \{[\s\S]*?\n  \},/)[0]
+      .match(/'\/admin': \{[\s\S]*?\n {2}\},/)[0]
       .replace(/\/\/.*$/gm, ''); // 去掉注释，只检查真实配置项
     expect(adminRouteBlock).toMatch(/auth: true/);
     expect(adminRouteBlock).not.toMatch(/role:/);

@@ -1,19 +1,19 @@
 {
- "M3-01-d11b9c64": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 40,
-  "module": "module_3",
-  "src": "circulatory",
-  "tag": "circulatory",
-  "tags": [
-   "circulatory",
-   "module_3",
-   "动物生理学",
-   "心脏结构与血液循环"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-d11b9c64": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_3",
+    "src": "circulatory",
+    "tag": "circulatory",
+    "tags": [
+      "circulatory",
+      "module_3",
+      "动物生理学",
+      "心脏结构与血液循环"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

@@ -29,7 +29,7 @@
     // 只保留最近20条
     if (errorLog.length > 20) errorLog.shift();
     try {
-      localStorage.setItem('bioquest_error_log', JSON.stringify(errorLog.slice(-10)));
+      localStorage.setItem('tatabox_error_log', JSON.stringify(errorLog.slice(-10)));
     } catch (e) {}
   }
 

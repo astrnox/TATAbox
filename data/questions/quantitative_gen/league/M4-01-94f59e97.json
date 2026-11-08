@@ -1,38 +1,38 @@
 {
- "concept": "数量性状的多基因假说",
- "difficulty": "league",
- "explanation": "A【对】依据：多基因假说认为数量性状由多对等效微效基因累加作用决定。\nB【对】依据：表现型=基因型+环境，营养、光照等环境因素显著影响数量性状。\nC【错】错因：多基因累加与环境作用使后代呈连续变异，不出现孟德尔式离散比例。\nD【对】依据：多对基因与环境共同作用的结果使群体表型呈钟形正态分布。",
- "question": "人类身高、肤色等性状表现为连续变异。根据以上信息，判断以下陈述的正误。",
- "references": [],
- "subQuestions": [
-  {
-   "answer": true,
-   "label": "A",
-   "text": "数量性状通常由多对微效基因共同控制"
-  },
-  {
-   "answer": true,
-   "label": "B",
-   "text": "环境因素对数量性状的表现有显著影响"
-  },
-  {
-   "answer": false,
-   "label": "C",
-   "text": "数量性状的后代分离比符合典型的孟德尔比例"
-  },
-  {
-   "answer": true,
-   "label": "D",
-   "text": "数量性状的变异在群体中呈连续的正态分布"
-  }
- ],
- "subject": "遗传学",
- "tags": [
-  "quantitative_gen",
-  "module_4",
-  "遗传学",
-  "数量性状的多基因假说"
- ],
- "target": "competition",
- "type": "mtf"
+  "concept": "数量性状的多基因假说",
+  "difficulty": "league",
+  "explanation": "A【对】依据：多基因假说认为数量性状由多对等效微效基因累加作用决定。\nB【对】依据：表现型=基因型+环境，营养、光照等环境因素显著影响数量性状。\nC【错】错因：多基因累加与环境作用使后代呈连续变异，不出现孟德尔式离散比例。\nD【对】依据：多对基因与环境共同作用的结果使群体表型呈钟形正态分布。",
+  "question": "人类身高、肤色等性状表现为连续变异。根据以上信息，判断以下陈述的正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "数量性状通常由多对微效基因共同控制"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "环境因素对数量性状的表现有显著影响"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "数量性状的后代分离比符合典型的孟德尔比例"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "数量性状的变异在群体中呈连续的正态分布"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "quantitative_gen",
+    "module_4",
+    "遗传学",
+    "数量性状的多基因假说"
+  ],
+  "target": "competition",
+  "type": "mtf"
 }

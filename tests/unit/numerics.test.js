@@ -23,6 +23,7 @@ const ROOT = path.join(__dirname, '..', '..');
 const IRT_SRC = path.join(ROOT, 'js', 'algo', 'irt-engine.js');
 const DIAG_SRC = path.join(ROOT, 'js', 'ai', 'smart-diagnosis.js');
 const ANALYTIC_SRC = path.join(ROOT, 'js', 'pages', 'analytic.js');
+const ENGINE_SRC = path.join(ROOT, 'js', 'core', 'score-engine.js');
 
 /* 最小 localStorage（内存版），与既有单元测试一致 */
 function makeLocalStorage(init) {
@@ -56,11 +57,13 @@ function loadDiagnosis() {
   return win.__cap;
 }
 
-/* 加载 analytic.js，用受控 getRecords/getStats 捕获 calcBioScore */
+/* 加载 analytic.js，用受控 getRecords/getStats 捕获 calcBioScore
+ * （M-06 后解析器只做委托，先注入唯一实现 score-engine） */
 function loadBioScore(getRecordsFn) {
-  const win = {};
+  const win = { getRecords: getRecordsFn };
   const cap = {};
   win.__cap = cap;
+  new Function('window', fs.readFileSync(ENGINE_SRC, 'utf8'))(win);
   const src = fs.readFileSync(ANALYTIC_SRC, 'utf8')
     + '\n;window.__cap={calcBioScore:calcBioScore};';
   new Function('window', 'getRecords', src)(win, getRecordsFn);
@@ -72,7 +75,7 @@ const Diag = loadDiagnosis();
 
 describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
   function pred(theta, n) {
-    const l = loadIrtEngine({ bioquest_irt_state: JSON.stringify({ theta, totalAnswered: n, byModule: {}, history: [] }) });
+    const l = loadIrtEngine({ tatabox_irt_state: JSON.stringify({ theta, totalAnswered: n, byModule: {}, history: [] }) });
     return l.predictScore();
   }
 
@@ -117,11 +120,11 @@ describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
   test('信息函数驱动：high-区分度题比 low-区分度题提供更小 SE / 更高置信（非只按题量）', () => {
     const mk = (a) => {
       const l = loadIrtEngine({
-        bioquest_irt_state: JSON.stringify({
+        tatabox_irt_state: JSON.stringify({
           theta: 0.5, totalAnswered: 1, byModule: {},
           history: [{ ts: 1, questionId: 'qa', correct: true, thetaAfter: 0.5 }]
         }),
-        bioquest_irt_params: JSON.stringify({ qa: { a, b: 0.5, c: 0.2 } })
+        tatabox_irt_params: JSON.stringify({ qa: { a, b: 0.5, c: 0.2 } })
       });
       return l.predictScore();
     };
@@ -134,7 +137,7 @@ describe('1. IRT predictScore（预测联赛得分）设计合理性', () => {
 
 describe('2. IRT describeAbility（能力等级描述）设计合理性', () => {
   function ab(theta) {
-    const l = loadIrtEngine({ bioquest_irt_state: JSON.stringify({ theta, totalAnswered: 20, byModule: {}, history: [] }) });
+    const l = loadIrtEngine({ tatabox_irt_state: JSON.stringify({ theta, totalAnswered: 20, byModule: {}, history: [] }) });
     return l.describeAbility(theta);
   }
   test('百分位随 θ 单调递增且 ∈[0,100]', () => {

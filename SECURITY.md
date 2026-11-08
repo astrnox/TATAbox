@@ -51,7 +51,9 @@ TATABOX 是**纯前端静态应用 + Supabase（Auth / 数据库 / RLS）**架�
 采用 BYOK（用户自带 Key）模式，`js/ai/ai-key-store.js`：
 
 - Key 默认仅存**页面内存**（闭包单例，非枚举属性），刷新即失；
-- 仅当用户显式勾选「会话内记住」才写 sessionStorage（关闭标签页即清除）；
+- 仅当用户显式勾选「会话内记住」才写入会话存储：优先用 **WebCrypto AES-GCM**
+  加密（密钥为不可导出的 CryptoKey，保存在 IndexedDB），sessionStorage 只保存密文；
+  不支持 WebCrypto/IndexedDB 的环境退回 sessionStorage 明文（关闭标签页即清除）；
 - **绝不写 localStorage**；检测到旧版 localStorage 残留明文 Key 会自动搬入内存并擦除。
 
 ## 内容安全策略（CSP）
@@ -59,14 +61,16 @@ TATABOX 是**纯前端静态应用 + Supabase（Auth / 数据库 / RLS）**架�
 `index.html` 通过 meta CSP 收紧（`js/ai/ai-client.js` 同样受 `connect-src` 约束）：
 
 - `script-src 'self'` + CDN 白名单，**无 `unsafe-inline` / `unsafe-eval`**
-  （内联脚本已外部化，`onclick` 改为事件委托）；
+  （内联脚本已外部化，`onclick` 改为事件委托）；OCR 的 Tesseract WASM 通过
+  `'wasm-unsafe-eval'` 单独放行 WebAssembly 编译，不放开 JS `eval()`；
 - `object-src 'none'`、`base-uri 'self'`、`form-action 'self'`；
 - 外连域最小化：Supabase、jsDelivr/unpkg、题图（Wikimedia）、PhET、6 家 AI 服务商。
 
 ## 数据完整性
 
 - 题库分片带 SHA-256 校验（`js/core/loader.js`），CDN 回退数据防篡改；
-- 本地备份采用 WebCrypto AES-GCM 加密（`js/core/storage.js`），密钥由密码 PBKDF 派生；
+- 本地备份采用 WebCrypto AES-GCM 加密（`js/core/storage.js`），新备份密钥由用户密码
+  经 PBKDF2-HMAC-SHA256（310,000 次迭代 + 随机盐）派生；旧版 v2 备份仅为兼容保留读取路径；
 - URL 参数经 `sanitizeUrlParam` 清洗（控制字符 / HTML 定界符过滤 + 长度上限）。
 
 ## 已知风险面（如实披露）

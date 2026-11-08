@@ -1,19 +1,19 @@
 {
- "M4-01-452268f0": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 40,
-  "module": "module_4",
-  "src": "chromosome_var",
-  "tag": "chromosome_var",
-  "tags": [
-   "chromosome_var",
-   "module_4",
-   "遗传学",
-   "染色体数目变异与多倍体"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M4-01-452268f0": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_4",
+    "src": "chromosome_var",
+    "tag": "chromosome_var",
+    "tags": [
+      "chromosome_var",
+      "module_4",
+      "遗传学",
+      "染色体数目变异与多倍体"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

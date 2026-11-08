@@ -1,19 +1,19 @@
 {
- "M1-01-4c71bc4d": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 45,
-  "module": "module_1",
-  "src": "bioenergetics",
-  "tag": "bioenergetics",
-  "tags": [
-   "bioenergetics",
-   "module_1",
-   "生物化学",
-   "ATP 与能量偶联"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M1-01-4c71bc4d": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 45,
+    "module": "module_1",
+    "src": "bioenergetics",
+    "tag": "bioenergetics",
+    "tags": [
+      "bioenergetics",
+      "module_1",
+      "生物化学",
+      "ATP 与能量偶联"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

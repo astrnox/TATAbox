@@ -1,19 +1,19 @@
 {
- "M3-01-dc3e19d8": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 38,
-  "module": "module_3",
-  "src": "sensory_physio",
-  "tag": "sensory_physio",
-  "tags": [
-   "sensory_physio",
-   "module_3",
-   "动物生理学",
-   "视觉的光感受机制"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-dc3e19d8": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 38,
+    "module": "module_3",
+    "src": "sensory_physio",
+    "tag": "sensory_physio",
+    "tags": [
+      "sensory_physio",
+      "module_3",
+      "动物生理学",
+      "视觉的光感受机制"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

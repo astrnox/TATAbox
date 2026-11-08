@@ -72,7 +72,7 @@
   var origSetItem = Storage.prototype.setItem;
   Storage.prototype.setItem = function (key, value) {
     origSetItem.call(this, key, value);
-    if (key && key.indexOf('bioquest_') === 0) {
+    if (key && (key.indexOf('tatabox_') === 0 || key.indexOf('bioquest_') === 0)) {
       try {
         channel.postMessage({
           type: 'storage-invalidate',

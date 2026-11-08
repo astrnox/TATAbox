@@ -1,19 +1,19 @@
 {
- "M3-01-ca89e827": {
-  "diff": "league",
-  "difficulty": "league",
-  "has_image": false,
-  "len": 38,
-  "module": "module_3",
-  "src": "community_eco",
-  "tag": "community_eco",
-  "tags": [
-   "community_eco",
-   "module_3",
-   "生态学",
-   "群落演替的类型与过程"
-  ],
-  "target": "competition",
-  "year": null
- }
+  "M3-01-ca89e827": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 38,
+    "module": "module_3",
+    "src": "community_eco",
+    "tag": "community_eco",
+    "tags": [
+      "community_eco",
+      "module_3",
+      "生态学",
+      "群落演替的类型与过程"
+    ],
+    "target": "competition",
+    "year": null
+  }
 }

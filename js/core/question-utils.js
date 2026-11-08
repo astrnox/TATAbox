@@ -19,7 +19,7 @@
   function getQuestionDifficultyStats(questionId) {
     var stats = { total: 0, correct: 0, accuracy: 0, baseDifficulty: 3, adjustedDifficulty: 3 };
     try {
-      var raw = localStorage.getItem('bioquest_question_stats');
+      var raw = localStorage.getItem('tatabox_question_stats');
       var allStats = raw ? JSON.parse(raw) : {};
       var key = String(questionId);
       if (allStats[key]) {
@@ -44,7 +44,7 @@
     var key = String(questionId);
     var baseDiff = (baseDifficulty >= 1 && baseDifficulty <= 5) ? baseDifficulty : 3;
     try {
-      var raw = localStorage.getItem('bioquest_question_stats');
+      var raw = localStorage.getItem('tatabox_question_stats');
       var allStats = raw ? JSON.parse(raw) : {};
 
       if (!allStats[key]) {
@@ -72,7 +72,7 @@
         allStats[key].adjustedDifficulty = newDiff;
       }
 
-      localStorage.setItem('bioquest_question_stats', JSON.stringify(allStats));
+      localStorage.setItem('tatabox_question_stats', JSON.stringify(allStats));
     } catch (e) { /* 静默 */ }
   }
 
@@ -123,7 +123,7 @@
   function getTodayFeedbackCount() {
     try {
       var today = new Date().toISOString().slice(0, 10);
-      var raw = localStorage.getItem('bioquest_question_feedbacks');
+      var raw = localStorage.getItem('tatabox_question_feedbacks');
       var all = raw ? JSON.parse(raw) : [];
       var todayCount = 0;
       for (var i = 0; i < all.length; i++) {
@@ -189,14 +189,14 @@
     };
 
     try {
-      var raw = localStorage.getItem('bioquest_question_feedbacks');
+      var raw = localStorage.getItem('tatabox_question_feedbacks');
       var all = raw ? JSON.parse(raw) : [];
       all.push(feedback);
       // 只保留最近200条
       if (all.length > 200) {
         all = all.slice(-200);
       }
-      localStorage.setItem('bioquest_question_feedbacks', JSON.stringify(all));
+      localStorage.setItem('tatabox_question_feedbacks', JSON.stringify(all));
 
       // 同步到云端（如果有登录）；失败时保留本地并告警（管理面板「反馈管理 → 题目反馈」读取）
       if (typeof window.isLoggedIn === 'function' && window.isLoggedIn()) {
@@ -231,7 +231,7 @@
    */
   function getQuestionFeedbacks(questionId) {
     try {
-      var raw = localStorage.getItem('bioquest_question_feedbacks');
+      var raw = localStorage.getItem('tatabox_question_feedbacks');
       var all = raw ? JSON.parse(raw) : [];
       if (questionId) {
         return all.filter(function(f) { return String(f.questionId) === String(questionId); });

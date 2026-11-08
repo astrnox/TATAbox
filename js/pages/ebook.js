@@ -1940,13 +1940,13 @@ function updateBreadcrumb(sectionId) {
   if (!bc) return;
 
   if (!sectionId) {
-    bc.innerHTML = '';
+    bc.replaceChildren();
     return;
   }
 
   const data = findSection(sectionId);
   if (!data) {
-    bc.innerHTML = '';
+    bc.replaceChildren();
     return;
   }
 
@@ -2196,7 +2196,7 @@ async function loadCustomEbooks() {
   // 从 localStorage 加载管理员上传的自定义书籍
   var customBooks = [];
   try {
-    var raw = localStorage.getItem('bioquest_custom_ebooks');
+    var raw = localStorage.getItem('tatabox_custom_ebooks');
     if (raw) customBooks = JSON.parse(raw);
   } catch(e) {}
 
