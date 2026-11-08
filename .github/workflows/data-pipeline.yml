@@ -1,27 +1,29 @@
 # TATABOX — 题库数据流水线（P2 Issue #18）
 # ============================================================
-# 目标：题库/索引（data/**）一旦变更，自动重跑生成器：
-#   1. 分配/复核 bioID、产出 index / bank / bioid-map / knowledge-graph；
-#   2. 用内容寻址 + crypto sha256 写入 manifest（files: {path: sha256}）；
+# 目标：题库源文件（data/questions 一题一文件）一旦变更，自动重跑生成器：
+#   1. 由 per-id 题解重建 index / bank / id-all / manifest；
+#   2. manifest 内写入各分片 crypto sha256（files: {path: sha256}）；
 #   3. 提交并 push 重新生成的产物，保证「manifest 与实际分片哈希一致」。
 #
+# 历史说明：早期使用 scripts/generate-bio-shards.js 从 data/quiz_m*.json 与
+# data/legacy/*.json 聚合。题库迁移到 v1.1 per-id 存储后这些源文件已不存在，
+# 该生成器会因「空考点」直接 FATAL（2026-10 起因它整条流水线一直失败）。
+# 现改为调用 tools/python/rebuild-bank-perid.py（仅用标准库），与本地
+# `npm run` 数据维护流程、verify-bio-shards 的口径保持一致。
+#
 # 与 ci.yml 的分工：
-#   - ci.yml  在每次 push/PR 上只读地「校验」manifest 与分片一致性，
-#             （sha256 比对、bioID 唯一性、内容寻址反向复算、index/bank 双向一致），
-#             篡改/遗漏分片时直接 FAIL（验收标准 2）。
-#   - 本 workflow 负责产物的「自动生成与回写」（验收标准 1）。
+#   - ci.yml  在每次 push/PR 上只读地「校验」manifest 与分片一致性；
+#   - 本 workflow 负责产物的「自动生成与回写」。
 #
 # 防无限循环：
 #   触发路径 data/** 会因「回写的产物也是 data/**」再次命中。
-#   生成脚本本身是确定性的（同输入→同输出），唯一随时间漂移的字段是
-#   manifest.git 锚点（= 生成时 HEAD）。因此本流程用固定机器人身份提交，
-#   当触发 commit 的作者是机器人时直接跳过重新生成 —— 循环在第二轮终止。
+#   生成过程除 manifest.rev / updated_at / id-all.generated_at 外是确定性的，
+#   因此本流程用固定机器人身份提交，当触发 commit 的作者是机器人时直接跳过，
+#   循环在第二轮终止。
 #
 # 锚点安全（PR #25 教训）：
-#   generate-bio-shards.js 会把 { repo, git } 写入 manifest 供 jsDelivr CDN
-#   版本化分发。本流程只在 main/master 的直接 push 上运行，并用
-#   --repo=<本仓库事件 full_name> 显式固化上游仓库；生成时 HEAD 即为
-#   本仓库已存在的 commit，锚点归属天然正确（不会出现 fork 锚点）。
+#   本流程不再改写 manifest 的 repo/git 锚点，锚点由人工/生成器维护；
+#   校验步骤仍会检查锚点归属，防止 fork 锚点混入。
 
 name: Data Pipeline
 
@@ -30,8 +32,7 @@ on:
     branches: [main, master]
     paths:
       - 'data/**'
-      - 'scripts/bio-topic-schema.js'
-      - 'scripts/generate-bio-shards.js'
+      - 'tools/python/rebuild-bank-perid.py'
   workflow_dispatch: {}
 
 permissions:
@@ -63,22 +64,18 @@ jobs:
             exit 0
           fi
 
-      - name: Regenerate shards + manifest
-        # --repo 固定为本仓库 slug，--git 取生成时 HEAD（即触发本次流程、
-        # 已存在于本仓库的 commit）→ 锚点归属正确。
+      - name: Regenerate shards + manifest（per-id → 四件套）
         run: |
-          branch="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
-          node scripts/generate-bio-shards.js \
-            --repo="${{ github.event.repository.full_name }}" \
-            --git="$(git rev-parse HEAD)"
+          python3 tools/python/rebuild-bank-perid.py build
+          python3 tools/python/rebuild-bank-perid.py verify
 
       - name: Consistency smoke check (Issue #18 验收标准 2)
         # manifest 中 files:{path:sha256} 与实际分片一致性、bioID 唯一性、
-        # 内容寻址反向复算、index/bank 双向一致、迁移映射完备。
+        # index/bank 双向一致。
         run: node scripts/verify-bio-shards.js
 
       - name: CDN 锚点一致性校验（PR #25）
-        # 确保生成器写回的 repo/git 指向本仓库而非 fork。
+        # 确保 manifest 的 repo/git 指向本仓库而非 fork。
         run: node scripts/verify-manifest-anchor.js
 
       - name: Commit regenerated data
