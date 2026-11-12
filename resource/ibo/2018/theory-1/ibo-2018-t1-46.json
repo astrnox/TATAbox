@@ -1,0 +1,66 @@
+{
+  "id": "IBO-2018-T1-46",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Cooperation is a complicated behaviour that has evolved in animals. Conditional cooperation, such as direct and indirect reciprocity and partner choice, are some of these complicated behaviours. The simple rule which can illustrate how such behaviour evolves is the correlation between the behaviour of interacting individuals (graph below). In fact, such correlation results in cooperative individuals receiving more cooperation, so if there is a cheater, it receives less cooperation, which is a kind of punishment.",
+  "question_zh": "合作是动物中进化出的一种复杂行为。条件性合作（如直接互惠、间接互惠和伙伴选择）就是其中一些复杂行为。说明这类行为如何进化的简单规则，是相互作用个体行为之间的相关性（下图）。事实上，这种相关性使合作个体获得更多合作；若存在欺骗者，它获得的合作会更少，这构成一种惩罚。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q46-fig1.webp",
+      "caption": "Relationship between deception rate and cooperativeness in non-human primates (after McNally et al., 2013).",
+      "caption_zh": "非人灵长类中欺骗率与合作性的关系（引自 McNally 等，2013）。",
+      "page": 50
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Conditional strategies and mechanisms that enforce cooperation make the evolution of deception less likely.",
+      "text_zh": "条件性策略和强制执行合作的机制会降低欺骗进化的可能性。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Although overall net benefit of the cooperative behaviour is higher than the cost of being deceived, the existence of defectors doesn’t allow cooperation to persist.",
+      "text_zh": "尽管合作行为的总体净收益高于被欺骗的代价，但背叛者的存在使合作无法持续。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "We can expect deception to evolve as long as it does not significantly increase the cost of cooperation.",
+      "text_zh": "只要欺骗不会显著增加合作成本，我们就可以预期它会进化。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Deceptive behaviour can occur only in novel habitats as there is no time to adapt to the new environmental conditions.",
+      "text_zh": "欺骗行为只会在新栖息地中出现，因为来不及适应新的环境条件。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "The relationship between cooperativeness and deception rate in primates can be explained by the relatively large social group size in this taxon.",
+      "text_zh": "灵长类中合作性与欺骗率之间的关系，可以用该分类群相对较大的社会群体规模来解释。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】条件性合作会惩罚欺骗者（减少对其合作），提高欺骗的成本，从而降低欺骗策略的进化可能性。\nB【错】题干已指出合作净收益高于被欺骗成本；条件性合作与惩罚机制可使合作在存在背叛者时仍维持，因此“合作无法持续”错误。\nC【对】只要欺骗带来的收益不被合作成本的显著上升抵消，欺骗就具有选择优势，可能进化。\nD【错】欺骗并不限于新栖息地；在社会互动中，只要存在信息不对称与可获利的欺骗机会，欺骗就可能出现。\nE【对】灵长类社会群体较大、个体识别与互惠记录能力强，合作与欺骗的博弈更频繁，可解释图中二者的正相关。",
+  "module": "module_3",
+  "subject": "动物行为学",
+  "concept": "条件性合作与欺骗",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 46 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 46
+  },
+  "tags": ["ibo", "module_3", "动物行为学", "条件性合作与欺骗", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

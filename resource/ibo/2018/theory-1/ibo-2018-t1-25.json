@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-25",
+  "type": "mtf",
+  "lang": "en",
+  "question": "In 1876, Van Beneden found a group of microscopic ciliated wormlike organisms that inhabited the renal sacs of cephalopods, mainly octopuses and cuttlefishes, and named them Dicyemids. Biologists have been fascinated because of their highly simplified body organization and complex life cycles of asexual (under normal conditions producing vermiform larva in host kidney) and sexual (under crowded conditions producing infusoriform larva excreted in host urine) reproduction. These ciliated animals are composed of approximately 20–30 (or 40) cells arranged in two layers, and they lack coeloms, circulatory systems, and other differentiated tissues; their embryos employ spiral cleavage. Due to their simple body plans, they can be considered as intermediates between the Protozoa and the Metazoa. The phylogenetic position of dicyemids suggested by previous phylogenetic studies remains controversial.",
+  "question_zh": "1876 年，Van Beneden 发现了一类微小的具纤毛蠕虫样生物，栖息于头足类（主要是章鱼和乌贼）的肾囊中，并将其命名为二胚虫（Dicyemids）。其高度简化的身体结构和复杂的生活史令生物学家着迷：无性生殖（正常情况下在宿主肾内产生蠕虫状幼虫）与有性生殖（拥挤条件下产生纤毛虫状幼虫，随宿主尿液排出）。这些具纤毛的动物由约 20–30（或 40）个细胞组成，排列成两层；它们缺乏体腔、循环系统和其他分化组织，胚胎采用螺旋卵裂。由于其简单的身体构型，它们曾被认为是原生动物与后生动物之间的中间类型。以往系统发育研究提示的二胚虫系统位置仍有争议。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q25-fig1.webp",
+      "caption": "Phylogenetic trees based on 18S rRNA, 18S + 28S rRNA, and innexin amino acid sequences, showing the position of Dicyemida.",
+      "caption_zh": "基于 18S rRNA、18S + 28S rRNA 及 innexin 氨基酸序列的系统发育树，显示二胚虫的位置。",
+      "page": 29
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Based on the above explanations, infusiform larva is a mean of dispersal for these animals.",
+      "text_zh": "根据上述解释，纤毛虫状幼虫是这类动物的一种扩散方式。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Based on the above molecular data, these animals are missing link between Metazoa and protozoa.",
+      "text_zh": "根据上述分子数据，这些动物是后生动物与原生动物之间的缺失环节。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Based on the data, these described animals faced a regression evolution during its evolutionary history.",
+      "text_zh": "根据数据，这些动物在进化历史中经历了退化演化。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Based on the given data, it is more likely that Dicyemida is more closely related to Mollusca than to Ecdysozoa.",
+      "text_zh": "根据所给数据，二胚虫与软体动物的亲缘关系比与蜕皮动物更近。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】有性生殖产生的纤毛虫状幼虫随宿主尿液排出，可进入新的宿主，是扩散/传播阶段。\nB【错】分子系统发育把二胚虫归入后生动物（Spiralia/Lophotrochozoa），并非原生动物与后生动物之间的缺失环节；其简单结构是次生简化。\nC【对】二胚虫处于后生动物内部，却缺少体腔、循环系统等，说明其身体结构在寄生生活中发生了次生退化（regression evolution）。\nD【对】18S + 28S 及 innexin 树均把二胚虫置于 Spiralia 内，靠近软体动物/环节动物，而与蜕皮动物较远；18S 单基因树的异常位置可用长枝吸引解释。",
+  "module": "module_3",
+  "subject": "动物学",
+  "concept": "二胚虫的系统位置与退化演化",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 25 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 25
+  },
+  "tags": ["ibo", "module_3", "动物学", "二胚虫的系统位置与退化演化", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

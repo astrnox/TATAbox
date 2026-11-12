@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-31",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Some flowering plants are aquatic and have adapted to live in aquatic environments. They are divided into 3 types, depending on how much of the plant is normally positioned inside or outside of the water. These groups include emergent, floating, and submerged plants. The organs of submerged aquatic plants grow completely under water.",
+  "question_zh": "有些被子植物是水生的，已适应水生环境。根据植株通常位于水中或水外的比例，可将其分为 3 类：挺水植物、浮水植物和沉水植物。沉水植物的器官完全在水中生长。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "They do not have xylem as they can absorb water from all of their surfaces.",
+      "text_zh": "它们没有木质部，因为可以从所有表面吸收水分。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Given that some species do have stomata, their opening and closing of the stomata is not expected to be driven by circadian rhythm.",
+      "text_zh": "鉴于某些物种确实有气孔，其气孔的开放与关闭预计不受昼夜节律驱动。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "These plants are heterophyllous, with thin and dark green leaves.",
+      "text_zh": "这些植物是异叶的，叶片薄且呈深绿色。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "These plants have a well-developed supporting mechanical tissues with thick walls.",
+      "text_zh": "这些植物具有发达的厚壁支持组织。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】沉水植物并非完全没有木质部，而是木质部高度退化（仅保留少量管胞/导管）；它们确实可从体表吸水，但不能据此说完全没有木质部。\nB【对】沉水植物即使有气孔（通常位于浮水叶或挺水部分），其开闭主要受水分状态与 CO2 等环境因素影响，而非典型的昼夜节律驱动。\nC【错】沉水植物不一定异叶；其叶片通常薄、透明或浅绿色，以减少光吸收阻力，而不是“薄且深绿色”。\nD【错】沉水植物生活在浮力支持的水中，机械组织（厚壁组织）高度退化，而不是发达。",
+  "module": "module_2",
+  "subject": "植物学",
+  "concept": "水生植物的适应性结构",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 31 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 31
+  },
+  "tags": ["ibo", "module_2", "植物学", "水生植物的适应性结构", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

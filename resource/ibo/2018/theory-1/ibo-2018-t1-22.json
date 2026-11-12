@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-22",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Figures X, Y and Z show the sagittal sections (the plane which divides the body into left and right parts) of a frog embryo from the surface to the depth, respectively. Figures a–d are cross sections of the same embryo shown in Figure Z.",
+  "question_zh": "图 X、Y、Z 分别显示蛙胚从表面到深部的矢状切面（将身体分为左右两部分的平面）。图 a–d 是图 Z 所示同一胚胎的横切面。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q22-fig1.webp",
+      "caption": "Sagittal sections X, Y, Z of a frog embryo and cross sections a–d. Dashed lines 1–4 on Z indicate the levels of the cross sections.",
+      "caption_zh": "蛙胚矢状切面 X、Y、Z 及横切面 a–d。Z 上的虚线 1–4 表示横切面所在位置。",
+      "page": 25
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Figure “a” is the cross section from region “1”.",
+      "text_zh": "图“a”是区域“1”的横切面。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Figure “b” is the cross section from region “3”.",
+      "text_zh": "图“b”是区域“3”的横切面。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Figure “c” is the cross section from region “4”.",
+      "text_zh": "图“c”是区域“4”的横切面。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Figure “d” is the cross section from region “2”.",
+      "text_zh": "图“d”是区域“2”的横切面。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】图 a 中央有宽大的咽腔，属于咽部区域 2，而不是头部区域 1。\nB【对】图 b 显示神经管、脊索和较小的肠腔，是躯干中段区域 3 的横切面。\nC【对】图 c 显示较小的神经管、脊索而缺乏宽大咽腔，属于尾端区域 4。\nD【错】图 d 两侧有大型圆形结构（眼/听囊），应属头部区域 1，而不是区域 2。",
+  "module": "module_3",
+  "subject": "动物学",
+  "concept": "胚胎切面与体轴区域",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 22 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 22
+  },
+  "tags": ["ibo", "module_3", "动物学", "胚胎切面与体轴区域", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

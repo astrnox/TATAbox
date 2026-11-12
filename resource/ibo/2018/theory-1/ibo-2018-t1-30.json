@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-30",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Arabidopsis thaliana was used in a study on photosynthesis. A. thaliana plants of the same age, with leaf blades of equal shape and size, were placed under various light sources that emitted different colours. Three plants were exposed to each light source. The groupings were as follows:\n\nGroup a: blue light\nGroup b: green light\nGroup c: red light\nGroup d: blue and red\nGroup e: yellow and green\n\nAfter 5 days of illumination at equal intensity comparable to normal daylight, in terms of total amount of photons and duration, the plants’ physiological parameters were compared. The compensation point was measured using sunlight.",
+  "question_zh": "一项光合作用研究以拟南芥（Arabidopsis thaliana）为材料。将年龄相同、叶片形状和大小一致的拟南芥植株置于发出不同颜色光的光源下。每种光源处理 3 株植物，分组如下：\n\na 组：蓝光\nb 组：绿光\nc 组：红光\nd 组：蓝光 + 红光\ne 组：黄光 + 绿光\n\n在总光子数和照射时长相同、强度与正常日光相当的条件下照射 5 天后，比较植株的生理参数。光补偿点用阳光测定。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The plants of group “a” showed the highest photosynthesis rate.",
+      "text_zh": "a 组植株的光合速率最高。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Among the various groups, the light compensation point for CO2 fixation was the lowest for group “b”.",
+      "text_zh": "在各组中，b 组固定 CO2 的光补偿点最低。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The biomass of group “d” plants was higher than group “c” plants.",
+      "text_zh": "d 组植株的生物量高于 c 组植株。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "At light intensities just above the compensation point, the rate of photosynthesis of group “e” is expected to increase linearly with light.",
+      "text_zh": "在略高于补偿点的光强下，e 组的光合速率预计随光强线性增加。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】红光和蓝光是叶绿素吸收峰，红光（c 组）及蓝+红光（d 组）的光合速率应高于单蓝光（a 组）；a 组不是最高。\nB【对】绿光（b 组）被叶绿素吸收最少，植物通过调整光捕获色素，在低光下即可达到光合与呼吸相等的补偿点，因此其光补偿点最低。\nC【对】蓝光 + 红光（d 组）同时覆盖两个吸收峰，光合产物积累多于单红光（c 组），生物量更高。\nD【对】黄光 + 绿光（e 组）吸收效率低，在略高于补偿点的光强范围内仍处于光限制阶段，光合速率随光强近似线性增加。",
+  "module": "module_2",
+  "subject": "植物生理学",
+  "concept": "光质与光合作用",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 30 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 30
+  },
+  "tags": ["ibo", "module_2", "植物生理学", "光质与光合作用", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

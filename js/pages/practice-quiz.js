@@ -17,6 +17,12 @@ function _renderQuizImpl() {
   const q = PracticeState.currentSet[PracticeState.currentIndex];
   if (!q) return;
 
+  // IBO 等双语题：默认英文，可切中文；中文缺失时逐字段回退原文
+  const _lang = (typeof QuestionI18n !== 'undefined') ? QuestionI18n.getLang() : 'en';
+  const _stemText = (typeof QuestionI18n !== 'undefined') ? QuestionI18n.stem(q, _lang) : (q.question || '');
+  const _explanation = (typeof QuestionI18n !== 'undefined') ? QuestionI18n.explanation(q, _lang) : (q.explanation || '');
+  const _hasZh = (typeof QuestionI18n !== 'undefined') ? QuestionI18n.hasTranslation(q) : false;
+
   const isLogicQuestion = QuestionModel.isLogicChoice(q);
   const isStandardChoice = QuestionModel.isStandardChoice(q);
   const userAnswers = PracticeState.userAnswers[PracticeState.currentIndex] || {};
@@ -126,7 +132,7 @@ function _renderQuizImpl() {
         return `
           <div class="${cardClass}">
             <div class="practice-option-label">${sq.label}</div>
-            <div class="practice-option-text">${escapeHtml(sq.text)}</div>
+            <div class="practice-option-text">${escapeHtml((typeof QuestionI18n !== 'undefined') ? QuestionI18n.subText(sq, _lang) : sq.text)}</div>
             <div class="practice-option-toggle">
               <button class="practice-tf-btn ${userAns === true ? 'practice-tf-active practice-tf-true' : ''}"
                 data-sub-idx="${idx}" data-value="true"
@@ -163,17 +169,17 @@ function _renderQuizImpl() {
     ? `
     <div class="practice-score-display">
       <span class="practice-score-label">本题得分：</span>
-      <span class="practice-score-value">${score} 分</span>
+      <span class="practice-score-value">${score} / ${QuestionModel.getQuestionMaxScore(q, 'practice')} 分</span>
       <span class="practice-score-detail">（${correct}/${total} 正确）</span>
     </div>
     `
     : '';
 
-  const explanationHtml = PracticeState.submitted && q.explanation
+  const explanationHtml = PracticeState.submitted && _explanation
     ? `
     <div class="practice-explanation">
       <div class="practice-explanation-title">解析</div>
-      <div class="practice-explanation-text">${renderExplanationWithImages(q.explanation)}</div>
+      <div class="practice-explanation-text">${renderExplanationWithImages(_explanation)}</div>
     </div>
     `
     : '';
@@ -204,14 +210,21 @@ function _renderQuizImpl() {
           ${q.year ? '<span class="tag tag--outline">' + escapeHtml(String(q.year)) + ' 年</span>' : ''}
           ${_renderExamSourceTag(q)}
           ${_renderRatingTag(q, qId)}
+          ${_hasZh ? `<button type="button" class="practice-lang-toggle" id="practice-lang-toggle"
+            aria-label="切换题目语言" title="切换题目语言（当前：${_lang === 'zh' ? '中文' : '英文'}）">
+            <span class="practice-lang-opt${_lang === 'en' ? ' is-active' : ''}">EN</span>
+            <span class="practice-lang-sep">/</span>
+            <span class="practice-lang-opt${_lang === 'zh' ? ' is-active' : ''}">中文</span>
+          </button>` : ''}
         </div>
       </div>
 
       <div class="practice-question-card">
         <div class="practice-question-text">
-          ${escapeHtml(q.question)}
+          ${escapeHtml(_stemText)}
         </div>
-        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图' }) : renderChart(q.chart)}
+        ${_renderQuestionTables((typeof QuestionI18n !== 'undefined') ? QuestionI18n.tables(q, _lang) : (q.tables || []))}
+        ${(typeof window !== 'undefined' && window.BioQuestFigure) ? window.BioQuestFigure.render(q, { alt: '题目配图', lang: _lang }) : renderChart(q.chart)}
 
         <div class="practice-options-list">
           ${subQuestionsHtml}
@@ -324,6 +337,30 @@ function _renderQuizImpl() {
   bindQuizEvents();
 }
 
+/**
+ * 题目结构化表格（IBO 数据表用）：{title, head[], rows[][]} → 可横向滚动的 HTML 表。
+ * 仅由转义后的文本拼接，不接收原始 HTML。
+ */
+function _renderQuestionTables(tables) {
+  if (!Array.isArray(tables) || tables.length === 0) return '';
+  return tables.map(function (t) {
+    if (!t || typeof t !== 'object') return '';
+    var head = (Array.isArray(t.head) ? t.head : []).map(function (h) {
+      return '<th scope="col">' + escapeHtml(String(h)) + '</th>';
+    }).join('');
+    var body = (Array.isArray(t.rows) ? t.rows : []).map(function (row) {
+      return '<tr>' + (Array.isArray(row) ? row : []).map(function (cell) {
+        return '<td>' + escapeHtml(String(cell)) + '</td>';
+      }).join('') + '</tr>';
+    }).join('');
+    return '<div class="practice-question-table-wrap">' +
+      (t.title ? '<div class="practice-question-table-title">' + escapeHtml(String(t.title)) + '</div>' : '') +
+      '<table class="practice-question-table">' +
+      (head ? '<thead><tr>' + head + '</tr></thead>' : '') +
+      '<tbody>' + body + '</tbody></table></div>';
+  }).join('');
+}
+
 function calcAccuracyStr() {
   if (PracticeState.totalAnswered === 0) return '--';
   let totalSub = 0;
@@ -399,6 +436,16 @@ function bindQuizEvents() {
     wrongBtn.addEventListener('click', handleMarkWrong);
   }
 
+  // 中英文切换（仅双语题渲染该按钮）：切换后原地重渲染，保留作答状态
+  const langBtn = document.getElementById('practice-lang-toggle');
+  if (langBtn) {
+    langBtn.addEventListener('click', function () {
+      if (typeof QuestionI18n === 'undefined') return;
+      QuestionI18n.toggleLang();
+      _renderQuizImpl();
+    });
+  }
+
   const feedbackBtn = document.getElementById('practice-feedback-btn');
   if (feedbackBtn) {
     feedbackBtn.addEventListener('click', function() {
@@ -451,9 +498,17 @@ function showSummary() {
   const container = document.getElementById('practice-root');
   if (!container) return;
 
+  // 分值可能是 0.25 / 0.75 / 1.25（IBO 官方计分），统一保留最多两位小数并去尾零
+  const fmtScore = (v) => {
+    const s = (Math.round(Number(v || 0) * 100) / 100).toFixed(2);
+    return s.replace(/\.?0+$/, '');
+  };
+
   const totalQuestions = PracticeState.totalAnswered;
   const totalScore = PracticeState.totalScore;
-  const maxScore = PracticeState.currentSet.length * 2;
+  // 满分 = 本套各题满分之和（IBO 题按官方 1.0/1.25，其余题 2.0）
+  const maxScore = PracticeState.currentSet.reduce(
+    (sum, q) => sum + QuestionModel.getQuestionMaxScore(q, 'practice'), 0);
   const duration = Math.floor((Date.now() - PracticeState.startTime) / 1000);
 
   const moduleRows = PracticeModuleGroups
@@ -466,7 +521,7 @@ function showSummary() {
         <div class="practice-summary-row">
           <span class="practice-summary-module">${g.label}</span>
           <span class="practice-summary-stat">${stats.total} 题</span>
-          <span class="practice-summary-stat">${stats.score.toFixed(1)} 分</span>
+          <span class="practice-summary-stat">${fmtScore(stats.score)} 分</span>
           <span class="practice-summary-stat">全对 ${acc}% · 小题 ${subAcc}%</span>
         </div>
       `;
@@ -487,8 +542,8 @@ function showSummary() {
             <div class="practice-summary-stat-label">总题数</div>
           </div>
           <div class="practice-summary-stat-item">
-            <div class="practice-summary-stat-num">${totalScore.toFixed(1)}</div>
-            <div class="practice-summary-stat-label">总得分 / ${maxScore}</div>
+            <div class="practice-summary-stat-num">${fmtScore(totalScore)}</div>
+            <div class="practice-summary-stat-label">总得分 / ${fmtScore(maxScore)}</div>
           </div>
           <div class="practice-summary-stat-item">
             <div class="practice-summary-stat-num">${formatTime(duration, { showHours: false })}</div>

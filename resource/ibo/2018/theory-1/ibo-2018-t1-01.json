@@ -1,0 +1,128 @@
+{
+  "id": "IBO-2018-T1-01",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Compounds X and Y are precursors in the pathway of Z synthesis. Z is essential for growth. Wild type (WT) Neurospora are prototrophs, meaning that they can grow on minimal medium (MM).\n\nGrowth Experiment: Four Z− Neurospora mutants were isolated, and the results of experiments with these mutants are presented below (+ = growth, − = no growth).\n\nComplementation Tests: Complementation tests were performed by testing for growth of heterokaryons in minimal medium. Results were as follows (+ = growth, − = no growth).\n\nMating Experiment: Mutant strains were mated and the % prototrophs among spores of each mating were determined. Results were as follows.",
+  "question_zh": "化合物 X 和 Y 是 Z 合成途径中的前体。Z 是生长所必需的。野生型（WT）脉孢菌为原养型，即能够在基本培养基（MM）上生长。\n\n生长实验：分离得到 4 株 Z− 脉孢菌突变体，实验结果如下（+ = 生长，− = 不生长）。\n\n互补实验：通过检测异核体在基本培养基中的生长进行互补实验，结果如下（+ = 生长，− = 不生长）。\n\n交配实验：将各突变体菌株两两交配，测定每次交配所产生孢子中原养型的百分比，结果如下。",
+  "tables": [
+    {
+      "title": "Growth experiment",
+      "head": ["Cell type", "MM", "MM + Y", "MM + X", "MM + Z", "Accumulated compound during growth in MM"],
+      "rows": [
+        ["WT", "+", "+", "+", "+", "—"],
+        ["Mutant 1", "−", "−", "+", "+", "Y"],
+        ["Mutant 2", "−", "−", "−", "+", "X"],
+        ["Mutant 3", "−", "−", "−", "+", "X"],
+        ["Mutant 4", "−", "−", "−", "+", "Y"]
+      ]
+    },
+    {
+      "title": "Complementation tests (+ = growth, − = no growth)",
+      "head": ["", "Mutant 1", "Mutant 2", "Mutant 3", "Mutant 4"],
+      "rows": [
+        ["Mutant 1", "−", "", "", ""],
+        ["Mutant 2", "+", "−", "", ""],
+        ["Mutant 3", "+", "−", "−", ""],
+        ["Mutant 4", "−", "−", "−", "−"]
+      ]
+    },
+    {
+      "title": "Mating experiment",
+      "head": ["Mating", "% prototroph spores"],
+      "rows": [
+        ["Mutant 1 × Mutant 2", "25%"],
+        ["Mutant 1 × Mutant 3", "25%"],
+        ["Mutant 1 × Mutant 4", "0% (many spores counted)"],
+        ["Mutant 2 × Mutant 3", "0.004%"],
+        ["Mutant 2 × Mutant 4", "0.001%"],
+        ["Mutant 3 × Mutant 4", "0.001%"]
+      ]
+    }
+  ],
+  "tables_zh": [
+    {
+      "title": "生长实验",
+      "head": ["细胞类型", "MM", "MM + Y", "MM + X", "MM + Z", "在 MM 中生长时积累的化合物"],
+      "rows": [
+        ["野生型（WT）", "+", "+", "+", "+", "—"],
+        ["突变体 1", "−", "−", "+", "+", "Y"],
+        ["突变体 2", "−", "−", "−", "+", "X"],
+        ["突变体 3", "−", "−", "−", "+", "X"],
+        ["突变体 4", "−", "−", "−", "+", "Y"]
+      ]
+    },
+    {
+      "title": "互补实验（+ = 生长，− = 不生长）",
+      "head": ["", "突变体 1", "突变体 2", "突变体 3", "突变体 4"],
+      "rows": [
+        ["突变体 1", "−", "", "", ""],
+        ["突变体 2", "+", "−", "", ""],
+        ["突变体 3", "+", "−", "−", ""],
+        ["突变体 4", "−", "−", "−", "−"]
+      ]
+    },
+    {
+      "title": "交配实验",
+      "head": ["交配组合", "原养型孢子百分比"],
+      "rows": [
+        ["突变体 1 × 突变体 2", "25%"],
+        ["突变体 1 × 突变体 3", "25%"],
+        ["突变体 1 × 突变体 4", "0%（计数了大量孢子）"],
+        ["突变体 2 × 突变体 3", "0.004%"],
+        ["突变体 2 × 突变体 4", "0.001%"],
+        ["突变体 3 × 突变体 4", "0.001%"]
+      ]
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The mutations in the mutated strains were distributed in two genes.",
+      "text_zh": "这些突变株中的突变分布在两个基因中。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Considering all the mutant strains, at least five different sites of the Neurospora genome were mutated in one or more strains.",
+      "text_zh": "综合所有突变株来看，至少 5 个不同的脉孢菌基因组位点在一个或多个菌株中发生了突变。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "At least two of the mutant strains were double mutants (i.e. > 1 site was mutated in each of these strains).",
+      "text_zh": "至少有两个突变株是双突变体（即每个菌株中都有 >1 个位点发生突变）。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The mutation site of Mutant 3 is positioned between the mutation site in Mutant 2 and the mutation site in Mutant 4.",
+      "text_zh": "突变体 3 的突变位点位于突变体 2 与突变体 4 的突变位点之间。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "It is expected that 25% of spores resulting from mating between Mutant 2 and wild type strain will be prototrophs.",
+      "text_zh": "预计突变体 2 与野生型菌株交配产生的孢子中，有 25% 为原养型。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】互补实验显示 M1 与 M2、M1 与 M3 互补，而 M2、M3、M4 之间互不互补，M1 与 M4 也不互补。结合生长实验：M1、M4 都在 Y→X 步骤受阻（积累 Y、可被 X 救活），M2、M3 都在 X→Z 步骤受阻（积累 X、只能被 Z 救活），故突变分属两个基因；M4 与所有菌株均不互补，说明它同时携带两个基因的突变。\nB【错】可确证的独立突变位点只有 M1/M4 共用的一个位点、M2 的一个位点、M3 的一个位点；即使把 M4 的第二个突变位点另算，也远不足 5 个。\nC【错】只有 M4 表现出双突变体的互补特征；M1、M2、M3 都能与另一基因的突变株互补，均为单基因突变。\nD【错】交配数据只反映基因间或基因内重组频率的高低，不能据此确定突变位点在基因内的排列顺序。\nE【错】M2 是单基因隐性突变，与野生型杂交后子代中 50% 为原养型，而不是 25%。",
+  "module": "module_4",
+  "subject": "遗传学",
+  "concept": "代谢途径与互补测验",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 1 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 1
+  },
+  "tags": ["ibo", "module_4", "遗传学", "代谢途径与互补测验", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

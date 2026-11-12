@@ -270,12 +270,12 @@ describe('5. MTF 计分（calculateQuestionScore）子题数归一化', () => {
 });
 
 describe('6.5 practice 练习记录满分口径（回归：totalScore 曾误传计分项数）', () => {
-  test('savePracticeRecord 每题传 PRACTICE_FULL_SCORE（2.0），不是 result.total 计分项数', () => {
+  test('savePracticeRecord 每题传单题实际满分（getQuestionMaxScore），不是 result.total 计分项数', () => {
     const src = fs.readFileSync(PRACTICE_SRC, 'utf8');
     const m = src.match(/function savePracticeRecord\(\)[\s\S]*?\n}/);
     expect(m).toBeTruthy();
     const body = m[0];
-    expect(body).toContain('totalScore: QuestionModel.PRACTICE_FULL_SCORE');
+    expect(body).toContain("totalScore: QuestionModel.getQuestionMaxScore(q, 'practice')");
     expect(body).not.toMatch(/totalScore:\s*result\.total\b/);
   });
 

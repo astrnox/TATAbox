@@ -43,13 +43,24 @@ const TARGET_OPTIONS = [
   { value: 'both', label: '共通' }
 ];
 
+// 题目来源选项（练习页「题目来源」筛选；'all' 为不限制哨兵）
+const SOURCE_OPTIONS = [
+  { value: 'all', label: '全部来源' },
+  { value: 'cnbo', label: 'CnBO 联赛真题' },
+  { value: 'ibo', label: 'IBO 真题' },
+  { value: 'original', label: '原创题' },
+  { value: 'gaokao', label: '高考真题' },
+  { value: 'school', label: '校考/模拟题' },
+  { value: 'other', label: '其他来源' }
+];
+
 const QUESTION_COUNT_OPTIONS = [5, 10, 20, 50];
 
 const PracticeState = {
   allQuestions: [],
   logicData: [],           // 逻辑推理题库
   logicLoaded: false,      // 逻辑推理题是否已加载
-  leagueData: [],          // 联赛真题池（resource/all.json，2873 道）
+  leagueData: [],          // 真题池（resource/all.json 联赛 + resource/ibo.json IBO）
   leagueLoaded: false,     // 联赛真题是否已加载
   filteredQuestions: [],
   currentSet: [],
@@ -66,6 +77,7 @@ const PracticeState = {
   selectedModules: ['module1', 'module2', 'module3', 'module4'],
   selectedDifficulties: ['easy', 'medium', 'hard'],
   selectedCategory: 'all',  // 'all' | 'basic' | 'logic'
+  selectedSources: [],      // 题目来源多选（空 = 全部）：cnbo/ibo/original/gaokao/school/other
   selectedTargets: ['high_school', 'competition', 'both'], // 目标群体：高考/竞赛/重叠
   questionCount: 10,
   redoMode: false,

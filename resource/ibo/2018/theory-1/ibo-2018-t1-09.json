@@ -1,0 +1,72 @@
+{
+  "id": "IBO-2018-T1-09",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Some restriction enzymes have different recognition sequences but create the same sticky ends, as shown below for SalI and XhoI.\n\nThe following gel electrophoresis image shows linearized DNAs obtained after complete restriction enzyme digestion of non-recombinant (empty vector) and recombinant (containing gene X) expression plasmid vectors. The expression vector includes a strong promoter near its cloning site. The insert of the recombinant plasmid was a product of SalI digestion. The insert was ligated into the vector which had been cut with XhoI.\n\n* All recombinant vectors gave the same pattern in the gel.",
+  "question_zh": "有些限制酶识别序列不同，却产生相同的黏性末端，如下图所示 SalI 与 XhoI。\n\n下面的凝胶电泳图显示空载体（非重组）和重组（含基因 X）表达质粒载体经限制酶完全酶切后得到的线性 DNA。该表达载体在克隆位点附近有一个强启动子。重组质粒的插入片段是 SalI 酶切的产物，插入到用 XhoI 切开的载体中。\n\n* 所有重组载体在凝胶中给出相同的条带模式。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q09-fig1.webp",
+      "caption": "SalI and XhoI recognition sequences produce compatible sticky ends.",
+      "caption_zh": "SalI 与 XhoI 的识别序列产生相容的黏性末端。",
+      "page": 12
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q09-fig2.webp",
+      "caption": "Gel electrophoresis of empty and recombinant vectors after SalI, XhoI, and SalI + XhoI digestion.",
+      "caption_zh": "空载体与重组载体经 SalI、XhoI 及 SalI + XhoI 酶切后的凝胶电泳。",
+      "page": 12
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The data indicate that two copies of the insert were cloned in the expression vector.",
+      "text_zh": "数据表明表达载体中克隆了两个拷贝的插入片段。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Half of the clones are expected to be able to transcribe the mRNA of gene X.",
+      "text_zh": "预计有一半克隆能够转录基因 X 的 mRNA。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "An XhoI site exists outside of the insert in the recombinant vector of the experiment.",
+      "text_zh": "在该实验的重组载体中，插入片段之外存在一个 XhoI 位点。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The 2 kb fragment seen in the gel can be used as probe to screen for the recombinant vectors.",
+      "text_zh": "凝胶中看到的 2 kb 片段可以用作探针来筛选重组载体。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "If the insert produced by SalI digestion was ligated into a vector that had been cut with both XhoI and SalI enzymes and the recombinant plasmid subsequently cut with XhoI, a 4 kb product would be obtained.",
+      "text_zh": "若将 SalI 酶切产生的插入片段连接到同时用 XhoI 和 SalI 切开的载体中，随后再用 XhoI 切割重组质粒，将得到 4 kb 的产物。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】空载体为 5 kb，重组载体为 7 kb，只增加了 2 kb，说明只插入了一个 2 kb 片段，而不是两个拷贝。\nB【对】插入片段与载体连接有两种方向；只有与启动子同向的那一半克隆能转录基因 X 的 mRNA，因此约一半克隆可转录。\nC【错】重组载体用 XhoI 单酶切只得到 7 kb 线性分子，说明只有一个 XhoI 位点；结合双酶切得到 5 kb + 2 kb，可判断该 XhoI 位点位于插入片段一侧的克隆位点内，而不是插入片段之外。\nD【错】2 kb 片段是 XhoI 与 SalI 双酶切产物，包含载体与插入片段连接处及部分载体序列；用它作探针会同时与空载体杂交，不能特异筛选重组载体。\nE【错】按题干构建方式，插入片段两端为 SalI/XhoI 兼容末端，连接后原有位点被破坏；XhoI 单酶切实验观察到的是 7 kb 线性分子，不会产生 4 kb 片段。",
+  "module": "module_1",
+  "subject": "分子生物学",
+  "concept": "限制酶切与重组质粒鉴定",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 9 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 9
+  },
+  "tags": ["ibo", "module_1", "分子生物学", "限制酶切与重组质粒鉴定", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

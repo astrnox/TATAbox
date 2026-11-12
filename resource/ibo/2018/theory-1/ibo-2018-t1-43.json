@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-43",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The competitive exclusion principle states that whenever two or more species compete for the same set of limiting resources, the superior competitors can drive inferior competitors extinct. On the other hand, some species coexist in naturally nutrient-poor systems while they need the same limited resources. For example, pitcher plants (carnivorous plants) are considered inferior competitors. Brewer (2003) investigated an example of interaction between pitcher plants and another species.",
+  "question_zh": "竞争排斥原理指出，当两个或更多物种竞争同一组限制性资源时，优势竞争者可以把劣势竞争者排挤至灭绝。另一方面，一些物种在天然贫营养系统中需要相同的有限资源却能共存。例如，瓶子草（食虫植物）被认为是劣势竞争者。Brewer（2003）研究了瓶子草与另一物种相互作用的一个实例。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q43-fig1.webp",
+      "caption": "Effect of pitcher starvation and neighbour removal on the proportion of total dry mass in pitcher roots. Error bars are ±1 standard error. “Pitchers open” means the pitcher plant can easily feed (after Brewer, 2003).",
+      "caption_zh": "瓶子草饥饿与邻株移除对瓶子草根干重比例的影响。误差棒为 ±1 标准误。“Pitchers open”表示瓶子草可正常取食（引自 Brewer，2003）。",
+      "page": 47
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "When using the same resources, inferior competitors fail to coexist with superior competitors.",
+      "text_zh": "在使用相同资源时，劣势竞争者无法与优势竞争者共存。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Inferior competitors can coexist with superior competitors if periodic disturbance removes or reduces the population of superior competitors.",
+      "text_zh": "如果周期性干扰移除或减少了优势竞争者种群，劣势竞争者可以与优势竞争者共存。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Intense competition can result in competing species to diversify so they can coexist while reducing the intensity of competition.",
+      "text_zh": "激烈竞争可以促使竞争物种发生分化，从而在降低竞争强度的同时实现共存。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "When pitcher plants are starved, their ability to coexist with their superior competitor is significantly decreased.",
+      "text_zh": "当瓶子草饥饿时，其与优势竞争者共存的能力显著下降。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】竞争排斥并非绝对；通过干扰、资源波动或生态位分化，劣势竞争者仍可与优势竞争者共存。\nB【对】周期性干扰降低优势竞争者数量，为劣势竞争者提供更新窗口，从而实现共存。\nC【对】激烈竞争可选择出性状分化（生态位分化），降低资源重叠，使物种共存。\nD【错】图中邻株完整时，饥饿与正常取食的瓶子草根干重比例相近（约 0.29），说明饥饿并未显著削弱其竞争/共存能力；只有在邻株减少时饥饿植株才降低根投资。",
+  "module": "module_3",
+  "subject": "生态学",
+  "concept": "竞争排斥与共存机制",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 43 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 43
+  },
+  "tags": ["ibo", "module_3", "生态学", "竞争排斥与共存机制", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

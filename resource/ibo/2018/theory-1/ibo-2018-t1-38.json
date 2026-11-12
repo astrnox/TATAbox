@@ -1,0 +1,96 @@
+{
+  "id": "IBO-2018-T1-38",
+  "type": "mtf",
+  "lang": "en",
+  "question": "J. B. S. Haldane (1892–1964), one of the founders of modern evolutionary biology, stated that if among hybrid offspring one sex is absent, rare, or sterile, that sex is the heterogametic one, i.e., in an X-Y sex-determination system, XY hybrids are preferentially sterile or inviable. Presgraves and Orr (1998) decided to test Haldane’s rule on taxa lacking a hemizygous X.\n\nThey focused on mosquitoes from the genera Aedes and Anopheles. In Aedes, males are XY and females are XX, but both X and Y chromosomes carry complete sets of homologous genes, while in Anopheles Y chromosomes are degenerate. They compiled the available data on the sterility of the hybrids resulting from crossing pairs of species in these taxa (tables below).\n\nHint: Assume each character is controlled by many loci.",
+  "question_zh": "现代进化生物学奠基人之一 J. B. S. Haldane（1892–1964）提出：如果杂种后代中某一性别缺失、稀少或不育，那么该性别就是异配性别；即在 X-Y 性别决定系统中，XY 杂种优先表现为不育或不能存活。Presgraves 与 Orr（1998）决定在缺乏半合子 X 的类群中检验 Haldane 规则。\n\n他们聚焦于伊蚊属（Aedes）和按蚊属（Anopheles）。在伊蚊中，雄性为 XY、雌性为 XX，但 X 和 Y 染色体都携带完整的同源基因；而在按蚊中，Y 染色体已退化。他们整理了这些类群种间杂交所得杂种不育性的现有数据（下表）。\n\n提示：假设每个性状由许多位点控制。",
+  "tables": [
+    {
+      "title": "Data on Aedes",
+      "head": ["A", "B", "A crossed with B"],
+      "rows": [
+        ["Ae. zoosophus", "Ae. triseriatus", "Only males are sterile"],
+        ["Ae. triseriatus", "Ae. brelandi", "Only males are sterile"],
+        ["Ae. sollicitans", "Ae. taeniorhynchus", "Both sexes are sterile"],
+        ["Ae. taeniorhynchus", "Ae. nigromaculatus", "Both sexes are sterile"]
+      ]
+    },
+    {
+      "title": "Data on Anopheles",
+      "head": ["A", "B", "A crossed with B"],
+      "rows": [
+        ["An. albitarsus", "An. daeneorum", "Only males are sterile"],
+        ["An. crucians", "An. bradleyi", "Only males are sterile"],
+        ["An. freeborni", "An. occidentalis", "Only males are sterile"],
+        ["An. freeborni", "An. atroparvus", "Only males are sterile"]
+      ]
+    }
+  ],
+  "tables_zh": [
+    {
+      "title": "伊蚊（Aedes）数据",
+      "head": ["A", "B", "A 与 B 杂交"],
+      "rows": [
+        ["Ae. zoosophus", "Ae. triseriatus", "仅雄性不育"],
+        ["Ae. triseriatus", "Ae. brelandi", "仅雄性不育"],
+        ["Ae. sollicitans", "Ae. taeniorhynchus", "两性均不育"],
+        ["Ae. taeniorhynchus", "Ae. nigromaculatus", "两性均不育"]
+      ]
+    },
+    {
+      "title": "按蚊（Anopheles）数据",
+      "head": ["A", "B", "A 与 B 杂交"],
+      "rows": [
+        ["An. albitarsus", "An. daeneorum", "仅雄性不育"],
+        ["An. crucians", "An. bradleyi", "仅雄性不育"],
+        ["An. freeborni", "An. occidentalis", "仅雄性不育"],
+        ["An. freeborni", "An. atroparvus", "仅雄性不育"]
+      ]
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "If the males in genus Anopheles were under strong selection, we would expect the same pattern of hybrid sterility as presented here.",
+      "text_zh": "如果按蚊属的雄性受到强选择，我们预计会出现与这里所示相同的杂种不育模式。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The hybrid sterility patterns observed in both genera are consistent with the idea that alleles involved in hybrid sterility are recessive.",
+      "text_zh": "两个属中观察到的杂种不育模式与“参与杂种不育的等位基因是隐性的”这一观点一致。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "If the pattern of sterility in Aedes were identical to that of Anopheles, it would disprove Haldane’s rule.",
+      "text_zh": "如果伊蚊的不育模式与按蚊完全相同，就会推翻 Haldane 规则。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The pattern of hybrid sterility in Aedes suggest variation in Y chromosome functionality in this genus.",
+      "text_zh": "伊蚊的杂种不育模式提示该属内 Y 染色体功能存在变异。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】按蚊雄性为 XY（异配性别），Y 染色体退化；若雄性受到强选择，与雄性育性相关的基因会在性染色体上积累，杂种雄性仍会优先出现不育，模式与表中一致。\nB【错】若不育等位基因完全隐性，F1 杂合子不应表现不育；观察到雄性不育说明相关等位基因在雄性中呈显性或半显性，或受性别特异调控，因此该说法不一致。\nC【错】Haldane 规则描述的是“杂种中异配性别优先不育/不存活”的现象；即使两个属模式相同，也只是说明机制相似，不能推翻规则。\nD【对】伊蚊 X、Y 均携带完整同源基因，但部分杂交仅雄性不育、部分两性均不育，说明不同物种的 Y 染色体功能存在差异，影响杂种育性。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "Haldane 规则与杂种不育",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 38 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 38
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "Haldane 规则与杂种不育", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

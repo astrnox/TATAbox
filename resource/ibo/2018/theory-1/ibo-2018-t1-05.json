@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-05",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Enzyme activity usually correlates with its conformational flexibility, such that higher flexibility (lower rigidity) is usually accompanied with higher activity. Tryptophan residues which emit fluorescence are most commonly located within the nonpolar interior environment of proteins. An excellent way to experimentally determine the exposure of tryptophan residues to solution is by measuring the quenching (decrease) of their fluorescence. The effect of mutations on the accessibility of tryptophan residues can be studied by measuring the amount of fluorescence quenching by potassium iodide (KI). Iodide ions selectively quench fluorescence emitted by exposed tryptophan residues.\n\nIn the experiment whose results are presented below, fluorescence quenching of equal amounts of three mutated forms of an enzyme (mutant forms 1, 2, and 3) was measured after addition of various concentrations of KI (0–0.6 M). Excitation and emission wavelengths used were specific for tryptophan. Quenching data were analysed in terms of the Stern–Volmer constant, KSV, which can be calculated from the ratio of the unquenched and the quenched fluorescence intensities, F0/F, using the relationship F0/F = 1 + KSV[Q], where [Q] is the molar concentration of the quencher.",
+  "question_zh": "酶的活性通常与其构象柔性相关：柔性越高（刚性越低），活性通常越高。发出荧光的色氨酸残基最常位于蛋白质的非极性内部环境中。实验测定色氨酸残基暴露于溶液程度的理想方法，是测量其荧光淬灭（荧光下降）的程度。通过测量碘化钾（KI）引起的荧光淬灭量，可以研究突变对色氨酸残基可及性的影响；碘离子会选择性地淬灭暴露的色氨酸残基所发出的荧光。\n\n在下面给出的实验中，向等量的三种突变型酶（突变体 1、2、3）中加入不同浓度的 KI（0–0.6 M）后，测定荧光淬灭。激发与发射波长均为色氨酸特异。淬灭数据用 Stern–Volmer 常数 KSV 分析；KSV 可由未淬灭与淬灭后的荧光强度之比 F0/F 按关系式 F0/F = 1 + KSV[Q] 计算，其中 [Q] 为淬灭剂的摩尔浓度。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q05-fig1.webp",
+      "caption": "Stern–Volmer plots of fluorescence quenching by KI for mutant forms 1, 2 and 3.",
+      "caption_zh": "突变体 1、2、3 的 KI 荧光淬灭 Stern–Volmer 图。",
+      "page": 7
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Among the three mutated proteins, protein 1 is expected to have the lowest enzymatic activity.",
+      "text_zh": "在三种突变蛋白中，蛋白 1 的酶活性预计最低。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Iodide ions have higher accessibility to the tryptophan residues of protein 2 as compared to protein 3.",
+      "text_zh": "与蛋白 3 相比，碘离子对蛋白 2 色氨酸残基的可及性更高。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Protein 3 has the highest KSV.",
+      "text_zh": "蛋白 3 的 KSV 最高。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Protein 1 does not have tryptophan residues.",
+      "text_zh": "蛋白 1 不含色氨酸残基。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】图中蛋白 1 的 Stern–Volmer 直线最平缓，KSV 最小，说明其色氨酸埋藏最深、构象最刚性；按“柔性越高活性越高”的关系，蛋白 1 的酶活性最低。\nB【错】直线的斜率即 KSV，三者关系为 3 > 2 > 1；蛋白 2 的 KSV 小于蛋白 3，说明碘离子对蛋白 2 色氨酸的可及性更低。\nC【对】蛋白 3 的直线最陡，斜率 KSV 最大，表明其色氨酸暴露程度最高。\nD【错】蛋白 1 仍有荧光且 F0/F 随 KI 浓度升高而增大（KSV>0），说明它含有可被碘离子淬灭的色氨酸，只是暴露程度较低。",
+  "module": "module_1",
+  "subject": "生物化学",
+  "concept": "蛋白质构象与荧光淬灭",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 5 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 5
+  },
+  "tags": ["ibo", "module_1", "生物化学", "蛋白质构象与荧光淬灭", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

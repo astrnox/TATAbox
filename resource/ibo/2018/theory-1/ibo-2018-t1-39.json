@@ -1,0 +1,72 @@
+{
+  "id": "IBO-2018-T1-39",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Bustamante et al. (2005) analysed the pattern of polymorphism in the human genome by sequencing over 11,624 genes from 39 humans. The table below shows the distributions of synonymous (changes that do not result in amino acid replacement) and non-synonymous (changes that result in amino acid replacement) single nucleotide polymorphisms (SNPs – variation within species):\n\nIn the table, divergence refers to the fixed differences between the humans in this study and the chimpanzee genome.",
+  "question_zh": "Bustamante 等（2005）对 39 名人类的 11,624 个以上基因进行测序，分析了人类基因组的多态性模式。下表显示同义（不导致氨基酸替换的变异）与非同义（导致氨基酸替换的变异）单核苷酸多态性（SNP，即种内变异）的分布：\n\n表中“分化”指本研究中人类与黑猩猩基因组之间的固定差异。",
+  "tables": [
+    {
+      "title": "Distribution of synonymous and non-synonymous SNPs and divergent sites",
+      "head": ["", "Divergence", "SNPs"],
+      "rows": [
+        ["Synonymous", "34,099", "15,750"],
+        ["Non-synonymous", "20,467", "14,311"]
+      ]
+    }
+  ],
+  "tables_zh": [
+    {
+      "title": "同义与非同义 SNP 及分化位点的分布",
+      "head": ["", "分化", "SNP"],
+      "rows": [
+        ["同义", "34,099", "15,750"],
+        ["非同义", "20,467", "14,311"]
+      ]
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Greater ratio of non-synonymous to synonymous SNPs relative to ratio of non-synonymous to synonymous divergent sites suggest the effect of negative selection in human.",
+      "text_zh": "非同义/同义 SNP 的比值高于非同义/同义分化位点的比值，提示人类受到负选择的作用。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "The ratio of synonymous/non-synonymous SNPs is higher in genes involved in chromatin structure.",
+      "text_zh": "在染色质结构相关基因中，同义/非同义 SNP 的比值更高。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Arms races caused by host-specific pathogens would decrease the ratio of synonymous/non-synonymous substitutions in divergent sites between human and chimpanzee.",
+      "text_zh": "宿主特异性病原体引起的“军备竞赛”会降低人类与黑猩猩分化位点中同义/非同义替换的比值。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "SNPs present within chimpanzee population cannot result in any level of reproductive isolation in chimpanzee population.",
+      "text_zh": "黑猩猩种群内存在的 SNP 不可能导致该种群出现任何程度的生殖隔离。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】非同义/同义 SNP 比值高于分化位点比值，说明非同义变异在种内被保留得较多，提示放松的负选择或正选择，而不是负选择增强；负选择会降低非同义 SNP 比例。\nB【对】染色质结构基因功能高度保守，非同义突变多被负选择清除，因此同义/非同义 SNP 比值较高。\nC【对】与宿主特异性病原体的军备竞赛会驱动免疫/防御基因发生适应性非同义替换，使分化位点中非同义替换增多，同义/非同义比值下降。\nD【错】种群内 SNP 若影响交配偏好、杂交适合度或生态适应，可能逐步导致生殖隔离；不能断言“任何程度都不可能”。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "分子进化与选择压力",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 39 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 39
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "分子进化与选择压力", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

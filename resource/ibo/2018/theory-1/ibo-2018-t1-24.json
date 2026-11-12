@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-24",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Uljanin in 1870 discovered a group of marine, soft-bodied, unsegmented hermaphroditic worms without hindgut and coelom. The mouth in these worms opens to a central digestive parenchyma. They moved with their multiciliated epidermis, although many were ‘surprisingly muscular’. Most of the species were free-living and some were ectocommensals. It has now been shown that several species form obligate symbioses with green algae, making them functional photoautotroph organisms. Later, the phylogenetic position of these multicellular organisms was studied using the complete mitochondrial genome of a member of this group (Symsagittifera roscoffensis), which has been given in the figure below.",
+  "question_zh": "Uljanin 于 1870 年发现了一类海生、柔软、不分节、雌雄同体的蠕虫，无后肠、无体腔。这类蠕虫的口通向中央消化实质。它们依靠多纤毛表皮运动，尽管许多种类“肌肉出奇地发达”。大多数种类自由生活，少数为外共生。现已表明，若干物种与绿藻形成专性共生，使其成为功能性光自养生物。随后，利用该组一个成员（Symsagittifera roscoffensis）的完整线粒体基因组研究了这些多细胞生物的系统发育位置，结果如下图所示。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q24-fig1.webp",
+      "caption": "Phylogenetic tree based on complete mitochondrial genomes, showing the position of Symsagittifera (Acoelomorpha) relative to Deuterostomia and other Bilateria.",
+      "caption_zh": "基于完整线粒体基因组的系统发育树，显示 Symsagittifera（Acoelomorpha）相对于后口动物及其他两侧对称动物的位置。",
+      "page": 27
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Based on this tree, Acoelomorpha is a sister group of Deuterostomia.",
+      "text_zh": "根据该树，Acoelomorpha 是后口动物（Deuterostomia）的姐妹群。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Based on the above given description, the identified worm is a triploblastic acoelomate.",
+      "text_zh": "根据上述描述，所鉴定的蠕虫是三胚层无体腔动物。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Based on the above given text, the identified worm has incomplete digestive system.",
+      "text_zh": "根据上述文字，所鉴定的蠕虫具有不完全消化系统。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "The provided data is consistent with the hypothesis that the identified worm belongs to the earliest diverging lineage of Bilateria.",
+      "text_zh": "所给数据与“该蠕虫属于两侧对称动物最早分化出的谱系”这一假说一致。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】树中 Xenacoelomorpha（含 Acoelomorpha）位于所有其它两侧对称动物的基部，是 Bilateria 的姐妹群；Deuterostomia 只是其中一个独立分支，并非 Acoelomorpha 的姐妹群。\nB【对】题干描述其无体腔、具三胚层来源的组织与器官，属于三胚层无体腔动物。\nC【对】口通向中央消化实质、无后肠，属于不完全消化系统（只有一个开口）。\nD【对】系统发育树显示 Acoelomorpha 是最早分化出的两侧对称动物谱系，与假说一致。",
+  "module": "module_3",
+  "subject": "动物学",
+  "concept": "两侧对称动物的系统发育",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 24 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 24
+  },
+  "tags": ["ibo", "module_3", "动物学", "两侧对称动物的系统发育", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

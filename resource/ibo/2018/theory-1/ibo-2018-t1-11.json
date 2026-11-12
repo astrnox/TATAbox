@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-11",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Thalassemia, the most common inherited disorder of hemoglobin, is caused by loss or substantial reduction of one of the globin chains. This results in lowered levels of functional hemoglobin and decreased function of red blood cells, which lead to anemia. In α-thalassemia, the α chain of hemoglobin is not produced in sufficient quantity and consequently, hemoglobin tetramers form that contain only the β chain. In β-thalassemia, the β chain of hemoglobin is not produced in sufficient quantity and the α chains form insoluble aggregates that precipitate inside immature red blood cells and prevent differentiation into mature cells.\n\nThe normal haploid human genome has one β chain and two α chain coding genes. Presence of four alleles for α chain compared to two alleles for β chain in the cells of normal individuals is expected to result in excess amounts of α chain and production of α aggregates. However, α aggregates do not exist in the cells of normal individuals. One mechanism for maintaining α chains in soluble form was revealed by the discovery of an 11-kDa protein in red blood cells called α-hemoglobin stabilizing protein (AHSP). This protein forms a soluble complex specifically with α chain monomers as they are synthesized. The crystal structure of a complex between AHSP and α-hemoglobin reveals that AHSP binds to the same face of α-globin as does β-globin and ensures the proper folding of α-globin as it is produced. β-globin displaces AHSP when it is expressed.",
+  "question_zh": "地中海贫血是最常见的血红蛋白遗传病，由某一种珠蛋白链缺失或大幅减少引起。这会导致有功能的血红蛋白水平降低、红细胞功能下降，从而引起贫血。在 α-地中海贫血中，血红蛋白 α 链合成不足，结果形成只含 β 链的血红蛋白四聚体。在 β-地中海贫血中，β 链合成不足，α 链形成不溶性聚集体，沉积在未成熟红细胞内，阻止其分化为成熟细胞。\n\n正常人类单倍体基因组中有 1 个 β 链编码基因和 2 个 α 链编码基因。正常个体细胞中 α 链有 4 个等位基因，而 β 链只有 2 个，按理应产生过量 α 链并形成 α 聚集体；但正常个体细胞中并不存在 α 聚集体。红细胞中一种 11 kDa 的蛋白——α-血红蛋白稳定蛋白（AHSP）——的发现揭示了一种维持 α 链可溶性的机制。该蛋白在 α 链合成时与其单体特异形成可溶复合物。AHSP 与 α-血红蛋白复合物的晶体结构显示，AHSP 与 β-珠蛋白结合在 α-珠蛋白的同一面，确保 α-珠蛋白在合成过程中正确折叠。β-珠蛋白表达后会将 AHSP 置换下来。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Higher incidence of severe β-thalassemia compared to severe α-thalassemia could be explained by difference in copy numbers of α and β genes.",
+      "text_zh": "重型 β-地中海贫血的发生率高于重型 α-地中海贫血，可以用 α 基因与 β 基因拷贝数的差异来解释。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "α-globin/β-globin ratio is an appropriate marker for screening of β-thalassemia.",
+      "text_zh": "α-珠蛋白/β-珠蛋白比值是筛查 β-地中海贫血的合适标志物。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "α-Hemoglobin has a higher affinity for β-hemoglobin than for AHSP.",
+      "text_zh": "α-血红蛋白对 β-血红蛋白的亲和力高于对 AHSP 的亲和力。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "AHSP deleterious mutations are expected to mimic β-thalassemia phenotype with respect to α-chain aggregation.",
+      "text_zh": "AHSP 的有害突变预计会在 α 链聚集方面模拟 β-地中海贫血的表型。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】α 链由两个基因（4 个等位基因）编码，β 链只由一个基因（2 个等位基因）编码；β 基因突变会直接使 β 链减少一半以上，α 链相对过剩并聚集，因此重型 β-地中海贫血更常见、更严重。\nB【对】β-地中海贫血时 β 链合成减少，α/β 比值升高；该比值可反映珠蛋白链合成失衡，适合作为筛查指标。\nC【对】题干指出 β-珠蛋白表达后会置换 AHSP，说明 α-珠蛋白与 β-珠蛋白的亲和力高于与 AHSP 的亲和力。\nD【对】AHSP 的功能是稳定游离 α 链、防止其聚集；AHSP 功能缺失时游离 α 链聚集，表型与 β-地中海贫血中 α 链过剩聚集相似。",
+  "module": "module_4",
+  "subject": "遗传学",
+  "concept": "血红蛋白病与珠蛋白链平衡",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 11 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 11
+  },
+  "tags": ["ibo", "module_4", "遗传学", "血红蛋白病与珠蛋白链平衡", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

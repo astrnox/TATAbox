@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-35",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Chloroplast symbiosis or kleptoplasty refers to a naturally occurring process that results in maintenance of chloroplasts of one species in host cells of another species. This process has occurred in sacoglossan sea slugs (Figure 1: Pierce and Curtis, 2012). Cells that line the digestive diverticula of the slugs maintain chloroplasts that originated from algal food. Sea slug species with these chloroplasts are able to tolerate starvation for periods up to one year. It has been shown that some sea slugs are able to retain functional plastids for a year or more, or even to the end of their life.\n\nSeveral hypotheses were tested to find the mechanisms behind this kind of symbiosis. All earlier attempts to locate algal nuclei in such sea slugs failed. However, recent studies have demonstrated presence of Vaucheria litorea algal nuclear genes in genomic DNA of the larvae of the slug Elysia chlorotica which have never fed on V. litorea. Note that use of animal proteins by chloroplasts seems implausible.",
+  "question_zh": "叶绿体共生或“盗质体”（kleptoplasty）是指一种自然发生的过程：一个物种的叶绿体在另一物种的宿主细胞中被维持。这一过程见于囊舌目海蛞蝓（图 1：Pierce 与 Curtis，2012）。海蛞蝓消化盲囊内壁的细胞可维持来源于藻类食物的叶绿体。带有这些叶绿体的海蛞蝓能耐受长达一年的饥饿。已有研究表明，某些海蛞蝓能将功能性质体保留一年以上，甚至保留到生命结束。\n\n为寻找这种共生背后的机制，研究者检验了若干假说。早期所有在这类海蛞蝓中定位藻类细胞核的尝试均告失败。然而，近期研究在从未取食 Vaucheria litorea 的海蛞蝓 Elysia chlorotica 幼虫的基因组 DNA 中检测到了 V. litorea 的藻类核基因。注意：叶绿体利用动物蛋白似乎不太可能。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q35-fig1.webp",
+      "caption": "Sacoglossan sea slugs: A, Elysia chlorotica; B, Elysia clarki.",
+      "caption_zh": "囊舌目海蛞蝓：A，Elysia chlorotica；B，Elysia clarki。",
+      "page": 39
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Horizontal gene transfer might have resulted in transfer of certain genes of the harvested chloroplast into the genome of some slugs, particularly in slugs that have maintained chloroplasts for long periods of time.",
+      "text_zh": "水平基因转移可能使被获取的叶绿体的某些基因转移到某些海蛞蝓的基因组中，尤其是在长期维持叶绿体的海蛞蝓中。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Activity of lysosomal enzymes in host cells must be minimal in order to prevent chloroplast ingestion.",
+      "text_zh": "为防止叶绿体被摄入，宿主细胞中溶酶体酶的活性必须很低。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "The sea slugs with algal chloroplasts also need algal mitochondria to ensure a source of energy during periods of starvation.",
+      "text_zh": "带有藻类叶绿体的海蛞蝓还需要藻类线粒体，以保证饥饿期间的能量来源。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "Nuclear algal RNA present in ingested chloroplasts could somehow persist for as long as one year in the sea slug.",
+      "text_zh": "被摄入叶绿体中的藻类核 RNA 能够以某种方式在海蛞蝓体内存留长达一年。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】在海蛞蝓基因组中检测到藻类核基因，说明长期维持叶绿体的物种可能通过水平基因转移获得部分藻类基因，以支持质体功能。\nB【错】溶酶体酶活性低有利于避免消化叶绿体，但“防止叶绿体被摄入”不是溶酶体酶的功能；溶酶体作用于已摄入的细胞器，且该说法把因果关系弄反了。\nC【错】叶绿体本身进行光合作用产生 ATP 与有机物，饥饿期间海蛞蝓依赖的是叶绿体的光合产物；没有证据表明还需要藻类线粒体。\nD【错】叶绿体不含细胞核，藻类核 RNA 不会存在于被摄入的叶绿体中；且核 RNA 半衰期短，不可能在宿主内存留一年。",
+  "module": "module_1",
+  "subject": "细胞生物学",
+  "concept": "盗质体与水平基因转移",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 35 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 35
+  },
+  "tags": ["ibo", "module_1", "细胞生物学", "盗质体与水平基因转移", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "IBO-2018-T1-19",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Thyroid hormones are transported in blood by proteins. TBG (thyroid hormone binding globulin) is the main thyroid hormone transporting protein. Many factors affect TBG concentration, such as oestrogen and OCP (oral contraceptive pill), etc. OCP increases TBG concentration. The T3RU (T3 resin uptake) assay is a method of quantification of unbound TBG in the blood. It indirectly measures the capacity of the patient’s TBG to bind radioactively labelled T3. The lower the patient’s thyroid hormone level, the more radioactively labelled T3 will bind to TBG. Thus, since radioactive T3 is only detectable in unbound form, the T3RU assay result will be lower.",
+  "question_zh": "甲状腺激素在血液中由蛋白质运输。TBG（甲状腺激素结合球蛋白）是主要的甲状腺激素运输蛋白。许多因素会影响 TBG 浓度，如雌激素和 OCP（口服避孕药）等。OCP 会升高 TBG 浓度。T3RU（T3 树脂摄取）试验用于定量血液中未结合的 TBG，间接测定患者 TBG 结合放射性标记 T3 的能力。患者甲状腺激素水平越低，与 TBG 结合的放射性 T3 就越多。因此，由于放射性 T3 只有未结合形式可被检测，T3RU 试验结果会降低。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "In primary hypothyroidism, the thyroid function test would be like below: TSH increased, T4 decreased, T3RU decreased.",
+      "text_zh": "在原发性甲状腺功能减退症中，甲状腺功能检查结果如下：TSH 升高，T4 降低，T3RU 降低。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "A person who uses OCP and is euthyroid (normal functioning of thyroid) the thyroid function test would be like below: TSH normal, T4 decreased, T3RU decreased.",
+      "text_zh": "使用 OCP 且甲状腺功能正常（euthyroid）的人，甲状腺功能检查结果如下：TSH 正常，T4 降低，T3RU 降低。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "In primary hyperthyroidism the thyroid function test would be like below: TSH increased, T4 increased, T3RU increased.",
+      "text_zh": "在原发性甲状腺功能亢进症中，甲状腺功能检查结果如下：TSH 升高，T4 升高，T3RU 升高。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "In secondary hypothyroidism (pituitary dysfunction) the thyroid function test would be like below: TSH decreased, T4 decreased, T3RU decreased.",
+      "text_zh": "在继发性甲状腺功能减退症（垂体功能障碍）中，甲状腺功能检查结果如下：TSH 降低，T4 降低，T3RU 降低。",
+      "answer": true
+    },
+    {
+      "label": "E",
+      "text": "In tertiary hypothyroidism (hypothalamic dysfunction) the thyroid function test would be like below: TSH normal, T4 decreased, T3RU decreased.",
+      "text_zh": "在三发性甲状腺功能减退症（下丘脑功能障碍）中，甲状腺功能检查结果如下：TSH 正常，T4 降低，T3RU 降低。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】原发性甲减时甲状腺本身功能低下，T4 降低；负反馈减弱使 TSH 升高。TBG 结合位点空出更多，更多放射性 T3 与 TBG 结合，T3RU 降低。\nB【错】OCP 使 TBG 升高，总 T4 随之升高（而不是降低）；游离 T4 与 TSH 维持正常，T3RU 因 TBG 增多而降低。\nC【错】原发性甲亢时 T4 升高，负反馈增强使 TSH 降低（而不是升高）；T3RU 升高。\nD【对】继发性甲减由垂体功能低下引起，TSH 降低、T4 降低、T3RU 降低。\nE【错】三发性甲减由下丘脑 TRH 不足引起，TSH 降低（而不是正常），T4 降低、T3RU 降低。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "甲状腺功能检查与 TBG",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 19 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 19
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "甲状腺功能检查与 TBG", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -20,7 +20,7 @@
     default-src 'self';
     script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com;
     style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-    img-src 'self' data: blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://upload.wikimedia.org https://qxehkfucvmxuojjkdaqy.supabase.co;
+    img-src 'self' data: blob: https://cdn.jsdelivr.net https://gcore.jsdelivr.net https://testingcf.jsdelivr.net https://fastly.jsdelivr.net https://cdnjs.cloudflare.com https://upload.wikimedia.org https://qxehkfucvmxuojjkdaqy.supabase.co;
     font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
     connect-src 'self'
       https://qxehkfucvmxuojjkdaqy.supabase.co
@@ -913,6 +913,7 @@
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
   <script src="js/core/error-recovery.js?v=20260803a" defer></script>
   <script src="js/core/question-model.js?v=20261013a" defer></script>
+  <script src="js/core/question-i18n.js?v=20261108a" defer></script>
   <!-- 打印工具：错题/练习/组卷统一 A4 打印（原生 window.print，零依赖） -->
   <script src="js/core/print-utils.js?v=20261018b" defer></script>
   <!-- Bio 分全局唯一实现（calcBioScore / computeBioDimensions）：预加载保证

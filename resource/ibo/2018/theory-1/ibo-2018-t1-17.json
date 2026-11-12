@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-17",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Perception of emotional stimuli is a reciprocal process between the brain and the heart. In an experimental task, pictures depicting facial expressions were quickly and sequentially presented to the subjects at different phases of the cardiac cycle. Participants then rated the emotional intensity of the faces on a scale of 0 to 100. Given the role of the amygdala in the process of fear, the amygdala response was measured in normal individuals and subjects with pure autonomic failure (PAF) at the time of presenting facial expression images (using the fMRI method). The results of the study are as follows. (Consider p < 0.05 indicates significant difference between groups.)",
+  "question_zh": "情绪刺激的知觉是大脑与心脏之间的双向过程。在一项实验任务中，向受试者在心动周期的不同阶段快速、连续地呈现表情图片。随后，受试者按 0–100 分评定面孔的情绪强度。鉴于杏仁核在恐惧加工中的作用，研究使用 fMRI 在呈现表情图片时测量正常个体和纯自主神经衰竭（PAF）受试者的杏仁核反应。研究结果如下。（p < 0.05 表示组间差异显著。）",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q17-fig1.webp",
+      "caption": "Fear and neutral face perception during systole (S) and late diastole (D), with right amygdala responses in controls and PAF subjects.",
+      "caption_zh": "收缩期（S）与舒张晚期（D）对恐惧/中性面孔的知觉评分，以及正常对照与 PAF 受试者的右侧杏仁核反应。",
+      "page": 20
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Perception of the fear face in the systolic phase is higher than the diastole phase.",
+      "text_zh": "收缩期对恐惧面孔的知觉高于舒张期。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The difference between systolic and diastolic response of the amygdala to neutral face images is the opposite of facial expressions of fear.",
+      "text_zh": "杏仁核对中性面孔的收缩期与舒张期反应差异，与对恐惧表情的差异方向相反。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Increasing the arterial baroreceptors sensitivity in the carotid and aorta may cause a significant reduction in the perception of the fear.",
+      "text_zh": "提高颈动脉和主动脉的压力感受器敏感性，可能显著降低恐惧知觉。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "Increased blood flow to amygdala in the systolic phase compare to the diastole phase cannot explain the results of this study.",
+      "text_zh": "收缩期杏仁核血流量高于舒张期，不能解释本研究的结果。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】图中恐惧强度评分在收缩期（S）约为 74–75，显著高于舒张期（D）约 70–71（p < 0.05）。\nB【错】中性面孔的 S 与 D 差异不显著（p > 0.05），不能构成与恐惧表情“方向相反”的显著差异；图中中性评分的差异也未达到统计学意义。\nC【错】压力感受器在收缩期被激活；研究显示收缩期恐惧知觉更高、杏仁核反应更强。提高压力感受器敏感性预计会增强而非降低收缩期相关反应，不会得出“显著降低恐惧”的结论。\nD【错】收缩期杏仁核血流量增加可以解释其反应增强及恐惧知觉升高，因此“不能解释”是错误的。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "心脑相互作用与情绪知觉",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 17 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 17
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "心脑相互作用与情绪知觉", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "IBO-2018-T1-12",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Pentose sugars and NADPH are synthesized through the pentose phosphate pathway. Reduced glutathione (GSH) acts to neutralize reactive oxygen species (ROSs) in the body. The reaction for GSH generation is shown below.\n\nIndividuals with glucose-6-phosphate dehydrogenase (G6PD) deficiency have decreased levels of NADPH, which can cause the favism disorder. Compared to other populations, the frequency of G6PD deficiency is higher in Africans, and its prevalence in Africa positively correlates with the prevalence of malaria.",
+  "question_zh": "戊糖和 NADPH 通过戊糖磷酸途径合成。还原型谷胱甘肽（GSH）在体内中和活性氧（ROS）。GSH 生成的反应如下所示。\n\n葡萄糖-6-磷酸脱氢酶（G6PD）缺陷者的 NADPH 水平降低，可引起蚕豆病（favism）。与其他人群相比，非洲人群中 G6PD 缺陷的频率更高，且其在非洲的流行率与疟疾流行率呈正相关。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q12-fig1.webp",
+      "caption": "The pentose phosphate pathway: oxidative phase produces NADPH and ribulose-5-phosphate; non-oxidative phase interconverts sugar phosphates.",
+      "caption_zh": "戊糖磷酸途径：氧化阶段产生 NADPH 与核酮糖-5-磷酸；非氧化阶段进行糖磷酸之间的相互转化。",
+      "page": 15
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q12-fig2.webp",
+      "caption": "Glutathione reductase regenerates GSH from GSSG using NADPH.",
+      "caption_zh": "谷胱甘肽还原酶利用 NADPH 将 GSSG 还原为 GSH。",
+      "page": 15
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The high prevalence of G6PD deficiency in regions with high incidence of malaria can be explained by high susceptibility of Plasmodium falciparum to oxidative agents.",
+      "text_zh": "在疟疾高发地区 G6PD 缺陷高发，可以用恶性疟原虫（Plasmodium falciparum）对氧化剂高度敏感来解释。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Increase in levels of cell division is accompanied by increase in the ratio of fructose-6 phosphate/ribose-5 phosphate production by the pentose phosphate pathway.",
+      "text_zh": "细胞分裂水平升高时，戊糖磷酸途径产生的果糖-6-磷酸/核糖-5-磷酸比值也随之升高。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "G6PD deficiency affects catabolism more than anabolism in individuals with the deficiency.",
+      "text_zh": "在 G6PD 缺陷个体中，该缺陷对分解代谢的影响大于对合成代谢的影响。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "It is expected that the cause of favism in some affected individuals may be glutathione reductase deficiency.",
+      "text_zh": "可以预期，某些患者的蚕豆病病因可能是谷胱甘肽还原酶缺陷。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】G6PD 缺陷使 NADPH 不足、GSH 再生受阻，红细胞抗氧化能力下降；疟原虫对氧化损伤敏感，因此杂合子在疟疾高发区具有相对生存优势，使该缺陷频率维持在较高水平。\nB【错】细胞分裂旺盛时需要大量核糖-5-磷酸来合成核苷酸，戊糖磷酸途径应更多产生 R5P，F6P/R5P 比值下降而不是升高。\nC【错】G6PD 通过 NADPH 参与还原性合成与抗氧化防御，主要影响合成代谢和氧化还原平衡，而不是分解代谢。\nD【对】谷胱甘肽还原酶负责利用 NADPH 将 GSSG 还原为 GSH；该酶缺陷同样导致 GSH 不足、红细胞易受氧化损伤，可产生类似蚕豆病的溶血表现。",
+  "module": "module_1",
+  "subject": "生物化学",
+  "concept": "戊糖磷酸途径与氧化应激",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 12 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 12
+  },
+  "tags": ["ibo", "module_1", "生物化学", "戊糖磷酸途径与氧化应激", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

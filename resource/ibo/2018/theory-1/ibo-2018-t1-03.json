@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-03",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Taxonomy has traditionally been based on morphology. DNA barcoding is a new approach that aims to allow accurate and relatively simple species identification based on the nucleotide sequence of a 650-bp fragment of the mitochondrial COI gene. The Kimura 2-parameter (K2P) distance is a widely accepted index that reflects the divergence between two DNA sequences.\n\nSelected results relating to 16 species from five barcoding studies from different regions of the world are presented below. Three types of divergence values were calculated: global, intraregional, and interregional distances. Global divergence, which is commonly used, was the average of all pairwise comparisons of sequences belonging to the same species regardless of location of origin. Intraregional divergences were calculated by averaging the distances of all sequences belonging to the same species from the same location. Finally, interregional distances were calculated by averaging all distance values obtained from comparing each of the sequences from one location with all sequences of the same species in a second location.\n\nResults of three calculations (i, ii, and iii) are given below:\n\ni. The average standard deviation (SD) of 17 intraregional comparisons pertaining to 10 species was 0.11% (minimum: 0%; maximum: 0.3%). The SD of divergences of an 18th intraregional comparison pertaining to one of these species was 1.26%.\n\nii. The intraregional divergence of Argyrops spinifer specimens from India was 0.20%, and the interregional divergence of specimens from India and South Africa was 0.13%.\n\niii. Global divergence for Platycephalus indicus was 9.46%. Interregional divergences for this species were as follows: India/China 15.78%, China/Australia 12.05%, India/Australia 10.61%, China/S Africa 16.05%, India/S Africa 4.05%, Australia/S Africa 10.95%.",
+  "question_zh": "传统分类学以形态为基础。DNA 条形码是一项新方法，旨在依据线粒体 COI 基因中一段 650 bp 片段的核苷酸序列，实现准确且相对简单的物种鉴定。Kimura 双参数（K2P）距离是广泛接受的指标，用于反映两条 DNA 序列之间的分化程度。\n\n下面给出世界不同地区 5 项条形码研究中 16 个物种的部分结果。研究计算了三类分化值：全局距离、区域内距离和区域间距离。常用的全局分化是同一物种全部序列两两比较的平均值，不考虑来源地点。区域内分化是同一地点同一物种全部序列距离的平均值。区域间距离则是将一个地点的每条序列与另一地点同一物种的全部序列比较后所得距离的平均值。\n\n三项计算（i、ii、iii）结果如下：\n\ni. 涉及 10 个物种的 17 组区域内比较，其标准差（SD）平均为 0.11%（最小 0%，最大 0.3%）。其中某一物种的第 18 组区域内比较，其分化标准差为 1.26%。\n\nii. 来自印度的 Argyrops spinifer 标本的区域内分化为 0.20%，而印度与南非标本之间的区域间分化为 0.13%。\n\niii. Platycephalus indicus 的全局分化为 9.46%。该物种的区域间分化如下：印度/中国 15.78%，中国/澳大利亚 12.05%，印度/澳大利亚 10.61%，中国/南非 16.05%，印度/南非 4.05%，澳大利亚/南非 10.95%。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The SD value of the 18th comparison in calculation (i) above is consistent with the suggestion that the fish compared in fact do not all belong to the same species.",
+      "text_zh": "上述计算 (i) 中第 18 组比较的 SD 值，与“所比较的鱼实际上并不都属于同一物种”这一看法相符。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The K2P divergence values reported in calculation (ii) is consistent with the proposal that A. spinifer populations of India and South Africa arose from a common source population, but that there is greater variation in the ecological niches of India as compared to South Africa.",
+      "text_zh": "计算 (ii) 报道的 K2P 分化值与下列观点相符：印度和南非的 A. spinifer 种群来自共同的源种群，但印度的生态位变异比南非更大。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The divergence values in calculation (iii) show that, as compared to interregional divergence values, global divergence values are more informative of extent of divergence that exists for P. indicus in the world.",
+      "text_zh": "计算 (iii) 的分化值表明，与区域间分化值相比，全局分化值更能反映 P. indicus 在世界范围内的分化程度。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "With reference to calculation (iii), the difference between global divergence value (9.46%) and average of interregional divergence values (11.58%) can be explained by unequal number of specimens from different regions.",
+      "text_zh": "就计算 (iii) 而言，全局分化值（9.46%）与区域间分化平均值（11.58%）之间的差异，可以用不同地区标本数量不等来解释。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】17 组区域内比较的 SD 平均仅 0.11%，而第 18 组高达 1.26%，约高一个数量级，提示该组比较中混入了不同物种或高度分化的隐存种。\nB【对】印度群体区域内分化（0.20%）高于印度—南非区域间分化（0.13%），说明印度群体内部更异质，与“共同来源、但印度生态位变异更大”的解释一致。\nC【错】全局距离把所有地点、所有标本合并平均，会掩盖区域间的真实差异；对 P. indicus 而言，区域间距离在 4.05%–16.05% 之间大幅变化，比单一全局值（9.46%）更能反映各地群体的分化格局。\nD【对】全局平均是把全部两两比较合并后求平均；若各地标本数不等，各地对总平均的权重不同，因此全局值 9.46% 与六个区域间值的简单平均 11.58% 不一致是正常的。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "种群遗传分化与 DNA 条形码",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 3 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 3
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "种群遗传分化与 DNA 条形码", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

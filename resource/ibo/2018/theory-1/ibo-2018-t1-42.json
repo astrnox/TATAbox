@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-42",
+  "type": "mtf",
+  "lang": "en",
+  "question": "One of the basic ways to illustrate trophic relationships in an ecosystem is to use pyramids of energy and biomass, which are stacks of rectangles. Each represents the amount of energy or biomass within one trophic level. We know a proportion of energy and biomass is lost from the ecosystem when transferring from one level to the next. Therefore, the size of each rectangle decreases when we move from one level to the level above it.",
+  "question_zh": "说明生态系统营养关系的基本方法之一是能量金字塔和生物量金字塔，它们由一叠矩形构成，每个矩形代表一个营养级内的能量或生物量。我们知道，能量和生物量在从低营养级向高营养级传递时会有一部分损失。因此，从下一级向上移动时，每个矩形的大小会减小。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q42-fig1.webp",
+      "caption": "Examples of energy and biomass pyramids in different ecosystems. Biomass pyramids can be inverted in some ecosystems.",
+      "caption_zh": "不同生态系统中能量金字塔与生物量金字塔的示例。在某些生态系统中，生物量金字塔可以倒置。",
+      "page": 46
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Inverted biomass pyramids are caused by low density of heterotrophs at any given time.",
+      "text_zh": "倒置的生物量金字塔是由任何时刻异养生物密度低造成的。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "We can’t have regular energy pyramid when biomass pyramid is inverted, thus the energy pyramid for the inverted biomass must be inverted as well.",
+      "text_zh": "当生物量金字塔倒置时，不可能有正常的能量金字塔，因此倒置生物量对应的能量金字塔也必须倒置。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Biomass of autotrophs are usually greater than biomass of heterotrophs in terrestrial ecosystems.",
+      "text_zh": "在陆地生态系统中，自养生物的生物量通常大于异养生物的生物量。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Given that phytoplankton has more rapid turnover, the biomass pyramid is more likely to be inverted.",
+      "text_zh": "由于浮游植物周转更快，生物量金字塔更可能倒置。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】倒置生物量金字塔的成因是生产者（如浮游植物）周转快、现存量低但生产力高，而不是异养生物密度低；异养生物密度低并不导致倒置。\nB【错】能量金字塔表示能量流动速率，始终是正立的；生物量金字塔倒置并不要求能量金字塔也倒置。\nC【对】陆地生态系统中生产者（树木、草本）现存量通常远大于异养生物，生物量金字塔正立。\nD【对】浮游植物繁殖快、被摄食快，现存量可能低于浮游动物，因而生物量金字塔容易倒置；但能量金字塔仍正立。",
+  "module": "module_3",
+  "subject": "生态学",
+  "concept": "营养级与生态金字塔",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 42 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 42
+  },
+  "tags": ["ibo", "module_3", "生态学", "营养级与生态金字塔", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}
