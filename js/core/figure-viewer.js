@@ -246,6 +246,17 @@
       _handleImgError(t);
     }, true);
 
+    // 镜像降级/带参重试成功后：恢复点击放大，并让查看器打开实际可用的地址
+    document.addEventListener('load', function (e) {
+      var t = e && e.target;
+      if (!t || t.tagName !== 'IMG') return;
+      if (t.getAttribute('data-bq-zoom') !== '1') return;
+      var src = _clearRetryQuery(t.currentSrc || t.getAttribute('src') || '');
+      if (src) t.setAttribute('data-bq-orig-src', src);
+      if (t.removeAttribute) t.removeAttribute(RETRY_ATTR);
+      if (t.dataset) delete t.dataset.bqRetry;
+    }, true);
+
     // 点击图片 → 打开查看器；点击失败占位 → 重试
     document.addEventListener('click', function (e) {
       var el = e.target;

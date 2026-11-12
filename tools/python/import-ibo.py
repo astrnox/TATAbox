@@ -63,19 +63,6 @@ def extract(pdf_path, out_path, figdir, prefix):
                 tf_y = b[1]
                 break
 
-        # 抽图（本页全部位图，按 bbox 裁剪，含叠加标注）
-        figs = []
-        for im in page.get_images(full=True):
-            try:
-                bbox = page.get_image_bbox(im)
-            except Exception:
-                continue
-            if not bbox or bbox.is_empty:
-                continue
-            if bbox.width < 30 or bbox.height < 20:
-                continue
-            figs.append(bbox)
-
         for b in blocks:
             x0, y0, x1, y1, text, _bno, _btype = b
             t = clean(text)

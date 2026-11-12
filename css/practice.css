@@ -295,6 +295,47 @@
   gap: 8px;
 }
 
+/* 题目语言切换（IBO 双语） */
+.practice-lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  background-color: var(--surface-primary);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.practice-lang-toggle:hover {
+  border-color: var(--color-sage);
+  color: var(--color-sage);
+}
+
+.practice-lang-toggle:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+.practice-lang-opt {
+  opacity: 0.55;
+}
+
+.practice-lang-opt.is-active {
+  opacity: 1;
+  color: var(--color-sage);
+  font-weight: 700;
+}
+
+.practice-lang-sep {
+  opacity: 0.35;
+}
+
 .practice-question-card {
   background-color: var(--surface-primary);
   border: 1px solid var(--border-light);
@@ -313,7 +354,48 @@
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  white-space: pre-wrap;
+  white-space: pre-line;
+}
+
+/* 题内表格（IBO 等）：窄屏横向滚动，避免撑破卡片 */
+.practice-question-table-wrap {
+  margin: 0 0 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.practice-question-table-title {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-deep);
+}
+
+.practice-question-table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.practice-question-table th,
+.practice-question-table td {
+  padding: 8px 10px;
+  border: 1px solid var(--border-light);
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.practice-question-table thead th {
+  background-color: var(--surface-tertiary);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .practice-question-table th,
+[data-theme="dark"] .practice-question-table td {
+  border-color: var(--border-default);
 }
 
 .practice-question-chart {
@@ -865,6 +947,16 @@
 
   .practice-question-text {
     font-size: 1rem;
+  }
+
+  .practice-question-table {
+    min-width: 360px;
+    font-size: 0.8rem;
+  }
+
+  .practice-question-table th,
+  .practice-question-table td {
+    padding: 6px 8px;
   }
 
   .practice-option-card {

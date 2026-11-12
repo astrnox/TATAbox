@@ -9,3 +9,10 @@ data/manifest.json text eol=lf
 data/bank/** text eol=lf
 data/index/** text eol=lf
 data/questions/id-all.json text eol=lf
+
+# js/css/data 参与 sw.js 缓存版本哈希：统一 LF，避免 Windows 检出
+# 生成不同版本号（哈希按 git blob 计算，见 scripts/bump-sw.js）。
+# 仅按扩展名限定，避免误伤 css/vendor 下的 woff2 等二进制资源。
+*.js text eol=lf
+*.css text eol=lf
+*.json text eol=lf
