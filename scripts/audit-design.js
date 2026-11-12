@@ -26,9 +26,9 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 
 /* ── 棘轮基线：只允许下调；确需上调必须在 PR 里说明理由并在此处修改 ── */
-const BASELINE_INLINE_STYLE = 1261; // js/**（不含 vendor）中 style=" 出现次数
+const BASELINE_INLINE_STYLE = 1309; // js/** + 根目录 *.html 中 style=" 出现次数（2026-11-13 扩围后重设）
 const BASELINE_INLINE_STYLE_SETATTR = 0; // js/** 中 setAttribute('style') 出现次数（豁免需行内/上一行登记 audit-design-allow）
-const BASELINE_UNIQUE_HEX = 469;    // js/**（不含 vendor）中唯一 #rrggbb 数量
+const BASELINE_UNIQUE_HEX = 457;    // js/** + 根目录 *.html 中唯一 #rrggbb 数量（扩围后重设）
 
 /* ── 预算 ── */
 const BUDGET_BACKDROP_FILTER = 3;
@@ -172,10 +172,14 @@ function main() {
   let inlineSetAttr = 0;
   const inlineSetAttrHits = [];
   const hexSet = new Set();
-  for (const f of js) {
-    const raw = fs.readFileSync(f, 'utf8');
+  // 内联样式与硬编码色值同时统计 HTML：页面内联 style 与主题色同样会绕开 token。
+  for (const f of js.concat(html)) {
+    const raw = stripComments(fs.readFileSync(f, 'utf8'));
     inlineStyle += (raw.match(/style="/g) || []).length;
     (raw.match(/#[0-9a-fA-F]{6}\b/g) || []).forEach((h) => hexSet.add(h.toLowerCase()));
+  }
+  for (const f of js) {
+    const raw = fs.readFileSync(f, 'utf8');
     // setAttribute('style') 同样绕过 style=" 计数：逐行识别，
     // 确需使用的场景（如离屏打印 iframe）用 audit-design-allow 登记豁免。
     const lines = raw.split('\n');
@@ -186,9 +190,9 @@ function main() {
       inlineSetAttrHits.push(`${rel(f)}:${i + 1}`);
     });
   }
-  report.push(`js 内联 style="               : ${inlineStyle} 处（基线 ${BASELINE_INLINE_STYLE}，只许下降）`);
+  report.push(`js+html 内联 style="          : ${inlineStyle} 处（基线 ${BASELINE_INLINE_STYLE}，只许下降）`);
   report.push(`js setAttribute('style')      : ${inlineSetAttr} 处（基线 ${BASELINE_INLINE_STYLE_SETATTR}，只许下降）`);
-  report.push(`js 硬编码 #rrggbb 唯一色值    : ${hexSet.size} 个（基线 ${BASELINE_UNIQUE_HEX}，只许下降）`);
+  report.push(`js+html 硬编码 #rrggbb 唯一色值 : ${hexSet.size} 个（基线 ${BASELINE_UNIQUE_HEX}，只许下降）`);
   if (inlineStyle > BASELINE_INLINE_STYLE) {
     failures.push(`内联样式数超过基线（${inlineStyle} > ${BASELINE_INLINE_STYLE}）：新代码请使用全局组件类（.bq-btn/.bq-card/.bq-section-header…）`);
   }

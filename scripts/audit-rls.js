@@ -138,10 +138,12 @@ function main() {
     t.policyCount = policyCount.get(name) || 0;
     tables.push({ name, rlsEnabled: t.rlsEnabled, policyCount: t.policyCount, sqlFile: t.sqlFile });
 
-    const protectedOk = t.rlsEnabled || t.policyCount > 0;
-    if (!protectedOk && !EXEMPT_TABLES.has(name)) {
+    // 仅有 POLICY 但未开启 RLS 时策略不会生效，不能算作已保护。
+    if (!t.rlsEnabled && !EXEMPT_TABLES.has(name)) {
       violations.push(
-        `Table '${name}' (${t.sqlFile}): 无 RLS 保护(未 ENABLE ROW LEVEL SECURITY，且无任何 POLICY)`
+        t.policyCount > 0
+          ? `Table '${name}' (${t.sqlFile}): 有 ${t.policyCount} 条 POLICY 但未 ENABLE ROW LEVEL SECURITY，策略不会生效`
+          : `Table '${name}' (${t.sqlFile}): 无 RLS 保护(未 ENABLE ROW LEVEL SECURITY，且无任何 POLICY)`
       );
     }
   }

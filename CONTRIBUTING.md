@@ -18,11 +18,14 @@
 
 每个 issue（或独立需求）一条分支，一条分支原则上只解决一个 issue。
 
+分支前缀与提交 `type` 保持一致，常用：
+
 | 场景 | 分支名 |
 | --- | --- |
 | Bug 修复 | `fix/<issue编号或简述>` （例：`fix/113`） |
 | 新功能 | `feat/<简述>` （例：`feat/learning-hub`） |
-| 杂项/工程/文档/依赖 | `chore/<简述>` （例：`chore/ci-cleanup`） |
+| 文档 / 重构 / 性能 / 测试 / 构建 / CI | `docs/`、`refactor/`、`perf/`、`test/`、`build/`、`ci/` + `<简述>` |
+| 杂项/工程/依赖 | `chore/<简述>` （例：`chore/ci-cleanup`） |
 
 要点：
 
@@ -34,7 +37,7 @@
 
 ## 2. 提交信息规范（Conventional Commits）
 
-提交信息采用 [Conventional Commits](https://www.conventionalcommits.org/) 格式，**必须引用本 issue 编号**，便于追溯与自动生成 changelog。
+提交信息采用 [Conventional Commits](https://www.conventionalcommits.org/) 格式，便于追溯与自动生成 changelog。issue 关联建议写在 PR 描述中；`check-commit-msg.js` 只校验标题格式，不强制标题携带编号。
 
 常规格式：
 
@@ -63,7 +66,7 @@
 >
 > `type` 一律小写，不加中文修饰（如不要写 `新功能 feat:`）。
 
-`scope` 可选（括号内小写字母/数字/逗号/下划线/连字符），用于标注影响模块。**描述**使用祈使句、简洁达意，并**在描述尾缀引用 issue 编号**（`(#136)` 形式），便于追溯与自动生成 changelog。
+`scope` 可选（括号内小写字母/数字/逗号/下划线/连字符），用于标注影响模块。**描述**使用祈使句、简洁达意；可选地尾缀 issue 编号（`(#136)`），但这不是 CI 强制项。
 
 示例：
 
@@ -105,12 +108,12 @@ node scripts/check-commit-msg.js --subject "fix: 修复答题进度丢失 (#136)
    - 描述中**引用所要解决的问题**（如 `Closes #113`），简述改动与验证方式。
 4. **CI 必须全绿方可合并**。`lint + unit + smoke` 作业含以下 11 个检查步骤，任一失败即阻断：
    - vendor 完整性校验（供应链门禁）
-   - 第三方资源白名单 + SRI 完整性校验
+   - 第三方资源白名单 + SRI 完整性校验（仅 `script`/`link` 资源；正文 `<a>` 外链不受限）
    - 提交信息规范校验
    - JS 语法检查（`node --check`）
    - manifest CDN 锚点一致性校验
    - 题库分片一致性校验
-   - 单元测试（IRT / FSRS / 调度器，含覆盖率门禁）
+   - 单元测试（IRT / FSRS / 调度器，含覆盖率门禁；覆盖率当前只统计 6 个核心模块）
    - RLS 策略静态审计
    - **设计规范审计**（emoji / 渐变 / 毛玻璃 / 内联样式棘轮）
    - 发布资源压缩构建验证
@@ -122,6 +125,10 @@ node scripts/check-commit-msg.js --subject "fix: 修复答题进度丢失 (#136)
    > 「测试全部通过」，请先确认 CI 真的跑到了单元测试那一步，而不是在前几步就断了。
 
 5. 合并统一使用 **Squash and merge**，保持 `main` 历史线性、每个合并对应一个 git 提交。
+
+   > **部署与安全头**：`_headers`（HSTS / X-Frame-Options / Trusted Types）只在
+   > Cloudflare Pages/Workers 生效，GitHub Pages 会忽略该文件。部署到 Pages 时以页面内
+   > 的 CSP meta 为准，`_headers` 仅作为 Cloudflare 场景的增强，不能当作唯一防护。
 
 ---
 
