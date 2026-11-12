@@ -1,8 +1,9 @@
 # TATABOX 第三方域名白名单
-# 来源：/workspace/index.html 实际出现的全部外部 URL（src/href），按用途分类。
+# 来源：根目录 *.html 中会实际加载代码/样式的资源 URL（<script src> / <link href>）。
 # 规则：每行一个域名；空行与以 # 开头的行为注释，均忽略。
-# 说明：本文件只列"允许出现"的域名，静态资源（script/link stylesheet/preload katex）
-#       是否带 SRI 完整性由 scripts/verify-third-party.js 单独校验。
+# 说明：1) 本表只约束资源加载；正文 <a> 外链可指向任意 https 域名，不在校验范围。
+#       2) script / link stylesheet / katex preload 是否带 SRI 由
+#          scripts/verify-third-party.js 单独校验。
 
 # ---- CDN 静态资源（css/js 加载；外链样式表/脚本必须带 SRI integrity）----
 cdn.jsdelivr.net        # 主 CDN：KaTeX、vue、supabase-js 等；index 及子页面实际使用
