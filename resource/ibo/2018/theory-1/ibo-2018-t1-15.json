@@ -1,0 +1,66 @@
+{
+  "id": "IBO-2018-T1-15",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Amino acids resulting from the degradation of proteins can be further metabolized by conversion to intermediates of the citric acid cycle. The following labelled amino acids are obtained by degradation of a labelled protein.\n\nThe Krebs cycle is below. Note that most α-amino acids can be directly converted into their corresponding α-keto acid by transamination reaction as also shown below.",
+  "question_zh": "蛋白质降解产生的氨基酸可以进一步代谢，转化为柠檬酸循环的中间产物。下面是由标记蛋白质降解得到的标记氨基酸。\n\n三羧酸循环（Krebs 循环）如下图所示。注意：大多数 α-氨基酸可通过转氨反应直接转化为相应的 α-酮酸，如下图所示。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q15-fig1.webp",
+      "caption": "Labelled aspartate, glutamate and alanine. The star marks the 14C-labelled carbon.",
+      "caption_zh": "标记的天冬氨酸、谷氨酸和丙氨酸。星号表示 14C 标记的碳原子。",
+      "page": 18
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q15-fig2.webp",
+      "caption": "The citric acid cycle and transamination reaction.",
+      "caption_zh": "柠檬酸循环与转氨反应。",
+      "page": 18
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Upon introduction of the aspartate into the Krebs cycle, label will first appear in oxaloacetate.",
+      "text_zh": "天冬氨酸进入 Krebs 循环后，标记将首先出现在草酰乙酸中。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Upon introduction of the alanine into the Krebs cycle, label will first appear in citrate.",
+      "text_zh": "丙氨酸进入 Krebs 循环后，标记将首先出现在柠檬酸中。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Labelled alanine will yield 14-CO2 during the first turn of the cycle.",
+      "text_zh": "标记的丙氨酸将在循环的第一轮产生 14CO2。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "Labelled glutamate will yield 14-CO2 in the second turn of the cycle.",
+      "text_zh": "标记的谷氨酸将在循环的第二轮产生 14CO2。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】天冬氨酸经转氨反应直接生成草酰乙酸，标记碳随之进入草酰乙酸，因此首先出现在草酰乙酸。\nB【对】丙氨酸经转氨生成丙酮酸，再经丙酮酸脱氢酶生成乙酰-CoA；乙酰-CoA 与草酰乙酸缩合生成柠檬酸，因此标记首先出现在柠檬酸。\nC【错】丙氨酸的标记碳进入乙酰-CoA 的羰基碳；TCA 第一轮释放的 CO2 来自草酰乙酸的两个羧基，乙酰-CoA 来源的碳要到第二轮才释放，故第一轮不产生 14CO2。\nD【对】谷氨酸经转氨生成 α-酮戊二酸，其标记碳进入 TCA 中间产物；该碳在后续反应中于第二轮循环以 14CO2 释放。",
+  "module": "module_1",
+  "subject": "生物化学",
+  "concept": "氨基酸代谢与三羧酸循环",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 15 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 15
+  },
+  "tags": ["ibo", "module_1", "生物化学", "氨基酸代谢与三羧酸循环", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

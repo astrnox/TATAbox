@@ -87,6 +87,29 @@ describe('题集打印（练习 / 组卷）', () => {
     expect(html).toContain('第 1 题');
   });
 
+  test('IBO 题内表格随题干输出（表题/表头/单元格齐全且已转义）', () => {
+    const html = PU.questionBlock(
+      {
+        question: '根据表 1 判断下列说法。',
+        subQuestions: [
+          { label: 'A', text: '甲', answer: true },
+          { label: 'B', text: '乙', answer: false }
+        ],
+        tables: [{
+          title: 'Growth <experiment>',
+          head: ['Cell type', 'MM', 'MM + X'],
+          rows: [['WT', '+', '+'], ['Mutant 1', '−', '+']]
+        }]
+      },
+      1,
+      {}
+    );
+    expect(html).toContain('Growth &lt;experiment&gt;');
+    expect(html).toContain('<th>Cell type</th>');
+    expect(html).toContain('<td>Mutant 1</td>');
+    expect(html).toContain('class="q-table"');
+  });
+
   test('对象型 options（逻辑题）按键排序渲染', () => {
     const html = PU.questionBlock(
       { question: '逻辑题干', options: { Y: '结论甲', X: '结论乙' } },

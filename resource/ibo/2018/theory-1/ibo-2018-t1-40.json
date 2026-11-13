@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-40",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The evolution of sexual reproduction has remained in certain aspects a puzzle which is yet to be fully pieced back together. Over the years many hypotheses have been proposed to explain this phenomenon.",
+  "question_zh": "有性生殖的进化在某些方面仍是一个尚未完全解开的谜题。多年来，人们提出了许多假说来解释这一现象。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The effect of sexual reproduction on the association between alleles is expected to improve the fitness of co-adapted genes.",
+      "text_zh": "有性生殖对等位基因之间关联的影响，预计会提高共适应基因组合的适合度。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Given that the majority of mutations are deleterious, sex is expected to counter the loss of mutation-free individuals in small populations.",
+      "text_zh": "鉴于大多数突变是有害的，有性生殖预计能对抗小种群中无突变个体的丧失。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Avoiding inbreeding in sexually-reproducing organisms is expected to be advantageous when deleterious mutations are co-dominant.",
+      "text_zh": "当有害突变为共显性时，有性生殖生物避免近交预计具有优势。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "One would expect a greater proportion of sexually reproducing species in stable regions, as compared to unstable regions.",
+      "text_zh": "与不稳定地区相比，稳定地区预计有更高比例的有性生殖物种。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】有性生殖通过重组打散等位基因组合，可能破坏共适应的基因组合，产生重组负荷；它并不必然提高共适应基因的适合度。\nB【对】小种群中无突变个体易因遗传漂变和穆勒棘轮而丢失；有性生殖通过重组重新组合无突变基因，能减缓这一过程。\nC【错】近交衰退主要由隐性有害等位基因纯合化引起；若有害突变为共显性，杂合子已表现有害效应，避免近交的额外优势反而减弱。\nD【错】“红皇后”假说认为有性生殖在生物环境不稳定、病原体/竞争者快速变化的地区更有优势，因此稳定地区有性物种比例不应更高。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "有性生殖的进化",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 40 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 40
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "有性生殖的进化", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

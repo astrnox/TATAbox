@@ -1,0 +1,58 @@
+{
+  "id": "IBO-2018-T1-08",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Drugs that render the inner mitochondrial membrane permeable to H+ are called “uncouplers”.",
+  "question_zh": "使线粒体内膜对 H+ 通透的药物称为“解偶联剂”。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "These drugs will increase oxygen consumption.",
+      "text_zh": "这些药物会增加耗氧量。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "These drugs will reduce body carbohydrate catabolism.",
+      "text_zh": "这些药物会降低体内糖类分解代谢。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "These drugs will decrease body temperature.",
+      "text_zh": "这些药物会降低体温。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "These drugs may cause death upon overdose because of severe weight loss.",
+      "text_zh": "过量时这些药物可能因严重体重下降而导致死亡。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "These drugs may cause death upon overdose because of severe ATP loss.",
+      "text_zh": "过量时这些药物可能因严重的 ATP 耗竭而导致死亡。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】解偶联剂使 H+ 绕过 ATP 合酶回流基质，氧化磷酸化解偶联；呼吸链仍在运转，机体代偿性加速氧化，耗氧量增加。\nB【错】ATP 供应不足会促使细胞增强糖酵解和糖氧化以补偿能量，糖类分解代谢增加而不是减少。\nC【错】电子传递释放的能量不能用于合成 ATP，而以热能形式散失，体温升高（解偶联剂历史上曾用于减肥，正因产热增加）。\nD【错】过量致死的主要机制不是体重下降，而是 ATP 严重耗竭。\nE【对】ATP 严重不足使 Na+/K+ 泵等耗能离子泵衰竭，细胞膜电位丧失、细胞坏死，可迅速致死。",
+  "module": "module_1",
+  "subject": "生物化学",
+  "concept": "氧化磷酸化与解偶联",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 8 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 8
+  },
+  "tags": ["ibo", "module_1", "生物化学", "氧化磷酸化与解偶联", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -189,6 +189,76 @@ describe('gradeQuestion · practice 档（2.0 分制 + 联赛阶梯）', () => {
   });
 });
 
+describe('gradeQuestion · IBO 官方计分表', () => {
+  const ibo4 = () => Object.assign(mtf4(), { competition: 'IBO' });
+  const ibo5 = () => ({
+    type: 'mtf',
+    competition: 'IBO',
+    subQuestions: [
+      { label: 'A', text: '陈述一', answer: true },
+      { label: 'B', text: '陈述二', answer: false },
+      { label: 'C', text: '陈述三', answer: true },
+      { label: 'D', text: '陈述四', answer: true },
+      { label: 'E', text: '陈述五', answer: false }
+    ]
+  });
+
+  test('4 条陈述：0/0/0/0.5/1.0，满分 1.0', () => {
+    const q = ibo4();
+    expect(QuestionModel.gradeQuestion(q, [true, false, true, true], 'practice'))
+      .toMatchObject({ score: 1, maxScore: 1, verdict: 'full' });
+    expect(QuestionModel.gradeQuestion(q, [true, false, true, false], 'practice').score).toBe(0.5); // 3/4
+    expect(QuestionModel.gradeQuestion(q, [true, false, false, false], 'practice').score).toBe(0);  // 2/4
+    expect(QuestionModel.gradeQuestion(q, [false, true, false, false], 'practice').score).toBe(0);  // 1/4
+  });
+
+  test('5 条陈述：0/0/0/0.25/0.75/1.25，满分 1.25', () => {
+    const q = ibo5();
+    expect(QuestionModel.gradeQuestion(q, [true, false, true, true, false], 'practice'))
+      .toMatchObject({ score: 1.25, maxScore: 1.25 });
+    expect(QuestionModel.gradeQuestion(q, [true, false, true, true, true], 'practice').score).toBe(0.75);   // 4/5
+    expect(QuestionModel.gradeQuestion(q, [true, false, false, true, true], 'practice').score).toBe(0.25); // 3/5
+    expect(QuestionModel.gradeQuestion(q, [true, true, false, true, true], 'practice').score).toBe(0);     // 2/5
+  });
+
+  test('getQuestionMaxScore：IBO 1.0/1.25，其余题仍 2.0', () => {
+    expect(QuestionModel.getQuestionMaxScore(ibo4(), 'practice')).toBe(1);
+    expect(QuestionModel.getQuestionMaxScore(ibo5(), 'practice')).toBe(1.25);
+    expect(QuestionModel.getQuestionMaxScore(mtf4(), 'practice')).toBe(2);
+    expect(QuestionModel.getQuestionMaxScore(choiceQ, 'practice')).toBe(2);
+  });
+
+  test('IBO 无子题脏数据回退练习口径，不误判满分', () => {
+    const r = QuestionModel.gradeQuestion({ type: 'mtf', competition: 'IBO', subQuestions: [] }, [], 'practice');
+    expect(r).toMatchObject({ total: 1, score: 0, maxScore: 2 });
+  });
+});
+
+describe('getQuestionSourceKey（题目来源分类）', () => {
+  test('competition 优先：CnBO / IBO', () => {
+    expect(QuestionModel.getQuestionSourceKey({ competition: 'CnBO' })).toBe('cnbo');
+    expect(QuestionModel.getQuestionSourceKey({ competition: 'IBO' })).toBe('ibo');
+  });
+
+  test('无 competition 时按 tags 兜底', () => {
+    expect(QuestionModel.getQuestionSourceKey({ tags: ['cnbo_league', 'module_1'] })).toBe('cnbo');
+    expect(QuestionModel.getQuestionSourceKey({ tags: ['ibo', 'module_1'] })).toBe('ibo');
+  });
+
+  test('source / examType 文本识别高考与校考', () => {
+    expect(QuestionModel.getQuestionSourceKey({ source: '2024 年高考全国卷理综第 3 题' })).toBe('gaokao');
+    expect(QuestionModel.getQuestionSourceKey({ examType: 'gaokao' })).toBe('gaokao');
+    expect(QuestionModel.getQuestionSourceKey({ source: '某校高三月考生物试题' })).toBe('school');
+    expect(QuestionModel.getQuestionSourceKey({ source: '期末模拟试题' })).toBe('school');
+  });
+
+  test('站内题库无来源字段 → 原创题；有来源但无法识别 → other', () => {
+    expect(QuestionModel.getQuestionSourceKey({ tags: ['module_1'], question: 'x' })).toBe('original');
+    expect(QuestionModel.getQuestionSourceKey(null)).toBe('original');
+    expect(QuestionModel.getQuestionSourceKey({ source: '某出版社习题集' })).toBe('other');
+  });
+});
+
 describe('gradeQuestion · quiz 档（全对/半对/零分）', () => {
   test('单选/判断满分 3', () => {
     expect(QuestionModel.gradeQuestion(choiceQ, { 0: 'C' }, 'quiz')).toMatchObject({ score: 3, maxScore: 3, verdict: 'full' });

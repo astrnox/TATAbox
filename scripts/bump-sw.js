@@ -8,6 +8,11 @@
  *   自动基于 git 跟踪的 js/css/data 文件内容计算 SHA-256 并写入 sw.js 的 CACHE_VERSION。
  *   避免"人肉维护版本号"导致的旧新资源混用灵异 bug。
  *
+ * 跨平台一致性：
+ *   内容哈希取 git 的 blob 哈希（git hash-object --stdin-paths），会应用
+ *   .gitattributes / core.autocrlf 的 clean 过滤；Windows(CRLF) 与 Linux(LF)
+ *   检出得到同一版本号，不再出现"换台机器 bump 就变号"。
+ *
  * 幂等性：
  *   内容未变化时输出不变、不改写文件（不会弄脏工作区 / 不产生空提交）。
  *
@@ -56,15 +61,45 @@ function walk(relDir, out) {
   }
 }
 
-const files = gitListFiles();
-const hash = crypto.createHash('sha256');
-for (const f of files) {
-  const full = path.join(ROOT, f);
+/**
+ * 工作区文件在 git 中的 blob 哈希（应用 clean 过滤，跨平台稳定）。
+ * git 不可用或输出异常时返回 null，调用方退化为直接读文件字节。
+ */
+function gitBlobHashes(files) {
+  if (!files.length) return null;
   try {
-    hash.update(fs.readFileSync(full));
+    const out = execSync('git hash-object --stdin-paths', {
+      cwd: ROOT,
+      input: files.join('\n') + '\n',
+      encoding: 'utf8',
+      maxBuffer: 8 * 1024 * 1024
+    }).split('\n').map((s) => s.trim()).filter(Boolean);
+    if (out.length !== files.length) return null;
+    if (out.some((h) => !/^[0-9a-f]{40,64}$/.test(h))) return null;
+    return out;
   } catch (e) {
-    // 文件被删除/不可读则跳过，不影响其余内容哈希
+    return null;
   }
+}
+
+const files = gitListFiles();
+const blobHashes = gitBlobHashes(files);
+const hash = crypto.createHash('sha256');
+for (let i = 0; i < files.length; i++) {
+  const f = files[i];
+  let part;
+  if (blobHashes) {
+    part = blobHashes[i];
+  } else {
+    try {
+      part = crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, f))).digest('hex');
+    } catch (e) {
+      // 文件被删除/不可读则跳过，不影响其余内容哈希
+      continue;
+    }
+  }
+  // 文件名参与哈希，避免不同文件同内容相互抵消
+  hash.update(f + '\0' + part + '\n');
 }
 const digest = hash.digest('hex');
 // 纯内容哈希驱动：内容不变则版本号不变（幂等）

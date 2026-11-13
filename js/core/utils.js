@@ -514,6 +514,9 @@ if (typeof window !== 'undefined') {
 function filterLectureStyleQuestion(q) {
   if (!q || typeof q !== 'object') return null;
 
+  // 双语真题（IBO）为官方原题，长题干/长选项是正常内容，不做讲义式截断
+  var isBilingual = !!(q.question_zh || q.competition === 'IBO');
+
   // 字段别名归一
   var stem = String(q.question || q.stem || '');
   var analysis = String(q.analysis || q.explanation || q.answerExplanation || '');
@@ -539,8 +542,8 @@ function filterLectureStyleQuestion(q) {
   var totalLen = stem.length + analysis.length +
     options.reduce(function (a, b) { return a + b.length; }, 0);
 
-  // 规则②：全局 > 4000 字
-  if (totalLen > 4000) return null;
+  // 规则②：全局 > 4000 字（双语官方真题豁免）
+  if (totalLen > 4000 && !isBilingual) return null;
 
   // 清洗：单选项 > 300 字的截短（"知识压缩"，别让单条选项还是半页讲义）
   var clean = {};
@@ -562,7 +565,7 @@ function filterLectureStyleQuestion(q) {
   if (Array.isArray(clean.subQuestions)) {
     clean.subQuestions = clean.subQuestions.map(function (s) {
       var x = Object.assign({}, s);
-      if (x.text != null) x.text = maybeTruncate(x.text, 300);
+      if (x.text != null) x.text = isBilingual ? String(x.text) : maybeTruncate(x.text, 300);
       return x;
     });
   }
@@ -581,10 +584,10 @@ function filterLectureStyleQuestion(q) {
   ['A','B','C','D','E','F'].forEach(function (k) {
     if (clean[k] != null) clean[k] = maybeTruncate(String(clean[k]), 300);
   });
-  if (clean.question) clean.question = maybeTruncate(String(clean.question), 1200);
-  if (clean.stem)     clean.stem     = maybeTruncate(String(clean.stem), 1200);
-  if (clean.analysis)    clean.analysis    = maybeTruncate(String(clean.analysis), 1200);
-  if (clean.explanation) clean.explanation = maybeTruncate(String(clean.explanation), 1200);
+  if (clean.question) clean.question = isBilingual ? String(clean.question) : maybeTruncate(String(clean.question), 1200);
+  if (clean.stem)     clean.stem     = isBilingual ? String(clean.stem) : maybeTruncate(String(clean.stem), 1200);
+  if (clean.analysis)    clean.analysis    = isBilingual ? String(clean.analysis) : maybeTruncate(String(clean.analysis), 1200);
+  if (clean.explanation) clean.explanation = isBilingual ? String(clean.explanation) : maybeTruncate(String(clean.explanation), 1200);
 
   return clean;
 }

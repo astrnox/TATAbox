@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-32",
+  "type": "mtf",
+  "lang": "en",
+  "question": "An important question in the evolution of angiosperms is the influence of life form and habit on speciation and extinction. In a phylogenetic study of the morphologically highly diverse plant order Saxifragales, the effect of habit and life history on speciation and extinction was investigated. Figures A–F illustrate estimates of speciation (λ) and extinction (μ) rates in annual, perennial, herbaceous, and woody lineages (Soltis et al., 2013). The results are given as posterior probability density, which reflects the uncertainty associated with parameter estimates. Dashed lines represent the median values of each distribution. Net diversification rate r = λ − μ.",
+  "question_zh": "被子植物进化中的一个重要问题是生活型与习性对物种形成和灭绝的影响。在一项针对形态高度多样的虎耳草目（Saxifragales）的系统发育研究中，研究了习性与生活史对物种形成和灭绝的影响。图 A–F 展示了一年生的、多年生的、草本的与木本的谱系的物种形成率（λ）和灭绝率（μ）估计（Soltis 等，2013）。结果以后验概率密度表示，反映参数估计的不确定性。虚线表示各分布的中位数。净多样化速率 r = λ − μ。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q32-fig1.webp",
+      "caption": "Posterior probability densities of speciation (top) and extinction (bottom) rates for annual vs perennial, woody vs herbaceous, and woody perennial / herbaceous perennial / herbaceous annual lineages.",
+      "caption_zh": "一年生与多年生、木本与草本、以及木本多年生/草本多年生/草本一年生谱系的物种形成率（上）与灭绝率（下）后验概率密度。",
+      "page": 36
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Among different lineages, woody lineages have higher speciation (λ) and extinction (μ) rates.",
+      "text_zh": "在不同谱系中，木本谱系具有更高的物种形成率（λ）和灭绝率（μ）。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Results are consistent with the idea that shorter generation time causes higher speciation rate.",
+      "text_zh": "结果与“世代时间越短，物种形成率越高”的观点一致。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "As compared to the other groups, herbaceous perennial lineages have higher rates of net diversification.",
+      "text_zh": "与其他类群相比，草本多年生谱系具有更高的净多样化速率。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "Generation time and breeding systems affect rates of diversification.",
+      "text_zh": "世代时间与繁育系统会影响多样化速率。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】图中木本谱系的物种形成率（λ）高于草本，但灭绝率（μ）低于草本；并非两者都更高。\nB【错】一年生植物世代时间更短，但其物种形成率低于多年生植物；结果与“世代短→物种形成率高”相反。\nC【错】草本多年生 λ≈0.17、μ≈0.12，r≈0.05；木本多年生 λ≈0.40、μ≈0.35，r≈0.05；二者净多样化速率相近，草本多年生并不更高。\nD【对】不同生活史（一年生/多年生）与生长型（木本/草本）谱系的 λ、μ 存在系统差异，说明世代时间与繁育系统确实影响多样化速率。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "生活史与多样化速率",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 32 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 32
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "生活史与多样化速率", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

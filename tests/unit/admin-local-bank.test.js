@@ -43,10 +43,10 @@ function stubFetch() {
 }
 
 describe('管理员面板本地题库全量加载', () => {
-  test('加载 quiz + logic + 真题池 + 每日联赛：3414 道、去重无缺 id、每日联赛非 0', async () => {
+  test('加载 quiz + logic + 联赛/IBO 真题池 + 每日联赛：3461 道、去重无缺 id、每日联赛非 0', async () => {
     stubFetch();
     const bank = await _loadLocalQuestionBank(true);
-    expect(bank.length).toBe(3414);
+    expect(bank.length).toBe(3461);
 
     const ids = bank.map((q) => q.id || q.bioId);
     expect(ids.filter((x) => !x).length).toBe(0);          // 无空 id（字典 key 回填生效）

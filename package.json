@@ -20,6 +20,7 @@
     "build:prod": "node scripts/build-prod.js",
     "verify:prod": "node scripts/verify-prod-build.js",
     "build:stats": "node scripts/build-data-stats.js",
+    "build:ibo": "node scripts/build-ibo-pool.js",
     "verify:stats": "node scripts/verify-data-stats.js",
     "verify:migrations": "node scripts/verify-migrations.js",
     "sync:version": "node scripts/sync-version.js && node scripts/build-data-stats.js",

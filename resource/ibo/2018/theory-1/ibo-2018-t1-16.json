@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-16",
+  "type": "mtf",
+  "lang": "en",
+  "question": "In figure a, the pain and temperature sensory pathway is depicted. The first-order neuron enters the spinal cord and forms a synapse with the second-order neuron, whose axon ends in the thalamus. The third-order neuron transmits the information to the brain cortex. Figure b shows the vibration and proprioception (joint position) sensory pathway. The axon terminals of the first-order neurons are located in the brain stem and form synapses with second-order neurons, which cross the midline and their axons end in the thalamus. Finally, the sensory information is conducted to the cortex via the third-order neurons.\n\nFollowing a spinal injury, the right ventral and left dorsal sides of the white matter in the thoracolumbar spinal cord are damaged.",
+  "question_zh": "图 a 展示痛觉与温度觉感觉通路。一级神经元进入脊髓，与二级神经元形成突触，二级神经元的轴突终止于丘脑。三级神经元将信息传至大脑皮层。图 b 展示振动觉与本体感觉（关节位置觉）通路。一级神经元的轴突末梢位于脑干，与二级神经元形成突触；二级神经元交叉过中线，其轴突终止于丘脑。最后，感觉信息经三级神经元传至皮层。\n\n一次脊髓损伤后，胸腰段脊髓白质的右侧腹侧和左侧背侧受损。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q16-fig1.webp",
+      "caption": "a: Pain and temperature pathway (crosses in the spinal cord, ascends in the anterolateral column). b: Vibration and proprioception pathway (ascends in the dorsal column, crosses in the brainstem).",
+      "caption_zh": "a：痛觉与温度觉通路（在脊髓内交叉，经脊髓前外侧索上行）。b：振动觉与本体感觉通路（经脊髓背索上行，在脑干交叉）。",
+      "page": 19
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The patient has impaired temperature sensation in right hand.",
+      "text_zh": "患者右手温度觉受损。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "The patient has impaired vibration sensation in left leg.",
+      "text_zh": "患者左腿振动觉受损。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The patient has impaired joint position sensation in left leg and temperature sensation in right leg.",
+      "text_zh": "患者左腿关节位置觉和右腿温度觉均受损。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The patient has impaired pain sensation in left leg.",
+      "text_zh": "患者左腿痛觉受损。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】右手的感觉纤维在颈段脊髓，胸腰段损伤不会影响手部温度觉。\nB【对】左腿的振动觉/本体感觉经左侧背索同侧上行；左侧背侧白质受损，故左腿振动觉受损。\nC【错】左腿关节位置觉确实受损（左背索），但右腿的痛温觉纤维在左侧脊髓交叉后经左侧前外侧索上行；左侧腹侧未受损，因此右腿温度觉不应受损。\nD【对】左腿痛温觉纤维在脊髓内交叉到右侧前外侧索上行；右侧腹侧白质受损，故左腿痛觉受损。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "脊髓传导通路与感觉缺失",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 16 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 16
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "脊髓传导通路与感觉缺失", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

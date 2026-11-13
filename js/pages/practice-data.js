@@ -121,25 +121,34 @@ async function loadPracticeQuestions() {
 }
 
 /**
- * 加载联赛真题池（resource/all.json）。
- * 由 scripts/build-league-pool.js 从单题资源聚合，已含判卷格式
+ * 加载真题池：CnBO 联赛（resource/all.json）+ IBO（resource/ibo.json）。
+ * 两个池独立生成、独立失败：任一池加载失败只告警，不影响另一池。
+ * 由 scripts/build-league-pool.js / build-ibo-pool.js 聚合，已含判卷格式
  * （single→options+字母、multiple/mtf→subQuestions）与 concept/年份/来源标签。
- * 加载失败只告警不阻断（联赛题为增量内容，基础题池不受影响）。
  */
 async function loadLeagueQuestions() {
   if (PracticeState.leagueLoaded) return;
   try {
-    const res = await _fetchLocalJsonWithRetry('resource/all.json');
-    if (!res.ok || !res.data || !Array.isArray(res.data.questions)) return;
-    const items = typeof window.filterQuestionList === 'function'
-      ? window.filterQuestionList(res.data.questions)
-      : res.data.questions;
-    PracticeState.leagueData = items.filter(function (q) { return !_isRecycledQuestion(q); });
+    const results = await Promise.all([
+      _fetchLocalJsonWithRetry('resource/all.json').catch(function (e) { return { ok: false, error: e }; }),
+      _fetchLocalJsonWithRetry('resource/ibo.json').catch(function (e) { return { ok: false, error: e }; })
+    ]);
+    let items = [];
+    results.forEach(function (res) {
+      if (res && res.ok && res.data && Array.isArray(res.data.questions)) {
+        items = items.concat(res.data.questions);
+      }
+    });
+    if (items.length === 0) return;
+    const filtered = typeof window.filterQuestionList === 'function'
+      ? window.filterQuestionList(items)
+      : items;
+    PracticeState.leagueData = filtered.filter(function (q) { return !_isRecycledQuestion(q); });
     PracticeState.leagueLoaded = true;
     applyFilters();
     updateAvailableCount();
   } catch (e) {
-    console.warn('[Practice] 联赛真题池加载失败', e);
+    console.warn('[Practice] 真题池加载失败', e);
   }
 }
 
@@ -231,6 +240,16 @@ function applyFilters() {
     return 'both';
   };
 
+  // 题目来源：多选，空数组/含 all 视为不限制；分类由 QuestionModel 唯一实现
+  const selectedSources = Array.isArray(PracticeState.selectedSources) ? PracticeState.selectedSources : [];
+  const allSourcesSelected = selectedSources.length === 0 || selectedSources.indexOf('all') >= 0;
+  const sourceMatch = function (q) {
+    if (allSourcesSelected) return true;
+    const key = (typeof QuestionModel !== 'undefined' && QuestionModel.getQuestionSourceKey)
+      ? QuestionModel.getQuestionSourceKey(q) : 'original';
+    return selectedSources.indexOf(key) >= 0;
+  };
+
   // 基础知识题（MTF 格式）
   let basicQuestions = PracticeState.allQuestions.filter((q) => {
     const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
@@ -259,7 +278,7 @@ function applyFilters() {
     if (PracticeState.kgCategory) {
       kgCategoryMatch = q.subject === PracticeState.kgCategory;
     }
-    return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch;
+    return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q);
   });
 
   // 逻辑推理题（单选格式）
@@ -269,7 +288,7 @@ function applyFilters() {
       const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
       const qDiff = diffNormalize(q.difficulty);
       const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
-      return subjectMatch && diffMatch;
+      return subjectMatch && diffMatch && sourceMatch(q);
     });
   }
 
@@ -295,7 +314,7 @@ function applyFilters() {
       if (PracticeState.kgCategory) {
         kgCategoryMatch = q.subject === PracticeState.kgCategory;
       }
-      return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch;
+      return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q);
     });
   }
 

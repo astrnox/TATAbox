@@ -1,0 +1,86 @@
+{
+  "id": "IBO-2018-T1-20",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Spermatozoa motility is essential for the fertilization of an oocyte. In most animals, including fish, spermatozoa are immotile in the male reproductive organ (testis or sperm duct). Spermatozoa motility is triggered after being ejaculated into the female reproductive tract (in animals with internal fertilization) or after it is released into the aquatic environment (in animals with external fertilization).\n\nIonic composition and osmolality of freshwater, seawater, and seminal plasma of pike (Esox lucius), sturgeon (Acipenser ruthenus), and cod (Gadus morhua) are shown in the table. Pike and sturgeon spawn in freshwater, and cod spawns in seawater.",
+  "question_zh": "精子运动对卵母细胞受精至关重要。在包括鱼类在内的大多数动物中，精子在雄性生殖器官（精巢或输精管）内是不运动的。精子运动在射入雌性生殖道后（体内受精动物）或释放到水生环境后（体外受精动物）被触发。\n\n下表给出淡水、海水以及狗鱼（Esox lucius）、鲟鱼（Acipenser ruthenus）和鳕鱼（Gadus morhua）精浆的离子组成与渗透压。狗鱼和鲟鱼在淡水中产卵，鳕鱼在海水中产卵。",
+  "tables": [
+    {
+      "title": "Ionic composition and osmolality of freshwater, seawater and seminal plasma",
+      "head": ["", "Freshwater", "Seawater", "Pike", "Sturgeon", "Cod"],
+      "rows": [
+        ["Sodium Na+ (mM)", "0.26", "469", "75", "20", "197"],
+        ["Chloride Cl− (mM)", "0.22", "546", "112", "6", "179"],
+        ["Potassium K+ (mM)", "0.07", "10", "82", "1", "6"],
+        ["Calcium Ca2+ (mM)", "0.38", "10", "2", "0.2", "3"],
+        ["Osmolality (mOsmol/kg)", "<1–5", "1000", "302", "51", "385"]
+      ]
+    }
+  ],
+  "tables_zh": [
+    {
+      "title": "淡水、海水与精浆的离子组成和渗透压",
+      "head": ["", "淡水", "海水", "狗鱼", "鲟鱼", "鳕鱼"],
+      "rows": [
+        ["钠 Na+（mM）", "0.26", "469", "75", "20", "197"],
+        ["氯 Cl−（mM）", "0.22", "546", "112", "6", "179"],
+        ["钾 K+（mM）", "0.07", "10", "82", "1", "6"],
+        ["钙 Ca2+（mM）", "0.38", "10", "2", "0.2", "3"],
+        ["渗透压（mOsmol/kg）", "<1–5", "1000", "302", "51", "385"]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q20-fig1.webp",
+      "caption": "A: Effect of osmolality on sperm motility initiation in pike (open markers) and cod (filled markers). B: Effect of osmolality on sperm motility initiation in sturgeon. C: Effect of K+ on sperm motility initiation and velocity in sturgeon at 40 mOsmol/kg.",
+      "caption_zh": "A：渗透压对狗鱼（空心标记）与鳕鱼（实心标记）精子运动启动的影响。B：渗透压对鲟鱼精子运动启动的影响。C：在 40 mOsmol/kg 条件下 K+ 对鲟鱼精子运动启动与速度的影响。",
+      "page": 23
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Sperm motility in pike and cod become triggered in a hypo-osmotic and hyper-osmotic environment, respectively.",
+      "text_zh": "狗鱼和鳕鱼的精子运动分别由低渗和高渗环境触发。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Under physiological condition, osmolality is the main factor that inhibits sperm motility initiation in sturgeon.",
+      "text_zh": "在生理条件下，渗透压是抑制鲟鱼精子运动启动的主要因素。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Sperm motility in sturgeon become triggered after discharged into a hypo-osmotic environment with lower K+ ions.",
+      "text_zh": "鲟鱼精子在排入 K+ 较低的低渗环境后启动运动。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Environmental osmolality is a key signal to trigger sperm motility initiation after release from reproductive system into aquatic environment in marine fish.",
+      "text_zh": "对于海洋鱼类，环境渗透压是从生殖系统释放到水生环境后触发精子运动启动的关键信号。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】图 A 中狗鱼（空心标记）在低渗（约 0–100 mOsmol/kg）下运动最强，鳕鱼（实心标记）在高渗（约 2500 mOsmol/kg）下运动最强，分别对应低渗与高渗触发。\nB【错】图 C 在恒定渗透压（40 mOsmol/kg）下仅改变 K+ 浓度即可显著抑制精子运动，说明生理条件下 K+ 是主要抑制因素；图 B 的渗透压效应不能单独说明渗透压是主要因素。\nC【对】鲟鱼精浆 K+ 高达 1 mM、渗透压 51 mOsmol/kg；排入淡水后 K+ 与渗透压同时降低，图 B、C 显示低渗 + 低 K+ 触发运动。\nD【对】海洋鱼类（如鳕鱼）精浆渗透压接近海水，排入海水后渗透压变化是触发精子运动的关键信号（图 A）。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "精子运动启动与渗透压/离子信号",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 20 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 20
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "精子运动启动与渗透压/离子信号", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

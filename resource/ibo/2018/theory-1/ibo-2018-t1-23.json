@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-23",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The early embryonic cells pass through two stages of differentiation: specification and determination. In the experiment shown below, a labelled donor region was transplanted orthotopically, cultured in isolation, or grafted heterotopically at early or late stages.",
+  "question_zh": "早期胚胎细胞经历两个分化阶段：特化（specification）与决定（determination）。在下面所示的实验中，将标记的供体区域按原位移植、单独培养，或在早期/晚期异位移植。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q23-fig1.webp",
+      "caption": "(a) Orthotopic graft gives the normal fate. (b) Isolation of an early graft in vitro gives a red spinous sphere (specification). (c) Early heterotopic graft shows no determination. (d) Late heterotopic graft shows determination.",
+      "caption_zh": "（a）原位移植获得正常命运。（b）早期移植块离体培养形成红色棘球（特化）。（c）早期异位移植未表现决定。（d）晚期异位移植表现决定。",
+      "page": 26
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "These data support that the fate of the determined cell is not reversible.",
+      "text_zh": "这些数据支持“已决定细胞的命运不可逆”这一观点。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The cell that is specified loses its other differentiation potentials.",
+      "text_zh": "已特化的细胞会失去其他分化潜能。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "If the graft is removed at the late stage and cultured in isolation, it will give rise to the red spinous sphere (shown in the picture).",
+      "text_zh": "如果在晚期取出移植块并单独培养，它将形成图中所示的红色棘球。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "If the graft is removed at the late stage and cultured in the presence of the eye inducing factors, the eye-like structure will be developed.",
+      "text_zh": "如果在晚期取出移植块并在眼诱导因子存在下培养，将发育出眼样结构。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】晚期异位移植后，移植块仍按原命运形成眼样结构，说明一旦进入决定状态，其命运不再受宿主位置影响，是不可逆的。\nB【错】特化阶段的细胞只是倾向于某一命运，仍保留其他分化潜能；早期异位移植可被新环境改变（图 c），说明并未失去全部潜能。\nC【对】晚期移植块已决定，脱离胚胎单独培养仍会形成其预定结构（红色棘球）。\nD【错】已决定的细胞对诱导信号不再敏感；即使加入眼诱导因子，也不会因此额外形成眼样结构（其命运已固定）。",
+  "module": "module_3",
+  "subject": "动物学",
+  "concept": "胚胎细胞特化与决定",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 23 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 23
+  },
+  "tags": ["ibo", "module_3", "动物学", "胚胎细胞特化与决定", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-45",
+  "type": "mtf",
+  "lang": "en",
+  "question": "In Adélie penguins, when both parents leave the nest to find food, three-week-old chicks group together for protection. In this species, social defence behaviour can occur in unusual ways. When adult Adélie penguins reach the coast, they gather in groups before diving into the ocean, where usually their predator (leopard seal) could be lurking. The penguins have two choices: first, to dive together, or wait until one of the penguins dives so they could make sure if there is a predator or not.",
+  "question_zh": "在阿德利企鹅中，当双亲都离巢觅食时，三周大的雏鸟会聚在一起以获保护。该物种的社会防御行为可能以不寻常的方式出现。成年阿德利企鹅到达海岸后，会成群聚集，然后才跳入海中；它们的捕食者（豹海豹）通常可能潜伏在那里。企鹅有两种选择：一起跳入，或等待其中一只先跳，以确认是否有捕食者。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "This is an example of altruism behaviour as the penguin that jumps first could be hunted by possible predators while transferring its genes by helping its relatives.",
+      "text_zh": "这是一个利他行为的例子：第一只跳水的企鹅可能被捕食者捕食，但它通过帮助亲属传递了自己的基因。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "According to the above example we can say one individual has influence on what other penguins are doing.",
+      "text_zh": "根据上述例子，我们可以说一个个体对其它企鹅的行为有影响。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "If a new strategy arose which would make a penguin trip another one into the ocean without retaliation from others, everyone in the population would adopt this new strategy in the long run.",
+      "text_zh": "如果出现一种新策略：一只企鹅把另一只绊入海中而不会受到其它企鹅报复，那么长期来看种群中每个个体都会采纳这种策略。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "A mutation that results in postponing to jump as long as possible would eventually go to fixation.",
+      "text_zh": "导致尽可能推迟跳水的突变最终会在种群中固定。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】题干只描述先跳个体承担风险，并未证明其行为以提高亲属适合度为目的；先跳者也可能首先获得食物或信息，不能简单判定为利他行为。\nB【对】一只企鹅先跳会触发其它企鹅跟随，说明个体行为能影响群体中其他个体的行为。\nC【对】若该策略无成本、无报复且能提高自身适合度，按演化博弈逻辑会在种群中扩散并最终被普遍采用。\nD【错】若所有个体都尽可能推迟跳水，就没有个体先跳，等待的收益无法实现；推迟突变不会获得选择优势，因而不会固定。",
+  "module": "module_3",
+  "subject": "动物行为学",
+  "concept": "社会防御行为与演化博弈",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 45 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 45
+  },
+  "tags": ["ibo", "module_3", "动物行为学", "社会防御行为与演化博弈", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

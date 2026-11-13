@@ -49,7 +49,13 @@ var QuestionModel = (function () {
   // 2025 CBO 联赛标准：MTF 4 子题计分阶梯（practice / exam 共用）
   var LEAGUE_SCORE_TABLE = { 0: 0, 1: 0, 2: 0.2, 3: 1, 4: 2 };
 
-  // 练习页单题满分
+  // IBO 官方计分表（IBO 2018 理论卷说明页）：
+  //   4 条陈述：0/0/0/0.5/1.0；5 条陈述：0/0/0/0.25/0.75/1.25
+  // IBO 题按官方原始分值计分（单题满分 1.0 或 1.25），不再折算到练习 2 分制。
+  var IBO_SCORE_TABLE_4 = { 0: 0, 1: 0, 2: 0, 3: 0.5, 4: 1.0 };
+  var IBO_SCORE_TABLE_5 = { 0: 0, 1: 0, 2: 0, 3: 0.25, 4: 0.75, 5: 1.25 };
+
+  // 练习页单题满分（非 IBO 题）
   var PRACTICE_FULL_SCORE = 2.0;
 
   // 测验页分值（单选/判断满分、多选满分与半对分、MTF 满分与半对分）
@@ -103,6 +109,49 @@ var QuestionModel = (function () {
       return q.module;
     }
     return 'general';
+  }
+
+  /* ======================= 题目来源分类（练习页筛选用） ======================= */
+
+  // 来源键 → 展示名（顺序即筛选面板展示顺序；all 为「全部来源」哨兵）
+  var SOURCE_LABELS = {
+    all: '全部来源',
+    cnbo: 'CnBO 联赛真题',
+    ibo: 'IBO 真题',
+    original: '原创题',
+    gaokao: '高考真题',
+    school: '校考/模拟题',
+    other: '其他来源'
+  };
+
+  /**
+   * 题目来源归一（唯一权威实现）：
+   *   - competition=IBO / CnBO 直接判定；
+   *   - 联赛池的 tags 含 cnbo_league（历史题无 competition 字段时兜底）；
+   *   - source/examType 文本识别高考、校考/模拟；
+   *   - 站内题库（data/quiz、data/bank、逻辑题）无来源字段 → 原创题。
+   * @param {Object} q
+   * @returns {'cnbo'|'ibo'|'original'|'gaokao'|'school'|'other'}
+   */
+  function getQuestionSourceKey(q) {
+    if (!q || typeof q !== 'object') return 'original';
+    var comp = String(q.competition || '');
+    if (comp === 'IBO' || comp === 'ibo') return 'ibo';
+    if (comp === 'CnBO' || comp === 'cnbo') return 'cnbo';
+
+    var tags = Array.isArray(q.tags) ? q.tags : [];
+    if (tags.indexOf('ibo') >= 0) return 'ibo';
+    if (tags.indexOf('cnbo_league') >= 0) return 'cnbo';
+
+    var examType = String(q.examType || q.sourceType || '');
+    if (examType === 'gaokao') return 'gaokao';
+    if (examType === 'school' || examType === 'mock') return 'school';
+
+    var src = String(q.source || '');
+    if (/高考|全国卷|新课标/.test(src)) return 'gaokao';
+    if (/校考|月考|期中|期末|模拟考|模拟试题|联考/.test(src)) return 'school';
+    if (src) return 'other';
+    return 'original';
   }
 
   /* ======================= 题型归一 ======================= */
@@ -318,6 +367,29 @@ var QuestionModel = (function () {
     return 0;
   }
 
+  /** IBO 题判定（官方 CC BY-NC-SA 试卷，按官方分值表计分） */
+  function isIbo(q) {
+    return !!(q && typeof q === 'object' && q.competition === 'IBO');
+  }
+
+  /** IBO 官方单题满分：4 条陈述 1.0，5 条陈述 1.25；非 4/5 条返回 0（走兜底） */
+  function iboMaxScore(total) {
+    if (total === 4) return IBO_SCORE_TABLE_4[4];
+    if (total === 5) return IBO_SCORE_TABLE_5[5];
+    return 0;
+  }
+
+  /**
+   * IBO 官方计分：4 条陈述 3 对 0.5 / 4 对 1.0；
+   * 5 条陈述 3 对 0.25 / 4 对 0.75 / 5 对 1.25，其余 0。
+   * 子题数不是 4/5（脏数据）时返回 null，由调用方回退练习档。
+   */
+  function iboScore(total, correct) {
+    if (total === 4) return IBO_SCORE_TABLE_4[correct] || 0;
+    if (total === 5) return IBO_SCORE_TABLE_5[correct] || 0;
+    return null;
+  }
+
   /** MTF 子题判卷共用骨架：逐条判对 + answered 标记；分值由各 profile 叠加 */
   function _gradeSubs(subs, userAnswers, maxScore, fixedTotal, type) {
     var r = _empty('', type || 'mtf');
@@ -358,10 +430,12 @@ var QuestionModel = (function () {
       r.maxScore = PRACTICE_FULL_SCORE;
       return r;
     }
-    var g = _gradeSubs(subs, userAnswers, PRACTICE_FULL_SCORE);
+    // IBO 真题按官方分值表（4 条满分 1.0 / 5 条满分 1.25），其余题维持练习 2 分制
+    var iboMax = isIbo(q) ? iboMaxScore(subs.length) : 0;
+    var g = _gradeSubs(subs, userAnswers, iboMax || PRACTICE_FULL_SCORE);
     g.profile = 'practice';
     g.type = type;
-    g.score = practiceScore(g.total, g.correct);
+    g.score = iboMax ? iboScore(g.total, g.correct) : practiceScore(g.total, g.correct);
     return g;
   }
 
@@ -479,6 +553,31 @@ var QuestionModel = (function () {
     return _gradePractice(q, userAnswers);
   }
 
+  /**
+   * 单题满分（不判卷）—— 供成绩单/记录页汇总「总得分 / 满分」。
+   * practice：IBO 题按官方 1.0（4 条）/1.25（5 条），其余 2.0；
+   * exam：固定 2.0；quiz：按题型；daily：每个计分项 1 分。
+   * @param {Object} q
+   * @param {'practice'|'quiz'|'daily'|'exam'} [profile='practice']
+   * @returns {number}
+   */
+  function getQuestionMaxScore(q, profile) {
+    profile = profile || 'practice';
+    var type = normalizeType(q);
+    if (profile === 'exam') return LEAGUE_SCORE_TABLE[4];
+    if (profile === 'quiz') return QUIZ_SCORES[type] || QUIZ_SCORES.single;
+    if (profile === 'daily') {
+      if (isChoiceQuestion(q)) return 1;
+      return getEffectiveSubQuestions(q).length;
+    }
+    if (isIbo(q)) {
+      var subs = getEffectiveSubQuestions(q);
+      var iboMax = iboMaxScore(subs.length);
+      if (iboMax) return iboMax;
+    }
+    return PRACTICE_FULL_SCORE;
+  }
+
   /* ======================= 文案口径 ======================= */
 
   /** 题型标签（接受题目对象或 type 字符串） */
@@ -530,9 +629,12 @@ var QuestionModel = (function () {
     // 常量
     TYPE_LABELS: TYPE_LABELS,
     LEAGUE_SCORE_TABLE: LEAGUE_SCORE_TABLE,
+    IBO_SCORE_TABLE_4: IBO_SCORE_TABLE_4,
+    IBO_SCORE_TABLE_5: IBO_SCORE_TABLE_5,
     PRACTICE_FULL_SCORE: PRACTICE_FULL_SCORE,
     QUIZ_SCORES: QUIZ_SCORES,
     STAT_TYPE_LABELS: STAT_TYPE_LABELS,
+    SOURCE_LABELS: SOURCE_LABELS,
     // 题型归一
     normalizeType: normalizeType,
     isSingle: isSingle,
@@ -548,6 +650,9 @@ var QuestionModel = (function () {
     isSubCorrect: isSubCorrect,
     // 判卷
     gradeQuestion: gradeQuestion,
+    getQuestionMaxScore: getQuestionMaxScore,
+    isIbo: isIbo,
+    iboScore: iboScore,
     practiceScore: practiceScore,
     // 文案
     getTypeLabel: getTypeLabel,
@@ -555,6 +660,7 @@ var QuestionModel = (function () {
     getOptionLabels: getOptionLabels,
     normalizeStatType: normalizeStatType,
     getStatTypeLabel: getStatTypeLabel,
+    getQuestionSourceKey: getQuestionSourceKey,
     // 科目 → 全局统计模块（唯一权威映射）
     SUBJECT_MODULE_KEYS: SUBJECT_MODULE_KEYS,
     getStatModuleKey: getStatModuleKey

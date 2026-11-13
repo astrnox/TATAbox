@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-29",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Nitrogen is an important nutrient for all plants. While there is an abundance of nitrogen (N2) in the atmosphere, most plants are unable to convert N2 into a usable form. Fixation of nitrogen gas into ammonia is an ability restricted to nitrogen-fixing bacteria. The figure below shows a prerequisite step for nitrogen fixation through symbiosis between these bacteria and some plant species.",
+  "question_zh": "氮是所有植物的重要营养元素。大气中虽有大量氮气（N2），但大多数植物无法将 N2 转化为可利用形式。将氮气固定为氨的能力仅限于固氮细菌。下图展示这些细菌与某些植物建立共生以实现固氮的先决步骤。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q29-fig1.webp",
+      "caption": "Recognition, calcium spike, infection and nodule formation during rhizobium–legume symbiosis.",
+      "caption_zh": "根瘤菌—豆科植物共生过程中的识别、钙信号、侵染与根瘤形成。",
+      "page": 33
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Between two major inorganic nitrogen forms, NH4+ and NO3−, the former is mobile in the plant, while the latter is not.",
+      "text_zh": "在两种主要无机氮形式 NH4+ 与 NO3− 中，前者在植物体内可移动，而后者不可移动。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Immediately after recognition of plant by bacteria and recognition of bacteria by host plant, a calcium spike occurs in the root cells.",
+      "text_zh": "在细菌识别植物、宿主植物识别细菌之后，根细胞立即出现钙峰。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "The plant hormone cytokinin is needed for initiation of nodule formation.",
+      "text_zh": "植物激素细胞分裂素是启动根瘤形成所必需的。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Release of bacterial exopolysaccharides is the necessary and sufficient condition for a functional symbiosis between rhizobia and its appropriate host.",
+      "text_zh": "细菌释放胞外多糖是根瘤菌与其适宜宿主建立功能性共生的必要且充分条件。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】NO3− 在植物体内可随蒸腾流长距离运输，是主要的可移动氮形式；NH4+ 同化快、移动性较差，且高浓度有毒性。\nB【错】钙信号（钙峰/钙振荡）出现在 Nod 因子被受体识别之后，是信号转导的后续事件，并非“识别后立即”发生；图也显示识别、钙信号、侵染是先后步骤。\nC【对】根瘤形成需要细胞分裂素促进皮层细胞分裂，细胞分裂素信号是根瘤原基启动的关键。\nD【错】胞外多糖参与识别与侵染线形成，是共生建立的重要条件，但并非充分条件；还需要 Nod 因子、结瘤素、宿主遗传背景等多种因素协同。",
+  "module": "module_2",
+  "subject": "植物生理学",
+  "concept": "根瘤菌共生固氮",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 29 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 29
+  },
+  "tags": ["ibo", "module_2", "植物生理学", "根瘤菌共生固氮", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

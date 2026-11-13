@@ -1,0 +1,72 @@
+{
+  "id": "IBO-2018-T1-18",
+  "type": "mtf",
+  "lang": "en",
+  "question": "When a light beam enters another medium at an oblique angle, its direction will change. This phenomenon is called light refraction. The amount of this change in beam direction can be calculated by Snell’s law, where “n” is the refraction index.\n\nThis phenomenon is also the principle of conversion and diversion of beams in lenses. Power of a lens can be calculated by the following formula. Optical power of a lens demonstrates the degree of convergence or divergence of the light beam.\n\n(D: Power of lens, r: radius of curvature)\n\nD = (n1 − n2)/r\n\nThe figure below shows the eye structure of Anableps sp., which can simultaneously see objects in both aquatic and terrestrial scenes.",
+  "question_zh": "当光束以斜角进入另一种介质时，其传播方向会发生改变。这种现象称为光的折射。方向改变量可用斯涅尔定律计算，其中“n”为折射率。\n\n这一现象也是透镜中光束会聚与发散的原理。透镜的屈光力可用下式计算。透镜的光焦度表示光束会聚或发散的程度。\n\n（D：透镜屈光力；r：曲率半径）\n\nD = (n1 − n2)/r\n\n下图显示 Anableps sp.（四眼鱼）的眼结构；该鱼可同时看清水中与陆地上的物体。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q18-fig1.webp",
+      "caption": "Anableps sp. (a) and its eye (b).",
+      "caption_zh": "Anableps sp. 成体（a）及其眼（b）。",
+      "page": 21
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q18-fig2.webp",
+      "caption": "Scale model of the Anableps eye with refractive indices and radii of curvature: air n=1, cornea n=1.376, aqueous humour n=1.337, lens n=1.406; cornea front radius 7.259 mm, back 5.685 mm; lens front 8.672 mm, back 6.328 mm.",
+      "caption_zh": "Anableps 眼的比例模型及折射率、曲率半径：空气 n=1，角膜 n=1.376，房水 n=1.337，晶状体 n=1.406；角膜前表面半径 7.259 mm、后表面 5.685 mm；晶状体前表面 8.672 mm、后表面 6.328 mm。",
+      "page": 21
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q18-fig3.webp",
+      "caption": "Schematic diagram of the Anableps eye showing light rays 1 and 2.",
+      "caption_zh": "Anableps 眼示意图，显示光线 1 与 2。",
+      "page": 21
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The largest refraction index belongs to the lens.",
+      "text_zh": "折射率最大的是晶状体。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The largest amount of refraction belongs to the lens.",
+      "text_zh": "折射量最大的是晶状体。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "The light beam would be more divergent when passing through the aqueous humour than the cornea.",
+      "text_zh": "光束通过房水时比通过角膜时更趋于发散。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Considering the different diameters of the lens of Anableps fish, light ray 1 and 2 belong to terrestrial and aquatic spaces, respectively.",
+      "text_zh": "考虑到 Anableps 晶状体上下直径不同，光线 1 和 2 分别属于陆地与水中空间。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】图 c 给出折射率：空气 1、角膜 1.376、房水 1.337、晶状体 1.406，晶状体最高。\nB【错】屈光力 D=(n1−n2)/r 不仅取决于折射率差，还取决于曲率半径。角膜前表面半径 7.259 mm、空气—角膜折射率差 0.376，D≈0.052；晶状体前后表面 D 仅约 0.008–0.011，远小于角膜。因此折射量最大的是角膜，不是晶状体。\nC【对】房水与玻璃体折射率接近（1.337），光线通过时几乎不发生折射；角膜—空气界面折射率差最大，产生明显会聚。因此相对于角膜，房水对光束的会聚作用很小，光束更趋于发散。\nD【对】Anableps 的晶状体上下部分直径/曲率不同，分别适应空气与水中不同的折射需求；图 c 中光线 1、2 分别对应陆地与水中视野。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "眼的光学与折射",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 18 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 18
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "眼的光学与折射", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

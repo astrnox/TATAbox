@@ -253,6 +253,12 @@
     '.q-opts { margin: 1.5mm 0; }',
     '.q-opts div { margin: 1mm 0; }',
     '.q-opts b { color: rgb(26,58,42); }',
+    '.q-table-wrap { margin: 2mm 0; }',
+    '.q-table-title { font-size: 9.5pt; font-weight: 700; margin-bottom: 1mm; }',
+    '.q-table { width: 100%; border-collapse: collapse; font-size: 9pt; }',
+    '.q-table th, .q-table td { border: 1px solid #999; padding: 1.2mm 2mm;',
+    '  text-align: left; vertical-align: top; }',
+    '.q-table th { background: #eef3ee; font-weight: 700; }',
     '.q-box { break-inside: avoid; page-break-inside: avoid; background: rgb(243,247,243);',
     '  border-left: 3px solid rgb(90,125,92); padding: 2mm 3mm; margin: 2mm 0; font-size: 10pt; }',
     '.q-box.q-alt { background: rgb(253,245,235); border-left-color: rgb(196,149,106); }',
@@ -376,6 +382,35 @@
     return '';
   }
 
+  /** 题内表格（IBO 等）：{ title, head:[...], rows:[[...]] } */
+  function _tablesHtml(q) {
+    var tables = (q && Array.isArray(q.tables)) ? q.tables : [];
+    if (!tables.length) return '';
+    return tables.map(function (t) {
+      if (!t) return '';
+      var head = Array.isArray(t.head) ? t.head : [];
+      var rows = Array.isArray(t.rows) ? t.rows : [];
+      if (!head.length && !rows.length) return '';
+      var h = '<div class="q-table-wrap">';
+      if (t.title) h += '<div class="q-table-title">' + esc(t.title) + '</div>';
+      h += '<table class="q-table">';
+      if (head.length) {
+        h += '<thead><tr>' + head.map(function (c) {
+          return '<th>' + esc(c) + '</th>';
+        }).join('') + '</tr></thead>';
+      }
+      if (rows.length) {
+        h += '<tbody>' + rows.map(function (row) {
+          return '<tr>' + (Array.isArray(row) ? row : []).map(function (c) {
+            return '<td>' + esc(c) + '</td>';
+          }).join('') + '</tr>';
+        }).join('') + '</tbody>';
+      }
+      h += '</table></div>';
+      return h;
+    }).join('');
+  }
+
   /**
    * 单道题的打印 HTML。
    * @param {object} q 题目
@@ -401,6 +436,7 @@
 
     h += '<div class="q-text">' + nl2br(q.question || q.question_text || q.questionText || '') + '</div>';
     h += _figureHtml(q);
+    h += _tablesHtml(q);
 
     if (rows && rows.length) {
       h += '<div class="q-opts">' + rows.map(function (r) {

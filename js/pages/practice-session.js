@@ -328,9 +328,9 @@ function savePracticeRecord() {
         questionId: getQuestionBioId(q),
         userAnswers: ua,
         score: result.score,
-        // 满分口径：练习总账「满分 = 题数 × 单题满分 2.0」（result.total 是计分项数，
-        // 不是分值——混用会让记录页显示「20 / 10 分」这类错乱比值）
-        totalScore: QuestionModel.PRACTICE_FULL_SCORE,
+        // 满分口径：按单题实际满分（IBO 官方 1.0/1.25，其余练习题 2.0），
+        // 与判分内核 getQuestionMaxScore 同源，避免「得分 / 满分」比值错乱
+        totalScore: QuestionModel.getQuestionMaxScore(q, 'practice'),
         correctSubs: result.correct,
         totalSubs: result.total,
         // MTF 题型：全部子题正确才算对；逻辑推理题：correct === total 即对

@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-04",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Pulse-chase experiments performed in cells are experiments in which cells are first exposed to labelled precursors of specific molecules for a short period of time (the pulse), unincorporated labelled precursors are then washed away, and presence of label in molecules of interest are followed through time (the chase). In an experiment designed to study gene expression, cells were exposed to labelled UTP during the pulse, and results of the chase part of the experiment are summarized in the figure below.",
+  "question_zh": "细胞中的脉冲—追踪实验，是先将细胞短时间暴露于特定分子的标记前体（脉冲），洗去未掺入的标记前体，然后随时间追踪标记在目标分子中的出现情况（追踪）。在一项研究基因表达的实验中，细胞在脉冲阶段暴露于标记的 UTP，追踪阶段的结果总结于下图。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q04-fig1.webp",
+      "caption": "Label in RNA (%) during an 8-hour chase. Solid line: nuclear RNA; dashed line: cytoplasmic RNA.",
+      "caption_zh": "8 小时追踪过程中 RNA 中的标记比例。实线：核 RNA；虚线：胞质 RNA。",
+      "page": 6
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Based on the data presented, most (~90% of mass) of RNA that is synthesized in the nucleus is degraded in the nucleus without ever entering the cytoplasm.",
+      "text_zh": "根据所给数据，在细胞核中合成的 RNA 大部分（约 90% 的质量）在核内被降解，从未进入细胞质。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Based on data presented, the complexity of RNA (which refers to number of different sequences) in the nucleus is higher than in the cytoplasm.",
+      "text_zh": "根据所给数据，细胞核中 RNA 的复杂度（即不同序列的种类数）高于细胞质。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Assuming that introns constitute 60% of primary transcripts, splicing can account for the observed difference in amount of label in the nucleus at start of chase and amount of label in the cytoplasm after eight hours of chase.",
+      "text_zh": "假设内含子占初级转录本的 60%，则剪接可以解释追踪开始时核内标记量与追踪 8 小时后胞质标记量之间的差异。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "It is expected that chases of longer than 8 hours would have ultimately shown a much higher amount of label in the cytoplasm than seen at 8 hours.",
+      "text_zh": "预计追踪时间长于 8 小时后，胞质中的标记量最终会远高于 8 小时时的水平。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】追踪开始时核 RNA 标记为 100%，8 小时后降至接近 0；胞质标记仅升至约 9%，说明约 90% 的新合成 RNA 在核内被降解，未进入胞质。\nB【错】图中只给出标记总量（质量），并未比较不同序列的种类数；不能由标记量推断核内 RNA 复杂度更高。\nC【错】若内含子占 60%，剪接最多只能去掉 60%，胞质中应剩约 40%；实际胞质标记仅约 9%，说明除剪接外还有大量核内降解。\nD【错】胞质标记在约 6–8 小时已趋于平台（约 9%），延长追踪不会出现远高于 8 小时的胞质标记量。",
+  "module": "module_1",
+  "subject": "分子生物学",
+  "concept": "RNA 合成、剪接与核内降解",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 4 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 4
+  },
+  "tags": ["ibo", "module_1", "分子生物学", "RNA 合成、剪接与核内降解", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

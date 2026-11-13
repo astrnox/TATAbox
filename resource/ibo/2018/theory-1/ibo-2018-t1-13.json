@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-13",
+  "type": "mtf",
+  "lang": "en",
+  "question": "DNA polymerase III holoenzyme consists of the pol III* and the β-clamp which hold pol III* and the DNA template together. You are investigating whether, during lagging strand synthesis, the pol III* synthesizing the lagging strand dissociates from the β-clamp as it finishes one Okazaki fragment and re-associates with another β-clamp to begin making the next Okazaki fragment. You prepared a primed M13 phage (a single-stranded DNA and a primer) template (M13mp18) as a donor and loaded a β-clamp and pol III* onto it.\n\nAs acceptors, you then added two more primed phage DNA templates, one (M13Gori) preloaded with a β-clamp and the other (ΦX174) lacking a β-clamp (Figure A). You incubated the templates together under replication conditions for 90 min – long enough for the donor and acceptors to be replicated – then performed gel electrophoresis (Figure B, lanes 1–4). You then repeated the experiment but now loading a β-clamp on ΦX174 instead of M13Gori (Figure B, lanes 5–8).",
+  "question_zh": "DNA 聚合酶 III 全酶由 pol III* 与 β-夹（β-clamp）组成，后者将 pol III* 与 DNA 模板固定在一起。你正在研究：在后随链合成过程中，合成后随链的 pol III* 在完成一个冈崎片段后，是否从 β-夹上解离，并与另一个 β-夹结合以开始合成下一个冈崎片段。你制备了带引物的 M13 噬菌体（单链 DNA 加引物）模板（M13mp18）作为供体，并在其上加载了 β-夹和 pol III*。\n\n随后加入另外两个带引物的噬菌体 DNA 模板作为受体：一个（M13Gori）预先加载了 β-夹，另一个（ΦX174）没有 β-夹（图 A）。将模板在复制条件下共同孵育 90 分钟——足以让供体和受体都完成复制——然后进行凝胶电泳（图 B，泳道 1–4）。随后重复实验，但改为在 ΦX174 上加载 β-夹，而不是在 M13Gori 上（图 B，泳道 5–8）。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q13-fig1.webp",
+      "caption": "A: Donor M13mp18 preloaded with pol III* and β-clamp; acceptors M13Gori (with β-clamp) and ΦX174 (without β-clamp). B: Gel electrophoresis of replication products at 15–90 s.",
+      "caption_zh": "A：供体 M13mp18 预载 pol III* 与 β-夹；受体 M13Gori（有 β-夹）与 ΦX174（无 β-夹）。B：15–90 秒复制产物的凝胶电泳。",
+      "page": 16
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "After replication has finished, Pol III* dissociates from its original β-clamp.",
+      "text_zh": "复制完成后，Pol III* 从其原来的 β-夹上解离。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The data are consistent with the notion that the β-clamp is not absolutely required for replication.",
+      "text_zh": "这些数据与“β-夹并非复制绝对必需”的观点一致。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Pol III* prefers an acceptor template preloaded with a β-clamp.",
+      "text_zh": "Pol III* 优先选择预先加载了 β-夹的受体模板。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Based on the results, one β-clamp is enough to synthesize all Okazaki fragments on the lagging strand of each replication fork.",
+      "text_zh": "根据结果，一个 β-夹足以合成每个复制叉后随链上的全部冈崎片段。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】供体复制完成后，Pol III* 转移到新加入的受体模板上继续复制；凝胶中供体条带不再持续增强，说明 Pol III* 可以从原来的 β-夹解离。\nB【对】当 β-夹加载在 M13Gori 上时，无 β-夹的 ΦX174 仍出现复制产物（泳道 6–8），说明 β-夹不是复制的绝对必需条件。\nC【对】当 β-夹加载在 ΦX174 上时，ΦX174 的复制产物显著增强，而 M13Gori 产物减弱，说明 Pol III* 优先利用预载 β-夹的受体。\nD【错】Pol III* 每完成一个冈崎片段便解离并重新结合新的 β-夹，因此一个 β-夹不足以合成后随链上的全部冈崎片段。",
+  "module": "module_1",
+  "subject": "分子生物学",
+  "concept": "DNA 复制与 β-夹",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 13 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 13
+  },
+  "tags": ["ibo", "module_1", "分子生物学", "DNA 复制与 β-夹", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

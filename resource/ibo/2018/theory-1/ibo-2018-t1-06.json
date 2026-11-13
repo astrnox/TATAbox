@@ -1,0 +1,72 @@
+{
+  "id": "IBO-2018-T1-06",
+  "type": "mtf",
+  "lang": "en",
+  "question": "MicroRNAs are short non-coding RNAs expressed in various tissues and cell types that suppress the expression of target genes. MicroRNAs involved in cancer are called oncomiRs. Inhibition of oncomiRs using antisense oligomers (that is, antimiRs) is an evolving therapeutic strategy. However, the in vivo efficacy of current antimiR technologies is hindered by physiological and cellular barriers for delivery into targeted cells.\n\nA novel antimiR delivery platform that specifically targets the tumour microenvironment makes use of synthetic molecules called peptide nucleic acid (PNA) antimiRs attached to a peptide called pHLIP. PNA antimiRs are antimiRs whose nucleotides are connected by peptide bonds instead of the normal phosphodiester bonds. The structure of pHLIP is pH dependent. At low pH, a transmembrane structure is induced in pHLIP that facilitates transport of attached PNA into tumour cells (Fig. 1). pHLIP-mediated transport of antimiR-155 effectively inhibited the miR-155 oncomiR in cultured cells (Fig. 2).",
+  "question_zh": "微小 RNA（miRNA）是在多种组织和细胞类型中表达的短非编码 RNA，可抑制靶基因表达。与癌症相关的 miRNA 称为癌 miRNA（oncomiR）。用反义寡聚体（即 antimiR）抑制 oncomiR 是一种正在发展的治疗策略。然而，现有 antimiR 技术进入靶细胞的体内效率受到生理与细胞屏障的限制。\n\n一种新型 antimiR 递送平台可特异靶向肿瘤微环境，它利用一种称为肽核酸（PNA）antimiR 的合成分子，并将其连接到名为 pHLIP 的肽上。PNA antimiR 的核苷酸之间由肽键而非正常的磷酸二酯键连接。pHLIP 的结构依赖 pH：在低 pH 下，pHLIP 被诱导形成跨膜结构，促进所连接的 PNA 进入肿瘤细胞（图 1）。pHLIP 介导的 antimiR-155 转运在培养细胞中有效抑制了 miR-155 oncomiR（图 2）。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q06-fig1.webp",
+      "caption": "Fig. 1: Targeting miR-155 in a mouse lymphoma model using PNA-antimiR-155-pHLIP. a: Distribution of pHLIP (yellow and red zones) 36 h after injection into the tail. b: Schematic presentation of pHLIP-mediated PNA antimiR delivery.",
+      "caption_zh": "图 1：在小鼠淋巴瘤模型中用 PNA-antimiR-155-pHLIP 靶向 miR-155。a：尾部注射 36 h 后 pHLIP 的分布（黄色与红色区域）。b：pHLIP 介导 PNA antimiR 递送的示意图。",
+      "page": 8
+    },
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q06-fig2.webp",
+      "caption": "Fig. 2: pH-dependent transport and activity of PNA-antimiR-155-pHLIP. a: Microscopy images of A549 cells incubated with labelled PNA-antimiR-155-pHLIP (red fluorescence) at two pH values; the nucleus is labelled blue. b: Effects of pHLIP-antimiR-155 on cell viability at two different pH values.",
+      "caption_zh": "图 2：PNA-antimiR-155-pHLIP 的 pH 依赖性转运与活性。a：A549 细胞在两种 pH 下与标记的 PNA-antimiR-155-pHLIP（红色荧光）共孵育的显微图像；细胞核为蓝色。b：两种 pH 下 pHLIP-antimiR-155 对细胞活力的影响。",
+      "page": 9
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Based on the data, you can conclude the liver does not function in clearing the pHLIP-antimiRs from the body.",
+      "text_zh": "根据这些数据可以得出结论：肝脏不参与清除体内的 pHLIP-antimiR。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "At pH less than 7, pHLIP inserts into the lipid bilayer and thus facilitates delivery of attached antimiR-155.",
+      "text_zh": "在 pH 小于 7 时，pHLIP 插入脂双层，从而促进所连接的 antimiR-155 的递送。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The acidic microenvironment of tumours is responsible for intracellular release of antimiR-155.",
+      "text_zh": "肿瘤的酸性微环境负责 antimiR-155 在胞内的释放。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The antimiR cargo will be trapped within endosomes.",
+      "text_zh": "antimiR 货物将被滞留在内体中。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "Transition from random coil to helix of pHLIP enhances cell death.",
+      "text_zh": "pHLIP 从无规卷曲转变为螺旋会增强细胞死亡。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】图 1a 显示尾部注射 36 h 后肝脏出现很强的 pHLIP 信号，说明肝脏参与摄取/清除，而不是不参与。\nB【对】图 1b 与图 2a 表明：pH 6.2 时 pHLIP 由无规卷曲转变为跨膜螺旋并插入膜中，携带 antimiR-155 进入细胞（红色荧光明显）；pH 7.4 时进入很少。\nC【错】酸性微环境的作用是触发 pHLIP 插膜和递送；antimiR 的胞内释放依赖胞内还原环境使二硫键断裂（生成 HS-antimiR），并非酸性本身。\nD【错】图 1b 显示 antimiR 从 pHLIP 上释放到胞质并与 miR-155 结合，并未被滞留于内体。\nE【对】图 2b 显示 pH 6.2 时 pHLIP-antimiR-155 显著降低细胞活力，说明螺旋化插膜递送增强了细胞死亡。",
+  "module": "module_1",
+  "subject": "分子生物学",
+  "concept": "miRNA 靶向治疗与 pHLIP 递送",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 6 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 6
+  },
+  "tags": ["ibo", "module_1", "分子生物学", "miRNA 靶向治疗与 pHLIP 递送", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

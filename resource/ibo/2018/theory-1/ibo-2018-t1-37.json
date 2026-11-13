@@ -1,0 +1,66 @@
+{
+  "id": "IBO-2018-T1-37",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Bighorn sheep (Ovis canadensis), the males of which are famous for their magnificent curl of horns, live in North America. Their hunting was restricted in 1970. This restriction made trophy rams (males with large and fully-curved horns) extremely valuable, sometimes costing over $100,000 to be hunted. Funds raised in this way were used for preserving bighorn habitats.\n\nColtman and his colleagues (2003) showed that there is a relationship between year and decrease of mean mass and mean horn length of bighorn sheep in Alberta, Canada, where trophy hunting was conducted over 30 years.",
+  "question_zh": "大角羊（Ovis canadensis）生活在北美，雄性以雄伟的卷角闻名。1970 年起其狩猎受到限制；这一限制使“战利品公羊”（角大且完全卷曲的雄性）变得极其昂贵，狩猎费用有时超过 10 万美元。所得资金用于保护大角羊栖息地。\n\nColtman 及其同事（2003）发现，在加拿大艾伯塔省，大角羊的平均体重和平均角长随年份下降，该地区进行了 30 年的战利品狩猎。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q37-fig1.webp",
+      "caption": "Decline in average horn length (top) and average body mass (bottom) of bighorn sheep in Alberta from 1970 to 2000.",
+      "caption_zh": "1970–2000 年艾伯塔省大角羊平均角长（上）与平均体重（下）的下降趋势。",
+      "page": 41
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The observed changes in the mean mass and horn length imply a reduction in the bighorn sheep population.",
+      "text_zh": "观察到的平均体重与角长变化意味着大角羊种群数量减少。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Phenotype-based selective harvest can change population characters if it targets heritable traits.",
+      "text_zh": "如果针对可遗传性状，基于表型的选择性收获可以改变种群特征。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "If variation in horn size is mainly due to additive genetic interactions, the heritability (the portion of the phenotypic variance explained by genotype variance) for this trait would decrease over time.",
+      "text_zh": "如果角大小的变异主要来自加性遗传效应，那么该性状的遗传力（表型方差中由基因型方差解释的部分）会随时间下降。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "By hunting males with longest horns, the variance in the reproductive success of the males increases.",
+      "text_zh": "猎杀角最长的雄性会增加雄性繁殖成功的方差。",
+      "answer": false
+    },
+    {
+      "label": "E",
+      "text": "The trends establish genetic correlation between horn length and mass.",
+      "text_zh": "这些趋势确立了角长与体重之间的遗传相关。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】平均体重和角长下降反映的是表型/遗传组成的变化（选择性狩猎的进化后果），并不能推断种群数量减少。\nB【对】若被选择的性状可遗传，基于表型的定向选择会改变种群的性状分布，这正是战利品狩猎导致角长和体重下降的机制。\nC【对】持续的定向选择会消耗加性遗传方差，使遗传力随时间下降，选择反应逐渐减弱。\nD【错】猎杀角最长的雄性会减少少数大角雄性的繁殖机会，使更多雄性参与繁殖，从而降低而非增加雄性繁殖成功方差。\nE【错】两个性状同步下降只说明表型相关或选择同时作用于两者，不能据此确立遗传相关；需要遗传参数估计才能判断。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "选择性狩猎与性状进化",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 37 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 37
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "选择性狩猎与性状进化", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

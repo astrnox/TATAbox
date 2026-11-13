@@ -76,26 +76,45 @@
    * 统一题图 HTML（含点击查看放大、失败占位接管标记）
    * @param {string} src 图片路径
    * @param {string} [alt]
+   * @param {string} [caption] 图注（可选）
    * @returns {string}
    */
-  function figureHTML(src, alt) {
+  function figureHTML(src, alt, caption) {
     if (!src) return '';
     return '<figure class="bq-figure">' +
       '<img class="bq-figure-img" data-bq-zoom="1" src="' + _esc(src) + '" alt="' +
       _esc(alt || '题目配图') + '" loading="lazy" decoding="async">' +
+      (caption ? '<figcaption class="bq-figure-caption">' + _esc(caption) + '</figcaption>' : '') +
       '</figure>';
   }
 
   /**
-   * 统一渲染：优先取配图；无配图但 chart 是表格/文本时回落 renderChart。
+   * 统一渲染：优先渲染 images[]（多图题，按语言取图注），其次单图，最后 chart。
    * @param {Object} q 题目对象
-   * @param {Object} [opts] {alt:string}
+   * @param {Object} [opts] {alt:string, lang:'en'|'zh'}
    * @returns {string} HTML
    */
   function renderFigure(q, opts) {
     opts = opts || {};
+    var lang = opts.lang || 'en';
+    if (q && Array.isArray(q.images) && q.images.length > 0) {
+      var html = [];
+      for (var i = 0; i < q.images.length; i++) {
+        var im = q.images[i] || {};
+        if (!im.file) continue;
+        var cap = (lang === 'zh' && im.caption_zh) ? im.caption_zh : (im.caption || '');
+        html.push(figureHTML(im.file, cap || opts.alt || '题目配图', cap));
+      }
+      if (html.length) return html.join('');
+    }
     var src = figureSrcOf(q);
-    if (src) return figureHTML(src, opts.alt || ((q && q.subject) ? q.subject + '图' : '题目配图'));
+    if (src) {
+      var cap2 = '';
+      if (q && q.image && typeof q.image === 'object') {
+        cap2 = (lang === 'zh' && q.image.caption_zh) ? q.image.caption_zh : (q.image.caption || '');
+      }
+      return figureHTML(src, cap2 || opts.alt || ((q && q.subject) ? q.subject + '图' : '题目配图'), cap2);
+    }
     if (q && q.chart && typeof window !== 'undefined' && typeof window.renderChart === 'function') {
       return window.renderChart(q.chart);
     }
@@ -122,6 +141,27 @@
    * ============================================================ */
 
   var RETRY_ATTR = 'data-bq-retry';
+
+  // jsDelivr 多域名兜底：部分网络对单一 CDN 域名不通，按链依次换主机重试
+  var CDN_HOSTS = [
+    'gcore.jsdelivr.net',
+    'testingcf.jsdelivr.net',
+    'cdn.jsdelivr.net',
+    'fastly.jsdelivr.net'
+  ];
+
+  /**
+   * 若 src 是 jsDelivr GitHub 资源，返回下一个可用镜像域名 URL；否则返回 ''。
+   * 路径（/gh/owner/repo@ref/...）保持不变，仅替换主机。
+   */
+  function _nextCdnSrc(src) {
+    var m = String(src || '').match(/^https:\/\/([^/]+)\/(gh\/.+)$/i);
+    if (!m) return '';
+    var host = m[1].toLowerCase();
+    var idx = CDN_HOSTS.indexOf(host);
+    if (idx < 0 || idx >= CDN_HOSTS.length - 1) return '';
+    return 'https://' + CDN_HOSTS[idx + 1] + '/' + m[2];
+  }
 
   function _clearRetryQuery(src) {
     return String(src || '').replace(/([?&])bqretry=\d+/, function (m, sep) {
@@ -175,6 +215,14 @@
     if (!img.getAttribute('data-bq-orig-src')) {
       img.setAttribute('data-bq-orig-src', _clearRetryQuery(img.getAttribute('src')));
     }
+    // 远程 CDN 图（题图分发）：先按多域名链换主机重试，全部失败再走本地重试/占位
+    var cur = _clearRetryQuery(img.getAttribute('src'));
+    var nextHost = _nextCdnSrc(cur);
+    if (nextHost) {
+      if (img.dataset) img.dataset.bqRetry = '1';
+      img.setAttribute('src', nextHost);
+      return;
+    }
     if (img.dataset && img.dataset.bqRetry === '1') {
       _showFailed(img);
       return;
@@ -196,6 +244,17 @@
       if (!t || t.tagName !== 'IMG') return;
       if (t.getAttribute('data-bq-zoom') !== '1') return;
       _handleImgError(t);
+    }, true);
+
+    // 镜像降级/带参重试成功后：恢复点击放大，并让查看器打开实际可用的地址
+    document.addEventListener('load', function (e) {
+      var t = e && e.target;
+      if (!t || t.tagName !== 'IMG') return;
+      if (t.getAttribute('data-bq-zoom') !== '1') return;
+      var src = _clearRetryQuery(t.currentSrc || t.getAttribute('src') || '');
+      if (src) t.setAttribute('data-bq-orig-src', src);
+      if (t.removeAttribute) t.removeAttribute(RETRY_ATTR);
+      if (t.dataset) delete t.dataset.bqRetry;
     }, true);
 
     // 点击图片 → 打开查看器；点击失败占位 → 重试
