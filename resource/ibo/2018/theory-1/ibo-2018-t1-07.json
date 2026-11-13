@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-07",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Steroid hormones affect expression of primary response genes and secondary response genes in cells as schematically shown in the figure below.\n\nPrimary and secondary response genes can be distinguished by ...",
+  "question_zh": "类固醇激素影响细胞中初级反应基因与次级反应基因的表达，如下图所示。\n\n可以通过以下处理区分初级反应基因与次级反应基因……",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q07-fig1.webp",
+      "caption": "Schematic representation of primary and secondary response genes. One primary-response protein shuts off primary-response genes; another primary-response protein turns on secondary-response genes.",
+      "caption_zh": "初级反应基因与次级反应基因示意图。一种初级反应蛋白关闭初级反应基因；另一种初级反应蛋白开启次级反应基因。",
+      "page": 10
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "inhibition of DNA replication simultaneously with hormone administration",
+      "text_zh": "在给予激素的同时抑制 DNA 复制",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "inhibition of transcription simultaneously with hormone administration",
+      "text_zh": "在给予激素的同时抑制转录",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "inhibition of translation simultaneously with hormone administration",
+      "text_zh": "在给予激素的同时抑制翻译",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "inhibition of transcription and translation simultaneously with hormone administration",
+      "text_zh": "在给予激素的同时同时抑制转录和翻译",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】抑制 DNA 复制并不阻断激素—受体复合物对初级反应基因的直接转录激活，也不能把两级反应分开。\nB【错】同时抑制转录会把初级反应和次级反应一起阻断，无法区分两者。\nC【对】初级反应由激素—受体复合物直接激活转录，不需要先合成新蛋白；次级反应依赖初级反应蛋白的合成。因此加入翻译抑制剂后，初级反应仍能发生，而次级反应被阻断，从而区分两级反应。\nD【错】同时抑制转录和翻译会把两级反应都阻断，得不到区分信息。",
+  "module": "module_1",
+  "subject": "分子生物学",
+  "concept": "类固醇激素与基因表达调控",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 7 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 7
+  },
+  "tags": ["ibo", "module_1", "分子生物学", "类固醇激素与基因表达调控", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

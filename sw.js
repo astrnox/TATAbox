@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-69d3729577c1'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-ca44041e3fa2'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -23,7 +23,8 @@ var DATA_CACHE_NAME = 'bioquest-data';
 
 /* M-14：用户主动下载的离线题库包（与 runtime DATA_CACHE 分离）。
  *  - core：manifest + 全部分片（index/bank）+ 101 题精练 + 40 题逻辑；
- *  - full：core + resource/all.json（2,873 道联赛真题，约 4.7MB）。
+ *  - full：core + resource/all.json（2,873 道联赛真题）+ resource/ibo.json
+ *          （IBO 真题，含中英双语），合计约 5MB。
  * 独立缓存便于用户一键清理，也不会被 manifest 版本更新时的 purge 误删。 */
 var OFFLINE_BANK_CACHE = 'bioquest-offline-bank-v1';
 
@@ -81,6 +82,7 @@ var SKELETON_ASSETS = [
   './js/core/loader.js',
   './js/core/question-utils.js',
   './js/core/question-model.js',
+  './js/core/question-i18n.js',
   // 必要的小型基础依赖（运行时配置 / 数据压缩）
   './js/core/config.js',
   './js/vendor/lz-string.min.js',
@@ -542,7 +544,8 @@ function getOfflineBankUrls(level) {
       urls.push('./data/' + rel);
     });
     if (level === 'full') {
-      urls.push('./resource/count.json', './resource/all.json');
+      urls.push('./resource/count.json', './resource/all.json',
+        './resource/ibo-count.json', './resource/ibo.json');
     }
     return urls;
   });

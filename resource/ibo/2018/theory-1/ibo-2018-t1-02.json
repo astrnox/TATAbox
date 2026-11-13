@@ -1,0 +1,78 @@
+{
+  "id": "IBO-2018-T1-02",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Taxonomy has traditionally been based on morphology. DNA barcoding is a new approach that aims to allow accurate and relatively simple species identification based on the nucleotide sequence of a 650-bp fragment of the mitochondrial COI gene. The Kimura 2-parameter (K2P) distance is a widely accepted index that reflects the divergence between two DNA sequences.\n\nIn a study on fish inhabiting the Persian Gulf, over 150 individuals were studied that, based on morphology, represented 83 species. The average of intraspecific K2P distances based on COI sequence was calculated to be 1.15%. The average distance reported in various reputable fish studies in the world has been 0.25%–0.45%.\n\nIn a study on fish inhabiting the Gulf of Mexico, again over 150 individuals were studied. Based on morphology, these fish represented 76 species, 56 genera, 32 families, 11 orders, and 2 classes. The table below presents K2P distances between specimens at different taxonomic levels.",
+  "question_zh": "传统分类学以形态为基础。DNA 条形码是一项新方法，旨在依据线粒体 COI 基因中一段 650 bp 片段的核苷酸序列，实现准确且相对简单的物种鉴定。Kimura 双参数（K2P）距离是广泛接受的指标，用于反映两条 DNA 序列之间的分化程度。\n\n在一项针对波斯湾鱼类的研究中，共研究了 150 多个个体；依据形态，它们代表 83 个物种。基于 COI 序列计算的种内 K2P 距离平均为 1.15%。而世界范围内多项权威鱼类研究报告的平均距离为 0.25%–0.45%。\n\n在另一项针对墨西哥湾鱼类的研究中，同样研究了 150 多个个体。依据形态，这些鱼代表 76 个物种、56 个属、32 个科、11 个目和 2 个纲。下表给出不同分类阶元内标本之间的 K2P 距离。",
+  "tables": [
+    {
+      "title": "K2P distances between specimens at different taxonomic levels",
+      "head": ["", "No. of comparisons", "Min. distance (%)", "Mean distance (%)", "Max. distance (%)", "Standard error distance (%)"],
+      "rows": [
+        ["Within species", "185", "0", "0.18", "1.66", "0.02"],
+        ["Within genus", "76", "6.19", "12", "20.23", "0.42"],
+        ["Within family", "888", "10.88", "17.43", "24.56", "0.08"],
+        ["Within order", "9274", "14.57", "21.51", "28.9", "0.02"],
+        ["Within class", "3439", "16.2", "22.77", "34.41", "0.04"]
+      ]
+    }
+  ],
+  "tables_zh": [
+    {
+      "title": "不同分类阶元内标本之间的 K2P 距离",
+      "head": ["", "比较数", "最小距离（%）", "平均距离（%）", "最大距离（%）", "标准误距离（%）"],
+      "rows": [
+        ["种内", "185", "0", "0.18", "1.66", "0.02"],
+        ["属内", "76", "6.19", "12", "20.23", "0.42"],
+        ["科内", "888", "10.88", "17.43", "24.56", "0.08"],
+        ["目内", "9274", "14.57", "21.51", "28.9", "0.02"],
+        ["纲内", "3439", "16.2", "22.77", "34.41", "0.04"]
+      ]
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The evolutionary rate of sequence change in a DNA fragment chosen for DNA barcoding should certainly be more rapid than the evolutionary rate of change in the H4 histone encoding gene.",
+      "text_zh": "被选作 DNA 条形码的 DNA 片段，其序列变化的进化速率应当肯定快于编码 H4 组蛋白的基因的进化速率。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The high average COI intraspecific K2P distance of the Persian Gulf study compared to other fish studies could be explained by existence of relatively diverged clusters within one or a few of the nominal species studied (i.e. those based on morphology).",
+      "text_zh": "与其它鱼类研究相比，波斯湾研究较高的种内平均 COI K2P 距离可以用所研究的一个或少数几个名义种（即基于形态划分的种）内部存在相对分化的类群来解释。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The data in the table support the proposal that species identification of fish can be made on the basis of COI fragment sequences.",
+      "text_zh": "表中的数据支持“可以基于 COI 片段序列进行鱼类物种鉴定”这一主张。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Table 1 suggests that COI based barcoding is not appropriate for genus identification.",
+      "text_zh": "表 1 提示，基于 COI 的条形码不适合用于属级鉴定。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】DNA 条形码要求种内变异小、种间变异大，因此所选片段必须比高度保守的 H4 组蛋白基因积累更多变异，进化速率更快。\nB【对】若名义种内存在隐存种或高度分化的类群，种内平均 K2P 会被拉高；这正好解释波斯湾研究 1.15% 远高于全球其它研究 0.25%–0.45% 的现象。\nC【对】表中种内最大距离为 1.66%，而属内最小距离为 6.19%，两者之间存在明显的条形码间隙，支持用 COI 鉴定物种。\nD【对】属内距离范围（6.19%–20.23%）与科内距离（10.88%–24.56%）大幅重叠，说明 COI 难以稳定区分属级单元，因此不适合单独用于属级鉴定。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "DNA 条形码与物种鉴定",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 2 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 2
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "DNA 条形码与物种鉴定", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-44",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Regional species diversity in ecosystems usually increases with primary productivity while local species diversity does not show any defined relation with primary productivity. It suggests that different processes have distinctive influence on species diversity at regional and local scales.\n\nFigure illustrates four hypothesized mechanisms and their influence on α-diversity (mean local diversity) and β-diversity (diversity in species composition between local sites). (HNDD: Interspecific negative population density dependence. CNDD: Intraspecific negative population density dependence.)",
+  "question_zh": "生态系统的区域物种多样性通常随初级生产力增加而增加，而局域物种多样性与初级生产力没有明确关系。这提示不同过程在区域尺度与局域尺度对物种多样性有不同影响。\n\n下图展示四种假说机制及其对 α 多样性（平均局域多样性）和 β 多样性（局域地点间物种组成差异）的影响。（HNDD：种间负密度制约；CNDD：种内负密度制约。）",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q44-fig1.webp",
+      "caption": "Hypothesized effects of regional species richness, regional environmental heterogeneity, HNDD and CNDD on α- and β-diversity.",
+      "caption_zh": "区域物种丰富度、区域环境异质性、HNDD 与 CNDD 对 α 和 β 多样性的假设影响。",
+      "page": 48
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Predators or pathogens specific to the dominant species will decrease α-diversity.",
+      "text_zh": "专一于优势种的捕食者或病原体会降低 α 多样性。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Increasing CNDD has a homogenizing effect on community composition among sites.",
+      "text_zh": "增加 CNDD 对地点间群落组成具有均质化效应。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Regions with weak HNDD are expected to have higher degree of community differentiation.",
+      "text_zh": "HNDD 较弱的地区预计具有更高程度的群落分化。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "Environmental perturbation acts in a fashion similar to effect of increasing CNDD on alpha and beta diversity.",
+      "text_zh": "环境扰动对 α 和 β 多样性的作用类似于增加 CNDD。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】专一于优势种的捕食者/病原体会压低优势种、释放其他物种，从而提高局域 α 多样性，而不是降低。\nB【对】图中 CNDD 增加时 β 多样性下降，说明各地群落组成趋于相似，即均质化。\nC【错】图中 HNDD 增加会提高 β 多样性；HNDD 较弱时 β 多样性较低，群落分化程度较低而非更高。\nD【错】图中 CNDD 增加使 α 升高、β 降低；环境扰动通常增加空间异质性，使 β 升高，作用方向与 CNDD 不同。",
+  "module": "module_3",
+  "subject": "生态学",
+  "concept": "α/β 多样性与密度制约",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 44 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 44
+  },
+  "tags": ["ibo", "module_3", "生态学", "α/β 多样性与密度制约", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

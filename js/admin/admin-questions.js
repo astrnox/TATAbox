@@ -510,7 +510,7 @@ let _localQuestionFilter = 'all'; // 'all' | 'rated' | 'recycled'
 let _localPageLimit = 100;        // 分页渲染（全量约 3400 题，一次性渲染会卡死页面）
 
 /**
- * 加载本地全量题库（quiz + logic + 联赛真题池 + 每日联赛 6 分片），按 bioId 去重并缓存。
+ * 加载本地全量题库（quiz + logic + 联赛真题池 + IBO 真题池 + 每日联赛 6 分片），按 bioId 去重并缓存。
  */
 async function _loadLocalQuestionBank(force) {
   if (_localQuestionBankCache && !force) return _localQuestionBankCache;
@@ -523,7 +523,7 @@ async function _loadLocalQuestionBank(force) {
     'data/bank/daily_league_genetics_evolution.json',
     'data/bank/daily_league_plant.json'
   ];
-  const sources = ['data/quiz.json', 'data/logic_questions.json', 'resource/all.json'].concat(DAILY_FILES);
+  const sources = ['data/quiz.json', 'data/logic_questions.json', 'resource/all.json', 'resource/ibo.json'].concat(DAILY_FILES);
   const results = await Promise.all(sources.map(function (url) {
     return fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
   }));

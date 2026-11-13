@@ -47,7 +47,7 @@ function renderDataManagement(container) {
         <div class="user-data-action">
           <div class="user-data-action-info">
             <div class="user-data-action-label">离线题库（完整）</div>
-            <div class="user-data-action-desc">额外缓存 2,873 道联赛真题（约 4.7MB），适合长期离线备考</div>
+            <div class="user-data-action-desc">额外缓存联赛真题与 IBO 双语真题（约 5MB），适合长期离线备考</div>
           </div>
           <button class="btn btn-sm btn-secondary" id="userOfflineBankFullBtn">下载完整包</button>
         </div>

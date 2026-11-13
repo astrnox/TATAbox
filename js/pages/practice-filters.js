@@ -9,6 +9,41 @@
  */
 'use strict';
 
+/**
+ * 统计当前已加载题库（基础题 + 逻辑题 + 联赛/IBO 真题）各来源题目数。
+ * 来源分类由 QuestionModel.getQuestionSourceKey 唯一实现。
+ * @returns {Object} { all:number, cnbo:number, ibo:number, original:number, gaokao:number, school:number, other:number }
+ */
+function _practiceSourceCounts() {
+  const counts = { all: 0 };
+  const pools = [
+    PracticeState.allQuestions || [],
+    PracticeState.logicData || [],
+    PracticeState.leagueData || []
+  ];
+  const classify = (typeof QuestionModel !== 'undefined' && QuestionModel.getQuestionSourceKey)
+    ? QuestionModel.getQuestionSourceKey
+    : function () { return 'original'; };
+  pools.forEach(function (pool) {
+    pool.forEach(function (q) {
+      counts.all++;
+      const key = classify(q);
+      counts[key] = (counts[key] || 0) + 1;
+    });
+  });
+  return counts;
+}
+
+/** 把来源题数写入筛选面板（题库异步加载完成后也能刷新，无需重渲染面板） */
+function _updateSourceCounts() {
+  if (typeof document === 'undefined' || !document.querySelectorAll) return;
+  const counts = _practiceSourceCounts();
+  document.querySelectorAll('[data-source-count]').forEach(function (el) {
+    const key = el.getAttribute('data-source-count');
+    el.textContent = counts[key] || 0;
+  });
+}
+
 function renderFilterPanel() {
   injectPracticeStyles();
   const container = document.getElementById('practice-root');
@@ -52,6 +87,21 @@ function renderFilterPanel() {
     </label>
   `
   ).join('');
+
+  // 题目来源（多选；未勾选具体来源 = 全部）
+  const selectedSources = Array.isArray(PracticeState.selectedSources) ? PracticeState.selectedSources : [];
+  const sourceChecks = SOURCE_OPTIONS.map((s) => {
+    const checked = s.value === 'all'
+      ? selectedSources.length === 0
+      : selectedSources.indexOf(s.value) >= 0;
+    return `
+    <label class="practice-filter-check">
+      <input type="checkbox" value="${s.value}" ${checked ? 'checked' : ''} data-source-check>
+      <span>${s.label}</span>
+      <span style="font-size:0.75rem;color:var(--text-muted);" data-source-count="${s.value}">0</span>
+    </label>
+  `;
+  }).join('');
 
   // 题目数量：预设选项 + 「自定义」；questionCount 不在预设中时选中自定义并回显输入框
   const isPresetCount = QUESTION_COUNT_OPTIONS.indexOf(PracticeState.questionCount) >= 0;
@@ -123,6 +173,16 @@ function renderFilterPanel() {
           </div>
           <div class="bq-hint--xs">
             高考模式专为普通高中生设计，严格限定高中生物课标范围
+          </div>
+        </div>
+
+        <div class="practice-filter-section">
+          <h3 class="practice-filter-title">题目来源</h3>
+          <div class="practice-filter-checks" id="sourceChecks">
+            ${sourceChecks}
+          </div>
+          <div class="bq-hint--xs bq-hint--mt">
+            可多选；不勾选任何来源，等同「全部来源」。括号内为当前题库中该来源的题目数。
           </div>
         </div>
 
@@ -217,6 +277,7 @@ function renderFilterPanel() {
 
   bindFilterEvents();
   bindWrongPracticeEntry();
+  _updateSourceCounts();
 }
 
 function bindFilterEvents() {
@@ -347,6 +408,34 @@ showToast(val === 'local' ? '已切换为本地题库，正在重新加载题目
     });
   }
 
+  // 题目来源多选：「全部来源」与具体来源互斥；不勾选任何具体来源 = 全部
+  const sourceCheckboxes = document.querySelectorAll('[data-source-check]');
+  if (sourceCheckboxes.length > 0) {
+    const allBox = [...sourceCheckboxes].find((c) => c.value === 'all');
+    sourceCheckboxes.forEach((cb) => {
+      cb.addEventListener('change', () => {
+        if (cb.value === 'all') {
+          if (cb.checked) {
+            sourceCheckboxes.forEach((c) => { if (c !== cb) c.checked = false; });
+          }
+        } else if (cb.checked && allBox) {
+          allBox.checked = false;
+        }
+        const picked = [...sourceCheckboxes]
+          .filter((c) => c.checked && c.value !== 'all')
+          .map((c) => c.value);
+        if (picked.length === 0) {
+          if (allBox) allBox.checked = true;
+          PracticeState.selectedSources = [];
+        } else {
+          PracticeState.selectedSources = picked;
+        }
+        applyFilters();
+        updateAvailableCount();
+      });
+    });
+  }
+
   if (countSelect) {
     countSelect.addEventListener('change', () => {
       const val = countSelect.value;
@@ -439,6 +528,7 @@ function updateAvailableCount() {
   if (countEl) {
     countEl.textContent = `共 ${PracticeState.filteredQuestions.length} 道可用题目`;
   }
+  _updateSourceCounts();
   _renderPullSummary();
 }
 

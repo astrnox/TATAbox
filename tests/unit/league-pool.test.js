@@ -81,18 +81,22 @@ describe('联赛真题池数据完整性', () => {
   });
 });
 
-describe('题库总量计数（getPlayableQuestionCount 计入联赛题）', () => {
-  test('本地口径 = manifest 模块题 + 逻辑题 + 联赛可用题', () => {
+describe('题库总量计数（getPlayableQuestionCount 计入联赛题 + IBO 题）', () => {
+  const iboCount = JSON.parse(fs.readFileSync(path.join(ROOT, 'resource/ibo-count.json'), 'utf-8'));
+  const iboPool = JSON.parse(fs.readFileSync(path.join(ROOT, 'resource/ibo.json'), 'utf-8'));
+
+  test('本地口径 = manifest 模块题 + 逻辑题 + 联赛可用题 + IBO 可用题', () => {
     // 与 loader.js getPlayableQuestionCount 同口径
-    const total = manifest.total_questions + logicCount + count.playable;
-    expect(total).toBe(manifest.total_questions + logicCount + pool.questions.length);
-    expect(total).toBeGreaterThan(manifest.total_questions + logicCount);
+    const total = manifest.total_questions + logicCount + count.playable + iboCount.playable;
+    expect(total).toBe(manifest.total_questions + logicCount + pool.questions.length + iboPool.questions.length);
+    expect(total).toBeGreaterThan(manifest.total_questions + logicCount + pool.questions.length);
   });
 
-  test('loader.js 已接入 resource/count.json', () => {
+  test('loader.js 已接入 resource/count.json 与 resource/ibo-count.json', () => {
     const src = fs.readFileSync(path.join(ROOT, 'js/core/loader.js'), 'utf-8');
     expect(src).toContain('resource/count.json');
-    expect(src).toContain('r[1] + r[2]');
+    expect(src).toContain('resource/ibo-count.json');
+    expect(src).toContain('r[1] + r[2] + r[3]');
   });
 });
 

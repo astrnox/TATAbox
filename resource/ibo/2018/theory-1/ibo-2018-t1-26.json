@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-26",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The figures 1–4 illustrate the schematic cross-sectional anatomy of bones and flying muscles of a bird and a bat.",
+  "question_zh": "图 1–4 示意性展示鸟类与蝙蝠的骨骼及飞行肌肉横切解剖结构。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q26-fig1.webp",
+      "caption": "Cross-sectional anatomy of the flight apparatus. Figures 1 and 2: bat; figures 3 and 4: bird. In figure 3, supracoracoideus and pectoralis are labelled.",
+      "caption_zh": "飞行装置横切解剖。图 1、2：蝙蝠；图 3、4：鸟。图 3 标注了 supracoracoideus（喙上肌）与 pectoralis（胸肌）。",
+      "page": 30
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Figure 1 and 2 are the bat structures.",
+      "text_zh": "图 1 和 2 是蝙蝠的结构。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The animal of figure 1 and 2 has seven cervical vertebrae.",
+      "text_zh": "图 1 和 2 的动物有 7 枚颈椎。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "In figure 1 and 2 the only mobile joint, which is involved in wing’s flapping is scapula-humoral.",
+      "text_zh": "在图 1 和 2 中，参与翼扇动的唯一可动关节是肩胛-肱骨关节。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "The muscle supracoracoideus in figure 3, is responsible for downstroke movement in flapping cycle.",
+      "text_zh": "图 3 中的喙上肌（supracoracoideus）负责扇动周期中的下压（downstroke）动作。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】图 1、2 的胸廓宽阔、无龙骨突，肌肉排列符合蝙蝠；图 3、4 具有发达龙骨突及鸟类特有的胸肌/喙上肌，属于鸟类。\nB【对】蝙蝠是哺乳动物，颈椎数目恒为 7 枚。\nC【对】蝙蝠翼的扇动主要围绕肩关节（肩胛—肱骨关节）进行，肘、腕等关节主要参与翼膜折叠。\nD【错】鸟类 pectoralis（胸肌）收缩产生下压（downstroke）；supracoracoideus（喙上肌）经龙骨突背侧的滑车牵拉肱骨，产生上抬（upstroke），不是下压。",
+  "module": "module_3",
+  "subject": "动物学",
+  "concept": "鸟与蝙蝠飞行装置的比较解剖",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 26 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 26
+  },
+  "tags": ["ibo", "module_3", "动物学", "鸟与蝙蝠飞行装置的比较解剖", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

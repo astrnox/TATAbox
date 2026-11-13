@@ -85,7 +85,7 @@
     downloadCore: function () {
       return downloadWithQuota('core', 10 * 1048576, 180000);
     },
-    /** 完整包：核心包 + 2,873 道联赛真题（resource/all.json，约 4.7MB） */
+    /** 完整包：核心包 + 联赛真题（resource/all.json）+ IBO 双语真题（resource/ibo.json） */
     downloadFull: function () {
       return downloadWithQuota('full', 30 * 1048576, 180000);
     },

@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-10",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Mating experiments with a yeast species that has 16 chromosomes of equal length were performed. Results of mating between two mutant yeast strains (shown with an unhappy phenotype), each with a mutation in a single gene, are shown below. The mutated allele of each gene is recessive with respect to the wild type allele. Unhappy is polygenic and many genes affect the phenotype. Recombination does not occur in these yeast strains.",
+  "question_zh": "以一种具有 16 条等长染色体的酵母为材料进行交配实验。两个突变酵母菌株（表现为 unhappy 表型）各带有一个单基因突变，交配结果如下图所示。每个基因的突变等位基因相对于野生型等位基因均为隐性。Unhappy 为多基因性状，许多基因都可影响该表型。这些酵母菌株中不发生重组。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q10-fig1.webp",
+      "caption": "Crosses between m1 and m2 haploids. Cross 1 (m1 × m1) and cross 2 (m2 × m2) yield all unhappy diploids and all unhappy meiosis products; cross 3 (m1 × m2) yields all happy diploids, and its meiosis products are unknown.",
+      "caption_zh": "m1 与 m2 单倍体之间的交配。交配 1（m1 × m1）与交配 2（m2 × m2）得到全部 unhappy 的二倍体及全部 unhappy 的减数分裂产物；交配 3（m1 × m2）得到全部 happy 的二倍体，其减数分裂产物未知。",
+      "page": 13
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "If mutations of m1 and m2 were in the same gene, it is possible that all products of meiosis of cross 3 will be unhappy.",
+      "text_zh": "如果 m1 和 m2 的突变位于同一基因，交配 3 的减数分裂产物有可能全部为 unhappy。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "If 1 happy to 3 unhappy yeasts were produced from meiosis of cross 3, then the mutation of m1 and the mutation of m2 were in different genes.",
+      "text_zh": "如果交配 3 的减数分裂产生 1 个 happy 对 3 个 unhappy 的酵母，则 m1 的突变与 m2 的突变位于不同基因。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "If 1 happy to 1 unhappy yeasts were produced from meiosis of cross 3, then the mutation of m1 and the mutation of m2 can suppress each other.",
+      "text_zh": "如果交配 3 的减数分裂产生 1 个 happy 对 1 个 unhappy 的酵母，则 m1 的突变与 m2 的突变能够相互抑制。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "If the experiments were performed with various pairs of unhappy mutants, the most frequently observed ratio of happy to unhappy yeasts among meiosis products of cross 3 would be 1:3.",
+      "text_zh": "如果用各种不同的 unhappy 突变体配对进行实验，交配 3 的减数分裂产物中最常观察到的 happy 与 unhappy 比例将是 1:3。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】若两个突变是同一基因的等位突变且不发生重组，杂交二倍体只产生带突变等位基因的孢子，所有单倍体子代都可能表现为 unhappy。\nB【对】若两个突变位于不同基因且独立分配，二倍体减数分裂产生 1/4 带两个野生型等位基因的孢子（happy），3/4 至少带一个突变等位基因（unhappy），即 1:3。\nC【对】1:1 不符合独立分配，说明双突变组合可恢复 happy 表型，即两个突变之间存在相互抑制/补偿（基因间互作）。\nD【对】随机选取的两个突变多数位于不同基因且不连锁，因此 1:3 是不同基因组合最典型的分离比，也是最常见的观察结果。",
+  "module": "module_4",
+  "subject": "遗传学",
+  "concept": "基因互补与减数分裂分离比",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 10 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 10
+  },
+  "tags": ["ibo", "module_4", "遗传学", "基因互补与减数分裂分离比", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

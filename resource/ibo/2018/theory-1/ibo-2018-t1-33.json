@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-33",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Phylogenetic relationship among several species of the genus Nemesia (Scrophulariaceae), accompanied with geological time scale, is shown below. Predicted states for annual/perennial life-history have been mapped to the tree. Annual life-history is shown in black and the perennials are shown in blue (from Datson et al., 2008).",
+  "question_zh": "下图展示玄参科 Nemesia 属若干物种的系统发育关系及地质时间尺度。一年生/多年生生活史的预测状态已映射到树上：一年生为黑色，多年生为蓝色（引自 Datson 等，2008）。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q33-fig1.webp",
+      "caption": "Phylogenetic tree of Nemesia with annual (black) and perennial (blue) life-history states. Diascia rigescens is the outgroup.",
+      "caption_zh": "Nemesia 系统发育树，标注一年生（黑色）与多年生（蓝色）生活史状态。Diascia rigescens 为外群。",
+      "page": 37
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The phylogenetic tree suggests that Nemesia originated during the Miocene, but the majority of extant Nemesia species radiated during the Pliocene (Pl.) and Quaternary (Qu.).",
+      "text_zh": "该树提示 Nemesia 起源于中新世，但现存 Nemesia 物种的多数在上新世（Pl.）和第四纪（Qu.）发生辐射。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "The phylogenetic tree suggests that the most recent common ancestor of Nemesia had an annual life form.",
+      "text_zh": "该树提示 Nemesia 的最近共同祖先是一年生生活型。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "The phylogenetic tree does not show shift from annual to perennial habit.",
+      "text_zh": "该树未显示从一年生向多年生习性的转变。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "Diascia rigescens is the ancestral species of all other taxa in this phylogenetic tree.",
+      "text_zh": "Diascia rigescens 是该系统发育树中所有其它分类单元的祖先种。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】树中 Nemesia 的基部分歧约在 25–30 Ma（渐新世/中新世早期），多数现存谱系在中新世（约 5–15 Ma）已经分化；并非多数在上新世和第四纪才辐射。\nB【错】树基部与大多数早期分支为蓝色（多年生），说明最近共同祖先为多年生，而不是一年生。\nC【对】树中黑色（一年生）分支嵌套在蓝色（多年生）分支内，显示多年生→一年生的转变，没有支持一年生→多年生的转变。\nD【错】Diascia rigescens 位于树的最外侧，是外群（用于根系），不是所有 Nemesia 分类单元的祖先种。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "生活史演化的系统发育推断",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 33 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 33
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "生活史演化的系统发育推断", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-36",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The following figure shows two histological sections of an organ from an angiosperm plant. The tissue section on the left was prepared from the medial part of the organ, whereas the section on the right was from the lateral part.",
+  "question_zh": "下图展示某种被子植物器官的两张组织切片。左侧切片取自该器官的中部，右侧切片取自侧部。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q36-fig1.webp",
+      "caption": "Histological sections from the medial (left) and lateral (right) parts of an angiosperm organ.",
+      "caption_zh": "被子植物器官中部（左）与侧部（右）的组织切片。",
+      "page": 40
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The sections were prepared from a monocotyledonous plant.",
+      "text_zh": "这些切片取自单子叶植物。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "The sections represent a modified stem.",
+      "text_zh": "这些切片代表一个变态茎。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Transpiration occurs in this organ.",
+      "text_zh": "该器官中进行蒸腾作用。",
+      "answer": true
+    },
+    {
+      "label": "D",
+      "text": "The vascular bundles are of bicolateral type, meaning that phloem is present on both sides of xylem.",
+      "text_zh": "维管束为双韧型，即木质部两侧均有韧皮部。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【错】左图显示明显的栅栏组织与海绵组织分化、气孔下陷等叶片结构，是双子叶植物叶片的特征；单子叶叶片通常无这种明显的栅栏/海绵分化。\nB【错】切片具有表皮、叶肉（栅栏组织与海绵组织）和叶脉维管束，是叶片结构，不是变态茎。\nC【对】叶片是蒸腾作用的主要器官，气孔分布其中，水分经气孔散失。\nD【错】图中维管束为外韧型（木质部在内、韧皮部在外），并非双韧型（韧皮部位于木质部两侧）。",
+  "module": "module_2",
+  "subject": "植物学",
+  "concept": "叶片组织学与维管束类型",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 36 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 36
+  },
+  "tags": ["ibo", "module_2", "植物学", "叶片组织学与维管束类型", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

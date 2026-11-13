@@ -20,6 +20,14 @@
   text-align: center;
 }
 
+.bq-figure-caption {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted, #7c8a80);
+  text-align: center;
+}
+
 .bq-figure-img {
   max-width: 100%;
   max-height: min(60vh, 560px);

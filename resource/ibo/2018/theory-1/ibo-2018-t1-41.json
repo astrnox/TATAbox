@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-41",
+  "type": "mtf",
+  "lang": "en",
+  "question": "According to evolutionary concepts, symbiosis is a general characteristic of living organisms and can help to understand complex features and phenotypes. Gut microbiota and host evolve in symbiosis and have developed an integrative circuitry essential for their survival. This complex relationship resulted in a personal evolutionary adapted ecosystem. Recently developed genomics and metagenomics approaches helped to discover the link between gut microbiota alteration and host health and disease.\n\nGagnière and his colleagues (2016) highlighted the unexpected role of human gut microbiota in colorectal cancer. More recently, in a study conducted by Flemer and his colleagues (2018), it has been emphasized that the heterogeneity of colorectal cancer might be related to the types of gut microbiota that either predispose or offer resistance to the disease.\n\nBoxplots show the relative abundances of three bacterial groups from individuals with colorectal cancer (CRC), individuals with polyps (the intermediate stage between healthy and cancerous tissue which does not always turn into CRC) and healthy controls (HC). An asterisk represents a significant p value: ***p < 0.001; **p < 0.01; *p < 0.05; p > 0.05.",
+  "question_zh": "按照进化概念，共生是生物界的普遍特征，有助于理解复杂的特征与表型。肠道菌群与宿主在共生中共同进化，形成了对其生存至关重要的整合网络。这种复杂关系造就了各自进化适应的生态系统。近年发展的基因组学与宏基因组学方法，有助于揭示肠道菌群改变与宿主健康、疾病之间的联系。\n\nGagnière 等（2016）强调了人类肠道菌群在结直肠癌中的意外作用。更近期，Flemer 等（2018）的研究强调，结直肠癌的异质性可能与肠道菌群类型有关：某些菌群易感，某些则提供抵抗。\n\n箱线图显示结直肠癌（CRC）患者、息肉患者（健康组织与癌组织之间的中间阶段，并不总会发展为 CRC）和健康对照（HC）中三个细菌类群的相对丰度。星号表示显著的 p 值：***p < 0.001；**p < 0.01；*p < 0.05；p > 0.05。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q41-fig1.webp",
+      "caption": "Relative abundances of bacterial groups 1, 2 and 3 in healthy controls (green), polyp patients (blue) and CRC patients (red).",
+      "caption_zh": "健康对照（绿色）、息肉患者（蓝色）与 CRC 患者（红色）中细菌类群 1、2、3 的相对丰度。",
+      "page": 45
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The microbiota compositional differences between patients with CRC and the control are secondary to the onset of cancer.",
+      "text_zh": "CRC 患者与对照之间的菌群组成差异是癌症发生后的继发结果。",
+      "answer": false
+    },
+    {
+      "label": "B",
+      "text": "Changes in the abundance of the bacteria group 2 compared to the control are restricted to polyp.",
+      "text_zh": "与对照相比，细菌类群 2 丰度的变化仅局限于息肉患者。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "Any bacterial group that populates the gut is in association with an increased risk of CRC.",
+      "text_zh": "任何定植于肠道的细菌类群都与 CRC 风险增加相关。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "The polyp-associated microbiota can be used as an indicator for individuals with higher risk of developing CRC.",
+      "text_zh": "息肉相关菌群可作为 CRC 高风险个体的指标。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【错】息肉阶段（癌前病变）已出现菌群改变，说明菌群差异可能先于癌症发生并参与致病，而不是癌症发生后的继发结果。\nB【错】图中类群 2 在 CRC 和息肉组均与对照有显著差异，并非仅局限于息肉。\nC【错】类群 3 在 CRC 和息肉患者中相对丰度降低，属于与风险增加相关的“保护性”变化，不能一概说任何菌群都增加风险。\nD【对】息肉阶段已出现特征性菌群改变，可作为 CRC 高风险个体的早期指示。",
+  "module": "module_3",
+  "subject": "生态学",
+  "concept": "肠道菌群与疾病风险",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 41 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 41
+  },
+  "tags": ["ibo", "module_3", "生态学", "肠道菌群与疾病风险", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

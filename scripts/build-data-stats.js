@@ -25,6 +25,7 @@ function computeStats() {
   const version = readJSON('data/_version.json');
   const manifest = readJSON('data/manifest.json');
   const pool = readJSON('resource/all.json');
+  const iboPool = readJSON('resource/ibo.json');
   const quiz = readJSON('data/quiz.json');
   const logic = readJSON('data/logic_questions.json');
   const cards = readJSON('data/cards.json');
@@ -32,6 +33,7 @@ function computeStats() {
   const videos = readJSON('data/videos.json');
 
   const poolQuestions = Array.isArray(pool.questions) ? pool.questions : [];
+  const iboQuestions = Array.isArray(iboPool.questions) ? iboPool.questions : [];
   const quizQuestions = Array.isArray(quiz['题库']) ? quiz['题库'] : (Array.isArray(quiz.questions) ? quiz.questions : []);
   const logicQuestions = Array.isArray(logic) ? logic : (Array.isArray(logic.questions) ? logic.questions : []);
   const cardsTotal = Array.isArray(cards['分类'])
@@ -40,6 +42,7 @@ function computeStats() {
 
   const uniqueIds = new Set();
   poolQuestions.forEach((q) => { if (q && q.id) uniqueIds.add(String(q.id)); });
+  iboQuestions.forEach((q) => { if (q && q.id) uniqueIds.add(String(q.id)); });
   quizQuestions.forEach((q) => { const id = q && (q.bioId || q.id); if (id) uniqueIds.add(String(id)); });
   logicQuestions.forEach((q) => { const id = q && (q.id || q.bioId); if (id) uniqueIds.add(String(id)); });
 
@@ -65,6 +68,7 @@ function computeStats() {
     site_updated_at: version.updated_at || '',
     question_sources: {
       league_pool: poolQuestions.length,
+      ibo_pool: iboQuestions.length,
       quiz: quizQuestions.length,
       bank: bankObjects,
       logic: logicQuestions.length
@@ -75,7 +79,7 @@ function computeStats() {
     wiki_entries: Array.isArray(wiki.entries) ? wiki.entries.length : 0,
     videos: Array.isArray(videos.videos) ? videos.videos.length : 0,
     notes: [
-      'unique_questions = 联赛池/quiz/每日联赛 bank/logic 按 bioID 去重后的总数',
+      'unique_questions = 联赛池/IBO 池/quiz/每日联赛 bank/logic 按 bioID 去重后的总数',
       'manifest_total_questions 仅统计 shard（manifest/index/bank）体系的 MTF 题，不等于全站题库'
     ]
   };

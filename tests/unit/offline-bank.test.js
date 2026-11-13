@@ -26,12 +26,13 @@ describe('M-14 离线题库包', () => {
     expect(sw).toContain("type: 'OFFLINE_BANK_DONE'");
   });
 
-  test('核心包含 101 题精练/40 题逻辑与全部分片；完整包额外含联赛真题', () => {
+  test('核心包含 101 题精练/40 题逻辑与全部分片；完整包额外含联赛真题与 IBO 真题', () => {
     expect(sw).toContain("'./data/manifest.json'");
     expect(sw).toContain("'./data/quiz.json'");
     expect(sw).toContain("'./data/logic_questions.json'");
     expect(sw).toContain("urls.push('./data/' + rel);");
-    expect(sw).toContain("urls.push('./resource/count.json', './resource/all.json');");
+    expect(sw).toContain("'./resource/count.json', './resource/all.json'");
+    expect(sw).toContain("'./resource/ibo-count.json', './resource/ibo.json'");
   });
 
   test('OfflineBank 前端接口与数据管理页按钮接线', () => {

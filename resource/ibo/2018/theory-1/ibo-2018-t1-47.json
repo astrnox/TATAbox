@@ -1,0 +1,52 @@
+{
+  "id": "IBO-2018-T1-47",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Organismal senescence is the aging of the whole organism. It is a widespread phenomenon in nature but the exact etiology is still largely unclear. An evolutionary theory was proposed by George C. Williams which involves the following assumptions:\n\n1. Soma (referring to all somatic cells in the body) is essential for reproductive success, but it does not pass on to the offspring.\n2. Alleles are affected by natural selection.\n3. Pleiotropic genes can have opposite effects on fitness at different ages or somatic environments.\n4. The probability of reproduction decreases with increasing age.\n\nWilliams suggested the following example: Perhaps a gene was selected for because it codes for calcium deposition in bones, which promotes juvenile survival, but the same gene promotes calcium deposition in arteries.",
+  "question_zh": "个体衰老是整个机体的老化。它在自然界中普遍存在，但确切病因仍在很大程度上不清楚。George C. Williams 提出了一种进化理论，包含以下假设：\n\n1. 体细胞（指体内所有体细胞）对繁殖成功至关重要，但不能传递给后代。\n2. 等位基因受自然选择影响。\n3. 多效基因在不同年龄或体细胞环境中可对适合度产生相反效应。\n4. 繁殖概率随年龄增加而下降。\n\nWilliams 给出如下例子：某个基因可能因编码骨骼中的钙沉积、促进幼年存活而被选择，但同一基因也促进动脉中的钙沉积。",
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Lower adult death rates can be associated with lower rates of senescence, according to the theory.",
+      "text_zh": "根据该理论，较低的成体死亡率可能与较低的衰老速率相关。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "Where there is a sex difference, the sex with higher rate of decrease in fecundity after maturation (but with equal death rate to the other sex) should undergo the more rapid senescence, according to the theory.",
+      "text_zh": "根据该理论，在存在性别差异时，成熟后繁殖力下降更快的性别（若死亡率与另一性别相同）应经历更快的衰老。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "The frequencies of an allele in a gene that behaves similar to the aforementioned calcium deposition gene in a cohort will be smallest at early age and greatest at late age.",
+      "text_zh": "在一个队列中，行为类似上述钙沉积基因的等位基因频率将在早年最低、晚年最高。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "This model views senescence as an adaptation.",
+      "text_zh": "该模型将衰老视为一种适应。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】若成体死亡率低，晚表达的有害等位基因受到的选择较弱但仍有较长时间被选择，理论上衰老速率较低；死亡率高的种群则更容易保留早表达、快速衰老的等位基因。\nB【对】繁殖力随年龄下降越快，意味着晚期繁殖价值越低，选择更倾向于有利于早期繁殖、晚期有害的多效基因，因此衰老更快。\nC【错】该基因促进幼年存活但晚年导致动脉钙化；在选择作用下，其频率应在早年较高、晚年因晚期有害效应而下降，而不是早年最低、晚年最高。\nD【错】Williams 的拮抗多效性模型把衰老视为选择的副产物（by-product），不是适应性；衰老并非为提高适合度而演化出的适应。",
+  "module": "module_4",
+  "subject": "进化生物学",
+  "concept": "衰老的进化理论",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 47 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 47
+  },
+  "tags": ["ibo", "module_4", "进化生物学", "衰老的进化理论", "2018"],
+  "has_figure": false,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

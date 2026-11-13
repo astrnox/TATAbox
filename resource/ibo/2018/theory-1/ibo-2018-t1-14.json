@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-14",
+  "type": "mtf",
+  "lang": "en",
+  "question": "The enzymatic reaction below includes two steps.\n\npara-nitrophenyl-peptide → para-nitrophenol + peptide\n\nPara-nitrophenol has maximum absorbance at wavelength 405 nm. The progress curve of the reaction is shown below.",
+  "question_zh": "下面的酶促反应包括两个步骤。\n\n对硝基苯基-肽 → 对硝基苯酚 + 肽\n\n对硝基苯酚在 405 nm 波长处有最大吸收。该反应的进程曲线如下图所示。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q14-fig1.webp",
+      "caption": "Progress curve of para-nitrophenol formation. Region a: initial burst; region b: steady-state phase.",
+      "caption_zh": "对硝基苯酚生成的进程曲线。区域 a：初始爆发阶段；区域 b：稳态阶段。",
+      "page": 17
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "The release of para-nitrophenol occurs during the first step of the enzymatic mechanism.",
+      "text_zh": "对硝基苯酚的释放发生在酶促机制的第一步。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "The rate limiting step of this enzymatic mechanism is the second step.",
+      "text_zh": "该酶促机制的限速步骤是第二步。",
+      "answer": true
+    },
+    {
+      "label": "C",
+      "text": "Enzyme activity can be determined from the slope of region “a” of the curve.",
+      "text_zh": "酶活性可以由曲线区域“a”的斜率确定。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "One of the reaction products activates the enzyme.",
+      "text_zh": "反应产物之一会激活该酶。",
+      "answer": false
+    }
+  ],
+  "explanation": "A【对】曲线起始阶段（区域 a）快速上升，代表第一步迅速释放对硝基苯酚的“爆发”阶段。\nB【对】初始快速释放后转入缓慢的稳态阶段（区域 b），说明第二步是慢步骤，即限速步骤。\nC【错】区域 a 是前稳态/爆发阶段，其斜率受酶与底物快速反应及混合死时间影响，不能代表稳态酶活性；应由区域 b 的稳态斜率测定。\nD【错】若产物激活酶，速率应随时间加快（上凸曲线），而图中速率由快转慢并趋于线性，与产物激活不符。",
+  "module": "module_1",
+  "subject": "生物化学",
+  "concept": "酶动力学与反应进程曲线",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 14 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 14
+  },
+  "tags": ["ibo", "module_1", "生物化学", "酶动力学与反应进程曲线", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "IBO-2018-T1-21",
+  "type": "mtf",
+  "lang": "en",
+  "question": "Nasopharyngeal carcinoma is closely associated with Epstein–Barr virus (EBV) infection. In a recent prospective study involving more than 20,000 participants, detection of EBV DNA in plasma was shown to be useful in screening for nasopharyngeal carcinoma. However, 5.4% of participants without nasopharyngeal carcinoma had detectable EBV DNA in plasma at recruitment. The figure below shows the effect of ambient temperature on test results.\n\nSensitivity refers to the test’s ability to correctly detect affected patients who do have the condition. It is calculated as: number of affected patients with positive tests / total number of affected individuals studied.\n\nSpecificity relates to the test’s ability to correctly identify those without disease. It is calculated as: number of healthy individuals with negative tests / total number of healthy individuals studied.",
+  "question_zh": "鼻咽癌与 EB 病毒（EBV）感染密切相关。最近一项纳入 2 万多名受试者的前瞻性研究表明，检测血浆中的 EBV DNA 可用于鼻咽癌筛查。然而，在招募时，5.4% 的无鼻咽癌受试者血浆中也可检测到 EBV DNA。下图显示环境温度对检测结果的影响。\n\n敏感度指检测正确发现真正患病者的能力，计算为：检测阳性的患病人数 / 受检患病人数。\n\n特异度指检测正确识别无病者的能力，计算为：检测阴性的健康人数 / 受检健康人数。",
+  "images": [
+    {
+      "file": "assets/ibo/2018/theory-1/ibo2018-t1-q21-fig1.webp",
+      "caption": "Percentage of participants without nasopharyngeal carcinoma who tested positive for EBV DNA, plotted against mean ambient temperature on the day of sample collection.",
+      "caption_zh": "无鼻咽癌受试者中 EBV DNA 检测阳性的百分比，与采样当天平均环境温度的关系。",
+      "page": 24
+    }
+  ],
+  "subQuestions": [
+    {
+      "label": "A",
+      "text": "Based on the figure above, performing the test in warmer places will increase the specificity.",
+      "text_zh": "根据上图，在较温暖的地方进行检测会提高特异度。",
+      "answer": true
+    },
+    {
+      "label": "B",
+      "text": "When a test becomes more sensitive, the specificity of the test will increase.",
+      "text_zh": "当检测变得更敏感时，其特异度也会提高。",
+      "answer": false
+    },
+    {
+      "label": "C",
+      "text": "A 100% specific test will be 100% sensitive.",
+      "text_zh": "100% 特异的检测也一定是 100% 敏感的。",
+      "answer": false
+    },
+    {
+      "label": "D",
+      "text": "To rule out a disease, it is better to use a test with high sensitivity instead of a test with high specificity.",
+      "text_zh": "为了排除某种疾病，最好使用高敏感度的检测，而不是高特异度的检测。",
+      "answer": true
+    }
+  ],
+  "explanation": "A【对】图中无鼻咽癌者的 EBV DNA 阳性率随环境温度升高而下降；无病人群假阳性减少，意味着特异度提高。\nB【错】敏感度与特异度通常存在权衡：提高敏感度往往以降低特异度（更多假阳性）为代价，二者不会同步提高。\nC【错】特异度 100% 只说明无病者不会被误判为阳性，与能否检出真正患者（敏感度）无关；检测可能完全不敏感。\nD【对】排除疾病时希望尽量减少漏诊，高敏感度检测的假阴性少，阴性结果更有把握排除疾病；高特异度更适合用于确诊。",
+  "module": "module_3",
+  "subject": "动物生理学",
+  "concept": "诊断试验的敏感度与特异度",
+  "difficulty": "league",
+  "target": "competition",
+  "year": 2018,
+  "competition": "IBO",
+  "source": "IBO 2018 理论考试 1（Theoretical Exam 1）第 21 题",
+  "paper": {
+    "key": "IBO-2018-T1",
+    "title": "IBO 2018 Theoretical Exam 1",
+    "event": "国际生物学奥林匹克竞赛（IBO）",
+    "question_no": 21
+  },
+  "tags": ["ibo", "module_3", "动物生理学", "诊断试验的敏感度与特异度", "2018"],
+  "has_figure": true,
+  "license": "CC BY-NC-SA 4.0",
+  "credit": "IBO 2018 Scientific Committee (Tehran, Iran); edited by Roel Baars"
+}
