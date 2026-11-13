@@ -250,7 +250,14 @@ function applyFilters() {
     return selectedSources.indexOf(key) >= 0;
   };
 
-  // 公共筛选条件（模块 / 难度 / 目标 / 考点 / 来源）
+  // 专题题池：按 tags 聚合跨考点题目（如代谢网络专题）
+  const tagsFilter = Array.isArray(PracticeState.tagsFilter) ? PracticeState.tagsFilter : [];
+  const tagsMatch = function (q) {
+    if (tagsFilter.length === 0) return true;
+    return Array.isArray(q.tags) && q.tags.some(function (t) { return tagsFilter.indexOf(t) >= 0; });
+  };
+
+  // 公共筛选条件（模块 / 难度 / 目标 / 考点 / 来源 / 专题标签）
   const matchesBaseFilters = function (q) {
     const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
     const qDiff = diffNormalize(q.difficulty);
@@ -278,7 +285,7 @@ function applyFilters() {
     if (PracticeState.kgCategory) {
       kgCategoryMatch = q.subject === PracticeState.kgCategory;
     }
-    return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q);
+    return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q) && tagsMatch(q);
   };
 
   // 基础知识题（MTF 格式；GGBO 真题单独归入「其他」，避免在「基础知识」中重复出现）
@@ -301,7 +308,7 @@ function applyFilters() {
       const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
       const qDiff = diffNormalize(q.difficulty);
       const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
-      return subjectMatch && diffMatch && sourceMatch(q);
+      return subjectMatch && diffMatch && sourceMatch(q) && tagsMatch(q);
     });
   }
 
@@ -327,7 +334,7 @@ function applyFilters() {
       if (PracticeState.kgCategory) {
         kgCategoryMatch = q.subject === PracticeState.kgCategory;
       }
-      return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q);
+      return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q) && tagsMatch(q);
     });
   }
 

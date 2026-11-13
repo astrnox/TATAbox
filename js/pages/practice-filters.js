@@ -98,7 +98,7 @@ function renderFilterPanel() {
     <label class="practice-filter-check">
       <input type="checkbox" value="${s.value}" ${checked ? 'checked' : ''} data-source-check>
       <span>${s.label}</span>
-      <span style="font-size:0.75rem;color:var(--text-muted);" data-source-count="${s.value}">0</span>
+      <span class="practice-count-hint" data-source-count="${s.value}">0</span>
     </label>
   `;
   }).join('');

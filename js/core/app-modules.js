@@ -62,6 +62,8 @@ function _moduleDir(modName) {
 // 模块依赖表：加载某模块前先加载其依赖
 var _moduleDeps = {
   // M-01：practice 分享/深链、拉取题目、筛选面板、答题渲染子模块先行加载，practice.js 保持原有全局入口
+  // 知识图谱页内含「代谢网络」子视图（独立渲染模块）
+  'knowledge-graph': ['metabolic-map'],
   'practice': ['practice-share', 'practice-pull', 'practice-filters', 'practice-quiz',
     'practice-data', 'practice-rating', 'practice-session', 'practice-redo', 'practice-input',
     'practice-sync', 'practice-styles', 'practice-helpers', 'practice-page',

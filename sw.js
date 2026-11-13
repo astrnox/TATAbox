@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-d415c715ae86'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-989d07241be1'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -170,6 +170,7 @@ var WARMUP_PHASE_2 = [
   './js/pages/daily-question.js',
   './js/pages/habits.js',
   './js/pages/knowledge-graph.js',
+  './js/pages/metabolic-map.js',
   './js/ai/ai-diagnostic-engine.js',
   './js/ai/smart-diagnosis.js',
   './js/core/storage.js',
@@ -231,6 +232,7 @@ var WARMUP_PHASE_2 = [
 // 这些"很重"的文件不做 install 预缓存，避免首次注册 SW 时 install 超时。
 // 除视频外，其余库首次访问后仍走策略 5 进入 Cache First 缓存。
 var NEVER_PRECACHE = [
+  './assets/metabolic/map.webp',      // ~1.7MB 代谢通路总图（按需加载）
   './fonts/lxgw-wenkai-subset.woff2', // 857KB 子集字体（缺失字符回退系统字体）
   './js/vendor/three.min.js',         // ~1MB Three.js
   './js/vendor/3Dmol-min.js',         // ~1MB 3Dmol

@@ -117,6 +117,22 @@
       '  color: var(--text-muted, #8a8a8a);',
       '  margin: 0;',
       '}',
+      '.kg-metab-entry {',
+      '  margin-top: 12px;',
+      '  padding: 8px 18px;',
+      '  border: 1px solid var(--color-amber);',
+      '  border-radius: 999px;',
+      '  background: var(--bg-soft);',
+      '  color: var(--color-amber);',
+      '  font-size: 0.85rem;',
+      '  font-weight: 600;',
+      '  cursor: pointer;',
+      '  transition: box-shadow .15s, transform .15s;',
+      '}',
+      '.kg-metab-entry:hover {',
+      '  box-shadow: 0 4px 14px rgba(196, 154, 74, 0.25);',
+      '  transform: translateY(-1px);',
+      '}',
 
       /* 工具栏 */
       '.kg-toolbar {',
@@ -1326,6 +1342,7 @@
       '<div class="kg-header">' +
         '<h2 class="kg-title">生物学知识图谱</h2>' +
         '<p class="kg-subtitle">交互式概念关系图 — 拖拽节点、悬停查看详情、点击跳转练习</p>' +
+        '<button type="button" class="kg-metab-entry">代谢网络专题 →</button>' +
       '</div>' +
 
       '<div class="kg-toolbar">' +
@@ -1417,6 +1434,21 @@
 
     // 渲染页面 HTML
     target.innerHTML = buildPageHTML();
+
+    // 代谢网络专题入口（独立子视图，可返回概念图谱）
+    var metabBtn = target.querySelector('.kg-metab-entry');
+    if (metabBtn) {
+      metabBtn.addEventListener('click', function () {
+        if (!window.MetabolicMap || typeof window.MetabolicMap.render !== 'function') return;
+        stopAnimation();
+        if (_containerEl && _containerEl._resizeObserver) {
+          _containerEl._resizeObserver.disconnect();
+          delete _containerEl._resizeObserver;
+        }
+        _containerEl = null;
+        window.MetabolicMap.render(target);
+      });
+    }
 
     // 获取图表容器
     var graphContainer = document.getElementById('kg-graph-container');

@@ -258,7 +258,7 @@
     '.q-table { width: 100%; border-collapse: collapse; font-size: 9pt; }',
     '.q-table th, .q-table td { border: 1px solid #999; padding: 1.2mm 2mm;',
     '  text-align: left; vertical-align: top; }',
-    '.q-table th { background: #eef3ee; font-weight: 700; }',
+    '.q-table th { background: rgb(238, 243, 238); font-weight: 700; }',
     '.q-box { break-inside: avoid; page-break-inside: avoid; background: rgb(243,247,243);',
     '  border-left: 3px solid rgb(90,125,92); padding: 2mm 3mm; margin: 2mm 0; font-size: 10pt; }',
     '.q-box.q-alt { background: rgb(253,245,235); border-left-color: rgb(196,149,106); }',
