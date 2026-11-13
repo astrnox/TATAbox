@@ -15,5 +15,56 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-5a12d7d9": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 525,
+    "module": "module_1",
+    "src": "cell_death",
+    "tag": "cell_death",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "线粒体凋亡"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-03-4b20cbef": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 75,
+    "module": "module_1",
+    "src": "cell_death",
+    "tag": "cell_death",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "细胞死亡方式"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-04-a1f25068": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 123,
+    "module": "module_1",
+    "src": "cell_death",
+    "tag": "cell_death",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "GSDMD寡聚化"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

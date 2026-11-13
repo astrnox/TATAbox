@@ -4,11 +4,11 @@
   "question_sources": {
     "league_pool": 2873,
     "quiz": 101,
-    "bank": 501,
+    "bank": 581,
     "logic": 40
   },
-  "unique_questions": 3414,
-  "manifest_total_questions": 101,
+  "unique_questions": 3494,
+  "manifest_total_questions": 181,
   "cards": 200,
   "wiki_entries": 401,
   "videos": 37,

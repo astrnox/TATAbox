@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "鲸偶蹄目性状演化",
+  "difficulty": "league",
+  "explanation": "A【错】错因：鼷鹿瓣胃缺失且胃最原始，更可能是祖征而非次生退化，不能据此说明多室胃单起源。\nB【错】错因：表皮角来自外胚层，真皮角来自中胚层，胚胎来源不同，二者并无共同来源。\nC【错】错因：叉角羚科与牛科互为姊妹群，牛总科才与鹿总科并列，并非叉角羚科单独作姊妹群。\nD【错】错因：传统反刍亚目各科构成单系群，只有并入骆驼等假反刍动物才成为多系群。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 18 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-03-39ef3567/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "鲸-偶蹄目是近些年来根据系统发育关系确立的一个单系群，其演化关系至今仍在广泛研究。下图是针对鲸偶蹄目动物的性状演化研究，请根据所学知识和题目信息判断下列说法正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "具有反刍现象的动物的多室的胃是单起源的，其中鼷鹿的瓣胃发生了退化"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "偶蹄类动物中表皮角与真皮角具有共同的来源"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "叉角羚科是其他胃具四室的动物的姐妹群"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "传统意义上的反刍动物是一个并系群"
+    }
+  ],
+  "subject": "进化生物学",
+  "tags": [
+    "phylogeny",
+    "module_4",
+    "进化生物学",
+    "鲸偶蹄目性状演化"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

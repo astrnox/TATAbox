@@ -36,5 +36,143 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M1-02-5a12d7d9": {
+    "category": "ggbo",
+    "concept": "线粒体凋亡",
+    "difficulty": "league",
+    "explanation": "A【错】错因：免疫印迹中 α-bisabolol 处理未产生 tBID 条带，并未直接把全长 BID 截断。\nB【错】错因：各处理下 BID 始终位于细胞质基质，未观察到向线粒体转位。\nC【对】依据：JC-1 由多聚体转为单体，说明线粒体膜电位丧失、极化状态被破坏。\nD【错】错因：PARP 切割与 DNA ladder 只说明发生凋亡，不能证明直接激活 DNase。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 3 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-02-5a12d7d9/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "过去的研究证明，植物产生的α-bisabolol 通过脂筏进入细胞，与促凋亡的 Bcl-2 家族蛋白 BID 结合，并可能诱导细胞凋亡。本题中研究者探究了α-bisabolol 在急性白血病细胞凋亡的机制。 左图中（A）24 小时α-bisabolol 处理后BID （全长 22 kDa）与tBID（裂解 15 kDa）检测。PBMC 为正常细胞， ALL01 为白血病细胞，依托泊苷处理的 Jurkat 细胞用作 tBID 的阳性对照。（B） 在不同时间和溶解剂量的 α- bisabolol 处理后检测BID 定位（cytosal 细胞质基质， mitochondria 线粒体）。 右图中（A）（B）α-bisabolol 处理后用 JC-1 对细胞进行染色后进行镜检（×400）和流式细胞仪检测，（A）代表性病例PhB-ALL #01（B）未经处理的正常细胞。（C）PARP 切割和DNA ladder 结果。 补充知识：JC-1 染料是一种亲脂性阳离子染料，在电位较低时以单体形式存在（monomers)，电位较高时以多聚体形式存在(aggregates)。 根据上述所有条件，你觉得α-bisabolol 导致细胞凋亡的细胞机制可能是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "α-bisabolol 将全长的BID 截断，由BID 的片段促进下游凋亡进程"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "α-bisbolol 促进BID 从细胞质基质进入线粒体中诱导线粒体中的内源凋亡途径"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "α-bisabolol 诱导线粒体损伤，破坏了线粒体极化的状态"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "α-bisabolol 作为一种DNA 酶激活剂直接导致DNA 降解"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "线粒体凋亡"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-03-4b20cbef": {
+    "category": "ggbo",
+    "concept": "细胞死亡方式",
+    "difficulty": "league",
+    "explanation": "A【错】错因：TS 诱导凋亡，早期应为 Annexin V 阳性、PI 阴性，位于第四象限而非第二象限。\nB【对】依据：TSZ 诱导坏死，电镜见细胞膜直接碎裂、轮廓崩散，无有序膜泡形成。\nC【错】错因：LPS+Nig 全程走焦亡通路，早期膜泡是 GSDMD 孔道引起的焦亡小体，不是凋亡小体。\nD【对】依据：实体瘤中心缺氧、缺营养、酸中毒，坏死是最常见的细胞死亡形式。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 4 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-03-4b20cbef/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图展示了不同处理下扫描电子显微镜（SEM）观察到的细胞死亡的几种方式。已知DMSO 为对照组，Nig 可引发细胞焦亡。请根据下图，判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "TS 引发的细胞死亡在Annexin V-FITC/PI 双染法流式细胞术结果中将位于第二象限"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "TSZ 处理后细胞膜直接大面积破损、细胞轮廓崩碎"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "LPS+Nig 处理早期细胞进行细胞凋亡途径，产生大量凋亡小体；晚期转为细胞焦亡，释放细胞促炎物质"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "与细胞凋亡和细胞焦亡相比，实体瘤病灶中心最常出现坏死"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "细胞死亡方式"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-04-a1f25068": {
+    "category": "ggbo",
+    "concept": "GSDMD寡聚化",
+    "difficulty": "league",
+    "explanation": "A【对】依据：Flag 标记的 GSDMD-N 出现二聚、四聚条带，四聚体由 N 端片段寡聚形成。\nB【错】错因：只有 N 端片段寡聚化并成孔，C 端是游离的自抑制结构域，不参与成孔。\nC【错】错因：Caspase-1 为催化剂量、底物过量，内源 GSDMD 竞争不会使外源剪切效率显著下降。\nD【对】依据：内外源 GSDMD-N 可随机混合成异源寡聚体，抗 Flag 条带不能证明其全部为外源蛋白。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 4 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-04-a1f25068/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "细胞坏死需要MLKL 发生寡聚化，为探究细胞焦亡中GSDMD 是否会发生类似的寡聚化，研究人员使用不同浓度Nig 诱导焦亡，并分别对Flag-GSDMD 和GSDMD-Flag 的Flag 标签进行了免疫印迹分析。请根据实验结果判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "Tetramer 是GSDMD-N 片段四聚化形成的寡聚体"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "Nig 诱导后GSDMD-N 片段和GSDMD-C 片段均发生寡聚化，共同参与细胞膜孔道的形成"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "若使用野生型 RAW264.7 细胞并同样回补带有Flag 标签的 GSDMD，由于野生型细胞内源GSDMD蛋白会与回补的外源GSDMD 竞争结合Caspase-1，导致外源GSDMD 的剪切效率显著下降"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "若使用野生型 RAW264.7 细胞并同样回补带有Flag 标签的 GSDMD，内源蛋白会与带有Flag 标签的外源蛋白混合形成异源寡聚体，无法区分内外来源蛋白"
+      }
+    ],
+    "subject": "细胞生物学",
+    "tags": [
+      "cell_death",
+      "module_1",
+      "细胞生物学",
+      "GSDMD寡聚化"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

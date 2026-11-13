@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-1eb3d8f7": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 65,
+    "module": "module_4",
+    "src": "transcriptomics",
+    "tag": "transcriptomics",
+    "tags": [
+      "transcriptomics",
+      "module_4",
+      "生物信息学",
+      "火山图与差异表达"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

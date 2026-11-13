@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-607534a2": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 85,
+    "module": "module_1",
+    "src": "replication",
+    "tag": "replication",
+    "tags": [
+      "replication",
+      "module_1",
+      "分子生物学",
+      "引物与保真度"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

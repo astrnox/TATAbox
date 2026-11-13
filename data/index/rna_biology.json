@@ -69,5 +69,56 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-05-e136b55a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 130,
+    "module": "module_1",
+    "src": "rna_biology",
+    "tag": "rna_biology",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "分子生物学",
+      "RNase H"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-06-e3ead964": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 335,
+    "module": "module_1",
+    "src": "rna_biology",
+    "tag": "rna_biology",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "生物化学",
+      "液液相分离"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-07-249f7ec7": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 385,
+    "module": "module_1",
+    "src": "rna_biology",
+    "tag": "rna_biology",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "分子生物学",
+      "RNA结合蛋白"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

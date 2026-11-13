@@ -197,5 +197,136 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M1-05-e136b55a": {
+    "category": "ggbo",
+    "concept": "RNase H",
+    "difficulty": "league",
+    "explanation": "A【错】错因：小鼠寡核苷酸与 U7 snRNA 结合更紧密，RNase H 水解更彻底，蛋白合成才被阻断。\nB【错】错因：ssRNA 不被 RNase H 水解成立，但新冠病毒 RNA 不进核且有膜结构隔离，不是同一原因。\nC【错】错因：提高盐浓度虽稳定杂交链，但加入 RNase H 后 RNA 仍会被水解，不能说更稳定。\nD【错】错因：RNase H 只水解 DNA-RNA 杂交链中的 RNA，瞬时接触或 R 环等松散结合未必被完全降解。",
+    "question": "在真核生物的组蛋白mRNA 上有一个与U7 snRNA 结合的位点，在不同物种中有所区别。在人细胞核提取物中加入包含该位点的小鼠DNA 寡核苷酸和RNase H，发现组蛋白合成完全被阻断；但如果加入人类的寡核苷酸则不被阻断。结合所学知识，判断下列说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "人寡核苷酸和U7 snRNA 结合比小鼠更紧密"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "实验结果说明单链RNA 对RNase H 不敏感，这正是新冠病毒基因组在体内不被降解的原因"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "在环境中加大钠盐浓度，DNA-RNA 杂交双链在RNase H 存在情况下更稳定"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "细胞核内所有与DNA 结合的RNA 都会被RNase H 水解"
+      }
+    ],
+    "subject": "分子生物学",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "分子生物学",
+      "RNase H"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-06-e3ead964": {
+    "category": "ggbo",
+    "concept": "液液相分离",
+    "difficulty": "league",
+    "explanation": "A【对】依据：CR 区序列保守，富含 A、M、L 等疏水氨基酸，利于多价相互作用。\nB【对】依据：图 C 呈浮雕样立体感，符合微分干涉显微镜的成像特征。\nC【对】依据：只有含完整 CR 的 WT 与 367del414 出现 LLPS，说明完整 CR 是必要条件。\nD【错】错因：实验证明的是必要性，不能据此得出完整 CR 加 IDR1 或 2 是充分条件。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 4 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-06-e3ead964/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "RNA 结合蛋白（RBP）活性的变化在塑造细胞类型特异性基因调控和信号反应中起着至关重要的作用。通过监测纯化的RBP 和RNA 的液-液相分离（LLPS）现象来研究RBP 的功能异常。TDP-43 是一种RBP，其C 端结构突变可能会导致肌萎缩侧索硬化症（ALS）。现在研究人员构建了不同的TDP-43 突变体，并对其研究如下： （A） TDP-43 的结构域图谱包括NTD、RRM1、RRM2、IDR1、IDR2、CR 螺旋和NLS。图中显示了5 个删除变体的位置。 （B） 紊乱置信度评分、氨基酸保守性（绿色，最不保守;红色，最保守位置）和C 端结构域的组成偏差。 （C） 10μM WT TDP-43 和缺失突变体显微图像显示液滴形成的差异。 请判断下列说法正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "CR 区较为保守，含有许多疏水氨基酸"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "图C 的结果可能是由微分干涉显微镜拍摄而得"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "实验可以说明完整的CR 是出现正常液-液相分离的必要条件"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "实验可以说明完整的CR+IDR1 或2 是出现液-液相分离的充分条件"
+      }
+    ],
+    "subject": "生物化学",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "生物化学",
+      "液液相分离"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M1-07-249f7ec7": {
+    "category": "ggbo",
+    "concept": "RNA结合蛋白",
+    "difficulty": "league",
+    "explanation": "A【错】错因：RNase 处理后互作仍存在，说明 TYF 与 Atx2 的结合不依赖 mRNA。\nB【对】依据：免疫沉淀除 per 外还带下多种 RNA，说明 Atx2 可结合其他 mRNA。\nC【对】依据：敲减 Atx2 后 TYF 与 PABP 结合条带变淡，说明 Atx2 辅助二者结合。\nD【对】依据：Atx2 与 TYF 均促进 PER 表达并影响节律，是维持正常昼夜节律所必需。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 6 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-07-249f7ec7/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "接下来我们通过免疫共沉淀技术分别测量了Atx2 与TYF 的互作、Atx2 与其他转录物的关联、敲减Atx2 对 TYF 复合体形成的影响。（C）ATX2 与 TYF 的互作检测。使用 ATX2（左图）或 V5（右图）抗体对表达 （+） 或不表达 （-） TYF-V5 的果蝇头部提取物的蛋白质进行免疫沉淀 （IP）。使用 ATX2 抗原免疫前获得的血清作为阴性对照 （pre-imm）。* = 交叉反应带。（D）ATX2 和 TYF 互作检测，在 RNase A 处理下。（E） ATX2 与转录本的关联。RNA 富集指数（Y 轴）的计算方法是：从使用 ATX2 抗体免疫沉淀中发现的相对量中减去在免疫前对照中发现的\"免疫沉淀\"的 RNA 的相对量。（F）ATX2 对TYF-PABP 相互作用影响。 请结合实验结论，判断下列关于ATX2 和TYF 作用说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "TYF 和Atx2 借助mRNA 形成复合物"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "Atx2 可以和其他mRNA 结合"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "TYF 和PABP 结合需要Atx2 的辅助"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "Atx2 和TYF 都是维持果蝇正常昼夜节律所必需的因子"
+      }
+    ],
+    "subject": "分子生物学",
+    "tags": [
+      "rna_biology",
+      "module_1",
+      "分子生物学",
+      "RNA结合蛋白"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

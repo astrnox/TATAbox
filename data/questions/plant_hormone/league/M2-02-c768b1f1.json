@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "单性结实的激素调控",
+  "difficulty": "league",
+  "explanation": "A【错】错因：MT 处理未提高 IAA 含量，人工授粉反而使其降低，IAA 不是单性结实的关键。\nB【错】错因：实验未设置细胞分裂素处理，无法得出其抑制单性结实的结论。\nC【错】错因：ABA 在 IAA 组含量最高，与坐果无对应关系，不能视为关键条件。\nD【错】错因：MT 虽提高 GA3，但实验未给出单性结实结果，不能据此证明 GA 的作用。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 10 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-02-c768b1f1/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "之前早有科学家发现MT（褪黑素）可以在植物中内源表达，并可以在植物生长、植物节律调节中起到类似于 IAA（吲哚乙酸）的作用，这可能是因为它们都有一个相同的吲哚环结构。下面你通过人工施加不同的植物激素， 来研究MT 促进单性结实的信号通路与哪一种激素相关联。如下图所示，分别对四种处理后（CK 表示对照组，HP 表示人工授粉）植物中IAA（吲哚乙酸）、ABA（脱落酸）、GA3 和GA4（赤霉素）的含量进行测定。试判断正确的选项有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "生长素能够有效促进梨的单性结实"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "细胞分裂素会明显抑制梨的单性结实"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "ABA 是促进植物坐果的关键条件"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "MT 处理会显著促进GA 的合成，说明 GA 是促进单性结实的因素"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_hormone",
+    "module_2",
+    "植物学",
+    "单性结实的激素调控"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

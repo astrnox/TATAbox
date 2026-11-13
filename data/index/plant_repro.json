@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-29b2fa9e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 32,
+    "module": "module_2",
+    "src": "plant_repro",
+    "tag": "plant_repro",
+    "tags": [
+      "plant_repro",
+      "module_2",
+      "植物学",
+      "种子结构与萌发"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

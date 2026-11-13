@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "视网膜电图波形",
+  "difficulty": "league",
+  "explanation": "A【对】依据：光照使视细胞钠通道关闭、钠内流减少，细胞超极化，形成 a 波。\nB【错】错因：b 波由神经节细胞去极化产生，与钙离子内流没有直接对应关系。\nC【对】依据：暗处给光后先超极化后去极化，与图中先负后正的波形一致。\nD【对】依据：双极细胞受损则信号无法传至神经节细胞，b 波会消失。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 12 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-02-18726078/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "视网膜电图（ERG）可以表示视网膜各组分的生物电的累加总和反映。如图是正常人的视网膜电图，请判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "a 波主要由光照下钠离子内流减少导致"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "b 波由钙离子内流造成"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "这是在暗处给予光照时视网膜电信号的变化"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "若双极细胞受损可能导致b 波消失"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "sensory_physio",
+    "module_3",
+    "动物生理学",
+    "视网膜电图波形"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

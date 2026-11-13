@@ -15,5 +15,107 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-a5f84077": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 143,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "植物命名法规"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-cdd81630": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 32,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "常见蔬菜植物学"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-04-d6ceba7e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 96,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "虫媒传粉特征"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-05-0ed480f9": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 89,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "花程式"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-06-57d9ff78": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 37,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "姜目系统演化"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-07-b12bb329": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 84,
+    "module": "module_4",
+    "src": "plant_classification",
+    "tag": "plant_classification",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "被子植物演化"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "营养级联效应",
+  "difficulty": "league",
+  "explanation": "A【错】错因：水鸟到拟沼螺的路径系数不显著，不能说明其直接提高拟沼螺多度。\nB【对】依据：水鸟显著降低蟹类，蟹类又抑制微藻，故间接提高微藻生物量。\nC【对】依据：三者到微藻的路径系数均为显著负值，说明都直接抑制微藻。\nD【错】错因：由高营养级向下影响低营养级，属于下行调控而非上行调控。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 14 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-02-66196f77/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "为研究底栖微藻丰度受到食物链影响的大小，研究者做出了水鸟调控底栖微藻生物量的结构方程模型分析。路径对应的数字为路径系数; *, p < 0.05; **, p < 0.01; ***, p < 0.001; R2 为路径的拟合度。 请据此进行正误判断。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "水鸟可通过直接提高拟沼螺多度, 进而间接抑制底栖微藻生物量"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "水鸟可通过显著降低蟹类多度, 进而间接提高底栖微藻的生物量"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "底栖微藻的生物量受到水鸟、蟹类和拟沼螺多度的直接抑制"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "该结构方程模型体现了生态学的上行调控"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "ecosystem",
+    "module_3",
+    "生态学",
+    "营养级联效应"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

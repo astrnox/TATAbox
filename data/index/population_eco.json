@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-44c6010b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 95,
+    "module": "module_3",
+    "src": "population_eco",
+    "tag": "population_eco",
+    "tags": [
+      "population_eco",
+      "module_3",
+      "生态学",
+      "岛屿种群与遗传漂变"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

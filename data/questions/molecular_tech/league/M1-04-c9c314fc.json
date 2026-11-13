@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "磷酸化质谱",
+  "difficulty": "league",
+  "explanation": "A【对】依据：由 b/y 离子质量差可定位磷酸化发生在 Thr 上。\nB【错】错因：按 y7 序列与磷酸基质量计算，其相对分子质量不是 847.5。\nC【对】依据：b2 与 y10 覆盖整条肽链，二者质量之和等于全长肽链质量。\nD【对】依据：LC-MS/MS 先液相分离再串联质谱，灵敏度和准确性都较高。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 5 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-04-c9c314fc/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "除了phos-tag 和放射性同位素标记，质谱也是常用于检测磷酸化的技术。在质谱中将肽键打断后，我们把N 端序列称为b，C 端序列称为y。如图是一段十二肽的LC-MS/MS 的结果，肽链上存在一处磷酸化修饰，请根据所学知识判断下列说法正误。已知相对分子质量：磷酸H3PO4-98，Thr-119.1，Ile-131.2，H2O-18。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "磷酸化位点为Thr"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "磷酸化修饰后y7 的相对分子质量为847.5"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "推测b2 和y10 的相对分子质量之和等于肽链全长的相对分子质量"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "LC-MS/MS 通过先分离目标肽链，再进行质谱检测的方法，具有较高的灵敏度和准确度"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "molecular_tech",
+    "module_1",
+    "生物化学",
+    "磷酸化质谱"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

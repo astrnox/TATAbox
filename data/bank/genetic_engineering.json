@@ -36,5 +36,136 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-748f0f99": {
+    "category": "ggbo",
+    "concept": "Cre重组酶的细胞毒性",
+    "difficulty": "league",
+    "explanation": "A【对】依据：未引入外源lox位点的细胞中，表达正常Cre仍使菌落数明显下降，说明毒性不依赖lox位点。\nB【错】错因：无论是否融合GFP，正常Cre组的菌落数都明显下降，说明细胞损伤与GFP无关。\nC【错】错因：R173K与Y324F只是同类性质氨基酸的替换，未去除正电荷或芳香性，不能证明其必需。\nD【对】依据：G418依靠Neo抗性基因筛选，只有成功转染的细胞能存活成集落，属于阳性筛选。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 16 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-02-748f0f99/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "研究者用编码 G418 抗性的质粒 pPNT 转染 NIH 3T3 细胞 （未引入外源 lox 位点）和编码 WT Cre、Cre 突变体 R173K 或 Y324F、wt Cre-GFP 融合蛋白的质粒、与 GFP 融合的 Cre 突变体 R173K 或 Y324F，或无插入片段的表达载体 （MMP）。将细胞培养 2 天而不进行筛选，然后置于含 G418 的培养基中，12 天后进行固定、染色和菌落计数（colony number），结果如图所示。 根据实验结果，判断下列说法正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "Cre 重组酶的细胞毒性不依赖于外源Lox 位点"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "Cre 重组酶对细胞的伤害依赖于GFP 蛋白"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "第173 号位的正电氨基酸和第324 号位的芳香氨基酸对于Cre 重组酶的切割活性是必需的"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "培养基中加入Neo 可能是为了筛选出转染成功的细胞"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "Cre重组酶的细胞毒性"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-03-e4346a7f": {
+    "category": "ggbo",
+    "concept": "lox511自切除载体",
+    "difficulty": "league",
+    "explanation": "A【错】错因：逆转录病毒感染后只以3'LTR的U3区为模板复制到5'端，并非复制整个LTR。\nB【错】错因：目标基因两侧是loxP位点，与lox511序列不同，不能通过交换把lox511重组到其两侧。\nC【对】依据：复制后两个lox511夹住Cre编码区，Cre可切除自身基因，从而降低对细胞的毒性。\nD【对】依据：若直接在Cre基因两侧加lox位点，载体克隆时Cre基因即被删除，无法得到可用载体。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 16 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-03-e4346a7f/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "研究人员打造了一种新型的打靶方式（Hit and run）：使用包含一个位于其 3′ LTR U3 区域的 lox 511 位点的逆转录病毒载体（LTR 长度在1000bp 以内），将Cre 重组酶导入局部细胞。小鼠靶标基因两侧带有loxP 位点。星号标识引入含 lox 511 的 LTR 的 StuI 限制性位点的位置，以将其与内源性小鼠 LTR 区分开来。 必要的英文标注：packaging 包装，infection 感染，reverse transcription 逆转录，integration 整合，Expression and Cre-Mediated Recombination 表达和Cre 介导的重组。 研究人员将Lox 511 插入病毒3' LTR U3 区的原因是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "逆转录病毒感染细胞后会将整个3' LTR 复制到5'端"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "可以通过交换将Lox 511 重组到目标基因两侧"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "载体可以在表达Cre 酶后将自身携带的Cre 基因敲除，可能避免Cre 引起的细胞毒害"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "这种方式与直接在Cre 酶两侧各加上一个Lox 511 位点的效果有差别，后者将无法产生可用的载体"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "lox511自切除载体"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-04-2040deb6": {
+    "category": "ggbo",
+    "concept": "基因打靶的检测",
+    "difficulty": "league",
+    "explanation": "A【错】错因：未打靶成功的细胞同样可能没有绿色荧光，不能凭无荧光就判定打靶成功。\nB【错】错因：未转染成功的细胞也呈阴性，原位杂交无法区分未转染与转染后Cre被切除。\nC【错】错因：目标基因两侧loxP同向重复，上下游引物易互补形成二聚体，扩增效率低而出现假阴性。\nD【对】依据：Southern blot以目标基因为探针直接检测DNA重排，可确认打靶是否成功。",
+    "question": "为验证是否获得打靶成功的细胞，研究者可以采用的方法有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "将细胞置于荧光显微镜下观察，不具有绿色荧光的细胞即为打靶成功"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "选取与Cre 基因互补的荧光探针，对细胞进行荧光原位杂交，打靶成功的细胞呈阳性"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "提取细胞内DNA，分别针对目标基因的5'端loxP 和3'端loxP 序列制作上游和下游引物，进行PCR 扩增，检测是否出现目标基因条带"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "提取细胞中的DNA，以目标基因为探针进行Southern Blot"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "基因打靶的检测"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

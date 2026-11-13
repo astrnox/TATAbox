@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-66196f77": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 126,
+    "module": "module_3",
+    "src": "ecosystem",
+    "tag": "ecosystem",
+    "tags": [
+      "ecosystem",
+      "module_3",
+      "生态学",
+      "营养级联效应"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

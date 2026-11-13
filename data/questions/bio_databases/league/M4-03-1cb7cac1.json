@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "Oncoprint突变图谱",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中基因四左侧标注变异比例51%，说明超过一半患者携带该基因异常。\nB【对】依据：基因一与基因四的失活突变集中在同一批患者列，提示功能协同或染色体上存在连锁。\nC【错】错因：抑癌基因需两个等位基因均失活才致癌，单拷贝突变即致癌更符合原癌基因特征。\nD【错】错因：图中只显示两基因突变分布于不同患者，不能据此推断二者存在功能拮抗。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 21 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-03-1cb7cac1/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如图是Oncoprint 界面，展示了4 个基因在癌症患者中变异的分布。每一行代表一个基因，每一列代表一个病人。请根据图中信息和所学知识，判断下列说法正确的是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "样本中过半的癌症患者都在基因四出现异常"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "基因一和基因四可能有协同作用或者连锁"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "若基因三仅在一个染色体上出现突变就引起了癌症，则可推测其为抑癌基因"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "基因一和基因二为拮抗作用"
+    }
+  ],
+  "subject": "生物信息学",
+  "tags": [
+    "bio_databases",
+    "module_4",
+    "生物信息学",
+    "Oncoprint突变图谱"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

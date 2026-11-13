@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-5402e7a7": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 40,
+    "module": "module_3",
+    "src": "endocrine",
+    "tag": "endocrine",
+    "tags": [
+      "endocrine",
+      "module_3",
+      "动物生理学",
+      "眼柄切除与催熟"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-03-48211a64": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 41,
+    "module": "module_3",
+    "src": "endocrine",
+    "tag": "endocrine",
+    "tags": [
+      "endocrine",
+      "module_3",
+      "动物生理学",
+      "眼柄切除实验分析"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

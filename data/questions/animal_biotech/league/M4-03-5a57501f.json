@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "斑马鱼胚胎发育分期",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图A为囊胚期，细胞层刚开始向植物极扩展包裹卵黄，并非卵裂期。\nB【错】错因：图C与图B同属原肠期，箭头指向胚环，但图D为卵裂期，二者并非同一时期。\nC【对】依据：图G可见沿脊索规律排列的体节，对应体节期。\nD【对】依据：图L后端形成尾芽细胞团，上方长箭头指头部，下方短箭头指尾芽。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 20 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-03-5a57501f/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "下列给出了斑马鱼早期胚胎发育过程中的5 个时期图像，其中C 图为极面观，其余为正面观，对应了上述5 个时期。请你根据描述，判断这些图片分别对应哪个时期，并判断下列说法的正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "图A 对应卵裂期"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "图C 和图D 属于同一时期，为原肠期，图C 中的箭头指向胚环"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "图G 对应体节期，可见沿脊索形成的体节"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "图L 中上方的长箭头指向头部，下方的短箭头指向尾芽"
+    }
+  ],
+  "subject": "动物学",
+  "tags": [
+    "animal_biotech",
+    "module_4",
+    "动物学",
+    "斑马鱼胚胎发育分期"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

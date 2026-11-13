@@ -36,5 +36,51 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M3-02-7d1ba782": {
+    "category": "ggbo",
+    "concept": "心输出量与心率储备",
+    "difficulty": "league",
+    "explanation": "A【对】依据：运动员心肌收缩力强，收缩期储备和心率储备都更大，对应曲线②。\nB【错】错因：降支源于心率过快使舒张期过短、充盈不足，而非血压过高致心肌过度拉伸。\nC【对】依据：心衰患者储备减少，会更早动用心率储备，降支提前出现。\nD【错】错因：图反映心率对心输出量的影响，后负荷主要取决于大动脉血压。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 12 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M3-02-7d1ba782/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图，在一定范围内心率加快可使心输出量增加，但心率过快则会导致心输出量减少。曲线①和②中一个是正常健康成年人，另一个是训练有素的运动员。根据此图，结合所学知识，判断下列说法对错：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "图中曲线②为运动员，因为其心肌收缩能力较一般人强，具有更大的心率储备和收缩期储备"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "曲线①在心率达160 次/分后开始出现明显的降支，这是由于大动脉血压过高，心肌过度拉伸，心肌张力较低，搏出量下降"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "心力衰竭患者对应曲线的降支比①更早出现"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "该图体现了心肌收缩后负荷对心室泵血的影响"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "circulatory",
+      "module_3",
+      "动物生理学",
+      "心输出量与心率储备"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

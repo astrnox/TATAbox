@@ -36,5 +36,90 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M3-02-18726078": {
+    "category": "ggbo",
+    "concept": "视网膜电图波形",
+    "difficulty": "league",
+    "explanation": "A【对】依据：光照使视细胞钠通道关闭、钠内流减少，细胞超极化，形成 a 波。\nB【错】错因：b 波由神经节细胞去极化产生，与钙离子内流没有直接对应关系。\nC【对】依据：暗处给光后先超极化后去极化，与图中先负后正的波形一致。\nD【对】依据：双极细胞受损则信号无法传至神经节细胞，b 波会消失。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 12 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M3-02-18726078/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "视网膜电图（ERG）可以表示视网膜各组分的生物电的累加总和反映。如图是正常人的视网膜电图，请判断下列说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "a 波主要由光照下钠离子内流减少导致"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "b 波由钙离子内流造成"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "这是在暗处给予光照时视网膜电信号的变化"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "若双极细胞受损可能导致b 波消失"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "sensory_physio",
+      "module_3",
+      "动物生理学",
+      "视网膜电图波形"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M3-03-40f2e604": {
+    "category": "ggbo",
+    "concept": "感音神经性耳聋",
+    "difficulty": "league",
+    "explanation": "A【错】错因：镫骨底板振动异常属于传导性耳聋，本例病变位于内耳或听神经。\nB【对】依据：感音神经性耳聋气导与骨导阈值均升高，且两者差值通常很小。\nC【对】依据：基底膜近卵圆窗处感受高频，该部位毛细胞损伤首先影响高频听力。\nD【错】错因：内淋巴高钾是去极化驱动力，钾浓度降低应使去极化减弱、微音器电位下降。",
+    "question": "先天性风疹综合征患儿因风疹病毒侵犯内耳，出现不可逆的感音神经性耳聋。下列关于该患儿听觉功能障碍的叙述，正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "患者听力障碍可能是因为声音经骨传导传入内耳时镫骨底板振动幅度减小"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "纯音测听结果中，患者骨传导听力阈值和气传导听力阈值均升高"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "耳蜗基底膜靠近卵圆窗部位的毛细胞损伤更严重，导致对高频声音的感知能力下降"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "耳蜗内淋巴中K⁺浓度显著降低，促进毛细胞去极化，导致微音器电位异常"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "sensory_physio",
+      "module_3",
+      "动物生理学",
+      "感音神经性耳聋"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

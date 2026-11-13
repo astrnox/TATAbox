@@ -1,0 +1,21 @@
+{
+  "file": "assets/questions/M3-02-66196f77/fig1.webp",
+  "caption": "第一届 GGBO 生物学竞赛试题配图（第 14 页）",
+  "credit": "第一届 GGBO 生物学竞赛考试试题",
+  "license": "原竞赛试卷（仅用于教学练习）",
+  "source": "exam",
+  "figures": [
+    {
+      "page": 14,
+      "xref": null,
+      "bbox": [
+        349.3,
+        414.16,
+        558.9,
+        559.0
+      ],
+      "width": 356,
+      "height": 246
+    }
+  ]
+}
