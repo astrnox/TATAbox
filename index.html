@@ -201,6 +201,16 @@
     /* 动画声明（只放这里，不依赖外部 CSS 文件加载） */
     /* 卸载 mask：通过 classList.add('is-ready') 平滑淡出，避免"忽然切走" */
     #bq-boot-mask.is-ready { opacity: 0; visibility: hidden; }
+    /* H-01：首页首屏题面在构建期已内联进 HTML，不必等全部脚本。
+       遮罩 1.4s 后自动让位（JS 就绪时仍会提前加 .is-ready），
+       避免弱网下用户长时间只看到加载动画、看不到题目。 */
+    #bq-boot-mask { animation: bqBootYield 0.4s ease 1.4s forwards; }
+    @keyframes bqBootYield {
+      to { opacity: 0; visibility: hidden; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #bq-boot-mask { animation-duration: 0.01s; animation-delay: 0.6s; }
+    }
     /* 每日亿题入口 hover（原内联 onmouseover/onmouseout 已改纯 CSS） */
     .daily-billion-entry-link:hover { background: rgba(196,149,106,0.1); }
   </style>
@@ -529,10 +539,307 @@
 
   <main id="app-main">
     <div id="page-content" class="page-content page-content--home" tabindex="-1">
-      <section class="hero" id="main-content" data-section="hero">
+      <section class="hero hero--quiz" id="main-content" data-section="hero">
         <div class="hero-bg"></div>
         <div class="hero-gradient-left"></div>
-        <div class="hero-content">
+
+        <div class="hq-shell" id="homeQuiz">
+          <div class="hq-head">
+            <p class="hq-kicker">每日一题 · 4 条判断</p>
+            <a class="hq-skip" href="#/practice" data-route="/practice">跳过，直接刷题</a>
+          </div>
+
+          <div class="hq-card" id="homeQuizCard">
+            <div class="hq-flip" id="homeQuizFlip">
+              <!-- build:home-quiz:start -->
+      <article class="hq-question" data-day="0" data-qid="M1-01-f73d8d73">
+        <p class="hq-concept">microRNA 加工与转录后调控</p>
+        <p class="hq-stem">某小 RNA 经加工后进入 RISC 复合物，通过与靶 mRNA 3'UTR 部分互补配对抑制翻译。根据以上信息，判断以下陈述的正误。</p>
+        <fieldset class="hq-options">
+          <legend class="hq-legend">判断以下每条陈述是否正确</legend>
+        <div class="hq-row" data-label="A" data-answer="true">
+          <span class="hq-label" aria-hidden="true">A</span>
+          <span class="hq-text">该小 RNA 为 microRNA，其初级转录本 pri-miRNA 需经 Drosha 切割形成 pre-miRNA</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-0-A" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-0-A" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：动物 pri-miRNA 在核内经 Drosha 切割为约 70 nt 的 pre-miRNA，出核后由 Dicer 加工为成熟双链，其中一条进入 RISC 发挥调控功能。</p>
+        </div>
+        <div class="hq-row" data-label="B" data-answer="true">
+          <span class="hq-label" aria-hidden="true">B</span>
+          <span class="hq-text">microRNA 与靶 mRNA 完全互补时通常导向靶 mRNA 降解，部分互补则主要抑制翻译</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-0-B" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-0-B" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：植物中 miRNA 与靶标多为完全互补，导向 AGO2 介导的 mRNA 切割降解；动物中多为种子区部分互补，主要抑制翻译或促进去腺苷酸化。</p>
+        </div>
+        <div class="hq-row" data-label="C" data-answer="false">
+          <span class="hq-label" aria-hidden="true">C</span>
+          <span class="hq-text">一个 microRNA 只能特异性调控一个靶 mRNA</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-0-C" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-0-C" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：单个 miRNA 通过种子序列（第 2-8 位）可靶向数百个 mRNA，反之多个 miRNA 也可协同调控同一靶标，形成复杂调控网络。</p>
+        </div>
+        <div class="hq-row" data-label="D" data-answer="false">
+          <span class="hq-label" aria-hidden="true">D</span>
+          <span class="hq-text">microRNA 在转录水平直接抑制靶基因的转录起始</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-0-D" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-0-D" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：miRNA 在转录后水平起作用（翻译抑制或 mRNA 去稳定化），不直接影响 RNA 聚合酶 II 的转录起始过程。</p>
+        </div>
+        </fieldset>
+        <div class="hq-submit-row">
+          <button type="button" class="hq-submit" disabled>提交答案</button>
+          <span class="hq-status" role="status" aria-live="polite">还有 4 条未选</span>
+        </div>
+        
+        <details class="hq-nojs">
+          <summary>查看答案与解析</summary>
+          <ul><li><strong>A</strong> 正确：依据：动物 pri-miRNA 在核内经 Drosha 切割为约 70 nt 的 pre-miRNA，出核后由 Dicer 加工为成熟双链，其中一条进入 RISC 发挥调控功能。</li><li><strong>B</strong> 正确：依据：植物中 miRNA 与靶标多为完全互补，导向 AGO2 介导的 mRNA 切割降解；动物中多为种子区部分互补，主要抑制翻译或促进去腺苷酸化。</li><li><strong>C</strong> 错误：错因：单个 miRNA 通过种子序列（第 2-8 位）可靶向数百个 mRNA，反之多个 miRNA 也可协同调控同一靶标，形成复杂调控网络。</li><li><strong>D</strong> 错误：错因：miRNA 在转录后水平起作用（翻译抑制或 mRNA 去稳定化），不直接影响 RNA 聚合酶 II 的转录起始过程。</li></ul>
+        </details>
+      </article>
+      <article class="hq-question" data-day="1" data-qid="M2-01-6d709f24" hidden>
+        <p class="hq-concept">植物干旱胁迫响应与渗透调节</p>
+        <p class="hq-stem">某 C3 植物在持续干旱条件下，叶片气孔导度显著下降。根据以上信息，判断以下陈述的正误。</p>
+        <fieldset class="hq-options">
+          <legend class="hq-legend">判断以下每条陈述是否正确</legend>
+        <div class="hq-row" data-label="A" data-answer="true">
+          <span class="hq-label" aria-hidden="true">A</span>
+          <span class="hq-text">气孔关闭可减少水分蒸腾散失，但同时也会限制 CO2 进入叶片</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-1-A" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-1-A" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：气孔是植物蒸腾失水和 CO2 吸收的共同通道，干旱时气孔关闭是减少水分损失的快速响应，但胞间 CO2 浓度（Ci）随之下降，直接限制 Rubisco 的羧化反应。</p>
+        </div>
+        <div class="hq-row" data-label="B" data-answer="true">
+          <span class="hq-label" aria-hidden="true">B</span>
+          <span class="hq-text">干旱胁迫诱导脱落酸（ABA）合成增加，ABA 促进保卫细胞失水导致气孔关闭</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-1-B" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-1-B" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：干旱胁迫下根部合成 ABA 并运输至叶片，ABA 与保卫细胞膜上受体结合，激活离子通道导致 K⁺ 外流，保卫细胞失水、膨压下降，气孔关闭。</p>
+        </div>
+        <div class="hq-row" data-label="C" data-answer="false">
+          <span class="hq-label" aria-hidden="true">C</span>
+          <span class="hq-text">干旱条件下 C3 植物的光呼吸速率通常会降低</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-1-C" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-1-C" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：干旱导致气孔关闭、Ci 降低，Rubisco 的加氧酶活性相对增强（CO2/O2 比值下降），光呼吸速率反而升高，这是 C3 植物干旱胁迫的典型特征。</p>
+        </div>
+        <div class="hq-row" data-label="D" data-answer="true">
+          <span class="hq-label" aria-hidden="true">D</span>
+          <span class="hq-text">植物可通过积累脯氨酸等渗透调节物质维持细胞膨压</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-1-D" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-1-D" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：脯氨酸、甜菜碱、可溶性糖等渗透调节物质在干旱下大量积累，降低细胞渗透势，维持膨压和膜稳定性，同时脯氨酸还具有清除活性氧的保护功能。</p>
+        </div>
+        </fieldset>
+        <div class="hq-submit-row">
+          <button type="button" class="hq-submit" disabled>提交答案</button>
+          <span class="hq-status" role="status" aria-live="polite">还有 4 条未选</span>
+        </div>
+        
+        <details class="hq-nojs">
+          <summary>查看答案与解析</summary>
+          <ul><li><strong>A</strong> 正确：依据：气孔是植物蒸腾失水和 CO2 吸收的共同通道，干旱时气孔关闭是减少水分损失的快速响应，但胞间 CO2 浓度（Ci）随之下降，直接限制 Rubisco 的羧化反应。</li><li><strong>B</strong> 正确：依据：干旱胁迫下根部合成 ABA 并运输至叶片，ABA 与保卫细胞膜上受体结合，激活离子通道导致 K⁺ 外流，保卫细胞失水、膨压下降，气孔关闭。</li><li><strong>C</strong> 错误：错因：干旱导致气孔关闭、Ci 降低，Rubisco 的加氧酶活性相对增强（CO2/O2 比值下降），光呼吸速率反而升高，这是 C3 植物干旱胁迫的典型特征。</li><li><strong>D</strong> 正确：依据：脯氨酸、甜菜碱、可溶性糖等渗透调节物质在干旱下大量积累，降低细胞渗透势，维持膨压和膜稳定性，同时脯氨酸还具有清除活性氧的保护功能。</li></ul>
+        </details>
+      </article>
+      <article class="hq-question" data-day="2" data-qid="M3-02-44c6010b" hidden>
+        <p class="hq-concept">岛屿种群与遗传漂变</p>
+        <p class="hq-stem">研究人员发现了一片群岛，岛屿上的响尾蛇具有多样化的毒液基因。岛屿面积大小不一，且响尾蛇群体大小与岛屿面积正相关。 为研究响尾蛇毒液多样性与岛屿环境之间的关系，他们做出如下假设，其中合理的有：</p>
+        <fieldset class="hq-options">
+          <legend class="hq-legend">判断以下每条陈述是否正确</legend>
+        <div class="hq-row" data-label="A" data-answer="true">
+          <span class="hq-label" aria-hidden="true">A</span>
+          <span class="hq-text">只考虑遗传漂变因素，较大岛屿上的响尾蛇的毒液基因多样性大于小岛屿上的响尾蛇</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-2-A" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-2-A" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：小种群受漂变影响更强，等位基因易随机丢失；大岛屿种群大，毒液基因多样性更高。</p>
+        </div>
+        <div class="hq-row" data-label="B" data-answer="false">
+          <span class="hq-label" aria-hidden="true">B</span>
+          <span class="hq-text">只考虑遗传漂变因素，较小岛屿上新发突变的固定概率和时间大于较大岛屿</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-2-B" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-2-B" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：中性突变固定概率约为1/(2Ne)，小种群更大；固定时间约4Ne代，小种群反而更短。</p>
+        </div>
+        <div class="hq-row" data-label="C" data-answer="true">
+          <span class="hq-label" aria-hidden="true">C</span>
+          <span class="hq-text">若不同岛屿种群之间没有基因流，则种群间可能出现较大分化</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-2-C" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-2-C" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：缺少基因流时各种群在漂变与选择下独立积累变异，岛屿间可出现较大遗传分化。</p>
+        </div>
+        <div class="hq-row" data-label="D" data-answer="false">
+          <span class="hq-label" aria-hidden="true">D</span>
+          <span class="hq-text">考虑漂变和基因流，则种群分化程度与迁移率成反比</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-2-D" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-2-D" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：分化指数满足FST约等于1/(4Nem+1)，迁移率升高分化下降，但并非严格反比。</p>
+        </div>
+        </fieldset>
+        <div class="hq-submit-row">
+          <button type="button" class="hq-submit" disabled>提交答案</button>
+          <span class="hq-status" role="status" aria-live="polite">还有 4 条未选</span>
+        </div>
+        
+        <details class="hq-nojs">
+          <summary>查看答案与解析</summary>
+          <ul><li><strong>A</strong> 正确：依据：小种群受漂变影响更强，等位基因易随机丢失；大岛屿种群大，毒液基因多样性更高。</li><li><strong>B</strong> 错误：错因：中性突变固定概率约为1/(2Ne)，小种群更大；固定时间约4Ne代，小种群反而更短。</li><li><strong>C</strong> 正确：依据：缺少基因流时各种群在漂变与选择下独立积累变异，岛屿间可出现较大遗传分化。</li><li><strong>D</strong> 错误：错因：分化指数满足FST约等于1/(4Nem+1)，迁移率升高分化下降，但并非严格反比。</li></ul>
+        </details>
+      </article>
+      <article class="hq-question" data-day="3" data-qid="M4-01-7476e725" hidden>
+        <p class="hq-concept">人类泛基因组与图参考</p>
+        <p class="hq-stem">人类泛基因组参考联盟（HPRC）构建了基于图结构的泛基因组参考，整合了多个不同祖先背景个体的完整基因组序列。根据以上信息，判断以下陈述的正误。</p>
+        <fieldset class="hq-options">
+          <legend class="hq-legend">判断以下每条陈述是否正确</legend>
+        <div class="hq-row" data-label="A" data-answer="true">
+          <span class="hq-label" aria-hidden="true">A</span>
+          <span class="hq-text">泛基因组参考以图结构表示，比线性参考更能捕捉人群间的结构变异</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-3-A" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-3-A" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：线性参考（如 GRCh38）仅代表单倍型，无法有效表示插入、缺失、倒位等结构变异（SV）；图参考将多条单倍型路径整合为有向图，比对时可映射到最匹配的路径，显著提高 SV 检出率。</p>
+        </div>
+        <div class="hq-row" data-label="B" data-answer="true">
+          <span class="hq-label" aria-hidden="true">B</span>
+          <span class="hq-text">泛基因组参考包含了端粒到端粒（T2T）完整组装的着丝粒和端粒序列</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-3-B" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-3-B" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：HPRC 整合了 T2T-CHM13 等完整组装基因组，覆盖了 GRCh38 中缺失的着丝粒卫星 DNA、端粒重复序列和核仁组织区（NOR），这些区域富含结构变异和进化信息。</p>
+        </div>
+        <div class="hq-row" data-label="C" data-answer="true">
+          <span class="hq-label" aria-hidden="true">C</span>
+          <span class="hq-text">泛基因组参考有助于发现特定人群特有的遗传变异</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-3-C" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-3-C" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>依据：泛基因组纳入了非洲、亚洲、欧洲、美洲等多祖先背景个体，可识别线性参考中缺失的人群特异性序列（如非洲人群特有的大片段插入），减少参考偏向（reference bias）。</p>
+        </div>
+        <div class="hq-row" data-label="D" data-answer="false">
+          <span class="hq-label" aria-hidden="true">D</span>
+          <span class="hq-text">泛基因组参考建成后，个体基因组测序将不再必要</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-3-D" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-3-D" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：泛基因组参考是比对的'地图'，个体测序仍是获取个人遗传信息的必要手段；泛基因组提高了比对准确性和变异检出率，但不能替代个体基因组测序。</p>
+        </div>
+        </fieldset>
+        <div class="hq-submit-row">
+          <button type="button" class="hq-submit" disabled>提交答案</button>
+          <span class="hq-status" role="status" aria-live="polite">还有 4 条未选</span>
+        </div>
+        
+        <details class="hq-nojs">
+          <summary>查看答案与解析</summary>
+          <ul><li><strong>A</strong> 正确：依据：线性参考（如 GRCh38）仅代表单倍型，无法有效表示插入、缺失、倒位等结构变异（SV）；图参考将多条单倍型路径整合为有向图，比对时可映射到最匹配的路径，显著提高 SV 检出率。</li><li><strong>B</strong> 正确：依据：HPRC 整合了 T2T-CHM13 等完整组装基因组，覆盖了 GRCh38 中缺失的着丝粒卫星 DNA、端粒重复序列和核仁组织区（NOR），这些区域富含结构变异和进化信息。</li><li><strong>C</strong> 正确：依据：泛基因组纳入了非洲、亚洲、欧洲、美洲等多祖先背景个体，可识别线性参考中缺失的人群特异性序列（如非洲人群特有的大片段插入），减少参考偏向（reference bias）。</li><li><strong>D</strong> 错误：错因：泛基因组参考是比对的'地图'，个体测序仍是获取个人遗传信息的必要手段；泛基因组提高了比对准确性和变异检出率，但不能替代个体基因组测序。</li></ul>
+        </details>
+      </article>
+      <article class="hq-question" data-day="4" data-qid="M1-05-e136b55a" hidden>
+        <p class="hq-concept">RNase H</p>
+        <p class="hq-stem">在真核生物的组蛋白mRNA 上有一个与U7 snRNA 结合的位点，在不同物种中有所区别。在人细胞核提取物中加入包含该位点的小鼠DNA 寡核苷酸和RNase H，发现组蛋白合成完全被阻断；但如果加入人类的寡核苷酸则不被阻断。结合所学知识，判断下列说法正确的有：</p>
+        <fieldset class="hq-options">
+          <legend class="hq-legend">判断以下每条陈述是否正确</legend>
+        <div class="hq-row" data-label="A" data-answer="false">
+          <span class="hq-label" aria-hidden="true">A</span>
+          <span class="hq-text">人寡核苷酸和U7 snRNA 结合比小鼠更紧密</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-4-A" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-4-A" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：小鼠寡核苷酸与 U7 snRNA 结合更紧密，RNase H 水解更彻底，蛋白合成才被阻断。</p>
+        </div>
+        <div class="hq-row" data-label="B" data-answer="false">
+          <span class="hq-label" aria-hidden="true">B</span>
+          <span class="hq-text">实验结果说明单链RNA 对RNase H 不敏感，这正是新冠病毒基因组在体内不被降解的原因</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-4-B" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-4-B" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：ssRNA 不被 RNase H 水解成立，但新冠病毒 RNA 不进核且有膜结构隔离，不是同一原因。</p>
+        </div>
+        <div class="hq-row" data-label="C" data-answer="false">
+          <span class="hq-label" aria-hidden="true">C</span>
+          <span class="hq-text">在环境中加大钠盐浓度，DNA-RNA 杂交双链在RNase H 存在情况下更稳定</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-4-C" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-4-C" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：提高盐浓度虽稳定杂交链，但加入 RNase H 后 RNA 仍会被水解，不能说更稳定。</p>
+        </div>
+        <div class="hq-row" data-label="D" data-answer="false">
+          <span class="hq-label" aria-hidden="true">D</span>
+          <span class="hq-text">细胞核内所有与DNA 结合的RNA 都会被RNase H 水解</span>
+          <div class="hq-toggle">
+            <label class="hq-choice"><input type="radio" name="hq-4-D" value="true"><span>正确</span></label>
+            <label class="hq-choice"><input type="radio" name="hq-4-D" value="false"><span>错误</span></label>
+          </div>
+          <p class="hq-exp" hidden>错因：RNase H 只水解 DNA-RNA 杂交链中的 RNA，瞬时接触或 R 环等松散结合未必被完全降解。</p>
+        </div>
+        </fieldset>
+        <div class="hq-submit-row">
+          <button type="button" class="hq-submit" disabled>提交答案</button>
+          <span class="hq-status" role="status" aria-live="polite">还有 4 条未选</span>
+        </div>
+        
+        <details class="hq-nojs">
+          <summary>查看答案与解析</summary>
+          <ul><li><strong>A</strong> 错误：错因：小鼠寡核苷酸与 U7 snRNA 结合更紧密，RNase H 水解更彻底，蛋白合成才被阻断。</li><li><strong>B</strong> 错误：错因：ssRNA 不被 RNase H 水解成立，但新冠病毒 RNA 不进核且有膜结构隔离，不是同一原因。</li><li><strong>C</strong> 错误：错因：提高盐浓度虽稳定杂交链，但加入 RNase H 后 RNA 仍会被水解，不能说更稳定。</li><li><strong>D</strong> 错误：错因：RNase H 只水解 DNA-RNA 杂交链中的 RNA，瞬时接触或 R 环等松散结合未必被完全降解。</li></ul>
+        </details>
+      </article>
+      <!-- build:home-quiz:end -->
+            </div>
+          </div>
+
+          <div class="hq-done" id="homeQuizDone" hidden>
+            <p class="hq-score" id="homeQuizScore" role="status" aria-live="polite"></p>
+            <div class="hq-board">
+              <div class="hq-board-item"><span class="hq-board-num" id="hqWrongCount">—</span><span class="hq-board-label">待复活错题</span></div>
+              <div class="hq-board-item"><span class="hq-board-num" id="hqTodayCount">—</span><span class="hq-board-label">今日已刷</span></div>
+              <div class="hq-board-item"><span class="hq-board-num" id="hqAcc">—</span><span class="hq-board-label">正确率</span></div>
+              <div class="hq-board-item"><span class="hq-board-num" id="hqStreak">—</span><span class="hq-board-label">连续天数</span></div>
+            </div>
+            <nav class="hq-nav" aria-label="快捷导航">
+              <a href="#/practice" data-route="/practice">专项练习</a>
+              <a href="#/exam" data-route="/exam">模考</a>
+              <a href="#/wrongbook" data-route="/wrongbook">错题本</a>
+              <a href="#/knowledge-graph" data-route="/knowledge-graph">知识图谱</a>
+            </nav>
+            <div class="hq-actions">
+              <button type="button" class="hq-next" id="homeQuizNext">下一道</button>
+              <a class="hq-enter" href="#/practice" data-route="/practice">进入题库</a>
+            </div>
+          </div>
+
+          <p class="hq-meta">3541 道生物竞赛真题 · 无需注册 · 可离线</p>
+        </div>
+
+        <div class="hero-content hero-classic" id="homeHeroClassic" hidden>
           <h1 class="hero-title">把生物竞赛的知识点<br><span class="hero-title-accent">一道题一道题刷明白</span></h1>
           <p class="hero-subtitle">按 2025 联赛大纲组织：72 题全真模拟、模块化专项练习、错题自动收录。无需注册即可开始。</p>
           <div class="hero-actions">
@@ -544,10 +851,6 @@
               专项练习
             </button>
           </div>
-        </div>
-        <div class="hero-scroll-hint">
-          <span>向下滚动</span>
-          <div class="scroll-line"></div>
         </div>
       </section>
 
@@ -894,6 +1197,7 @@
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
   <script src="js/core/app-auth.js?v=20261031a" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>
+  <script src="js/pages/home-quiz.js?v=20261113a" defer></script>
   <script src="js/core/app-router.js?v=20261031a" defer></script>
   <script src="js/core/app-modules.js?v=20261031a" defer></script>
   <script src="js/core/app-pages.js?v=20261031a" defer></script>

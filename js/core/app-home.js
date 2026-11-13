@@ -44,6 +44,11 @@ function reinitHomeComponents() {
     }
   }
 
+  // 首屏「每日一题」：题面由构建期内联，这里只负责判分/翻页/工作台
+  if (window.HomeQuiz && typeof window.HomeQuiz.init === 'function') {
+    window.HomeQuiz.init();
+  }
+
   // 首页「题库总量」动态化：与练习页「可用题目」保持同一口径
   // （模块精编题 manifest.total_questions + 逻辑推理题 logic_questions.json）。
   // 若只读 manifest.total_questions 会漏掉逻辑推理题，导致与练习页数字对不上。
