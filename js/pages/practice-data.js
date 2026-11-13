@@ -262,12 +262,12 @@ function applyFilters() {
     return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch;
   };
 
-  // 基础知识题（MTF 格式；GGBO 真题单独归类，避免在「基础知识」中重复出现）
+  // 基础知识题（MTF 格式；其他题单独归类，避免在「基础知识」中重复出现）
   let basicQuestions = PracticeState.allQuestions.filter(
     (q) => q.category !== 'ggbo' && matchesBaseFilters(q)
   );
 
-  // GGBO 真题（第一届 GGBO 生物学竞赛，category="ggbo"）
+  // 其他题（第一届 GGBO 生物学竞赛，category="ggbo"）
   let ggboQuestions = [];
   if (PracticeState.selectedCategory === 'all' || PracticeState.selectedCategory === 'ggbo') {
     ggboQuestions = PracticeState.allQuestions.filter(
