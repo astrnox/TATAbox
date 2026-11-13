@@ -36,5 +36,97 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-b0d8d475": {
+    "category": "ggbo",
+    "concept": "熔解曲线与变异检测",
+    "difficulty": "league",
+    "explanation": "A【对】依据：C/G碱基对含三个氢键，T/A只有两个，氢键多则解链耗能高，故C/C熔解温度更高。\nB【对】依据：低温段T/C链荧光低于T/T基准，升温后曲线左移反超，表现为先低后高。\nC【错】错因：HRM对单碱基改变敏感，杂合突变形成错配使曲线形态明显改变，可识别A到T的突变。\nD【对】依据：HRM依据熔解曲线分型即可判断变异，无需Sanger测序，快速且成本较低。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 16 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-02-b0d8d475/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "高分辨率熔融曲线HRM 是一种研究基因变异的方法，在PCR 后通过升温使dsDNA 解链，减少荧光染料的结合从而降低荧光强度。不同DNA 绘制出的熔融曲线有所差异。如图， 请判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "C/C 解链温度大于T/T，这是因为二者氢键数目不同"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "若以T/T 链为基准，则T/C 链先低于基准，后高于基准"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "该方法无法识别出A 突变为T"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "HRM 无需测序即可快速识别基因变异"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "gene_mutation",
+      "module_4",
+      "遗传学",
+      "熔解曲线与变异检测"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-03-43e86b14": {
+    "category": "ggbo",
+    "concept": "基因组印记与亲源效应",
+    "difficulty": "league",
+    "explanation": "A【错】错因：IV-10并不携带缺失突变，其后代不会患病，概率并非1/2。\nB【对】依据：V-5为父源携带者不发病，与正常人婚配后代不患病；V-14为女性携带者，传递概率为1/2。\nC【错】错因：IV-1为母源携带者，IV-5为父源携带者，后代患病概率为1/2而非2/3。\nD【错】错因：该病符合父系印记，不存在外显率问题；外显率需群体调查，不能由单个家系计算。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 19 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-03-43e86b14/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图，这是一个罕见常染色体遗传病的家系，该遗传病由基因缺失导致，纯合将致死。涂色个体为携带缺失突变且发病；带点个体为携带缺失突变但表型正常。令A为正常等位基因，A—为缺失突变等位基因。请判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "IV-8 和IV-10 后代患病的概率为1/2"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "V-5 和正常人（非携带者）生育任意子代的患病概率为0；V-14 和正常人（非携带者）生育子代患病概率为1/2"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "若IV-1 与 IV-5 婚配，二者生育后代患病概率为2/3"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "该致病基因不完全外显，图中可计算外显率为5/8"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "gene_mutation",
+      "module_4",
+      "遗传学",
+      "基因组印记与亲源效应"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

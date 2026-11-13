@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-5c921383": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 179,
+    "module": "module_1",
+    "src": "cell_membrane",
+    "tag": "cell_membrane",
+    "tags": [
+      "cell_membrane",
+      "module_1",
+      "细胞生物学",
+      "CFTR突变与通道门控"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

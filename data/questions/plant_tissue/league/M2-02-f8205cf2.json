@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "营养器官显微结构",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图 1 为地钱气隙，由多个细胞围成，但只是气体交换腔，不能主动控制开闭。\nB【对】依据：图 2 箭头所指为蓝藻异形胞，可固氮，藻体在此处断裂可形成藻殖段进行营养繁殖。\nC【对】依据：图 3 为松针横切，叶肉细胞壁具凹陷，可扩大光合作用面积。\nD【错】错因：图 4 为维管形成层，属侧生分生组织，细胞质不浓、核不大，并非顶端分生组织特征。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 8 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-02-f8205cf2/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如图是一些植物营养器官的显微结构图像，请判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "图1 中的孔隙结构由多个细胞围成，可以控制开闭"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "图2 中箭头所指细胞可能具有固氮与营养繁殖的功能"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "图3 中植物的叶肉细胞有凹陷，可以增加光合作用面积"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "图4 中排列成砖墙状的小细胞有分化潜力，具有较大的细胞核与浓厚的细胞质"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_tissue",
+    "module_2",
+    "植物学",
+    "营养器官显微结构"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

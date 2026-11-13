@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-5d2f5336": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 138,
+    "module": "module_4",
+    "src": "population_gen",
+    "tag": "population_gen",
+    "tags": [
+      "population_gen",
+      "module_4",
+      "遗传学",
+      "非随机交配的基因型频率"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

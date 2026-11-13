@@ -36,5 +36,143 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M2-02-f8205cf2": {
+    "category": "ggbo",
+    "concept": "营养器官显微结构",
+    "difficulty": "league",
+    "explanation": "A【错】错因：图 1 为地钱气隙，由多个细胞围成，但只是气体交换腔，不能主动控制开闭。\nB【对】依据：图 2 箭头所指为蓝藻异形胞，可固氮，藻体在此处断裂可形成藻殖段进行营养繁殖。\nC【对】依据：图 3 为松针横切，叶肉细胞壁具凹陷，可扩大光合作用面积。\nD【错】错因：图 4 为维管形成层，属侧生分生组织，细胞质不浓、核不大，并非顶端分生组织特征。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 8 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M2-02-f8205cf2/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图是一些植物营养器官的显微结构图像，请判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "图1 中的孔隙结构由多个细胞围成，可以控制开闭"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "图2 中箭头所指细胞可能具有固氮与营养繁殖的功能"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "图3 中植物的叶肉细胞有凹陷，可以增加光合作用面积"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "图4 中排列成砖墙状的小细胞有分化潜力，具有较大的细胞核与浓厚的细胞质"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_tissue",
+      "module_2",
+      "植物学",
+      "营养器官显微结构"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M2-03-7d75eeb9": {
+    "category": "ggbo",
+    "concept": "细胞壁化学探针",
+    "difficulty": "league",
+    "explanation": "A【错】错因：CarboTag 是人工合成的小分子，探针需化学合成，不能在植物细胞内自主表达。\nB【对】依据：结合依赖可逆脱水缩合，碱性条件使基团离子化，缺水也影响平衡，稳定性下降。\nC【对】依据：反应式表明结合过程可逆，探针能与细胞壁组分可逆结合。\nD【对】依据：荧光基团换成亲水药物后仍可靶向细胞壁，实现植物药物递送。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 9 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M2-03-7d75eeb9/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "植物细胞壁是高度复杂的材料，由各种物质相互渗透的网络构成。研究人员针对植物细胞壁开发了一项全新的化学探针CarboTag。CarboTag 是一种小分子，能与植物细胞壁中的组分X 结合。与其他细胞壁染料相比，CarboTag 渗透植物组织速度更快、毒性更低。如图展示了CarboTag 探针化学合成的途径，加入荧光基团后即可作为荧光探针标记细胞壁。请根据所给信息，判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "CarboTag 探针的优势之一是能在植物细胞内自主合成并表达"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "CarboTag 的硼酸基团与细胞壁组分结合，在碱性pH 环境或水分严重不足时稳定性可能会受到影响"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "CarboTag 探针能够可逆结合植物的细胞壁"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "若将CarboTag 探针的荧光基团换成亲水的药物，则可以靶向细胞壁进行植物药物递送"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_tissue",
+      "module_2",
+      "植物学",
+      "细胞壁化学探针"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M2-04-be06ba01": {
+    "category": "ggbo",
+    "concept": "细胞壁组分鉴定",
+    "difficulty": "league",
+    "explanation": "A【对】依据：图中拟南芥幼苗荧光明显，说明其细胞壁被 CarboTag 探针成功标记。\nB【对】依据：绿藻、苔藓、蕨类细胞壁组成与被子植物相近，都可用该探针染色。\nC【错】错因：水霉细胞壁以纤维素为主却未被标记，说明组分 X 不是纤维素。\nD【对】依据：水霉和大肠杆菌均不被标记，而绿色植物富含果胶，故 X 很可能是果胶。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 9 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M2-04-be06ba01/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "为了检测细胞壁中与CarboTag 探针结合的组分X 化学成分，研究人员对拟南芥、水霉和大肠杆菌进行了CarboTag 荧光探针标记检测。a、b 图展示了被水霉感染的拟南芥幼苗的荧光和相应明场图像，其中红色圆圈标记为水霉感染处；c、d 图展示了大肠杆菌的结果，FM4-64 是一种细胞膜染料。请结合所学知识，判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "拟南芥幼苗的细胞壁被CarboTag 探针成功结合"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "推测绿藻、苔藓、蕨类的细胞壁都可以用基于CarboTag 的探针染色"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "CarboTag 探针在绿色植物中结合的组分X 很可能是纤维素"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "CarboTag 探针在绿色植物中结合的组分X 很可能是果胶"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_tissue",
+      "module_2",
+      "植物学",
+      "细胞壁组分鉴定"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

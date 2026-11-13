@@ -15,5 +15,56 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-748f0f99": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 245,
+    "module": "module_4",
+    "src": "genetic_engineering",
+    "tag": "genetic_engineering",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "Cre重组酶的细胞毒性"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-e4346a7f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 346,
+    "module": "module_4",
+    "src": "genetic_engineering",
+    "tag": "genetic_engineering",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "lox511自切除载体"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-04-2040deb6": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 27,
+    "module": "module_4",
+    "src": "genetic_engineering",
+    "tag": "genetic_engineering",
+    "tags": [
+      "genetic_engineering",
+      "module_4",
+      "遗传学",
+      "基因打靶的检测"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

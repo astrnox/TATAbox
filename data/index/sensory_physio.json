@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-18726078": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 57,
+    "module": "module_3",
+    "src": "sensory_physio",
+    "tag": "sensory_physio",
+    "tags": [
+      "sensory_physio",
+      "module_3",
+      "动物生理学",
+      "视网膜电图波形"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-03-40f2e604": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 56,
+    "module": "module_3",
+    "src": "sensory_physio",
+    "tag": "sensory_physio",
+    "tags": [
+      "sensory_physio",
+      "module_3",
+      "动物生理学",
+      "感音神经性耳聋"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

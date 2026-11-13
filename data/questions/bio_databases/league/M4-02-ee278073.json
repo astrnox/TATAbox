@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "癌症基因组数据库",
+  "difficulty": "league",
+  "explanation": "A【对】依据：cBioPortal整合TCGA等数据，可查看体细胞突变、拷贝数改变与DNA甲基化等信息。\nB【对】依据：TCGA是癌症基因组图谱计划，汇集基因组、转录组、蛋白质组等多组学资源。\nC【错】错因：GEO是基因表达综合数据库；BP、MF、CC是基因本体论GO的三类注释，二者被混淆。\nD【对】依据：Oncoprint按样本展示基因变异分布，有助于揭示癌症遗传基础与潜在治疗靶点。",
+  "question": "cBioPortal是一个可视化展示癌症研究样本基因组数据的平台，其数据来源于TCGA、ICGC、GEO等数据库。Oncoprint（基因突变图谱）是一种可视化工具，可以识别一组样本中的基因变异情况。下列有关说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "在cBioPortal中你可以看到体细胞突变、DNA拷贝数改变、DNA甲基化等数据"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "TCGA 是癌症组学数据库，汇集了有关癌症的基因组、转录组、蛋白质组等资源"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "GEO 即基因本体论，描述了基因产物的生命过程（BP）、分子功能（MF）和细胞组件（CC）"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Oncoprint 可视化工具有助于揭示癌症的遗传基础和潜在靶点"
+    }
+  ],
+  "subject": "生物信息学",
+  "tags": [
+    "bio_databases",
+    "module_4",
+    "生物信息学",
+    "癌症基因组数据库"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

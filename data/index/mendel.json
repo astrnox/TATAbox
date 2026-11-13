@@ -1,4 +1,21 @@
 {
+  "M4-02-23dc17c1": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 124,
+    "module": "module_4",
+    "src": "mendel",
+    "tag": "mendel",
+    "tags": [
+      "mendel",
+      "module_4",
+      "遗传学",
+      "复等位基因与多倍体基因型"
+    ],
+    "target": "competition",
+    "year": null
+  },
   "M4-02-b7873823": {
     "diff": "league",
     "difficulty": "league",
@@ -13,6 +30,23 @@
       "遗传学",
       "自由组合定律",
       "连锁不平衡"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-762a12bf": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 135,
+    "module": "module_4",
+    "src": "mendel",
+    "tag": "mendel",
+    "tags": [
+      "mendel",
+      "module_4",
+      "遗传学",
+      "孤雌生殖与亲缘系数"
     ],
     "target": "competition",
     "year": null

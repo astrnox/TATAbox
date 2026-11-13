@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "糖原代谢调控",
+  "difficulty": "league",
+  "explanation": "A【对】依据：糖原磷酸化酶 a 为磷酸化形式，b 型为去磷酸化形式。\nB【对】依据：去甲肾上腺素通过 cAMP-PKA 促进磷酸化，使磷酸化酶转为 a 型。\nC【对】依据：肝糖原磷酸化酶 a 受葡萄糖抑制，且肝脏对 AMP 不敏感。\nD【错】错因：胰岛素信号使糖原合酶去磷酸化而激活，不是磷酸化失活。",
+  "question": "糖原是动物体内重要的糖类燃料存库，下列关于糖原代谢调控说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "肌肉中糖原磷酸化酶有两种形态：a 型和b 型，其中a 型为磷酸化状态"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "去甲肾上腺素可以促进肌肉中糖原磷酸化酶的磷酸化"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "肝脏中糖原磷酸化酶不受AMP 影响，a 型糖原磷酸化酶会被葡萄糖抑制"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "糖原合酶在胰岛素信号通路中被磷酸化失活"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "glycolysis",
+    "module_1",
+    "生物化学",
+    "糖原代谢调控"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

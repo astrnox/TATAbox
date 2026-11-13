@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "RNase H",
+  "difficulty": "league",
+  "explanation": "A【错】错因：小鼠寡核苷酸与 U7 snRNA 结合更紧密，RNase H 水解更彻底，蛋白合成才被阻断。\nB【错】错因：ssRNA 不被 RNase H 水解成立，但新冠病毒 RNA 不进核且有膜结构隔离，不是同一原因。\nC【错】错因：提高盐浓度虽稳定杂交链，但加入 RNase H 后 RNA 仍会被水解，不能说更稳定。\nD【错】错因：RNase H 只水解 DNA-RNA 杂交链中的 RNA，瞬时接触或 R 环等松散结合未必被完全降解。",
+  "question": "在真核生物的组蛋白mRNA 上有一个与U7 snRNA 结合的位点，在不同物种中有所区别。在人细胞核提取物中加入包含该位点的小鼠DNA 寡核苷酸和RNase H，发现组蛋白合成完全被阻断；但如果加入人类的寡核苷酸则不被阻断。结合所学知识，判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "人寡核苷酸和U7 snRNA 结合比小鼠更紧密"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "实验结果说明单链RNA 对RNase H 不敏感，这正是新冠病毒基因组在体内不被降解的原因"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "在环境中加大钠盐浓度，DNA-RNA 杂交双链在RNase H 存在情况下更稳定"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "细胞核内所有与DNA 结合的RNA 都会被RNase H 水解"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "RNase H"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

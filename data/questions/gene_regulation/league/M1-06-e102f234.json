@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "昼夜节律调控",
+  "difficulty": "league",
+  "explanation": "A【对】依据：敲减 Atx2 后 PER 表达下降，说明 Atx2 促进 PER 表达。\nB【对】依据：PER 减少使昼夜周期显著延长，周期放缓。\nC【错】错因：TYF 的反式激活依赖 Atx2，二者功能并不完全冗余。\nD【对】依据：Atx2 被耗尽后 TYF 对 PER 的促进作用减弱，说明 TYF 需要 Atx2。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 5 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-06-e102f234/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "使用RNAi 技术敲减Atx2 的表达，检测相关的实验结果。（A）Atx2 RNAi 和 tyf 突变对昼夜节律的影响。 TD2 是 tim-GAL4、UAS-dicer2、PD2 的缩写。（B）在果蝇 S2R+ 细胞中，在存在或不存在 per 3′-UTR 的情况下，用 MS2 结合位点控制的萤火虫荧光素酶报告质粒 （FLUC） 共转染 MS2 和 TYF-MS2 表达质粒。MS2 是一种RNA 结合蛋白。（C）定量 sLNvs、lLNvs、LNds 和 DN1 中的 ATX2 水平。 判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Atx2 能促进PER 表达"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "PER 的减少可能会导致果蝇昼夜周期放缓"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Atx2 和TYF 在促进PER 表达功能上完全冗余"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "TYF 需要Atx2 来促进PER 翻译"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_1",
+    "分子生物学",
+    "昼夜节律调控"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

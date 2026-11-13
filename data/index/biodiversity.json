@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-94384f8a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 310,
+    "module": "module_3",
+    "src": "biodiversity",
+    "tag": "biodiversity",
+    "tags": [
+      "biodiversity",
+      "module_3",
+      "生态学",
+      "条纹图案的演化多样性"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

@@ -15,5 +15,73 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-0039d2d5": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 132,
+    "module": "module_3",
+    "src": "nervous_sys",
+    "tag": "nervous_sys",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "突触可塑性"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-03-8007ad0f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 117,
+    "module": "module_3",
+    "src": "nervous_sys",
+    "tag": "nervous_sys",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "树突棘"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-04-20d53129": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 94,
+    "module": "module_3",
+    "src": "nervous_sys",
+    "tag": "nervous_sys",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "咖啡因的剂量效应"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-05-722cf786": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 42,
+    "module": "module_3",
+    "src": "nervous_sys",
+    "tag": "nervous_sys",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "眼肌的脑神经支配"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

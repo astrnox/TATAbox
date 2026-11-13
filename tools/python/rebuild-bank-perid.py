@@ -151,7 +151,9 @@ def normalize_question(qid, q, tag):
         if labels != ["A", "B", "C", "D"]:
             errors.append(f"label 不连续: {labels}")
         n_true = sum(1 for s in sq if s.get("answer") in (True, "true"))
-        if n_true < 1 or n_true > 3:
+        # GGBO 真题按原卷答案导入，存在全错（0 个正确项）的题组，
+        # 这类整卷录入不受「1~3 个正确项」的原创质量约束。
+        if q.get("category") != "ggbo" and (n_true < 1 or n_true > 3):
             errors.append(f"正确答案数 {n_true} 越界(应为1-3)")
         for s in sq:
             if not isinstance(s.get("answer"), bool):

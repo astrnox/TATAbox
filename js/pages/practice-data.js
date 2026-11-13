@@ -250,8 +250,8 @@ function applyFilters() {
     return selectedSources.indexOf(key) >= 0;
   };
 
-  // 基础知识题（MTF 格式）
-  let basicQuestions = PracticeState.allQuestions.filter((q) => {
+  // 公共筛选条件（模块 / 难度 / 目标 / 考点 / 来源）
+  const matchesBaseFilters = function (q) {
     const subjectMatch = allModulesSelected || _moduleMatches(q, activeSubjects, PracticeState.selectedModules);
     const qDiff = diffNormalize(q.difficulty);
     const diffMatch = allDiffsSelected || selectedDiffsNorm.includes(qDiff);
@@ -279,7 +279,20 @@ function applyFilters() {
       kgCategoryMatch = q.subject === PracticeState.kgCategory;
     }
     return subjectMatch && diffMatch && targetMatch && conceptMatch && kgCategoryMatch && sourceMatch(q);
-  });
+  };
+
+  // 基础知识题（MTF 格式；GGBO 真题单独归入「其他」，避免在「基础知识」中重复出现）
+  let basicQuestions = PracticeState.allQuestions.filter(
+    (q) => q.category !== 'ggbo' && matchesBaseFilters(q)
+  );
+
+  // 其他题目（第一届 GGBO 生物学竞赛，category="ggbo"）
+  let ggboQuestions = [];
+  if (PracticeState.selectedCategory === 'all' || PracticeState.selectedCategory === 'ggbo') {
+    ggboQuestions = PracticeState.allQuestions.filter(
+      (q) => q.category === 'ggbo' && matchesBaseFilters(q)
+    );
+  }
 
   // 逻辑推理题（单选格式）
   let logicQuestions = [];
@@ -323,8 +336,10 @@ function applyFilters() {
     PracticeState.filteredQuestions = basicQuestions;
   } else if (PracticeState.selectedCategory === 'logic') {
     PracticeState.filteredQuestions = logicQuestions;
+  } else if (PracticeState.selectedCategory === 'ggbo') {
+    PracticeState.filteredQuestions = ggboQuestions;
   } else {
-    PracticeState.filteredQuestions = [...basicQuestions, ...logicQuestions, ...leagueQuestions];
+    PracticeState.filteredQuestions = [...basicQuestions, ...logicQuestions, ...leagueQuestions, ...ggboQuestions];
   }
 }
 

@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "基因树与物种树冲突",
+  "difficulty": "league",
+  "explanation": "A【对】依据：祖先种群中基因X存在多个等位基因，未完全随物种分化传递，属不完全谱系分选。\nB【对】依据：杂交后代反复回交使Micr的X基因渗入Dipr，基因渐渗导致基因树与物种树冲突。\nC【对】依据：两支系演化都很快，趋同突变与随机噪音造成长枝吸引，使Dipr与Micr被错误聚在一起。\nD【错】错因：接合是细菌间接触转移质粒的方式，有袋类为真核生物，不存在接合式水平基因转移。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 19 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-04-6f54fcb5/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如图是四种有袋类动物的物种系统发育树，其中左图为利用基因组数据建立的物种树，右图为利用同源基因X 建立的基因树。这两个物种树有差异的原因可能是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "在Dasy、Dipr 和Micr 的共同祖先发生了X 的多态化，且这些序列未完全由后代继承"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Dipr 和Micr 的杂交后代与Dipr 反复回交导致Micr 的X 基因进入Dipr 中"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Dipr 和Micr 物种演化速率远快于另外两个物种"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Dipr 和Micr 发生了由接合引起的水平基因转移"
+    }
+  ],
+  "subject": "进化生物学",
+  "tags": [
+    "phylogeny",
+    "module_4",
+    "进化生物学",
+    "基因树与物种树冲突"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

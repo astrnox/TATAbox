@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "免疫共沉淀",
+  "difficulty": "league",
+  "explanation": "A【对】依据：IP 组中拉下 PCDH19 的同时拉下 Cadherin，说明二者结合或处于同一复合物。\nB【对】依据：Lysate 中 HEMI♂ 的 PCDH19 条带极弱，说明突变导致蛋白表达量显著下降。\nC【错】错因：HEMI♂ 无 PCDH19 蛋白但 LTP 正常，仅凭蛋白缺失不能证明其直接致病。\nD【对】依据：HET♀ 一部分细胞表达正常蛋白，总蛋白量应介于 WT 与 HEMI 之间。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 2 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-03-e0552dcf/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "为研究PCDH19 相关性癫痫患病分子机制，研究者对小鼠的Cadherin 或Pcdh19 进行了免疫印迹检测。Lysate 为细胞裂解物。根据上述实验结果，判断下列陈述的正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Pcdh19 可与Cadherin 结合"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "该疾病中的PCDH19 突变会导致Pcdh19 表达量下降"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Pcdh19 的缺失导致了PCDH19 相关性癫痫"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "推测雌性杂合子HET♀的Pcdh19 表达量介于WT♂和HEMI♂之间"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "molecular_tech",
+    "module_1",
+    "生物化学",
+    "免疫共沉淀"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "细胞壁化学探针",
+  "difficulty": "league",
+  "explanation": "A【错】错因：CarboTag 是人工合成的小分子，探针需化学合成，不能在植物细胞内自主表达。\nB【对】依据：结合依赖可逆脱水缩合，碱性条件使基团离子化，缺水也影响平衡，稳定性下降。\nC【对】依据：反应式表明结合过程可逆，探针能与细胞壁组分可逆结合。\nD【对】依据：荧光基团换成亲水药物后仍可靶向细胞壁，实现植物药物递送。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 9 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-03-7d75eeb9/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "植物细胞壁是高度复杂的材料，由各种物质相互渗透的网络构成。研究人员针对植物细胞壁开发了一项全新的化学探针CarboTag。CarboTag 是一种小分子，能与植物细胞壁中的组分X 结合。与其他细胞壁染料相比，CarboTag 渗透植物组织速度更快、毒性更低。如图展示了CarboTag 探针化学合成的途径，加入荧光基团后即可作为荧光探针标记细胞壁。请根据所给信息，判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "CarboTag 探针的优势之一是能在植物细胞内自主合成并表达"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "CarboTag 的硼酸基团与细胞壁组分结合，在碱性pH 环境或水分严重不足时稳定性可能会受到影响"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "CarboTag 探针能够可逆结合植物的细胞壁"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "若将CarboTag 探针的荧光基团换成亲水的药物，则可以靶向细胞壁进行植物药物递送"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_tissue",
+    "module_2",
+    "植物学",
+    "细胞壁化学探针"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

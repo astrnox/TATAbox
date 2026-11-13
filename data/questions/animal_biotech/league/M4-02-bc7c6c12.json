@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "基因敲除与敲减策略",
+  "difficulty": "league",
+  "explanation": "A【对】依据：HR组细胞生长曲线与对照接近，说明Cre被自切除后细胞毒性明显降低。\nB【错】错因：lox位点位于塞子两侧，Cre切除的是塞子，β-半乳糖苷酶解除抑制而表达，并未被敲除。\nC【错】错因：完全敲除易引发代偿反应，敲减更温和，二者只能互补使用，不能相互替代。\nD【错】错因：被切除的只是Cre基因，靶基因突变仍可经生殖细胞遗传，可用于构建可遗传模型。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 17 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-02-bc7c6c12/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "研究人员设计了293xLac 细胞，这是293 个细胞用一个质粒稳定转染，质粒由CMV 直接早期启动子和一个 lox P 位点组成，下游是许多旨在防止下游开放阅读框表达的“塞子”特征，然后是另一个 lox P 位点，最后是 β-半乳糖苷酶基因。研究人员还做了如下实验： （A）293xLac Cre 报告细胞同时感染三种病毒（每种 10 μl）：HR-MMPCreGFP（HR 表明在 3′ LTR 的 U3 区域存在 lox 511 位点）、MMPCreGFP（与 HR-MMPCreGFP 相同，但缺少 lox 511 位点）或对照 GFP 病毒。感染后 2 天，固定细胞并对 β- 半乳糖苷酶活性进行染色。（D） 此处显示了被各类病毒载体感染的细胞的生长曲线。 根据以上所有研究结果，你能推断出什么结论：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Hit and run 策略有效地降低了Cre 重组酶对细胞的损伤作用"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "在感染成功的293xLac 细胞中β-半乳糖苷酶被有效地敲除了"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "推测使用该系统敲除(knock out)可以代替不能完全抑制的siRNA 敲减(knock down)"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "由于Cre 基因转入后即迅速被敲除，Hit and run 策略并不适用于构建可遗传的致病突变体模型"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "animal_biotech",
+    "module_4",
+    "遗传学",
+    "基因敲除与敲减策略"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

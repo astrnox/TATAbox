@@ -33,5 +33,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-03-e0552dcf": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 89,
+    "module": "module_1",
+    "src": "molecular_tech",
+    "tag": "molecular_tech",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物化学",
+      "免疫共沉淀"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-04-c9c314fc": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 167,
+    "module": "module_1",
+    "src": "molecular_tech",
+    "tag": "molecular_tech",
+    "tags": [
+      "molecular_tech",
+      "module_1",
+      "生物化学",
+      "磷酸化质谱"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

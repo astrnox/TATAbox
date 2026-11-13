@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "人类干扰与动物活动",
+  "difficulty": "league",
+  "explanation": "A【错】错因：斜率大于零只表示体重增大有增加移动距离的趋势，两栖类移动距离始终为负，推不出远离干扰。\nB【对】依据：鸟类的移动距离与栖息地范围均随体重增大且多为正值，大型鸟类可借此扩大捕食范围。\nC【对】依据：恒温动物变化趋势相近，两栖类明显偏负，说明体温调节能力与体型共同影响活动反应。\nD【错】错因：纵轴是相对变化率的对数值，图中各点并不构成直线，不能按线性关系解读。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 15 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-03-dcb8d269/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "为研究人类干扰对动物活动的影响，研究人员探究了在人类活动影响下鸟类(birds)、哺乳类(mammals)、节肢动物(arthropods)和两栖动物(amphibians)的移动距离（MD）和栖息地范围（HR）变化。 下图是不同体重的动物的变化趋势，其中横轴表示个体质量，纵轴表示相对变化率的对数值。试判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "在人类干扰下，除节肢动物外体重更大的动物都偏向于增加移动距离，从而远离干扰地区"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "在人类干扰下，大型鸟类可能通过增大捕食面积获取食物"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "体温调节能力可能与体型共同调节动物活动的反应"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "右图可知大多数动物的质量和移动距离的相对变化率成线性关系"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "behavioral_eco",
+    "module_3",
+    "生态学",
+    "人类干扰与动物活动"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

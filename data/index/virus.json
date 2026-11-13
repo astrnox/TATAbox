@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-ab35519f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 34,
+    "module": "module_2",
+    "src": "virus",
+    "tag": "virus",
+    "tags": [
+      "virus",
+      "module_2",
+      "微生物学",
+      "流感病毒生活史"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

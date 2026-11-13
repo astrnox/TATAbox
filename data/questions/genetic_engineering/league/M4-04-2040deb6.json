@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "基因打靶的检测",
+  "difficulty": "league",
+  "explanation": "A【错】错因：未打靶成功的细胞同样可能没有绿色荧光，不能凭无荧光就判定打靶成功。\nB【错】错因：未转染成功的细胞也呈阴性，原位杂交无法区分未转染与转染后Cre被切除。\nC【错】错因：目标基因两侧loxP同向重复，上下游引物易互补形成二聚体，扩增效率低而出现假阴性。\nD【对】依据：Southern blot以目标基因为探针直接检测DNA重排，可确认打靶是否成功。",
+  "question": "为验证是否获得打靶成功的细胞，研究者可以采用的方法有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "将细胞置于荧光显微镜下观察，不具有绿色荧光的细胞即为打靶成功"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "选取与Cre 基因互补的荧光探针，对细胞进行荧光原位杂交，打靶成功的细胞呈阳性"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "提取细胞内DNA，分别针对目标基因的5'端loxP 和3'端loxP 序列制作上游和下游引物，进行PCR 扩增，检测是否出现目标基因条带"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "提取细胞中的DNA，以目标基因为探针进行Southern Blot"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "genetic_engineering",
+    "module_4",
+    "遗传学",
+    "基因打靶的检测"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

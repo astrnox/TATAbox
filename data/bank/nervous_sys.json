@@ -36,5 +36,182 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M3-02-0039d2d5": {
+    "category": "ggbo",
+    "concept": "突触可塑性",
+    "difficulty": "league",
+    "explanation": "A【错】错因：HEMI♂ 突变神经元比例更高但 LTP 正常，HET♀ 比例较低却受损，不符合剂量效应。\nB【错】错因：PCDH19 疾病多见于杂合女性，半合子男性多无症状，并非男性更重。\nC【对】依据：临床与实验均显示杂合女性症状更多，推测症状多见于杂合女性成立。\nD【错】错因：杂合突变 HET♀ 的 LTP 已明显受损，并非不影响。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 1 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M3-02-0039d2d5/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "研究人员利用高频刺激诱导不同基因型及性别小鼠的海马脑片长时程增强（LTP），记录场兴奋性突触后电位 （fEPSP）的变化如图，WT 表示正常纯合子，HET♀为雌性杂合子，HEMI♂为雄性半合子。下列对 Pcdh19 基因突变影响LTP 的机制推断中，说法正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "PCDH19 基因突变对海马LTP 的损害符合剂量效应， 神经元群体中表达突变蛋白比例越高，LTP 受损越严重"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "PCDH19 疾病在男性中表现得更严重"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "推测PCDH19 疾病的症状多见于杂合子女性"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "无论性别如何，Pcdh19 基因杂合突变（HET）均不影响 LTP"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "突触可塑性"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M3-03-8007ad0f": {
+    "category": "ggbo",
+    "concept": "树突棘",
+    "difficulty": "league",
+    "explanation": "A【错】错因：图 d 显示杂合子树突棘密度并无显著增加，代偿性过度生成不成立。\nB【错】错因：各基因型在雄雌之间均无显著的树突棘增减差异，未见性别二态性。\nC【错】错因：实验未涉及雌性纯合缺失型，且其树突棘发育并未显示完全受阻。\nD【错】错因：图中杂合子个体间未见极端差异，无法支持该推论。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 2 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M3-03-8007ad0f/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "PCDH19 相关性癫痫可能会引发认知障碍和智力障碍。为研究神经层面的致病机制，研究人员利用荧光标记观察了不同Pcdh19 基因型小鼠海马神经元的树突棘形态（图c），并统计了树突棘密度（图d）。根据提供的图表数据， 下列推论合理的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "雌性杂合子（X+/X-）的树突棘密度显著增加， Pcdh19 基因型杂合状态可能导致了代偿性的突触过度生成"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "Pcdh19 基因对突触发育的影响具有明显的性别二态性：在雄性中表现为树突棘减少，而在雌性中则表现为树突棘密度增加"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "该疾病是雌性纯合缺失型（X⁻/X⁻）树突棘发育完全受阻导致的"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "该疾病是雌性杂合子（X⁺/X⁻）树突棘密度在不同个体间出现极端的个体差异导致的"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "树突棘"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M3-04-20d53129": {
+    "category": "ggbo",
+    "concept": "咖啡因的剂量效应",
+    "difficulty": "league",
+    "explanation": "A【对】依据：正常剂量咖啡因阻断腺苷受体，解除腺苷的抑制，提高神经兴奋性。\nB【错】错因：少量咖啡因使儿茶酚胺释放增加而非降低，故出现反射性心动过缓。\nC【对】依据：中毒剂量抑制磷酸二酯酶，cAMP 降解减少而堆积，增强心肌活动。\nD【对】依据：过量咖啡因激活雷诺丁受体，促使肌浆网释放钙，诱发心律失常。",
+    "question": "人体摄入不同剂量的咖啡因后，可能会引起相互拮抗的临床反应，如少量摄入咖啡因可能引起高血压和心动过缓，而过量引起中毒时则会出现低血压与心动过速。下列对于咖啡因作用的叙述能够解释这些现象的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "正常剂量的咖啡因可以作为神经细胞腺苷受体阻断剂"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "少量咖啡因可以降低儿茶酚胺水平"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "过量的咖啡因会抑制磷酸二酯酶，增加胞内cAMP 水平"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "过量咖啡因还可激活骨骼肌、心肌和神经元上的雷诺丁受体"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "咖啡因的剂量效应"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M3-05-722cf786": {
+    "category": "ggbo",
+    "concept": "眼肌的脑神经支配",
+    "difficulty": "league",
+    "explanation": "A【对】依据：上斜肌由滑车神经支配，图中 M 所连接肌束的位置与之相符。\nB【错】错因：按肌束的附着位置与走行判断，④应为其他眼肌，并非下直肌。\nC【对】依据：外直肌由第Ⅵ对脑神经支配，其指向图示左侧，故判定为鱼的右眼。\nD【对】依据：这些眼肌均源于耳前肌节 I，属头部体节肌，N 所支配的四块来源相同。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 13 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M3-05-722cf786/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "右图是鱼类的眼肌支配示意图，其中①-⑥表示肌肉，M、N、K 表示脑神经。请判断正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "M 对应滑车神经"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "④对应下直肌"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "这是鱼的右眼"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "N 支配的四块肌肉均来自耳前肌节I"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "nervous_sys",
+      "module_3",
+      "动物生理学",
+      "眼肌的脑神经支配"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

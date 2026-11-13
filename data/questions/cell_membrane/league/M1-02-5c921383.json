@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "CFTR突变与通道门控",
+  "difficulty": "league",
+  "explanation": "A【对】依据：G551D 电流极小，且 ATP 与 PKA 不能将其激活，表现为与 ATP 无关。\nB【对】依据：G1349D 电流虽小于野生型，但可被 ATP 激活，明显大于 G551D。\nC【错】错因：去除 ATP 后仍有静息泄露电流，并非完全没有电流形成。\nD【对】依据：G551D 突变位于核苷酸结合结构域，使其丧失对 ATP 的响应能力。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 11 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-02-5c921383/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "根据对CFTR 蛋白质结构的研究，我们知道了CFTR 有5 个结构域组成：2 个形成氯离子通道的跨膜结构域、 2 个核苷酸结合结构域和1 个调节结构域。下面是针对G551D 和G1349D 两种突变的膜片钳记录单通道电流结果 （图A-D），以及平均电流大小（图E）。图中缩写意义：ATP 腺苷三磷酸；PKA 蛋白激酶A；WT 野生型。试判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "G551D 突变体通道的电流很小，且与ATP 无关"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "G1349D 突变体通道的电流比G551D 大，受到ATP 的激活"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "受到ATP 激活的通道在去除ATP 后没有任何电流形成"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "可以推测G551D 可能影响了核苷酸结合结构域的功能"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "cell_membrane",
+    "module_1",
+    "细胞生物学",
+    "CFTR突变与通道门控"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}
