@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-f0b25458": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 110,
+    "module": "module_2",
+    "src": "plant_water_mineral",
+    "tag": "plant_water_mineral",
+    "tags": [
+      "plant_water_mineral",
+      "module_2",
+      "植物生理学",
+      "凯氏带与木栓质"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

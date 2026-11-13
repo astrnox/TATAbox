@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "植物命名法规",
+  "difficulty": "league",
+  "explanation": "A【对】依据：双名法中属名首字母大写，种加词及属下各级加词均小写，选项表述正确。\nB【错】错因：Oryza 为属名，sativa 为种加词，二者共同构成种的学名。\nC【错】错因：var. 表示变种，不是亚种；亚种应以 subsp. 表示。\nD【对】依据：拉丁文语义稳定、不随日常语言变化，有利于学名的准确与统一。",
+  "question": "David 先生说：“我做了错饭，错误的是饭”，意为用错误的食材做成了饭。经Penny 小姐调查，David 先生使用的不是学名为Oryza sativa 的植物，而是一种学名为Hordeum vulgare var. coelester 的植物。关于文中出现的学名，下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "根据林奈双名法，属名首字母应大写，属名以下各级名称首字母小写"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Oryza 为属名，sativa 为种名"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "var.coelester 表示是H.vulgare 的亚种"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "生物命名使用拉丁文书写有利于保证命名的准确性"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_classification",
+    "module_4",
+    "植物学",
+    "植物命名法规"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

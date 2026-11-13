@@ -33,5 +33,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-03-e54a13d3": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 340,
+    "module": "module_1",
+    "src": "amino_acid_metab",
+    "tag": "amino_acid_metab",
+    "tags": [
+      "amino_acid_metab",
+      "module_1",
+      "生物化学",
+      "蛋白质折叠能量"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

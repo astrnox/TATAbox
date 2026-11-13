@@ -2,7 +2,7 @@
   "_meta": {
     "generated_at": "2026-11-13",
     "schema_version": 1,
-    "total": 101
+    "total": 181
   },
   "questions": {
     "M1-01-212edebf": {
@@ -225,6 +225,17 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M1-02-4c9cc03b": {
+      "concept": "脂肪酸β氧化",
+      "difficulty": "league",
+      "file": "lipid_metab/league/M1-02-4c9cc03b.json",
+      "has_image": false,
+      "len": 48,
+      "subject": "生物化学",
+      "tag": "lipid_metab",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M1-02-57119b7a": {
       "concept": "TCA 循环的致癌代谢物与回补维持",
       "difficulty": "league",
@@ -244,6 +255,50 @@
       "len": 50,
       "subject": "生物技术",
       "tag": "molecular_tech",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-02-5a12d7d9": {
+      "concept": "线粒体凋亡",
+      "difficulty": "league",
+      "file": "cell_death/league/M1-02-5a12d7d9.json",
+      "has_image": true,
+      "len": 525,
+      "subject": "细胞生物学",
+      "tag": "cell_death",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-02-5c921383": {
+      "concept": "CFTR突变与通道门控",
+      "difficulty": "league",
+      "file": "cell_membrane/league/M1-02-5c921383.json",
+      "has_image": true,
+      "len": 179,
+      "subject": "细胞生物学",
+      "tag": "cell_membrane",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-02-607534a2": {
+      "concept": "引物与保真度",
+      "difficulty": "league",
+      "file": "replication/league/M1-02-607534a2.json",
+      "has_image": false,
+      "len": 85,
+      "subject": "分子生物学",
+      "tag": "replication",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-02-66d83490": {
+      "concept": "碳酸酐酶与钙沉积",
+      "difficulty": "league",
+      "file": "enzyme/league/M1-02-66d83490.json",
+      "has_image": true,
+      "len": 226,
+      "subject": "生物化学",
+      "tag": "enzyme",
       "target": "competition",
       "type": "mtf"
     },
@@ -269,6 +324,72 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M1-02-c24979e0": {
+      "concept": "溶酶体贮积病",
+      "difficulty": "league",
+      "file": "organelle/league/M1-02-c24979e0.json",
+      "has_image": false,
+      "len": 72,
+      "subject": "细胞生物学",
+      "tag": "organelle",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-02-e1b50d23": {
+      "concept": "碳原子追踪",
+      "difficulty": "league",
+      "file": "glycolysis/league/M1-02-e1b50d23.json",
+      "has_image": false,
+      "len": 56,
+      "subject": "生物化学",
+      "tag": "glycolysis",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-03-4b20cbef": {
+      "concept": "细胞死亡方式",
+      "difficulty": "league",
+      "file": "cell_death/league/M1-03-4b20cbef.json",
+      "has_image": true,
+      "len": 75,
+      "subject": "细胞生物学",
+      "tag": "cell_death",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-03-bd29dd31": {
+      "concept": "糖原代谢调控",
+      "difficulty": "league",
+      "file": "glycolysis/league/M1-03-bd29dd31.json",
+      "has_image": false,
+      "len": 34,
+      "subject": "生物化学",
+      "tag": "glycolysis",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-03-d47a7e44": {
+      "concept": "真菌动作电位与适应",
+      "difficulty": "league",
+      "file": "cell_signal/league/M1-03-d47a7e44.json",
+      "has_image": false,
+      "len": 120,
+      "subject": "细胞生物学",
+      "tag": "cell_signal",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-03-e0552dcf": {
+      "concept": "免疫共沉淀",
+      "difficulty": "league",
+      "file": "molecular_tech/league/M1-03-e0552dcf.json",
+      "has_image": true,
+      "len": 89,
+      "subject": "生物化学",
+      "tag": "molecular_tech",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M1-03-e2de52ed": {
       "concept": "lncRNA XIST 与 X 染色体失活",
       "difficulty": "league",
@@ -277,6 +398,17 @@
       "len": 62,
       "subject": "分子生物学",
       "tag": "rna_biology",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-03-e54a13d3": {
+      "concept": "蛋白质折叠能量",
+      "difficulty": "league",
+      "file": "amino_acid_metab/league/M1-03-e54a13d3.json",
+      "has_image": true,
+      "len": 340,
+      "subject": "生物化学",
+      "tag": "amino_acid_metab",
       "target": "competition",
       "type": "mtf"
     },
@@ -302,6 +434,28 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M1-04-a1f25068": {
+      "concept": "GSDMD寡聚化",
+      "difficulty": "league",
+      "file": "cell_death/league/M1-04-a1f25068.json",
+      "has_image": true,
+      "len": 123,
+      "subject": "细胞生物学",
+      "tag": "cell_death",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-04-c9c314fc": {
+      "concept": "磷酸化质谱",
+      "difficulty": "league",
+      "file": "molecular_tech/league/M1-04-c9c314fc.json",
+      "has_image": true,
+      "len": 167,
+      "subject": "生物化学",
+      "tag": "molecular_tech",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M1-05-0d21288c": {
       "concept": "解偶联剂与转运抑制剂对线粒体膜电位的影响",
       "difficulty": "league",
@@ -310,6 +464,61 @@
       "len": 158,
       "subject": "生物化学",
       "tag": "oxidative_phos",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-05-b3ac0f9d": {
+      "concept": "RNA干扰",
+      "difficulty": "league",
+      "file": "gene_regulation/league/M1-05-b3ac0f9d.json",
+      "has_image": false,
+      "len": 73,
+      "subject": "分子生物学",
+      "tag": "gene_regulation",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-05-e136b55a": {
+      "concept": "RNase H",
+      "difficulty": "league",
+      "file": "rna_biology/league/M1-05-e136b55a.json",
+      "has_image": false,
+      "len": 130,
+      "subject": "分子生物学",
+      "tag": "rna_biology",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-06-e102f234": {
+      "concept": "昼夜节律调控",
+      "difficulty": "league",
+      "file": "gene_regulation/league/M1-06-e102f234.json",
+      "has_image": true,
+      "len": 258,
+      "subject": "分子生物学",
+      "tag": "gene_regulation",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-06-e3ead964": {
+      "concept": "液液相分离",
+      "difficulty": "league",
+      "file": "rna_biology/league/M1-06-e3ead964.json",
+      "has_image": true,
+      "len": 335,
+      "subject": "生物化学",
+      "tag": "rna_biology",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M1-07-249f7ec7": {
+      "concept": "RNA结合蛋白",
+      "difficulty": "league",
+      "file": "rna_biology/league/M1-07-249f7ec7.json",
+      "has_image": true,
+      "len": 385,
+      "subject": "分子生物学",
+      "tag": "rna_biology",
       "target": "competition",
       "type": "mtf"
     },
@@ -489,12 +698,67 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M2-02-0c8f10b6": {
+      "concept": "单细胞C4途径",
+      "difficulty": "league",
+      "file": "photorespiration_c4/league/M2-02-0c8f10b6.json",
+      "has_image": true,
+      "len": 178,
+      "subject": "植物生理学",
+      "tag": "photorespiration_c4",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-25a7bf88": {
+      "concept": "无氮培养基富集固氮菌",
+      "difficulty": "league",
+      "file": "microbial_metabolism/league/M2-02-25a7bf88.json",
+      "has_image": false,
+      "len": 122,
+      "subject": "微生物学",
+      "tag": "microbial_metabolism",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-29b2fa9e": {
+      "concept": "种子结构与萌发",
+      "difficulty": "league",
+      "file": "plant_repro/league/M2-02-29b2fa9e.json",
+      "has_image": true,
+      "len": 32,
+      "subject": "植物学",
+      "tag": "plant_repro",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M2-02-358991fe": {
       "concept": "光合电子传递的线性与环式途径",
       "difficulty": "league",
       "file": "photosynthesis/league/M2-02-358991fe.json",
       "has_image": true,
       "len": 133,
+      "subject": "植物生理学",
+      "tag": "photosynthesis",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-3ebd9c03": {
+      "concept": "严紧反应",
+      "difficulty": "league",
+      "file": "bacteria/league/M2-02-3ebd9c03.json",
+      "has_image": true,
+      "len": 126,
+      "subject": "微生物学",
+      "tag": "bacteria",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-55076afa": {
+      "concept": "光抑制与光保护",
+      "difficulty": "league",
+      "file": "photosynthesis/league/M2-02-55076afa.json",
+      "has_image": false,
+      "len": 78,
       "subject": "植物生理学",
       "tag": "photosynthesis",
       "target": "competition",
@@ -519,6 +783,105 @@
       "len": 60,
       "subject": "细胞生物学",
       "tag": "cell_signal",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-ab35519f": {
+      "concept": "流感病毒生活史",
+      "difficulty": "league",
+      "file": "virus/league/M2-02-ab35519f.json",
+      "has_image": false,
+      "len": 34,
+      "subject": "微生物学",
+      "tag": "virus",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-b3a8a250": {
+      "concept": "抗生素作用机制",
+      "difficulty": "league",
+      "file": "antibiotics_resistance/league/M2-02-b3a8a250.json",
+      "has_image": false,
+      "len": 54,
+      "subject": "微生物学",
+      "tag": "antibiotics_resistance",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-c768b1f1": {
+      "concept": "单性结实的激素调控",
+      "difficulty": "league",
+      "file": "plant_hormone/league/M2-02-c768b1f1.json",
+      "has_image": true,
+      "len": 215,
+      "subject": "植物学",
+      "tag": "plant_hormone",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-f0b25458": {
+      "concept": "凯氏带与木栓质",
+      "difficulty": "league",
+      "file": "plant_water_mineral/league/M2-02-f0b25458.json",
+      "has_image": true,
+      "len": 110,
+      "subject": "植物生理学",
+      "tag": "plant_water_mineral",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-02-f8205cf2": {
+      "concept": "营养器官显微结构",
+      "difficulty": "league",
+      "file": "plant_tissue/league/M2-02-f8205cf2.json",
+      "has_image": true,
+      "len": 29,
+      "subject": "植物学",
+      "tag": "plant_tissue",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-03-37c10f98": {
+      "concept": "极端环境适应",
+      "difficulty": "league",
+      "file": "plant_stress/league/M2-03-37c10f98.json",
+      "has_image": true,
+      "len": 211,
+      "subject": "植物生理学",
+      "tag": "plant_stress",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-03-7d75eeb9": {
+      "concept": "细胞壁化学探针",
+      "difficulty": "league",
+      "file": "plant_tissue/league/M2-03-7d75eeb9.json",
+      "has_image": true,
+      "len": 191,
+      "subject": "植物学",
+      "tag": "plant_tissue",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-03-ce672917": {
+      "concept": "MRSA细胞壁与中介体",
+      "difficulty": "league",
+      "file": "bacteria/league/M2-03-ce672917.json",
+      "has_image": true,
+      "len": 164,
+      "subject": "微生物学",
+      "tag": "bacteria",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M2-04-be06ba01": {
+      "concept": "细胞壁组分鉴定",
+      "difficulty": "league",
+      "file": "plant_tissue/league/M2-04-be06ba01.json",
+      "has_image": true,
+      "len": 163,
+      "subject": "植物学",
+      "tag": "plant_tissue",
       "target": "competition",
       "type": "mtf"
     },
@@ -742,6 +1105,127 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M3-02-0039d2d5": {
+      "concept": "突触可塑性",
+      "difficulty": "league",
+      "file": "nervous_sys/league/M3-02-0039d2d5.json",
+      "has_image": true,
+      "len": 132,
+      "subject": "动物生理学",
+      "tag": "nervous_sys",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-18726078": {
+      "concept": "视网膜电图波形",
+      "difficulty": "league",
+      "file": "sensory_physio/league/M3-02-18726078.json",
+      "has_image": true,
+      "len": 57,
+      "subject": "动物生理学",
+      "tag": "sensory_physio",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-2783ee8e": {
+      "concept": "VP分泌失调综合征",
+      "difficulty": "league",
+      "file": "homeostasis/league/M3-02-2783ee8e.json",
+      "has_image": false,
+      "len": 53,
+      "subject": "动物生理学",
+      "tag": "homeostasis",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-44c6010b": {
+      "concept": "岛屿种群与遗传漂变",
+      "difficulty": "league",
+      "file": "population_eco/league/M3-02-44c6010b.json",
+      "has_image": false,
+      "len": 95,
+      "subject": "生态学",
+      "tag": "population_eco",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-5402e7a7": {
+      "concept": "眼柄切除与催熟",
+      "difficulty": "league",
+      "file": "endocrine/league/M3-02-5402e7a7.json",
+      "has_image": false,
+      "len": 40,
+      "subject": "动物生理学",
+      "tag": "endocrine",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-5672c583": {
+      "concept": "岛屿生态位与竞争",
+      "difficulty": "league",
+      "file": "community_eco/league/M3-02-5672c583.json",
+      "has_image": false,
+      "len": 56,
+      "subject": "生态学",
+      "tag": "community_eco",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-6533287c": {
+      "concept": "性食同类与毒素防御",
+      "difficulty": "league",
+      "file": "behavioral_eco/league/M3-02-6533287c.json",
+      "has_image": false,
+      "len": 200,
+      "subject": "生态学",
+      "tag": "behavioral_eco",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-66196f77": {
+      "concept": "营养级联效应",
+      "difficulty": "league",
+      "file": "ecosystem/league/M3-02-66196f77.json",
+      "has_image": true,
+      "len": 126,
+      "subject": "生态学",
+      "tag": "ecosystem",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-75fe9ef8": {
+      "concept": "图灵斑图与动物斑纹",
+      "difficulty": "league",
+      "file": "animal_tissue/league/M3-02-75fe9ef8.json",
+      "has_image": false,
+      "len": 224,
+      "subject": "动物学",
+      "tag": "animal_tissue",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-7d1ba782": {
+      "concept": "心输出量与心率储备",
+      "difficulty": "league",
+      "file": "circulatory/league/M3-02-7d1ba782.json",
+      "has_image": true,
+      "len": 89,
+      "subject": "动物生理学",
+      "tag": "circulatory",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-02-94384f8a": {
+      "concept": "条纹图案的演化多样性",
+      "difficulty": "league",
+      "file": "biodiversity/league/M3-02-94384f8a.json",
+      "has_image": true,
+      "len": 310,
+      "subject": "生态学",
+      "tag": "biodiversity",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M3-02-9a7f655c": {
       "concept": "微生物在氮循环中的作用",
       "difficulty": "league",
@@ -761,6 +1245,83 @@
       "len": 50,
       "subject": "免疫学",
       "tag": "immune_system",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-03-40f2e604": {
+      "concept": "感音神经性耳聋",
+      "difficulty": "league",
+      "file": "sensory_physio/league/M3-03-40f2e604.json",
+      "has_image": false,
+      "len": 56,
+      "subject": "动物生理学",
+      "tag": "sensory_physio",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-03-48211a64": {
+      "concept": "眼柄切除实验分析",
+      "difficulty": "league",
+      "file": "endocrine/league/M3-03-48211a64.json",
+      "has_image": true,
+      "len": 41,
+      "subject": "动物生理学",
+      "tag": "endocrine",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-03-8007ad0f": {
+      "concept": "树突棘",
+      "difficulty": "league",
+      "file": "nervous_sys/league/M3-03-8007ad0f.json",
+      "has_image": true,
+      "len": 117,
+      "subject": "动物生理学",
+      "tag": "nervous_sys",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-03-dcb8d269": {
+      "concept": "人类干扰与动物活动",
+      "difficulty": "league",
+      "file": "behavioral_eco/league/M3-03-dcb8d269.json",
+      "has_image": true,
+      "len": 163,
+      "subject": "生态学",
+      "tag": "behavioral_eco",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-04-20d53129": {
+      "concept": "咖啡因的剂量效应",
+      "difficulty": "league",
+      "file": "nervous_sys/league/M3-04-20d53129.json",
+      "has_image": false,
+      "len": 94,
+      "subject": "动物生理学",
+      "tag": "nervous_sys",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-04-7861026f": {
+      "concept": "抗体多样性",
+      "difficulty": "league",
+      "file": "immune_system/league/M3-04-7861026f.json",
+      "has_image": false,
+      "len": 111,
+      "subject": "动物生理学",
+      "tag": "immune_system",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M3-05-722cf786": {
+      "concept": "眼肌的脑神经支配",
+      "difficulty": "league",
+      "file": "nervous_sys/league/M3-05-722cf786.json",
+      "has_image": true,
+      "len": 42,
+      "subject": "动物生理学",
+      "tag": "nervous_sys",
       "target": "competition",
       "type": "mtf"
     },
@@ -1039,6 +1600,17 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M4-02-1eb3d8f7": {
+      "concept": "火山图与差异表达",
+      "difficulty": "league",
+      "file": "transcriptomics/league/M4-02-1eb3d8f7.json",
+      "has_image": true,
+      "len": 65,
+      "subject": "生物信息学",
+      "tag": "transcriptomics",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M4-02-1f8cb3df": {
       "concept": "比较基因组学与保守元件",
       "difficulty": "league",
@@ -1047,6 +1619,94 @@
       "len": 37,
       "subject": "基因组学",
       "tag": "genomics_comp",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-23dc17c1": {
+      "concept": "复等位基因与多倍体基因型",
+      "difficulty": "league",
+      "file": "mendel/league/M4-02-23dc17c1.json",
+      "has_image": false,
+      "len": 124,
+      "subject": "遗传学",
+      "tag": "mendel",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-5d2f5336": {
+      "concept": "非随机交配的基因型频率",
+      "difficulty": "league",
+      "file": "population_gen/league/M4-02-5d2f5336.json",
+      "has_image": false,
+      "len": 138,
+      "subject": "遗传学",
+      "tag": "population_gen",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-5d949f6a": {
+      "concept": "连锁不平衡衰减",
+      "difficulty": "league",
+      "file": "linkage/league/M4-02-5d949f6a.json",
+      "has_image": true,
+      "len": 141,
+      "subject": "遗传学",
+      "tag": "linkage",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-748f0f99": {
+      "concept": "Cre重组酶的细胞毒性",
+      "difficulty": "league",
+      "file": "genetic_engineering/league/M4-02-748f0f99.json",
+      "has_image": true,
+      "len": 245,
+      "subject": "遗传学",
+      "tag": "genetic_engineering",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-96dc4acb": {
+      "concept": "鸟类衍生骨骼特征",
+      "difficulty": "league",
+      "file": "animal_diversity/league/M4-02-96dc4acb.json",
+      "has_image": true,
+      "len": 210,
+      "subject": "进化生物学",
+      "tag": "animal_diversity",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-a5f84077": {
+      "concept": "植物命名法规",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-02-a5f84077.json",
+      "has_image": false,
+      "len": 143,
+      "subject": "植物学",
+      "tag": "plant_classification",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-aa8d582c": {
+      "concept": "引物设计与BLAST",
+      "difficulty": "league",
+      "file": "sequence_alignment/league/M4-02-aa8d582c.json",
+      "has_image": true,
+      "len": 88,
+      "subject": "生物信息学",
+      "tag": "sequence_alignment",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-b0d8d475": {
+      "concept": "熔解曲线与变异检测",
+      "difficulty": "league",
+      "file": "gene_mutation/league/M4-02-b0d8d475.json",
+      "has_image": true,
+      "len": 96,
+      "subject": "遗传学",
+      "tag": "gene_mutation",
       "target": "competition",
       "type": "mtf"
     },
@@ -1072,6 +1732,17 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M4-02-bc7c6c12": {
+      "concept": "基因敲除与敲减策略",
+      "difficulty": "league",
+      "file": "animal_biotech/league/M4-02-bc7c6c12.json",
+      "has_image": true,
+      "len": 355,
+      "subject": "遗传学",
+      "tag": "animal_biotech",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M4-02-df81db11": {
       "concept": "增强子的作用机制",
       "difficulty": "league",
@@ -1080,6 +1751,28 @@
       "len": 45,
       "subject": "分子生物学",
       "tag": "gene_regulation",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-ee278073": {
+      "concept": "癌症基因组数据库",
+      "difficulty": "league",
+      "file": "bio_databases/league/M4-02-ee278073.json",
+      "has_image": false,
+      "len": 111,
+      "subject": "生物信息学",
+      "tag": "bio_databases",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-02-f0a81c49": {
+      "concept": "后口动物系统发育",
+      "difficulty": "league",
+      "file": "phylogeny/league/M4-02-f0a81c49.json",
+      "has_image": false,
+      "len": 19,
+      "subject": "进化生物学",
+      "tag": "phylogeny",
       "target": "competition",
       "type": "mtf"
     },
@@ -1094,6 +1787,72 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M4-03-1cb7cac1": {
+      "concept": "Oncoprint突变图谱",
+      "difficulty": "league",
+      "file": "bio_databases/league/M4-03-1cb7cac1.json",
+      "has_image": true,
+      "len": 80,
+      "subject": "生物信息学",
+      "tag": "bio_databases",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-39ef3567": {
+      "concept": "鲸偶蹄目性状演化",
+      "difficulty": "league",
+      "file": "phylogeny/league/M4-03-39ef3567.json",
+      "has_image": true,
+      "len": 81,
+      "subject": "进化生物学",
+      "tag": "phylogeny",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-43e86b14": {
+      "concept": "基因组印记与亲源效应",
+      "difficulty": "league",
+      "file": "gene_mutation/league/M4-03-43e86b14.json",
+      "has_image": true,
+      "len": 102,
+      "subject": "遗传学",
+      "tag": "gene_mutation",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-5a57501f": {
+      "concept": "斑马鱼胚胎发育分期",
+      "difficulty": "league",
+      "file": "animal_biotech/league/M4-03-5a57501f.json",
+      "has_image": true,
+      "len": 87,
+      "subject": "动物学",
+      "tag": "animal_biotech",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-5df68108": {
+      "concept": "鲨鱼形态与生理",
+      "difficulty": "league",
+      "file": "animal_diversity/league/M4-03-5df68108.json",
+      "has_image": false,
+      "len": 82,
+      "subject": "动物学",
+      "tag": "animal_diversity",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-762a12bf": {
+      "concept": "孤雌生殖与亲缘系数",
+      "difficulty": "league",
+      "file": "mendel/league/M4-03-762a12bf.json",
+      "has_image": false,
+      "len": 135,
+      "subject": "遗传学",
+      "tag": "mendel",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M4-03-807aa2ee": {
       "concept": "lacI 负调控在进化背景下的生长动力学",
       "difficulty": "league",
@@ -1105,6 +1864,28 @@
       "target": "competition",
       "type": "mtf"
     },
+    "M4-03-cdd81630": {
+      "concept": "常见蔬菜植物学",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-03-cdd81630.json",
+      "has_image": false,
+      "len": 32,
+      "subject": "植物学",
+      "tag": "plant_classification",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-03-e4346a7f": {
+      "concept": "lox511自切除载体",
+      "difficulty": "league",
+      "file": "genetic_engineering/league/M4-03-e4346a7f.json",
+      "has_image": true,
+      "len": 346,
+      "subject": "遗传学",
+      "tag": "genetic_engineering",
+      "target": "competition",
+      "type": "mtf"
+    },
     "M4-03-f59903ec": {
       "concept": "乳糖操纵子调控的环境依赖选择与进化",
       "difficulty": "league",
@@ -1113,6 +1894,105 @@
       "len": 109,
       "subject": "分子生物学",
       "tag": "gene_regulation",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-04-2040deb6": {
+      "concept": "基因打靶的检测",
+      "difficulty": "league",
+      "file": "genetic_engineering/league/M4-04-2040deb6.json",
+      "has_image": false,
+      "len": 27,
+      "subject": "遗传学",
+      "tag": "genetic_engineering",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-04-6f54fcb5": {
+      "concept": "基因树与物种树冲突",
+      "difficulty": "league",
+      "file": "phylogeny/league/M4-04-6f54fcb5.json",
+      "has_image": true,
+      "len": 72,
+      "subject": "进化生物学",
+      "tag": "phylogeny",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-04-79863558": {
+      "concept": "基因功能获得与丧失",
+      "difficulty": "league",
+      "file": "animal_biotech/league/M4-04-79863558.json",
+      "has_image": true,
+      "len": 67,
+      "subject": "动物学",
+      "tag": "animal_biotech",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-04-d6ceba7e": {
+      "concept": "虫媒传粉特征",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-04-d6ceba7e.json",
+      "has_image": false,
+      "len": 96,
+      "subject": "植物学",
+      "tag": "plant_classification",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-05-0ed480f9": {
+      "concept": "花程式",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-05-0ed480f9.json",
+      "has_image": true,
+      "len": 89,
+      "subject": "植物学",
+      "tag": "plant_classification",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-05-336d8ade": {
+      "concept": "叶绿体基因组共线性",
+      "difficulty": "league",
+      "file": "molecular_evo/league/M4-05-336d8ade.json",
+      "has_image": true,
+      "len": 156,
+      "subject": "进化生物学",
+      "tag": "molecular_evo",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-06-57d9ff78": {
+      "concept": "姜目系统演化",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-06-57d9ff78.json",
+      "has_image": true,
+      "len": 37,
+      "subject": "植物学",
+      "tag": "plant_classification",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-06-68f445ae": {
+      "concept": "中性理论与分子钟",
+      "difficulty": "league",
+      "file": "molecular_evo/league/M4-06-68f445ae.json",
+      "has_image": false,
+      "len": 64,
+      "subject": "进化生物学",
+      "tag": "molecular_evo",
+      "target": "competition",
+      "type": "mtf"
+    },
+    "M4-07-b12bb329": {
+      "concept": "被子植物演化",
+      "difficulty": "league",
+      "file": "plant_classification/league/M4-07-b12bb329.json",
+      "has_image": true,
+      "len": 84,
+      "subject": "植物学",
+      "tag": "plant_classification",
       "target": "competition",
       "type": "mtf"
     }

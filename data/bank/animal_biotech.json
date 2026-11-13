@@ -36,5 +36,143 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-bc7c6c12": {
+    "category": "ggbo",
+    "concept": "基因敲除与敲减策略",
+    "difficulty": "league",
+    "explanation": "A【对】依据：HR组细胞生长曲线与对照接近，说明Cre被自切除后细胞毒性明显降低。\nB【错】错因：lox位点位于塞子两侧，Cre切除的是塞子，β-半乳糖苷酶解除抑制而表达，并未被敲除。\nC【错】错因：完全敲除易引发代偿反应，敲减更温和，二者只能互补使用，不能相互替代。\nD【错】错因：被切除的只是Cre基因，靶基因突变仍可经生殖细胞遗传，可用于构建可遗传模型。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 17 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-02-bc7c6c12/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "研究人员设计了293xLac 细胞，这是293 个细胞用一个质粒稳定转染，质粒由CMV 直接早期启动子和一个 lox P 位点组成，下游是许多旨在防止下游开放阅读框表达的“塞子”特征，然后是另一个 lox P 位点，最后是 β-半乳糖苷酶基因。研究人员还做了如下实验： （A）293xLac Cre 报告细胞同时感染三种病毒（每种 10 μl）：HR-MMPCreGFP（HR 表明在 3′ LTR 的 U3 区域存在 lox 511 位点）、MMPCreGFP（与 HR-MMPCreGFP 相同，但缺少 lox 511 位点）或对照 GFP 病毒。感染后 2 天，固定细胞并对 β- 半乳糖苷酶活性进行染色。（D） 此处显示了被各类病毒载体感染的细胞的生长曲线。 根据以上所有研究结果，你能推断出什么结论：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "Hit and run 策略有效地降低了Cre 重组酶对细胞的损伤作用"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "在感染成功的293xLac 细胞中β-半乳糖苷酶被有效地敲除了"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "推测使用该系统敲除(knock out)可以代替不能完全抑制的siRNA 敲减(knock down)"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "由于Cre 基因转入后即迅速被敲除，Hit and run 策略并不适用于构建可遗传的致病突变体模型"
+      }
+    ],
+    "subject": "遗传学",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "遗传学",
+      "基因敲除与敲减策略"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-03-5a57501f": {
+    "category": "ggbo",
+    "concept": "斑马鱼胚胎发育分期",
+    "difficulty": "league",
+    "explanation": "A【错】错因：图A为囊胚期，细胞层刚开始向植物极扩展包裹卵黄，并非卵裂期。\nB【错】错因：图C与图B同属原肠期，箭头指向胚环，但图D为卵裂期，二者并非同一时期。\nC【对】依据：图G可见沿脊索规律排列的体节，对应体节期。\nD【对】依据：图L后端形成尾芽细胞团，上方长箭头指头部，下方短箭头指尾芽。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 20 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-03-5a57501f/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "下列给出了斑马鱼早期胚胎发育过程中的5 个时期图像，其中C 图为极面观，其余为正面观，对应了上述5 个时期。请你根据描述，判断这些图片分别对应哪个时期，并判断下列说法的正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "图A 对应卵裂期"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "图C 和图D 属于同一时期，为原肠期，图C 中的箭头指向胚环"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "图G 对应体节期，可见沿脊索形成的体节"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "图L 中上方的长箭头指向头部，下方的短箭头指向尾芽"
+      }
+    ],
+    "subject": "动物学",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "动物学",
+      "斑马鱼胚胎发育分期"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-04-79863558": {
+    "category": "ggbo",
+    "concept": "基因功能获得与丧失",
+    "difficulty": "league",
+    "explanation": "A【错】错因：斑马鱼为多黄卵，卵裂局限于胚盘，属盘状卵裂，与海胆完全均等卵裂不同。\nB【对】依据：原位杂交显示tnfaip1多表达于胚胎前端，提示其可能参与前端器官的发育。\nC【错】错因：眼睛有无是分类性状，过表达未必产生超级眼睛，应在不发育成眼的区域异位表达。\nD【错】错因：斑马鱼属不确定性卵裂，后期命运可调整，异位表达心脏发育基因可能诱导异位心脏。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 20 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-04-79863558/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "tnfaip1 参与斑马鱼的胚胎发育，研究者通过原位杂交观察了胚胎早期体内tnfaip1 的表达情况。结合所学知识，判断下列说法正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "可以看出斑马鱼卵裂方式和海胆类似，为完全均等卵裂"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "观察到tnfaip1 多表达在胚胎前端，猜测可能参与体前端器官发育"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "若想研究tnfaip1 对眼的发育效应，可以在将要发育成眼的细胞团内过表达tnfaip1"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "由于卵裂的决定性，在体后端过表达心脏发育基因，也不会在体后端产生第二个心脏"
+      }
+    ],
+    "subject": "动物学",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "动物学",
+      "基因功能获得与丧失"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

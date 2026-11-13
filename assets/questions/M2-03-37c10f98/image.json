@@ -1,0 +1,57 @@
+{
+  "file": "assets/questions/M2-03-37c10f98/fig1.webp",
+  "caption": "第一届 GGBO 生物学竞赛试题配图（第 8 页）",
+  "credit": "第一届 GGBO 生物学竞赛考试试题",
+  "license": "原竞赛试卷（仅用于教学练习）",
+  "source": "exam",
+  "figures": [
+    {
+      "page": 8,
+      "xref": null,
+      "bbox": [
+        388.4,
+        499.89,
+        530.03,
+        609.24
+      ],
+      "width": 393,
+      "height": 303
+    },
+    {
+      "page": 8,
+      "xref": null,
+      "bbox": [
+        251.0,
+        506.19,
+        388.39,
+        609.24
+      ],
+      "width": 381,
+      "height": 286
+    },
+    {
+      "page": 8,
+      "xref": null,
+      "bbox": [
+        65.25,
+        510.49,
+        127.75,
+        609.22
+      ],
+      "width": 173,
+      "height": 274
+    },
+    {
+      "page": 8,
+      "xref": null,
+      "bbox": [
+        127.75,
+        511.64,
+        250.97,
+        609.24
+      ],
+      "width": 342,
+      "height": 271
+    }
+  ]
+}

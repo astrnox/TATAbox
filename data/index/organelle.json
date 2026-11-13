@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-c24979e0": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 72,
+    "module": "module_1",
+    "src": "organelle",
+    "tag": "organelle",
+    "tags": [
+      "organelle",
+      "module_1",
+      "细胞生物学",
+      "溶酶体贮积病"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

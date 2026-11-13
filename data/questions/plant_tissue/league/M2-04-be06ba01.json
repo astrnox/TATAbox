@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "细胞壁组分鉴定",
+  "difficulty": "league",
+  "explanation": "A【对】依据：图中拟南芥幼苗荧光明显，说明其细胞壁被 CarboTag 探针成功标记。\nB【对】依据：绿藻、苔藓、蕨类细胞壁组成与被子植物相近，都可用该探针染色。\nC【错】错因：水霉细胞壁以纤维素为主却未被标记，说明组分 X 不是纤维素。\nD【对】依据：水霉和大肠杆菌均不被标记，而绿色植物富含果胶，故 X 很可能是果胶。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 9 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-04-be06ba01/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "为了检测细胞壁中与CarboTag 探针结合的组分X 化学成分，研究人员对拟南芥、水霉和大肠杆菌进行了CarboTag 荧光探针标记检测。a、b 图展示了被水霉感染的拟南芥幼苗的荧光和相应明场图像，其中红色圆圈标记为水霉感染处；c、d 图展示了大肠杆菌的结果，FM4-64 是一种细胞膜染料。请结合所学知识，判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "拟南芥幼苗的细胞壁被CarboTag 探针成功结合"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "推测绿藻、苔藓、蕨类的细胞壁都可以用基于CarboTag 的探针染色"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "CarboTag 探针在绿色植物中结合的组分X 很可能是纤维素"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "CarboTag 探针在绿色植物中结合的组分X 很可能是果胶"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_tissue",
+    "module_2",
+    "植物学",
+    "细胞壁组分鉴定"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

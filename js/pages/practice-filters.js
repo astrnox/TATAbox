@@ -192,9 +192,10 @@ function renderFilterPanel() {
             <button class="practice-category-btn ${PracticeState.selectedCategory === 'all' ? 'active' : ''}" data-category="all">全部</button>
             <button class="practice-category-btn ${PracticeState.selectedCategory === 'basic' ? 'active' : ''}" data-category="basic">基础知识</button>
             <button class="practice-category-btn ${PracticeState.selectedCategory === 'logic' ? 'active' : ''}" data-category="logic">逻辑推理</button>
+            <button class="practice-category-btn ${PracticeState.selectedCategory === 'ggbo' ? 'active' : ''}" data-category="ggbo">其他</button>
           </div>
           <div class="bq-hint--xs bq-hint--mt">
-            ${PracticeState.selectedCategory === 'logic' ? '逻辑推理题：基于实验数据的分析推理，每题2分' : PracticeState.selectedCategory === 'basic' ? '基础知识题：MTF多重判断题型，每题2分' : '混合模式：基础知识 + 逻辑推理'}
+            ${PracticeState.selectedCategory === 'logic' ? '逻辑推理题：基于实验数据的分析推理，每题2分' : PracticeState.selectedCategory === 'basic' ? '基础知识题：MTF多重判断题型，每题2分' : PracticeState.selectedCategory === 'ggbo' ? '其他题目：第一届 GGBO 生物学竞赛全部 80 题，每题 2 分' : '混合模式：基础知识 + 逻辑推理 + 其他'}
           </div>
         </div>
 
@@ -355,7 +356,9 @@ showToast(val === 'local' ? '已切换为本地题库，正在重新加载题目
           ? '逻辑推理题：基于实验数据的分析推理，每题2分'
           : PracticeState.selectedCategory === 'basic'
             ? '基础知识题：MTF多重判断题型，每题2分'
-            : '混合模式：基础知识 + 逻辑推理';
+            : PracticeState.selectedCategory === 'ggbo'
+              ? '其他题目：第一届 GGBO 生物学竞赛全部 80 题，每题 2 分'
+              : '混合模式：基础知识 + 逻辑推理 + 其他';
         descEl.textContent = desc;
       }
     });

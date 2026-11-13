@@ -1,4 +1,21 @@
 {
+  "M1-03-d47a7e44": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 120,
+    "module": "module_1",
+    "src": "cell_signal",
+    "tag": "cell_signal",
+    "tags": [
+      "cell_signal",
+      "module_1",
+      "细胞生物学",
+      "真菌动作电位与适应"
+    ],
+    "target": "competition",
+    "year": null
+  },
   "M2-01-f05ce501": {
     "diff": "league",
     "difficulty": "league",

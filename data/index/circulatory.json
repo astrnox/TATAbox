@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-7d1ba782": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 89,
+    "module": "module_3",
+    "src": "circulatory",
+    "tag": "circulatory",
+    "tags": [
+      "circulatory",
+      "module_3",
+      "动物生理学",
+      "心输出量与心率储备"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

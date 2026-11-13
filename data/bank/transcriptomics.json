@@ -36,5 +36,51 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-1eb3d8f7": {
+    "category": "ggbo",
+    "concept": "火山图与差异表达",
+    "difficulty": "league",
+    "explanation": "A【错】错因：火山图中dhx40在野生型中低于突变体，属突变体高表达，并非野生型高表达。\nB【错】错因：nppa在野生型中相对突变体下调，不属于野生型中高表达的基因。\nC【对】依据：clul1位于火山图的上调一侧，野生型表达高于突变体。\nD【对】依据：Irp2b位于火山图的显著上调一侧，野生型表达高于突变体。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 20 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-02-1eb3d8f7/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "tnfaip1 是影响斑马鱼胚胎发育的相关基因。现构建tnfaip1 突变体，检测基因表达如右图： 在野生型中比突变体高表达的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "dhx40"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "nppa"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "clul1"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "Irp2b"
+      }
+    ],
+    "subject": "生物信息学",
+    "tags": [
+      "transcriptomics",
+      "module_4",
+      "生物信息学",
+      "火山图与差异表达"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

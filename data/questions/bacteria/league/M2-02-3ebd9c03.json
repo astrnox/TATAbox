@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "严紧反应",
+  "difficulty": "league",
+  "explanation": "A【对】依据：MS 在双向层析中迁移更慢，分子量与极性均大于常规三磷酸核苷。\nB【错】错因：MS 是 ppGpp，主要调控转录与翻译，并非固氮酶的别构抑制物。\nC【对】依据：ppGpp 抑制 rRNA 转录并降低蛋白合成，符合严紧反应的生理效应。\nD【错】错因：四环素抑制翻译、缓解氨基酸饥饿信号，ppGpp 合成减少，MS 斑点应变浅。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 2 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-02-3ebd9c03/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如图是研究者对大肠杆菌（E. coli）在补充氨基酸（+aa） 和缺乏氨基酸（-aa）情况下对小分子物质进行的双向薄层层析。层析两个方向分别采用两套极性不同的溶剂体系分离核苷酸类小分子。研究者发现-aa 的情况出现了MS 分子。据此，判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "MS 的分子量和极性大于图中常规三磷酸核苷"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "MS 可作为固氮酶的别构抑制物，阻断细菌细胞内固氮酶催化的反应"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "这种物质可能会引起细菌转录抑制和蛋白合成受阻"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "在- aa 条件下加入四环素，空载核糖体增多，MS 斑点会加深"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "bacteria",
+    "module_2",
+    "微生物学",
+    "严紧反应"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

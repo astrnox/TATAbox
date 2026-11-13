@@ -36,5 +36,260 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-a5f84077": {
+    "category": "ggbo",
+    "concept": "植物命名法规",
+    "difficulty": "league",
+    "explanation": "A【对】依据：双名法中属名首字母大写，种加词及属下各级加词均小写，选项表述正确。\nB【错】错因：Oryza 为属名，sativa 为种加词，二者共同构成种的学名。\nC【错】错因：var. 表示变种，不是亚种；亚种应以 subsp. 表示。\nD【对】依据：拉丁文语义稳定、不随日常语言变化，有利于学名的准确与统一。",
+    "question": "David 先生说：“我做了错饭，错误的是饭”，意为用错误的食材做成了饭。经Penny 小姐调查，David 先生使用的不是学名为Oryza sativa 的植物，而是一种学名为Hordeum vulgare var. coelester 的植物。关于文中出现的学名，下列说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "根据林奈双名法，属名首字母应大写，属名以下各级名称首字母小写"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "Oryza 为属名，sativa 为种名"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "var.coelester 表示是H.vulgare 的亚种"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "生物命名使用拉丁文书写有利于保证命名的准确性"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "植物命名法规"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-03-cdd81630": {
+    "category": "ggbo",
+    "concept": "常见蔬菜植物学",
+    "difficulty": "league",
+    "explanation": "A【错】错因：西蓝花属十字花科，食用部位为花球，典型花序是总状花序而非头状花序。\nB【错】错因：双悬果由两个分果组成，成熟时沿腹缝线分离，不是沿背缝线裂成两部分。\nC【错】错因：海带为异形世代交替，孢子体发达，食用部位是孢子体而非孢子囊。\nD【对】依据：冬瓜食用部位主要为果皮，西瓜主要食用胎座，二者虽同为瓠果但利用部位不同。",
+    "question": "下面是我们日常生活中常见的蔬菜，以下关于它们的特征说法正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "西蓝花的食用部位通常为植物的头状花序"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "香菜是伞形科的代表植物，具有复伞形花序和双悬果，双悬果是一种分果，成熟时心皮沿背缝线裂成两部分"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "海带作为一种藻类，具有同型世代交替，我们常食用的是它的孢子囊"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "虽同为瓠果，冬瓜食用部位不同于西瓜，冬瓜为果皮而西瓜主要为胎座"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "常见蔬菜植物学"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-04-d6ceba7e": {
+    "category": "ggbo",
+    "concept": "虫媒传粉特征",
+    "difficulty": "league",
+    "explanation": "A【错】错因：类叶升麻萼片闭合包住花部，把花药压向自身柱头，属于自花传粉而非虫媒适应。\nB【对】依据：毛茛花辐射对称、花色鲜黄、基部具蜜腺，是典型的虫媒传粉特征。\nC【错】错因：铁线莲花药外垂、花粉轻小量多，属于风媒适应，不是虫媒特征。\nD【对】依据：翠雀花色鲜艳并有细长萼距，与长喙昆虫口器匹配，是典型的虫媒协同演化。",
+    "question": "过去认为毛茛科植物一支向风媒传粉演化，另一支向虫媒传粉演化，但根据分子证据表明，许多亲缘关系很近的类群都演化出了不同的花特征与传粉方式。以下是毛茛科部分物种花的特点，请选出适于虫媒传粉的特征：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "类叶升麻有时花萼基部断裂，顶部不开放，包住其他花部器官并收缩"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "毛茛的花呈辐射对称，花冠颜色多为亮黄色，其花瓣基部特化有鳞片状的蜜腺"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "铁线莲花部结构简化，无蜜腺，花药垂悬于花外，花粉轻小而数量极多"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "翠雀的花颜色鲜艳，其上方的萼片向后特化形成细长的萼距，内部的蜜腺花瓣亦延伸出距并伸入该萼距中"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "虫媒传粉特征"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-05-0ed480f9": {
+    "category": "ggbo",
+    "concept": "花程式",
+    "difficulty": "league",
+    "explanation": "A【对】依据：花程式只标可育雄蕊数，姜科可育雄蕊 1 枚，故写作 A1 正确。\nB【对】依据：鹤望兰科花两性、两侧对称，萼片与花瓣各 3，可育雄蕊 5，子房 3 室。\nC【对】依据：美人蕉科仅 1 枚可育雄蕊，且仅一侧具发育药室，另半部花瓣状。\nD【错】错因：并非姜目所有科都具不育雄蕊，部分类群可育雄蕊之外并无明显不育雄蕊。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-05-0ed480f9/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "姜目共包含8 科约1200 种，广布世界热带亚热带。其内各科特别的雄蕊瓣化现象引起了科学家的注意。下图展示了姜目内各科的花图式及其系统发生关系。请根据形态学知识判断下列说法正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "姜科花程式可写为↑𝐾(3)𝐶(3)𝐴1𝐺̅(3:3)"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "鹤望兰科花两性，两侧对称，花萼、花瓣各3，发育雄蕊5 枚，子房3 室"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "美人蕉科具发育雄蕊一枚，仅一边具发育的药室，另半部花瓣状"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "图中姜目的所有科都至少拥有一枚不育雄蕊"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "花程式"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-06-57d9ff78": {
+    "category": "ggbo",
+    "concept": "姜目系统演化",
+    "difficulty": "league",
+    "explanation": "A【错】错因：芭蕉科确实最早分化，但最晚分支是竹芋科与美人蕉科构成的姊妹群，不能只说竹芋科。\nB【对】依据：姜科外轮 1 枚雄蕊丢失是姜目祖先已具备的特征，属于祖征。\nC【错】错因：（2）处表示由两侧对称转向不对称，（3）处表示花瓣状不育雄蕊融合成唇瓣。\nD【对】依据：姜类 B 类基因多次复制扩展，传统 ABC 模型难以解释美人蕉雄蕊瓣化。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-06-57d9ff78/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "图中(1)表示姜类的共衍征。结合系统发生图和花图式，判断以下表述正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "芭蕉科是姜目最早分化的一个分支，而竹芋科则是最晚形成的分支"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "对于姜科而言，外轮1 枚雄蕊的丢失是一种祖征"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "(2)处可表述为“出现瓣化的雄蕊”，而(3)处可表示为“存在明显的雄蕊退化”"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "传统的ABC 模型无法解释美人蕉的雄蕊瓣化机制，说明可能存在更复杂的调控"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "姜目系统演化"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-07-b12bb329": {
+    "category": "ggbo",
+    "concept": "被子植物演化",
+    "difficulty": "league",
+    "explanation": "A【对】依据：缓慢演化的古老支系长期保留祖征，缺乏鲜明的共衍征，分类界定反而困难。\nB【错】错因：祖征在高级阶元广泛存在，无法区分近缘属种，内部关系更难确定而非更容易。\nC【对】依据：核心伞形科多为短寿命草本，世代短、突变累积快，分子演化速率高于木本五加科。\nD【对】依据：忽略核心伞形科的速率加快会用偏小的速率作分母，从而系统性高估分化时间。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-07-b12bb329/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "在被子植物大科演化中，有些科经历了快速的辐射演化，共衍征明确且科界清晰；而有些支系则经历了漫长的缓慢演化，保留了大量祖征且形态上存在诸多“例外”。请判断以下说法的正误：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "与快速辐射演化的类群相比，缓慢演化的古老支系往往缺乏大量特有的、鲜明的共衍征"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "缓慢演化的支系由于保留了较多祖征，其内部各属之间的形态差异通常较小，分类关系比快速辐射的类群更容易确定"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "核心伞形科多数物种为草本植物，其世代时间通常较短，这可能是其核糖体DNA 序列演化速率比木本的核心五加科更快的重要原因之一"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "若使用分子钟假说来估算伞形目各支系的分化时间，忽略核心伞形科的加速进化，将会系统性地高估核心伞形科与其他支系的分化时间"
+      }
+    ],
+    "subject": "植物学",
+    "tags": [
+      "plant_classification",
+      "module_4",
+      "植物学",
+      "被子植物演化"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

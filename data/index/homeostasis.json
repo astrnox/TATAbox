@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-2783ee8e": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 53,
+    "module": "module_3",
+    "src": "homeostasis",
+    "tag": "homeostasis",
+    "tags": [
+      "homeostasis",
+      "module_3",
+      "动物生理学",
+      "VP分泌失调综合征"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

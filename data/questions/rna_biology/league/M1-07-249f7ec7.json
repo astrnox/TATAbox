@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "RNA结合蛋白",
+  "difficulty": "league",
+  "explanation": "A【错】错因：RNase 处理后互作仍存在，说明 TYF 与 Atx2 的结合不依赖 mRNA。\nB【对】依据：免疫沉淀除 per 外还带下多种 RNA，说明 Atx2 可结合其他 mRNA。\nC【对】依据：敲减 Atx2 后 TYF 与 PABP 结合条带变淡，说明 Atx2 辅助二者结合。\nD【对】依据：Atx2 与 TYF 均促进 PER 表达并影响节律，是维持正常昼夜节律所必需。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 6 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-07-249f7ec7/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "接下来我们通过免疫共沉淀技术分别测量了Atx2 与TYF 的互作、Atx2 与其他转录物的关联、敲减Atx2 对 TYF 复合体形成的影响。（C）ATX2 与 TYF 的互作检测。使用 ATX2（左图）或 V5（右图）抗体对表达 （+） 或不表达 （-） TYF-V5 的果蝇头部提取物的蛋白质进行免疫沉淀 （IP）。使用 ATX2 抗原免疫前获得的血清作为阴性对照 （pre-imm）。* = 交叉反应带。（D）ATX2 和 TYF 互作检测，在 RNase A 处理下。（E） ATX2 与转录本的关联。RNA 富集指数（Y 轴）的计算方法是：从使用 ATX2 抗体免疫沉淀中发现的相对量中减去在免疫前对照中发现的\"免疫沉淀\"的 RNA 的相对量。（F）ATX2 对TYF-PABP 相互作用影响。 请结合实验结论，判断下列关于ATX2 和TYF 作用说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "TYF 和Atx2 借助mRNA 形成复合物"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Atx2 可以和其他mRNA 结合"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "TYF 和PABP 结合需要Atx2 的辅助"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Atx2 和TYF 都是维持果蝇正常昼夜节律所必需的因子"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "rna_biology",
+    "module_1",
+    "分子生物学",
+    "RNA结合蛋白"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

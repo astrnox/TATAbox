@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-b0d8d475": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 96,
+    "module": "module_4",
+    "src": "gene_mutation",
+    "tag": "gene_mutation",
+    "tags": [
+      "gene_mutation",
+      "module_4",
+      "遗传学",
+      "熔解曲线与变异检测"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-43e86b14": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 102,
+    "module": "module_4",
+    "src": "gene_mutation",
+    "tag": "gene_mutation",
+    "tags": [
+      "gene_mutation",
+      "module_4",
+      "遗传学",
+      "基因组印记与亲源效应"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

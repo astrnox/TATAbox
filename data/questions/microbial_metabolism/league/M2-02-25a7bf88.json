@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "无氮培养基富集固氮菌",
+  "difficulty": "league",
+  "explanation": "A【对】依据：甘露醇不被多数细菌优先利用，却能有效富集好氧自生固氮菌。\nB【错】错因：CaCO3 可中和代谢产生的酸、缓冲 pH，也不能作为细菌碳源。\nC【错】错因：根瘤菌属属于共生固氮菌，Ashby 培养基用于筛选自生固氮菌。\nD【对】依据：成分简单且缺 Mo、Fe 等固氮酶辅因子，长期培养易出现营养耗竭。",
+  "question": "下列为常用于富集好氧固氮菌的Ashby 无氮培养基成分：10g/L 甘露醇，0.2g/L KH2PO4，0.2g/L NaCl，0.2g/L MgSO4•H2O，0.1g/L CaSO4•2H2O，5g/L CaCO3。请判断以下有关说法正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "甘露醇作为一种特殊的碳源，并不是多数细菌培养时优先使用的碳源，但可用于富集固氮菌"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "CaCO3 溶解度极低，因而不能很好地调节培养皿PH，但其可以作为某些细菌的碳源"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "由于氮源缺乏，Ashby 培养基可用于筛选出自生固氮细菌，如固氮菌属、根瘤菌属"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "该培养基中营养物质可能不支持长期消耗，且缺乏Mo、Fe 等重要金属元素，因此可能不适于长期培养"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "microbial_metabolism",
+    "module_2",
+    "微生物学",
+    "无氮培养基富集固氮菌"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

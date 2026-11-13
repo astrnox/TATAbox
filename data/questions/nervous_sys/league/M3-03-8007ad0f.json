@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "树突棘",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图 d 显示杂合子树突棘密度并无显著增加，代偿性过度生成不成立。\nB【错】错因：各基因型在雄雌之间均无显著的树突棘增减差异，未见性别二态性。\nC【错】错因：实验未涉及雌性纯合缺失型，且其树突棘发育并未显示完全受阻。\nD【错】错因：图中杂合子个体间未见极端差异，无法支持该推论。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 2 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-03-8007ad0f/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "PCDH19 相关性癫痫可能会引发认知障碍和智力障碍。为研究神经层面的致病机制，研究人员利用荧光标记观察了不同Pcdh19 基因型小鼠海马神经元的树突棘形态（图c），并统计了树突棘密度（图d）。根据提供的图表数据， 下列推论合理的是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "雌性杂合子（X+/X-）的树突棘密度显著增加， Pcdh19 基因型杂合状态可能导致了代偿性的突触过度生成"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Pcdh19 基因对突触发育的影响具有明显的性别二态性：在雄性中表现为树突棘减少，而在雌性中则表现为树突棘密度增加"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "该疾病是雌性纯合缺失型（X⁻/X⁻）树突棘发育完全受阻导致的"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "该疾病是雌性杂合子（X⁺/X⁻）树突棘密度在不同个体间出现极端的个体差异导致的"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "nervous_sys",
+    "module_3",
+    "动物生理学",
+    "树突棘"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

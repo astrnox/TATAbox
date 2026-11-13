@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "连锁不平衡衰减",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图中0至900 bp内衰减速率为All Types大于Crisphead大于Romaine，Romaine最慢。\nB【对】依据：Crisphead衰减距离小，位点间连锁程度低、重组多，群体多样性水平可能更高。\nC【错】错因：LD衰减差异只反映群体结构与选择压力不同，不能证明二者已成为生殖隔离的两个物种。\nD【对】依据：整体衰减快于各亚群，说明群体结构较强、亚群之间的基因流很少。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 19 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-02-5d949f6a/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "生菜易患病毒引起的枯萎病，而拥有Tvr1 基因的个体对其具有抗性。在Tvr1 基因周围区域有9 个已知的EST 分子标记。如图是利用该区域的分子标记对不同亚群体 （Romaine 和Crisphead）以及整体（All Types）的连锁不平衡 （LD）衰减分析，可以得到的结论有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Romaine 具有较高的LD 衰减速率，可能是因为受到了强烈的定向选择"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Crisphead 具有较小的LD 衰减距离，说明其多样性水平可能更高"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "由于Romaine 和Crisphead 的LD 衰减有明显差异，说明其已成为两个物种"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "图中All Types 的LD 衰减最快，暗示群体结构可能较强"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "linkage",
+    "module_4",
+    "遗传学",
+    "连锁不平衡衰减"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

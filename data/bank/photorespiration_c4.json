@@ -36,5 +36,51 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M2-02-0c8f10b6": {
+    "category": "ggbo",
+    "concept": "单细胞C4途径",
+    "difficulty": "league",
+    "explanation": "A【错】错因：PEPC 定位在细胞质中，并不位于叶绿体 pc 内，选项定位错误。\nB【对】依据：线粒体环绕 CCC、pc 类囊体较少，符合 NAD-苹果酸酶型 C4 的特征。\nC【错】错因：m 为线粒体，分布在 CCC 周围而不是 pc 周围。\nD【对】依据：M 图类囊体大而少，对应中央的 CCC；N 图类囊体小而多，对应 pc。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 9 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M2-02-0c8f10b6/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "陆生藜科植物 Bienertia cycloptera 具有特殊的光合作用结构， 胞内具有两种叶绿体，能够将固碳反应分为两步在不同区域进行。 其中一种具有更大更短的类囊体，另一种具有更小更长的类囊体。 图K 是细胞结构，CCC 和pc 代表两种叶绿体，其显微结构分别为图M 和图N，图L 表示在某种叶绿体周围有大量m 结构。请根据该图判断下列说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "RubisCO 酶主要位于CCC 中，而PEPC 主要位于pc 内"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "可推测该植物通过NAD-苹果酸酶进行碳的转移与释放"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "m 主要位于pc 周围"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "M 图对应具有较大类囊体的叶绿体，即CCC"
+      }
+    ],
+    "subject": "植物生理学",
+    "tags": [
+      "photorespiration_c4",
+      "module_2",
+      "植物生理学",
+      "单细胞C4途径"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

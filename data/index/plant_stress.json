@@ -34,5 +34,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-03-37c10f98": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 211,
+    "module": "module_2",
+    "src": "plant_stress",
+    "tag": "plant_stress",
+    "tags": [
+      "plant_stress",
+      "module_2",
+      "植物生理学",
+      "极端环境适应"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

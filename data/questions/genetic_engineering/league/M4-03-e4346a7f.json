@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "lox511自切除载体",
+  "difficulty": "league",
+  "explanation": "A【错】错因：逆转录病毒感染后只以3'LTR的U3区为模板复制到5'端，并非复制整个LTR。\nB【错】错因：目标基因两侧是loxP位点，与lox511序列不同，不能通过交换把lox511重组到其两侧。\nC【对】依据：复制后两个lox511夹住Cre编码区，Cre可切除自身基因，从而降低对细胞的毒性。\nD【对】依据：若直接在Cre基因两侧加lox位点，载体克隆时Cre基因即被删除，无法得到可用载体。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 16 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-03-e4346a7f/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "研究人员打造了一种新型的打靶方式（Hit and run）：使用包含一个位于其 3′ LTR U3 区域的 lox 511 位点的逆转录病毒载体（LTR 长度在1000bp 以内），将Cre 重组酶导入局部细胞。小鼠靶标基因两侧带有loxP 位点。星号标识引入含 lox 511 的 LTR 的 StuI 限制性位点的位置，以将其与内源性小鼠 LTR 区分开来。 必要的英文标注：packaging 包装，infection 感染，reverse transcription 逆转录，integration 整合，Expression and Cre-Mediated Recombination 表达和Cre 介导的重组。 研究人员将Lox 511 插入病毒3' LTR U3 区的原因是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "逆转录病毒感染细胞后会将整个3' LTR 复制到5'端"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "可以通过交换将Lox 511 重组到目标基因两侧"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "载体可以在表达Cre 酶后将自身携带的Cre 基因敲除，可能避免Cre 引起的细胞毒害"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "这种方式与直接在Cre 酶两侧各加上一个Lox 511 位点的效果有差别，后者将无法产生可用的载体"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "genetic_engineering",
+    "module_4",
+    "遗传学",
+    "lox511自切除载体"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

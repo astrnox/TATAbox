@@ -36,5 +36,44 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M3-02-2783ee8e": {
+    "category": "ggbo",
+    "concept": "VP分泌失调综合征",
+    "difficulty": "league",
+    "explanation": "A【错】错因：VP 只增加水重吸收而不增加钠吸收，不引起钠水潴留，低钠使神经兴奋性降低。\nB【错】错因：收缩压与舒张压均升高且舒张压更明显，脉压应缩小而非增大。\nC【错】错因：VP 增多使尿液浓缩，排出的是少量高渗尿，酸碱性不能一概而论。\nD【错】错因：醛固酮保钠排钾，VP 以水重吸收为主，两者血浆离子变化并不相同。",
+    "question": "某些脑、肺等部位的肿瘤可能会异位分泌血管升压素VP，引起VP 分泌失调综合征。下列关于其症状说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "可能会引起钠水潴留，造成水肿、神经细胞兴奋性升高"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "患者血压会明显上升，脉压变化与老年人动脉硬化情况类似"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "患者会排出大量低渗尿，尿液呈酸性"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "其血浆中离子浓度变化与醛固酮增多症类似"
+      }
+    ],
+    "subject": "动物生理学",
+    "tags": [
+      "homeostasis",
+      "module_3",
+      "动物生理学",
+      "VP分泌失调综合征"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

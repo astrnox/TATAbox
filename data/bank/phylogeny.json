@@ -36,5 +36,136 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-f0a81c49": {
+    "category": "ggbo",
+    "concept": "后口动物系统发育",
+    "difficulty": "league",
+    "explanation": "A【对】依据：后口动物多具辐射卵裂和非决定性卵裂，是区别于原口动物的共衍征。\nB【错】错因：分子系统学表明尾索动物与脊椎动物关系最近，头索动物处于更基干位置。\nC【错】错因：棘皮动物与半索动物互为姊妹群，Hox 重排不能说明其离脊索动物更远。\nD【对】依据：现生无颌类与有颌类各自构成单系群，两者共同组成脊椎动物。",
+    "question": "下列后口动物系统发育相关叙述正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "两侧对称动物分为原口动物与后口动物，其中后口动物大多具有辐射卵裂、非决定性卵裂的共衍征"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "头索动物作为现生动物中与脊椎动物关系最近的类群，常作为模式动物用于动物胚胎发育的研究"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "后口动物中棘皮动物的Hox 基因发生了重排与丢失，因此与半索动物相比其离脊索动物更远"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "现生无颌类和有颌类都是单系群"
+      }
+    ],
+    "subject": "进化生物学",
+    "tags": [
+      "phylogeny",
+      "module_4",
+      "进化生物学",
+      "后口动物系统发育"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-03-39ef3567": {
+    "category": "ggbo",
+    "concept": "鲸偶蹄目性状演化",
+    "difficulty": "league",
+    "explanation": "A【错】错因：鼷鹿瓣胃缺失且胃最原始，更可能是祖征而非次生退化，不能据此说明多室胃单起源。\nB【错】错因：表皮角来自外胚层，真皮角来自中胚层，胚胎来源不同，二者并无共同来源。\nC【错】错因：叉角羚科与牛科互为姊妹群，牛总科才与鹿总科并列，并非叉角羚科单独作姊妹群。\nD【错】错因：传统反刍亚目各科构成单系群，只有并入骆驼等假反刍动物才成为多系群。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 18 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-03-39ef3567/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "鲸-偶蹄目是近些年来根据系统发育关系确立的一个单系群，其演化关系至今仍在广泛研究。下图是针对鲸偶蹄目动物的性状演化研究，请根据所学知识和题目信息判断下列说法正误。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "具有反刍现象的动物的多室的胃是单起源的，其中鼷鹿的瓣胃发生了退化"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "偶蹄类动物中表皮角与真皮角具有共同的来源"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "叉角羚科是其他胃具四室的动物的姐妹群"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "传统意义上的反刍动物是一个并系群"
+      }
+    ],
+    "subject": "进化生物学",
+    "tags": [
+      "phylogeny",
+      "module_4",
+      "进化生物学",
+      "鲸偶蹄目性状演化"
+    ],
+    "target": "competition",
+    "type": "mtf"
+  },
+  "M4-04-6f54fcb5": {
+    "category": "ggbo",
+    "concept": "基因树与物种树冲突",
+    "difficulty": "league",
+    "explanation": "A【对】依据：祖先种群中基因X存在多个等位基因，未完全随物种分化传递，属不完全谱系分选。\nB【对】依据：杂交后代反复回交使Micr的X基因渗入Dipr，基因渐渗导致基因树与物种树冲突。\nC【对】依据：两支系演化都很快，趋同突变与随机噪音造成长枝吸引，使Dipr与Micr被错误聚在一起。\nD【错】错因：接合是细菌间接触转移质粒的方式，有袋类为真核生物，不存在接合式水平基因转移。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 19 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-04-6f54fcb5/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图是四种有袋类动物的物种系统发育树，其中左图为利用基因组数据建立的物种树，右图为利用同源基因X 建立的基因树。这两个物种树有差异的原因可能是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "在Dasy、Dipr 和Micr 的共同祖先发生了X 的多态化，且这些序列未完全由后代继承"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "Dipr 和Micr 的杂交后代与Dipr 反复回交导致Micr 的X 基因进入Dipr 中"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "Dipr 和Micr 物种演化速率远快于另外两个物种"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "Dipr 和Micr 发生了由接合引起的水平基因转移"
+      }
+    ],
+    "subject": "进化生物学",
+    "tags": [
+      "phylogeny",
+      "module_4",
+      "进化生物学",
+      "基因树与物种树冲突"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

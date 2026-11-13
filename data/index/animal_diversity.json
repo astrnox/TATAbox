@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-96dc4acb": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 210,
+    "module": "module_4",
+    "src": "animal_diversity",
+    "tag": "animal_diversity",
+    "tags": [
+      "animal_diversity",
+      "module_4",
+      "进化生物学",
+      "鸟类衍生骨骼特征"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-5df68108": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 82,
+    "module": "module_4",
+    "src": "animal_diversity",
+    "tag": "animal_diversity",
+    "tags": [
+      "animal_diversity",
+      "module_4",
+      "动物学",
+      "鲨鱼形态与生理"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

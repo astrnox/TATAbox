@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "极端环境适应",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图 3 的极端温度为零下 80 摄氏度，体现的是耐低温而非耐高温。\nB【对】依据：叶片重叠减少水分散失，白色芒状叶尖可反射强辐射，均利于干旱强光环境。\nC【对】依据：复水后 Fv/Fm 恢复正常，说明干燥后光系统 II 与光合作用可以恢复。\nD【错】错因：图 4 显示 8000 Gy 以上恢复明显受阻，不能耐受 16000 Gy 以内的全部辐射。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 8 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-03-37c10f98/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "极端耐受的沙漠苔藓 Syntrichia caninervis 是一种很有前途的外星环境定植先驱植物，科学家们认为它可以作为首批登上火星生存的“拓荒者”。下面分别展示了Syntrichia caninervis 的外部形态、在脱水后复水的光系统II 的 Fv/Fm 值、极端温度处理后恢复情况以及高辐射条件处理的生长能力。 图1 图2 图3 图4 请问Syntrichia caninervis 可能适应火星环境的特征有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "在长时间高温处理后仍可存活"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "叶片重叠可节省水分，叶尖呈白色芒状以反射过强辐射"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "持续干燥处理后仍可恢复正常的光合作用"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "抗辐射能力强，能有效抵抗16000Gy 以内所有的辐射"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "plant_stress",
+    "module_2",
+    "植物生理学",
+    "极端环境适应"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

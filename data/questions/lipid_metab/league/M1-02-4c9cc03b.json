@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "脂肪酸β氧化",
+  "difficulty": "league",
+  "explanation": "A【对】依据：过氧化物酶体负责超长链脂肪酸氧化，进入不依赖肉碱穿梭。\nB【错】错因：ABCD1 缺陷导致 X 连锁肾上腺脑白质营养不良，婴儿型雷夫苏姆病由 PEX 基因缺陷引起。\nC【错】错因：过氧化物酶体β氧化第一步脱氢生成 FADH2 并将电子交给 O2，不直接产生 ATP。\nD【错】错因：鼠肝过氧化物酶体β氧化以酰基辅酶 A 氧化酶启动，不依赖细胞色素 P450 单加氧酶。",
+  "question": "脂肪酸β氧化除了可发生在线粒体中，还可发生在过氧化物酶体内。下列关于线粒体外β氧化说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "进入过氧化物酶体的脂肪酸多为超长链（23 碳及以上），进入时无需肉碱"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "D 类 ABC 转运蛋白缺陷会导致脂肪酸氧化受阻，引发婴儿型雷夫苏姆病"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "在微体中第一步脱氢不产生FADH2，而是产生 ATP"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "在鼠肝中的线粒体外β氧化需要细胞色素P450 与单加氧酶酶参与"
+    }
+  ],
+  "subject": "生物化学",
+  "tags": [
+    "lipid_metab",
+    "module_1",
+    "生物化学",
+    "脂肪酸β氧化"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

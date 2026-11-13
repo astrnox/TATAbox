@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-3ebd9c03": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 126,
+    "module": "module_2",
+    "src": "bacteria",
+    "tag": "bacteria",
+    "tags": [
+      "bacteria",
+      "module_2",
+      "微生物学",
+      "严紧反应"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M2-03-ce672917": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 164,
+    "module": "module_2",
+    "src": "bacteria",
+    "tag": "bacteria",
+    "tags": [
+      "bacteria",
+      "module_2",
+      "微生物学",
+      "MRSA细胞壁与中介体"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

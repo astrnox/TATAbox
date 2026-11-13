@@ -1,4 +1,38 @@
 {
+  "M1-05-b3ac0f9d": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 73,
+    "module": "module_1",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_1",
+      "分子生物学",
+      "RNA干扰"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-06-e102f234": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 258,
+    "module": "module_1",
+    "src": "gene_regulation",
+    "tag": "gene_regulation",
+    "tags": [
+      "gene_regulation",
+      "module_1",
+      "分子生物学",
+      "昼夜节律调控"
+    ],
+    "target": "competition",
+    "year": null
+  },
   "M4-02-df81db11": {
     "diff": "league",
     "difficulty": "league",

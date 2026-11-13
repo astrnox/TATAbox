@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-5d949f6a": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 141,
+    "module": "module_4",
+    "src": "linkage",
+    "tag": "linkage",
+    "tags": [
+      "linkage",
+      "module_4",
+      "遗传学",
+      "连锁不平衡衰减"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

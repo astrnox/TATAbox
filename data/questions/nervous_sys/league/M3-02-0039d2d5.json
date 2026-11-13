@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "突触可塑性",
+  "difficulty": "league",
+  "explanation": "A【错】错因：HEMI♂ 突变神经元比例更高但 LTP 正常，HET♀ 比例较低却受损，不符合剂量效应。\nB【错】错因：PCDH19 疾病多见于杂合女性，半合子男性多无症状，并非男性更重。\nC【对】依据：临床与实验均显示杂合女性症状更多，推测症状多见于杂合女性成立。\nD【错】错因：杂合突变 HET♀ 的 LTP 已明显受损，并非不影响。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 1 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-02-0039d2d5/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "研究人员利用高频刺激诱导不同基因型及性别小鼠的海马脑片长时程增强（LTP），记录场兴奋性突触后电位 （fEPSP）的变化如图，WT 表示正常纯合子，HET♀为雌性杂合子，HEMI♂为雄性半合子。下列对 Pcdh19 基因突变影响LTP 的机制推断中，说法正确的是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "PCDH19 基因突变对海马LTP 的损害符合剂量效应， 神经元群体中表达突变蛋白比例越高，LTP 受损越严重"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "PCDH19 疾病在男性中表现得更严重"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "推测PCDH19 疾病的症状多见于杂合子女性"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "无论性别如何，Pcdh19 基因杂合突变（HET）均不影响 LTP"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "nervous_sys",
+    "module_3",
+    "动物生理学",
+    "突触可塑性"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-c768b1f1": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 215,
+    "module": "module_2",
+    "src": "plant_hormone",
+    "tag": "plant_hormone",
+    "tags": [
+      "plant_hormone",
+      "module_2",
+      "植物学",
+      "单性结实的激素调控"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

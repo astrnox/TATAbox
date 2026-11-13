@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-ee278073": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 111,
+    "module": "module_4",
+    "src": "bio_databases",
+    "tag": "bio_databases",
+    "tags": [
+      "bio_databases",
+      "module_4",
+      "生物信息学",
+      "癌症基因组数据库"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-1cb7cac1": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 80,
+    "module": "module_4",
+    "src": "bio_databases",
+    "tag": "bio_databases",
+    "tags": [
+      "bio_databases",
+      "module_4",
+      "生物信息学",
+      "Oncoprint突变图谱"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

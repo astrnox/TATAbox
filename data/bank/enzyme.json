@@ -36,5 +36,51 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M1-02-66d83490": {
+    "category": "ggbo",
+    "concept": "碳酸酐酶与钙沉积",
+    "difficulty": "league",
+    "explanation": "A【错】错因：酶只加快反应速率，不改变平衡终点，CA 不影响最终钙沉淀量。\nB【错】错因：升温只促进加 CA 组的沉积，对无 CA 组无显著影响，不能笼统说促进。\nC【对】依据：图 3 显示弱碱性条件下碳酸钙沉积速度整体快于弱酸性条件。\nD【对】依据：仲磺酰胺螯合锌离子抑制 CA，其沉积速率应接近未加 CA 的对照。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 13 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M1-02-66d83490/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "研究者对钙质海绵纲的Sycon raphanus 物种的碳酸钙骨骼生长进行了研究。他们发现尽管当今海洋的CaCO3 过饱和，但很少看到自发的非生物沉淀，且非生物反应速度太慢，无法解释在体内测量的碳酸钙沉积。因此研究人员推测可能有某种酶催化反应，并成功找到动物中的碳酸酐酶CA，进行了下列实验： 图1 图2 图3 白色柱为未加入CA，黑色柱为加入CA，阴影柱为在CA 特异性抑制剂乙酰唑胺存在下由CA 驱动的反应。 请根据实验结果，判断下列说法正确的是：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": false,
+        "label": "A",
+        "text": "CA 可以促进钙离子的沉淀，如果没有CA 会使反应平衡时钙离子的沉淀量减少"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "在10～25℃的区间内，升高温度能够促进碳酸钙的沉积"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "CA 存在情况下，弱碱性条件下的碳酸钙沉积速度整体快于弱酸性条件"
+      },
+      {
+        "answer": true,
+        "label": "D",
+        "text": "已知仲磺酰胺是一种锌离子螯合剂，则加入CA 和仲磺酰胺的反应体系中碳酸钙沉积速率可能与未加入CA 的反应速率相似"
+      }
+    ],
+    "subject": "生物化学",
+    "tags": [
+      "enzyme",
+      "module_1",
+      "生物化学",
+      "碳酸酐酶与钙沉积"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

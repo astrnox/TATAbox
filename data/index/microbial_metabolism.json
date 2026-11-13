@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M2-02-25a7bf88": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 122,
+    "module": "module_2",
+    "src": "microbial_metabolism",
+    "tag": "microbial_metabolism",
+    "tags": [
+      "microbial_metabolism",
+      "module_2",
+      "微生物学",
+      "无氮培养基富集固氮菌"
+    ],
+    "target": "competition",
+    "year": null
   }
 }
