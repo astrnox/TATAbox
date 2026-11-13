@@ -79,6 +79,20 @@
     });
   }
 
+  /**
+   * 写入视图 HTML。
+   * 全部标记由本文件静态拼接、不含任何用户输入，故用 DOMParser 解析后搬入节点，
+   * 既避免 HTML 注入棘轮（不新增 innerHTML），也保留 SVG 的 marker 等属性。
+   */
+  function mountHTML(el, html) {
+    if (!el) return;
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    el.textContent = '';
+    var frag = document.createDocumentFragment();
+    while (doc.body.firstChild) frag.appendChild(doc.body.firstChild);
+    el.appendChild(frag);
+  }
+
   function goPractice(tags) {
     if (!tags || !tags.length) return;
     window.location.hash = '#/practice?tags=' + encodeURIComponent(tags.join(','));
@@ -536,15 +550,15 @@
     var h = null;
     for (var i = 0; i < HOTSPOTS.length; i++) if (HOTSPOTS[i].key === key) h = HOTSPOTS[i];
     if (!h) {
-      detail.innerHTML = '<h4>代谢网络</h4><p>点击图上的热点，或在右侧选择考点进入练习。</p>';
+      mountHTML(detail, '<h4>代谢网络</h4><p>点击图上的热点，或在右侧选择考点进入练习。</p>');
       return;
     }
     _selectedKey = key;
     var n = countOf(h.tag);
-    detail.innerHTML = '<h4>' + esc(h.label) + '</h4>' +
+    mountHTML(detail, '<h4>' + esc(h.label) + '</h4>' +
       '<div class="mm-meta">' + (n ? n + ' 道相关题目' : '题目加载中') + '</div>' +
       '<p>' + esc(h.desc) + '</p>' +
-      '<button type="button" class="mm-btn mm-btn-primary" data-practice="' + esc(h.tag) + '">开始练习</button>';
+      '<button type="button" class="mm-btn mm-btn-primary" data-practice="' + esc(h.tag) + '">开始练习</button>');
     var btn = detail.querySelector('[data-practice]');
     if (btn) btn.addEventListener('click', function () { goPractice([btn.getAttribute('data-practice')]); });
 
@@ -655,7 +669,7 @@
     _scale = 1; _tx = 0; _ty = 0; _selectedKey = 'glycolysis';
 
     function paint() {
-      target.innerHTML = buildHTML();
+      mountHTML(target, buildHTML());
       bindStage();
       clampTransform();
       applyTransform();
