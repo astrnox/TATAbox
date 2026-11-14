@@ -163,6 +163,14 @@ function injectAnalyticsStyles() {
       color: var(--color-sage, #5a7d5c);
     }
 
+    .wrong-book-tag {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: var(--radius-full, 9999px);
+      border: 1px solid rgba(90, 125, 92, 0.35);
+      color: var(--color-sage, #5a7d5c);
+    }
+
     .wrong-book-count {
       font-size: 0.72rem;
       color: var(--color-error, #c0553a);
@@ -459,7 +467,8 @@ const MODULE_LABELS = {
   module_1: '模块一',
   module_2: '模块二',
   module_3: '模块三',
-  module_4: '模块四'
+  module_4: '模块四',
+  general: '综合'
 };
 
 const MODULE_NAMES = [
@@ -597,12 +606,23 @@ function renderWrongBook(container) {
     items.forEach((item) => {
       const qText = item.questionText || item.qId || '';
       const stem = qText.length > 80 ? qText.slice(0, 80) + '...' : qText;
+      // 优先展示题目自带的学科 / 概念 / 知识点，而不是笼统的模块名
+      const tagList = [];
+      if (item.subject && item.subject !== 'general') tagList.push(item.subject);
+      if (item.concept) tagList.push(item.concept);
+      (Array.isArray(item.tags) ? item.tags : []).forEach((t) => {
+        if (typeof t === 'string' && /[\u4e00-\u9fa5]/.test(t) && !/^module_\d+$/.test(t) && tagList.indexOf(t) < 0) tagList.push(t);
+      });
+      const tagHtml = tagList.slice(0, 3)
+        .map((t) => `<span class="wrong-book-tag">${escapeHtml ? escapeHtml(t) : t}</span>`)
+        .join('');
       html += `
         <div class="wrong-book-item">
           <div class="wrong-book-item-left">
             <div class="wrong-book-stem" title="${escapeHtml ? escapeHtml(qText) : qText}">${escapeHtml ? escapeHtml(stem) : stem}</div>
             <div class="wrong-book-meta">
               <span class="wrong-book-module">${modLabel}</span>
+              ${tagHtml}
               <span class="wrong-book-count">错误 ${item.wrongCount || 1} 次</span>
             </div>
           </div>

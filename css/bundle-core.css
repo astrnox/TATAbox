@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-14T01:52:32.141Z
+ * 生成时间：2026-11-14T02:15:03.494Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -6825,7 +6825,8 @@ textarea.lmc-form-input { resize: vertical; min-height: 60px; line-height: 1.5; 
 }
 
 .hq-tag-score,
-.hq-tag-subject {
+.hq-tag-subject,
+.hq-tags .hq-tag:not(.hq-tag-type) {
   padding: 2px 8px;
   border-radius: 8px;
   background: rgba(90, 125, 92, 0.1);
@@ -7009,16 +7010,71 @@ body.js-enhanced .hq-nojs {
   display: none;
 }
 
-.hq-done {
+.hq-panel {
   margin-top: 16px;
   border-radius: var(--radius-lg, 12px);
-  background: rgba(255, 255, 255, 0.92);
-  padding: 18px 22px 20px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 20px 22px 22px;
   animation: hqRise 0.36s ease both;
 }
 
-.hq-done[hidden] {
+.hq-panel[hidden] {
   display: none;
+}
+
+.hq-panel-head {
+  margin-bottom: 14px;
+}
+
+.hq-panel-title {
+  margin: 4px 0 6px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-900);
+  scroll-margin-top: 96px;
+}
+
+.hq-panel-title:focus {
+  outline: none;
+}
+
+/* 面板导航：克隆自汉堡菜单，按栏目分组展示 */
+.hq-panel-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(26, 47, 29, 0.1);
+}
+
+.hq-panel-nav .mn-section {
+  display: block;
+}
+
+.hq-panel-nav .mn-section-label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.hq-panel-nav a {
+  display: block;
+  padding: 5px 0;
+  font-size: 0.88rem;
+  color: var(--color-primary-900);
+  text-decoration: none;
+}
+
+.hq-panel-nav a:hover,
+.hq-panel-nav a:focus-visible {
+  color: var(--color-warm);
+}
+
+.hq-panel-nav .mn-home {
+  font-weight: 600;
 }
 
 @keyframes hqRise {
@@ -7151,7 +7207,7 @@ body.js-enhanced .hq-nojs {
 
 @media (prefers-reduced-motion: reduce) {
   .hq-flip,
-  .hq-done,
+  .hq-panel,
   .hq-submit,
   .hq-row {
     transition: none;

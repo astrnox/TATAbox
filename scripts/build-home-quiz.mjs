@@ -87,7 +87,8 @@ function loadCandidates() {
       hint: exp.hint,
       concept: q.concept || '',
       subject: q.subject || '',
-      type: q.type || 'mtf'
+      type: q.type || 'mtf',
+      tags: Array.isArray(q.tags) ? q.tags : []
     });
   }
   return pool;
@@ -146,13 +147,19 @@ function renderQuestion(q, day) {
 
   const typeLabel = TYPE_LABEL[q.type] || TYPE_LABEL.mtf;
   const typeScore = TYPE_SCORE[q.type] || TYPE_SCORE.mtf;
+  // 知识点标签：只保留中文、去掉模块编号，和练习页展示口径一致
+  const knowledgeTags = (q.tags || []).filter(
+    (t) => typeof t === 'string' && /[\u4e00-\u9fa5]/.test(t) && !/^module_\d+$/.test(t) && t !== q.subject
+  ).slice(0, 2);
+  const allTags = [q.subject, ...knowledgeTags].filter(Boolean);
 
   return `
-      <article class="hq-question" data-day="${day}" data-qid="${esc(q.id)}"${day === 0 ? '' : ' hidden'}>
+      <article class="hq-question" data-day="${day}" data-qid="${esc(q.id)}" data-subject="${esc(q.subject)}" data-concept="${esc(q.concept)}" data-tags="${esc(allTags.join(','))}"${day === 0 ? '' : ' hidden'}>
         <div class="hq-tags">
           <span class="hq-tag hq-tag-type">【${typeLabel}】</span>
           <span class="hq-tag hq-tag-score">${typeScore} 分</span>
           ${q.subject ? `<span class="hq-tag hq-tag-subject">${esc(q.subject)}</span>` : ''}
+          ${knowledgeTags.map((t) => `<span class="hq-tag">${esc(t)}</span>`).join('')}
         </div>
         <p class="hq-concept">${esc(q.concept)}</p>
         <p class="hq-stem">${esc(q.question)}</p>

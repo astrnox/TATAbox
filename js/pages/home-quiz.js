@@ -138,19 +138,57 @@
     }
     var status = question.querySelector('.hq-status');
     if (status) status.textContent = '本题已完成';
-    showResult(state.correct || 0, rows.length);
+    showResult(state.correct || 0, rows.length, false);
   }
 
-  function showResult(correct, total) {
-    var done = document.getElementById('homeQuizDone');
+  /** 面板导航：直接复用汉堡菜单那套链接，保证两处入口永远一致 */
+  function paintNav() {
+    var host = document.getElementById('homeQuizNav');
+    var src = document.querySelector('#mobileNav .mn-body');
+    if (!host || !src || host.getAttribute('data-ready') === '1') return;
+    while (host.firstChild) host.removeChild(host.firstChild);
+    Array.prototype.forEach.call(src.children, function (node) {
+      host.appendChild(node.cloneNode(true));
+    });
+    // 「排行」在原菜单里是按钮，克隆后去掉重复 id 并转发点击
+    var originBtn = document.getElementById('nav-leaderboard-btn');
+    var clonedBtn = host.querySelector('#nav-leaderboard-btn');
+    if (clonedBtn && originBtn) {
+      clonedBtn.removeAttribute('id');
+      clonedBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        originBtn.click();
+      });
+    }
+    host.setAttribute('data-ready', '1');
+  }
+
+  function showResult(correct, total, jump) {
+    var panel = document.getElementById('homeQuizPanel');
     var score = document.getElementById('homeQuizScore');
-    if (!done || !score) return;
+    if (!panel || !score) return;
     var tail = correct === total ? '全对，今天的题感不错' :
       (correct >= total - 1 ? '只差一条，再看一眼解析' :
         (correct * 2 >= total ? '有一半需要回看' : '建议先读解析再做一道'));
-    score.textContent = '答对 ' + correct + ' / ' + total + ' · ' + tail;
-    done.hidden = false;
+    var title = document.getElementById('homeQuizPanelTitle');
+    if (title) title.textContent = '答对 ' + correct + ' / ' + total + ' 条';
+    score.textContent = tail;
+    panel.hidden = false;
     paintBoard();
+    paintNav();
+
+    if (jump === false) return;
+    // 答完就跳到面板：滚动到顶部并把焦点交给标题，键盘/读屏用户不会丢失位置
+    if (typeof panel.scrollIntoView === 'function') {
+      try {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (e) {
+        panel.scrollIntoView();
+      }
+    }
+    if (title) {
+      try { title.focus({ preventScroll: true }); } catch (e2) { /* 忽略 */ }
+    }
   }
 
   /** 工作台数字：错题、今日已刷、正确率、连续天数 */
@@ -205,13 +243,19 @@
     if (!Array.isArray(wrong)) wrong = [];
     var qid = question.getAttribute('data-qid') || '';
     var stemEl = question.querySelector('.hq-stem');
+    var subject = question.getAttribute('data-subject') || '';
+    var concept = question.getAttribute('data-concept') || '';
+    var tags = (question.getAttribute('data-tags') || '').split(',').filter(Boolean);
     // 同一题当天只记一次，避免反复提交把错题本刷屏
     var exists = wrong.some(function (item) { return item && item.qId === qid; });
     if (!exists && qid) {
       wrong.push({
         qId: qid,
         questionText: stemEl ? stemEl.textContent : '',
-        subject: '',
+        subject: subject,
+        concept: concept,
+        tags: tags,
+        module: 'general',
         timestamp: Date.now(),
         wrongCount: 1
       });
@@ -277,8 +321,8 @@
       for (var i = 0; i < questions.length; i++) {
         questions[i].hidden = i !== safeIdx;
       }
-      var done = document.getElementById('homeQuizDone');
-      if (done) done.hidden = true;
+      var panel = document.getElementById('homeQuizPanel');
+      if (panel) panel.hidden = true;
       updateStatus(questions[safeIdx]);
     };
 
