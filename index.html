@@ -216,8 +216,8 @@
   </style>
   <script src="js/core/theme-init.js?v=20260820a"></script>
   <script src="js/core/mode-init.js?v=20261016a"></script>
-  <!-- 旧内核浏览器兼容探测（同步）：故意使用现代语法，老内核解析失败 → 标记缺失 → 由 legacy-fallback.js 降级 -->
-  <script src="js/core/legacy-probe.js?v=20260919a"></script>
+  <!-- 旧内核浏览器兼容探测（同步）：故意使用现代语法，老内核解析失败 → 标记缺失 → 由 legacy-fallback.js 按真实启动结果决定是否降级 -->
+  <script src="js/core/legacy-probe.js?v=20261114a"></script>
 
   <!-- Primary SEO
        品牌定位语分工（避免后续再次漂移）：
@@ -367,8 +367,8 @@
   </div>
   <!-- 首屏骨架遮罩逻辑（外部化）：defer 加载，不阻塞内容解析；遮罩本身由上方 CSS 立即显示 -->
   <script src="js/core/boot-mask.js?v=20260917b" defer></script>
-  <!-- 旧内核浏览器降级（同步，纯 ES5）：探针标记缺失/不齐时摘除遮罩、显示升级提示 -->
-  <script src="js/core/legacy-fallback.js?v=20260919a"></script>
+  <!-- 旧内核浏览器降级（同步，纯 ES5）：fail-open —— 只有应用确实没启动时才摘除遮罩、切只读模式 -->
+  <script src="js/core/legacy-fallback.js?v=20261114a"></script>
 
   <a href="#page-content" class="skip-link">跳到主要内容</a>
 
