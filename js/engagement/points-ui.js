@@ -16,9 +16,29 @@
     return (typeof root.getPoints === 'function') ? root.getPoints() : 100;
   }
 
-  function _getLevel() {
-    var pts = _getBalance();
-    return (typeof root.getPointsLevel === 'function') ? root.getPointsLevel(pts) : { label: '基本信任', title: '基本信任', color: '#5a7d5c' };
+  function _getLevel(pts) {
+    var p = (typeof pts === 'number' && isFinite(pts)) ? pts : _getBalance();
+    return (typeof root.getPointsLevel === 'function') ? root.getPointsLevel(p) : { label: '基本信任', title: '基本信任', color: '#5a7d5c' };
+  }
+
+  // 信用指数的权威值在云端 profiles.points —— 信用排行榜读的就是这个字段。
+  // 本地 getPoints() 是「带衰减的离线模型」，两者口径不同，直接用本地值会让
+  // 同一用户在信用中心和排行榜出现两个数字。登录态优先用云端值，未登录才回退本地。
+  function _getCloudPoints() {
+    return new Promise(function (resolve) {
+      var fallback = _getBalance();
+      try {
+        var sb = (typeof root.getSupabase === 'function') ? root.getSupabase() : null;
+        var me = (typeof root.getCurrentUser === 'function') ? root.getCurrentUser() : null;
+        if (!sb || !me || !me.id || me.isGuest) { resolve(fallback); return; }
+        sb.from('profiles').select('points').eq('id', me.id).maybeSingle().then(function (res) {
+          var d = res && res.data;
+          resolve((d && typeof d.points === 'number') ? Math.round(d.points * 10) / 10 : fallback);
+        }).catch(function () { resolve(fallback); });
+      } catch (e) {
+        resolve(fallback);
+      }
+    });
   }
 
   function _renderHistory(history) {
@@ -66,8 +86,14 @@
   // 信用中心：展示信用指数、信任等级、信用变动明细（无任何商品兑换）
   function initCreditCenter(target) {
     if (!target) return;
-    var balance = _getBalance();
-    var level = _getLevel();
+    // 先取云端权威值再渲染，保证与排行榜同一口径
+    _getCloudPoints().then(function (balance) {
+      renderCreditCenter(target, balance);
+    });
+  }
+
+  function renderCreditCenter(target, balance) {
+    var level = _getLevel(balance);
     var detail = (typeof root.getPointsDetail === 'function') ? root.getPointsDetail() : { history: [] };
 
     target.innerHTML = '<div style="max-width:860px;margin:0 auto;padding:24px 20px 80px;">' +
@@ -112,10 +138,11 @@
       return;
     }
 
-    fn(100).then(function (list) {
+    fn(100).then(async function (list) {
       var me = (typeof root.getCurrentUser === 'function') ? root.getCurrentUser() : null;
       var myId = me ? me.id : null;
-      var myPoints = (typeof root.getPoints === 'function') ? root.getPoints() : 100;
+      // 与榜单同一数据源：云端 profiles.points
+      var myPoints = await _getCloudPoints();
 
       var rows = (list || []).map(function (item, i) {
         var rankClass = String(i + 1);

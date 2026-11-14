@@ -1217,7 +1217,7 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/engagement/points-ui.js?v=20260814a" defer></script>
+  <script src="js/engagement/points-ui.js?v=20261114c" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20260821a" defer></script>
   <!-- P1-1 拆分：认证 UI / 搜索 / 排行榜（依赖 utils.js 的 escapeHtml，须在 app.js 前） -->
@@ -1226,7 +1226,7 @@
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
-  <script src="js/core/app.js?v=20261114b" defer></script>
+  <script src="js/core/app.js?v=20261114c" defer></script>
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
   <script src="js/core/app-auth.js?v=20261114b" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>

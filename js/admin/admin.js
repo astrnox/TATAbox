@@ -1279,6 +1279,18 @@ async function adminFetchRest(method, table, queryParams, body) {
       return { ok: false, data: { error: friendly }, status: resp.status, _raw: json };
     }
 
+    // 0 行写入 = RLS 把这次 PATCH/DELETE 过滤掉了（例如未完成管理员验证），
+    // PostgREST 仍返回 2xx + 空数组，旧实现会把「什么都没改」当成成功。
+    if ((method === 'PATCH' || method === 'DELETE' || method === 'PUT') &&
+        Array.isArray(json) && json.length === 0) {
+      _adminLog.error('[Admin REST] 写入未命中任何行:', method, table, queryParams || '');
+      return {
+        ok: false,
+        status: 409,
+        data: { error: '操作未生效：当前账号没有写入权限或记录不存在，请重新完成管理员动态码验证后重试。' }
+      };
+    }
+
     return { ok: true, data: json, status: resp.status };
   } catch (fetchErr) {
     _adminLog.error('[Admin REST] 网络错误:', fetchErr.message);
@@ -2144,7 +2156,7 @@ function _ensureAdminModule(src) {
       return;
     }
     var s = document.createElement('script');
-    s.src = src + '?v=20260817a';
+    s.src = src + '?v=20261114c';
     s.setAttribute('data-admin-module', src);
     s.async = true;
     s.onload = function () { s.setAttribute('data-loaded', '1'); resolve(true); };

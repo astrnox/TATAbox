@@ -283,7 +283,7 @@ function _safeInit(initFnName, route, target) {
     if (modName) {
       _showModuleLoading(target, initFnName);
       var _script = document.createElement('script');
-      _script.src = 'js/' + _moduleDir(modName) + '/' + modName + '.js?v=20260814c';
+      _script.src = 'js/' + _moduleDir(modName) + '/' + modName + '.js?v=20261114c';
       _script.onload = function() {
         if (typeof window[initFnName] === 'function') {
           try { window[initFnName](target); } catch (e) { console.error(e); }

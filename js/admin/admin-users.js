@@ -348,8 +348,14 @@ window.handleEditUser = function(userId, username, displayName, bioScore, totalA
     if (isNaN(updates.total_correct)) delete updates.total_correct;
     if (isNaN(updates.accuracy)) delete updates.accuracy;
     try {
-      var { error } = await sb.from('profiles').update(updates).eq('id', userId);
+      // 必须用 select() 回读受影响行：RLS 把这次 UPDATE 过滤掉时 PostgREST
+      // 仍返回 2xx/0 行，旧写法不报错，界面就会「显示成功但实际没改」。
+      var { data: updatedRows, error } = await sb.from('profiles').update(updates).eq('id', userId).select('id');
       if (error) { showAdminToast('更新失败: ' + parseSupabaseError(error), 'error'); return; }
+      if (!updatedRows || updatedRows.length === 0) {
+        showAdminToast('更新未生效：当前账号没有管理员写入权限，请重新完成动态码验证后重试', 'error');
+        return;
+      }
       closeUserModal();
       const users = await getUsers();
       const container = document.getElementById('admin-tab-content');
