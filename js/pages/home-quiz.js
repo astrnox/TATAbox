@@ -146,7 +146,7 @@
     var host = document.getElementById('homeQuizNav');
     var src = document.querySelector('#mobileNav .mn-body');
     if (!host || !src || host.getAttribute('data-ready') === '1') return;
-    host.innerHTML = '';
+    while (host.firstChild) host.removeChild(host.firstChild);
     Array.prototype.forEach.call(src.children, function (node) {
       host.appendChild(node.cloneNode(true));
     });

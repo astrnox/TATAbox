@@ -515,14 +515,31 @@
     if (btn) { btn.disabled = false; }
     if (!questions || questions.length === 0) {
       if (area) {
-        area.innerHTML = '<div class="rd-practice"><h5>同类题练习</h5>' +
-          '<p class="rd-loading">这道题暂时没有匹配到同类题（题库可能还没加载完）。可以先去专项练习按学科自选，或重试一次。</p>' +
-          '<div class="rd-practice-actions">' +
-          '<a class="rd-practice-btn" href="#/practice">去专项练习</a>' +
-          '<button type="button" class="rd-practice-btn" id="rd-similar-retry">重试</button>' +
-          '</div></div>';
-        var retry = document.getElementById('rd-similar-retry');
-        if (retry) retry.addEventListener('click', function () { _doPractice(q); });
+        var box = document.createElement('div');
+        box.className = 'rd-practice';
+        var head = document.createElement('h5');
+        head.textContent = '同类题练习';
+        var tip = document.createElement('p');
+        tip.className = 'rd-loading';
+        tip.textContent = '这道题暂时没有匹配到同类题（题库可能还没加载完）。可以先去专项练习按学科自选，或重试一次。';
+        var acts = document.createElement('div');
+        acts.className = 'rd-practice-actions';
+        var link = document.createElement('a');
+        link.className = 'rd-practice-btn';
+        link.href = '#/practice';
+        link.textContent = '去专项练习';
+        var retry = document.createElement('button');
+        retry.type = 'button';
+        retry.className = 'rd-practice-btn';
+        retry.textContent = '重试';
+        retry.addEventListener('click', function () { _doPractice(q); });
+        acts.appendChild(link);
+        acts.appendChild(retry);
+        box.appendChild(head);
+        box.appendChild(tip);
+        box.appendChild(acts);
+        area.textContent = '';
+        area.appendChild(box);
       }
       return;
     }
