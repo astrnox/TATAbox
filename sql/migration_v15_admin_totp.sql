@@ -54,7 +54,9 @@ RETURNS BYTEA AS $$
 DECLARE
   alphabet CONSTANT text := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
   v TEXT := upper(regexp_replace(coalesce(p_text, ''), '[^A-Z2-7]', '', 'g'));
-  bits BIGINT := 0;
+  -- 必须是 INT：PostgreSQL 只有 int8 >> int，写成 BIGINT 会报
+  -- 「operator does not exist: bigint >> bigint」，动态码校验直接 500。
+  bits INT := 0;
   val BIGINT := 0;
   out BYTEA := '\x'::bytea;
   i INT;
