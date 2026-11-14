@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-14T04:49:09.505Z
+ * 生成时间：2026-11-14T09:03:00.639Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -7011,11 +7011,21 @@ body.js-enhanced .hq-nojs {
 }
 
 .hq-panel {
+  /* 必须参与定位：.hq-card 是 position: relative，其 0 18px 50px 阴影会画在
+     未定位的兄弟节点之上，导致面板顶部出现一道灰色渐变带。面板定位后
+     按文档顺序后绘制，自身背景即可盖住上方卡片的下投影。 */
+  position: relative;
   margin-top: 16px;
   border-radius: var(--radius-lg, 12px);
   background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   padding: 20px 22px 22px;
   animation: hqRise 0.36s ease both;
+}
+
+/* .hq-kicker 默认是给深绿首屏用的白字，放进白色面板后不可见 */
+.hq-panel .hq-kicker {
+  color: var(--text-secondary, #5a6b5e);
 }
 
 .hq-panel[hidden] {
