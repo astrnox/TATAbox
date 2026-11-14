@@ -370,6 +370,16 @@ function safeCacheMatch(request) {
   });
 }
 
+/**
+ * 安全写缓存：Cache API 不接受 Range 请求产生的 206 Partial Content，
+ * 直接 put 会抛 "Partial response (status code 206) is unsupported"。
+ * 这类响应（以及 opaque 的 status 0）一律跳过，不影响本次返回。
+ */
+function cachePutSafe(cache, request, response) {
+  if (!response || response.status === 206 || response.status === 0) return;
+  cache.put(request, response).catch(function () {});
+}
+
 self.addEventListener('fetch', function (event) {
   var request = event.request;
 
@@ -387,7 +397,7 @@ self.addEventListener('fetch', function (event) {
         .then(function (response) {
           var clone = response.clone();
           caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(request, clone);
+            cachePutSafe(cache, request, clone);
           });
           return response;
         })
@@ -484,7 +494,7 @@ self.addEventListener('fetch', function (event) {
         return cached || fetch(request).then(function (response) {
           var clone = response.clone();
           caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(request, clone);
+            cachePutSafe(cache, request, clone);
           });
           return response;
         }).catch(function () {
@@ -509,7 +519,7 @@ self.addEventListener('fetch', function (event) {
       return cached || fetch(request).then(function (response) {
         var clone = response.clone();
         caches.open(CACHE_NAME).then(function (cache) {
-          cache.put(request, clone);
+          cachePutSafe(cache, request, clone);
         });
         return response;
       }).catch(function () {
