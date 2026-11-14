@@ -1038,12 +1038,20 @@ function injectAdminStyles() {
 // 详见 sql/migration_v15_admin_totp.sql。
 
 /**
- * 判断是否为「服务端未部署同名 RPC」错误（PostgREST: Could not find the function ... / does not exist）
- * @param {string} msg
+ * 归类 PostgREST / Postgres 错误。
+ * 旧实现只要消息里出现 "not found" / "does not exist" 就判定为「RPC 未部署」，
+ * 但函数内部抛出的异常（如缺少扩展、表结构不完整）同样包含这些字样，
+ * 结果真实原因被一句通用提示覆盖，无法排查。
+ * @param {Object|string} err
+ * @returns {'rpc_missing'|'no_permission'|'schema'|'unknown'}
  */
-function _isMissingRpcError(msg) {
-  var s = String(msg || '');
-  return s.indexOf('Could not find') >= 0 || s.indexOf('not found') >= 0 || s.indexOf('does not exist') >= 0;
+function _classifyAdminRpcError(err) {
+  var msg = String((err && err.message) || err || '');
+  var code = String((err && err.code) || '');
+  if (code === 'PGRST202' || /Could not find the function/i.test(msg)) return 'rpc_missing';
+  if (code === '42501' || /permission denied/i.test(msg)) return 'no_permission';
+  if (code === '42P01' || code === '42703' || code === '42883' || /does not exist/i.test(msg)) return 'schema';
+  return 'unknown';
 }
 
 /**
@@ -1061,12 +1069,19 @@ async function adminVerifyTotp(code) {
     var res = await sb.rpc('admin_login_with_totp', { p_code: normalized });
     if (res && res.error) {
       var msg = res.error.message || '验证失败';
-      if (_isMissingRpcError(msg)) {
+      var kind = _classifyAdminRpcError(res.error);
+      _adminLog.error('[Admin] TOTP 验证失败(' + kind + '):', msg, 'code=', res.error.code);
+      if (kind === 'rpc_missing') {
         // L-08：迁移文件名等细节只写日志，界面给通用提示
-        _adminLog.error('[Admin] TOTP RPC 未部署:', msg);
-        msg = '服务端暂未启用动态码登录，请联系维护者。';
+        return { ok: false, error: '服务端暂未启用动态码登录，请联系维护者。' };
       }
-      return { ok: false, error: msg };
+      if (kind === 'no_permission') {
+        return { ok: false, error: '当前账号无权验证动态码，请重新登录后重试。' };
+      }
+      // schema / unknown 属于后台配置问题：把真实原因显示出来，
+      // 否则又被通用提示覆盖，只能反复试错。
+      var detail = String(msg).slice(0, 140);
+      return { ok: false, error: '动态码验证失败：' + (detail || '未知错误') };
     }
     var row = Array.isArray(res && res.data) ? res.data[0] : (res && res.data);
     if (!row || !row.ok) {
