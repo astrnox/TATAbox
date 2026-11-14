@@ -53,7 +53,10 @@ CREATE OR REPLACE FUNCTION public._b32_decode(p_text TEXT)
 RETURNS BYTEA AS $$
 DECLARE
   alphabet CONSTANT text := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
-  v TEXT := upper(regexp_replace(coalesce(p_text, ''), '[^A-Z2-7]', '', 'g'));
+  -- 必须先 upper 再过滤。若先过滤，小写字母会被整段删掉：
+  -- 16 位种子里只要有 1 个字符不在 A-Z2-7（含小写），就只剩 15 个字符、
+  -- 解码 9 字节 < 10，TOTP RPC 会误判「动态码未配置」。
+  v TEXT := regexp_replace(upper(coalesce(p_text, '')), '[^A-Z2-7]', '', 'g');
   -- 必须是 INT：PostgreSQL 只有 int8 >> int，写成 BIGINT 会报
   -- 「operator does not exist: bigint >> bigint」，动态码校验直接 500。
   bits INT := 0;
@@ -203,21 +206,33 @@ GRANT EXECUTE ON FUNCTION public.admin_login_with_totp(TEXT) TO authenticated;
 -- ============================================================
 -- 种子规格：16 位 base32（gen_random_bytes(10) = 80bit 熵）。种子不出库、
 -- 无离线爆破面，在线爆破受「5 次失败锁 15 分钟」限制，够用。
--- 第 2 步（生成种子；幂等，重复执行不会换种子）：
--- 执行后结果面板会显示两列，把「密钥」录入身份验证器 App
+-- 第 2 步（生成种子；幂等，有效种子不会被替换）：
+-- 只有「种子为空」或「解码后不足 10 字节」（含非法字符的坏种子）才重新生成，
+-- 避免坏种子一直卡在「动态码未配置」。
+-- 执行后结果面板会显示密钥，把它录入身份验证器 App
 -- （App 内选「手动输入密钥」粘贴即可；URI 列供支持导入的应用使用）。
 -- 种子只显示在结果面板、不写入任何查询文本，也不会进公开仓库。
 -- ============================================================
 WITH upd AS (
   UPDATE public.admin_config
-  SET totp_secret = COALESCE(totp_secret, public._b32_encode(gen_random_bytes(10))),
+  SET totp_secret = public._b32_encode(gen_random_bytes(10)),
+      totp_last_step = -1,
+      failed_attempts = 0,
+      locked_until = NULL,
       updated_at = NOW()
   WHERE id = 1
+    AND (totp_secret IS NULL OR length(public._b32_decode(totp_secret)) < 10)
   RETURNING totp_secret
+), cur AS (
+  SELECT totp_secret FROM upd
+  UNION ALL
+  SELECT totp_secret FROM public.admin_config
+  WHERE id = 1 AND NOT EXISTS (SELECT 1 FROM upd)
 )
 SELECT totp_secret AS "身份验证器密钥（16位base32，只在此显示）",
+       length(public._b32_decode(totp_secret)) AS "解码字节数（应为10）",
        'otpauth://totp/TATABOX:admin?secret=' || totp_secret || '&issuer=TATABOX' AS "otpauth URI（可选）"
-FROM upd;
+FROM cur;
 
 -- 执行自检（应返回 1 行；执行第 2 步后 secret 非空）：
 -- SELECT left(coalesce(totp_secret,'（未生成）'),8) AS secret_prefix,
