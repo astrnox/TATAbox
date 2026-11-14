@@ -7,6 +7,42 @@
   var _filter = { concept: '', errorReason: '' };
   var _wbFocusTrap = null;
 
+  // 错题 → 卡片：写进本地「我的错题卡」牌组，由 js/pages/cards.js 合并展示
+  var USER_CARD_KEY = 'tatabox_user_cards_v1';
+  var USER_DECK_NAME = '我的错题卡';
+
+  function _readUserCards() {
+    try {
+      var list = JSON.parse(localStorage.getItem(USER_CARD_KEY) || '[]');
+      return Array.isArray(list) ? list : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function _writeUserCards(list) {
+    try { localStorage.setItem(USER_CARD_KEY, JSON.stringify(list)); } catch (e) {}
+  }
+
+  // 正面=题干，背面=正确答案 + 解析；两者都没有时给出可读提示，避免空白卡
+  function _buildCardFromWrong(q) {
+    var question = String(q.question_text || '').trim();
+    if (!question) return null;
+    var answer = String(q.correct_answer || '').trim();
+    var analysis = String(q.analysis || '').trim();
+    var back = answer ? '正确答案：' + answer : '';
+    if (analysis) back += (back ? '\n\n' : '') + '解析：' + analysis;
+    if (!back) back = '这道错题还没有填写答案，可在错题本「查看/编辑」补齐后再生成。';
+    return {
+      id: 'wrong_' + (q.id || Date.now()),
+      question: question,
+      answer: back,
+      tags: [q.concept || q.subject || USER_DECK_NAME],
+      source: 'wrongbook',
+      createdAt: Date.now()
+    };
+  }
+
   function _releaseWbModal() {
     if (_wbFocusTrap) { _wbFocusTrap.release(); _wbFocusTrap = null; }
   }
@@ -115,7 +151,7 @@
           '<button class="wb-btn wb-detail-btn" data-id="' + q.id + '">查看/编辑</button>' +
           '<button class="wb-btn wb-analyze-btn" data-id="' + q.id + '">AI 分析</button>' +
           '<button class="wb-btn wb-kg-btn" data-concept="' + (q.concept || q.subject || '') + '">知识图谱</button>' +
-          '<button class="wb-btn wb-card-btn" data-concept="' + (q.concept || q.subject || '') + '">生成卡片</button>' +
+          '<button class="wb-btn wb-card-btn" data-id="' + q.id + '">生成卡片</button>' +
           '<button class="wb-btn wb-btn--danger wb-delete-btn" data-id="' + q.id + '">删除</button>' +
         '</div>' +
       '</div>';
@@ -142,8 +178,26 @@
     });
     container.querySelectorAll('.wb-card-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        var concept = btn.getAttribute('data-concept') || '';
-        try { sessionStorage.setItem('tatabox_card_focus', concept); } catch (e) {}
+        var id = btn.getAttribute('data-id');
+        var target = null;
+        for (var i = 0; i < _currentList.length; i++) {
+          if (String(_currentList[i].id) === String(id)) { target = _currentList[i]; break; }
+        }
+        var card = target ? _buildCardFromWrong(target) : null;
+        if (!card) {
+          showToast('这道错题缺少题干，无法生成卡片');
+          return;
+        }
+        var list = _readUserCards();
+        var duplicated = list.some(function(c) { return c && c.question === card.question; });
+        if (duplicated) {
+          showToast('这道题已在「' + USER_DECK_NAME + '」中');
+        } else {
+          list.push(card);
+          _writeUserCards(list);
+          showToast('已生成卡片，正在打开「' + USER_DECK_NAME + '」');
+        }
+        try { sessionStorage.setItem('tatabox_card_focus', USER_DECK_NAME); } catch (e) {}
         if (typeof navigateTo === 'function') navigateTo('/cards');
       });
     });

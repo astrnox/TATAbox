@@ -10,6 +10,8 @@
 
   var STORAGE_KEY = 'anki_progress_v2'; // v2: FSRS-4.5 + BKT
   var BKT_STORAGE_KEY = 'tatabox_bkt_v1';
+  var USER_CARD_KEY = 'tatabox_user_cards_v1'; // 错题本「生成卡片」写入的用户牌组
+  var USER_DECK_NAME = '我的错题卡';
   var NEW_CARDS_PER_DAY = 20;
   var DEFAULT_EASE_FACTOR = 2.5;
   var MIN_EASE_FACTOR = 1.3;
@@ -202,6 +204,33 @@
   }
 
 
+  /**
+   * 合并错题本生成的本地卡片为「我的错题卡」牌组。
+   * 固定在数组末尾，避免插入前面的牌组导致 deck_<idx> 的复习进度错位。
+   */
+  function mergeUserDeck() {
+    var list;
+    try {
+      list = JSON.parse(localStorage.getItem(USER_CARD_KEY) || '[]');
+    } catch (e) {
+      return;
+    }
+    if (!Array.isArray(list) || !list.length) return;
+    var cards = list.filter(function (c) {
+      return c && c.question;
+    }).map(function (c) {
+      return {
+        question: String(c.question),
+        answer: String(c.answer || ''),
+        tags: Array.isArray(c.tags) ? c.tags : [],
+        concept: (c.tags && c.tags[0]) || ''
+      };
+    });
+    if (!cards.length) return;
+    if (!KData.分类) KData.分类 = [];
+    KData.分类.push({ name: USER_DECK_NAME, id: 'user_wrong', cards: cards });
+  }
+
   async function loadData() {
     // 优先从 Supabase 加载卡片数据
     try {
@@ -221,6 +250,7 @@
             });
           });
           KData = { 分类: Object.values(categories) };
+          mergeUserDeck();
           initApp();
           return;
         }
@@ -231,6 +261,7 @@
     try {
       var res = await fetch('data/cards.json');
       KData = await res.json();
+      mergeUserDeck();
       initApp();
     } catch (err) {
       console.error('[Anki] 加载数据失败', err);

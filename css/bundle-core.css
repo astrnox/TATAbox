@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-14T09:03:00.639Z
+ * 生成时间：2026-11-14T09:38:34.055Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -6159,13 +6159,15 @@ textarea.lmc-form-input { resize: vertical; min-height: 60px; line-height: 1.5; 
     display: none;
   }
 
+  /* 4 个统计项在窄屏上改成 2×2，避免第四个被挤到第二行单独居中 */
   .stats-row {
-    flex-wrap: wrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
   }
 
   .stat-item {
-    padding: 0 24px;
+    padding: 0;
   }
 
   .stat-divider {

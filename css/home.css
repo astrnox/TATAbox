@@ -584,13 +584,15 @@
     display: none;
   }
 
+  /* 4 个统计项在窄屏上改成 2×2，避免第四个被挤到第二行单独居中 */
   .stats-row {
-    flex-wrap: wrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
   }
 
   .stat-item {
-    padding: 0 24px;
+    padding: 0;
   }
 
   .stat-divider {
