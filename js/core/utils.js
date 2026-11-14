@@ -319,7 +319,13 @@ function ensureToastStyle() {
   if (document.getElementById('toast-style')) return;
   var style = document.createElement('style');
   style.id = 'toast-style';
-  style.textContent = '@keyframes toastSlideUp{from{transform:translateX(-50%) translateY(20px);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}@keyframes toastSlideDown{from{transform:translateX(-50%) translateY(0);opacity:1}to{transform:translateX(-50%) translateY(20px);opacity:0}}';
+  style.textContent = '@keyframes toastSlideUp{from{transform:translateX(-50%) translateY(20px);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}@keyframes toastSlideDown{from{transform:translateX(-50%) translateY(0);opacity:1}to{transform:translateX(-50%) translateY(20px);opacity:0}}' +
+    '#bioquest-toast.toast-error{pointer-events:auto;text-align:left;display:flex;gap:12px;align-items:flex-start}' +
+    '#bioquest-toast .toast-body{flex:1;min-width:0}' +
+    '#bioquest-toast .toast-msg{line-height:1.6;word-break:break-word}' +
+    '#bioquest-toast .toast-hint{margin-top:6px;font-size:0.78rem;opacity:0.82;line-height:1.5}' +
+    '#bioquest-toast .toast-close{flex:none;border:1px solid rgba(255,255,255,0.45);background:transparent;color:#fff;border-radius:9999px;padding:4px 12px;font-size:0.78rem;cursor:pointer}' +
+    '#bioquest-toast .toast-close:focus-visible{outline:2px solid #fff;outline-offset:2px}';
   document.head.appendChild(style);
 }
 
@@ -330,17 +336,23 @@ function ensureToastStyle() {
  *   - 增加 role="alert" + aria-live，读屏用户可感知错误/状态提示。
  * @param {string} message 提示文本
  * @param {string|number} [typeOrDuration] 'error'|'success'|'info' 或毫秒数
- * @param {number} [duration] 显示时长（毫秒），默认 success/info 3000、error 4500
+ * @param {number} [duration] 显示时长（毫秒），默认 success/info 3000、error 常驻（0）
  */
 function showToast(message, typeOrDuration, duration) {
   var type = 'info';
   if (typeOrDuration === 'error' || typeOrDuration === 'success' || typeOrDuration === 'info') {
     type = typeOrDuration;
-  } else if (typeof typeOrDuration === 'number' && typeOrDuration > 0) {
-    duration = typeOrDuration; // 旧签名 showToast(msg, ms) 兼容
+  } else if (typeof typeOrDuration === 'number' && typeOrDuration >= 0) {
+    duration = typeOrDuration; // 旧签名 showToast(msg, ms) 兼容（0 = 常驻）
+  } else if (typeof typeOrDuration === 'undefined') {
+    // 历史调用大多没传类型；按文案识别错误，避免「错误提示 3 秒就消失」。
+    if (/失败|错误|异常|无法|不能|超时|未找到|不可用|已失效|请先|不足/.test(String(message || ''))) {
+      type = 'error';
+    }
   }
-  if (!(typeof duration === 'number' && duration > 0)) {
-    duration = type === 'error' ? 4500 : 3000;
+  if (!(typeof duration === 'number' && duration >= 0)) {
+    // 错误提示默认常驻，必须由用户主动关闭；成功/信息提示仍自动消失。
+    duration = type === 'error' ? 0 : 3000;
   }
 
   var existing = document.getElementById('bioquest-toast');
@@ -351,6 +363,7 @@ function showToast(message, typeOrDuration, duration) {
 
   var toast = document.createElement('div');
   toast.id = 'bioquest-toast';
+  if (type === 'error') toast.className = 'toast-error';
   // P1-12：错误用 assertive（立即播报），其余 polite
   toast.setAttribute('role', type === 'error' ? 'alert' : 'status');
   toast.setAttribute('aria-live', type === 'error' ? 'assertive' : 'polite');
@@ -362,17 +375,47 @@ function showToast(message, typeOrDuration, duration) {
     'z-index:99999',
     'background:' + typeBg,
     'color:#fff',
-    'padding:12px 24px',
+    'padding:' + (type === 'error' ? '14px 16px' : '12px 24px'),
     'border-radius:16px',
     'font-size:0.9rem',
     'font-weight:500',
     'box-shadow:var(--shadow-lg)',
     'border:1px solid ' + typeBorder,
     'animation:toastSlideUp 0.3s ease',
-    'max-width:90vw',
+    'max-width:' + (type === 'error' ? 'min(92vw, 560px)' : '90vw'),
     'text-align:center',
-    'pointer-events:none'
+    'pointer-events:' + (type === 'error' ? 'auto' : 'none')
   ].join(';');
+
+  if (type === 'error') {
+    var body = document.createElement('div');
+    body.className = 'toast-body';
+    var msg = document.createElement('div');
+    msg.className = 'toast-msg';
+    msg.textContent = message;
+    var hint = document.createElement('div');
+    hint.className = 'toast-hint';
+    hint.textContent = '这条提示会一直保留，读完再关。可以刷新页面重试；如果反复出现，请点右上角「反馈」告诉我们。';
+    body.appendChild(msg);
+    body.appendChild(hint);
+
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'toast-close';
+    close.textContent = '知道了';
+    close.addEventListener('click', function () {
+      if (toast.parentNode) toast.parentNode.removeChild(toast);
+    });
+
+    toast.appendChild(body);
+    toast.appendChild(close);
+    document.body.appendChild(toast);
+    ensureToastStyle();
+    // 常驻错误不设自动消失；把焦点交给关闭按钮，键盘用户可立即关掉
+    try { close.focus({ preventScroll: true }); } catch (e) { /* 老浏览器忽略 */ }
+    return;
+  }
+
   toast.textContent = message;
   document.body.appendChild(toast);
   ensureToastStyle();

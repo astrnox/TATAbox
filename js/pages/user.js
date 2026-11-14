@@ -20,6 +20,11 @@ window._cspClearNotifs = function () {
 var escapeHtml = (typeof window !== 'undefined' ? window : globalThis).escapeHtml; // 规范实现见 js/core/utils.js（Q-01 统一）
 
 function showToast(message) {
+  // 统一走全站实现：错误提示常驻可关闭，避免 2 秒消失用户看不清
+  if (typeof window.showToast === 'function' && window.showToast !== showToast) {
+    window.showToast(message);
+    return;
+  }
   const existing = document.querySelector('.user-toast');
   if (existing) existing.remove();
 

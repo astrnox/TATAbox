@@ -35,12 +35,22 @@ function buildDom(search) {
             <span class="hq-status"></span>
           </article>
         </div></div>
-        <div class="hq-done" id="homeQuizDone" hidden>
+        <section class="hq-panel" id="homeQuizPanel" hidden>
+          <p class="hq-kicker" id="homeQuizPanelKicker">今日完成</p>
+          <h2 class="hq-panel-title" id="homeQuizPanelTitle"></h2>
           <p class="hq-score" id="homeQuizScore"></p>
           <span id="hqWrongCount"></span><span id="hqTodayCount"></span>
           <span id="hqAcc"></span><span id="hqStreak"></span>
-        </div>
+          <nav id="homeQuizNav"></nav>
+        </section>
       </div>
+      <nav id="mobileNav"><div class="mn-body">
+        <a href="#/" data-route="/" class="mn-home">首页</a>
+        <div class="mn-section"><div class="mn-section-label">学习</div>
+          <a href="#/practice" data-route="/practice">练习</a>
+          <a href="#/wrongbook" data-route="/wrongbook">错题本</a>
+        </div>
+      </div></nav>
       <div class="hero-content" id="homeHeroClassic" hidden></div>
     </body>`;
   const dom = new JSDOM(html, { url: 'https://example.com/' + (search || ''), runScripts: 'outside-only' });
@@ -74,8 +84,9 @@ function run() {
     choose(window, 'B', 'false');
     assert(submit.disabled === false, '选完后提交按钮应可用');
     submit.click();
-    assert(window.document.getElementById('homeQuizDone').hidden === false, '提交后应展开工作台');
-    assert(/2 \/ 2/.test(window.document.getElementById('homeQuizScore').textContent), '得分应为 2 / 2');
+    assert(window.document.getElementById('homeQuizPanel').hidden === false, '提交后应展开结果面板');
+    assert(/2 \/ 2/.test(window.document.getElementById('homeQuizPanelTitle').textContent), '面板标题应显示 2 / 2');
+    assert(window.document.getElementById('homeQuizNav').children.length > 0, '面板导航应复用汉堡菜单');
     assert(window.document.querySelectorAll('.hq-row.is-correct').length === 2, '两条都应标为正确');
     const stats = JSON.parse(window.localStorage.getItem('tatabox_stats'));
     assert(stats.totalAnswered === 1 && stats.totalCorrect === 1, '统计应累加 1 题 1 对');
@@ -133,7 +144,8 @@ run();
   const submit = active.querySelector('.hq-submit');
   assert(submit.disabled === false, '全部选完后应可提交');
   submit.click();
-  assert(dom.window.document.getElementById('homeQuizDone').hidden === false, '真实页面提交后应展开工作台');
-  assert(/4 \/ 4/.test(dom.window.document.getElementById('homeQuizScore').textContent), '全对应显示 4 / 4');
-  console.log('home-quiz index smoke: 通过（5 题 / 4 条 / 判分 / 工作台）');
+  assert(dom.window.document.getElementById('homeQuizPanel').hidden === false, '真实页面提交后应展开结果面板');
+  assert(/4 \/ 4/.test(dom.window.document.getElementById('homeQuizPanelTitle').textContent), '全对应显示 4 / 4');
+  assert(dom.window.document.getElementById('homeQuizNav').children.length > 1, '真实页面的面板导航应有多个栏目');
+  console.log('home-quiz index smoke: 通过（5 题 / 4 条 / 判分 / 结果面板 / 汉堡栏导航）');
 }

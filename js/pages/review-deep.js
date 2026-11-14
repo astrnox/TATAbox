@@ -64,6 +64,9 @@
       .rd-tag--error { color: #fff; }
       .rd-tag--mastered { background: #16a34a; }
       .rd-tag--wrong { background: #ef4444; }
+      .rd-practice-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+      .rd-practice-btn { display: inline-block; padding: 6px 14px; border-radius: 9999px; border: 1px solid var(--color-sage, #5a7d5c); background: transparent; color: var(--color-sage, #5a7d5c); font-size: 0.82rem; font-weight: 500; cursor: pointer; text-decoration: none; }
+      .rd-practice-btn:hover { background: rgba(90, 125, 92, 0.1); }
       .rd-badge-count { display: inline-block; background: #fee2e2; color: #b91c1c; font-size: 0.72rem; padding: 2px 8px; border-radius: 8px; font-weight: 600; }
       .rd-detail { background: var(--card-bg, #fff); border-radius: 12px; padding: 18px; margin-bottom: 12px; box-shadow: var(--shadow-md); border-left: 4px solid var(--color-sage, #5a7d5c); }
       .rd-detail h4 { margin: 0 0 10px; color: var(--color-deep, #2c4a3b); font-size: 1rem; }
@@ -210,8 +213,32 @@
     return _normalizeModule(q.module || fq.module);
   }
   function _getModuleLabel(mod) {
-    var map = { module_1: '模块1', module_2: '模块2', module_3: '模块3', module_4: '模块4' };
+    var map = { module_1: '模块1', module_2: '模块2', module_3: '模块3', module_4: '模块4', general: '综合' };
     return map[mod] || (mod ? mod : '未分类');
+  }
+
+  /**
+   * 题目标签：优先用题目自带的学科 / 概念 / 知识点标签，
+   * 只有在完全取不到时才退回模块名，避免列表满屏「general」。
+   */
+  function _getTagList(q) {
+    var fq = q.fullQuestion || {};
+    var out = [];
+    var subject = q.subject || fq.subject || '';
+    if (subject && subject !== 'general' && out.indexOf(subject) < 0) out.push(subject);
+    var concept = _getConcept(q);
+    if (concept && out.indexOf(concept) < 0) out.push(concept);
+    var raw = Array.isArray(q.tags) ? q.tags : [];
+    raw.concat(Array.isArray(fq.tags) ? fq.tags : []).forEach(function (t) {
+      if (typeof t !== 'string' || !t) return;
+      if (/^module_\d+$/.test(t)) return;
+      if (!/[\u4e00-\u9fa5]/.test(t)) return; // 英文 slug 对用户无意义
+      if (out.indexOf(t) >= 0) return;
+      out.push(t);
+    });
+    var mod = _getModule(q);
+    if (!out.length && mod) out.push(_getModuleLabel(mod));
+    return out.slice(0, 4);
   }
   function _getQId(q) {
     return q.qId || q.id || q.question_id || '';
@@ -322,13 +349,13 @@
     var html = items.map(function(q) {
       var qid = _getQId(q);
       var txt = _getQuestionText(q);
-      var mod = _getModule(q);
       var concept = _getConcept(q);
       var a = _getAnalysis(qid);
       var m = _getMastery(qid);
       var tags = '';
-      if (mod) tags += '<span class="rd-tag rd-tag--module">' + _esc(_getModuleLabel(mod)) + '</span>';
-      if (concept) tags += '<span class="rd-tag">' + _esc(_truncate(concept, 16)) + '</span>';
+      _getTagList(q).forEach(function (label) {
+        tags += '<span class="rd-tag">' + _esc(_truncate(label, 16)) + '</span>';
+      });
       if (a && a.errorType) tags += '<span class="rd-tag rd-tag--error" style="background:' + (ERROR_TYPE_COLORS[a.errorType] || '#888') + '">' + ERROR_TYPE_LABELS[a.errorType] + '</span>';
       if (m.mastered) tags += '<span class="rd-tag rd-tag--mastered">已掌握</span>';
       var countBadge = (q.wrongCount && q.wrongCount > 1) ? '<span class="rd-badge-count">错 ' + q.wrongCount + ' 次</span>' : '';
@@ -487,7 +514,16 @@
     }
     if (btn) { btn.disabled = false; }
     if (!questions || questions.length === 0) {
-      if (area) area.innerHTML = '<div class="rd-practice"><h5>同类题练习</h5><div class="rd-loading">未找到同类题，可尝试先对该错题做一次 AI 分析以定位知识点。</div></div>';
+      if (area) {
+        area.innerHTML = '<div class="rd-practice"><h5>同类题练习</h5>' +
+          '<p class="rd-loading">这道题暂时没有匹配到同类题（题库可能还没加载完）。可以先去专项练习按学科自选，或重试一次。</p>' +
+          '<div class="rd-practice-actions">' +
+          '<a class="rd-practice-btn" href="#/practice">去专项练习</a>' +
+          '<button type="button" class="rd-practice-btn" id="rd-similar-retry">重试</button>' +
+          '</div></div>';
+        var retry = document.getElementById('rd-similar-retry');
+        if (retry) retry.addEventListener('click', function () { _doPractice(q); });
+      }
       return;
     }
     if (area) area.innerHTML = '<div class="rd-practice"><h5>同类题练习（共 ' + questions.length + ' 题）</h5><div id="rd-practice-list"></div></div>';
