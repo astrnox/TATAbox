@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "凯氏带与木栓质",
+  "difficulty": "league",
+  "explanation": "A【对】依据：myb36-1 同时出现凯氏带断裂与木栓质减少，说明 MYB36 是二者正常形成所必需。\nB【对】依据：myb36-1 凯氏带在径向壁间断分布，屏障完整性低于野生型，示意图与表型一致。\nC【错】错因：esb1-1 的疏水屏障延伸至细胞上下横向壁，环绕整个内皮层细胞，并非只在径向壁。\nD【错】错因：esb1-1 是整周增厚而非更宽厚连续的凯氏带，选项对结构的描述不成立。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 8 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-02-f0b25458/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "图中展示了拟南芥野生型 Col-0、突变体 myb36-1、esb1-1 根成熟区的示意图与显微图像。示意图中品红色线条均代表木栓质沉积区域，绿色块为内皮层细胞。显微图中使用荧光标记凯氏带；下图为内皮层细胞横切面示意图。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "myb36-1 突变同时造成凯氏带断裂、木栓质减少，说明 MYB36 是凯氏带形成与木栓质沉积必需的调控因子"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "myb36-1 突变体的凯氏带在径向壁上呈间断分布，屏障完整性低于 Col-0 野生型，示意图见配图"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "esb1-1 的疏水屏障仅分布于细胞径向壁"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "esb1-1 突变体凯氏带结构比 Col-0 更宽厚连续，示意图见配图"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "plant_water_mineral",
+    "module_2",
+    "植物生理学",
+    "凯氏带与木栓质"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

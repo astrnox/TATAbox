@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-e1b50d23": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 56,
+    "module": "module_1",
+    "src": "glycolysis",
+    "tag": "glycolysis",
+    "tags": [
+      "glycolysis",
+      "module_1",
+      "生物化学",
+      "碳原子追踪"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M1-03-bd29dd31": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 34,
+    "module": "module_1",
+    "src": "glycolysis",
+    "tag": "glycolysis",
+    "tags": [
+      "glycolysis",
+      "module_1",
+      "生物化学",
+      "糖原代谢调控"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

@@ -83,6 +83,9 @@ function gitBlobHashes(files) {
 }
 
 const files = gitListFiles();
+// index.html 也在 CORE_ASSETS 预缓存里，但它不在 js/css/data 目录内；
+// 首屏骨架/内联样式改动同样需要换缓存版本，否则老用户会继续吃旧壳。
+if (fs.existsSync(path.join(ROOT, 'index.html'))) files.push('index.html');
 const blobHashes = gitBlobHashes(files);
 const hash = crypto.createHash('sha256');
 for (let i = 0; i < files.length; i++) {

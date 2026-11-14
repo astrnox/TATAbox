@@ -15,5 +15,56 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-bc7c6c12": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 355,
+    "module": "module_4",
+    "src": "animal_biotech",
+    "tag": "animal_biotech",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "遗传学",
+      "基因敲除与敲减策略"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-03-5a57501f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 87,
+    "module": "module_4",
+    "src": "animal_biotech",
+    "tag": "animal_biotech",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "动物学",
+      "斑马鱼胚胎发育分期"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M4-04-79863558": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 67,
+    "module": "module_4",
+    "src": "animal_biotech",
+    "tag": "animal_biotech",
+    "tags": [
+      "animal_biotech",
+      "module_4",
+      "动物学",
+      "基因功能获得与丧失"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

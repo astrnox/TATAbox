@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "溶酶体贮积病",
+  "difficulty": "league",
+  "explanation": "A【错】错因：水解酶为蛋白质，口服会在消化道被降解，无法到达溶酶体发挥作用。\nB【对】依据：血浆注射可补充酶，部分酶经 M6P 途径被细胞摄取并进入溶酶体。\nC【对】依据：CRISPR-Cas9 可修正致病基因，从根源恢复酶的表达。\nD【对】依据：移植正常造血干细胞可提供持续产生正常酶的细胞来源。",
+  "question": "溶酶体是细胞水解大分子的重要场所。若由基因突变导致缺乏水解酶通常会引发对应的疾病，如泰萨氏病、I 细胞病。对于这类疾病，可以采用的治疗方法包括：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "口服水解酶制剂"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "血浆注射水解酶制剂"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "通过CRISPR-CaS9 系统编辑，修改突变的基因"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "移植来自正常个体的干细胞"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "organelle",
+    "module_1",
+    "细胞生物学",
+    "溶酶体贮积病"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

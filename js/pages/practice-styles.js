@@ -194,6 +194,10 @@ function injectPracticeStyles() {
       align-items: center;
       line-height: 1.8;
     }
+    .practice-count-hint {
+      font-size: 0.75rem;
+      color: var(--text-muted, #8a8a8a);
+    }
     .practice-shortcut-hint kbd {
       display: inline-block;
       min-width: 1.2em;

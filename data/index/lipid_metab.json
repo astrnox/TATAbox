@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-4c9cc03b": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 48,
+    "module": "module_1",
+    "src": "lipid_metab",
+    "tag": "lipid_metab",
+    "tags": [
+      "lipid_metab",
+      "module_1",
+      "生物化学",
+      "脂肪酸β氧化"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

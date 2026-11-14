@@ -138,6 +138,16 @@ function run() {
       if (!isHttpUrl(t.url)) continue; // 本地/相对路径、data:、#锚点全部跳过
 
       const domain = hostnameOf(t.url);
+
+      // 普通正文外链（<a>）不做域名白名单/SRI 约束：解析里引用任意论文、官网
+      // 不应要求改白名单；白名单只用于会实际加载代码/样式的资源标签。
+      if (t.kind === 'a') {
+        if (!externals.some((e) => e.page === page && e.url === t.url)) {
+          externals.push({ page, url: t.url, domain, integrity: false, kind: 'a' });
+        }
+        continue;
+      }
+
       const recognized = whitelist.has(domain) || EXEMPT_DOMAINS.has(domain);
 
       // 判定该元素是否属于"必须带 SRI integrity"的静态资源

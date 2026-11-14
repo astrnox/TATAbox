@@ -51,5 +51,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-04-7861026f": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 111,
+    "module": "module_3",
+    "src": "immune_system",
+    "tag": "immune_system",
+    "tags": [
+      "immune_system",
+      "module_3",
+      "动物生理学",
+      "抗体多样性"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

@@ -36,5 +36,44 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M2-02-b3a8a250": {
+    "category": "ggbo",
+    "concept": "抗生素作用机制",
+    "difficulty": "league",
+    "explanation": "A【对】依据：阿奇霉素结合 50S 亚基抑制蛋白质合成，支原体无细胞壁仍可被作用。\nB【对】依据：四环素结合 30S 亚基，阻碍氨酰 tRNA 与核糖体结合，机制表述正确。\nC【错】错因：头孢菌素抑制细胞壁合成，而支原体没有细胞壁，故不能用于治疗。\nD【错】错因：万古霉素抑制肽聚糖合成而非破坏细胞膜，且对无壁支原体无效。",
+    "question": "下面的表格中列出了用于治疗细菌感染的抗生素药物及其作用原理。请你选出配对无误并能够用于治疗支原体肺炎的选项。",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "阿奇霉素结合细菌50S 核糖体亚基，抑制蛋白质合成"
+      },
+      {
+        "answer": true,
+        "label": "B",
+        "text": "四环素结合细菌30S 小亚基，抑制氨酰tRNA 与核糖体结合"
+      },
+      {
+        "answer": false,
+        "label": "C",
+        "text": "头孢菌素抑制细菌细胞壁合成过程中的转肽作用"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "万古霉素产生超氧自由基损害细菌细胞膜，使细胞内物质外漏"
+      }
+    ],
+    "subject": "微生物学",
+    "tags": [
+      "antibiotics_resistance",
+      "module_2",
+      "微生物学",
+      "抗生素作用机制"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

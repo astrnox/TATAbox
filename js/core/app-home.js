@@ -7,6 +7,29 @@
  */
 'use strict';
 
+var PLAYABLE_COUNT_CACHE_KEY = 'bq:playable-count';
+
+/** 读取上次成功获取的可练题总数，用于首帧直出，避免先看到占位符再跳数 */
+function readCachedPlayableCount() {
+  try {
+    var n = parseInt(window.localStorage.getItem(PLAYABLE_COUNT_CACHE_KEY), 10);
+    return n > 0 ? n : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+/** 写入题库总量：成功取到真实数字后才撤掉占位样式并缓存 */
+function paintPlayableCount(n) {
+  var el = document.getElementById('statTotalQuestions');
+  if (!el || !n) return;
+  el.textContent = String(n);
+  el.classList.remove('stat-value-pending');
+  try {
+    window.localStorage.setItem(PLAYABLE_COUNT_CACHE_KEY, String(n));
+  } catch (e) { /* 隐私模式 / 存储已满时忽略 */ }
+}
+
 function reinitHomeComponents() {
   const daysEl = document.getElementById('cd-days');
   const hoursEl = document.getElementById('cd-hours');
@@ -21,20 +44,39 @@ function reinitHomeComponents() {
     }
   }
 
+  // 首屏「每日一题」：题面由构建期内联，这里只负责判分/翻页/工作台
+  if (window.HomeQuiz && typeof window.HomeQuiz.init === 'function') {
+    window.HomeQuiz.init();
+  }
+
   // 首页「题库总量」动态化：与练习页「可用题目」保持同一口径
   // （模块精编题 manifest.total_questions + 逻辑推理题 logic_questions.json）。
   // 若只读 manifest.total_questions 会漏掉逻辑推理题，导致与练习页数字对不上。
   const statTotalQ = document.getElementById('statTotalQuestions');
   if (statTotalQ) {
+    const cachedTotal = readCachedPlayableCount();
+    if (cachedTotal) paintPlayableCount(cachedTotal);
+
     const countP = (typeof window.getPlayableQuestionCount === 'function')
       ? window.getPlayableQuestionCount()
       : (typeof window.getQuestionBankCount === 'function'
           ? window.getQuestionBankCount()
-          : Promise.resolve(null));
-    Promise.resolve(countP).then(function (n) {
-      if (n && statTotalQ) statTotalQ.textContent = String(n);
-    });
-    statTotalQ.title = '可练题总数：模块精编题 + 逻辑推理题';
+          : null);
+    if (countP) {
+      Promise.resolve(countP).then(function (n) {
+        if (n) return n;
+        // 首次失败通常来自启动期网络抖动或缓存未就绪，延时再取一次
+        return new Promise(function (resolve) { setTimeout(resolve, 600); })
+          .then(function () {
+            return (typeof window.getPlayableQuestionCount === 'function')
+              ? window.getPlayableQuestionCount()
+              : null;
+          });
+      }).then(function (n) {
+        if (n) paintPlayableCount(n);
+      });
+    }
+    statTotalQ.title = '可练题总数：模块精编题 + 逻辑推理题 + 联赛真题 + IBO 真题';
   }
 
   // 注：原此处调用 initHeroSketch()（首屏 35 个随机漂移粒子），已移除。

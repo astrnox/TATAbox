@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M1-02-66d83490": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 226,
+    "module": "module_1",
+    "src": "enzyme",
+    "tag": "enzyme",
+    "tags": [
+      "enzyme",
+      "module_1",
+      "生物化学",
+      "碳酸酐酶与钙沉积"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

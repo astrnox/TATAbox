@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-5672c583": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 56,
+    "module": "module_3",
+    "src": "community_eco",
+    "tag": "community_eco",
+    "tags": [
+      "community_eco",
+      "module_3",
+      "生态学",
+      "岛屿生态位与竞争"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

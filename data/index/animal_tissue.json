@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-75fe9ef8": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 224,
+    "module": "module_3",
+    "src": "animal_tissue",
+    "tag": "animal_tissue",
+    "tags": [
+      "animal_tissue",
+      "module_3",
+      "动物学",
+      "图灵斑图与动物斑纹"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

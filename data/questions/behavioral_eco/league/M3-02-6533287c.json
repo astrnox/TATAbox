@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "性食同类与毒素防御",
+  "difficulty": "league",
+  "explanation": "A【错】错因：TTX 阻断神经信号使色素细胞肌肉舒张，体色变浅、瞳孔放大。\nB【对】依据：雄性既用 TTX 捕食又用于交配，需求更大，后唾腺可能比雌性更大。\nC【错】错因：若注射导致雌性死亡，雄性无法留下后代，会被自然选择淘汰。\nD【对】依据：性食同类先形成选择压力，才使注射毒素的防御行为获得适合度优势。",
+  "question": "最近一项研究发现，大家熟知的、拥有剧毒的蓝环章鱼的一种——蓝纹章鱼（Hapalochlaena fasciata）——在交配过程中，雄性会给雌性注射剧毒的河豚毒素（tetrodotoxin）。这是因为蓝纹章鱼中存在性食同类现象（sexual cannibalism），即在交配尝试中雌性个体会吃掉雄性个体。通过注射河豚毒素，雄性能避免遭受被雌性捕食的命运。 根据以上材料，试推断下列可能正确的说法有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "在蓝纹章鱼交配过程中，雌性个体可能会出现身体颜色变深、瞳孔收缩的反应"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "雄性蓝纹章鱼储存河豚毒素的后唾腺（posterior salivary gland, PSG）可能会比雌性更大"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "交配过程中注射的河豚毒素会导致雌性个体死亡"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "可能在演化历程中先出现性食同类现象，然后才有雄性向雌性注射河豚毒素的行为"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "behavioral_eco",
+    "module_3",
+    "生态学",
+    "性食同类与毒素防御"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

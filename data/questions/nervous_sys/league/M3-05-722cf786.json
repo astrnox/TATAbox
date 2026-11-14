@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "眼肌的脑神经支配",
+  "difficulty": "league",
+  "explanation": "A【对】依据：上斜肌由滑车神经支配，图中 M 所连接肌束的位置与之相符。\nB【错】错因：按肌束的附着位置与走行判断，④应为其他眼肌，并非下直肌。\nC【对】依据：外直肌由第Ⅵ对脑神经支配，其指向图示左侧，故判定为鱼的右眼。\nD【对】依据：这些眼肌均源于耳前肌节 I，属头部体节肌，N 所支配的四块来源相同。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 13 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M3-05-722cf786/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "右图是鱼类的眼肌支配示意图，其中①-⑥表示肌肉，M、N、K 表示脑神经。请判断正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "M 对应滑车神经"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "④对应下直肌"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "这是鱼的右眼"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "N 支配的四块肌肉均来自耳前肌节I"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "nervous_sys",
+    "module_3",
+    "动物生理学",
+    "眼肌的脑神经支配"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

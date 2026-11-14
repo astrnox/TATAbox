@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "Cre重组酶的细胞毒性",
+  "difficulty": "league",
+  "explanation": "A【对】依据：未引入外源lox位点的细胞中，表达正常Cre仍使菌落数明显下降，说明毒性不依赖lox位点。\nB【错】错因：无论是否融合GFP，正常Cre组的菌落数都明显下降，说明细胞损伤与GFP无关。\nC【错】错因：R173K与Y324F只是同类性质氨基酸的替换，未去除正电荷或芳香性，不能证明其必需。\nD【对】依据：G418依靠Neo抗性基因筛选，只有成功转染的细胞能存活成集落，属于阳性筛选。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 16 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-02-748f0f99/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "研究者用编码 G418 抗性的质粒 pPNT 转染 NIH 3T3 细胞 （未引入外源 lox 位点）和编码 WT Cre、Cre 突变体 R173K 或 Y324F、wt Cre-GFP 融合蛋白的质粒、与 GFP 融合的 Cre 突变体 R173K 或 Y324F，或无插入片段的表达载体 （MMP）。将细胞培养 2 天而不进行筛选，然后置于含 G418 的培养基中，12 天后进行固定、染色和菌落计数（colony number），结果如图所示。 根据实验结果，判断下列说法正确的是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Cre 重组酶的细胞毒性不依赖于外源Lox 位点"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Cre 重组酶对细胞的伤害依赖于GFP 蛋白"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "第173 号位的正电氨基酸和第324 号位的芳香氨基酸对于Cre 重组酶的切割活性是必需的"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "培养基中加入Neo 可能是为了筛选出转染成功的细胞"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "genetic_engineering",
+    "module_4",
+    "遗传学",
+    "Cre重组酶的细胞毒性"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

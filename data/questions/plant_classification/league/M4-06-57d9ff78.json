@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "姜目系统演化",
+  "difficulty": "league",
+  "explanation": "A【错】错因：芭蕉科确实最早分化，但最晚分支是竹芋科与美人蕉科构成的姊妹群，不能只说竹芋科。\nB【对】依据：姜科外轮 1 枚雄蕊丢失是姜目祖先已具备的特征，属于祖征。\nC【错】错因：（2）处表示由两侧对称转向不对称，（3）处表示花瓣状不育雄蕊融合成唇瓣。\nD【对】依据：姜类 B 类基因多次复制扩展，传统 ABC 模型难以解释美人蕉雄蕊瓣化。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-06-57d9ff78/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "图中(1)表示姜类的共衍征。结合系统发生图和花图式，判断以下表述正确的是：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "芭蕉科是姜目最早分化的一个分支，而竹芋科则是最晚形成的分支"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "对于姜科而言，外轮1 枚雄蕊的丢失是一种祖征"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "(2)处可表述为“出现瓣化的雄蕊”，而(3)处可表示为“存在明显的雄蕊退化”"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "传统的ABC 模型无法解释美人蕉的雄蕊瓣化机制，说明可能存在更复杂的调控"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_classification",
+    "module_4",
+    "植物学",
+    "姜目系统演化"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

@@ -36,5 +36,51 @@
     ],
     "target": "competition",
     "type": "mtf"
+  },
+  "M4-02-aa8d582c": {
+    "category": "ggbo",
+    "concept": "引物设计与BLAST",
+    "difficulty": "league",
+    "explanation": "A【对】依据：FASTA格式首行以大于号开头，后接序列名称与描述，第二行起为序列本身。\nB【错】错因：qPCR产物短是为提高扩增效率，Taq酶延伸能力远大于500 bp，并非不能合成。\nC【对】依据：两引物Tm值应接近，才能在统一退火温度下同时有效退火，减少引物二聚体。\nD【错】错因：跨外显子接合点设计主要为防止基因组DNA污染干扰，与基因融合检测无关。",
+    "image": {
+      "caption": "第一届 GGBO 生物学竞赛试题配图（第 21 页）",
+      "credit": "第一届 GGBO 生物学竞赛考试试题",
+      "file": "assets/questions/M4-02-aa8d582c/fig1.webp",
+      "license": "原竞赛试卷（仅用于教学练习）",
+      "source": "exam"
+    },
+    "question": "如图是Primer-BLAST 的界面，现在希望设计一对合适的引物序列扩增TP53 基因，以进行q-RT PCR，分析处理前后基因表达差异。请根据所学知识判断下列说法正确的有：",
+    "references": [],
+    "subQuestions": [
+      {
+        "answer": true,
+        "label": "A",
+        "text": "FASTA 格式可以记录核酸序列，第一行以“＞”开头，后接序列的描述信息"
+      },
+      {
+        "answer": false,
+        "label": "B",
+        "text": "PCR 产物并不大，因为qPCR 的延伸能力差，不能合成大于500bp 的DNA"
+      },
+      {
+        "answer": true,
+        "label": "C",
+        "text": "上下游引物的Tm 值差异不能过大，这有利于引物同时退火"
+      },
+      {
+        "answer": false,
+        "label": "D",
+        "text": "引物必须跨越外显子-外显子接合点，主要防止基因融合对检测的影响 （题目至此结束，共21 页，80 题）"
+      }
+    ],
+    "subject": "生物信息学",
+    "tags": [
+      "sequence_alignment",
+      "module_4",
+      "生物信息学",
+      "引物设计与BLAST"
+    ],
+    "target": "competition",
+    "type": "mtf"
   }
 }

@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "细胞死亡方式",
+  "difficulty": "league",
+  "explanation": "A【错】错因：TS 诱导凋亡，早期应为 Annexin V 阳性、PI 阴性，位于第四象限而非第二象限。\nB【对】依据：TSZ 诱导坏死，电镜见细胞膜直接碎裂、轮廓崩散，无有序膜泡形成。\nC【错】错因：LPS+Nig 全程走焦亡通路，早期膜泡是 GSDMD 孔道引起的焦亡小体，不是凋亡小体。\nD【对】依据：实体瘤中心缺氧、缺营养、酸中毒，坏死是最常见的细胞死亡形式。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 4 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M1-03-4b20cbef/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如图展示了不同处理下扫描电子显微镜（SEM）观察到的细胞死亡的几种方式。已知DMSO 为对照组，Nig 可引发细胞焦亡。请根据下图，判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "TS 引发的细胞死亡在Annexin V-FITC/PI 双染法流式细胞术结果中将位于第二象限"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "TSZ 处理后细胞膜直接大面积破损、细胞轮廓崩碎"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "LPS+Nig 处理早期细胞进行细胞凋亡途径，产生大量凋亡小体；晚期转为细胞焦亡，释放细胞促炎物质"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "与细胞凋亡和细胞焦亡相比，实体瘤病灶中心最常出现坏死"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "cell_death",
+    "module_1",
+    "细胞生物学",
+    "细胞死亡方式"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

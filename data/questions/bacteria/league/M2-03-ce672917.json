@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "MRSA细胞壁与中介体",
+  "difficulty": "league",
+  "explanation": "A【错】错因：箭头所指的是细胞膜内陷形成的中介体，不是细胞外基质。\nB【对】依据：处理后细胞壁较未处理细胞增厚，与电镜图的观察结果一致。\nC【错】错因：需在氯霉素存在下标记，否则赖氨酸会大量掺入细胞质蛋白而非细胞壁。\nD【错】错因：MRSA 耐 β-内酰胺类，DNAC-1 机制应与之不同，不能推测其结合 PBP。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 11 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-03-ce672917/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "耐甲氧西林金黄色葡萄球菌（MRSA）已经对β-内酰胺类抗生素和部分其他抗生素产生了耐药性。尽管MRSA 的治疗选择有限，但多种新型抗菌药物正在开发中。研究人员发现了一种新型候选化合物DNAC-1，其可以用于治疗MRSA感染。下图是透射电子显微成像（TEM）下观察到的MRSA在DNAC-1处理前后的细胞形态。请判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "右图白色箭头所指为两个细胞之间的细胞外基质，用于细胞间附着，与色球藻的胶质鞘结构类似"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "DNAC-1 处理后的细胞，其细胞壁厚度相较未处理细胞有所增加"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "若此时掺入[3H]赖氨酸进行同位素标记实验，推测[3H]将富集于细胞壁上"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "推测DNAC-1 很有可能结合青霉素结合蛋白，抑制转肽酶活性，从而抑制细菌细胞壁合成发挥杀菌作用"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "bacteria",
+    "module_2",
+    "微生物学",
+    "MRSA细胞壁与中介体"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

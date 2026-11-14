@@ -43,6 +43,8 @@ function renderPracticePage(target) {
   var kgData = null;
   var shareKey = null;
   var shareQid = null;
+  // 专题题池标签过滤（如 #/practice?tags=glycolysis,krebs_cycle），每次进入页面重置
+  PracticeState.tagsFilter = [];
   try {
     var hash = window.location.hash || '';
     var queryIdx = hash.indexOf('?');
@@ -66,6 +68,17 @@ function renderPracticePage(target) {
       }
       if (conceptParam) {
         kgData = { concept: decodeURIComponent(conceptParam), module: moduleParam || null, category: categoryParam || null };
+      }
+      // 专题题池：#/practice?tags=glycolysis,krebs_cycle（代谢网络等跨考点聚合）
+      var tagsParam = params.get('tags');
+      if (tagsParam) {
+        var rawTags = String(tagsParam).split(',');
+        for (var ti = 0; ti < rawTags.length && PracticeState.tagsFilter.length < 24; ti++) {
+          var tg = rawTags[ti].trim();
+          if (/^[a-z][a-z0-9_]{1,39}$/.test(tg) && PracticeState.tagsFilter.indexOf(tg) < 0) {
+            PracticeState.tagsFilter.push(tg);
+          }
+        }
       }
       // 分享本题深链：#/practice?share=<题目文本>
       // 只做一次 URL 解码 + 与生成端一致的空白折叠（_practiceShareKey），

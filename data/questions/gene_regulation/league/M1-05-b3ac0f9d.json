@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "RNA干扰",
+  "difficulty": "league",
+  "explanation": "A【对】依据：miRNA 为内源单链 RNA，结合靶 mRNA 的 3'-UTR 抑制翻译并促进降解。\nB【错】错因：siRNA 主要引起 mRNA 降解而实现敲减，通常不能完全敲除基因。\nC【错】错因：CRISPRi 使用失去切割活性的 dCas9 在转录水平干扰，不产生双链断裂。\nD【对】依据：RNAi 与 CRISPRi 均作用于 RNA 或转录过程，不改变基因组 DNA 序列。",
+  "question": "2024 年诺贝尔生理学或医学奖颁给了RNA 干扰的研究。事实上，在细胞中有许多名为\"干扰\"的机制可调控基因组表达。下面关于这些方式说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "miRNA 多为内源性的ssRNA，可作于靶基因的mRNA 3'-UTR 区，抑制翻译并促进降解"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "siRNA 多为外源性的dsRNA，可将靶基因完全敲除，并促进mRNA 降解"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "CRISPR 干扰是使用CRISPR-Cas9 系统在靶基因处进行双链断裂剪切"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "不论是RNA 干扰还是CRISPR 干扰，都不会直接影响基因组DNA 序列"
+    }
+  ],
+  "subject": "分子生物学",
+  "tags": [
+    "gene_regulation",
+    "module_1",
+    "分子生物学",
+    "RNA干扰"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "种子结构与萌发",
+  "difficulty": "league",
+  "explanation": "A【错】错因：图中为单子叶植物玉米的胚，⑤是外胚叶而非子叶，不能据此判断为单子叶。\nB【对】依据：盾片与糊粉层在赤霉素诱导下分泌 α-淀粉酶，水解胚乳淀粉供萌发利用。\nC【错】错因：种子萌发时最先突破种皮的是胚根，不是胚芽。\nD【对】依据：禾本科幼苗主根退化，由胚轴处发出的不定根形成须根系，故根系主要来自胚轴。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M2-02-29b2fa9e/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "如右图是某高等植物的胚的切片显微结构，据此判断下列说法正确的有：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "这是单子叶植物的胚，因为只有一片子叶即⑤"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "在种子萌发过程中①会分泌出α-淀粉酶促胚乳中淀粉水解"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "在种子萌发过程中③会最先突破种皮"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "该种植物成熟个体的根系主要发育自④而非⑥"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_repro",
+    "module_2",
+    "植物学",
+    "种子结构与萌发"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

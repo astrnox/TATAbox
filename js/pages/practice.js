@@ -76,7 +76,8 @@ const PracticeState = {
   started: false,
   selectedModules: ['module1', 'module2', 'module3', 'module4'],
   selectedDifficulties: ['easy', 'medium', 'hard'],
-  selectedCategory: 'all',  // 'all' | 'basic' | 'logic'
+  selectedCategory: 'all',  // 'all' | 'basic' | 'logic' | 'ggbo'
+  tagsFilter: [],           // 专题题池标签过滤（如代谢网络 #/practice?tags=...）
   selectedSources: [],      // 题目来源多选（空 = 全部）：cnbo/ibo/original/gaokao/school/other
   selectedTargets: ['high_school', 'competition', 'both'], // 目标群体：高考/竞赛/重叠
   questionCount: 10,

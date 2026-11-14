@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "非随机交配的基因型频率",
+  "difficulty": "league",
+  "explanation": "A【错】错因：只要含相同等位基因即可交配，Aa可与AA、aa交配，交配类型共五种，AA并非只与AA配。\nB【对】依据：按0.3、0.3、0.4的频率计算五种交配组合，下一代中AA基因型频率约为26.6%。\nC【对】依据：解得平衡时AA与aa各约0.309、Aa约0.382，Aa基因型频率约为AA的1.236倍。\nD【对】依据：淘汰全部Aa后只剩AA与aa各自交配，基因频率不变，种群立即达到平衡。",
+  "question": "在某种二倍体动物的常染色体上有一对等位基因A和a，它们分别产生信息素1和2，具有相同信息素的个体可以交配。例如Aa个体可以与AA、Aa、aa个体交配。现有一群体，其AA、Aa、aa基因型频率分别为0.3、0.3、0.4，假设不存在自然选择、基因漂变等作用，请判断下列说法正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "AA个体只会与AA个体交配，aa个体只会与aa个体交配"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "该群体交配产生的下一代中，AA基因型个体约占26.6%"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "当种群基因型频率达到稳定平衡时，Aa基因型频率是AA的1.236倍"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "若自然选择淘汰所有的Aa个体，则种群立马达到平衡"
+    }
+  ],
+  "subject": "遗传学",
+  "tags": [
+    "population_gen",
+    "module_4",
+    "遗传学",
+    "非随机交配的基因型频率"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

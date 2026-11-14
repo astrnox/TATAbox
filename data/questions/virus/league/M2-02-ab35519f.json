@@ -1,0 +1,39 @@
+{
+  "category": "ggbo",
+  "concept": "流感病毒生活史",
+  "difficulty": "league",
+  "explanation": "A【错】错因：流感病毒 mRNA 靠抢帽获得宿主帽结构，并自行加 poly(A)，并非自身携带。\nB【错】错因：H 代表血凝素，负责结合唾液酸受体；切断唾液酸的是神经氨酸酶 N。\nC【对】依据：流感病毒属正黏病毒科，基因组为单链负链分节段 RNA。\nD【错】错因：复制虽在核内进行，但药物可靶向其他环节，不必进入细胞核。",
+  "question": "每年春冬季节甲流乙流频发。下列关于流感病毒的生活史的说法请判断正误。",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "由于病毒蛋白质的合成依赖宿主细胞的翻译体系，流感病毒mRNA 自身携带5’-帽状结构和3’-poly(A)尾"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "甲型流感病毒通常分型HxNy，其中H 代表神经氨酸酶，在病毒出胞时切断唾液酸使病毒颗粒释放"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "流感病毒属于正黏病毒科，遗传物质为单链负链分节段的RNA"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "流感病毒基因组的复制与mRNA 合成主要在宿主细胞核中进行，因此靶向治疗病毒感染的药物需要能够进入细胞核中"
+    }
+  ],
+  "subject": "微生物学",
+  "tags": [
+    "virus",
+    "module_2",
+    "微生物学",
+    "流感病毒生活史"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

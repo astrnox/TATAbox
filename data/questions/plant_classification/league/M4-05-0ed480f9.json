@@ -1,0 +1,46 @@
+{
+  "category": "ggbo",
+  "concept": "花程式",
+  "difficulty": "league",
+  "explanation": "A【对】依据：花程式只标可育雄蕊数，姜科可育雄蕊 1 枚，故写作 A1 正确。\nB【对】依据：鹤望兰科花两性、两侧对称，萼片与花瓣各 3，可育雄蕊 5，子房 3 室。\nC【对】依据：美人蕉科仅 1 枚可育雄蕊，且仅一侧具发育药室，另半部花瓣状。\nD【错】错因：并非姜目所有科都具不育雄蕊，部分类群可育雄蕊之外并无明显不育雄蕊。",
+  "image": {
+    "caption": "第一届 GGBO 生物学竞赛试题配图（第 7 页）",
+    "credit": "第一届 GGBO 生物学竞赛考试试题",
+    "file": "assets/questions/M4-05-0ed480f9/fig1.webp",
+    "license": "原竞赛试卷（仅用于教学练习）",
+    "source": "exam"
+  },
+  "question": "姜目共包含8 科约1200 种，广布世界热带亚热带。其内各科特别的雄蕊瓣化现象引起了科学家的注意。下图展示了姜目内各科的花图式及其系统发生关系。请根据形态学知识判断下列说法正误：",
+  "references": [],
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "姜科花程式可写为↑𝐾(3)𝐶(3)𝐴1𝐺̅(3:3)"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "鹤望兰科花两性，两侧对称，花萼、花瓣各3，发育雄蕊5 枚，子房3 室"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "美人蕉科具发育雄蕊一枚，仅一边具发育的药室，另半部花瓣状"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "图中姜目的所有科都至少拥有一枚不育雄蕊"
+    }
+  ],
+  "subject": "植物学",
+  "tags": [
+    "plant_classification",
+    "module_4",
+    "植物学",
+    "花程式"
+  ],
+  "target": "competition",
+  "type": "mtf"
+}

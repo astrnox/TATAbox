@@ -15,5 +15,22 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M4-02-aa8d582c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 88,
+    "module": "module_4",
+    "src": "sequence_alignment",
+    "tag": "sequence_alignment",
+    "tags": [
+      "sequence_alignment",
+      "module_4",
+      "生物信息学",
+      "引物设计与BLAST"
+    ],
+    "target": "competition",
+    "year": null
   }
 }

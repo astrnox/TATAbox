@@ -15,5 +15,39 @@
     ],
     "target": "competition",
     "year": null
+  },
+  "M3-02-6533287c": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": false,
+    "len": 200,
+    "module": "module_3",
+    "src": "behavioral_eco",
+    "tag": "behavioral_eco",
+    "tags": [
+      "behavioral_eco",
+      "module_3",
+      "生态学",
+      "性食同类与毒素防御"
+    ],
+    "target": "competition",
+    "year": null
+  },
+  "M3-03-dcb8d269": {
+    "diff": "league",
+    "difficulty": "league",
+    "has_image": true,
+    "len": 163,
+    "module": "module_3",
+    "src": "behavioral_eco",
+    "tag": "behavioral_eco",
+    "tags": [
+      "behavioral_eco",
+      "module_3",
+      "生态学",
+      "人类干扰与动物活动"
+    ],
+    "target": "competition",
+    "year": null
   }
 }
