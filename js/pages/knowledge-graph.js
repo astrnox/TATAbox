@@ -371,6 +371,10 @@
       '  font-size: 0.78rem;',
       '  color: var(--text-secondary, #4a4a4a);',
       '}',
+      '.kg-legend-heading {',
+      '  font-weight: 600;',
+      '  color: var(--text-secondary, #5a6b5e);',
+      '}',
       '.kg-legend-dot {',
       '  width: 10px;',
       '  height: 10px;',
@@ -502,35 +506,48 @@
   /**
    * 获取指定模块的掌握度（0-100）
    * @param {string} relatedModule - 关联的练习模块 ID
-   * @returns {number} 掌握度百分比
+   * @returns {number|null} 掌握度百分比；null 表示暂无练习数据
    */
   function getMastery(relatedModule) {
     try {
-      var statsKey = 'tatabox_stats';
-      var raw = localStorage.getItem(statsKey);
-      if (!raw) return 0;
-      var stats = JSON.parse(raw);
-      if (!stats) return 0;
+      var stats = null;
+      // 优先用统计模块的聚合结果：它同时覆盖 storage.js 写入的 module_1
+      // 扁平结构、云同步写入的 modules 嵌套结构，避免"练过但图谱没反应"。
+      if (typeof window.getStats === 'function') {
+        try {
+          var overall = window.getStats();
+          if (overall && overall.modules) stats = { modules: overall.modules };
+        } catch (e) { /* 回退到直接读 localStorage */ }
+      }
+      if (!stats) {
+        var raw = localStorage.getItem('tatabox_stats');
+        if (!raw) return null;
+        stats = JSON.parse(raw);
+        if (!stats) return null;
+      }
       // 归一化模块名：module1 → module_1（与 server.py / analytic.js 一致）
       var normalized = relatedModule && relatedModule.indexOf('_') === -1
         ? relatedModule.replace(/module(\d)/, 'module_$1')
         : relatedModule;
-      // 优先从 stats.modules[normalized] 读取，兼容旧版扁平结构 stats[normalized]
-      var mod = (stats.modules && stats.modules[normalized]) || stats[normalized];
-      if (!mod || !mod.totalAnswered || mod.totalAnswered === 0) return 0;
+      // 兼容 stats.modules 嵌套结构、stats.module_1 扁平结构与未归一化的 key
+      var mod = (stats.modules && (stats.modules[normalized] || stats.modules[relatedModule])) ||
+        stats[normalized] || stats[relatedModule];
+      // null = 没有练习数据（区别于「练过但全错」的 0%）
+      if (!mod || !mod.totalAnswered || mod.totalAnswered === 0) return null;
       return Math.min(100, Math.round((mod.totalCorrect || 0) / mod.totalAnswered * 100));
     } catch (e) {
-      return 0;
+      return null;
     }
   }
 
   /**
-   * 根据掌握度计算节点半径
-   * @param {number} mastery - 掌握度 0-100
+   * 根据关联数量计算节点半径：页面说明写的是「节点大小反映联系强度」，
+   * 因此半径只由连线数决定，掌握度改用描边颜色表达。
+   * @param {number} degree - 关联数量
    * @returns {number} 半径 18-32
    */
-  function masteryToRadius(mastery) {
-    return 18 + (mastery / 100) * 14;
+  function degreeToRadius(degree) {
+    return 18 + Math.min(degree || 0, 10) * 1.4;
   }
 
   function initNodePositions() {
@@ -675,15 +692,14 @@
 
     // 初始化运行时节点
     _nodes = GRAPH_NODES.map(function (n) {
-      var mastery = getMastery(n.relatedModule);
       return {
         id: n.id,
         label: n.label,
         category: n.category,
         description: n.description,
         relatedModule: n.relatedModule,
-        mastery: mastery,
-        radius: masteryToRadius(mastery),
+        moduleMastery: getMastery(n.relatedModule), // 0-100，模块级练习掌握度
+        radius: 18,
         x: 0, y: 0,
         vx: 0, vy: 0
       };
@@ -701,6 +717,17 @@
       };
     }).filter(function (e) {
       return e._srcNode && e._tgtNode;
+    });
+
+    // 节点大小 = 关联数量（与页面说明一致）
+    var degreeMap = {};
+    _edges.forEach(function (e) {
+      degreeMap[e.source] = (degreeMap[e.source] || 0) + 1;
+      degreeMap[e.target] = (degreeMap[e.target] || 0) + 1;
+    });
+    _nodes.forEach(function (n) {
+      n.degree = degreeMap[n.id] || 0;
+      n.radius = degreeToRadius(n.degree);
     });
 
     // 初始化节点位置
@@ -760,38 +787,27 @@
 
       var colors = CATEGORY_COLORS[node.category] || { fill: '#888', stroke: '#666' };
 
-      // 根据掌握度调整节点颜色和大小
-      var nodeMastery = mastery[node.label] || null;
-      var adjustedRadius = node.radius;
-      var adjustedFill = colors.fill;
-      var adjustedStroke = colors.stroke;
+      // 填充色始终表示学科分类；掌握度改用描边颜色表达，两种语义不再互相覆盖。
+      // 优先取模块级练习统计，其次取 BKT 概念掌握度。
+      var conceptMastery = Object.prototype.hasOwnProperty.call(mastery, node.label)
+        ? Math.round((Number(mastery[node.label]) || 0) * 100)
+        : null;
+      var masteryPct = node.moduleMastery !== null ? node.moduleMastery : conceptMastery;
+      node.mastery = masteryPct;
 
-      if (nodeMastery !== null) {
-        // 3 级掌握度颜色：绿色(>0.8) / 黄色(0.5-0.8) / 红色(<0.5)
-        if (nodeMastery > 0.8) {
-          adjustedFill = '#3a8c5c';
-          adjustedStroke = '#2a6c4c';
-          adjustedRadius = node.radius * 1.15;
-        } else if (nodeMastery > 0.5) {
-          adjustedFill = '#c4956a';
-          adjustedStroke = '#a4754a';
-          adjustedRadius = node.radius * 1.0;
-        } else {
-          adjustedFill = '#c0553a';
-          adjustedStroke = '#a0352a';
-          adjustedRadius = node.radius * 0.85;
-        }
-        // 存储掌握度以便 tooltip 使用
-        node.mastery = Math.round(nodeMastery * 100);
-      } else {
-        node.mastery = null;
+      var strokeColor = '#4a4a4a'; // 未练习
+      if (masteryPct !== null) {
+        // 与 tooltip 的掌握度分档保持一致：≥70 已掌握 / ≥40 初步 / 其余薄弱
+        if (masteryPct >= 70) strokeColor = '#3a8c5c';
+        else if (masteryPct >= 40) strokeColor = '#c4956a';
+        else strokeColor = '#c0553a';
       }
 
       var circle = svgEl('circle', {
         'class': 'kg-node-circle',
-        'r': adjustedRadius,
-        'fill': adjustedFill,
-        'stroke': adjustedStroke
+        'r': node.radius,
+        'fill': colors.fill,
+        'stroke': strokeColor
       });
       node._circleEl = circle;
 
@@ -1357,14 +1373,18 @@
 
       '<div class="kg-graph-container" id="kg-graph-container"></div>' +
 
-      '<div class="kg-legend">' + legendItems + '</div>' +
-      '<div class="kg-legend" style="margin-top:8px;">' +
-        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:#3a8c5c;"></span>已掌握</span>' +
-        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:#c4956a;"></span>初步掌握</span>' +
-        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:#c0553a;"></span>薄弱</span>' +
-        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:#4a4a4a;"></span>未练习</span>' +
+      '<div class="kg-legend">' +
+        '<span class="kg-legend-item kg-legend-heading">填充色 · 学科</span>' +
+        legendItems +
       '</div>' +
-      '<p class="kg-hint">节点颜色反映掌握程度（绿=已掌握 / 黄=初步掌握 / 红=薄弱） · 节点大小反映联系强度 · 连线表示知识依赖关系 · 点击节点跳转练习</p>' +
+      '<div class="kg-legend" style="margin-top:8px;">' +
+        '<span class="kg-legend-item kg-legend-heading">描边色 · 掌握度</span>' +
+        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:transparent;border:2px solid #3a8c5c;"></span>已掌握</span>' +
+        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:transparent;border:2px solid #c4956a;"></span>初步掌握</span>' +
+        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:transparent;border:2px solid #c0553a;"></span>薄弱</span>' +
+        '<span class="kg-legend-item"><span class="kg-legend-dot" style="background:transparent;border:2px solid #4a4a4a;"></span>未练习</span>' +
+      '</div>' +
+      '<p class="kg-hint">填充色表示学科分类 · 描边色表示掌握程度（绿=已掌握 / 黄=初步掌握 / 红=薄弱 / 灰=未练习） · 节点大小表示关联数量 · 连线表示知识依赖关系 · 点击节点跳转练习</p>' +
     '</div>';
   }
 

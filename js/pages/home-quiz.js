@@ -168,7 +168,41 @@
     }
   }
 
-  /** 工作台数字：错题、今日已刷、正确率、连续天数 */
+  /**
+   * 全对率口径（与练习页统一）：
+   * 练习页把结果写进 tatabox_stats.module_1..4，首页答题过去只累加顶层的
+   * totalAnswered/totalCorrect，于是工作台只统计首页答题、且按整题全对判定，
+   * 会出现「答对 3/4 条」旁边写「0%」的割裂感。
+   * 优先级：getStats() 聚合 → 手动汇总 module_* 桶（扁平/嵌套） → 顶层旧计数。
+   */
+  function aggregateAccuracy(stats) {
+    if (typeof window.getStats === 'function') {
+      try {
+        var overall = window.getStats() || {};
+        if (overall.totalAnswered > 0) {
+          return { answered: overall.totalAnswered, correct: overall.totalCorrect || 0 };
+        }
+      } catch (e) { /* 统计模块异常时走下面的回退 */ }
+    }
+
+    var buckets = (stats.modules && typeof stats.modules === 'object') ? stats.modules : stats;
+    var answered = 0;
+    var correct = 0;
+    var found = false;
+    for (var key in buckets) {
+      if (!Object.prototype.hasOwnProperty.call(buckets, key)) continue;
+      if (!/^module_?\d+$/.test(key)) continue;
+      var bucket = buckets[key];
+      if (!bucket || typeof bucket !== 'object') continue;
+      answered += Number(bucket.totalAnswered) || 0;
+      correct += Number(bucket.totalCorrect) || 0;
+      found = true;
+    }
+    if (found && answered > 0) return { answered: answered, correct: correct };
+    return { answered: Number(stats.totalAnswered) || 0, correct: Number(stats.totalCorrect) || 0 };
+  }
+
+  /** 工作台数字：错题、今日已刷、全对率、连续天数 */
   function paintBoard() {
     var wrong = readJSON('tatabox_wrong_questions', []);
     var stats = readJSON('tatabox_stats', null) || {};
@@ -176,20 +210,17 @@
 
     var wrongCount = Array.isArray(wrong) ? wrong.length : 0;
     var todayTotal = 0;
-    var todayCorrect = 0;
     if (Array.isArray(history)) {
       for (var i = 0; i < history.length; i++) {
         var item = history[i] || {};
         var date = item.date || '';
         if (date.slice(0, 10) !== todayISO()) continue;
         todayTotal += item.total || 0;
-        todayCorrect += item.correct || 0;
       }
     }
 
-    var totalAnswered = stats.totalAnswered || 0;
-    var totalCorrect = stats.totalCorrect || 0;
-    var acc = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : null;
+    var agg = aggregateAccuracy(stats);
+    var acc = agg.answered > 0 ? Math.round((agg.correct / agg.answered) * 100) : null;
 
     setText('hqWrongCount', wrongCount);
     setText('hqTodayCount', todayTotal);
@@ -207,7 +238,19 @@
     var stats = readJSON('tatabox_stats', null) || {};
     stats.totalAnswered = (stats.totalAnswered || 0) + 1;
     if (allCorrect) stats.totalCorrect = (stats.totalCorrect || 0) + 1;
-    if (!stats.modules) stats.modules = {};
+
+    // 首页题目 id 形如 M1-01-xxxx，同步写进练习页使用的模块桶，
+    // 让工作台「全对率」与知识图谱的掌握度都能反映首页答题。
+    var moduleMatch = /^M(\d)-/i.exec(question.getAttribute('data-qid') || '');
+    if (moduleMatch) {
+      var moduleKey = 'module_' + moduleMatch[1];
+      var bucket = stats[moduleKey];
+      if (!bucket || typeof bucket !== 'object') bucket = { totalAnswered: 0, totalCorrect: 0 };
+      bucket.totalAnswered = (Number(bucket.totalAnswered) || 0) + 1;
+      if (allCorrect) bucket.totalCorrect = (Number(bucket.totalCorrect) || 0) + 1;
+      bucket.accuracy = Math.round((bucket.totalCorrect / bucket.totalAnswered) * 100);
+      stats[moduleKey] = bucket;
+    }
     writeJSON('tatabox_stats', stats);
 
     var history = readJSON('tatabox_history', []);

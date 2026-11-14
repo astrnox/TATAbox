@@ -19,6 +19,7 @@ function _resolveAuthReady() {
 
 async function initSupabase() {
   try {
+    var v = '20261013a';
     // 等待 Supabase SDK 加载完成（由 HTML 中的 requestIdleCallback 触发加载）
     var sdkWait = 0;
     while (typeof window.supabase === 'undefined' && sdkWait < 10000) {
@@ -27,6 +28,14 @@ async function initSupabase() {
     }
     if (typeof window.supabase === 'undefined') {
       console.warn('[TATABOX] Supabase SDK 加载超时，使用本地模式');
+      // SDK 不可用时下面的 sb-* 链不会执行，storage.js 也不会被加载，
+      // 导致 getStats/updateStats 不存在、练习结果无法落盘。
+      // 这里单独补载本地统计模块（纯 localStorage，不依赖 SDK）。
+      try {
+        await __loadScriptChain([__jsBase + 'js/core/storage.js?v=' + v]);
+      } catch (e) {
+        console.warn('[TATABOX] 本地统计模块加载失败，学习统计将不可用', e && e.message);
+      }
       showStorageStatus('local');
       updateAuthUI();
       _resolveAuthReady();
@@ -38,7 +47,6 @@ async function initSupabase() {
     //   sb-gamify  —— 打卡/成就/bio分/信用点；sb-data —— 错题本/复习卡/练习云同步
     //   sb-social  —— 社区动态；sb-study —— 学习记录
     // 缺失会让主 SPA 各页面的全局调用点静默失效
-    var v = '20261013a';
     var supabaseScripts = [
       __jsBase + 'js/core/supabase-client.js?v=' + v,
       __jsBase + 'js/core/sb-gamify.js?v=' + v,
@@ -46,6 +54,8 @@ async function initSupabase() {
       __jsBase + 'js/core/sb-data.js?v=' + v,
       __jsBase + 'js/core/sb-study.js?v=' + v,
       __jsBase + 'js/core/supabase.js?v=' + v,
+      // 必须最后加载：storage.js 的本地版 getWrongQuestions/getStats 会覆盖
+      // 前面 supabase.js 的同名函数，顺序改变会让错题本走已下线的 REST 接口。
       __jsBase + 'js/core/storage.js?v=' + v
     ];
     await __loadScriptChain(supabaseScripts);
