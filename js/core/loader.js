@@ -1787,37 +1787,54 @@ window.getQuestionBankCount = function () {
 var _playableCountCache = null;
 window.getPlayableQuestionCount = function () {
   if (_playableCountCache !== null) return Promise.resolve(_playableCountCache);
-  var moduleCountP = (typeof window.getQuestionBankCount === 'function')
-    ? window.getQuestionBankCount()
-    : Promise.resolve(null);
-  var logicCountP = _fetchJSON('data/logic_questions.json', null)
-    .then(function (data) {
-      var arr = Array.isArray(data)
-        ? data
-        : (data && (data['题库'] || data.questions || data.items));
-      if (!Array.isArray(arr) && data && typeof data === 'object') arr = Object.values(data);
-      return (arr && arr.length) || 0;
+
+  // H-06：data/stats.json 是题库口径的唯一汇总源，一次请求即可拿到准确总数。
+  // 旧的 manifest.total_questions 只统计 shard 体系的 MTF 题（181 道），会漏掉
+  // 模块题，导致首页 / 练习页少算 400 道，因此只在 stats.json 不可用时才回退。
+  return _fetchJSON('data/stats.json', null)
+    .then(function (s) {
+      var n = s && Number(s.unique_questions);
+      return (n && n > 0) ? n : null;
     })
-    .catch(function () { return 0; });
-  // 联赛真题池计数：build-league-pool.js 生成的轻量 count.json（不拉 4.6MB 全量）
-  var leagueCountP = _fetchJSON('resource/count.json', null)
-    .then(function (data) {
-      return (data && (data.playable || 0)) || 0;
+    .catch(function () { return null; })
+    .then(function (total) {
+      if (total) {
+        _playableCountCache = total;
+        return total;
+      }
+      var moduleCountP = (typeof window.getQuestionBankCount === 'function')
+        ? window.getQuestionBankCount()
+        : Promise.resolve(null);
+      var logicCountP = _fetchJSON('data/logic_questions.json', null)
+        .then(function (data) {
+          var arr = Array.isArray(data)
+            ? data
+            : (data && (data['题库'] || data.questions || data.items));
+          if (!Array.isArray(arr) && data && typeof data === 'object') arr = Object.values(data);
+          return (arr && arr.length) || 0;
+        })
+        .catch(function () { return 0; });
+      // 联赛真题池计数：build-league-pool.js 生成的轻量 count.json（不拉 4.6MB 全量）
+      var leagueCountP = _fetchJSON('resource/count.json', null)
+        .then(function (data) {
+          return (data && (data.playable || 0)) || 0;
+        })
+        .catch(function () { return 0; });
+      // IBO 真题池计数：build-ibo-pool.js 生成的轻量 ibo-count.json
+      var iboCountP = _fetchJSON('resource/ibo-count.json', null)
+        .then(function (data) {
+          return (data && (data.playable || 0)) || 0;
+        })
+        .catch(function () { return 0; });
+      return Promise.all([moduleCountP, logicCountP, leagueCountP, iboCountP]).then(function (r) {
+        var moduleCount = r[0];
+        if (!moduleCount) return null;
+        var fallback = moduleCount + r[1] + r[2] + r[3];
+        _playableCountCache = fallback;
+        return fallback;
+      });
     })
-    .catch(function () { return 0; });
-  // IBO 真题池计数：build-ibo-pool.js 生成的轻量 ibo-count.json
-  var iboCountP = _fetchJSON('resource/ibo-count.json', null)
-    .then(function (data) {
-      return (data && (data.playable || 0)) || 0;
-    })
-    .catch(function () { return 0; });
-  return Promise.all([moduleCountP, logicCountP, leagueCountP, iboCountP]).then(function (r) {
-    var moduleCount = r[0];
-    if (!moduleCount) return null;
-    var total = moduleCount + r[1] + r[2] + r[3];
-    _playableCountCache = total;
-    return total;
-  }).catch(function () { return null; });
+    .catch(function () { return null; });
 };
 // Issue #10：分片题库 API（供外部按需刷新 / 迁移 / 查询 bioID 映射）
 window.loadAllShards = _loadAllShards;
