@@ -85,6 +85,17 @@ function computeStats() {
   };
 }
 
+/** 首屏直接给出真实题数：避免首帧先看到「—道」再跳数 */
+function syncIndexHtml(stats) {
+  const file = path.join(ROOT, 'index.html');
+  const before = fs.readFileSync(file, 'utf8');
+  const after = before
+    .replace(/(<span id="statTotalQuestions"[^>]*?) class="stat-value-pending"/, '$1')
+    .replace(/(<span id="statTotalQuestions"[^>]*>)\s*[^<]*\s*(<\/span>)/, '$1' + stats.unique_questions + '$2')
+    .replace(/(\d+) 道生物竞赛真题/, stats.unique_questions + ' 道生物竞赛真题');
+  if (after !== before) fs.writeFileSync(file, after, 'utf8');
+}
+
 function writeStats() {
   const stats = computeStats();
   fs.writeFileSync(
@@ -92,6 +103,7 @@ function writeStats() {
     JSON.stringify(stats, null, 2) + '\n',
     'utf8'
   );
+  syncIndexHtml(stats);
   return stats;
 }
 

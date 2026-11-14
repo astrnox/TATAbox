@@ -141,28 +141,6 @@
     showResult(state.correct || 0, rows.length, false);
   }
 
-  /** 面板导航：直接复用汉堡菜单那套链接，保证两处入口永远一致 */
-  function paintNav() {
-    var host = document.getElementById('homeQuizNav');
-    var src = document.querySelector('#mobileNav .mn-body');
-    if (!host || !src || host.getAttribute('data-ready') === '1') return;
-    while (host.firstChild) host.removeChild(host.firstChild);
-    Array.prototype.forEach.call(src.children, function (node) {
-      host.appendChild(node.cloneNode(true));
-    });
-    // 「排行」在原菜单里是按钮，克隆后去掉重复 id 并转发点击
-    var originBtn = document.getElementById('nav-leaderboard-btn');
-    var clonedBtn = host.querySelector('#nav-leaderboard-btn');
-    if (clonedBtn && originBtn) {
-      clonedBtn.removeAttribute('id');
-      clonedBtn.addEventListener('click', function (event) {
-        event.preventDefault();
-        originBtn.click();
-      });
-    }
-    host.setAttribute('data-ready', '1');
-  }
-
   function showResult(correct, total, jump) {
     var panel = document.getElementById('homeQuizPanel');
     var score = document.getElementById('homeQuizScore');
@@ -175,7 +153,6 @@
     score.textContent = tail;
     panel.hidden = false;
     paintBoard();
-    paintNav();
 
     if (jump === false) return;
     // 答完就跳到面板：滚动到顶部并把焦点交给标题，键盘/读屏用户不会丢失位置

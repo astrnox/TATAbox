@@ -71,6 +71,15 @@ if (!readme.includes(`${actual.videos} 条`)) {
   errors.push(`README.md 视频数量未与 data/videos.json（${actual.videos}）对齐`);
 }
 
+// 首屏题数在构建期内联，避免先显示「—道」；这里防止 index.html 漂移。
+const indexHtml = readText('index.html');
+if (!new RegExp(`id="statTotalQuestions"[^>]*>${actual.unique_questions}<`).test(indexHtml)) {
+  errors.push('index.html 首屏题库总量未与 unique_questions 对齐，请运行 npm run build:stats');
+}
+if (!indexHtml.includes(`${actual.unique_questions} 道生物竞赛真题`)) {
+  errors.push('index.html 首页题数文案未与 unique_questions 对齐，请运行 npm run build:stats');
+}
+
 if (errors.length) fail(errors);
 
 console.log('[verify-data-stats] 通过');
