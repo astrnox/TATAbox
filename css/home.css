@@ -1229,6 +1229,33 @@
   display: none;
 }
 
+.hq-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.hq-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--sage);
+}
+
+.hq-tag-type {
+  color: var(--color-warm);
+}
+
+.hq-tag-score,
+.hq-tag-subject {
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(90, 125, 92, 0.1);
+}
+
 .hq-concept {
   margin: 0 0 8px;
   font-size: 0.75rem;

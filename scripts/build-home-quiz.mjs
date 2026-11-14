@@ -19,6 +19,10 @@ const START = '<!-- build:home-quiz:start -->';
 const END = '<!-- build:home-quiz:end -->';
 const POOL_SIZE = 5;
 
+// 与 js/core/question-model.js 的 TYPE_LABELS / QUIZ_SCORES 保持一致
+const TYPE_LABEL = { single: '单选题', multiple: '多选题', judge: '判断题', mtf: '多重判断题' };
+const TYPE_SCORE = { single: 3, judge: 3, multiple: 5, mtf: 3 };
+
 function walk(dir, out) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -81,7 +85,9 @@ function loadCandidates() {
       subs: q.subQuestions.map((s) => ({ label: s.label, text: String(s.text), answer: s.answer === true })),
       exp: exp.parts,
       hint: exp.hint,
-      concept: q.concept || ''
+      concept: q.concept || '',
+      subject: q.subject || '',
+      type: q.type || 'mtf'
     });
   }
   return pool;
@@ -138,8 +144,16 @@ function renderQuestion(q, day) {
     )
     .join('');
 
+  const typeLabel = TYPE_LABEL[q.type] || TYPE_LABEL.mtf;
+  const typeScore = TYPE_SCORE[q.type] || TYPE_SCORE.mtf;
+
   return `
       <article class="hq-question" data-day="${day}" data-qid="${esc(q.id)}"${day === 0 ? '' : ' hidden'}>
+        <div class="hq-tags">
+          <span class="hq-tag hq-tag-type">【${typeLabel}】</span>
+          <span class="hq-tag hq-tag-score">${typeScore} 分</span>
+          ${q.subject ? `<span class="hq-tag hq-tag-subject">${esc(q.subject)}</span>` : ''}
+        </div>
         <p class="hq-concept">${esc(q.concept)}</p>
         <p class="hq-stem">${esc(q.question)}</p>
         <fieldset class="hq-options">
