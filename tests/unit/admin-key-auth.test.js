@@ -269,6 +269,19 @@ describe('管理员动态码登录页', () => {
     expect(res.error).not.toContain('schema cache');
   });
 
+  test('函数内部报错（缺列/缺扩展）不再被误判为「RPC 未部署」，要显示真实原因', async () => {
+    window.getSupabase = () => ({
+      rpc: async () => ({
+        data: null,
+        error: { code: '42883', message: 'function hmac(bytea, bytea, unknown) does not exist' }
+      })
+    });
+    const res = await window.adminVerifyTotp('123456');
+    expect(res.ok).toBe(false);
+    expect(res.error).toContain('hmac');
+    expect(res.error).not.toContain('暂未启用动态码登录');
+  });
+
   test('未填/非 6 位数字：直接返回校验提示，不发请求', async () => {
     let called = false;
     window.getSupabase = () => ({ rpc: async () => { called = true; return { data: [], error: null }; } });
