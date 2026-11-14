@@ -167,12 +167,17 @@ BEGIN
     ELSE
       v_attempts := COALESCE(v_attempts, 0) + 1;
     END IF;
+    -- 失败计数必须带 WHERE：Supabase 的 safe-update 守卫会拒绝无 WHERE 的
+    -- UPDATE（SQLSTATE 21000「UPDATE requires a WHERE clause」），
+    -- 导致输错动态码时返回 400，而不是「动态验证码不正确」。
     IF v_attempts >= 5 THEN
       UPDATE public.admin_config
-      SET failed_attempts = 0, locked_until = NOW() + INTERVAL '15 minutes';
+      SET failed_attempts = 0, locked_until = NOW() + INTERVAL '15 minutes'
+      WHERE id = 1;
     ELSE
       UPDATE public.admin_config
-      SET failed_attempts = v_attempts, locked_until = NULL;
+      SET failed_attempts = v_attempts, locked_until = NULL
+      WHERE id = 1;
     END IF;
     RETURN QUERY SELECT FALSE, NULL::TEXT, '动态验证码不正确'::TEXT;
     RETURN;

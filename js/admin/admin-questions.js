@@ -376,6 +376,10 @@ function renderQuestionsTab(container, questionsData) {
 
   container.innerHTML = html;
 
+  // 异步渲染可能在用户切走标签后才返回，此时 container 已脱离文档，
+  // 后面 document.getElementById 会拿到 null 并抛错，整页渲染中断。
+  if (!container.isConnected) return;
+
   // 本地题库 · 评分与回收站（异步加载渲染）
   _renderLocalQuestionSection();
 
