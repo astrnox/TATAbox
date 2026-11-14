@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-14T02:15:03.494Z
+ * 生成时间：2026-11-14T04:49:09.505Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -7038,43 +7038,30 @@ body.js-enhanced .hq-nojs {
   outline: none;
 }
 
-/* 面板导航：克隆自汉堡菜单，按栏目分组展示 */
+/* 面板常用入口：只放 3 个和当前场景相关的入口，不做成整站导航 */
 .hq-panel-nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   padding-top: 14px;
   border-top: 1px solid rgba(26, 47, 29, 0.1);
 }
 
-.hq-panel-nav .mn-section {
-  display: block;
-}
-
-.hq-panel-nav .mn-section-label {
-  display: block;
-  margin-bottom: 6px;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-}
-
 .hq-panel-nav a {
-  display: block;
-  padding: 5px 0;
-  font-size: 0.88rem;
+  padding: 6px 14px;
+  border: 1px solid rgba(90, 125, 92, 0.28);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
   color: var(--color-primary-900);
   text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .hq-panel-nav a:hover,
 .hq-panel-nav a:focus-visible {
-  color: var(--color-warm);
-}
-
-.hq-panel-nav .mn-home {
-  font-weight: 600;
+  background: rgba(90, 125, 92, 0.1);
+  border-color: var(--sage);
+  color: var(--color-primary-900);
 }
 
 @keyframes hqRise {

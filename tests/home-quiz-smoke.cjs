@@ -41,7 +41,11 @@ function buildDom(search) {
           <p class="hq-score" id="homeQuizScore"></p>
           <span id="hqWrongCount"></span><span id="hqTodayCount"></span>
           <span id="hqAcc"></span><span id="hqStreak"></span>
-          <nav id="homeQuizNav"></nav>
+          <nav id="homeQuizNav">
+            <a href="#/practice" data-route="/practice">继续刷题</a>
+            <a href="#/wrongbook" data-route="/wrongbook">错题本</a>
+            <a href="#/dashboard" data-route="/dashboard">仪表盘</a>
+          </nav>
         </section>
       </div>
       <nav id="mobileNav"><div class="mn-body">
@@ -86,7 +90,9 @@ function run() {
     submit.click();
     assert(window.document.getElementById('homeQuizPanel').hidden === false, '提交后应展开结果面板');
     assert(/2 \/ 2/.test(window.document.getElementById('homeQuizPanelTitle').textContent), '面板标题应显示 2 / 2');
-    assert(window.document.getElementById('homeQuizNav').children.length > 0, '面板导航应复用汉堡菜单');
+    const panelNav = window.document.getElementById('homeQuizNav');
+    assert(panelNav.children.length === 3, '面板应只有 3 个常用入口');
+    assert(panelNav.querySelector('a[href="#/wrongbook"]'), '面板入口应包含错题本');
     assert(window.document.querySelectorAll('.hq-row.is-correct').length === 2, '两条都应标为正确');
     const stats = JSON.parse(window.localStorage.getItem('tatabox_stats'));
     assert(stats.totalAnswered === 1 && stats.totalCorrect === 1, '统计应累加 1 题 1 对');
@@ -146,6 +152,8 @@ run();
   submit.click();
   assert(dom.window.document.getElementById('homeQuizPanel').hidden === false, '真实页面提交后应展开结果面板');
   assert(/4 \/ 4/.test(dom.window.document.getElementById('homeQuizPanelTitle').textContent), '全对应显示 4 / 4');
-  assert(dom.window.document.getElementById('homeQuizNav').children.length > 1, '真实页面的面板导航应有多个栏目');
-  console.log('home-quiz index smoke: 通过（5 题 / 4 条 / 判分 / 结果面板 / 汉堡栏导航）');
+  const realNav = dom.window.document.getElementById('homeQuizNav');
+  assert(realNav.children.length === 3, '真实页面的面板应有 3 个常用入口');
+  assert(realNav.querySelector('a[href="#/practice"]'), '真实页面面板应包含继续刷题');
+  console.log('home-quiz index smoke: 通过（5 题 / 4 条 / 判分 / 结果面板 / 3 个常用入口）');
 }
