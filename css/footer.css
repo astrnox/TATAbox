@@ -38,6 +38,43 @@
   gap: 18px;
 }
 
+/* 常驻底部社交条：页脚在移动端被隐藏（globals.css），这里单独给一条可见的入口 */
+.social-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 20px calc(96px + env(safe-area-inset-bottom, 0px));
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border: 1px solid rgba(24, 23, 23, 0.1);
+  border-radius: 999px;
+  background: #fff;
+  color: rgba(24, 23, 23, 0.62);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.social-link:hover {
+  color: var(--marigold);
+  border-color: rgba(226, 155, 74, 0.55);
+  transform: translateY(-1px);
+}
+
+.social-link img {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: block;
+}
+
 .footer-github,
 .footer-afdian {
   display: flex;
