@@ -320,7 +320,17 @@ function handleRoute(route) {
     '/trends': 'trends',
     '/teacher': 'teacher',
     // bio-calc.js 未在 index.html 预加载，必须经 loadModule 拉起（依赖 score-engine）
-    '/bio-calc': 'bio-calc'
+    '/bio-calc': 'bio-calc',
+    // H-04 起这些模块改为路由级懒加载、不再在 index.html 中预加载；
+    // 缺映射时 loadModule 不会被调用，页面只会报「xx 模块未加载」
+    '/cards': 'cards',
+    '/sketch': 'sketch-pad',
+    '/smiles': 'rdkit-viewer',
+    '/molecules': 'molecule-viewer',
+    '/genome': 'genome-browser',
+    '/community-enhanced': 'community-enhanced',
+    '/daily-billion': 'daily-billion',
+    '/data-lab': 'score-calc'
   };
   var modName = moduleMap[route];
 
