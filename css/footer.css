@@ -55,9 +55,10 @@
 }
 
 .footer-github svg,
-.footer-afdian svg {
+.footer-afdian img {
   width: 20px;
   height: 20px;
+  border-radius: 4px;
 }
 
 .footer-links {
