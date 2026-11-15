@@ -31,7 +31,15 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.footer-github {
+.footer-social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-github,
+.footer-afdian {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -41,11 +49,13 @@
   transition: color 0.2s;
 }
 
-.footer-github:hover {
+.footer-github:hover,
+.footer-afdian:hover {
   color: var(--marigold);
 }
 
-.footer-github svg {
+.footer-github svg,
+.footer-afdian svg {
   width: 20px;
   height: 20px;
 }
