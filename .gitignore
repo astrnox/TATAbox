@@ -93,3 +93,6 @@ coverage/
 # ===== AI 工具工作区（P2-5：.trae/ 不入库）=====
 .trae/
 .trae/specs/
+
+# 用户上传的临时文件（不纳入版本库）
+.uploads/
