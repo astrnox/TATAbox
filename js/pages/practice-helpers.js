@@ -99,9 +99,10 @@ function bindWrongPracticeEntry() {
   var wrongEntry = document.getElementById('wrong-practice-entry');
   if (!wrongEntry) return;
 
-  // 显示错题数量
+  // 有错题才显示入口（默认 hidden，避免首次渲染闪一下空入口）
   try {
     var wrongs = typeof getWrongQuestions === 'function' ? getWrongQuestions() : [];
+    wrongEntry.hidden = wrongs.length === 0;
     var countEl = document.getElementById('wrong-practice-count');
     if (countEl) {
       countEl.textContent = wrongs.length > 0 ? wrongs.length + ' 题' : '';

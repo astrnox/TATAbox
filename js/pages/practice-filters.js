@@ -131,7 +131,7 @@ function renderFilterPanel() {
 
       ${kgBanner}
 
-      <div class="wrong-practice-entry" id="wrong-practice-entry">
+      <div class="wrong-practice-entry" id="wrong-practice-entry" hidden>
         <span class="wrong-practice-icon">!</span>
         <span>错题专项练习</span>
         <span class="wrong-practice-count" id="wrong-practice-count"></span>

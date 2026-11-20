@@ -127,6 +127,30 @@
     '</div>';
   }
 
+  // getPointsLeaderboard 定义在 js/core/sb-gamify.js，而后者只在 Supabase SDK
+  // 可用时由 app-auth 的加载链注入。SDK 缺失、链路中超时或个别脚本被限流时，
+  // 榜单页会只剩「服务未加载」。这里补一次懒加载，失败再降级提示。
+  function _ensurePointsService() {
+    if (typeof root.getPointsLeaderboard === 'function') return Promise.resolve(true);
+    if (root.__pointsServicePromise) return root.__pointsServicePromise;
+
+    var loader = (typeof root.loadScriptOnce === 'function') ? root.loadScriptOnce : null;
+    if (!loader) return Promise.resolve(false);
+
+    var base = (typeof root.__jsBase === 'string') ? root.__jsBase : '';
+    root.__pointsServicePromise = new Promise(function (resolve) {
+      loader(base + 'js/core/sb-gamify.js?v=20261013a', {
+        verify: function () { return typeof root.getPointsLeaderboard === 'function'; }
+      }).then(function () {
+        resolve(typeof root.getPointsLeaderboard === 'function');
+      }).catch(function () {
+        root.__pointsServicePromise = null;
+        resolve(false);
+      });
+    });
+    return root.__pointsServicePromise;
+  }
+
   // 信用排行榜：按信用指数降序
   function initCreditLeaderboard(target) {
     if (!target) return;
@@ -134,7 +158,13 @@
 
     var fn = (typeof root.getPointsLeaderboard === 'function') ? root.getPointsLeaderboard : null;
     if (!fn) {
-      target.innerHTML = '<div class="bq-panel-narrow">信用排行榜服务未加载</div>';
+      _ensurePointsService().then(function (ok) {
+        if (!ok) {
+          target.innerHTML = '<div class="bq-panel-narrow">信用排行榜暂时无法连接，请检查网络后刷新重试</div>';
+          return;
+        }
+        initCreditLeaderboard(target);
+      });
       return;
     }
 

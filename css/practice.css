@@ -21,6 +21,11 @@
   transition: all 0.2s ease;
 }
 
+/* 无错题时隐藏入口（display:flex 会盖掉 [hidden] 的 UA 样式，必须显式声明） */
+.wrong-practice-entry[hidden] {
+  display: none;
+}
+
 .wrong-practice-entry:hover {
   background: rgba(192, 85, 58, 0.12);
   border-color: rgba(192, 85, 58, 0.35);

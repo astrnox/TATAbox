@@ -1023,14 +1023,14 @@ if (typeof window !== 'undefined') {
 if (typeof window !== 'undefined' && typeof window.loadScriptOnce !== 'function') {
   window.loadScriptOnce = (function () {
     var _cache = {}; // src -> Promise
-    return function loadScriptOnce(src, opts) {
-      if (!src) return Promise.reject(new Error('loadScriptOnce: src 为空'));
-      if (_cache[src]) return _cache[src];
-      opts = opts || {};
+    // 托管网关会限流：首屏并发过高时个别脚本返回 429 且响应体是 JSON，
+    // 浏览器直接拒绝执行。失败后换 cache-busting 参数重试 2 次即可恢复。
+    var MAX_RETRY = 2;
+    function _attempt(src, opts, n) {
       var timeout = opts.timeout || 15000;
-      var p = new Promise(function (resolve, reject) {
+      return new Promise(function (resolve, reject) {
         var s = document.createElement('script');
-        s.src = src;
+        s.src = n === 0 ? src : src + (src.indexOf('?') === -1 ? '?' : '&') + 'retry=' + n;
         s.async = true;
         var done = false;
         var timer = setTimeout(function () {
@@ -1064,6 +1064,18 @@ if (typeof window !== 'undefined' && typeof window.loadScriptOnce !== 'function'
         };
         document.head.appendChild(s);
       });
+    }
+    return function loadScriptOnce(src, opts) {
+      if (!src) return Promise.reject(new Error('loadScriptOnce: src 为空'));
+      if (_cache[src]) return _cache[src];
+      opts = opts || {};
+      var p = (function retry(n) {
+        return _attempt(src, opts, n).catch(function (err) {
+          if (n >= MAX_RETRY) throw err;
+          return new Promise(function (r) { setTimeout(r, 400 * (n + 1)); })
+            .then(function () { return retry(n + 1); });
+        });
+      })(0);
       _cache[src] = p;
       p.catch(function () { delete _cache[src]; });
       return p;
