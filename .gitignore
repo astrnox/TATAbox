@@ -96,3 +96,6 @@ coverage/
 
 # 用户上传的临时文件（不纳入版本库）
 .uploads/
+
+# 演示视频构建产物（体积大，可由 record.js 重新生成）
+.demo-build/vid-*/
