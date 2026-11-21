@@ -7,7 +7,7 @@
 
 var _POINTS_STORAGE = 'tatabox_credit_state';
 var _POINTS_DEFAULTS = {
-  BASE: 100,                 // 基础信任值，不随时间衰减
+  BASE: 60,                  // 基础信任值，不随时间衰减
   DECAY_DAYS: 90,            // 信任增量经过多久全部清零（线性衰减）
   MIN: 0,                    // 下限
   // 符合社区期望的行为 → 获得信任增量（会随时间衰减）
@@ -18,23 +18,23 @@ var _POINTS_DEFAULTS = {
     ANSWER_WRONG: 0.1,       // 单次答题错误（也有微弱鼓励）
     DAILY_LOGIN: 0.3         // 每日首启
   },
-  // 违规行为 → 直接扣减（永久，不受时间恢复）
+  // 违规行为 → 直接扣减（力度与 credit-metrics.js 对齐：一次误判不应抵消数周积累）
   PENALTY: {
-    SPAM: 15,
-    BAD_SPEECH: 25,
-    FALSE_REPORT_SINGLE: 3,
-    FALSE_REPORT_REPEAT: 10
+    SPAM: 8,
+    BAD_SPEECH: 12,
+    FALSE_REPORT_SINGLE: 2,
+    FALSE_REPORT_REPEAT: 4
   }
 };
 
-// 信任等级（由当前信用指数推导；指数越高，社区信任越高）
+// 信任等级（与 sb-gamify.js 的 POINTS_LEVELS 保持一致；100 不再是顶档）
 var _POINTS_LEVELS = [
   { min: 0,   label: '不受信任', title: '不受信任', color: '#c0553a' },
-  { min: 10,  label: '极低信任', title: '极低信任', color: '#d47030' },
-  { min: 30,  label: '有限信任', title: '有限信任', color: '#c49b30' },
-  { min: 50,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
-  { min: 80,  label: '高度信任', title: '高度信任', color: '#3a8c5c' },
-  { min: 100, label: '极高信任', title: '极高信任', color: '#ffd700' }
+  { min: 20,  label: '极低信任', title: '极低信任', color: '#d47030' },
+  { min: 40,  label: '有限信任', title: '有限信任', color: '#c49b30' },
+  { min: 60,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
+  { min: 100, label: '高度信任', title: '高度信任', color: '#3a8c5c' },
+  { min: 130, label: '极高信任', title: '极高信任', color: '#ffd700' }
 ];
 
 function _getPointsState() {

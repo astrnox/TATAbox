@@ -274,10 +274,9 @@ async function syncToCloud() {
   });
 
   if (result.ok) {
-    // 清空本地待同步数据
-    localStorage.setItem('tatabox_wrong_questions', '[]');
-    localStorage.setItem('tatabox_favorites', '[]');
-    localStorage.setItem('tatabox_records', '[]');
+    // 不在这里清空本地：云端数据没有回填主 key 的路径，清空后错题/收藏/记录
+    // 会从界面上直接消失（getWrongQuestions 只读本地主 key）。只记录同步时间。
+    try { localStorage.setItem('tatabox_last_sync_at', String(Date.now())); } catch (e) {}
   }
   return result;
 }
@@ -293,17 +292,36 @@ async function mergeCloudData() {
     var favs = await getFavorites();
     var records = await getPracticeRecords();
 
-    // 合并到本地（取并集，保留本地较新数据）
+    // 云端数据并回本地主 key（按主键去重、保留较新），不能整体覆盖
     var localWrong = safeGetJSON('tatabox_wrong_questions', []);
     var localFavs = safeGetJSON('tatabox_favorites', []);
     var localRecords = safeGetJSON('tatabox_records', []);
 
-    // 简单合并策略：云端数据覆盖本地
-    if (wrong.data && wrong.data.length > 0) {
-      localStorage.setItem('tatabox_wrong_questions_cloud', JSON.stringify(wrong.data));
+    if (wrong && Array.isArray(wrong.data)) {
+      var mergedWrong = mergeRecordsByKey(localWrong, wrong.data, function (w) {
+        return w && (w.qId || w.id || w.question_id);
+      });
+      localStorage.setItem('tatabox_wrong_questions', JSON.stringify(mergedWrong));
     }
-    if (favs.data && favs.data.length > 0) {
-      localStorage.setItem('tatabox_favorites_cloud', JSON.stringify(favs.data));
+    if (favs && Array.isArray(favs.data)) {
+      // favorites 本地是 ID 字符串数组，按 id 取并集即可
+      var favSeen = Object.create(null);
+      var mergedFavs = [];
+      (localFavs || []).concat(favs.data).forEach(function (f) {
+        var id = (f && typeof f === 'object') ? f.id : f;
+        if (id === undefined || id === null || id === '') return;
+        id = String(id);
+        if (favSeen[id]) return;
+        favSeen[id] = 1;
+        mergedFavs.push(id);
+      });
+      localStorage.setItem('tatabox_favorites', JSON.stringify(mergedFavs));
+    }
+    if (records && Array.isArray(records.data)) {
+      var mergedRecords = mergeRecordsByKey(localRecords, records.data, function (r) {
+        return r && (r.id || (r.qId || r.question_id) + '@' + r.timestamp);
+      });
+      localStorage.setItem('tatabox_records', JSON.stringify(mergedRecords.slice(-100)));
     }
   } catch (e) {
     // 静默失败

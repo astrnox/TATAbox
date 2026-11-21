@@ -5,15 +5,15 @@
  * 目标：替代「服务端点数衰减 / 本地线性衰减」双轨中缺乏科学依据的部分，
  * 提供可解释、有界、激励机制自洽的统一模型：
  *
- *   CR(t) = clamp( CR_BASE + Σ 行为增量·近因权重 − Σ 违规·近因权重 − Σ 消费, 0, CAP )
+ *   CR(t) = clamp( CR_BASE + Σ 行为增量·近因权重 − Σ 违规·近因权重, 0, CAP )
  *
- *   · 近因权重  w(age) = e^(−κ·ageDays)，κ=0.03 → 半衰期 ≈ 23 天
- *     行为价值随时间平滑淡出（记忆近因效应），而非旧模型的
- *     「无条件指数复合衰减」——后者会把无违规用户的历史信任一路清零；
- *   · CR_BASE = 100 常驻：基础信任不随时间蒸发（不惩罚「不活跃但无违规」），
- *     违规与消费才是扣减来源（违规同样近因淡出，给改过自新留空间）；
- *   · 上限 CAP = 200：防止奖励积分无限滚动；
- *   · 等级阈值与旧视觉一致（0/10/30/50/80/100），新模型下更易达成、更可读。
+ *   · 近因权重  w(age) = e^(−κ·ageDays)，κ=0.03（行为）→ 半衰期 ≈ 23 天；
+ *     违规用 κ=0.099 → 半衰期 ≈ 7 天，改过自新的代价更合理；
+ *   · CR_BASE = 60 常驻：基础信任不随时间蒸发（不惩罚「不活跃但无违规」）；
+ *   · 高影响操作（评论/发帖/举报）只设门槛、不再扣信用——信用衡量信任，
+ *     消费不该永久侵蚀信任（此前的 COSTS 让发 50 帖直接归零且无法恢复）；
+ *   · 上限 CAP = 200，等级阈值 0/20/40/70/100/130：100 不再是天花板，
+ *     活跃用户有继续上升的空间，榜单才有区分度。
  *
  * 同时提供旧模型兼容函数 legacyDecayed（仅加保底，用于存量数据结构迁移前的
  * 服务端读写的平滑改进）。
@@ -25,42 +25,43 @@
   var DAY = 24 * 60 * 60 * 1000;
 
   var CR_V2 = {
-    BASE: 100,          // 新用户基础信任（常驻，不衰减）
-    KAPPA: 0.03,        // 近因衰减速率/天（半衰期 ≈ 23 天）
+    BASE: 60,           // 新用户基础信任（常驻，不衰减）
+    KAPPA: 0.03,        // 行为增量的近因衰减速率/天（半衰期 ≈ 23 天）
+    KAPPA_PENALTY: 0.099, // 违规的近因衰减速率/天（半衰期 ≈ 7 天，可更快改过自新）
     CAP: 200,           // 上限
     FLOOR: 0,           // 下限
     // 符合社区期望的行为 → 单次增量（日常行为有每日上限）
     GAINS: {
-      DAILY_LOGIN: 1.5,          // 每日打卡/登录
-      PRACTICE_FULL: 0.1,        // 答题全对 1 题（PRACTICE_DAILY_CAP/天 封顶）
-      PRACTICE_DAILY_CAP: 2,     // 答题奖励每日封顶（即 20 题全对封顶）
-      FEEDBACK: 3,               // 有效建议反馈 / 有效举报
+      DAILY_LOGIN: 1,            // 每日打卡/登录
+      PRACTICE_FULL: 0.03,       // 答题全对 1 题（PRACTICE_DAILY_CAP/天 封顶）
+      PRACTICE_DAILY_CAP: 3,     // 答题奖励每日封顶
+      FEEDBACK: 5,               // 有效建议反馈 / 有效举报
       POST: 4,                   // 发布优质内容
       COMMENT: 1                 // 有效评论
     },
-    // 违规 → 扣减（近因淡出，意味可改过自新）
+    // 违规 → 扣减（近因淡出更快，意味可改过自新）
     PENALTIES: {
-      UNCIVIL_POST: 15,
-      UNCIVIL_COMMENT: 10,
-      SPAM: 20,
-      INVALID_REPORT: 3,
-      INVALID_REPORT_REPEAT: 8
+      UNCIVIL_POST: 6,
+      UNCIVIL_COMMENT: 4,
+      SPAM: 8,
+      INVALID_REPORT: 2,
+      INVALID_REPORT_REPEAT: 4
     },
-    // 高影响行为 → 消费（即时扣减、永久，不随时间返还）
+    // 高影响操作只设门槛，不再永久扣信用（信用 ≠ 消费）
     COSTS: {
-      COMMENT: 1,
-      POST: 2,
-      REPORT: 2,
-      SPECIAL: 10
+      COMMENT: 0,
+      POST: 0,
+      REPORT: 0,
+      SPECIAL: 0
     },
-    // 信用等级（与现有 CI 视觉一致，阈值沿用 0/10/30/50/80/100）
+    // 信用等级：100 不再是顶档，让活跃用户有上升空间
     LEVELS: [
       { min: 0,   label: '不受信任', title: '不受信任', color: '#c0553a' },
-      { min: 10,  label: '极低信任', title: '极低信任', color: '#d47030' },
-      { min: 30,  label: '有限信任', title: '有限信任', color: '#c49b30' },
-      { min: 50,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
-      { min: 80,  label: '高度信任', title: '高度信任', color: '#3a8c5c' },
-      { min: 100, label: '极高信任', title: '极高信任', color: '#ffd700' }
+      { min: 20,  label: '极低信任', title: '极低信任', color: '#d47030' },
+      { min: 40,  label: '有限信任', title: '有限信任', color: '#c49b30' },
+      { min: 60,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
+      { min: 100, label: '高度信任', title: '高度信任', color: '#3a8c5c' },
+      { min: 130, label: '极高信任', title: '极高信任', color: '#ffd700' }
     ]
   };
 
@@ -79,6 +80,8 @@
     ledger = ledger || {};
     now = (typeof now === 'number' && isFinite(now)) ? now : Date.now();
     var kappa = (typeof ledger.kappa === 'number' && ledger.kappa > 0) ? ledger.kappa : CR_V2.KAPPA;
+    var kappaPenalty = (typeof ledger.kappaPenalty === 'number' && ledger.kappaPenalty > 0)
+      ? ledger.kappaPenalty : CR_V2.KAPPA_PENALTY;
     var cap = (typeof ledger.cap === 'number' && ledger.cap > 0) ? ledger.cap : CR_V2.CAP;
     var base = (typeof ledger.base === 'number' && isFinite(ledger.base)) ? ledger.base : CR_V2.BASE;
 
@@ -99,7 +102,7 @@
     for (var j = 0; j < pens.length; j++) {
       var p = pens[j];
       if (!p || typeof p.amount !== 'number' || !isFinite(p.amount)) continue;
-      var pw = Math.exp(-kappa * ageDays(p.ts, now));
+      var pw = Math.exp(-kappaPenalty * ageDays(p.ts, now));
       var pc = Math.abs(p.amount) * pw;
       penalties += pc;
       detail.push({ type: 'penalty', amount: Math.abs(p.amount), ts: p.ts || now, weight: pw, contrib: pc });
@@ -116,7 +119,7 @@
       spends = ledger.spends;
     }
 
-    var score = Math.max(CR_V2.FLOOR, Math.min(cap, base + gains - penalties - spends));
+    var score = Math.max(CR_V2.FLOOR, Math.min(cap, base + gains - penalties));
     // 保留与 getPointsLevel 一致的 1 位小数对外呈现，内部用精确值判级
     score = Math.round(score * 10) / 10;
     var level = getCreditLevel(score);
@@ -182,10 +185,10 @@
 
   /* 模型解释元数据（透明化展示用） */
   var CR_EXPLAIN = {
-    title: '信用指数 CR（0-200，基础 100）',
-    formula: 'CR = clamp( 100 + Σ 行为×近因权重 − Σ 违规×近因权重 − Σ 消费, 0, 200 )',
-    nearCause: '近因权重 w = e^(−0.03×天数)：行为价值半衰期约 23 天，90 天前的行为权重 ≈ 6.7%（平滑淡出，而非到点清零）',
-    baseNote: '基础信任 100 常驻：不随时间蒸发；只有违规与消费才把它扣减（违规同样近因淡出，鼓励改过）',
+    title: '信用指数 CR（0-200，基础 60）',
+    formula: 'CR = clamp( 60 + Σ 行为×近因权重 − Σ 违规×近因权重, 0, 200 )；消费只设门槛，不扣信用',
+    nearCause: '行为半衰期约 23 天（κ=0.03）；违规半衰期约 7 天（κ=0.099），一次违规不会长期压死信用',
+    baseNote: '基础信任 100 常驻、不随时间蒸发；只有违规会扣减，且会较快淡出',
     gains: CR_V2.GAINS,
     penalties: CR_V2.PENALTIES,
     costs: CR_V2.COSTS,

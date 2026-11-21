@@ -214,7 +214,7 @@
     /* 每日亿题入口 hover（原内联 onmouseover/onmouseout 已改纯 CSS） */
     .daily-billion-entry-link:hover { background: rgba(196,149,106,0.1); }
   </style>
-  <script src="js/core/script-retry.js?v=20261115a"></script>
+  <script src="js/core/script-retry.js?v=20261121b"></script>
   <script src="js/core/theme-init.js?v=20260820a"></script>
   <script src="js/core/mode-init.js?v=20261016a"></script>
   <!-- 旧内核浏览器兼容探测（同步）：故意使用现代语法，老内核解析失败 → 标记缺失 → 由 legacy-fallback.js 按真实启动结果决定是否降级 -->
@@ -1244,9 +1244,9 @@
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
-  <script src="js/core/app.js?v=20261121a" defer></script>
+  <script src="js/core/app.js?v=20261121b" defer></script>
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
-  <script src="js/core/app-auth.js?v=20261114b" defer></script>
+  <script src="js/core/app-auth.js?v=20261121b" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>
   <script src="js/pages/home-quiz.js?v=20261114b" defer></script>
   <script src="js/core/app-router.js?v=20261031a" defer></script>

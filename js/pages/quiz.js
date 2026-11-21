@@ -673,7 +673,7 @@ function renderPaper() {
             try {
               var arr = JSON.parse(localStorage.getItem('tatabox_wrong_questions') || '[]');
               arr.push({ qId: qBio, questionText: q.question, subject: q.subject, timestamp: Date.now(), wrongCount: 1 });
-              localStorage.setItem('tatabox_wrong_questions', JSON.stringify(arr.slice(-200)));
+              localStorage.setItem('tatabox_wrong_questions', JSON.stringify(arr.slice(-500)));
               this.textContent = '✓ 已加入';
               this.disabled = true;
             } catch (e) {}

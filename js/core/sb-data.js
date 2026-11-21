@@ -200,15 +200,32 @@ function importUserData(jsonData) {
       if (typeof restoreSettings === 'function') restoreSettings();
     }
 
-    // 导入错题
+    // 导入错题（与本地合并，避免云端为空/较旧时把本地错题冲掉）
     if (Array.isArray(data.wrongQuestions)) {
-      localStorage.setItem('tatabox_wrong_questions', JSON.stringify(data.wrongQuestions));
+      var localWrong = [];
+      try { localWrong = JSON.parse(localStorage.getItem('tatabox_wrong_questions') || '[]') || []; } catch (e) {}
+      var mergedWrong = (typeof mergeRecordsByKey === 'function')
+        ? mergeRecordsByKey(localWrong, data.wrongQuestions, function (w) { return w && (w.qId || w.id || w.question_id); })
+        : localWrong.concat(data.wrongQuestions);
+      localStorage.setItem('tatabox_wrong_questions', JSON.stringify(mergedWrong));
       imported.wrongQuestions = true;
     }
 
-    // 导入收藏
+    // 导入收藏（同上，按 id 取并集）
     if (Array.isArray(data.favorites)) {
-      localStorage.setItem('tatabox_favorites', JSON.stringify(data.favorites));
+      var localFavs = [];
+      try { localFavs = JSON.parse(localStorage.getItem('tatabox_favorites') || '[]') || []; } catch (e) {}
+      var favSet = Object.create(null);
+      var mergedFavs = [];
+      localFavs.concat(data.favorites).forEach(function (f) {
+        var id = (f && typeof f === 'object') ? f.id : f;
+        if (id === undefined || id === null || id === '') return;
+        id = String(id);
+        if (favSet[id]) return;
+        favSet[id] = 1;
+        mergedFavs.push(id);
+      });
+      localStorage.setItem('tatabox_favorites', JSON.stringify(mergedFavs));
       imported.favorites = true;
     }
 

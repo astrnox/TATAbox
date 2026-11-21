@@ -22,7 +22,7 @@ var _currentUser = null;
 // 若 sb-gamify.js 尚未加载（或某些加载链未引入它），会抛 ReferenceError 导致登录失败。
 // 仅在未定义时兜底赋 100，避免两处无条件同名 var 定义、后续只改一边就漂移。
 if (typeof POINTS_DEFAULT === 'undefined') {
-  var POINTS_DEFAULT = 100;
+  var POINTS_DEFAULT = 60;
 }
 
 /**

@@ -4,7 +4,7 @@
 // 通过符合社区期望的行为获得信任，消费信任以做出对社区影响更大的行为；
 // 信任具有时效性（自然衰减），违规则直接扣减。
 
-var POINTS_DEFAULT = 100;
+var POINTS_DEFAULT = 60;   // 新用户基础信任：60 落在「基本信任」档，给活跃留出上升空间
 
 
 // 1. 信任自然衰减参数
@@ -18,40 +18,40 @@ var CR_DECAY = {
 
 // 2. 符合社区期望的行为 → 获得信任增量
 var POINTS_EARN_RULES = {
-  daily_checkin: { base: 0.3, reason: '每日打卡' },
-  online_time: { base: 0.1, reason: '在线时长奖励' },
-  practice_milestone: { base: 0.1, reason: '刷题奖励（每10题）' },
-  suggestion_feedback: { base: 2, reason: '提交建议反馈' },
-  valid_report: { base: 1, reason: '有效举报/反馈' }
+  daily_checkin: { base: 1, reason: '每日打卡' },
+  online_time: { base: 0.3, reason: '在线时长奖励' },
+  practice_milestone: { base: 0.3, reason: '刷题奖励（每10题）' },
+  suggestion_feedback: { base: 5, reason: '提交建议反馈' },
+  valid_report: { base: 3, reason: '有效举报/反馈' }
 };
 
 
-// 3. 消费信任（高影响操作）规则（需同时满足门槛）
+// 3. 高影响操作门槛（信用≠消费：达标即可操作，不再永久扣信用分）
 var POINTS_ACTION_COSTS = {
-  comment: { threshold: 20, cost: 1, reason: '发表评论' },
-  post: { threshold: 30, cost: 2, reason: '发布帖子' },
-  report_question: { threshold: 50, cost: 2, reason: '举报题目' },
-  special_permission: { threshold: 80, cost: 10, reason: '申请特殊权限' }
+  comment: { threshold: 20, cost: 0, reason: '发表评论' },
+  post: { threshold: 30, cost: 0, reason: '发布帖子' },
+  report_question: { threshold: 50, cost: 0, reason: '举报题目' },
+  special_permission: { threshold: 80, cost: 0, reason: '申请特殊权限' }
 };
 
 
-// 4. 违规惩罚规则（直接扣减，永久）
+// 4. 违规惩罚规则（直接扣减；力度下调，避免一次误判抵消数周积累）
 var POINTS_PENALTIES = {
-  question_feedback_invalid: { amount: -5, reason: '无效题目反馈/举报' },
-  uncivil_post: { amount: -15, reason: '发布不文明内容' },
-  uncivil_comment: { amount: -10, reason: '评论不文明内容' },
-  spam: { amount: -20, reason: '刷屏/垃圾内容' }
+  question_feedback_invalid: { amount: -2, reason: '无效题目反馈/举报' },
+  uncivil_post: { amount: -6, reason: '发布不文明内容' },
+  uncivil_comment: { amount: -4, reason: '评论不文明内容' },
+  spam: { amount: -8, reason: '刷屏/垃圾内容' }
 };
 
 
-// 5. 信任等级（由当前信用指数推导；指数越高，社区信任越高）
+// 5. 信任等级（由当前信用指数推导；100 不再是顶档，活跃用户可以继续上升）
 var POINTS_LEVELS = [
   { min: 0,   label: '不受信任', title: '不受信任', color: '#c0553a' },
-  { min: 10,  label: '极低信任', title: '极低信任', color: '#d47030' },
-  { min: 30,  label: '有限信任', title: '有限信任', color: '#c49b30' },
-  { min: 50,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
-  { min: 80,  label: '高度信任', title: '高度信任', color: '#3a8c5c' },
-  { min: 100, label: '极高信任', title: '极高信任', color: '#ffd700' }
+  { min: 20,  label: '极低信任', title: '极低信任', color: '#d47030' },
+  { min: 40,  label: '有限信任', title: '有限信任', color: '#c49b30' },
+  { min: 60,  label: '基本信任', title: '基本信任', color: '#5a7d5c' },
+  { min: 100, label: '高度信任', title: '高度信任', color: '#3a8c5c' },
+  { min: 130, label: '极高信任', title: '极高信任', color: '#ffd700' }
 ];
 
 
@@ -559,6 +559,8 @@ async function adjustUserPoints(amount, reason, options) {
   var sb = getSupabase();
   var userId = options.userId || (_currentUser ? _currentUser.id : null);
   if (!sb || !userId) return { ok: false, error: '未登录或未初始化' };
+  // 信用≠消费：成本为 0 时不再落库，避免产生无意义的 0 增量流水
+  if (!amount || !isFinite(amount)) return { ok: true, skipped: true };
 
   try {
     var { data: profile, error: fetchError } = await sb.from('profiles')

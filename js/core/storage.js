@@ -91,6 +91,36 @@ function safeSetJSON(key, value) {
 var _quotaWarnFired = false;
 
 /**
+ * 按业务主键合并两个数组（本地 + 云端），冲突时保留时间戳较新的一条。
+ * 用于登录/同步时把云端数据并回本地，避免"整体覆盖"把本地数据冲掉。
+ * @param {Array} localArr 本地数组
+ * @param {Array} cloudArr 云端数组
+ * @param {Function} keyFn 取主键的函数；返回空则视为无主键，直接保留
+ * @returns {Array}
+ */
+function mergeRecordsByKey(localArr, cloudArr, keyFn) {
+  var out = [];
+  var index = Object.create(null);
+  function pickTime(it) {
+    var t = it && (it.timestamp || it.updated_at || it.created_at);
+    if (typeof t === 'number') return t;
+    var parsed = Date.parse(t || '');
+    return isFinite(parsed) ? parsed : 0;
+  }
+  function push(it) {
+    if (!it || typeof it !== 'object') return;
+    var k = keyFn ? keyFn(it) : '';
+    if (k === null || k === undefined || k === '') { out.push(it); return; }
+    k = String(k);
+    if (index[k] === undefined) { index[k] = out.length; out.push(it); return; }
+    if (pickTime(it) > pickTime(out[index[k]])) out[index[k]] = it;
+  }
+  (Array.isArray(localArr) ? localArr : []).forEach(push);
+  (Array.isArray(cloudArr) ? cloudArr : []).forEach(push);
+  return out;
+}
+
+/**
  * 估算 localStorage 已用字节数与占比（约 5MB 上限），供配额监控（P1-15）。
  * @returns {{bytes:number, limit:number, percent:number}}
  */

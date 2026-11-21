@@ -279,7 +279,7 @@
         timestamp: Date.now(),
         wrongCount: 1
       });
-      writeJSON('tatabox_wrong_questions', wrong.slice(-200));
+      writeJSON('tatabox_wrong_questions', wrong.slice(-500));
     }
   }
 
