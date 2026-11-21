@@ -291,24 +291,13 @@ function getPointsLevel(points) {
 
 
 /**
- * 计算自然衰减后的信用指数（存量数据读写前的平滑改进）
- * 优先委托 js/core/credit-metrics.js 的 legacyDecayed（指数衰减 + 保底 10，
- * 修复「信任无条件随时间归零」）；未加载时内联等值兜底。
+ * 信用指数不再在客户端做「读数即衰减」。
+ *
+ * 旧实现把 profiles.points 当累加器，每次读写都乘一次 e^(−0.01005×天数)，
+ * 相当于每月无条件蒸发约 30%，与「信任应随行为更新」相矛盾。
+ * v2 改为：服务端按 cr_logs 流水用近因模型推导分数
+ * （见 sql/migration_v23_points_v2_recompute.sql 的 apply_points_v2）。
  */
-function calculateDecayedPoints(currentPoints, lastUpdatedAt) {
-  if (typeof currentPoints !== 'number' || !isFinite(currentPoints) || currentPoints <= 0) return 0;
-  if (typeof window.legacyDecayed === 'function') {
-    return window.legacyDecayed(currentPoints, lastUpdatedAt);
-  }
-  if (!lastUpdatedAt) return currentPoints;
-  var now = Date.now();
-  var last = new Date(lastUpdatedAt).getTime();
-  var deltaDays = (now - last) / (24 * 60 * 60 * 1000);
-  if (deltaDays <= 0) return currentPoints;
-  var value = currentPoints * Math.exp(-CR_DECAY.lambda * deltaDays);
-  // 保底 10：历史信任不因不活跃而完全清零（违规/消费按实际扣减）
-  return Math.max(10, value);
-}
 
 
 /**
@@ -539,8 +528,9 @@ async function getUserPoints(userId) {
       .maybeSingle();
     if (error) throw error;
     var raw = (data && typeof data.points === 'number') ? data.points : POINTS_DEFAULT;
-    // 应用自然衰减：信用指数随时间衰减
-    var points = calculateDecayedPoints(raw, data && data.points_updated_at ? data.points_updated_at : null);
+    // v2 模型：points 已由服务端按流水近因模型推导（见 migration_v23），
+    // 不再在读取时做累加器式的复利衰减（旧逻辑每读一次就掉 1%/天，信用必然蒸发）
+    var points = raw;
     return { points: Math.round(points * 10) / 10, level: getPointsLevel(points), user_group: data ? data.user_group : 'member' };
   } catch (e) {
     return { points: (_currentUser && typeof _currentUser.points === 'number') ? _currentUser.points : POINTS_DEFAULT, level: getPointsLevel(_currentUser && _currentUser.points) };
@@ -570,9 +560,9 @@ async function adjustUserPoints(amount, reason, options) {
     if (fetchError) throw fetchError;
 
     var rawPoints = (profile && typeof profile.points === 'number') ? profile.points : POINTS_DEFAULT;
-    // 先应用自然衰减，再应用本次调整（profiles.points 字段为 numeric，保留 1 位小数，下限 0）
-    var decayedPoints = calculateDecayedPoints(rawPoints, profile && profile.points_updated_at ? profile.points_updated_at : null);
-    var newPoints = Math.max(0, Math.round((decayedPoints + amount) * 10) / 10);
+    // v2：不再对存量做复利衰减，直接叠加本次增量并夹在 [0, 200]
+    // （服务端 migration_v23 的记账触发器会用流水重算，这里的写入只是兜底）
+    var newPoints = Math.max(0, Math.min(200, Math.round((rawPoints + amount) * 10) / 10));
 
     var { error: updateError } = await sb.from('profiles')
       .update({ points: newPoints, points_updated_at: new Date().toISOString() })
@@ -583,7 +573,7 @@ async function adjustUserPoints(amount, reason, options) {
     try {
       await sb.from('cr_logs').insert({
         user_id: userId,
-        amount: Math.round(amount),
+        amount: Math.round(amount * 100) / 100,
         reason: reason || '手动调整',
         source: options.source || 'manual'
       });
@@ -617,7 +607,7 @@ async function adjustUserPoints(amount, reason, options) {
 async function syncPointsToCloud(points) {
   var sb = getSupabase();
   if (!sb || !_currentUser || _currentUser.isGuest) return { ok: false, error: '未登录' };
-  var val = (typeof points === 'number' && isFinite(points)) ? Math.max(0, Math.round(points)) : 0;
+  var val = (typeof points === 'number' && isFinite(points)) ? Math.max(0, Math.min(200, Math.round(points * 10) / 10)) : 0;
   try {
     var { data } = await sb.from('profiles')
       .select('points')
