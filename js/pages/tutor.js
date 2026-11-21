@@ -360,7 +360,7 @@ var TUTOR_QUICK_QUESTIONS = [
 ];
 
 /* SVG 降级正则过滤（DOMPurify 未加载或异常时使用）
- * 与 discussion.js 保持一致：包括 HTML 实体解码，防止 &#106;avascript: 绕过
+ * 与社区渲染保持一致：包括 HTML 实体解码，防止 &#106;avascript: 绕过
  */
 function _fallbackSanitize(svg) {
   svg = svg.replace(/<script[\s\S]*?<\/script>/gi, '');

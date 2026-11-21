@@ -431,33 +431,7 @@ function injectDashboardStyles() {
     '    font-size: 1.25rem;',
     '  }',
     '}',
-    '',
-    '.dash-mood-widget {',
-    '  display: flex;',
-    '  align-items: center;',
-    '  gap: 14px;',
-    '  padding: 12px 16px;',
-    '  background: var(--color-bg-warm, #f5f0e8);',
-    '  border-radius: 16px;',
-    '  border: 1px solid var(--border-light, #ece8e1);',
-    '  margin-bottom: 14px;',
-    '}',
-    '.dash-mood-widget-icon { font-size: 1.6rem; }',
-    '.dash-mood-widget-info { flex: 1; }',
-    '.dash-mood-widget-label { font-size: 0.95rem; font-weight: 600; color: var(--color-deep, #1a3a2a); }',
-    '.dash-mood-widget-count { font-size: 0.78rem; color: var(--text-muted, #8a8a8a); }',
-    '.dash-mood-widget-btn {',
-    '  padding: 8px 16px;',
-    '  background: var(--color-sage, #5a7d5c);',
-    '  color: #fff;',
-    '  border: none;',
-    '  border-radius: 8px;',
-    '  font-size: 0.85rem;',
-    '  font-weight: 600;',
-    '  cursor: pointer;',
-    '  font-family: inherit;',
-    '}',
-    '.dash-mood-widget-btn:hover { background: #4a6d4c; }'
+    ''
   ].join('\n');
   document.head.appendChild(style);
 }
@@ -768,9 +742,6 @@ function renderDashboardPage(target) {
     '<div class="dash-avatar" data-on=\'["navigateTo","/user"]\' style="' + (_avatarUrl ? 'background:none;' : '') + 'overflow:hidden;">' + _avatarInner + '</div>' +
     '</div>';
 
-  // v4.0 今日情绪卡片（常驻）
-  html += '<div id="dash-mood-widget"></div>';
-
   // 今日目标圆环
   var goalColor = goalProgress >= 100 ? '#5a7d5c' : goalProgress >= 50 ? '#c49a4a' : '#c4a4a4';
   html += '<div class="dash-goal-section">' +
@@ -892,25 +863,6 @@ function renderDashboardPage(target) {
   html += '</div>'; // .dashboard-page
   target.innerHTML = html;
 
-  // 渲染今日情绪卡片
-  _renderMoodWidget();
-}
-
-/**
- * v4.0 渲染情绪卡片
- */
-function _renderMoodWidget() {
-  var container = document.getElementById('dash-mood-widget');
-  if (!container) return;
-  if (!window.BioQuestMoodTracker || typeof window.BioQuestMoodTracker.renderMoodWidget !== 'function') {
-    container.replaceChildren();
-    return;
-  }
-  try {
-    window.BioQuestMoodTracker.renderMoodWidget(container);
-  } catch (e) {
-    container.replaceChildren();
-  }
 }
 
 /**

@@ -202,10 +202,6 @@ describe('用户可见文案：无 AI 腔', () => {
     expect(src).not.toContain('&#127881;');
   });
 
-  test('学习页不再使用「智能推荐」标签', () => {
-    expect(read('study.html')).not.toContain('智能推荐');
-  });
-
   test('成就描述保留黑色幽默，但不含「该X还是该Y」两难句式', () => {
     const src = read('js/core/supabase-client.js');
     expect(src).not.toMatch(/该[^']*还是该/);

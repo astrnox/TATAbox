@@ -43,10 +43,9 @@ function _moduleDir(modName) {
   var admin = { 'admin': 1, 'admin-users': 1, 'admin-questions': 1, 'admin-cards': 1,
     'admin-community': 1, 'admin-ebook': 1, 'admin-ops': 1, 'admin-ocr': 1, 'admin-aigen': 1 };
   var engagement = { 'achievements': 1, 'badge-motifs': 1, 'eggs': 1, 'countdown': 1,
-    'soundscape': 1, 'social-impact': 1, 'mood-tracker': 1, 'points-ui': 1,
-    'notifications': 1, 'whiteboard': 1, 'tts': 1 };
+    'points-ui': 1, 'notifications': 1, 'tts': 1 };
   // H-04：仅特定路由使用的集成模块改为路由级懒加载（由 Routes[route].module 驱动）。
-  var integrations = { 'community-enhanced': 1, 'ai-chat-enhanced': 1, 'molecule-viewer': 1,
+  var integrations = { 'ai-chat-enhanced': 1, 'molecule-viewer': 1,
     'rdkit-viewer': 1, 'sketch-pad': 1, 'genome-browser': 1, 'ocr-engine': 1,
     'diagram-renderer': 1, 'data-store': 1, 'irt-enhanced': 1, 'bkt-engine': 1,
     'vendor-init': 1 };
@@ -82,8 +81,7 @@ var _moduleDeps = {
   'analytics': ['score-engine'],
   // 键必须与 app-routes.js '/analytics' 的 module:'analytic' 一致（同 diagnosis 死键教训）
   'analytic': ['score-engine'],
-  'bio-calc': ['score-engine'],
-  'score-calc': ['score-engine', 'credit-metrics']
+  'bio-calc': ['score-engine']
 };
 
 // 模块名 → 初始化函数名（用于检测 head 中预加载的脚本是否已注册 init）
@@ -97,17 +95,13 @@ function modNameToInitFn(modName) {
     'community': 'initCommunity',
     'knowledge-graph': 'initKnowledgeGraph',
     'smart-diagnosis': 'initSmartDiagnosis',
-    'pomodoro': 'initPomodoro',
-    'habits': 'initHabits',
     'review': 'initReview',
-    'bounties': 'initBounties',
     'wrongbook': 'initWrongbook',
     'review-deep': 'initReviewDeep',
     'study': 'initStudy',
     'bio-video': 'initBioVideo',
     'dashboard': 'initDashboard',
     'tutor': 'initTutor',
-    'discussion': 'initDiscussion',
     'bio-lab': 'initBioLab',
     'phet-sims': 'initPhetSims',
     'trends': 'initTrends',
@@ -115,7 +109,6 @@ function modNameToInitFn(modName) {
     'photo-quiz': 'initPhotoQuiz',
     'learning-hub': 'initLearningHub',
     'daily-billion': 'initDailyBillion',
-    'score-calc': 'initScoreCalc',
     'bio-calc': 'initBioCalc'
   };
   return map[modName];
@@ -388,7 +381,6 @@ function doRouteRender(route, target) {
           _renderModuleError(target, route, new Error('points-ui 模块未加载'));
         }
         break;
-      case '/points-shop':
       case '/credit':
         // points-ui.js -> window.initCreditCenter
         if (typeof window.initCreditCenter === 'function') {
@@ -403,17 +395,8 @@ function doRouteRender(route, target) {
       case '/diagnosis':
         _safeInit('initSmartDiagnosis', route, target);
         break;
-      case '/pomodoro':
-        _safeInit('initPomodoro', route, target);
-        break;
-      case '/habits':
-        _safeInit('initHabits', route, target);
-        break;
       case '/review':
         _safeInit('initReview', route, target);
-        break;
-      case '/bounties':
-        _safeInit('initBounties', route, target);
         break;
       case '/wrongbook':
         _safeInit('initWrongbook', route, target);
@@ -432,9 +415,6 @@ function doRouteRender(route, target) {
         break;
       case '/tutor':
         _safeInit('initTutor', route, target);
-        break;
-      case '/discussion':
-        _safeInit('initDiscussion', route, target);
         break;
       case '/bio-lab':
         _safeInit('initBioLab', route, target);
@@ -494,16 +474,6 @@ function doRouteRender(route, target) {
           window.initGenomeBrowser(route, target);
         } else {
           _renderModuleError(target, route, new Error('genome-browser 模块未加载'));
-        }
-        break;
-      case '/community-enhanced':
-        // community-enhanced.js -> window.initCommunityEnhanced / window.CommunityEnhanced.renderCommunityEnhancedPage
-        if (typeof window.initCommunityEnhanced === 'function') {
-          window.initCommunityEnhanced(route, target);
-        } else if (window.CommunityEnhanced && typeof window.CommunityEnhanced.renderCommunityEnhancedPage === 'function') {
-          window.CommunityEnhanced.renderCommunityEnhancedPage(target);
-        } else {
-          _renderModuleError(target, route, new Error('community-enhanced 模块未加载'));
         }
         break;
       case '/daily-billion':

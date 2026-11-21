@@ -1138,7 +1138,7 @@
   <script src="js/engagement/badge-motifs.js?v=20260725a" defer></script>
   <!-- ts-fsrs (MIT): 官方 FSRS-5 引擎 UMD 构建，必须在 fsrs-algorithm.js 之前加载 -->
   <script src="js/vendor/ts-fsrs.umd.min.js?v=20260723d" defer></script>
-  <!-- DOMPurify (MPL-2.0/Apache-2.0): SVG/HTML XSS sanitizer，必须在 discussion.js / tutor.js 之前加载 -->
+  <!-- DOMPurify (MPL-2.0/Apache-2.0): SVG/HTML XSS sanitizer，必须在 tutor.js 之前加载 -->
   <script src="js/vendor/purify.min.js?v=20260723d" defer></script>
   <!-- FSRS 间隔重复算法包装层：基于 ts-fsrs，暴露 window.FSRS 兼容 API（修复 P0-1） -->
   <script src="js/algo/fsrs-algorithm.js?v=20260723d" defer></script>
@@ -1223,10 +1223,8 @@
   <script src="js/core/csp-events.js?v=20260820a" defer></script>
   <script src="js/algo/irt-engine.js?v=20260712k" defer></script>
   <script src="js/engagement/tts.js?v=20260712k" defer></script>
-  <script src="js/engagement/whiteboard.js?v=20260712k" defer></script>
   <script src="js/ai/multi-agent.js?v=20260712k" defer></script>
-  <script src="js/pages/classmate.js?v=20260806a" defer></script>
-  <script src="js/engagement/mood-tracker.js?v=20260719v4" defer></script>
+  <script src="js/pages/classmate.js?v=20261121d" defer></script>
   <script src="js/core/a11y-utils.js?v=20260719v4" defer></script>
   <script src="js/pages/community.js?v=20260725final" defer></script>
   <!-- 社区回帖通知：收到回帖弹窗提示 + 我的-通知列表 -->
@@ -1237,20 +1235,20 @@
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
   <script src="js/engagement/points-ui.js?v=20261121a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
-  <script src="js/core/app-routes.js?v=20260821a" defer></script>
+  <script src="js/core/app-routes.js?v=20261121d" defer></script>
   <!-- P1-1 拆分：认证 UI / 搜索 / 排行榜（依赖 utils.js 的 escapeHtml，须在 app.js 前） -->
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
   <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
-  <script src="js/core/app.js?v=20261121b" defer></script>
+  <script src="js/core/app.js?v=20261121d" defer></script>
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
   <script src="js/core/app-auth.js?v=20261121c" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>
   <script src="js/pages/home-quiz.js?v=20261114b" defer></script>
-  <script src="js/core/app-router.js?v=20261031a" defer></script>
-  <script src="js/core/app-modules.js?v=20261031a" defer></script>
+  <script src="js/core/app-router.js?v=20261121d" defer></script>
+  <script src="js/core/app-modules.js?v=20261121d" defer></script>
   <script src="js/core/app-pages.js?v=20261031a" defer></script>
   <!-- M-01：隐私政策页/首次提示自 app.js 拆分，保持全局入口并由 app.js 运行时调用 -->
   <script src="js/core/app-privacy.js?v=20261031a" defer></script>
@@ -1258,8 +1256,6 @@
   <script src="js/core/app-donation.js?v=20261031a" defer></script>
   <!-- M-01：主题切换 / 移动端菜单 / 标签页预取自 app.js 拆分 -->
   <script src="js/core/app-shell.js?v=20261031a" defer></script>
-  <!-- M-01：AI 课堂入口页自 app.js 拆分 -->
-  <script src="js/core/app-classroom.js?v=20261031a" defer></script>
   <!-- M-01：启动流程 / 反馈弹窗自 app.js 拆分（boot 最后加载并触发 initApp） -->
   <script src="js/core/app-boot.js?v=20261031a" defer></script>
   <script src="js/core/app-feedback.js?v=20261031a" defer></script>
@@ -1278,9 +1274,7 @@
   <script src="js/core/loader.js?v=20260826a" defer></script>
   <script src="js/core/cell-loader.js?v=20260803a" defer></script>
   <script src="js/core/shortcut-panel.js?v=20260803a" defer></script>
-  <script src="js/engagement/soundscape.js?v=20260803a" defer></script>
   <script src="js/pages/onboarding.js?v=20260803a" defer></script>
-  <script src="js/engagement/social-impact.js?v=20260803a" defer></script>
 </head>  <!-- H-04：OpenMAIC 课堂脚本已随 /classroom 路由下线移除，不再进入首屏加载 -->
   <!-- 首页背景为纯 CSS 静态层次（原随机粒子背景脚本已移除：无脚本、零常驻动画） -->
   <!-- PWA Service Worker 注册（外部化 sw-register.js）：DOMContentLoaded 立即启动，配 6s 硬超时兜底 -->

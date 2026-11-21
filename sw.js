@@ -9,7 +9,7 @@
 // P1-4 修复：CACHE_VERSION 由 scripts/bump-sw.js 基于 git 跟踪的 js/css/data
 // 内容哈希自动生成——修改任何 JS/CSS/data 后运行 `npm run bump:sw` 即可，
 // 不再依赖人肉维护版本号。版本号变化会触发 activate 阶段清理旧缓存并重新预热。
-var CACHE_VERSION = 'bioquest-e7084ac433b0'; // ← bump-sw.js 会自动改写此行
+var CACHE_VERSION = 'bioquest-69d9dac99c4c'; // ← bump-sw.js 会自动改写此行
 var CACHE_NAME = 'bioquest-cache-' + CACHE_VERSION;
 
 /* ========================================================================
@@ -71,7 +71,6 @@ var SKELETON_ASSETS = [
   './js/core/app-privacy.js',
   './js/core/app-donation.js',
   './js/core/app-shell.js',
-  './js/core/app-classroom.js',
   './js/core/app-boot.js',
   './js/core/app-feedback.js',
   './js/core/auth-ui.js',
@@ -125,8 +124,6 @@ var WARMUP_PHASE_1 = [
   './js/core/sync-tabs.js',
   './js/core/cell-loader.js',
   './js/engagement/countdown.js',
-  './js/engagement/soundscape.js',
-  './js/engagement/social-impact.js',
   './js/pages/learning-hub.js',
   './js/core/micro-details.js',
   // Issue #105 / #123 / #128：通用交互小模块
@@ -186,7 +183,6 @@ var WARMUP_PHASE_2 = [
   './js/pages/resources.js',
   './js/pages/ebook.js',
   './js/pages/trends.js',
-  './js/pages/discussion.js',
   './js/pages/user.js',
   './js/pages/user-styles.js',
   './js/pages/user-avatar.js',
@@ -197,7 +193,6 @@ var WARMUP_PHASE_2 = [
   './js/pages/user-panels.js',
   './js/pages/user-page.js',
   './js/pages/community.js',
-  './js/pages/bounty.js',
   './js/pages/bio-lab.js',
   './js/pages/bio-video.js',
   './js/pages/phet-sims.js',
@@ -205,16 +200,12 @@ var WARMUP_PHASE_2 = [
   './js/pages/biology-history.js',
   './js/pages/tutor.js',
   './js/pages/teacher.js',
-  './js/pages/classroom.js',
-  './js/pages/classroom-player.js',
   './js/algo/fsrs-algorithm.js',
   './js/algo/fsrs-optimizer.js',
   './js/algo/irt-engine.js',
   './js/core/event-bus.js',
   './js/core/a11y-utils.js',
   './js/pages/classmate.js',
-  './js/engagement/mood-tracker.js',
-  './js/engagement/whiteboard.js',
   './js/ai/multi-agent.js',
   './js/ai/ai-client.js',
   './js/engagement/tts.js',

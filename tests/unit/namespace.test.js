@@ -18,7 +18,6 @@ const SPLIT_MODULES = [
   ['js/core/app-privacy.js', 'BQ.app.privacy'],
   ['js/core/app-donation.js', 'BQ.app.donation'],
   ['js/core/app-shell.js', 'BQ.app.shell'],
-  ['js/core/app-classroom.js', 'BQ.app.classroom'],
   ['js/core/app-auth.js', 'BQ.app.auth'],
   ['js/core/app-home.js', 'BQ.app.home'],
   ['js/core/app-router.js', 'BQ.app.router'],
@@ -74,7 +73,6 @@ describe('M-01 单一命名空间', () => {
     expect(read('js/core/app-privacy.js')).toContain('window.renderPrivacyPage = renderPrivacyPage;');
     expect(read('js/core/app-donation.js')).toContain('window.openDonation = openDonation;');
     expect(read('js/core/app-shell.js')).toContain('window.toggleTheme = toggleTheme;');
-    expect(read('js/core/app-classroom.js')).toContain('window.renderClassroomPage = renderClassroomPage;');
     expect(read('js/pages/practice-share.js')).toContain('window.handleShareQuestionDeepLink = handleShareQuestionDeepLink;');
     expect(read('js/pages/practice-quiz.js')).toContain('window.showSummary = showSummary;');
   });

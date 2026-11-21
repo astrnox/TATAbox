@@ -66,13 +66,6 @@ describe('M-01 app.js 隐私/捐赠模块拆分', () => {
     expectFn('js/core/app-modules.js', ['function doRouteRender', 'window.loadModule = function', 'var _moduleDeps']);
   });
 
-  test('app-classroom.js 提供课堂入口页', () => {
-    const src = read('js/core/app-classroom.js');
-    expect(src).toContain('function renderClassroomPage');
-    expect(src).toContain('function _escapeHtmlAttr');
-    expect(src).toContain('window.renderClassroomPage = renderClassroomPage;');
-  });
-
   test('app-shell.js 提供主题/菜单/预取入口', () => {
     const src = read('js/core/app-shell.js');
     ['toggleTheme', 'toggleMobileMenu', 'closeMobileMenu', '_prefetchTabModules'].forEach((fn) => {
@@ -106,7 +99,6 @@ describe('M-01 app.js 隐私/捐赠模块拆分', () => {
     const privacyIdx = html.indexOf('js/core/app-privacy.js');
     const donationIdx = html.indexOf('js/core/app-donation.js');
     const shellIdx = html.indexOf('js/core/app-shell.js');
-    const classroomIdx = html.indexOf('js/core/app-classroom.js');
     const authIdx = html.indexOf('js/core/app-auth.js');
     const homeIdx = html.indexOf('js/core/app-home.js');
     const routerIdx = html.indexOf('js/core/app-router.js');
@@ -115,16 +107,16 @@ describe('M-01 app.js 隐私/捐赠模块拆分', () => {
     const bootIdx = html.indexOf('js/core/app-boot.js');
     const feedbackIdx = html.indexOf('js/core/app-feedback.js');
     expect(appIdx).toBeGreaterThanOrEqual(0);
-    [privacyIdx, donationIdx, shellIdx, classroomIdx, authIdx, homeIdx, routerIdx, modulesIdx, pagesIdx, bootIdx, feedbackIdx].forEach((idx) => {
+    [privacyIdx, donationIdx, shellIdx, authIdx, homeIdx, routerIdx, modulesIdx, pagesIdx, bootIdx, feedbackIdx].forEach((idx) => {
       expect(idx).toBeGreaterThan(appIdx);
     });
     // 路由先于模块加载（handleRoute 运行时依赖 doRouteRender）
     expect(routerIdx).toBeGreaterThan(homeIdx);
     expect(modulesIdx).toBeGreaterThan(routerIdx);
     // boot 最后加载并触发 initApp
-    expect(bootIdx).toBeGreaterThan(classroomIdx);
+    expect(bootIdx).toBeGreaterThan(shellIdx);
     expect(feedbackIdx).toBeGreaterThan(bootIdx);
-    ['app-auth', 'app-home', 'app-router', 'app-modules', 'app-pages', 'app-privacy', 'app-donation', 'app-shell', 'app-classroom', 'app-boot', 'app-feedback'].forEach((name) => {
+    ['app-auth', 'app-home', 'app-router', 'app-modules', 'app-pages', 'app-privacy', 'app-donation', 'app-shell', 'app-boot', 'app-feedback'].forEach((name) => {
       expect(read('sw.js')).toContain("'./js/core/" + name + ".js'");
     });
   });

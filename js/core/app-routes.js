@@ -76,11 +76,6 @@ const Routes = {
     render: 'renderCreditLeaderboardPage',
     module: 'points-ui'
   },
-  '/points-shop': {
-    title: '信用中心',
-    render: 'renderCreditCenterPage',
-    module: 'points-ui'
-  },
   '/credit': {
     title: '信用中心',
     render: 'renderCreditCenterPage',
@@ -108,11 +103,6 @@ const Routes = {
   '/review': {
     title: '错题与复盘',
     redirect: '/wrongbook'
-  },
-  '/bounties': {
-    title: '问答悬赏',
-    render: 'renderBountiesPage',
-    module: 'bounty'
   },
   '/wrongbook': {
     title: '错题与复盘',
@@ -147,11 +137,6 @@ const Routes = {
     title: 'AI 生物导师',
     render: 'renderTutorPage',
     module: 'tutor'
-  },
-  '/discussion': {
-    title: '生物学家圆桌讨论',
-    render: 'renderDiscussionPage',
-    module: 'discussion'
   },
   '/bio-lab': {
     title: '虚拟生物实验室',
@@ -204,20 +189,10 @@ const Routes = {
     render: 'renderGenomeBrowserPage',
     module: 'genome-browser'
   },
-  '/community-enhanced': {
-    title: '社区（增强版）',
-    render: 'renderCommunityEnhancedPage',
-    module: 'community-enhanced'
-  },
   '/daily-billion': {
     title: '每日亿题',
     render: 'renderDailyBillionPage',
     module: 'daily-billion'
-  },
-  '/data-lab': {
-    title: '数据实验室',
-    render: 'renderDataLabPage',
-    module: 'score-calc'
   },
   '/bio-calc': {
     title: 'Bio 分计算器',

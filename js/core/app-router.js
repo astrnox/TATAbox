@@ -304,17 +304,13 @@ function handleRoute(route) {
     '/community': 'community',
     '/knowledge-graph': 'knowledge-graph',
     '/diagnosis': 'smart-diagnosis',
-    '/pomodoro': 'pomodoro',
-    '/habits': 'habits',
     '/review': 'review',
-    '/bounties': 'bounty',
     '/wrongbook': 'wrongbook',
     '/review-deep': 'review-deep',
     '/study': 'study',
     '/videos': 'bio-video',
     '/dashboard': 'dashboard',
     '/tutor': 'tutor',
-    '/discussion': 'discussion',
     '/bio-lab': 'bio-lab',
     '/phet-sims': 'phet-sims',
     '/trends': 'trends',
@@ -328,9 +324,7 @@ function handleRoute(route) {
     '/smiles': 'rdkit-viewer',
     '/molecules': 'molecule-viewer',
     '/genome': 'genome-browser',
-    '/community-enhanced': 'community-enhanced',
-    '/daily-billion': 'daily-billion',
-    '/data-lab': 'score-calc'
+    '/daily-billion': 'daily-billion'
   };
   var modName = moduleMap[route];
 
@@ -448,21 +442,16 @@ function handleRoute(route) {
         '/community': 'initCommunity',
         '/knowledge-graph': 'initKnowledgeGraph',
         '/diagnosis': 'initSmartDiagnosis',
-        '/pomodoro': 'initPomodoro',
-        '/habits': 'initHabits',
         '/review': 'initReview',
-        '/bounties': 'initBounties',
         '/wrongbook': 'initWrongbook',
         '/review-deep': 'initReviewDeep',
         '/study': 'initStudy',
         '/videos': 'initBioVideo',
         '/dashboard': 'initDashboard',
         '/tutor': 'initTutor',
-        '/discussion': 'initDiscussion',
         '/bio-lab': 'initBioLab',
         '/trends': 'initTrends',
         '/teacher': 'initTeacher',
-        '/data-lab': 'initScoreCalc',
         '/bio-calc': 'initBioCalc'
       }[route];
       if (initFnName && typeof window[initFnName] !== 'function') {

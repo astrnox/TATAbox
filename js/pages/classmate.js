@@ -46,7 +46,6 @@
 
   var EMPATHY_TRIGGERS = {
     consecutiveWrong: 5,      // 连续答错 5 题
-    lowMoodToday: true,       // 今日情绪打卡为"低落"或"疲惫"
     studyMinutesNoBreak: 120  // 连续学习 2 小时未休息
   };
 
@@ -833,11 +832,7 @@
       { empathy: true }
     );
     // 弹出危机资源弹窗
-    if (window.BioQuestMoodTracker && typeof window.BioQuestMoodTracker.showCrisisResource === 'function') {
-      window.BioQuestMoodTracker.showCrisisResource();
-    } else {
-      _showFallbackCrisisModal();
-    }
+    _showFallbackCrisisModal();
     // 记录危机事件
     try {
       var logs = JSON.parse(localStorage.getItem('tatabox_crisis_logs') || '[]');
