@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Aneuploidy",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-05",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 9",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-05-p09.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 9,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 5,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Electrophoresis patterns of PCR products of several chromosome pairs (pairs shown on bottom) in five different individual (1—5) in figure below allow evaluation of presence or absence of chromosome number abnormality. Monosomy of autosomal chromosomes is known to be lethal. Relative height of the peaks in each box reflects the copy number ratio of the two chromosomes in that box. The horizontal axis shows migration, and the vertical axis shows fluorescence intensity. A B c D E Individual 1000 Pid, oh ; o 1000 rtd. JA ad ° LOOg ° ; 1000 Yi dh dul * 1000 ° 0 a fi il a ml = 7 = a 6 5 ns : x 5 i S od Coal mr = f= r= ob a im)",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 5 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Three individuals show trisomy"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Two individuals show abnormal monosomy"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Two individuals have normal karyotypes"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "PCR products related to different chromosomes should have different sizes to allow copy number evaluation"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Aneuploidy",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

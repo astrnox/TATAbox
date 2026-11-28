@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Species Persistance",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-47",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 57",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-47-p57.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 57,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 47,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Zliobaité et al. (2017) point out that for a given taxon, the pattern below is usually observed in the fossil record (red line) defined as the number of localities where a taxon is found. They propose that this pattern is a reflection of the evolutionary process, as shown by blue arrows representing the effects of environment and competition. T Environmental change ! Environmental change t Environmental change com petition t Coen petite COMMpetition > * = =) is) s Origination Extinction Time",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 47 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "According to the model the peak of a taxon's history is only identifiable after its extinction"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "It has been observed that when different species reach their maximum population size in an island, competition and species richness is also at their maximum. This is consistent with the effect of environment and competition as shown in figure"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "The extinction of a taxon should not depend on its age"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "When a taxon is rare, its extinction is more likely to be the result of abiotic factors"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "生态学",
+    "Species Persistance",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Forster Resonance Energy Transfer",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-12",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 19",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-12-p19.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 19,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 20",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-12-p20.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 20,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 12,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Forster resonance energy transfer (FRET) is a distance-dependent process whereby energy from an excited fluorescent molecule (donor) is transferred to a second, non-excited molecule (acceptor) in its vicinity. The FRET efficiency depends on the spectral overlap of the donor emission spectrum and the acceptor absorption spectrum. Acceptors in various forms of FRET may or may not emit fluorescence after receipt of energy from donor. Quantum dots (QDs) are fluorescent nanoparticles that can act as FRET donors and can be used in biosensor systems. The binding of some molecules to QDs enhances the emission properties of the QDs. In this study, 560 nm emitting QDs (QD-560) were used. Maltose Binding Protein (MBP)- bounded QD-560 has higher emission than unbound QD-560. The effect of native MBP or penta-histidine tagged MBP (MBP-S5His) binding to QD-560 on fluorescence intensity was tested over a range of protein-to-QD ratios (Figure 1). Histidine residues can bind zinc ions present on the surface of the QD particles. > MBP-SHis = #_.-----\"-— iA — . 9 ae = . oe ra oe uo A o e a ? MBP oe Flank ieeieetianiaan niet' tueiieiaiiaieiiaial - inlaid — = iL Molar ratio of protein to QDs Figure 1: Fluorimetric measurements of QDs bound to MBPs or to MBP-5His at 560 nm. For construction of a Maltose detecting biosensor, the saccharide binding pocket of each QD- coordinated MBP-SHis was preloaded with a maltose analogue named f-cyclodextrin bound to QSY9 (B-CD-QSY9); the QSY9 component absorbs light. Figure 2 shows the biosensor. Exitation Maltose iy ® \"—~£6-CD-QSY9 Re %. = oe Figure 2: Schematic representation of maltose detecting biosensor. A B 1.0 QD = wi y 0.8 Padi 5 f\\ fa 0.6 wv 8 o44 Maltose a < A g a F 0.0 i Wavelength (nm) Wavelength (nm) Figure 3: Absorption (A) and emission (B) spectra of various molecules",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 12 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Displacement of B-CD-QSY9 by maltose on the biosensor will result in reduced fluorescence intensity"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "In the absence of maltose, FRET cannot occur in the biosensor"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Itis expected that relative fluorescence intensity levels under conditions below are C>B>A A: QD with MBP-5His and B-CD-QSY9 dye B: QD with MBP-SHis and free QSY9 dye C: QD with MBP-S5His"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "QD incubated with MBP that was preloaded with B-CD-QSY9 will not show FRET"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Forster Resonance Energy Transfer",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

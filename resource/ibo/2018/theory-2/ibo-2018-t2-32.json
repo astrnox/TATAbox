@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Bromeliad Morphology",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-32",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 40",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-32-p40.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 40,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_2",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 32,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Some plants in the Bromeliaceae essentially lack stems and absorptive roots. They take up water from reservoirs known as \"tanks\" that are formed by overlaps of bases of different leaves (Fig. P—Q). All Bromeliads have profuse trichome coatings on both sides of their leaves. The coatings consist of tiny sliver white cells that are able to take up moisture and nutrients and transfer these into the plant. Morphology and anatomy of leaf of a bromeliad is shown. The leaf was cut at the base of the tank region, sealed, and immersed in aqueous solution of a fluorescent dye, for 2 h. Cross-sections were made from the blade (Fig. R) and tank (Fig. S) before and after staining, respectively. Red line indicates pathway for water between vein and trichome (tri). P . i. / '. N ~ \"= ? to f A ay 4 a fo , 2 ees — Ss ad , tA ; , oi i 2 ee Q Blade Tank R H s . Y e' ® ho ! ern A } die } 'i at eS UR @e** eres.\" eve ®@ A oid 2 os",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 32 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "\"a\" in Figure R denotes aerenchyma"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "\"b\" in Figure S denotes hydrenchyma (aquatic parenchymal cells)"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "The leaf anatomy suggests a C4 or CAM photosynthetic type"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Red line indicates pathway for water between vein and trichome on the upper side of leaf (adaxial)"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "ibo",
+    "module_2",
+    "植物生理学",
+    "Bromeliad Morphology",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Population Growth",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-46",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 56",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-46-p56.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 56,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 46,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The following data were collected by a researcher over seven successive years from a population of a fish in a pond. He calculated population growth rate (7) for each year using this formula r= In Nea InN, Note: N= the population size, K= the carrying capacity. Year Number of Fish Population growth rate (r)",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 46 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The fish population grows exponentially as r is bigger than 1 in all years"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "When fecundity is less than mortality we can assume N < K, which means that the population is growing"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "The fraction of the resources that were used by the fish in each year can be calculated by N/K"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "The pond carrying capacity (K) is between 62 and 72"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "生态学",
+    "Population Growth",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

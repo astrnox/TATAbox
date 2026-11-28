@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Neural Network",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-23",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 31",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-23-p31.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 31,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 23,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The diagram below illustrates a neural pathway and the features of the associated neurotransmitters are described in the table. Ions concentrations inside and outside of the cells are same as their physiological normal values in body and inhibition of an inhibitory neuron results in the stimulation of postsynaptic neuron. \"+\" Symbol in table indicate the activation of the ion channels which increases the ion permeability across the membrane. Neurotransmitter Cl- Permeability Na+ Permeability K+ Permeability N1 + N2 + N3 + N4 + N5 + }: N1 J ': N2 N3 nf i N4 ~ N5 F LN G M2 M1 >» NI NT ) aye",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 23 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The function of N1 neurotransmitter is same as acetylcholine"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Neuron G is not depolarized and neuron F is stimulated so muscle M1 contracts"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Neuron G gets depolarized as a result of Na ions influx"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Neuron F gets depolarized as a result of Cl ions efflux"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Neural Network",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

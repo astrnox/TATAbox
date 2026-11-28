@@ -51,7 +51,10 @@ function validateQuestion(q, file) {
   if (!isNonEmptyString(q.id)) errors.push(where + ' 缺 id');
   if (q.type !== 'mtf') errors.push(where + ' type 必须为 mtf（IBO 理论题）');
   if (!isNonEmptyString(q.question)) errors.push(where + ' 缺英文题干');
-  if (!isNonEmptyString(q.question_zh)) errors.push(where + ' 缺中文题干 question_zh');
+  // 中文翻译可选：OCR 导入的新卷暂无译文，运行时回退英文（QuestionI18n.pick）。
+  if (q.question_zh !== undefined && !isNonEmptyString(q.question_zh)) {
+    errors.push(where + ' question_zh 存在但为空');
+  }
   if (!isNonEmptyString(q.explanation)) errors.push(where + ' 缺解析');
   if (!/^module_[1-4]$/.test(String(q.module || ''))) errors.push(where + ' module 非法');
   if (!Number.isInteger(q.year)) errors.push(where + ' year 必须为整数');
@@ -65,18 +68,20 @@ function validateQuestion(q, file) {
     subs.forEach((s, i) => {
       if (!s || s.label !== LABELS[i]) errors.push(where + ' 子题标签应连续为 A..' + LABELS[subs.length - 1]);
       if (!isNonEmptyString(s.text)) errors.push(where + ' 子题 ' + LABELS[i] + ' 缺英文 text');
-      if (!isNonEmptyString(s.text_zh)) errors.push(where + ' 子题 ' + LABELS[i] + ' 缺中文 text_zh');
+      if (s.text_zh !== undefined && !isNonEmptyString(s.text_zh)) {
+        errors.push(where + ' 子题 ' + LABELS[i] + ' text_zh 存在但为空');
+      }
       if (typeof s.answer !== 'boolean') errors.push(where + ' 子题 ' + LABELS[i] + ' answer 非布尔');
     });
   }
 
-  // 表格（可选）：中英文行数/列数需一致，防止切换语言错位
+  // 表格（可选）：中文表存在时行数/列数需一致，防止切换语言错位
   if (q.tables !== undefined || q.tables_zh !== undefined) {
     const t = Array.isArray(q.tables) ? q.tables : [];
     const tz = Array.isArray(q.tables_zh) ? q.tables_zh : [];
-    if (t.length !== tz.length) {
+    if (tz.length > 0 && t.length !== tz.length) {
       errors.push(where + ' tables 与 tables_zh 数量不一致');
-    } else {
+    } else if (tz.length > 0) {
       t.forEach((tb, i) => {
         const h1 = (tb && tb.head) || [];
         const h2 = (tz[i] && tz[i].head) || [];

@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Amphioxus Morphology",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — True; D — False",
+  "has_figure": false,
+  "id": "IBO-2018-T2-30",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 30,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Amphioxus (lancelet) is a marine slender, laterally compressed and translucent filter-feeder deutrostome that inhabits the sandy bottoms of coastal waters around the world. Sexes are separate, gonads are located in the atrial cavity and there are no ducts. The closed circulatory system of this fish-like animals, is complex for such a simple chordate. The flow pattern is remarkably similar to that of primitive vertebrates. The colourless blood is pumped forward in the ventral aorta by peristaltic-like contractions of the vessel wall only, then passes upward through branchial arteries (aortic arches) in the pharyngeal bars to paired dorsal aortas which join to become a single dorsal aorta. From here the blood is distributed to the body tissues by microcirculation and then is collected in veins, which return it to the ventral aorta. Rostrum n — Dorsal fin Oral hood q - — Fin ray with tentacles ~~.) lf 6 4! GN Be a} Wheel organ f 5 \\ — Myomere h ; \\ Dorsal nerve / ae Pharyngeal a9 foe elite \" i cord : fer —-s Myoseptum Endostyle E E Dorsal nerve ree, Sar f s pA j ~ Notechord - oo ey ae 4 Pharyngeal - \\g Dorsal aorta } if Or 'Veta Dorsal aorta bars \\4 fa Wh 28 ' Coelom ea 4 ' Se } Gonad Notochord ; rel ie Ns one Nephridium — \"og rN =A\\ ~— Epibranchial groove Hepatic (A ee) pharynx cecum Dorsal fin (¥) > Testis —— Hk) Atriopore ees \\ } Ye Gill slit lleocalic ring Atrium SW /) — Gil Gar Intestine Ai { 4s A y) Ventral) 9 : in ge 2 Endostyle fin Cle Myomere Metapleural a A/ j gt Anus \\Y / fore rm \" v/ Caudal — 'Ventral aorta 7 fin",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 30 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The blood is circulated from anterior to posterior dorsally and from posterior to anterior ventrally"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "The heart consists of a sinuous venosus, a cardiac atrium, and a ventricle located ventrally and carries low oxygen blood"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "It differs from vertebrates in having numerous pharyngeal slits that are not open outside directly but acts as a trapping structure to collect small-suspended particles"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Sperms are released into the atrial cavity, and then pass out via genital pore and atriopore to the outside where fertilization occurs"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Amphioxus Morphology",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Sieve-Tubes",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-40",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 50",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-40-p50.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 50,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_2",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 40,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Plants conduct sugars and other substances throughout their body by means of phloem. Phloem is a compound tissue, including different cell types (e.g. sieve-tubes elements (in angiosperms), companion cells and parenchymal cells.). In a study, DNA genomic samples prepared from sieve-tubes and companion cells of an angiosperm and investigated for DNA corresponding to X. Gene-specific primers were used to amplify gene X among whole genome of cells by PCR. Sieve-tube Companion Ladder element cell ee ee Pa! Band B — — — a a +e Le BandA — J Note: Each band represents a unique DNA molecule, asterisks denotes bands corresponding to functional genes",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 40 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Results of sieve-tube element genome analysis suggest that the plant is heterozygote in the gene X"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "The results obtained for the sieve-tube cells can be explained by gene X being present both in the mitochondrial and chloroplast DNA"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Band A most likely corresponds to an organelle-related DNA sequences in the nuclear genome"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Band B most likely corresponds to a pseudogene in nuclear genome"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "ibo",
+    "module_2",
+    "植物生理学",
+    "Sieve-Tubes",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

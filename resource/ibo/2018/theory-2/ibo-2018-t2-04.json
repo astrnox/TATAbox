@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Inflammatory Caspases",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-04",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 7",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-04-p07.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 7,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 8",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-04-p08.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 8,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 4,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Inflammatory caspases such as caspase are activated in response to microbial infection and stress signals. When activated, they cleave human gasdermin D (GSDMD) after Asp275, to generate an N- terminal cleavage product (GSDMD-NT) and a C-terminal fragment (GSDMD-CT). GSDMD-NT kills bacteria and induces a form of programmed cell death called pyroptosis in human cells. The details of the mechanism by which GSDMD-NT causes cell death are unknown. Mutation of two evolutionarily conserved positively charged residues to alanine produces a mutant form of the protein known as GSDMD-NT 2A, and mutation of four conserved positively charged residues to alanine produces GSDMD-NT 4A. Fig. 1 shows result of non-reducing gel electrophoresis of equal amounts of N-terminal cleavage product of the wild type and mutated forms of GSDMD. In an experiment, F. coli and Staphylococcus aureus bacteria were exposed to nanomolar concentrations of recombinant forms of GSDMD, GSDMD-NT, GSDMD-CT, GSDMD-NT 4A and granulysin (a known cytotoxic lymphocyte pore-forming protein) and the antibacterial effect of these molecules was assessed by measuring reduction of colony formation (Colony Forming Unit, CFU) (Fig. 2). Other experiments showed the same relative effects of the wild type and mutant forms on pyroptosis in human cells. ik oh (KDa) 250 = — 150 100 fie af _—-- Non-reducing Figure 1 o 120 © S.aureus tm «100 ME Ecol 2 . a = 40 ee Zz 20 wt ° 0 —— eS GSDM-NT4A(nM) = 4000 en GSDMB-CT (nM) = — 400 0 © en GSDMDinM) ~ ~ o_ — . 400° ~ © 8 Figure 2",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 4 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The data shows that GSDMD-NT oligomerization is involved in pyroptosis"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "GSDMD-NT is a more effective anti-bacterial agent than granulysin"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "By mutation of evolutionarily conserved basic residues to Ala, the number of disulfide bonds between monomers of GSDMD does not change"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "GSDMD-NT 2A mutant is likely less effective than GSDMD-NT for induction of pyroptosis"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Inflammatory Caspases",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Potassium Acquisition",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-33",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 41",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-33-p41.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 41,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_2",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 33,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Physiological studies have been accomplished on the adaptations of bromeliad plants to nutrient acquisition and plant utilization of potassium. The Figure shows biphasic kinetics of potassium uptake by foliar trichomes of a tank bromeliad plant in the presence of 0.01-90 mM substrate. Uptake rates were calculated during the first 1-2 h of the experiment. The obtained results suggested that there were two transporter systems, and their Michaelis-Menten constants (Km) were calculated to be 10 - a em at a\" A ¢ 33 —— oo -—— Ft mJ x c 0-1 i a 2 9 : a 0-001 Potassium chloride (mM)",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 33 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The low affinity system accumulated K* slower than the high affinity system"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Km of 56.5 mM belongs to B transporter system"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Applying ATPase inhibitor compounds inhibits B transporters"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "B transporters are blocked more by potassium channel blockers, as compared to A transporters"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "ibo",
+    "module_2",
+    "植物生理学",
+    "Potassium Acquisition",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

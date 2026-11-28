@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Enzyme - Coenzyme Interaction",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-11",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 18",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-11-p18.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 18,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 11,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Many disease causing mutations in enzyme coding genes affect parameters related to interactions of the enzymes with their coenzyme, which in turn lowers the rate of the reaction. The cofactor of a group of enzymes called TPP- or thiamine-dependent enzymes such as transketolase is thiamine pyrophosphate (TPP). The kinetic properties of a TPP-dependent enzyme isolated from a patient's tissue and a normal individual's tissue were compared under condition of substrate saturation. The TPP-free forms of the enzyme was prepared and used for enzyme kinetic measurements. The Lineweaver-Burk like plots are shown below. 1 1.5 V A Pal 1.0 a 0.5 a Pl _-o B Pail ae -% 0 TPP",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 11 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Avjis related to the patient's enzyme"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Maximum velocity of B is higher than the maximum velocity of A"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "It can be concluded that the enzyme in A has a lower affinity for its substrate(s)"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Administration of thiamine to patients is expected to restore enzymatic activity"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Enzyme - Coenzyme Interaction",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

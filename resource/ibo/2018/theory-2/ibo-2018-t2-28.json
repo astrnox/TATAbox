@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Tunicate Morphology",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — False; D — False",
+  "has_figure": false,
+  "id": "IBO-2018-T2-28",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 28,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Five distinctive characteristics that, taken together, set chordates apart from all other phyla are notochord, dorsal tubular nerve cord, pharyngeal pouches or slits, an iodine secreting organ (endostyle), and post-anal tail. These characteristics are always found at some embryonic stage, although they may be altered or may disappear in later stages of the life cycle. Tunicates belong to Deuterostomia group of Metazoa and are found in all seas from near shoreline to great depths. Most are sessile as adults, although some are free-living. The name \"tunicate\" refers to the usually tough and non-living tunic that surrounds the animal and contains cellulose-like components. As adults, tunicates are highly specialized chordates, for in most species only the larval form, which resembles a microscopic tadpole, bears all the chordate hallmarks. Tadpole undergoes metamorphosis and changes its morphology and anatomy. Excurrent = Incurrent siphon siphon \\ one Sensory \\ \"ak tentacles Pigment \\ if} Spots See t Nerve Atrium : f mas ganglion Ree Genital \\ I Vitae Pharynx duct Beetid uc t aa + Endostyle ANUS Ss i We pido — Pharyngeal \\eesoe slits Intestine — Be 4 i : BES SS ) — Mantle Tunic —-y Ris Z\\ f ; LE Heart Gonads Stomach —H is 'A (ovaries or , testes) lat ene k reap a Stolons Structure of a common tunicate, Ciona sp",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 28 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Adult of tunicates shows two shared derived characters, which are present in all chordates"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Main pathway for seawater is: incurrent siphon, gut, anus, atrium and excurrent siphon"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "In Ciona, the notochord is homologous to backbone of vertebrates"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Ciona belongs to the coelomate vertebrate group and coelom forms from fusion of enterocoelous pouches"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Tunicate Morphology",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

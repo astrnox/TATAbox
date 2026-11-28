@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Blood Types",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — True",
+  "has_figure": false,
+  "id": "IBO-2018-T2-07",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 7,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Among 1290 individuals of a population under study, the numbers of individuals with blood group types M, MN, and N are, respectively, 340, 880, and 70",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 7 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Based on the data, the frequencies of M and N alleles in the population are, respectively, 0.7 and 0.3"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "The population describe above is in Hardy Weinberg equilibrium with respect to alleles of the MN blood group"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "If there is random mating in a population in which frequency of M alleles is 0.6 and frequency of N alleles is 0.4, the frequency of offspring with the NN genotype will be 0.16"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "In a start generation with frequency of M = 0.6 and frequency of N = 0.4, after three generations of random mating the frequency of MM individuals in the population of the fourth generation who are offspring of MN*MN matings will be <10%"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Blood Types",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -4,7 +4,8 @@
  * IBO 真题池接入验证
  * -------------------------------------------------
  * 1. resource/ibo-count.json 与 resource/ibo.json 题数一致
- * 2. 每题中英文齐全（题干 / 子题 / 解析），题型为 mtf、4–5 条陈述
+ * 2. 每题英文题干/解析齐全；中文翻译可选，存在时必须非空
+ *    （2026-11-28 起 OCR 导入的新卷为英文原题，运行时回退英文）
  * 3. 配图文件真实存在，且与 has_figure 一致
  * 4. 与 CnBO 池无重复 id，标签/模块/年份规范
  */
@@ -25,14 +26,16 @@ describe('IBO 真题池数据完整性', () => {
     expect(count.live).toBeGreaterThanOrEqual(count.playable);
   });
 
-  test('每题都有英文题干与中文翻译', () => {
+  test('每题都有英文题干与解析；中文翻译存在时非空', () => {
     pool.questions.forEach((q) => {
       expect(q.competition).toBe('IBO');
       expect(q.type).toBe('mtf');
       expect(typeof q.question).toBe('string');
       expect(q.question.length).toBeGreaterThan(20);
-      expect(typeof q.question_zh).toBe('string');
-      expect(q.question_zh.length).toBeGreaterThan(10);
+      if (q.question_zh !== undefined) {
+        expect(typeof q.question_zh).toBe('string');
+        expect(q.question_zh.length).toBeGreaterThan(10);
+      }
       expect(typeof q.explanation).toBe('string');
       expect(q.explanation.length).toBeGreaterThan(30);
       expect(q.source).toContain('IBO');
@@ -40,7 +43,7 @@ describe('IBO 真题池数据完整性', () => {
     });
   });
 
-  test('子题 4–5 条，标签连续，中英文与布尔答案齐全', () => {
+  test('子题 4–5 条，标签连续，英文/布尔答案齐全（中文可选）', () => {
     const labels = ['A', 'B', 'C', 'D', 'E'];
     pool.questions.forEach((q) => {
       expect(q.subQuestions.length).toBeGreaterThanOrEqual(4);
@@ -48,7 +51,10 @@ describe('IBO 真题池数据完整性', () => {
       q.subQuestions.forEach((s, i) => {
         expect(s.label).toBe(labels[i]);
         expect(s.text.length).toBeGreaterThan(5);
-        expect(s.text_zh.length).toBeGreaterThan(3);
+        if (s.text_zh !== undefined) {
+          expect(typeof s.text_zh).toBe('string');
+          expect(s.text_zh.length).toBeGreaterThan(3);
+        }
         expect(typeof s.answer).toBe('boolean');
       });
     });
@@ -62,7 +68,21 @@ describe('IBO 真题池数据完整性', () => {
       imgs.forEach((im) => {
         expect(fs.existsSync(path.join(ROOT, im.file))).toBe(true);
         expect(im.caption).toBeTruthy();
-        expect(im.caption_zh).toBeTruthy();
+        if (im.caption_zh !== undefined) expect(im.caption_zh).toBeTruthy();
+      });
+    });
+  });
+
+  test('OCR 导入的 2018 理论考试 2：50 题、英文原题、答案与子题一致', () => {
+    const t2 = pool.questions.filter((q) => q.paper && q.paper.key === '2018-t2');
+    expect(t2.length).toBe(50);
+    t2.forEach((q) => {
+      expect(q.lang).toBe('en');
+      expect(q.ocr).toBe(true);
+      expect(q.question_zh).toBeUndefined();
+      q.subQuestions.forEach((s) => {
+        expect(typeof s.answer).toBe('boolean');
+        expect(s.text_zh).toBeUndefined();
       });
     });
   });

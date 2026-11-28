@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Expression of Thermogenic Genes",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-13",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 21",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-13-p21.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 21,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 13,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Brown adipose tissue (BAT) activation through B-adrenergic signalling pathway is associated with expression of thermogenic genes and the process of thermogenesis. Glycogen synthase kinase-3 (GSK3) acts as a regulator of B-adrenergic signalling in brown adipocytes. ISO is also a chemical stimulator of BAT activation; its effect on GSK3 is shown by the Western blot below (p-GSK3 is phosphorylated form of GSK3). SB216763 is an inhibitor of GSK3. Effects of these two agents on the expression of thermogenic genes (Fgf2/, Ucp1, Dio2, and Ppargcla) are shown in the Figure below. 50> Mi H,0 40 @ Iso iL*) 5 30 — GSK3 S = = r= rTy Internal control * * * aq Fof2 1 Uepi Dio? Ppargcla (*) shows significant difference as compared to control (H20)",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 13 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "GSK3 acts as a negative regulator of B-adrenergic signalling in brown adipocytes"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Phosphorylation of GSK3 causes decreased expression of Fg/2/"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "SB216763 may prevent diet-induced obesity. _"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Use of SB216763 and ISO together cause much higher increase in the number of Ppargcla mRNA transcripts as compared to F'g/2 mRNA transcripts"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Expression of Thermogenic Genes",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

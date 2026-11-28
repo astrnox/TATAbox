@@ -3,13 +3,13 @@
   "site_updated_at": "2026-08-29",
   "question_sources": {
     "league_pool": 2873,
-    "ibo_pool": 47,
+    "ibo_pool": 97,
     "provincial_pool": 85,
     "quiz": 101,
     "bank": 581,
     "logic": 40
   },
-  "unique_questions": 3626,
+  "unique_questions": 3676,
   "manifest_total_questions": 181,
   "cards": 200,
   "wiki_entries": 401,

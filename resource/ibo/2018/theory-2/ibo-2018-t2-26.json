@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Dendrogramma",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — False; D — False",
+  "has_figure": false,
+  "id": "IBO-2018-T2-26",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 26,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Dendrogramma is a new animal species which has been collected at 400 and 1000 metres on the Australian continental slope off eastern Bass Strait and Tasmania during a cruise in 1986 and described as a new taxon in 2016. The new taxon is multicellular (metazoan), non-bilateralian, apparently diploblastic with a dense mesoglea between an outer epidermis and an inner gastrodermis. This animal is composed of a body divided into a stalk with a mouth opening terminally, and a flattened disc. The mouth is set in a specialized, lobed epidermis field, leading into a gastrodermis- lined gastrovascular canal (pharynx) in the stalk which aborally branches dichotomously into numerous radiating canals in the disc. We can state with considerable certainty that the organisms lack cnidocytes, tentacles, marginal pore openings for the radiating canals, ring canal, sense organs in the form of statocysts or the rhopalia, or colloblasts, ctenes, or an apical organ. No cilia have been located. They have simple mouth opening with specialized lobes secreting mucus. A B Disc notch ( ™% - \"~ m Disc - —— \"a * %% . . 4 =< ~ ' — SS . Gastrovascular canal of : stalk (pharynx) Stalk Stalk t 0.5 mm Gastrovascular Mouth-field Mouth-field branches se Disc D - ¢ , Cc f \" ' Disc notch 7 - «. notch S. yy x; ~ WA stalk ne ow 2 = ? -* ; - '4 pA VA Bilobed mouth-field mouth-field",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 26 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "According to the characteristics of Dendrogramma it could be placed in Cnidaria"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "It seems likely that Dendrogramma feed on micro-organisms"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Lack of statocysts and rhopalia shows that this taxon does not have nervous system"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Most likely Dendrogramma could have Dinoflagellate symbionts such as Symbiodinium"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Dendrogramma",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Magnetic Resonance Imaging",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-20",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 28",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-20-p28.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 28,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 20,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The principle of magnetic resonance imaging (MRI) is based on the fact that the nuclei of certain elements align with the magnetic force when placed in a strong magnetic field. At the field strengths currently used in medical imaging, hydrogen nuclei (protons) in water molecules and lipids are responsible for producing anatomical images. If a radiofrequency pulse at the resonant frequency of hydrogen is applied, a proportion of the protons change alignment, flipping through a present angle, and rotate in phase with one another. Following this radiofrequency pulse, the protons realign (relax), they induce a signal which, although very weak, can be detected and localized by copper coils placed around the patient. An image representing the distribution of the hydrogen protons can be built up. The strength of the signal depends not only on proton density but also on two relaxation times, T1 and T2; T1 depends on the time the protons take to return to the axis of magnetic field, and T2 depends on the time the protons take to dephase. A T1-weighted image is one in which the contrast between tissues is due mainly to their T1 relaxation properties, while in a T2-weighted image the contrast is due to the T2 relaxation properties. T1-weighted image: Fat signal intensity > Water signal intensity T2-weighted image: Fat signal intensity < water signal intensity Figure 1: axial image of brain oe = fous .S x Cc 1 2s. aes ma ar ew Gd = = kc > = rc a ee frm =) a 1 far} Figure 2: Coronal T2-weighted image of abdomen",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 20 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The figure 1 must be T1-weighted image due to higher signal intensity of white matter than grey matter"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "If there is inflammation in a tissue the inflamed area would be of higher intensity in T2-weighted due to the resulting oedema"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "the major secretions of the organ in figure 2 which is marked as A, are amylase and lipase"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "In figure 2 the part B is shorter in herbivores than carnivore mammals"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Magnetic Resonance Imaging",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Yeast Secretion Trap",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-10",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 16",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-10-p16.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 16,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 17",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-10-p17.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 17,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 10,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Phytopathogens use their secreted proteins \"secretomes\" to attack plant hosts. The yeast secretion trap (YST) functional screen is a method used for isolation and identification of these secreted proteins. This method involves generating a vector library that includes cDNAs (containing 5' non-coding sequences) synthesized using phytopathogen RNAs fused to a mutated form of the Saccharomyces cerevisiae suc2 reporter gene. Suc2 encodes invertase which is the only protein used by yeast for sucrose degradation. Degradation occurs in the extra-cellular medium. The mutated form of the gene suc2-SP encodes an invertase that lacks the signal peptide for secretion at the amino terminal. The fusion library is used to transfect an invertase-deficient yeast strain, and the cells are subsequently plated on a sucrose selection medium. Each rescued cell is expected to contain a recombinant vector whose cDNA that encodes a signal peptide for the chimeric protein. Vectors are isolated and their cDNAs are sequenced to identify the secreted proteins. Figure is a schematic presentation of the vector, and Figure 2 summarizes the protocol described above. suc2 fusion protein Spal EcoRI NotI Sphi GAATTC- cONA -GCGGCCGC-c/i)-2 -TTGGATAAAAGGTACCCA- suc2-SP 2 ori 1 pYSTO-2 cee ColE1 ori Figure 1. GAATTC: EcoR1 recognition site; GCGGCCGC: Not1 recognition site mRNA isolation and synthesis of cDNAs bound by EcoRI and NoTI sites v cDNA = YST vector(s) =a _*) ° cDNA suc2-SP 3) SP cDNA suc2-SP © O — = An intracellular cDNA A secreted j i rotein protein library P suc? fusion protein =>. —_ Glucose OO Nucleus (2) = = Yeast cell + *—— Sucrose Yeast cell Fructose —=F— Glucose s Plasmid recovery, E.coli transformation, DNA F ntoee — HErase —_— sequencing, in-frame fusion confirmation, \" A plate containing database search, secretion verification sucrose selection medium Figure 2",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 10 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "For the purpose of this screen, oligo-dT primers can be used for synthesis of cDNAs"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Variable number of Cytidine nucleotide(s) after the Not site in the vector ensures achieving a correct reading frame"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Presence of signal peptide in the fusion protein will not necessarily ensure the growth of yeast on the selection medium"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "For introduction of EcoRI and NotI sites to ends of cDNA molecules, linkers (which are short double stranded oligonucleotides; example shown below) are better than adapters (which have single stranded ends; example shown below). Example of EcoRI linker: -GAATTC- - CTTAAG- Example of EcoRI adapters: -G- and -AATTC- -CTTAA- -G"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Yeast Secretion Trap",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}
