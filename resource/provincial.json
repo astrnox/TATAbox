@@ -1,0 +1,3644 @@
+{
+ "_meta": {
+  "generated_at": "2026-11-28",
+  "schema_version": 1,
+  "province": "四川",
+  "event": "四川省生物学联赛初赛",
+  "source_repo": "https://github.com/huicishengbodebianfu/biology-competition",
+  "exams": [
+   2021,
+   2022,
+   2023
+  ],
+  "total": 85
+ },
+ "questions": [
+  {
+   "answer": "A",
+   "answer_key": "A",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-01",
+   "module": "",
+   "options": {
+    "A": "选用迎春叶表皮细胞，在高倍镜下可观察到叶绿体中的基粒",
+    "B": "选用迎春叶表皮细胞，经醋酸洋红染色后不能观察到细胞中的染色体",
+    "C": "选用迎春叶片叶肉细胞，经研磨后可用无水乙醇提取细胞中的光合色素",
+    "D": "选用迎春叶片叶肉细胞，经 30%蔗糖溶液处理后可用显微镜观察质壁分离过程"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 1,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "迎春在我国种植广泛易取材，其叶片可用作生物学观察实验材料。下列说法错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-02",
+   "module": "",
+   "options": {
+    "A": "蛋白质的生物活性与蛋白质的空间结构有关",
+    "B": "提取蛋清溶液中的球蛋白可以利用盐析的方法",
+    "C": "蛋白质中的氨基酸排列顺序是由核酸中的遗传信息决定的",
+    "D": "细胞膜、细胞质基质中负责转运氨基酸的载体都是蛋白质"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 2,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "蛋白质是决定生物体结构和功能的重要物质。下列相关叙述错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-04",
+   "module": "",
+   "options": {
+    "A": "蓝藻细胞利用叶绿体里的藻蓝素和叶绿素进行光合作用",
+    "B": "分解尿素的细菌分泌脲酶的过程与该菌的核糖体、内质网、高尔基体、线粒体有关",
+    "C": "各种生物膜的化学组成和结构相似，生物膜是对生物体内所有膜结构的统称",
+    "D": "控制细胞器进行物质合成的指令主要是通过核孔从细胞核到达细胞质的"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 4,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于细胞结构与成分的叙述中，正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 4 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "ABC",
+   "answer_key": "ABC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-09",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 9,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "“分子马达”是分布于细胞内部或细胞表面的一类蛋白质，它们的结构会随着与 ATP 和 ADP 的交替结合而改变，促使 ATP 转化成 ADP，同时引起自身或与其结合的分子产生运动。参与物质跨膜运输、肌肉收缩、转录等一系列重要生命活动。下列相关分析错误的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "“分子马达”的结构改变使其失去活性"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "“分子马达”具有酶的功能，其参与的活动一般与放能反应相联系"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "叶绿体中光合色素吸收光能的过程需要“分子马达”的直接参与"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "参与细胞分裂间期染色体复制的“分子马达”有解旋酶、RNA 聚合酶等"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "ABC",
+   "answer_key": "ABC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-10",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 10,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "同一种类的碱蓬在远离海边的地区生长呈绿色，在海滨盐碱地生长时呈紫红色，其紫红色与细胞中含有的水溶性甜菜素有关。酪氨酸酶是甜菜素合成的关键酶，下列表示有关酪氨酸酶活性的实验研究结果，相关分析正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 10 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "甜菜素可积累在细胞液中，提高其渗透压"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "pH 在 4-5 之间，部分酶因空间结构遭到破坏而活性较低"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "进行 B、C 两组实验时，应在 pH 约为 6.6 且适宜温度下进行2"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "根据实验数据可知 Na2S2O3 和 Cu 分别是酶的抑制剂和激活剂"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-11",
+   "module": "",
+   "options": {
+    "A": "若基因型为 AaRr 的个体测交，则子代表现型有 3 种，基因型 4 种",
+    "B": "若基因型为 AaRr 的亲本自交，则子代共有 9 种基因型，6 种表现型",
+    "C": "若基因型为 AaRr 的亲本自交，则子代有花瓣植株中，AaRr 所占比例约为 1/3，而所有植株中的纯合子约占 1/4",
+    "D": "若基因型为 AaRr 与 Aarr 的亲本杂交，则子代是红色花瓣的植株占 3/8"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 11,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某二倍体植物花瓣的大小受一对等位基因 A、a 控制，基因型为 AA 的植株表现为大花瓣，Aa 为小花瓣，aa 为无花瓣。花瓣颜色(红色和黄色)受另一对等位基因 R、r 控制，R 对 r 为完全显性，两对基因独立遗传。下列有关叙述错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 11 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-13",
+   "module": "",
+   "options": {
+    "A": "组合①产生的子代，一般情况下不能产生正常配子",
+    "B": "组合③的子代联会情况为 14Ⅰ，子代染色体组成为 AB",
+    "C": "组合①②④任一组合均可确定拟二粒小麦染色体组成为 AABB",
+    "D": "组合③子代与节节麦杂交，再将子代染色体诱导加倍可获得普通小麦"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 13,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "异源多倍体是指多倍体中的染色体组来源于不同的物种。构成异源多倍体的祖先二倍体称为基本种。在减数分裂过程中同源染色体相互配对形成二价体Ⅱ，不能配对的非同源染色体常以单价体Ⅰ形式存在。普通小麦为异源六倍体，染色体组成为 AABBDD（ 6 n = 42 ），组成它的基本种可能为一粒小麦、拟斯卑尔脱山羊草及节节麦，它们都是二倍体（ 2 n = 14 ），拟二粒小麦为异源四倍体（ 4 n = 28 ），它们之间相互杂交及与普通小麦的杂交结果如下表。亲本杂交组合 子代染色体数 子代联会情况 子代染色体组成①拟二粒小麦×一粒小麦 21 7Ⅱ＋7Ⅰ AAB②拟二粒小麦×拟斯卑尔脱山羊草 21 7Ⅱ＋7Ⅰ ABB③一粒小麦×拟斯卑尔脱山羊草 14 ？ ？④普通小麦×拟二粒小麦 35 14Ⅱ＋7Ⅰ AABBD下列相关分析错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 13 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-14",
+   "module": "",
+   "options": {
+    "A": "用纯合圆形果实植株与卵形果实植株作亲本进行杂交，无论正交还是反交，结果相同",
+    "B": "对杂合植株进行测交，无论正交还是反交，结果相同",
+    "C": "杂合植株作亲本，若每代均自由传粉至 F2，则 F2 植株中纯合子所占比例为 4/9",
+    "D": "杂合植株作亲本，若每代均自交至 F2，则 F2 圆形果实植株中杂合子所占比例为 1/2"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 14,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某植物的果实中圆形对卵形为显性，由位于常染色体上的一对等位基因控制，纯合圆形果实植株产生的卵细胞无受精能力，卵形果实植株的花粉不育，杂合植株则正常。现有杂合的植株作亲本，下列相关叙述正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 14 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-15",
+   "module": "",
+   "options": {
+    "A": "如果此突变是显性的，则突变杂合子雄果蝇和正常雌果蝇交配所生的子代有一半可正常发育",
+    "B": "如果此突变是显性的，则可观察到存活的突变纯合子个体",
+    "C": "如果此突变是隐性的，则对于突变杂合子母体，只有雄性胚胎是畸形",
+    "D": "如果此突变是隐性的，两个突变杂合子的个体杂交产生 F1，F1 自由交配，F2 中有 1/6 是突变纯合子"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 15,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "在雌果蝇中，卵细胞位于母体的营养细胞和滤泡细胞之间，胚胎发育所需要的部分养分、蛋白质和 mRNA由营养细胞和滤泡细胞提供。常染色体上的某基因产生的蛋白质可从营养细胞和滤泡细胞运送到卵细胞，从而保证受精后形成的胚胎正常发育。如果此基因发生突变将会导致胚胎畸形而且无法存活。下列叙述正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 15 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-16",
+   "module": "",
+   "options": {
+    "A": "该突变为 X 染色体显性突变，且含该突变基因的雌雄配子致死",
+    "B": "该突变为 X 染色体显性突变，且含该突变基因的雄性个体致死",
+    "C": "该突变为 X 染色体隐性突变，且含该突变基因的雄性个体致死",
+    "D": "X 染色体片段发生缺失可导致突变型，且缺失会导致雌配子致死"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 16,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "一只突变型雌果蝇与一只野生型雄果蝇交配后，产生的 F1 中野生型与突变型之比为 2:1，且雌雄个体之比也为 2:1，这个结果从遗传学角度可作出合理解释的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 16 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "BCD",
+   "answer_key": "BCD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BCD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-19",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 19,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某昆虫的眼色伊红、淡色和乳白色分别由复等位基因 e、t 和 i 控制，且仅位于 X 染色体上；翻翅与正常翅是一对相对性状，受一对等位基因（A．a）控制。若不考虑突变等其他情况，下列叙述错误的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 19 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "若该昆虫群体中有 27 种基因型，则雌性纯合子可能有 6 种"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "若该昆虫群体中有 18 种基因型，则雌性纯合子可能有 3 种"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "若 A 对 a 不完全显性，e、t 和 i 均为共显性，则有 27 种表现型"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "若 A 对 a 不完全显性，e 对 t 和 i 以及 t 对 i 为完全显性，则有 27 种表现型"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-20",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 20,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "研究人员在小鼠群体中筛选到一个脊柱弯曲的突变体，且该突变体只出现在雌鼠中。将任意一只脊柱弯曲的雌鼠与脊柱正常的野生型雄鼠杂交，所得后代表现型及比例均为 1/3 脊柱弯曲的雌鼠、1/3 脊柱正常的雌鼠和 1/3 脊柱正常的雄鼠（不考虑 X、Y 同源区段遗传）。以下推测正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "脊柱弯曲性状是由显性基因控制"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "实验结果是由于含显性基因的雌配子致死"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "脊柱弯曲的雌鼠均为杂合子"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "导致脊柱弯曲的基因位于 X 染色体"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-21",
+   "module": "",
+   "options": {
+    "A": "细胞中不存在游离的尿嘧啶脱氧核糖核苷酸",
+    "B": "DNA 缺口修复需 DNA 聚合酶和 DNA 连接酶发挥作用",
+    "C": "糖苷酶能识别和切割 DNA 分子中的磷酸二酯键",
+    "D": "若某个突变基因未被修复，则复制后有突变基因的子代 DNA 占 1/2"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 21,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "DNA 分子中一条链上的碱基 C 被氧化后会转变为碱基 U，细胞中的一种糖苷酶能够识别出碱基 U，将其切除，之后限制性核酸内切酶能识别和切除残留下的脱氧核糖和磷酸基团，最后由其他酶将缺口修复。下列相关叙述错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 21 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-22",
+   "module": "",
+   "options": {
+    "A": "粉龙头和红龙头猴面花是因长期地理隔离而产生生殖隔离形成的",
+    "B": "粉龙头猴面花种群的突变对红龙头猴面花种群的基因频率无影响",
+    "C": "两者分布区重叠导致自然选择对两种群基因频率改变所起的作用相同",
+    "D": "因起源于同一祖先种，所以粉龙头和红龙头猴面花种群的基因库相同"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 22,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "美国加利福尼亚州有两个猴面花姐妹种——粉龙头（花瓣呈粉红色）和红龙头（花瓣呈红色）。它们起源于一个粉色花的祖先种，两者分布区重叠，前者（粉龙头）由黄蜂投粉，后者（红龙头）由蜂鸟投粉。下列相关分析正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 22 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-23",
+   "module": "",
+   "options": {
+    "A": "“卵子死亡”属于常染色体显性遗传病，在男女中发病率相等",
+    "B": "“卵子死亡”患者的致病基因可能来自父方或母方",
+    "C": "产前诊断可以确定胎儿是否携带“卵子死亡”的致病基因",
+    "D": "PANX1 基因存在不同的突变，体现了基因突变的随机性"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 23,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "研究人员发现了一种新型的单基因遗传病，患者的卵子取出体外放置一段时间或受精后一段时间，出现退化凋亡的现象，从而导致女性不孕，研究人员将其命名为“卵子死亡”。研究发现，“卵子死亡”属于常染色体显性遗传病，由细胞连接蛋白家族成员 PANX1 基因发生突变导致，且 PANX1 基因存在不同的突变。下列说法正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 23 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "CD",
+   "answer_key": "CD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-28",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 28,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "生物体内的核酸常与蛋白质结合，以核酸—蛋白质复合物的形式存在。下列相关叙述正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 28 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "真核生物细胞质中有核酸—蛋白质复合物，原核生物细胞质中没有"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "真核细胞的核中有 DNA—蛋白质复合物，而原核细胞的拟核中没有"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "若复合物中的某蛋白参与 DNA 复制，则该蛋白可能是 DNA 聚合酶"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "若复合物中正在进行 RNA 合成，则该复合物中可能含有 RNA 聚合酶"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "AD",
+   "answer_key": "AD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：AD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-29",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 29,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "我国多个科研团队合作发现，位于水稻 3 号染色体上的 Ef—cd 基因可将水稻成熟期提早 7～20 天，该基因兼顾了早熟和高产两方面特征。含 Ef—cd 基因的水稻氮吸收能力、叶绿素代谢及光合作用相关过程均显著增强。下列有关叙述正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 29 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "Ef—cd 基因的作用体现出一个基因可以影响多个性状"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "人工选育早熟高产新品种的过程中 Ef—cd 的基因频率未发生改变"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "应用 Ef—cd 培育早熟高产的小麦新品种最简便的方法是杂交育种-"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "Ef—cd 基因可能促进植物根细胞膜上 NO3 载体数量增加"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-30",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 30,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "万年野生稻不但抗病、抗虫害能力特别强，一穗可达千粒果实，而且可与现有栽培水稻杂交，其杂交子代在长势、生活力、适应性和产量等性状上优于双亲。科技工作者一方面加强对该濒危野生稻的保护，另一方面试图通过杂交、转基因等方式来对现有栽培水稻进行品种改良，提高栽培水稻的抗逆性和产量。下列叙述正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "若栽培稻与杂交稻的杂交后代不可育，则说明它们属于两个物种"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "保护濒危野生稻的方式有多种，最好的方式是迁地保护"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "通过杂交育种的方式改良现有栽培水稻，可增大栽培水稻的基因库"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "通过转基因的方式来改良现有栽培水稻，体现了生物多样性的直接价值"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-34",
+   "module": "",
+   "options": {
+    "A": "Na 通道受阻会使神经细胞外的 Na 不能内流",
+    "B": "极微量的河豚毒素有作为局部麻醉剂的可能",
+    "C": "河豚毒素致人中毒的机理是导致神经冲动持续发生",
+    "D": "促进 Na 通道开放的药物可缓解河豚毒素中毒症状"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 34,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "河豚虽营养丰富，味道鲜美，但其体内的河豚毒素却有大毒。研究表明，河豚毒素一旦进入人体，就会像塞子一样凝固在 Na 通道的入口处，导致血管运动神经和呼吸神经中枢麻痹，人体迅速死亡。下列说法错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 34 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-35",
+   "module": "",
+   "options": {
+    "A": "去甲肾上腺素及 5-羟色胺属于神经递质，进入突触后膜内发挥作用",
+    "B": "去甲肾上腺素和 5-羟色胺能使兴奋传递中的化学信号转变为电信号",
+    "C": "抑郁可能与突触间隙中去甲肾上腺素和 5-羟色胺含量过高有关",
+    "D": "缺氧会影响神经递质释放，但不影响神经冲动在神经纤维上的传导"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 35,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "丙咪嗪为较常用的抗抑郁药，其药理作用为抑制神经末梢突触前膜对去甲肾上腺素和 5-羟色胺的再摄取，提高受体部位递质浓度，从而发挥抗抑郁作用。下列叙述正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 35 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-38",
+   "module": "",
+   "options": {
+    "A": "血清检查 IgG 增高可能只是过往感染，而 IgM 增高则一定处于感染期",
+    "B": "IgA 在内环境之外抵御抗原的免疫过程是通过免疫系统的第一道防线实现的",
+    "C": "IgD 在免疫调节过程中可参与免疫细胞的信息交流",
+    "D": "过敏原侵入机体后会引发 IgE 含量升高，从而导致过敏反应"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 38,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "人类共有 5 类免疫球蛋白，分别为 IgG、IgM、IgA、IgD和 IgE。其中 IgG 是血清中抗体的主要类型，在淋巴和组织液中也有少量存在，具有与病原体结合或中和毒素的能力； IgM 在感染的早期发挥作用；IgA 主要存在于消化道、呼吸道的分泌液中，在病原体进入血液之前能够与抗原结合，阻止病原体进入血液；IgD 在血清中含量很低，且个体差异较大，可作为膜受体存在于 B 细胞表面，功能尚不是很清楚； IgE 介导过敏反应。下列说法错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 38 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-39",
+   "module": "",
+   "options": {
+    "A": "部分 T 细胞会在 PD-1 的作用下发生细胞凋亡",
+    "B": "T 细胞上有 PD-1 分子说明只有 T 细胞含有 PD-1 分子特有基因",
+    "C": "药物与肿瘤患者 T 细胞表面 PD-1 结合会降低免疫治疗效果",
+    "D": "接受器官移植的个体 T 细胞 PD-1 增加，可以降低免疫排斥"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 39,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "2018 年诺贝尔生理学或医学奖获得者本庶佑发现 T 细胞表面存在负向调控的受体分子 PD-1。当 PD-1与某些特定分子 PDL1 结合后，能导致 T 细胞“自杀” ，从而终止正在进行的免疫反应。一些肿瘤细胞进化出了一种防御机制，它们的表面也带有 PDL1，从而诱导 T 细胞过早地进入自我破坏程序。下列说法正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 39 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-41",
+   "module": "",
+   "options": {
+    "A": "化感作用存在于植物种间和种内",
+    "B": "在薇甘菊种内存在化感促进作用",
+    "C": "鸡矢藤对其他种生长均表现为抑制",
+    "D": "化感作用影响植物群落的种类组成"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 41,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "化感作用指植物通过向外分泌化学物质对其他植物产生的影响。制备入侵植物薇甘菊及近邻种葛藤和鸡矢藤的叶水提液（供体），分别处理三种植物幼苗（受体），60 天后测定植株干重并计算化感作用效应指数（R=处理值/对照值-1），相关叙述错误．．的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 41 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-45",
+   "module": "",
+   "options": {
+    "A": "高大的乔木在森林中均匀分布属于种群的空间特征",
+    "B": "稻田中的水稻植株高矮不同，体现了群落的分层现象",
+    "C": "树上不同高度的喜鹊巢不能反映动物群落具有垂直结构",
+    "D": "草原群落只具有垂直结构，不具有水平结构"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 45,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "从种群和群落水平角度，下列叙述正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 45 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-48",
+   "module": "",
+   "options": {
+    "A": "鱼类种群年龄结构将发生改变",
+    "B": "水体生态系统的生物多样性降低",
+    "C": "水体生态系统中生产者数量降低",
+    "D": "水体生态系统的营养结构发生改变阅读下列材料，回答下列小题：北美的黄石国家公园内，野生狼种群在历史上曾被人为清除。20 世纪 90 年代中期，公园管理者把狼重引入黄石的生态系统。作为群居的大型食肉动物，狼成为公园内野生马鹿的主要捕食者，而马鹿的取食则影响着园内植物的生长。在 1998-2001 年期间，随着狼种群数量的持续增长，研究者在马鹿被狼被捕食风险低（左列图）和捕食风险高（右列图）的地方，分别测量了三角杨（马鹿的主要食物之一）被啃食植株的比例（上排图）与平均植株高度（下排图）（*代表数量少）。请根据这些信息，完成以下问题："
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 48,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "食蚊鱼原产北美洲，曾因其捕食蚊虫幼虫而被引种到世界各地。但食蚊鱼也会捕食水生动物的卵及幼体，引起土著鱼类濒危或灭绝。关于食蚊鱼入侵引起的变化，叙述错误的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 48 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-49",
+   "module": "",
+   "options": {
+    "A": "被狼捕食的压力增加可以使马鹿对植物的啃食强度明显下降",
+    "B": "在马鹿被捕食风险高区域中的三角杨的生长比在风险低区域更困难",
+    "C": "狼的引入不仅可以调节生产者和消费者之间的数量关系，也可以提高生态系统的抵抗力稳性",
+    "D": "马鹿被捕食风险高区域内三角杨被啃食比例的变化趋势与捕食风险低区域内相反"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 49,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "根据这些信息分析，下列叙述不正确的是",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 49 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-50",
+   "module": "",
+   "options": {
+    "A": "①②",
+    "B": "①④",
+    "C": "②④",
+    "D": "③④"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 50,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "如果从该生态系统中移除狼，那么以下情况中会发生的有①被马鹿啃食的三角杨的比例将增加 ②三角杨幼树每年实际增长的高度将增加③马鹿对三角杨的啃食强度将降低 ④三角杨的生长将受到更强的抑制",
+   "score": 1.5,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 50 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2021
+  },
+  {
+   "answer": "ABD",
+   "answer_key": "ABD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-51",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 51,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "2017 年启动的雄安新区“千年秀林”计划，按自然的方式斑状混交，不确定株行距，自然随机布点。遵循适地适树的理念，选择适应新区自然条件的多样化树种，打造百万亩异龄、复层、混交样式的近自然森林，实现森林自我调节、更新和演替，最终形成稳定的森林生态系统。下列叙述正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 51 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "“千年秀林”的斑状混交状态体现了群落的水平结构"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "多样化的树种配置有助于提升“千年秀林”的物种丰富度"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "“千年秀林”的建设过程发生的是初生演替"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "异龄复层的造林方式有助于提高“千年秀林”的自我调节能力"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "CD",
+   "answer_key": "CD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-59",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 59,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "被子植物 APG 系统和以往被子植物分类系统相比，产生了许多令人瞩目的变化，根据下面系统图，下面说法中，正确的是",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "被子植物不是一个单系类群"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "被子植物被分为了被子植物基部类群、木兰分枝、单子叶植物和真双子叶植物 4 个多系群"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "木兰分枝是一个比较自然的类群，在传统分类中被认为是双子叶植物，但分子系统学分析表明与其余双子叶植物亲缘关系较远"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "单子叶植物与传统分类中单子叶植物界定相当，与真正的双子叶植物具有共同祖先"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "AD",
+   "answer_key": "AD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：AD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2021-60",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 60,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "在鱼类系统分类的几种科学划分中，若将其分为 5 个亚纲，即板鳃亚纲、全头亚纲、总鳍鱼亚纲、肺鱼亚纲、辐鳍鱼亚纲，下列关于这一鱼类分类系统表述正确的有",
+   "score": 2,
+   "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 60 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲、总鳍鱼亚纲"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲、总鳍鱼亚纲、肺鱼亚纲"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "传统分类学中硬骨鱼类在这里包括总鳍鱼亚纲、肺鱼亚纲、辐鳍鱼亚纲"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2021
+  },
+  {
+   "answer": "A",
+   "answer_key": "A",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-01",
+   "module": "",
+   "options": {
+    "A": "③④⑤",
+    "B": "①③④",
+    "C": "②③④",
+    "D": "②④⑤"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 1,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于细胞知识的叙述，正确的是①核仁是与核糖体形成有关的细胞器；②细胞学说揭示了“细胞为什么要产生新细胞”；③硝化细菌、霉菌、颤藻的细胞都含有核糖体、DNA 和 RNA；④胆固醇、性激素、维生素 D 都属于固醇；⑤蛙红细胞、人肝细胞、洋葱根尖分生区细胞并不都有细胞周期，但这些细胞内的化学成分都不断更新",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-02",
+   "module": "",
+   "options": {
+    "A": "FGF9 通过胞吐从细胞中出来作用于靶细胞，属于细胞间直接信息传递",
+    "B": "FGF9 的分泌过程体现了细胞膜的功能特点——流动性",
+    "C": "可通过注射 FGF9 的抗体或者用慢病毒载体敲低 FGF9 的表达来治疗抑郁症",
+    "D": "抑郁症患者大脑中有较多 FGF9 的根本原因是 X 细胞中合成该物质的酶的活性较高"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 2,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "美国研究人员首次发现一种与抑郁症相关的关键成分—X 细胞合成的成纤维细胞生长因子 9（FGF9），是一种分泌蛋白，其在抑郁症患者大脑中的含量远高于非抑郁症患者。下列有关叙述，正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-03",
+   "module": "",
+   "options": {
+    "A": "细胞膜塑形蛋白在合成过程中，场所由核糖体提供，动力可由叶绿体提供",
+    "B": "“分子垃圾袋”应主要由磷脂和蛋白质构成",
+    "C": "“回收利用工厂”可能是溶酶体，“组件”可能是核苷酸",
+    "D": "人体细胞内能形成囊泡的细胞器有内质网、高尔基体和中心体等"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 3,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "一项来自某大学的研究揭示了体内蛋白分选转运装置的作用机制，即为了将细胞内的废物清除，细胞膜塑形蛋白会促进囊泡（分子垃圾袋）形成，将来自细胞区室表面旧的或受损的蛋白质带到了内部回收利用工厂，在那里将废物降解，使组件获得重新利用。下列有关叙述，正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 3 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "ABCD",
+   "answer_key": "ABCD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABCD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-09",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 9,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列有关细菌细胞壁的叙述，正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "细菌细胞壁的分子组成与植物细胞壁不同"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "细菌细胞壁在功能上与许多原生生物、真菌和植物的细胞壁相似"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "细胞壁能为细胞提供一定程度的保护，降低环境的影响"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "细胞壁能防止细胞在低浓度中吸水涨破"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "BD",
+   "answer_key": "BD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-10",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 10,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列有关于植物体内色素的叙述，正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 10 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "叶绿素为蛋白质，存在于叶绿体的类囊膜上"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "类胡萝卜素具有帮助捕获光能和保护叶绿素的功能"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "植物体内的色素均具有光能的吸收、传递和转化的功能"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "黄化苗照光后形成绿化苗，是由于在光照刺激下合成叶绿素导致的"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "BD",
+   "answer_key": "BD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-11",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 11,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "凤梨的光合作用中碳循环的特性包括",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 11 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "属于 C3 植物，所以产量很高"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "具有特殊 CO2 的固定机制"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "其叶肉细胞的 PH 值在清晨远高于傍晚"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "小麦光合作用中 CO2 的固定机制与凤梨不同"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-14",
+   "module": "",
+   "options": {
+    "A": "1/2",
+    "B": "12/25",
+    "C": "12/23",
+    "D": "4/7"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 14,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "镰状细胞贫血是由隐性基因控制的一种遗传病，高原地区空气稀薄，生活在高原地区的镰状细胞贫血的幼年患者由于缺氧而导致 50%的个体不能发育到成年。现有一个生活在某高原地区基因型及比例为 AA∶Aa∶aa＝1∶1∶1 的幼年群体，若干年后这一群体作为亲本随机婚配后，子一代成年群体中携带者所占的比例为",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 14 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-15",
+   "module": "",
+   "options": {
+    "A": "复等位基因的遗传并不遵循基因的遗传定律",
+    "B": "自然条件下，该植物的雌配子、雄配子最多都是两种",
+    "C": "杂交父本、母本均为 atad 时，后代的基因型种类最多",
+    "D": "若子代中有雌株，则对应的双亲基因型组合有三种"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 15,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "进行有性生殖的某二倍体植物的一个基因存在很多等位基因的形式，称为复等位基因现象。该植物的性别是由 3 个等位基因 aD、at、ad 决定的，其中 aD 对 at、ad 为显性，at 对 ad 为显性。aD 基因决定雄性，at基因决定雌雄同株，ad 基因决定雌性。若没有基因突变发生，下列说法正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 15 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "A",
+   "answer_key": "A",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-16",
+   "module": "",
+   "options": {
+    "A": "理论上，子二代中雌株数：雄株数为 3：4",
+    "B": "理论上，子二代雌株中，阔叶：细叶为 3：1",
+    "C": "理论上，子二代雌株中，A 基因频率：a 基因频率为 3：1",
+    "D": "理论上，子二代雄株中，A 基因频率：a 基因频率为 1：3"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 16,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某种植物雄株的性染色体 XY；雌株的性染色体 XX．等位基因 A 和 a 是伴 X 遗传的，分别控制阔叶（A)和细叶（a)，且带 a 基因的花粉有 50%败育。用阔叶雄株和杂合阔叶雌株进行杂交得到子一代，再让子一代相互杂交得到子二代。下列说法正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 16 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "CD",
+   "answer_key": "CD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-17",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 17,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "家蚕的的性别决定类型为 ZW 型，其体色有黄体和透明体（A/a），蚕丝颜色有彩色和白色（B/b），且两对基因均不位于 W 染色体，现让一黄体蚕丝彩色雌蚕与一纯合透明体蚕丝白色雄蚕杂交，F1 为黄体蚕丝白色和透明体蚕丝白色个体，让黄体蚕丝白色个体与透明体蚕丝白色个体杂交，F2 中黄体蚕丝白色（♂）：透明体蚕丝白色（♂）：黄体蚕丝彩色（♀）：透明体蚕丝白色（♀）=1：1：1：1，不考虑突变和交叉互换。下列相关叙述正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 17 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "黄体对透明体为显性，且 A/a 基因位于常染色体上"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "若只考虑蚕丝颜色，则亲本中雄蚕的基因型为 BB 或 ZBZB"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "若让 F2 个体自由交配，则子代会出现黄体：透明体=7：9"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "让 F2 中的黄体雌蚕与透明体雄蚕杂交，子代均为蚕丝白色"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-18",
+   "module": "",
+   "options": {
+    "A": "最初出现的黄色雄鼠是染色体缺失造成的",
+    "B": "该鼠群中的黄色家鼠均为杂合体",
+    "C": "控制黄色与黑色的基因之间的差别在于碱基对的数目不同",
+    "D": "一对黄色家鼠繁殖形成一个新的种群，理论上黄色与黑色基因的频率相等"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 18,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "一种家鼠的毛色为黑色，在一个黑色鼠群中偶尔发现了一只黄色雌家鼠。后来这个鼠群繁殖的家鼠后代中出现了多只黄色雌鼠和雄鼠。让黄色鼠与黄色鼠交配，其后代分离比总是接近 2 黄色：1 黑色。下列推理结论正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 18 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-20",
+   "module": "",
+   "options": {
+    "A": "1 个含有 m 个腺嘌呤的 DNA 分子第 n 次复制需要腺嘌呤脱氧核苷酸（2n-1）×m 个",
+    "B": "DNA 双链被 32P 标记后，复制 n 次，子代 DNA 中有标记的占（1/2）n",
+    "C": "在一个双链 DNA 分子中，G+C 占 M%，那么该 DNA 分子的每条链中 G+C 都占该链碱基总数的 M%",
+    "D": "细胞内全部 DNA 被 32P 标记后在不含 32P 的环境中进行连续有丝分裂，第 2 次分裂的每个子细胞染色体均有一半有标记"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 20,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "关于 DNA 分子的结构与复制的叙述中，正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-21",
+   "module": "",
+   "options": {
+    "A": "该种兰花是通过基因指导有关酶的合成，进而控制花距中分泌物的合成",
+    "B": "该兰花种群中花距分泌物有关基因频率的改变可能与传粉动物变换有关",
+    "C": "兰花花距中不同种类分泌物含量的变化，是不同种兰花形成的必要条件",
+    "D": "该种兰花与采油蜂之间在相互影响下不断进化和发展，体现了共同进化"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 21,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某种兰花细长的花距底部分泌花蜜，主要由采蜜蛾类为其传粉。多年后发现，在某地其传粉者从采蜜蛾类逐渐转变为采油蜂类。进一步研究发现，花距中花蜜大量减少，而二乙酸甘油酯(一种油脂类化合物)有所增加。下列分析错误的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 21 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-22",
+   "module": "",
+   "options": {
+    "A": "等位基因产生的根本原因是基因突变，说明基因突变具有随机性",
+    "B": "四种纯合品系自由交配若干代后，种群中雌果蝇基因型有 10 种",
+    "C": "可以用果蝇的羽化节律基因和红眼、白眼基因验证自由组合定律",
+    "D": "基因 per 与基因 pers 差异最小，基因 per 与基因 per01 的差异最大"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 22,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "科学家在研究果蝇从蛹变为蝇的羽化昼夜节律过程中，克隆出野生型昼夜节律基因 per 及其三个复等位基因 pers、perL、per01，实验验证该基因位于 X 染色体上。野生型昼夜节律为 24h，即表示为正常节律，突变基因 pers、perL、per01 分别导致果蝇的羽化节律的周期变为 22h、29h 和无节律。下列叙述正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 22 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "ABC",
+   "answer_key": "ABC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-25",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 25,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "DNA 甲基化是指 DNA 分子胞嘧啶上共价连接一个甲基(-CH3)。 基因组中转录沉默区常被甲基化，在个体发育中甲基化区域是动态变化的。将携带甲基化和非甲基化肌动蛋白基因的重组 DNA 分别导入培养的细胞后，发现二者转录水平相同。下列推测不合理的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 25 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "DNA 甲基化改变了基因的碱基序列"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "启动子甲基化影响其与核糖体结合"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "DNA 甲基化不会影响细胞分化"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "培养细胞中可能存在去甲基化的酶"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-28",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 28,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "杂种优势育种是许多农作物的主要育种方法，第三代杂交水稻育种技术---智能不育杂交育种技术概况如下：M/m 等位基因控制花粉育性，不育系基因型为 mm；智能系是将 M、P、Q 三个紧密相连的基因转给不育系后得到的；Q 基因能使种子的胚出现荧光，携带 P 基因的花粉致死。下列叙述不正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 28 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "智能系自交所得种子，胚有荧光为不育系"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "智能系自交所得无荧光种子种植所得的稻米中无转基因成分"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "智能系自交所得种子 3/4 有荧光，1/4 无荧光"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "智能系的花粉离体培养再经染色体加倍所得的品种与智能系相同"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "BD",
+   "answer_key": "BD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-30",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 30,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "脱氧核苷三磷酸(dNTP)和双脱氧核苷三磷酸(ddNTP，ddN-Pα~Pβ~Pγ)的结构均与核苷三磷酸(NTP)类似，其中 dNTP 核糖的第 2 位碳原子上的羟基(—OH)被氢原子取代而 ddNTP 核糖第 2 位和第 3 位碳原子上的羟基均被氢原子取代。DNA 复制时，ddNTP 可以与 dNTP 竞争核苷酸链延长位点，并终止 DNA 片段的延伸。现有一些序列为 5’—GCCTAAGATCGTA—3’的 DNA 分子单链片段，拟通过 PCR 获得被 32P 标记且以碱基“A”为末端(3’为碱基 A)、不同长度的子链 DNA。在反应管中加入单链模板、引物、底物、TaqDNA 聚合酶、Mg2+及缓冲溶液。下列叙述不正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "实验结束后最多可得到 3 种被 32P 标记的子链 DNA"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "反应底物是 dCTP、dGTP、dTTP 和γ位 32P 标记的 ddATP"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "ddNTP 与 dNTP 竞争的延长位点是脱氧核苷酸链的 3’末端"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "TaqDNA 聚合酶在 PCR 中的作用是形成氢键和磷酸二酯键"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-31",
+   "module": "",
+   "options": {
+    "A": "患者肾小球滤过率降低导致其内环境水盐含量上升",
+    "B": "患者血浆蛋白含量逐渐下降，也会加重组织水肿",
+    "C": "患者毛细血管通透性改变，其组织细胞内液渗透压保持不变",
+    "D": "若使用利尿剂增加尿量、改善肾小球通透性，可缓解患者病情"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 31,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某人因急性肾小球肾炎而出现了全身水肿，同时伴有尿血、尿蛋白和少尿等症状，检查发现该患者肾小球水盐滤过率降低、全身毛细血管通透性改变、血浆蛋白含量下降，被确诊为肾炎性水肿。下列说法错误的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 31 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-36",
+   "module": "",
+   "options": {
+    "A": "该个体可能甲状腺功能亢进，表现为消瘦且情绪易激动",
+    "B": "该个体分泌的 TSH 偏低，是激素负反馈调节的结果",
+    "C": "TSH 由下丘脑细胞分泌，通过体液运输作用于甲状腺细胞",
+    "D": "推测 TRAb 能与促甲状腺激素受体结合，促进甲状腺激素的分泌"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 36,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下表是某人血液化验单中的部分数据，有关叙述错误的是项目 结果 参考值 单位促甲状腺激素（TSH） <0．005 0．27~4．20 uIU/mL游离甲状腺素（T） >100．00 12．0~22．0 umol/L游离三碘甲状腺原氨酸（T3） >50．00 3．10~6．80 umol/L促甲状腺激素受体抗体（TRAb） 21．00 0~1．22 IU/L",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 36 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-44",
+   "module": "",
+   "options": {
+    "A": "红蚁有助于大蓝蝶幼虫避开与其它蝴蝶幼虫的竞争",
+    "B": "大蓝蝶幼虫和红蚁两者是相互选择的结果",
+    "C": "大蓝蝶可以在没有红蚁的地方繁衍后代",
+    "D": "大蓝蝶幼虫与红蚁之间存在着捕食关系"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 44,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "大蓝蝶幼虫分泌的蜜汁是红蚁最喜欢的食物，红蚁发现大蓝蝶幼虫后会将其带回蚁巢，和同类一起分享其分泌的蜜汁，蜜汁被吃完后，大蓝蝶幼虫会散发出红蚁的气味和声音，让红蚁误认为它是自己的同类，大蓝蝶幼虫就可以在蚁巢内走动且大吃红蚁卵和幼虫，并躲避天敌。下列有关叙述错误的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 44 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "BD",
+   "answer_key": "BD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-45",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 45,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "“螟蛉有子，蜾赢负之”中所体现的种间关系包括",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 45 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "互利共生"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "拟寄生"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "种间竞争"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "捕食"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "BC",
+   "answer_key": "BC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-47",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 47,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "化感作用指植物通过分泌化学物质对其他植物产影响。制备入侵植物薇甘菊及本地物种葛藤和鸡矢藤的叶片水提液（供体），分别处理三种植物幼苗（受体），然后计算化感作用效应指数 R（R=处理组干重/空白对照组干重—1）。下列叙述错误的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 47 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "化感作用存在于种内和种间"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "入侵植物薇甘菊易形成均匀分布"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "鸡矢藤对其他物种生长均表现抑制性"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "化感作用是引起群落演替的因索之一"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "AB",
+   "answer_key": "AB",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：AB。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-50",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 50,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于植物演化的叙述，正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 50 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "最早出现在陆地上生活的植物不具有特化的支持结构"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "在陆地上占优势的维管束植物二倍体世代为主"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "藻类的单倍体具有明显的组织特化，故成为藻类的优势世代"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "蕨类的单倍体具有明显的根茎叶特化，故成为藻类的优势世代"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "BD",
+   "answer_key": "BD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-51",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 51,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "自然界中有一些寄生性鸟例如杜鹃，它会选择一些比它体型小的鸟种在繁殖时将蛋产于该鸟种的巢中，每巢只产一个蛋，由寄主替它孵卵及育雏，孵化出的杜鹃幼鸟会将寄主亲生的蛋或幼鸟推出巢外，此种行为称为托卵寄生，下列相关叙述正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 51 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "杜鹃等寄生的鸟种在岛屿上繁殖的机会大于其在大陆繁殖的机会"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "杜鹃幼鸟将寄主幼鸟推出巢外是一种本能的行为"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "杜鹃在寄主巢中托卵的最佳时间是在寄主尚未开始产卵时进行"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "就杜鹃及其被托卵的寄主而言，两者之间是一种共同演化"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-52",
+   "module": "",
+   "options": {
+    "A": "生物化石大都埋在坚固的变质岩之中，而变质岩可借由放射性年代测定法直接测定",
+    "B": "生物化石都埋在层层相叠的沉积岩石之中",
+    "C": "各类型的生物均易受矿化作用而形成化石，因此在各地质年代的记录均保持极为完整，有利于确定年代",
+    "D": "各类型生物的演化速率大致相同，因此对时间的推算帮助极大"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 52,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "依据化石能推论出地质时代各类型生物出现及持续的期间，下列相关叙述正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 52 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "AC",
+   "answer_key": "AC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：AC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-53",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 53,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列可用于 CRISPR/Cas9 基因编辑技术来实现的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 53 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "器官移植到人体内的基因编辑猪"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "体细胞核转移（SCNT）生殖性复制"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "基因改造抗真菌的植物"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "新冠病毒的 RNA 快速测序"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-56",
+   "module": "",
+   "options": {
+    "A": "病毒抗原基因与质粒重组时需要 DNA 连接酶",
+    "B": "病毒抗原基因在体内表达时需要 RNA 聚合酶",
+    "C": "重组质粒在内环境中表达后引起机体免疫反应",
+    "D": "注射 DNA 疫苗后机体会产生相应的记忆细胞"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 56,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "DNA 疫苗是指将含有病毒抗原基因的重组质粒注入人体表达后使人获得免疫能力，下列叙述不正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 56 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "BC",
+   "answer_key": "BC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：BC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-57",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 57,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "SDS-聚丙烯酰胺凝胶电泳法常用来测定蛋白质的相对分子质量，下列有关说法正确的是",
+   "score": 2,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 57 题",
+   "subQuestions": [
+    {
+     "answer": false,
+     "label": "A",
+     "text": "蛋白质在 SDS-聚丙烯酰胺凝胶电泳中的迁移率取决于它所带净电荷的多少以及分子的大小等因素"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "SDS 是一种阴离子去污剂，能消除不同蛋白质电荷的差异，是蛋白质发生完全变性"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "SDS-聚丙烯酰胺凝胶电泳不适合测结构特殊的蛋白质如胶原蛋白等"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "SDS-聚丙烯酰胺凝胶电泳只能用垂直平板电泳，不能用圆盘电泳"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-58",
+   "module": "",
+   "options": {
+    "A": "十字花科",
+    "B": "锦葵科",
+    "C": "木兰科",
+    "D": "玄参科"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 58,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "五代十国时期，后蜀皇帝孟昶颁发诏令：在成都城头尽种芙蓉，秋间盛开，蔚若锦绣。成都自此也就有了“芙蓉城”的美称。1983 年 5 月 26 日，成都市第九届人民代表大会常务委员会决定，正式命名芙蓉花为成都市市花。木芙蓉属于",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 58 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-59",
+   "module": "",
+   "options": {
+    "A": "子房着生于花托顶部，花萼、花冠、雄蕊群着生于子房以下位置",
+    "B": "花托凹陷呈环状，子房壁不与花托结合，花萼、花冠、雄蕊群着生在花托边缘，位置相当于子房中部",
+    "C": "花托深陷呈壶状，子房壁不与花托结合，子房包在花托中，柱头伸出花托以外，花萼、花冠、雄蕊群着生于花补给线，位置高于子房",
+    "D": "花托深陷呈壶状，子房包在花托中，子房壁也与花托愈合，花萼、花冠、雄蕊群着生于花托边缘，位置高于子房"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 59,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于子房下位的叙述中，正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2022-60",
+   "module": "",
+   "options": {
+    "A": "大熊猫是我国特有的物种，主要栖息地是中国四川、陕西和甘肃的山区",
+    "B": "大熊猫属于哺乳纲、食肉目、大熊猫科、大熊猫属",
+    "C": "大熊猫的臼齿非常发达，犬齿发达，裂齿分化不明显",
+    "D": "竹子是大熊猫的唯一食物，两者处于长期的协同进化过程中"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 60,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "冰墩墩是 2022 年北京冬季奥运会的吉祥物，可爱的大熊猫形象深受人们的喜爱。大熊猫是我国的国宝，下列关于大熊猫的相关叙述，不正确的是",
+   "score": 1.5,
+   "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 60 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2022
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-01",
+   "module": "",
+   "options": {
+    "A": "结核杆菌能以 CO2 和 H2O 为原料合成有机物",
+    "B": "结核杆菌和肺部细胞中都有环状的 DNA 分子",
+    "C": "结核杆菌合成并分泌酸性磷酸酶依次经过的细胞结构有核糖体→内质网→高尔基体→细胞膜",
+    "D": "卡介苗是由减毒的结核杆菌悬液制成的活疫苗，能被效应 T 细胞裂解"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 1,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "肺结核为危害人类健康的主要传染病之一，每年的 3 月 24 日是“世界防治结核病日”。结核病由结核分枝杆菌引起，最易侵染氧气充足、血液和营养丰富的肺以及骨骼的端部。关于结核杆菌，下列叙述正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ABC",
+   "answer_key": "ABC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-02",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 2,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "寄生于胃中的幽门螺旋杆菌可引起很多消化道疾病。体检时可通过 C 尿素呼气试验来检测其感染情况，13 13具体做法是：受试者口服 C 标记的尿素胶囊后，尿素可被幽门螺旋杆菌产生的脲酶催化分解为 NH3 和 CO2，定时收集受试者吹出的气体并测定其中是否含有 CO2。下列叙述错误的是",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "幽门螺旋杆菌的细胞膜具有双层磷脂分子，但其不具有选择透过性"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "幽门螺旋杆菌感染者吹出气体中的 CO2 是其细胞有氧呼吸产生的"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "检测 CO2 的需用溴麝香草酚蓝水溶液在高倍镜下镜检分析"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "幽门螺旋杆菌产生的脲酶在 pH 小于 7 的条件下依然能发挥作用"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "A",
+   "answer_key": "A",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-04",
+   "module": "",
+   "options": {
+    "A": "mtDNA 的功能基因突变和线粒体数目减少是高原动物对低氧环境的适应",
+    "B": "线粒体内的各种蛋白质都是由 mtDNA 指导合成的",
+    "C": "氧化型辅酶Ⅰ转化成还原型辅酶Ⅰ是在线粒体内膜上进行的",
+    "D": "高原动物细胞的线粒体呼吸链氧化磷酸化效率降低主要是寒冷低温环境所致"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 4,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "高原动物细胞中线粒体数目减少可适应寒冷、低氧环境，线粒体DNA（mtDNA）在低氧适应性上起关键作用。mtDNA 上的功能基因指导合成线粒体呼吸链的多种复合物及 ATP 合酶的核心亚基，这些基因突变会导致呼吸链氧化磷酸化效率降低，使机体适应低氧环境。下列叙述正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 4 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ABD",
+   "answer_key": "ABD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-06",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 6,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "Rubisco 酶是绿色植物光合作用过程中的关键酶，当 CO2 浓度较高时，该酶催化 CO2 与 C5 反应，进行光合作用。当 O2 浓度较高时，该酶催化 C5 与 O2 反应，最后在线粒体内生成 CO2，植物这种在光下吸收 O2 产生 CO2的现象称为光呼吸。下列叙述正确的是",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 6 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "绿色植物进行光呼吸的场所有叶绿体基质和线粒体"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "植物光呼吸的进行导致光合作用产生的有机物减少"
+    },
+    {
+     "answer": false,
+     "label": "C",
+     "text": "光合作用过程中，CO2 和 C5 反应需要消耗 NADPH 要消耗和 ATP"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "植物黑暗中细胞呼吸产生 CO2 的场所为细胞质基质或线粒体基质"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-09",
+   "module": "",
+   "options": {
+    "A": "合成与运输 MCT1，体现细胞内结构之间的协调配合",
+    "B": "乳酸被 MCT1 运进细胞，可作为替代葡萄糖的能源物质",
+    "C": "癌细胞细胞质中乳酸产生较多使细胞内 pH 显著降低",
+    "D": "MCTl 会影响癌细胞增殖，其基因可作癌症治疗新靶点"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 9,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "单羧酸转运蛋白（MCT1）是哺乳动物细胞膜上同向转运乳酸和 H 的跨膜蛋白。在癌细胞中，MCT1 基因显著表达，导致呼吸作用产生大量乳酸；当葡萄糖充足时，MCTl 能将乳酸和 H 运出细胞，当葡萄糖缺乏时则将乳酸和H+ 运进细胞。下列推测错误的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-13",
+   "module": "",
+   "options": {
+    "A": "NDI 患者体内 ADH 的含量与正常人相比要多",
+    "B": "NDI 患者的尿液渗透压明显低于血浆渗透压",
+    "C": "禁水加压实验后，CDI 患者的尿液渗透压将升高",
+    "D": "禁水加压实验后，NDI 患者的尿液渗透压将降低"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 13,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "尿崩症分两种：因抗利尿激素（ADH)）的缺乏引起的中枢性尿崩症（CDI）和因肾脏对 ADH 敏感性缺陷引起的肾性尿崩症（NDI），临床上可通过禁水加压（禁止饮水 10h 后补 充 ADH）实验进行确诊。下列有关说法不正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 13 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-17",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 17,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于环境容纳量的叙述，不正确的是",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 17 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "环境容纳量是指种群的最大数量"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "种群的内源性调节因素不会改变环境容纳量的大小"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "在理想条件下，影响种群数量增长的因素主要是环境容纳量"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "植食动物在自然条件下，一年四季的环境容纳量以冬季最大"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-19",
+   "module": "",
+   "options": {
+    "A": "多年生草本群落在争夺阳光和空间方面比一年生草本群落更有优势",
+    "B": "与草本群落相比，灌木群落的垂直结构更加复杂",
+    "C": "多年生亚灌木群落里有草本和亚灌木，其自我调节能力比多年生灌木群落更强",
+    "D": "该沙地主要植被是多年生灌木，与其根系发达，抗风和吸水能力较强有关"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 19,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "研究人员在调查某沙地的植物群落演替时，发现其自然演替顺序为：一年生草本→多年生草本→多年生亚灌木→多年生灌木。下列有关叙述错误的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 19 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-20",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 20,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "稻-蟹共作是以水稻为主体、适量放养蟹的生态种养模式，常使用灯光诱虫杀虫。水稻为蟹提供遮蔽场所和氧气，蟹能摄食害虫、虫卵和杂草，其粪便可作为水稻的肥料。下列叙述不正确的是",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "该种养模式提高了营养级间的能量传递效率"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "采用灯光诱虫杀虫利用了物理信息的传递"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "硬壳蟹（非蜕壳）摄食软壳蟹（蜕壳）为捕食关系"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "该种养模式可实现物质和能量的循环利用"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-24",
+   "module": "",
+   "options": {
+    "A": "心肌细胞和胰岛 A 细胞的呼吸酶基因均处于甲基化状态",
+    "B": "胞嘧啶的甲基化可能会阻碍 RNA 聚合酶与起始密码子结合",
+    "C": "由于甲基化修饰不会改变基因中的碱基序列，因此与细胞癌变无关",
+    "D": "胰岛 A 细胞的呼吸酶基因和胰高血糖素基因均处于非甲基化状态"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 24,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "脊椎动物的一些基因活性与其周围特定胞嘧啶的甲基化有关，甲基化使基因失活，相应的非甲基化能活化基因的表达。下列推测正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 24 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-26",
+   "module": "",
+   "options": {
+    "A": "5: 4",
+    "B": "27：8",
+    "C": "39: 25",
+    "D": "27: 1"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 26,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "某果蝇的体色有黑色和灰色，受常染色体上的等位基因 D/d 控制，且隐性雄配子有 50%不育。现有基因型为 DD：Dd=1：1 的灰体雄蝇，让其与黑体雌蝇杂交，得到 F1，再让 F1 随机交配得到 F2，则 F2 中灰体与黑体的比值为",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 26 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-28",
+   "module": "",
+   "options": {
+    "A": "0 项",
+    "B": "1 项",
+    "C": "2 项",
+    "D": "3 项"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 28,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "关于 DNA 分子的结构与复制的叙述中，正确的有几项n①一个含有 m 个腺嘌呤的 DNA 分子复制 n 次，共消耗腺嘌呤脱氧核苷酸(2 －1)×m 个；②双链 DNA 分子，G＋C 占碱基总数的 M%，那么该 DNA 分子的每条链中 G＋C 都占该链碱基总数的 M%；③细胞内全部 DNA 被 P 32 32标记后在不含 P 的环境中进行连续有丝分裂，第 2 次分裂产生的每个子细胞中染色体均有一半有 P 标记；32 31 32 n④DNA 双链被 P 标记后，在含 P 的环境中复制 n 次，子代 DNA 中有 P 标记的占 1/2",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 28 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-29",
+   "module": "",
+   "options": {
+    "A": "复等位基因的遗传并不遵循基因的遗传定律",
+    "B": "自然条件下，该植物的基因型最多有 5 种t d",
+    "C": "杂交父本.母本均为 a a 时，后代的基因型种类最多",
+    "D": "若子代中有雌株，则对应的双亲基因型组合有三种"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 29,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "进行有性生殖的某二倍体植物的一个基因存在很多等位基因的形式，称为复等位基因现象。该植物的性D t d D t d t d D t别是由 3 个等位基因 a 、a 、a 决定的，其中 a 对 a 、a 为显性，a 对 a 为显性。a 基因决定雄性，a 基因d决定雌雄同株，a 基因决定雌性。若没有基因突变产生，下列说法正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 29 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-30",
+   "module": "",
+   "options": {
+    "A": "若含有 a 的花粉 50%死亡，则自交后代基因型的比例是 2∶3∶1",
+    "B": "若 aa 个体有 50%死亡，则自交后代基因型的比例是 2∶4∶1",
+    "C": "若含有 a 的配子有 50%死亡，则自交后代基因型的比例是 4∶2∶1",
+    "D": "若花粉有 50%死亡，则自交后代基因型的比例是 1∶2∶1 15 14"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 30,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "自然界配子的发生.个体的发育受多种因素制约，存在致死现象。基因型为 Aa 的植株自交，子代基因型AA∶Aa∶aa 的比例可能出现不同的情况。下列分析错误的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-32",
+   "module": "",
+   "options": {
+    "A": "造血干细胞发生①②过程的场所是细胞核",
+    "B": "已知过程②的α链及其模板链中鸟嘌呤分别占 27%、17%，该α链对应的双链 DNA 区段中腺嘌呤所占的碱基比例为 28%",
+    "C": "同一种 tRNA 携带的氨基酸种类可能不同",
+    "D": "胰岛 B 细胞和肝细胞的相同 DNA 进行过程②时产生的 mRNA 一定不同"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 32,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "图①②③分别表示人体细胞中发生的 3 种生物大分子的合成过程，下列叙述正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 32 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "D",
+   "answer_key": "D",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-33",
+   "module": "",
+   "options": {
+    "A": "若子细胞中染色体数为 2N，则该子细胞中被 N 标记的染色体条数可以是 0～2N",
+    "B": "若 4 个子细胞大小相同，则细胞分裂过程中可能发生联会现象",
+    "C": "若某个子细胞中染色体数为 N，则该子细胞中染色体与核 DNA 之比可能是 1：1",
+    "D": "若某个子细胞中染色体数为 2N，则该细胞一定存在 N+1 种形态的染色体"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 33,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "为模拟生物体内细胞的分裂过程，将某一经 N 充分标记 DNA 的雄性动物细胞（染色体数为 2N）置于不含有 N 的培养基中培养，该细胞分裂两次后形成 4 个子细胞。下列有关叙述不正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 33 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-45",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 45,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列有关 Na —K 泵说法不正确的是：",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 45 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "该泵在钠离子结合时去磷酸化，钾离子结合时磷酸化"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "乌本苷结合在钾离子结合位点从而抑制该泵活性"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "镁离子和少量膜脂可以抑制该泵活性"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "动物、植物、微生物均需要用该泵维持渗透压"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-47",
+   "module": "",
+   "options": {
+    "A": "中和动物细胞代谢产生的碱性物质",
+    "B": "中和动物细胞代谢产生的酸性物质",
+    "C": "防止培养基中的碳酸氢根转变为二氧化碳而流失",
+    "D": "抑制动物细胞的有氧呼吸，防止增殖过快"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 47,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "动物细胞培养过程中，往往会向培养液中通入 5％CO2，通入 C02 的作用是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 47 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-48",
+   "module": "",
+   "options": {
+    "A": "在一个特定的生态系统中，野火发生的可能性在短期内是可以高度可预测的",
+    "B": "许多种类的植物和植物群落已经适应了频繁的火灾",
+    "C": "人类对森林火灾的严防死守使某些群落，如草原，无法达到其顶级阶段",
+    "D": "灌木丛群落已经进化到了很少燃烧的程度"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 48,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "以下哪项叙述对火灾与生态系统之间的相互作用的描述最准确",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 48 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "ABC",
+   "answer_key": "ABC",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-49",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 49,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "撒哈拉沙漠是世界最热的沙漠，非常少的水，非常炎热的气候和稀疏的植被，少数的动物能在这样恶劣的环境中很好的适应，比如耳廓狐、非洲鸵鸟等。这些沙漠动物适应于在炎热干燥的沙漠中生存策略有",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 49 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "耳廓狐的耳朵与身体的比例是犬科动物中最大的，有助于散热"
+    },
+    {
+     "answer": true,
+     "label": "B",
+     "text": "耳廓狐的爪垫上覆盖有浓密的毛，便于在炎热的沙土上行走"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "非洲鸵鸟在干燥环境下采食多肉植物以补充水分"
+    },
+    {
+     "answer": false,
+     "label": "D",
+     "text": "非洲鸵鸟把头埋在沙子里，减少太阳辐射"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "ACD",
+   "answer_key": "ACD",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-50",
+   "module": "",
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 50,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "集群是重要的反捕食策略，下列关于集群优点说法正确的是",
+   "score": 2,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 50 题",
+   "subQuestions": [
+    {
+     "answer": true,
+     "label": "A",
+     "text": "减轻捕食者的捕食压力"
+    },
+    {
+     "answer": false,
+     "label": "B",
+     "text": "不易被捕食者发现"
+    },
+    {
+     "answer": true,
+     "label": "C",
+     "text": "及时发现捕食者"
+    },
+    {
+     "answer": true,
+     "label": "D",
+     "text": "依靠集体的力量对抗捕食者"
+    }
+   ],
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+   ],
+   "target": "competition",
+   "type": "multiple",
+   "year": 2023
+  },
+  {
+   "answer": "E",
+   "answer_key": "E",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：E。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-57",
+   "module": "",
+   "options": {
+    "A": "GABA 是一种抑制性神经递质，所打开的离子通道可以造成钾离子的外流而抑制神经冲动",
+    "B": "Gly(甘氨酸)是一种抑制性神经递质，所打开的离子通道可以造成钾离子的外流而抑制神经冲动",
+    "C": "Glu(谷氨酸)是一种兴奋性神经递质，可以直接打开电压敏感型钠离子通道而造成形成动作电位",
+    "D": "ACh(乙酰胆碱)是一种兴奋性神经递质，可以直接打开电压敏感型钠离子通道而造成动作电位",
+    "E": "神经细胞膜的膜电压越兴奋（越正），GABA 所产生的抑制效果越明显"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 57,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "下列关于神经递质与离子通道的叙述，正确的是？",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 57 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "B",
+   "answer_key": "B",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-58",
+   "module": "",
+   "options": {
+    "A": "在外周组织中，血红蛋白的氧亲合力增加",
+    "B": "总外周阻力增加",
+    "C": "窦房结细胞发生超极化",
+    "D": "脑部和冠状动脉的血管收缩"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 58,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "一男子曾在一次摩托车事故中受伤，大动脉严重受损，失血约 700 毫升，当时血压为 90/50 毫米汞柱。对于机体将对失血产生的生理变化，以下表述正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 58 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  },
+  {
+   "answer": "C",
+   "answer_key": "C",
+   "competition": "SC-Prelim",
+   "concept": "",
+   "difficulty": "league",
+   "examType": "school",
+   "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+   "has_figure": false,
+   "id": "PROV-SC-2023-59",
+   "module": "",
+   "options": {
+    "A": "七鳃鳗、鳄鱼、鸭嘴兽和鸟由于单个生殖嵴未能分化，仅具一侧卵巢",
+    "B": "圆口类、全头类和两栖类具粪便、尿液和生殖细胞共同排出的泄殖腔",
+    "C": "哺乳动物胚胎期右后主静脉退化为奇静脉，左后主静脉退化为半奇静脉",
+    "D": "鸟类仅保留右前大静脉和左侧输卵管，同时产生了较特殊的尾肠系膜静脉",
+    "E": "七鳃鳗和硬骨鱼的生殖腺延伸成生殖管道，以输送生殖细胞"
+   },
+   "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 59,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+   },
+   "question": "脊椎动物按一定的模式进行发育，但之后根据自身的进化及适应，会产生一些特殊的结构分化，关于这类结构分化，下列说法正确的是",
+   "score": 1.5,
+   "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+   "subject": "",
+   "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+   ],
+   "target": "competition",
+   "type": "single",
+   "year": 2023
+  }
+ ]
+}

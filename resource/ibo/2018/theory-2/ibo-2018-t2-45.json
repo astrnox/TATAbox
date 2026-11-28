@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Language Phylogeography",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-45",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 55",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-45-p55.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 55,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_4",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 45,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "There are two hypotheses that try to explain the origin of the Indo-European language family. The Steppe hypothesis traces back the origin of Indo-European language to the Pontic steppes region north of the Caspian Sea. Archaeological records provide some clues regarding to expansion from this area about 6000 years ago, however the implied models of such expansion remain untested. Alternatively, it has been claimed that the languages spread from Anatolia with the development of agricultural activities about 8000 to 9500 years ago (the Anatolian hypothesis). The agricultural expansion reached the edge of Western Europe by 5000 years ago and had run its course about 4000 years ago. Bouckaert and his colleagues (2018) assessed the two hypotheses with Bayesian phylogeographic approaches using vocabulary information from the ancient and contemporary Indo-European languages. 6000 6000 —_ oo 4 0 wo = an 23. = a ) Maximum clade credibility tree indicating the divergence of the major Indo-European subfamilies. The tree demonstrates the timing of the appearance of the major branches and their subsequent variation. The area of each triangle represents the relative number of languages in each subfamily. Tocharian and Armenian are originated from steppe region",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 45 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The result does not favour an Anatolian origin over a steppe origin"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "It is unlikely that the spread of agriculture serves as the sole driver of language expansion on the continent"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Rate of language diversification in Balto-Slavic subfamily was higher than Germanic subfamily"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Drawing such trees is based on the assumption that languages does not affect each other when they come in contact"
+    }
+  ],
+  "subject": "演化生物学",
+  "tags": [
+    "ibo",
+    "module_4",
+    "演化生物学",
+    "Language Phylogeography",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

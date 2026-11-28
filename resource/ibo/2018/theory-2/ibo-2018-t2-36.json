@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Plant Phylogenetics",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-36",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 44",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-36-p44.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 44,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 45",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-36-p45.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 45,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_2",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 36,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "nerda). All of them share many character states that distinguish this genus from all closely related genera. The species differ from each other, however, as described below. All species in the sister genus, Y, are vining plants with palmately compound, alternate leaves, sweet-smelling flowers with pink, free petals and 10 stamens, and drupes. X. messa: Plant upright, stems glabrous; leaves opposite, palmately compound; petals purple, free; stamens 5; flowers sweet-smelling; fruit a berry X. obnoxia: Plant vining, stems glabrous; leaves opposite, simple; petals red, free; stamens 10; flowers with a rotten meat smell; fruit a berry X. beatifica: Plant upright, stems glabrous; leaves opposite, palmately compound; petals pink, connate; stamens 5; flowers sweet-smelling; fruit a berry X. confusa: Plant upright, stems glabrous; leaves opposite, simple; petals purple, free; stamens 5; flowers sweet-smelling; fruit a berry X. foetida: Plant vining, stems hispid; leaves opposite, palmately compound; petals red, free; stamens 10; flowers with a rotten meat smell; fruit a berry X. nerda: Plant upright, stems glabrous; leaves opposite, palmately compound; petals pink, connate; stamens 4; flowers sweet-smelling; fruit a berry The data matrix, in which characters are coded according to whether character states are plesiomorphic (0) or apomorphic (1, 2) was presented in the following table. The most parsimonious cladogram was constructed from the data matrix. Habit Stem Leaf Leaf Petal Petal Stamen Flower Fruit hairs position structure colour fusion number odour type — vis ce \\ wat i oe x or s . ° & & Rs KO ov Yr «€ & Oo + took FF FH",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 36 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Fruit as a berry and leaves opposite support the monophyly of the genus X"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "X. obnoxia, X. beatifica and X. nerda form a monophyletic group"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Hispid stems and 4 stamens are autapomorphic (unique) for X. foetida and X. nerda, respectively"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Simple leaves in X. obnoxia and X. confuse appear to have evolved independently"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "ibo",
+    "module_2",
+    "植物生理学",
+    "Plant Phylogenetics",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

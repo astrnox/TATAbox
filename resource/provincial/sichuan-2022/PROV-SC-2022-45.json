@@ -1,0 +1,53 @@
+{
+  "answer": "BD",
+  "answer_key": "BD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-45",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 45,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "“螟蛉有子，蜾赢负之”中所体现的种间关系包括",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 45 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "互利共生"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "拟寄生"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "种间竞争"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "捕食"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

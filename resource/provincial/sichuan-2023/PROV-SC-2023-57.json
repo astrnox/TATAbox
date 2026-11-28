@@ -1,0 +1,38 @@
+{
+  "answer": "E",
+  "answer_key": "E",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：E。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-57",
+  "module": "",
+  "options": {
+    "A": "GABA 是一种抑制性神经递质，所打开的离子通道可以造成钾离子的外流而抑制神经冲动",
+    "B": "Gly(甘氨酸)是一种抑制性神经递质，所打开的离子通道可以造成钾离子的外流而抑制神经冲动",
+    "C": "Glu(谷氨酸)是一种兴奋性神经递质，可以直接打开电压敏感型钠离子通道而造成形成动作电位",
+    "D": "ACh(乙酰胆碱)是一种兴奋性神经递质，可以直接打开电压敏感型钠离子通道而造成动作电位",
+    "E": "神经细胞膜的膜电压越兴奋（越正），GABA 所产生的抑制效果越明显"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 57,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于神经递质与离子通道的叙述，正确的是？",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 57 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

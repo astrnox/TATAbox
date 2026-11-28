@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-02",
+  "module": "",
+  "options": {
+    "A": "蛋白质的生物活性与蛋白质的空间结构有关",
+    "B": "提取蛋清溶液中的球蛋白可以利用盐析的方法",
+    "C": "蛋白质中的氨基酸排列顺序是由核酸中的遗传信息决定的",
+    "D": "细胞膜、细胞质基质中负责转运氨基酸的载体都是蛋白质"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 2,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "蛋白质是决定生物体结构和功能的重要物质。下列相关叙述错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

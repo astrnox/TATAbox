@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "mRNA Splicing",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-03",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 6",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-03-p06.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 6,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 3,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "One of the questions that long ago arose with respect to splicing was whether the temporal order of removal of introns in transcripts of genes with multiple introns is the same as the physical order of the introns. To address this question with respect to the ovomucoid encoding gene (5.6 Kbp) that has seven introns (A-G), Northern blotting was performed on RNA isolated from nuclei of ovomucoid expressing cells. The probe used in the Northern blotting was labelled DNA of the ovomucoid encoding gene. An image of the Northern blot is presented below. RNA was extracted from each major band seen in gel, and the presence or absence of specific introns in RNA molecules of various band was assessed using intron- specific probes. Finally, the RNA molecules were grouped on the basis of number of introns removed by splicing and calculations that revealed identity of introns lost in various processed RNA molecules were made. The results of these calculations are also presented below. Nuclear RNA - 5450 nucleotides Intron removal from ovomucoid nuclear RNA Frequency (%) of loss of individual introns Te —30 Group Numberofintrons A B CD E F G SAO) No. spliced out Northern blot",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 3 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The image of the Northern blot suggests that order of removal of introns from _ ovomucoid primary transcripts is not random"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "The data in the table show that intron E is usually but not always removed from primary transcripts before intron G is removed"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "The data in the table indicate that introns A, B, and C are usually removed from primary transcripts before introns D and G"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "The data presented suggest that at the time of analysis, there is generally a progressive increase in concentrations of more highly processed transcripts"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "mRNA Splicing",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

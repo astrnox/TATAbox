@@ -1,0 +1,53 @@
+{
+  "answer": "BD",
+  "answer_key": "BD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-51",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 51,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "自然界中有一些寄生性鸟例如杜鹃，它会选择一些比它体型小的鸟种在繁殖时将蛋产于该鸟种的巢中，每巢只产一个蛋，由寄主替它孵卵及育雏，孵化出的杜鹃幼鸟会将寄主亲生的蛋或幼鸟推出巢外，此种行为称为托卵寄生，下列相关叙述正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 51 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "杜鹃等寄生的鸟种在岛屿上繁殖的机会大于其在大陆繁殖的机会"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "杜鹃幼鸟将寄主幼鸟推出巢外是一种本能的行为"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "杜鹃在寄主巢中托卵的最佳时间是在寄主尚未开始产卵时进行"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "就杜鹃及其被托卵的寄主而言，两者之间是一种共同演化"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

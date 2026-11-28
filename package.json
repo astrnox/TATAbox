@@ -3,7 +3,7 @@
   "version": "5.1.0",
   "description": "面向生物竞赛（联赛）备考的纯前端学习平台，集知识卡片、模拟试题、学习分析、社区讨论于一体。",
   "scripts": {
-    "test": "npm run test:anchor && npm run verify:stats && npm run verify:migrations && npm run lint:code && npm run audit:design && npm run audit:sinks && npm run test:unit && npm run test:smoke",
+    "test": "npm run test:anchor && npm run verify:stats && npm run verify:provincial && npm run verify:migrations && npm run lint:code && npm run audit:design && npm run audit:sinks && npm run test:unit && npm run test:smoke",
     "test:unit": "jest --verbose --coverage",
     "test:smoke": "node tests/wiki-smoke-test.cjs && node tests/home-quiz-smoke.cjs && node tests/legacy-fallback-smoke.cjs",
     "test:e2e": "node tests/e2e-smoke.js",
@@ -23,7 +23,9 @@
     "verify:prod": "node scripts/verify-prod-build.js",
     "build:stats": "node scripts/build-data-stats.js",
     "build:ibo": "node scripts/build-ibo-pool.js",
+    "build:provincial": "node scripts/build-provincial-pool.js",
     "verify:stats": "node scripts/verify-data-stats.js",
+    "verify:provincial": "node scripts/build-provincial-pool.js --check",
     "verify:migrations": "node scripts/verify-migrations.js",
     "sync:version": "node scripts/sync-version.js && node scripts/build-data-stats.js",
     "build:font": "python scripts/build-font-subset.py",

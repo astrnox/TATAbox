@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Mutation Rates",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — True; D — True",
+  "has_figure": false,
+  "id": "IBO-2018-T2-44",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_4",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 44,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The lack of advanced molecular biology methods, such as DNA sequencing or site-directed mutagenesis, did not stop the pioneers of evolution from asking difficult questions concerning the fundamental aspects of biological systems. J. B. S. Haldane attempt to calculate the mutation rate in 1930s is an illuminating example. With no direct genetic evidence, he focused on men living in London and hemophilia A, an X-linked recessive disorder. Assuming that men with this disorder do not reproduce, his calculations show that the mutation rate is three times the frequency of men with this disorder in London. His estimate of mutation per generation per locus is not that different from the more recent estimates for many genes",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 44 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "The purported relationship between mutation rate and frequency of that mutation is only limited to populations that have reached mutation selection equilibrium"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "For a recessive autosomal disorder that results in sterility, one would expect mutation rate to be equal to six times the frequency of that disorder in a population"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "The model assumes there is no drift"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Linkage between a beneficial allele and hemophilia would have inflated Haldane's estimate of mutation rate for hemophilia"
+    }
+  ],
+  "subject": "演化生物学",
+  "tags": [
+    "ibo",
+    "module_4",
+    "演化生物学",
+    "Mutation Rates",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

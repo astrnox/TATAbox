@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-01",
+  "module": "",
+  "options": {
+    "A": "结核杆菌能以 CO2 和 H2O 为原料合成有机物",
+    "B": "结核杆菌和肺部细胞中都有环状的 DNA 分子",
+    "C": "结核杆菌合成并分泌酸性磷酸酶依次经过的细胞结构有核糖体→内质网→高尔基体→细胞膜",
+    "D": "卡介苗是由减毒的结核杆菌悬液制成的活疫苗，能被效应 T 细胞裂解"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 1,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "肺结核为危害人类健康的主要传染病之一，每年的 3 月 24 日是“世界防治结核病日”。结核病由结核分枝杆菌引起，最易侵染氧气充足、血液和营养丰富的肺以及骨骼的端部。关于结核杆菌，下列叙述正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

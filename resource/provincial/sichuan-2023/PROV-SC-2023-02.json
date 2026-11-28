@@ -1,0 +1,53 @@
+{
+  "answer": "ABC",
+  "answer_key": "ABC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-02",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 2,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "寄生于胃中的幽门螺旋杆菌可引起很多消化道疾病。体检时可通过 C 尿素呼气试验来检测其感染情况，13 13具体做法是：受试者口服 C 标记的尿素胶囊后，尿素可被幽门螺旋杆菌产生的脲酶催化分解为 NH3 和 CO2，定时收集受试者吹出的气体并测定其中是否含有 CO2。下列叙述错误的是",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "幽门螺旋杆菌的细胞膜具有双层磷脂分子，但其不具有选择透过性"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "幽门螺旋杆菌感染者吹出气体中的 CO2 是其细胞有氧呼吸产生的"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "检测 CO2 的需用溴麝香草酚蓝水溶液在高倍镜下镜检分析"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "幽门螺旋杆菌产生的脲酶在 pH 小于 7 的条件下依然能发挥作用"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

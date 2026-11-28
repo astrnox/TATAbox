@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-13",
+  "module": "",
+  "options": {
+    "A": "NDI 患者体内 ADH 的含量与正常人相比要多",
+    "B": "NDI 患者的尿液渗透压明显低于血浆渗透压",
+    "C": "禁水加压实验后，CDI 患者的尿液渗透压将升高",
+    "D": "禁水加压实验后，NDI 患者的尿液渗透压将降低"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 13,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "尿崩症分两种：因抗利尿激素（ADH)）的缺乏引起的中枢性尿崩症（CDI）和因肾脏对 ADH 敏感性缺陷引起的肾性尿崩症（NDI），临床上可通过禁水加压（禁止饮水 10h 后补 充 ADH）实验进行确诊。下列有关说法不正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 13 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

@@ -1,0 +1,59 @@
+{
+  "competition": "IBO",
+  "concept": "Pedigree Analysis",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — False; D — True; E — False",
+  "has_figure": false,
+  "id": "IBO-2018-T2-16",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 16,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The inheritance pattern of two rare traits, represented as vertical and horizontal lines, is shown in the pedigree below. My -C 1 2 as a m LOBE Ld Ld oC) Bee CC) Ill SEES a",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 16 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Inheritance of one of the traits is Y-linked"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "The data presented is consistent with autosomal recessive inheritance for both traits"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "The phenotype of III-2 may be due to non-disjunction in II-2"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "The phenotype of III-2 may be due to cross over in -2"
+    },
+    {
+      "answer": false,
+      "label": "E",
+      "text": "The probability of the phenotype of II-2 being due to a mutation that occurred in an egg cell of II-2 before fertilization is twice the probability of the phenotype of II-4 being due to a mutation that occurred in an egg cell of II-2 before fertilization"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Pedigree Analysis",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

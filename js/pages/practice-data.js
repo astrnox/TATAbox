@@ -121,17 +121,20 @@ async function loadPracticeQuestions() {
 }
 
 /**
- * 加载真题池：CnBO 联赛（resource/all.json）+ IBO（resource/ibo.json）。
- * 两个池独立生成、独立失败：任一池加载失败只告警，不影响另一池。
- * 由 scripts/build-league-pool.js / build-ibo-pool.js 聚合，已含判卷格式
- * （single→options+字母、multiple/mtf→subQuestions）与 concept/年份/来源标签。
+ * 加载真题池：CnBO 联赛（resource/all.json）+ IBO（resource/ibo.json）
+ * + 四川省初赛（resource/provincial.json）。
+ * 三个池独立生成、独立失败：任一池加载失败只告警，不影响其余池。
+ * 由 scripts/build-league-pool.js / build-ibo-pool.js / build-provincial-pool.js
+ * 聚合，已含判卷格式（single→options+字母、multiple/mtf→subQuestions）
+ * 与 concept/年份/来源标签。
  */
 async function loadLeagueQuestions() {
   if (PracticeState.leagueLoaded) return;
   try {
     const results = await Promise.all([
       _fetchLocalJsonWithRetry('resource/all.json').catch(function (e) { return { ok: false, error: e }; }),
-      _fetchLocalJsonWithRetry('resource/ibo.json').catch(function (e) { return { ok: false, error: e }; })
+      _fetchLocalJsonWithRetry('resource/ibo.json').catch(function (e) { return { ok: false, error: e }; }),
+      _fetchLocalJsonWithRetry('resource/provincial.json').catch(function (e) { return { ok: false, error: e }; })
     ]);
     let items = [];
     results.forEach(function (res) {

@@ -1,0 +1,53 @@
+{
+  "answer": "ABC",
+  "answer_key": "ABC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-09",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 9,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "“分子马达”是分布于细胞内部或细胞表面的一类蛋白质，它们的结构会随着与 ATP 和 ADP 的交替结合而改变，促使 ATP 转化成 ADP，同时引起自身或与其结合的分子产生运动。参与物质跨膜运输、肌肉收缩、转录等一系列重要生命活动。下列相关分析错误的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "“分子马达”的结构改变使其失去活性"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "“分子马达”具有酶的功能，其参与的活动一般与放能反应相联系"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "叶绿体中光合色素吸收光能的过程需要“分子马达”的直接参与"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "参与细胞分裂间期染色体复制的“分子马达”有解旋酶、RNA 聚合酶等"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Plant Taxonomy",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-35",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 43",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-35-p43.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 43,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_2",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 35,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "In a scientific excursion the students found four plant specimens that they had never seen before. They studied the plant organs carefully and made a few sections from them to look for the plants transport systems. The following table was completed based on their observation. Plant number Companion cell Sieve cell Sieve tube cell Tracheid Vesselelements Pollen 1 + - + + + + 2 - + - + - + 3 + - + + + - 4 - + - + - - Supposing that these plants are representatives and all possible conductive elements were found, indicate if each of the following statement is true or false:",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 35 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Plant 1 has seeds with more than two cotyledons. _"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Plant 2 has winged pollen grain and double fertilization"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Plants 3 and have smaller female gametophyte as compared to plants 2 and 4. _"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Plant 3 does not belong to the flowering plants, because it does not have pollen grain"
+    }
+  ],
+  "subject": "植物生理学",
+  "tags": [
+    "ibo",
+    "module_2",
+    "植物生理学",
+    "Plant Taxonomy",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

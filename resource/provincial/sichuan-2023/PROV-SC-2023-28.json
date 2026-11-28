@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-28",
+  "module": "",
+  "options": {
+    "A": "0 项",
+    "B": "1 项",
+    "C": "2 项",
+    "D": "3 项"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 28,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "关于 DNA 分子的结构与复制的叙述中，正确的有几项n①一个含有 m 个腺嘌呤的 DNA 分子复制 n 次，共消耗腺嘌呤脱氧核苷酸(2 －1)×m 个；②双链 DNA 分子，G＋C 占碱基总数的 M%，那么该 DNA 分子的每条链中 G＋C 都占该链碱基总数的 M%；③细胞内全部 DNA 被 P 32 32标记后在不含 P 的环境中进行连续有丝分裂，第 2 次分裂产生的每个子细胞中染色体均有一半有 P 标记；32 31 32 n④DNA 双链被 P 标记后，在含 P 的环境中复制 n 次，子代 DNA 中有 P 标记的占 1/2",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 28 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

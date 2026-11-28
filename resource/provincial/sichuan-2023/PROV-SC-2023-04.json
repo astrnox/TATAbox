@@ -1,0 +1,37 @@
+{
+  "answer": "A",
+  "answer_key": "A",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-04",
+  "module": "",
+  "options": {
+    "A": "mtDNA 的功能基因突变和线粒体数目减少是高原动物对低氧环境的适应",
+    "B": "线粒体内的各种蛋白质都是由 mtDNA 指导合成的",
+    "C": "氧化型辅酶Ⅰ转化成还原型辅酶Ⅰ是在线粒体内膜上进行的",
+    "D": "高原动物细胞的线粒体呼吸链氧化磷酸化效率降低主要是寒冷低温环境所致"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 4,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "高原动物细胞中线粒体数目减少可适应寒冷、低氧环境，线粒体DNA（mtDNA）在低氧适应性上起关键作用。mtDNA 上的功能基因指导合成线粒体呼吸链的多种复合物及 ATP 合酶的核心亚基，这些基因突变会导致呼吸链氧化磷酸化效率降低，使机体适应低氧环境。下列叙述正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 4 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

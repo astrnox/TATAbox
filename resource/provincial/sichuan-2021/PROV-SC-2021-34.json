@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-34",
+  "module": "",
+  "options": {
+    "A": "Na 通道受阻会使神经细胞外的 Na 不能内流",
+    "B": "极微量的河豚毒素有作为局部麻醉剂的可能",
+    "C": "河豚毒素致人中毒的机理是导致神经冲动持续发生",
+    "D": "促进 Na 通道开放的药物可缓解河豚毒素中毒症状"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 34,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "河豚虽营养丰富，味道鲜美，但其体内的河豚毒素却有大毒。研究表明，河豚毒素一旦进入人体，就会像塞子一样凝固在 Na 通道的入口处，导致血管运动神经和呼吸神经中枢麻痹，人体迅速死亡。下列说法错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 34 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

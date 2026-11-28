@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-14",
+  "module": "",
+  "options": {
+    "A": "1/2",
+    "B": "12/25",
+    "C": "12/23",
+    "D": "4/7"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 14,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "镰状细胞贫血是由隐性基因控制的一种遗传病，高原地区空气稀薄，生活在高原地区的镰状细胞贫血的幼年患者由于缺氧而导致 50%的个体不能发育到成年。现有一个生活在某高原地区基因型及比例为 AA∶Aa∶aa＝1∶1∶1 的幼年群体，若干年后这一群体作为亲本随机婚配后，子一代成年群体中携带者所占的比例为",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 14 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

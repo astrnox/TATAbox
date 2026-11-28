@@ -1,0 +1,38 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-59",
+  "module": "",
+  "options": {
+    "A": "七鳃鳗、鳄鱼、鸭嘴兽和鸟由于单个生殖嵴未能分化，仅具一侧卵巢",
+    "B": "圆口类、全头类和两栖类具粪便、尿液和生殖细胞共同排出的泄殖腔",
+    "C": "哺乳动物胚胎期右后主静脉退化为奇静脉，左后主静脉退化为半奇静脉",
+    "D": "鸟类仅保留右前大静脉和左侧输卵管，同时产生了较特殊的尾肠系膜静脉",
+    "E": "七鳃鳗和硬骨鱼的生殖腺延伸成生殖管道，以输送生殖细胞"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 59,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "脊椎动物按一定的模式进行发育，但之后根据自身的进化及适应，会产生一些特殊的结构分化，关于这类结构分化，下列说法正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

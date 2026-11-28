@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-32",
+  "module": "",
+  "options": {
+    "A": "造血干细胞发生①②过程的场所是细胞核",
+    "B": "已知过程②的α链及其模板链中鸟嘌呤分别占 27%、17%，该α链对应的双链 DNA 区段中腺嘌呤所占的碱基比例为 28%",
+    "C": "同一种 tRNA 携带的氨基酸种类可能不同",
+    "D": "胰岛 B 细胞和肝细胞的相同 DNA 进行过程②时产生的 mRNA 一定不同"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 32,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "图①②③分别表示人体细胞中发生的 3 种生物大分子的合成过程，下列叙述正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 32 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

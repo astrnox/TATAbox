@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-52",
+  "module": "",
+  "options": {
+    "A": "生物化石大都埋在坚固的变质岩之中，而变质岩可借由放射性年代测定法直接测定",
+    "B": "生物化石都埋在层层相叠的沉积岩石之中",
+    "C": "各类型的生物均易受矿化作用而形成化石，因此在各地质年代的记录均保持极为完整，有利于确定年代",
+    "D": "各类型生物的演化速率大致相同，因此对时间的推算帮助极大"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 52,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "依据化石能推论出地质时代各类型生物出现及持续的期间，下列相关叙述正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 52 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

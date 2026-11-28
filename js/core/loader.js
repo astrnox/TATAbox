@@ -1778,11 +1778,12 @@ window.getQuestionBankCount = function () {
  * 读取「可练题总数」＝ 模块精编题（manifest.total_questions）
  *                       + 逻辑推理题（data/logic_questions.json）
  *                       + 联赛真题（resource/count.json 的 playable）
- *                       + IBO 真题（resource/ibo-count.json 的 playable）。
+ *                       + IBO 真题（resource/ibo-count.json 的 playable）
+ *                       + 四川初赛（resource/provincial-count.json 的 playable）。
  * 首页「题库总量」与练习页默认「可用题目」共用同一口径：
- * 练习页默认类别为「全部」，题库 = 基础知识题 + 逻辑推理题 + 联赛真题 + IBO 真题，
+ * 练习页默认类别为「全部」，题库 = 基础知识题 + 逻辑推理题 + 联赛真题 + IBO 真题 + 省初赛，
  * 若首页只显示 manifest.total_questions 会与练习页数字对不上。
- * @returns {Promise<number|null>} 无法获取模块题数时返回 null；逻辑/联赛/IBO题读取失败按 0 计
+ * @returns {Promise<number|null>} 无法获取模块题数时返回 null；逻辑/联赛/IBO/省初赛题读取失败按 0 计
  */
 var _playableCountCache = null;
 window.getPlayableQuestionCount = function () {
@@ -1826,10 +1827,16 @@ window.getPlayableQuestionCount = function () {
           return (data && (data.playable || 0)) || 0;
         })
         .catch(function () { return 0; });
-      return Promise.all([moduleCountP, logicCountP, leagueCountP, iboCountP]).then(function (r) {
+      // 四川初赛池计数：build-provincial-pool.js 生成的 lightweight count
+      var provincialCountP = _fetchJSON('resource/provincial-count.json', null)
+        .then(function (data) {
+          return (data && (data.playable || 0)) || 0;
+        })
+        .catch(function () { return 0; });
+      return Promise.all([moduleCountP, logicCountP, leagueCountP, iboCountP, provincialCountP]).then(function (r) {
         var moduleCount = r[0];
         if (!moduleCount) return null;
-        var fallback = moduleCount + r[1] + r[2] + r[3];
+        var fallback = moduleCount + r[1] + r[2] + r[3] + r[4];
         _playableCountCache = fallback;
         return fallback;
       });

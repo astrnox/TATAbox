@@ -16,3 +16,11 @@ data/questions/id-all.json text eol=lf
 *.js text eol=lf
 *.css text eol=lf
 *.json text eol=lf
+
+# 大体积二进制资源走 Git LFS（H-05 体积治理）：
+# 视频（~152MB）与 docs 下的真题/演示 PDF、MP4 不再以普通 blob 入库。
+# 注意：部署环境（CI/托管平台）检出时必须拉取 LFS 对象，否则线上拿到的是指针文本。
+videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/*.pdf filter=lfs diff=lfs merge=lfs -text
+docs/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+docs/**/*.mp4 filter=lfs diff=lfs merge=lfs -text

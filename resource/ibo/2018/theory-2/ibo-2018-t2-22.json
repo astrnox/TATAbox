@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Coombs Test",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — False; D — False",
+  "has_figure": false,
+  "id": "IBO-2018-T2-22",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 22,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "There are two clinical tests to detect some antibodies against erythrocytes (RBCs), direct coombs test and indirect coombs test. During the direct coombs test a blood sample is taken from a person. RBCs are washed (removing the patient's own plasma) and then incubated with anti-human globulin, which attaches to all IgG antibodies. Coombs test is positive if agglutination reaction occurs. In the indirect coombs test, serum is extracted from the blood sample taken from the person. Then, the serum gets incubated with RBCs of known antigenicity and is washed. Finally, anti-human globulin is added. If agglutination occurs, the indirect coombs test is positive",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 22 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Direct coombs test will be positive only if autoantibodies are present"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "If the result of indirect coombs test using serum of patient 1 and RBCs of patient 2 is positive, so we can use the patient 2 as a blood donor for patient 1"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Anti-human globulin specifically binds to the variable part of human anti- bodies"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "In a positive indirect coombs test, antigen-antibody reaction happens in vivo"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Coombs Test",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

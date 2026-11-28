@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Antioxidant Defence in Plasmodium",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-14",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 22",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-14-p22.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 22,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 14,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Plasmodium is a parasitic protozoan that is prevalent in tropical countries. Once the parasites invade host red blood cells, they multiply within 24 h. Fe?* in red blood cell can react with free O» as well as H202, causing formation of free radicals that can damage parasite cells. Unlike host cells, the parasites lack several enzymes of antioxidant defence systems. Scientists analysed the proteins from the parasite cytosol using two dimensional gel electrophoresis (see image below). Then, using mass spectrometry and peptide mass fingerprinting, they identified 6 proteins (spots to 6) corresponding to human peroxiredoxin, while one protein (spot 7) corresponding to Plasmodium peroxiredoxin. ae i OF 4 ae owe — ig 4 e: »(22 kDa o \"ne 4 . ' }, ai 31 kDa . Wee ly ® +17 kDa 21kDa f i: 3@ * j } 14 kDa eh Sa ?* ior . 15 kDa - See -+—— ' ee",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 14 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Based on the presented data, Plasmodium peroxiredoxin is a multimeric protein"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "All human peroxiredoxin proteins have a positive net charge at physiological pH"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Gel filtration chromatography is suitable for separation and purification of the six human peroxiredoxin proteins"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Immunoaffinity chromatography can be used for separation of Plasmodium peroxiredoxin from other Plasmodium cytosolic proteins"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Antioxidant Defence in Plasmodium",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

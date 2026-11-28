@@ -1,0 +1,53 @@
+{
+  "answer": "CD",
+  "answer_key": "CD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-28",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 28,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "生物体内的核酸常与蛋白质结合，以核酸—蛋白质复合物的形式存在。下列相关叙述正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 28 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "真核生物细胞质中有核酸—蛋白质复合物，原核生物细胞质中没有"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "真核细胞的核中有 DNA—蛋白质复合物，而原核细胞的拟核中没有"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "若复合物中的某蛋白参与 DNA 复制，则该蛋白可能是 DNA 聚合酶"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "若复合物中正在进行 RNA 合成，则该复合物中可能含有 RNA 聚合酶"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

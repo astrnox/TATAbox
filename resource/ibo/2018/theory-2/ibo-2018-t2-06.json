@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Differentiation of Neutrophils",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-06",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 10",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-06-p10.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 10,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 11",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-06-p11.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 11,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 6,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "HL-60 cells differentiate to neutrophils after eight days of incubation in the presence of All Trans retinoic acid (ATRA). siRNAs are synthetic molecules used to suppress expression of genes. In the experiment whose results are presented below, an siRNA against the PTEN gene was used. Annexin V is a marker used to show apoptosis, and CD11b is a neutrophil surface marker. Percentage of apoptotic and differentiated cells as well as combination of both are shown in panels A, B and C. In panels A and B, stars indicate statistical significant. (A) (B) Apoptosis (annexin V stain) CD11b expression a BH sianwa = 3 18 a sirnna =) oe 5 MM nosinna y =a a o oC gt 5 a , = 6— 7 oh 40 & o- L L & oO Incubation with ATRA (days) Incubation with ATRA (days) (C) Day 6 Day 7 Day 8 _—— > = e , J s \"4 o : = i y ' a ¢ a PPS ATRA-PTEN siRNA c eg tae aes < Md oe Hae + ATES. 3% 2.3% — > > , e ' = Pate — @ el es Oe sea ATRA c $2 7 eS § a oy ea ae e a % ae (C) Horizontal line within each box reflects threshold value for apoptosis. Vertical line within each box reflects threshold value for neutrophil differentiation",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 6 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The level of differentiation to neutrophils in the presence of PTEN siRNA is less than in the absence of PTEN siRNA at a statistically significant level"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "Panels a and b show that reduction of apoptosis causes an increase in the number of live neutrophil cells at all time points"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Panel c shows an inverse correlation between apoptosis and the number of differentiated neutrophil cells at at least two time points"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "PTEN siRNA applications causes larger reduction of apoptosis in differentiated cells as compared to undifferentiated cells after 7 days of incubation with ATRA"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Differentiation of Neutrophils",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

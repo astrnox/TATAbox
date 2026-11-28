@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Evolution of Sexual Traits",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-41",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 51",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-41-p51.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 51,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_4",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 41,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Evolution of sexual traits such as horn size, tail feathers and extreme coloration can be determined by sexual selection theory. According to the sexual selection theory male with such attributes gain an advantage over other males to acquire mate. Two processes have been proposed to account for exaggerated traits as the result of sexual selection (figure below). Runaway selection ' Survival advantage Female choice and female choice ! dh eer = '7 ta Time Chase-away selection Emergence of the male Female mating treshold trait and female choice and male display increase ta Time Runaway selection: Imagine some males with traits (such as tail length) with the higher survival rates than other males in same population. In this ancestral population, some females start to prefer these males. Their offspring will inherit both of these traits (higher tail length in males and females choice for such traits in males). This pattern generates a runaway process until the male trait becomes so exaggerated that it becomes selected against by natural selection. Chase-away selection: A mutation in males provides them with a novel trait that becomes sexually attractive to the females, and changes female mate choice in favour of such novel trait. Males with this mutation can easily mate with the females, while they don't offer any material or genetic benefit to the females. When such choice becomes disadvantageous for the females, the females' threshold increases against such a trait. Males with more extreme forms trait will again attract the females and this process will continue until natural selection selects against this exaggerated trait",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 41 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Inchase away selection, female choice correlates with male attributes that increase female fitness"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Extreme traits will evolve in males according to the runaway selection and will decrease male life expectancy"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Male attributes that become extreme because of chase-away selection will reduce male life expectancy"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Sensory bias is the primary requirement for chase-away selection to be evolved, but is not necessary for runaway selection"
+    }
+  ],
+  "subject": "演化生物学",
+  "tags": [
+    "ibo",
+    "module_4",
+    "演化生物学",
+    "Evolution of Sexual Traits",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

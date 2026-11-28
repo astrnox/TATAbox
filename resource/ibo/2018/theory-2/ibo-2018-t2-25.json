@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Shell Coiling",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-25",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 33",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-25-p33.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 33,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 25,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "In snail, the direction of cleavage, and therefore the snail shell coiling, is controlled by a single gene, in which the right-coiling allele, D, is dominant to the left-coiling allele, d. Below table shows the results of a set of mating experiment. Genotype Phenotype DD? xdd?o —— Bd All right-coiling DD4xdd? —® Dd All left-coiling Dd x Dd —F 100:2Dd:1dd All right-coiling",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 25 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The direction of cleavage is determined by the genotype of the developing snail"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "If the egg cytoplasm of a recessive homozygous right-coiling mother is injected into the eggs of the \"dd\" mother, the resulting embryos coil to the left"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Injection of the egg cytoplasm from a heterozygous left-coiling mother into the eggs of the right coiling heterozygous mother, does not affect the right-coiling in the embryos"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "\"DD\" or \"Dd\" mothers place a coiling determinant factor inside the egg cytoplasm"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Shell Coiling",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

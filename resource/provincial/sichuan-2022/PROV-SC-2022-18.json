@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-18",
+  "module": "",
+  "options": {
+    "A": "最初出现的黄色雄鼠是染色体缺失造成的",
+    "B": "该鼠群中的黄色家鼠均为杂合体",
+    "C": "控制黄色与黑色的基因之间的差别在于碱基对的数目不同",
+    "D": "一对黄色家鼠繁殖形成一个新的种群，理论上黄色与黑色基因的频率相等"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 18,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "一种家鼠的毛色为黑色，在一个黑色鼠群中偶尔发现了一只黄色雌家鼠。后来这个鼠群繁殖的家鼠后代中出现了多只黄色雌鼠和雄鼠。让黄色鼠与黄色鼠交配，其后代分离比总是接近 2 黄色：1 黑色。下列推理结论正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 18 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-21",
+  "module": "",
+  "options": {
+    "A": "该种兰花是通过基因指导有关酶的合成，进而控制花距中分泌物的合成",
+    "B": "该兰花种群中花距分泌物有关基因频率的改变可能与传粉动物变换有关",
+    "C": "兰花花距中不同种类分泌物含量的变化，是不同种兰花形成的必要条件",
+    "D": "该种兰花与采油蜂之间在相互影响下不断进化和发展，体现了共同进化"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 21,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某种兰花细长的花距底部分泌花蜜，主要由采蜜蛾类为其传粉。多年后发现，在某地其传粉者从采蜜蛾类逐渐转变为采油蜂类。进一步研究发现，花距中花蜜大量减少，而二乙酸甘油酯(一种油脂类化合物)有所增加。下列分析错误的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 21 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

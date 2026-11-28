@@ -1,0 +1,53 @@
+{
+  "answer": "ABC",
+  "answer_key": "ABC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-49",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 49,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "撒哈拉沙漠是世界最热的沙漠，非常少的水，非常炎热的气候和稀疏的植被，少数的动物能在这样恶劣的环境中很好的适应，比如耳廓狐、非洲鸵鸟等。这些沙漠动物适应于在炎热干燥的沙漠中生存策略有",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 49 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "耳廓狐的耳朵与身体的比例是犬科动物中最大的，有助于散热"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "耳廓狐的爪垫上覆盖有浓密的毛，便于在炎热的沙土上行走"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "非洲鸵鸟在干燥环境下采食多肉植物以补充水分"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "非洲鸵鸟把头埋在沙子里，减少太阳辐射"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

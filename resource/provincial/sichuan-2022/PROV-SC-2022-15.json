@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-15",
+  "module": "",
+  "options": {
+    "A": "复等位基因的遗传并不遵循基因的遗传定律",
+    "B": "自然条件下，该植物的雌配子、雄配子最多都是两种",
+    "C": "杂交父本、母本均为 atad 时，后代的基因型种类最多",
+    "D": "若子代中有雌株，则对应的双亲基因型组合有三种"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 15,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "进行有性生殖的某二倍体植物的一个基因存在很多等位基因的形式，称为复等位基因现象。该植物的性别是由 3 个等位基因 aD、at、ad 决定的，其中 aD 对 at、ad 为显性，at 对 ad 为显性。aD 基因决定雄性，at基因决定雌雄同株，ad 基因决定雌性。若没有基因突变发生，下列说法正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 15 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

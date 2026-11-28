@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-60",
+  "module": "",
+  "options": {
+    "A": "大熊猫是我国特有的物种，主要栖息地是中国四川、陕西和甘肃的山区",
+    "B": "大熊猫属于哺乳纲、食肉目、大熊猫科、大熊猫属",
+    "C": "大熊猫的臼齿非常发达，犬齿发达，裂齿分化不明显",
+    "D": "竹子是大熊猫的唯一食物，两者处于长期的协同进化过程中"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 60,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "冰墩墩是 2022 年北京冬季奥运会的吉祥物，可爱的大熊猫形象深受人们的喜爱。大熊猫是我国的国宝，下列关于大熊猫的相关叙述，不正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 60 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

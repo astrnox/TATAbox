@@ -1,0 +1,70 @@
+{
+  "competition": "IBO",
+  "concept": "Berk-Sharp mapping",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — False; E — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-02",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 5",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-02-p05.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 5,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 2,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "A protocol that can be used for identification of gene structure with respect to exons and introns involves isolation and denaturation of a dsDNA fragment that includes a gene of interest, isolation of mature mRNA pertaining to gene of interest, hybridization of complementary single stranded nucleic acid molecules, performance of three types of chemical or enzymatic reactions, and electrophoresis on non-denaturing gels. Relevant factors pertaining the chemical or enzymatic reactions are as follows: - Sl: anuclease that degrades single stranded (ss) nucleic acid molecules or regions that are single stranded. It does not degrade double stranded (ds) molecules or double stranded regions. - Exonuclease VII: an exonuclease that degrades ss nucleic acids or ss ends of hybridized nucleic acids in both 5' to 3' and 3' to 5' directions. It does not degrade ds molecules or ds portions of molecules. - Alkali conditions degrade RNA and do not degrade DNA. Experiments pertaining to a gene that does not experience alternative splicing were as follows; appropriate size markers were included in the electrophoresis steps: A. Hybridization of denatured DNA with excess mRNA, followed by S1 treatment, followed by alkali treatment, followed by electrophoresis B. Hybridization of denatured DNA with excess mRNA, followed by S1 treatment, followed by electrophoresis C. Hybridization of denatured DNA with excess mRNA, followed by Exonuclease VII treatment, followed by alkali treatment, followed by electrophoresis",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 2 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Observation of three bands in electrophoresis pattern of reaction A signifies that the gene of interest has three exons"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "The result of reaction A allows prediction of number and size of bands to be seen after electrophoresis in reaction B"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "The result of reaction B allows estimation of size of gene of interest"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "The combined results of reactions A and B allow prediction of the size of the introns of the gene"
+    },
+    {
+      "answer": false,
+      "label": "E",
+      "text": "The combined results of the three reactions A, B, and C will allow prediction of length of ORF (open reading frame) of gene of interest"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Berk-Sharp mapping",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

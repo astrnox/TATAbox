@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Linkage",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-01",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 3",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-01-p03.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 3,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 4",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-01-p04.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 4,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_1",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 1,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The HapMap project was designed to estimate the amount of variation among the genomes of different individuals. One of the outcomes of the project was identification of many SNPs (single nucleotide polymorphisms) in the human genome. It was observed that the vast majority (here, assume all) of SNPs exist as only one of two (not four) nucleotides. Therefore, for a region of the genome consisting of n SNPs, 2\" combinations of the SNPs are conceivable. In fact, sequencing of the SNPs in hundreds of individuals has revealed that generally a much lower number of combinations exist. The combinations of SNPs in fact observed in a region of the genome are named the SNP haplotypes of that region. The figure below is a representation of this finding. It shows the genotype of 26 neighbouring SNPs in a region of human chromosome 5 from 20 individuals of different populations throughout the world. Only one copy of chromosome 5 was isolated from each individual. The chromosomes are grouped on basis of having the same combination of genotypes for all the SNPs (i.e. having the same haplotype). sac evolotype I It IV ve fvtl vt SS A Genotype of 26 linked SNPs in the human genome on 20 copies of chromosome 5 from 20 individuals. X and O represent the two different nucleotides at each SNP position",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 1 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "Recombination events are not expected to affect the number of haplotypes observed in a population"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "If in fact all conceivable haplotypes of the 26 SNPs analysed were present in the human population, one would not expect any two of the 20 chromosomes analysed to have the same haplotype"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Based on data presented in the table, knowledge of the nucleotide at only SNP 19 and SNP 23 of chromosome 5 of newly investigated individuals from the same cohort would allow prediction of the most likely nucleotides present at the remaining 24 SNP positions of chromosome 5 of those individuals"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "The data on the 20 chromosomes suggest that among the four major haplotypes, haplotype IV has the minimum number of sequence variations"
+    }
+  ],
+  "subject": "细胞生物学",
+  "tags": [
+    "ibo",
+    "module_1",
+    "细胞生物学",
+    "Linkage",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

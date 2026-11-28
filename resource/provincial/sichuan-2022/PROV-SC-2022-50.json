@@ -1,0 +1,53 @@
+{
+  "answer": "AB",
+  "answer_key": "AB",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：AB。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-50",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 50,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于植物演化的叙述，正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 50 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "最早出现在陆地上生活的植物不具有特化的支持结构"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "在陆地上占优势的维管束植物二倍体世代为主"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "藻类的单倍体具有明显的组织特化，故成为藻类的优势世代"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "蕨类的单倍体具有明显的根茎叶特化，故成为藻类的优势世代"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

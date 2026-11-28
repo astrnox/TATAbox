@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-09",
+  "module": "",
+  "options": {
+    "A": "合成与运输 MCT1，体现细胞内结构之间的协调配合",
+    "B": "乳酸被 MCT1 运进细胞，可作为替代葡萄糖的能源物质",
+    "C": "癌细胞细胞质中乳酸产生较多使细胞内 pH 显著降低",
+    "D": "MCTl 会影响癌细胞增殖，其基因可作癌症治疗新靶点"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 9,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "单羧酸转运蛋白（MCT1）是哺乳动物细胞膜上同向转运乳酸和 H 的跨膜蛋白。在癌细胞中，MCT1 基因显著表达，导致呼吸作用产生大量乳酸；当葡萄糖充足时，MCTl 能将乳酸和 H 运出细胞，当葡萄糖缺乏时则将乳酸和H+ 运进细胞。下列推测错误的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

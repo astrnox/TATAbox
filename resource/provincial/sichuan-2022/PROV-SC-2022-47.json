@@ -1,0 +1,53 @@
+{
+  "answer": "BC",
+  "answer_key": "BC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-47",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 47,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "化感作用指植物通过分泌化学物质对其他植物产影响。制备入侵植物薇甘菊及本地物种葛藤和鸡矢藤的叶片水提液（供体），分别处理三种植物幼苗（受体），然后计算化感作用效应指数 R（R=处理组干重/空白对照组干重—1）。下列叙述错误的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 47 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "化感作用存在于种内和种间"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "入侵植物薇甘菊易形成均匀分布"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "鸡矢藤对其他物种生长均表现抑制性"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "化感作用是引起群落演替的因索之一"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

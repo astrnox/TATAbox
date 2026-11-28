@@ -1,0 +1,65 @@
+{
+  "competition": "IBO",
+  "concept": "Intraguild Predation",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — False; C — False; D — False",
+  "has_figure": true,
+  "id": "IBO-2018-T2-27",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 35",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-27-p35.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 35,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 27,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Intraguild predation is the killing and sometimes eating of potential competitors. Reciprocal intraguild predation with size structure, is one type of intraguild predation where both consumers feed on each other's juveniles. In this case, P1 has piercing-sucking type mouthparts, and P2 has chewing type mouthparts. In the figure below \"R\" represents resource, \"P'\" represents (reciprocal) intraguild predator, \"j\" represents juveniles and \"a\" represents adults",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 27 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "If P1j population increases, then P2a will produce more eggs"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "If P2j population decreases, then P2a population will increase in next generation"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "IfR increases, then P2a doesn't feed on P1j"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "IfR decreases, then P2a population will increase in next generation"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Intraguild Predation",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

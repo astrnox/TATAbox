@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-49",
+  "module": "",
+  "options": {
+    "A": "被狼捕食的压力增加可以使马鹿对植物的啃食强度明显下降",
+    "B": "在马鹿被捕食风险高区域中的三角杨的生长比在风险低区域更困难",
+    "C": "狼的引入不仅可以调节生产者和消费者之间的数量关系，也可以提高生态系统的抵抗力稳性",
+    "D": "马鹿被捕食风险高区域内三角杨被啃食比例的变化趋势与捕食风险低区域内相反"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 49,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "根据这些信息分析，下列叙述不正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 49 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

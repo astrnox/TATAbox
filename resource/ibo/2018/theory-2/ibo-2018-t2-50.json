@@ -1,0 +1,74 @@
+{
+  "competition": "IBO",
+  "concept": "Animal Personality",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — True; B — True; C — False; D — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-50",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 60",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-50-p60.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 60,
+      "source": "paper"
+    },
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 61",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-50-p61.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 61,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 50,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Animal personality is defined as individual differences in behaviour that are consistent across time and ecological context. One of the important drivers of personality difference is factors that alter the value of a decision. It was hypothesized that altering the feeding regimes of some spider species affect some aspects of their personality as you can see in graphs below. 1.0 Agressiveness 5 0.6 a) @ go ot cc j Number of prey items per week 1.0 Boldness Pp —+— L, hesperus = 0.6 a Li a oe 0.2 le a Number of prey items per week Estimates of repeatability of boldness and aggressiveness response of three spider species under different feeding regimes. Error bars represent 95% confidence intervals for our repeatability estimates (After Lichtenstein, et a/. 2016)",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 50 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "This study failed to demonstrate association between boldness and aggressiveness regardless of feeding regimes"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Repeatability of aggressiveness response in L. hesperus is independent of feeding regimes"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "Behavioural variation of each individual always decreases when spiders suffered prolonged food restrictions"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "L. hesperus shows different repeatability in behavioural response than two other species regarding to different feeding regime, thus we can assume different species have different behaviour over time and contexts"
+    }
+  ],
+  "subject": "生态学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "生态学",
+    "Animal Personality",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

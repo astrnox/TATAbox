@@ -1,0 +1,70 @@
+{
+  "competition": "IBO",
+  "concept": "Menstrual Cycle",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — True; C — True; D — False; E — True",
+  "has_figure": true,
+  "id": "IBO-2018-T2-21",
+  "images": [
+    {
+      "caption": "IBO 2018 Theoretical Exam 2 — original page 29",
+      "credit": "IBO 2018 official exam paper, CC BY-NC-SA 4.0",
+      "file": "assets/ibo/2018/theory-2/ibo-2018-t2-21-p29.webp",
+      "kind": "page",
+      "license": "CC BY-NC-SA 4.0",
+      "page": 29,
+      "source": "paper"
+    }
+  ],
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 21,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "The menstrual cycle is the regular natural change that occurs in the female reproductive system. In the ovary, where oogenesis take place, each cycle can be divided into three phases consisting of the follicular phase, ovulation and luteal phase. The menstrual cycle is controlled by hormones of hypothalamus-pituitary-ovary axis. The figure shows alternations in body temperature and hormonal changes during the menstrual cycle. 3 AD : B. : ; Z — TVA ! Ee; ? > Days of cycle",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 21 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "The increase shown at point A is caused by the effect of oestrogen on the anterior pituitary"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "Curve B shows changes in progesterone level during menstrual cycle"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "The source of the increase in concentrations indicated at point C and D are granulosa cells and corpus luteum, respectively"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "Substance E is secreted by follicular cells"
+    },
+    {
+      "answer": true,
+      "label": "E",
+      "text": "The cause of the sudden increase shown at point E is positive feedback of oestrogen on the anterior pituitary and absence of progesterone"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Menstrual Cycle",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-04",
+  "module": "",
+  "options": {
+    "A": "蓝藻细胞利用叶绿体里的藻蓝素和叶绿素进行光合作用",
+    "B": "分解尿素的细菌分泌脲酶的过程与该菌的核糖体、内质网、高尔基体、线粒体有关",
+    "C": "各种生物膜的化学组成和结构相似，生物膜是对生物体内所有膜结构的统称",
+    "D": "控制细胞器进行物质合成的指令主要是通过核孔从细胞核到达细胞质的"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 4,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于细胞结构与成分的叙述中，正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 4 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

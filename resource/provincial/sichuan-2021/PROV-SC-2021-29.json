@@ -1,0 +1,53 @@
+{
+  "answer": "AD",
+  "answer_key": "AD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：AD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-29",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 29,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "我国多个科研团队合作发现，位于水稻 3 号染色体上的 Ef—cd 基因可将水稻成熟期提早 7～20 天，该基因兼顾了早熟和高产两方面特征。含 Ef—cd 基因的水稻氮吸收能力、叶绿素代谢及光合作用相关过程均显著增强。下列有关叙述正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 29 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "Ef—cd 基因的作用体现出一个基因可以影响多个性状"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "人工选育早熟高产新品种的过程中 Ef—cd 的基因频率未发生改变"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "应用 Ef—cd 培育早熟高产的小麦新品种最简便的方法是杂交育种-"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "Ef—cd 基因可能促进植物根细胞膜上 NO3 载体数量增加"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

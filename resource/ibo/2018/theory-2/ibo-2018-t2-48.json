@@ -1,0 +1,54 @@
+{
+  "competition": "IBO",
+  "concept": "Endothermy",
+  "credit": "国际生物学奥林匹克竞赛（IBO）2018 官方试题，CC BY-NC-SA 4.0",
+  "difficulty": "league",
+  "explanation": "Official IBO 2018 answer key: A — False; B — False; C — True; D — True",
+  "has_figure": false,
+  "id": "IBO-2018-T2-48",
+  "lang": "en",
+  "license": "CC BY-NC-SA 4.0",
+  "module": "module_3",
+  "ocr": true,
+  "paper": {
+    "event": "国际生物学奥林匹克竞赛",
+    "key": "2018-t2",
+    "question_no": 48,
+    "title": "IBO 2018 Theoretical Exam 2"
+  },
+  "question": "Endotherm animals can only tolerate narrow range of body temperature (30-45 °C), but their ability to generate heat internally allowed them to expand their distributions. On the other hand, the cost to be endotherm is high because of their constant demand for food to support the energy needed for heat production. Higher L gp Y i Thermoneutral zone & a i = ~@— Lower critical temperature Lower Cooler Temperature Warmer",
+  "source": "IBO 2018 理论考试 2（Theoretical Exam 2）第 48 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "In a drastically-changing environment optimal body temperature of an endotherm animal will be largely maintained with minor behavioural adjustments"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "When body temperature of endotherm animal starts dropping, it triggers the increase of metabolic heat generation, independent of animal habitat"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "Basal metabolic rate of an endotherm animal stays constant throughout a limited range of environmental temperatures"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "One way that some endotherm animal species tolerate extreme cold conditions is to alter their lower critical temperature"
+    }
+  ],
+  "subject": "动物生理学",
+  "tags": [
+    "ibo",
+    "module_3",
+    "动物生理学",
+    "Endothermy",
+    "2018"
+  ],
+  "target": "competition",
+  "type": "mtf",
+  "year": 2018
+}

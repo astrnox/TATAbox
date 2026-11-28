@@ -1,0 +1,53 @@
+{
+  "answer": "BD",
+  "answer_key": "BD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-11",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 11,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "凤梨的光合作用中碳循环的特性包括",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 11 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "属于 C3 植物，所以产量很高"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "具有特殊 CO2 的固定机制"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "其叶肉细胞的 PH 值在清晨远高于傍晚"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "小麦光合作用中 CO2 的固定机制与凤梨不同"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

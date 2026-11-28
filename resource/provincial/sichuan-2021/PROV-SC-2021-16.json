@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-16",
+  "module": "",
+  "options": {
+    "A": "该突变为 X 染色体显性突变，且含该突变基因的雌雄配子致死",
+    "B": "该突变为 X 染色体显性突变，且含该突变基因的雄性个体致死",
+    "C": "该突变为 X 染色体隐性突变，且含该突变基因的雄性个体致死",
+    "D": "X 染色体片段发生缺失可导致突变型，且缺失会导致雌配子致死"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 16,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "一只突变型雌果蝇与一只野生型雄果蝇交配后，产生的 F1 中野生型与突变型之比为 2:1，且雌雄个体之比也为 2:1，这个结果从遗传学角度可作出合理解释的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 16 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

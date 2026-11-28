@@ -1,0 +1,37 @@
+{
+  "answer": "A",
+  "answer_key": "A",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-01",
+  "module": "",
+  "options": {
+    "A": "③④⑤",
+    "B": "①③④",
+    "C": "②③④",
+    "D": "②④⑤"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 1,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于细胞知识的叙述，正确的是①核仁是与核糖体形成有关的细胞器；②细胞学说揭示了“细胞为什么要产生新细胞”；③硝化细菌、霉菌、颤藻的细胞都含有核糖体、DNA 和 RNA；④胆固醇、性激素、维生素 D 都属于固醇；⑤蛙红细胞、人肝细胞、洋葱根尖分生区细胞并不都有细胞周期，但这些细胞内的化学成分都不断更新",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

@@ -1,0 +1,53 @@
+{
+  "answer": "ACD",
+  "answer_key": "ACD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-17",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 17,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于环境容纳量的叙述，不正确的是",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 17 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "环境容纳量是指种群的最大数量"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "种群的内源性调节因素不会改变环境容纳量的大小"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "在理想条件下，影响种群数量增长的因素主要是环境容纳量"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "植食动物在自然条件下，一年四季的环境容纳量以冬季最大"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

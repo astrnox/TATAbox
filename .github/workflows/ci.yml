@@ -23,6 +23,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # videos/*.mp4 与大 PDF 已迁 Git LFS：不拉取则工作区是指针文本，
+          # 生产构建会把指针当作资源发布（H-05）。
+          lfs: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -152,6 +156,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

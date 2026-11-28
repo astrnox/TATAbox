@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-59",
+  "module": "",
+  "options": {
+    "A": "子房着生于花托顶部，花萼、花冠、雄蕊群着生于子房以下位置",
+    "B": "花托凹陷呈环状，子房壁不与花托结合，花萼、花冠、雄蕊群着生在花托边缘，位置相当于子房中部",
+    "C": "花托深陷呈壶状，子房壁不与花托结合，子房包在花托中，柱头伸出花托以外，花萼、花冠、雄蕊群着生于花补给线，位置高于子房",
+    "D": "花托深陷呈壶状，子房包在花托中，子房壁也与花托愈合，花萼、花冠、雄蕊群着生于花托边缘，位置高于子房"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 59,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列关于子房下位的叙述中，正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

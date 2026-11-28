@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-31",
+  "module": "",
+  "options": {
+    "A": "患者肾小球滤过率降低导致其内环境水盐含量上升",
+    "B": "患者血浆蛋白含量逐渐下降，也会加重组织水肿",
+    "C": "患者毛细血管通透性改变，其组织细胞内液渗透压保持不变",
+    "D": "若使用利尿剂增加尿量、改善肾小球通透性，可缓解患者病情"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 31,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某人因急性肾小球肾炎而出现了全身水肿，同时伴有尿血、尿蛋白和少尿等症状，检查发现该患者肾小球水盐滤过率降低、全身毛细血管通透性改变、血浆蛋白含量下降，被确诊为肾炎性水肿。下列说法错误的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 31 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

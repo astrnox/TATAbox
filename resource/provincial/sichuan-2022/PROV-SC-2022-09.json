@@ -1,0 +1,53 @@
+{
+  "answer": "ABCD",
+  "answer_key": "ABCD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABCD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-09",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 9,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列有关细菌细胞壁的叙述，正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 9 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "细菌细胞壁的分子组成与植物细胞壁不同"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "细菌细胞壁在功能上与许多原生生物、真菌和植物的细胞壁相似"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "细胞壁能为细胞提供一定程度的保护，降低环境的影响"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "细胞壁能防止细胞在低浓度中吸水涨破"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}
