@@ -302,7 +302,7 @@
 
   <!-- 首屏关键 CSS：同步加载 -->
   <!-- Issue #108：首屏同步 CSS 合并为单文件（scripts/build-css-bundle.js 生成，减少 6→1 次串行请求） -->
-  <link rel="stylesheet" href="css/bundle-core.css?v=20261114b">
+  <link rel="stylesheet" href="css/bundle-core.css?v=20261128a">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
   <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
@@ -1119,7 +1119,7 @@
   <!-- Supabase 相关脚本：首屏不需要，由 app.js 在 initSupabase 中按需动态加载 -->
   <!-- supabase-client.js / supabase.js / storage.js 已从 HTML 移除，节省 ~140KB 首屏加载 -->
 
-  <script src="js/core/utils.js?v=20261121a" defer></script>
+  <script src="js/core/utils.js?v=20261128a" defer></script>
   <!-- M-05：Trusted Types 默认策略（存量 innerHTML 自动走 safeHtml 清洗） -->
   <script src="js/core/trusted-types.js?v=20261031a" defer></script>
   <!-- 全站统一题图入口：window.BioQuestFigure（渲染 + 查看器 + 标注 + 下载） -->
@@ -1233,18 +1233,18 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/engagement/points-ui.js?v=20261121a" defer></script>
+  <script src="js/engagement/points-ui.js?v=20261128a" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20261121d" defer></script>
   <!-- P1-1 拆分：认证 UI / 搜索 / 排行榜（依赖 utils.js 的 escapeHtml，须在 app.js 前） -->
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
-  <script src="js/core/app-leaderboard.js?v=20261009a" defer></script>
+  <script src="js/core/app-leaderboard.js?v=20261128a" defer></script>
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
-  <script src="js/core/app.js?v=20261121d" defer></script>
+  <script src="js/core/app.js?v=20261128a" defer></script>
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
-  <script src="js/core/app-auth.js?v=20261121c" defer></script>
+  <script src="js/core/app-auth.js?v=20261128a" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>
   <script src="js/pages/home-quiz.js?v=20261114b" defer></script>
   <script src="js/core/app-router.js?v=20261121d" defer></script>
@@ -1255,7 +1255,7 @@
   <!-- M-01：捐赠弹窗自 app.js 拆分，window.openDonation 入口保持不变 -->
   <script src="js/core/app-donation.js?v=20261031a" defer></script>
   <!-- M-01：主题切换 / 移动端菜单 / 标签页预取自 app.js 拆分 -->
-  <script src="js/core/app-shell.js?v=20261031a" defer></script>
+  <script src="js/core/app-shell.js?v=20261128a" defer></script>
   <!-- M-01：启动流程 / 反馈弹窗自 app.js 拆分（boot 最后加载并触发 initApp） -->
   <script src="js/core/app-boot.js?v=20261031a" defer></script>
   <script src="js/core/app-feedback.js?v=20261031a" defer></script>

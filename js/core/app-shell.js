@@ -96,6 +96,10 @@ function toggleMobileMenu() {
     mobileNav.classList.add('active');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
+    // 用户已经找到菜单入口：停止呼吸灯提示，避免后续打扰
+    if (window.BioQuest && typeof window.BioQuest.dismissHamburgerHint === 'function') {
+      window.BioQuest.dismissHamburgerHint(hamburger);
+    }
   }
 }
 
@@ -152,6 +156,13 @@ function closeMobileMenu() {
 window.toggleMobileMenu = toggleMobileMenu;
 window.closeMobileMenu = closeMobileMenu;
 window._prefetchTabModules = _prefetchTabModules;
+
+// 呼吸灯提示初始化（utils.js 提供；defer 顺序保证其已先加载）
+try {
+  if (window.BioQuest && typeof window.BioQuest.initHamburgerHint === 'function') {
+    window.BioQuest.initHamburgerHint(document.getElementById('hamburgerBtn'));
+  }
+} catch (e) { /* 提示失败不影响菜单功能 */ }
 
 // 注册到全站唯一命名空间（window.BioQuest，Q-03 约定；旧全局别名保留）
 (function () {

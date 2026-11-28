@@ -113,6 +113,143 @@ async function updateBioScore(bioScore, stats) {
 }
 
 
+/**
+ * 排行榜 tab 配置：统一从公开视图 public_profiles 读取。
+ * 该视图由 migration_v18 建立（只含公开字段），migration_v24 补充学习统计列。
+ * 注意：profiles 表自 v18 起不再允许 anon 直读，任何排行榜都必须走公开视图/RPC。
+ */
+var _LB_TABS = {
+  bio: { column: 'bio_score', select: 'id,username,display_name,bio_score' },
+  practice: {
+    column: 'total_answered',
+    select: 'id,username,display_name,bio_score,total_answered,practice_count'
+  },
+  checkin: {
+    column: 'current_streak',
+    select: 'id,username,display_name,bio_score,current_streak'
+  }
+};
+
+function _lbTabConfig(tab) {
+  return _LB_TABS[tab] || _LB_TABS.bio;
+}
+
+function _lbItemValue(item, tab) {
+  if (!item) return 0;
+  if (tab === 'practice') return Number(item.total_answered || item.practice_count || 0);
+  if (tab === 'checkin') return Number(item.current_streak || 0);
+  return Number(item.bio_score || 0);
+}
+
+/**
+ * 构造带错误信息的空数组（UI 可据此区分「真的没人」与「加载失败」）。
+ */
+function _lbErrorResult(message, code, fallbackTab) {
+  var arr = [];
+  arr._error = message;
+  arr._errorCode = code || 'unknown';
+  if (fallbackTab) arr._fallbackTab = fallbackTab;
+  return arr;
+}
+
+async function _lbQueryRows(select, orderCol, limit, signal) {
+  var url = SUPABASE_URL + '/rest/v1/public_profiles?select=' + encodeURIComponent(select) +
+    '&order=' + orderCol + '.desc.nullslast' +
+    '&' + orderCol + '=gt.0' +
+    '&limit=' + (limit || 20);
+  var res = await fetch(url, {
+    method: 'GET',
+    headers: {
+      'apikey': SUPABASE_ANON_KEY,
+      'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+      'Accept': 'application/json'
+    },
+    signal: signal || undefined
+  });
+  if (!res.ok) {
+    var info = null;
+    try { info = await res.json(); } catch (e) { /* 忽略非 JSON 错误体 */ }
+    var err = new Error((info && (info.message || info.hint)) || ('HTTP ' + res.status));
+    err.status = res.status;
+    err.code = info && info.code;
+    err.detail = info && info.details;
+    throw err;
+  }
+  return res.json();
+}
+
+/**
+ * 旧库兼容：public_profiles 视图不存在时，退回 profiles 表尝试（v18 前可读）。
+ */
+async function _lbFetchRows(select, orderCol, limit, signal) {
+  try {
+    return await _lbQueryRows(select, orderCol, limit, signal);
+  } catch (err) {
+    if (err && (err.status === 404 || err.code === 'PGRST205' || err.code === '42P01')) {
+      var url = SUPABASE_URL + '/rest/v1/profiles?select=' + encodeURIComponent(select) +
+        '&order=' + orderCol + '.desc.nullslast' +
+        '&' + orderCol + '=gt.0' +
+        '&limit=' + (limit || 20);
+      var res = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'apikey': SUPABASE_ANON_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+          'Accept': 'application/json'
+        },
+        signal: signal || undefined
+      });
+      if (!res.ok) {
+        var info = null;
+        try { info = await res.json(); } catch (e) { /* 忽略 */ }
+        var e2 = new Error((info && (info.message || info.hint)) || ('HTTP ' + res.status));
+        e2.status = res.status;
+        e2.code = info && info.code;
+        throw e2;
+      }
+      return res.json();
+    }
+    throw err;
+  }
+}
+
+/**
+ * 查询「我的排名 / 我的数值」：只取公开视图里的单列，避免拉取整表。
+ */
+async function _lbFetchMyRank(tab, signal) {
+  if (!_currentUser || !_currentUser.id || _currentUser.isGuest) return { rank: null, value: 0 };
+  var config = _lbTabConfig(tab);
+  var col = config.column;
+  var headers = {
+    'apikey': SUPABASE_ANON_KEY,
+    'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+    'Accept': 'application/json'
+  };
+  try {
+    var myRes = await fetch(SUPABASE_URL + '/rest/v1/public_profiles?select=' + encodeURIComponent(col) +
+      '&id=eq.' + encodeURIComponent(_currentUser.id) + '&limit=1', {
+      method: 'GET', headers: headers, signal: signal || undefined
+    });
+    if (!myRes.ok) return { rank: null, value: 0 };
+    var rows = await myRes.json();
+    var value = Number(rows && rows[0] && rows[0][col]) || 0;
+    if (value <= 0) return { rank: null, value: value };
+
+    var cntRes = await fetch(SUPABASE_URL + '/rest/v1/public_profiles?select=id&' +
+      col + '=gt.' + encodeURIComponent(value), {
+      method: 'HEAD',
+      headers: Object.assign({ 'Prefer': 'count=exact' }, headers),
+      signal: signal || undefined
+    });
+    if (!cntRes.ok) return { rank: null, value: value };
+    var range = cntRes.headers.get('content-range') || '';
+    var total = parseInt((range.split('/')[1] || ''), 10);
+    return { rank: isFinite(total) ? total + 1 : null, value: value };
+  } catch (e) {
+    return { rank: null, value: 0 };
+  }
+}
+
 async function getLeaderboard(tab, limit) {
   var cacheKey = tab === 'practice' ? 'practice' : (tab === 'checkin' ? 'checkin' : 'bio');
   var now = Date.now();
@@ -125,10 +262,10 @@ async function getLeaderboard(tab, limit) {
   var sb = getSupabase();
   if (!sb) {
     console.warn('[leaderboard] Supabase 客户端未初始化');
-    return [];
+    return _lbErrorResult('排行榜暂时无法连接，请检查网络后刷新重试', 'offline');
   }
 
-  // AbortController + 5s 短超时：超时/abort/网络波动 全部静默返回 []，不把红色 error 打到用户控制台
+  // AbortController + 8s 超时：给弱网留出余量，失败时由 UI 提供重试
   var timer = null;
   var ctrl = null;
   if (typeof AbortController !== 'undefined') {
@@ -142,31 +279,20 @@ async function getLeaderboard(tab, limit) {
   };
 
   var inflightPromise = (async function () {
+    var config = _lbTabConfig(cacheKey);
     try {
-      var orderCol = tab === 'practice' ? 'total_answered' : (tab === 'checkin' ? 'current_streak' : 'bio_score');
       // 直接走 REST API（更稳定，不会互相 abort），带 AbortSignal 短超时
-      var restParams = 'select=id,username,display_name,bio_score,practice_count,total_answered,total_correct,accuracy,current_streak' +
-        '&order=' + orderCol + '.desc.nullslast' +
-        '&' + orderCol + '=gt.0' +
-        '&limit=' + (limit || 20);
-      var fetchOpts = {
-        method: 'GET',
-        headers: {
-          'apikey': SUPABASE_ANON_KEY,
-          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-          'Accept': 'application/json'
-        }
-      };
-      if (ctrl && typeof ctrl.signal !== 'undefined') fetchOpts.signal = ctrl.signal;
-      var restRes = await fetch(SUPABASE_URL + '/rest/v1/profiles?' + restParams, fetchOpts);
-      var data = restRes.ok ? (await restRes.json()) : null;
+      var data = await _lbFetchRows(config.select, config.column, limit || 20, ctrl && ctrl.signal);
+
       // 过滤孤儿行（无 username 的注册残留），避免榜上出现一堆"匿名用户"
-      if (restRes.ok && Array.isArray(data)) {
+      if (Array.isArray(data)) {
         data = data.filter(function (p) { return p && p.username; });
       }
-      if (!data || data.length === 0) return [];
+      if (!Array.isArray(data)) {
+        return _lbErrorResult('排行榜返回了意外的数据，请稍后再试', 'bad_response');
+      }
 
-      var result = data.map(function(p, i) {
+      var result = data.map(function (p, i) {
         var score = p.bio_score || 0;
         var grade = 'F';
         if (score >= 90) grade = 'S';
@@ -182,69 +308,51 @@ async function getLeaderboard(tab, limit) {
           bio_score: score,
           practice_count: p.practice_count || 0,
           total_answered: p.total_answered || 0,
-          total_correct: p.total_correct || 0,
-          accuracy: p.accuracy || 0,
           current_streak: p.current_streak || 0,
+          value: _lbItemValue(p, cacheKey),
           grade: grade
         };
       });
 
-      // 当前用户的排名（尽量查，查不到不影响）
+      // 当前用户的排名：先看是否已在前 N 名内，否则单独计数（尽量查，失败不影响榜单）
+      var myId = (_currentUser && !_currentUser.isGuest) ? _currentUser.id : null;
       var myRank = null;
-      if (_currentUser && _currentUser.id) {
-        try {
-          var myQ = 'select=' + orderCol + '&id=eq.' + encodeURIComponent(_currentUser.id);
-          var myRes = await fetch(SUPABASE_URL + '/rest/v1/profiles?' + myQ, {
-            method: 'GET',
-            headers: {
-              'apikey': SUPABASE_ANON_KEY,
-              'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-              'Accept': 'application/json'
-            },
-            signal: (ctrl && ctrl.signal) || undefined
-          });
-          if (myRes.ok) {
-            var myData = await myRes.json();
-            if (myData && myData[0]) {
-              var myValue = (tab === 'checkin') ? (myData[0].current_streak || 0) :
-                ((tab === 'practice') ? (myData[0].total_answered || 0) : (myData[0].bio_score || 0));
-              // 先用返回榜里找
-              for (var ri = 0; ri < result.length; ri++) {
-                if (result[ri].id === _currentUser.id) { myRank = result[ri].rank; break; }
-              }
-              if (myRank === null) {
-                try {
-                  var cntQ = 'select=id&' + orderCol + '=gt.' + myValue;
-                  var cntRes = await fetch(SUPABASE_URL + '/rest/v1/profiles?' + cntQ, {
-                    method: 'GET',
-                    headers: {
-                      'apikey': SUPABASE_ANON_KEY,
-                      'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-                      'Accept': 'application/json'
-                    },
-                    signal: (ctrl && ctrl.signal) || undefined
-                  });
-                  if (cntRes.ok) {
-                    var rows = await cntRes.json();
-                    myRank = (rows ? rows.length : 0) + 1;
-                  }
-                } catch (_) { /* 排名查询失败静默跳过 */ }
-              }
-            }
+      var myValue = 0;
+      if (myId) {
+        for (var ri = 0; ri < result.length; ri++) {
+          if (result[ri].id === myId) {
+            myRank = result[ri].rank;
+            myValue = result[ri].value;
+            break;
           }
-        } catch (_) { /* 查当前用户失败静默 */ }
+        }
+        if (myRank === null) {
+          var mine = await _lbFetchMyRank(cacheKey, ctrl && ctrl.signal);
+          myRank = mine.rank;
+          myValue = mine.value;
+        }
       }
 
       result._myRank = myRank;
+      result._myValue = myValue;
+      result._updatedAt = Date.now();
       _leaderboardCache[cacheKey] = result;
       _leaderboardCache[cacheKey + '_ts'] = Date.now();
       return result;
     } catch (err) {
-      // 失败不静默：让 UI 能区分"暂无数据"与"查询失败"（倒排到前端提示）
-      console.warn('[leaderboard] 查询失败, tab=' + tab + ':', err && err.message ? err.message : err);
-      var errArr = [];
-      errArr._error = (err && err.message) || '排行榜请求超时或网络异常';
-      return errArr;
+      // 失败不静默：让 UI 能区分"暂无数据"与"查询失败"，并给出可操作提示
+      console.warn('[leaderboard] 查询失败, tab=' + tab + ':', err && (err.message || err));
+      if (err && err.code === '42703') {
+        // 公开视图还没有该 tab 的统计列（migration_v24 未执行）
+        return _lbErrorResult('这个榜单的数据字段正在升级，先看看 Bio 分榜吧', 'schema', 'bio');
+      }
+      if (err && (err.status === 401 || err.status === 403)) {
+        return _lbErrorResult('排行榜数据暂时无法读取，请稍后重试', 'permission');
+      }
+      if (err && (err.name === 'AbortError' || /aborted|timeout/i.test(err.message || ''))) {
+        return _lbErrorResult('网络有点慢，排行榜没能及时加载出来', 'timeout');
+      }
+      return _lbErrorResult('排行榜暂时不可用，请稍后再试', 'network');
     }
   })();
 
@@ -636,7 +744,7 @@ async function syncPointsToCloud(points) {
 async function getPointsLeaderboard(limit) {
   var sb = getSupabase();
   var n = limit || 50;
-  if (!sb) return [];
+  if (!sb) return _lbErrorResult('信用排行榜暂时无法连接，请检查网络后刷新重试', 'offline');
   try {
     // H-01：profiles 已收紧为本人/管理员可读，排行榜改走窄 RPC
     // （只返回榜单需要的公开字段，不暴露 email/user_key）。
@@ -653,7 +761,8 @@ async function getPointsLeaderboard(limit) {
       };
     });
   } catch (e) {
-    return [];
+    console.warn('[credit-leaderboard] 查询失败:', e && (e.message || e));
+    return _lbErrorResult('信用排行榜暂时不可用，请稍后再试', 'network');
   }
 }
 

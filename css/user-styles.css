@@ -453,7 +453,7 @@
     .user-profile-meta-points {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
       padding: 1px 8px;
       border-radius: 8px;
       background: rgba(196, 149, 106, 0.12);
@@ -462,11 +462,37 @@
       font-size: 0.76rem;
       border: 1px solid rgba(196, 149, 106, 0.3);
       white-space: nowrap;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.18s ease, border-color 0.18s ease;
+    }
+    .user-profile-meta-points:hover {
+      background: rgba(196, 149, 106, 0.2);
+      border-color: rgba(196, 149, 106, 0.5);
+    }
+    .user-profile-meta-points:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(196, 149, 106, 0.4);
+    }
+    /* 数据来源小圆点：云端=绿色，本地估值=琥珀色 */
+    .user-profile-meta-points::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #c4956a;
+      flex-shrink: 0;
+    }
+    .user-profile-meta-points[data-source="cloud"]::before {
+      background: #3a8c5c;
     }
     .user-profile-meta-points[data-low="true"] {
       background: rgba(255, 107, 107, 0.12);
       color: #c0392b;
       border-color: rgba(255, 107, 107, 0.35);
+    }
+    .user-profile-meta-points[data-low="true"]::before {
+      background: #c0392b;
     }
     .user-profile-meta-arrow {
       color: var(--text-muted, #8a8a8a);

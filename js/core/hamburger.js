@@ -138,7 +138,15 @@
     var overlay = document.getElementById('mobileOverlay');
     if (!hamburger || !mobileNav || !overlay) return;
 
+    // 呼吸灯提示：首次打开菜单后停止（utils.js 提供，缺失时静默）
+    if (window.BioQuest && typeof window.BioQuest.initHamburgerHint === 'function') {
+      window.BioQuest.initHamburgerHint(hamburger);
+    }
+
     function setActive(active) {
+      if (active && window.BioQuest && typeof window.BioQuest.dismissHamburgerHint === 'function') {
+        window.BioQuest.dismissHamburgerHint(hamburger);
+      }
       hamburger.classList.toggle('active', !!active);
       hamburger.setAttribute('aria-expanded', active ? 'true' : 'false');
       mobileNav.classList.toggle('active', !!active);

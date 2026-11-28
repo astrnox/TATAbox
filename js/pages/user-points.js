@@ -228,7 +228,15 @@ function resetPoints() {
 /** 云端同步：本地信用指数变更后调用（函数在 supabase-client.js 中挂载，未挂载则静默） */
 function _trySyncPointsToCloud() {
   try {
-    if (typeof window.syncPointsToCloud === 'function') window.syncPointsToCloud(getPoints());
+    if (typeof window.syncPointsToCloud === 'function') {
+      var syncing = window.syncPointsToCloud(getPoints());
+      // 同步完成后再刷新徽标，让「我的」显示与信用中心一致
+      if (syncing && typeof syncing.then === 'function') {
+        syncing.then(function () {
+          try { if (typeof window.refreshPointsBadge === 'function') window.refreshPointsBadge(); } catch (e) {}
+        }, function () {});
+      }
+    }
   } catch (e) {}
 }
 

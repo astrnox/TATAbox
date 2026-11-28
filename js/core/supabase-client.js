@@ -1384,7 +1384,7 @@ async function sbDelete(table, match) {
  */
 var _leaderboardCache = { bio: null, practice: null, checkin: null };
 var LEADERBOARD_CACHE_TTL = 5000;   // 短缓存：5s 内命中，超过即向数据库实时拉取
-var LEADERBOARD_FETCH_TIMEOUT = 5000;  // 排行榜查询超短超时 5s
+var LEADERBOARD_FETCH_TIMEOUT = 8000;  // 排行榜查询超时 8s：弱网下给足重试机会，失败由 UI 明确提示
 var _leaderboardInflight = {};         // 防抖：同 tab 在途请求复用
 
 /**

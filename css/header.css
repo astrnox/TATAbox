@@ -104,6 +104,52 @@
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
+}
+
+/* 汉堡按钮呼吸灯：轻量提示「这里可以点」。
+   每 16s 只呼吸 3 次，其余时间安静；用户首次打开菜单后停止
+   （由 js/core/utils.js 的 initHamburgerHint / dismissHamburgerHint 控制）。
+   系统开启「减少动态效果」时改为静态细环，保留可点击暗示。 */
+#hamburgerBtn::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(232, 168, 48, 0.7);
+  opacity: 0;
+  transform: scale(0.82);
+  pointer-events: none;
+  animation: hamburgerBreathe 16s ease-out infinite;
+}
+
+#hamburgerBtn:hover::after,
+#hamburgerBtn:focus-visible::after {
+  animation-play-state: paused;
+}
+
+#hamburgerBtn.active::after,
+#hamburgerBtn.hamburger--hint-done::after {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes hamburgerBreathe {
+  0%   { opacity: 0;    transform: scale(0.82); }
+  6%   { opacity: 0.65; transform: scale(1.02); }
+  18%  { opacity: 0;    transform: scale(1.18); }
+  30%  { opacity: 0.5;  transform: scale(1.02); }
+  42%  { opacity: 0;    transform: scale(1.18); }
+  54%  { opacity: 0.35; transform: scale(1.02); }
+  66%, 100% { opacity: 0; transform: scale(1.18); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hamburgerBtn::after {
+    animation: none;
+    opacity: 0.3;
+    transform: none;
+  }
 }
 
 .hamburger-line {

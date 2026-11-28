@@ -17,6 +17,40 @@ var TATABOX = (typeof window !== 'undefined' ? window.BioQuest : null) || {};
 if (typeof window !== 'undefined') { window.BioQuest = TATABOX; }
 
 /**
+ * 汉堡菜单呼吸提示（全站共用）
+ * ------------------------------------------------------------
+ * 呼吸灯只是「这里可以点」的温和暗示，不应长期打扰：
+ * - 用户第一次打开菜单后写入 localStorage 并永久停止；
+ * - 系统开启 prefers-reduced-motion 时由 CSS 改为静态细环；
+ * - 找不到按钮时静默跳过，不影响页面其它逻辑。
+ */
+(function hamburgerHint() {
+  var KEY = 'tatabox_hamburger_hint_done';
+
+  function initHamburgerHint(btn) {
+    var el = btn || document.getElementById('hamburgerBtn');
+    if (!el) return;
+    if (!el.hasAttribute('aria-haspopup')) el.setAttribute('aria-haspopup', 'dialog');
+    if (!el.hasAttribute('aria-controls')) el.setAttribute('aria-controls', 'mobileNav');
+    if (!el.getAttribute('title')) el.setAttribute('title', '打开菜单');
+    var done = false;
+    try { done = localStorage.getItem(KEY) === '1'; } catch (e) {}
+    if (done) el.classList.add('hamburger--hint-done');
+  }
+
+  function dismissHamburgerHint(btn) {
+    var el = btn || document.getElementById('hamburgerBtn');
+    if (el) el.classList.add('hamburger--hint-done');
+    try { localStorage.setItem(KEY, '1'); } catch (e) {}
+  }
+
+  if (typeof window !== 'undefined') {
+    window.BioQuest.initHamburgerHint = initHamburgerHint;
+    window.BioQuest.dismissHamburgerHint = dismissHamburgerHint;
+  }
+})();
+
+/**
  * M-12：旧品牌存储键兼容迁移（bioquest_* → tatabox_*）
  * ------------------------------------------------------------
  * 新代码统一读写 tatabox_* 前缀；首次加载时把旧键的值复制到对应的新键。

@@ -2465,6 +2465,328 @@ body {
 }
 
 /* ============================================================
+ * 排行榜 — 加载 / 错误 / 我的排名 / 我的行高亮
+ * ============================================================ */
+.lb-page-sub {
+  margin: -8px 0 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7f74;
+}
+
+.lb-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 22px;
+  margin-top: 10px;
+  font-size: 0.74rem;
+  color: #6b7f74;
+}
+
+.lb-updated { opacity: 0.85; }
+
+.lb-refresh {
+  border: 1px solid rgba(58, 140, 92, 0.28);
+  background: transparent;
+  color: #3a8c5c;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+.lb-refresh:hover { background: rgba(58, 140, 92, 0.12); border-color: rgba(58, 140, 92, 0.5); }
+.lb-refresh:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(58, 140, 92, 0.35);
+}
+
+/* 骨架屏：比「加载中...」更让人安心 */
+.lb-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+}
+.lb-skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(120, 140, 128, 0.08);
+}
+.lb-skeleton-bar {
+  display: block;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(120, 140, 128, 0.22);
+  animation: lbSkeletonPulse 1.4s ease-in-out infinite;
+}
+.lb-skeleton-bar--rank { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; }
+.lb-skeleton-bar--name { flex: 1; }
+.lb-skeleton-bar--score { width: 56px; flex-shrink: 0; }
+@keyframes lbSkeletonPulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+
+/* 加载失败：给出原因与下一步，而不是只留一句「暂无数据」 */
+.lb-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 34px 18px;
+  color: #e0e8e4;
+}
+.lb-feedback-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #c4956a;
+  background: rgba(196, 149, 106, 0.14);
+  border: 1px solid rgba(196, 149, 106, 0.4);
+  margin-bottom: 4px;
+}
+.lb-feedback-title { font-size: 0.95rem; font-weight: 700; }
+.lb-feedback-hint {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #9ca3af;
+  max-width: 300px;
+}
+.lb-feedback-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.lb-btn {
+  border: 1px solid rgba(58, 140, 92, 0.3);
+  background: transparent;
+  color: #3a8c5c;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+.lb-btn:hover { background: rgba(58, 140, 92, 0.12); border-color: rgba(58, 140, 92, 0.5); }
+.lb-btn--primary {
+  background: #2d6a47;
+  border-color: #2d6a47;
+  color: #fff;
+}
+.lb-btn--primary:hover { background: #357a53; border-color: #357a53; }
+.lb-btn--small { padding: 4px 12px; font-size: 0.74rem; }
+.lb-btn:focus-visible,
+.lb-refresh:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(58, 140, 92, 0.4);
+}
+
+/* 我的排名：一眼看到自己的位置 */
+.lb-my-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 18px;
+  margin-top: 14px;
+  border-radius: 12px;
+  font-size: 0.86rem;
+  color: #7ec89a;
+  background: rgba(58, 140, 92, 0.12);
+  border: 1px solid rgba(58, 140, 92, 0.24);
+}
+.lb-my-rank strong { font-size: 1.15rem; }
+.lb-my-rank-value {
+  font-size: 0.76rem;
+  color: #9ca3af;
+}
+
+.lb-guest-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 16px;
+  margin-top: 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  background: rgba(120, 140, 128, 0.08);
+}
+
+/* 当前用户所在行 */
+.leaderboard-item.is-me {
+  background: rgba(232, 168, 48, 0.14);
+  border-color: rgba(232, 168, 48, 0.42);
+}
+.leaderboard-item.is-me:hover {
+  background: rgba(232, 168, 48, 0.2);
+  border-color: rgba(232, 168, 48, 0.6);
+}
+.leaderboard-me-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: #1a2f1d;
+  background: #e8a830;
+  vertical-align: middle;
+}
+
+/* 浅色模式覆盖 */
+[data-theme="light"] .lb-page-sub,
+[data-theme="light"] .lb-meta { color: #94a3b8; }
+[data-theme="light"] .lb-feedback { color: #334155; }
+[data-theme="light"] .lb-feedback-hint { color: #64748b; }
+[data-theme="light"] .lb-my-rank {
+  color: #2d6a47;
+  background: rgba(45, 106, 71, 0.08);
+  border-color: rgba(45, 106, 71, 0.22);
+}
+[data-theme="light"] .lb-my-rank-value { color: #64748b; }
+[data-theme="light"] .lb-guest-hint { color: #64748b; background: rgba(45, 106, 71, 0.05); }
+[data-theme="light"] .leaderboard-item.is-me {
+  background: rgba(196, 149, 106, 0.16);
+  border-color: rgba(196, 149, 106, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lb-skeleton-bar { animation: none; }
+}
+
+/* ============================================================
+ * 信用中心 — 数据来源、同步状态、说明
+ * ============================================================ */
+.credit-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.credit-back {
+  font-size: 0.82rem;
+  color: var(--color-sage, #5a7d5c);
+  text-decoration: none;
+}
+.credit-back:hover { text-decoration: underline; }
+.credit-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+.credit-source i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.credit-source--cloud {
+  color: #2d6a47;
+  background: rgba(58, 140, 92, 0.1);
+  border-color: rgba(58, 140, 92, 0.24);
+}
+.credit-source--cloud i { background: #3a8c5c; }
+.credit-source--local {
+  color: #8a5a2e;
+  background: rgba(196, 149, 106, 0.14);
+  border-color: rgba(196, 149, 106, 0.34);
+}
+.credit-source--local i { background: #c4956a; }
+
+.credit-sync-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 18px;
+  font-size: 0.8rem;
+  color: var(--text-muted, #8a8a8a);
+}
+.credit-retry {
+  border: 1px solid rgba(90, 125, 92, 0.4);
+  background: transparent;
+  color: var(--color-sage, #5a7d5c);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.credit-retry:hover { background: rgba(90, 125, 92, 0.1); }
+.credit-retry:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(90, 125, 92, 0.35); }
+
+.credit-progress {
+  height: 8px;
+  background: var(--border-light, #ece8e1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.credit-progress > div {
+  height: 100%;
+  border-radius: 16px;
+  transition: width 0.4s ease;
+}
+
+.credit-explain {
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-light, #ece8e1);
+  border-radius: 12px;
+  background: var(--surface-secondary, #faf7f2);
+  font-size: 0.82rem;
+  color: var(--text-secondary, #4a4a4a);
+  line-height: 1.75;
+}
+.credit-explain summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-sage, #5a7d5c);
+}
+.credit-explain p { margin: 8px 0 0; }
+
+.credit-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-secondary, #4a4a4a);
+}
+.credit-error-title { font-size: 0.95rem; font-weight: 700; }
+.credit-error-hint { font-size: 0.8rem; color: var(--text-muted, #8a8a8a); }
+
+@media (prefers-reduced-motion: reduce) {
+  .credit-progress > div { transition: none; }
+}
+
+/* ============================================================
  * 搜索页面 — 明亮清新风格
  * ============================================================ */
 .search-page {

@@ -19,7 +19,7 @@ function _resolveAuthReady() {
 
 async function initSupabase() {
   try {
-    var v = '20261121c';
+    var v = '20261128a';
     // 等待 Supabase SDK 加载完成（由 HTML 中的 requestIdleCallback 触发加载）
     var sdkWait = 0;
     while (typeof window.supabase === 'undefined' && sdkWait < 10000) {

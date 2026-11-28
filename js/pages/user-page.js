@@ -61,7 +61,7 @@ function renderUserPage(target) {
           <div class="user-profile-info">
             <div class="user-profile-name">${escapeHtml(displayName)} <span class="user-profile-badge">${groupLabels[userGroup] || '会员'}</span></div>
             <div class="user-profile-meta">
-              <span class="user-profile-meta-points" id="userCompactPointsBadge" title="信用指数（CR）：社区对用户的信任程度，随时间衰减">信用&nbsp;<span class="user-points-val">100</span></span>
+              <a class="user-profile-meta-points" id="userCompactPointsBadge" href="#/credit" data-on='["navigateTo","/credit"]' data-stop-propagation data-prevent-default data-source="local" title="信用指数（CR）· 正在同步…">CR&nbsp;<span class="user-points-val" aria-live="polite">—</span></a>
               <span class="user-profile-meta-arrow">点击查看仪表盘 →</span>
             </div>
           </div>
@@ -203,22 +203,53 @@ function renderUserPage(target) {
 
 /**
  * 刷新头部紧凑资料卡上的"信用指数"数字
- *  - addPoints / deductPoints / penalizePoints 变更后都会自动调用
- *  - 也会在每次页面初始化时被调用
+ *  - 登录态以云端 profiles.points 为准（与「信用中心」同一数据源）
+ *  - 先快速显示本地值避免空白，再异步替换为云端值
+ *  - 断网/游客时明确标注「本地估值」，不冒充云端
  *  - 找不到 DOM 就静默跳过（不会 crash）
  */
+var _pointsBadgeCloudTimer = null;
+var _pointsBadgeLastCloud = 0;
+function _paintPointsBadge(total, source) {
+  var badge = document.getElementById('userCompactPointsBadge');
+  if (!badge) return;
+  var valEl = badge.querySelector('.user-points-val');
+  var value = (typeof total === 'number' && isFinite(total)) ? Math.round(total * 10) / 10 : _POINTS_DEFAULTS.BASE;
+  if (valEl) valEl.textContent = String(value);
+  badge.setAttribute('data-source', source === 'cloud' ? 'cloud' : 'local');
+  // 60 属于「基本信任」，不应被标红；只有低于 40 才提示信用偏低
+  badge.setAttribute('data-low', value < 40 ? 'true' : 'false');
+  badge.setAttribute('title', source === 'cloud'
+    ? '信用指数（CR）' + value + ' · 已与云端同步，点击查看信用中心'
+    : '信用指数（CR）' + value + ' · 当前为本地估值，联网后自动同步；点击查看信用中心');
+}
+
 function refreshPointsBadge() {
   try {
-    var badge = document.getElementById('userCompactPointsBadge');
-    var valEl = badge ? badge.querySelector('.user-points-val') : null;
-    var total = (typeof window.getPoints === 'function') ? window.getPoints() : _POINTS_DEFAULTS.BASE;
-    if (total === null || typeof total !== 'number' || !isFinite(total)) total = _POINTS_DEFAULTS.BASE;
-    if (valEl) valEl.textContent = String(Math.round(total * 10) / 10);
-    if (badge) {
-      badge.setAttribute('data-low', total < 80 ? 'true' : 'false');
-      badge.setAttribute('title',
-        '信用指数（CR）' + (Math.round(total * 10) / 10) + '：社区信任度，随活跃衰减，违规扣减');
-    }
+    var local = (typeof window.getPoints === 'function') ? window.getPoints() : _POINTS_DEFAULTS.BASE;
+    _paintPointsBadge(local, 'local');
+
+    if (typeof window.getMyCreditSnapshot !== 'function' && typeof window.getUserPoints !== 'function') return;
+
+    // 云端刷新节流：答题时 addPoints 会高频调用，避免每道题都发一次请求
+    if (_pointsBadgeCloudTimer) return;
+    var wait = Math.max(0, 2500 - (Date.now() - _pointsBadgeLastCloud));
+    _pointsBadgeCloudTimer = setTimeout(function () {
+      _pointsBadgeCloudTimer = null;
+      _pointsBadgeLastCloud = Date.now();
+      if (typeof window.getMyCreditSnapshot === 'function') {
+        window.getMyCreditSnapshot(true).then(function (snap) {
+          if (!snap) return;
+          _paintPointsBadge(snap.points, snap.source);
+        }).catch(function () { /* 保留本地值 */ });
+      } else {
+        // 兜底：部分页面未加载 points-ui 时，直接走 sb-gamify 的云端查询
+        window.getUserPoints().then(function (info) {
+          if (!info || typeof info.points !== 'number') return;
+          _paintPointsBadge(info.points, 'cloud');
+        }).catch(function () { /* 保留本地值 */ });
+      }
+    }, wait);
   } catch (e) {
     // 不对外抛错，避免破坏 initUser 主流程
   }

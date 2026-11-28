@@ -89,21 +89,24 @@ function renderProfilePanel(container) {
     </div>
   `;
 
-  // 异步刷新最新信用指数（云端为准）
-  if (typeof window.getUserPoints === 'function') {
-    window.getUserPoints().then(function(info) {
-      if (!info || typeof info.points !== 'number') return;
-      var scoreEl = document.getElementById('user-points-score');
-      var barEl = document.getElementById('user-points-bar');
-      var levelEl = document.getElementById('user-points-level');
-      var lv = (typeof window.getPointsLevel === 'function') ? window.getPointsLevel(info.points) : null;
-      if (scoreEl) scoreEl.textContent = info.points;
-      if (barEl && lv) {
-        barEl.style.width = (lv.nextAt ? Math.round(lv.progress * 100) : 100) + '%';
-        barEl.style.background = lv.color;
-      }
-      if (levelEl && lv) levelEl.textContent = lv.title;
-    }).catch(function() {});
+  // 异步刷新最新信用指数（与「我的」徽标、信用中心共用同一数据源）
+  function _applyProfilePoints(info) {
+    if (!info || typeof info.points !== 'number') return;
+    var scoreEl = document.getElementById('user-points-score');
+    var barEl = document.getElementById('user-points-bar');
+    var levelEl = document.getElementById('user-points-level');
+    var lv = (typeof window.getPointsLevel === 'function') ? window.getPointsLevel(info.points) : null;
+    if (scoreEl) scoreEl.textContent = info.points;
+    if (barEl && lv) {
+      barEl.style.width = (lv.nextAt ? Math.round(lv.progress * 100) : 100) + '%';
+      barEl.style.background = lv.color;
+    }
+    if (levelEl && lv) levelEl.textContent = lv.title;
+  }
+  if (typeof window.getMyCreditSnapshot === 'function') {
+    window.getMyCreditSnapshot().then(_applyProfilePoints).catch(function() {});
+  } else if (typeof window.getUserPoints === 'function') {
+    window.getUserPoints().then(_applyProfilePoints).catch(function() {});
   }
 
   var verifyBtn = document.getElementById('userVerifyEmailBtn');
