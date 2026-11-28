@@ -302,7 +302,7 @@
 
   <!-- 首屏关键 CSS：同步加载 -->
   <!-- Issue #108：首屏同步 CSS 合并为单文件（scripts/build-css-bundle.js 生成，减少 6→1 次串行请求） -->
-  <link rel="stylesheet" href="css/bundle-core.css?v=20261128b">
+  <link rel="stylesheet" href="css/bundle-core.css?v=20261128c">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
   <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
@@ -1244,7 +1244,7 @@
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
   <script src="js/core/app.js?v=20261128a" defer></script>
   <!-- M-01：认证 / 首页辅助 / 路由 / 模块加载自 app.js 拆分（按依赖顺序加载） -->
-  <script src="js/core/app-auth.js?v=20261128a" defer></script>
+  <script src="js/core/app-auth.js?v=20261128c" defer></script>
   <script src="js/core/app-home.js?v=20261031a" defer></script>
   <script src="js/pages/home-quiz.js?v=20261114b" defer></script>
   <script src="js/core/app-router.js?v=20261121d" defer></script>
@@ -1262,7 +1262,7 @@
   <!-- PRD §5 补全模块 -->
   <script src="js/core/micro-details.js?v=20260803a" defer></script>
   <script src="js/core/sync-tabs.js?v=20260803a" defer></script>
-  <script src="js/core/error-recovery.js?v=20260803a" defer></script>
+  <script src="js/core/error-recovery.js?v=20261128c" defer></script>
   <script src="js/core/question-model.js?v=20261013a" defer></script>
   <script src="js/core/question-i18n.js?v=20261108a" defer></script>
   <!-- 打印工具：错题/练习/组卷统一 A4 打印（原生 window.print，零依赖） -->

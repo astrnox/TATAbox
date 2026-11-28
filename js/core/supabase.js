@@ -217,7 +217,14 @@ async function getPracticeRecords() {
   return { data: result.ok && result.data ? result.data.data : [] };
 }
 
-async function savePracticeRecord(rec) {
+/**
+ * 旧版 REST 练习记录写入（保留给外部调用）。
+ * 注意：不要占用全局名 savePracticeRecord —— practice-session.js 里有一个
+ * 同名的同步落盘函数，两个脚本加载顺序不同会互相覆盖，导致练习结束时
+ * 调用到错误实现（rec 为 undefined → 读取 question_id 报错）。
+ */
+async function savePracticeRecordToApi(rec) {
+  if (!rec) return;
   if (_useSupabase && typeof window.sbInsert === 'function' && getUserRef()) {
     await window.sbInsert('practice_records', {
       profile_id: _getCurrentUserId(),
@@ -380,7 +387,7 @@ window.getFavorites = getFavorites;
 window.saveFavorite = saveFavorite;
 window.deleteFavorite = deleteFavorite;
 window.getPracticeRecords = getPracticeRecords;
-window.savePracticeRecord = savePracticeRecord;
+window.savePracticeRecordToApi = savePracticeRecordToApi;
 window.syncToCloud = syncToCloud;
 window.mergeCloudData = mergeCloudData;
 // window.updateBioScore 由 supabase-client.js 提供

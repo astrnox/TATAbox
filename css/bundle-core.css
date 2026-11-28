@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-28T10:57:18.656Z
+ * 生成时间：2026-11-28T11:21:32.219Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -2809,6 +2809,145 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .credit-progress > div { transition: none; }
+}
+
+/* ============================================================
+ * 常驻错误卡片（error-recovery.js）
+ * 与短暂 toast 不同：不自动消失，直到用户主动关闭。
+ * ============================================================ */
+#bq-error-banner {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10050;
+  width: min(400px, calc(100vw - 32px));
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--bg-surface, #fff);
+  color: var(--text-primary, #2c3e30);
+  border: 1px solid rgba(192, 85, 58, 0.32);
+  border-left: 3px solid var(--color-error, #c0553a);
+  box-shadow: 0 16px 44px rgba(20, 30, 20, 0.22);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  animation: bqErrorIn 0.24s ease;
+}
+
+@keyframes bqErrorIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#bq-error-banner .bq-error-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#bq-error-banner .bq-error-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-error, #c0553a);
+  flex-shrink: 0;
+}
+
+#bq-error-banner .bq-error-title {
+  flex: 1;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+#bq-error-banner .bq-error-close {
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #8a8a8a);
+  font-size: 1.15rem;
+  line-height: 1;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#bq-error-banner .bq-error-close:hover {
+  background: rgba(192, 85, 58, 0.1);
+  color: var(--color-error, #c0553a);
+}
+
+#bq-error-banner .bq-error-message {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  word-break: break-word;
+  max-height: 7.2em;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+#bq-error-banner .bq-error-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 0.72rem;
+  color: var(--text-muted, #8a8a8a);
+}
+
+#bq-error-banner .bq-error-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#bq-error-banner .bq-error-actions button {
+  border: 1px solid var(--border-subtle, #e2ddd6);
+  background: transparent;
+  color: var(--text-secondary, #5a6b5e);
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#bq-error-banner .bq-error-actions button:hover {
+  background: rgba(192, 85, 58, 0.08);
+  border-color: rgba(192, 85, 58, 0.3);
+}
+
+#bq-error-banner .bq-error-actions button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(192, 85, 58, 0.28);
+}
+
+#bq-error-banner .bq-error-detail {
+  margin: 10px 0 0;
+  padding: 10px;
+  max-height: 180px;
+  overflow: auto;
+  border-radius: 8px;
+  background: var(--bg-sunken, #f1ede6);
+  color: var(--text-secondary, #5a6b5e);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  #bq-error-banner {
+    left: 12px;
+    right: 12px;
+    bottom: calc(80px + env(safe-area-inset-bottom));
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bq-error-banner { animation: none; }
 }
 
 /* ============================================================
