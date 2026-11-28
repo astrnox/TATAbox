@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-48",
+  "module": "",
+  "options": {
+    "A": "在一个特定的生态系统中，野火发生的可能性在短期内是可以高度可预测的",
+    "B": "许多种类的植物和植物群落已经适应了频繁的火灾",
+    "C": "人类对森林火灾的严防死守使某些群落，如草原，无法达到其顶级阶段",
+    "D": "灌木丛群落已经进化到了很少燃烧的程度"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 48,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "以下哪项叙述对火灾与生态系统之间的相互作用的描述最准确",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 48 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

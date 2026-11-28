@@ -1,0 +1,53 @@
+{
+  "answer": "ACD",
+  "answer_key": "ACD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-20",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 20,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "研究人员在小鼠群体中筛选到一个脊柱弯曲的突变体，且该突变体只出现在雌鼠中。将任意一只脊柱弯曲的雌鼠与脊柱正常的野生型雄鼠杂交，所得后代表现型及比例均为 1/3 脊柱弯曲的雌鼠、1/3 脊柱正常的雌鼠和 1/3 脊柱正常的雄鼠（不考虑 X、Y 同源区段遗传）。以下推测正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "脊柱弯曲性状是由显性基因控制"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "实验结果是由于含显性基因的雌配子致死"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "脊柱弯曲的雌鼠均为杂合子"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "导致脊柱弯曲的基因位于 X 染色体"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

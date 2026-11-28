@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-02",
+  "module": "",
+  "options": {
+    "A": "FGF9 通过胞吐从细胞中出来作用于靶细胞，属于细胞间直接信息传递",
+    "B": "FGF9 的分泌过程体现了细胞膜的功能特点——流动性",
+    "C": "可通过注射 FGF9 的抗体或者用慢病毒载体敲低 FGF9 的表达来治疗抑郁症",
+    "D": "抑郁症患者大脑中有较多 FGF9 的根本原因是 X 细胞中合成该物质的酶的活性较高"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 2,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "美国研究人员首次发现一种与抑郁症相关的关键成分—X 细胞合成的成纤维细胞生长因子 9（FGF9），是一种分泌蛋白，其在抑郁症患者大脑中的含量远高于非抑郁症患者。下列有关叙述，正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 2 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

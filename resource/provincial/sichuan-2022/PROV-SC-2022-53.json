@@ -1,0 +1,53 @@
+{
+  "answer": "AC",
+  "answer_key": "AC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：AC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-53",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 53,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列可用于 CRISPR/Cas9 基因编辑技术来实现的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 53 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "器官移植到人体内的基因编辑猪"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "体细胞核转移（SCNT）生殖性复制"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "基因改造抗真菌的植物"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "新冠病毒的 RNA 快速测序"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

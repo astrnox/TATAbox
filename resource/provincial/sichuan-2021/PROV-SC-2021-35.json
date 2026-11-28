@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-35",
+  "module": "",
+  "options": {
+    "A": "去甲肾上腺素及 5-羟色胺属于神经递质，进入突触后膜内发挥作用",
+    "B": "去甲肾上腺素和 5-羟色胺能使兴奋传递中的化学信号转变为电信号",
+    "C": "抑郁可能与突触间隙中去甲肾上腺素和 5-羟色胺含量过高有关",
+    "D": "缺氧会影响神经递质释放，但不影响神经冲动在神经纤维上的传导"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 35,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "丙咪嗪为较常用的抗抑郁药，其药理作用为抑制神经末梢突触前膜对去甲肾上腺素和 5-羟色胺的再摄取，提高受体部位递质浓度，从而发挥抗抑郁作用。下列叙述正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 35 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

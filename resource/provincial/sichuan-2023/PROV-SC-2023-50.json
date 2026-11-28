@@ -1,0 +1,53 @@
+{
+  "answer": "ACD",
+  "answer_key": "ACD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-50",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 50,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "集群是重要的反捕食策略，下列关于集群优点说法正确的是",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 50 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "减轻捕食者的捕食压力"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "不易被捕食者发现"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "及时发现捕食者"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "依靠集体的力量对抗捕食者"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

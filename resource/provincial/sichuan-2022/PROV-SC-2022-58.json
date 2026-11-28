@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-58",
+  "module": "",
+  "options": {
+    "A": "十字花科",
+    "B": "锦葵科",
+    "C": "木兰科",
+    "D": "玄参科"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 58,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "五代十国时期，后蜀皇帝孟昶颁发诏令：在成都城头尽种芙蓉，秋间盛开，蔚若锦绣。成都自此也就有了“芙蓉城”的美称。1983 年 5 月 26 日，成都市第九届人民代表大会常务委员会决定，正式命名芙蓉花为成都市市花。木芙蓉属于",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 58 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

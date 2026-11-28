@@ -1,0 +1,53 @@
+{
+  "answer": "ABD",
+  "answer_key": "ABD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-51",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 51,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "2017 年启动的雄安新区“千年秀林”计划，按自然的方式斑状混交，不确定株行距，自然随机布点。遵循适地适树的理念，选择适应新区自然条件的多样化树种，打造百万亩异龄、复层、混交样式的近自然森林，实现森林自我调节、更新和演替，最终形成稳定的森林生态系统。下列叙述正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 51 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "“千年秀林”的斑状混交状态体现了群落的水平结构"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "多样化的树种配置有助于提升“千年秀林”的物种丰富度"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "“千年秀林”的建设过程发生的是初生演替"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "异龄复层的造林方式有助于提高“千年秀林”的自我调节能力"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

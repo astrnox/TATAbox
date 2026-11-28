@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-33",
+  "module": "",
+  "options": {
+    "A": "若子细胞中染色体数为 2N，则该子细胞中被 N 标记的染色体条数可以是 0～2N",
+    "B": "若 4 个子细胞大小相同，则细胞分裂过程中可能发生联会现象",
+    "C": "若某个子细胞中染色体数为 N，则该子细胞中染色体与核 DNA 之比可能是 1：1",
+    "D": "若某个子细胞中染色体数为 2N，则该细胞一定存在 N+1 种形态的染色体"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 33,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "为模拟生物体内细胞的分裂过程，将某一经 N 充分标记 DNA 的雄性动物细胞（染色体数为 2N）置于不含有 N 的培养基中培养，该细胞分裂两次后形成 4 个子细胞。下列有关叙述不正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 33 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

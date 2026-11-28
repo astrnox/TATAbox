@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-03",
+  "module": "",
+  "options": {
+    "A": "细胞膜塑形蛋白在合成过程中，场所由核糖体提供，动力可由叶绿体提供",
+    "B": "“分子垃圾袋”应主要由磷脂和蛋白质构成",
+    "C": "“回收利用工厂”可能是溶酶体，“组件”可能是核苷酸",
+    "D": "人体细胞内能形成囊泡的细胞器有内质网、高尔基体和中心体等"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 3,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "一项来自某大学的研究揭示了体内蛋白分选转运装置的作用机制，即为了将细胞内的废物清除，细胞膜塑形蛋白会促进囊泡（分子垃圾袋）形成，将来自细胞区室表面旧的或受损的蛋白质带到了内部回收利用工厂，在那里将废物降解，使组件获得重新利用。下列有关叙述，正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 3 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

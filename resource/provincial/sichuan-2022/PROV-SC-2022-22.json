@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-22",
+  "module": "",
+  "options": {
+    "A": "等位基因产生的根本原因是基因突变，说明基因突变具有随机性",
+    "B": "四种纯合品系自由交配若干代后，种群中雌果蝇基因型有 10 种",
+    "C": "可以用果蝇的羽化节律基因和红眼、白眼基因验证自由组合定律",
+    "D": "基因 per 与基因 pers 差异最小，基因 per 与基因 per01 的差异最大"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 22,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "科学家在研究果蝇从蛹变为蝇的羽化昼夜节律过程中，克隆出野生型昼夜节律基因 per 及其三个复等位基因 pers、perL、per01，实验验证该基因位于 X 染色体上。野生型昼夜节律为 24h，即表示为正常节律，突变基因 pers、perL、per01 分别导致果蝇的羽化节律的周期变为 22h、29h 和无节律。下列叙述正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 22 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

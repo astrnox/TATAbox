@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-56",
+  "module": "",
+  "options": {
+    "A": "病毒抗原基因与质粒重组时需要 DNA 连接酶",
+    "B": "病毒抗原基因在体内表达时需要 RNA 聚合酶",
+    "C": "重组质粒在内环境中表达后引起机体免疫反应",
+    "D": "注射 DNA 疫苗后机体会产生相应的记忆细胞"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 56,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "DNA 疫苗是指将含有病毒抗原基因的重组质粒注入人体表达后使人获得免疫能力，下列叙述不正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 56 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

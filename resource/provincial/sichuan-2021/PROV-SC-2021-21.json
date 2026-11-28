@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-21",
+  "module": "",
+  "options": {
+    "A": "细胞中不存在游离的尿嘧啶脱氧核糖核苷酸",
+    "B": "DNA 缺口修复需 DNA 聚合酶和 DNA 连接酶发挥作用",
+    "C": "糖苷酶能识别和切割 DNA 分子中的磷酸二酯键",
+    "D": "若某个突变基因未被修复，则复制后有突变基因的子代 DNA 占 1/2"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 21,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "DNA 分子中一条链上的碱基 C 被氧化后会转变为碱基 U，细胞中的一种糖苷酶能够识别出碱基 U，将其切除，之后限制性核酸内切酶能识别和切除残留下的脱氧核糖和磷酸基团，最后由其他酶将缺口修复。下列相关叙述错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 21 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

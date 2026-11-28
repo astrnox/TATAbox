@@ -1,0 +1,53 @@
+{
+  "answer": "CD",
+  "answer_key": "CD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-17",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 17,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "家蚕的的性别决定类型为 ZW 型，其体色有黄体和透明体（A/a），蚕丝颜色有彩色和白色（B/b），且两对基因均不位于 W 染色体，现让一黄体蚕丝彩色雌蚕与一纯合透明体蚕丝白色雄蚕杂交，F1 为黄体蚕丝白色和透明体蚕丝白色个体，让黄体蚕丝白色个体与透明体蚕丝白色个体杂交，F2 中黄体蚕丝白色（♂）：透明体蚕丝白色（♂）：黄体蚕丝彩色（♀）：透明体蚕丝白色（♀）=1：1：1：1，不考虑突变和交叉互换。下列相关叙述正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 17 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "黄体对透明体为显性，且 A/a 基因位于常染色体上"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "若只考虑蚕丝颜色，则亲本中雄蚕的基因型为 BB 或 ZBZB"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "若让 F2 个体自由交配，则子代会出现黄体：透明体=7：9"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "让 F2 中的黄体雌蚕与透明体雄蚕杂交，子代均为蚕丝白色"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

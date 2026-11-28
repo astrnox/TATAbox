@@ -31,11 +31,13 @@ function computeStats() {
   const cards = readJSON('data/cards.json');
   const wiki = readJSON('data/wiki-seed.json');
   const videos = readJSON('data/videos.json');
+  const provincial = readJSON('resource/provincial.json');
 
   const poolQuestions = Array.isArray(pool.questions) ? pool.questions : [];
   const iboQuestions = Array.isArray(iboPool.questions) ? iboPool.questions : [];
   const quizQuestions = Array.isArray(quiz['题库']) ? quiz['题库'] : (Array.isArray(quiz.questions) ? quiz.questions : []);
   const logicQuestions = Array.isArray(logic) ? logic : (Array.isArray(logic.questions) ? logic.questions : []);
+  const provincialQuestions = Array.isArray(provincial.questions) ? provincial.questions : [];
   const cardsTotal = Array.isArray(cards['分类'])
     ? cards['分类'].reduce((sum, cat) => sum + (Array.isArray(cat.cards) ? cat.cards.length : 0), 0)
     : 0;
@@ -45,6 +47,7 @@ function computeStats() {
   iboQuestions.forEach((q) => { if (q && q.id) uniqueIds.add(String(q.id)); });
   quizQuestions.forEach((q) => { const id = q && (q.bioId || q.id); if (id) uniqueIds.add(String(id)); });
   logicQuestions.forEach((q) => { const id = q && (q.id || q.bioId); if (id) uniqueIds.add(String(id)); });
+  provincialQuestions.forEach((q) => { if (q && q.id) uniqueIds.add(String(q.id)); });
 
   let bankObjects = 0;
   const bankDir = path.join(ROOT, 'data/bank');
@@ -69,6 +72,7 @@ function computeStats() {
     question_sources: {
       league_pool: poolQuestions.length,
       ibo_pool: iboQuestions.length,
+      provincial_pool: provincialQuestions.length,
       quiz: quizQuestions.length,
       bank: bankObjects,
       logic: logicQuestions.length
@@ -79,7 +83,7 @@ function computeStats() {
     wiki_entries: Array.isArray(wiki.entries) ? wiki.entries.length : 0,
     videos: Array.isArray(videos.videos) ? videos.videos.length : 0,
     notes: [
-      'unique_questions = 联赛池/IBO 池/quiz/每日联赛 bank/logic 按 bioID 去重后的总数',
+      'unique_questions = 联赛池/IBO 池/四川初赛/quiz/每日联赛 bank/logic 按 bioID 去重后的总数',
       'manifest_total_questions 仅统计 shard（manifest/index/bank）体系的 MTF 题，不等于全站题库'
     ]
   };

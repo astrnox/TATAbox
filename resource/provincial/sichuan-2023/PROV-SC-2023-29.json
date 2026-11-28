@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-29",
+  "module": "",
+  "options": {
+    "A": "复等位基因的遗传并不遵循基因的遗传定律",
+    "B": "自然条件下，该植物的基因型最多有 5 种t d",
+    "C": "杂交父本.母本均为 a a 时，后代的基因型种类最多",
+    "D": "若子代中有雌株，则对应的双亲基因型组合有三种"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 29,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "进行有性生殖的某二倍体植物的一个基因存在很多等位基因的形式，称为复等位基因现象。该植物的性D t d D t d t d D t别是由 3 个等位基因 a 、a 、a 决定的，其中 a 对 a 、a 为显性，a 对 a 为显性。a 基因决定雄性，a 基因d决定雌雄同株，a 基因决定雌性。若没有基因突变产生，下列说法正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 29 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

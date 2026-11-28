@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-38",
+  "module": "",
+  "options": {
+    "A": "血清检查 IgG 增高可能只是过往感染，而 IgM 增高则一定处于感染期",
+    "B": "IgA 在内环境之外抵御抗原的免疫过程是通过免疫系统的第一道防线实现的",
+    "C": "IgD 在免疫调节过程中可参与免疫细胞的信息交流",
+    "D": "过敏原侵入机体后会引发 IgE 含量升高，从而导致过敏反应"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 38,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "人类共有 5 类免疫球蛋白，分别为 IgG、IgM、IgA、IgD和 IgE。其中 IgG 是血清中抗体的主要类型，在淋巴和组织液中也有少量存在，具有与病原体结合或中和毒素的能力； IgM 在感染的早期发挥作用；IgA 主要存在于消化道、呼吸道的分泌液中，在病原体进入血液之前能够与抗原结合，阻止病原体进入血液；IgD 在血清中含量很低，且个体差异较大，可作为膜受体存在于 B 细胞表面，功能尚不是很清楚； IgE 介导过敏反应。下列说法错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 38 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

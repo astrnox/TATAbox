@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-23",
+  "module": "",
+  "options": {
+    "A": "“卵子死亡”属于常染色体显性遗传病，在男女中发病率相等",
+    "B": "“卵子死亡”患者的致病基因可能来自父方或母方",
+    "C": "产前诊断可以确定胎儿是否携带“卵子死亡”的致病基因",
+    "D": "PANX1 基因存在不同的突变，体现了基因突变的随机性"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 23,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "研究人员发现了一种新型的单基因遗传病，患者的卵子取出体外放置一段时间或受精后一段时间，出现退化凋亡的现象，从而导致女性不孕，研究人员将其命名为“卵子死亡”。研究发现，“卵子死亡”属于常染色体显性遗传病，由细胞连接蛋白家族成员 PANX1 基因发生突变导致，且 PANX1 基因存在不同的突变。下列说法正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 23 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

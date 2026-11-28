@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-20",
+  "module": "",
+  "options": {
+    "A": "1 个含有 m 个腺嘌呤的 DNA 分子第 n 次复制需要腺嘌呤脱氧核苷酸（2n-1）×m 个",
+    "B": "DNA 双链被 32P 标记后，复制 n 次，子代 DNA 中有标记的占（1/2）n",
+    "C": "在一个双链 DNA 分子中，G+C 占 M%，那么该 DNA 分子的每条链中 G+C 都占该链碱基总数的 M%",
+    "D": "细胞内全部 DNA 被 32P 标记后在不含 32P 的环境中进行连续有丝分裂，第 2 次分裂的每个子细胞染色体均有一半有标记"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 20,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "关于 DNA 分子的结构与复制的叙述中，正确的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-41",
+  "module": "",
+  "options": {
+    "A": "化感作用存在于植物种间和种内",
+    "B": "在薇甘菊种内存在化感促进作用",
+    "C": "鸡矢藤对其他种生长均表现为抑制",
+    "D": "化感作用影响植物群落的种类组成"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 41,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "化感作用指植物通过向外分泌化学物质对其他植物产生的影响。制备入侵植物薇甘菊及近邻种葛藤和鸡矢藤的叶水提液（供体），分别处理三种植物幼苗（受体），60 天后测定植株干重并计算化感作用效应指数（R=处理值/对照值-1），相关叙述错误．．的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 41 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

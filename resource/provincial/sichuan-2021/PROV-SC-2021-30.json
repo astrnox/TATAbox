@@ -1,0 +1,53 @@
+{
+  "answer": "ACD",
+  "answer_key": "ACD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-30",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 30,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "万年野生稻不但抗病、抗虫害能力特别强，一穗可达千粒果实，而且可与现有栽培水稻杂交，其杂交子代在长势、生活力、适应性和产量等性状上优于双亲。科技工作者一方面加强对该濒危野生稻的保护，另一方面试图通过杂交、转基因等方式来对现有栽培水稻进行品种改良，提高栽培水稻的抗逆性和产量。下列叙述正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "若栽培稻与杂交稻的杂交后代不可育，则说明它们属于两个物种"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "保护濒危野生稻的方式有多种，最好的方式是迁地保护"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "通过杂交育种的方式改良现有栽培水稻，可增大栽培水稻的基因库"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "通过转基因的方式来改良现有栽培水稻，体现了生物多样性的直接价值"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

@@ -1,0 +1,53 @@
+{
+  "answer": "BCD",
+  "answer_key": "BCD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BCD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-19",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 19,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某昆虫的眼色伊红、淡色和乳白色分别由复等位基因 e、t 和 i 控制，且仅位于 X 染色体上；翻翅与正常翅是一对相对性状，受一对等位基因（A．a）控制。若不考虑突变等其他情况，下列叙述错误的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 19 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "若该昆虫群体中有 27 种基因型，则雌性纯合子可能有 6 种"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "若该昆虫群体中有 18 种基因型，则雌性纯合子可能有 3 种"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "若 A 对 a 不完全显性，e、t 和 i 均为共显性，则有 27 种表现型"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "若 A 对 a 不完全显性，e 对 t 和 i 以及 t 对 i 为完全显性，则有 27 种表现型"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

@@ -1,0 +1,53 @@
+{
+  "answer": "AD",
+  "answer_key": "AD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：AD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-60",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 60,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "在鱼类系统分类的几种科学划分中，若将其分为 5 个亚纲，即板鳃亚纲、全头亚纲、总鳍鱼亚纲、肺鱼亚纲、辐鳍鱼亚纲，下列关于这一鱼类分类系统表述正确的有",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 60 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲、总鳍鱼亚纲"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "传统分类学中软骨鱼类在这里包括板鳃亚纲、全头亚纲、总鳍鱼亚纲、肺鱼亚纲"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "传统分类学中硬骨鱼类在这里包括总鳍鱼亚纲、肺鱼亚纲、辐鳍鱼亚纲"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

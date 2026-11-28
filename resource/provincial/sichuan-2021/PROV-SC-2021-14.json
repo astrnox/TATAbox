@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-14",
+  "module": "",
+  "options": {
+    "A": "用纯合圆形果实植株与卵形果实植株作亲本进行杂交，无论正交还是反交，结果相同",
+    "B": "对杂合植株进行测交，无论正交还是反交，结果相同",
+    "C": "杂合植株作亲本，若每代均自由传粉至 F2，则 F2 植株中纯合子所占比例为 4/9",
+    "D": "杂合植株作亲本，若每代均自交至 F2，则 F2 圆形果实植株中杂合子所占比例为 1/2"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 14,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某植物的果实中圆形对卵形为显性，由位于常染色体上的一对等位基因控制，纯合圆形果实植株产生的卵细胞无受精能力，卵形果实植株的花粉不育，杂合植株则正常。现有杂合的植株作亲本，下列相关叙述正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 14 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

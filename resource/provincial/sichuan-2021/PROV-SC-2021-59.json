@@ -1,0 +1,53 @@
+{
+  "answer": "CD",
+  "answer_key": "CD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：CD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-59",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 59,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "被子植物 APG 系统和以往被子植物分类系统相比，产生了许多令人瞩目的变化，根据下面系统图，下面说法中，正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 59 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "被子植物不是一个单系类群"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "被子植物被分为了被子植物基部类群、木兰分枝、单子叶植物和真双子叶植物 4 个多系群"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "木兰分枝是一个比较自然的类群，在传统分类中被认为是双子叶植物，但分子系统学分析表明与其余双子叶植物亲缘关系较远"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "单子叶植物与传统分类中单子叶植物界定相当，与真正的双子叶植物具有共同祖先"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

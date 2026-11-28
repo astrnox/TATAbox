@@ -85,7 +85,7 @@
     downloadCore: function () {
       return downloadWithQuota('core', 10 * 1048576, 180000);
     },
-    /** 完整包：核心包 + 联赛真题（resource/all.json）+ IBO 双语真题（resource/ibo.json） */
+    /** 完整包：核心包 + 联赛真题（resource/all.json）+ IBO 双语真题（resource/ibo.json）+ 省初赛（resource/provincial.json） */
     downloadFull: function () {
       return downloadWithQuota('full', 30 * 1048576, 180000);
     },

@@ -1,0 +1,53 @@
+{
+  "answer": "ABD",
+  "answer_key": "ABD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-06",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 6,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "Rubisco 酶是绿色植物光合作用过程中的关键酶，当 CO2 浓度较高时，该酶催化 CO2 与 C5 反应，进行光合作用。当 O2 浓度较高时，该酶催化 C5 与 O2 反应，最后在线粒体内生成 CO2，植物这种在光下吸收 O2 产生 CO2的现象称为光呼吸。下列叙述正确的是",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 6 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "绿色植物进行光呼吸的场所有叶绿体基质和线粒体"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "植物光呼吸的进行导致光合作用产生的有机物减少"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "光合作用过程中，CO2 和 C5 反应需要消耗 NADPH 要消耗和 ATP"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "植物黑暗中细胞呼吸产生 CO2 的场所为细胞质基质或线粒体基质"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

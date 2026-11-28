@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-36",
+  "module": "",
+  "options": {
+    "A": "该个体可能甲状腺功能亢进，表现为消瘦且情绪易激动",
+    "B": "该个体分泌的 TSH 偏低，是激素负反馈调节的结果",
+    "C": "TSH 由下丘脑细胞分泌，通过体液运输作用于甲状腺细胞",
+    "D": "推测 TRAb 能与促甲状腺激素受体结合，促进甲状腺激素的分泌"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 36,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下表是某人血液化验单中的部分数据，有关叙述错误的是项目 结果 参考值 单位促甲状腺激素（TSH） <0．005 0．27~4．20 uIU/mL游离甲状腺素（T） >100．00 12．0~22．0 umol/L游离三碘甲状腺原氨酸（T3） >50．00 3．10~6．80 umol/L促甲状腺激素受体抗体（TRAb） 21．00 0~1．22 IU/L",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 36 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

@@ -1,0 +1,53 @@
+{
+  "answer": "ACD",
+  "answer_key": "ACD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ACD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-20",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 20,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "稻-蟹共作是以水稻为主体、适量放养蟹的生态种养模式，常使用灯光诱虫杀虫。水稻为蟹提供遮蔽场所和氧气，蟹能摄食害虫、虫卵和杂草，其粪便可作为水稻的肥料。下列叙述不正确的是",
+  "score": 2,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 20 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "该种养模式提高了营养级间的能量传递效率"
+    },
+    {
+      "answer": false,
+      "label": "B",
+      "text": "采用灯光诱虫杀虫利用了物理信息的传递"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "硬壳蟹（非蜕壳）摄食软壳蟹（蜕壳）为捕食关系"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "该种养模式可实现物质和能量的循环利用"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2023
+}

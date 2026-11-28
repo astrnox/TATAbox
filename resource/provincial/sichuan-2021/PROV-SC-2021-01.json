@@ -1,0 +1,37 @@
+{
+  "answer": "A",
+  "answer_key": "A",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：A。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-01",
+  "module": "",
+  "options": {
+    "A": "选用迎春叶表皮细胞，在高倍镜下可观察到叶绿体中的基粒",
+    "B": "选用迎春叶表皮细胞，经醋酸洋红染色后不能观察到细胞中的染色体",
+    "C": "选用迎春叶片叶肉细胞，经研磨后可用无水乙醇提取细胞中的光合色素",
+    "D": "选用迎春叶片叶肉细胞，经 30%蔗糖溶液处理后可用显微镜观察质壁分离过程"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 1,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "迎春在我国种植广泛易取材，其叶片可用作生物学观察实验材料。下列说法错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 1 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

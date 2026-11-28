@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-22",
+  "module": "",
+  "options": {
+    "A": "粉龙头和红龙头猴面花是因长期地理隔离而产生生殖隔离形成的",
+    "B": "粉龙头猴面花种群的突变对红龙头猴面花种群的基因频率无影响",
+    "C": "两者分布区重叠导致自然选择对两种群基因频率改变所起的作用相同",
+    "D": "因起源于同一祖先种，所以粉龙头和红龙头猴面花种群的基因库相同"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 22,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "美国加利福尼亚州有两个猴面花姐妹种——粉龙头（花瓣呈粉红色）和红龙头（花瓣呈红色）。它们起源于一个粉色花的祖先种，两者分布区重叠，前者（粉龙头）由黄蜂投粉，后者（红龙头）由蜂鸟投粉。下列相关分析正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 22 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

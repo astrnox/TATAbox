@@ -1,0 +1,53 @@
+{
+  "answer": "ABC",
+  "answer_key": "ABC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-25",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 25,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "DNA 甲基化是指 DNA 分子胞嘧啶上共价连接一个甲基(-CH3)。 基因组中转录沉默区常被甲基化，在个体发育中甲基化区域是动态变化的。将携带甲基化和非甲基化肌动蛋白基因的重组 DNA 分别导入培养的细胞后，发现二者转录水平相同。下列推测不合理的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 25 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "DNA 甲基化改变了基因的碱基序列"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "启动子甲基化影响其与核糖体结合"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "DNA 甲基化不会影响细胞分化"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "培养细胞中可能存在去甲基化的酶"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

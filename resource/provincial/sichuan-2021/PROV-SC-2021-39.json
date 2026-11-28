@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-39",
+  "module": "",
+  "options": {
+    "A": "部分 T 细胞会在 PD-1 的作用下发生细胞凋亡",
+    "B": "T 细胞上有 PD-1 分子说明只有 T 细胞含有 PD-1 分子特有基因",
+    "C": "药物与肿瘤患者 T 细胞表面 PD-1 结合会降低免疫治疗效果",
+    "D": "接受器官移植的个体 T 细胞 PD-1 增加，可以降低免疫排斥"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 39,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "2018 年诺贝尔生理学或医学奖获得者本庶佑发现 T 细胞表面存在负向调控的受体分子 PD-1。当 PD-1与某些特定分子 PDL1 结合后，能导致 T 细胞“自杀” ，从而终止正在进行的免疫反应。一些肿瘤细胞进化出了一种防御机制，它们的表面也带有 PDL1，从而诱导 T 细胞过早地进入自我破坏程序。下列说法正确的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 39 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}

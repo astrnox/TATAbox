@@ -1,0 +1,53 @@
+{
+  "answer": "BD",
+  "answer_key": "BD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-30",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 30,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "脱氧核苷三磷酸(dNTP)和双脱氧核苷三磷酸(ddNTP，ddN-Pα~Pβ~Pγ)的结构均与核苷三磷酸(NTP)类似，其中 dNTP 核糖的第 2 位碳原子上的羟基(—OH)被氢原子取代而 ddNTP 核糖第 2 位和第 3 位碳原子上的羟基均被氢原子取代。DNA 复制时，ddNTP 可以与 dNTP 竞争核苷酸链延长位点，并终止 DNA 片段的延伸。现有一些序列为 5’—GCCTAAGATCGTA—3’的 DNA 分子单链片段，拟通过 PCR 获得被 32P 标记且以碱基“A”为末端(3’为碱基 A)、不同长度的子链 DNA。在反应管中加入单链模板、引物、底物、TaqDNA 聚合酶、Mg2+及缓冲溶液。下列叙述不正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "实验结束后最多可得到 3 种被 32P 标记的子链 DNA"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "反应底物是 dCTP、dGTP、dTTP 和γ位 32P 标记的 ddATP"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "ddNTP 与 dNTP 竞争的延长位点是脱氧核苷酸链的 3’末端"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "TaqDNA 聚合酶在 PCR 中的作用是形成氢键和磷酸二酯键"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

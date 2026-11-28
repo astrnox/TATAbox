@@ -1,0 +1,53 @@
+{
+  "answer": "BC",
+  "answer_key": "BC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-57",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 57,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "SDS-聚丙烯酰胺凝胶电泳法常用来测定蛋白质的相对分子质量，下列有关说法正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 57 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "蛋白质在 SDS-聚丙烯酰胺凝胶电泳中的迁移率取决于它所带净电荷的多少以及分子的大小等因素"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "SDS 是一种阴离子去污剂，能消除不同蛋白质电荷的差异，是蛋白质发生完全变性"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "SDS-聚丙烯酰胺凝胶电泳不适合测结构特殊的蛋白质如胶原蛋白等"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "SDS-聚丙烯酰胺凝胶电泳只能用垂直平板电泳，不能用圆盘电泳"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

@@ -1,0 +1,53 @@
+{
+  "answer": "ABC",
+  "answer_key": "ABC",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：ABC。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-10",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 10,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "同一种类的碱蓬在远离海边的地区生长呈绿色，在海滨盐碱地生长时呈紫红色，其紫红色与细胞中含有的水溶性甜菜素有关。酪氨酸酶是甜菜素合成的关键酶，下列表示有关酪氨酸酶活性的实验研究结果，相关分析正确的是",
+  "score": 2,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 10 题",
+  "subQuestions": [
+    {
+      "answer": true,
+      "label": "A",
+      "text": "甜菜素可积累在细胞液中，提高其渗透压"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "pH 在 4-5 之间，部分酶因空间结构遭到破坏而活性较低"
+    },
+    {
+      "answer": true,
+      "label": "C",
+      "text": "进行 B、C 两组实验时，应在 pH 约为 6.6 且适宜温度下进行2"
+    },
+    {
+      "answer": false,
+      "label": "D",
+      "text": "根据实验数据可知 Na2S2O3 和 Cu 分别是酶的抑制剂和激活剂"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2021
+}

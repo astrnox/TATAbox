@@ -43,10 +43,10 @@ function stubFetch() {
 }
 
 describe('管理员面板本地题库全量加载', () => {
-  test('加载 quiz + logic + 联赛/IBO 真题池 + 每日联赛：3461 道、去重无缺 id、每日联赛非 0', async () => {
+  test('加载 quiz + logic + 联赛/IBO 真题池 + 四川初赛 + 每日联赛：3546 道、去重无缺 id、每日联赛非 0', async () => {
     stubFetch();
     const bank = await _loadLocalQuestionBank(true);
-    expect(bank.length).toBe(3461);
+    expect(bank.length).toBe(3546);
 
     const ids = bank.map((q) => q.id || q.bioId);
     expect(ids.filter((x) => !x).length).toBe(0);          // 无空 id（字典 key 回填生效）
@@ -54,6 +54,8 @@ describe('管理员面板本地题库全量加载', () => {
 
     // 每日联赛（字典形态解析）确实进入
     expect(ids.some((x) => String(x).startsWith('DL-'))).toBe(true);
+    // 四川初赛池进入
+    expect(ids.some((x) => String(x).startsWith('PROV-SC-'))).toBe(true);
     // 联赛真题池与 quiz/逻辑题在列
     expect(ids).toContain('M3-57-e783fb7b032b');
     expect(bank.some((q) => q.bioId && q.subject)).toBe(true);

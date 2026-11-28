@@ -7,7 +7,7 @@
  * H-05 已把 archive/ 与已下线课堂 vendor 移出主分支；视频仍占 ~150MB，
  * 后续需迁 Git LFS / R2 / S3。本脚本在 CI 中对「已跟踪文件快照」设上限。
  *
- * 用法：node scripts/check-repo-size.js [--max-mb=245] [--max-file-mb=25]
+ * 用法：node scripts/check-repo-size.js [--max-mb=300] [--max-file-mb=25]
  */
 'use strict';
 
@@ -22,7 +22,7 @@ function arg(name, fallback) {
   return hit ? Number(hit.split('=')[1]) : fallback;
 }
 
-const MAX_MB = arg('max-mb', 245);
+const MAX_MB = arg('max-mb', 300);
 const MAX_FILE_MB = arg('max-file-mb', 25);
 
 const files = execSync('git ls-files', { cwd: ROOT, encoding: 'utf8' })

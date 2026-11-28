@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-44",
+  "module": "",
+  "options": {
+    "A": "红蚁有助于大蓝蝶幼虫避开与其它蝴蝶幼虫的竞争",
+    "B": "大蓝蝶幼虫和红蚁两者是相互选择的结果",
+    "C": "大蓝蝶可以在没有红蚁的地方繁衍后代",
+    "D": "大蓝蝶幼虫与红蚁之间存在着捕食关系"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 44,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "大蓝蝶幼虫分泌的蜜汁是红蚁最喜欢的食物，红蚁发现大蓝蝶幼虫后会将其带回蚁巢，和同类一起分享其分泌的蜜汁，蜜汁被吃完后，大蓝蝶幼虫会散发出红蚁的气味和声音，让红蚁误认为它是自己的同类，大蓝蝶幼虫就可以在蚁巢内走动且大吃红蚁卵和幼虫，并躲避天敌。下列有关叙述错误的是",
+  "score": 1.5,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 44 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2022
+}

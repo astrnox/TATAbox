@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-26",
+  "module": "",
+  "options": {
+    "A": "5: 4",
+    "B": "27：8",
+    "C": "39: 25",
+    "D": "27: 1"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 26,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某果蝇的体色有黑色和灰色，受常染色体上的等位基因 D/d 控制，且隐性雄配子有 50%不育。现有基因型为 DD：Dd=1：1 的灰体雄蝇，让其与黑体雌蝇杂交，得到 F1，再让 F1 随机交配得到 F2，则 F2 中灰体与黑体的比值为",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 26 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

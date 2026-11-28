@@ -1,0 +1,37 @@
+{
+  "answer": "D",
+  "answer_key": "D",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：D。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-24",
+  "module": "",
+  "options": {
+    "A": "心肌细胞和胰岛 A 细胞的呼吸酶基因均处于甲基化状态",
+    "B": "胞嘧啶的甲基化可能会阻碍 RNA 聚合酶与起始密码子结合",
+    "C": "由于甲基化修饰不会改变基因中的碱基序列，因此与细胞癌变无关",
+    "D": "胰岛 A 细胞的呼吸酶基因和胰高血糖素基因均处于非甲基化状态"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 24,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "脊椎动物的一些基因活性与其周围特定胞嘧啶的甲基化有关，甲基化使基因失活，相应的非甲基化能活化基因的表达。下列推测正确的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 24 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

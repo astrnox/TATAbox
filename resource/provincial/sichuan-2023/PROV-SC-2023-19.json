@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-19",
+  "module": "",
+  "options": {
+    "A": "多年生草本群落在争夺阳光和空间方面比一年生草本群落更有优势",
+    "B": "与草本群落相比，灌木群落的垂直结构更加复杂",
+    "C": "多年生亚灌木群落里有草本和亚灌木，其自我调节能力比多年生灌木群落更强",
+    "D": "该沙地主要植被是多年生灌木，与其根系发达，抗风和吸水能力较强有关"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 19,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "研究人员在调查某沙地的植物群落演替时，发现其自然演替顺序为：一年生草本→多年生草本→多年生亚灌木→多年生灌木。下列有关叙述错误的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 19 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

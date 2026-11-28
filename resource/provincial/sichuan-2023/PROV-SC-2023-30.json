@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-30",
+  "module": "",
+  "options": {
+    "A": "若含有 a 的花粉 50%死亡，则自交后代基因型的比例是 2∶3∶1",
+    "B": "若 aa 个体有 50%死亡，则自交后代基因型的比例是 2∶4∶1",
+    "C": "若含有 a 的配子有 50%死亡，则自交后代基因型的比例是 4∶2∶1",
+    "D": "若花粉有 50%死亡，则自交后代基因型的比例是 1∶2∶1 15 14"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 30,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "自然界配子的发生.个体的发育受多种因素制约，存在致死现象。基因型为 Aa 的植株自交，子代基因型AA∶Aa∶aa 的比例可能出现不同的情况。下列分析错误的是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 30 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

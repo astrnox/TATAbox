@@ -1,0 +1,53 @@
+{
+  "answer": "BD",
+  "answer_key": "BD",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：BD。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2022-10",
+  "module": "",
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2022-sichuan",
+    "question_no": 10,
+    "title": "2022 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "下列有关于植物体内色素的叙述，正确的是",
+  "score": 2,
+  "source": "2022 年全国中学生生物学联赛四川省赛区初赛试题 第 10 题",
+  "subQuestions": [
+    {
+      "answer": false,
+      "label": "A",
+      "text": "叶绿素为蛋白质，存在于叶绿体的类囊膜上"
+    },
+    {
+      "answer": true,
+      "label": "B",
+      "text": "类胡萝卜素具有帮助捕获光能和保护叶绿素的功能"
+    },
+    {
+      "answer": false,
+      "label": "C",
+      "text": "植物体内的色素均具有光能的吸收、传递和转化的功能"
+    },
+    {
+      "answer": true,
+      "label": "D",
+      "text": "黄化苗照光后形成绿化苗，是由于在光照刺激下合成叶绿素导致的"
+    }
+  ],
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2022",
+    "multiple"
+  ],
+  "target": "competition",
+  "type": "multiple",
+  "year": 2022
+}

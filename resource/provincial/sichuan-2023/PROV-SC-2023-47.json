@@ -1,0 +1,37 @@
+{
+  "answer": "C",
+  "answer_key": "C",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：C。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2023-47",
+  "module": "",
+  "options": {
+    "A": "中和动物细胞代谢产生的碱性物质",
+    "B": "中和动物细胞代谢产生的酸性物质",
+    "C": "防止培养基中的碳酸氢根转变为二氧化碳而流失",
+    "D": "抑制动物细胞的有氧呼吸，防止增殖过快"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2023-sichuan",
+    "question_no": 47,
+    "title": "2023 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "动物细胞培养过程中，往往会向培养液中通入 5％CO2，通入 C02 的作用是",
+  "score": 1.5,
+  "source": "2023 年全国中学生生物学联赛四川省赛区初赛试题 第 47 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2023",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2023
+}

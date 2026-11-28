@@ -1,0 +1,37 @@
+{
+  "answer": "B",
+  "answer_key": "B",
+  "competition": "SC-Prelim",
+  "concept": "",
+  "difficulty": "league",
+  "examType": "school",
+  "explanation": "参考答案：B。原卷仅提供参考答案，暂无逐项解析。",
+  "has_figure": false,
+  "id": "PROV-SC-2021-11",
+  "module": "",
+  "options": {
+    "A": "若基因型为 AaRr 的个体测交，则子代表现型有 3 种，基因型 4 种",
+    "B": "若基因型为 AaRr 的亲本自交，则子代共有 9 种基因型，6 种表现型",
+    "C": "若基因型为 AaRr 的亲本自交，则子代有花瓣植株中，AaRr 所占比例约为 1/3，而所有植株中的纯合子约占 1/4",
+    "D": "若基因型为 AaRr 与 Aarr 的亲本杂交，则子代是红色花瓣的植株占 3/8"
+  },
+  "paper": {
+    "event": "四川省生物学联赛初赛",
+    "key": "2021-sichuan",
+    "question_no": 11,
+    "title": "2021 年全国中学生生物学联赛四川省赛区初赛试题"
+  },
+  "question": "某二倍体植物花瓣的大小受一对等位基因 A、a 控制，基因型为 AA 的植株表现为大花瓣，Aa 为小花瓣，aa 为无花瓣。花瓣颜色(红色和黄色)受另一对等位基因 R、r 控制，R 对 r 为完全显性，两对基因独立遗传。下列有关叙述错误的是",
+  "score": 1.5,
+  "source": "2021 年全国中学生生物学联赛四川省赛区初赛试题 第 11 题",
+  "subject": "",
+  "tags": [
+    "provincial",
+    "sichuan",
+    "2021",
+    "single"
+  ],
+  "target": "competition",
+  "type": "single",
+  "year": 2021
+}
