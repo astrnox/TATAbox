@@ -24,7 +24,7 @@
 TATABOX is a biology learning website built specifically for high school students. Whether you are preparing for the National High School Biology League, grinding Gaokao mock exams, or reinforcing what you learned in class, you can use it.
 
 > [!IMPORTANT]
-> 📚 **Question bank status**: the bank now contains **3,400+ questions** across 80 biology topics (league past papers, module drills, logic questions, daily league, and more — 9 data sources). High-quality past papers and explanations are still being expanded.
+> 📚 **Question bank status**: the bank now contains **3,600+ questions** across 80 biology topics (league past papers, IBO bilingual past papers, Sichuan provincial prelims, module drills, logic questions, daily league, and more — 11 data sources). High-quality past papers and explanations are still being expanded.
 
 ---
 
@@ -69,7 +69,7 @@ npx serve .                  # Node.js
 
 | Feature | What it does |
 |---------|--------------|
-| **Practice & Mock Exams** | Module drills across 80 biology topics with 3,400+ questions (league papers, module drills, logic, daily league), auto-graded with explanations |
+| **Practice & Mock Exams** | Module drills across 80 biology topics with 3,600+ questions (league papers, IBO bilingual papers, Sichuan prelims, module drills, logic, daily league), auto-graded with explanations |
 | **Smart Wrong-Answer Book** | Wrong answers auto-collected; add questions by photo (print/handwriting OCR); FSRS due-date badges and sorting |
 | **Printing** | Print wrong-answer book, practice, or quiz sets in three modes (questions + answers / questions only / answers only), with A4 pagination and a per-page footer |
 | **Knowledge Cards** | Anki-style spaced repetition, automatically scheduled by your forgetting curve |
@@ -198,7 +198,7 @@ Content is **not permitted for commercial use** by default. Using the question b
 
 Planned work:
 
-- [ ] Continue expanding the high-quality question bank (currently 3,400+ questions; keep raising the share of past papers and explanation quality)
+- [ ] Continue expanding the high-quality question bank (currently 3,600+ questions; keep raising the share of past papers and explanation quality)
 - [x] Wrong-answer book printing (browser-native A4, can save as PDF; questions and answers printable separately)
 - [x] FSRS cloud loop and multi-device sync (cards, due sorting, today's review entry)
 - [x] Competition-topic video library with tag filters
