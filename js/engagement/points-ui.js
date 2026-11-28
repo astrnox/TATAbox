@@ -443,6 +443,19 @@
     });
   }
 
+  // 从其它标签页/应用切回来时重新拉一次，避免长时间停留看到过期信用
+  if (root.document && typeof root.document.addEventListener === 'function') {
+    root.document.addEventListener('visibilitychange', function () {
+      if (root.document.hidden) return;
+      var hash = root.location && root.location.hash ? root.location.hash : '';
+      if (hash.indexOf('#/credit') !== 0) return;
+      _creditSnapshot = null;
+      _creditSnapshotTs = 0;
+      if (hash.indexOf('#/credit-leaderboard') === 0) refreshCreditLeaderboard();
+      else refreshCreditCenter();
+    });
+  }
+
   root.getMyCreditSnapshot = getMyCreditSnapshot;
   root.getMyCreditHistory = getMyCreditHistory;
   root.initCreditCenter = initCreditCenter;

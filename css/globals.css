@@ -2487,6 +2487,23 @@ body {
 
 .lb-updated { opacity: 0.85; }
 
+.lb-stats-note {
+  margin: 10px 0 0;
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #c9a26a;
+  background: rgba(196, 149, 106, 0.1);
+  border: 1px solid rgba(196, 149, 106, 0.24);
+}
+[data-theme="light"] .lb-stats-note {
+  color: #8a5a2e;
+  background: rgba(196, 149, 106, 0.12);
+  border-color: rgba(196, 149, 106, 0.3);
+}
+
 .lb-refresh {
   border: 1px solid rgba(58, 140, 92, 0.28);
   background: transparent;

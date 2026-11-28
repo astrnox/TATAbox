@@ -2,7 +2,7 @@
  * TATABOX — 首屏同步 CSS 合并包（Issue #108，由
  * scripts/build-css-bundle.js 自动生成，勿手改。
  * 合并源：globals.css + layout.css + header.css + learning-hub.css + home.css + debug-fix.css
- * 生成时间：2026-11-28T10:52:50.364Z
+ * 生成时间：2026-11-28T10:57:18.656Z
  * ============================================================ */
 
 /* ---------- 来源: css/globals.css ---------- */
@@ -2494,6 +2494,23 @@ body {
 }
 
 .lb-updated { opacity: 0.85; }
+
+.lb-stats-note {
+  margin: 10px 0 0;
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #c9a26a;
+  background: rgba(196, 149, 106, 0.1);
+  border: 1px solid rgba(196, 149, 106, 0.24);
+}
+[data-theme="light"] .lb-stats-note {
+  color: #8a5a2e;
+  background: rgba(196, 149, 106, 0.12);
+  border-color: rgba(196, 149, 106, 0.3);
+}
 
 .lb-refresh {
   border: 1px solid rgba(58, 140, 92, 0.28);

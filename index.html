@@ -302,7 +302,7 @@
 
   <!-- 首屏关键 CSS：同步加载 -->
   <!-- Issue #108：首屏同步 CSS 合并为单文件（scripts/build-css-bundle.js 生成，减少 6→1 次串行请求） -->
-  <link rel="stylesheet" href="css/bundle-core.css?v=20261128a">
+  <link rel="stylesheet" href="css/bundle-core.css?v=20261128b">
   <!-- Issue #139：统一加载动画库（DNA 双螺旋 / 原子轨道 / 波浪 / 追点等，纯 CSS） -->
   <link rel="stylesheet" href="css/loaders.css?v=20260912a">
   <!-- 全站统一题图渲染 + 图片查看器（缩放/标注/下载）样式 -->
@@ -1233,13 +1233,13 @@
        且其功能页子模块（admin-users/questions/cards/community/ebook/ops/ocr/aigen）
        在点击对应标签时才按需加载 -->
   <script src="js/pages/learning-hub.js?v=20260809f" defer></script>
-  <script src="js/engagement/points-ui.js?v=20261128a" defer></script>
+  <script src="js/engagement/points-ui.js?v=20261128b" defer></script>
   <!-- P1-2 拆分：路由配置表先于 app.js 加载，app.js 通过全局 Routes 引用 -->
   <script src="js/core/app-routes.js?v=20261121d" defer></script>
   <!-- P1-1 拆分：认证 UI / 搜索 / 排行榜（依赖 utils.js 的 escapeHtml，须在 app.js 前） -->
   <script src="js/core/auth-ui.js?v=20261009a" defer></script>
   <script src="js/core/app-search.js?v=20261009a" defer></script>
-  <script src="js/core/app-leaderboard.js?v=20261128a" defer></script>
+  <script src="js/core/app-leaderboard.js?v=20261128b" defer></script>
   <!-- v= 同时是动态 loadModule（practice/wrongbook/quiz 等 pages）的公共缓存键：
        修改任何 js/pages/* 后须同步 bump，避免部署窗口期旧页新逻辑错配 -->
   <script src="js/core/app.js?v=20261128a" defer></script>

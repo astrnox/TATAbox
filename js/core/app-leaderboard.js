@@ -23,6 +23,15 @@ var _lbPageAutoRefreshTimer = null;
 /** 上次渲染签名：自动刷新时数据没变就不重绘，避免闪屏 */
 var _lbRenderSignatures = {};
 
+/** 公开视图的统计列能力探测（v24 迁移后启用「练习量 / 签到」） */
+var _lbStatsAvailable = null;
+var _lbStatsCheckedAt = 0;
+var _lbStatsProbePromise = null;
+var _lbStatsRetry = 0;
+
+/** 弹窗关闭后把焦点还给打开它的按钮 */
+var _lbPreviousFocus = null;
+
 window.showLeaderboard = showLeaderboard;
 window.switchLbTab = switchLbTab;
 window.refreshLeaderboard = refreshLeaderboard;
@@ -84,6 +93,60 @@ function _lbUpdatedText(ts) {
 function _lbSetStatus(id, text) {
   var el = document.getElementById(id);
   if (el) el.textContent = text || '';
+}
+
+/**
+ * 探测公开视图是否已具备 total_answered / current_streak 列。
+ * 不阻塞榜单加载，只用来提前告知「练习量 / 签到」是否已开放。
+ */
+function _lbProbeStats() {
+  if (_lbStatsAvailable !== null && (Date.now() - _lbStatsCheckedAt) < 5 * 60 * 1000) {
+    _lbApplyStatsNote();
+    return Promise.resolve(_lbStatsAvailable);
+  }
+  if (_lbStatsProbePromise) return _lbStatsProbePromise;
+  if (typeof SUPABASE_URL === 'undefined' || typeof SUPABASE_ANON_KEY === 'undefined') {
+    // 首次进入时 Supabase 脚本可能还没就绪，短暂重试几次；服务本身没加载时
+    // 排行榜会显示「服务未就绪」，这里无需无限轮询。
+    if (_lbStatsRetry < 5) {
+      _lbStatsRetry++;
+      setTimeout(function () {
+        if (_lbStatsAvailable === null) { _lbStatsCheckedAt = 0; _lbProbeStats(); }
+      }, 1200);
+    }
+    return Promise.resolve(false);
+  }
+  _lbStatsRetry = 0;
+  _lbStatsProbePromise = fetch(SUPABASE_URL + '/rest/v1/public_profiles?select=total_answered&limit=1', {
+    method: 'GET',
+    headers: {
+      'apikey': SUPABASE_ANON_KEY,
+      'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+      'Accept': 'application/json'
+    }
+  }).then(function (res) {
+    _lbStatsAvailable = !!res.ok;
+    _lbStatsCheckedAt = Date.now();
+    _lbStatsProbePromise = null;
+    _lbApplyStatsNote();
+    return _lbStatsAvailable;
+  }).catch(function () {
+    _lbStatsAvailable = false;
+    _lbStatsCheckedAt = Date.now();
+    _lbStatsProbePromise = null;
+    _lbApplyStatsNote();
+    return false;
+  });
+  return _lbStatsProbePromise;
+}
+
+function _lbApplyStatsNote() {
+  var note = document.getElementById('lb-stats-note');
+  if (note) note.hidden = !!_lbStatsAvailable;
+}
+
+function _lbStatsNoteHtml() {
+  return '<p class="lb-stats-note" id="lb-stats-note" hidden>练习量 / 签到榜单即将开放，当前可先查看 Bio 分榜</p>';
 }
 
 function _lbSignature(items, tab) {
@@ -168,6 +231,11 @@ async function _lbLoad(tab, opts) {
   var retryName = isPage ? 'refreshLeaderboardPage' : 'refreshLeaderboard';
   var fallbackName = isPage ? 'switchLbPageTab' : 'switchLbTab';
   var sigKey = (isPage ? 'page:' : 'modal:') + tab;
+
+  // 页面可能在 Supabase 脚本就绪前就完成首次渲染；等服务可用后补一次能力探测
+  if (_lbStatsAvailable === null && typeof window.getLeaderboard === 'function') {
+    _lbProbeStats();
+  }
 
   if (!opts.silent) {
     listEl.innerHTML = _lbSkeletonHtml();
@@ -278,6 +346,11 @@ function closeLeaderboard() {
   document.body.style.overflow = '';
   // 关闭时停止定时刷新，避免无谓的循环拉取
   if (_lbAutoRefreshTimer) { clearInterval(_lbAutoRefreshTimer); _lbAutoRefreshTimer = null; }
+  // 键盘用户：把焦点还给打开排行榜的按钮
+  if (_lbPreviousFocus && document.contains(_lbPreviousFocus)) {
+    try { _lbPreviousFocus.focus({ preventScroll: true }); } catch (e) {}
+    _lbPreviousFocus = null;
+  }
 }
 
 function refreshLeaderboard() {
@@ -298,6 +371,7 @@ function renderLeaderboardPage(target) {
         '<span class="lb-updated" id="lb-page-updated" aria-live="polite"></span>' +
         '<button type="button" class="lb-refresh" data-on=\'["refreshLeaderboardPage"]\'>刷新</button>' +
       '</div>' +
+      _lbStatsNoteHtml() +
     '</div>' +
     '<div class="lb-page-body" id="lb-page-list">' +
       _lbSkeletonHtml() +
@@ -307,6 +381,7 @@ function renderLeaderboardPage(target) {
   _currentLbTab = 'bio';
   _currentLbPageTab = 'bio';
   loadLbPageData('bio');
+  _lbProbeStats();
   _startLbPageAutoRefresh();
 }
 
@@ -361,13 +436,19 @@ async function showLeaderboard() {
 
   var existing = document.getElementById('leaderboard-modal');
   if (existing) {
+    if (!existing.classList.contains('visible')) {
+      _lbPreviousFocus = document.activeElement;
+    }
     existing.classList.add('visible');
     document.body.style.overflow = 'hidden';
     _currentLbTab = _currentLbTab || 'bio';
+    _lbProbeStats();
     await loadLbData(_currentLbTab, { force: true });
     _startLbAutoRefresh();
     return;
   }
+
+  _lbPreviousFocus = document.activeElement;
 
   var overlay = document.createElement('div');
   overlay.id = 'leaderboard-modal';
@@ -389,6 +470,7 @@ async function showLeaderboard() {
           <span class="lb-updated" id="lb-updated" aria-live="polite"></span>
           <button type="button" class="lb-refresh" data-on='["refreshLeaderboard"]'>刷新</button>
         </div>
+        ${_lbStatsNoteHtml()}
       </div>
       <div class="lb-body" id="lb-list" role="tabpanel">
         ${_lbSkeletonHtml()}
@@ -406,6 +488,7 @@ async function showLeaderboard() {
 
   _currentLbTab = 'bio';
   await loadLbData('bio');
+  _lbProbeStats();
   _startLbAutoRefresh();
 
   var closeBtn = overlay.querySelector('.lb-close');
@@ -439,14 +522,35 @@ async function switchLbTab(tabName) {
     }
   }
 
+  var body = document.getElementById('lb-list');
+  if (body) body.scrollTop = 0;
+
   await loadLbData(tabName, { force: true });
 }
 
-// 弹窗打开时 Esc 关闭（键盘用户友好）
+// 弹窗键盘支持：Esc 关闭；Tab 在弹窗内循环，避免焦点跑到背后的页面
 document.addEventListener('keydown', function (e) {
-  if (e.key !== 'Escape') return;
   var modal = document.getElementById('leaderboard-modal');
-  if (modal && modal.classList.contains('visible')) closeLeaderboard();
+  if (!modal || !modal.classList.contains('visible')) return;
+  if (e.key === 'Escape') { closeLeaderboard(); return; }
+  if (e.key !== 'Tab') return;
+
+  var focusables = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  var list = [];
+  for (var i = 0; i < focusables.length; i++) {
+    var el = focusables[i];
+    if (!el.disabled && el.offsetParent !== null) list.push(el);
+  }
+  if (!list.length) return;
+  var first = list[0];
+  var last = list[list.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
 });
 
 // 回到页面时静默刷新，避免长时间停留看到过期榜单
